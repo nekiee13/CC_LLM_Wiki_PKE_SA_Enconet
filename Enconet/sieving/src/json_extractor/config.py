@@ -22,7 +22,7 @@ class Config:
     """Application configuration."""
     
     # Directories
-    data_dir: Path = field(default_factory=lambda: Path("./DATA"))
+    data_dir: Path = field(default_factory=lambda: Path(__file__).resolve().parents[2] / "DATA")
     config_dir: Path = field(default_factory=lambda: Path.home() / ".json_extractor")
     
     # Default column selection (essential subset)

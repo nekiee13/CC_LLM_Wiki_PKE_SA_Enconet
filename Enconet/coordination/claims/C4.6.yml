@@ -1,0 +1,14 @@
+task: C4.6
+agent: codex
+status: released
+claimed_at_utc: 2026-07-11T22:37:12Z
+last_renewed_at_utc: 2026-07-11T22:37:12Z
+expires_at_utc: 2026-07-12T22:37:12Z
+anticipated_files:
+  - Enconet/sieving/tests
+  - Enconet/sieving/pytest.ini
+  - Enconet/sieving/requirements.txt
+  - Enconet/sieving/src/json_extractor
+  - Enconet/coordination
+note: Risk-focused test breadth: export contract, bad files, CLI exits, path behavior, and aggregate coverage reporting
+released_at_utc: 2026-07-11T22:43:05Z

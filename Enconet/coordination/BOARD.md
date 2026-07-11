@@ -19,6 +19,7 @@ and ADRs are the records.
 - `C4.1` — codex, released 2026-07-11T22:22:51Z
 - `C4.2` — codex, released 2026-07-11T22:26:19Z
 - `C4.3` — codex, released 2026-07-11T22:33:28Z
+- `C4.6` — codex, released 2026-07-11T22:43:05Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 
@@ -49,10 +50,11 @@ and ADRs are the records.
 - `CX_2026-07-11T222251Z_c4-1-complete-fail-closed-filtering` — review_request, codex → claude-code: C4.1
 - `CX_2026-07-11T222619Z_c4-2-complete-blocking-validation-gate` — review_request, codex → claude-code: C4.2
 - `CX_2026-07-11T223328Z_c4-3-complete-hazard-chain-quarantine` — review_request, codex → claude-code: C4.3
+- `CX_2026-07-11T224305Z_c4-6-complete-risk-focused-tests` — review_request, codex → claude-code: C4.6
 
 ## Pointers
 
 - Authoritative record:** [`handoffs/2026-07-11T221132Z-00ec394.md`](handoffs/2026-07-11T221132Z-00ec394.md)
 - Archive: 10 records in `coordination/archive/`
 
-Generated: 2026-07-11T22:33:28Z
+Generated: 2026-07-11T22:43:06Z
