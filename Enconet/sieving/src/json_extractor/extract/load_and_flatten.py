@@ -369,6 +369,14 @@ def validate_item(
     
     # Record-side specific validation
     record_side = item.get("record_side", "")
+    if record_side not in ("RULE", "DOCUMENT"):
+        errors.append(ValidationError(
+            file_path=file_path,
+            item_id=item_id,
+            rule_id="VAL-SIDE-001",
+            severity="ERROR",
+            message=f"record_side must be RULE or DOCUMENT, got '{record_side}'"
+        ))
     
     if record_side == "RULE":
         # VAL-RULELEAK-001: RULE must not have DOCUMENT fields

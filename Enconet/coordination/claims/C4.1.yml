@@ -1,0 +1,14 @@
+task: C4.1
+agent: codex
+status: released
+claimed_at_utc: 2026-07-11T22:20:02Z
+last_renewed_at_utc: 2026-07-11T22:20:02Z
+expires_at_utc: 2026-07-12T22:20:02Z
+anticipated_files:
+  - Enconet/sieving/src/json_extractor/pipeline.py
+  - Enconet/sieving/cli.py
+  - Enconet/sieving/tests
+  - Enconet/Sieving_method_specification_Guide.md
+  - Enconet/coordination
+note: Fail-closed invalid filtering: non-zero CLI exit, explicit preview override, export always blocked on filter_error, regression tests and documentation
+released_at_utc: 2026-07-11T22:22:51Z

@@ -14,9 +14,8 @@ Usage:
     python cli.py query --all --filter "criterion_id:APP_B_I OR criterion_id:APP_B_II" --preview
     python cli.py query --all --filter "criterion_id:APP_B_I,APP_B_II" --preview
 
-Epic E4-T2:
-    - Adds --strict-filter flag:
-        If filter parsing fails and filter_error is set by the pipeline, exit code 2.
+C4.1: invalid filters exit 2 by default. --allow-unfiltered-preview is an
+explicit development-only preview escape; export remains blocked.
 """
 
 from __future__ import annotations
@@ -106,10 +105,10 @@ def query(
         "--filter",
         help='Filter expression (e.g., "criterion_id:APP_B_I AND record_side:RULE")',
     ),
-    strict_filter: bool = typer.Option(
+    allow_unfiltered_preview: bool = typer.Option(
         False,
-        "--strict-filter",
-        help="Exit with code 2 if the filter expression is invalid (pipeline sets filter_error).",
+        "--allow-unfiltered-preview",
+        help="Development only: show unfiltered preview after a filter error; export stays blocked.",
     ),
     columns: Optional[str] = typer.Option(
         None,
@@ -127,6 +126,16 @@ def query(
         None,
         "--format",
         help="Output format: csv or xlsx",
+    ),
+    allow_validation_errors: bool = typer.Option(
+        False,
+        "--allow-validation-errors",
+        help="Development only: permit export with ERROR validation issues; requires a reason.",
+    ),
+    validation_override_reason: Optional[str] = typer.Option(
+        None,
+        "--validation-override-reason",
+        help="Recorded reason for development-only export of validation errors.",
     ),
     show_errors: bool = typer.Option(
         True,
@@ -173,16 +182,22 @@ def query(
             data_dir=data_dir_path if all_files else None,
             filter_expr=filter_expr,
             columns=column_list,
+            allow_unfiltered_preview=allow_unfiltered_preview,
         )
     except Exception as e:
         console.print(f"[red]Pipeline error: {str(e)}[/red]")
         raise typer.Exit(1)
 
-    # E4-T2: handle filter_error explicitly (strict mode exits with code 2)
     filter_error = getattr(result, "filter_error", None)
     if filter_error:
         console.print(f"[red]Filter error:[/red] {filter_error}")
-        if strict_filter:
+        if not allow_unfiltered_preview or not show_preview:
+            if allow_unfiltered_preview and not show_preview:
+                console.print("[red]--allow-unfiltered-preview requires --preview.[/red]")
+            raise typer.Exit(2)
+        console.print("[bold yellow]DEVELOPMENT OVERRIDE: showing unfiltered preview; export is blocked.[/bold yellow]")
+        if output:
+            console.print("[red]Export blocked while filter_error is set.[/red]")
             raise typer.Exit(2)
 
     # Show statistics
@@ -221,6 +236,17 @@ def query(
         if df is None or df.empty:
             console.print("[yellow]Warning: No results to export[/yellow]")
         else:
+            error_count = sum(1 for e in getattr(result, "validation_errors", []) if e.severity == "ERROR")
+            if error_count:
+                reason = (validation_override_reason or "").strip()
+                if not allow_validation_errors or not reason:
+                    console.print(
+                        f"[red]Export blocked: {error_count} ERROR validation issue(s). "
+                        "Development override requires --allow-validation-errors and "
+                        "--validation-override-reason.[/red]"
+                    )
+                    raise typer.Exit(2)
+                console.print(f"[bold yellow]VALIDATION OVERRIDE:[/bold yellow] {reason}")
             output_path = Path(output)
             try:
                 actual_path = export_pipeline_result(
@@ -228,6 +254,7 @@ def query(
                     output_path=output_path,
                     columns=column_list,
                     fmt=format,
+                    validation_override_reason=(validation_override_reason if allow_validation_errors else None),
                 )
                 console.print(f"\n[green]✓[/green] Exported to: {actual_path}")
             except Exception as e:

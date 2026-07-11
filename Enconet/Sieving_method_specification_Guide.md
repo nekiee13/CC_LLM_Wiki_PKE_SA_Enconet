@@ -474,9 +474,11 @@ Key invariants (code-verified):
 Filtering uses a typed **DSL** over `query/schema.py` fields — e.g.
 `criterion_id:APP_B_I AND record_side:RULE` — with enum fields validated against
 controlled vocabularies and side-specific fields (RULE-only / DOCUMENT-only) marked in
-the schema. DSL parse or execution errors are surfaced via `filter_error` while the
-DataFrame is returned **unfiltered** (fail-loud, non-blocking). Export goes to CSV/XLSX
-via `io/export.py`. (source: opencode-JSON `query/`, `pipeline.py`)
+the schema. DSL parse or execution errors set `filter_error` and return no rows by
+default. `--allow-unfiltered-preview` is an explicit development-only escape that may
+display the unfiltered rows, but export remains blocked at both CLI and pipeline API
+boundaries. Export otherwise goes to CSV/XLSX via `io/export.py`. (C4.1; source:
+`query/`, `pipeline.py`, `cli.py`)
 
 ### 10.5 Status of the v0.1 risks (docs/context/32 §6.9) in the current repo
 
@@ -500,8 +502,8 @@ Each maps to a planned upgrade in MASTER_DEVELOPMENT_PLAN.md.
 
 | # | Limitation | Consequence | Planned fix |
 |---|---|---|---|
-| 1 | **Validation is advisory, not blocking** (§2): ERROR-flagged records still flow into DataFrame and exports | Invalid crumbs can reach review/export unnoticed | Task 5.3/5.4 (blocking import gate) |
-| 2 | Two-tier enforcement gap — code-verified unchecked fields: `statement` non-empty, `item_id` uniqueness, `item_type` enum, **`record_side` enum** (invalid side silently skips all side checks) | Low-quality or side-ambiguous crumbs pass silently | Task 1.4 + 5.3 (strict schema tier) |
+| 1 | Validation remains advisory for in-memory review, but C4.2 blocks export when any ERROR exists unless a development override with a recorded reason is supplied | Invalid crumbs remain visible for diagnosis but cannot be exported silently | C4.2 implemented; Task 5.3/5.4 will add the blocking import gate |
+| 2 | Two-tier enforcement gap — code-verified unchecked fields: `statement` non-empty, `item_id` uniqueness, `item_type` enum. `record_side` is now a hard RULE/DOCUMENT enum validated before side checks (C4.2). | Remaining unchecked fields can still admit low-quality crumbs | Task 1.4 + 5.3 (strict schema tier) |
 | 3 | First-source scalar flattening (all quotes survive via `evidence_quotes_json`; sources beyond the first only in raw JSON) | Secondary source locations invisible in tabular review | Task 5.4 (`crumb_sources`, `crumb_quotes` tables) |
 | 4 | No chunk linkage | Crumb cites filename/page at best; weak source review | EPIC 6 (`crumb_chunk_links`, quote-in-chunk verification) |
 | 5 | DOC prompt runtime-block defect (§8.4) | Mislabeled runs possible; side leakage | Task 5.1 (corrected versioned prompts) + 5.6 (fixtures) |

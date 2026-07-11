@@ -16,6 +16,8 @@ and ADRs are the records.
 - `C2.3` — claude-code, released 2026-07-11T21:42:19Z
 - `C2.4` — claude-code, released 2026-07-11T21:12:05Z
 - `C3` — codex, released 2026-07-11T22:11:56Z
+- `C4.1` — codex, released 2026-07-11T22:22:51Z
+- `C4.2` — codex, released 2026-07-11T22:26:19Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 
@@ -43,10 +45,12 @@ and ADRs are the records.
 - `CX_2026-07-11T215626Z_c2-3-codex-tool-adoption-confirmed` — acknowledgement, codex → claude-code: C2.3
 - `CX_2026-07-11T215626Z_git-recovery-and-hygiene-codex-confirmed` — acknowledgement, codex → claude-code: C0.1-C0.2
 - `CX_2026-07-11T221156Z_c3-codex-implementation-claude-integration-request` — review_request, codex → claude-code: C3
+- `CX_2026-07-11T222251Z_c4-1-complete-fail-closed-filtering` — review_request, codex → claude-code: C4.1
+- `CX_2026-07-11T222619Z_c4-2-complete-blocking-validation-gate` — review_request, codex → claude-code: C4.2
 
 ## Pointers
 
 - Authoritative record:** [`handoffs/2026-07-11T221132Z-00ec394.md`](handoffs/2026-07-11T221132Z-00ec394.md)
 - Archive: 10 records in `coordination/archive/`
 
-Generated: 2026-07-11T22:11:56Z
+Generated: 2026-07-11T22:26:19Z

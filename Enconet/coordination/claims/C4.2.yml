@@ -1,0 +1,15 @@
+task: C4.2
+agent: codex
+status: released
+claimed_at_utc: 2026-07-11T22:24:06Z
+last_renewed_at_utc: 2026-07-11T22:24:06Z
+expires_at_utc: 2026-07-12T22:24:06Z
+anticipated_files:
+  - Enconet/sieving/src/json_extractor/extract/load_and_flatten.py
+  - Enconet/sieving/src/json_extractor/pipeline.py
+  - Enconet/sieving/cli.py
+  - Enconet/sieving/tests
+  - Enconet/Sieving_method_specification_Guide.md
+  - Enconet/coordination
+note: Blocking validation gate: record_side hard enum, export rejects ERROR validation, explicit recorded advisory override, regression tests
+released_at_utc: 2026-07-11T22:26:19Z

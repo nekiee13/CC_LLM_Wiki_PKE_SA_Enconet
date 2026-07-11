@@ -12,11 +12,10 @@ Coordinates:
 
 Provides a single entry point for both CLI and Streamlit adapters.
 
-E4-T2 (filter error surfacing):
-- PipelineResult includes filter_error: Optional[str]
-- run_pipeline sets filter_error on DSLParseError (and on unexpected filter execution errors)
-- Backward compatibility preserved: on filter failure, unfiltered results are returned,
-  but filter_error is populated for adapters/CLI to surface.
+C4.1 (fail-closed filtering):
+- filter failures return no rows by default;
+- an explicit preview-only override may retain unfiltered rows;
+- export is always blocked while filter_error is set.
 """
 
 from __future__ import annotations
@@ -56,6 +55,8 @@ class PipelineResult:
 
     # E4-T2: explicit filter error signal
     filter_error: Optional[str] = None
+    unfiltered_preview_used: bool = False
+    validation_override_reason: Optional[str] = None
 
     @property
     def success(self) -> bool:
@@ -97,6 +98,7 @@ def run_pipeline(
     file_patterns: Optional[List[str]] = None,
     filter_expr: Optional[str] = None,
     columns: Optional[List[str]] = None,
+    allow_unfiltered_preview: bool = False,
 ) -> PipelineResult:
     """
     Run the complete extraction and query pipeline.
@@ -107,13 +109,13 @@ def run_pipeline(
         file_patterns: Glob patterns for file discovery (default: ["*.json"]).
         filter_expr: DSL filter expression (e.g., "criterion_id:APP_B_I AND record_side:RULE").
         columns: List of columns to include in result. If None, uses all columns.
+        allow_unfiltered_preview: Development-only escape that retains unfiltered rows
+            for preview. Export remains blocked while filter_error is set.
 
     Returns:
         PipelineResult with DataFrame and diagnostics.
 
-    E4-T2 behavior:
-        - On DSLParseError (invalid filter syntax), filter_error is set and df is returned unfiltered.
-        - On unexpected filter execution error, filter_error is set and df is returned unfiltered.
+    C4.1 behavior: filter errors fail closed unless preview override is explicit.
     """
     config = get_config()
 
@@ -200,18 +202,20 @@ def run_pipeline(
 
     # Step 4: Apply filter if provided
     filter_error: Optional[str] = None
+    unfiltered_preview_used = False
     if filter_expr is not None and filter_expr.strip():
         try:
             query = parse_filter_dsl(filter_expr.strip())
             df = QueryEngine.execute_on_df(df, query)
         except DSLParseError as e:
-            # E4-T2: fail-loud via filter_error, but keep backward compatible widening behavior
             filter_error = str(e)
-            # df remains unfiltered
         except Exception as e:
-            # Defensive: unexpected filter execution failures should be surfaced, not silent
             filter_error = f"Filter execution error: {e}"
-            # df remains unfiltered
+        if filter_error:
+            if allow_unfiltered_preview:
+                unfiltered_preview_used = True
+            else:
+                df = df.iloc[0:0].copy()
 
     items_after_filter = int(len(df))
 
@@ -229,6 +233,7 @@ def run_pipeline(
         items_loaded=items_loaded,
         items_after_filter=items_after_filter,
         filter_error=filter_error,
+        unfiltered_preview_used=unfiltered_preview_used,
     )
 
 
@@ -237,6 +242,7 @@ def export_pipeline_result(
     output_path: Path,
     columns: Optional[List[str]] = None,
     fmt: Optional[str] = None,
+    validation_override_reason: Optional[str] = None,
 ) -> Path:
     """
     Export pipeline result to file.
@@ -254,8 +260,20 @@ def export_pipeline_result(
         Actual output path (may have adjusted extension).
 
     Raises:
-        ValueError: If DataFrame is empty.
+        ValueError: If filtering failed, ERROR validation exists without a recorded
+            override reason, or DataFrame is empty.
     """
+    if result.filter_error:
+        raise ValueError("Export blocked: filter_error is set; unfiltered data is preview-only")
+    validation_errors = [e for e in result.validation_errors if e.severity == "ERROR"]
+    if validation_errors:
+        reason = (validation_override_reason or "").strip()
+        if not reason:
+            raise ValueError(
+                f"Export blocked: {len(validation_errors)} ERROR validation issue(s); "
+                "an explicit validation override reason is required"
+            )
+        result.validation_override_reason = reason
     if result.df is None or result.df.empty:
         raise ValueError("Cannot export empty result")
 
