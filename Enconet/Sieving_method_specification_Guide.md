@@ -6,12 +6,13 @@
 |---|---|
 | Project | Project03 / PKE_SA_Enconet |
 | Document | Sieving_method_specification_Guide |
-| Version | 1.1 — enforcement details verified against pipeline source code |
-| Date | 2026-07-04 |
+| Version | 1.2 — §10.1 configuration ownership corrected against pipeline source code |
+| Date | 2026-07-11 |
 | Status | AS-IS specification of the **current** sieving method (baseline before EPIC 5 / EPIC 18 upgrades) |
 | Governing template | `JSON_Template_App_B`, template_version **0.1** (`templates/app_b.py::AppBTemplate`) |
 | Primary sources | **`sieving/` — the vendored pipeline implementation** (`sieving/src/json_extractor/`; enforcement verified at code level; upstream origin github.com/nekiee13/opencode-JSON, recorded in `sieving/PROVENANCE.md`), `docs/context/31 Sieving - Crumb generation.md` (both transformation prompts), `docs/context/32 Crumbs proccessing - json_extractor_session_exp.md` (v0.1-era description, partially superseded — see §10), `docs/context/30 Ingestion phase.md` (pipeline position) |
 | Related plan sections | MASTER_DEVELOPMENT_PLAN.md — EPIC 5 (sieving pipeline), EPIC 6 (traceability), EPIC 15 (extractor integration), EPIC 18 (tuning harness) |
+| Change note | **v1.1 → v1.2:** corrected §10.1: `config.py` duplicates the criteria and rule-code tables locally; it does not derive them from `AppBTemplate`. Consolidation remains planned under ALIGNMENT_PLAN Task C4.4. |
 
 **Purpose of this guide.** Sieving is the crown activity of this project: crumb quality
 bounds every downstream result. This guide records, in one place, exactly how the current
@@ -405,7 +406,7 @@ that source code; where doc 32 differs, the code wins.
 sieving/                                (vendored, project-integral)
 ├── cli.py                             ← headless dev/debug entry (retired at EPIC 15 close)
 ├── src/json_extractor/
-│   ├── config.py                      ← Config (canonical criteria/codes via AppBTemplate)
+│   ├── config.py                      ← Config (locally duplicated criteria/codes; not derived from AppBTemplate)
 │   ├── pipeline.py                    ← run_pipeline / export_pipeline_result
 │   ├── extract/load_and_flatten.py    ← validate_item + flattening (the enforcement core)
 │   ├── templates/app_b.py             ← AppBTemplate: canonical criteria, codes, enums
@@ -417,6 +418,16 @@ sieving/                                (vendored, project-integral)
 ├── tools/fix_*.py                     ← post-hoc data repair scripts (drift history)
 └── PROVENANCE.md                      ← upstream origin + commit + divergence log
 ```
+
+`config.py` does **not** import or derive its canonical criteria or rule-code tables
+from `AppBTemplate`. `Config.get_canonical_criteria()` and
+`Config.get_canonical_codes()` define local literal tables, while
+`templates/app_b.py::AppBTemplate` independently defines `CRITERIA` and
+`CANONICAL_CODES`. These are duplicate contract owners in the current subsystem and
+can drift. ALIGNMENT_PLAN Task C4.4 will replace them with one machine-readable schema
+owner and a drift test; until then, changes to either table must be synchronized
+manually. (source: `sieving/src/json_extractor/config.py`,
+`sieving/src/json_extractor/templates/app_b.py`; cross-reference: C4.4)
 
 **No separate GUI (decision 2026-07-04).** The upstream Streamlit review UI
 (`adapters/streamlit_app/`, `app.py`) was removed at vendoring: sieving is operated
@@ -524,5 +535,6 @@ implementations (single `src/json_extractor/`), and `df._append` (gone).
 
 ---
 
-*End of Sieving Method Specification Guide v1.1 — AS-IS baseline recorded 2026-07-04;
-enforcement details verified against github.com/nekiee13/opencode-JSON.*
+*End of Sieving Method Specification Guide v1.2 — AS-IS baseline recorded 2026-07-04;
+§10.1 configuration ownership corrected 2026-07-11 against the vendored pipeline
+source; enforcement details verified against github.com/nekiee13/opencode-JSON.*

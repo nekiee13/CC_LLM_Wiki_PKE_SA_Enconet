@@ -10,8 +10,9 @@ These instructions apply within `03_PKE_SA_NQA1/Enconet` and extend `../AGENTS.m
 2. `docs/ALIGNMENT_PLAN.md` (canonical) for waves G0–G5, migration order, and acceptance criteria.
 3. `decisions/README.md` for the ADR register (current through ADR-0017).
 4. `docs/CX_CC_RECONCILIATION.md` for the agreement that merged the CX/CC preparation.
-5. `Sieving_method_specification_Guide.md` for the current subsystem, checking claims
-   against actual code and tests (its §10.1 config/AppBTemplate claim is wrong until C4.4).
+5. `Sieving_method_specification_Guide.md` v1.2 for the current subsystem, checking claims
+   against actual code and tests; §10.1 now records the duplicated config/AppBTemplate
+   contract owners that remain scheduled for consolidation under C4.4.
 
 `docs/context/` and `docs/_archive/` contain source material, examples, superseded plan
 variants, and historical session exports. They are history, not a current implementation
@@ -22,6 +23,9 @@ contract.
 - Working code is under `sieving/src/json_extractor` with CLI, query, flattening, and export adapters.
 - Tests are under `sieving/tests`.
 - Example RULE and DOCUMENT JSON data is under `sieving/DATA`.
+- The upstream Streamlit GUI (`app.py`, `adapters/streamlit_app/`) was retired when the
+  subsystem was vendored, by owner decision dated 2026-07-04. Do not advertise or restore it
+  without a new owner decision; use the headless pipeline and generated review outputs.
 - Database, complete wiki, report/dashboard generation, audit state machine, and aggregate validators
   remain planned unless executable evidence proves otherwise.
 

@@ -1,0 +1,12 @@
+task: CODEX-GUIDANCE-SYNC
+agent: codex
+status: released
+claimed_at_utc: 2026-07-11T21:54:18Z
+last_renewed_at_utc: 2026-07-11T21:54:18Z
+expires_at_utc: 2026-07-12T21:54:18Z
+anticipated_files:
+  - AGENTS.md
+  - Enconet/AGENTS.md
+  - Enconet/coordination
+note: Resolve pending Claude messages: Git workflow preference, current Git/dependency facts, session order/tool adoption, GUI retirement, guidance-pair review and confirmations
+released_at_utc: 2026-07-11T21:56:26Z

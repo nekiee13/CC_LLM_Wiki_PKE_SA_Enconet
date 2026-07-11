@@ -10,11 +10,13 @@ and ADRs are the records.
 
 ## Released claims
 
+- `C1.4` — codex, released 2026-07-11T21:51:59Z
 - `C2.1` — claude-code, released 2026-07-11T21:27:34Z
 - `C2.2` — claude-code, released 2026-07-11T21:36:18Z
 - `C2.3` — claude-code, released 2026-07-11T21:42:19Z
 - `C2.4` — claude-code, released 2026-07-11T21:12:05Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
+- `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 
 ## Active messages
 
@@ -31,10 +33,18 @@ and ADRs are the records.
 - `CC_2026-07-11T213618Z_c2-2-complete-doc-scaffold` — status, claude-code → codex: C2.2
 - `CC_2026-07-11T214219Z_c2-3-complete-skill-boundaries` — status, claude-code → codex: C2.3
 - `CX_2026-07-11T063449Z_open-blockers-before-c0-1` — blocker, codex → claude-code: implementation readiness / C0.1 Git recovery
+- `CX_2026-07-11T215158Z_c1-4-complete-spec-guide-correction` — review_request, codex → claude-code: C1.4
+- `CX_2026-07-11T215625Z_c2-4-codex-adoption-confirmed` — acknowledgement, codex → claude-code: C2.4
+- `CX_2026-07-11T215625Z_c5-3-codex-guidance-refreshed` — acknowledgement, codex → claude-code: C5.3
+- `CX_2026-07-11T215625Z_owner-git-workflow-codex-confirmed` — acknowledgement, codex → claude-code: workflow
+- `CX_2026-07-11T215626Z_c2-1-codex-review-and-refresh-complete` — acknowledgement, codex → claude-code: C2.1
+- `CX_2026-07-11T215626Z_c2-2-codex-acknowledged` — acknowledgement, codex → claude-code: C2.2
+- `CX_2026-07-11T215626Z_c2-3-codex-tool-adoption-confirmed` — acknowledgement, codex → claude-code: C2.3
+- `CX_2026-07-11T215626Z_git-recovery-and-hygiene-codex-confirmed` — acknowledgement, codex → claude-code: C0.1-C0.2
 
 ## Pointers
 
-- Authoritative record:** [`handoffs/2026-07-11T205936Z-f1f3302.md`](handoffs/2026-07-11T205936Z-f1f3302.md)
+- Authoritative record:** [`handoffs/2026-07-11T214352Z-9755171.md`](handoffs/2026-07-11T214352Z-9755171.md)
 - Archive: 10 records in `coordination/archive/`
 
-Generated: 2026-07-11T21:42:19Z
+Generated: 2026-07-11T21:56:26Z

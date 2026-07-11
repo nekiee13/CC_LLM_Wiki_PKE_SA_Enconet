@@ -29,8 +29,17 @@ requirements defined here.
 - Keep the active message directory limited to unresolved communication. Once resolution is
   confirmed, create an immutable resolution manifest and move Codex-owned `CX_` messages to
   `Enconet/coordination/archive/`. Claude Code archives its own `CC_` records.
-- Until C0.1 restores Git and C2.4 creates the complete channel, messages created by explicit
-  owner instruction are bootstrap records; `BOARD.md`, claims, and tooling remain deferred.
+- Use `scripts/agent_coord.py` for claims, messages, releases, status generation, and
+  coordination validation. The accepted message types include `claim` and `status` in addition
+  to the original ADR-0017 types, as codified by `Enconet/coordination/TEAM_PROTOCOL.md`.
+
+## Git workflow
+
+- This is a single-developer repository. Prefer frequent, small commits pushed directly to the
+  active working branch, currently `main`.
+- Use pull requests only when the project owner explicitly requests one or an external constraint
+  requires one. Do not introduce default PR ceremony, review-gate branches, or long-lived feature
+  branches; cross-agent review occurs through immutable coordination messages and pushed commits.
 
 ## Authority and safety
 
@@ -50,11 +59,16 @@ requirements defined here.
 3. Read `coordination/BOARD.md`, unread messages addressed to Codex, and active claims when present.
 4. Check the actual tree and Git identity before trusting paths or status copied from another machine.
 5. Use jdocmunch for indexed documentation and jcodemunch for indexed code; refresh only Codex-owned indexes after edits.
-6. Keep changes scoped and add tests in proportion to audit, data-integrity, and cross-project risk.
-7. Before session close, use the user-global `handoff` skill and record failed or unavailable checks explicitly.
+6. Run `python scripts/check_guidance_drift.py` after guidance or paired-skill edits and
+   `python scripts/check_skill_structure.py` before adding or moving skills.
+7. Keep changes scoped and add tests in proportion to audit, data-integrity, and cross-project risk.
+8. Before session close, use the user-global `handoff` skill and record failed or unavailable checks explicitly.
 
-## Current preparation constraints
+## Current environment
 
-- Git metadata has not yet been verified at this workspace root.
-- The active Python environment may not contain Enconet runtime/test dependencies.
+- Git is established at the `03_PKE_SA_NQA1` workspace root on `main`; verify current HEAD,
+  upstream, and worktree state at session start rather than relying on a copied snapshot.
+- The active shared Miniconda interpreter has the Enconet runtime/test dependencies installed
+  (`pytest`, `pandas`, and `openpyxl`, verified by C5.3 on 2026-07-11). A dedicated project virtual
+  environment remains an owner decision, and future sessions must still treat failed imports as failures.
 - Planned files and directories are not evidence of implemented capability.
