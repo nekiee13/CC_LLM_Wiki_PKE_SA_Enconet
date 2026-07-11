@@ -51,11 +51,16 @@ recordkeeping requirements.
 ## Working protocol
 
 1. Read this file and the nearest project `CLAUDE.md`.
-2. Read the current handoff/status records when they exist.
+2. Session-start reading order (ADR-0017, C2.4): `HANDOFF.md` → `coordination/BOARD.md`
+   → unread `coordination/messages/` → active `coordination/claims/`. The neutral
+   protocol authority is `Enconet/coordination/TEAM_PROTOCOL.md`; use
+   `python scripts/agent_coord.py` (status | claim | release | message | acknowledge |
+   validate) for coordination operations.
 3. Verify the actual tree and Git identity before trusting copied paths/status.
 4. Use jdocmunch/jcodemunch indexes when available and refresh them after edits.
 5. Keep changes scoped and test in proportion to audit/data-integrity risk.
 6. Use the shared handoff skill before session close or transfer.
 
-Current constraints: Git identity is not yet verified; runtime/test dependencies may be absent;
-planned files are not evidence of implemented capability.
+Current constraints: runtime/test dependencies (`pytest`, `pandas`, `openpyxl`) may be
+absent; planned files are not evidence of implemented capability. Repository facts (root,
+remote, identity) live in `doc/AS-IS.md`.
