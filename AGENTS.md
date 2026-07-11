@@ -63,6 +63,9 @@ requirements defined here.
    `python scripts/check_skill_structure.py` before adding or moving skills.
 7. Keep changes scoped and add tests in proportion to audit, data-integrity, and cross-project risk.
 8. Before session close, use the user-global `handoff` skill and record failed or unavailable checks explicitly.
+9. Publish session handoffs through `python scripts/make_handoff.py`; validate existing records
+   with `python scripts/make_handoff.py --validate <record>`. Never label a check `passed`
+   without its command and integer exit code.
 
 ## Current environment
 

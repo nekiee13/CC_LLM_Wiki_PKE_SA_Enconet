@@ -60,6 +60,8 @@ Record dependency or encoding failures as failures, not as successful verificati
 - Workspace-shared Codex skills: `../.agents/skills/`.
 - Enconet-only Codex skills: `.agents/skills/`.
 - Use the user-global `handoff` skill when asked to close, pause, transfer, or summarize a working session.
+- Use `../scripts/make_handoff.py` to render, validate, and atomically publish the handoff record
+  and pointer; the skill remains the evidence-collection and status contract.
 - Do not claim that `/handoff` is fully integrated with project state until the related master-plan
   acceptance criteria and validators are implemented.
 

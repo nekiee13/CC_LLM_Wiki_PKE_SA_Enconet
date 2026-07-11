@@ -1,0 +1,15 @@
+task: C3
+agent: codex
+status: released
+claimed_at_utc: 2026-07-11T22:05:36Z
+last_renewed_at_utc: 2026-07-11T22:05:36Z
+expires_at_utc: 2026-07-12T22:05:36Z
+anticipated_files:
+  - handoff_schema.yml
+  - scripts/make_handoff.py
+  - scripts/tests/test_make_handoff.py
+  - AGENTS.md
+  - Enconet/AGENTS.md
+  - Enconet/coordination
+note: C3.1-C3.3 machine handoff schema, deterministic helper, validator/test matrix, Codex protocol integration; Claude-side integration by coordination request only
+released_at_utc: 2026-07-11T22:11:56Z

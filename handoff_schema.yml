@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "record_type": "handoff",
+  "required_frontmatter": [
+    "record_type", "schema_version", "project", "created_at_utc",
+    "status", "git_head", "source_agent", "validation_checks_json"
+  ],
+  "status_values": ["complete", "partial", "blocked"],
+  "check_state_values": ["passed", "failed", "not-run", "unknown"],
+  "required_headings": [
+    "Objective and Phase", "Completed Work", "Decisions",
+    "Validation Evidence", "Repository and Index State", "Blockers and Risks",
+    "Uncommitted or Generated Artifacts", "Exact Next Action", "Follow-up Queue"
+  ],
+  "passed_check_requires": ["command", "exit_code"]
+}
