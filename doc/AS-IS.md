@@ -25,8 +25,11 @@ repository baseline changes.
   the new history after the forced update.
 - Baseline commit contains 103 files. Excluded by bootstrap `.gitignore` (root):
   `*/sieving/DATA/` (68 files, ~0.96 MB, per ADR-0002) and Python caches (3 `.pyc`).
-  Ignore policy refinement, DATA checksum manifest, and external backup designation
-  remain Task C0.2.
+  Ignore policy refinement and the DATA checksum manifest were completed by Task C0.2
+  (2026-07-11): root `.gitignore` finalized, `.gitattributes` line-ending policy added,
+  `Enconet/sieving/DATA_MANIFEST.json` (68 files, SHA-256) tracked and verified by
+  `Enconet/sieving/tools/verify_data_manifest.py`. Commit tags: `doc/GIT_CONVENTIONS.md`.
+  External DATA backup designation remains the open owner action.
 
 ## Authentication
 
@@ -38,6 +41,5 @@ repository baseline changes.
 ## Known caveats
 
 - Global `user.name`/`user.email` are unset; identity is repo-local only.
-- `core.autocrlf` conversion is active (LF→CRLF warnings on add); line-ending policy
-  (`.gitattributes`) is a C0.2 candidate.
+- Line-ending policy is set by root `.gitattributes` (`* text=auto`, LF in repository).
 - Runtime dependencies `pytest`, `pandas`, `openpyxl` remain absent (C5.3).

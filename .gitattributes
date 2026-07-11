@@ -1,0 +1,13 @@
+# Line-ending policy (Task C0.2): normalize text to LF in the repository;
+# working-tree endings follow each machine's git configuration.
+* text=auto
+
+# Always-LF for cross-platform tooling
+*.sh text eol=lf
+
+# Never normalize binary evidence formats
+*.pdf binary
+*.png binary
+*.jpg binary
+*.xlsx binary
+*.db binary

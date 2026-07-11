@@ -1,0 +1,280 @@
+{
+  "generated_at_utc": "2026-07-11T21:03:59Z",
+  "data_dir": "DATA",
+  "source_note": "Supplier-derived crumb JSON corpus (ADR-0002): tracked by checksum only, never committed to git.",
+  "file_count": 68,
+  "files": {
+    "DOCUMENT/ASME_NQA-1__DOCUMENT__midlayer.json": {
+      "size": 81626,
+      "sha256": "8ee164a66cc69b540383db04e139e2fb3bbcc3e7f1d2ceb1e0374cbc7126d364"
+    },
+    "DOCUMENT/ASME_NQA-1__DOCUMENT__v1.json": {
+      "size": 66083,
+      "sha256": "cfa5d0d975be765ac1593d3e9e4d418b426c3251fb5fc5cb6925e4b6d8d857e4"
+    },
+    "DOCUMENT/tek_01-NEK-PCZ-RI-2005.json": {
+      "size": 4283,
+      "sha256": "1bcbd5af33837be59c419f080dd0ed0d56a2772d0b7b4a1639df356814936fec"
+    },
+    "DOCUMENT/tek_02-NEK-PRZ-JEKLO-2005.json": {
+      "size": 8264,
+      "sha256": "ee0c5575f2e111539687bea1d5d23266794e65fb46ce3b3e8cc9bfe7eb6686f4"
+    },
+    "DOCUMENT/tek_03-NEK-PAINT-SPEC-1219S-2005.json": {
+      "size": 5510,
+      "sha256": "73a9eecc4e89c1216aae8acb49eae5373f66a5c7a6317fe5b90460d995c5f68a"
+    },
+    "DOCUMENT/tek_04-NEK-PAINT-QC-2005.json": {
+      "size": 4229,
+      "sha256": "b7c9f5d3087c618bbc8710737b0dbf0da7e535eca342683223f1fe3d3382cc16"
+    },
+    "DOCUMENT/tek_05-NEK-1219-S-2005.json": {
+      "size": 4274,
+      "sha256": "b00b2205547801384d3bf225d0a1cd878a528571d91c030af30ca2439148c176"
+    },
+    "DOCUMENT/tek_06-NEK-1219S-2005-PRILOGA1.json": {
+      "size": 3371,
+      "sha256": "822837eb4ae8c9926fcf9b86c186849be80d9d94f472b2ef278fd2cbf1dde556"
+    },
+    "DOCUMENT/tek_07-NEK-PRILOGA2-2005.json": {
+      "size": 5049,
+      "sha256": "71cf23200f196f1118f2a9f0e333cf8b1d5c189b01a77184f7db752b346b7c36"
+    },
+    "DOCUMENT/tek_08-NEK_PKZ_PRILOGA3_MSDS_2005.json": {
+      "size": 4440,
+      "sha256": "213ddbecff7385da0a09fabb9b7b523e2d90ba5d1638672b79de0c0bf5b88ae1"
+    },
+    "DOCUMENT/tek_09-NEK-PCZ-RI-PRILOGA3.json": {
+      "size": 3362,
+      "sha256": "2fb05179cb9926de9a3ad174dd566843e8ab2ccb9843a6a1467cdce74b3b9526"
+    },
+    "DOCUMENT/tek_10-NEK-PROTIKOROZIJA-PRILOGA3-2005.json": {
+      "size": 3618,
+      "sha256": "8716e7f260643538c48e8d1379542524c0d8b6f2c188abc57e3b839d7e943d01"
+    },
+    "DOCUMENT/tek_11-NEK-PZ-JEKLO-PRILOGA3.json": {
+      "size": 4170,
+      "sha256": "fb271d0962ec56f901a8f50391ba622d7a72c211d41850f5cb2d3d46f6d5e207"
+    },
+    "DOCUMENT/tek_12-NEK-PCZ-PRILOGA3-2005.json": {
+      "size": 4909,
+      "sha256": "29e4e7dd1315046dd5c40bd54cac5a0e842da9af8caf10362ffda422e3c793f7"
+    },
+    "DOCUMENT/tek_13-NEK-PROTKOROZIJA-PRILOGA3.json": {
+      "size": 4401,
+      "sha256": "87b9c855e29d14cabf22105af8f358fd77d27deefe416792ff5299ebdf3cf126"
+    },
+    "DOCUMENT/tek_14-EK-PRILOGA3-SDS-DIMETCOTE6.json": {
+      "size": 2707,
+      "sha256": "35465cb74083ca7f4683b003c7e84d4bcbfd737cb4a416bcc8042d261a06b360"
+    },
+    "DOCUMENT/tek_DN_01.01_R0_(NA_V07-02).json": {
+      "size": 41144,
+      "sha256": "ce085ec1b960e8366af17862e741093950ef4f45342c663044304a689ccfaf9c"
+    },
+    "DOCUMENT/tek_DN_04.01_R3_Priprava_in_revidiranje_sistemske_doku.json": {
+      "size": 4924,
+      "sha256": "8bb9ac2dbeba15deb594d0fe41f0b71b07ec214696a3030b255f5555ff30b889"
+    },
+    "DOCUMENT/tek_DN_04.02_R0_Shranjevanje_in_souporaba_zapisov.json": {
+      "size": 4977,
+      "sha256": "8ffebec7dd75dcac2fa34a31928a1211caad27b4eaaa49cae4f80f980658657b"
+    },
+    "DOCUMENT/tek_DN_06.01_R3_Vrednotenje_dobaviteljev.json": {
+      "size": 6331,
+      "sha256": "15d37bc588533fa497d6805aacf14f2bd466f0f839eedfea5839d7ba767c9b07"
+    },
+    "DOCUMENT/tek_DN_09.01_R1_Osnove_AKZ.json": {
+      "size": 2933,
+      "sha256": "e7065c9d8b7994195a402d3381bd739ccde13d5c732de7705cc8fcee3061926e"
+    },
+    "DOCUMENT/tek_DN_09.02_R1_Priprava_površin.json": {
+      "size": 2922,
+      "sha256": "3dc93157aac54edb1585bd60d40ceda4519b0f3aac1d80ebf73a3b922b5951b9"
+    },
+    "DOCUMENT/tek_DN_09.03_R1_Izvajanje_metalizacije.json": {
+      "size": 4203,
+      "sha256": "8fa56ced20fd249c451f19b402d39b12eb83a7386469698856694a4a3f07e522"
+    },
+    "DOCUMENT/tek_DN_09.04_R1_Aplikacija_materialov.json": {
+      "size": 2375,
+      "sha256": "933d38dba725de6c4424ce51ac1dcf2e644521c0d747374af4c0993835feb16c"
+    },
+    "DOCUMENT/tek_DN_09.07_R1_Uporaba_in_vzdrževanje_opreme.json": {
+      "size": 4420,
+      "sha256": "7892ce664df02bd29e8b3edd199800c1375b6928d2beb07493f3d0552cd9be44"
+    },
+    "DOCUMENT/tek_DN_09.12_R1_Vodenje_delovnega_poročila.json": {
+      "size": 5007,
+      "sha256": "6c361280ed8f2c903972b5a12a1678c1480fb5e1df3e01436573b361c8dc327b"
+    },
+    "DOCUMENT/tek_DN_09.14_R1_Vzdrzevanje_Izvajanje_NEK.json": {
+      "size": 4769,
+      "sha256": "ff8ec841f818a42ea8f6d596b22ae7b9e67a2dc608a94f5403210c17ef2aa34c"
+    },
+    "DOCUMENT/tek_DN_09.15_R1_Izvajanje_SR_sistemov_na_betonih.json": {
+      "size": 4708,
+      "sha256": "8ab6aa75915a1a8fd2421e87bd68944cded2c0e2ea2dad0681bccc082844b413"
+    },
+    "DOCUMENT/tek_DN_09.16_R2_Izvajanje_protikorozijske_zaščite_v_CS.json": {
+      "size": 5189,
+      "sha256": "6d5791e3d6923b4c037c93c8ec0c285c721e44e6ffd70ff478cfb8159b7b1ec9"
+    },
+    "DOCUMENT/tek_DN_09.17_R1_Ravnanje_z_odpadki.json": {
+      "size": 4739,
+      "sha256": "89853fba64619ae2fed817ab944c50ce19cf1c04344541d7a18a9000e6ba72c3"
+    },
+    "DOCUMENT/tek_DN_10.01_R2_Katalog_kontrolnih_metod.json": {
+      "size": 3798,
+      "sha256": "ed40c0b40582a5478c7ffb6bd49d203a26bc94d7dcc91fe0e9f8fec6f059340d"
+    },
+    "DOCUMENT/tek_DN_10.02_R2_Kriteriji_in_metode_zagotavljanje_spre.json": {
+      "size": 4833,
+      "sha256": "9909c39ff52d0425c510444a2b00627cd7066e47c9a730ba7113f430b30200fb"
+    },
+    "DOCUMENT/tek_DN_10.03_R1_Navodila_za_izvajanje_kontrole_AKZ_del.json": {
+      "size": 4002,
+      "sha256": "b5a6fb73bebec100c4c0dd0431ea9991962eb7895355b6a407ad4347987cfe35"
+    },
+    "DOCUMENT/tek_DN_10.04_R1_Meritve_debeline.json": {
+      "size": 3226,
+      "sha256": "12310e5d9abb94dd4f3fa2b90a55dc48da0192e7171b1e3752b63fcc29123c0b"
+    },
+    "DOCUMENT/tek_DN_10.05_R1_Tehnične_zahteve_za_betonske_podlage.json": {
+      "size": 4144,
+      "sha256": "12f72e90da21d6262007de2b88a82999dd6d26d7e9e3eb19037a914c8218dd61"
+    },
+    "DOCUMENT/tek_DN_10.06_R1_Prevzem_objektov_v_izvajanje.json": {
+      "size": 4645,
+      "sha256": "11243a61ad17999430469ef9c230960b1bdffee81c4b954686ff5e137882ee07"
+    },
+    "DOCUMENT/tek_DN_10.07_R1_Prevzem_preverjanje_reatestacija_mater.json": {
+      "size": 4838,
+      "sha256": "e14ea0a47c1dbc23ade4e74dc9475f6f11e80f4521b6c3c095e6872340c87aa1"
+    },
+    "DOCUMENT/tek_DN_10.09_Vizualno_ocenjevanje.json": {
+      "size": 4866,
+      "sha256": "e460a2826a9747c56a8c16f86887a438942ade478c66d90a567583fed81364f2"
+    },
+    "DOCUMENT/tek_DN_10.10_Destruktivna_testiranja.json": {
+      "size": 53758,
+      "sha256": "4988a6cff4e1315fd9d60cf79ff2d0f785005c88b1e7284ceb6b66095f47fdf7"
+    },
+    "DOCUMENT/tek_DN_11.01_R5_Vzdrževanje_meril.json": {
+      "size": 4115,
+      "sha256": "657bcdf058072f232dd6c2e7e6df33acfa5241e651f0504a01d79e4a28fd0e70"
+    },
+    "DOCUMENT/tek_DN_15.01_R2_Ravnanje_skladiščenje_zaščita_in_dosta.json": {
+      "size": 4389,
+      "sha256": "7320fdeb61830060b9bdfc8133baff319731d22fd74ef79c8ebd688ad3f94807"
+    },
+    "DOCUMENT/tek_DN_15.02_R3_Ravnanje_skladiščenje_zaščita_in_dosta.json": {
+      "size": 5051,
+      "sha256": "76454403e4f3d3cc55061c99d34276fef238f70855a33571a19937af713bc5ce"
+    },
+    "DOCUMENT/tek_DN_15.03_Navodilo_za_šifriranje_OM.json": {
+      "size": 2375,
+      "sha256": "13a13a6c58ad781b2fee7f980e044ea77f398af2f59a64002c560b7c90215e00"
+    },
+    "DOCUMENT/tek_DN_18.01_R8_Usposabljanje_za_SR_sisteme_v_NEK.json": {
+      "size": 5903,
+      "sha256": "7f42f1c18874b03a76db48f76ee98460bb1a4b1f42d76a19bd29e0368354ae69"
+    },
+    "DOCUMENT/tek_PK_R8_(PSV-10)_v2.json": {
+      "size": 9142,
+      "sha256": "e523f6cbbac5af5a119544d8f588f9b384950aaec8189c572416e37748104354"
+    },
+    "DOCUMENT/tek_SP_4.1.1_R10_Zagotavljanje_kakovosti_v_NEK.json": {
+      "size": 61911,
+      "sha256": "82f024fa2fdec69d6de811307448cd4577954c6db35b1c00f789b612fa2be8f0"
+    },
+    "DOCUMENT/tek_SP_4.1.2_R2_Spremljanje_kakovosti_v_procesih.json": {
+      "size": 5493,
+      "sha256": "b32afd1466649137fb3246b29854c414848f4ca436717f3cafd1d25ad51975a5"
+    },
+    "DOCUMENT/tek_SP_4.2.1_R8_Obvladovanje_dokumentov_podatkov_in_za.json": {
+      "size": 4871,
+      "sha256": "4a05b96ee35476d89a18a25e1503e7e41a05ff120bc434c891953a5513b5bc47"
+    },
+    "DOCUMENT/tek_SP_6.2.1_R5_Kadri.json": {
+      "size": 5292,
+      "sha256": "a2280b9c8b598cbb723ac96df76d636276e8a3254ffd33aaf2d7a59e897bf0db"
+    },
+    "DOCUMENT/tek_SP_7.2.1_-_Komerciala.json": {
+      "size": 5802,
+      "sha256": "3aa048af366c8d4c2612946bf4eaca2197a56f403125a8ddf6109f6df837738e"
+    },
+    "DOCUMENT/tek_SP_7.2.2_R4_Priprava_specifikacij_in_projektov_za_.json": {
+      "size": 80639,
+      "sha256": "819d625c5ebc4d973745505a39075c9ad9f8e0bf4a4f026503a3022d4ac3ddbe"
+    },
+    "DOCUMENT/tek_SP_7.3.1_R7_(PROCES_RAZVOJ_IN_KONTROLA).json": {
+      "size": 53496,
+      "sha256": "f59717d8c787dd754e5a347af30c5a35596aee809d79b9a536c5ce313fc93669"
+    },
+    "DOCUMENT/tek_SP_7.3.2_R5_Projekti.json": {
+      "size": 39047,
+      "sha256": "4771bfd6c9ea438b9af769d27318e8e4f013b820ee6eb9a71397f5fdde0a68f4"
+    },
+    "DOCUMENT/tek_SP_7.4.1_R6_Nabava.json": {
+      "size": 66945,
+      "sha256": "280ae80653d91a06a87ec07db0706180ab126cfe75c0d8a9fc44b55496c240c9"
+    },
+    "DOCUMENT/tek_SP_7.4.2_R5_Nabava_vhodna_kontrola_in_skladiščenje.json": {
+      "size": 64995,
+      "sha256": "765d09cfebb587ec503ab4100f4b56c8d3218972a137728472ec24f2baa27900"
+    },
+    "DOCUMENT/tek_SP_7.5.1_PROIZVODNJA_R6.json": {
+      "size": 6289,
+      "sha256": "16b8fd09bb21b242193a058be653fbb4e3ab8994069cbef241d25e38337d5d7c"
+    },
+    "DOCUMENT/tek_SP_7.5.6_R7_Delovisce_Krsko.json": {
+      "size": 5526,
+      "sha256": "24acfc44e927bad0ca734f4cc7001ce1de75b05c4fa3ab92ac6422fbfe44e88e"
+    },
+    "DOCUMENT/tek_SP_7.6.1_R5_Merilna_oprema.json": {
+      "size": 3513,
+      "sha256": "2d31f7de6025d9ec366a0d1bb86c5c22566031d751c0c6b8bd503177a4e7a352"
+    },
+    "DOCUMENT/tek_SP_8.2.2_R6_Notranja_presoja.json": {
+      "size": 3680,
+      "sha256": "d0110fa813fd2ac95863d1e5fc21c82d1a1644a9a3fde2fc92a7bacafeeacf85"
+    },
+    "DOCUMENT/tek_SP_8.2.3_R5_Kontrola_kakovosti_za_NEK.json": {
+      "size": 5156,
+      "sha256": "a6d75fc164e415e81d4d1c2fcc5605687a154a394b8bf3c528e7b8e9c85ad951"
+    },
+    "DOCUMENT/tek_SP_8.2.4_R1_Kontrola_kakovosti.json": {
+      "size": 6993,
+      "sha256": "8086661d1694f27c0758147b9407602a05a6b2b9d6aed5a8dd2ebe4c80c8103c"
+    },
+    "DOCUMENT/tek_SP_8.3.1_R8_Neskladnosti.json": {
+      "size": 3950,
+      "sha256": "29a8aee4fc6b653d51ba2b58118a2f6f9764810a72a4bab4a661a465325ab3a3"
+    },
+    "DOCUMENT/tek_SP_8.5.1_R7_Izboljšave.json": {
+      "size": 3907,
+      "sha256": "387384ada63f18e023026363b0a03c4b06f091d6bd30199525310ae3514c985d"
+    },
+    "DOCUMENT/tek_SP_Planiranje_in_načrtovanje_(OP_V07-junij_2018).json": {
+      "size": 4512,
+      "sha256": "69c9192e808fa96314c0630d3814fe659586ee8ea5b86d55669827f86ccc4392"
+    },
+    "DOCUMENT/tek_SP_VODENJE.json": {
+      "size": 4100,
+      "sha256": "eb72d7323ab6df3a835d4411ce64c16cbfa92849c18816bdad8219e73d868924"
+    },
+    "DOCUMENT/tek_SP_Vodstveni_pregled_(OP-V06).json": {
+      "size": 3874,
+      "sha256": "c45277054b5a1c5ac38de0fd8b74a77afe90575ae5bdcaf9eb69d57c22bc26bd"
+    },
+    "RULE/10CFR21.json": {
+      "size": 31004,
+      "sha256": "de7d1866c0ec7ed46ef2c215561facb5c3b388c9136e7a3546edee51892df590"
+    },
+    "RULE/10CFR50_AppendixB__RULE__v1.json": {
+      "size": 109118,
+      "sha256": "8f2b1a3748b2f9fecb307b76e8484cddc4d94e49946597c1d18283256bc3bc1d"
+    }
+  }
+}
