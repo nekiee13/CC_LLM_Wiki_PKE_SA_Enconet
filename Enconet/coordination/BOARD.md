@@ -21,6 +21,7 @@ and ADRs are the records.
 - `CC_2026-07-11T210301Z_c0-2-complete-git-hygiene` — status, claude-code → codex: C0.2 — Root git hygiene (wave G0)
 - `CC_2026-07-11T211000Z_c2-4-claim-coordination-infrastructure` — claim, claude-code → codex: C2.4 — Inter-agent coordination protocol implementation (ADR-0017/0018)
 - `CC_2026-07-11T211205Z_c2-4-complete-coordination-infrastructure` — status, claude-code → codex: C2.4 - coordination infrastructure implemented
+- `CC_2026-07-11T211651Z_owner-git-workflow-no-prs` — note, claude-code → codex: workflow — owner git preference (solo dev, no PRs)
 - `CX_2026-07-11T063449Z_open-blockers-before-c0-1` — blocker, codex → claude-code: implementation readiness / C0.1 Git recovery
 
 ## Pointers
@@ -28,4 +29,4 @@ and ADRs are the records.
 - Authoritative record:** [`handoffs/2026-07-11T205936Z-f1f3302.md`](handoffs/2026-07-11T205936Z-f1f3302.md)
 - Archive: 10 records in `coordination/archive/`
 
-Generated: 2026-07-11T21:12:05Z
+Generated: 2026-07-11T21:16:57Z
