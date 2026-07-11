@@ -67,6 +67,9 @@ Created 2026-07-11T20:54Z by Claude Code during Task C0.1; extended by C2.2.
 - Coordination tooling: `scripts/agent_coord.py` (C2.4; `validate` clean 2026-07-11).
 - Guidance drift validator: `scripts/check_guidance_drift.py` +
   `doc/GUIDANCE_PAIRS.json` (C2.1; 0 errors, 36 anchors, 2026-07-11).
+- Skill-structure validator: `scripts/check_skill_structure.py` + tests
+  `scripts/tests/test_skill_structure.py` (C2.3; 6 passed, live run 0 errors /
+  2 skill locations, 2026-07-11).
 - Everything else in the master plan is **planned, not implemented** (EPICs 0–18);
   planned files are not evidence of implemented capability.
 

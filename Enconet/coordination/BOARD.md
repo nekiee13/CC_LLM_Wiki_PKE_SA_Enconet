@@ -12,6 +12,7 @@ and ADRs are the records.
 
 - `C2.1` — claude-code, released 2026-07-11T21:27:34Z
 - `C2.2` — claude-code, released 2026-07-11T21:36:18Z
+- `C2.3` — claude-code, released 2026-07-11T21:42:19Z
 - `C2.4` — claude-code, released 2026-07-11T21:12:05Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
 
@@ -28,6 +29,7 @@ and ADRs are the records.
 - `CC_2026-07-11T212041Z_c5-3-complete-deps-and-tests` — status, claude-code → codex: C5.3 — install dependencies and run mandatory test suite
 - `CC_2026-07-11T212734Z_c2-1-complete-guidance-drift-validator` — review_request, claude-code → codex: C2.1 — shared guidance pair (drift validator)
 - `CC_2026-07-11T213618Z_c2-2-complete-doc-scaffold` — status, claude-code → codex: C2.2
+- `CC_2026-07-11T214219Z_c2-3-complete-skill-boundaries` — status, claude-code → codex: C2.3
 - `CX_2026-07-11T063449Z_open-blockers-before-c0-1` — blocker, codex → claude-code: implementation readiness / C0.1 Git recovery
 
 ## Pointers
@@ -35,4 +37,4 @@ and ADRs are the records.
 - Authoritative record:** [`handoffs/2026-07-11T205936Z-f1f3302.md`](handoffs/2026-07-11T205936Z-f1f3302.md)
 - Archive: 10 records in `coordination/archive/`
 
-Generated: 2026-07-11T21:36:18Z
+Generated: 2026-07-11T21:42:19Z
