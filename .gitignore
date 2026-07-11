@@ -1,0 +1,19 @@
+# Bootstrap ignore policy (C0.1). Refined by Task C0.2 (root ignore policy).
+
+# ADR-0002: sieving DATA corpora are never tracked; checksum manifests are.
+*/sieving/DATA/
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS noise
+Thumbs.db
+.DS_Store
