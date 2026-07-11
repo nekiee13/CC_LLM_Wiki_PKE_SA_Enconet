@@ -1,0 +1,11 @@
+task: C5.3
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-11T21:17:36Z
+last_renewed_at_utc: 2026-07-11T21:17:36Z
+expires_at_utc: 2026-07-12T21:17:36Z
+anticipated_files:
+  - Enconet/sieving (test execution only, read-only)
+  - Enconet/coordination (CC_ records)
+note: Install pytest/pandas/openpyxl; run mandatory suite + verify_install.py from Enconet/sieving
+released_at_utc: 2026-07-11T21:20:41Z

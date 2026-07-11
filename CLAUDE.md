@@ -61,6 +61,8 @@ recordkeeping requirements.
 5. Keep changes scoped and test in proportion to audit/data-integrity risk.
 6. Use the shared handoff skill before session close or transfer.
 
-Current constraints: runtime/test dependencies (`pytest`, `pandas`, `openpyxl`) may be
-absent; planned files are not evidence of implemented capability. Repository facts (root,
+Current constraints: runtime/test dependencies (`pytest`, `pandas`, `openpyxl`) are
+installed in the default interpreter on this machine (C5.3, 2026-07-11) — verify with
+`python -m pytest --version` on other machines; planned files are not evidence of
+implemented capability. Repository facts (root,
 remote, identity) live in `doc/AS-IS.md`.
