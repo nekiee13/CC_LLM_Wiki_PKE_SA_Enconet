@@ -1,0 +1,276 @@
+{
+  "_comment": [
+    "Guidance-pair drift manifest (Task C2.1, ADR-0005/0016). Consumed by",
+    "scripts/check_guidance_drift.py. Each rule is a semantic anchor that must be",
+    "present on BOTH sides of a pair; 'pattern'/'patterns' apply to both sides,",
+    "'claude_pattern(s)'/'codex_pattern(s)' override per side when wording differs.",
+    "Patterns are case-insensitive regexes searched with DOTALL.",
+    "documented_differences records intentional or pending one-sided content:",
+    "the validator reports them as informational, never as failures. Silent",
+    "divergence (an anchor missing on either side) fails the check.",
+    "Paths are workspace-root-relative; a leading ~/ resolves against the user home.",
+    "This file is agent-neutral shared authority (same class as TEAM_PROTOCOL.md):",
+    "either agent may propose changes via coordination messages; adding a rule or a",
+    "documented difference requires the pair files to actually justify it."
+  ],
+  "pairs": [
+    {
+      "id": "workspace-guidance",
+      "claude": "CLAUDE.md",
+      "codex": "AGENTS.md",
+      "rules": [
+        {
+          "id": "workspace-root-model",
+          "description": "03_PKE_SA_NQA1 is the workspace root; Enconet/Ekonerg/TEKOL are project entries",
+          "patterns": ["workspace root", "Ekonerg", "TEKOL"]
+        },
+        {
+          "id": "nested-no-weakening",
+          "description": "Nested guidance may add rules but must not weaken evidence/validation requirements",
+          "pattern": "must not weaken"
+        },
+        {
+          "id": "infrastructure-separation",
+          "description": "ADR-0016 reciprocal infrastructure ban (each agent edits only its own side)",
+          "claude_patterns": ["never create, edit,", "Codex"],
+          "codex_patterns": ["Do not modify or re-index Claude-owned", "Claude Code owns"]
+        },
+        {
+          "id": "coordination-channel",
+          "description": "ADR-0017 coordination via immutable author-prefixed messages",
+          "patterns": ["coordination/", "messages", "immutable"]
+        },
+        {
+          "id": "message-lifecycle",
+          "description": "ADR-0018 active queue vs archive with resolution manifests",
+          "patterns": ["resolution manifest", "archive"]
+        },
+        {
+          "id": "authority-controlled-docs",
+          "description": "Controlled documents and approved decisions outrank historical exports",
+          "pattern": "outrank historical"
+        },
+        {
+          "id": "context-non-authoritative",
+          "description": "docs/context/ is non-authoritative unless promoted",
+          "patterns": ["docs/context/", "non-authoritative"]
+        },
+        {
+          "id": "data-in-place-ban",
+          "description": "No in-place modification of controlled evidence or sieving/DATA",
+          "pattern": "sieving/DATA.{0,60}in place"
+        },
+        {
+          "id": "repair-script-review",
+          "description": "Repair/migration scripts require target-root, dry-run, backup review",
+          "patterns": ["dry-run", "backup"]
+        },
+        {
+          "id": "no-false-validation",
+          "description": "Never report skipped/blocked/unrun validation as passed",
+          "pattern": "skipped, blocked"
+        },
+        {
+          "id": "session-start-order",
+          "description": "Session start reads handoff, BOARD, unread messages, active claims",
+          "claude_patterns": ["HANDOFF\\.md.{0,40}coordination/BOARD\\.md", "claims"],
+          "codex_patterns": ["handoff", "BOARD\\.md", "active claims"]
+        },
+        {
+          "id": "handoff-at-session-close",
+          "description": "Session end uses the shared/user-global handoff skill (mandatory)",
+          "pattern": "session close"
+        },
+        {
+          "id": "workspace-doc-dir",
+          "description": "Workspace-wide engineering documentation lives in doc/",
+          "pattern": "workspace-wide engineering documentation in .?doc/"
+        },
+        {
+          "id": "verify-tree-before-trust",
+          "description": "Verify actual tree/Git state before trusting copied paths or status",
+          "claude_pattern": "Verify the actual tree",
+          "codex_pattern": "Check the actual tree"
+        },
+        {
+          "id": "planned-not-implemented",
+          "description": "Planned files are not evidence of implemented capability",
+          "pattern": "not evidence of implemented capability"
+        }
+      ],
+      "documented_differences": [
+        {
+          "id": "skill-tree-layout",
+          "description": "Skill install locations are tool-specific (.claude/skills vs .agents/skills; Codex additionally distinguishes user-global $HOME/.agents/skills)."
+        },
+        {
+          "id": "owned-index-names",
+          "description": "Each side names only its own tool indexes (Claude: PKE_SA_NQA1_Enconet_docs/_controlled, Enconet-0a063bd7; Codex: Codex_global_guidance, PKE_SA_NQA1_codex_guidance, PKE_SA_NQA1_agent_guidance)."
+        },
+        {
+          "id": "coordination-tooling-adoption",
+          "description": "scripts/agent_coord.py is named in Claude-side protocol only; Codex adoption requested in CC_2026-07-11T211205Z_c2-4-complete-coordination-infrastructure (pending)."
+        },
+        {
+          "id": "dependency-constraint-staleness",
+          "description": "Claude side records pytest/pandas/openpyxl as installed (C5.3, 2026-07-11); Codex side still says the environment may lack them. Codex-side refresh requested in CC_2026-07-11T212041Z_c5-3-complete-deps-and-tests (pending)."
+        },
+        {
+          "id": "git-facts-pointer",
+          "description": "Claude side points repository facts to doc/AS-IS.md; Codex side predates C0.1/C0.2 and still carries the unverified-Git constraint (pending Codex-side refresh)."
+        }
+      ]
+    },
+    {
+      "id": "enconet-guidance",
+      "claude": "Enconet/CLAUDE.md",
+      "codex": "Enconet/AGENTS.md",
+      "rules": [
+        {
+          "id": "read-first-master-plan",
+          "description": "Read-first names MASTER_DEVELOPMENT_PLAN.md as canonical",
+          "pattern": "MASTER_DEVELOPMENT_PLAN\\.md"
+        },
+        {
+          "id": "read-first-alignment-plan",
+          "description": "Read-first names docs/ALIGNMENT_PLAN.md as canonical",
+          "pattern": "docs/ALIGNMENT_PLAN\\.md"
+        },
+        {
+          "id": "read-first-adr-register",
+          "description": "Read-first names decisions/README.md (ADR register)",
+          "pattern": "decisions/README\\.md"
+        },
+        {
+          "id": "read-first-reconciliation",
+          "description": "Read-first names docs/CX_CC_RECONCILIATION.md",
+          "pattern": "CX_CC_RECONCILIATION\\.md"
+        },
+        {
+          "id": "context-archive-historical",
+          "description": "docs/context/ and docs/_archive/ are historical input, not a contract",
+          "patterns": ["docs/context/", "_archive", "histor"]
+        },
+        {
+          "id": "code-location",
+          "description": "Working code under sieving/src/json_extractor",
+          "pattern": "sieving/src/json_extractor"
+        },
+        {
+          "id": "tests-location",
+          "description": "Tests under sieving/tests",
+          "pattern": "sieving/tests"
+        },
+        {
+          "id": "fix-scripts-ban",
+          "description": "Do not run fix_files.py / fix_structure.py (unsafe root assumptions)",
+          "patterns": ["fix_files\\.py", "fix_structure\\.py", "root assumptions"]
+        },
+        {
+          "id": "fail-open-export-ban",
+          "description": "No export after a filter error without recorded explicit approval",
+          "patterns": ["export", "filter (or validation )?error"]
+        },
+        {
+          "id": "legacy-paths-ban",
+          "description": "Resolve active paths from roots/config, never legacy paths",
+          "pattern": "never legacy"
+        },
+        {
+          "id": "verification-commands",
+          "description": "Mandatory verification: pytest from Enconet/sieving plus verify_install.py",
+          "patterns": ["pytest -q -p no:cacheprovider", "verify_install\\.py", "PYTHONUTF8"]
+        },
+        {
+          "id": "handoff-skill-usage",
+          "description": "Use the user-global handoff skill to close/pause/transfer sessions",
+          "patterns": ["handoff", "user-global"]
+        }
+      ],
+      "documented_differences": [
+        {
+          "id": "gui-retirement-note",
+          "description": "Streamlit GUI retirement (owner decision 2026-07-04) is recorded on the Claude side only; Codex-side mirror pending a Codex-authored update."
+        },
+        {
+          "id": "appendix-b-sync-guardrail",
+          "description": "Appendix B taxonomy/schema synchronization guardrail is Codex-side only; Claude-side mirror pending."
+        },
+        {
+          "id": "spec-guide-read-first",
+          "description": "Codex read-first additionally lists Sieving_method_specification_Guide.md with the S10.1 caveat (C4.4); Claude side references the defect indirectly via workspace rules."
+        },
+        {
+          "id": "frozen-plans-guardrail",
+          "description": "Explicit frozen-plan wording (master plan / alignment plan not editable without owner reopening) is Codex-side only; Claude side relies on the authority section."
+        }
+      ]
+    },
+    {
+      "id": "handoff-skill",
+      "claude": "~/.claude/skills/handoff/SKILL.md",
+      "codex": "~/.agents/skills/handoff/SKILL.md",
+      "rules": [
+        {
+          "id": "no-implied-success",
+          "description": "Never convert missing information or an unrun check into implied success",
+          "pattern": "Never convert missing information"
+        },
+        {
+          "id": "frontmatter-contract",
+          "description": "Identical minimum frontmatter fields",
+          "patterns": ["record_type: handoff", "schema_version: 1", "git_head", "source_agent"]
+        },
+        {
+          "id": "status-vocabulary",
+          "description": "Overall status is complete|partial|blocked with the same semantics",
+          "patterns": ["complete", "partial", "blocked"]
+        },
+        {
+          "id": "nine-body-headings",
+          "description": "Nine body headings, identical names and order",
+          "patterns": ["Objective and Phase", "Completed Work", "Decisions", "Validation Evidence", "Repository and Index State", "Blockers and Risks", "Uncommitted or Generated Artifacts", "Exact Next Action", "Follow-up Queue"]
+        },
+        {
+          "id": "immutable-records",
+          "description": "Timestamped records are never overwritten",
+          "pattern": "Never overwrite a timestamped record"
+        },
+        {
+          "id": "nogit-handling",
+          "description": "Absent Git handled via git_state: unavailable and nogit suffix; no git init during handoff",
+          "patterns": ["nogit", "Do not.{0,5}initialize Git"]
+        },
+        {
+          "id": "pointer-after-record",
+          "description": "HANDOFF.md pointer is refreshed only after the immutable record validates",
+          "pattern": "Do not publish the pointer first"
+        },
+        {
+          "id": "no-secrets",
+          "description": "Never include secrets, raw controlled evidence, or credentials",
+          "pattern": "secrets, raw controlled evidence"
+        },
+        {
+          "id": "log-not-configured",
+          "description": "Absent log recorded as log_update: not-configured, never invented",
+          "pattern": "log_update: not-configured"
+        }
+      ],
+      "documented_differences": [
+        {
+          "id": "source-agent-value",
+          "description": "source_agent is claude-code on the Claude side and codex on the Codex side (by design)."
+        },
+        {
+          "id": "per-check-states",
+          "description": "Four-valued per-check states (passed|failed|not-run|unknown) and the project-specific notes section are currently Claude-side only; contract alignment per ADR-0014 says changes must update both sides."
+        },
+        {
+          "id": "scope-resolution-wording",
+          "description": "Each side reads its own guidance chain first (CLAUDE.md vs AGENTS.md); the Claude side adds an explicit project-neutrality preamble."
+        }
+      ]
+    }
+  ]
+}

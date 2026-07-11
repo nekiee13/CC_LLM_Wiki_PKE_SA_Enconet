@@ -13,7 +13,8 @@ recordkeeping requirements.
 - Put project-specific Claude Code skills in `<project>/.claude/skills/<skill>/SKILL.md`.
 - Exception: `/handoff` is installed user-globally (`~/.claude/skills/handoff/`) so every
   Claude project can use it (ADR-0014). Its contract stays identical to the workspace
-  Codex counterpart `.agents/skills/handoff/SKILL.md`; changes must update both.
+  Codex counterpart `~/.agents/skills/handoff/SKILL.md` (also user-global); changes must
+  update both.
 - Keep Claude Code discovery files separate from Codex `AGENTS.md`/`.agents` files. Equivalent
   rules must stay semantically aligned; tool-specific differences must be documented.
 - **Infrastructure ownership ban (ADR-0016/0017):** Claude Code must never create, edit,
@@ -59,7 +60,12 @@ recordkeeping requirements.
 3. Verify the actual tree and Git identity before trusting copied paths/status.
 4. Use jdocmunch/jcodemunch indexes when available and refresh them after edits.
 5. Keep changes scoped and test in proportion to audit/data-integrity risk.
-6. Use the shared handoff skill before session close or transfer.
+6. After editing any guidance or skill-pair file, run
+   `python scripts/check_guidance_drift.py` (manifest: `doc/GUIDANCE_PAIRS.json`, C2.1);
+   silent divergence between the CLAUDE.md/AGENTS.md pairs fails the check.
+7. Session end: running the user-global `/handoff` skill is mandatory before session
+   close or transfer; session start reads `HANDOFF.md` first (step 2), then verifies it
+   against reality (step 3).
 
 Current constraints: runtime/test dependencies (`pytest`, `pandas`, `openpyxl`) are
 installed in the default interpreter on this machine (C5.3, 2026-07-11) — verify with

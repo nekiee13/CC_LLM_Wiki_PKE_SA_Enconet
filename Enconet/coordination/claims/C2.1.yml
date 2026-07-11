@@ -1,0 +1,14 @@
+task: C2.1
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-11T21:21:54Z
+last_renewed_at_utc: 2026-07-11T21:21:54Z
+expires_at_utc: 2026-07-12T21:21:54Z
+anticipated_files:
+  - scripts/check_guidance_drift.py
+  - doc/GUIDANCE_PAIRS.yml
+  - CLAUDE.md (Claude side only)
+  - Enconet/CLAUDE.md (Claude side only)
+  - Enconet/coordination (CC_ records)
+note: Shared guidance pair: drift validator + manifest; AGENTS.md files read-only per ADR-0016
+released_at_utc: 2026-07-11T21:27:34Z
