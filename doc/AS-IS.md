@@ -1,7 +1,15 @@
-# AS-IS — Repository state
+# AS-IS — Verified current state
 
-Created 2026-07-11T20:54Z by Claude Code during Task C0.1. Update whenever the
-repository baseline changes.
+- **Scope:** verified facts about the repository, environment, and implemented
+  capability. Every claim here carries a file, command, or test reference
+  (ALIGNMENT_PLAN C2.2 acceptance); anything unverified belongs in `AFI.md` or the
+  plans, not here.
+- **Owner:** shared — the agent whose action changes the baseline updates this file
+  in the same change.
+- **Update trigger:** any change to repository identity, environment, dependency
+  state, or implemented capability.
+
+Created 2026-07-11T20:54Z by Claude Code during Task C0.1; extended by C2.2.
 
 ## Repository identity (C0.1, ADR-0001)
 
@@ -38,8 +46,32 @@ repository baseline changes.
   was removed on owner instruction 2026-07-11. Stored account: `nekiee13`.
 - `gh` CLI is not installed.
 
+## Environment (C5.3, 2026-07-11)
+
+- Default interpreter: `C:\xAppz\miniconda\python.exe`, Python 3.13.9 (shared
+  miniconda base env — no project venv; open owner decision, see `AFI.md`).
+- Installed 2026-07-11: pytest 9.1.1, pandas 3.0.3, openpyxl 3.1.5, numpy 2.5.1
+  (verify on other machines: `python -m pytest --version`).
+- Mandatory suite from `Enconet/sieving` (2026-07-11): `python -m pytest -q
+  -p no:cacheprovider` → **11 passed**, exit 0; `python verify_install.py`
+  (PYTHONUTF8=1) → all checks passed, exit 0.
+- Corpus integrity: `Enconet/sieving/tools/verify_data_manifest.py` →
+  OK, 68 files match `DATA_MANIFEST.json` (2026-07-11).
+- `gh` CLI is not installed (checked 2026-07-11).
+
+## Implemented capability (verified)
+
+- Sieving subsystem baseline: `Enconet/sieving/src/json_extractor`
+  (validate/flatten/query/export), tests in `Enconet/sieving/tests` (the 11 passing
+  tests above). Known gaps: `AFI.md`. Provenance: `Enconet/sieving/PROVENANCE.md`.
+- Coordination tooling: `scripts/agent_coord.py` (C2.4; `validate` clean 2026-07-11).
+- Guidance drift validator: `scripts/check_guidance_drift.py` +
+  `doc/GUIDANCE_PAIRS.json` (C2.1; 0 errors, 36 anchors, 2026-07-11).
+- Everything else in the master plan is **planned, not implemented** (EPICs 0–18);
+  planned files are not evidence of implemented capability.
+
 ## Known caveats
 
-- Global `user.name`/`user.email` are unset; identity is repo-local only.
+- Global `user.name`/`user.email` are unset; identity is repo-local only
+  (`git config user.name` at root).
 - Line-ending policy is set by root `.gitattributes` (`* text=auto`, LF in repository).
-- Runtime dependencies `pytest`, `pandas`, `openpyxl` remain absent (C5.3).
