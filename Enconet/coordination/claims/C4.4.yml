@@ -1,0 +1,16 @@
+task: C4.4
+agent: codex
+status: released
+claimed_at_utc: 2026-07-11T22:45:38Z
+last_renewed_at_utc: 2026-07-11T22:45:38Z
+expires_at_utc: 2026-07-12T22:45:38Z
+anticipated_files:
+  - Enconet/schemas/sieving_contract.yml
+  - Enconet/sieving/src/json_extractor/contract.py
+  - Enconet/sieving/src/json_extractor/config.py
+  - Enconet/sieving/src/json_extractor/templates/app_b.py
+  - Enconet/sieving/src/json_extractor/query/schema.py
+  - Enconet/sieving/tests/test_contract_drift.py
+  - Enconet/Sieving_method_specification_Guide.md
+note: Implement ADR-0003 single-owner sieving contract and drift/data revalidation tests
+released_at_utc: 2026-07-11T22:51:13Z

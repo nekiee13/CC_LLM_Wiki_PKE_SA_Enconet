@@ -1,0 +1,21 @@
+{
+  "manifest_version": "1.0",
+  "contract_version": "1.0",
+  "status": "pre_existing_defects_no_data_migration",
+  "files_total": 68,
+  "items_loaded": 665,
+  "bad_files": [
+    {"path":"DOCUMENT/tek_07-NEK-PRILOGA2-2005.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_DN_09.01_R1_Osnove_AKZ.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_DN_09.02_R1_Priprava_površin.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_DN_10.02_R2_Kriteriji_in_metode_zagotavljanje_spre.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_DN_10.07_R1_Prevzem_preverjanje_reatestacija_mater.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_DN_10.10_Destruktivna_testiranja.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_SP_4.1.1_R10_Zagotavljanje_kakovosti_v_NEK.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_SP_7.2.2_R4_Priprava_specifikacij_in_projektov_za_.json","error_type":"JSON_DECODE_ERROR"},
+    {"path":"DOCUMENT/tek_SP_7.4.1_R6_Nabava.json","error_type":"JSON_DECODE_ERROR"}
+  ],
+  "validation_issues": [
+    {"path":"DOCUMENT/tek_SP_7.3.2_R5_Projekti.json","item_id":"SP_7.3.2-009","rule_id":"VAL-COMMON-001","severity":"ERROR","message":"taxonomy_id must be 'APP_B', got 'APP_B_II'"}
+  ]
+}

@@ -6,13 +6,13 @@
 |---|---|
 | Project | Project03 / PKE_SA_Enconet |
 | Document | Sieving_method_specification_Guide |
-| Version | 1.2 — §10.1 configuration ownership corrected against pipeline source code |
-| Date | 2026-07-11 |
+| Version | 1.3 — §10.1 single-owner contract implemented |
+| Date | 2026-07-12 |
 | Status | AS-IS specification of the **current** sieving method (baseline before EPIC 5 / EPIC 18 upgrades) |
 | Governing template | `JSON_Template_App_B`, template_version **0.1** (`templates/app_b.py::AppBTemplate`) |
 | Primary sources | **`sieving/` — the vendored pipeline implementation** (`sieving/src/json_extractor/`; enforcement verified at code level; upstream origin github.com/nekiee13/opencode-JSON, recorded in `sieving/PROVENANCE.md`), `docs/context/31 Sieving - Crumb generation.md` (both transformation prompts), `docs/context/32 Crumbs proccessing - json_extractor_session_exp.md` (v0.1-era description, partially superseded — see §10), `docs/context/30 Ingestion phase.md` (pipeline position) |
 | Related plan sections | MASTER_DEVELOPMENT_PLAN.md — EPIC 5 (sieving pipeline), EPIC 6 (traceability), EPIC 15 (extractor integration), EPIC 18 (tuning harness) |
-| Change note | **v1.1 → v1.2:** corrected §10.1: `config.py` duplicates the criteria and rule-code tables locally; it does not derive them from `AppBTemplate`. Consolidation remains planned under ALIGNMENT_PLAN Task C4.4. |
+| Change note | **v1.2 → v1.3:** C4.4 implemented ADR-0003: `schemas/sieving_contract.yml` now owns taxonomy, codes, enums, normalized/export columns, and query fields; runtime facades load it and drift tests cover runtime, prompt text, exporter columns, and existing DATA. **v1.1 → v1.2:** corrected the former duplicate-owner description. |
 
 **Purpose of this guide.** Sieving is the crown activity of this project: crumb quality
 bounds every downstream result. This guide records, in one place, exactly how the current
@@ -406,10 +406,10 @@ that source code; where doc 32 differs, the code wins.
 sieving/                                (vendored, project-integral)
 ├── cli.py                             ← headless dev/debug entry (retired at EPIC 15 close)
 ├── src/json_extractor/
-│   ├── config.py                      ← Config (locally duplicated criteria/codes; not derived from AppBTemplate)
+│   ├── config.py                      ← Config facade loaded from schemas/sieving_contract.yml
 │   ├── pipeline.py                    ← run_pipeline / export_pipeline_result
 │   ├── extract/load_and_flatten.py    ← validate_item + flattening (the enforcement core)
-│   ├── templates/app_b.py             ← AppBTemplate: canonical criteria, codes, enums
+│   ├── templates/app_b.py             ← AppBTemplate compatibility facade over canonical schema
 │   ├── query/                         ← filter DSL: schema.py, compiler.py, engine.py
 │   └── io/                            ← file discovery, JSON reading, export
 ├── DATA/RULE/                         ← real RULE runs: 10CFR50_AppendixB, 10CFR21
@@ -419,15 +419,15 @@ sieving/                                (vendored, project-integral)
 └── PROVENANCE.md                      ← upstream origin + commit + divergence log
 ```
 
-`config.py` does **not** import or derive its canonical criteria or rule-code tables
-from `AppBTemplate`. `Config.get_canonical_criteria()` and
-`Config.get_canonical_codes()` define local literal tables, while
-`templates/app_b.py::AppBTemplate` independently defines `CRITERIA` and
-`CANONICAL_CODES`. These are duplicate contract owners in the current subsystem and
-can drift. ALIGNMENT_PLAN Task C4.4 will replace them with one machine-readable schema
-owner and a drift test; until then, changes to either table must be synchronized
-manually. (source: `sieving/src/json_extractor/config.py`,
-`sieving/src/json_extractor/templates/app_b.py`; cross-reference: C4.4)
+`schemas/sieving_contract.yml` is the single machine-readable owner established by
+ADR-0003/C4.4. `config.py`, `templates/app_b.py`, and `query/schema.py` load their
+runtime tables from it. `tests/test_contract_drift.py` compares the owner with those
+runtime tables, the controlled vocabulary in the transformation prompt, normalized
+exporter columns, and a full unchanged revalidation of the existing DATA corpus. The
+pre-existing nine JSON decode failures and one taxonomy validation error are pinned in
+`schemas/sieving_data_migration_manifest.yml`; C4.4 performs no DATA migration.
+(sources: `schemas/sieving_contract.yml`, `sieving/src/json_extractor/contract.py`;
+cross-reference: C4.4)
 
 **No separate GUI (decision 2026-07-04).** The upstream Streamlit review UI
 (`adapters/streamlit_app/`, `app.py`) was removed at vendoring: sieving is operated

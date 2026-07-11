@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "template": {"id": "JSON_Template_App_B", "version": "0.1", "taxonomy_id": "APP_B"},
+  "criteria": [
+    {"criterion_id":"APP_B_I","criterion_name":"Organization"},
+    {"criterion_id":"APP_B_II","criterion_name":"Quality Assurance Program"},
+    {"criterion_id":"APP_B_III","criterion_name":"Design Control"},
+    {"criterion_id":"APP_B_IV","criterion_name":"Procurement Document Control"},
+    {"criterion_id":"APP_B_V","criterion_name":"Instructions, Procedures, and Drawings"},
+    {"criterion_id":"APP_B_VI","criterion_name":"Document Control"},
+    {"criterion_id":"APP_B_VII","criterion_name":"Control of Purchased Material, Equipment, and Services"},
+    {"criterion_id":"APP_B_VIII","criterion_name":"Identification and Control of Materials, Parts, and Components"},
+    {"criterion_id":"APP_B_IX","criterion_name":"Control of Special Processes"},
+    {"criterion_id":"APP_B_X","criterion_name":"Inspection"},
+    {"criterion_id":"APP_B_XI","criterion_name":"Test Control"},
+    {"criterion_id":"APP_B_XII","criterion_name":"Control of Measuring and Test Equipment"},
+    {"criterion_id":"APP_B_XIII","criterion_name":"Handling, Storage, and Shipping"},
+    {"criterion_id":"APP_B_XIV","criterion_name":"Inspection, Test, and Operating Status"},
+    {"criterion_id":"APP_B_XV","criterion_name":"Nonconforming Materials, Parts, or Components"},
+    {"criterion_id":"APP_B_XVI","criterion_name":"Corrective Action"},
+    {"criterion_id":"APP_B_XVII","criterion_name":"Quality Assurance Records"},
+    {"criterion_id":"APP_B_XVIII","criterion_name":"Audits"}
+  ],
+  "canonical_codes": [
+    {"ref_code":"10CFR50_APPB","ref_type":"REGULATION","title":"10 CFR Part 50 Appendix B — Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants","allowed_locators":"criteria"},
+    {"ref_code":"10CFR21","ref_type":"REGULATION","title":"10 CFR Part 21 — Reporting of Defects and Noncompliance","locator_pattern":"^21\\.[0-9]+$"}
+  ],
+  "enums": {
+    "record_side":["RULE","DOCUMENT"],
+    "rule_strength":["MANDATORY","NON_MANDATORY"],
+    "item_type":["requirement","process_step","role_responsibility","definition","control","record","reference","finding","recommendation","action","status_statement","other"]
+  },
+  "columns": {
+    "default":["record_side","criterion_id","criterion_name","item_type","statement","evidence_quote_1","doc_id","filename","title","rule_key","rule_ref_keys","rule_strength"],
+    "all":["template_id","template_version","taxonomy_id","record_side","doc_id","filename","title","revision","item_id","item_type","criterion_id","criterion_name","statement","evidence_quote_1","evidence_quotes_json","source_page","source_page_label","source_heading_path","source_section_id","source_block_type","source_location_cue","entities_organizations","entities_people","entities_documents","entities_systems_tools","entities_standards_regulations","rule_source_rules","rule_locator","rule_key","rule_strength","rule_citation_text","rule_ref_keys","rule_ref_codes","rule_ref_locators","rule_ref_texts_json"]
+  },
+  "query_fields": [
+    {"name":"record_side","type":"enum","description":"RULE or DOCUMENT discriminator","enum":"record_side"},
+    {"name":"criterion_id","type":"enum","description":"Appendix B criterion ID","values_from":"criterion_ids"},
+    {"name":"criterion_name","type":"enum","description":"Canonical criterion name","values_from":"criterion_names"},
+    {"name":"item_type","type":"enum","description":"Type of extracted item","enum":"item_type"},
+    {"name":"doc_id","type":"string","description":"Document identifier"},
+    {"name":"filename","type":"string","description":"Source filename"},
+    {"name":"title","type":"string","description":"Document title"},
+    {"name":"revision","type":"string","description":"Document revision"},
+    {"name":"statement","type":"string","description":"Extracted statement text"},
+    {"name":"rule_source_rules","type":"enum","description":"Canonical rule code (RULE-only)","values_from":"ref_codes","record_side":"RULE"},
+    {"name":"rule_locator","type":"string","description":"Rule locator within source (RULE-only)","record_side":"RULE"},
+    {"name":"rule_key","type":"string","description":"Composite join key (RULE-only)","record_side":"RULE"},
+    {"name":"rule_strength","type":"enum","description":"Rule obligation level (RULE-only)","enum":"rule_strength","record_side":"RULE"},
+    {"name":"rule_ref_keys","type":"string","description":"Semicolon-joined rule reference keys (DOCUMENT-only)","record_side":"DOCUMENT"},
+    {"name":"rule_ref_codes","type":"string","description":"Semicolon-joined ref codes (DOCUMENT-only)","record_side":"DOCUMENT"},
+    {"name":"rule_ref_locators","type":"string","description":"Semicolon-joined ref locators (DOCUMENT-only)","record_side":"DOCUMENT"}
+  ]
+}
