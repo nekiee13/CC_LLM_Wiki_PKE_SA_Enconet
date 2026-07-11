@@ -1,0 +1,15 @@
+task: C4.3
+agent: codex
+status: released
+claimed_at_utc: 2026-07-11T22:28:47Z
+last_renewed_at_utc: 2026-07-11T22:28:47Z
+expires_at_utc: 2026-07-12T22:28:47Z
+anticipated_files:
+  - Enconet/sieving/tools/_archive
+  - Enconet/sieving/verify_install.py
+  - Enconet/sieving/tests
+  - doc/LESSONS-LEARNED.md
+  - doc/AFI.md
+  - Enconet/coordination
+note: Quarantine hazardous tools, tombstone README, rewrite ASCII-safe verifier, tests for active tool roots and verifier failure classification
+released_at_utc: 2026-07-11T22:33:28Z

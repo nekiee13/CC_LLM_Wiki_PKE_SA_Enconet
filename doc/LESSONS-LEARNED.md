@@ -29,6 +29,13 @@ the wrongly rooted repair script when imports failed (hazard chain, reconciliati
 root, dry-run, and backup behavior (now a standing rule in both agents' workspace
 guidance); repair-by-script is a symptom that the pipeline lacks a blocking gate.
 
+C4.3 quarantined the complete chain under `Enconet/sieving/tools/_archive/`. The MOR
+scripts had repaired taxonomy names and inferred rule-reference join keys; the NQA-1
+normalizer also synthesized required fields and placeholder evidence/source values. Those
+transformations are historical migration evidence, not safe runtime behavior. Any future
+migration must use an explicit root, dry-run, backup/rollback, fixtures, and an approved
+migration manifest rather than reactivating the archived scripts.
+
 ## Index false-positives and snapshot identity
 
 Two related traps, both observed 2026-07-11 or earlier:

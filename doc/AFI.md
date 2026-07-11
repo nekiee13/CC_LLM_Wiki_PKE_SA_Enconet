@@ -26,12 +26,12 @@
 1. **Spec guide §10.1 false statement** — claims `config.py` obtains canon via
    `AppBTemplate`; the modules hold separate tables. Correction is Task C1.4
    (`Enconet/docs/ALIGNMENT_PLAN.md`).
-2. **Verifier + repair scripts form a hazard chain** — missing dependencies cascade
-   into structure errors and the verifier recommends a wrongly rooted mutating script.
-   Guardrail in force: never run `sieving/tools/fix_files.py` / `fix_structure.py`
-   (`Enconet/CLAUDE.md`, `Enconet/AGENTS.md`).
-3. **`check_files.py` validates an obsolete manifest** — expects removed GUI/example
-   files; prints an old-machine path.
+2. **Verifier + repair-script hazard chain — contained by C4.3.** Hazardous and obsolete
+   scripts are quarantined under `sieving/tools/_archive/`; the active verifier is
+   ASCII-safe, checks dependencies first, distinguishes failure classes, and recommends
+   restoration from version control rather than mutation.
+3. **Obsolete `check_files.py` manifest — contained by C4.3.** The script is archived
+   with the other historical migration tools and is not an active verifier.
 4. **Index counts need snapshot identity** — controlled criteria must test properties
    (zero drift), not fixed corpus counts.
 5. **Dead-code percentages are materially false-positive** — see
