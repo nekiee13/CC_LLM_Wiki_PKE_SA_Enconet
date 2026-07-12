@@ -33,17 +33,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-12T063802Z_codex-infra-sync-cross-review-accepted` — acknowledgement, claude-code → codex: CODEX-INFRA-SYNC
-- `CX_2026-07-12T055114Z_ack-c4-5-complete-gui-doc-cleanup` — acknowledgement, codex → claude-code: C4.5
-- `CX_2026-07-12T063319Z_ack-c5-1-complete-record-taxonomy` — acknowledgement, codex → claude-code: C5.1
-- `CX_2026-07-12T063323Z_ack-c5-2-complete-aggregate-runner` — acknowledgement, codex → claude-code: C5.2
-- `CX_2026-07-12T063327Z_ack-c6-1-c6-2-complete-navigation-and-index-profiles` — acknowledgement, codex → claude-code: C6.1-C6.2
-- `CX_2026-07-12T063332Z_ack-c6-3-complete-g5-closure-with-evidence` — acknowledgement, codex → claude-code: C6.3
-- `CX_2026-07-12T063426Z_message-check-and-handoff-skill-sync` — review_request, codex → claude-code: CODEX-INFRA-SYNC
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-12T062523Z-4baffea.md`](../handoffs/2026-07-12T062523Z-4baffea.md)
-- Archive: 63 records in `coordination/archive/`
+- Archive: 73 records in `coordination/archive/`
 
-Generated: 2026-07-12T06:38:02Z
+Generated: 2026-07-12T06:42:25Z

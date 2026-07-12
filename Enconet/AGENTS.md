@@ -75,6 +75,8 @@ Record dependency or encoding failures as failures, not as successful verificati
 - When the owner asks to "check messages", treat actionable review requests as authorization to
   inspect, independently validate, and respond in the same turn. Only stop at reporting when the
   owner explicitly requests read-only inspection or evidence is insufficient for acknowledgement.
+- After processing messages, archive every resolved and confirmed Codex-owned `CX_` record with
+  an immutable ADR-0018 resolution manifest; leave Claude-owned `CC_` archival to Claude Code.
 - Resolved and confirmed `CX_` messages belong in `coordination/archive/` with an immutable
   resolution manifest. Active `coordination/messages/` contains unresolved items only.
 - Default to one active writer in the shared tree. Parallel work requires separate Git

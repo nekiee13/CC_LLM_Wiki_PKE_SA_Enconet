@@ -63,6 +63,8 @@ requirements defined here.
    When the owner asks to "check messages", automatically inspect, independently review, validate,
    and acknowledge actionable Codex-addressed messages in the same turn unless the owner explicitly
    requests a read-only listing or the review is blocked. Never acknowledge acceptance without evidence.
+   Complete the ADR-0018 lifecycle in the same turn: archive resolved and confirmed Codex-owned
+   `CX_` records with an immutable resolution manifest, then regenerate and validate the board.
 4. Check the actual tree and Git identity before trusting paths or status copied from another machine.
 5. Use jdocmunch for indexed documentation and jcodemunch for indexed code; refresh only Codex-owned indexes after edits.
 6. Run `python scripts/check_guidance_drift.py` after guidance or paired-skill edits and
