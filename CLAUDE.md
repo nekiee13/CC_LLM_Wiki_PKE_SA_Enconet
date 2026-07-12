@@ -56,7 +56,10 @@ recordkeeping requirements.
    → unread `coordination/messages/` → active `coordination/claims/`. The neutral
    protocol authority is `Enconet/coordination/TEAM_PROTOCOL.md`; use
    `python scripts/agent_coord.py` (status | claim | release | message | acknowledge |
-   validate) for coordination operations.
+   validate) for coordination operations. When the owner asks to "check messages",
+   inspect, independently review/validate, and respond to actionable Claude-addressed
+   messages in the same turn, unless the owner explicitly requests a read-only listing
+   or evidence is insufficient — never acknowledge acceptance without evidence.
 3. Verify the actual tree and Git identity before trusting copied paths/status.
 4. Use jdocmunch/jcodemunch indexes when available and refresh them after edits.
 5. Keep changes scoped and test in proportion to audit/data-integrity risk.

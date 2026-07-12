@@ -10,9 +10,8 @@ These instructions apply within `03_PKE_SA_NQA1/Enconet` and extend `../AGENTS.m
 2. `docs/ALIGNMENT_PLAN.md` (canonical) for waves G0–G5, migration order, and acceptance criteria.
 3. `decisions/README.md` for the ADR register (current through ADR-0017).
 4. `docs/CX_CC_RECONCILIATION.md` for the agreement that merged the CX/CC preparation.
-5. `Sieving_method_specification_Guide.md` v1.2 for the current subsystem, checking claims
-   against actual code and tests; §10.1 now records the duplicated config/AppBTemplate
-   contract owners that remain scheduled for consolidation under C4.4.
+5. `Sieving_method_specification_Guide.md` v1.3 for the current subsystem, checking claims
+   against actual code and tests; C4.4 implemented the single-owner contract.
 
 `docs/context/` and `docs/_archive/` contain source material, examples, superseded plan
 variants, and historical session exports. They are history, not a current implementation
@@ -35,8 +34,8 @@ contract.
   unless the project owner explicitly reopens planning.
 - Do not run `sieving/tools/fix_files.py` or `sieving/tools/fix_structure.py`; their current root
   assumptions are unsafe after relocation.
-- Treat invalid-filter fail-open behavior as a known audit risk. Do not export results after a filter
-  error unless the user explicitly approves the development-only behavior and it is recorded.
+- Filtering fails closed and export is blocked after a filter error. Preserve that contract; the
+  development-only unfiltered preview override must remain explicit, preview-only, and recorded.
 - Resolve active paths from project/package roots or explicit configuration, never legacy absolute paths.
 - Keep Appendix B taxonomy/schema changes synchronized across machine-readable contracts, prompts,
   runtime validation, query fields, and fixtures until one canonical owner is implemented.
@@ -73,6 +72,9 @@ Record dependency or encoding failures as failures, not as successful verificati
   Codex, and active claims when those records exist.
 - Reply to Claude through a new immutable `coordination/messages/CX_*.md` record with
   `reply_to`; never edit a `CC_` message.
+- When the owner asks to "check messages", treat actionable review requests as authorization to
+  inspect, independently validate, and respond in the same turn. Only stop at reporting when the
+  owner explicitly requests read-only inspection or evidence is insufficient for acknowledgement.
 - Resolved and confirmed `CX_` messages belong in `coordination/archive/` with an immutable
   resolution manifest. Active `coordination/messages/` contains unresolved items only.
 - Default to one active writer in the shared tree. Parallel work requires separate Git

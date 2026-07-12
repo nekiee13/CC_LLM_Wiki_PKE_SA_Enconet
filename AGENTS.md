@@ -24,6 +24,9 @@ requirements defined here.
 - Codex owns `AGENTS.md`, `.agents/`, `~/.codex/`, `~/.agents/`, `CX_` records, and the
   `Codex_global_guidance` and `PKE_SA_NQA1_codex_guidance` indexes.
 - Do not modify or re-index Claude-owned guidance, skills, `CC_` records, or indexes.
+- Claude-owned index names currently include `PKE_SA_NQA1_Enconet_docs`,
+  `PKE_SA_NQA1_Enconet_controlled`, `PKE_SA_NQA1_global_docs`, and
+  `Enconet-0a063bd7`; Codex may inspect their recorded state but must not refresh them.
 - Send cross-agent notes, questions, review requests, blockers, and acknowledgements through
   `Enconet/coordination/messages/` using immutable `CX_` messages. Never rewrite a message.
 - Keep the active message directory limited to unresolved communication. Once resolution is
@@ -57,6 +60,9 @@ requirements defined here.
 1. Read this file and the nearest project `AGENTS.md`.
 2. Read the project's current status/handoff when those records exist.
 3. Read `coordination/BOARD.md`, unread messages addressed to Codex, and active claims when present.
+   When the owner asks to "check messages", automatically inspect, independently review, validate,
+   and acknowledge actionable Codex-addressed messages in the same turn unless the owner explicitly
+   requests a read-only listing or the review is blocked. Never acknowledge acceptance without evidence.
 4. Check the actual tree and Git identity before trusting paths or status copied from another machine.
 5. Use jdocmunch for indexed documentation and jcodemunch for indexed code; refresh only Codex-owned indexes after edits.
 6. Run `python scripts/check_guidance_drift.py` after guidance or paired-skill edits and

@@ -101,6 +101,11 @@
           "id": "handoff-helper-publication",
           "description": "Handoffs are published/validated through scripts/make_handoff.py (C3); passed checks require command and integer exit code",
           "patterns": ["make_handoff\\.py", "exit code"]
+        },
+        {
+          "id": "check-messages-active-review",
+          "description": "Owner's 'check messages' authorizes same-turn review/validation/response to actionable messages; evidence required for acknowledgement (2026-07-12)",
+          "patterns": ["check messages", "read-only", "evidence"]
         }
       ],
       "documented_differences": [

@@ -537,6 +537,6 @@ implementations (single `src/json_extractor/`), and `df._append` (gone).
 
 ---
 
-*End of Sieving Method Specification Guide v1.2 — AS-IS baseline recorded 2026-07-04;
+*End of Sieving Method Specification Guide v1.3 — AS-IS baseline recorded 2026-07-04;
 §10.1 configuration ownership corrected 2026-07-11 against the vendored pipeline
 source; enforcement details verified against github.com/nekiee13/opencode-JSON.*
