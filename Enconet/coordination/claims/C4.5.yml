@@ -1,0 +1,13 @@
+task: C4.5
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-12T05:41:35Z
+last_renewed_at_utc: 2026-07-12T05:41:35Z
+expires_at_utc: 2026-07-13T05:41:35Z
+anticipated_files:
+  - Enconet/sieving/README.md
+  - Enconet/sieving/QUICKSTART.md
+  - Enconet/sieving/PROJECT_INFO.md
+  - Enconet/sieving/tests
+note: C4.5 GUI documentation cleanup per ADR-0007 + README/QUICKSTART command smoke checks (owner-directed)
+released_at_utc: 2026-07-12T05:48:39Z

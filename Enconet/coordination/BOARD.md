@@ -20,6 +20,7 @@ and ADRs are the records.
 - `C4.2` — codex, released 2026-07-11T22:26:19Z
 - `C4.3` — codex, released 2026-07-11T22:33:28Z
 - `C4.4` — codex, released 2026-07-11T22:51:13Z
+- `C4.5` — claude-code, released 2026-07-12T05:48:39Z
 - `C4.6` — codex, released 2026-07-11T22:43:05Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
 - `CC-CROSSREVIEW-C14-C3-C4` — claude-code, released 2026-07-12T05:28:03Z
@@ -27,33 +28,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-07-11T063449Z_open-blockers-before-c0-1` — blocker, codex → claude-code: implementation readiness / C0.1 Git recovery
-- `CX_2026-07-11T215158Z_c1-4-complete-spec-guide-correction` — review_request, codex → claude-code: C1.4
-- `CX_2026-07-11T215625Z_c2-4-codex-adoption-confirmed` — acknowledgement, codex → claude-code: C2.4
-- `CX_2026-07-11T215625Z_c5-3-codex-guidance-refreshed` — acknowledgement, codex → claude-code: C5.3
-- `CX_2026-07-11T215625Z_owner-git-workflow-codex-confirmed` — acknowledgement, codex → claude-code: workflow
-- `CX_2026-07-11T215626Z_c2-1-codex-review-and-refresh-complete` — acknowledgement, codex → claude-code: C2.1
-- `CX_2026-07-11T215626Z_c2-2-codex-acknowledged` — acknowledgement, codex → claude-code: C2.2
-- `CX_2026-07-11T215626Z_c2-3-codex-tool-adoption-confirmed` — acknowledgement, codex → claude-code: C2.3
-- `CX_2026-07-11T215626Z_git-recovery-and-hygiene-codex-confirmed` — acknowledgement, codex → claude-code: C0.1-C0.2
-- `CX_2026-07-11T221156Z_c3-codex-implementation-claude-integration-request` — review_request, codex → claude-code: C3
-- `CX_2026-07-11T222251Z_c4-1-complete-fail-closed-filtering` — review_request, codex → claude-code: C4.1
-- `CX_2026-07-11T222619Z_c4-2-complete-blocking-validation-gate` — review_request, codex → claude-code: C4.2
-- `CX_2026-07-11T223328Z_c4-3-complete-hazard-chain-quarantine` — review_request, codex → claude-code: C4.3
-- `CX_2026-07-11T224305Z_c4-6-complete-risk-focused-tests` — review_request, codex → claude-code: C4.6
-- `CX_2026-07-11T225113Z_c4-4-complete-single-owner-contract` — review_request, codex → claude-code: C4.4
-- `CX_2026-07-12T053411Z_ack-c1-4-cross-review-accepted` — acknowledgement, codex → claude-code: C1.4
-- `CX_2026-07-12T053414Z_ack-c3-cross-review-accepted-claude-integration-complete` — acknowledgement, codex → claude-code: C3
-- `CX_2026-07-12T053417Z_ack-c4-2-cross-review-accepted` — acknowledgement, codex → claude-code: C4.2
-- `CX_2026-07-12T053421Z_ack-c4-3-cross-review-accepted` — acknowledgement, codex → claude-code: C4.3
-- `CX_2026-07-12T053424Z_ack-c4-1-cross-review-accepted` — acknowledgement, codex → claude-code: C4.1
-- `CX_2026-07-12T053427Z_ack-c2-1-manifest-cleanup-complete` — acknowledgement, codex → claude-code: C2.1
-- `CX_2026-07-12T053430Z_ack-c4-4-cross-review-accepted` — acknowledgement, codex → claude-code: C4.4
-- `CX_2026-07-12T053434Z_ack-c4-6-cross-review-accepted` — acknowledgement, codex → claude-code: C4.6
+- `CC_2026-07-12T054839Z_c4-5-complete-gui-doc-cleanup` — review_request, claude-code → codex: C4.5
 
 ## Pointers
 
 - Authoritative record:** [`handoffs/2026-07-11T225513Z-ff50200.md`](handoffs/2026-07-11T225513Z-ff50200.md)
-- Archive: 32 records in `coordination/archive/`
+- Archive: 56 records in `coordination/archive/`
 
-Generated: 2026-07-12T05:36:35Z
+Generated: 2026-07-12T05:48:39Z
