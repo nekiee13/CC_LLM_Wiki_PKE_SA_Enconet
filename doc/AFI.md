@@ -11,8 +11,8 @@
 
 | # | Limitation | Planned fix (master plan) |
 |---|---|---|
-| 1 | Validation is advisory, not blocking — ERROR-flagged records still flow into exports (fail-open; known defect, not accepted policy) | Task 5.3/5.4 blocking import gate |
-| 2 | Unchecked fields: `statement` non-empty, `item_id` uniqueness, `item_type`/`record_side` enums (invalid side silently skips side checks) | Task 1.4 + 5.3 strict schema tier |
+| 1 | ~~Validation is advisory, not blocking~~ — **resolved 2026-07-11**: fail-closed filtering (C4.1) and blocking ERROR-validation export gate with recorded override reason (C4.2); see `LESSONS-LEARNED.md` | closed (tests `test_fail_closed_filter.py`, `test_blocking_validation.py`) |
+| 2 | Unchecked fields: `statement` non-empty, `item_id` uniqueness, `item_type` enum (`record_side` enum is now hard-validated, VAL-SIDE-001, C4.2) | Task 1.4 + 5.3 strict schema tier |
 | 3 | First-source scalar flattening hides secondary source locations in tabular review | Task 5.4 (`crumb_sources`, `crumb_quotes`) |
 | 4 | No chunk linkage — weak source review | EPIC 6 |
 | 5 | DOC prompt runtime-block defect (spec guide §8.4) | Task 5.1 + 5.6 |
@@ -23,9 +23,10 @@
 
 ## Unremediated findings (CX/CC reconciliation, `Enconet/docs/CX_CC_RECONCILIATION.md` §2.3)
 
-1. **Spec guide §10.1 false statement** — claims `config.py` obtains canon via
-   `AppBTemplate`; the modules hold separate tables. Correction is Task C1.4
-   (`Enconet/docs/ALIGNMENT_PLAN.md`).
+1. **Spec guide §10.1 false statement — closed.** Corrected by C1.4 (v1.2,
+   2026-07-11); C4.4 then implemented the single-owner contract the correction
+   described (v1.3, `schemas/sieving_contract.yml`). Residual nit: the v1.3 footer
+   line still reads v1.2 (Codex follow-up, `CX_2026-07-12T053430Z`).
 2. **Verifier + repair-script hazard chain — contained by C4.3.** Hazardous and obsolete
    scripts are quarantined under `sieving/tools/_archive/`; the active verifier is
    ASCII-safe, checks dependencies first, distinguishes failure classes, and recommends
@@ -46,9 +47,9 @@
   miniconda base env (C5.3, see `AS-IS.md`); a dedicated `.venv` remains an open
   owner decision.
 - **pandas 3.0.3 is a major version ahead** of what `sieving/src` was written against;
-  the suite passes (11 passed, 2026-07-11) but a deprecation-surface review is prudent
+  the suite passes (48 passed, 2026-07-12) but a deprecation-surface review is prudent
   in later waves.
-- **Codex-side guidance staleness** — workspace `AGENTS.md` still records
-  pre-C0.1/C5.3 constraints; tracked as `documented_differences` in
-  `GUIDANCE_PAIRS.json` pending a Codex-authored refresh
-  (message `CC_2026-07-11T212734Z_c2-1-complete-guidance-drift-validator`).
+- ~~Codex-side guidance staleness~~ — **resolved 2026-07-11/12**: Codex refreshed its
+  guidance (`CX_2026-07-11T215626Z_c2-1-codex-review-and-refresh-complete`) and the
+  obsolete pending `documented_differences` were removed from `GUIDANCE_PAIRS.json`
+  (C2.1 follow-up, commit `1c21d85`).

@@ -47,6 +47,21 @@ claims (`Enconet/coordination/`, ADR-0017/0018, `scripts/agent_coord.py`). No sh
 mutable state, no editing under another agent's claim, and archival only after
 resolved-and-confirmed — silence is not confirmation.
 
+## Failing test first, then the implementation
+
+C5.2's runner contract tests were written and demonstrably failing before
+`run_validation.py` existed (2026-07-12); C4.5's docs smoke test immediately caught
+two stale documented commands the moment it ran. Rule (ALIGNMENT_PLAN C5.2): every
+implementation task starts from a failing test or validator demonstrating the gap.
+
+## Layered aggregate validation with SKIPPED ≠ PASS
+
+`scripts/run_validation.py` runs L0–L5 (syntax → structure/authority → unit →
+integration → golden regression → handoff recovery), exits non-zero naming the failed
+layer, and treats any skipped layer as exit 3, never as success. Its first real run
+caught a stale BOARD and a nonconforming handoff record (see `LESSONS-LEARNED.md`).
+Report output is deterministic (no timings or absolute paths in the verdict lines).
+
 ## Evidence-or-it-didn't-happen reporting
 
 Never report skipped, blocked, or unrun validation as passed (workspace guidance;

@@ -33,3 +33,7 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - task-complete | 2026-07-12T05:48:39Z | C4.5 | GUI doc cleanup per ADR-0007 + docs-vs-reality smoke tests (CC, commit 84632cf)
 - review-accepted | 2026-07-12T05:51:14Z | C4.5 | Codex cross-review accepted; G4 complete (CX_2026-07-12T055114Z)
 - task-started | 2026-07-12T05:53:48Z | C5.1, C5.2 | record taxonomy instantiation + aggregate validation runner claimed (CC)
+- task-complete | 2026-07-12T05:56:33Z | C5.1 | record taxonomy instantiated: wiki log/status/index (CC, commit b159b80)
+- task-complete | 2026-07-12T05:59:38Z | C5.2 | aggregate layered validation runner L0-L5, SKIPPED!=PASS (CC, commit b79a57d)
+- task-complete | 2026-07-12T06:20:21Z | C6.1, C6.2 | navigation READMEs interlinked; index profiles + caveats; BOARD link fix (CC, commits 351836f, 763f56a)
+- docs-refreshed | 2026-07-12T06:25:00Z | C6.3 | AS-IS/AFI/LESSONS/GOOD-PRACTICES updated from preparation findings (CC)

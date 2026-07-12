@@ -56,9 +56,29 @@ Two related traps, both observed 2026-07-11 or earlier:
 
 A specification claimed `config.py` obtains canonical criteria/codes through
 `AppBTemplate`; the code holds separate tables and imports no template module
-(reconciliation §2.3.2, correction pending as Task C1.4). **Lesson:** every
+(reconciliation §2.3.2). Corrected by C1.4 (v1.2, 2026-07-11), then made true by
+C4.4, which implemented the single owner the correction described. **Lesson:** every
 specification claim about code behavior must be verified against the code before the
 document is promoted to controlled status; "documented" is not "true".
+
+## Hand-written records fail machine contracts
+
+The 2026-07-11 `ff50200` handoff record was written per the skill procedure instead
+of published through `make_handoff.py`; it lacks `validation_checks_json` and fails
+schema validation — found by the aggregate runner's L5 layer on its first run
+(C5.2, 2026-07-12). The record stays immutable; the failure clears when the next
+helper-published handoff replaces the pointer. **Lesson:** once a machine contract
+and helper exist, prose-procedure output is nonconforming by default — always publish
+through the helper, and make the aggregate runner validate the record the pointer
+actually names.
+
+## Stale behavior docs survive the code change
+
+C4.1 replaced fail-open filtering, but README/QUICKSTART still taught the removed
+`--strict-filter` flag and fail-open semantics until C4.5's docs-vs-reality smoke
+test forced the correction (2026-07-12). **Lesson:** behavior changes must grep the
+user-facing docs for the old contract; a smoke test that executes every documented
+command against the real CLI keeps them honest permanently.
 
 ## Guidance staleness is real drift
 

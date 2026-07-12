@@ -52,26 +52,39 @@ Created 2026-07-11T20:54Z by Claude Code during Task C0.1; extended by C2.2.
   miniconda base env — no project venv; open owner decision, see `AFI.md`).
 - Installed 2026-07-11: pytest 9.1.1, pandas 3.0.3, openpyxl 3.1.5, numpy 2.5.1
   (verify on other machines: `python -m pytest --version`).
-- Mandatory suite from `Enconet/sieving` (2026-07-11): `python -m pytest -q
-  -p no:cacheprovider` → **11 passed**, exit 0; `python verify_install.py`
-  (PYTHONUTF8=1) → all checks passed, exit 0.
+- Mandatory suite from `Enconet/sieving` (2026-07-12): `python -m pytest -q
+  -p no:cacheprovider` → **48 passed**, 72% measured coverage, exit 0;
+  `python verify_install.py` (PYTHONUTF8=1) → all checks passed, exit 0.
+- Workspace script suite (2026-07-12): `python -m pytest scripts/tests -q` →
+  **21 passed**, exit 0. Aggregate runner: `python scripts/run_validation.py` (C5.2).
 - Corpus integrity: `Enconet/sieving/tools/verify_data_manifest.py` →
-  OK, 68 files match `DATA_MANIFEST.json` (2026-07-11).
+  OK, 68 files match `DATA_MANIFEST.json` (2026-07-12).
 - `gh` CLI is not installed (checked 2026-07-11).
 
 ## Implemented capability (verified)
 
-- Sieving subsystem baseline: `Enconet/sieving/src/json_extractor`
-  (validate/flatten/query/export), tests in `Enconet/sieving/tests` (the 11 passing
-  tests above). Known gaps: `AFI.md`. Provenance: `Enconet/sieving/PROVENANCE.md`.
-- Coordination tooling: `scripts/agent_coord.py` (C2.4; `validate` clean 2026-07-11).
+- Sieving subsystem: `Enconet/sieving/src/json_extractor`
+  (validate/flatten/query/export), tests in `Enconet/sieving/tests` (the 48 passing
+  tests above). Fail-closed filtering + CLI exit 2 (C4.1); blocking ERROR-validation
+  export gate with recorded override reason (C4.2); hazardous tools quarantined in
+  `sieving/tools/_archive/`, non-mutating `verify_install.py` (C4.3); single-owner
+  contract `Enconet/schemas/sieving_contract.yml` loaded at runtime, drift-tested
+  against the 68-file corpus (C4.4, ADR-0003); docs advertise CLI only with
+  docs-vs-reality smoke tests (C4.5, ADR-0007). Known gaps: `AFI.md`.
+- Handoff infrastructure: `handoff_schema.yml` + `scripts/make_handoff.py`
+  (render/validate/atomic publish/staleness; C3) — integrated in both agents'
+  session protocols.
+- Coordination tooling: `scripts/agent_coord.py` (C2.4; `validate` clean 2026-07-12).
 - Guidance drift validator: `scripts/check_guidance_drift.py` +
-  `doc/GUIDANCE_PAIRS.json` (C2.1; 0 errors, 36 anchors, 2026-07-11).
-- Skill-structure validator: `scripts/check_skill_structure.py` + tests
-  `scripts/tests/test_skill_structure.py` (C2.3; 6 passed, live run 0 errors /
-  2 skill locations, 2026-07-11).
-- Everything else in the master plan is **planned, not implemented** (EPICs 0–18);
-  planned files are not evidence of implemented capability.
+  `doc/GUIDANCE_PAIRS.json` (C2.1; 0 errors, 38 anchors, 2026-07-12).
+- Skill-structure validator: `scripts/check_skill_structure.py` (C2.3; 0 errors).
+- Aggregate layered validation runner: `scripts/run_validation.py` (C5.2; L0–L5,
+  SKIPPED ≠ PASS).
+- Record taxonomy instantiated: `Enconet/wiki/` log/status/index (C5.1); navigation
+  READMEs interlinked (C6.1); index profiles + caveats in `doc/INDEXING.md` (C6.2).
+- ALIGNMENT_PLAN waves G0–G5 are implemented (2026-07-12); the master plan's
+  database/report/dashboard EPICs (2+) remain **planned, not implemented**; planned
+  files are not evidence of implemented capability.
 
 ## Known caveats
 
