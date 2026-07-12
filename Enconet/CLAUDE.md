@@ -17,7 +17,9 @@ exports) as historical/source input, not a current implementation contract.
 - Working code is under `sieving/src/json_extractor`; tests are under `sieving/tests`.
 - Do not run `sieving/tools/fix_files.py` or `fix_structure.py`; their root assumptions are unsafe.
 - Do not export after a filter or validation error unless an explicit development override is
-  approved and recorded. The current fail-open behavior is a known defect, not accepted policy.
+  approved and recorded. Fail-closed behavior is implemented (C4.1/C4.2): filter errors block
+  export unconditionally; ERROR-severity validation blocks export unless an override reason is
+  recorded. Do not weaken these gates.
 - The standalone Streamlit GUI was retired by human decision on 2026-07-04. Remove stale GUI
   instructions; do not reintroduce it without a superseding ADR.
 - Resolve active paths from project/package roots or explicit configuration, never legacy paths.
