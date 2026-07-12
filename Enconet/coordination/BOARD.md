@@ -6,7 +6,9 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `C6.1` — claude-code, expires 2026-07-13T05:59:59Z
+- `C6.2` — claude-code, expires 2026-07-13T05:59:59Z
+- `C6.3` — claude-code, expires 2026-07-13T05:59:59Z
 
 ## Released claims
 
@@ -39,4 +41,4 @@ and ADRs are the records.
 - Authoritative record:** [`handoffs/2026-07-11T225513Z-ff50200.md`](handoffs/2026-07-11T225513Z-ff50200.md)
 - Archive: 58 records in `coordination/archive/`
 
-Generated: 2026-07-12T05:59:38Z
+Generated: 2026-07-12T06:02:42Z
