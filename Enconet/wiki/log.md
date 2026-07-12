@@ -49,3 +49,6 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 
 - handoff-created | 2026-07-12T07:06:54Z | handoffs/2026-07-12T070654Z-1644203.md | complete | 16442037ecf868cb179f9865d1ba754b3f400bea
 - task-complete | 2026-07-12T07:40:06Z | EPIC1 1.1-1.7 | owner-directed Codex takeover; negative-path taxonomy/scoring tests pass; app_b_taxonomy is sole criterion owner; sieving 49 passed; aggregate L0-L5 passed (CX)
+- task-complete | 2026-07-12T08:05:31Z | EPIC2 2.1-2.3 | SQLite spine with 16 operational tables plus criteria registry, enforced FKs/enums, idempotent initializer, ID-validating DB helper, 7 DB negative/integrity tests; aggregate L0-L5 passed (CX)
+
+- handoff-created | 2026-07-12T08:10:37Z | handoffs/2026-07-12T081037Z-dda1455.md | partial | dda145535e62b8458f4f072f07e18aebdbe71f1d

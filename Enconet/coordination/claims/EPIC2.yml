@@ -1,0 +1,13 @@
+task: EPIC2
+agent: codex
+status: released
+claimed_at_utc: 2026-07-12T07:58:55Z
+last_renewed_at_utc: 2026-07-12T07:58:55Z
+expires_at_utc: 2026-07-13T07:58:55Z
+anticipated_files:
+  - Enconet/db
+  - Enconet/scripts/init_db.py
+  - Enconet/scripts/db_util.py
+  - Enconet/tests
+note: Master-plan EPIC2 SQLite backbone; test-first schema, initializer, DB helper, integrity negatives
+released_at_utc: 2026-07-12T08:08:22Z

@@ -14,7 +14,8 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 |---|---|---|
 | 0 | Scaffold & governance | complete (commits d47bd1f, 0643d49); claim released |
 | 1 | Machine-readable contracts | complete; negative-path tests pass, taxonomy single ownership enforced, aggregate L0-L5 green; claim released |
-| 2+ | Data backbone onward | not started |
+| 2 | Controlled SQLite data backbone | complete; schema, idempotent initializer, shared DB helper, and integrity negative tests green |
+| 3+ | Raw intake onward | not started |
 
 ## Open items
 
@@ -23,5 +24,4 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Start EPIC 2 (SQLite backbone): `db/schema.sql`, `scripts/init_db.py`, and
-`scripts/db_util.py` with foreign-key and negative-path integrity tests.
+Start EPIC 3 (raw intake and document registry) after EPIC2 review/commit.

@@ -155,7 +155,11 @@ def build_layers() -> list[Layer]:
         Layer("L2 unit (workspace scripts)", [
             Step("workspace script tests", [py, "-m", "pytest", "scripts/tests", "-q", "-p", "no:cacheprovider"]),
         ]),
-        Layer("L3 integration (sieving)", [
+        Layer("L3 integration (project)", [
+            Step("schema contract validator", [py, str(ENCONET / "scripts" / "validate_schemas.py")]),
+            Step("schema and DB backbone tests", [py, "-m", "pytest",
+                 "tests/test_validate_schemas.py", "tests/test_db_backbone.py",
+                 "-q", "-p", "no:cacheprovider"], cwd=ENCONET),
             Step("sieving test suite", [py, "-m", "pytest", "-q", "-p", "no:cacheprovider"], cwd=SIEVING),
             Step("installation verification", [py, "verify_install.py"], cwd=SIEVING),
             Step("DATA checksum manifest", [py, str(SIEVING / "tools" / "verify_data_manifest.py")]),

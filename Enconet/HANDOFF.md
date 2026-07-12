@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-07-12T070654Z-1644203.md`](handoffs/2026-07-12T070654Z-1644203.md)
+**Authoritative record:** [`handoffs/2026-07-12T081037Z-dda1455.md`](handoffs/2026-07-12T081037Z-dda1455.md)
 
-**Status:** complete · **Git:** `1644203` · **Agent:** claude-code · **Created:** 2026-07-12T07:06:54Z
+**Status:** partial · **Git:** `dda1455` · **Agent:** codex · **Created:** 2026-07-12T08:10:37Z
 
-**Exact next action:** Negative-path test validate_schemas.py (expect FAIL on taxonomy divergence and scoring gaps), then release EPIC1 and claim EPIC 2 (db/schema.sql, init_db.py, db_util.py)
+**Exact next action:** Commit and push the complete EPIC2 change set; then process Claude review when available and claim EPIC3 raw intake/registry work.
