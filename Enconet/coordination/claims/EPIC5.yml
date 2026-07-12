@@ -1,0 +1,18 @@
+task: EPIC5
+agent: codex
+status: released
+claimed_at_utc: 2026-07-12T23:16:41Z
+last_renewed_at_utc: 2026-07-12T23:16:41Z
+expires_at_utc: 2026-07-13T23:16:41Z
+anticipated_files:
+  - Enconet/schemas
+  - Enconet/prompts
+  - Enconet/scripts
+  - Enconet/tests
+  - Enconet/sieving
+  - Enconet/db
+  - Enconet/docs
+  - Enconet/wiki
+  - Enconet/coordination
+note: Implement EPIC5 sieving pipeline and ADR-0020 authority-aware contract with coordinated schemas, validators, runtime, fixtures, tests, and docs
+released_at_utc: 2026-07-12T23:25:53Z

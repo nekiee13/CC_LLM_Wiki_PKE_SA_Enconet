@@ -21,6 +21,7 @@ REQUIRED_TABLES = {
     "crumb_chunk_links", "requirements", "criterion_applicability",
     "criterion_evaluations", "gaps", "findings", "auditor_actions", "sieve_runs",
     "evaluation_runs", "dashboard_runs", "validation_runs",
+    "sieve_run_authorities", "crumb_authority_refs",
 }
 
 
@@ -57,6 +58,8 @@ def test_schema_declares_required_foreign_key_spine(database: Path):
         "crumbs": {("doc_id", "documents"), ("sieve_run_id", "sieve_runs")},
         "crumb_sources": {("item_id", "crumbs")},
         "crumb_quotes": {("item_id", "crumbs")},
+        "sieve_run_authorities": {("run_id", "sieve_runs")},
+        "crumb_authority_refs": {("item_id", "crumbs")},
         "crumb_chunk_links": {("item_id", "crumbs"), ("chunk_id", "document_chunks")},
         "criterion_applicability": {("criterion_id", "criteria"), ("evaluation_run_id", "evaluation_runs")},
         "criterion_evaluations": {("criterion_id", "criteria"), ("evaluation_run_id", "evaluation_runs")},

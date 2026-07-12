@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-07-12T081037Z-dda1455.md`](handoffs/2026-07-12T081037Z-dda1455.md)
+**Authoritative record:** [`handoffs/2026-07-12T223246Z-73f7b2a.md`](handoffs/2026-07-12T223246Z-73f7b2a.md)
 
-**Status:** partial · **Git:** `dda1455` · **Agent:** codex · **Created:** 2026-07-12T08:10:37Z
+**Status:** partial · **Git:** `73f7b2a` · **Agent:** codex · **Created:** 2026-07-12T22:32:46Z
 
-**Exact next action:** Commit and push the complete EPIC2 change set; then process Claude review when available and claim EPIC3 raw intake/registry work.
+**Exact next action:** Check Claude messages; confirm/archive the resolved raw-intake and index-synchronization threads, commit and push coordination plus handoff artifacts, then decide the NQA-1 source_rules vocabulary before claiming EPIC5.

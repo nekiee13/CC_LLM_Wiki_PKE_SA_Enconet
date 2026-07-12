@@ -27,6 +27,8 @@ def _build_fields() -> list[FieldDef]:
         "criterion_ids": [entry["criterion_id"] for entry in contract["criteria"]],
         "criterion_names": [entry["criterion_name"] for entry in contract["criteria"]],
         "ref_codes": [entry["ref_code"] for entry in contract["canonical_codes"]],
+        "regulation_ref_codes": [entry["ref_code"] for entry in contract["canonical_codes"]
+                                 if entry.get("ref_type") == "REGULATION"],
     }
     fields = []
     for entry in contract["query_fields"]:

@@ -30,9 +30,19 @@ CREATE TABLE IF NOT EXISTS sieve_runs (
     prompt_version TEXT NOT NULL,
     document_side TEXT NOT NULL CHECK (document_side IN ('RULE','DOCUMENT')),
     source_rule TEXT CHECK (source_rule IN ('10CFR50_APPB','10CFR21') OR source_rule IS NULL),
-    started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    CHECK ((document_side = 'RULE' AND source_rule IS NOT NULL) OR
-           (document_side = 'DOCUMENT' AND source_rule IS NULL))
+    started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+) STRICT;
+
+CREATE TABLE IF NOT EXISTS sieve_run_authorities (
+    run_id TEXT NOT NULL REFERENCES sieve_runs(run_id) ON DELETE CASCADE,
+    authority_role TEXT NOT NULL CHECK (authority_role IN ('GOVERNING','INTERPRETIVE')),
+    source_code TEXT NOT NULL CHECK (source_code IN ('10CFR50_APPB','10CFR21','ASME_NQA1')),
+    source_locator TEXT NOT NULL,
+    applicability TEXT NOT NULL DEFAULT 'APPLICABLE' CHECK (applicability IN ('APPLICABLE','CONDITIONAL','NOT_APPLICABLE')),
+    applicability_basis TEXT,
+    PRIMARY KEY (run_id, authority_role, source_code, source_locator),
+    CHECK ((authority_role = 'GOVERNING' AND source_code IN ('10CFR50_APPB','10CFR21')) OR (authority_role = 'INTERPRETIVE' AND source_code = 'ASME_NQA1')),
+    CHECK (source_code <> '10CFR21' OR applicability_basis IS NOT NULL)
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS document_chunks (
@@ -73,6 +83,18 @@ CREATE TABLE IF NOT EXISTS crumb_quotes (
     quote_original TEXT NOT NULL CHECK (length(trim(quote_original)) > 0),
     quote_language TEXT NOT NULL CHECK (quote_language IN ('sl','en','hr')),
     source_locator TEXT NOT NULL
+) STRICT;
+
+CREATE TABLE IF NOT EXISTS crumb_authority_refs (
+    item_id TEXT NOT NULL REFERENCES crumbs(item_id) ON DELETE CASCADE,
+    authority_role TEXT NOT NULL CHECK (authority_role IN ('GOVERNING','INTERPRETIVE')),
+    source_code TEXT NOT NULL CHECK (source_code IN ('10CFR50_APPB','10CFR21','ASME_NQA1')),
+    source_locator TEXT NOT NULL,
+    applicability TEXT NOT NULL DEFAULT 'APPLICABLE' CHECK (applicability IN ('APPLICABLE','CONDITIONAL','NOT_APPLICABLE')),
+    applicability_basis TEXT,
+    PRIMARY KEY (item_id, authority_role, source_code, source_locator),
+    CHECK ((authority_role = 'GOVERNING' AND source_code IN ('10CFR50_APPB','10CFR21')) OR (authority_role = 'INTERPRETIVE' AND source_code = 'ASME_NQA1')),
+    CHECK (source_code <> '10CFR21' OR applicability_basis IS NOT NULL)
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS crumb_chunk_links (
@@ -168,5 +190,7 @@ CREATE TABLE IF NOT EXISTS validation_runs (
 CREATE INDEX IF NOT EXISTS idx_chunks_doc ON document_chunks(doc_id);
 CREATE INDEX IF NOT EXISTS idx_crumbs_doc ON crumbs(doc_id);
 CREATE INDEX IF NOT EXISTS idx_crumbs_criterion ON crumbs(criterion_id);
+CREATE INDEX IF NOT EXISTS idx_run_authorities_source ON sieve_run_authorities(source_code);
+CREATE INDEX IF NOT EXISTS idx_crumb_authorities_source ON crumb_authority_refs(source_code);
 CREATE INDEX IF NOT EXISTS idx_requirements_criterion ON requirements(criterion_id);
 CREATE INDEX IF NOT EXISTS idx_evaluations_run ON criterion_evaluations(evaluation_run_id);

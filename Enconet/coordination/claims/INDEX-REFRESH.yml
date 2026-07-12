@@ -1,6 +1,6 @@
 task: INDEX-REFRESH
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-12T22:19:32Z
 last_renewed_at_utc: 2026-07-12T22:19:32Z
 expires_at_utc: 2026-07-13T22:19:32Z
@@ -11,3 +11,4 @@ anticipated_files:
   - .gitignore
   - Enconet/coordination
 note: Implement ADR-0019 shared index contract; commit clean state; refresh and verify shared jcodemunch/jdocmunch profiles
+released_at_utc: 2026-07-12T22:29:50Z

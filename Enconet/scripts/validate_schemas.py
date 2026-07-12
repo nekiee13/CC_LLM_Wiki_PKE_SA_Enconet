@@ -106,6 +106,8 @@ def check_vocabularies(voc: dict, sieving: dict) -> None:
         "languages": LANGUAGES,
         "document_sides": ["RULE", "DOCUMENT"],
         "source_rules": ["10CFR50_APPB", "10CFR21"],
+        "authority_sources": ["10CFR50_APPB", "10CFR21", "ASME_NQA1"],
+        "authority_roles": ["GOVERNING", "INTERPRETIVE"],
     }
     for name, values in expected.items():
         got = (vocs.get(name) or {}).get("values")
@@ -121,9 +123,16 @@ def check_vocabularies(voc: dict, sieving: dict) -> None:
     # Cross-check runtime projection.
     if (sieving.get("enums", {}).get("record_side") or []) != (vocs.get("document_sides") or {}).get("values"):
         fail("vocabularies.yml document_sides != sieving_contract enums.record_side")
-    ref_codes = [c.get("ref_code") for c in sieving.get("canonical_codes", [])]
-    if ref_codes != (vocs.get("source_rules") or {}).get("values"):
-        fail("vocabularies.yml source_rules != sieving_contract canonical_codes ref_codes")
+    codes = sieving.get("canonical_codes", [])
+    ref_codes = [c.get("ref_code") for c in codes]
+    regulation_codes = [c.get("ref_code") for c in codes if c.get("ref_type") == "REGULATION"]
+    if regulation_codes != (vocs.get("source_rules") or {}).get("values"):
+        fail("vocabularies.yml source_rules != sieving_contract regulation ref_codes")
+    if ref_codes != (vocs.get("authority_sources") or {}).get("values"):
+        fail("vocabularies.yml authority_sources != sieving_contract canonical ref_codes")
+    expected_roles = {"10CFR50_APPB": "GOVERNING", "10CFR21": "GOVERNING", "ASME_NQA1": "INTERPRETIVE"}
+    if {c.get("ref_code"): c.get("authority_role") for c in codes} != expected_roles:
+        fail("sieving_contract authority roles violate ADR-0020")
 
 
 def check_scoring(model: dict) -> None:

@@ -11,7 +11,8 @@ from src.json_extractor.templates.app_b import AppBTemplate
 
 
 ENCONET_ROOT = Path(__file__).resolve().parents[2]
-PROMPT = ENCONET_ROOT / "docs" / "context" / "31 Sieving - Crumb generation.md"
+RULE_PROMPT = ENCONET_ROOT / "sieving" / "prompts" / "appb_rule_v1.md"
+DOCUMENT_PROMPT = ENCONET_ROOT / "sieving" / "prompts" / "appb_document_v1.md"
 
 
 def test_taxonomy_has_one_machine_readable_owner():
@@ -47,15 +48,17 @@ def test_owner_matches_runtime_query_and_export_tables(tmp_path):
 
 def test_owner_matches_prompt_controlled_vocabulary():
     owner = load_contract()
-    prompt = PROMPT.read_text(encoding="utf-8")
-    for criterion in owner["criteria"]:
-        assert criterion["criterion_id"] in prompt
-        assert criterion["criterion_name"] in prompt
-    for values in owner["enums"].values():
-        for value in values:
-            assert value in prompt
-    for code in owner["canonical_codes"]:
-        assert code["ref_code"] in prompt
+    rule = RULE_PROMPT.read_text(encoding="utf-8")
+    document = DOCUMENT_PROMPT.read_text(encoding="utf-8")
+    for prompt in (rule, document):
+        assert "schemas/app_b_json_schema.yml" in prompt
+        assert f"schema version {owner['schema_version']}" in prompt
+    assert 'DOCUMENT_SIDE: "RULE"' in rule
+    assert "AUTHORITY_REFERENCES: <non-empty list" in rule
+    assert "GOVERNING" in rule and "INTERPRETIVE" in rule
+    assert 'DOCUMENT_SIDE: "DOCUMENT"' in document
+    assert "SOURCE_RULES: null" in document
+    assert "AUTHORITY_REFERENCES: []" in document
 
 
 def test_existing_data_revalidates_without_migration():

@@ -1,0 +1,12 @@
+task: EPIC5-SIDE-LEAK-FIX
+agent: codex
+status: released
+claimed_at_utc: 2026-07-12T23:33:16Z
+last_renewed_at_utc: 2026-07-12T23:33:16Z
+expires_at_utc: 2026-07-13T03:33:16Z
+anticipated_files:
+  - Enconet/scripts/validate_app_b_json.py
+  - Enconet/tests/test_epic5_sieving.py
+  - Enconet/coordination
+note: Fix independently reproduced DOCUMENT item-level authority side leakage from Claude EPIC5 review
+released_at_utc: 2026-07-12T23:34:12Z

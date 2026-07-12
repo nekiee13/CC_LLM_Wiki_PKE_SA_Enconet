@@ -1,12 +1,15 @@
 {
-  "schema_version": "1.0",
-  "template": {"id": "JSON_Template_App_B", "version": "0.1", "taxonomy_id": "APP_B"},
+  "schema_version": "1.1",
+  "template": {"id": "JSON_Template_App_B", "version": "1.1", "taxonomy_id": "APP_B"},
   "canonical_codes": [
-    {"ref_code":"10CFR50_APPB","ref_type":"REGULATION","title":"10 CFR Part 50 Appendix B — Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants","allowed_locators":"criteria"},
-    {"ref_code":"10CFR21","ref_type":"REGULATION","title":"10 CFR Part 21 — Reporting of Defects and Noncompliance","locator_pattern":"^21\\.[0-9]+$"}
+    {"ref_code":"10CFR50_APPB","ref_type":"REGULATION","authority_role":"GOVERNING","title":"10 CFR Part 50 Appendix B - Quality Assurance Criteria","allowed_locators":"criteria"},
+    {"ref_code":"10CFR21","ref_type":"REGULATION","authority_role":"GOVERNING","title":"10 CFR Part 21 - Reporting of Defects and Noncompliance","locator_pattern":"^21\\.[0-9]+$"},
+    {"ref_code":"ASME_NQA1","ref_type":"STANDARD","authority_role":"INTERPRETIVE","title":"ASME NQA-1 - Quality Assurance Requirements for Nuclear Facility Applications","locator_pattern":"^REQ_(0[1-9]|1[0-8])$"}
   ],
   "enums": {
     "record_side":["RULE","DOCUMENT"],
+    "authority_role":["GOVERNING","INTERPRETIVE"],
+    "applicability":["APPLICABLE","CONDITIONAL","NOT_APPLICABLE"],
     "rule_strength":["MANDATORY","NON_MANDATORY"],
     "item_type":["requirement","process_step","role_responsibility","definition","control","record","reference","finding","recommendation","action","status_statement","other"]
   },
@@ -24,7 +27,7 @@
     {"name":"title","type":"string","description":"Document title"},
     {"name":"revision","type":"string","description":"Document revision"},
     {"name":"statement","type":"string","description":"Extracted statement text"},
-    {"name":"rule_source_rules","type":"enum","description":"Canonical rule code (RULE-only)","values_from":"ref_codes","record_side":"RULE"},
+    {"name":"rule_source_rules","type":"enum","description":"Legacy governing regulation code (RULE-only)","values_from":"regulation_ref_codes","record_side":"RULE"},
     {"name":"rule_locator","type":"string","description":"Rule locator within source (RULE-only)","record_side":"RULE"},
     {"name":"rule_key","type":"string","description":"Composite join key (RULE-only)","record_side":"RULE"},
     {"name":"rule_strength","type":"enum","description":"Rule obligation level (RULE-only)","enum":"rule_strength","record_side":"RULE"},

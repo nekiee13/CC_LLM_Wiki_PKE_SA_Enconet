@@ -32,8 +32,16 @@ vocabularies:
     values: [RULE, DOCUMENT]
 
   source_rules:
-    usage: "Canonical regulation codes allowed in SOURCE_RULES on RULE runs; DOCUMENT runs carry null (Task 5.2)."
+    usage: "Legacy governing regulation codes retained for compatibility while authority references carry the ADR-0020 model."
     values: [10CFR50_APPB, 10CFR21]
+
+  authority_sources:
+    usage: "Canonical sources for ADR-0020 references; authority_roles distinguishes regulatory and interpretive use."
+    values: [10CFR50_APPB, 10CFR21, ASME_NQA1]
+
+  authority_roles:
+    usage: "Role of a normative source in the evaluation framework (ADR-0020)."
+    values: [GOVERNING, INTERPRETIVE]
 
   audit_states:
     usage: "project-state.yml phase and audit_state.py state machine (EPIC 14); `setup` is the pre-state before the first supplier run is registered; `failed` is reachable from any state."

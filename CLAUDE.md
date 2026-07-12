@@ -21,9 +21,17 @@ recordkeeping requirements.
   delete, move, or re-index Codex infrastructure — `AGENTS.md` files, `.agents/` trees,
   `~/.codex/`, `~/.agents/`, `CX_`-prefixed records, or Codex-owned indexes
   (`Codex_global_guidance`, `PKE_SA_NQA1_codex_guidance`, `PKE_SA_NQA1_agent_guidance`).
-  The reciprocal ban (Codex ↔ Claude infrastructure and Claude-owned indexes
-  `PKE_SA_NQA1_Enconet_docs`, `PKE_SA_NQA1_Enconet_controlled`, `Enconet-0a063bd7`) is
-  stated in `AGENTS.md`. Each agent applies changes to its own files only.
+  The reciprocal ban (Codex ↔ Claude infrastructure) is stated in `AGENTS.md`. Each
+  agent applies changes to its own files only.
+- **Shared-neutral repository indexes (ADR-0019, supersedes the ADR-0016
+  repository-index ownership clauses only):** the Enconet code index
+  (`Enconet-0a063bd7`), full docs (`PKE_SA_NQA1_Enconet_docs`), controlled docs
+  (`PKE_SA_NQA1_Enconet_controlled`), and workspace docs (`PKE_SA_NQA1_global_docs`)
+  MCP indexes are shared-neutral: either agent may query and verify them. Refreshes
+  require an active `INDEX-REFRESH` coordination claim (single writer), a clean
+  committed HEAD, the exact roots/exclusions documented in `doc/INDEXING.md`,
+  post-refresh verification, and the certified `repo@sha` recorded in handoff/status.
+  Distinct agent-guidance corpora remain separately owned.
 - **Coordination protocol (ADR-0017, implemented after C0.1):** cross-agent requests
   travel through neutral, versioned `Enconet/coordination/` records — `TEAM_PROTOCOL.md`
   and `BOARD.md` (agent-neutral shared authorities), immutable author-prefixed

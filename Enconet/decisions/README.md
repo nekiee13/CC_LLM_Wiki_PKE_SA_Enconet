@@ -31,6 +31,7 @@ Context → Decision → Consequences.
 | [ADR-0017](CC_ADR-0017-interagent-coordination-protocol.md) | Inter-agent coordination protocol: `coordination/` (TEAM_PROTOCOL, BOARD, messages, claims); repo = channel; implementation after C0.1 | Workspace | Accepted (deferred impl.) |
 | [ADR-0018](CX_ADR-0018-coordination-message-lifecycle.md) | Active messages contain unresolved work; confirmed resolutions are logged and archived intact | Workspace | Accepted |
 | [ADR-0019](CX_ADR-0019-shared-mcp-indexes.md) | Repository code/docs MCP indexes are shared-neutral with single-writer refresh controls; distinct guidance corpora remain agent-owned | Workspace | Accepted |
+| [ADR-0020](CX_ADR-0020-regulatory-authority-and-interpretive-standard.md) | Appendix B is the governing baseline, Part 21 is a mandatory nonconformance add-on, and NQA-1 is the interpretive/implementation standard | Project | Accepted |
 
 All decided 2026-07-11 by the project owner (D-1…D-6 from `docs/CX_CC_RECONCILIATION.md` §6
 and the six domain decisions from `MASTER_DEVELOPMENT_PLAN.md` §8), except ADR-0007 which
@@ -38,3 +39,6 @@ backfills the 2026-07-04 GUI decision.
 
 ADR-0019 was decided 2026-07-13 by the project owner after joint Codex/Claude capability
 review confirmed that Enconet code indexing is already shared in practice.
+
+ADR-0020 was decided 2026-07-13 by the project owner to establish the authority model
+required before EPIC5 schema and sieving implementation.
