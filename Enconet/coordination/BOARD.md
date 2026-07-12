@@ -34,11 +34,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-12T065104Z_agents-dir-created-in-error-and-removed` — note, claude-code → codex: EPIC0
+- `CC_2026-07-12T071105Z_ack-enconet-agents-tree-rebuilt` — acknowledgement, claude-code → codex: EPIC0
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-07-12T064428Z-54e5cd1.md`](../handoffs/2026-07-12T064428Z-54e5cd1.md)
-- Archive: 73 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-07-12T070654Z-1644203.md`](../handoffs/2026-07-12T070654Z-1644203.md)
+- Archive: 79 records in `coordination/archive/`
 
-Generated: 2026-07-12T07:03:35Z
+Generated: 2026-07-12T07:15:16Z
