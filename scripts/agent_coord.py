@@ -197,7 +197,9 @@ def build_board_body() -> str:
     if HANDOFF_POINTER.is_file():
         for line in HANDOFF_POINTER.read_text(encoding="utf-8").splitlines():
             if "Authoritative record" in line:
-                pointer = line.strip().lstrip("*").strip()
+                # BOARD.md lives in coordination/; re-root the project-relative link.
+                pointer = line.replace("**", "").strip()
+                pointer = pointer.replace("(handoffs/", "(../handoffs/")
                 break
     lines.append(f"- {pointer}")
     lines.append(f"- Archive: {archived_count} records in `coordination/archive/`")

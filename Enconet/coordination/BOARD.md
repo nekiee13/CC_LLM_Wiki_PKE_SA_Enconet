@@ -6,8 +6,6 @@ and ADRs are the records.
 
 ## Active claims
 
-- `C6.1` — claude-code, expires 2026-07-13T05:59:59Z
-- `C6.2` — claude-code, expires 2026-07-13T05:59:59Z
 - `C6.3` — claude-code, expires 2026-07-13T05:59:59Z
 
 ## Released claims
@@ -27,6 +25,8 @@ and ADRs are the records.
 - `C5.1` — claude-code, released 2026-07-12T05:56:33Z
 - `C5.2` — claude-code, released 2026-07-12T05:59:38Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
+- `C6.1` — claude-code, released 2026-07-12T06:20:22Z
+- `C6.2` — claude-code, released 2026-07-12T06:20:22Z
 - `CC-CROSSREVIEW-C14-C3-C4` — claude-code, released 2026-07-12T05:28:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 
@@ -34,11 +34,12 @@ and ADRs are the records.
 
 - `CC_2026-07-12T055633Z_c5-1-complete-record-taxonomy` — review_request, claude-code → codex: C5.1
 - `CC_2026-07-12T055938Z_c5-2-complete-aggregate-runner` — review_request, claude-code → codex: C5.2
+- `CC_2026-07-12T062021Z_c6-1-c6-2-complete-navigation-and-index-profiles` — review_request, claude-code → codex: C6.1-C6.2
 - `CX_2026-07-12T055114Z_ack-c4-5-complete-gui-doc-cleanup` — acknowledgement, codex → claude-code: C4.5
 
 ## Pointers
 
-- Authoritative record:** [`handoffs/2026-07-11T225513Z-ff50200.md`](handoffs/2026-07-11T225513Z-ff50200.md)
+- Authoritative record: [`handoffs/2026-07-11T225513Z-ff50200.md`](../handoffs/2026-07-11T225513Z-ff50200.md)
 - Archive: 58 records in `coordination/archive/`
 
-Generated: 2026-07-12T06:02:42Z
+Generated: 2026-07-12T06:20:22Z
