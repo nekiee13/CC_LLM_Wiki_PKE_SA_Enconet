@@ -39,6 +39,12 @@ contract.
 - Resolve active paths from project/package roots or explicit configuration, never legacy absolute paths.
 - Keep Appendix B taxonomy/schema changes synchronized across machine-readable contracts, prompts,
   runtime validation, query fields, and fixtures until one canonical owner is implemented.
+- Follow [`docs/RAW_INTAKE.md`](docs/RAW_INTAKE.md) for source intake. It uses one
+  controlled doorway: place a reviewed file directly in `incoming/`,
+  then run `scripts/promote_source.py` with its registry metadata. Promotion moves it to
+  `raw/`, applies a platform read-only mode (Windows read-only attribute / POSIX write bits),
+  and registers identical provenance in SQLite and `manifests/raw_sources.csv`. Never edit
+  `raw/` files in place; replace them only through a separately reviewed, newly named source.
 
 ## Verification
 

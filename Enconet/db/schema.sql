@@ -16,7 +16,11 @@ CREATE TABLE IF NOT EXISTS documents (
     language TEXT NOT NULL CHECK (language IN ('sl','en','hr')),
     document_side TEXT NOT NULL CHECK (document_side IN ('RULE','DOCUMENT')),
     sha256 TEXT NOT NULL UNIQUE CHECK (length(sha256) = 64),
+    promoted_utc TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    source_url TEXT NOT NULL DEFAULT 'n-a',
+    notes TEXT NOT NULL DEFAULT '',
     extraction_method TEXT,
+    extracted_at TEXT,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) STRICT;
 

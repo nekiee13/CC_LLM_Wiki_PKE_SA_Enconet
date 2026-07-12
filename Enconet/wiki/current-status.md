@@ -1,7 +1,7 @@
 # Enconet current status
 
 Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
-`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-12 (EPIC 0).
+`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-12 (EPIC 3).
 
 ## Phase
 
@@ -15,7 +15,8 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 0 | Scaffold & governance | complete (commits d47bd1f, 0643d49); claim released |
 | 1 | Machine-readable contracts | complete; negative-path tests pass, taxonomy single ownership enforced, aggregate L0-L5 green; claim released |
 | 2 | Controlled SQLite data backbone | complete; schema, idempotent initializer, shared DB helper, and integrity negative tests green |
-| 3+ | Raw intake onward | not started |
+| 3 | Raw intake & document registry | complete; controlled promotion, dual DB/CSV registry, text extraction, immutability validator, and negative tests green |
+| 4+ | Chunking onward | not started |
 
 ## Open items
 
@@ -24,4 +25,4 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Start EPIC 3 (raw intake and document registry) after EPIC2 review/commit.
+Cross-review EPIC 3, then start EPIC 4 (chunking pipeline).

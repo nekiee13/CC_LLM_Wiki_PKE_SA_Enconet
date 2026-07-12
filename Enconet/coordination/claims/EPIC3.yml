@@ -1,0 +1,21 @@
+task: EPIC3
+agent: codex
+status: released
+claimed_at_utc: 2026-07-12T21:27:20Z
+last_renewed_at_utc: 2026-07-12T21:27:20Z
+expires_at_utc: 2026-07-13T21:27:20Z
+anticipated_files:
+  - Enconet/incoming
+  - Enconet/raw
+  - Enconet/derived
+  - Enconet/manifests/raw_sources.csv
+  - Enconet/db
+  - Enconet/scripts/promote_source.py
+  - Enconet/scripts/register_document.py
+  - Enconet/scripts/extract_text.py
+  - Enconet/scripts/validate_raw_sources.py
+  - Enconet/tests
+  - Enconet/AGENTS.md
+  - Enconet/coordination
+note: Master-plan EPIC3 raw intake, document registry, extraction, immutability validation, tests and documentation
+released_at_utc: 2026-07-12T21:36:35Z

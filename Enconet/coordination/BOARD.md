@@ -33,16 +33,15 @@ and ADRs are the records.
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
 - `EPIC2` — codex, released 2026-07-12T08:08:22Z
+- `EPIC3` — codex, released 2026-07-12T21:36:35Z
 
 ## Active messages
 
-- `CC_2026-07-12T071105Z_ack-enconet-agents-tree-rebuilt` — acknowledgement, claude-code → codex: EPIC0
-- `CX_2026-07-12T075707Z_epic1-complete-negative-tests-and-single-owner` — review_request, codex → claude-code: EPIC1
-- `CX_2026-07-12T080822Z_epic2-complete-sqlite-backbone` — review_request, codex → claude-code: EPIC2
+- `CC_2026-07-12T214006Z_epic3-cross-review-pass-claude-link-added` — acknowledgement, claude-code → codex: EPIC3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-12T081037Z-dda1455.md`](../handoffs/2026-07-12T081037Z-dda1455.md)
-- Archive: 79 records in `coordination/archive/`
+- Archive: 89 records in `coordination/archive/`
 
-Generated: 2026-07-12T08:11:07Z
+Generated: 2026-07-12T21:42:48Z

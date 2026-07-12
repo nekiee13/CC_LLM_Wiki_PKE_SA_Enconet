@@ -52,3 +52,4 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - task-complete | 2026-07-12T08:05:31Z | EPIC2 2.1-2.3 | SQLite spine with 16 operational tables plus criteria registry, enforced FKs/enums, idempotent initializer, ID-validating DB helper, 7 DB negative/integrity tests; aggregate L0-L5 passed (CX)
 
 - handoff-created | 2026-07-12T08:10:37Z | handoffs/2026-07-12T081037Z-dda1455.md | partial | dda145535e62b8458f4f072f07e18aebdbe71f1d
+- task-complete | 2026-07-12T21:35:49Z | EPIC3 3.1-3.4 | controlled raw promotion, sequential document registry synchronized across SQLite/CSV, UTF-8 text extraction, checksum/write-lock validator, 4 risk-focused tests; aggregate L0-L5 passed (CX)
