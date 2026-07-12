@@ -99,10 +99,11 @@ CREATE TABLE IF NOT EXISTS crumb_authority_refs (
 
 CREATE TABLE IF NOT EXISTS crumb_chunk_links (
     item_id TEXT NOT NULL REFERENCES crumbs(item_id) ON DELETE CASCADE,
+    quote_id TEXT NOT NULL REFERENCES crumb_quotes(quote_id) ON DELETE CASCADE,
     chunk_id TEXT NOT NULL REFERENCES document_chunks(chunk_id) ON DELETE CASCADE,
     link_method TEXT NOT NULL,
     confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
-    PRIMARY KEY (item_id, chunk_id)
+    PRIMARY KEY (item_id, quote_id, chunk_id)
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS requirements (

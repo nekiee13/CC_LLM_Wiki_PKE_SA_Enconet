@@ -60,7 +60,7 @@ def test_schema_declares_required_foreign_key_spine(database: Path):
         "crumb_quotes": {("item_id", "crumbs")},
         "sieve_run_authorities": {("run_id", "sieve_runs")},
         "crumb_authority_refs": {("item_id", "crumbs")},
-        "crumb_chunk_links": {("item_id", "crumbs"), ("chunk_id", "document_chunks")},
+        "crumb_chunk_links": {("item_id", "crumbs"), ("quote_id", "crumb_quotes"), ("chunk_id", "document_chunks")},
         "criterion_applicability": {("criterion_id", "criteria"), ("evaluation_run_id", "evaluation_runs")},
         "criterion_evaluations": {("criterion_id", "criteria"), ("evaluation_run_id", "evaluation_runs")},
         "gaps": {("evaluation_id", "criterion_evaluations")},

@@ -1,0 +1,18 @@
+task: EPIC6
+agent: codex
+status: released
+claimed_at_utc: 2026-07-12T23:42:18Z
+last_renewed_at_utc: 2026-07-12T23:45:37Z
+expires_at_utc: 2026-07-13T23:45:37Z
+anticipated_files:
+  - .gitignore
+  - Enconet/db
+  - Enconet/manifests
+  - Enconet/schemas
+  - Enconet/scripts
+  - Enconet/tests
+  - Enconet/docs
+  - Enconet/wiki
+  - Enconet/coordination
+note: Implement and safely apply EPIC5 live-DB migration foundation plus EPIC6 quote-level chunk traceability
+released_at_utc: 2026-07-12T23:46:42Z
