@@ -72,8 +72,9 @@ Record dependency or encoding failures as failures, not as successful verificati
 
 ## Team coordination
 
-- Follow ADR-0016/0017/0018. Claude Code owns all Claude infrastructure and Claude-owned indexes;
-  Codex may read but must not modify or re-index them.
+- Follow ADR-0016 through ADR-0019. Claude Code owns Claude infrastructure and guidance-only
+  indexes; ADR-0019 repository code/docs indexes are shared-neutral and refreshable by either
+  agent only from committed state under an active `INDEX-REFRESH` claim and `doc/INDEXING.md`.
 - Session order: `HANDOFF.md`, then `coordination/BOARD.md`, unread messages addressed to
   Codex, and active claims when those records exist.
 - Reply to Claude through a new immutable `coordination/messages/CX_*.md` record with

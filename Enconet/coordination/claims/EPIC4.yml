@@ -1,0 +1,17 @@
+task: EPIC4
+agent: codex
+status: released
+claimed_at_utc: 2026-07-12T21:45:04Z
+last_renewed_at_utc: 2026-07-12T21:45:04Z
+expires_at_utc: 2026-07-13T21:45:04Z
+anticipated_files:
+  - Enconet/scripts/chunk_document.py
+  - Enconet/scripts/validate_chunks.py
+  - Enconet/tests
+  - Enconet/db
+  - Enconet/manifests/validation_runs.csv
+  - Enconet/wiki
+  - Enconet/coordination
+  - scripts/run_validation.py
+note: Master-plan EPIC4 heading parser, atomic chunk writer, quality rules, validator and tests
+released_at_utc: 2026-07-12T21:49:59Z

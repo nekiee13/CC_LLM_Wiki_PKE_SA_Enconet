@@ -53,3 +53,5 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 
 - handoff-created | 2026-07-12T08:10:37Z | handoffs/2026-07-12T081037Z-dda1455.md | partial | dda145535e62b8458f4f072f07e18aebdbe71f1d
 - task-complete | 2026-07-12T21:35:49Z | EPIC3 3.1-3.4 | controlled raw promotion, sequential document registry synchronized across SQLite/CSV, UTF-8 text extraction, checksum/write-lock validator, 4 risk-focused tests; aggregate L0-L5 passed (CX)
+- task-complete | 2026-07-12T21:49:31Z | EPIC4 4.1-4.4 | level-1/2 numeric heading parser with level-3 containment and whole-document fallback, atomic per-document chunk replacement, configurable quality warnings/rejections, offset/provenance validator, 4 risk-focused tests; aggregate L0-L5 passed (CX)
+- decision-recorded | 2026-07-13 | ADR-0019 | repository code/docs MCP indexes are shared-neutral under single-writer committed-HEAD refresh controls; genuinely distinct agent-guidance corpora remain separately owned

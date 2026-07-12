@@ -30,7 +30,11 @@ Context → Decision → Consequences.
 | [ADR-0016](CC_ADR-0016-dual-agent-infrastructure-ban.md) | Dual-agent infrastructure ownership ban (neither agent touches the other's files/indexes) | Workspace + user env | Accepted |
 | [ADR-0017](CC_ADR-0017-interagent-coordination-protocol.md) | Inter-agent coordination protocol: `coordination/` (TEAM_PROTOCOL, BOARD, messages, claims); repo = channel; implementation after C0.1 | Workspace | Accepted (deferred impl.) |
 | [ADR-0018](CX_ADR-0018-coordination-message-lifecycle.md) | Active messages contain unresolved work; confirmed resolutions are logged and archived intact | Workspace | Accepted |
+| [ADR-0019](CX_ADR-0019-shared-mcp-indexes.md) | Repository code/docs MCP indexes are shared-neutral with single-writer refresh controls; distinct guidance corpora remain agent-owned | Workspace | Accepted |
 
 All decided 2026-07-11 by the project owner (D-1…D-6 from `docs/CX_CC_RECONCILIATION.md` §6
 and the six domain decisions from `MASTER_DEVELOPMENT_PLAN.md` §8), except ADR-0007 which
 backfills the 2026-07-04 GUI decision.
+
+ADR-0019 was decided 2026-07-13 by the project owner after joint Codex/Claude capability
+review confirmed that Enconet code indexing is already shared in practice.

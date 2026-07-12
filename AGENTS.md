@@ -19,14 +19,15 @@ requirements defined here.
 
 ## Dual-agent coordination
 
-- Follow ADR-0016 through ADR-0018: separate agent infrastructure, shared project
-  coordination, and active/archive message lifecycle.
+- Follow ADR-0016 through ADR-0019: separate agent infrastructure, shared project
+  coordination, active/archive message lifecycle, and shared neutral repository indexes.
 - Codex owns `AGENTS.md`, `.agents/`, `~/.codex/`, `~/.agents/`, `CX_` records, and the
   `Codex_global_guidance` and `PKE_SA_NQA1_codex_guidance` indexes.
-- Do not modify or re-index Claude-owned guidance, skills, `CC_` records, or indexes.
-- Claude-owned index names currently include `PKE_SA_NQA1_Enconet_docs`,
-  `PKE_SA_NQA1_Enconet_controlled`, `PKE_SA_NQA1_global_docs`, and
-  `Enconet-0a063bd7`; Codex may inspect their recorded state but must not refresh them.
+- Do not modify or re-index Claude-owned guidance, skills, `CC_` records, or guidance-only indexes.
+- ADR-0019 makes `PKE_SA_NQA1_Enconet_docs`, `PKE_SA_NQA1_Enconet_controlled`,
+  `PKE_SA_NQA1_global_docs`, and `Enconet-0a063bd7` shared-neutral repository indexes.
+  Either agent may query them; refresh only from committed state under one active
+  `INDEX-REFRESH` claim using the exact profiles in `doc/INDEXING.md`.
 - Send cross-agent notes, questions, review requests, blockers, and acknowledgements through
   `Enconet/coordination/messages/` using immutable `CX_` messages. Never rewrite a message.
 - Keep the active message directory limited to unresolved communication. Once resolution is
@@ -66,7 +67,8 @@ requirements defined here.
    Complete the ADR-0018 lifecycle in the same turn: archive resolved and confirmed Codex-owned
    `CX_` records with an immutable resolution manifest, then regenerate and validate the board.
 4. Check the actual tree and Git identity before trusting paths or status copied from another machine.
-5. Use jdocmunch for indexed documentation and jcodemunch for indexed code; refresh only Codex-owned indexes after edits.
+5. Use jdocmunch for indexed documentation and jcodemunch for indexed code; refresh shared
+   repository indexes only under ADR-0019 controls, and agent-specific indexes only when Codex-owned.
 6. Run `python scripts/check_guidance_drift.py` after guidance or paired-skill edits and
    `python scripts/check_skill_structure.py` before adding or moving skills.
 7. Keep changes scoped and add tests in proportion to audit, data-integrity, and cross-project risk.

@@ -17,7 +17,10 @@ def validate(*, db_path: Path, raw_root: Path = RAW,
     by_name = {row["filename"]: row for row in rows}
     if len(by_name) != len(rows):
         errors.append("duplicate filename in raw_sources.csv")
-    actual = {path.name: path for path in raw_root.iterdir() if path.is_file()}
+    actual = {
+        path.name: path for path in raw_root.iterdir()
+        if path.is_file() and path.name != ".gitkeep"
+    }
     for name in sorted(actual.keys() - by_name.keys()):
         errors.append(f"unregistered raw file: {name}")
     for name in sorted(by_name.keys() - actual.keys()):

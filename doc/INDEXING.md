@@ -4,33 +4,35 @@
   that are mandatory on every refresh, and known tool caveats. Task C6.2 will extend
   this with the full jmunch profile table; entries below are the profiles verified in
   use as of 2026-07-11.
-- **Owner:** each agent documents and maintains only its own tool indexes (ADR-0016);
-  this file lists both for navigation.
+- **Owner:** repository code/docs indexes are shared-neutral under ADR-0019; agent-specific
+  guidance indexes remain separately owned under ADR-0016.
 - **Update trigger:** a profile is created, re-rooted, renamed, or a new caveat is
   observed.
 
-## Claude-owned profiles (maintained by Claude Code)
+## Shared-neutral repository profiles
 
 Plan profile names (ALIGNMENT_PLAN C6.2) map to these actual index names:
 
 | Plan name | Tool | Index name | Root | Mandatory options (every refresh) |
 |---|---|---|---|---|
-| `enconet-docs` | jdocmunch | `local/PKE_SA_NQA1_Enconet_docs` | `Enconet/` | `extra_ignore_patterns: ["sieving/DATA/**", ".claude/**", "**/settings.local.json"]` |
+| `enconet-docs` | jdocmunch | `local/PKE_SA_NQA1_Enconet_docs` | `Enconet/` | `extra_ignore_patterns: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", ".claude/**", ".agents/**", "**/settings.local.json"]` |
 | — (controlled view) | jdocmunch | `local/PKE_SA_NQA1_Enconet_controlled` | `Enconet/` | docs patterns **plus** `["docs/context/**", "docs/_archive/**", "coordination/archive/**"]` |
 | `nqa1-global-docs` | jdocmunch | `local/PKE_SA_NQA1_global_docs` | `03_PKE_SA_NQA1/doc/` | none (directory holds only workspace docs) — created 2026-07-12 (C6.2) |
 | `enconet-code` | jcodemunch | `local/Enconet-0a063bd7` | `Enconet/` | Python sources only (tool default); `.gitignore` honored |
 
-Refresh discipline: refresh after batch documentation changes and before `/handoff`;
+Refresh discipline: exactly one writer holds an active `INDEX-REFRESH` claim; either
+agent may query or verify. Refresh after batch documentation changes and before `/handoff`;
 full refresh (documented root + full ignore list) rather than bare incremental after
 any structural change; SHA-certification requires a clean worktree (refresh after
 commit); run `verify_index` after each full refresh and record the certified
 `repo@sha` in the next handoff. Last certified state: all three doc profiles clean
 (0 drift / 0 missing / 0 errors) at `25cdb71`, 2026-07-12.
 
-## Codex-owned indexes (named for navigation only — never touched by Claude Code)
+## Agent-owned guidance indexes
 
-`Codex_global_guidance`, `PKE_SA_NQA1_codex_guidance`, `PKE_SA_NQA1_agent_guidance`
-(ADR-0016). Their roots and refresh rules are Codex-documented.
+`Codex_global_guidance` and `PKE_SA_NQA1_codex_guidance` remain Codex-owned because
+their corpus is Codex guidance. Equivalent Claude-specific guidance scope remains
+Claude-owned. Do not create a second repository code/docs index merely for agent naming.
 
 ## Caveats (observed, dated)
 

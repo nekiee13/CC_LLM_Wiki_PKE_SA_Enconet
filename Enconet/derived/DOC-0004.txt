@@ -1,0 +1,5 @@
+# Requirement 5 - Instructions, Procedures, And Drawings 
+
+## 100 General
+
+Activities affecting quality and services shall be prescribed by and performed in accordance with documented instructions, procedures, or drawings that include or reference appropriate **quantitative or qualitative acceptance criteria** for determining that prescribed activities have been satisfactorily accomplished. The activity shall be described to a level of detail commensurate with the complexity of the activity and the need to assure consistent and acceptable results. The need for, and level of detail in, written procedures or instructions shall be determined based upon complexity of the task, the significance of the item or activity, work environment, and worker proficiency and capability (education, training, experience).

@@ -1,0 +1,5 @@
+# Requirement 14 - Inspection, Test, And Operating Status 
+
+## 100 General
+
+The status of inspection and test activities shall be identified either on the items or in documents traceable to the items where it is necessary to ensure that required inspections and tests are performed and to ensure that items that have not passed the required inspections and tests are not inadvertently installed, used, or operated. Status shall be maintained through indicators, such as physical location and tags, markings, shop travelers, stamps, inspection records, or other suitable means. The authority for application and removal of tags, markings, labels, and stamps shall be specified. Status indicators shall also provide for indicating the operating status of systems and components of the nuclear facility, such as by tagging valves and switches, to prevent inadvertent operation.

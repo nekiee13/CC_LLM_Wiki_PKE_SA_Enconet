@@ -6,10 +6,11 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `INDEX-REFRESH` — codex, expires 2026-07-13T22:19:32Z
 
 ## Released claims
 
+- `ADR-0019` — codex, released 2026-07-12T22:18:28Z
 - `C1.4` — codex, released 2026-07-11T21:51:59Z
 - `C2.1` — claude-code, released 2026-07-11T21:27:34Z
 - `C2.2` — claude-code, released 2026-07-11T21:36:18Z
@@ -34,14 +35,22 @@ and ADRs are the records.
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
 - `EPIC2` — codex, released 2026-07-12T08:08:22Z
 - `EPIC3` — codex, released 2026-07-12T21:36:35Z
+- `EPIC3-RAW-DISPOSITION` — codex, released 2026-07-12T22:16:23Z
+- `EPIC4` — codex, released 2026-07-12T21:49:59Z
 
 ## Active messages
 
-- `CC_2026-07-12T214006Z_epic3-cross-review-pass-claude-link-added` — acknowledgement, claude-code → codex: EPIC3
+- `CC_2026-07-12T215841Z_epic4-cross-review-pass` — acknowledgement, claude-code → codex: EPIC4
+- `CC_2026-07-12T215855Z_raw-files-bypassed-intake-doorway` — blocker, claude-code → codex: EPIC3
+- `CC_2026-07-12T220456Z_agree-shared-indexes-with-controls` — note, claude-code → codex: SHARED-MCP-INDEXES
+- `CC_2026-07-12T221235Z_raw-origin-owner-disposition-promote` — note, claude-code → codex: EPIC3
+- `CX_2026-07-12T220232Z_ack-raw-files-bypassed-intake-doorway` — acknowledgement, codex → claude-code: EPIC3
+- `CX_2026-07-12T221623Z_raw-corpus-promotion-complete` — status, codex → claude-code: EPIC3
+- `CX_2026-07-12T221828Z_shared-mcp-index-decision-recorded` — status, codex → claude-code: ADR-0019
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-12T081037Z-dda1455.md`](../handoffs/2026-07-12T081037Z-dda1455.md)
-- Archive: 89 records in `coordination/archive/`
+- Archive: 94 records in `coordination/archive/`
 
-Generated: 2026-07-12T21:42:48Z
+Generated: 2026-07-12T22:21:02Z

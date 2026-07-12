@@ -39,7 +39,9 @@ def is_write_locked(path: Path) -> bool:
 
 
 def read_manifest(path: Path = MANIFEST) -> list[dict[str, str]]:
-    with path.open(newline="", encoding="utf-8") as fh:
+    # utf-8-sig accepts both ordinary UTF-8 and CSVs created with a BOM by
+    # Windows tooling, while presenting the canonical first field as doc_id.
+    with path.open(newline="", encoding="utf-8-sig") as fh:
         reader = csv.DictReader(fh)
         if reader.fieldnames != HEADER:
             raise RuntimeError(f"unexpected raw source manifest header: {reader.fieldnames}")

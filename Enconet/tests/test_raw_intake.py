@@ -72,6 +72,12 @@ def test_duplicate_filename_and_checksum_are_rejected(intake):
         source_registry.register(duplicate_hash, **metadata(manifest, db))
 
 
+def test_manifest_reader_accepts_windows_utf8_bom(tmp_path: Path):
+    manifest = tmp_path / "raw_sources.csv"
+    manifest.write_text(",".join(source_registry.HEADER) + "\n", encoding="utf-8-sig")
+    assert source_registry.read_manifest(manifest) == []
+
+
 def test_text_extraction_records_method_and_rejects_empty(intake):
     incoming, raw, derived, manifest, db = intake
     source = incoming / "document.txt"
@@ -97,6 +103,7 @@ def test_validator_names_tamper_unregistered_and_missing(intake):
     source = incoming / "registered.txt"
     source.write_text("original", encoding="utf-8")
     promote_source.promote(source, **metadata(manifest, db))
+    (raw / ".gitkeep").touch()
     assert validate_raw_sources.validate(db_path=db, raw_root=raw, manifest_path=manifest) == []
 
     registered = raw / "registered.txt"

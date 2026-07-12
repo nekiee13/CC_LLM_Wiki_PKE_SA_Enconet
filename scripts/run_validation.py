@@ -157,8 +157,9 @@ def build_layers() -> list[Layer]:
         ]),
         Layer("L3 integration (project)", [
             Step("schema contract validator", [py, str(ENCONET / "scripts" / "validate_schemas.py")]),
-            Step("schema, DB backbone, and raw intake tests", [py, "-m", "pytest",
+            Step("schema and ingestion pipeline tests", [py, "-m", "pytest",
                  "tests/test_validate_schemas.py", "tests/test_db_backbone.py", "tests/test_raw_intake.py",
+                 "tests/test_chunk_pipeline.py",
                  "-q", "-p", "no:cacheprovider"], cwd=ENCONET),
             Step("sieving test suite", [py, "-m", "pytest", "-q", "-p", "no:cacheprovider"], cwd=SIEVING),
             Step("installation verification", [py, "verify_install.py"], cwd=SIEVING),

@@ -15,6 +15,7 @@ __pycache__/
 venv/
 
 # Database journals and local stores
+*.sqlite
 *.db-journal
 *.db-wal
 *.db-shm
