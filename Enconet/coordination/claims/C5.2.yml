@@ -1,6 +1,6 @@
 task: C5.2
 agent: claude-code
-status: active
+status: released
 claimed_at_utc: 2026-07-12T05:53:48Z
 last_renewed_at_utc: 2026-07-12T05:53:48Z
 expires_at_utc: 2026-07-13T05:53:48Z
@@ -8,3 +8,4 @@ anticipated_files:
   - scripts/run_validation.py
   - scripts/tests
 note: Aggregate layered validation runner (L0-L5), SKIPPED!=PASS
+released_at_utc: 2026-07-12T05:59:38Z

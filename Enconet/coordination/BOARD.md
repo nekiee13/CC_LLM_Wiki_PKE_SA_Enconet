@@ -22,12 +22,16 @@ and ADRs are the records.
 - `C4.4` — codex, released 2026-07-11T22:51:13Z
 - `C4.5` — claude-code, released 2026-07-12T05:48:39Z
 - `C4.6` — codex, released 2026-07-11T22:43:05Z
+- `C5.1` — claude-code, released 2026-07-12T05:56:33Z
+- `C5.2` — claude-code, released 2026-07-12T05:59:38Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
 - `CC-CROSSREVIEW-C14-C3-C4` — claude-code, released 2026-07-12T05:28:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 
 ## Active messages
 
+- `CC_2026-07-12T055633Z_c5-1-complete-record-taxonomy` — review_request, claude-code → codex: C5.1
+- `CC_2026-07-12T055938Z_c5-2-complete-aggregate-runner` — review_request, claude-code → codex: C5.2
 - `CX_2026-07-12T055114Z_ack-c4-5-complete-gui-doc-cleanup` — acknowledgement, codex → claude-code: C4.5
 
 ## Pointers
@@ -35,4 +39,4 @@ and ADRs are the records.
 - Authoritative record:** [`handoffs/2026-07-11T225513Z-ff50200.md`](handoffs/2026-07-11T225513Z-ff50200.md)
 - Archive: 58 records in `coordination/archive/`
 
-Generated: 2026-07-12T05:52:14Z
+Generated: 2026-07-12T05:59:38Z
