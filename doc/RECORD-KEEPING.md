@@ -21,6 +21,9 @@
 | Provenance / divergence log | `Enconet/sieving/PROVENANCE.md` | Append-only table of local modifications |
 | Guidance drift manifest | `doc/GUIDANCE_PAIRS.json` | Agent-neutral shared authority; changes proposed via coordination messages |
 | Commits | git history, `main` | Tagged per `doc/GIT_CONVENTIONS.md`; agent authorship via `Co-Authored-By` trailers |
+| Event log | `Enconet/wiki/log.md` | Append-only; one line per event; `handoff-created` lines appended by `scripts/make_handoff.py` (C5.1) |
+| Status snapshot | `Enconet/wiki/current-status.md` | Replaceable; overwritten freely, history lives in the log/handoffs/git (C5.1) |
+| Wiki index | `Enconet/wiki/index.md` | Curated navigation entry point (C5.1/C6.1) |
 
 ## Rules that cut across record types
 
@@ -36,8 +39,10 @@
   messages → active claims, then verifies against reality; session end runs the
   user-global `/handoff` skill (mandatory) producing a new immutable record.
 
-## Planned (not yet evidence)
+## Handoff tooling (implemented — C3, 2026-07-11)
 
-Deterministic handoff helper `scripts/make_handoff.py`, machine schema, and validator
-tests are planned (master plan Task 0.7 / ALIGNMENT_PLAN C3); until they exist,
-handoffs are produced by the skill procedure alone.
+Handoffs are rendered, validated (`handoff_schema.yml`), and atomically published by
+`scripts/make_handoff.py`; a `passed` check requires its command and integer exit
+code. The handoff skill remains the evidence-collection and status contract; validate
+existing records with `--validate <record>` and pointer freshness with
+`--check-staleness`.

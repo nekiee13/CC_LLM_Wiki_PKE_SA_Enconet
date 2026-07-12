@@ -122,6 +122,12 @@ def validate_text(text: str, path: Path | None = None,
     return errors
 
 
+def status_file(project: Path) -> Path:
+    """C5.1 taxonomy location (wiki/current-status.md), with legacy root fallback."""
+    preferred = project / "wiki" / "current-status.md"
+    return preferred if preferred.is_file() else project / "current-status.md"
+
+
 def read_optional(path: Path, label: str) -> str:
     if not path.is_file():
         return f"- {label}: not-configured (`{path.name}` missing)."
@@ -166,7 +172,7 @@ def render(args, project: Path, facts: dict, created: datetime, checks: list[dic
         "Decisions": "\n".join(f"- {x}" for x in args.decision) or "- None recorded.",
         "Validation Evidence": "\n".join(validation),
         "Repository and Index State": "\n".join(git_lines + [
-            read_optional(project / "current-status.md", "current status"),
+            read_optional(status_file(project), "current status"),
             read_optional(project / "project-state.yml", "project state"),
             f"- Index metadata: {args.index_state}. Stale when its recorded HEAD differs from `{facts['head']}`.",
         ]),
