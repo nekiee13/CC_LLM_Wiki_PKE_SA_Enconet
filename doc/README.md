@@ -8,6 +8,9 @@
 - **Update trigger:** whenever a file is added to or removed from `doc/`.
 
 Created by Task C2.2 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G1, ADR-0005).
+Navigation: workspace overview at [`../README.md`](../README.md); project docs at
+[`../Enconet/docs/README.md`](../Enconet/docs/README.md) and
+[`../Enconet/wiki/index.md`](../Enconet/wiki/index.md) (C6.1).
 
 ## Contents
 
