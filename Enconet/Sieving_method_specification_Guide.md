@@ -12,7 +12,7 @@
 | Governing template | `JSON_Template_App_B`, template_version **0.1** (`templates/app_b.py::AppBTemplate`) |
 | Primary sources | **`sieving/` — the vendored pipeline implementation** (`sieving/src/json_extractor/`; enforcement verified at code level; upstream origin github.com/nekiee13/opencode-JSON, recorded in `sieving/PROVENANCE.md`), `docs/context/31 Sieving - Crumb generation.md` (both transformation prompts), `docs/context/32 Crumbs proccessing - json_extractor_session_exp.md` (v0.1-era description, partially superseded — see §10), `docs/context/30 Ingestion phase.md` (pipeline position) |
 | Related plan sections | MASTER_DEVELOPMENT_PLAN.md — EPIC 5 (sieving pipeline), EPIC 6 (traceability), EPIC 15 (extractor integration), EPIC 18 (tuning harness) |
-| Change note | **v1.2 → v1.3:** C4.4 implemented ADR-0003: `schemas/sieving_contract.yml` now owns taxonomy, codes, enums, normalized/export columns, and query fields; runtime facades load it and drift tests cover runtime, prompt text, exporter columns, and existing DATA. **v1.1 → v1.2:** corrected the former duplicate-owner description. |
+| Change note | **EPIC1 refinement:** `schemas/app_b_taxonomy.yml` is now the sole taxonomy owner; the runtime loader composes it with the remaining `sieving_contract.yml` tables. **v1.2 → v1.3:** C4.4 implemented ADR-0003 contract consolidation and drift tests. **v1.1 → v1.2:** corrected the former duplicate-owner description. |
 
 **Purpose of this guide.** Sieving is the crown activity of this project: crumb quality
 bounds every downstream result. This guide records, in one place, exactly how the current
@@ -419,14 +419,17 @@ sieving/                                (vendored, project-integral)
 └── PROVENANCE.md                      ← upstream origin + commit + divergence log
 ```
 
-`schemas/sieving_contract.yml` is the single machine-readable owner established by
-ADR-0003/C4.4. `config.py`, `templates/app_b.py`, and `query/schema.py` load their
-runtime tables from it. `tests/test_contract_drift.py` compares the owner with those
-runtime tables, the controlled vocabulary in the transformation prompt, normalized
-exporter columns, and a full unchanged revalidation of the existing DATA corpus. The
+`schemas/app_b_taxonomy.yml` is the sole owner of the 18 criterion ID/name pairs.
+The runtime loader composes it with `schemas/sieving_contract.yml`, which owns the
+remaining template, reference-code, enum, column, and query-field tables. `config.py`,
+`templates/app_b.py`, and `query/schema.py` load the composed contract.
+`tests/test_contract_drift.py` compares the owner with those runtime tables, the
+controlled vocabulary in the transformation prompt, normalized exporter columns, and
+a full unchanged revalidation of the existing DATA corpus. The
 pre-existing nine JSON decode failures and one taxonomy validation error are pinned in
 `schemas/sieving_data_migration_manifest.yml`; C4.4 performs no DATA migration.
-(sources: `schemas/sieving_contract.yml`, `sieving/src/json_extractor/contract.py`;
+(sources: `schemas/app_b_taxonomy.yml`, `schemas/sieving_contract.yml`,
+`sieving/src/json_extractor/contract.py`;
 cross-reference: C4.4)
 
 **No separate GUI (decision 2026-07-04).** The upstream Streamlit review UI

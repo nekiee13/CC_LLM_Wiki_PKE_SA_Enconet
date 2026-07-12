@@ -1,6 +1,8 @@
 import json
 from pathlib import Path, PurePosixPath
 
+import yaml
+
 from src.json_extractor.config import Config
 from src.json_extractor.contract import load_contract
 from src.json_extractor.pipeline import run_pipeline
@@ -10,6 +12,22 @@ from src.json_extractor.templates.app_b import AppBTemplate
 
 ENCONET_ROOT = Path(__file__).resolve().parents[2]
 PROMPT = ENCONET_ROOT / "docs" / "context" / "31 Sieving - Crumb generation.md"
+
+
+def test_taxonomy_has_one_machine_readable_owner():
+    taxonomy = yaml.safe_load(
+        (ENCONET_ROOT / "schemas" / "app_b_taxonomy.yml").read_text(encoding="utf-8")
+    )
+    broader_contract = json.loads(
+        (ENCONET_ROOT / "schemas" / "sieving_contract.yml").read_text(encoding="utf-8")
+    )
+    expected = [
+        {"criterion_id": entry["criterion_id"], "criterion_name": entry["criterion_name"]}
+        for entry in taxonomy["criteria"]
+    ]
+
+    assert "criteria" not in broader_contract
+    assert load_contract()["criteria"] == expected
 
 
 def test_owner_matches_runtime_query_and_export_tables(tmp_path):

@@ -6,17 +6,30 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+import yaml
+
 CONTRACT_PATH = Path(__file__).resolve().parents[3] / "schemas" / "sieving_contract.yml"
+TAXONOMY_PATH = CONTRACT_PATH.with_name("app_b_taxonomy.yml")
 
 
 @lru_cache(maxsize=1)
 def load_contract() -> dict[str, Any]:
     """Return the JSON-compatible YAML contract after structural checks."""
     data = json.loads(CONTRACT_PATH.read_text(encoding="utf-8"))
-    required = {"template", "criteria", "canonical_codes", "enums", "columns", "query_fields"}
+    required = {"template", "canonical_codes", "enums", "columns", "query_fields"}
     missing = required - data.keys()
     if missing:
         raise ValueError(f"Sieving contract missing sections: {sorted(missing)}")
+    if "criteria" in data:
+        raise ValueError("Sieving contract must not re-declare the APP_B taxonomy")
+    taxonomy = yaml.safe_load(TAXONOMY_PATH.read_text(encoding="utf-8"))
+    criteria = taxonomy.get("criteria") if isinstance(taxonomy, dict) else None
+    if not isinstance(criteria, list) or len(criteria) != 18:
+        raise ValueError("APP_B taxonomy must contain exactly 18 criteria")
+    data["criteria"] = [
+        {"criterion_id": entry["criterion_id"], "criterion_name": entry["criterion_name"]}
+        for entry in criteria
+    ]
     return data
 
 

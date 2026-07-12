@@ -3,8 +3,8 @@
 
 Checks every schemas/*.yml contract for internal consistency and enforces the
 single-source rules:
-  - app_b_taxonomy.yml is the canonical criterion declaration; the runtime projection
-    in sieving_contract.yml (ADR-0003/C4.4) must match it pair-for-pair.
+  - app_b_taxonomy.yml is the sole canonical criterion declaration; the broader
+    sieving_contract.yml must not re-declare the pairs.
   - vocabularies.yml document_sides/source_rules must match the sieving contract enums.
   - id_patterns.yml regexes must compile, be anchored, and accept their own examples.
   - scoring_model.yml weights must cover every rating value exactly.
@@ -67,13 +67,9 @@ def check_taxonomy(tax: dict, sieving: dict) -> None:
             fail(f"app_b_taxonomy.yml: {c.get('criterion_id')}: empty criterion_name")
         if not (c.get("description") or "").strip():
             fail(f"app_b_taxonomy.yml: {c.get('criterion_id')}: missing description")
-    # Single-source rule: the runtime projection must match pair-for-pair.
-    tax_pairs = [(c.get("criterion_id"), c.get("criterion_name")) for c in criteria]
-    sv_pairs = [(c.get("criterion_id"), c.get("criterion_name")) for c in sieving.get("criteria", [])]
-    if tax_pairs != sv_pairs:
-        diff = [f"{a} != {b}" for a, b in zip(tax_pairs, sv_pairs) if a != b]
-        fail("taxonomy/sieving_contract divergence (ADR-0003 single-source violation): "
-             + ("; ".join(diff) or f"length {len(tax_pairs)} vs {len(sv_pairs)}"))
+    if "criteria" in sieving:
+        fail("sieving_contract.yml must not re-declare app_b_taxonomy criteria "
+             "(ADR-0003 single-source violation)")
 
 
 def check_id_patterns(pats: dict, tax: dict) -> None:
@@ -228,8 +224,8 @@ def main() -> int:
         print(f"validate_schemas: FAIL ({len(errors)} error(s))")
         append_validation_run("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}")
         return 1
-    print("validate_schemas: PASS (8 contracts + sieving_contract projection consistent)")
-    append_validation_run("PASS", 0, "8 contracts checked; taxonomy/sieving projection consistent")
+    print("validate_schemas: PASS (8 contracts; taxonomy has one canonical owner)")
+    append_validation_run("PASS", 0, "8 contracts checked; taxonomy single-owner rule satisfied")
     return 0
 
 

@@ -12,17 +12,16 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 | EPIC | Content | Status |
 |---|---|---|
-| 0 | Scaffold & governance | complete (commit d47bd1f); 0.2/0.3/0.7 pre-existing; `.agents/skills` left to Codex (ownership ban); claim released |
-| 1 | Machine-readable contracts | files written (7 contracts + validate_schemas.py, PASS exit 0); claim EPIC1 active (CC); validator negative-path test pending |
+| 0 | Scaffold & governance | complete (commits d47bd1f, 0643d49); claim released |
+| 1 | Machine-readable contracts | complete; negative-path tests pass, taxonomy single ownership enforced, aggregate L0-L5 green; claim released |
 | 2+ | Data backbone onward | not started |
 
 ## Open items
 
-- Codex: create `Enconet/.agents/skills/` (Codex-owned; see CC_2026-07-12T065104Z note).
 - `sieving/DATA` external backup location — owner decision still to be designated (ADR-0002).
 - Scoring model calibration deferred to Gate G3 (ADR-0013).
 
 ## Next action
 
-Negative-path test `scripts/validate_schemas.py` (prove it fails on taxonomy divergence
-and scoring gaps), then close EPIC 1 (release claim) and start EPIC 2 (SQLite backbone).
+Start EPIC 2 (SQLite backbone): `db/schema.sql`, `scripts/init_db.py`, and
+`scripts/db_util.py` with foreign-key and negative-path integrity tests.

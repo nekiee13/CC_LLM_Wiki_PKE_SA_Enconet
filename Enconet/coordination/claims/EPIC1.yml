@@ -1,9 +1,10 @@
 task: EPIC1
-agent: claude-code
-status: active
+agent: codex
+status: released
 claimed_at_utc: 2026-07-12T06:49:13Z
-last_renewed_at_utc: 2026-07-12T06:49:13Z
-expires_at_utc: 2026-07-13T06:49:13Z
+last_renewed_at_utc: 2026-07-12T07:40:06Z
+expires_at_utc: 2026-07-13T07:40:06Z
 anticipated_files:
   - Enconet/schemas
-note: Master-plan EPIC 1 schema contracts 1.1-1.7
+note: Owner-directed takeover from offline Claude; resume EPIC1 negative-path validator coverage and contract review.
+released_at_utc: 2026-07-12T07:57:07Z

@@ -48,3 +48,4 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - task-progress | 2026-07-12T07:05:00Z | EPIC1 1.1-1.7 | seven schema contracts written (taxonomy, id_patterns, vocabularies, app_b_json, scoring placeholder per ADR-0013, dashboard, page_types+required_fields) + scripts/validate_schemas.py PASS exit 0; validator negative-path test not yet run (CC)
 
 - handoff-created | 2026-07-12T07:06:54Z | handoffs/2026-07-12T070654Z-1644203.md | complete | 16442037ecf868cb179f9865d1ba754b3f400bea
+- task-complete | 2026-07-12T07:40:06Z | EPIC1 1.1-1.7 | owner-directed Codex takeover; negative-path taxonomy/scoring tests pass; app_b_taxonomy is sole criterion owner; sieving 49 passed; aggregate L0-L5 passed (CX)

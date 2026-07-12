@@ -1,26 +1,6 @@
 {
   "schema_version": "1.0",
   "template": {"id": "JSON_Template_App_B", "version": "0.1", "taxonomy_id": "APP_B"},
-  "criteria": [
-    {"criterion_id":"APP_B_I","criterion_name":"Organization"},
-    {"criterion_id":"APP_B_II","criterion_name":"Quality Assurance Program"},
-    {"criterion_id":"APP_B_III","criterion_name":"Design Control"},
-    {"criterion_id":"APP_B_IV","criterion_name":"Procurement Document Control"},
-    {"criterion_id":"APP_B_V","criterion_name":"Instructions, Procedures, and Drawings"},
-    {"criterion_id":"APP_B_VI","criterion_name":"Document Control"},
-    {"criterion_id":"APP_B_VII","criterion_name":"Control of Purchased Material, Equipment, and Services"},
-    {"criterion_id":"APP_B_VIII","criterion_name":"Identification and Control of Materials, Parts, and Components"},
-    {"criterion_id":"APP_B_IX","criterion_name":"Control of Special Processes"},
-    {"criterion_id":"APP_B_X","criterion_name":"Inspection"},
-    {"criterion_id":"APP_B_XI","criterion_name":"Test Control"},
-    {"criterion_id":"APP_B_XII","criterion_name":"Control of Measuring and Test Equipment"},
-    {"criterion_id":"APP_B_XIII","criterion_name":"Handling, Storage, and Shipping"},
-    {"criterion_id":"APP_B_XIV","criterion_name":"Inspection, Test, and Operating Status"},
-    {"criterion_id":"APP_B_XV","criterion_name":"Nonconforming Materials, Parts, or Components"},
-    {"criterion_id":"APP_B_XVI","criterion_name":"Corrective Action"},
-    {"criterion_id":"APP_B_XVII","criterion_name":"Quality Assurance Records"},
-    {"criterion_id":"APP_B_XVIII","criterion_name":"Audits"}
-  ],
   "canonical_codes": [
     {"ref_code":"10CFR50_APPB","ref_type":"REGULATION","title":"10 CFR Part 50 Appendix B — Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants","allowed_locators":"criteria"},
     {"ref_code":"10CFR21","ref_type":"REGULATION","title":"10 CFR Part 21 — Reporting of Defects and Noncompliance","locator_pattern":"^21\\.[0-9]+$"}

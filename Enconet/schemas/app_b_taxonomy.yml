@@ -7,11 +7,9 @@
 # Names verified against the official public text, 10 CFR Part 50 Appendix B (eCFR/NRC),
 # and match the sieving prompts exactly.
 #
-# Known projection: `schemas/sieving_contract.yml` (ADR-0003 / C4.4) embeds a
-# JSON-parsable copy of these pairs for the vendored sieving runtime
-# (`sieving/src/json_extractor/contract.py` parses it with json.loads and cannot load
-# this file). `scripts/validate_schemas.py` fails if the two declarations diverge;
-# no third declaration is permitted anywhere in the project.
+# The vendored sieving runtime loads these pairs through
+# `sieving/src/json_extractor/contract.py`; `schemas/sieving_contract.yml` owns the
+# remaining runtime tables but must not re-declare the taxonomy.
 
 schema_version: "1.0"
 taxonomy_id: APP_B
