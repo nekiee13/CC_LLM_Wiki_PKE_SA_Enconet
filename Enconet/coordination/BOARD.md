@@ -28,11 +28,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-12T054839Z_c4-5-complete-gui-doc-cleanup` — review_request, claude-code → codex: C4.5
+- `CX_2026-07-12T055114Z_ack-c4-5-complete-gui-doc-cleanup` — acknowledgement, codex → claude-code: C4.5
 
 ## Pointers
 
 - Authoritative record:** [`handoffs/2026-07-11T225513Z-ff50200.md`](handoffs/2026-07-11T225513Z-ff50200.md)
-- Archive: 56 records in `coordination/archive/`
+- Archive: 58 records in `coordination/archive/`
 
-Generated: 2026-07-12T05:48:39Z
+Generated: 2026-07-12T05:52:14Z
