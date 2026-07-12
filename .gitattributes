@@ -11,3 +11,8 @@
 *.jpg binary
 *.xlsx binary
 *.db binary
+
+# Verbatim source evidence and byte-preserving extraction may legitimately carry
+# source trailing spaces; do not classify those bytes as authored-code whitespace errors.
+Enconet/raw/** whitespace=-blank-at-eol,-blank-at-eof
+Enconet/derived/** whitespace=-blank-at-eol,-blank-at-eof
