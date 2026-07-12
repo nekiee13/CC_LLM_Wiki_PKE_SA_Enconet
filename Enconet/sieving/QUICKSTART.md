@@ -17,26 +17,11 @@ Valid extraction JSON files must be placed under `DATA/`. Recommended layout:
 
 Files must follow the active template contract (currently JSON_Template_App_B). If the repository includes example files, they should already be under `DATA/`.
 
-## 3. Run the GUI (Streamlit)
+## 3. Interface
 
-```bash
-streamlit run app.py
-```
-
-Then:
-
-1. Select one or more JSON files in the sidebar
-2. Start with a simple filter such as: `criterion_id:APP_B_XVI`
-3. Click **Run query**
-4. Review results and export if needed
-
-Notes:
-
-* The Streamlit filter builder emits:
-
-  * `OR` when explicitly typed in the DSL input
-  * `IN` for ENUM multi-select fields as comma-joined values (example: `criterion_id:APP_B_I,APP_B_II`)
-* If a filter is invalid, an explicit filter error is shown in the UI (E4-T2).
+The CLI (`cli.py`) is the only supported interface. The former Streamlit GUI
+(`app.py`) was retired by owner decision on 2026-07-04 (ADR-0007) and must not be
+reintroduced without a superseding ADR.
 
 ## 4. Run the CLI
 
@@ -50,13 +35,14 @@ python cli.py query --all --filter "criterion_id:APP_B_XVI" --preview
 python cli.py query --all --filter "criterion_id:APP_B_XVI" --output corrective_action.xlsx
 ```
 
-### Strict filter mode (E4-T2)
+### Fail-closed filtering (C4.1)
 
-By default, an invalid filter returns unfiltered results and surfaces a `filter_error`.
-To fail fast in scripts, add `--strict-filter` to exit with code `2` when the filter is invalid.
+An invalid filter fails closed: the CLI prints the filter error, exits with code `2`,
+and writes no output file. Development only: combine `--allow-unfiltered-preview` with
+`--preview` to inspect unfiltered rows; export remains blocked.
 
 ```bash
-python cli.py query --all --filter "criterion_id OR" --strict-filter --preview
+python cli.py query --all --filter "criterion_id OR" --allow-unfiltered-preview --preview
 ```
 
 ## 5. Filter DSL Quick Reference
@@ -154,13 +140,8 @@ python cli.py info
 
 ## 10. Customize Columns
 
-### GUI Method
-
-1. Run `streamlit run app.py`
-2. Select columns in the sidebar
-3. Click **Save current selection**
-
-### CLI Method
+Pass `--columns` explicitly (the former GUI save-selection flow was retired with the
+GUI, ADR-0007; persisted defaults live in `~/.json_extractor/column_defaults.json`):
 
 ```bash
 python cli.py query --all --columns "item_id,statement,criterion_name,evidence_quote_1" --output custom.xlsx
@@ -206,8 +187,8 @@ DOCUMENT records link to RULE records via `rule_ref_keys` matching `rule_key`:
 
 ### "Filter error"
 
-* Invalid DSL now surfaces as a filter error (E4-T2)
-* CLI automation: add `--strict-filter` to fail fast (exit code `2`)
+* Invalid DSL fails closed (C4.1): the CLI exits with code `2` and writes no output
+* Development only: `--allow-unfiltered-preview` with `--preview` shows unfiltered rows; export stays blocked
 
 ### "Validation errors"
 
@@ -227,11 +208,10 @@ DOCUMENT records link to RULE records via `rule_ref_keys` matching `rule_key`:
 
 ## Next Steps
 
-1. Explore the GUI: `streamlit run app.py`
-2. Read the full README: `README.md`
-3. Use OR and IN filters:
+1. Read the full README: `README.md`
+2. Use OR and IN filters:
 
    * `OR` unions clauses
    * comma lists create `IN` for ENUM fields
-4. Customize columns and save defaults
-5. Add repository data under `DATA/`
+3. Customize columns with `--columns`
+4. Add repository data under `DATA/`

@@ -108,10 +108,9 @@ LOGICAL_OP := "AND" | "OR"
 ```
 
 **Customization**:
-- Users select columns in GUI
-- Click "Save as Default Columns"
-- Saved to `~/.json_extractor/column_defaults.json`
-- Loaded automatically on next run
+- CLI: `--columns` per invocation
+- Persisted defaults: `~/.json_extractor/column_defaults.json`, loaded automatically
+- The GUI save-selection flow was retired with the GUI (ADR-0007)
 
 **Rationale**:
 - 34 columns is overwhelming for first-time users
@@ -124,11 +123,11 @@ LOGICAL_OP := "AND" | "OR"
 
 ### 5. CLI Command Structure
 
-**Decision**: Single command with flags
+**Decision**: Typer subcommands (`query`, `list-files`, `info`) with flags
 
 **Format**:
 ```bash
-python cli.py --files DATA/*.json --filter "criterion_id:APP_B_I" --output results.xlsx
+python cli.py query --files DATA/*.json --filter "criterion_id:APP_B_I" --output results.xlsx
 ```
 
 **Flags**:
@@ -149,31 +148,16 @@ python cli.py --files DATA/*.json --filter "criterion_id:APP_B_I" --output resul
 **Rationale**:
 - Simple for common use cases
 - Composable (all flags optional)
-- Matches user's stated preference for GUI over CLI
-
-**Alternative considered**: Subcommands for query/export (rejected - unnecessary complexity)
+- Sole adapter since the GUI retirement (ADR-0007)
 
 ---
 
-### 6. Streamlit GUI Features
+### 6. Streamlit GUI (retired — ADR-0007)
 
-**Included**:
-- ✅ File selection from DATA directory (multi-select)
-- ✅ Filter builder UI (dropdowns, text inputs)
-- ✅ Column selection multi-select
-- ✅ Manual export button
-- ✅ Preview results table
-- ✅ Save column defaults
-
-**Excluded**:
-- ❌ File upload widget (only DATA directory selection)
-- ❌ Automatic export (explicit button required)
-
-**Rationale**:
-- DATA directory keeps files organized
-- Manual export prevents accidental overwrites
-- Filter builder provides discoverability
-- Column selection matches user preference
+The standalone Streamlit GUI (`app.py`) was retired by owner decision on 2026-07-04,
+recorded as ADR-0007. The CLI is the sole supported adapter; the GUI must not be
+reintroduced without a superseding ADR. The original GUI feature list is preserved in
+document history.
 
 ---
 
@@ -264,8 +248,8 @@ python cli.py --files DATA/*.json --filter "criterion_id:APP_B_I" --output resul
 | Entity flattening | Semicolon-joined strings | `extract/load_and_flatten.py` |
 | Validation | Collect all, structured report | `extract/load_and_flatten.py` |
 | Default columns | 12-column essential subset | `config.py` |
-| CLI structure | Single command with flags | `cli.py` |
-| GUI features | Filter builder + column select | `app.py` |
+| CLI structure | Typer subcommands with flags | `cli.py` |
+| GUI features | Retired (ADR-0007, 2026-07-04) | — |
 | Field separation | RULE vs DOCUMENT strict | Template contract |
 | Join keys | Composite `code::locator` | Template contract |
 | Locator policy | Controlled vocab + patterns | `app_b.py` |
@@ -346,10 +330,8 @@ python cli.py --files DATA/*.json --filter "criterion_id:APP_B_I" --output resul
 - Empty result handling
 - Multi-file aggregation
 
-**UI tests needed**:
-- Filter builder combinations
-- Column selection save/load
-- Export with various formats
+**UI tests**: not applicable — the GUI was retired (ADR-0007). CLI behavior is
+covered by `tests/` (exit codes, output creation, export contracts).
 
 ---
 
@@ -376,7 +358,7 @@ Current implementation meets these targets with pandas/openpyxl.
 ✅ CSV/XLSX export with precedence rules implemented  
 ✅ Bad file skip policy implemented  
 ✅ Column defaults with user persistence implemented  
-✅ CLI and Streamlit adapters implemented  
+✅ CLI adapter implemented (the Streamlit adapter was retired per ADR-0007)  
 
 ---
 

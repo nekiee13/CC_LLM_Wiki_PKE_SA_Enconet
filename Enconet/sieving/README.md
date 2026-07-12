@@ -11,7 +11,9 @@ JSON Extractor vNext processes JSON extraction files (from upstream LLM extracti
 - **Deterministic join semantics**: Composite key joins (`ref_code::ref_locator`) between RULE and DOCUMENT records
 - **DSL-based querying**: Filter expressions for precise slicing of normalized records
 - **Flexible export**: CSV/XLSX with stable column ordering
-- **Dual interfaces**: Command-line and web GUI (Streamlit)
+- **Command-line interface**: Typer-based CLI (`cli.py`). The standalone Streamlit GUI
+  was retired by owner decision on 2026-07-04 (ADR-0007); the CLI is the only
+  supported interface.
 
 ## Project Status
 
@@ -28,14 +30,13 @@ JSON Extractor vNext processes JSON extraction files (from upstream LLM extracti
 
 ### Setup
 
-```bash
-# Clone or download the project
-cd json_extractor_vnext
+From the project root (`Enconet/sieving`):
 
+```bash
 # Install dependencies
 pip install -r requirements.txt
 
-# Create DATA directory
+# Create the DATA directory if it does not exist
 mkdir DATA
 
 # Add JSON extraction files to DATA/
@@ -43,19 +44,8 @@ mkdir DATA
 
 ## Quick Start
 
-### GUI (Streamlit)
-
-```bash
-streamlit run app.py
-```
-
-Then:
-
-1. Select JSON files from the DATA directory
-2. Build filters using dropdowns and text inputs
-3. Select columns to display
-4. Click "Run Query"
-5. Export results to CSV or XLSX
+> The former Streamlit GUI (`app.py`) was retired per ADR-0007 (2026-07-04) and must
+> not be reintroduced without a superseding ADR. Use the CLI.
 
 ### CLI
 
@@ -75,14 +65,16 @@ python cli.py query --all --filter "keyword:inspection" --columns "item_id,state
 python cli.py query --files DATA/doc1.json --filter "item_type:requirement" --preview
 ```
 
-#### Strict filter mode (E4-T2)
+#### Fail-closed filtering (C4.1)
 
-By default, an invalid filter returns unfiltered results and surfaces a `filter_error` for adapters to display.
-To fail fast in CLI automation, use `--strict-filter` to exit with code `2` when the filter is invalid.
+An invalid filter fails closed: the CLI prints the filter error, exits with code `2`,
+and writes no output file. For development-only inspection, combine
+`--allow-unfiltered-preview` with `--preview` to display unfiltered rows behind a
+visible override notice; export remains blocked while the filter error is set.
 
 ```bash
-# Exit code 2 if the filter is invalid
-python cli.py query --all --filter "criterion_id OR" --strict-filter --preview
+# Development only: preview unfiltered rows after a filter error (export stays blocked)
+python cli.py query --all --filter "criterion_id OR" --allow-unfiltered-preview --preview
 ```
 
 ### List available files
@@ -103,8 +95,7 @@ python cli.py info
 
 ```
 PROJECT_ROOT/
-  cli.py                    # CLI adapter (Typer)
-  app.py                    # Streamlit GUI adapter
+  cli.py                    # CLI adapter (Typer); sole adapter since ADR-0007
   requirements.txt          # Python dependencies
   README.md                 # This file
   QUICKSTART.md             # Quick start guide
@@ -339,9 +330,10 @@ DEFAULT_COLUMNS = [
 
 ### Custom Defaults
 
-* **GUI**: Use the "Save current selection" button after selecting preferred columns.
 * **Location**: Saved to `~/.json_extractor/column_defaults.json`
 * **CLI**: Uses saved defaults automatically; override with `--columns`.
+* The former GUI "Save current selection" flow was retired with the GUI (ADR-0007);
+  edit the JSON file directly to change persisted defaults.
 
 ## Configuration
 
@@ -396,13 +388,16 @@ Severity levels:
 * ERROR: serious compliance issues
 * WARNING: issues but not fatal
 
-### Filter Errors (E4-T2)
+### Filter Errors (C4.1 — fail closed)
 
 If the filter DSL is invalid:
 
-* The pipeline returns unfiltered results to preserve backward compatibility.
-* `PipelineResult.filter_error` is populated so adapters can show an explicit error.
-* CLI can fail fast with `--strict-filter` (exit code `2`).
+* The pipeline fails closed: the filtered result is empty and
+  `PipelineResult.filter_error` is populated.
+* Export is blocked while `filter_error` is set, in both the API and the CLI.
+* The CLI exits with code `2` and creates no output file.
+* Development only: `--allow-unfiltered-preview` together with `--preview` shows
+  unfiltered rows behind a visible override notice; export remains blocked.
 
 ### Empty Results
 
