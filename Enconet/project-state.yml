@@ -1,0 +1,35 @@
+# project-state.yml — authoritative machine-readable project state (EPIC 0, Task 0.5)
+#
+# Schema (inline, per Task 0.5):
+#   phase: one of the EPIC 14 audit states —
+#     setup | registered | chunked | sieved | evidence_reviewed | evaluated |
+#     findings_drafted | findings_approved | report_ready | dashboard_ready |
+#     closed | failed
+#     ("setup" is the pre-state before the first supplier run reaches "registered".)
+#   supplier: supplier key for the current run (naming per ADR-0008).
+#   deliverable_language: sl | en | hr, selected per run by the human (ADR-0009);
+#     null until the human selects it.
+#   gates: G1..G7, each with
+#     status: pending | approved | rejected
+#     date: decision date (ISO YYYY-MM-DD) or null
+#     decision_ref: approvals.csv object_id / gate-packet reference or null
+#   benchmarks_locked: true once EPIC 16 fixtures are approved and locked.
+#
+# Transitions are applied only by scripts/audit_state.py (EPIC 14) after the
+# corresponding gate decision is recorded in manifests/approvals.csv.
+# Never hand-edit past "setup" without a recorded decision.
+
+phase: setup
+supplier: enconet
+deliverable_language: null
+
+gates:
+  G1: {status: pending, date: null, decision_ref: null}  # Registry
+  G2: {status: pending, date: null, decision_ref: null}  # Evidence + applicability
+  G3: {status: pending, date: null, decision_ref: null}  # Evaluation
+  G4: {status: pending, date: null, decision_ref: null}  # Findings
+  G5: {status: pending, date: null, decision_ref: null}  # Report
+  G6: {status: pending, date: null, decision_ref: null}  # Dashboard
+  G7: {status: pending, date: null, decision_ref: null}  # Closeout
+
+benchmarks_locked: false

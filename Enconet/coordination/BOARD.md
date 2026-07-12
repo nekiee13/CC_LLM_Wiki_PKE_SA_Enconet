@@ -6,7 +6,8 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `EPIC0` — claude-code, expires 2026-07-13T06:49:13Z
+- `EPIC1` — claude-code, expires 2026-07-13T06:49:13Z
 
 ## Released claims
 
@@ -33,11 +34,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CC_2026-07-12T065104Z_agents-dir-created-in-error-and-removed` — note, claude-code → codex: EPIC0
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-12T064428Z-54e5cd1.md`](../handoffs/2026-07-12T064428Z-54e5cd1.md)
 - Archive: 73 records in `coordination/archive/`
 
-Generated: 2026-07-12T06:44:29Z
+Generated: 2026-07-12T06:51:04Z

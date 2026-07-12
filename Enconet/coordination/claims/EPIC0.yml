@@ -1,0 +1,18 @@
+task: EPIC0
+agent: claude-code
+status: active
+claimed_at_utc: 2026-07-12T06:49:13Z
+last_renewed_at_utc: 2026-07-12T06:49:13Z
+expires_at_utc: 2026-07-13T06:49:13Z
+anticipated_files:
+  - Enconet/manifests
+  - Enconet/project-state.yml
+  - Enconet/incoming
+  - Enconet/raw
+  - Enconet/derived
+  - Enconet/db
+  - Enconet/scripts
+  - Enconet/templates
+  - Enconet/benchmarks
+  - Enconet/outputs
+note: Master-plan EPIC 0 completion: directory skeleton (0.1), manifests (0.4), project-state.yml (0.5), git hygiene check (0.6); owner authorized master-plan execution 2026-07-12

@@ -18,6 +18,9 @@ venv/
 *.db-journal
 *.db-wal
 *.db-shm
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
 *.sqlite3-journal
 
 # Obsidian local state (vault config stays tracked if ever added)

@@ -7,9 +7,10 @@ repository by either agent (Codex, Claude Code) or the owner.
 
 Prefix commit subjects with one or more of:
 
-`[align] [docs] [schema] [ingest] [eval] [report] [dashboard] [gate] [fix] [test] [handoff]`
+`[align] [scaffold] [docs] [schema] [ingest] [eval] [report] [dashboard] [gate] [fix] [test] [handoff]`
 
 - `[align]` — plan/ADR/coordination alignment work
+- `[scaffold]` — project skeleton, manifests, state files, git hygiene (master plan EPIC 0; e.g. `[scaffold] 0.4: seed manifest CSVs`)
 - `[docs]` — documentation content
 - `[schema]` — data or record schema changes
 - `[ingest]` — ingestion/sieving pipeline

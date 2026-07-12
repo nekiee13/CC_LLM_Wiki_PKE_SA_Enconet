@@ -41,3 +41,7 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-07-12T06:25:23Z | handoffs/2026-07-12T062523Z-4baffea.md | complete | 4baffeac962adb77c34f4f8987837abdcc9f65a7
 
 - handoff-created | 2026-07-12T06:44:28Z | handoffs/2026-07-12T064428Z-54e5cd1.md | complete | 54e5cd1fe1a6d77e5f6e5f6caa8f3a7ace752acd
+
+- task-started | 2026-07-12T06:49:13Z | EPIC0, EPIC1 | master-plan execution authorized by owner; scaffold + schema contracts claimed (CC)
+- note-sent | 2026-07-12T06:51:04Z | EPIC0 | Enconet/.agents created in error and removed same turn; Codex notified (CC_2026-07-12T065104Z)
+- task-complete | 2026-07-12T06:56:00Z | EPIC0 0.1/0.4/0.5/0.6 | Section-4 directory skeleton (Claude/neutral paths; .agents left to Codex), five manifest CSVs + manifests/README.md, project-state.yml (phase setup, G1-G7 pending), [scaffold] tag + sqlite journal ignores (CC)
