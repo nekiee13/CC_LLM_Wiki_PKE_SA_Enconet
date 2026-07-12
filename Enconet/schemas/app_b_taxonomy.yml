@@ -1,0 +1,76 @@
+# app_b_taxonomy.yml — canonical 10 CFR 50 Appendix B criterion taxonomy (EPIC 1, Task 1.1)
+#
+# Single source of the 18 criterion_id/criterion_name pairs (ADR-0003). The taxonomy is
+# fixed by regulation and is NEVER edited for applicability: per-supplier applicability
+# is a ruling in `criterion_applicability` (EPIC 8, ADR-0012), not a taxonomy change.
+#
+# Names verified against the official public text, 10 CFR Part 50 Appendix B (eCFR/NRC),
+# and match the sieving prompts exactly.
+#
+# Known projection: `schemas/sieving_contract.yml` (ADR-0003 / C4.4) embeds a
+# JSON-parsable copy of these pairs for the vendored sieving runtime
+# (`sieving/src/json_extractor/contract.py` parses it with json.loads and cannot load
+# this file). `scripts/validate_schemas.py` fails if the two declarations diverge;
+# no third declaration is permitted anywhere in the project.
+
+schema_version: "1.0"
+taxonomy_id: APP_B
+source:
+  regulation: "10 CFR Part 50, Appendix B — Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants"
+  public_text: "https://www.ecfr.gov/current/title-10/chapter-I/part-50/appendix-Appendix%20B%20to%20Part%2050"
+
+criteria:
+  - criterion_id: APP_B_I
+    criterion_name: "Organization"
+    description: "Structure, authority, and independence of the organizations executing the QA program."
+  - criterion_id: APP_B_II
+    criterion_name: "Quality Assurance Program"
+    description: "Documented, planned QA program covering all quality-affecting activities, with trained personnel."
+  - criterion_id: APP_B_III
+    criterion_name: "Design Control"
+    description: "Control of design inputs, processes, verification, and changes so the design basis is correctly translated."
+  - criterion_id: APP_B_IV
+    criterion_name: "Procurement Document Control"
+    description: "Applicable requirements flow down into procurement documents for material, equipment, and services."
+  - criterion_id: APP_B_V
+    criterion_name: "Instructions, Procedures, and Drawings"
+    description: "Quality-affecting activities are prescribed by and performed to documented instructions, procedures, or drawings with acceptance criteria."
+  - criterion_id: APP_B_VI
+    criterion_name: "Document Control"
+    description: "Preparation, review, approval, and issue of documents that prescribe quality-affecting activities, including changes."
+  - criterion_id: APP_B_VII
+    criterion_name: "Control of Purchased Material, Equipment, and Services"
+    description: "Purchased items and services conform to procurement documents (supplier evaluation, inspection, objective evidence of quality)."
+  - criterion_id: APP_B_VIII
+    criterion_name: "Identification and Control of Materials, Parts, and Components"
+    description: "Identification and traceability of items to prevent use of incorrect or defective ones."
+  - criterion_id: APP_B_IX
+    criterion_name: "Control of Special Processes"
+    description: "Special processes (welding, heat treating, NDE) controlled and performed by qualified personnel/procedures."
+  - criterion_id: APP_B_X
+    criterion_name: "Inspection"
+    description: "Inspection program for activities affecting quality, executed by personnel independent of the work performed."
+  - criterion_id: APP_B_XI
+    criterion_name: "Test Control"
+    description: "Test program proving items perform satisfactorily in service; documented test procedures and requirements."
+  - criterion_id: APP_B_XII
+    criterion_name: "Control of Measuring and Test Equipment"
+    description: "Calibration and control of tools, gauges, instruments, and other M&TE used in quality-affecting activities."
+  - criterion_id: APP_B_XIII
+    criterion_name: "Handling, Storage, and Shipping"
+    description: "Control of handling, storage, shipping, cleaning, and preservation to prevent damage or deterioration."
+  - criterion_id: APP_B_XIV
+    criterion_name: "Inspection, Test, and Operating Status"
+    description: "Status indication of items and operations to prevent inadvertent bypassing of inspections and tests."
+  - criterion_id: APP_B_XV
+    criterion_name: "Nonconforming Materials, Parts, or Components"
+    description: "Control of nonconforming items to prevent inadvertent use or installation (identification, segregation, disposition)."
+  - criterion_id: APP_B_XVI
+    criterion_name: "Corrective Action"
+    description: "Conditions adverse to quality are promptly identified and corrected; significant conditions get cause analysis and preclusion."
+  - criterion_id: APP_B_XVII
+    criterion_name: "Quality Assurance Records"
+    description: "Sufficient records maintained to furnish evidence of quality-affecting activities; identifiable, retrievable, protected."
+  - criterion_id: APP_B_XVIII
+    criterion_name: "Audits"
+    description: "Planned and periodic audits verifying compliance and program effectiveness, by independent trained personnel, with follow-up."

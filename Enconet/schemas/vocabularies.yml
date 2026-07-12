@@ -1,0 +1,40 @@
+# vocabularies.yml — controlled vocabularies (EPIC 1, Task 1.3)
+#
+# Every enum the system uses, in one file. Validators, prompts, and generators load
+# these values from here and never inline them. Values are exactly as fixed by the
+# master plan (Task 1.3) and ADR-0009 (languages).
+#
+# Note: `document_sides` mirrors `record_side` and `source_rules` mirrors the
+# `canonical_codes` ref_codes in `schemas/sieving_contract.yml` (runtime projection,
+# ADR-0003); `scripts/validate_schemas.py` fails on divergence.
+
+schema_version: "1.0"
+
+vocabularies:
+  ratings:
+    usage: "Criterion classification values in criterion_evaluations and deliverables (EPIC 8)."
+    values: [fully, substantially, partially, minimally, unmet, undetermined, na]
+
+  gap_statuses:
+    usage: "Coverage classification of gap rows in the gap register (EPIC 9)."
+    values: [covered, mostly-covered, partially-covered, minimally-covered, not-covered, not-applicable, undetermined, missing-evidence]
+
+  action_types:
+    usage: "Type of auditor_actions rows; missing-evidence gaps default to verification or document_request (EPIC 9/10)."
+    values: [verification, document_request, sample_test, interview]
+
+  languages:
+    usage: "Both quote_language on evidence quotes and the per-run deliverable_language (ADR-0009); no other language may occur."
+    values: [sl, en, hr]
+
+  document_sides:
+    usage: "Ingestion side discriminator for documents, sieve runs, and crumbs (RULE = regulation side, DOCUMENT = supplier side)."
+    values: [RULE, DOCUMENT]
+
+  source_rules:
+    usage: "Canonical regulation codes allowed in SOURCE_RULES on RULE runs; DOCUMENT runs carry null (Task 5.2)."
+    values: [10CFR50_APPB, 10CFR21]
+
+  audit_states:
+    usage: "project-state.yml phase and audit_state.py state machine (EPIC 14); `setup` is the pre-state before the first supplier run is registered; `failed` is reachable from any state."
+    values: [setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed]

@@ -12,8 +12,8 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 | EPIC | Content | Status |
 |---|---|---|
-| 0 | Scaffold & governance | 0.1/0.4/0.5/0.6 done this session; 0.2/0.3/0.7 pre-existing; `.agents/skills` left to Codex (ownership ban) |
-| 1 | Machine-readable contracts | in progress (claimed, CC) |
+| 0 | Scaffold & governance | complete (commit d47bd1f); 0.2/0.3/0.7 pre-existing; `.agents/skills` left to Codex (ownership ban); claim released |
+| 1 | Machine-readable contracts | files written (7 contracts + validate_schemas.py, PASS exit 0); claim EPIC1 active (CC); validator negative-path test pending |
 | 2+ | Data backbone onward | not started |
 
 ## Open items
@@ -24,4 +24,5 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Write EPIC 1 schema contracts (Tasks 1.1–1.7) under `schemas/`, then commit and validate.
+Negative-path test `scripts/validate_schemas.py` (prove it fails on taxonomy divergence
+and scoring gaps), then close EPIC 1 (release claim) and start EPIC 2 (SQLite backbone).

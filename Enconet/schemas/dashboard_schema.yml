@@ -1,0 +1,50 @@
+# dashboard_schema.yml — dashboard data contract (EPIC 1, Task 1.6)
+#
+# Input contract for the dashboard renderer (EPIC 12). `scripts/build_dashboard_data.py`
+# emits data validating against this file; `scripts/validate_dashboard.py` re-checks the
+# data against the evaluation package and scans the rendered HTML for forbidden patterns.
+# Rating values reference `schemas/vocabularies.yml`; the criterion object is the v2
+# contract (docs/context/40); the illustrative dashboard (docs/context/38) shows intended
+# look/behavior only — no example data is canon.
+
+schema_version: "1.0"
+
+criterion_object:
+  required_fields:
+    n: {type: string, meaning: "criterion_id (APP_B_I…APP_B_XVIII, from app_b_taxonomy.yml)"}
+    order: {type: integer, meaning: "display order 1..18 (regulation order)"}
+    title: {type: string, meaning: "canonical criterion_name"}
+    rating: {type: enum, enum: ratings, meaning: "classification; `na` criteria stay visible and reference their applicability justification"}
+    score: {type: number_or_null, meaning: "per-criterion score from the evaluation package; null for na"}
+    refs: {type: list, meaning: "supporting crumb IDs (evidence citations)"}
+    aff: {type: string, meaning: "affirmative summary (evidence for conformance)"}
+    con: {type: string, meaning: "contrary summary (evidence against / weaknesses)"}
+    judge: {type: string, meaning: "judge ruling (debate-pattern resolution)"}
+    verify: {type: list, meaning: "verification action IDs / short descriptions"}
+  count: 18   # exactly one object per criterion, always — na included
+
+top_level_metrics:
+  required_fields:
+    supplier: {type: string, meaning: "supplier key (ADR-0008)"}
+    generated_date: {type: string, meaning: "ISO date of generation"}
+    dash_id: {type: string, pattern: dashboard_id, meaning: "DASH-YYYYMMDD-nnnn"}
+    run_id: {type: string, pattern: run_id, meaning: "evaluation run this data derives from"}
+    deliverable_language: {type: enum, enum: languages, meaning: "per-run language selection (ADR-0009)"}
+    weighted_score: {type: number, meaning: "consolidated conformance score from the evaluation package (never recomputed here)"}
+    applicable_count: {type: integer, meaning: "denominator basis for the weighted score"}
+    classification_counts: {type: object, meaning: "count per rating value including na"}
+
+# Any match in the emitted data JSON or rendered HTML is a validation FAILURE
+# (data-leak vector / non-self-contained deliverable).
+forbidden_patterns:
+  - "login.microsoftonline.com"
+  - "oauth"
+  - "signin"
+  - "https://cdn."
+  - "cdnjs.cloudflare.com"
+  - "unpkg.com"
+  - "jsdelivr.net"
+  - "googleapis.com"
+  - "<script src=\"http"
+  - "<link href=\"http"
+  - "@import url(http"

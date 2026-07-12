@@ -45,3 +45,4 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - task-started | 2026-07-12T06:49:13Z | EPIC0, EPIC1 | master-plan execution authorized by owner; scaffold + schema contracts claimed (CC)
 - note-sent | 2026-07-12T06:51:04Z | EPIC0 | Enconet/.agents created in error and removed same turn; Codex notified (CC_2026-07-12T065104Z)
 - task-complete | 2026-07-12T06:56:00Z | EPIC0 0.1/0.4/0.5/0.6 | Section-4 directory skeleton (Claude/neutral paths; .agents left to Codex), five manifest CSVs + manifests/README.md, project-state.yml (phase setup, G1-G7 pending), [scaffold] tag + sqlite journal ignores (CC)
+- task-progress | 2026-07-12T07:05:00Z | EPIC1 1.1-1.7 | seven schema contracts written (taxonomy, id_patterns, vocabularies, app_b_json, scoring placeholder per ADR-0013, dashboard, page_types+required_fields) + scripts/validate_schemas.py PASS exit 0; validator negative-path test not yet run (CC)

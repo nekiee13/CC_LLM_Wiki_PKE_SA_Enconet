@@ -6,7 +6,6 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EPIC0` — claude-code, expires 2026-07-13T06:49:13Z
 - `EPIC1` — claude-code, expires 2026-07-13T06:49:13Z
 
 ## Released claims
@@ -31,6 +30,7 @@ and ADRs are the records.
 - `C6.3` — claude-code, released 2026-07-12T06:26:21Z
 - `CC-CROSSREVIEW-C14-C3-C4` — claude-code, released 2026-07-12T05:28:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
+- `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 
 ## Active messages
 
@@ -41,4 +41,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-12T064428Z-54e5cd1.md`](../handoffs/2026-07-12T064428Z-54e5cd1.md)
 - Archive: 73 records in `coordination/archive/`
 
-Generated: 2026-07-12T06:51:04Z
+Generated: 2026-07-12T07:03:35Z

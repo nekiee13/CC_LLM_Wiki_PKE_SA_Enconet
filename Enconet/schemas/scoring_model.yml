@@ -1,0 +1,45 @@
+# scoring_model.yml — canonical scoring model (EPIC 1, Task 1.5)
+#
+# The ONLY source of scoring logic: `scripts/score_evaluation.py` (Task 8.4) reads
+# weights, formula, rounding, and thresholds exclusively from this file, and
+# `scripts/validate_evaluation.py` (Task 8.6) recomputes scores from it independently.
+#
+# STATUS: pending human calibration approval (ADR-0013) — all numeric values below are
+# placeholders deliberately deferred to Gate G3. They allow the engine and benchmarks to
+# be built and tested; the human calibrates and approves them at the first G3 gate
+# (approvals.csv row referencing this file + version bump).
+
+schema_version: "1.0"
+model_version: "0.1-placeholder"
+calibration_status: "pending human calibration approval (ADR-0013, Gate G3)"
+
+# Weight per rating value (vocabularies.ratings). `na` carries no weight: not-applicable
+# criteria are excluded from the consolidated score entirely (ADR-0012 / Task 8.4).
+rating_weights:
+  fully: 1.00
+  substantially: 0.75
+  partially: 0.50
+  minimally: 0.25
+  unmet: 0.00
+  undetermined: 0.00   # no evidence basis — scores as unmet until determined
+  na: null             # excluded; never enters numerator or denominator
+
+consolidated_score:
+  formula: "100 * sum(rating_weights[classification] for applicable criteria) / count(applicable criteria)"
+  denominator: "applicable-criteria count (18 minus approved not-applicable rulings)"
+  rounding: "half-up to 1 decimal place"
+  range: [0.0, 100.0]
+
+# Classification of the consolidated score (label from vocabularies.ratings family;
+# boundaries are inclusive lower bounds, evaluated top-down).
+classification_thresholds:
+  - {min_score: 90.0, class: fully}
+  - {min_score: 70.0, class: substantially}
+  - {min_score: 40.0, class: partially}
+  - {min_score: 10.0, class: minimally}
+  - {min_score: 0.0, class: unmet}
+
+change_log:
+  - version: "0.1-placeholder"
+    date: 2026-07-12
+    note: "Initial placeholder values per Task 1.5; calibration deferred to Gate G3 (ADR-0013)."

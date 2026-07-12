@@ -1,0 +1,59 @@
+# app_b_json_schema.yml — APP_B crumb JSON contract (EPIC 1, Task 1.4)
+#
+# Contract for sieving output JSON, enforced by `scripts/validate_app_b_json.py`
+# (Task 5.3) BEFORE any import into the DB. Enforcement tiers:
+#   strict  — violation always FAILS validation and blocks import.
+#   warning — reported without blocking; the `--strict` flag (and phase `evaluated`
+#             onward, Task 13.2) flips warnings to failures.
+#
+# Criterion pairs come from `schemas/app_b_taxonomy.yml`; enums from
+# `schemas/vocabularies.yml`; item_type and the flattened column model from
+# `schemas/sieving_contract.yml` (runtime projection, ADR-0003).
+# Language policy per ADR-0009: verbatim quotes only, no translation machinery.
+
+schema_version: "1.0"
+targets_prompt_versions: ["appb_rule_v1", "appb_document_v1"]
+
+document_block:
+  required_fields:
+    name: {tier: strict, meaning: "source document name/filename as registered"}
+    date: {tier: strict, meaning: "document date (ISO YYYY-MM-DD) or n-a"}
+    document_side: {tier: strict, enum: document_sides, meaning: "RULE or DOCUMENT"}
+    source_rules: {tier: strict, meaning: "see side_rules below"}
+  optional_fields:
+    title: {tier: warning}
+    revision: {tier: warning}
+    doc_id: {tier: warning, pattern: doc_id, meaning: "registry ID once assigned (Task 3.2)"}
+
+item_block:
+  required_fields:
+    item_id: {tier: strict, meaning: "unique within the file; DB assigns canonical CRUMB- IDs at import"}
+    criterion_id: {tier: strict, from: app_b_taxonomy.criteria, meaning: "must be one of the 18 canonical IDs"}
+    criterion_name: {tier: strict, from: app_b_taxonomy.criteria, meaning: "must exactly match the ID's canonical name (pair check)"}
+    statement: {tier: strict, meaning: "non-empty extracted statement"}
+    evidence_quotes: {tier: strict, meaning: "non-empty list; every quote per evidence_quote rules below"}
+    source: {tier: strict, meaning: "non-empty source locator (page/heading/section)"}
+  optional_fields:
+    item_type: {tier: warning, enum_from: sieving_contract.enums.item_type}
+    entities: {tier: warning}
+
+evidence_quote:
+  required_fields:
+    quote_original: {tier: strict, meaning: "verbatim, byte-exact text as it exists in the raw document (ADR-0009)"}
+    quote_language: {tier: strict, enum: languages, meaning: "sl | en | hr; missing or invalid value FAILS"}
+  forbidden_fields:
+    # Removed from the contract by ADR-0009 — presence is a strict failure.
+    - statement_en
+    - translation_status
+    - meaning_flag
+  rules:
+    - "No transformed (translated or normalized) variant of a quote is stored anywhere."
+
+side_rules:
+  RULE:
+    source_rules: {tier: strict, rule: "required; every value from vocabularies.source_rules"}
+    rule_objects: {tier: strict, rule: "RULE-only fields (rule_locator, rule_key, rule_strength) permitted"}
+  DOCUMENT:
+    source_rules: {tier: strict, rule: "must be null; a non-null value is side leakage and FAILS"}
+    rule_objects: {tier: strict, rule: "RULE-only objects forbidden; rule references only via rule_ref_* fields"}
+    rule_references: {tier: warning, rule: "rule_ref_keys/codes/locators reference RULE crumbs; dangling references are warnings until EPIC 7 registry exists, then strict"}

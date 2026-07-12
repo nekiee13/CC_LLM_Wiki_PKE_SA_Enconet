@@ -1,0 +1,45 @@
+# id_patterns.yml — ID grammar contract (EPIC 1, Task 1.2)
+#
+# One anchored regex per object type. Every writer validates IDs against these patterns
+# before persisting (EPIC 2 db_util.insert); every validator re-checks them (EPIC 13).
+# A duplicate ID or a non-matching ID is a hard validation failure naming the offender.
+#
+# `<ROMAN>` in the examples below is the criterion roman numeral I…XVIII; the alternation
+# is written longest-first so backtracking is never relied on.
+
+schema_version: "1.0"
+
+patterns:
+  doc_id:
+    example: "DOC-0001"
+    regex: '^DOC-\d{4}$'
+  chunk_id:
+    example: "CHUNK-DOC-0001-0001"
+    regex: '^CHUNK-DOC-\d{4}-\d{4}$'
+  quote_id:
+    example: "QUOTE-DOC-0001-0001-01"
+    regex: '^QUOTE-DOC-\d{4}-\d{4}-\d{2}$'
+  crumb_id:
+    example: "CRUMB-DOC-0001-APP_B_IV-0001"
+    regex: '^CRUMB-DOC-\d{4}-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{4}$'
+  requirement_id:
+    example: "REQ-APP_B_IV-01"
+    regex: '^REQ-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{2}$'
+  evaluation_id:
+    example: "EVAL-APP_B_IV"
+    regex: '^EVAL-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)$'
+  gap_id:
+    example: "GAP-APP_B_IV-01"
+    regex: '^GAP-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{2}$'
+  finding_id:
+    example: "FIND-0001"
+    regex: '^FIND-\d{4}$'
+  action_id:
+    example: "ACT-0001"
+    regex: '^ACT-\d{4}$'
+  run_id:
+    example: "RUN-20260704-01"
+    regex: '^RUN-\d{8}-\d{2}$'
+  dashboard_id:
+    example: "DASH-20260704-0001"
+    regex: '^DASH-\d{8}-\d{4}$'
