@@ -34,6 +34,8 @@ python verify_install.py
 ```
 
 Use the `/handoff` skill (user-global, `~/.claude/skills/handoff/`; ADR-0014) to close,
-pause, or transfer a session. Record dependency, encoding, Git, test, and index failures
-explicitly.
+pause, or transfer a session. Use `../scripts/make_handoff.py` to render, validate, and
+atomically publish the handoff record and pointer (C3); the skill remains the
+evidence-collection and status contract. Record dependency, encoding, Git, test, and
+index failures explicitly.
 

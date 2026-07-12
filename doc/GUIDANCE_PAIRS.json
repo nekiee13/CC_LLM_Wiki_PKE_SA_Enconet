@@ -96,6 +96,11 @@
           "id": "planned-not-implemented",
           "description": "Planned files are not evidence of implemented capability",
           "pattern": "not evidence of implemented capability"
+        },
+        {
+          "id": "handoff-helper-publication",
+          "description": "Handoffs are published/validated through scripts/make_handoff.py (C3); passed checks require command and integer exit code",
+          "patterns": ["make_handoff\\.py", "exit code"]
         }
       ],
       "documented_differences": [
@@ -106,18 +111,6 @@
         {
           "id": "owned-index-names",
           "description": "Each side names only its own tool indexes (Claude: PKE_SA_NQA1_Enconet_docs/_controlled, Enconet-0a063bd7; Codex: Codex_global_guidance, PKE_SA_NQA1_codex_guidance, PKE_SA_NQA1_agent_guidance)."
-        },
-        {
-          "id": "coordination-tooling-adoption",
-          "description": "scripts/agent_coord.py is named in Claude-side protocol only; Codex adoption requested in CC_2026-07-11T211205Z_c2-4-complete-coordination-infrastructure (pending)."
-        },
-        {
-          "id": "dependency-constraint-staleness",
-          "description": "Claude side records pytest/pandas/openpyxl as installed (C5.3, 2026-07-11); Codex side still says the environment may lack them. Codex-side refresh requested in CC_2026-07-11T212041Z_c5-3-complete-deps-and-tests (pending)."
-        },
-        {
-          "id": "git-facts-pointer",
-          "description": "Claude side points repository facts to doc/AS-IS.md; Codex side predates C0.1/C0.2 and still carries the unverified-Git constraint (pending Codex-side refresh)."
         }
       ]
     },
@@ -185,20 +178,21 @@
           "id": "handoff-skill-usage",
           "description": "Use the user-global handoff skill to close/pause/transfer sessions",
           "patterns": ["handoff", "user-global"]
+        },
+        {
+          "id": "handoff-helper-usage",
+          "description": "make_handoff.py renders/validates/publishes the record and pointer (C3)",
+          "pattern": "make_handoff\\.py"
         }
       ],
       "documented_differences": [
-        {
-          "id": "gui-retirement-note",
-          "description": "Streamlit GUI retirement (owner decision 2026-07-04) is recorded on the Claude side only; Codex-side mirror pending a Codex-authored update."
-        },
         {
           "id": "appendix-b-sync-guardrail",
           "description": "Appendix B taxonomy/schema synchronization guardrail is Codex-side only; Claude-side mirror pending."
         },
         {
           "id": "spec-guide-read-first",
-          "description": "Codex read-first additionally lists Sieving_method_specification_Guide.md with the S10.1 caveat (C4.4); Claude side references the defect indirectly via workspace rules."
+          "description": "Codex read-first additionally lists Sieving_method_specification_Guide.md (v1.3; single-owner contract implemented and S10.1 corrected per C1.4/C4.4); Claude side references it via workspace authority rules."
         },
         {
           "id": "frozen-plans-guardrail",

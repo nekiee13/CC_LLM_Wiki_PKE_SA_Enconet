@@ -66,6 +66,11 @@ recordkeeping requirements.
 7. Session end: running the user-global `/handoff` skill is mandatory before session
    close or transfer; session start reads `HANDOFF.md` first (step 2), then verifies it
    against reality (step 3).
+8. Publish session handoffs through `python scripts/make_handoff.py`
+   (`--source-agent claude-code`); validate existing records with
+   `python scripts/make_handoff.py --validate <record>` (schema:
+   `handoff_schema.yml`, C3). Never label a check `passed` without its command
+   and integer exit code.
 
 Current constraints: runtime/test dependencies (`pytest`, `pandas`, `openpyxl`) are
 installed in the default interpreter on this machine (C5.3, 2026-07-11) — verify with

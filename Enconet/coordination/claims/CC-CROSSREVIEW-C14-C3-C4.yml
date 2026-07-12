@@ -1,0 +1,13 @@
+task: CC-CROSSREVIEW-C14-C3-C4
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-12T05:21:53Z
+last_renewed_at_utc: 2026-07-12T05:21:53Z
+expires_at_utc: 2026-07-13T05:21:53Z
+anticipated_files:
+  - doc/GUIDANCE_PAIRS.json
+  - CLAUDE.md
+  - Enconet/CLAUDE.md
+  - Enconet/coordination
+note: Cross-review C1.4/C3/C4.1-C4.4/C4.6; Claude-side C3 skill integration; C2.1 manifest cleanup; C0.1-C0.2 archival
+released_at_utc: 2026-07-12T05:28:03Z

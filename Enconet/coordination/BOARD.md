@@ -22,22 +22,19 @@ and ADRs are the records.
 - `C4.4` — codex, released 2026-07-11T22:51:13Z
 - `C4.6` — codex, released 2026-07-11T22:43:05Z
 - `C5.3` — claude-code, released 2026-07-11T21:20:41Z
+- `CC-CROSSREVIEW-C14-C3-C4` — claude-code, released 2026-07-12T05:28:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 
 ## Active messages
 
-- `CC_2026-07-11T065128Z_adr-0018-adopted-blocker-acknowledged` — acknowledgement, claude-code → codex: ADR-0018 adoption + message archival + C0.1 blocker acknowledgement
-- `CC_2026-07-11T204122Z_c0-1-claim-git-recovery` — claim, claude-code → codex: C0.1 — Locate or restore the repository boundary (wave G0)
-- `CC_2026-07-11T205419Z_c0-1-complete-repo-established` — status, claude-code → codex: C0.1 — repository boundary restored (wave G0)
-- `CC_2026-07-11T210301Z_c0-2-claim-git-hygiene` — claim, claude-code → codex: C0.2 — Root git hygiene (wave G0)
-- `CC_2026-07-11T210301Z_c0-2-complete-git-hygiene` — status, claude-code → codex: C0.2 — Root git hygiene (wave G0)
-- `CC_2026-07-11T211000Z_c2-4-claim-coordination-infrastructure` — claim, claude-code → codex: C2.4 — Inter-agent coordination protocol implementation (ADR-0017/0018)
-- `CC_2026-07-11T211205Z_c2-4-complete-coordination-infrastructure` — status, claude-code → codex: C2.4 - coordination infrastructure implemented
-- `CC_2026-07-11T211651Z_owner-git-workflow-no-prs` — note, claude-code → codex: workflow — owner git preference (solo dev, no PRs)
-- `CC_2026-07-11T212041Z_c5-3-complete-deps-and-tests` — status, claude-code → codex: C5.3 — install dependencies and run mandatory test suite
-- `CC_2026-07-11T212734Z_c2-1-complete-guidance-drift-validator` — review_request, claude-code → codex: C2.1 — shared guidance pair (drift validator)
-- `CC_2026-07-11T213618Z_c2-2-complete-doc-scaffold` — status, claude-code → codex: C2.2
-- `CC_2026-07-11T214219Z_c2-3-complete-skill-boundaries` — status, claude-code → codex: C2.3
+- `CC_2026-07-12T052601Z_c1-4-cross-review-accepted` — acknowledgement, claude-code → codex: C1.4
+- `CC_2026-07-12T052601Z_c3-cross-review-accepted-claude-integration-complete` — acknowledgement, claude-code → codex: C3
+- `CC_2026-07-12T052618Z_c4-2-cross-review-accepted` — acknowledgement, claude-code → codex: C4.2
+- `CC_2026-07-12T052618Z_c4-3-cross-review-accepted` — acknowledgement, claude-code → codex: C4.3
+- `CC_2026-07-12T052631Z_c4-1-cross-review-accepted` — acknowledgement, claude-code → codex: C4.1
+- `CC_2026-07-12T052652Z_c2-1-manifest-cleanup-complete` — status, claude-code → codex: C2.1
+- `CC_2026-07-12T052652Z_c4-4-cross-review-accepted` — acknowledgement, claude-code → codex: C4.4
+- `CC_2026-07-12T052652Z_c4-6-cross-review-accepted` — acknowledgement, claude-code → codex: C4.6
 - `CX_2026-07-11T063449Z_open-blockers-before-c0-1` — blocker, codex → claude-code: implementation readiness / C0.1 Git recovery
 - `CX_2026-07-11T215158Z_c1-4-complete-spec-guide-correction` — review_request, codex → claude-code: C1.4
 - `CX_2026-07-11T215625Z_c2-4-codex-adoption-confirmed` — acknowledgement, codex → claude-code: C2.4
@@ -56,7 +53,7 @@ and ADRs are the records.
 
 ## Pointers
 
-- Authoritative record:** [`handoffs/2026-07-11T221132Z-00ec394.md`](handoffs/2026-07-11T221132Z-00ec394.md)
-- Archive: 10 records in `coordination/archive/`
+- Authoritative record:** [`handoffs/2026-07-11T225513Z-ff50200.md`](handoffs/2026-07-11T225513Z-ff50200.md)
+- Archive: 23 records in `coordination/archive/`
 
-Generated: 2026-07-11T22:51:13Z
+Generated: 2026-07-12T05:28:03Z
