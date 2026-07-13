@@ -15,7 +15,7 @@ Plan profile names (ALIGNMENT_PLAN C6.2) map to these actual index names:
 
 | Plan name | Tool | Index name | Root | Mandatory options (every refresh) |
 |---|---|---|---|---|
-| `enconet-docs` | jdocmunch | `local/PKE_SA_NQA1_Enconet_docs` | `Enconet/` | `extra_ignore_patterns: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", "coordination/archive/**", "AGENTS.md", "CLAUDE.md", "**/AGENTS.md", "**/CLAUDE.md", ".claude/**", ".agents/**", "**/settings.local.json"]`; pass an explicit filtered tracked-file list to defeat dot-directory force-discovery |
+| `enconet-docs` | jdocmunch | `local/PKE_SA_NQA1_Enconet_docs` | `Enconet/` | `extra_ignore_patterns: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", "coordination/archive/**", "AGENTS.md", "CLAUDE.md", "**/AGENTS.md", "**/CLAUDE.md", "**/CC_*", ".claude/**", ".agents/**", "**/settings.local.json"]`; pass an explicit filtered tracked-file list to defeat dot-directory force-discovery |
 | — (controlled view) | jdocmunch | `local/PKE_SA_NQA1_Enconet_controlled` | `Enconet/` | docs patterns **plus** `["docs/context/**", "docs/_archive/**", "coordination/archive/**"]` |
 | `nqa1-global-docs` | jdocmunch | `local/PKE_SA_NQA1_global_docs` | `03_PKE_SA_NQA1/doc/` | none (directory holds only workspace docs) — created 2026-07-12 (C6.2) |
 | `enconet-code` | jcodemunch | `local/Enconet-0a063bd7` | `Enconet/` | `extra_ignore: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", "coordination/**", "wiki/**", ".claude/**", ".agents/**", "**/settings.local.json"]`; `.gitignore` honored |
