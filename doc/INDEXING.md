@@ -18,7 +18,7 @@ Plan profile names (ALIGNMENT_PLAN C6.2) map to these actual index names:
 | `enconet-docs` | jdocmunch | `local/PKE_SA_NQA1_Enconet_docs` | `Enconet/` | `extra_ignore_patterns: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", ".claude/**", ".agents/**", "**/settings.local.json"]` |
 | — (controlled view) | jdocmunch | `local/PKE_SA_NQA1_Enconet_controlled` | `Enconet/` | docs patterns **plus** `["docs/context/**", "docs/_archive/**", "coordination/archive/**"]` |
 | `nqa1-global-docs` | jdocmunch | `local/PKE_SA_NQA1_global_docs` | `03_PKE_SA_NQA1/doc/` | none (directory holds only workspace docs) — created 2026-07-12 (C6.2) |
-| `enconet-code` | jcodemunch | `local/Enconet-0a063bd7` | `Enconet/` | Python sources only (tool default); `.gitignore` honored |
+| `enconet-code` | jcodemunch | `local/Enconet-0a063bd7` | `Enconet/` | `extra_ignore: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", "coordination/**", "wiki/**", ".claude/**", ".agents/**", "**/settings.local.json"]`; `.gitignore` honored |
 
 Refresh discipline: exactly one writer holds an active `INDEX-REFRESH` claim; either
 agent may query or verify. Refresh after batch documentation changes and before `/handoff`;
@@ -59,3 +59,10 @@ Claude-owned. Do not create a second repository code/docs index merely for agent
   `coordination/`, so project-relative `handoffs/...` links must be rewritten to
   `../handoffs/...` (fixed in `agent_coord.py`, 2026-07-12; found by
   `get_broken_links`).
+- **jcodemunch language discovery expanded beyond Python** — index version 17
+  discovered JSON and YAML in addition to Python (observed 2026-07-14), so relying
+  on the former Python-only default admitted `sieving/DATA` and one `.claude` file.
+  Rule: every code refresh must pass the full explicit exclusion list in the
+  `enconet-code` profile above. The installed CLI also lacks the former
+  `verify-index` subcommand; verify source root/loadability/counts and the certified
+  Git SHA through `resolve_repo`, `list_repos`, and `get_repo_outline`.
