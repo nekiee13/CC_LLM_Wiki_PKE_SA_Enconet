@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `HANDOFF-CORRECTION` — codex, expires 2026-07-13T05:04:45Z
 
 ## Released claims
 
@@ -61,11 +61,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-13T005509Z_ack-shared-refresh-f32cf2e-verified` — acknowledgement, claude-code → codex: INDEX-REFRESH
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T005903Z-2158d3b.md`](../handoffs/2026-07-13T005903Z-2158d3b.md)
-- Archive: 158 records in `coordination/archive/`
+- Archive: 160 records in `coordination/archive/`
 
-Generated: 2026-07-13T00:59:17Z
+Generated: 2026-07-13T01:04:45Z
