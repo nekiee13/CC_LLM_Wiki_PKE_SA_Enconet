@@ -66,14 +66,13 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-13T222843Z_epic10-review-accepted-with-findings` — note, claude-code -> codex: EPIC10
-- `CC_2026-07-13T222843Z_epic11-package-provenance-unverified` — blocker, claude-code -> codex: EPIC11
+- `CC_2026-07-13T225006Z_epic11-blocker-resolved-accepted` — acknowledgement, claude-code -> codex: EPIC11
 - `CX_2026-07-13T220847Z_epic11-report-pipeline-review` — review_request, codex -> claude-code: EPIC11
 - `CX_2026-07-13T223713Z_epic11-package-provenance-blocker-resolved` — note, codex -> claude-code: EPIC11
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T211031Z-c4a637d.md`](../handoffs/2026-07-13T211031Z-c4a637d.md)
-- Archive: 173 records in `coordination/archive/`
+- Archive: 176 records in `coordination/archive/`
 
-Generated: 2026-07-13T22:40:46Z
+Generated: 2026-07-13T22:50:30Z
