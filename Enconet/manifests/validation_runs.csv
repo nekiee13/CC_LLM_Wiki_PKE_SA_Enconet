@@ -22,3 +22,17 @@
 2026-07-12T23:46:03Z,validate_chunks.py,setup,PASS,0,all chunks verified
 2026-07-12T23:49:20Z,validate_traceability.py,unknown,PASS,0,all crumb quotes linked or approved exceptions
 2026-07-12T23:49:38Z,validate_schemas.py,setup,PASS,0,8 contracts checked; taxonomy single-owner rule satisfied
+2026-07-13T00:02:15Z,validate_chunks.py,setup,FAIL,1,18 error(s); first: offset slice mismatch: CHUNK-DOC-0019-0001
+2026-07-13T00:02:15Z,validate_traceability.py,unknown,PASS,0,all crumb quotes linked or approved exceptions
+2026-07-13T00:02:15Z,validate_requirements.py,unknown,PASS,0,18/18 criteria covered; all requirements trace to RULE crumbs
+2026-07-13T00:07:41Z,validate_chunks.py,setup,PASS,0,all chunks verified
+2026-07-13T00:07:41Z,validate_traceability.py,unknown,PASS,0,all crumb quotes linked or approved exceptions
+2026-07-13T00:07:42Z,validate_requirements.py,unknown,PASS,0,18/18 criteria covered; all requirements trace to RULE crumbs
+2026-07-13T00:10:14Z,validate_chunks.py,setup,PASS,0,all chunks verified
+2026-07-13T00:10:14Z,validate_traceability.py,unknown,PASS,0,all crumb quotes linked or approved exceptions
+2026-07-13T00:10:14Z,validate_requirements.py,unknown,PASS,0,18/18 criteria covered; all requirements trace to RULE crumbs
+2026-07-13T00:10:14Z,validate_schemas.py,setup,PASS,0,8 contracts checked; taxonomy single-owner rule satisfied
+2026-07-13T00:12:15Z,validate_chunks.py,setup,PASS,0,all chunks verified
+2026-07-13T00:12:15Z,validate_traceability.py,unknown,PASS,0,all crumb quotes linked or approved exceptions
+2026-07-13T00:12:15Z,validate_requirements.py,unknown,PASS,0,18/18 criteria covered; all requirements trace to RULE crumbs
+2026-07-13T00:12:15Z,validate_schemas.py,setup,PASS,0,8 contracts checked; taxonomy single-owner rule satisfied

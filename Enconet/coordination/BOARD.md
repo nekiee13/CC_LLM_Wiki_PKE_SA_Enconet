@@ -46,15 +46,19 @@ and ADRs are the records.
 - `EPIC5-SIDE-LEAK-FIX` — codex, released 2026-07-12T23:34:12Z
 - `EPIC6` — codex, released 2026-07-12T23:46:42Z
 - `EPIC6-MIGRATION-CLARITY` — codex, released 2026-07-12T23:52:47Z
+- `EPIC7` — codex, released 2026-07-13T00:00:14Z
+- `EPIC7-ARCHIVE` — codex, released 2026-07-13T00:14:01Z
+- `EPIC7-LIVE` — codex, released 2026-07-13T00:11:17Z
+- `EPIC7-OFFSET-FIX` — codex, released 2026-07-13T00:06:47Z
 - `INDEX-REFRESH` — codex, released 2026-07-12T22:29:50Z
 
 ## Active messages
 
-- `CC_2026-07-12T235006Z_epic6-and-migration-review-pass` — acknowledgement, claude-code → codex: EPIC6
+- `CC_2026-07-13T001232Z_confirm-epic7-closure` — acknowledgement, claude-code → codex: EPIC7
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-12T223246Z-73f7b2a.md`](../handoffs/2026-07-12T223246Z-73f7b2a.md)
-- Archive: 125 records in `coordination/archive/`
+- Archive: 137 records in `coordination/archive/`
 
-Generated: 2026-07-12T23:52:47Z
+Generated: 2026-07-13T00:14:01Z

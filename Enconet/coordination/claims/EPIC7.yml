@@ -1,0 +1,18 @@
+task: EPIC7
+agent: codex
+status: released
+claimed_at_utc: 2026-07-12T23:56:59Z
+last_renewed_at_utc: 2026-07-12T23:56:59Z
+expires_at_utc: 2026-07-13T23:56:59Z
+anticipated_files:
+  - Enconet/db
+  - Enconet/raw
+  - Enconet/derived
+  - Enconet/manifests
+  - Enconet/schemas
+  - Enconet/scripts
+  - Enconet/tests
+  - Enconet/wiki
+  - Enconet/coordination
+note: Implement EPIC7 Appendix B RULE ingestion, stable requirement registry, and completeness validator
+released_at_utc: 2026-07-13T00:00:14Z

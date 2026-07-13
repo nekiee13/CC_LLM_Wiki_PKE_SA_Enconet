@@ -26,6 +26,7 @@ def test_migration_dry_run_backup_and_apply(tmp_path: Path):
     with sqlite3.connect(db) as c:
         assert c.execute("SELECT count(*) FROM documents").fetchone()[0]==1
         assert "quote_id" in {r[1] for r in c.execute("PRAGMA table_info(crumb_chunk_links)")}
+        assert {"parent_requirement_id","is_subrequirement"} <= {r[1] for r in c.execute("PRAGMA table_info(requirements)")}
         assert c.execute("PRAGMA integrity_check").fetchone()[0]=="ok"
 
 

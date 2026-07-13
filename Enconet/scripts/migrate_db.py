@@ -33,6 +33,9 @@ def plan(db_path: Path) -> list[str]:
             if conn.execute("SELECT count(*) FROM crumb_chunk_links").fetchone()[0]:
                 raise ValueError("legacy crumb_chunk_links is non-empty; automatic migration refused")
             actions.append("recreate empty crumb_chunk_links with quote_id")
+        requirement_columns = {r[1] for r in conn.execute("PRAGMA table_info(requirements)")}
+        if "parent_requirement_id" not in requirement_columns:
+            actions.append("add requirement hierarchy columns")
         return actions
 
 
@@ -55,6 +58,9 @@ def migrate(db_path: Path, *, apply: bool, backup_dir: Path | None = None) -> tu
             conn.execute("PRAGMA foreign_keys = ON")
             if "recreate empty crumb_chunk_links with quote_id" in actions:
                 conn.execute("DROP TABLE crumb_chunk_links")
+            if "add requirement hierarchy columns" in actions:
+                conn.execute("ALTER TABLE requirements ADD COLUMN parent_requirement_id TEXT REFERENCES requirements(requirement_id)")
+                conn.execute("ALTER TABLE requirements ADD COLUMN is_subrequirement INTEGER NOT NULL DEFAULT 0 CHECK (is_subrequirement IN (0,1))")
             # sqlite3.executescript commits implicitly. Recovery is therefore the
             # pre-write SQLite backup, not an illusory surrounding transaction.
             conn.executescript(schema)

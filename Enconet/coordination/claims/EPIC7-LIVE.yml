@@ -1,0 +1,14 @@
+task: EPIC7-LIVE
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T00:10:14Z
+last_renewed_at_utc: 2026-07-13T00:10:14Z
+expires_at_utc: 2026-07-13T08:10:14Z
+anticipated_files:
+  - Enconet/db
+  - Enconet/manifests
+  - Enconet/scripts
+  - Enconet/tests
+  - Enconet/coordination
+note: Execute independently authorized EPIC7 live migration and Appendix B ingestion; validate and close
+released_at_utc: 2026-07-13T00:11:17Z

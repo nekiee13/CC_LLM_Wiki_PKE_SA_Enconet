@@ -1,0 +1,12 @@
+task: EPIC7-OFFSET-FIX
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T00:06:04Z
+last_renewed_at_utc: 2026-07-13T00:06:04Z
+expires_at_utc: 2026-07-13T04:06:04Z
+anticipated_files:
+  - Enconet/scripts/ingest_appendix_b.py
+  - Enconet/tests/test_epic7_requirements.py
+  - Enconet/coordination
+note: Fix independently confirmed EPIC7 chunk offset mismatch and add spine regression
+released_at_utc: 2026-07-13T00:06:47Z

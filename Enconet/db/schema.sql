@@ -111,6 +111,10 @@ CREATE TABLE IF NOT EXISTS requirements (
     criterion_id TEXT NOT NULL REFERENCES criteria(criterion_id) ON DELETE RESTRICT,
     requirement_text TEXT NOT NULL CHECK (length(trim(requirement_text)) > 0),
     source_item_id TEXT REFERENCES crumbs(item_id) ON DELETE RESTRICT,
+    parent_requirement_id TEXT REFERENCES requirements(requirement_id) ON DELETE RESTRICT,
+    is_subrequirement INTEGER NOT NULL DEFAULT 0 CHECK (is_subrequirement IN (0,1)),
+    CHECK ((is_subrequirement = 0 AND parent_requirement_id IS NULL) OR
+           (is_subrequirement = 1 AND parent_requirement_id IS NOT NULL)),
     UNIQUE (criterion_id, requirement_text)
 ) STRICT;
 
