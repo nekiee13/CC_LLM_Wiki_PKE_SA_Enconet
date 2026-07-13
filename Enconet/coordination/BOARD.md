@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `INDEX-REFRESH` — codex, expires 2026-07-13T08:48:42Z
+- none
 
 ## Released claims
 
@@ -56,14 +56,15 @@ and ADRs are the records.
 - `EPIC9` — codex, released 2026-07-13T00:37:29Z
 - `EPIC9-ARCHIVE` — codex, released 2026-07-13T00:45:50Z
 - `EPIC9-LIVE` — codex, released 2026-07-13T00:42:34Z
+- `INDEX-REFRESH` — codex, released 2026-07-13T00:52:00Z
 
 ## Active messages
 
-- none
+- `CX_2026-07-13T005159Z_shared-indexes-refreshed-f32cf2e` — status, codex → claude-code: INDEX-REFRESH
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-12T223246Z-73f7b2a.md`](../handoffs/2026-07-12T223246Z-73f7b2a.md)
 - Archive: 155 records in `coordination/archive/`
 
-Generated: 2026-07-13T00:48:42Z
+Generated: 2026-07-13T00:52:00Z
