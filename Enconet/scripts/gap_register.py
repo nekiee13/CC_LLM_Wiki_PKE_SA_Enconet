@@ -18,7 +18,8 @@ def write_gap(db:Path,record:dict)->str|None:
   if action_type not in {"verification","document_request"}:raise ValueError("missing-evidence action must be verification or document_request")
   existing=[int(r[0].split("-")[1]) for r in c.execute("SELECT action_id FROM auditor_actions")]
   aid=f"ACT-{max(existing,default=0)+1:04d}"
-  db_util.insert(c,"auditor_actions",{"action_id":aid,"gap_id":record["gap_id"],"action_type":action_type,"description":record.get("action_description") or f"Resolve {missing}"})
+  run=c.execute("SELECT e.evaluation_run_id FROM gaps g JOIN criterion_evaluations e USING(evaluation_id) WHERE g.gap_id=?",(record["gap_id"],)).fetchone()[0]
+  db_util.insert(c,"auditor_actions",{"action_id":aid,"evaluation_run_id":run,"gap_id":record["gap_id"],"action_type":action_type,"description":record.get("action_description") or f"Resolve {missing}"})
   return aid
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument("record",type=Path);p.add_argument("--db",type=Path,default=db_util.DEFAULT_DB);a=p.parse_args()

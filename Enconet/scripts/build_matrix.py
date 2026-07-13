@@ -9,7 +9,13 @@ def build(db:Path,run_id:str|None=None)->list[dict]:
   rows=[]
   for criterion in c.execute("SELECT criterion_id,criterion_name FROM criteria ORDER BY rowid"):
    cid=criterion[0];app=c.execute("SELECT applicable FROM criterion_applicability WHERE evaluation_run_id=? AND criterion_id=?",(run_id,cid)).fetchone() if run_id else None
-   rows.append({"criterion_id":cid,"criterion_name":criterion[1],"applicability":"applicable" if app and app[0] else ("not-applicable" if app else "unruled"),"rule_evidence_count":c.execute("SELECT count(*) FROM crumbs WHERE criterion_id=? AND document_side='RULE'",(cid,)).fetchone()[0],"document_evidence_count":c.execute("SELECT count(*) FROM crumbs WHERE criterion_id=? AND document_side='DOCUMENT'",(cid,)).fetchone()[0],"gap_count":c.execute("SELECT count(*) FROM gaps g JOIN criterion_evaluations e USING(evaluation_id) WHERE e.criterion_id=?"+(" AND e.evaluation_run_id=?" if run_id else ""),(cid,run_id) if run_id else (cid,)).fetchone()[0],"finding_count":c.execute("SELECT count(*) FROM findings WHERE criterion_id=?",(cid,)).fetchone()[0],"action_count":c.execute("SELECT count(*) FROM auditor_actions a JOIN gaps g ON g.gap_id=a.gap_id JOIN criterion_evaluations e ON e.evaluation_id=g.evaluation_id WHERE e.criterion_id=?"+(" AND e.evaluation_run_id=?" if run_id else ""),(cid,run_id) if run_id else (cid,)).fetchone()[0]})
+   action_sql=("SELECT count(*) FROM auditor_actions a "
+               "LEFT JOIN findings f ON f.finding_id=a.finding_id "
+               "LEFT JOIN gaps g ON g.gap_id=a.gap_id "
+               "LEFT JOIN criterion_evaluations e ON e.evaluation_id=g.evaluation_id "
+               "WHERE COALESCE(f.criterion_id,e.criterion_id)=?"+
+               (" AND a.evaluation_run_id=?" if run_id else ""))
+   rows.append({"criterion_id":cid,"criterion_name":criterion[1],"applicability":"applicable" if app and app[0] else ("not-applicable" if app else "unruled"),"rule_evidence_count":c.execute("SELECT count(*) FROM crumbs WHERE criterion_id=? AND document_side='RULE'",(cid,)).fetchone()[0],"document_evidence_count":c.execute("SELECT count(*) FROM crumbs WHERE criterion_id=? AND document_side='DOCUMENT'",(cid,)).fetchone()[0],"gap_count":c.execute("SELECT count(*) FROM gaps g JOIN criterion_evaluations e USING(evaluation_id) WHERE e.criterion_id=?"+(" AND e.evaluation_run_id=?" if run_id else ""),(cid,run_id) if run_id else (cid,)).fetchone()[0],"finding_count":c.execute("SELECT count(*) FROM findings WHERE criterion_id=?"+(" AND evaluation_run_id=?" if run_id else ""),(cid,run_id) if run_id else (cid,)).fetchone()[0],"action_count":c.execute(action_sql,(cid,run_id) if run_id else (cid,)).fetchone()[0]})
   return rows
 def render_json(rows):return (json.dumps(rows,ensure_ascii=False,sort_keys=True,indent=2)+"\n").encode()
 def render_md(rows):

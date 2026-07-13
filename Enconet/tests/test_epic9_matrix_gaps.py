@@ -31,6 +31,6 @@ def test_action_id_uses_max_not_count(audit):
  assert gap_register.write_gap(audit,{"gap_id":"GAP-APP_B_I-01","evaluation_id":"EVAL-APP_B_I","status":"missing-evidence","description":"first","missing_evidence_ref":"record"})=="ACT-0001"
  gap_register.write_gap(audit,{"gap_id":"GAP-APP_B_I-02","evaluation_id":"EVAL-APP_B_I","status":"undetermined","description":"weak","evidence_item_id":"CRUMB-DOC-0001-APP_B_I-0001"})
  with db_util.connect(audit) as c:
-  db_util.insert(c,"auditor_actions",{"action_id":"ACT-0002","gap_id":"GAP-APP_B_I-02","action_type":"verification","description":"verify weak evidence"})
+  db_util.insert(c,"auditor_actions",{"action_id":"ACT-0002","evaluation_run_id":"RUN-20260713-02","gap_id":"GAP-APP_B_I-02","action_type":"verification","description":"verify weak evidence"})
   c.execute("DELETE FROM auditor_actions WHERE action_id='ACT-0001'")
  assert gap_register.write_gap(audit,{"gap_id":"GAP-APP_B_I-03","evaluation_id":"EVAL-APP_B_I","status":"missing-evidence","description":"third","missing_evidence_ref":"record"})=="ACT-0003"

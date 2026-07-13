@@ -35,6 +35,12 @@ RATINGS = ["fully", "substantially", "partially", "minimally", "unmet", "undeter
 GAP_STATUSES = ["covered", "mostly-covered", "partially-covered", "minimally-covered",
                 "not-covered", "not-applicable", "undetermined", "missing-evidence"]
 ACTION_TYPES = ["verification", "document_request", "sample_test", "interview"]
+FINDING_SEVERITIES = ["low", "medium", "high", "critical"]
+FINDING_CONFIDENCES = ["low", "medium", "high"]
+VERIFICATION_STATUSES = ["pending", "verified", "rejected"]
+FINDING_STATUSES = ["draft", "approved", "closed"]
+ACTION_STATES = ["open", "closed"]
+APPROVAL_STATUSES = ["draft", "approved"]
 LANGUAGES = ["sl", "en", "hr"]
 DASH_CRITERION_FIELDS = ["n", "order", "title", "rating", "score", "refs", "aff", "con", "judge", "verify"]
 PAGE_TYPES = ["criterion-evaluation", "evidence", "finding", "action", "gate-decision"]
@@ -103,6 +109,12 @@ def check_vocabularies(voc: dict, sieving: dict) -> None:
         "ratings": RATINGS,
         "gap_statuses": GAP_STATUSES,
         "action_types": ACTION_TYPES,
+        "finding_severities": FINDING_SEVERITIES,
+        "finding_confidences": FINDING_CONFIDENCES,
+        "verification_statuses": VERIFICATION_STATUSES,
+        "finding_statuses": FINDING_STATUSES,
+        "action_states": ACTION_STATES,
+        "approval_statuses": APPROVAL_STATUSES,
         "languages": LANGUAGES,
         "document_sides": ["RULE", "DOCUMENT"],
         "source_rules": ["10CFR50_APPB", "10CFR21"],

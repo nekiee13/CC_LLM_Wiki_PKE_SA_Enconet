@@ -183,22 +183,35 @@ CREATE TABLE IF NOT EXISTS gaps (
 
 CREATE TABLE IF NOT EXISTS findings (
     finding_id TEXT PRIMARY KEY,
+    evaluation_run_id TEXT NOT NULL REFERENCES evaluation_runs(run_id) ON DELETE CASCADE,
     criterion_id TEXT NOT NULL REFERENCES criteria(criterion_id) ON DELETE RESTRICT,
     evidence_item_id TEXT REFERENCES crumbs(item_id) ON DELETE RESTRICT,
     gap_id TEXT REFERENCES gaps(gap_id) ON DELETE SET NULL,
     title TEXT NOT NULL,
     body TEXT NOT NULL,
-    status TEXT NOT NULL DEFAULT 'draft' CHECK (status IN ('draft','approved','closed'))
+    severity TEXT NOT NULL CHECK (severity IN ('low','medium','high','critical')),
+    confidence TEXT NOT NULL CHECK (confidence IN ('low','medium','high')),
+    basis TEXT NOT NULL CHECK (length(trim(basis)) > 0),
+    verification_status TEXT NOT NULL DEFAULT 'pending' CHECK (verification_status IN ('pending','verified','rejected')),
+    status TEXT NOT NULL DEFAULT 'draft' CHECK (status IN ('draft','approved','closed')),
+    approval_ref TEXT,
+    CHECK ((evidence_item_id IS NOT NULL) <> (gap_id IS NOT NULL)),
+    CHECK ((status = 'draft' AND approval_ref IS NULL) OR (status IN ('approved','closed') AND approval_ref IS NOT NULL))
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS auditor_actions (
     action_id TEXT PRIMARY KEY,
+    evaluation_run_id TEXT NOT NULL REFERENCES evaluation_runs(run_id) ON DELETE CASCADE,
     finding_id TEXT REFERENCES findings(finding_id) ON DELETE CASCADE,
     gap_id TEXT REFERENCES gaps(gap_id) ON DELETE CASCADE,
     action_type TEXT NOT NULL CHECK (action_type IN ('verification','document_request','sample_test','interview')),
     description TEXT NOT NULL,
-    status TEXT NOT NULL DEFAULT 'open' CHECK (status IN ('open','complete','cancelled')),
-    CHECK ((finding_id IS NOT NULL) <> (gap_id IS NOT NULL))
+    state TEXT NOT NULL DEFAULT 'open' CHECK (state IN ('open','closed')),
+    priority INTEGER NOT NULL DEFAULT 0 CHECK (priority IN (0,1)),
+    approval_status TEXT NOT NULL DEFAULT 'draft' CHECK (approval_status IN ('draft','approved')),
+    approval_ref TEXT,
+    CHECK ((finding_id IS NOT NULL) <> (gap_id IS NOT NULL)),
+    CHECK ((approval_status = 'draft' AND approval_ref IS NULL) OR (approval_status = 'approved' AND approval_ref IS NOT NULL))
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS dashboard_runs (

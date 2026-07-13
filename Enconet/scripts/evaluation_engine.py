@@ -50,7 +50,7 @@ def write_evaluation(db:Path,*,run_id:str,record:dict,evidence_ids:list[str],aut
             gap_id=f"GAP-{cid}-01"
             db_util.insert(c,"gaps",{"gap_id":gap_id,"evaluation_id":eid,"status":"missing-evidence","description":"Positive classification downgraded: no linked DOCUMENT evidence","missing_evidence_ref":"linked supplier DOCUMENT crumb"})
             existing=[int(r[0].split("-")[1]) for r in c.execute("SELECT action_id FROM auditor_actions")]
-            db_util.insert(c,"auditor_actions",{"action_id":f"ACT-{max(existing,default=0)+1:04d}","gap_id":gap_id,"action_type":"document_request","description":"Obtain linked supplier DOCUMENT evidence"})
+            db_util.insert(c,"auditor_actions",{"action_id":f"ACT-{max(existing,default=0)+1:04d}","evaluation_run_id":run_id,"gap_id":gap_id,"action_type":"document_request","description":"Obtain linked supplier DOCUMENT evidence"})
         return rating
 def metrics(rows:list[dict])->dict:
     m=model(); applicable=[r for r in rows if r["rating"]!="na"]; counts={x:0 for x in RATINGS}

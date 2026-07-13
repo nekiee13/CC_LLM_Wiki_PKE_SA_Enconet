@@ -23,6 +23,30 @@ vocabularies:
     usage: "Type of auditor_actions rows; missing-evidence gaps default to verification or document_request (EPIC 9/10)."
     values: [verification, document_request, sample_test, interview]
 
+  finding_severities:
+    usage: "Severity assigned to a draft or approved EPIC 10 finding."
+    values: [low, medium, high, critical]
+
+  finding_confidences:
+    usage: "Confidence in the evidence basis of an EPIC 10 finding."
+    values: [low, medium, high]
+
+  verification_statuses:
+    usage: "Auditor verification disposition carried by a finding."
+    values: [pending, verified, rejected]
+
+  finding_statuses:
+    usage: "Approval lifecycle for findings; only an approvals.csv decision may move draft to approved."
+    values: [draft, approved, closed]
+
+  action_states:
+    usage: "Operational state of an auditor action."
+    values: [open, closed]
+
+  approval_statuses:
+    usage: "Manifest-backed approval lifecycle for reportable findings and actions."
+    values: [draft, approved]
+
   languages:
     usage: "Both quote_language on evidence quotes and the per-run deliverable_language (ADR-0009); no other language may occur."
     values: [sl, en, hr]

@@ -24,15 +24,21 @@ per_type_required:
     criterion_id: "APP_B_* taxonomy ID or n-a for the aggregate matrix page"
     generated_by: "script name that emitted the page"
   finding:
+    evaluation_run: "RUN-id the finding belongs to"
     criterion_id: "APP_B_* taxonomy ID"
     severity: "severity level"
     confidence: "confidence level"
     evidence_refs: "crumb IDs or gap ID (missing-evidence link)"
+    basis: "defensible basis for the finding"
+    verification_status: "pending | verified | rejected"
     approval_ref: "approvals.csv object_id once approved; n-a while draft"
   action:
+    evaluation_run: "RUN-id the action belongs to"
     action_type: "one of vocabularies.action_types"
     linked_to: "FIND-* or GAP-* ID"
     state: "open | closed"
+    priority: "true | false"
+    approval_ref: "approvals.csv object_id once approved; n-a while draft"
   gate-decision:
     gate: "G1..G7"
     decision: "approved | rejected | deferred (mirrors approvals.csv)"

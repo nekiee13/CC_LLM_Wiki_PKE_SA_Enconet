@@ -159,10 +159,12 @@ def test_traceability_chain_and_action_exclusivity(database: Path):
         with pytest.raises(ValueError, match="CHECK constraint failed"):
             db_util.insert(conn, "auditor_actions", {
                 "action_id": "ACT-0001", "action_type": "document_request",
-                "description": "Request records", "finding_id": None, "gap_id": None,
+                "evaluation_run_id": "RUN-20260712-02", "description": "Request records",
+                "finding_id": None, "gap_id": None,
             })
         db_util.insert(conn, "auditor_actions", {
             "action_id": "ACT-0001", "action_type": "document_request",
-            "description": "Request records", "gap_id": "GAP-APP_B_I-01",
+            "evaluation_run_id": "RUN-20260712-02", "description": "Request records",
+            "gap_id": "GAP-APP_B_I-01",
         })
         assert db_util.lookup(conn, "auditor_actions", "action_id", "ACT-0001")["gap_id"] == "GAP-APP_B_I-01"

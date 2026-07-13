@@ -47,6 +47,13 @@ def plan(db_path: Path) -> list[str]:
             if any(conn.execute(f"SELECT count(*) FROM {table}").fetchone()[0] for table in ("gaps","findings","auditor_actions")):
                 raise ValueError("EPIC9 gap/action tables contain data; automatic migration refused")
             actions.append("recreate empty EPIC9 gap/action tables")
+        finding_columns = {r[1] for r in conn.execute("PRAGMA table_info(findings)")}
+        action_columns = {r[1] for r in conn.execute("PRAGMA table_info(auditor_actions)")}
+        if "evaluation_run_id" not in finding_columns or "approval_status" not in action_columns:
+            if any(conn.execute(f"SELECT count(*) FROM {table}").fetchone()[0]
+                   for table in ("findings", "auditor_actions")):
+                raise ValueError("EPIC10 finding/action tables contain data; automatic migration refused")
+            actions.append("recreate empty EPIC10 finding/action tables")
         return actions
 
 
@@ -77,6 +84,9 @@ def migrate(db_path: Path, *, apply: bool, backup_dir: Path | None = None) -> tu
                     conn.execute(f"DROP TABLE IF EXISTS {table}")
             elif "recreate empty EPIC9 gap/action tables" in actions:
                 for table in ("auditor_actions","findings","gaps"):
+                    conn.execute(f"DROP TABLE IF EXISTS {table}")
+            elif "recreate empty EPIC10 finding/action tables" in actions:
+                for table in ("auditor_actions", "findings"):
                     conn.execute(f"DROP TABLE IF EXISTS {table}")
             # sqlite3.executescript commits implicitly. Recovery is therefore the
             # pre-write SQLite backup, not an illusory surrounding transaction.
