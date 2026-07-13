@@ -15,7 +15,7 @@ Plan profile names (ALIGNMENT_PLAN C6.2) map to these actual index names:
 
 | Plan name | Tool | Index name | Root | Mandatory options (every refresh) |
 |---|---|---|---|---|
-| `enconet-docs` | jdocmunch | `local/PKE_SA_NQA1_Enconet_docs` | `Enconet/` | `extra_ignore_patterns: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", ".claude/**", ".agents/**", "**/settings.local.json"]` |
+| `enconet-docs` | jdocmunch | `local/PKE_SA_NQA1_Enconet_docs` | `Enconet/` | `extra_ignore_patterns: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", "coordination/archive/**", "AGENTS.md", "CLAUDE.md", "**/AGENTS.md", "**/CLAUDE.md", ".claude/**", ".agents/**", "**/settings.local.json"]`; pass an explicit filtered tracked-file list to defeat dot-directory force-discovery |
 | — (controlled view) | jdocmunch | `local/PKE_SA_NQA1_Enconet_controlled` | `Enconet/` | docs patterns **plus** `["docs/context/**", "docs/_archive/**", "coordination/archive/**"]` |
 | `nqa1-global-docs` | jdocmunch | `local/PKE_SA_NQA1_global_docs` | `03_PKE_SA_NQA1/doc/` | none (directory holds only workspace docs) — created 2026-07-12 (C6.2) |
 | `enconet-code` | jcodemunch | `local/Enconet-0a063bd7` | `Enconet/` | `extra_ignore: ["raw/**", "incoming/**", "derived/**", "db/**", "sieving/DATA/**", "coordination/**", "wiki/**", ".claude/**", ".agents/**", "**/settings.local.json"]`; `.gitignore` honored |
@@ -66,3 +66,8 @@ Claude-owned. Do not create a second repository code/docs index merely for agent
   `enconet-code` profile above. The installed CLI also lacks the former
   `verify-index` subcommand; verify source root/loadability/counts and the certified
   Git SHA through `resolve_repo`, `list_repos`, and `get_repo_outline`.
+- **jdocmunch may force-discover agent guidance despite directory ignores** — a
+  full walk with `.agents/**` still admitted `.agents/skills/README.md`, and the
+  former profile did not exclude root `CLAUDE.md` (observed 2026-07-14). Shared
+  repository doc refreshes must exclude both agents' root/directory guidance and
+  pass an explicit filtered tracked-file list; do not rely on ignore patterns alone.
