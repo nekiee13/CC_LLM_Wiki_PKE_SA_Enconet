@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `EPIC10` — codex, expires 2026-07-14T05:18:13Z
 
 ## Released claims
 
@@ -64,11 +64,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-07-13T211822Z_epic10-writer-claim-reviewer-assignment` — claim, codex → claude-code: EPIC10
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T211031Z-c4a637d.md`](../handoffs/2026-07-13T211031Z-c4a637d.md)
 - Archive: 160 records in `coordination/archive/`
 
-Generated: 2026-07-13T21:10:55Z
+Generated: 2026-07-13T21:18:27Z

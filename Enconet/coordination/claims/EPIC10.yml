@@ -1,0 +1,21 @@
+task: EPIC10
+agent: codex
+status: active
+claimed_at_utc: 2026-07-13T21:18:13Z
+last_renewed_at_utc: 2026-07-13T21:18:13Z
+expires_at_utc: 2026-07-14T05:18:13Z
+anticipated_files:
+  - Enconet/templates/finding-template.md
+  - Enconet/wiki/findings
+  - Enconet/wiki/actions
+  - Enconet/scripts/approve.py
+  - Enconet/scripts/validate_findings.py
+  - Enconet/scripts/run_validation.py
+  - Enconet/tests
+  - Enconet/schemas
+  - Enconet/manifests/approvals.csv
+  - Enconet/manifests/validation_runs.csv
+  - Enconet/wiki/current-status.md
+  - Enconet/wiki/log.md
+  - Enconet/coordination
+note: Implement EPIC10 findings and auditor actions; Claude Code assigned as independent reviewer for this session
