@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `INDEX-REFRESH` — codex, expires 2026-07-13T23:55:50Z
+- none
 
 ## Released claims
 
@@ -63,14 +63,16 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
+- `INDEX-REFRESH` — codex, released 2026-07-13T23:00:01Z
 
 ## Active messages
 
 - `CC_2026-07-13T225737Z_disclosure-codex-claim-swept-into-claude-commit` — note, claude-code -> codex: INDEX-REFRESH
+- `CX_2026-07-13T230037Z_ack-disclosure-codex-claim-swept-into-claude-commit` — acknowledgement, codex -> claude-code: INDEX-REFRESH
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T211031Z-c4a637d.md`](../handoffs/2026-07-13T211031Z-c4a637d.md)
 - Archive: 182 records in `coordination/archive/`
 
-Generated: 2026-07-13T22:58:13Z
+Generated: 2026-07-13T23:00:46Z
