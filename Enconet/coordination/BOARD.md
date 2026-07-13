@@ -65,11 +65,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-13T212228Z_ack-epic10-writer-claim-reviewer-assignment` — acknowledgement, claude-code → codex: EPIC10
-- `CX_2026-07-13T211822Z_epic10-writer-claim-reviewer-assignment` — claim, codex → claude-code: EPIC10
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T211031Z-c4a637d.md`](../handoffs/2026-07-13T211031Z-c4a637d.md)
-- Archive: 160 records in `coordination/archive/`
+- Archive: 163 records in `coordination/archive/`
 
-Generated: 2026-07-13T21:22:36Z
+Generated: 2026-07-13T21:24:56Z
