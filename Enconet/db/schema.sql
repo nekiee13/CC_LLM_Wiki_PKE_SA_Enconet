@@ -132,7 +132,10 @@ CREATE TABLE IF NOT EXISTS criterion_applicability (
     criterion_id TEXT NOT NULL REFERENCES criteria(criterion_id) ON DELETE RESTRICT,
     applicable INTEGER NOT NULL CHECK (applicable IN (0,1)),
     justification TEXT NOT NULL CHECK (length(trim(justification)) > 0),
-    decision_ref TEXT,
+    scope_source_doc_id TEXT NOT NULL REFERENCES documents(doc_id) ON DELETE RESTRICT,
+    approved_by TEXT NOT NULL,
+    approved_date TEXT NOT NULL,
+    decision_ref TEXT NOT NULL,
     PRIMARY KEY (evaluation_run_id, criterion_id)
 ) STRICT;
 
@@ -142,9 +145,30 @@ CREATE TABLE IF NOT EXISTS criterion_evaluations (
     criterion_id TEXT NOT NULL REFERENCES criteria(criterion_id) ON DELETE RESTRICT,
     rating TEXT NOT NULL CHECK (rating IN ('fully','substantially','partially','minimally','unmet','undetermined','na')),
     score REAL CHECK (score IS NULL OR (score >= 0 AND score <= 100)),
+    coverage REAL NOT NULL CHECK (coverage BETWEEN 0 AND 1),
+    completeness REAL NOT NULL CHECK (completeness BETWEEN 0 AND 1),
+    accuracy REAL NOT NULL CHECK (accuracy BETWEEN 0 AND 1),
+    clarity REAL NOT NULL CHECK (clarity BETWEEN 0 AND 1),
+    alignment REAL NOT NULL CHECK (alignment BETWEEN 0 AND 1),
+    evidence_supported INTEGER NOT NULL CHECK (evidence_supported IN (0,1)),
+    affirmative_summary TEXT NOT NULL,
+    contrary_summary TEXT NOT NULL,
+    judge_ruling TEXT NOT NULL,
     rationale TEXT NOT NULL,
     UNIQUE (evaluation_run_id, criterion_id)
 ) STRICT;
+
+CREATE TABLE IF NOT EXISTS evaluation_evidence (
+    evaluation_id TEXT NOT NULL REFERENCES criterion_evaluations(evaluation_id) ON DELETE CASCADE,
+    item_id TEXT NOT NULL REFERENCES crumbs(item_id) ON DELETE RESTRICT,
+    PRIMARY KEY (evaluation_id, item_id)
+) STRICT;
+
+CREATE TRIGGER IF NOT EXISTS prevent_applicability_change_after_evaluation
+BEFORE UPDATE ON criterion_applicability
+WHEN EXISTS (SELECT 1 FROM criterion_evaluations e
+             WHERE e.evaluation_run_id=OLD.evaluation_run_id AND e.criterion_id=OLD.criterion_id)
+BEGIN SELECT RAISE(ABORT, 'delete affected evaluation before changing applicability'); END;
 
 CREATE TABLE IF NOT EXISTS gaps (
     gap_id TEXT PRIMARY KEY,

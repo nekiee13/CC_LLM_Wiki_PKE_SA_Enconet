@@ -214,6 +214,7 @@ def main() -> int:
     dash = load_yaml("dashboard_schema.yml")
     pages = load_yaml("page_types.yml")
     fields = load_yaml("required_fields.yml")
+    package = load_yaml("evaluation_package_schema.yml")
     try:
         sieving = json.loads((SCHEMAS / "sieving_contract.yml").read_text(encoding="utf-8"))
     except Exception as exc:  # noqa: BLE001
@@ -226,6 +227,8 @@ def main() -> int:
     check_scoring(model)
     check_dashboard(dash)
     check_pages(pages, fields)
+    if package.get("evaluation_count") != 18 or package.get("ratings") != RATINGS:
+        fail("evaluation_package_schema.yml: count/ratings differ from canonical contracts")
 
     if errors:
         for err in errors:
@@ -233,8 +236,8 @@ def main() -> int:
         print(f"validate_schemas: FAIL ({len(errors)} error(s))")
         append_validation_run("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}")
         return 1
-    print("validate_schemas: PASS (8 contracts; taxonomy has one canonical owner)")
-    append_validation_run("PASS", 0, "8 contracts checked; taxonomy single-owner rule satisfied")
+    print("validate_schemas: PASS (9 contracts; taxonomy has one canonical owner)")
+    append_validation_run("PASS", 0, "9 contracts checked; taxonomy single-owner rule satisfied")
     return 0
 
 

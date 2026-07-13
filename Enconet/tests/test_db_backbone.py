@@ -22,6 +22,7 @@ REQUIRED_TABLES = {
     "criterion_evaluations", "gaps", "findings", "auditor_actions", "sieve_runs",
     "evaluation_runs", "dashboard_runs", "validation_runs",
     "sieve_run_authorities", "crumb_authority_refs",
+    "evaluation_evidence",
 }
 
 
@@ -63,6 +64,7 @@ def test_schema_declares_required_foreign_key_spine(database: Path):
         "crumb_chunk_links": {("item_id", "crumbs"), ("quote_id", "crumb_quotes"), ("chunk_id", "document_chunks")},
         "criterion_applicability": {("criterion_id", "criteria"), ("evaluation_run_id", "evaluation_runs")},
         "criterion_evaluations": {("criterion_id", "criteria"), ("evaluation_run_id", "evaluation_runs")},
+        "evaluation_evidence": {("evaluation_id", "criterion_evaluations"), ("item_id", "crumbs")},
         "gaps": {("evaluation_id", "criterion_evaluations")},
         "findings": {("criterion_id", "criteria"), ("evidence_item_id", "crumbs")},
         "auditor_actions": {("finding_id", "findings"), ("gap_id", "gaps")},
@@ -145,6 +147,9 @@ def test_traceability_chain_and_action_exclusivity(database: Path):
             "evaluation_id": "EVAL-APP_B_I", "evaluation_run_id": "RUN-20260712-02",
             "criterion_id": "APP_B_I", "rating": "undetermined", "score": 0,
             "rationale": "Pending review",
+            "coverage": 0, "completeness": 0, "accuracy": 0, "clarity": 0,
+            "alignment": 0, "evidence_supported": 0,
+            "affirmative_summary": "", "contrary_summary": "", "judge_ruling": "Pending",
         })
         db_util.insert(conn, "gaps", {
             "gap_id": "GAP-APP_B_I-01", "evaluation_id": "EVAL-APP_B_I",

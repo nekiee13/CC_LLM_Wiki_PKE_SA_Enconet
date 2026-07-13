@@ -1,0 +1,4 @@
+schema_version: "1.0"
+required_top_level: [schema_version, run, applicability, evaluations, metrics, gaps, actions]
+evaluation_count: 18
+ratings: [fully, substantially, partially, minimally, unmet, undetermined, na]

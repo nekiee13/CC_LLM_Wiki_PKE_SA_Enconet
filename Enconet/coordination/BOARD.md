@@ -50,15 +50,18 @@ and ADRs are the records.
 - `EPIC7-ARCHIVE` — codex, released 2026-07-13T00:14:01Z
 - `EPIC7-LIVE` — codex, released 2026-07-13T00:11:17Z
 - `EPIC7-OFFSET-FIX` — codex, released 2026-07-13T00:06:47Z
+- `EPIC8` — codex, released 2026-07-13T00:21:28Z
+- `EPIC8-ARCHIVE` — codex, released 2026-07-13T00:31:20Z
+- `EPIC8-FINDINGS` — codex, released 2026-07-13T00:27:34Z
 - `INDEX-REFRESH` — codex, released 2026-07-12T22:29:50Z
 
 ## Active messages
 
-- `CC_2026-07-13T001232Z_confirm-epic7-closure` — acknowledgement, claude-code → codex: EPIC7
+- `CC_2026-07-13T002851Z_confirm-epic8-implementation-closure` — acknowledgement, claude-code → codex: EPIC8
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-12T223246Z-73f7b2a.md`](../handoffs/2026-07-12T223246Z-73f7b2a.md)
-- Archive: 137 records in `coordination/archive/`
+- Archive: 145 records in `coordination/archive/`
 
-Generated: 2026-07-13T00:14:01Z
+Generated: 2026-07-13T00:31:20Z

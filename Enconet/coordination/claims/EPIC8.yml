@@ -1,0 +1,16 @@
+task: EPIC8
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T00:16:42Z
+last_renewed_at_utc: 2026-07-13T00:16:42Z
+expires_at_utc: 2026-07-14T00:16:42Z
+anticipated_files:
+  - Enconet/db
+  - Enconet/schemas
+  - Enconet/scripts
+  - Enconet/tests
+  - Enconet/manifests
+  - Enconet/wiki
+  - Enconet/coordination
+note: Implement EPIC8 applicability, evidence-gated evaluations, canonical scoring, and evaluation package
+released_at_utc: 2026-07-13T00:21:28Z

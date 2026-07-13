@@ -36,6 +36,12 @@ def plan(db_path: Path) -> list[str]:
         requirement_columns = {r[1] for r in conn.execute("PRAGMA table_info(requirements)")}
         if "parent_requirement_id" not in requirement_columns:
             actions.append("add requirement hierarchy columns")
+        evaluation_columns = {r[1] for r in conn.execute("PRAGMA table_info(criterion_evaluations)")}
+        if "coverage" not in evaluation_columns:
+            protected = ("evaluation_runs","criterion_applicability","criterion_evaluations","gaps","findings","auditor_actions","dashboard_runs")
+            if any(conn.execute(f"SELECT count(*) FROM {table}").fetchone()[0] for table in protected):
+                raise ValueError("EPIC8 evaluation tables contain data; automatic migration refused")
+            actions.append("recreate empty EPIC8 evaluation tables")
         return actions
 
 
@@ -61,6 +67,9 @@ def migrate(db_path: Path, *, apply: bool, backup_dir: Path | None = None) -> tu
             if "add requirement hierarchy columns" in actions:
                 conn.execute("ALTER TABLE requirements ADD COLUMN parent_requirement_id TEXT REFERENCES requirements(requirement_id)")
                 conn.execute("ALTER TABLE requirements ADD COLUMN is_subrequirement INTEGER NOT NULL DEFAULT 0 CHECK (is_subrequirement IN (0,1))")
+            if "recreate empty EPIC8 evaluation tables" in actions:
+                for table in ("dashboard_runs","auditor_actions","findings","gaps","evaluation_evidence","criterion_evaluations","criterion_applicability","evaluation_runs"):
+                    conn.execute(f"DROP TABLE IF EXISTS {table}")
             # sqlite3.executescript commits implicitly. Recovery is therefore the
             # pre-write SQLite backup, not an illusory surrounding transaction.
             conn.executescript(schema)

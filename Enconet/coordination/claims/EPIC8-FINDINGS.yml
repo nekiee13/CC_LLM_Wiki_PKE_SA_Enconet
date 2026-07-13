@@ -1,0 +1,15 @@
+task: EPIC8-FINDINGS
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T00:26:08Z
+last_renewed_at_utc: 2026-07-13T00:26:08Z
+expires_at_utc: 2026-07-13T08:26:08Z
+anticipated_files:
+  - Enconet/db
+  - Enconet/scripts
+  - Enconet/schemas
+  - Enconet/tests
+  - Enconet/manifests
+  - Enconet/coordination
+note: Apply authorized empty EPIC8 schema migration; fix independent validator and package-schema findings
+released_at_utc: 2026-07-13T00:27:34Z

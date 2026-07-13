@@ -19,7 +19,7 @@ REQUIRED_TABLES = {
     "crumb_quotes", "crumb_chunk_links", "requirements", "criterion_applicability",
     "criterion_evaluations", "gaps", "findings", "auditor_actions", "sieve_runs",
     "evaluation_runs", "dashboard_runs", "validation_runs", "sieve_run_authorities",
-    "crumb_authority_refs",
+    "crumb_authority_refs", "evaluation_evidence",
 }
 
 
