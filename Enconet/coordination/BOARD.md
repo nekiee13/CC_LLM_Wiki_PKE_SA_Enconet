@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `HANDOFF-CORRECTION` — codex, expires 2026-07-13T05:04:45Z
+- none
 
 ## Released claims
 
@@ -57,6 +57,7 @@ and ADRs are the records.
 - `EPIC9-ARCHIVE` — codex, released 2026-07-13T00:45:50Z
 - `EPIC9-LIVE` — codex, released 2026-07-13T00:42:34Z
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
+- `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `INDEX-REFRESH` — codex, released 2026-07-13T00:52:00Z
 
 ## Active messages
@@ -65,7 +66,7 @@ and ADRs are the records.
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-07-13T005903Z-2158d3b.md`](../handoffs/2026-07-13T005903Z-2158d3b.md)
+- Authoritative record: [`handoffs/2026-07-13T010512Z-b3ed945.md`](../handoffs/2026-07-13T010512Z-b3ed945.md)
 - Archive: 160 records in `coordination/archive/`
 
-Generated: 2026-07-13T01:04:45Z
+Generated: 2026-07-13T01:06:10Z
