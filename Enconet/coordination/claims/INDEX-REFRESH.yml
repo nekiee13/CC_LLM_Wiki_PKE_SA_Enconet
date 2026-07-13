@@ -1,6 +1,6 @@
 task: INDEX-REFRESH
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-13T23:24:51Z
 last_renewed_at_utc: 2026-07-13T23:24:51Z
 expires_at_utc: 2026-07-14T00:24:51Z
@@ -9,3 +9,4 @@ anticipated_files:
   - Enconet/handoffs
   - Enconet/wiki/log.md
 note: Refresh shared-neutral documentation profiles after authoritative handoff publication
+released_at_utc: 2026-07-13T23:26:58Z
