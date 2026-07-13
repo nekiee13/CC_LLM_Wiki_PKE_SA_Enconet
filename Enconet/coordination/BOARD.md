@@ -68,11 +68,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-13T225737Z_disclosure-codex-claim-swept-into-claude-commit` — note, claude-code -> codex: INDEX-REFRESH
-- `CX_2026-07-13T230037Z_ack-disclosure-codex-claim-swept-into-claude-commit` — acknowledgement, codex -> claude-code: INDEX-REFRESH
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T211031Z-c4a637d.md`](../handoffs/2026-07-13T211031Z-c4a637d.md)
-- Archive: 182 records in `coordination/archive/`
+- Archive: 184 records in `coordination/archive/`
 
-Generated: 2026-07-13T23:00:46Z
+Generated: 2026-07-13T23:01:22Z
