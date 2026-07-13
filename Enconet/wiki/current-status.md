@@ -1,8 +1,8 @@
 # Enconet current status
 
 Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
-`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-14 (EPIC10 accepted;
-EPIC11 provenance remediation pending re-review).
+`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-14 (EPIC10 and
+EPIC11 independently accepted and closed).
 
 ## Phase
 
@@ -24,7 +24,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 8 | Evaluation engine | complete; schema applied and pre-G2 findings fixed; live evaluation remains gated on G2/G3 inputs |
 | 9 | Evidence matrix and gap model | complete; pre-execution matrix has 18 RULE and 0 DOCUMENT evidence, with no fabricated gaps/actions |
 | 10 | Findings and auditor actions | complete and independently accepted; approval retry and signed-gate robustness fixes pass; empty live state preserved; claim released |
-| 11 | Evaluation Report generator | implemented; report issuance/validation re-derive the package from SQLite and controlled approvals; provenance blocker resolved at b7173f5 and pending independent re-review; no live report generated before G2/G3/G4 |
+| 11 | Evaluation Report generator | complete and independently accepted; report issuance/validation re-derive the package from SQLite and controlled approvals; provenance blocker resolved at b7173f5; no live report generated before G2/G3/G4; claim released |
 | 12+ | Dashboard generator onward | not started |
 
 ## Open items
@@ -36,5 +36,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Obtain independent EPIC11 re-review of the resolved package-provenance blocker. Do not create live findings/actions or a report
+Proceed to EPIC12 planning/claiming. Do not create live findings/actions or a report
 until G2 supplier evidence/applicability, G3 scoring calibration, and G4 approval exist.
+Any future non-CLI report issuer must enforce canonical DB+approvals source proof
+before publication; package-only library rendering/validation is not an issuance boundary.
