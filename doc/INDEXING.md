@@ -25,8 +25,8 @@ agent may query or verify. Refresh after batch documentation changes and before 
 full refresh (documented root + full ignore list) rather than bare incremental after
 any structural change; SHA-certification requires a clean worktree (refresh after
 commit); run `verify_index` after each full refresh and record the certified
-`repo@sha` in the next handoff. Last certified state: all three doc profiles clean
-(0 drift / 0 missing / 0 errors) at `25cdb71`, 2026-07-12.
+`repo@sha` in the next handoff. Last recorded certification: all three doc profiles
+clean (0 drift / 0 missing / 0 errors) at `81adeea`, 2026-07-14.
 
 ## Agent-owned guidance indexes
 
