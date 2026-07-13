@@ -1,0 +1,12 @@
+task: COORD-UNICODE
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T21:30:01Z
+last_renewed_at_utc: 2026-07-13T21:30:01Z
+expires_at_utc: 2026-07-13T23:30:01Z
+anticipated_files:
+  - scripts/agent_coord.py
+  - scripts/tests
+  - Enconet/coordination
+note: Make coordination CLI output safe under cp1252 and add regression coverage; separate from EPIC10
+released_at_utc: 2026-07-13T21:32:55Z

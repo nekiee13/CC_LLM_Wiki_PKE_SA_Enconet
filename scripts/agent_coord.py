@@ -35,6 +35,25 @@ TS_FMT = "%Y-%m-%dT%H:%M:%SZ"
 ID_TS_FMT = "%Y-%m-%dT%H%M%SZ"
 
 
+def configure_standard_streams() -> None:
+    """Prevent locale-limited consoles from crashing on coordination text.
+
+    Keep the caller-selected encoding (including redirected cp1252 output), but
+    escape characters that encoding cannot represent.  Standard TextIOWrapper
+    streams support ``reconfigure``; custom streams without it are left alone.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if not callable(reconfigure):
+            continue
+        try:
+            reconfigure(errors="backslashreplace")
+        except (OSError, ValueError):
+            # A detached, closed, or otherwise immutable custom stream should
+            # not prevent the command from running.
+            continue
+
+
 def utc_now() -> datetime:
     return datetime.now(timezone.utc).replace(microsecond=0)
 
@@ -186,7 +205,7 @@ def build_board_body() -> str:
         for msg in active_msgs:
             lines.append(
                 f"- `{msg.get('message_id', msg['_path'].stem)}` — "
-                f"{msg.get('type', '?')}, {msg.get('from_agent', '?')} → "
+                f"{msg.get('type', '?')}, {msg.get('from_agent', '?')} -> "
                 f"{msg.get('to_agent', '?')}: {msg.get('task', '')}"
             )
     else:
@@ -468,6 +487,7 @@ def cmd_validate(args) -> int:
 # ---------------------------------------------------------------- main
 
 def main() -> None:
+    configure_standard_streams()
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
 
