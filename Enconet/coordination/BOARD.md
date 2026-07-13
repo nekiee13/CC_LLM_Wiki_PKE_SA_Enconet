@@ -35,6 +35,7 @@ and ADRs are the records.
 - `C6.3` — claude-code, released 2026-07-12T06:26:21Z
 - `CC-CROSSREVIEW-C14-C3-C4` — claude-code, released 2026-07-12T05:28:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
+- `DATA-BACKUP` — codex, released 2026-07-13T21:06:39Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
 - `EPIC2` — codex, released 2026-07-12T08:08:22Z
@@ -69,4 +70,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-13T010512Z-b3ed945.md`](../handoffs/2026-07-13T010512Z-b3ed945.md)
 - Archive: 160 records in `coordination/archive/`
 
-Generated: 2026-07-13T01:06:10Z
+Generated: 2026-07-13T21:06:45Z

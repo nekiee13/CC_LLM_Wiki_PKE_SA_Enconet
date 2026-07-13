@@ -1,0 +1,14 @@
+task: DATA-BACKUP
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T21:02:21Z
+last_renewed_at_utc: 2026-07-13T21:02:21Z
+expires_at_utc: 2026-07-13T23:02:21Z
+anticipated_files:
+  - Enconet/decisions/ADR-0002-data-policy.md
+  - Enconet/wiki/current-status.md
+  - Enconet/HANDOFF.md
+  - Enconet/handoffs
+  - Enconet/coordination
+note: Create and verify owner-designated external DATA backup on USB volume WIKI_BCKP serial DFF9-9A03
+released_at_utc: 2026-07-13T21:06:39Z

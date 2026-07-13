@@ -29,3 +29,17 @@ checksums **is** committed and machine-verified.
   owner, the corpus exists only on this machine — single-copy risk. The handoff record must
   flag this until resolved.
 - Any sanitized in-repo fixture subset (for tests) requires a separate approval.
+
+## Open-action resolution
+
+On 2026-07-13, the project owner designated the removable USB volume `WIKI_BCKP`
+(volume serial `DFF9-9A03`; mounted as `F:` at the time of backup) as the external
+controlled backup location. The first immutable snapshot was written to
+`PKE_SA_NQA1/Enconet/ADR-0002/2026-07-13T210221Z/` on that volume.
+
+The snapshot contains `DATA/` and `DATA_MANIFEST.json`. Post-copy verification against
+the manifest found 68 expected and 68 actual files, with zero missing, foreign, or
+modified files. The copied manifest SHA-256 is
+`8df578abf6603c898c025d5b1e3860878462c211df142714bf463d1a18de61fc`.
+The single-copy risk is therefore resolved as of this snapshot; future corpus changes
+still require a new verified snapshot.

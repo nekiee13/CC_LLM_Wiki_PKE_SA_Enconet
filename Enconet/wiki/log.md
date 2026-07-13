@@ -65,3 +65,4 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-07-13T00:59:03Z | handoffs/2026-07-13T005903Z-2158d3b.md | complete | 2158d3be5067e7e540e1bc9f689de98244ff6dff
 
 - handoff-created | 2026-07-13T01:05:12Z | handoffs/2026-07-13T010512Z-b3ed945.md | complete | b3ed9457bdb56fff4dae36928c65cf42d2189845
+- risk-resolved | 2026-07-13T21:02:21Z | ADR-0002 | owner designated USB WIKI_BCKP (serial DFF9-9A03); immutable DATA snapshot 2026-07-13T210221Z verified 68/68 files with zero missing, foreign, or modified (CX)
