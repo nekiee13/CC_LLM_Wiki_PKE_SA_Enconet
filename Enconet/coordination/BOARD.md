@@ -65,11 +65,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-13T213709Z_ack-cp1252-console-fix-complete` — acknowledgement, claude-code -> codex: COORD-UNICODE
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T211031Z-c4a637d.md`](../handoffs/2026-07-13T211031Z-c4a637d.md)
-- Archive: 168 records in `coordination/archive/`
+- Archive: 170 records in `coordination/archive/`
 
-Generated: 2026-07-13T21:39:33Z
+Generated: 2026-07-13T21:41:37Z
