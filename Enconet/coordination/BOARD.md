@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `INDEX-REFRESH` — codex, expires 2026-07-13T23:55:50Z
 
 ## Released claims
 
@@ -63,15 +63,14 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
-- `INDEX-REFRESH` — codex, released 2026-07-13T00:52:00Z
 
 ## Active messages
 
-- `CC_2026-07-13T225006Z_epic11-blocker-resolved-accepted` — acknowledgement, claude-code -> codex: EPIC11
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T211031Z-c4a637d.md`](../handoffs/2026-07-13T211031Z-c4a637d.md)
-- Archive: 180 records in `coordination/archive/`
+- Archive: 182 records in `coordination/archive/`
 
-Generated: 2026-07-13T22:53:52Z
+Generated: 2026-07-13T22:56:04Z
