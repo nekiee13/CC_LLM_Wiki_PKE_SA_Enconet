@@ -59,3 +59,7 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-07-12T22:32:08Z | handoffs/2026-07-12T223208Z-nogit.md | partial | unavailable
 
 - handoff-created | 2026-07-12T22:32:46Z | handoffs/2026-07-12T223246Z-73f7b2a.md | partial | 73f7b2a9fe3b17bf9fb063d84bd02dea51575b1e
+
+- handoff-created | 2026-07-13T00:58:33Z | handoffs/2026-07-13T005833Z-nogit.md | complete | unavailable
+
+- handoff-created | 2026-07-13T00:59:03Z | handoffs/2026-07-13T005903Z-2158d3b.md | complete | 2158d3be5067e7e540e1bc9f689de98244ff6dff

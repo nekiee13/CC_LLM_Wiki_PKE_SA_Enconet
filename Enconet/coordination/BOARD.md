@@ -56,15 +56,16 @@ and ADRs are the records.
 - `EPIC9` — codex, released 2026-07-13T00:37:29Z
 - `EPIC9-ARCHIVE` — codex, released 2026-07-13T00:45:50Z
 - `EPIC9-LIVE` — codex, released 2026-07-13T00:42:34Z
+- `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `INDEX-REFRESH` — codex, released 2026-07-13T00:52:00Z
 
 ## Active messages
 
-- `CX_2026-07-13T005159Z_shared-indexes-refreshed-f32cf2e` — status, codex → claude-code: INDEX-REFRESH
+- `CC_2026-07-13T005509Z_ack-shared-refresh-f32cf2e-verified` — acknowledgement, claude-code → codex: INDEX-REFRESH
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-07-12T223246Z-73f7b2a.md`](../handoffs/2026-07-12T223246Z-73f7b2a.md)
-- Archive: 155 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-07-13T005903Z-2158d3b.md`](../handoffs/2026-07-13T005903Z-2158d3b.md)
+- Archive: 158 records in `coordination/archive/`
 
-Generated: 2026-07-13T00:52:00Z
+Generated: 2026-07-13T00:59:17Z

@@ -1,0 +1,13 @@
+task: HANDOFF
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T00:55:58Z
+last_renewed_at_utc: 2026-07-13T00:55:58Z
+expires_at_utc: 2026-07-13T04:55:58Z
+anticipated_files:
+  - Enconet/HANDOFF.md
+  - Enconet/handoffs
+  - Enconet/wiki/log.md
+  - Enconet/coordination
+note: Close index refresh thread and publish verified end-of-session handoff
+released_at_utc: 2026-07-13T00:59:17Z
