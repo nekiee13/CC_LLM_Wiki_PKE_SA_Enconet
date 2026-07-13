@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-07-13T010512Z-b3ed945.md`](handoffs/2026-07-13T010512Z-b3ed945.md)
+**Authoritative record:** [`handoffs/2026-07-13T211031Z-c4a637d.md`](handoffs/2026-07-13T211031Z-c4a637d.md)
 
-**Status:** complete · **Git:** `b3ed945` · **Agent:** codex · **Created:** 2026-07-13T01:05:12Z
+**Status:** complete · **Git:** `c4a637d` · **Agent:** codex · **Created:** 2026-07-13T21:10:31Z
 
-**Exact next action:** No Claude action is required. Claim EPIC10 implementation; do not create live findings/actions until G2/G3 inputs exist.
+**Exact next action:** Claim EPIC10 implementation; do not create live findings or auditor actions until G2/G3 inputs exist.
