@@ -18,35 +18,49 @@ def approve_object(db: Path, object_id: str, *, approvals: Path = APPROVALS,
     decision = approved(object_id, approvals)
     if not decision or not decision.get("date") or not decision.get("reviewer"):
         raise ValueError(f"approved manifest row with date/reviewer missing for {object_id}")
-    # Approval must not repair or overwrite a broken draft projection.  Re-prove
-    # the complete EPIC10 state before changing the authoritative DB row.
+    # Re-prove the complete EPIC10 state before changing the authoritative DB
+    # row.  The sole exception is an idempotent retry after the DB approval
+    # committed but the corresponding projection write did not complete.
     from validate_findings import validate
     errors = validate(db, approvals=approvals, findings_dir=findings_dir, actions_dir=actions_dir)
-    if errors:
-        raise ValueError(f"finding/action validation failed before approval: {errors[0]}")
     with db_util.connect(db) as conn:
         if object_id.startswith("FIND-"):
             row = conn.execute("SELECT * FROM findings WHERE finding_id=?", (object_id,)).fetchone()
             if not row:
                 raise ValueError("unknown finding")
+            target = findings_dir / f"{object_id}.md"
+            already_approved = row["status"] == "approved" and row["approval_ref"] == object_id
             if bool(row["evidence_item_id"]) == bool(row["gap_id"]):
                 raise ValueError("finding has broken evidence/gap links")
-            conn.execute("UPDATE findings SET status='approved', approval_ref=? WHERE finding_id=?",
-                         (object_id, object_id))
+            if not already_approved:
+                conn.execute("UPDATE findings SET status='approved', approval_ref=? WHERE finding_id=?",
+                             (object_id, object_id))
             projected = dict(conn.execute("SELECT * FROM findings WHERE finding_id=?", (object_id,)).fetchone())
-            target, template, values = findings_dir / f"{object_id}.md", FINDING_TEMPLATE, finding_page_values(projected)
+            template, values = FINDING_TEMPLATE, finding_page_values(projected)
         elif object_id.startswith("ACT-"):
             row = conn.execute("SELECT * FROM auditor_actions WHERE action_id=?", (object_id,)).fetchone()
             if not row:
                 raise ValueError("unknown action")
+            target = actions_dir / f"{object_id}.md"
+            already_approved = row["approval_status"] == "approved" and row["approval_ref"] == object_id
             if bool(row["finding_id"]) == bool(row["gap_id"]):
                 raise ValueError("action has broken finding/gap links")
-            conn.execute("UPDATE auditor_actions SET approval_status='approved', approval_ref=? WHERE action_id=?",
-                         (object_id, object_id))
+            if not already_approved:
+                conn.execute("UPDATE auditor_actions SET approval_status='approved', approval_ref=? WHERE action_id=?",
+                             (object_id, object_id))
             projected = dict(conn.execute("SELECT * FROM auditor_actions WHERE action_id=?", (object_id,)).fetchone())
-            target, template, values = actions_dir / f"{object_id}.md", ACTION_TEMPLATE, action_page_values(projected)
+            template, values = ACTION_TEMPLATE, action_page_values(projected)
         else:
             raise ValueError("object_id must be FIND-* or ACT-*")
+        if errors:
+            retry_errors = {
+                f"wiki page missing: {target.name}",
+                f"page/DB content mismatch: {target.name}",
+            }
+            unrelated = [error for error in errors if error not in retry_errors
+                         and not error.startswith(f"page/DB mismatch {target.name}:")]
+            if not already_approved or unrelated:
+                raise ValueError(f"finding/action validation failed before approval: {errors[0]}")
     _atomic_write(target, render_template(template, values))
 
 

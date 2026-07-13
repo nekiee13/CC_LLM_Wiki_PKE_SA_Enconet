@@ -132,11 +132,12 @@ def validate(db: Path, *, approvals: Path = APPROVALS,
     return errors
 
 
-def append(result: str, code: int, details: str, path: Path = RUNS) -> None:
+def append(result: str, code: int, details: str, path: Path = RUNS,
+           phase: str = "verification") -> None:
     with path.open("a", newline="", encoding="utf-8") as handle:
         csv.writer(handle).writerow([
             datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "validate_findings.py", "unknown", result, code, details,
+            "validate_findings.py", phase, result, code, details,
         ])
 
 
@@ -146,6 +147,8 @@ def main() -> int:
     parser.add_argument("--approvals", type=Path, default=APPROVALS)
     parser.add_argument("--findings-dir", type=Path, default=FINDINGS_DIR)
     parser.add_argument("--actions-dir", type=Path, default=ACTIONS_DIR)
+    parser.add_argument("--no-record", action="store_true")
+    parser.add_argument("--phase", default="verification")
     args = parser.parse_args()
     try:
         errors = validate(args.db, approvals=args.approvals,
@@ -153,11 +156,13 @@ def main() -> int:
     except Exception as exc:  # noqa: BLE001 - report all validator failures
         errors = [str(exc)]
     if errors:
-        append("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}")
+        if not args.no_record:
+            append("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}", phase=args.phase)
         for error in errors:
             print(f"validate_findings: FAIL - {error}", file=sys.stderr)
         return 1
-    append("PASS", 0, "finding/action links, approvals, and pages verified")
+    if not args.no_record:
+        append("PASS", 0, "finding/action links, approvals, and pages verified", phase=args.phase)
     print("validate_findings: PASS")
     return 0
 

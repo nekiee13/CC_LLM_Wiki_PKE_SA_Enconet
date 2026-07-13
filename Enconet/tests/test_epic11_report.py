@@ -1,6 +1,7 @@
 """EPIC11 deterministic generation, gates, localization, and consistency tests."""
 from __future__ import annotations
 
+import copy
 import sys
 from pathlib import Path
 
@@ -10,6 +11,7 @@ ENCONET = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ENCONET / "scripts"))
 
 import evaluation_engine  # noqa: E402
+import build_evaluation_package  # noqa: E402
 import generate_report  # noqa: E402
 import validate_report  # noqa: E402
 
@@ -84,3 +86,20 @@ def test_validator_rejects_score_section_and_citation_tamper():
     assert "visible consolidated score mismatch" in validate_report.validate(data, broken_score)
     broken_citation = report.replace("[gap:GAP-APP_B_I-01]", "")
     assert "citation-less recommendation" in validate_report.validate(data, broken_citation)
+
+
+def test_package_source_verification_rejects_fabricated_approval(monkeypatch, tmp_path: Path):
+    source = package()
+    source["findings"][0]["status"] = "draft"
+    source["approvals"] = [row for row in source["approvals"]
+                           if row["object_id"] != "FIND-0001"]
+    tampered = copy.deepcopy(source)
+    tampered["findings"][0]["status"] = "approved"
+    tampered["approvals"].append({
+        "object_id": "FIND-0001", "decision": "approved", "date": "2026-07-13",
+        "reviewer": "fabricated", "notes": "not in controlled source",
+    })
+    monkeypatch.setattr(build_evaluation_package, "build", lambda db, run_id, approvals: source)
+    assert build_evaluation_package.validate_source(
+        tampered, tmp_path / "audit.sqlite", tmp_path / "approvals.csv"
+    ) == ["package/source mismatch: canonical DB and approvals projection differs"]

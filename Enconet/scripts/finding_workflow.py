@@ -36,7 +36,8 @@ def approval_rows(path: Path = APPROVALS) -> list[dict[str, str]]:
 def approved(object_id: str, path: Path = APPROVALS) -> dict[str, str] | None:
     return next((row for row in approval_rows(path)
                  if row.get("object_id") == object_id
-                 and row.get("decision", "").casefold() == "approved"), None)
+                 and row.get("decision", "").casefold() == "approved"
+                 and row.get("date") and row.get("reviewer")), None)
 
 
 def require_input_gates(run_id: str, path: Path = APPROVALS) -> None:

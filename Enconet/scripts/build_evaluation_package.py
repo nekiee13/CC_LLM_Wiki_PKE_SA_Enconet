@@ -91,6 +91,17 @@ def build(db: Path, run_id: str, approvals: Path = APPROVALS) -> dict:
     }
 
 
+def validate_source(package: dict, db: Path, approvals: Path = APPROVALS) -> list[str]:
+    """Prove that a package is the canonical projection of its controlled sources."""
+    run_id = package.get("run", {}).get("run_id")
+    if not run_id:
+        return ["package run_id missing for source verification"]
+    rebuilt = build(db, run_id, approvals)
+    if render(rebuilt) != render(package):
+        return ["package/source mismatch: canonical DB and approvals projection differs"]
+    return []
+
+
 def render(package: dict) -> bytes:
     errors = validate_package(package)
     if errors:

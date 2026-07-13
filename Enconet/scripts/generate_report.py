@@ -9,8 +9,9 @@ import re
 import sys
 from pathlib import Path
 
-from build_evaluation_package import validate_package
-from finding_workflow import render_template
+import db_util
+from build_evaluation_package import validate_package, validate_source
+from finding_workflow import APPROVALS, render_template
 
 ENCONET = Path(__file__).resolve().parents[1]
 TEMPLATE = ENCONET / "templates" / "evaluation-report-template.md"
@@ -155,9 +156,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("package", type=Path)
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
+    parser.add_argument("--approvals", type=Path, default=APPROVALS)
     args = parser.parse_args()
     try:
         package = json.loads(args.package.read_text(encoding="utf-8"))
+        source_errors = validate_source(package, args.db, args.approvals)
+        if source_errors:
+            raise ValueError(source_errors[0])
         output = args.output or default_output(package)
         content = render(package)
         output.parent.mkdir(parents=True, exist_ok=True)

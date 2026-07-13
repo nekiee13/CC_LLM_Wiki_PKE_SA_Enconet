@@ -121,6 +121,15 @@ def test_input_gates_and_links_fail_closed(draft_context, tmp_path: Path):
             wiki_dir=findings_dir,
         )
 
+    unsigned = tmp_path / "unsigned.csv"
+    unsigned.write_text(
+        "object_id,decision,date,reviewer,notes\n"
+        "G2-RUN-20260713-02,approved,,,scope\n"
+        "G3-RUN-20260713-02,approved,,,calibration\n", encoding="utf-8"
+    )
+    with pytest.raises(ValueError, match="G2/G3"):
+        finding_workflow.write_finding(db, record, approvals=unsigned, wiki_dir=findings_dir)
+
 
 def test_validator_names_page_tamper(draft_context):
     db, approvals, findings_dir, actions_dir = draft_context
@@ -149,6 +158,27 @@ def test_approval_refuses_missing_draft_page(draft_context):
     with pytest.raises(ValueError, match="wiki page missing"):
         approve.approve_object(db, finding_id, approvals=approvals,
                                findings_dir=findings_dir, actions_dir=actions_dir)
+
+
+def test_approval_retry_repairs_projection_after_db_commit(draft_context):
+    db, approvals, findings_dir, actions_dir = draft_context
+    finding_id = finding_workflow.write_finding(db, {
+        "evaluation_run_id": "RUN-20260713-02", "criterion_id": "APP_B_I",
+        "evidence_item_id": "CRUMB-DOC-0001-APP_B_I-0001", "title": "x", "body": "x",
+        "severity": "low", "confidence": "high", "basis": "basis",
+    }, approvals=approvals, wiki_dir=findings_dir)
+    with approvals.open("a", encoding="utf-8") as handle:
+        handle.write(f"{finding_id},approved,2026-07-13,owner,accepted\n")
+    with db_util.connect(db) as conn:
+        conn.execute(
+            "UPDATE findings SET status='approved', approval_ref=? WHERE finding_id=?",
+            (finding_id, finding_id),
+        )
+    approve.approve_object(db, finding_id, approvals=approvals,
+                           findings_dir=findings_dir, actions_dir=actions_dir)
+    assert validate_findings.validate(
+        db, approvals=approvals, findings_dir=findings_dir, actions_dir=actions_dir
+    ) == []
 
 
 def test_legacy_empty_epic10_tables_migrate_with_backup(tmp_path: Path):

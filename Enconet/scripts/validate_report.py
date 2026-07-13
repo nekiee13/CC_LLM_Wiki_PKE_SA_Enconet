@@ -11,7 +11,9 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_evaluation_package import validate_package
+import db_util
+from build_evaluation_package import validate_package, validate_source
+from finding_workflow import APPROVALS
 from generate_report import HEADINGS, approved_ids, canonical_bytes
 
 ENCONET = Path(__file__).resolve().parents[1]
@@ -20,8 +22,11 @@ META = re.compile(r"<!-- report-metadata: (\{.*?\}) -->")
 SCORE = re.compile(r"\*\*([0-9]+(?:\.[0-9]+)?) / 100\*\*.*?\*\*([0-9]+)\*\*")
 
 
-def validate(package: dict, report: str) -> list[str]:
+def validate(package: dict, report: str, *, db: Path | None = None,
+             approvals: Path = APPROVALS) -> list[str]:
     errors = validate_package(package)
+    if db is not None:
+        errors.extend(validate_source(package, db, approvals))
     language = package.get("run", {}).get("deliverable_language")
     headings = HEADINGS.get(language, [])
     positions = [report.find(f"## {heading}") for heading in headings]
@@ -79,11 +84,12 @@ def validate(package: dict, report: str) -> list[str]:
     return errors
 
 
-def append(result: str, code: int, details: str, path: Path = RUNS) -> None:
+def append(result: str, code: int, details: str, path: Path = RUNS,
+           phase: str = "verification") -> None:
     with path.open("a", newline="", encoding="utf-8") as handle:
         csv.writer(handle).writerow([
             datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "validate_report.py", "unknown", result, code, details,
+            "validate_report.py", phase, result, code, details,
         ])
 
 
@@ -91,18 +97,25 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("package", type=Path)
     parser.add_argument("report", type=Path)
+    parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
+    parser.add_argument("--approvals", type=Path, default=APPROVALS)
+    parser.add_argument("--no-record", action="store_true")
+    parser.add_argument("--phase", default="verification")
     args = parser.parse_args()
     try:
         package = json.loads(args.package.read_text(encoding="utf-8"))
-        errors = validate(package, args.report.read_text(encoding="utf-8"))
+        errors = validate(package, args.report.read_text(encoding="utf-8"),
+                          db=args.db, approvals=args.approvals)
     except Exception as exc:  # noqa: BLE001
         errors = [str(exc)]
     if errors:
-        append("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}")
+        if not args.no_record:
+            append("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}", phase=args.phase)
         for error in errors:
             print(f"validate_report: FAIL - {error}", file=sys.stderr)
         return 1
-    append("PASS", 0, "report sections, scores, counts, objects, citations, and package hash verified")
+    if not args.no_record:
+        append("PASS", 0, "report, package hash, DB projection, and approvals verified", phase=args.phase)
     print("validate_report: PASS")
     return 0
 
