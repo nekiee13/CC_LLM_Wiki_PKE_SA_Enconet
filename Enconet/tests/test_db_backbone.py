@@ -154,6 +154,7 @@ def test_traceability_chain_and_action_exclusivity(database: Path):
         db_util.insert(conn, "gaps", {
             "gap_id": "GAP-APP_B_I-01", "evaluation_id": "EVAL-APP_B_I",
             "status": "missing-evidence", "description": "Need records",
+            "missing_evidence_ref": "supplier records",
         })
         with pytest.raises(ValueError, match="CHECK constraint failed"):
             db_util.insert(conn, "auditor_actions", {

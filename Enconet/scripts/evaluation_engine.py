@@ -46,7 +46,11 @@ def write_evaluation(db:Path,*,run_id:str,record:dict,evidence_ids:list[str],aut
         eid=f"EVAL-{cid}"
         db_util.insert(c,"criterion_evaluations",{"evaluation_id":eid,"evaluation_run_id":run_id,"criterion_id":cid,"rating":rating,"score":score_rating(rating),"coverage":record.get("coverage",0),"completeness":record.get("completeness",0),"accuracy":record.get("accuracy",0),"clarity":record.get("clarity",0),"alignment":record.get("alignment",0),"evidence_supported":int(bool(document_evidence)),"affirmative_summary":record.get("affirmative_summary","") ,"contrary_summary":record.get("contrary_summary","") ,"judge_ruling":record.get("judge_ruling","") ,"rationale":record.get("rationale","")})
         for item in evidence_ids: db_util.insert(c,"evaluation_evidence",{"evaluation_id":eid,"item_id":item})
-        if downgraded: db_util.insert(c,"gaps",{"gap_id":f"GAP-{cid}-01","evaluation_id":eid,"status":"missing-evidence","description":"Positive classification downgraded: no linked DOCUMENT evidence"})
+        if downgraded:
+            gap_id=f"GAP-{cid}-01"
+            db_util.insert(c,"gaps",{"gap_id":gap_id,"evaluation_id":eid,"status":"missing-evidence","description":"Positive classification downgraded: no linked DOCUMENT evidence","missing_evidence_ref":"linked supplier DOCUMENT crumb"})
+            existing=[int(r[0].split("-")[1]) for r in c.execute("SELECT action_id FROM auditor_actions")]
+            db_util.insert(c,"auditor_actions",{"action_id":f"ACT-{max(existing,default=0)+1:04d}","gap_id":gap_id,"action_type":"document_request","description":"Obtain linked supplier DOCUMENT evidence"})
         return rating
 def metrics(rows:list[dict])->dict:
     m=model(); applicable=[r for r in rows if r["rating"]!="na"]; counts={x:0 for x in RATINGS}

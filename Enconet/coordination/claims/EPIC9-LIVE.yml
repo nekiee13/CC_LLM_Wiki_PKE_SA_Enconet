@@ -1,0 +1,16 @@
+task: EPIC9-LIVE
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T00:40:58Z
+last_renewed_at_utc: 2026-07-13T00:40:58Z
+expires_at_utc: 2026-07-13T08:40:58Z
+anticipated_files:
+  - Enconet/db
+  - Enconet/scripts
+  - Enconet/tests
+  - Enconet/manifests
+  - Enconet/docs
+  - Enconet/wiki
+  - Enconet/coordination
+note: Apply authorized EPIC9 migration, address review nits, generate live matrix, validate and close
+released_at_utc: 2026-07-13T00:42:34Z

@@ -175,6 +175,9 @@ CREATE TABLE IF NOT EXISTS gaps (
     evaluation_id TEXT NOT NULL REFERENCES criterion_evaluations(evaluation_id) ON DELETE CASCADE,
     status TEXT NOT NULL CHECK (status IN ('covered','mostly-covered','partially-covered','minimally-covered','not-covered','not-applicable','undetermined','missing-evidence')),
     description TEXT NOT NULL,
+    evidence_item_id TEXT REFERENCES crumbs(item_id) ON DELETE RESTRICT,
+    missing_evidence_ref TEXT,
+    CHECK ((evidence_item_id IS NOT NULL) <> (missing_evidence_ref IS NOT NULL)),
     UNIQUE (evaluation_id, description)
 ) STRICT;
 

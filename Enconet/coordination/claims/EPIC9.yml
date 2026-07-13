@@ -1,0 +1,16 @@
+task: EPIC9
+agent: codex
+status: released
+claimed_at_utc: 2026-07-13T00:33:47Z
+last_renewed_at_utc: 2026-07-13T00:33:47Z
+expires_at_utc: 2026-07-14T00:33:47Z
+anticipated_files:
+  - Enconet/db
+  - Enconet/schemas
+  - Enconet/scripts
+  - Enconet/tests
+  - Enconet/manifests
+  - Enconet/wiki
+  - Enconet/coordination
+note: Implement EPIC9 evidence matrix, gap evidence pointers, automatic missing-evidence actions, and validation
+released_at_utc: 2026-07-13T00:37:29Z
