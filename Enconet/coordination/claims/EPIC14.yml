@@ -1,6 +1,6 @@
 task: EPIC14
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-15T22:25:48Z
 last_renewed_at_utc: 2026-07-15T22:25:48Z
 expires_at_utc: 2026-07-16T06:25:48Z
@@ -16,3 +16,4 @@ anticipated_files:
   - Enconet\manifests\validation_runs.csv
   - scripts\run_validation.py
 note: Implement EPIC14 audit state machine and human gates without advancing live state or creating live gate decisions.
+released_at_utc: 2026-07-15T22:50:18Z
