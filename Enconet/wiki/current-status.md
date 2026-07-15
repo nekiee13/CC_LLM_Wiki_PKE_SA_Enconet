@@ -26,7 +26,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 10 | Findings and auditor actions | complete and independently accepted; approval retry and signed-gate robustness fixes pass; empty live state preserved; claim released |
 | 11 | Evaluation Report generator | complete and independently accepted; report issuance/validation re-derive the package from SQLite and controlled approvals; provenance blocker resolved at b7173f5; no live report generated before G2/G3/G4; claim released |
 | 12 | Dashboard generator | complete and independently accepted; package-derived data, offline localized HTML, consistency/forbidden-pattern validation, and JS smoke checks pass; claim released; no live dashboard generated |
-| 13 | Validation layer and aggregate runner | complete and independently accepted; transitive no-record hygiene finding resolved and phases now derive from the canonical vocabulary; 111 Enconet tests and aggregate L0-L5 pass; claim closure in progress |
+| 13 | Validation layer and aggregate runner | complete and independently accepted; transitive no-record hygiene finding resolved and phases now derive from the canonical vocabulary; 111 Enconet tests and aggregate L0-L5 pass; claim released |
 | 14+ | Audit state machine onward | not started |
 
 ## Open items
@@ -38,7 +38,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Proceed to EPIC14 planning/claiming after EPIC13 coordination closure. Retain
+Proceed to EPIC14 planning/claiming. Retain
 AFI-DASH-001 for generic external-URL validation hardening. Do not create live
 findings/actions, a report, or a dashboard
 until G2 supplier evidence/applicability, G3 scoring calibration, and G4 approval exist.

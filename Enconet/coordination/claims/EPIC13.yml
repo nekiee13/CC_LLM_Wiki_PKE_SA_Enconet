@@ -1,6 +1,6 @@
 task: EPIC13
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-15T21:56:44Z
 last_renewed_at_utc: 2026-07-15T21:56:44Z
 expires_at_utc: 2026-07-16T05:56:44Z
@@ -12,3 +12,4 @@ anticipated_files:
   - Enconet\wiki\log.md
   - scripts\run_validation.py
 note: Implement EPIC13 Tasks 13.1-13.5 aggregate, phase-aware validation and commit gate.
+released_at_utc: 2026-07-15T22:20:20Z
