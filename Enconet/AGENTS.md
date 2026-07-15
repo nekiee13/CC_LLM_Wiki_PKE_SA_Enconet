@@ -75,8 +75,10 @@ Record dependency or encoding failures as failures, not as successful verificati
 - Follow ADR-0016 through ADR-0019. Claude Code owns Claude infrastructure and guidance-only
   indexes; ADR-0019 repository code/docs indexes are shared-neutral and refreshable by either
   agent only from committed state under an active `INDEX-REFRESH` claim and `doc/INDEXING.md`.
-- Session order: `HANDOFF.md`, then `coordination/BOARD.md`, unread messages addressed to
-  Codex, and active claims when those records exist.
+- Session order: active Codex guidance, `HANDOFF.md`, `wiki/current-status.md`,
+  `wiki/index.md`, `project-state.yml`, then `coordination/BOARD.md`, unread messages
+  addressed to Codex, and active claims. Run `scripts/session_continuity.py`; an in-progress
+  state requires an explicit human resume-or-rollback choice.
 - Reply to Claude through a new immutable `coordination/messages/CX_*.md` record with
   `reply_to`; never edit a `CC_` message.
 - When the owner asks to "check messages", treat actionable review requests as authorization to

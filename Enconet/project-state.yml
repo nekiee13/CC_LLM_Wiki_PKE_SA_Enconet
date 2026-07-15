@@ -10,7 +10,7 @@
 #   deliverable_language: sl | en | hr, selected per run by the human (ADR-0009);
 #     null until the human selects it.
 #   gates: G1..G7, each with
-#     status: pending | approved | rejected
+#     status: pending | approved | rejected | deferred
 #     date: decision date (ISO YYYY-MM-DD) or null
 #     decision_ref: approvals.csv object_id / gate-packet reference or null
 #   benchmarks_locked: true once EPIC 16 fixtures are approved and locked.

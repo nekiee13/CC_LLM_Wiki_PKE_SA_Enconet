@@ -101,7 +101,7 @@ def validate(root: Path = WIKI, *, page_types_path: Path = PAGE_TYPES,
             elif expected_type == "gate-decision":
                 if not re.fullmatch(r"G[1-7]", str(data.get("gate", ""))):
                     errors.append(f"invalid gate {path.name}: {data.get('gate')}")
-                if data.get("decision") not in {"approved", "rejected", "deferred"}:
+                if data.get("decision") not in {"pending", "approved", "rejected", "deferred"}:
                     errors.append(f"invalid gate decision {path.name}: {data.get('decision')}")
     return errors
 

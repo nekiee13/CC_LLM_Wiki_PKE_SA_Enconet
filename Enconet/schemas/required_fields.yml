@@ -41,6 +41,6 @@ per_type_required:
     approval_ref: "approvals.csv object_id once approved; n-a while draft"
   gate-decision:
     gate: "G1..G7"
-    decision: "approved | rejected | deferred (mirrors approvals.csv)"
+    decision: "pending before human review; then approved | rejected | deferred (mirrors approvals.csv)"
     decision_date: "ISO date or n-a while pending"
     reviewer: "human reviewer or n-a while pending"

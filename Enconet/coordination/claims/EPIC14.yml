@@ -1,0 +1,18 @@
+task: EPIC14
+agent: codex
+status: active
+claimed_at_utc: 2026-07-15T22:25:48Z
+last_renewed_at_utc: 2026-07-15T22:25:48Z
+expires_at_utc: 2026-07-16T06:25:48Z
+anticipated_files:
+  - Enconet\scripts\audit_state.py
+  - Enconet\scripts\gate_packet.py
+  - Enconet\tests\test_epic14_audit_state.py
+  - Enconet\templates\gate-decision-template.md
+  - Enconet\project-state.yml
+  - Enconet\wiki\gates
+  - Enconet\wiki\current-status.md
+  - Enconet\wiki\log.md
+  - Enconet\manifests\validation_runs.csv
+  - scripts\run_validation.py
+note: Implement EPIC14 audit state machine and human gates without advancing live state or creating live gate decisions.
