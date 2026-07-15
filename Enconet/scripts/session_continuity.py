@@ -11,6 +11,7 @@ import sys
 from pathlib import Path
 
 from audit_state import DEFAULT_STATE, load_state
+import db_util
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +19,7 @@ WORKSPACE = ROOT.parent
 HANDOFF = ROOT / "HANDOFF.md"
 CURRENT_STATUS = ROOT / "wiki" / "current-status.md"
 INDEX = ROOT / "wiki" / "index.md"
-DATABASE = ROOT / "db" / "audit.db"
+DATABASE = db_util.DEFAULT_DB
 
 
 def git_head(workspace: Path = WORKSPACE) -> str:

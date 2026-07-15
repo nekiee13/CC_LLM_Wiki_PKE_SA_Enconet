@@ -2,7 +2,7 @@
 
 Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
 `wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-16 (EPIC14
-implemented; independent review pending).
+independently reviewed; both findings resolved).
 
 ## Phase
 
@@ -27,7 +27,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 11 | Evaluation Report generator | complete and independently accepted; report issuance/validation re-derive the package from SQLite and controlled approvals; provenance blocker resolved at b7173f5; no live report generated before G2/G3/G4; claim released |
 | 12 | Dashboard generator | complete and independently accepted; package-derived data, offline localized HTML, consistency/forbidden-pattern validation, and JS smoke checks pass; claim released; no live dashboard generated |
 | 13 | Validation layer and aggregate runner | complete and independently accepted; transitive no-record hygiene finding resolved and phases now derive from the canonical vocabulary; 111 Enconet tests and aggregate L0-L5 pass; claim released |
-| 14 | Audit state machine and human gates | implemented; 120 tests and aggregate validation pass; independent review pending; live state remains setup with all gates pending |
+| 14 | Audit state machine and human gates | complete and independently reviewed; production DB continuity and rejected-packet lifecycle findings resolved; 123 tests and aggregate validation pass; live state remains setup with all gates pending |
 | 15+ | Sieving subsystem integration onward | not started |
 
 ## Open items
@@ -39,7 +39,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Obtain Claude's independent EPIC14 review, resolve any findings, then release the claim;
+Proceed to EPIC15 planning and claiming after releasing EPIC14;
 do not advance `project-state.yml` or create a live gate packet without a real human gate.
 Retain
 AFI-DASH-001 for generic external-URL validation hardening. Do not create live

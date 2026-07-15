@@ -15,6 +15,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import audit_state  # noqa: E402
 import gate_packet  # noqa: E402
 import session_continuity  # noqa: E402
+import db_util  # noqa: E402
+import validate_frontmatter  # noqa: E402
 
 
 def state_fixture(tmp_path: Path, phase: str = "setup") -> Path:
@@ -164,3 +166,35 @@ def test_session_start_reports_drift_in_progress_and_unfinished_run(tmp_path: Pa
     assert "IN-PROGRESS STATE evaluated" in joined
     assert "RESUME" in joined and "ROLLBACK" in joined
     assert "RUN-open" in joined
+
+
+def test_session_continuity_uses_canonical_production_database() -> None:
+    assert session_continuity.DATABASE == db_util.DEFAULT_DB
+    assert session_continuity.DATABASE.name == "nqa_audit.sqlite"
+
+
+@pytest.mark.parametrize(
+    ("decision", "expected_status"),
+    [("rejected", "closed"), ("deferred", "draft")],
+)
+def test_non_approved_packet_uses_valid_page_status(
+    decision: str, expected_status: str, tmp_path: Path,
+) -> None:
+    packet = tmp_path / f"G1-{decision}.md"
+    gate_packet.create_packet(
+        gate="G1", supplier="enconet", decision_ref=f"G1-RUN-{decision}",
+        summary="Reviewed.", evidence="- evidence", validation="- PASS", output=packet,
+    )
+    state = state_fixture(tmp_path)
+    approvals = approvals_fixture(
+        tmp_path,
+        [[f"G1-RUN-{decision}", decision, "2026-07-16", "Owner", "decision"]],
+    )
+    log = tmp_path / "log.md"
+    log.write_text("", encoding="utf-8")
+    gate_packet.record_packet(packet, state=state, approvals=approvals, log=log)
+    frontmatter, _ = gate_packet.split_frontmatter(packet.read_text(encoding="utf-8"))
+    assert frontmatter["status"] == expected_status
+    assert frontmatter["status"] in validate_frontmatter.STATUSES
+    assert frontmatter["decision"] == decision
+    assert yaml.safe_load(state.read_text(encoding="utf-8"))["phase"] == "setup"

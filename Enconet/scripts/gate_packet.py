@@ -90,7 +90,11 @@ def record_packet(
     data["decision"] = row["decision"]
     data["decision_date"] = row["date"]
     data["reviewer"] = row["reviewer"]
-    data["status"] = "draft" if row["decision"] == "deferred" else row["decision"]
+    data["status"] = {
+        "approved": "approved",
+        "rejected": "closed",
+        "deferred": "draft",
+    }[row["decision"]]
     record = (
         "<!-- DECISION_RECORD_START -->\n"
         f"Decision: **{row['decision']}**  \nDate: {row['date']}  \n"
