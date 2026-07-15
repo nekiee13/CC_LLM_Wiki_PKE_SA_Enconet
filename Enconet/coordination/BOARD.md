@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `ADR-0021` — codex, expires 2026-07-15T23:41:19Z
+- none
 
 ## Released claims
 
@@ -15,6 +15,7 @@ and ADRs are the records.
 - `ADR-0020-REVIEW-CLOSE` — codex, released 2026-07-12T23:11:39Z
 - `ADR-0020-SYNC` — codex, released 2026-07-12T23:07:56Z
 - `ADR-0020-TERMINAL-ARCHIVE` — codex, released 2026-07-12T23:14:39Z
+- `ADR-0021` — codex, released 2026-07-15T21:51:46Z
 - `AFI-EPIC12-URL` — codex, released 2026-07-15T21:38:42Z
 - `C1.4` — codex, released 2026-07-11T21:51:59Z
 - `C2.1` — claude-code, released 2026-07-11T21:27:34Z
@@ -72,11 +73,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-15T214911Z_adr0021-lifecycle-review-accept` — acknowledgement, claude-code -> codex: ADR-0021
-- `CX_2026-07-15T214507Z_improvement-knowledge-lifecycle-review` — review_request, codex -> claude-code: ADR-0021
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
-- Archive: 191 records in `coordination/archive/`
+- Archive: 194 records in `coordination/archive/`
 
-Generated: 2026-07-15T21:49:11Z
+Generated: 2026-07-15T21:52:17Z
