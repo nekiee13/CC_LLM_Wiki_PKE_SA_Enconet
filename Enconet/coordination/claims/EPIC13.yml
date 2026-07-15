@@ -1,0 +1,14 @@
+task: EPIC13
+agent: codex
+status: active
+claimed_at_utc: 2026-07-15T21:56:44Z
+last_renewed_at_utc: 2026-07-15T21:56:44Z
+expires_at_utc: 2026-07-16T05:56:44Z
+anticipated_files:
+  - Enconet\scripts\run_all_validations.py
+  - Enconet\tests\test_epic13_validation.py
+  - Enconet\manifests\validation_runs.csv
+  - Enconet\wiki\current-status.md
+  - Enconet\wiki\log.md
+  - scripts\run_validation.py
+note: Implement EPIC13 Tasks 13.1-13.5 aggregate, phase-aware validation and commit gate.

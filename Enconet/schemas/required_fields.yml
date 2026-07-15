@@ -10,7 +10,7 @@ schema_version: "1.0"
 common_required:
   id: "object ID matching the page type's id_pattern (or the page's stable name where id_pattern is null)"
   type: "one of the page_types keys"
-  status: "lifecycle status (draft | approved | generated | superseded)"
+  status: "lifecycle status (draft | approved | closed | generated | superseded)"
   content_origin: "generated | human | mixed — who produced the content"
   source: "citation anchoring the page to DB records / crumb IDs / manifests (n-a only where truly none exists)"
 

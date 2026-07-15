@@ -17,7 +17,9 @@ def audit(tmp_path:Path):
  return db
 def test_matrix_has_18_rows_and_matching_renderers(audit):
  rows=build_matrix.build(audit,"RUN-20260713-02");assert len(rows)==18 and rows[0]["rule_evidence_count"]==1
- assert len(build_matrix.render_json(rows))>0 and build_matrix.render_md(rows).count("\n")==20
+ markdown=build_matrix.render_md(rows,"RUN-20260713-02")
+ assert len(build_matrix.render_json(rows))>0 and markdown.count("| APP_B_")==18
+ assert markdown.startswith("---\nid: evidence-matrix\n") and "source: db:RUN-20260713-02" in markdown
 def test_missing_evidence_gap_automatically_creates_action(audit):
  aid=gap_register.write_gap(audit,{"gap_id":"GAP-APP_B_I-01","evaluation_id":"EVAL-APP_B_I","status":"missing-evidence","description":"Need procedure","missing_evidence_ref":"supplier procedure document"})
  assert aid=="ACT-0001" and validate_gaps.validate(audit)==[]

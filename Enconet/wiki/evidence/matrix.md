@@ -1,3 +1,12 @@
+---
+id: evidence-matrix
+type: evidence
+status: generated
+content_origin: generated
+source: db:pre-execution-evidence-matrix
+criterion_id: n-a
+generated_by: scripts/build_matrix.py
+---
 | Criterion | Applicability | RULE | DOCUMENT | Gaps | Findings | Actions |
 |---|---:|---:|---:|---:|---:|---:|
 | APP_B_I Organization | unruled | 1 | 0 | 0 | 0 | 0 |
