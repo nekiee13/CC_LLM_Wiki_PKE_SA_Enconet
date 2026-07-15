@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -30,6 +31,7 @@ def wiki_tree(root: Path) -> None:
 
 
 def test_phase_matrix_is_monotonic_and_failed_runs_full_superset():
+    assert run_all_validations.PHASES + ["failed"] == run_all_validations.AUDIT_STATES
     previous: set[str] = set()
     for phase in run_all_validations.PHASES:
         current = {name for name in run_all_validations.ORDER
@@ -70,6 +72,24 @@ def test_evaluated_phase_enables_strict_app_b_and_missing_inputs_fail(local_tmp_
     checks = run_all_validations.run("evaluated", command_map, lambda command: (0, "ok"))
     evaluation = next(check for check in checks if check.name == "evaluation")
     assert evaluation.state == "FAIL" and "could not be discovered" in evaluation.detail
+
+
+def test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged():
+    command_map = run_all_validations.commands(
+        phase="closed", supplier="supplier", db=ENCONET / "db" / "nqa_audit.sqlite",
+        outputs=ENCONET / "outputs", run_id="RUN-20260715-01",
+        app_b_json=ENCONET / "fixture.json", no_record=True,
+    )
+    logging_children = {"chunks", "traceability", "requirements", "evaluation", "findings",
+                        "structure", "frontmatter", "report", "dashboard"}
+    assert all("--no-record" in command_map[name] for name in logging_children)
+    manifest = ENCONET / "manifests" / "validation_runs.csv"
+    before = manifest.read_bytes()
+    result = subprocess.run([sys.executable, str(ENCONET / "scripts" / "run_all_validations.py"),
+                             "--no-record"], cwd=ENCONET, capture_output=True, text=True,
+                            encoding="utf-8", errors="replace", timeout=60)
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert manifest.read_bytes() == before
 
 
 def test_structure_accepts_contract_tree_and_rejects_missing_misnamed_or_misplaced(local_tmp_path: Path):

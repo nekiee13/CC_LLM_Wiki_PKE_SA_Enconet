@@ -64,14 +64,14 @@ def append_result(result: str, code: int, details: str, manifest: Path = RUNS) -
 
 
 def main() -> int:
-    parser=argparse.ArgumentParser(description=__doc__); parser.add_argument("--db",type=Path,default=db_util.DEFAULT_DB); parser.add_argument("--exceptions",type=Path,default=EXCEPTIONS); args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__); parser.add_argument("--db",type=Path,default=db_util.DEFAULT_DB); parser.add_argument("--exceptions",type=Path,default=EXCEPTIONS); parser.add_argument("--no-record",action="store_true"); args=parser.parse_args()
     try: errors=validate(args.db, exceptions_path=args.exceptions)
     except Exception as exc: errors=[str(exc)]
     if errors:
-        append_result("FAIL",1,f"{len(errors)} error(s); first: {errors[0][:120]}")
+        if not args.no_record: append_result("FAIL",1,f"{len(errors)} error(s); first: {errors[0][:120]}")
         for error in errors: print(f"validate_traceability: FAIL - {error}",file=sys.stderr)
         return 1
-    append_result("PASS",0,"all crumb quotes linked or approved exceptions")
+    if not args.no_record: append_result("PASS",0,"all crumb quotes linked or approved exceptions")
     print("validate_traceability: PASS"); return 0
 
 

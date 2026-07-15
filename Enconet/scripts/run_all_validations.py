@@ -22,8 +22,9 @@ STATE = ENCONET / "project-state.yml"
 RUNS = ENCONET / "manifests" / "validation_runs.csv"
 OUTPUTS = ENCONET / "outputs"
 DATA = ENCONET / "sieving" / "DATA"
-PHASES = ["setup", "registered", "chunked", "sieved", "evidence_reviewed", "evaluated",
-          "findings_drafted", "findings_approved", "report_ready", "dashboard_ready", "closed"]
+VOCABULARIES = ENCONET / "schemas" / "vocabularies.yml"
+AUDIT_STATES = yaml.safe_load(VOCABULARIES.read_text(encoding="utf-8"))["vocabularies"]["audit_states"]["values"]
+PHASES = [state for state in AUDIT_STATES if state != "failed"]
 
 # Monotonic applicability matrix. Once activated, a validator remains active in every
 # later phase. `failed` runs the closed-phase superset for diagnostic completeness.
@@ -77,7 +78,8 @@ def discover_app_b_json(root: Path) -> Path | None:
 
 
 def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
-             run_id: str | None, app_b_json: Path | None) -> dict[str, list[str] | None]:
+             run_id: str | None, app_b_json: Path | None,
+             no_record: bool = False) -> dict[str, list[str] | None]:
     py = sys.executable
     package = outputs / f"{supplier}_appendix_b_evaluation_package.json"
     report = outputs / f"{supplier}_appendix_b_evaluation_report.md"
@@ -86,7 +88,7 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
     app_b = [py, str(SCRIPTS / "validate_app_b_json.py"), str(app_b_json)] if app_b_json else None
     if app_b is not None and phase_rank(phase) >= phase_rank("evaluated"):
         app_b.append("--strict")
-    return {
+    result = {
         "raw_sources": [py, str(SCRIPTS / "validate_raw_sources.py"), "--db", str(db)],
         "chunks": [py, str(SCRIPTS / "validate_chunks.py"), "--db", str(db)],
         "traceability": [py, str(SCRIPTS / "validate_traceability.py"), "--db", str(db)],
@@ -102,6 +104,12 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
         "dashboard": [py, str(SCRIPTS / "validate_dashboard.py"), str(package),
                       str(dashboard_data), str(dashboard), "--db", str(db), "--phase", phase],
     }
+    if no_record:
+        for name in ("chunks", "traceability", "requirements", "evaluation", "findings",
+                     "structure", "frontmatter", "report", "dashboard"):
+            if result[name] is not None:
+                result[name].append("--no-record")
+    return result
 
 
 def execute(command: list[str]) -> tuple[int, str]:
@@ -158,7 +166,8 @@ def main() -> int:
         run_id = args.run_id or (discover_run_id(args.db) if applicable("evaluation", phase) else None)
         app_b_json = args.app_b_json or (discover_app_b_json(args.data_root) if applicable("app_b_json", phase) else None)
         check_commands = commands(phase=phase, supplier=supplier, db=args.db, outputs=args.outputs,
-                                  run_id=run_id, app_b_json=app_b_json)
+                                  run_id=run_id, app_b_json=app_b_json,
+                                  no_record=args.no_record)
         checks = run(phase, check_commands)
     except Exception as exc:  # noqa: BLE001 - aggregate boundary fails closed
         print(f"aggregate: FAIL - {exc}", file=sys.stderr)

@@ -69,17 +69,20 @@ def append_result(result: str, exit_code: int, details: str,
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
+    parser.add_argument("--no-record", action="store_true")
     args = parser.parse_args()
     try:
         errors = validate(db_path=args.db)
     except Exception as exc:
         errors = [str(exc)]
     if errors:
-        append_result("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}")
+        if not args.no_record:
+            append_result("FAIL", 1, f"{len(errors)} error(s); first: {errors[0][:120]}")
         for error in errors:
             print(f"validate_chunks: FAIL - {error}", file=sys.stderr)
         return 1
-    append_result("PASS", 0, "all chunks verified")
+    if not args.no_record:
+        append_result("PASS", 0, "all chunks verified")
     print("validate_chunks: PASS - all chunks verified")
     return 0
 

@@ -20,9 +20,12 @@ def validate(db:Path)->list[str]:
 def append(result,code,details,path=RUNS):
     with path.open("a",newline="",encoding="utf-8") as f: csv.writer(f).writerow([datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),"validate_requirements.py","unknown",result,code,details])
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument("--db",type=Path,default=db_util.DEFAULT_DB);a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument("--db",type=Path,default=db_util.DEFAULT_DB);p.add_argument("--no-record",action="store_true");a=p.parse_args()
     try:e=validate(a.db)
     except Exception as x:e=[str(x)]
-    if e: append("FAIL",1,f"{len(e)} error(s); first: {e[0][:120]}");[print(f"validate_requirements: FAIL - {x}",file=sys.stderr) for x in e];return 1
-    append("PASS",0,"18/18 criteria covered; all requirements trace to RULE crumbs");print("validate_requirements: PASS");return 0
+    if e:
+     if not a.no_record:append("FAIL",1,f"{len(e)} error(s); first: {e[0][:120]}")
+     [print(f"validate_requirements: FAIL - {x}",file=sys.stderr) for x in e];return 1
+    if not a.no_record:append("PASS",0,"18/18 criteria covered; all requirements trace to RULE crumbs")
+    print("validate_requirements: PASS");return 0
 if __name__=="__main__":raise SystemExit(main())
