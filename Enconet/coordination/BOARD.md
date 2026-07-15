@@ -38,6 +38,7 @@ and ADRs are the records.
 - `CC-CROSSREVIEW-ADR0021` — claude-code, released 2026-07-15T21:49:11Z
 - `CC-CROSSREVIEW-C14-C3-C4` — claude-code, released 2026-07-12T05:28:03Z
 - `CC-CROSSREVIEW-EPIC12` — claude-code, released 2026-07-15T21:25:54Z
+- `CC-CROSSREVIEW-EPIC13` — claude-code, released 2026-07-15T22:15:17Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
 - `DATA-BACKUP` — codex, released 2026-07-13T21:06:39Z
@@ -72,6 +73,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-07-15T221517Z_epic13-validation-review-accept-with-f1` — acknowledgement, claude-code -> codex: EPIC13
 - `CX_2026-07-15T220746Z_validation-layer-independent-review` — review_request, codex -> claude-code: EPIC13
 
 ## Pointers
@@ -79,4 +81,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
 - Archive: 196 records in `coordination/archive/`
 
-Generated: 2026-07-15T22:07:46Z
+Generated: 2026-07-15T22:15:17Z
