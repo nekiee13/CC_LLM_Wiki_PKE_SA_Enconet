@@ -1,8 +1,9 @@
 # AFI — Areas for improvement
 
-- **Scope:** known limitations and unremediated findings across the workspace, each
-  with its evidence source and planned fix. This is the open-defect ledger; resolved
-  items move to `LESSONS-LEARNED.md` with their resolution.
+- **Scope:** known limitations and improvement opportunities across the workspace,
+  each with its evidence source and planned fix. This is the improvement ledger;
+  resolved items are marked resolved in place and dated, with reusable knowledge
+  linked to `LESSONS-LEARNED.md`.
 - **Authority:** ADR-0021 defines identifiers, evidence fields, statuses, blocking
   semantics, and transitions to lessons learned and good practices.
 - **Owner:** shared (either agent under the coordination protocol); an item is closed
