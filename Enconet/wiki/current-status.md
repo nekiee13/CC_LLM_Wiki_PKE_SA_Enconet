@@ -1,8 +1,8 @@
 # Enconet current status
 
 Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
-`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-14 (EPIC10 and
-EPIC11 independently accepted and closed).
+`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-15 (EPIC12
+implementation complete; independent review pending).
 
 ## Phase
 
@@ -25,7 +25,8 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 9 | Evidence matrix and gap model | complete; pre-execution matrix has 18 RULE and 0 DOCUMENT evidence, with no fabricated gaps/actions |
 | 10 | Findings and auditor actions | complete and independently accepted; approval retry and signed-gate robustness fixes pass; empty live state preserved; claim released |
 | 11 | Evaluation Report generator | complete and independently accepted; report issuance/validation re-derive the package from SQLite and controlled approvals; provenance blocker resolved at b7173f5; no live report generated before G2/G3/G4; claim released |
-| 12+ | Dashboard generator onward | not started |
+| 12 | Dashboard generator | Tasks 12.1-12.5 implemented with package-derived data, offline localized HTML, consistency/forbidden-pattern validation, and JS smoke checks; 103 Enconet tests and aggregate L0-L5 pass; independent review pending; no live dashboard generated |
+| 13+ | Aggregate validation evolution onward | not started (existing C5.2 runner now exercises EPIC12 tests and phase-aware dashboard validation) |
 
 ## Open items
 
@@ -36,7 +37,8 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Proceed to EPIC12 planning/claiming. Do not create live findings/actions or a report
+Obtain Claude Code's independent EPIC12 review and remediate any findings before
+releasing the claim. Do not create live findings/actions, a report, or a dashboard
 until G2 supplier evidence/applicability, G3 scoring calibration, and G4 approval exist.
 Any future non-CLI report issuer must enforce canonical DB+approvals source proof
 before publication; package-only library rendering/validation is not an issuance boundary.

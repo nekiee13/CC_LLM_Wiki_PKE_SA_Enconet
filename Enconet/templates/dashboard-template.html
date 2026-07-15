@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title></title>
+  <style>
+    :root{--ink:#17202a;--muted:#607080;--paper:#f4f7f8;--card:#fff;--line:#d7e0e4;--accent:#005b66;--good:#287a45;--warn:#a85d00;--bad:#a12a2a}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,sans-serif}
+    header,main,footer{max-width:1180px;margin:auto;padding:1.2rem}header{background:var(--accent);color:#fff;max-width:none}
+    header>div{max-width:1138px;margin:auto}.eyebrow{letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+    .metric-bar,.distribution,.criteria-grid{display:grid;gap:1rem}.metric-bar{grid-template-columns:repeat(3,1fr);margin:1rem 0}
+    .metric,.panel,.criterion-card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1rem}
+    .metric strong{display:block;font-size:1.6rem}.distribution{grid-template-columns:repeat(7,minmax(80px,1fr))}
+    .distribution div{text-align:center}.controls{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+    input,select,button{font:inherit;padding:.55rem;border:1px solid var(--line);border-radius:5px;background:#fff}button{cursor:pointer}
+    .criteria-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.criterion-card h3{margin:.2rem 0}.rating{font-weight:700;color:var(--accent)}
+    .criterion-body[hidden]{display:none}.evidence{font-family:ui-monospace,monospace;font-size:.88rem;color:var(--muted)}
+    table{width:100%;border-collapse:collapse}th,td{padding:.55rem;border-bottom:1px solid var(--line);text-align:left}
+    .scroll{overflow:auto}.empty{color:var(--muted)}footer{color:var(--muted);text-align:center}
+    @media(max-width:700px){.metric-bar,.distribution{grid-template-columns:1fr 1fr}.criteria-grid{grid-template-columns:1fr}}
+    @media print{body{background:#fff}.controls,button{display:none!important}.criterion-body[hidden]{display:block}.panel,.criterion-card{break-inside:avoid;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <header id="dashboard-header" data-section="header"><div><div class="eyebrow" id="header-kicker"></div><h1 id="dashboard-title"></h1><div id="header-run"></div></div></header>
+  <main>
+    <section id="metric-bar" class="metric-bar" data-section="metric-bar">
+      <div class="metric"><span id="label-score"></span><strong data-bind="weighted_score" id="metric-score"></strong></div>
+      <div class="metric"><span id="label-applicable"></span><strong data-bind="applicable_count" id="metric-applicable"></strong></div>
+      <div class="metric"><span id="label-classification"></span><strong data-bind="classification" id="metric-classification"></strong></div>
+    </section>
+    <section id="executive-summary" class="panel" data-section="executive-summary"><h2 id="heading-summary"></h2><p id="summary-text"></p></section>
+    <section id="distribution" class="panel" data-section="distribution"><h2 id="heading-distribution"></h2><div class="distribution" data-bind="classification_counts" id="distribution-values"></div></section>
+    <section id="dashboard-controls" class="panel controls" data-section="controls">
+      <label><span id="label-filter"></span> <select id="rating-filter" onchange="filterCriteria()"></select></label>
+      <label><span id="label-search"></span> <input id="criterion-search" type="search" oninput="searchCriteria()"></label>
+      <button id="sort-button" type="button" onclick="sortCriteria()"></button>
+      <button id="expand-button" type="button" onclick="toggleAll(true)"></button>
+      <button id="collapse-button" type="button" onclick="toggleAll(false)"></button>
+      <button id="print-button" type="button" onclick="printDashboard()"></button>
+    </section>
+    <section id="criterion-cards" data-section="criterion-cards"><h2 id="heading-criteria"></h2><div class="criteria-grid" data-bind="criteria" id="criterion-card-container"></div></section>
+    <section id="criterion-matrix" class="panel scroll" data-section="matrix"><h2 id="heading-matrix"></h2><table><thead><tr id="matrix-head"></tr></thead><tbody data-bind="criteria" id="matrix-body"></tbody></table></section>
+    <section id="priority-actions" class="panel" data-section="actions"><h2 id="heading-actions"></h2><div data-bind="priority_actions" id="actions-list"></div></section>
+  </main>
+  <footer id="dashboard-footer" data-section="footer"><span data-bind="dash_id" id="footer-dash"></span> · <span data-bind="generated_date" id="footer-date"></span></footer>
+  <script id="dashboard-data" type="application/json">__DASHBOARD_DATA__</script>
+  <script id="dashboard-ui" type="application/json">__DASHBOARD_UI__</script>
+  <script>
+    'use strict';
+    const dashboardData=JSON.parse(document.getElementById('dashboard-data').textContent);
+    const ui=JSON.parse(document.getElementById('dashboard-ui').textContent);
+    let descending=false;
+    const byId=id=>document.getElementById(id);
+    const text=(id,value)=>{byId(id).textContent=value;};
+    const escapeText=value=>String(value??'');
+    function visibleCriteria(){const rating=byId('rating-filter').value;const query=byId('criterion-search').value.toLocaleLowerCase();return dashboardData.criteria.filter(c=>(!rating||c.rating===rating)&&(`${c.n} ${c.title} ${c.aff} ${c.con} ${c.judge}`).toLocaleLowerCase().includes(query));}
+    function renderCriteria(){const rows=visibleCriteria().slice().sort((a,b)=>descending?b.order-a.order:a.order-b.order);const cards=byId('criterion-card-container');const matrix=byId('matrix-body');cards.replaceChildren();matrix.replaceChildren();rows.forEach(c=>{const article=document.createElement('article');article.className='criterion-card';article.dataset.rating=c.rating;const heading=document.createElement('h3');heading.textContent=`${c.n} — ${c.title}`;const badge=document.createElement('div');badge.className='rating';badge.textContent=c.rating;const button=document.createElement('button');button.type='button';button.textContent=ui.details;button.addEventListener('click',()=>toggleCard(button));const body=document.createElement('div');body.className='criterion-body';[['aff',ui.affirmative],['con',ui.contrary],['judge',ui.judgement]].forEach(([key,label])=>{const p=document.createElement('p');const strong=document.createElement('strong');strong.textContent=`${label}: `;p.append(strong,document.createTextNode(escapeText(c[key])));body.append(p);});const refs=document.createElement('p');refs.className='evidence';refs.textContent=c.refs.join(', ')||ui.none;body.append(refs);article.append(heading,badge,button,body);cards.append(article);const tr=document.createElement('tr');[c.n,c.title,c.rating,c.score??ui.na,c.refs.join(', ')||ui.none].forEach(value=>{const td=document.createElement('td');td.textContent=escapeText(value);tr.append(td);});matrix.append(tr);});}
+    function filterCriteria(){renderCriteria();}
+    function searchCriteria(){renderCriteria();}
+    function sortCriteria(){descending=!descending;renderCriteria();}
+    function toggleCard(button){const body=button.parentElement.querySelector('.criterion-body');body.hidden=!body.hidden;}
+    function toggleAll(open){document.querySelectorAll('.criterion-body').forEach(body=>{body.hidden=!open;});}
+    function printDashboard(){window.print();}
+    function renderDashboard(){document.documentElement.lang=dashboardData.deliverable_language;document.title=`${ui.title} — ${dashboardData.supplier}`;[['header-kicker',ui.kicker],['dashboard-title',document.title],['header-run',`${dashboardData.run_id} · ${dashboardData.generated_date}`],['label-score',ui.score],['metric-score',`${dashboardData.weighted_score} / 100`],['label-applicable',ui.applicable],['metric-applicable',dashboardData.applicable_count],['label-classification',ui.classification],['metric-classification',dashboardData.classification],['heading-summary',ui.summary],['summary-text',ui.summary_text.replace('{count}',dashboardData.applicable_count).replace('{score}',dashboardData.weighted_score)],['heading-distribution',ui.distribution],['label-filter',ui.filter],['label-search',ui.search],['sort-button',ui.sort],['expand-button',ui.expand],['collapse-button',ui.collapse],['print-button',ui.print],['heading-criteria',ui.criteria],['heading-matrix',ui.matrix],['heading-actions',ui.actions],['footer-dash',dashboardData.dash_id],['footer-date',dashboardData.generated_date]].forEach(([id,value])=>text(id,value));const filter=byId('rating-filter');filter.replaceChildren();[['',ui.all],...Object.keys(dashboardData.classification_counts).map(v=>[v,v])].forEach(([value,label])=>{const option=document.createElement('option');option.value=value;option.textContent=label;filter.append(option);});const dist=byId('distribution-values');dist.replaceChildren();Object.entries(dashboardData.classification_counts).forEach(([name,count])=>{const div=document.createElement('div');const strong=document.createElement('strong');strong.textContent=count;div.append(document.createTextNode(`${name} `),strong);dist.append(div);});const head=byId('matrix-head');[ui.id,ui.name,ui.rating,ui.criterion_score,ui.evidence].forEach(label=>{const th=document.createElement('th');th.textContent=label;head.append(th);});const actions=byId('actions-list');actions.replaceChildren();if(!dashboardData.priority_actions.length){const p=document.createElement('p');p.className='empty';p.textContent=ui.none_actions;actions.append(p);}dashboardData.priority_actions.forEach(a=>{const p=document.createElement('p');p.textContent=`${a.action_id} · ${a.description}`;actions.append(p);});renderCriteria();}
+    renderDashboard();
+  </script>
+</body>
+</html>

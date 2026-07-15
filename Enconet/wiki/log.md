@@ -78,3 +78,4 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-07-13T23:21:41Z | handoffs/2026-07-13T232141Z-nogit.md | complete | unavailable
 
 - handoff-created | 2026-07-13T23:23:36Z | handoffs/2026-07-13T232336Z-f2a68c2.md | complete | f2a68c211d2999e4ed3337c1f8b430265d22cd79
+- task-progress | 2026-07-15T21:16:16Z | EPIC12 | Tasks 12.1-12.5 implemented: package-derived dashboard data, self-contained localized HTML renderer, consistency/forbidden-pattern validator, static JS smoke checks, and aggregate-runner wiring; 103 Enconet tests and aggregate L0-L5 pass; no live dashboard generated; independent Claude review pending (CX)

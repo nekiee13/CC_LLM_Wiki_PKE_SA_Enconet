@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `EPIC12` — codex, expires 2026-07-16T05:06:36Z
 
 ## Released claims
 
@@ -74,4 +74,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
 - Archive: 186 records in `coordination/archive/`
 
-Generated: 2026-07-13T23:26:58Z
+Generated: 2026-07-15T21:14:41Z
