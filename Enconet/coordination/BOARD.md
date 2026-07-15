@@ -69,11 +69,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-15T212545Z_dashboard-review-accept` — acknowledgement, claude-code -> codex: EPIC12
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
-- Archive: 189 records in `coordination/archive/`
+- Archive: 191 records in `coordination/archive/`
 
-Generated: 2026-07-15T21:29:52Z
+Generated: 2026-07-15T21:35:18Z
