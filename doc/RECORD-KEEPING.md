@@ -2,8 +2,8 @@
 
 - **Scope:** the record types this workspace maintains, their locations, immutability
   rules, and lifecycles. Authorities: ADR-0014 (handoff), ADR-0017 (coordination),
-  ADR-0018 (message lifecycle), `Enconet/coordination/TEAM_PROTOCOL.md`,
-  `doc/GIT_CONVENTIONS.md`.
+  ADR-0018 (message lifecycle), ADR-0021 (improvement-knowledge lifecycle),
+  `Enconet/coordination/TEAM_PROTOCOL.md`, `doc/GIT_CONVENTIONS.md`.
 - **Owner:** shared (either agent under the coordination protocol); lifecycle rules
   change only via ADR.
 - **Update trigger:** a new record type, or an ADR changing a lifecycle rule.
@@ -24,6 +24,9 @@
 | Event log | `Enconet/wiki/log.md` | Append-only; one line per event; `handoff-created` lines appended by `scripts/make_handoff.py` (C5.1) |
 | Status snapshot | `Enconet/wiki/current-status.md` | Replaceable; overwritten freely, history lives in the log/handoffs/git (C5.1) |
 | Wiki index | `Enconet/wiki/index.md` | Curated navigation entry point (C5.1/C6.1) |
+| AFIs | `doc/AFI.md` | Mutable curated ledger; stable new-entry IDs; closure preserves status, date, and evidence (ADR-0021) |
+| Lessons learned | `doc/LESSONS-LEARNED.md` | Mutable evidence ledger; new entries active or superseded, never silently removed (ADR-0021) |
+| Good practices | `doc/GOOD-PRACTICES.md` | Mutable proven-pattern ledger; active, deprecated, or superseded with evidence links (ADR-0021) |
 
 ## Rules that cut across record types
 
@@ -35,6 +38,9 @@
 - **No record implies success it cannot prove.** Validation states are
   `passed|failed|not-run|unknown`; missing infrastructure is recorded as
   `not-configured`, not invented.
+- **Improvement knowledge has typed transitions.** AFIs are non-blocking unless a
+  separate authority makes them blocking; resolution, lessons, and good practices require
+  the evidence and status transitions defined by ADR-0021.
 - **Session bracket:** session start reads `HANDOFF.md` → `BOARD.md` → unread
   messages → active claims, then verifies against reality; session end runs the
   user-global `/handoff` skill (mandatory) producing a new immutable record.

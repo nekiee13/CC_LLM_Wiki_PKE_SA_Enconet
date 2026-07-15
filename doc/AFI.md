@@ -3,6 +3,8 @@
 - **Scope:** known limitations and unremediated findings across the workspace, each
   with its evidence source and planned fix. This is the open-defect ledger; resolved
   items move to `LESSONS-LEARNED.md` with their resolution.
+- **Authority:** ADR-0021 defines identifiers, evidence fields, statuses, blocking
+  semantics, and transitions to lessons learned and good practices.
 - **Owner:** shared (either agent under the coordination protocol); an item is closed
   only against a command result, test, commit, or ADR — never by assertion.
 - **Update trigger:** a new confirmed finding, or evidence that closes an existing one.
@@ -58,7 +60,9 @@
 
 ### AFI-DASH-001 — Reject generic external URLs in offline dashboards
 
-- **Status:** open, non-blocking hardening; recorded 2026-07-15 by owner direction.
+- **Status:** `open`; non-blocking hardening; recorded 2026-07-15 by owner direction.
+- **Owner / next action:** unassigned; schedule in a future validation-hardening pass.
+- **Governing ADR:** ADR-0021.
 - **Area:** `Enconet/scripts/validate_dashboard.py` and
   `Enconet/schemas/dashboard_schema.yml`.
 - **Observation:** EPIC12's forbidden-pattern contract detects named authentication/CDN

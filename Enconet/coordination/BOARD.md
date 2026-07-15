@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `ADR-0021` — codex, expires 2026-07-15T23:41:19Z
 
 ## Released claims
 
@@ -77,4 +77,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
 - Archive: 191 records in `coordination/archive/`
 
-Generated: 2026-07-15T21:38:42Z
+Generated: 2026-07-15T21:43:43Z

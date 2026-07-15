@@ -3,6 +3,8 @@
 - **Scope:** concrete failures observed in this workspace, what they cost, and the rule
   each one produced. Companion to `AFI.md` (open items) and `GOOD-PRACTICES.md`
   (positive patterns).
+- **Authority:** ADR-0021 defines the evidence threshold, stable identifiers for new
+  entries, active/superseded lifecycle, and transitions from AFIs and to good practices.
 - **Owner:** shared (either agent under the coordination protocol).
 - **Update trigger:** a defect is diagnosed with evidence, or an AFI item closes and
   its story belongs here.

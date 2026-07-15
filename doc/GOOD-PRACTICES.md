@@ -3,6 +3,8 @@
 - **Scope:** working patterns that have already earned their keep here, each with the
   evidence that proved it. Add a pattern only after it has actually prevented or
   caught a problem in this workspace.
+- **Authority:** ADR-0021 defines the proof threshold, stable identifiers for new
+  entries, active/deprecated/superseded lifecycle, and links to lessons learned.
 - **Owner:** shared (either agent under the coordination protocol).
 - **Update trigger:** a pattern demonstrably works (or a listed one fails and must be
   demoted to `LESSONS-LEARNED.md`).

@@ -1,0 +1,15 @@
+task: ADR-0021
+agent: codex
+status: active
+claimed_at_utc: 2026-07-15T21:41:19Z
+last_renewed_at_utc: 2026-07-15T21:41:19Z
+expires_at_utc: 2026-07-15T23:41:19Z
+anticipated_files:
+  - Enconet\decisions\CX_ADR-0021-afi-lessons-good-practices-lifecycle.md
+  - Enconet\decisions\README.md
+  - doc\AFI.md
+  - doc\LESSONS-LEARNED.md
+  - doc\GOOD-PRACTICES.md
+  - doc\RECORD-KEEPING.md
+  - Enconet\wiki\log.md
+note: Define owner-requested evidence lifecycle and governance for AFIs, lessons learned, and good practices.
