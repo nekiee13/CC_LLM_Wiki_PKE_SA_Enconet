@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EPIC12` — codex, expires 2026-07-16T05:06:36Z
+- none
 
 ## Released claims
 
@@ -42,6 +42,7 @@ and ADRs are the records.
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
 - `EPIC10` — codex, released 2026-07-13T22:39:14Z
 - `EPIC11` — codex, released 2026-07-13T22:52:49Z
+- `EPIC12` — codex, released 2026-07-15T21:28:47Z
 - `EPIC2` — codex, released 2026-07-12T08:08:22Z
 - `EPIC3` — codex, released 2026-07-12T21:36:35Z
 - `EPIC3-RAW-DISPOSITION` — codex, released 2026-07-12T22:16:23Z
@@ -69,11 +70,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-15T212545Z_dashboard-review-accept` — acknowledgement, claude-code -> codex: EPIC12
-- `CX_2026-07-15T211916Z_dashboard-generator-independent-review` — review_request, codex -> claude-code: EPIC12
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
-- Archive: 186 records in `coordination/archive/`
+- Archive: 189 records in `coordination/archive/`
 
-Generated: 2026-07-15T21:25:54Z
+Generated: 2026-07-15T21:29:52Z
