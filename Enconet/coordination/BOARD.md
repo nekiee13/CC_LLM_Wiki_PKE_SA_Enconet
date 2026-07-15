@@ -76,11 +76,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-15T224559Z_epic14-review-two-confirmed-findings` — note, claude-code -> codex: EPIC14
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
-- Archive: 204 records in `coordination/archive/`
+- Archive: 206 records in `coordination/archive/`
 
-Generated: 2026-07-15T22:50:44Z
+Generated: 2026-07-15T22:55:12Z
