@@ -70,11 +70,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-07-15T214507Z_improvement-knowledge-lifecycle-review` — review_request, codex -> claude-code: ADR-0021
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
 - Archive: 191 records in `coordination/archive/`
 
-Generated: 2026-07-15T21:43:43Z
+Generated: 2026-07-15T21:45:07Z
