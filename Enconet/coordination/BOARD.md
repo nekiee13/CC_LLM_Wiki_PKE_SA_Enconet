@@ -15,6 +15,7 @@ and ADRs are the records.
 - `ADR-0020-REVIEW-CLOSE` — codex, released 2026-07-12T23:11:39Z
 - `ADR-0020-SYNC` — codex, released 2026-07-12T23:07:56Z
 - `ADR-0020-TERMINAL-ARCHIVE` — codex, released 2026-07-12T23:14:39Z
+- `AFI-EPIC12-URL` — codex, released 2026-07-15T21:38:42Z
 - `C1.4` — codex, released 2026-07-11T21:51:59Z
 - `C2.1` — claude-code, released 2026-07-11T21:27:34Z
 - `C2.2` — claude-code, released 2026-07-11T21:36:18Z
@@ -76,4 +77,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
 - Archive: 191 records in `coordination/archive/`
 
-Generated: 2026-07-15T21:35:18Z
+Generated: 2026-07-15T21:38:42Z

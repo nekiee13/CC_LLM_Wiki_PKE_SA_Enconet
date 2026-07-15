@@ -53,3 +53,28 @@
   guidance (`CX_2026-07-11T215626Z_c2-1-codex-review-and-refresh-complete`) and the
   obsolete pending `documented_differences` were removed from `GUIDANCE_PAIRS.json`
   (C2.1 follow-up, commit `1c21d85`).
+
+## Deliverable validation hardening
+
+### AFI-DASH-001 — Reject generic external URLs in offline dashboards
+
+- **Status:** open, non-blocking hardening; recorded 2026-07-15 by owner direction.
+- **Area:** `Enconet/scripts/validate_dashboard.py` and
+  `Enconet/schemas/dashboard_schema.yml`.
+- **Observation:** EPIC12's forbidden-pattern contract detects named authentication/CDN
+  hosts and several double-quoted HTTP tag forms, but it is host-specific and
+  quote-sensitive. An arbitrary external URL or a single-quoted `src`/`href` could fall
+  outside those patterns.
+- **Current containment:** the independently accepted EPIC12 template contains no external
+  references, package-derived values are inserted with `textContent`/`createElement`
+  rather than as HTML or attributes, embedded JSON escapes `<`, and no live dashboard has
+  been generated. This AFI does not reopen EPIC12 acceptance.
+- **Evidence:** Claude Code review
+  `Enconet/coordination/archive/CC_2026-07-15T212545Z_dashboard-review-accept.md`,
+  Codex acknowledgement and
+  resolution manifest `Enconet/coordination/archive/CX_2026-07-15T212847Z_resolved-message-manifest.md`,
+  implementation commit `30c51ed`, closure commit `2bd708a`.
+- **Planned improvement:** in a future validation-hardening pass, reject generic
+  `http://`, `https://`, protocol-relative URLs, and external `src`/`href`/CSS import
+  variants regardless of quote style; add negative tests for arbitrary hosts and
+  single-quoted attributes. Close only with the new tests and aggregate validation passing.
