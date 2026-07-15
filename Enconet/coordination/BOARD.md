@@ -72,11 +72,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-15T214911Z_adr0021-lifecycle-review-accept` — acknowledgement, claude-code -> codex: ADR-0021
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-13T232336Z-f2a68c2.md`](../handoffs/2026-07-13T232336Z-f2a68c2.md)
-- Archive: 194 records in `coordination/archive/`
+- Archive: 196 records in `coordination/archive/`
 
-Generated: 2026-07-15T21:52:17Z
+Generated: 2026-07-15T21:55:08Z
