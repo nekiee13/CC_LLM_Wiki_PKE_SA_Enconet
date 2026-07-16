@@ -1,14 +1,11 @@
 task: INDEX-REFRESH
 agent: codex
 status: released
-claimed_at_utc: 2026-07-16T22:42:56Z
-last_renewed_at_utc: 2026-07-16T22:42:56Z
-expires_at_utc: 2026-07-16T23:42:56Z
+claimed_at_utc: 2026-07-16T22:51:52Z
+last_renewed_at_utc: 2026-07-16T22:51:52Z
+expires_at_utc: 2026-07-16T23:51:52Z
 anticipated_files:
   - doc\SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md
-  - doc\Support_system.md
-  - doc\README.md
-  - doc\RECORD-KEEPING.md
   - Enconet\wiki\log.md
-note: Refresh shared-neutral documentation indexes after support transfer Master Plan publication at committed HEAD e1213df.
-released_at_utc: 2026-07-16T22:43:59Z
+note: Refresh shared-neutral documentation indexes after T0.4 review corrections at committed HEAD 312da51.
+released_at_utc: 2026-07-16T22:53:06Z
