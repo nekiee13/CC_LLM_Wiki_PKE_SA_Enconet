@@ -65,19 +65,26 @@ distributed services, queues, caches, plugins, or concurrency before a measured 
 
 ## 3. Complete support-element inventory
 
+The Portability column uses one mechanically checkable vocabulary:
+
+- `Core` — required in every adopting project;
+- `Module: <name>` — enabled through the approved project support profile;
+- `Conditional: <condition>` — required when the stated condition is true; or
+- `Wiki-specific adapter` — evidence about this implementation, not a transferable contract.
+
 ### 3.1 Project identity, authority, and guidance
 
 | Element | Purpose | Wiki implementation | Portability |
 |---|---|---|---|
 | Workspace/project hierarchy | Separate shared policy from project policy | Workspace and nested project guidance | Core |
 | Project boundary | Fix repository root, project root, ownership, and active paths | Root/project guidance and ADR-0001 | Core |
-| Agent guidance | Give each agent read order, commands, guardrails, and completion rules | `AGENTS.md` / `CLAUDE.md` pairs | Core when agents are used |
+| Agent guidance | Give each agent read order, commands, guardrails, and completion rules | `AGENTS.md` / `CLAUDE.md` pairs | Conditional: agent-enabled project |
 | Nested no-weakening rule | Prevent local guidance from weakening evidence or safety | Workspace guidance contract | Core |
 | Authority hierarchy | Resolve conflicts among current decisions, evidence, plans, status, and history | Guidance, recordkeeping, ADRs | Core |
 | Human/agent roles | Separate execution and review from approval authority | Master plan roles and gate policy | Core |
-| Infrastructure ownership | Prevent one agent from editing the other's discovery/configuration surfaces | ADR-0016 | Dual-agent module |
-| Shared-neutral artifacts | Identify records either agent may query or update under coordination | ADR-0017/0019 | Dual-agent module |
-| Guidance drift manifest | Machine-check equivalent semantics and documented differences | `GUIDANCE_PAIRS.json` | Dual-agent module |
+| Infrastructure ownership | Prevent one agent from editing the other's discovery/configuration surfaces | ADR-0016 | Module: dual-agent |
+| Shared-neutral artifacts | Identify records either agent may query or update under coordination | ADR-0017/0019 | Module: dual-agent |
+| Guidance drift manifest | Machine-check equivalent semantics and documented differences | `GUIDANCE_PAIRS.json` | Module: dual-agent |
 
 ### 3.2 Project definition and planning
 
@@ -88,7 +95,7 @@ distributed services, queues, caches, plugins, or concurrency before a measured 
 | Evidence-backed AS-IS | Distinguish implemented reality from intentions | `doc/AS-IS.md` | Core |
 | Canonical master plan | Define mission, principles, epics, tasks, dependencies, and DoD | `MASTER_DEVELOPMENT_PLAN.md` | Core |
 | GitHub-Issues-style tasks | Make work claimable and acceptance-testable | Epic/task/criteria plan structure | Core |
-| Alignment/execution plan | Order foundation, containment, delivery, and closeout work | `docs/ALIGNMENT_PLAN.md` | Optional for complex upgrades |
+| Alignment/execution plan | Order foundation, containment, delivery, and closeout work | `docs/ALIGNMENT_PLAN.md` | Conditional: complex upgrade |
 | Canonical-plan control | Prevent competing active plans | ADR-0006 and archived variants | Core |
 | Frozen baseline/amendments | Require visible approval for material plan changes | Document control and ADRs | Core |
 | Definition of Done | State task, epic, milestone, and project completion evidence | Plans and validators | Core |
@@ -107,7 +114,7 @@ distributed services, queues, caches, plugins, or concurrency before a measured 
 | Decision implementation evidence | Separate agreement from completed implementation | Tasks, commits, tests, messages | Core |
 | Owner-decision capture | Promote material chat decisions to durable records | ADRs, log, approvals | Core |
 | Historical/context classification | Keep inputs accessible without granting current authority | `docs/context/`, `_archive/` | Core |
-| Reconciliation record | Resolve competing analyses without losing either input | `CX_CC_RECONCILIATION.md` | Optional |
+| Reconciliation record | Resolve competing analyses without losing either input | `CX_CC_RECONCILIATION.md` | Conditional: competing analyses |
 | Generated-vs-controlled policy | Prevent manual editing of derived artifacts | Recordkeeping and validators | Core |
 
 ### 3.4 Recordkeeping
@@ -120,27 +127,27 @@ distributed services, queues, caches, plugins, or concurrency before a measured 
 | Mutability rules | Define whether correction means edit, append, supersede, or replace | Record taxonomy | Core |
 | Cross-reference validation | Prevent dangling evidence and reply chains | Validators | Core |
 | Truthful state vocabulary | Prevent missing checks from becoming implied success | Handoff and validation schemas | Core |
-| Provenance/divergence log | Record origin and local changes to vendored assets | `sieving/PROVENANCE.md` | Conditional |
-| Checksummed untracked-data manifest | Protect controlled data that Git must not contain | `DATA_MANIFEST.json` | Conditional |
+| Provenance/divergence log | Record origin and local changes to vendored assets | `sieving/PROVENANCE.md` | Conditional: vendored assets |
+| Checksummed untracked-data manifest | Protect controlled data that Git must not contain | `DATA_MANIFEST.json` | Conditional: untracked controlled data |
 
 ### 3.5 Communication, claims, and review
 
 | Element | Purpose | Wiki implementation | Portability |
 |---|---|---|---|
-| Repository message channel | Retain communication with the work | `coordination/messages/` | Dual-agent module |
-| Typed immutable messages | Distinguish note, question, blocker, review, acknowledgement, claim, and status | ADR-0017 schema | Dual-agent module |
-| Reply-to chains | Correct or acknowledge without rewriting history | Message frontmatter | Dual-agent module |
-| Active/resolved/confirmed/archive lifecycle | Keep the active queue actionable and history durable | ADR-0018 | Dual-agent module |
-| Resolution manifests | Record outcome and confirmation before archival | `coordination/archive/` | Dual-agent module |
-| Blocker disposition | Require resolved, owner-accepted, or deferred-until | ADR-0018 | Dual-agent module |
-| Task claims | Reserve work and anticipated files | `coordination/claims/` | Multi-writer module |
-| Claim expiry/release | Avoid permanent locks without implying completion | Claim schema | Multi-writer module |
-| Generated board | Summarize active claims and messages without becoming history | `BOARD.md` | Multi-writer module |
-| Cross-review | Require independent reproduction proportional to risk | TEAM_PROTOCOL | Dual-agent module |
-| Synchronization confirmation | Prevent one agent from claiming the other's side complete | TEAM_PROTOCOL | Dual-agent module |
-| Conflict escalation | Preserve evidence and resolve through owner or ADR | TEAM_PROTOCOL | Core for multi-writer work |
-| Parallel-work isolation | Require separate worktrees and non-overlapping claims | TEAM_PROTOCOL | Conditional |
-| Coordination validator | Enforce schemas, uniqueness, claims, blockers, lifecycle, and board freshness | `agent_coord.py` | Dual-agent module |
+| Repository message channel | Retain communication with the work | `coordination/messages/` | Module: dual-agent |
+| Typed immutable messages | Distinguish note, question, blocker, review, acknowledgement, claim, and status | ADR-0017 schema | Module: dual-agent |
+| Reply-to chains | Correct or acknowledge without rewriting history | Message frontmatter | Module: dual-agent |
+| Active/resolved/confirmed/archive lifecycle | Keep the active queue actionable and history durable | ADR-0018 | Module: dual-agent |
+| Resolution manifests | Record outcome and confirmation before archival | `coordination/archive/` | Module: dual-agent |
+| Blocker disposition | Require resolved, owner-accepted, or deferred-until | ADR-0018 | Module: dual-agent |
+| Task claims | Reserve work and anticipated files | Claim schema | Module: multi-writer |
+| Claim expiry/release | Avoid permanent locks without implying completion | Claim schema | Module: multi-writer |
+| Generated board | Summarize active claims and messages without becoming history | `BOARD.md` | Module: multi-writer |
+| Cross-review | Require independent reproduction proportional to risk | TEAM_PROTOCOL | Module: dual-agent |
+| Synchronization confirmation | Prevent one agent from claiming the other's side complete | TEAM_PROTOCOL | Module: dual-agent |
+| Conflict escalation | Preserve evidence and resolve through owner or ADR | TEAM_PROTOCOL | Module: multi-writer |
+| Parallel-work isolation | Require separate worktrees and non-overlapping claims | TEAM_PROTOCOL | Conditional: concurrent writers |
+| Coordination validator | Enforce schemas, uniqueness, claims, blockers, lifecycle, and board freshness | `agent_coord.py` | Module: dual-agent |
 
 ### 3.6 Improvement and organizational knowledge
 
@@ -158,29 +165,33 @@ distributed services, queues, caches, plugins, or concurrency before a measured 
 
 | Element | Purpose | Wiki implementation | Portability |
 |---|---|---|---|
-| Shared handoff skill | Define evidence collection and truthful transfer semantics | User-global `/handoff` | Core |
+| Repository handoff contract | Define evidence collection and truthful transfer semantics | Repo-local schema, publisher, and record contract | Core |
+| Handoff skill adapter | Guide an agent through the repository handoff contract | User-global `/handoff` | Conditional: compatible agent environment |
 | Immutable handoff records | Preserve objective, work, decisions, checks, state, risks, artifacts, and next work | `handoffs/` | Core |
 | Mutable current pointer | Make the latest validated record easy to find | `HANDOFF.md` | Core |
 | Handoff schema | Enforce required metadata, headings, status, and check evidence | `handoff_schema.yml` | Core |
 | Deterministic publisher | Validate and atomically publish record, pointer, and log event | `make_handoff.py` | Core |
 | Staleness check | Detect Git divergence from the recorded continuation state | Publisher helper | Core |
 | Session-start read order | Read guidance, handoff, status, navigation, state, messages, and claims | Guidance and continuity tool | Core |
-| Continuity comparison | Compare Git, narrative status, machine state, and unfinished work | `session_continuity.py` | Conditional |
-| Resume-or-rollback decision | Prevent silent restart of interrupted operations | Audit lifecycle | Conditional |
-| Validated closeout | Run required checks before publication | `audit-close` | Core mechanism, local commands |
+| Continuity comparison | Compare Git, narrative status, machine state, and unfinished work | `session_continuity.py` | Conditional: multiple state records |
+| Resume-or-rollback decision | Prevent silent restart of interrupted operations | Audit lifecycle | Conditional: interruptible operations |
+| Validated closeout | Run required checks before publication | `audit-close` | Core |
+
+The core handoff capability is therefore clone-complete and repository-resident. A user-global
+skill may improve agent ergonomics, but adopting projects cannot depend on it for correctness.
 
 ### 3.8 Workflow state and human control
 
 | Element | Purpose | Wiki implementation | Portability |
 |---|---|---|---|
-| Machine-readable project state | Make lifecycle state authoritative and inspectable | `project-state.yml` | Conditional |
-| Fail-closed transitions | Prevent illegal or unapproved advancement | `audit_state.py` | Conditional |
-| Human approval boundaries | Keep material decisions with the owner | Master plan and gates | Core principle |
-| Standalone decision packets | Present evidence, checks, options, and plain-language impact | Gate packets | Milestone-gate module |
-| Signed approval register | Give decisions stable evidence references | `approvals.csv` | Milestone-gate module |
-| Rejection/deferral semantics | Stop advancement while preserving the decision | Audit lifecycle | Milestone-gate module |
-| Canonical command registry | Define command, phase, implementation, outputs, and purpose once | `audit_commands.yml` | Workflow-interface module |
-| Shared dispatcher | Prevent adapters from weakening checks or routing differently | `audit_command.py` | Workflow-interface module |
+| Machine-readable project state | Make lifecycle state authoritative and inspectable | `project-state.yml` | Conditional: ordered workflow |
+| Fail-closed transitions | Prevent illegal or unapproved advancement | `audit_state.py` | Conditional: ordered workflow |
+| Human approval boundaries | Keep material decisions with the owner | Master plan and gates | Core |
+| Standalone decision packets | Present evidence, checks, options, and plain-language impact | Gate packets | Module: milestone-gate |
+| Signed approval register | Give decisions stable evidence references | `approvals.csv` | Module: milestone-gate |
+| Rejection/deferral semantics | Stop advancement while preserving the decision | Audit lifecycle | Module: milestone-gate |
+| Canonical command registry | Define command, phase, implementation, outputs, and purpose once | `audit_commands.yml` | Module: workflow-interface |
+| Shared dispatcher | Prevent adapters from weakening checks or routing differently | `audit_command.py` | Module: workflow-interface |
 
 ### 3.9 Quality, validation, and reproducibility
 
@@ -190,13 +201,13 @@ distributed services, queues, caches, plugins, or concurrency before a measured 
 | Test/validator first | Demonstrate the gap before implementation | Alignment-plan convention | Core |
 | Negative-path tests | Prove refusal, tamper, drift, duplicate, and partial-failure behavior | Test suites | Core |
 | Aggregate validation | Provide one reliable health verdict | Validation runners | Core |
-| Phase-aware applicability | Require artifacts only when the lifecycle says they should exist | Enconet aggregate runner | Conditional |
+| Phase-aware applicability | Require artifacts only when the lifecycle says they should exist | Enconet aggregate runner | Conditional: phased lifecycle |
 | SKIPPED ≠ PASS | Preserve truthful applicability and availability states | Validation policy | Core |
-| No-record mode | Verify without mutating operational history | Aggregate runner | Recommended |
+| No-record mode | Verify without mutating operational history | Aggregate runner | Conditional: validation records operational history |
 | Validation-run evidence | Record command, exit code, result, and context | Handoff/manifests | Core |
-| Golden/reference benchmarks | Lock behavior whose correctness can be independently established | `benchmarks/` | Conditional |
-| Independent generated-output validation | Re-read outputs instead of trusting generator success | Report/dashboard validators | Core principle |
-| Drift checks | Detect divergence in guidance, skills, schemas, commands, docs, or indexes | Workspace validators | Conditional by artifact |
+| Golden/reference benchmarks | Lock behavior whose correctness can be independently established | `benchmarks/` | Conditional: stable reference behavior |
+| Independent generated-output validation | Re-read outputs instead of trusting generator success | Report/dashboard validators | Core |
+| Drift checks | Detect divergence in guidance, skills, schemas, commands, docs, or indexes | Workspace validators | Conditional: paired or generated contracts |
 | Advisory versus blocking checks | State enforcement level explicitly | AFI/gate/validator contracts | Core |
 
 ### 3.10 Git, environment, tooling, and recovery
@@ -204,31 +215,33 @@ distributed services, queues, caches, plugins, or concurrency before a measured 
 | Element | Purpose | Wiki implementation | Portability |
 |---|---|---|---|
 | Git workflow policy | Define branch, commit, review, and push expectations | `GIT_CONVENTIONS.md`, guidance | Core |
-| Commit vocabulary | Make history scannable | Tagged commit purposes | Optional |
+| Commit vocabulary | Make history scannable | Tagged commit purposes | Conditional: history convention |
 | Repository/identity verification | Avoid acting on copied or wrong-root state | Session protocol | Core |
 | Ignore/line-ending policy | Stabilize generated and cross-platform behavior | `.gitignore`, `.gitattributes` | Core |
 | Dependency pinning | Make runtime and tests reproducible | Requirements and lock files | Core |
 | Environment inventory | Record actual interpreter/tools and missing isolation | AS-IS | Core |
-| Safe repair/migration policy | Require target review, dry-run, backup, rollback, and verification | Guidance and lessons | Core when mutations exist |
-| Backup verification | Prove recoverability with checksums and recorded targets | DATA backup records | Conditional |
-| Reusable templates | Standardize records without duplicating runtime policy | Templates | Core mechanism |
-| Support-tool tests | Test coordination, handoff, drift, structure, and validation tooling | Workspace tests | Core for automated support |
+| Safe repair/migration policy | Require target review, dry-run, backup, rollback, and verification | Guidance and lessons | Conditional: mutating operations |
+| Backup verification | Prove recoverability with checksums and recorded targets | DATA backup records | Conditional: non-reconstructible state |
+| Reusable templates | Standardize records without duplicating runtime policy | Templates | Core |
+| Support-tool tests | Test coordination, handoff, drift, structure, and validation tooling | Workspace tests | Conditional: automated support tooling |
+| Hosted CI/platform governance | Define CI workflows, PR/issue templates, branch protection, and required checks | Target-host configuration | Conditional: hosted repository controls |
+| Release/version/tag policy | Define versioning, tags, release evidence, and rollback expectations | Target release process | Conditional: released artifacts |
 
 ### 3.11 Indexing, navigation, skills, and interfaces
 
 | Element | Purpose | Wiki implementation | Portability |
 |---|---|---|---|
-| Canonical code/docs indexes | Improve retrieval without duplicating repository views | ADR-0019 profiles | Index module |
-| Corpus/exclusion profiles | Prevent raw, generated, historical, or agent-owned data leakage | `INDEXING.md` | Index module |
-| Committed-state refresh | Give an index a reproducible Git identity | ADR-0019 | Index module |
-| Single-writer refresh claim | Prevent concurrent corruption | `INDEX-REFRESH` | Index module |
-| Index integrity verification | Detect drift, missing content, and errors | jdocmunch/jcodemunch checks | Index module |
-| Skill placement model | Separate cross-project, workspace, and project workflows | `SKILLS.md` | Skills module |
-| Duplicate-scope prevention | Avoid conflicting skill authorities | `check_skill_structure.py` | Skills module |
-| Paired-skill semantics | Allow agent-specific implementations with one contract | Drift validation | Dual-agent skills module |
-| Thin workflow skills | Keep mechanics in scripts/playbooks and judgment in skills | Enconet sieving skills | Skills module |
-| Simple command vs workflow distinction | Avoid manufacturing a skill for every CLI | EPIC17 contract | Skills module |
-| Interface registry and adapters | Give multiple agents/tools one canonical command behavior | EPIC17 | Workflow-interface module |
+| Canonical code/docs indexes | Improve retrieval without duplicating repository views | ADR-0019 profiles | Module: index |
+| Corpus/exclusion profiles | Prevent raw, generated, historical, or agent-owned data leakage | `INDEXING.md` | Module: index |
+| Committed-state refresh | Give an index a reproducible Git identity | ADR-0019 | Module: index |
+| Single-writer refresh claim | Prevent concurrent corruption | `INDEX-REFRESH` | Module: index |
+| Index integrity verification | Detect drift, missing content, and errors | jdocmunch/jcodemunch checks | Module: index |
+| Skill placement model | Separate cross-project, workspace, and project workflows | `SKILLS.md` | Module: skills |
+| Duplicate-scope prevention | Avoid conflicting skill authorities | `check_skill_structure.py` | Module: skills |
+| Paired-skill semantics | Allow agent-specific implementations with one contract | Drift validation | Module: dual-agent skills |
+| Thin workflow skills | Keep mechanics in scripts/playbooks and judgment in skills | Enconet sieving skills | Module: skills |
+| Simple command vs workflow distinction | Avoid manufacturing a skill for every CLI | EPIC17 contract | Module: skills |
+| Interface registry and adapters | Give multiple agents/tools one canonical command behavior | EPIC17 | Module: workflow-interface |
 
 ## 4. Framework model: core plus modules
 
@@ -281,6 +294,7 @@ Before transfer implementation, each project must approve a profile containing:
 | Scale assumptions | Users, volume, frequency, concurrency, retention, runtime, growth horizon |
 | Recovery | Backup, migration, rollback, and verification expectations |
 | Indexes/skills | Approved profiles, owners, exclusions, and refresh/drift rules |
+| Secrets and data sensitivity | Approved secret storage, prohibited record content, controlled/sensitive classes, redaction rules, and index exclusions |
 
 ## 6. Reuse and deployment model
 

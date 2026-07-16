@@ -53,8 +53,8 @@ they must not be shadowed by a second authority.
 
 ### Task T0.1 — Inventory and classify the Wiki support system
 
-Publish `doc/Support_system.md` with every support element classified as core, module,
-conditional mechanism, or Wiki-specific adapter.
+Publish `doc/Support_system.md` with every support element classified as `Core`,
+`Module: <name>`, `Conditional: <condition>`, or `Wiki-specific adapter`.
 
 **Acceptance criteria**
 
@@ -320,6 +320,9 @@ Each agent publishes its owned side; shared records follow claims and cross-revi
 
 - [ ] Paired guidance, coordination, handoff, ledgers, and status/log records validate.
 - [ ] FIN application behavior and product backlog remain unchanged unless separately authorized.
+- [ ] Preflight records target paths, Git state, recovery point, and the reviewed rollback procedure.
+- [ ] Partial publication stops safely; rollback changes only transfer-owned artifacts, preserves
+      product history and unrelated work, and is verified by native tests and Git diff.
 
 ### Task T7.3 — FIN milestone acceptance
 
@@ -351,6 +354,9 @@ Each agent publishes its owned side and target-native support records.
 
 - [ ] Paired guidance, coordination, handoff, ledgers, and status/log records validate.
 - [ ] No Wiki audit phases or pytest assumptions enter Loto.
+- [ ] Preflight records target paths, Git state, recovery point, and the reviewed rollback procedure.
+- [ ] Partial publication stops safely; rollback changes only transfer-owned artifacts, preserves
+      product history and unrelated work, and is verified by native tests and Git diff.
 
 ### Task T8.3 — Loto milestone acceptance
 
@@ -394,7 +400,7 @@ Publish verified FIN and Loto handoffs and close the transfer claims.
 - [ ] Each handoff names the exact next product-development action.
 - [ ] Coordination is validated and active queues contain unresolved work only.
 
-## 4. Draft Definition of Done
+## Draft Definition of Done
 
 This draft-planning stage is complete when:
 
