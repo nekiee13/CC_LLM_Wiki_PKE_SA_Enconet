@@ -1,11 +1,10 @@
 task: INDEX-REFRESH
 agent: codex
-status: released
-claimed_at_utc: 2026-07-16T09:53:24Z
-last_renewed_at_utc: 2026-07-16T09:53:24Z
-expires_at_utc: 2026-07-16T10:53:24Z
+status: active
+claimed_at_utc: 2026-07-16T21:58:56Z
+last_renewed_at_utc: 2026-07-16T21:58:56Z
+expires_at_utc: 2026-07-16T22:58:56Z
 anticipated_files:
-  - Enconet
   - doc
-note: Pre-handoff refresh after committed EPIC15-EPIC18 implementation and review closure
-released_at_utc: 2026-07-16T10:20:51Z
+  - Enconet\wiki
+note: Refresh documentation profiles after support-system specification and transfer draft
