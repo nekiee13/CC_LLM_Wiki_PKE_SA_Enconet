@@ -97,10 +97,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-07-16T230118Z_m0-owner-activation` — status, codex -> both: SUPPORT-SYSTEM-TRANSFER
+- `CX_2026-07-16T231442Z_review-t1-t2-m1-packet` — review_request, codex -> claude-code: SUPPORT-TRANSFER-M1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 240 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:14:08Z
+Generated: 2026-07-16T23:14:42Z
