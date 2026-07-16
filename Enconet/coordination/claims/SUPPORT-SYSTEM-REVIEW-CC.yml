@@ -1,0 +1,10 @@
+task: SUPPORT-SYSTEM-REVIEW-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-16T22:05:11Z
+last_renewed_at_utc: 2026-07-16T22:05:11Z
+expires_at_utc: 2026-07-17T22:05:11Z
+anticipated_files:
+  - Enconet/coordination/**
+note: Independent Claude review of support-system spec and transfer draft at fd18243 (review only; no doc/, FIN, or Loto mutation)
+released_at_utc: 2026-07-16T22:10:30Z
