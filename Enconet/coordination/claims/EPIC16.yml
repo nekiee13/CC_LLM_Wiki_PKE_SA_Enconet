@@ -1,0 +1,11 @@
+task: EPIC16
+agent: codex
+status: active
+claimed_at_utc: 2026-07-16T05:21:11Z
+last_renewed_at_utc: 2026-07-16T05:21:11Z
+expires_at_utc: 2026-07-17T05:21:11Z
+anticipated_files:
+  - Enconet/benchmarks
+  - Enconet/scripts/run_all_validations.py
+  - Enconet/tests
+note: EPIC16 Tasks 16.1-16.4: independent scoring/rendering benchmarks, policy, and aggregate hook; Claude reserved for independent review
