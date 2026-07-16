@@ -1,6 +1,6 @@
 task: INDEX-REFRESH
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-16T21:58:56Z
 last_renewed_at_utc: 2026-07-16T21:58:56Z
 expires_at_utc: 2026-07-16T22:58:56Z
@@ -8,3 +8,4 @@ anticipated_files:
   - doc
   - Enconet\wiki
 note: Refresh documentation profiles after support-system specification and transfer draft
+released_at_utc: 2026-07-16T22:03:32Z

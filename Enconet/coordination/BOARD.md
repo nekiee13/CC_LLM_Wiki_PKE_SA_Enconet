@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `INDEX-REFRESH` — codex, expires 2026-07-16T22:58:56Z
+- none
 
 ## Released claims
 
@@ -80,6 +80,7 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
+- `INDEX-REFRESH` — codex, released 2026-07-16T22:03:32Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T21:58:27Z
 
@@ -92,4 +93,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 230 records in `coordination/archive/`
 
-Generated: 2026-07-16T21:58:56Z
+Generated: 2026-07-16T22:03:32Z
