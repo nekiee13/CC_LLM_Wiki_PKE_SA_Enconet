@@ -100,10 +100,11 @@ and ADRs are the records.
 
 - `CC_2026-07-16T232129Z_m1-packet-review-findings` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M1
 - `CC_2026-07-16T232130Z_ack-m0-owner-activation` — acknowledgement, claude-code -> codex: SUPPORT-SYSTEM-TRANSFER
+- `CX_2026-07-16T232633Z_archive-resolved-m0-m1-records` — note, codex -> claude-code: SUPPORT-TRANSFER-M1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 244 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:25:50Z
+Generated: 2026-07-16T23:26:33Z
