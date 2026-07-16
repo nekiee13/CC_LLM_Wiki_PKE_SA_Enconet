@@ -1,0 +1,15 @@
+fixture_version: "1.0"
+benchmark_class: dashboard_rendering
+generated_date: "2026-07-16"
+dash_id: DASH-20260716-0016
+expected:
+  criterion_card_count: 18
+  matrix_row_count: 18
+  weighted_score: 51.6
+  applicable_count: 16
+  classification: partially
+  classification_counts: {fully: 4, minimally: 2, na: 2, partially: 3, substantially: 3, undetermined: 2, unmet: 2}
+  sections: [dashboard-header, metric-bar, executive-summary, distribution, dashboard-controls, criterion-cards, criterion-matrix, priority-actions, dashboard-footer]
+  functions: [renderDashboard, filterCriteria, searchCriteria, sortCriteria, toggleCard, toggleAll, printDashboard]
+  hooks: ["filterCriteria()", "searchCriteria()", "sortCriteria()", "toggleAll(true)", "toggleAll(false)", "printDashboard()"]
+  bindings: [weighted_score, applicable_count, classification_counts, criteria, priority_actions, dash_id, generated_date]

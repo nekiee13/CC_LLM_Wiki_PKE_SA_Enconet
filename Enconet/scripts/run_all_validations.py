@@ -22,6 +22,7 @@ STATE = ENCONET / "project-state.yml"
 RUNS = ENCONET / "manifests" / "validation_runs.csv"
 OUTPUTS = ENCONET / "outputs"
 DATA = ENCONET / "sieving" / "DATA"
+BENCHMARKS = ENCONET / "benchmarks" / "validate_benchmarks.py"
 VOCABULARIES = ENCONET / "schemas" / "vocabularies.yml"
 AUDIT_STATES = yaml.safe_load(VOCABULARIES.read_text(encoding="utf-8"))["vocabularies"]["audit_states"]["values"]
 PHASES = [state for state in AUDIT_STATES if state != "failed"]
@@ -37,6 +38,7 @@ MINIMUM_PHASE = {
 }
 ORDER = ["raw_sources", "chunks", "traceability", "app_b_json", "requirements",
          "evaluation", "findings", "structure", "frontmatter", "report", "dashboard"]
+BENCHMARK_ORDER = ["benchmark_scoring", "benchmark_dashboard"]
 
 
 @dataclass(frozen=True)
@@ -57,6 +59,18 @@ def phase_rank(phase: str) -> int:
 
 def applicable(name: str, phase: str) -> bool:
     return phase_rank(phase) >= phase_rank(MINIMUM_PHASE[name])
+
+
+def benchmarks_required(phase: str, requested: bool = False) -> bool:
+    """Benchmarks are explicit early, and mandatory before the G5 transition onward."""
+    return requested or phase_rank(phase) >= phase_rank("findings_approved")
+
+
+def benchmark_commands() -> dict[str, list[str]]:
+    return {
+        "benchmark_scoring": [sys.executable, str(BENCHMARKS), "--scoring"],
+        "benchmark_dashboard": [sys.executable, str(BENCHMARKS), "--dashboard"],
+    }
 
 
 def discover_run_id(db: Path) -> str | None:
@@ -156,6 +170,8 @@ def main() -> int:
     parser.add_argument("--data-root", type=Path, default=DATA)
     parser.add_argument("--run-id")
     parser.add_argument("--app-b-json", type=Path)
+    parser.add_argument("--benchmarks", action="store_true",
+                        help="run both supplier-independent EPIC16 benchmark classes")
     parser.add_argument("--no-record", action="store_true")
     args = parser.parse_args()
     try:
@@ -169,6 +185,10 @@ def main() -> int:
                                   run_id=run_id, app_b_json=app_b_json,
                                   no_record=args.no_record)
         checks = run(phase, check_commands)
+        if benchmarks_required(phase, args.benchmarks):
+            for name, command in benchmark_commands().items():
+                code, detail = execute(command)
+                checks.append(Check(name, "PASS" if code == 0 else "FAIL", code, detail))
     except Exception as exc:  # noqa: BLE001 - aggregate boundary fails closed
         print(f"aggregate: FAIL - {exc}", file=sys.stderr)
         return 1

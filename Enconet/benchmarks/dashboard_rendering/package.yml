@@ -1,0 +1,54 @@
+schema_version: "1.0"
+benchmark_class: dashboard_rendering
+run:
+  run_id: RUN-20260716-16
+  supplier: synthetic-reference
+  deliverable_language: en
+  scoring_model_version: rendering-fixture-1.0
+applicability:
+  - {criterion_id: APP_B_I, applicable: 0, justification: "Synthetic scope exclusion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_II, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_III, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_IV, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_V, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_VI, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_VII, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_VIII, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_IX, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_X, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XI, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XII, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XIII, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XIV, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XV, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XVI, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XVII, applicable: 1, justification: "Synthetic applicable criterion", scope_source_doc_id: DOC-9001}
+  - {criterion_id: APP_B_XVIII, applicable: 0, justification: "Synthetic scope exclusion", scope_source_doc_id: DOC-9001}
+evaluations:
+  - {evaluation_id: EVAL-APP_B_I, criterion_id: APP_B_I, classification: na, score: null, affirmative_summary: "Synthetic affirmative I", contrary_summary: "Synthetic contrary I", judge_ruling: "Synthetic ruling I", evidence_ids: []}
+  - {evaluation_id: EVAL-APP_B_II, criterion_id: APP_B_II, classification: fully, score: 100.0, affirmative_summary: "Synthetic affirmative II", contrary_summary: "Synthetic contrary II", judge_ruling: "Synthetic ruling II", evidence_ids: [CRUMB-DOC-9001-APP_B_II-0001]}
+  - {evaluation_id: EVAL-APP_B_III, criterion_id: APP_B_III, classification: fully, score: 100.0, affirmative_summary: "Synthetic affirmative III", contrary_summary: "Synthetic contrary III", judge_ruling: "Synthetic ruling III", evidence_ids: [CRUMB-DOC-9001-APP_B_III-0001]}
+  - {evaluation_id: EVAL-APP_B_IV, criterion_id: APP_B_IV, classification: substantially, score: 75.0, affirmative_summary: "Synthetic affirmative IV", contrary_summary: "Synthetic contrary IV", judge_ruling: "Synthetic ruling IV", evidence_ids: [CRUMB-DOC-9001-APP_B_IV-0001]}
+  - {evaluation_id: EVAL-APP_B_V, criterion_id: APP_B_V, classification: substantially, score: 75.0, affirmative_summary: "Synthetic affirmative V", contrary_summary: "Synthetic contrary V", judge_ruling: "Synthetic ruling V", evidence_ids: [CRUMB-DOC-9001-APP_B_V-0001]}
+  - {evaluation_id: EVAL-APP_B_VI, criterion_id: APP_B_VI, classification: substantially, score: 75.0, affirmative_summary: "Synthetic affirmative VI", contrary_summary: "Synthetic contrary VI", judge_ruling: "Synthetic ruling VI", evidence_ids: [CRUMB-DOC-9001-APP_B_VI-0001]}
+  - {evaluation_id: EVAL-APP_B_VII, criterion_id: APP_B_VII, classification: partially, score: 50.0, affirmative_summary: "Synthetic affirmative VII", contrary_summary: "Synthetic contrary VII", judge_ruling: "Synthetic ruling VII", evidence_ids: [CRUMB-DOC-9001-APP_B_VII-0001]}
+  - {evaluation_id: EVAL-APP_B_VIII, criterion_id: APP_B_VIII, classification: partially, score: 50.0, affirmative_summary: "Synthetic affirmative VIII", contrary_summary: "Synthetic contrary VIII", judge_ruling: "Synthetic ruling VIII", evidence_ids: [CRUMB-DOC-9001-APP_B_VIII-0001]}
+  - {evaluation_id: EVAL-APP_B_IX, criterion_id: APP_B_IX, classification: partially, score: 50.0, affirmative_summary: "Synthetic affirmative IX", contrary_summary: "Synthetic contrary IX", judge_ruling: "Synthetic ruling IX", evidence_ids: [CRUMB-DOC-9001-APP_B_IX-0001]}
+  - {evaluation_id: EVAL-APP_B_X, criterion_id: APP_B_X, classification: minimally, score: 25.0, affirmative_summary: "Synthetic affirmative X", contrary_summary: "Synthetic contrary X", judge_ruling: "Synthetic ruling X", evidence_ids: []}
+  - {evaluation_id: EVAL-APP_B_XI, criterion_id: APP_B_XI, classification: minimally, score: 25.0, affirmative_summary: "Synthetic affirmative XI", contrary_summary: "Synthetic contrary XI", judge_ruling: "Synthetic ruling XI", evidence_ids: []}
+  - {evaluation_id: EVAL-APP_B_XII, criterion_id: APP_B_XII, classification: unmet, score: 0.0, affirmative_summary: "Synthetic affirmative XII", contrary_summary: "Synthetic contrary XII", judge_ruling: "Synthetic ruling XII", evidence_ids: []}
+  - {evaluation_id: EVAL-APP_B_XIII, criterion_id: APP_B_XIII, classification: unmet, score: 0.0, affirmative_summary: "Synthetic affirmative XIII", contrary_summary: "Synthetic contrary XIII", judge_ruling: "Synthetic ruling XIII", evidence_ids: []}
+  - {evaluation_id: EVAL-APP_B_XIV, criterion_id: APP_B_XIV, classification: undetermined, score: 0.0, affirmative_summary: "Synthetic affirmative XIV", contrary_summary: "Synthetic contrary XIV", judge_ruling: "Synthetic ruling XIV", evidence_ids: []}
+  - {evaluation_id: EVAL-APP_B_XV, criterion_id: APP_B_XV, classification: undetermined, score: 0.0, affirmative_summary: "Synthetic affirmative XV", contrary_summary: "Synthetic contrary XV", judge_ruling: "Synthetic ruling XV", evidence_ids: []}
+  - {evaluation_id: EVAL-APP_B_XVI, criterion_id: APP_B_XVI, classification: fully, score: 100.0, affirmative_summary: "Synthetic affirmative XVI", contrary_summary: "Synthetic contrary XVI", judge_ruling: "Synthetic ruling XVI", evidence_ids: [CRUMB-DOC-9001-APP_B_XVI-0001]}
+  - {evaluation_id: EVAL-APP_B_XVII, criterion_id: APP_B_XVII, classification: fully, score: 100.0, affirmative_summary: "Synthetic affirmative XVII", contrary_summary: "Synthetic contrary XVII", judge_ruling: "Synthetic ruling XVII", evidence_ids: [CRUMB-DOC-9001-APP_B_XVII-0001]}
+  - {evaluation_id: EVAL-APP_B_XVIII, criterion_id: APP_B_XVIII, classification: na, score: null, affirmative_summary: "Synthetic affirmative XVIII", contrary_summary: "Synthetic contrary XVIII", judge_ruling: "Synthetic ruling XVIII", evidence_ids: []}
+metrics:
+  consolidated_score: 51.6
+  classification: partially
+  classification_counts: {fully: 4, minimally: 2, na: 2, partially: 3, substantially: 3, undetermined: 2, unmet: 2}
+  applicable_count: 16
+gaps: []
+findings: []
+actions: []
+approvals: []

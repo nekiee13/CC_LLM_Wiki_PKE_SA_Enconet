@@ -1,0 +1,39 @@
+fixture_version: "1.0"
+benchmark_class: scoring
+scoring_model_version: "0.1-placeholder"
+scoring_model_sha256: ff576122091c8f70cf4ce1c544f4bcec112d7d556b4e6973f21ce32d2e44ac08
+verification:
+  method: "Manual arithmetic cross-check against the formula and weights in scoring_model.yml"
+  calculation: "100 * (3*1.00 + 3*0.75 + 3*0.50 + 3*0.25 + 2*0.00 + 2*0.00) / 16 = 46.875 -> 46.9 half-up"
+  verified_at_creation: true
+per_criterion_scores:
+  APP_B_I: 100.0
+  APP_B_II: 75.0
+  APP_B_III: 50.0
+  APP_B_IV: 25.0
+  APP_B_V: 0.0
+  APP_B_VI: 0.0
+  APP_B_VII: null
+  APP_B_VIII: 100.0
+  APP_B_IX: 75.0
+  APP_B_X: 50.0
+  APP_B_XI: 25.0
+  APP_B_XII: 0.0
+  APP_B_XIII: 0.0
+  APP_B_XIV: 100.0
+  APP_B_XV: 75.0
+  APP_B_XVI: 50.0
+  APP_B_XVII: 25.0
+  APP_B_XVIII: null
+metrics:
+  consolidated_score: 46.9
+  classification: partially
+  classification_counts:
+    fully: 3
+    minimally: 3
+    na: 2
+    partially: 3
+    substantially: 3
+    undetermined: 2
+    unmet: 2
+  applicable_count: 16
