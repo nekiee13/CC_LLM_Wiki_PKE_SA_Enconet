@@ -90,3 +90,34 @@ established). **Lesson:** constraints that describe mutable environment state mu
 carry their date and verification command, and the drift check must flag one-sided
 refreshes (now enforced via `doc/GUIDANCE_PAIRS.json` documented-difference entries
 that get deleted once both sides refresh).
+
+## LL-RAW-001 — Direct placement in `raw/` bypasses the provenance boundary
+
+- **Status:** active
+- **Date recorded:** 2026-07-16
+- **Scope/area:** Enconet raw-source intake and provenance
+- **Observation:** A user placed the complete requirements-document set directly in
+  `Enconet/raw/`. That action triggered the raw-source rule because existence in
+  `raw/` is not acceptance: direct copying bypasses the sole controlled doorway.
+- **Evidence:** Owner-reported intake incident; `Enconet/docs/RAW_INTAKE.md` steps 1–4;
+  `Enconet/scripts/validate_raw_sources.py` rejects unregistered, writable,
+  checksum-mismatched, missing, and DB/manifest-divergent raw files;
+  `Enconet/tests/test_raw_intake.py::test_validator_names_tamper_unregistered_and_missing`
+  proves the fail-closed behavior. After the incident, `python
+  Enconet/scripts/validate_raw_sources.py` returned exit code 0 on 2026-07-16, proving
+  the current controlled set is reconciled, not that direct copying is permitted.
+- **Consequence:** Direct-to-`raw/` files have no guaranteed human review, allocated
+  `DOC-nnnn`, SHA-256 identity, synchronized SQLite/CSV provenance, duplicate check,
+  or write lock. Downstream chunks, crumbs, evidence, and reports therefore cannot
+  prove which controlled source bytes they used.
+- **Reusable rule:** Never populate `raw/` with a file copy, bulk extraction, sync, or
+  manual save. Stage each stable, uniquely named, reviewed source in `incoming/`, then
+  promote it with `scripts/promote_source.py` and complete extraction and raw-source
+  validation. If files were already copied directly, stop downstream processing; do
+  not edit, overwrite, or silently register them in place. Inventory and preserve the
+  bytes, apply a reviewed correction that returns unregistered inputs to `incoming/`,
+  and promote them through the same controlled path.
+- **Owner/next action:** All source-intake operators; follow `RAW_INTAKE.md` for every
+  source and require `validate_raw_sources.py` to pass before downstream use.
+- **Links:** ADR-0021; EPIC3 Tasks 3.1–3.4; `GP-RAW-001`;
+  `Enconet/docs/RAW_INTAKE.md`; `Enconet/AGENTS.md` raw-intake guardrail.

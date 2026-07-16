@@ -69,3 +69,36 @@ Report output is deterministic (no timings or absolute paths in the verdict line
 Never report skipped, blocked, or unrun validation as passed (workspace guidance;
 handoff skill: per-check states `passed|failed|not-run|unknown`). Handoffs and task
 completion messages cite commands, exit codes, and counts.
+
+## GP-RAW-001 — One controlled doorway from `incoming/` to immutable `raw/`
+
+- **Status:** active
+- **Date recorded:** 2026-07-16
+- **Scope/area:** Enconet source intake, identity, and provenance
+- **Proposition:** Populate `raw/` only through `scripts/promote_source.py`. Place one
+  reviewed source with a stable, unique filename in `incoming/`; initialize the DB if
+  necessary; promote it with title, supplier, document date, language, side, and any
+  source URL/notes; then extract text by the allocated document ID and run the
+  raw-source validator. Revised documents repeat the process under a new reviewed
+  filename and receive a new document ID—nothing in `raw/` is edited in place.
+- **Evidence:** The direct-to-`raw/` requirements-document incident demonstrated the
+  violation this pattern prevents. EPIC3 tests prove promotion atomically moves the
+  source, assigns `DOC-nnnn`, writes identical DB and CSV provenance, hashes and locks
+  the file, rejects duplicate names/checksums, and makes unregistered raw files visible.
+  `python Enconet/scripts/validate_raw_sources.py` returned exit code 0 on 2026-07-16
+  for the reconciled controlled set.
+- **Value:** Every downstream artifact can resolve a stable document ID to immutable
+  source bytes and matching human-readable/machine-readable provenance. Bulk intake
+  remains auditable because each source crosses the same reviewed, fail-closed gate.
+- **Owner/next action:** All source-intake operators; use the documented command below
+  per file and do not begin extraction, chunking, or sieving until validation passes:
+
+  ```powershell
+  # From Enconet/
+  python scripts/promote_source.py <filename> --title <title> --supplier <supplier> --doc-date YYYY-MM-DD --language <sl|en|hr> --side <RULE|DOCUMENT>
+  python scripts/extract_text.py DOC-nnnn
+  python scripts/validate_raw_sources.py
+  ```
+
+- **Links:** ADR-0021; `LL-RAW-001`; EPIC3 Tasks 3.1–3.4;
+  `Enconet/docs/RAW_INTAKE.md`; `Enconet/tests/test_raw_intake.py`.
