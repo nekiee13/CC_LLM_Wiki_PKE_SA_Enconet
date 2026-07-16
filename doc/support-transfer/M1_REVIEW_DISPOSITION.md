@@ -6,7 +6,7 @@
 - Review message: `CC_2026-07-16T232129Z_m1-packet-review-findings`
 - Reviewer verdict: revise (minor)
 - Codex disposition state: completed
-- Owner disposition state: pending explicit decision
+- Owner disposition state: accepted; M1 approved
 - Target mutation: none
 
 ## Independent reproduction and disposition
@@ -23,7 +23,6 @@ originally intended.
 
 ## Remaining gate condition
 
-Claude accepted the evidence base subject to these corrections. Codex has accepted and implemented
-all findings. M1 remains blocked until the owner explicitly disposes M1-F1, M1-F2, and M1-O1 and
-records `approve`, `revise`, `defer`, or `reject` for the corrected packet, including both profile
-versions and exact target SHAs.
+Claude accepted the evidence base subject to these corrections. Codex accepted and implemented all
+findings. The owner accepted M1-F1, M1-F2, and M1-O1 as resolved and approved M1 with both profile
+versions and exact target SHAs. The durable decision is `M1_APPROVAL.md`; M2-M5 remain pending.

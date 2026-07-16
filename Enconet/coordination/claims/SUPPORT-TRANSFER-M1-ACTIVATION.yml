@@ -1,0 +1,15 @@
+task: SUPPORT-TRANSFER-M1-ACTIVATION
+agent: codex
+status: released
+claimed_at_utc: 2026-07-16T23:33:33Z
+last_renewed_at_utc: 2026-07-16T23:33:33Z
+expires_at_utc: 2026-07-17T02:33:33Z
+anticipated_files:
+  - doc\SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md
+  - doc\support-transfer\M1_APPROVAL.md
+  - doc\support-transfer\M1_DECISION_PACKET.md
+  - doc\support-transfer\M1_REVIEW_DISPOSITION.md
+  - doc\support-transfer\README.md
+  - Enconet\wiki\log.md
+note: Publish formal owner_gate_decision for approved M1, close T1/T2 checklists, preserve later M2-M5 gates and target read-only state.
+released_at_utc: 2026-07-16T23:36:04Z

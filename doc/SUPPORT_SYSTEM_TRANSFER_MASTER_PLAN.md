@@ -7,7 +7,7 @@
 | Plan ID | `SUPPORT-SYSTEM-TRANSFER` |
 | Version | 1.0 — controlled candidate |
 | Date | 2026-07-17 |
-| Status | Owner-activated at M0 on 2026-07-16T23:00:25Z for T1/T2; accepted plan content `40f4556`; T3 target publication remains blocked pending M1 |
+| Status | M1 approved on 2026-07-16T23:31:30Z for corrected profiles v1.0; T3 planning is authorized, target publication remains blocked pending M2 |
 | Owner | Human project owner |
 | Implementers | Codex and Claude Code within their ownership boundaries |
 | Source contract | `doc/Support_system.md`, accepted by the owner on 2026-07-17 |
@@ -17,8 +17,9 @@
 | Target 2 | CC_Loto — `C:\xPY\xPrj\CC_Loto`; `https://github.com/nekiee13/CC_Loto` |
 | Format | GitHub-Issues style: epics, claimable tasks, dependencies, and acceptance criteria |
 
-M0 is recorded in `doc/support-transfer/M0_ACTIVATION.md`. It authorizes T1/T2 work only;
-no checklist state, agent statement, or passage of time substitutes for later owner gates.
+M0 is recorded in `doc/support-transfer/M0_ACTIVATION.md`. M1 is recorded in
+`doc/support-transfer/M1_APPROVAL.md`; it accepts the corrected target profiles and authorizes T3
+planning. No checklist state, agent statement, or passage of time substitutes for M2-M5.
 
 ## 1. Mission and end state
 
@@ -231,33 +232,33 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T1.1 — Inventory CC_FIN support evidence
 
-- [ ] Verify repository identity, HEAD/upstream, worktree, guidance, enhanced product plan,
+- [x] Verify repository identity, HEAD/upstream, worktree, guidance, enhanced product plan,
   architecture/AS-IS records, tests, CI, templates, feature ADRs, status records, release
   behavior, secrets/data handling, and indexes.
-- [ ] Compare current HEAD with planning baseline `238c207`; classify every material drift as
+- [x] Compare current HEAD with planning baseline `238c207`; classify every material drift as
   accepted/no-impact, profile-update-required, or replan/block, with owner disposition where needed.
-- [ ] Record each support-like artifact as retain, integrate, migrate, supersede, or product-local.
-- [ ] Record the A–F cockpit as implemented opt-in behavior and Task 23.12 pipeline wiring as
+- [x] Record each support-like artifact as retain, integrate, migrate, supersede, or product-local.
+- [x] Record the A–F cockpit as implemented opt-in behavior and Task 23.12 pipeline wiring as
   pending product work.
-- [ ] Report plans as plans and implemented capability as implemented evidence.
+- [x] Report plans as plans and implemented capability as implemented evidence.
 
 ### Task T1.2 — Inventory CC_Loto support evidence
 
-- [ ] Verify repository identity, HEAD/upstream, worktree, Claude guidance, enhanced product
+- [x] Verify repository identity, HEAD/upstream, worktree, Claude guidance, enhanced product
   plan, `PROGRESS.md`, `ROADMAP.md`, U7, CI, package boundaries, data files, and release behavior.
-- [ ] Compare current HEAD with planning baseline `b469afc`; classify every material drift as
+- [x] Compare current HEAD with planning baseline `b469afc`; classify every material drift as
   accepted/no-impact, profile-update-required, or replan/block, with owner disposition where needed.
-- [ ] Preserve the layered `run_tests.py` contract and optional-dependency semantics.
-- [ ] Record each support-like artifact with the same disposition vocabulary as CC_FIN.
-- [ ] Identify all sensitive or non-indexable data classes, including the disposition of `DATA.csv`.
+- [x] Preserve the layered `run_tests.py` contract and optional-dependency semantics.
+- [x] Record each support-like artifact with the same disposition vocabulary as CC_FIN.
+- [x] Identify all sensitive or non-indexable data classes, including the disposition of `DATA.csv`.
 
 ### Task T1.3 — Publish gap, collision, and sensitivity matrices
 
-- [ ] Distinguish missing capability from differently implemented capability.
-- [ ] Identify path, naming, authority, ownership, test, CI, secret, data, and release collisions.
-- [ ] Record scale assumptions: users, data volume, run frequency, concurrency, retention,
+- [x] Distinguish missing capability from differently implemented capability.
+- [x] Identify path, naming, authority, ownership, test, CI, secret, data, and release collisions.
+- [x] Record scale assumptions: users, data volume, run frequency, concurrency, retention,
   expected growth, and acceptable support-tool runtime.
-- [ ] Produce no target writes beyond explicitly authorized neutral planning records.
+- [x] Produce no target writes beyond explicitly authorized neutral planning records.
 
 ## EPIC T2 — Approve project support profiles
 
@@ -266,40 +267,40 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T2.1 — Prepare the CC_FIN support profile
 
-- [ ] Name authorities, record paths, roles, agent boundaries, Git/hosted workflow, native checks,
+- [x] Name authorities, record paths, roles, agent boundaries, Git/hosted workflow, native checks,
   status, handoff, modules, scale assumptions, secret storage, sensitive-data exclusions,
   recovery, release policy, indexes, and skills.
-- [ ] Integrate existing GitHub governance and feature ADRs without shadow authorities.
-- [ ] Define truthful applicability for pytest, CPI, ruff, and CI checks.
-- [ ] Profile is evidence-complete and ready for the consolidated M1 decision.
+- [x] Integrate existing GitHub governance and feature ADRs without shadow authorities.
+- [x] Define truthful applicability for pytest, CPI, ruff, and CI checks.
+- [x] Profile is evidence-complete and ready for the consolidated M1 decision.
 
 ### Task T2.2 — Prepare the CC_Loto support profile
 
-- [ ] Specify the same profile fields using Loto terminology and native commands.
-- [ ] Introduce no pytest assumption and preserve optional-layer reporting.
-- [ ] Integrate U7 instead of duplicating documentation governance.
-- [ ] Profile is evidence-complete and ready for the consolidated M1 decision.
+- [x] Specify the same profile fields using Loto terminology and native commands.
+- [x] Introduce no pytest assumption and preserve optional-layer reporting.
+- [x] Integrate U7 instead of duplicating documentation governance.
+- [x] Profile is evidence-complete and ready for the consolidated M1 decision.
 
 ### Task T2.3 — Approve the difference register
 
-- [ ] Every intentional difference names rationale, owner, verification, and reconsideration trigger.
-- [ ] Common record/status semantics are not weakened by target wording.
-- [ ] Wiki-specific adapters and deliberately omitted modules are explicit.
+- [x] Every intentional difference names rationale, owner, verification, and reconsideration trigger.
+- [x] Common record/status semantics are not weakened by target wording.
+- [x] Wiki-specific adapters and deliberately omitted modules are explicit.
 
 ### Task T2.4 — Prepare publication and rollback manifests
 
-- [ ] List every path the transfer may create or modify in each target.
-- [ ] Classify paths as shared-neutral, Codex-owned, Claude-owned, or existing target authority.
-- [ ] Define preflight, dry run, recovery point, abort triggers, scoped rollback, and post-rollback checks.
-- [ ] Prohibit history rewriting, broad resets, and removal of unrelated user work.
+- [x] List every path the transfer may create or modify in each target.
+- [x] Classify paths as shared-neutral, Codex-owned, Claude-owned, or existing target authority.
+- [x] Define preflight, dry run, recovery point, abort triggers, scoped rollback, and post-rollback checks.
+- [x] Prohibit history rewriting, broad resets, and removal of unrelated user work.
 
 ### Task T2.5 — Prepare and decide target-profile gate M1
 
-- [ ] Compile the fresh inventories, collision/sensitivity matrices, both support profiles,
+- [x] Compile the fresh inventories, collision/sensitivity matrices, both support profiles,
   difference register, enabled modules, and publication/rollback manifests into the M1 packet.
-- [ ] Packet states evidence, risks, alternatives, recovery, and plain-language impact.
-- [ ] Owner records approve, reject, or defer before any T3 implementation claim begins.
-- [ ] The decision identifies the accepted profile versions and exact target baseline SHAs.
+- [x] Packet states evidence, risks, alternatives, recovery, and plain-language impact.
+- [x] Owner records approve, reject, or defer before any T3 implementation claim begins.
+- [x] The decision identifies the accepted profile versions and exact target baseline SHAs.
 
 ## EPIC T3 — Define governance and recordkeeping core
 

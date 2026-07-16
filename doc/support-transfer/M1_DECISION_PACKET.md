@@ -73,6 +73,6 @@ the FIN pilot is accepted.
 
 ## Owner decision record
 
-State one of `approve`, `revise`, `defer`, or `reject`, and explicitly address recommended items
-1-10. An approval record must name both accepted profile versions and exact SHAs. Until that durable
-record exists, T3 and all target writes remain blocked.
+Approved on 2026-07-16T23:31:30Z with recommended items 1-10, including item 8. The durable
+decision is `M1_APPROVAL.md`. It names both accepted profile versions and exact SHAs. T3 planning is
+authorized; target writes remain blocked pending M2.
