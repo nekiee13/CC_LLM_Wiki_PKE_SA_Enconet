@@ -1,11 +1,12 @@
 task: INDEX-REFRESH
 agent: codex
 status: released
-claimed_at_utc: 2026-07-16T21:58:56Z
-last_renewed_at_utc: 2026-07-16T21:58:56Z
-expires_at_utc: 2026-07-16T22:58:56Z
+claimed_at_utc: 2026-07-16T22:18:57Z
+last_renewed_at_utc: 2026-07-16T22:18:57Z
+expires_at_utc: 2026-07-16T23:18:57Z
 anticipated_files:
-  - doc
-  - Enconet\wiki
-note: Refresh documentation profiles after support-system specification and transfer draft
-released_at_utc: 2026-07-16T22:03:32Z
+  - ..\doc\Support_system.md
+  - ..\doc\Support_system_transfer_draft.md
+  - wiki\log.md
+note: Refresh shared-neutral documentation indexes after accepted support-system review corrections at committed HEAD 955ee07.
+released_at_utc: 2026-07-16T22:21:22Z
