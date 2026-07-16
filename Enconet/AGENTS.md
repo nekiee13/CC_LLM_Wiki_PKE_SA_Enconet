@@ -74,10 +74,12 @@ Record dependency or encoding failures as failures, not as successful verificati
 
 Run `python scripts/audit_command.py audit-status` at session start. All simple stage
 operations use the canonical dispatcher below; arguments for the wrapped script follow `--`.
+Dispatcher options such as `--dry-run` and `--describe` must precede the command name; options
+after the command belong to the wrapped stage and misplaced dispatcher options fail explicitly.
 The dispatcher reads `schemas/audit_commands.yml` and refuses a phase mismatch before it starts
 the stage process. Complex closeout also uses the user-global `/handoff` skill to collect truthful
-handoff content, then routes publication through `audit-close`. Claude command synchronization is
-pending on Claude Code; Codex must not edit `.claude/commands/` or `CLAUDE.md`.
+handoff content, then routes publication through `audit-close`. Claude's adapters are synchronized
+through the same registry; Codex must not edit `.claude/commands/` or `CLAUDE.md`.
 
 | Interface | Stage | Exact allowed phase(s) | Direct Codex CLI | Artifacts |
 |---|---|---|---|---|

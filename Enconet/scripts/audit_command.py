@@ -26,20 +26,6 @@ GATE_BY_PHASE = {
     "findings_drafted": "G4", "findings_approved": "G5",
     "report_ready": "G6", "dashboard_ready": "G7",
 }
-SCRIPT_BY_COMMAND = {
-    "audit-register": "promote_source.py",
-    "audit-chunk": "chunk_document.py",
-    "audit-sieve": "sieve_run.py",
-    "audit-resieve": "resieve_run.py",
-    "audit-link": "link_crumbs.py",
-    "audit-eval": "write_evaluation.py",
-    "audit-report": "generate_report.py",
-    "audit-dashboard": "generate_dashboard.py",
-    "audit-validate": "run_all_validations.py",
-    "audit-gate": "gate_packet.py",
-}
-
-
 def load_registry(path: Path = REGISTRY) -> dict[str, dict[str, object]]:
     data = yaml.safe_load(path.read_text(encoding="utf-8"))
     commands = data.get("commands") if isinstance(data, dict) else None
@@ -53,7 +39,25 @@ def load_registry(path: Path = REGISTRY) -> dict[str, dict[str, object]]:
 
 
 def _arguments(values: list[str]) -> list[str]:
-    return values[1:] if values and values[0] == "--" else values
+    values = values[1:] if values and values[0] == "--" else values
+    misplaced = next((value for value in values if value in {"--dry-run", "--describe"}), None)
+    if misplaced:
+        raise StateError(
+            f"dispatcher option {misplaced} must precede the audit command; "
+            f"example: audit_command.py {misplaced} audit-status"
+        )
+    return values
+
+
+def _stage_script(spec: dict[str, object]) -> Path:
+    """Derive the executable from the canonical registry, with no parallel script map."""
+    scripts = spec["scripts"]
+    if not isinstance(scripts, list) or not scripts:
+        raise StateError("command contract has no stage script")
+    relative = Path(str(scripts[-1]))
+    if relative.parent != Path("scripts") or relative.suffix != ".py":
+        raise StateError(f"unsafe stage script contract: {relative}")
+    return ROOT / relative
 
 
 def _run(command: list[str], *, cwd: Path, dry_run: bool) -> int:
@@ -153,7 +157,7 @@ def dispatch(
             return result
         handoff = [sys.executable, str(WORKSPACE / "scripts" / "make_handoff.py"), *arguments]
         return _run(handoff, cwd=WORKSPACE, dry_run=dry_run)
-    script = ROOT / "scripts" / SCRIPT_BY_COMMAND[command]
+    script = _stage_script(spec)
     if not script.exists():
         dependency = spec.get("requires_epic", "its implementation dependency")
         raise StateError(f"{command} is reserved but unavailable until {dependency}: missing {script.name}")

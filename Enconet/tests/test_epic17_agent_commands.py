@@ -64,6 +64,27 @@ def test_correct_phase_routes_exact_script_in_dry_run(tmp_path: Path, capsys) ->
     assert "DOC-0001" in output
 
 
+def test_registry_is_the_single_owner_of_stage_script_routing(tmp_path: Path, capsys) -> None:
+    state = state_file(tmp_path, "registered")
+    registry = yaml.safe_load(audit_command.REGISTRY.read_text(encoding="utf-8"))
+    registry["commands"]["audit-chunk"]["scripts"][-1] = "scripts/extract_text.py"
+    path = tmp_path / "audit_commands.yml"
+    path.write_text(yaml.safe_dump(registry, sort_keys=False), encoding="utf-8")
+    assert audit_command.dispatch(
+        "audit-chunk", ["DOC-0001"], state_path=state, registry_path=path, dry_run=True
+    ) == 0
+    assert "extract_text.py" in capsys.readouterr().out
+
+
+def test_misplaced_dispatcher_option_has_actionable_error(tmp_path: Path) -> None:
+    state = state_file(tmp_path, "report_ready")
+    with pytest.raises(StateError, match="--dry-run must precede the audit command"):
+        audit_command.dispatch(
+            "audit-gate", ["--dry-run", "create", "--gate", "G6"],
+            state_path=state, dry_run=False,
+        )
+
+
 def test_status_reports_phase_gates_actions_and_last_validation(
     tmp_path: Path, capsys,
 ) -> None:
