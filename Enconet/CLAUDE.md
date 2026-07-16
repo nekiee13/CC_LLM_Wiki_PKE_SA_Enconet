@@ -30,6 +30,37 @@ exports) as historical/source input, not a current implementation contract.
   and registers identical provenance in SQLite and `manifests/raw_sources.csv`. Never edit
   `raw/` files in place; replace them only through a separately reviewed, newly named source.
 
+## Audit commands (EPIC17)
+
+Run `/audit-status` at session start. Each pipeline stage has exactly one Claude slash
+command in `.claude/commands/`; every adapter invokes the canonical dispatcher
+`python scripts/audit_command.py <name> -- $ARGUMENTS` (from `Enconet/`;
+`audit-status` needs no arguments). The dispatcher derives its contract from
+`schemas/audit_commands.yml` and refuses a phase mismatch before starting the stage
+process; adapters must never bypass, duplicate, or weaken that check. No command
+advances a human gate on its own. `/audit-gate` assembles the gate packet and stops
+for the human.
+
+| Command | Stage | Exact allowed phase(s) | Artifacts |
+|---|---|---|---|
+| `/audit-status` | session/status | `setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed` | project phase, gate states, open action count, last validation result |
+| `/audit-register` | source registration | `setup` | raw source, manifests/raw_sources.csv row, documents row |
+| `/audit-chunk` | chunking | `registered` | document_chunks rows, derived/chunks artifact |
+| `/audit-sieve` | initial sieving | `chunked` | sieve_runs row, guarded sieve-run workspace |
+| `/audit-resieve` | iterative sieving | `sieved` | new generation, quality metrics, generation diff; fails closed until EPIC18 |
+| `/audit-link` | traceability | `sieved` | crumb quote to chunk links |
+| `/audit-eval` | evaluation | `evidence_reviewed` | criterion evaluation and evidence links |
+| `/audit-report` | report | `findings_approved` | controlled evaluation report |
+| `/audit-dashboard` | dashboard | `report_ready` | offline dashboard, wiki dashboard copy |
+| `/audit-validate` | validation | `setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed` | aggregate PASS or FAIL, manifests/validation_runs.csv unless --no-record |
+| `/audit-gate` | human gate | `setup, sieved, evidence_reviewed, findings_drafted, findings_approved, report_ready, dashboard_ready` | one immutable human gate packet; no automatic transition |
+| `/audit-close` | session/closeout | `setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed` | aggregate verdict, immutable handoff record, HANDOFF.md pointer |
+
+At session end, collect truthful handoff content with the user-global `/handoff`
+skill, then publish through `/audit-close`: it validates first (`--no-record`) and
+routes publication through `../scripts/make_handoff.py`; validation failure prevents
+publication.
+
 ## Verification
 
 From `Enconet/sieving`, after dependencies are installed:
