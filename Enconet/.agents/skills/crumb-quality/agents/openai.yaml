@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crumb Quality"
+  short_description: "Review extraction and quote quality"
+  default_prompt: "Use $crumb-quality to review extracted crumbs, evidence quotes, and borderline criteria."

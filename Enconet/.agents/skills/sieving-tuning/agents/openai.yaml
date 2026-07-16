@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sieving Tuning"
+  short_description: "Compare and decide prompt generations"
+  default_prompt: "Use $sieving-tuning to assess metrics and diffs, then promote, reject, or roll back a prompt generation."

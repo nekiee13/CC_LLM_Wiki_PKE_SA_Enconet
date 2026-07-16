@@ -30,13 +30,13 @@ PHASES = [state for state in AUDIT_STATES if state != "failed"]
 # Monotonic applicability matrix. Once activated, a validator remains active in every
 # later phase. `failed` runs the closed-phase superset for diagnostic completeness.
 MINIMUM_PHASE = {
-    "raw_sources": "registered", "chunks": "chunked", "traceability": "sieved",
+    "raw_sources": "registered", "chunks": "chunked", "sieving_harness": "chunked", "traceability": "sieved",
     "app_b_json": "sieved", "requirements": "evidence_reviewed",
     "evaluation": "evaluated", "findings": "findings_drafted",
     "structure": "setup", "frontmatter": "evidence_reviewed",
     "report": "report_ready", "dashboard": "dashboard_ready",
 }
-ORDER = ["raw_sources", "chunks", "traceability", "app_b_json", "requirements",
+ORDER = ["raw_sources", "chunks", "sieving_harness", "traceability", "app_b_json", "requirements",
          "evaluation", "findings", "structure", "frontmatter", "report", "dashboard"]
 BENCHMARK_ORDER = ["benchmark_scoring", "benchmark_dashboard"]
 
@@ -105,6 +105,7 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
     result = {
         "raw_sources": [py, str(SCRIPTS / "validate_raw_sources.py"), "--db", str(db)],
         "chunks": [py, str(SCRIPTS / "validate_chunks.py"), "--db", str(db)],
+        "sieving_harness": [py, str(SCRIPTS / "validate_sieving_harness.py"), "--db", str(db)],
         "traceability": [py, str(SCRIPTS / "validate_traceability.py"), "--db", str(db)],
         "app_b_json": app_b,
         "requirements": [py, str(SCRIPTS / "validate_requirements.py"), "--db", str(db)],

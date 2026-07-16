@@ -1,0 +1,8 @@
+schema_version: "1.0"
+skills:
+  sieving-run:
+    required_semantics: [SIEVING_PLAYBOOK.md, new RUN-id, strict, candidate, unfiltered]
+  crumb-quality:
+    required_semantics: [verbatim, quote language, authority, V / VI / XVII, IV / VII, X / XI]
+  sieving-tuning:
+    required_semantics: [metrics, diff, golden, human approval, promotion-ready, deposit]

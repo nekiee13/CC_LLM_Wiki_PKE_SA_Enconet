@@ -54,6 +54,17 @@ def plan(db_path: Path) -> list[str]:
                    for table in ("findings", "auditor_actions")):
                 raise ValueError("EPIC10 finding/action tables contain data; automatic migration refused")
             actions.append("recreate empty EPIC10 finding/action tables")
+        sieve_columns = {r[1] for r in conn.execute("PRAGMA table_info(sieve_runs)")}
+        if "generation" not in sieve_columns:
+            duplicate_docs = conn.execute(
+                "SELECT doc_id FROM sieve_runs GROUP BY doc_id HAVING count(*) > 1"
+            ).fetchall()
+            if duplicate_docs:
+                raise ValueError(
+                    "multiple legacy sieve runs exist for a document; generation migration "
+                    "requires an owner-reviewed run-by-run disposition"
+                )
+            actions.append("add EPIC18 sieve generation controls")
         return actions
 
 
@@ -88,6 +99,19 @@ def migrate(db_path: Path, *, apply: bool, backup_dir: Path | None = None) -> tu
             elif "recreate empty EPIC10 finding/action tables" in actions:
                 for table in ("auditor_actions", "findings"):
                     conn.execute(f"DROP TABLE IF EXISTS {table}")
+            if "add EPIC18 sieve generation controls" in actions:
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN generation INTEGER NOT NULL DEFAULT 1 CHECK (generation > 0)")
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN status TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('candidate','active','superseded','rejected'))")
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN is_active INTEGER NOT NULL DEFAULT 1 CHECK (is_active IN (0,1))")
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN supersedes_run_id TEXT REFERENCES sieve_runs(run_id) ON DELETE RESTRICT")
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN completed_at TEXT")
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN decision_ref TEXT")
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN rejected_item_count INTEGER NOT NULL DEFAULT 0 CHECK (rejected_item_count >= 0)")
+                conn.execute("ALTER TABLE sieve_runs ADD COLUMN failed_item_count INTEGER NOT NULL DEFAULT 0 CHECK (failed_item_count >= 0)")
+                conn.execute(
+                    "UPDATE sieve_runs SET completed_at=started_at WHERE EXISTS "
+                    "(SELECT 1 FROM crumbs WHERE crumbs.sieve_run_id=sieve_runs.run_id)"
+                )
             # sqlite3.executescript commits implicitly. Recovery is therefore the
             # pre-write SQLite backup, not an illusory surrounding transaction.
             conn.executescript(schema)

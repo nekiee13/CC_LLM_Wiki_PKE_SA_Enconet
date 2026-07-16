@@ -22,7 +22,7 @@ REQUIRED_TABLES = {
     "criterion_evaluations", "gaps", "findings", "auditor_actions", "sieve_runs",
     "evaluation_runs", "dashboard_runs", "validation_runs",
     "sieve_run_authorities", "crumb_authority_refs",
-    "evaluation_evidence",
+    "evaluation_evidence", "sieve_generation_events",
 }
 
 

@@ -51,10 +51,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--candidates", type=Path, default=CANDIDATES)
+    parser.add_argument("--metrics-root", type=Path, default=ENCONET / "sieving" / "runs")
     args = parser.parse_args()
     try:
         count, unmatched = link(args.db, candidates_path=args.candidates)
-        print(f"link_crumbs: PASS - links={count}; exception_candidates={len(unmatched)}")
+        import sieve_metrics
+        with db_util.connect(args.db) as conn:
+            run_ids = [row[0] for row in conn.execute("SELECT run_id FROM sieve_runs WHERE completed_at IS NOT NULL")]
+        for run_id in run_ids:
+            sieve_metrics.generate(args.db, run_id, args.metrics_root / run_id)
+        print(f"link_crumbs: PASS - links={count}; exception_candidates={len(unmatched)}; metrics={len(run_ids)} run(s)")
         return 0
     except Exception as exc:
         print(f"link_crumbs: FAIL - {exc}", file=sys.stderr); return 1

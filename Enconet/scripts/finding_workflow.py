@@ -123,7 +123,7 @@ def write_finding(db: Path, record: dict, *, approvals: Path = APPROVALS,
             raise ValueError("criterion evaluation missing for finding")
         if evidence:
             linked = conn.execute(
-                "SELECT 1 FROM evaluation_evidence ee JOIN crumbs c ON c.item_id=ee.item_id "
+                "SELECT 1 FROM evaluation_evidence ee JOIN active_crumbs c ON c.item_id=ee.item_id "
                 "WHERE ee.evaluation_id=? AND ee.item_id=? AND c.criterion_id=?",
                 (evaluation["evaluation_id"], evidence, criterion_id),
             ).fetchone()

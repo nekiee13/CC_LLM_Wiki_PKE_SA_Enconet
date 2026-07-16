@@ -33,7 +33,6 @@ commands:
     scripts: [scripts/resieve_run.py]
     outputs: [new generation, quality metrics, generation diff]
     purpose: Start a measured new sieve generation without overwriting its predecessor.
-    requires_epic: EPIC18
   audit-link:
     stage: traceability
     phases: [sieved]

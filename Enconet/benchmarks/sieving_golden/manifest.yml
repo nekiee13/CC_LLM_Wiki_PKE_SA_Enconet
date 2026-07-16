@@ -1,0 +1,13 @@
+schema_version: "1.0"
+fixture_version: "0.1-draft"
+status: pending_human_approval
+approval_ref: null
+document:
+  filename: pilot_excerpt.txt
+  side: DOCUMENT
+  purpose: Synthetic mechanics fixture only; replace or approve only after human pilot review.
+expected_crumbs:
+  - criterion_id: APP_B_VI
+    statement: Controlled procedures require review and approval before issue.
+    quotes:
+      - Procedures shall be reviewed and approved before issue.

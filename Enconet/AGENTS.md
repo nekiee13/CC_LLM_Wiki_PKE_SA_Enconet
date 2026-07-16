@@ -59,6 +59,17 @@ python verify_install.py
 
 Record dependency or encoding failures as failures, not as successful verification.
 
+## Sieving workflows
+
+- Read `sieving/SIEVING_PLAYBOOK.md` before every sieving run, crumb-quality review, or prompt change.
+- Read `.agents/skills/sieving-run/SKILL.md` before initial or repeat execution.
+- Read `.agents/skills/crumb-quality/SKILL.md` before judging extracted crumb quality.
+- Read `.agents/skills/sieving-tuning/SKILL.md` before changing a prompt or deciding a candidate.
+- A prompt promotion or rejection is incomplete until its reusable lesson is deposited in the
+  matching skill and linked from `sieving/prompts/CHANGELOG.md`.
+- Claude-side equivalent skills and guidance remain pending Claude Code synchronization; Codex
+  must not create or edit `.claude/skills/` or `CLAUDE.md`.
+
 ## Skills and session continuity
 
 - User-global Codex skills: `$HOME/.agents/skills/`; `/handoff` is installed there.
@@ -87,7 +98,7 @@ through the same registry; Codex must not edit `.claude/commands/` or `CLAUDE.md
 | `audit-register` | source registration | `setup` | `python scripts/audit_command.py audit-register -- <promote_source arguments>` | raw source, registry CSV/DB row |
 | `audit-chunk` | chunking | `registered` | `python scripts/audit_command.py audit-chunk -- <chunk_document arguments>` | chunk rows and artifact |
 | `audit-sieve` | initial sieving | `chunked` | `python scripts/audit_command.py audit-sieve -- <sieve_run arguments>` | guarded sieve run |
-| `audit-resieve` | iterative sieving | `sieved` | `python scripts/audit_command.py audit-resieve -- <resieve arguments>` | new generation, metrics, diff; unavailable until EPIC18 |
+| `audit-resieve` | iterative sieving | `sieved` | `python scripts/audit_command.py audit-resieve -- <resieve arguments>` | inactive candidate generation, metrics, and diff; stop before promotion |
 | `audit-link` | traceability | `sieved` | `python scripts/audit_command.py audit-link -- <link_crumbs arguments>` | quote-to-chunk links |
 | `audit-eval` | evaluation | `evidence_reviewed` | `python scripts/audit_command.py audit-eval -- <write_evaluation arguments>` | judgment and evidence links |
 | `audit-report` | report | `findings_approved` | `python scripts/audit_command.py audit-report -- <generate_report arguments>` | controlled report |

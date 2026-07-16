@@ -53,6 +53,8 @@ def create_packet(
         raise StateError(f"decision reference {decision_ref} does not belong to {gate}")
     if output.exists():
         raise StateError(f"gate packet already exists: {output}")
+    if gate == "G2" and not re.search(r"sieving/runs/RUN-\d{8}-\d{2}/metrics\.(json|md)", evidence):
+        raise StateError("G2 packet evidence must include the active generation metrics path")
     for existing in output.parent.glob("*.md") if output.parent.exists() else []:
         existing_data, _ = split_frontmatter(existing.read_text(encoding="utf-8"))
         if existing_data.get("gate") == gate and existing_data.get("supplier") == supplier:

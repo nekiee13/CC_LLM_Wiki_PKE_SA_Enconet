@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sieving Run"
+  short_description: "Operate guarded sieving generations"
+  default_prompt: "Use $sieving-run to execute a guarded sieving generation for one controlled document."

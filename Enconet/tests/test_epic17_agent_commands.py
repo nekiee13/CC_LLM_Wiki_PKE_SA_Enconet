@@ -128,10 +128,12 @@ def test_gate_matches_current_phase_and_stops_at_packet_creation(
     assert "gate_packet.py create --gate G6" in capsys.readouterr().out
 
 
-def test_resieve_exposes_epic18_dependency_fail_closed(tmp_path: Path) -> None:
+def test_resieve_routes_to_epic18_harness_after_activation(tmp_path: Path, capsys) -> None:
     state = state_file(tmp_path, "sieved")
-    with pytest.raises(StateError, match="unavailable until EPIC18"):
-        audit_command.dispatch("audit-resieve", [], state_path=state, dry_run=True)
+    assert audit_command.dispatch(
+        "audit-resieve", ["--run-id", "RUN-20260716-02"], state_path=state, dry_run=True
+    ) == 0
+    assert "resieve_run.py" in capsys.readouterr().out
 
 
 def test_close_validates_before_handoff(tmp_path: Path, capsys) -> None:

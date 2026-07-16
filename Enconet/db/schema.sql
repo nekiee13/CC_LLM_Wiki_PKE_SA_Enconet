@@ -30,7 +30,28 @@ CREATE TABLE IF NOT EXISTS sieve_runs (
     prompt_version TEXT NOT NULL,
     document_side TEXT NOT NULL CHECK (document_side IN ('RULE','DOCUMENT')),
     source_rule TEXT CHECK (source_rule IN ('10CFR50_APPB','10CFR21') OR source_rule IS NULL),
-    started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+    generation INTEGER NOT NULL DEFAULT 1 CHECK (generation > 0),
+    status TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('candidate','active','superseded','rejected')),
+    is_active INTEGER NOT NULL DEFAULT 1 CHECK (is_active IN (0,1)),
+    supersedes_run_id TEXT REFERENCES sieve_runs(run_id) ON DELETE RESTRICT,
+    completed_at TEXT,
+    decision_ref TEXT,
+    rejected_item_count INTEGER NOT NULL DEFAULT 0 CHECK (rejected_item_count >= 0),
+    failed_item_count INTEGER NOT NULL DEFAULT 0 CHECK (failed_item_count >= 0),
+    started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (doc_id, generation),
+    CHECK ((is_active = 1 AND status = 'active') OR (is_active = 0 AND status <> 'active'))
+) STRICT;
+
+CREATE TABLE IF NOT EXISTS sieve_generation_events (
+    event_id INTEGER PRIMARY KEY,
+    doc_id TEXT NOT NULL REFERENCES documents(doc_id) ON DELETE RESTRICT,
+    from_run_id TEXT REFERENCES sieve_runs(run_id) ON DELETE RESTRICT,
+    to_run_id TEXT NOT NULL REFERENCES sieve_runs(run_id) ON DELETE RESTRICT,
+    operation TEXT NOT NULL CHECK (operation IN ('promote','rollback','reject')),
+    decision_ref TEXT NOT NULL,
+    reason TEXT NOT NULL CHECK (length(trim(reason)) > 0),
+    recorded_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS sieve_run_authorities (
@@ -235,7 +256,15 @@ CREATE TABLE IF NOT EXISTS validation_runs (
 CREATE INDEX IF NOT EXISTS idx_chunks_doc ON document_chunks(doc_id);
 CREATE INDEX IF NOT EXISTS idx_crumbs_doc ON crumbs(doc_id);
 CREATE INDEX IF NOT EXISTS idx_crumbs_criterion ON crumbs(criterion_id);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_sieve_runs_one_active_per_doc
+ON sieve_runs(doc_id) WHERE is_active = 1;
+CREATE UNIQUE INDEX IF NOT EXISTS idx_sieve_runs_doc_generation ON sieve_runs(doc_id, generation);
 CREATE INDEX IF NOT EXISTS idx_run_authorities_source ON sieve_run_authorities(source_code);
 CREATE INDEX IF NOT EXISTS idx_crumb_authorities_source ON crumb_authority_refs(source_code);
 CREATE INDEX IF NOT EXISTS idx_requirements_criterion ON requirements(criterion_id);
 CREATE INDEX IF NOT EXISTS idx_evaluations_run ON criterion_evaluations(evaluation_run_id);
+
+CREATE VIEW IF NOT EXISTS active_crumbs AS
+SELECT c.* FROM crumbs c
+JOIN sieve_runs r ON r.run_id = c.sieve_run_id
+WHERE r.is_active = 1;

@@ -36,7 +36,7 @@ def write_evaluation(db:Path,*,run_id:str,record:dict,evidence_ids:list[str],aut
         if ruling["applicable"] and rating=="na": raise ValueError("applicable criterion cannot be na")
         document_evidence=[]
         for item in evidence_ids:
-            row=c.execute("SELECT document_side FROM crumbs WHERE item_id=?",(item,)).fetchone()
+            row=c.execute("SELECT document_side FROM active_crumbs WHERE item_id=?",(item,)).fetchone()
             if not row: raise ValueError(f"unknown evidence crumb: {item}")
             if row[0]=="DOCUMENT": document_evidence.append(item)
         downgraded=False
