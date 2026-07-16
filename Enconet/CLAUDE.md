@@ -30,6 +30,19 @@ exports) as historical/source input, not a current implementation contract.
   and registers identical provenance in SQLite and `manifests/raw_sources.csv`. Never edit
   `raw/` files in place; replace them only through a separately reviewed, newly named source.
 
+## Sieving workflows (EPIC18)
+
+- Read `sieving/SIEVING_PLAYBOOK.md` before every sieving run, crumb-quality review, or
+  prompt change — it is the mandatory entry point for all sieving work.
+- Read `.claude/skills/sieving-run/SKILL.md` before an initial or repeat sieve execution.
+- Read `.claude/skills/crumb-quality/SKILL.md` before judging extracted crumb quality.
+- Read `.claude/skills/sieving-tuning/SKILL.md` before changing a prompt or deciding a
+  candidate generation.
+- A prompt promotion or rejection is incomplete until its reusable lesson is deposited
+  in the matching skill and linked from `sieving/prompts/CHANGELOG.md`.
+- Generations are immutable: new RUN-id per attempt, candidates stay inactive until the
+  recorded human decision, downstream stages read `active_crumbs` only.
+
 ## Audit commands (EPIC17)
 
 Run `/audit-status` at session start. Each pipeline stage has exactly one Claude slash
@@ -47,7 +60,7 @@ for the human.
 | `/audit-register` | source registration | `setup` | raw source, manifests/raw_sources.csv row, documents row |
 | `/audit-chunk` | chunking | `registered` | document_chunks rows, derived/chunks artifact |
 | `/audit-sieve` | initial sieving | `chunked` | sieve_runs row, guarded sieve-run workspace |
-| `/audit-resieve` | iterative sieving | `sieved` | new generation, quality metrics, generation diff; fails closed until EPIC18 |
+| `/audit-resieve` | iterative sieving | `sieved` | inactive candidate generation, quality metrics, and diff against the previous active generation; stop before promotion |
 | `/audit-link` | traceability | `sieved` | crumb quote to chunk links |
 | `/audit-eval` | evaluation | `evidence_reviewed` | criterion evaluation and evidence links |
 | `/audit-report` | report | `findings_approved` | controlled evaluation report |
