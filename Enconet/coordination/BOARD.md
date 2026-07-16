@@ -99,6 +99,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
 - `SUPPORT-TRANSFER-T2` — codex, released 2026-07-16T23:14:08Z
+- `SUPPORT-TRANSFER-T3` — codex, released 2026-07-16T23:45:49Z
 
 ## Active messages
 
@@ -109,4 +110,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 254 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:39:08Z
+Generated: 2026-07-16T23:45:49Z

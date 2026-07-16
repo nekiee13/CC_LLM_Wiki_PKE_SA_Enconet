@@ -1,0 +1,15 @@
+task: SUPPORT-TRANSFER-T3
+agent: codex
+status: released
+claimed_at_utc: 2026-07-16T23:41:17Z
+last_renewed_at_utc: 2026-07-16T23:41:17Z
+expires_at_utc: 2026-07-17T05:41:17Z
+anticipated_files:
+  - doc\support-transfer\T3_GOVERNANCE_RECORD_CONTRACT.md
+  - doc\support-transfer\T3_TARGET_TEMPLATE_CONTRACT.md
+  - doc\support-transfer\templates
+  - doc\support-transfer\README.md
+  - doc\SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md
+  - Enconet\wiki\log.md
+note: Implement planning-only T3 governance, ADR, knowledge-ledger, and target-local template contracts for FIN and Loto; no target writes.
+released_at_utc: 2026-07-16T23:45:49Z

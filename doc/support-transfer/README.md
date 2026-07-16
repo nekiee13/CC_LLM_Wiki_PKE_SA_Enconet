@@ -17,5 +17,8 @@ applicable owner gate authorizes publication.
 | `PUBLICATION_ROLLBACK_MANIFESTS.md` | T2.4 allowed paths, ownership, preflight, abort, rollback | M1 candidate v1.0 |
 | `M1_DECISION_PACKET.md` | T2.5 consolidated owner decision packet | Approved at M1 |
 | `M1_REVIEW_DISPOSITION.md` | Independent review findings and explicit dispositions | Complete |
+| `T3_GOVERNANCE_RECORD_CONTRACT.md` | Authority, record taxonomy, ADR, AFI, lesson, and good-practice semantics | T3 review candidate v1.0 |
+| `T3_TARGET_TEMPLATE_CONTRACT.md` | Explicit rendering/configuration and target-local asset contract | T3 review candidate v1.0 |
+| `templates/` | Neutral governance and record templates for later gated publication | T3 review candidate |
 
 Records marked candidate become accepted only through the gate named in the Master Plan.
