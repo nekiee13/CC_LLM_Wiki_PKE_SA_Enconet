@@ -1,6 +1,6 @@
 task: ADR-0022-KNOWLEDGE-LINKS
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-16T04:59:00Z
 last_renewed_at_utc: 2026-07-16T04:59:00Z
 expires_at_utc: 2026-07-16T08:59:00Z
@@ -8,3 +8,4 @@ anticipated_files:
   - doc/LESSONS-LEARNED.md
   - doc/GOOD-PRACTICES.md
 note: Link ADR-0022 batch controls from existing raw-intake lesson and practice
+released_at_utc: 2026-07-16T05:00:38Z

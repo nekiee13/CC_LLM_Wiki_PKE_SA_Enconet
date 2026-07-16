@@ -6,8 +6,6 @@ and ADRs are the records.
 
 ## Active claims
 
-- `ADR-0022` — codex, expires 2026-07-16T12:57:29Z
-- `ADR-0022-KNOWLEDGE-LINKS` — codex, expires 2026-07-16T08:59:00Z
 - `EPIC15` — codex, expires 2026-07-17T04:29:53Z
 
 ## Released claims
@@ -18,6 +16,8 @@ and ADRs are the records.
 - `ADR-0020-SYNC` — codex, released 2026-07-12T23:07:56Z
 - `ADR-0020-TERMINAL-ARCHIVE` — codex, released 2026-07-12T23:14:39Z
 - `ADR-0021` — codex, released 2026-07-15T21:51:46Z
+- `ADR-0022` — codex, released 2026-07-16T05:00:38Z
+- `ADR-0022-KNOWLEDGE-LINKS` — codex, released 2026-07-16T05:00:38Z
 - `AFI-EPIC12-URL` — codex, released 2026-07-15T21:38:42Z
 - `C1.4` — codex, released 2026-07-11T21:51:59Z
 - `C2.1` — claude-code, released 2026-07-11T21:27:34Z
@@ -86,4 +86,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-15T230347Z-8c9efa7.md`](../handoffs/2026-07-15T230347Z-8c9efa7.md)
 - Archive: 206 records in `coordination/archive/`
 
-Generated: 2026-07-16T04:59:01Z
+Generated: 2026-07-16T05:00:38Z
