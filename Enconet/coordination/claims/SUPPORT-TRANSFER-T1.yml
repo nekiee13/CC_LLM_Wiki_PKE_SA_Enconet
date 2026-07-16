@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-T1
+agent: codex
+status: released
+claimed_at_utc: 2026-07-16T23:01:50Z
+last_renewed_at_utc: 2026-07-16T23:01:50Z
+expires_at_utc: 2026-07-17T05:01:50Z
+anticipated_files:
+  - doc\support-transfer\README.md
+  - doc\support-transfer\CC_FIN_EVIDENCE_INVENTORY.md
+  - doc\support-transfer\CC_LOTO_EVIDENCE_INVENTORY.md
+  - doc\support-transfer\GAP_COLLISION_SENSITIVITY_MATRIX.md
+  - Enconet\wiki\log.md
+note: Execute read-only T1.1-T1.3 inventories and drift/collision/sensitivity classification at activated M0; no target writes.
+released_at_utc: 2026-07-16T23:10:28Z
