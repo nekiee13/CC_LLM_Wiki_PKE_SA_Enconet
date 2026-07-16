@@ -70,6 +70,35 @@ Record dependency or encoding failures as failures, not as successful verificati
 - Do not claim that `/handoff` is fully integrated with project state until the related master-plan
   acceptance criteria and validators are implemented.
 
+## Audit command routing
+
+Run `python scripts/audit_command.py audit-status` at session start. All simple stage
+operations use the canonical dispatcher below; arguments for the wrapped script follow `--`.
+The dispatcher reads `schemas/audit_commands.yml` and refuses a phase mismatch before it starts
+the stage process. Complex closeout also uses the user-global `/handoff` skill to collect truthful
+handoff content, then routes publication through `audit-close`. Claude command synchronization is
+pending on Claude Code; Codex must not edit `.claude/commands/` or `CLAUDE.md`.
+
+| Interface | Stage | Exact allowed phase(s) | Direct Codex CLI | Artifacts |
+|---|---|---|---|---|
+| `audit-status` | session/status | `setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed` | `python scripts/audit_command.py audit-status` | phase, gates, open actions, last validation |
+| `audit-register` | source registration | `setup` | `python scripts/audit_command.py audit-register -- <promote_source arguments>` | raw source, registry CSV/DB row |
+| `audit-chunk` | chunking | `registered` | `python scripts/audit_command.py audit-chunk -- <chunk_document arguments>` | chunk rows and artifact |
+| `audit-sieve` | initial sieving | `chunked` | `python scripts/audit_command.py audit-sieve -- <sieve_run arguments>` | guarded sieve run |
+| `audit-resieve` | iterative sieving | `sieved` | `python scripts/audit_command.py audit-resieve -- <resieve arguments>` | new generation, metrics, diff; unavailable until EPIC18 |
+| `audit-link` | traceability | `sieved` | `python scripts/audit_command.py audit-link -- <link_crumbs arguments>` | quote-to-chunk links |
+| `audit-eval` | evaluation | `evidence_reviewed` | `python scripts/audit_command.py audit-eval -- <write_evaluation arguments>` | judgment and evidence links |
+| `audit-report` | report | `findings_approved` | `python scripts/audit_command.py audit-report -- <generate_report arguments>` | controlled report |
+| `audit-dashboard` | dashboard | `report_ready` | `python scripts/audit_command.py audit-dashboard -- <generate_dashboard arguments>` | offline and wiki dashboards |
+| `audit-validate` | validation | `setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed` | `python scripts/audit_command.py audit-validate -- <validation arguments>` | aggregate verdict and optional validation record |
+| `audit-gate` | human gate | `setup, sieved, evidence_reviewed, findings_drafted, findings_approved, report_ready, dashboard_ready` | `python scripts/audit_command.py audit-gate -- create <gate_packet arguments>` | one packet; always stop for the human |
+| `audit-close` | session/closeout | `setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed` | `python scripts/audit_command.py audit-close -- <make_handoff arguments>` | aggregate verdict, immutable handoff, pointer |
+
+At session end, prepare truthful handoff fields with `/handoff`, update the exact next action,
+then run `audit-close`. It validates first with `--no-record` and publishes through
+`../scripts/make_handoff.py`; validation failure prevents publication and no command advances a
+human gate on its own.
+
 ## Team coordination
 
 - Follow ADR-0016 through ADR-0019. Claude Code owns Claude infrastructure and guidance-only

@@ -1,0 +1,78 @@
+schema_version: "1.0"
+
+# Canonical EPIC17 interface contract. Agent-specific adapters must invoke
+# scripts/audit_command.py; they may not duplicate or weaken these phase checks.
+commands:
+  audit-status:
+    stage: session/status
+    phases: [setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed]
+    scripts: [scripts/audit_command.py, scripts/audit_state.py]
+    outputs: [project phase, gate states, open action count, last validation result]
+    purpose: Show the authoritative audit and validation status without changing state.
+  audit-register:
+    stage: source registration
+    phases: [setup]
+    scripts: [scripts/promote_source.py]
+    outputs: [raw source, manifests/raw_sources.csv row, documents row]
+    purpose: Promote one reviewed incoming source through the controlled registry doorway.
+  audit-chunk:
+    stage: chunking
+    phases: [registered]
+    scripts: [scripts/chunk_document.py]
+    outputs: [document_chunks rows, derived/chunks artifact]
+    purpose: Split one registered document into reviewable chunks.
+  audit-sieve:
+    stage: initial sieving
+    phases: [chunked]
+    scripts: [scripts/sieve_run.py]
+    outputs: [sieve_runs row, guarded sieve-run workspace]
+    purpose: Start the first authority-aware sieve generation for a chunked source.
+  audit-resieve:
+    stage: iterative sieving
+    phases: [sieved]
+    scripts: [scripts/resieve_run.py]
+    outputs: [new generation, quality metrics, generation diff]
+    purpose: Start a measured new sieve generation without overwriting its predecessor.
+    requires_epic: EPIC18
+  audit-link:
+    stage: traceability
+    phases: [sieved]
+    scripts: [scripts/link_crumbs.py]
+    outputs: [crumb quote to chunk links]
+    purpose: Link imported crumb quotes to containing source chunks.
+  audit-eval:
+    stage: evaluation
+    phases: [evidence_reviewed]
+    scripts: [scripts/write_evaluation.py]
+    outputs: [criterion evaluation and evidence links]
+    purpose: Record one human criterion judgment through the evidence gate.
+  audit-report:
+    stage: report
+    phases: [findings_approved]
+    scripts: [scripts/generate_report.py]
+    outputs: [controlled evaluation report]
+    purpose: Generate the report from the canonical package and approvals.
+  audit-dashboard:
+    stage: dashboard
+    phases: [report_ready]
+    scripts: [scripts/generate_dashboard.py]
+    outputs: [offline dashboard, wiki dashboard copy]
+    purpose: Generate and validate the controlled offline dashboard.
+  audit-validate:
+    stage: validation
+    phases: [setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed]
+    scripts: [scripts/run_all_validations.py]
+    outputs: [aggregate PASS or FAIL, manifests/validation_runs.csv unless --no-record]
+    purpose: Run the phase-aware validation spine.
+  audit-gate:
+    stage: human gate
+    phases: [setup, sieved, evidence_reviewed, findings_drafted, findings_approved, report_ready, dashboard_ready]
+    scripts: [scripts/gate_packet.py]
+    outputs: [one immutable human gate packet; no automatic transition]
+    purpose: Assemble the gate packet for the current phase and stop for the human.
+  audit-close:
+    stage: session/closeout
+    phases: [setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed]
+    scripts: [scripts/run_all_validations.py, ../scripts/make_handoff.py]
+    outputs: [aggregate verdict, immutable handoff record, HANDOFF.md pointer]
+    purpose: Validate, then publish an evidence-bearing session handoff without changing phase.

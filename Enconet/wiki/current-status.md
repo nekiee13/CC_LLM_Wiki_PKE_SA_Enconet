@@ -1,8 +1,8 @@
 # Enconet current status
 
 Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
-`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-16 (EPIC16
-independently accepted and benchmark fixtures locked).
+`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-16 (EPIC17 shared
+dispatcher and Codex routing implemented; Claude adapter sync/review pending).
 
 ## Phase
 
@@ -30,7 +30,8 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 14 | Audit state machine and human gates | complete and independently reviewed; production DB continuity and rejected-packet lifecycle findings resolved; 123 tests and aggregate validation pass; live state remains setup with all gates pending |
 | 15 | Sieving subsystem integration | complete and independently accepted; single vendored library wiring, exact dependency pins, effective private pandas API guard, warning/strict contract drift, and locked CSV/XLSX fixtures pass; F1 guard-coverage gap resolved with negative self-tests; claim released |
 | 16 | Reference benchmark fixtures and regression | complete and independently accepted; scoring and dashboard-rendering fixtures remain deliberately separate, locked regressions and aggregate enforcement pass, and `benchmarks_locked` is true; claim released |
-| 17+ | Agent command and workflow interfaces onward | not started |
+| 17 | Agent command and workflow interfaces | shared 12-command registry, fail-closed dispatcher, status/gate/closeout behavior, Codex routing table, and cross-agent contract validator implemented; 142 tests and benchmark aggregate pass; Claude-owned slash-command adapters and independent review pending; `audit-resieve` explicitly remains unavailable until EPIC18 supplies the tuning harness |
+| 18+ | Sieving iteration and tuning harness onward | not started |
 
 ## Open items
 
@@ -41,7 +42,8 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Begin EPIC17 planning and claim it before implementation;
+Have Claude Code add its `.claude/commands/` adapters and `CLAUDE.md` table from the
+canonical EPIC17 registry, then run the strict cross-agent validator and independently review;
 do not advance `project-state.yml` or create a live gate packet without a real human gate.
 Retain
 AFI-DASH-001 for generic external-URL validation hardening. Do not create live
