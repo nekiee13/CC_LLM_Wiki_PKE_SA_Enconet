@@ -103,11 +103,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-07-16T234645Z_review-governance-record-template-contract` — review_request, codex -> claude-code: SUPPORT-TRANSFER-T3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 254 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:45:49Z
+Generated: 2026-07-16T23:46:46Z
