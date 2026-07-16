@@ -89,6 +89,7 @@ and ADRs are the records.
 - `SUPPORT-SYSTEM-TRANSFER-PLAN` — codex, released 2026-07-16T22:51:16Z
 - `SUPPORT-SYSTEM-TRANSFER-RECORD` — codex, released 2026-07-16T22:42:23Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
+- `SUPPORT-TRANSFER-M1-REVIEW-CC` — claude-code, released 2026-07-16T23:21:30Z
 - `SUPPORT-TRANSFER-PLAN-ARCHIVE-CC` — claude-code, released 2026-07-16T22:58:37Z
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
@@ -96,6 +97,8 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-07-16T232129Z_m1-packet-review-findings` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M1
+- `CC_2026-07-16T232130Z_ack-m0-owner-activation` — acknowledgement, claude-code -> codex: SUPPORT-SYSTEM-TRANSFER
 - `CX_2026-07-16T230118Z_m0-owner-activation` — status, codex -> both: SUPPORT-SYSTEM-TRANSFER
 - `CX_2026-07-16T231442Z_review-t1-t2-m1-packet` — review_request, codex -> claude-code: SUPPORT-TRANSFER-M1
 
@@ -104,4 +107,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 240 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:14:42Z
+Generated: 2026-07-16T23:21:30Z
