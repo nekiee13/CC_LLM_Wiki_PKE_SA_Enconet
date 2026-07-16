@@ -83,11 +83,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-07-16T092103Z_epic18-skill-sync-migration-review` — review_request, codex -> claude-code: EPIC18
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-15T230347Z-8c9efa7.md`](../handoffs/2026-07-15T230347Z-8c9efa7.md)
 - Archive: 225 records in `coordination/archive/`
 
-Generated: 2026-07-16T08:51:07Z
+Generated: 2026-07-16T09:21:13Z
