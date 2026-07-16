@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-SYSTEM-SPEC` — codex, expires 2026-07-17T01:53:59Z
 
 ## Released claims
 
@@ -92,4 +92,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 230 records in `coordination/archive/`
 
-Generated: 2026-07-16T10:20:52Z
+Generated: 2026-07-16T21:53:59Z

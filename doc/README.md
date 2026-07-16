@@ -27,6 +27,8 @@ Navigation: workspace overview at [`../README.md`](../README.md); project docs a
 | [INDEXING.md](INDEXING.md) | Documentation/code index profiles, mandatory options, caveats |
 | [GIT_CONVENTIONS.md](GIT_CONVENTIONS.md) | Commit tags, ignore policy, line endings, identity (Task C0.2) |
 | [GUIDANCE_PAIRS.json](GUIDANCE_PAIRS.json) | Guidance-pair drift manifest consumed by `scripts/check_guidance_drift.py` (Task C2.1) |
+| [Support_system.md](Support_system.md) | Draft portable software-development support framework: core, modules, principles, and conformance profile |
+| [Support_system_transfer_draft.md](Support_system_transfer_draft.md) | Draft GitHub-Issues-style transfer plan for adapting the support system to FIN and Loto |
 
 ## Authority
 
