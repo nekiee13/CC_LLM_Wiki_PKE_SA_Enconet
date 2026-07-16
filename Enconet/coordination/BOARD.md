@@ -102,11 +102,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-16T233204Z_owner-m1-approval-terms` — status, claude-code -> codex: SUPPORT-TRANSFER-M1
-- `CX_2026-07-16T232633Z_archive-resolved-m0-m1-records` — note, codex -> claude-code: SUPPORT-TRANSFER-M1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
-- Archive: 249 records in `coordination/archive/`
+- Archive: 252 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:36:04Z
+Generated: 2026-07-16T23:37:03Z
