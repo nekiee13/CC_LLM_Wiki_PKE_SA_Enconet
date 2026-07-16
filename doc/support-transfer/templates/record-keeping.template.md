@@ -10,6 +10,26 @@
 | Generated | Regenerate from authority; never hand-treat as history |
 | Historical | Retain as non-current context with successor link |
 
+## Published path classes
+
+| Target-local path | Class |
+|---|---|
+| `support/README.md` | Controlled |
+| `support/RECORD-KEEPING.md` | Controlled |
+| `support/current-status.md` | Replaceable |
+| `support/log.md` | Append-only |
+| `support/decisions/README.md` | Controlled register |
+| Proposed `support/decisions/ADR-SUP-NNNN-slug.md` | Controlled proposal |
+| Accepted `support/decisions/ADR-SUP-NNNN-slug.md` | Immutable; change only by a new superseding ADR |
+| `support/AFI.md` | Curated ledger |
+| `support/LESSONS-LEARNED.md` | Curated ledger |
+| `support/GOOD-PRACTICES.md` | Curated ledger |
+| `HANDOFF.md` | Replaceable pointer to an immutable validated handoff |
+| `coordination/BOARD.md` | Generated view; never authoritative history |
+
+The class map is target-local authority. A proposed ADR becomes immutable when accepted; acceptance
+does not imply that its implementation state is `implemented`.
+
 Use UTC timestamps and stable IDs. Records must not contain secrets, credentials, personal data,
 private path values, or product data prohibited by `{{SUPPORT_PROFILE_PATH}}`.
 

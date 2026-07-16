@@ -87,8 +87,12 @@ manifest or explicit target text; scripts must not hide product policy in condit
    policy, sieve/raw/ingestion terminology, or runtime reference to this repository.
 3. Compare staged output with the M1 path/ownership manifest before target writes.
 4. Validate Markdown structure, stable IDs, relative links, record classes, and target commands.
-5. Publish target-local copies only in T7/T8 after their applicable gates.
-6. Target copies become independently maintained under their target authority and provenance.
+5. Within the neutral-core publication, create and validate records, coordination, and handoff
+   destinations before rendering `support/README.md`. The index closes the neutral core only after
+   `HANDOFF.md` and `coordination/BOARD.md` exist, so no committed slice contains those dangling
+   links. It still precedes every agent-owned addition.
+6. Publish target-local copies only in T7/T8 after their applicable gates.
+7. Target copies become independently maintained under their target authority and provenance.
 
 ## Reuse boundary
 

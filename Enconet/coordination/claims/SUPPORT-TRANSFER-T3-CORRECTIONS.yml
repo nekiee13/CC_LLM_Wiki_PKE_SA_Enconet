@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-T3-CORRECTIONS
+agent: codex
+status: released
+claimed_at_utc: 2026-07-16T23:54:46Z
+last_renewed_at_utc: 2026-07-16T23:54:46Z
+expires_at_utc: 2026-07-17T02:54:46Z
+anticipated_files:
+  - doc\support-transfer\templates\record-keeping.template.md
+  - doc\support-transfer\T3_TARGET_TEMPLATE_CONTRACT.md
+  - doc\support-transfer\T3_REVIEW_DISPOSITION.md
+  - doc\support-transfer\README.md
+  - Enconet\wiki\log.md
+note: Reproduce and correct T3-F1; resolve T3-O1 with non-dangling neutral-core publication order; no target writes.
+released_at_utc: 2026-07-16T23:55:40Z
