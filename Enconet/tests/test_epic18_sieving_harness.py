@@ -160,7 +160,7 @@ def test_golden_score_requires_real_approval_and_controls_promote_rollback(
     score_path = tmp_path / "score.json"
     score_path.write_text(json.dumps(result), encoding="utf-8")
     changelog = tmp_path / "CHANGELOG.md"
-    changelog.write_text("appb_document_v2 | lesson: crumb-quality\n", encoding="utf-8")
+    changelog.write_text("| appb_document_v2 | DOCUMENT | date | change | score | promoted | ref | crumb-quality |\n", encoding="utf-8")
     active = tmp_path / "active.yml"
     active.write_text("schema_version: '1.0'\nactive:\n  DOCUMENT: appb_document_v1\n", encoding="utf-8")
     sieve_generation.decide(
@@ -193,12 +193,18 @@ def test_tampered_or_draft_golden_cannot_promote(database: Path, tmp_path: Path)
     score = tmp_path / "score.json"
     score.write_text(json.dumps({"prompt_version": "appb_document_v2", "golden_approved": True,
                                  "golden_approval_ref": "NOT-APPROVED", "promotion_ready": True}), encoding="utf-8")
-    changelog = tmp_path / "CHANGELOG.md"; changelog.write_text("appb_document_v2 | crumb-quality", encoding="utf-8")
+    changelog = tmp_path / "CHANGELOG.md"; changelog.write_text(
+        "| appb_document_v2 | DOCUMENT | date | change | score | promoted | ref | crumb-quality |\n",
+        encoding="utf-8",
+    )
     active = tmp_path / "active.yml"; active.write_text("active: {DOCUMENT: appb_document_v1}\n", encoding="utf-8")
     with pytest.raises(ValueError, match="not approved"):
         sieve_generation.decide(database, run_id="RUN-20260716-02", operation="promote",
                                 decision_ref="PROMPT-v2", reason="tamper", approvals=approvals,
                                 score=score, active_prompts=active, changelog=changelog)
+    unrelated = tmp_path / "unrelated.md"
+    unrelated.write_text("appb_document_v2 and crumb-quality appear in prose", encoding="utf-8")
+    assert sieve_generation._changelog_has_lesson(unrelated, "appb_document_v2") is False
     draft = {"fixture_version": "draft", "status": "pending_human_approval", "approval_ref": None,
              "expected_crumbs": []}
     assert score_sieving.score(draft, {"prompt_version": "v", "items": []}, approvals=approvals)["golden_approved"] is False

@@ -2,7 +2,7 @@
 
 Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
 `wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-16 (EPIC18 harness
-implemented and validated on fixtures/production-copy migration; review and live migration pending).
+independently accepted, both agent skill sets synchronized, and live migration validated).
 
 ## Phase
 
@@ -31,7 +31,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 15 | Sieving subsystem integration | complete and independently accepted; single vendored library wiring, exact dependency pins, effective private pandas API guard, warning/strict contract drift, and locked CSV/XLSX fixtures pass; F1 guard-coverage gap resolved with negative self-tests; claim released |
 | 16 | Reference benchmark fixtures and regression | complete and independently accepted; scoring and dashboard-rendering fixtures remain deliberately separate, locked regressions and aggregate enforcement pass, and `benchmarks_locked` is true; claim released |
 | 17 | Agent command and workflow interfaces | complete and independently accepted; canonical 12-command registry, fail-closed dispatcher, status/gate/closeout behavior, synchronized Codex and Claude adapters, and strict cross-agent validation pass; review observations O1/O2 resolved with actionable option placement and registry-owned script routing; 144 tests pass; claim released |
-| 18 | Sieving iteration and tuning harness | Tasks 18.1-18.4 and 18.6 plus the Codex half of 18.7 implemented: immutable generations, active-only downstream view, recorded promotion/rollback, metrics, diff, prompt registry, playbook, skills, and activated `audit-resieve`; golden scorer and a clearly draft mechanics fixture exist, but the real pilot golden set still requires human approval; 151 tests pass; Claude skill/guidance sync, independent review, and reviewed live DB migration remain pending |
+| 18 | Sieving iteration and tuning harness | implementation complete and independently accepted; immutable generations, active-only downstream evidence, metrics/diff/scoring, approval-bound decisions, playbook, prompt registry, and synchronized Codex/Claude skills pass strict validation; O1 lesson-link check tightened after review; additive live migration completed with backup, integrity/FK checks pass, and the legacy active run has a committed 18-crumb/100%-linked metrics report; 151 tests pass; claim released. Task 18.5 operational acceptance and the project-level pilot-loop demonstration remain honestly pending human approval of a representative golden set |
 
 ## Open items
 
@@ -42,10 +42,10 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Have Claude synchronize its three owned sieving skills/guidance and independently review EPIC18,
-including the production-copy migration evidence. Apply the additive live DB migration only after
-that review, generate the legacy run's metrics, and keep the pilot golden set pending until the
-owner approves a representative document/excerpt and expected crumbs;
+At the first representative controlled intake batch, have the owner select and approve the pilot
+golden document/excerpt and expected crumbs before any prompt promotion; then demonstrate the full
+re-sieve → metrics → diff → golden score → promote/rollback loop. Until then the draft fixture is
+diagnostic only and the live state remains setup/G1 pending;
 do not advance `project-state.yml` or create a live gate packet without a real human gate.
 Retain
 AFI-DASH-001 for generic external-URL validation hardening. Do not create live

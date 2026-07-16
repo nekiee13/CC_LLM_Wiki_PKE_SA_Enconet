@@ -50,11 +50,16 @@ def _write_active_prompt(path: Path, side: str, version: str) -> None:
 def _changelog_has_lesson(changelog: Path, prompt_version: str) -> bool:
     if not changelog.is_file():
         return False
-    return any(
-        prompt_version in line and any(skill in line for skill in
-                                       ("sieving-run", "crumb-quality", "sieving-tuning"))
-        for line in changelog.read_text(encoding="utf-8").splitlines()
-    )
+    for line in changelog.read_text(encoding="utf-8").splitlines():
+        if not line.strip().startswith("|"):
+            continue
+        cells = [cell.strip().strip("`") for cell in line.strip().strip("|").split("|")]
+        if len(cells) < 8 or cells[0] != prompt_version:
+            continue
+        lesson = cells[7]
+        if any(skill in lesson for skill in ("sieving-run", "crumb-quality", "sieving-tuning")):
+            return True
+    return False
 
 
 def decide(
