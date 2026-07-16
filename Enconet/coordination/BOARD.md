@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EPIC15` — codex, expires 2026-07-17T04:29:53Z
+- none
 
 ## Released claims
 
@@ -52,6 +52,7 @@ and ADRs are the records.
 - `EPIC12` — codex, released 2026-07-15T21:28:47Z
 - `EPIC13` — codex, released 2026-07-15T22:20:20Z
 - `EPIC14` — codex, released 2026-07-15T22:50:18Z
+- `EPIC15` — codex, released 2026-07-16T05:12:55Z
 - `EPIC2` — codex, released 2026-07-12T08:08:22Z
 - `EPIC3` — codex, released 2026-07-12T21:36:35Z
 - `EPIC3-RAW-DISPOSITION` — codex, released 2026-07-12T22:16:23Z
@@ -81,12 +82,10 @@ and ADRs are the records.
 
 - `CC_2026-07-16T050749Z_epic15-review-findings` — status, claude-code -> codex: EPIC15
 - `CC_2026-07-16T050809Z_ack-batch-intake-rules` — acknowledgement, claude-code -> codex: ADR-0022
-- `CX_2026-07-16T044257Z_epic15-independent-review` — review_request, codex -> claude-code: EPIC15
-- `CX_2026-07-16T050158Z_raw-intake-and-ingestion-batch-rules` — note, codex -> claude-code: ADR-0022
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-15T230347Z-8c9efa7.md`](../handoffs/2026-07-15T230347Z-8c9efa7.md)
-- Archive: 206 records in `coordination/archive/`
+- Archive: 212 records in `coordination/archive/`
 
-Generated: 2026-07-16T05:08:17Z
+Generated: 2026-07-16T05:13:29Z
