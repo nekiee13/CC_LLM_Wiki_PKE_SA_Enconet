@@ -18,6 +18,33 @@ from json_extractor.pipeline import export_pipeline_result, run_pipeline  # noqa
 
 COLUMNS = ["item_id", "criterion_id", "statement", "source_page",
            "entities_organizations", "rule_key"]
+PRIVATE_PANDAS_METHODS = {"_append"}
+
+
+def _private_pandas_api_offenders(source: str, label: str = "<source>") -> list[str]:
+    """Return private pandas API uses, including instance methods and modules."""
+    offenders: list[str] = []
+    for node in ast.walk(ast.parse(source)):
+        if isinstance(node, ast.Attribute):
+            direct_private = (
+                node.attr.startswith("_")
+                and isinstance(node.value, ast.Name)
+                and node.value.id in {"pd", "pandas"}
+            )
+            if direct_private or node.attr in PRIVATE_PANDAS_METHODS:
+                offenders.append(f"{label}:{node.lineno}:{node.attr}")
+        elif isinstance(node, ast.Import):
+            for alias in node.names:
+                if alias.name.startswith(("pandas.core", "pandas._")):
+                    offenders.append(f"{label}:{node.lineno}:{alias.name}")
+        elif isinstance(node, ast.ImportFrom):
+            module = node.module or ""
+            private_member = module == "pandas" and any(
+                alias.name.startswith("_") for alias in node.names
+            )
+            if module.startswith(("pandas.core", "pandas._")) or private_member:
+                offenders.append(f"{label}:{node.lineno}:{module}")
+    return offenders
 
 
 def test_project_scripts_resolve_only_the_vendored_implementation() -> None:
@@ -38,12 +65,22 @@ def test_dependencies_are_exactly_pinned_and_private_pandas_apis_are_absent() ->
     assert requirements and all(re.fullmatch(r"[A-Za-z0-9_-]+==[^=<>!~]+", line) for line in requirements)
     offenders = []
     for path in (SIEVING / "src").rglob("*.py"):
-        tree = ast.parse(path.read_text(encoding="utf-8"))
-        for node in ast.walk(tree):
-            if isinstance(node, ast.Attribute) and node.attr.startswith("_"):
-                if isinstance(node.value, ast.Name) and node.value.id in {"pd", "pandas"}:
-                    offenders.append(f"{path.name}:{node.lineno}:{node.attr}")
+        offenders.extend(_private_pandas_api_offenders(
+            path.read_text(encoding="utf-8"), str(path.relative_to(SIEVING))
+        ))
     assert offenders == []
+
+
+def test_private_pandas_guard_detects_historical_and_internal_api_patterns() -> None:
+    snippets = {
+        "dataframe-instance-method": "df = pd.DataFrame(); df = df._append(row)",
+        "private-module-from": "from pandas.core.frame import DataFrame",
+        "private-module-import": "import pandas._libs",
+        "private-member": "from pandas import _testing",
+    }
+    for label, snippet in snippets.items():
+        assert _private_pandas_api_offenders(snippet, label), label
+    assert _private_pandas_api_offenders("class A:\n    def f(self): return self._helper()") == []
 
 
 def test_schema_drift_warns_by_default_and_strict_mode_blocks(tmp_path: Path) -> None:

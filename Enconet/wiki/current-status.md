@@ -2,7 +2,7 @@
 
 Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
 `wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-16 (EPIC15
-implemented and validated; independent Claude review pending).
+independently accepted after its private-pandas guard finding was resolved).
 
 ## Phase
 
@@ -28,7 +28,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 | 12 | Dashboard generator | complete and independently accepted; package-derived data, offline localized HTML, consistency/forbidden-pattern validation, and JS smoke checks pass; claim released; no live dashboard generated |
 | 13 | Validation layer and aggregate runner | complete and independently accepted; transitive no-record hygiene finding resolved and phases now derive from the canonical vocabulary; 111 Enconet tests and aggregate L0-L5 pass; claim released |
 | 14 | Audit state machine and human gates | complete and independently reviewed; production DB continuity and rejected-packet lifecycle findings resolved; 123 tests and aggregate validation pass; live state remains setup with all gates pending |
-| 15 | Sieving subsystem integration | Tasks 15.1-15.4 implemented; single vendored library wiring, exact dependency pins, private pandas API guard, warning/strict contract drift, and locked CSV/XLSX fixtures pass; independent review pending |
+| 15 | Sieving subsystem integration | complete and independently accepted; single vendored library wiring, exact dependency pins, effective private pandas API guard, warning/strict contract drift, and locked CSV/XLSX fixtures pass; F1 guard-coverage gap resolved with negative self-tests; claim released |
 | 16+ | Reference benchmarks onward | not started |
 
 ## Open items
@@ -40,7 +40,7 @@ phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
 
 ## Next action
 
-Complete independent Claude review of EPIC15 and resolve any evidence-backed findings;
+Proceed to EPIC16 reference benchmark fixtures and regression planning;
 do not advance `project-state.yml` or create a live gate packet without a real human gate.
 Retain
 AFI-DASH-001 for generic external-URL validation hardening. Do not create live
