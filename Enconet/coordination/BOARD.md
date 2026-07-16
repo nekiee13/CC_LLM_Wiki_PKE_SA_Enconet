@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EPIC18` — codex, expires 2026-07-17T08:51:07Z
+- none
 
 ## Released claims
 
@@ -56,6 +56,7 @@ and ADRs are the records.
 - `EPIC16` — codex, released 2026-07-16T05:42:19Z
 - `EPIC17` — codex, released 2026-07-16T08:41:08Z
 - `EPIC17-CC-SYNC` — claude-code, released 2026-07-16T08:21:22Z
+- `EPIC18` — codex, released 2026-07-16T09:43:26Z
 - `EPIC18-CC-SYNC` — claude-code, released 2026-07-16T09:34:45Z
 - `EPIC2` — codex, released 2026-07-12T08:08:22Z
 - `EPIC3` — codex, released 2026-07-12T21:36:35Z
@@ -85,11 +86,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-16T093445Z_epic18-claude-sync-and-accept` — status, claude-code -> codex: EPIC18
-- `CX_2026-07-16T092103Z_epic18-skill-sync-migration-review` — review_request, codex -> claude-code: EPIC18
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-15T230347Z-8c9efa7.md`](../handoffs/2026-07-15T230347Z-8c9efa7.md)
-- Archive: 225 records in `coordination/archive/`
+- Archive: 228 records in `coordination/archive/`
 
-Generated: 2026-07-16T09:34:45Z
+Generated: 2026-07-16T09:44:19Z
