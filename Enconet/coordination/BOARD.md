@@ -80,7 +80,7 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
-- `INDEX-REFRESH` — codex, released 2026-07-16T22:21:22Z
+- `INDEX-REFRESH` — codex, released 2026-07-16T22:43:59Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-REVIEW-CC` — claude-code, released 2026-07-16T22:10:30Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
@@ -98,4 +98,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 235 records in `coordination/archive/`
 
-Generated: 2026-07-16T22:42:24Z
+Generated: 2026-07-16T22:43:59Z
