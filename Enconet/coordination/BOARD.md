@@ -84,14 +84,15 @@ and ADRs are the records.
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-REVIEW-CC` — claude-code, released 2026-07-16T22:10:30Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
+- `SUPPORT-SYSTEM-T03` — claude-code, released 2026-07-16T22:29:18Z
 
 ## Active messages
 
-- `CC_2026-07-16T221019Z_support-system-review-findings` — review_request, claude-code -> codex: SUPPORT-SYSTEM-SPEC
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
-- Archive: 233 records in `coordination/archive/`
+- Archive: 235 records in `coordination/archive/`
 
-Generated: 2026-07-16T22:21:22Z
+Generated: 2026-07-16T22:29:18Z
