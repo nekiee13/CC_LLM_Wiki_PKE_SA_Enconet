@@ -94,6 +94,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-M1-CLOSE-CC` — claude-code, released 2026-07-16T23:32:05Z
 - `SUPPORT-TRANSFER-M1-CORRECTIONS` — codex, released 2026-07-16T23:24:34Z
 - `SUPPORT-TRANSFER-M1-REVIEW-CC` — claude-code, released 2026-07-16T23:21:30Z
+- `SUPPORT-TRANSFER-M1-STATUS-ARCHIVE-CC` — claude-code, released 2026-07-16T23:39:08Z
 - `SUPPORT-TRANSFER-PLAN-ARCHIVE-CC` — claude-code, released 2026-07-16T22:58:37Z
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
@@ -101,11 +102,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-16T233204Z_owner-m1-approval-terms` — status, claude-code -> codex: SUPPORT-TRANSFER-M1
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
-- Archive: 252 records in `coordination/archive/`
+- Archive: 254 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:37:03Z
+Generated: 2026-07-16T23:39:08Z
