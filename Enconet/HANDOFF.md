@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-07-15T230347Z-8c9efa7.md`](handoffs/2026-07-15T230347Z-8c9efa7.md)
+**Authoritative record:** [`handoffs/2026-07-16T101902Z-24c0310.md`](handoffs/2026-07-16T101902Z-24c0310.md)
 
-**Status:** complete · **Git:** `8c9efa7` · **Agent:** codex · **Created:** 2026-07-15T23:03:47Z
+**Status:** complete · **Git:** `24c0310` · **Agent:** codex · **Created:** 2026-07-16T10:19:02Z
 
-**Exact next action:** Claim EPIC15 and implement Tasks 15.1-15.4: wire project scripts to the single vendored sieving library, pin dependencies and guard private APIs, add warning/strict schema-drift handling, and lock export regression fixtures; preserve setup state and create no live gate artifacts.
+**Exact next action:** When the owner lands the first controlled incoming batch, process only one large document or two-to-three small documents, record each source as new or updated, promote through the controlled intake workflow, and have the owner approve the representative pilot golden excerpt and expected crumbs before demonstrating the re-sieve -> metrics -> diff -> score -> promote/rollback loop.
