@@ -7,7 +7,7 @@
 | Plan ID | `SUPPORT-SYSTEM-TRANSFER` |
 | Version | 1.0 — controlled candidate |
 | Date | 2026-07-17 |
-| Status | Prepared for independent Claude review and owner activation; target-repository mutation is not yet authorized |
+| Status | Owner-activated at M0 on 2026-07-16T23:00:25Z for T1/T2; accepted plan content `40f4556`; T3 target publication remains blocked pending M1 |
 | Owner | Human project owner |
 | Implementers | Codex and Claude Code within their ownership boundaries |
 | Source contract | `doc/Support_system.md`, accepted by the owner on 2026-07-17 |
@@ -17,8 +17,8 @@
 | Target 2 | CC_Loto — `C:\xPY\xPrj\CC_Loto`; `https://github.com/nekiee13/CC_Loto` |
 | Format | GitHub-Issues style: epics, claimable tasks, dependencies, and acceptance criteria |
 
-This plan authorizes preparation and review only until Task T0.5 is explicitly accepted.
-No checklist state, agent statement, or passage of time substitutes for owner activation.
+M0 is recorded in `doc/support-transfer/M0_ACTIVATION.md`. It authorizes T1/T2 work only;
+no checklist state, agent statement, or passage of time substitutes for later owner gates.
 
 ## 1. Mission and end state
 
@@ -206,23 +206,23 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T0.4 — Independently review this final Master Plan
 
-**Status:** pending.
+**Status:** completed.
 
-- [ ] Claude verifies authority preservation, task completeness, dependencies, ownership,
+- [x] Claude verifies authority preservation, task completeness, dependencies, ownership,
   target-native validation, failure recovery, and the FIN-first sequencing assumption.
-- [ ] Every finding has an explicit Codex and owner disposition.
-- [ ] Review confirms no target repository was mutated during planning.
+- [x] Every finding has an explicit Codex and owner disposition.
+- [x] Review confirms no target repository was mutated during planning.
 
 ### Task T0.5 — Owner activation gate M0
 
-**Status:** pending.
+**Status:** completed at 2026-07-16T23:00:25Z; durable record `doc/support-transfer/M0_ACTIVATION.md`.
 
-- [ ] Owner records accept, revise, or reject for this Master Plan.
-- [ ] Activation states whether FIN publication remains the pilot and whether any target tasks
+- [x] Owner records accept, revise, or reject for this Master Plan.
+- [x] Activation states whether FIN publication remains the pilot and whether any target tasks
   may run in parallel.
-- [ ] The decision records the owner statement, plan version and exact Git SHA, UTC timestamp,
+- [x] The decision records the owner statement, plan version and exact Git SHA, UTC timestamp,
   and sequencing choice in the plan status, append-only event log, and immutable coordination evidence.
-- [ ] No implementation claim starts before those activation records are committed and pushed.
+- [x] No implementation claim starts before those activation records are committed and pushed.
 
 ## EPIC T1 — Re-verify targets and build evidence inventories
 

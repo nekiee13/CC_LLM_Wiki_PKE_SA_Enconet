@@ -88,16 +88,17 @@ and ADRs are the records.
 - `SUPPORT-SYSTEM-T03` — claude-code, released 2026-07-16T22:29:18Z
 - `SUPPORT-SYSTEM-TRANSFER-PLAN` — codex, released 2026-07-16T22:51:16Z
 - `SUPPORT-SYSTEM-TRANSFER-RECORD` — codex, released 2026-07-16T22:42:23Z
+- `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
 - `SUPPORT-TRANSFER-PLAN-ARCHIVE-CC` — claude-code, released 2026-07-16T22:58:37Z
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 
 ## Active messages
 
-- none
+- `CX_2026-07-16T230118Z_m0-owner-activation` — status, codex -> both: SUPPORT-SYSTEM-TRANSFER
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 240 records in `coordination/archive/`
 
-Generated: 2026-07-16T22:58:37Z
+Generated: 2026-07-16T23:01:18Z
