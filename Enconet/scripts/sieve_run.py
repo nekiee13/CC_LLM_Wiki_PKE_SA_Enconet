@@ -8,6 +8,8 @@ import sys
 from pathlib import Path
 
 import db_util
+import sieving_lib  # noqa: F401
+from json_extractor.crumb_validation import ValidationResult, check_authority_references
 
 
 def create_run(db: Path, *, run_id: str, doc_id: str, prompt_version: str,
@@ -18,9 +20,8 @@ def create_run(db: Path, *, run_id: str, doc_id: str, prompt_version: str,
         raise ValueError("RULE run requires authority references")
     if document_side == "DOCUMENT" and authorities:
         raise ValueError("DOCUMENT run forbids authority references")
-    from validate_app_b_json import ValidationResult, _check_refs
     checked = ValidationResult()
-    _check_refs(authorities, "run", checked)
+    check_authority_references(authorities, "run", checked)
     if checked.errors:
         raise ValueError("; ".join(checked.errors))
     with db_util.connect(db) as conn:

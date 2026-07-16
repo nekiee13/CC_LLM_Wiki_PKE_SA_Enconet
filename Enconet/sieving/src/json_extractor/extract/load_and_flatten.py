@@ -16,6 +16,7 @@ import json
 from typing import List, Dict, Any, Optional, Tuple
 from dataclasses import dataclass, field
 from ..config import get_config
+from ..contract import load_contract
 
 
 @dataclass
@@ -556,7 +557,8 @@ def flatten_item_to_record(
 
 def flatten_json_to_records(
     data: Dict[str, Any],
-    file_path: str
+    file_path: str,
+    strict: bool = False,
 ) -> FlattenResult:
     """
     Flatten a single JSON file to normalized records.
@@ -569,10 +571,41 @@ def flatten_json_to_records(
         FlattenResult with records and validation errors.
     """
     config = get_config()
+    drift_severity = "ERROR" if strict else "WARNING"
+    all_errors = []
+
+    def drift(item_id: Optional[str], message: str) -> None:
+        all_errors.append(ValidationError(
+            file_path=file_path, item_id=item_id, rule_id="VAL-DRIFT-001",
+            severity=drift_severity, message=message,
+        ))
+
+    fields = load_contract()["input_fields"]
+    root_required = set(fields["root"]["required"])
+    root_allowed = set(fields["root"]["allowed"])
+    for key in sorted(set(data) - root_allowed):
+        drift(None, f"unexpected field: root.{key}")
+    for key in sorted(root_required - set(data)):
+        drift(None, f"missing expected field: root.{key}")
     
     # Extract document metadata
     document = data.get("document", {})
+    if not isinstance(document, dict):
+        drift(None, "document must be an object")
+        document = {}
+    document_required = set(fields["document"]["required"])
+    document_allowed = set(fields["document"]["allowed"])
+    for key in sorted(document_required - set(document)):
+        drift(None, f"missing expected field: document.{key}")
+    for key in sorted(set(document) - document_allowed):
+        drift(None, f"unexpected field: document.{key}")
     control_metadata = document.get("control_metadata", {})
+    if not isinstance(control_metadata, dict):
+        drift(None, "document.control_metadata must be an object")
+        control_metadata = {}
+    control_allowed = set(fields["control_metadata"]["allowed"])
+    for key in sorted(set(control_metadata) - control_allowed):
+        drift(None, f"unexpected field: document.control_metadata.{key}")
     
     doc_metadata = {
         "doc_id": document.get("doc_id"),
@@ -584,9 +617,21 @@ def flatten_json_to_records(
     # Flatten items
     items = data.get("items", [])
     records = []
-    all_errors = []
-    
-    for item in items:
+    if not isinstance(items, list):
+        drift(None, "items must be a list")
+        items = []
+    common_required = set(fields["item"]["required"])
+    common_allowed = set(fields["item"]["allowed"])
+
+    for index, item in enumerate(items):
+        if not isinstance(item, dict):
+            drift(None, f"items[{index}] must be an object")
+            continue
+        item_id = item.get("item_id")
+        for key in sorted(common_required - set(item)):
+            drift(item_id, f"missing expected field: items[{index}].{key}")
+        for key in sorted(set(item) - common_allowed):
+            drift(item_id, f"unexpected field: items[{index}].{key}")
         record, errors = flatten_item_to_record(item, doc_metadata, file_path, config)
         records.append(record)
         all_errors.extend(errors)
@@ -596,7 +641,8 @@ def flatten_json_to_records(
 
 def flatten_multiple_files(
     json_data_list: List[Dict[str, Any]],
-    file_paths: List[str]
+    file_paths: List[str],
+    strict: bool = False,
 ) -> FlattenResult:
     """
     Flatten multiple JSON files to a combined normalized record set.
@@ -612,7 +658,7 @@ def flatten_multiple_files(
     all_errors = []
     
     for data, file_path in zip(json_data_list, file_paths):
-        result = flatten_json_to_records(data, file_path)
+        result = flatten_json_to_records(data, file_path, strict=strict)
         all_records.extend(result.records)
         all_errors.extend(result.validation_errors)
     

@@ -1,0 +1,31 @@
+{
+  "document": {
+    "doc_id": "DOC-FIXTURE-15",
+    "filename": "fixture.txt",
+    "title": "EPIC15 export contract",
+    "control_metadata": {"revision": "R1"}
+  },
+  "items": [
+    {
+      "item_id": "fixture-item-1",
+      "record_side": "RULE",
+      "template_id": "JSON_Template_App_B",
+      "template_version": "1.1",
+      "taxonomy_id": "APP_B",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "item_type": "requirement",
+      "statement": "The supplier shall define responsibility.",
+      "evidence_quotes": ["Responsibility shall be defined."],
+      "source": [{"page": 7, "heading_path": ["Quality", "Organization"], "block_type": "prose"}],
+      "entities": {"organizations": ["Žarek d.o.o."]},
+      "rule": {
+        "source_rules": "10CFR50_APPB",
+        "rule_locator": "APP_B_I",
+        "rule_key": "10CFR50_APPB::APP_B_I",
+        "rule_strength": "MANDATORY",
+        "rule_citation_text": "Criterion I"
+      }
+    }
+  ]
+}

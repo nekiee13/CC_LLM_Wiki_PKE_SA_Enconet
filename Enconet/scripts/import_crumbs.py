@@ -7,7 +7,8 @@ import sys
 from pathlib import Path
 
 import db_util
-from validate_app_b_json import validate_file
+import sieving_lib  # noqa: F401
+from json_extractor.crumb_validation import validate_file
 
 
 def import_file(db: Path, json_path: Path, *, run_id: str, strict: bool = False) -> int:

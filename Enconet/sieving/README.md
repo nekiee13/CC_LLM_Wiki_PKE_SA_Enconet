@@ -1,5 +1,17 @@
 # JSON Extractor vNext
 
+## Project integration
+
+The canonical project entry point is `python scripts/query_crumbs.py`. Project
+scripts resolve the integral library from `sieving/src` through
+`scripts/sieving_lib.py`; no editable install and no second copy of flattening or
+validation logic is used. `sieving/cli.py` is retained only as a headless
+development/debug adapter and is not a project process dependency.
+
+Use `query --strict` to make missing or unexpected input fields blocking. The
+default warning mode reports drift while allowing inspection and export when no
+other blocking validation error exists.
+
 A taxonomy-driven extraction and query system for nuclear quality assurance documents.
 
 ## Overview

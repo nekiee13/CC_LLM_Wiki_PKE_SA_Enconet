@@ -91,3 +91,4 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-07-15T23:02:56Z | handoffs/2026-07-15T230256Z-nogit.md | complete | unavailable
 
 - handoff-created | 2026-07-15T23:03:47Z | handoffs/2026-07-15T230347Z-8c9efa7.md | complete | 8c9efa74db7ee9863fde68021f003aeca04fbce3
+- task-progress | 2026-07-16T04:41:55Z | EPIC15 | Tasks 15.1-15.4 implemented: project scripts use the single vendored json_extractor library, dependencies are exactly pinned with a private pandas API guard, contract-owned schema drift warns by default and blocks under strict mode, and locked CSV/XLSX fixtures protect column/order/value contracts; 128 tests, installation verification, and aggregate setup validation pass; independent Claude review pending (CX)

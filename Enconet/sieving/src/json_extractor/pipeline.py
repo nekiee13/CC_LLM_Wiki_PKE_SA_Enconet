@@ -99,6 +99,7 @@ def run_pipeline(
     filter_expr: Optional[str] = None,
     columns: Optional[List[str]] = None,
     allow_unfiltered_preview: bool = False,
+    strict: bool = False,
 ) -> PipelineResult:
     """
     Run the complete extraction and query pipeline.
@@ -111,6 +112,7 @@ def run_pipeline(
         columns: List of columns to include in result. If None, uses all columns.
         allow_unfiltered_preview: Development-only escape that retains unfiltered rows
             for preview. Export remains blocked while filter_error is set.
+        strict: Convert schema-drift warnings into blocking validation errors.
 
     Returns:
         PipelineResult with DataFrame and diagnostics.
@@ -175,7 +177,7 @@ def run_pipeline(
         )
 
     # Step 3: Flatten to normalized records
-    flatten_result = flatten_multiple_files(successful_data, file_path_strings)
+    flatten_result = flatten_multiple_files(successful_data, file_path_strings, strict=strict)
 
     if not flatten_result.records:
         return PipelineResult(

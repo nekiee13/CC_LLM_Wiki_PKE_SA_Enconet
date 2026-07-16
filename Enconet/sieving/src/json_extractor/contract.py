@@ -16,7 +16,7 @@ TAXONOMY_PATH = CONTRACT_PATH.with_name("app_b_taxonomy.yml")
 def load_contract() -> dict[str, Any]:
     """Return the JSON-compatible YAML contract after structural checks."""
     data = json.loads(CONTRACT_PATH.read_text(encoding="utf-8"))
-    required = {"template", "canonical_codes", "enums", "columns", "query_fields"}
+    required = {"template", "canonical_codes", "enums", "input_fields", "columns", "query_fields"}
     missing = required - data.keys()
     if missing:
         raise ValueError(f"Sieving contract missing sections: {sorted(missing)}")

@@ -13,6 +13,24 @@
     "rule_strength":["MANDATORY","NON_MANDATORY"],
     "item_type":["requirement","process_step","role_responsibility","definition","control","record","reference","finding","recommendation","action","status_statement","other"]
   },
+  "input_fields": {
+    "root": {
+      "required": ["document", "items"],
+      "allowed": ["document", "items", "document_side", "source_rules", "documents", "organizations", "people", "standards_regulations", "systems_tools"]
+    },
+    "document": {
+      "required": ["doc_id", "filename", "title"],
+      "allowed": ["doc_id", "filename", "title", "control_metadata", "doc_type_guess", "language_guess", "document_side", "record_side", "structure_map", "template_id", "template_version", "taxonomy_id", "source_rules"]
+    },
+    "control_metadata": {
+      "required": [],
+      "allowed": ["revision", "issue_date", "approved_by", "reviewed_by", "document_code", "print_date", "approver", "author", "identifier", "pages", "reviewer", "date", "issue_number", "page_count", "prepared_by", "approval_date", "check_date", "checked_by", "review_date"]
+    },
+    "item": {
+      "required": ["item_id", "record_side", "template_id", "template_version", "taxonomy_id", "criterion_id", "criterion_name", "item_type", "statement", "evidence_quotes", "source"],
+      "allowed": ["item_id", "record_side", "template_id", "template_version", "taxonomy_id", "criterion_id", "criterion_name", "item_type", "statement", "evidence_quotes", "source", "entities", "rule", "rule_reference_ids", "rule_references"]
+    }
+  },
   "columns": {
     "default":["record_side","criterion_id","criterion_name","item_type","statement","evidence_quote_1","doc_id","filename","title","rule_key","rule_ref_keys","rule_strength"],
     "all":["template_id","template_version","taxonomy_id","record_side","doc_id","filename","title","revision","item_id","item_type","criterion_id","criterion_name","statement","evidence_quote_1","evidence_quotes_json","source_page","source_page_label","source_heading_path","source_section_id","source_block_type","source_location_cue","entities_organizations","entities_people","entities_documents","entities_systems_tools","entities_standards_regulations","rule_source_rules","rule_locator","rule_key","rule_strength","rule_citation_text","rule_ref_keys","rule_ref_codes","rule_ref_locators","rule_ref_texts_json"]
