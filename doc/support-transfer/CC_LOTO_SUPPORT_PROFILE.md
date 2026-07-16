@@ -4,7 +4,7 @@
 
 - Target: `C:\xPY\xPrj\CC_Loto` / `nekiee13/CC_Loto`
 - Accepted planning baseline candidate: `b469afc6f7e5593c60d0e5bdcfc7dead4a6bc481`
-- Profile state: candidate for owner gate M1; publication waits for successful FIN pilot M4
+- Profile state: candidate for owner gate M1; publication waits for FIN acceptance at M3
 - Product authority: owner-designated enhanced implementation Master Plan
 - Support authority: this profile only after M1 approval
 
@@ -47,7 +47,7 @@ architecture correction in U7's scope.
 
 ## Git and hosted workflow
 
-Loto publication cannot start until FIN pilot acceptance at M4. It then uses small reversible
+Loto publication cannot start until FIN pilot acceptance at M3. It then uses small reversible
 commits on `main`, exact-baseline/clean-tree preflight, and independent review before push. No force
 push, reset, hosted setting mutation, tag, or release is authorized. Branch protection remains
 `unknown` until verified through an authorized GitHub surface.
@@ -90,7 +90,7 @@ work and re-run preflight/native focused checks. Release creation remains out of
 ## M1 acceptance conditions
 
 - The owner accepts this version and exact baseline SHA.
-- Publication remains deferred until FIN M4.
+- Publication remains deferred until FIN acceptance at M3.
 - Native `run_tests.py` and optional-layer semantics are accepted.
 - U7 integration, data exclusions, and initially disabled modules are accepted.
 - Claude-owned guidance corrections remain Claude work; Codex does not edit them.

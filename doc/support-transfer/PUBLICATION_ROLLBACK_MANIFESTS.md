@@ -1,7 +1,8 @@
 # Publication and rollback manifests v1.0
 
 These manifests are planning controls. They authorize no target write before M1 and no Loto write
-before FIN M4. At each implementation claim, the exact slice must be a subset of this manifest.
+before FIN acceptance at M3. At each implementation claim, the exact slice must be a subset of this
+manifest.
 
 ## Common planned additions
 
@@ -14,7 +15,7 @@ before FIN M4. At each implementation claim, the exact slice must be a subset of
 | `coordination/TEAM_PROTOCOL.md`, `BOARD.md`, schemas/templates | Shared-neutral | Communication and generated status contract |
 | `coordination/messages/`, `archive/`, `claims/` | Ownership by record prefix | Immutable communication and claims |
 | `HANDOFF.md` | Shared-neutral pointer | Current validated handoff navigation |
-| `scripts/agent_coord.py`, `scripts/make_handoff.py`, `scripts/validate_support.py` | Shared-neutral implementation | Small isolated support utilities |
+| FIN `scripts/agent_coord.py`, `scripts/make_handoff.py`, `scripts/validate_support.py`; Loto equivalents under `tools/` | Shared-neutral implementation | Small isolated utilities following each target's existing helper convention |
 
 ## CC_FIN manifest
 
@@ -27,7 +28,7 @@ inclusions and data/vendor/generated exclusions.
 | `AGENTS.md` | Codex-owned | Correct packaging fact; add support navigation/commands | Covered by approved profile |
 | `docs/README.md` or existing docs index | Existing target authority | Link support index only | No, if link-only |
 | `docs/governance-transition.md` | Existing target authority | Replace unsafe routine reset wording with evidence-first recovery | Explicit M1 disposition |
-| `.github/workflows/followup-gate.yml` | Hosted governance | Change push filter `master` to `main` only | Explicit M1 disposition and isolated diff |
+| `.github/workflows/followup-ml-gate.yml` | Hosted governance | Change push filter `master` to `main` only | Explicit M1 disposition and isolated diff |
 | `.gitignore` | Existing target authority | Add only proven support runtime artifacts | Only if preflight proves necessary |
 
 No product-plan, product-data, Cockpit, forecasting, package-version, feature-ADR, or runtime source
@@ -35,8 +36,9 @@ modification is permitted by this manifest.
 
 ## CC_Loto manifest
 
-Planned additions are the common paths plus Codex-owned `AGENTS.md`/`.agents/` and focused support
-tests inside an existing `run_tests.py`-discovered layer. No index configuration is initially added.
+Planned additions are the common paths, support utilities under existing `tools/`, Codex-owned
+`AGENTS.md`/`.agents/`, and focused support tests inside an existing `run_tests.py`-discovered
+layer. No `scripts/` directory or index configuration is initially added.
 
 | Existing path that may be modified | Owner/class | Allowed scope | Separate approval? |
 |---|---|---|---|

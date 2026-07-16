@@ -15,5 +15,6 @@ applicable owner gate authorizes publication.
 | `DIFFERENCE_REGISTER.md` | T2.3 intentional semantic differences | M1 candidate v1.0 |
 | `PUBLICATION_ROLLBACK_MANIFESTS.md` | T2.4 allowed paths, ownership, preflight, abort, rollback | M1 candidate v1.0 |
 | `M1_DECISION_PACKET.md` | T2.5 consolidated owner decision packet | Awaiting review and owner decision |
+| `M1_REVIEW_DISPOSITION.md` | Independent review findings and explicit dispositions | Codex complete; owner pending |
 
 Records marked candidate become accepted only through the gate named in the Master Plan.

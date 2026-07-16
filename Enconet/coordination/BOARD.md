@@ -89,6 +89,7 @@ and ADRs are the records.
 - `SUPPORT-SYSTEM-TRANSFER-PLAN` — codex, released 2026-07-16T22:51:16Z
 - `SUPPORT-SYSTEM-TRANSFER-RECORD` — codex, released 2026-07-16T22:42:23Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
+- `SUPPORT-TRANSFER-M1-CORRECTIONS` — codex, released 2026-07-16T23:24:34Z
 - `SUPPORT-TRANSFER-M1-REVIEW-CC` — claude-code, released 2026-07-16T23:21:30Z
 - `SUPPORT-TRANSFER-PLAN-ARCHIVE-CC` — claude-code, released 2026-07-16T22:58:37Z
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
@@ -107,4 +108,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 240 records in `coordination/archive/`
 
-Generated: 2026-07-16T23:21:30Z
+Generated: 2026-07-16T23:24:34Z

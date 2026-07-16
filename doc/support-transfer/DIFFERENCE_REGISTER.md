@@ -7,7 +7,7 @@ those semantics.
 
 | ID | Difference | Rationale | Owner | Verification | Reconsider when |
 |---|---|---|---|---|---|
-| D-01 | FIN publishes first; Loto waits for M4 | Sequential pilot limits two-repo blast radius | Owner | Gate and claim checks | FIN pilot accepted or transfer strategy changes |
+| D-01 | FIN publishes first; Loto waits for FIN acceptance at M3 | Sequential pilot limits two-repo blast radius | Owner | Gate and claim checks | FIN pilot accepted or transfer strategy changes |
 | D-02 | FIN uses pytest/Ruff/CPI applicability; Loto uses `run_tests.py` layers | Preserve native validation contracts | Project maintainer | Command exit codes and CI | Native test architecture changes |
 | D-03 | FIN index module enabled; Loto deferred | FIN is much larger and has vendor/data exclusions | Index owner | Profile validation and committed-state refresh claim | Loto navigation cost or corpus grows materially |
 | D-04 | FIN integrates existing freshness ledger and feature ADRs; Loto integrates U7 | Existing governance differs | Documentation owner | Support index reference audit | Product documentation governance changes |
@@ -19,6 +19,7 @@ those semantics.
 | D-10 | Both omit Wiki sieve, ingestion, raw-source, phase engine, golden-loop, and audit adapters | They are Wiki-domain behavior, not portable support core | Owner | Planned-path manifest contains none | A target proves an equivalent need |
 | D-11 | Both initially omit repo-local skills and formal state machines | Simplicity and no demonstrated workflow frequency | Owner | Module table and path audit | Repetition/error data justifies a module |
 | D-12 | Release adapters inventory only; package versions remain untouched | Transfer is not a product release | Product owner | No tags/releases/version diffs | Owner initiates release work |
+| D-13 | FIN support utilities use existing `scripts/`; Loto uses existing `tools/` | Preserve each target's executable-helper convention | Support maintainer | Planned-path and import/reference checks | Either repository adopts a different helper layout |
 
 ## Common non-negotiable checks
 

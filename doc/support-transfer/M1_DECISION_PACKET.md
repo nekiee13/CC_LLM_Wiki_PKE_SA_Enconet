@@ -9,7 +9,7 @@ files, modify Loto, change hosted settings, create a release, or approve product
 | Target | Exact candidate baseline | Profile | Publication order |
 |---|---|---|---|
 | CC_FIN | `238c207c73970f3d3c6dc00c2db5932ebeca7be4` | `CC_FIN_SUPPORT_PROFILE.md` v1.0 | First pilot |
-| CC_Loto | `b469afc6f7e5593c60d0e5bdcfc7dead4a6bc481` | `CC_LOTO_SUPPORT_PROFILE.md` v1.0 | After FIN M4 only |
+| CC_Loto | `b469afc6f7e5593c60d0e5bdcfc7dead4a6bc481` | `CC_LOTO_SUPPORT_PROFILE.md` v1.0 | After FIN acceptance at M3 only |
 
 Both baselines were reverified clean and unchanged during T1. No target write has occurred.
 
@@ -28,7 +28,7 @@ Both baselines were reverified clean and unchanged during T1. No target write ha
 1. Accept the owner-designated enhanced plan in each target as product authority despite its
    `Proposed` header; do not edit either product plan in support scope.
 2. Accept profiles v1.0 and exact baseline SHAs above.
-3. Keep CC_FIN as the sequential pilot; prohibit Loto publication until FIN M4 acceptance.
+3. Keep CC_FIN as the sequential pilot; prohibit Loto publication until FIN acceptance at M3.
 4. Enable the FIN index module with strict exclusions; defer Loto indexing.
 5. Disable formal workflow state machines and repo-local target skills initially.
 6. Exclude tracked product data, generated outputs, vendor assets, secrets, and private path values
@@ -47,7 +47,7 @@ Both baselines were reverified clean and unchanged during T1. No target write ha
 |---|---|---|
 | Support framework shadows product authority | Link-only index and explicit scope taxonomy | Accept plan disposition |
 | Cross-agent file collision | Owned paths, immutable messages, active claims | Retain dual-agent model |
-| Two-repo blast radius | Sequential FIN pilot and M4 gate | Accept sequence |
+| Two-repo blast radius | Sequential FIN pilot and M3 gate | Accept sequence |
 | Sensitive/product data enters records | Explicit exclusions and pre-publication scan | Accept classifications |
 | Native validation is distorted | FIN and Loto retain different native contracts | Accept intentional differences |
 | Recovery removes unrelated work | Clean recovery point, path manifest, revert-only policy | Accept recovery contract |
