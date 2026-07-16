@@ -1,13 +1,12 @@
 task: SUPPORT-SYSTEM-SPEC
 agent: codex
 status: released
-claimed_at_utc: 2026-07-16T21:53:59Z
-last_renewed_at_utc: 2026-07-16T21:53:59Z
-expires_at_utc: 2026-07-17T01:53:59Z
+claimed_at_utc: 2026-07-16T22:13:10Z
+last_renewed_at_utc: 2026-07-16T22:13:10Z
+expires_at_utc: 2026-07-17T00:13:10Z
 anticipated_files:
-  - doc\Support_system.md
-  - doc\Support_system_transfer_draft.md
-  - doc\README.md
-  - Enconet\wiki\log.md
-note: Draft portable support-system specification and FIN/Loto transfer plan for Claude review
-released_at_utc: 2026-07-16T21:58:27Z
+  - ..\doc\Support_system.md
+  - ..\doc\Support_system_transfer_draft.md
+  - wiki\log.md
+note: Apply accepted Claude review findings M1-M4 and L1-L3; validate and acknowledge.
+released_at_utc: 2026-07-16T22:17:10Z
