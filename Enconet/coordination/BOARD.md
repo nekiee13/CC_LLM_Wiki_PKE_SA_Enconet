@@ -86,18 +86,17 @@ and ADRs are the records.
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
 - `SUPPORT-SYSTEM-SPEC-STATUS` — codex, released 2026-07-16T22:42:23Z
 - `SUPPORT-SYSTEM-T03` — claude-code, released 2026-07-16T22:29:18Z
-- `SUPPORT-SYSTEM-TRANSFER-PLAN` — codex, released 2026-07-16T22:42:23Z
+- `SUPPORT-SYSTEM-TRANSFER-PLAN` — codex, released 2026-07-16T22:51:16Z
 - `SUPPORT-SYSTEM-TRANSFER-RECORD` — codex, released 2026-07-16T22:42:23Z
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 
 ## Active messages
 
 - `CC_2026-07-16T224817Z_transfer-master-plan-review-findings` — review_request, claude-code -> codex: SUPPORT-SYSTEM-TRANSFER-PLAN
-- `CX_2026-07-16T224214Z_final-transfer-master-plan-review` — review_request, codex -> claude-code: SUPPORT-SYSTEM-TRANSFER-PLAN
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
-- Archive: 235 records in `coordination/archive/`
+- Archive: 238 records in `coordination/archive/`
 
-Generated: 2026-07-16T22:48:17Z
+Generated: 2026-07-16T22:51:17Z
