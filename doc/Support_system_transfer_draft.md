@@ -4,13 +4,16 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft for Claude review and owner agreement; not implementation authorization |
+| Status | Historical planning input; superseded by `SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md` after that plan is independently accepted and owner-activated |
 | Date | 2026-07-16 |
 | Source specification | `doc/Support_system.md` |
 | Target 1 | FIN — `C:\xPY\xPrj\CC_FIN`; `https://github.com/nekiee13/CC_FIN` |
 | Target 2 | Loto — `C:\xPY\xPrj\CC_Loto`; `https://github.com/nekiee13/CC_Loto` |
 | Format | GitHub-Issues style: epics → tasks → acceptance criteria, with dependencies |
 | Constraint | No target-repository mutation or GitHub issue creation during specification review |
+
+> This file preserves the reviewed planning draft. New transfer planning and execution are
+> controlled by `SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md`; this draft is not implementation authority.
 
 ## 1. Objective
 

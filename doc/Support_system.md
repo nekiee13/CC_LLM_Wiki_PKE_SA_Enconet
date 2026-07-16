@@ -4,12 +4,12 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft for cross-agent review and owner agreement |
-| Date | 2026-07-16 |
+| Status | Owner-accepted reference specification; implementation requires an activated target transfer plan |
+| Date | 2026-07-17 |
 | Scope | Workspace-wide reference; intended for adaptation across heterogeneous projects |
 | Origin | Support practices proven or implemented in `03_PKE_SA_NQA1/Enconet` |
 | Target consumers | Wiki projects, `CC_FIN`, `CC_Loto`, and future projects |
-| Authority | Informative draft until Claude review and explicit owner agreement; it does not supersede current ADRs, project plans, or guidance |
+| Authority | Workspace reference specification accepted after independent Claude review; it does not supersede target ADRs, project plans, or guidance |
 | Update trigger | Review disposition, owner agreement, or evidence that changes a support principle or module |
 
 ## 1. Purpose and boundary

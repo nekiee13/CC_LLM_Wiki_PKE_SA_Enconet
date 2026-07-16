@@ -27,6 +27,7 @@
 | AFIs | `doc/AFI.md` | Mutable curated ledger; stable new-entry IDs; closure preserves status, date, and evidence (ADR-0021) |
 | Lessons learned | `doc/LESSONS-LEARNED.md` | Mutable evidence ledger; new entries active or superseded, never silently removed (ADR-0021) |
 | Good practices | `doc/GOOD-PRACTICES.md` | Mutable proven-pattern ledger; active, deprecated, or superseded with evidence links (ADR-0021) |
+| Workspace transfer Master Plans | `doc/*_TRANSFER_MASTER_PLAN.md` | Controlled candidate until independently reviewed and owner-activated; after activation, material scope/dependency/acceptance changes require a visible versioned amendment or superseding plan |
 
 ## Rules that cut across record types
 
