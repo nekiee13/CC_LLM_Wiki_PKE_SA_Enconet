@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `INDEX-REFRESH` — codex, expires 2026-07-16T10:53:24Z
 
 ## Released claims
 
@@ -80,7 +80,6 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
-- `INDEX-REFRESH` — codex, released 2026-07-15T23:02:14Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 
 ## Active messages
@@ -92,4 +91,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-15T230347Z-8c9efa7.md`](../handoffs/2026-07-15T230347Z-8c9efa7.md)
 - Archive: 230 records in `coordination/archive/`
 
-Generated: 2026-07-16T09:50:44Z
+Generated: 2026-07-16T09:53:25Z

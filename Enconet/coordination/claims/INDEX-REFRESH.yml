@@ -1,10 +1,10 @@
 task: INDEX-REFRESH
 agent: codex
-status: released
-claimed_at_utc: 2026-07-15T22:59:55Z
-last_renewed_at_utc: 2026-07-15T22:59:55Z
-expires_at_utc: 2026-07-15T23:59:55Z
+status: active
+claimed_at_utc: 2026-07-16T09:53:24Z
+last_renewed_at_utc: 2026-07-16T09:53:24Z
+expires_at_utc: 2026-07-16T10:53:24Z
 anticipated_files:
-  - doc\INDEXING.md
-note: Refresh shared-neutral Enconet docs/code indexes from clean committed HEAD 56c47bd before handoff using exact documented profiles and explicit filtered tracked-file lists.
-released_at_utc: 2026-07-15T23:02:14Z
+  - Enconet
+  - doc
+note: Pre-handoff refresh after committed EPIC15-EPIC18 implementation and review closure
