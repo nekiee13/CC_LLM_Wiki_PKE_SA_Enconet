@@ -1,0 +1,16 @@
+task: SUPPORT-TRANSFER-T2
+agent: codex
+status: released
+claimed_at_utc: 2026-07-16T23:11:27Z
+last_renewed_at_utc: 2026-07-16T23:11:27Z
+expires_at_utc: 2026-07-17T05:11:27Z
+anticipated_files:
+  - doc\support-transfer\CC_FIN_SUPPORT_PROFILE.md
+  - doc\support-transfer\CC_LOTO_SUPPORT_PROFILE.md
+  - doc\support-transfer\DIFFERENCE_REGISTER.md
+  - doc\support-transfer\PUBLICATION_ROLLBACK_MANIFESTS.md
+  - doc\support-transfer\M1_DECISION_PACKET.md
+  - doc\support-transfer\README.md
+  - Enconet\wiki\log.md
+note: Prepare T2 target profiles, difference register, path/ownership/rollback manifests, and M1 owner packet; target repositories remain read-only.
+released_at_utc: 2026-07-16T23:14:08Z
