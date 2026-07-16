@@ -100,5 +100,5 @@ completion messages cite commands, exit codes, and counts.
   python scripts/validate_raw_sources.py
   ```
 
-- **Links:** ADR-0021; `LL-RAW-001`; EPIC3 Tasks 3.1–3.4;
+- **Links:** ADR-0021; ADR-0022; `LL-RAW-001`; EPIC3 Tasks 3.1–3.4;
   `Enconet/docs/RAW_INTAKE.md`; `Enconet/tests/test_raw_intake.py`.

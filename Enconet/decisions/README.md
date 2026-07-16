@@ -33,6 +33,7 @@ Context → Decision → Consequences.
 | [ADR-0019](CX_ADR-0019-shared-mcp-indexes.md) | Repository code/docs MCP indexes are shared-neutral with single-writer refresh controls; distinct guidance corpora remain agent-owned | Workspace | Accepted |
 | [ADR-0020](CX_ADR-0020-regulatory-authority-and-interpretive-standard.md) | Appendix B is the governing baseline, Part 21 is a mandatory nonconformance add-on, and NQA-1 is the interpretive/implementation standard | Project | Accepted |
 | [ADR-0021](CX_ADR-0021-improvement-knowledge-lifecycle.md) | Evidence lifecycle for AFIs, lessons learned, and good practices | Workspace + projects | Accepted |
+| [ADR-0022](CX_ADR-0022-batched-source-intake-and-ingestion.md) | Bounded source promotion and ingestion with new/updated lineage tracking | Project | Accepted |
 
 All decided 2026-07-11 by the project owner (D-1…D-6 from `docs/CX_CC_RECONCILIATION.md` §6
 and the six domain decisions from `MASTER_DEVELOPMENT_PLAN.md` §8), except ADR-0007 which
@@ -46,3 +47,7 @@ required before EPIC5 schema and sieving implementation.
 
 ADR-0021 was decided 2026-07-15 by the project owner to establish a shared,
 evidence-based lifecycle for improvement and operational-knowledge records.
+
+ADR-0022 was decided 2026-07-16 by the project owner to limit source promotion and
+ingestion to one large or two-to-three small documents per batch, with durable
+new/updated classification and predecessor tracking.

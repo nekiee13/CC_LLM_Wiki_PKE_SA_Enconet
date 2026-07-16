@@ -4,6 +4,14 @@ This is the operating procedure for `MASTER_DEVELOPMENT_PLAN.md` EPIC 3. A sourc
 not accepted merely because it exists in the workspace: it must pass human review,
 promotion, registration, extraction, and validation.
 
+ADR-0022 governs batch size and lineage recording. Treat `incoming/` as a queue. Select
+one large document, or two to three small documents, for a promotion batch; never
+process more than three or mix a large document with another file. Add the required
+`batch_id`, `change_type`, and (for updates) `supersedes` tags to `--notes`. Complete
+and validate the selected batch before starting another. Downstream ingestion follows
+the same one-large or two-to-three-small limit and records its own `ING-*` batch ID in
+`manifests/ingest_runs.csv`.
+
 1. Place the reviewed file directly in `incoming/`. Use a stable, unique filename.
 2. Initialize the project database once with `python scripts/init_db.py` if needed.
 3. Run `python scripts/promote_source.py <filename> --title <title> --supplier
@@ -23,3 +31,5 @@ same operation to the file's read-only mode. These controls prevent accidental e
 the SHA-256 registry detects changes even if permissions are later bypassed. Never
 edit or replace a file in `raw/` in place. A revised source enters through `incoming/`
 under a new reviewed filename and receives its own document ID.
+An updated document is therefore promoted as a new immutable source record with
+`change_type=updated; supersedes=DOC-nnnn`; the predecessor remains unchanged.

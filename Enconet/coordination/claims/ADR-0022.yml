@@ -1,0 +1,12 @@
+task: ADR-0022
+agent: codex
+status: active
+claimed_at_utc: 2026-07-16T04:57:29Z
+last_renewed_at_utc: 2026-07-16T04:57:29Z
+expires_at_utc: 2026-07-16T12:57:29Z
+anticipated_files:
+  - Enconet/decisions/CX_ADR-0022-batched-source-intake-and-ingestion.md
+  - Enconet/decisions/README.md
+  - Enconet/docs/RAW_INTAKE.md
+  - Enconet/wiki/log.md
+note: Owner decision: bounded source promotion and ingestion batches with new/updated traceability

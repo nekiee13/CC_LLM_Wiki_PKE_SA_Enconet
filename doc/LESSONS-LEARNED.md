@@ -119,5 +119,5 @@ that get deleted once both sides refresh).
   and promote them through the same controlled path.
 - **Owner/next action:** All source-intake operators; follow `RAW_INTAKE.md` for every
   source and require `validate_raw_sources.py` to pass before downstream use.
-- **Links:** ADR-0021; EPIC3 Tasks 3.1–3.4; `GP-RAW-001`;
+- **Links:** ADR-0021; ADR-0022; EPIC3 Tasks 3.1–3.4; `GP-RAW-001`;
   `Enconet/docs/RAW_INTAKE.md`; `Enconet/AGENTS.md` raw-intake guardrail.
