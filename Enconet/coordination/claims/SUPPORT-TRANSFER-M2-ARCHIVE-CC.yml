@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-M2-ARCHIVE-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T23:31:24Z
+last_renewed_at_utc: 2026-07-17T23:31:24Z
+expires_at_utc: 2026-07-18T23:31:24Z
+anticipated_files:
+  - Enconet/coordination/messages
+  - Enconet/coordination/archive
+  - doc/support-transfer/M2_BASELINE_FAILURE_SET.md
+note: Archive four resolved-and-confirmed CC_ M2 review requests with manifest (ADR-0018); apply Codex's two non-blocking editorial notes to the fingerprint record.
+released_at_utc: 2026-07-17T23:32:08Z

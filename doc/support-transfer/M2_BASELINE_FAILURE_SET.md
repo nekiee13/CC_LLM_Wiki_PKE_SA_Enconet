@@ -43,7 +43,7 @@ Applied to the concatenation of the JUnit `message` attribute and element text o
    `import-unavailable:<mod>` and the normalized signature is the canonical string
    `ModuleNotFoundError: No module named '<mod>'`, regardless of the top-level wrapper
    (this is a causal signature, not the literal JUnit first line).
-2. Otherwise, if it matches `No module named \W{0,3}([A-Za-z0-9_]+(?:\.[A-Za-z0-9_]+)*)\b`,
+2. Otherwise, if it matches `No module named \W{0,3}([A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*)\b`,
    the class is `import-unavailable:<captured token>` with the analogous canonical
    signature; the captured token grammar is dotted Python-identifier segments and the
    trailing `\b` prevents a prefix match from being classified as an exact module
