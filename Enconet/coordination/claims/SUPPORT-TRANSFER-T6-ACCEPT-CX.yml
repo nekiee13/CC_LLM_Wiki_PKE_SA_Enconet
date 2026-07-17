@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-T6-ACCEPT-CX
+agent: codex
+status: released
+claimed_at_utc: 2026-07-17T22:22:04Z
+last_renewed_at_utc: 2026-07-17T22:22:04Z
+expires_at_utc: 2026-07-18T02:22:04Z
+anticipated_files:
+  - doc/support-transfer/staged/handoff_publisher.py
+  - doc/support-transfer/staged/tests/test_handoff_publisher.py
+  - doc/support-transfer/T6_STAGED_EXECUTABLE_CHECKPOINT.md
+note: Final acceptance review of T6-R2c override removal at 852d9e4.
+released_at_utc: 2026-07-17T22:24:02Z
