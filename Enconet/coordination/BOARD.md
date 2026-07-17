@@ -99,6 +99,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-M2-PREFLIGHT` — claude-code, released 2026-07-17T22:46:46Z
 - `SUPPORT-TRANSFER-M2-REREVIEW-CX` — codex, released 2026-07-17T23:10:29Z
 - `SUPPORT-TRANSFER-M2-REVIEW-CX` — codex, released 2026-07-17T22:55:34Z
+- `SUPPORT-TRANSFER-M2-RR` — claude-code, released 2026-07-17T23:15:53Z
 - `SUPPORT-TRANSFER-PLAN-ARCHIVE-CC` — claude-code, released 2026-07-16T22:58:37Z
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
@@ -129,6 +130,7 @@ and ADRs are the records.
 
 - `CC_2026-07-17T224646Z_m2-packet-independent-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M2-PREFLIGHT
 - `CC_2026-07-17T230407Z_m2-f1-f5-corrected-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M2-CORRECTIONS
+- `CC_2026-07-17T231553Z_m2-rr1-rr2-corrected-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M2-RR
 - `CX_2026-07-17T225526Z_m2-packet-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-M2-PREFLIGHT
 - `CX_2026-07-17T231018Z_m2-corrections-rereview-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-M2-CORRECTIONS
 
@@ -137,4 +139,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 282 records in `coordination/archive/`
 
-Generated: 2026-07-17T23:11:03Z
+Generated: 2026-07-17T23:15:53Z

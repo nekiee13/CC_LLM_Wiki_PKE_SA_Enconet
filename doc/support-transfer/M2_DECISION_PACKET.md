@@ -42,8 +42,12 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
    `scripts/_support_shared.py`) as slice 2, per the manifest inventory.
 4. Authorize the handoff core (7 files including `scripts/make_handoff.py` and the
    initial `HANDOFF.md` pointer) as slice 3, per the manifest inventory.
-5. Authorize `scripts/validate_support.py` and the two focused support test modules
-   under existing `tests/` as slice 4, discovered by FIN's native pytest.
+5. **Defer slice 4** (the `scripts/validate_support.py` T6.1 aggregate and the two
+   focused support test modules): these artifacts are designed but not yet rendered
+   (M2-RR2), so nothing is authorized for them here. They return as a separate
+   authorization once rendered content, disposable-copy tests (truthful states,
+   `--no-record`, non-zero composition), native pytest discovery evidence, and
+   independent review exist.
 6. **Baseline disposition (owner choice required).** The recorded baseline is not
    green: 24 torch and 11 matplotlib outcomes stem from an interpreter missing the
    project's own pinned dependencies, and 19 assertion failures are pre-existing at
@@ -51,12 +55,15 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
    **(a)** establish the declared dependency environment (install pinned
    torch/matplotlib), re-run, and re-record the fingerprint before slice 1; or
    **(b)** accept the exact node-level fingerprint in `M2_BASELINE_FAILURE_SET.md` as
-   the T7.3 comparison set. Under either choice the acceptance rule is set-based, not
-   count-based: after each slice a like-for-like re-run must show **no new failing or
-   erroring node**; all support-specific checks must pass; a listed node may resolve
-   only with an explicit recorded explanation; silent replacement of one failure by
-   another is a stop condition even at equal counts; date-dependent drift in listed
-   nodes is recorded and dispositioned.
+   the T7.3 comparison set. Under either choice the acceptance rule is the tuple
+   contract in `M2_BASELINE_FAILURE_SET.md` (M2-RR1): the comparison unit is
+   `(node_id, outcome, class, normalized_signature)` under its documented
+   deterministic normalization rule; a like-for-like re-run after each slice must show
+   no new tuple, exact tuple stability for every surviving node (a changed failure
+   reason on the same node requires an explicit reviewed disposition — silent same-node
+   replacement is a stop condition even at equal counts), explained disappearance only,
+   all support-specific checks passing, and date-dependent drift in listed nodes
+   recorded and dispositioned.
 7. Authorize the Codex-authored slice 5 for Codex-owned/assigned edits per M1 item 7:
    the `AGENTS.md` packaging fact and support navigation, and the
    `docs/governance-transition.md` unsafe-reset wording replacement. Claude authors
@@ -84,7 +91,7 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
 
 - **Approve recommended set:** slice publication begins immediately after this decision,
   each slice preflighted and independently reviewed.
-- **Approve slices 1-4 only, defer 7-8:** neutral core lands; agent-owned guidance and
+- **Approve slices 1-3 only, defer 7-8:** neutral core lands; agent-owned guidance and
   the workflow fix wait for a later decision.
 - **Defer:** nothing is written; evidence is preserved and the baseline reverified
   before a future decision.

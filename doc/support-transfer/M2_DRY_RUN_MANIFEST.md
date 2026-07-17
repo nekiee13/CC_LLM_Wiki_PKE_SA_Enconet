@@ -7,10 +7,11 @@ accepted staged executables (`doc/support-transfer/staged/`, `852d9e4`); renderi
 replaces template placeholders with CC_FIN values and fails on any unresolved
 placeholder.
 
-## Slice 1 — neutral support skeleton (create only)
+## Slice 1 — neutral support skeleton (9 creates + 1 modification)
 
 | Path | Source | Class |
 |---|---|---|
+| `docs/README.md` **(modification)** | one line added: `- [Support system](../support/README.md) — repo-local governance, coordination, and handoff core` | Existing target authority; link-only edit |
 | `support/README.md` | `support-index.template.md` | Shared-neutral, controlled |
 | `support/current-status.md` | `current-status.template.md` | Shared-neutral, replaceable |
 | `support/log.md` | `event-log.template.md` | Shared-neutral, append-only |
@@ -52,13 +53,17 @@ placeholder.
 | `scripts/make_handoff.py` | staged `handoff_publisher.py` | Shared-neutral implementation |
 | `HANDOFF.md` | `handoff-pointer.template.md` (initial pointer) | Shared-neutral, replaceable |
 
-## Slice 4 — aggregate validator and focused tests (create only)
+## Slice 4 — aggregate validator and focused tests (DEFERRED from this decision, M2-RR2)
 
-| Path | Source | Class |
-|---|---|---|
-| `scripts/validate_support.py` | new T6.1 aggregate (composes native pytest + support validators; `--no-record` mode) | Shared-neutral implementation |
-| `tests/test_support_coordination.py` | adapted from staged validator tests | Shared-neutral, native-pytest-discovered |
-| `tests/test_support_handoff.py` | adapted from staged publisher tests | Shared-neutral, native-pytest-discovered |
+The planned `scripts/validate_support.py` (T6.1 aggregate) and the two focused support
+test modules (`tests/test_support_coordination.py`, `tests/test_support_handoff.py`)
+**do not exist as rendered artifacts** — the accepted `T6_STAGED_EXECUTABLE_CHECKPOINT.md`
+records T6.1 aggregate composition as designed but not built. This manifest therefore
+contains **no dry run of slice 4**, and the M2 decision set defers slice 4 entirely.
+Before a future slice-4 authorization: render the three files; provide their exact
+content, disposable-copy tests proving truthful check states, `--no-record` behavior,
+and non-zero failure composition, plus native pytest discovery evidence for the two
+test modules; and pass independent review.
 
 ## Existing-file modifications — each individually authorized or deferred
 

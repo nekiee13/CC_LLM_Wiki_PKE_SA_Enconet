@@ -7,19 +7,49 @@ Recorded 2026-07-18 from a machine-readable JUnit run of
 written outside the repository). Interpreter: Python 3.13.9 (miniconda), pytest 9.1.1.
 
 Totals: **343 tests — 276 passed, 51 failed, 3 collection errors, 13 skipped.**
-Classes: 24 `import-unavailable:torch` (21 failures + 3 collection errors),
-11 `import-unavailable:matplotlib`, 19 `assertion`.
+Classes: 24 `import-unavailable:torch` (21 failures + 3 collection errors, including 3
+subprocess failures whose top-level message is an assertion wrapper while the captured
+traceback identifies the missing declared dependency), 11
+`import-unavailable:matplotlib`, 19 `assertion`.
 
-This is the **normative comparison set for T7.3 product preservation** (M2 packet item
-6): after each support slice, a like-for-like re-run in the same interpreter must show
-**no new failing or erroring node**, and every support-specific check must pass. A
-listed node may disappear (resolve) only with an explicit recorded explanation — for
-example, installing the declared torch/matplotlib dependencies; silent replacement of
-one failure by another is a stop condition even when aggregate counts match.
-Date-dependent drift in listed assertion nodes is recorded and dispositioned, not
-treated as pass/fail noise.
+## Comparison contract (M2-RR1)
 
-| Node ID | Outcome | Class | Signature (first line) |
+The normative T7.3 comparison unit is the tuple
+**`(node_id, outcome, class, normalized_signature)`** — one row per table entry below.
+After each support slice, a like-for-like re-run (same interpreter, same flags, report
+outside the repository) must satisfy all of:
+
+1. **No new tuple**: every failing/erroring `node_id` in the re-run exists in this
+   table.
+2. **Surviving tuples match exactly**: for every node still failing/erroring, its
+   `outcome`, `class`, and `normalized_signature` equal the recorded values. Any
+   mutation — including a changed failure reason on the same node — requires an
+   explicit reviewed disposition before the slice may be accepted; silent same-node
+   replacement is a stop condition even when counts are unchanged.
+3. **Explained disappearance only**: a recorded node may leave the set only with an
+   explicit recorded explanation (for example, installing the pinned declared
+   dependency), never silently.
+4. **All support-specific checks pass**, and date-dependent drift in listed assertion
+   nodes is recorded and dispositioned, not averaged away.
+
+## Normalization rule (deterministic; rerun-comparable)
+
+Applied to the concatenation of the JUnit `message` attribute and element text of each
+`<failure>`/`<error>`:
+
+1. If the text matches the regex `No module named \W{0,3}<mod>` for a declared pinned
+   dependency (`torch`, `matplotlib`) — the `\W{0,3}` tolerates quote styles and
+   escaped quotes in subprocess-captured tracebacks — the class is
+   `import-unavailable:<mod>` and the normalized signature is the canonical string
+   `ModuleNotFoundError: No module named '<mod>'`, regardless of the top-level wrapper
+   (this is a causal signature, not the literal JUnit first line).
+2. Otherwise, if it matches `No module named \W{0,3}<other>`, the class is
+   `import-unavailable:<other>` with the analogous canonical signature.
+3. Otherwise the class is `assertion` and the normalized signature is the JUnit
+   `message` attribute's first line, whitespace-collapsed and truncated to 120
+   characters.
+
+| Node ID | Outcome | Class | Normalized signature |
 |---|---|---|---|
 | `::tests.test_ann_feature_selection` | error | import-unavailable:torch | `ModuleNotFoundError: No module named 'torch'` |
 | `::tests.test_ann_multitask_eval` | error | import-unavailable:torch | `ModuleNotFoundError: No module named 'torch'` |

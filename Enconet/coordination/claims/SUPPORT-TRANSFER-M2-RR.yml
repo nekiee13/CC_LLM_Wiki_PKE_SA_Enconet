@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-M2-RR
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T23:13:32Z
+last_renewed_at_utc: 2026-07-17T23:13:32Z
+expires_at_utc: 2026-07-18T23:13:32Z
+anticipated_files:
+  - doc/support-transfer/M2_DECISION_PACKET.md
+  - doc/support-transfer/M2_BASELINE_FAILURE_SET.md
+  - doc/support-transfer/M2_DRY_RUN_MANIFEST.md
+  - doc/support-transfer/README.md
+note: Close M2-RR1 (comparison-tuple fingerprint with deterministic normalization rule) and M2-RR2 (defer slice 4 from the M2 decision set until rendered artifacts and evidence exist); slice-1 modification labeling fix.
+released_at_utc: 2026-07-17T23:15:53Z
