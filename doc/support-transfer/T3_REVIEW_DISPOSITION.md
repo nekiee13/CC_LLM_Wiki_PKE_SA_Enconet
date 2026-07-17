@@ -6,7 +6,7 @@
 - Review message: `CC_2026-07-16T235326Z_t3-design-review-findings`
 - Reviewer verdict: revise (minor)
 - Codex disposition: complete
-- Owner disposition: pending explicit decision
+- Owner disposition: accepted as resolved
 - Target mutation: none
 
 ## Independent reproduction and disposition
@@ -21,6 +21,5 @@ authorize target writes or weaken final relative-link validation.
 
 ## Remaining condition
 
-Codex has implemented both findings. T3 remains pending until the owner explicitly accepts,
-revises, defers, or rejects T3-F1 and T3-O1 and the corrected package receives final review closure.
-M2 continues to block all CC_FIN target writes.
+Codex implemented both findings, Claude reverified them, and the owner accepted T3-F1 and T3-O1 as
+resolved. T3 is complete under `T3_COMPLETION.md`. M2 continues to block all CC_FIN target writes.

@@ -100,6 +100,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
 - `SUPPORT-TRANSFER-T2` — codex, released 2026-07-16T23:14:08Z
 - `SUPPORT-TRANSFER-T3` — codex, released 2026-07-16T23:45:49Z
+- `SUPPORT-TRANSFER-T3-CLOSE` — codex, released 2026-07-17T00:02:45Z
 - `SUPPORT-TRANSFER-T3-CLOSE-CC` — claude-code, released 2026-07-17T00:00:52Z
 - `SUPPORT-TRANSFER-T3-CORRECTIONS` — codex, released 2026-07-16T23:55:40Z
 - `SUPPORT-TRANSFER-T3-REVIEW-CC` — claude-code, released 2026-07-16T23:53:27Z
@@ -113,4 +114,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 259 records in `coordination/archive/`
 
-Generated: 2026-07-17T00:00:52Z
+Generated: 2026-07-17T00:02:45Z

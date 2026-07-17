@@ -309,29 +309,29 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T3.1 — Define authority and navigation skeletons
 
-- [ ] Each target has one support index linking—not copying—its product plan and existing authorities.
-- [ ] Replaceable, append-only, immutable, generated, controlled, and historical records are distinct.
-- [ ] Current status, event log, and exact-next-action semantics are specified.
+- [x] Each target has one support index linking—not copying—its product plan and existing authorities.
+- [x] Replaceable, append-only, immutable, generated, controlled, and historical records are distinct.
+- [x] Current status, event log, and exact-next-action semantics are specified.
 
 ### Task T3.2 — Define ADR lifecycle and registers
 
-- [ ] One discoverable ADR register exists per target.
-- [ ] Accepted ADRs are immutable and changed by supersession.
-- [ ] CC_FIN feature ADRs receive an explicit integration/reference strategy.
-- [ ] Decision acceptance and implementation completion remain distinct.
+- [x] One discoverable ADR register exists per target.
+- [x] Accepted ADRs are immutable and changed by supersession.
+- [x] CC_FIN feature ADRs receive an explicit integration/reference strategy.
+- [x] Decision acceptance and implementation completion remain distinct.
 
 ### Task T3.3 — Define AFI, lesson, and good-practice ledgers
 
-- [ ] AFIs remain non-blocking unless another authority makes them blocking.
-- [ ] Resolution preserves evidence and may create a reusable lesson.
-- [ ] Good practices require demonstrated target evidence and can be deprecated/superseded.
+- [x] AFIs remain non-blocking unless another authority makes them blocking.
+- [x] Resolution preserves evidence and may create a reusable lesson.
+- [x] Good practices require demonstrated target evidence and can be deprecated/superseded.
 
 ### Task T3.4 — Build the target-local template contract
 
-- [ ] Templates express common semantics without Wiki project names, supplier policy, or paths.
-- [ ] Configuration points are explicit; policy is not hidden in copied scripts.
-- [ ] Each target receives repository-local assets; no runtime reference to this workspace exists.
-- [ ] Shared extraction is justified only by the two demonstrated target consumers.
+- [x] Templates express common semantics without Wiki project names, supplier policy, or paths.
+- [x] Configuration points are explicit; policy is not hidden in copied scripts.
+- [x] Each target receives repository-local assets; no runtime reference to this workspace exists.
+- [x] Shared extraction is justified only by the two demonstrated target consumers.
 
 ## EPIC T4 — Bootstrap paired-agent coordination
 
