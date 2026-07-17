@@ -221,14 +221,29 @@ def test_acknowledged_blocker_is_clean(coord_root):
     assert result.ok, result.errors
 
 
-def test_one_sided_synchronization_warning(coord_root):
+def test_one_sided_synchronization_fails_closed(coord_root):
+    """T4 contract (T6-R4): an unconfirmed synchronization claim is a
+    validator failure, not an advisory warning."""
     write_message(coord_root, "CC_20260717T010000Z_sync.md", mid="CC_20260717T010000Z_sync",
                   from_agent="claude-code",
                   body="Both agents synchronized on the neutral core.")
     cv.write_board(coord_root)
     result = cv.validate(coord_root)
-    assert result.ok
-    assert any("without a confirming reply" in w for w in result.warnings)
+    assert not result.ok
+    assert result.exit_code() == 1
+    assert any("without a confirming reply" in e for e in result.errors)
+
+
+def test_confirmed_synchronization_is_clean(coord_root):
+    write_message(coord_root, "CC_20260717T010000Z_sync.md", mid="CC_20260717T010000Z_sync",
+                  from_agent="claude-code",
+                  body="Both agents synchronized on the neutral core.")
+    write_message(coord_root, "CX_20260717T010100Z_confirm.md",
+                  mid="CX_20260717T010100Z_confirm", from_agent="codex",
+                  mtype="acknowledgement", reply_to="CC_20260717T010000Z_sync")
+    cv.write_board(coord_root)
+    result = cv.validate(coord_root)
+    assert result.ok, result.errors
 
 
 def test_sensitive_content_in_message_body(coord_root):
@@ -331,6 +346,38 @@ def test_overlapping_active_claims_file_overlap(coord_root):
     cv.write_board(coord_root)
     result = cv.validate(coord_root)
     assert any("overlap on" in e for e in result.errors)
+
+
+def test_overlapping_active_claims_ancestor_descendant(coord_root):
+    """T4 claim contract (T6-R4): a directory claim collides with a claim on
+    any file beneath it, in either direction and across separator styles."""
+    write_claim(coord_root, "TASK-A", agent="codex", files=["support/handoffs"])
+    write_claim(coord_root, "TASK-B", agent="claude-code",
+               files=[r"support\handoffs\2026-07-17T010000Z-abc1234.md"])
+    cv.write_board(coord_root)
+    result = cv.validate(coord_root)
+    assert any("overlap on" in e for e in result.errors)
+
+
+def test_disjoint_sibling_claims_do_not_overlap(coord_root):
+    write_claim(coord_root, "TASK-A", agent="codex", files=["support/handoffs"])
+    write_claim(coord_root, "TASK-B", agent="claude-code", files=["support/schemas"])
+    cv.write_board(coord_root)
+    result = cv.validate(coord_root)
+    assert result.ok, result.errors
+
+
+def test_board_names_current_handoff_pointer(coord_root):
+    """T4 board contract (T6-R5): the generated board lists the current
+    handoff pointer."""
+    (coord_root / "HANDOFF.md").write_text(
+        "# Current handoff\n\n"
+        "- Record: [`2026-07-17T010000Z-abc1234`](support/handoffs/2026-07-17T010000Z-abc1234.md)\n",
+        encoding="utf-8")
+    body = cv.render_board(coord_root)
+    assert "## Pointers" in body
+    assert "2026-07-17T010000Z-abc1234" in body
+    assert "HANDOFF.md missing" in cv.render_board(coord_root.parent)
 
 
 def test_invalid_renewal_order(coord_root):

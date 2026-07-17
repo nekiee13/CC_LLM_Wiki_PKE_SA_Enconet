@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-T6-CORRECTIONS
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T21:53:01Z
+last_renewed_at_utc: 2026-07-17T21:53:01Z
+expires_at_utc: 2026-07-18T21:53:01Z
+anticipated_files:
+  - doc/support-transfer/staged
+  - doc/support-transfer/templates/handoff/handoff.schema.json
+  - doc/support-transfer/T6_STAGED_EXECUTABLE_CHECKPOINT.md
+  - doc/support-transfer/README.md
+note: Correct T6-R1..R7 from CX_2026-07-17T214844Z: git-root containment, schema/absent-Git semantics, staleness fields, fail-closed sync+claim overlap, board pointer, recovery rehearsal concurrency+diff proof, no-clobber record finalization. Wiki workspace only.
+released_at_utc: 2026-07-17T21:59:18Z

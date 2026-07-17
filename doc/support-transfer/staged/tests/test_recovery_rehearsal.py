@@ -4,10 +4,12 @@ Runs entirely inside a disposable Git repository seeded with an unrelated
 pre-existing product file and a placeholder native check, per
 ``T6_VALIDATION_RECOVERY_GATE_CONTRACT.md`` Task T6.4 and the scoped-rollback
 procedure in ``PUBLICATION_ROLLBACK_MANIFESTS.md``. It publishes a
-multi-commit support slice, injects a failure partway through, aborts, and
-reverts only the slice's own commits -- then asserts the unrelated file is
-byte-identical and re-runs the native check and the coordination validator
-against the recovered tree. Nothing here touches CC_FIN or CC_Loto.
+multi-commit support slice with unrelated concurrent work landing mid-slice,
+injects a failure partway through, aborts, and reverts only the slice's own
+commits -- then asserts pre-existing and concurrent files are byte-identical,
+verifies the recovered state by Git diff against the recovery point, and
+re-runs the native check and the coordination validator against the recovered
+tree. Nothing here touches CC_FIN or CC_Loto.
 """
 
 import hashlib
@@ -57,13 +59,10 @@ def test_scoped_recovery_rehearsal(tmp_path):
     # --- seed: unrelated pre-existing product file (must survive rollback) --
     unrelated = repo / "unrelated_product_file.txt"
     unrelated.write_text("pre-existing product content\n", encoding="utf-8")
-    concurrent = repo / "concurrent_work.txt"
-    concurrent.write_text("someone else's in-progress edit\n", encoding="utf-8")
     _git(repo, "add", "-A")
     _git(repo, "commit", "-q", "-m", "baseline: pre-existing product state")
     recovery_point = _git(repo, "rev-parse", "HEAD")
     unrelated_hash_before = _sha256(unrelated)
-    concurrent_hash_before = _sha256(concurrent)
 
     exit_code, evidence = _run_native_check(repo)
     assert exit_code == 0, evidence
@@ -80,6 +79,15 @@ def test_scoped_recovery_rehearsal(tmp_path):
     _git(repo, "add", "-A")
     _git(repo, "commit", "-q", "-m", "support slice: neutral coordination skeleton")
     skeleton_commit = _git(repo, "rev-parse", "HEAD")
+
+    # --- concurrent unrelated work landing DURING the slice (T6-R6): a change
+    #     introduced after the recovery point, outside the transfer commits;
+    #     scoped rollback must preserve it, not sweep it away ------------------
+    concurrent = repo / "concurrent_work.txt"
+    concurrent.write_text("another actor's change during the slice\n", encoding="utf-8")
+    _git(repo, "add", "concurrent_work.txt")
+    _git(repo, "commit", "-q", "-m", "unrelated: concurrent product work mid-slice")
+    concurrent_hash_before = _sha256(concurrent)
 
     # --- slice commit 2: one coordination message -----------------------------
     msg_path = coord / "messages" / "CC_20260717T020000Z_rehearsal.md"
@@ -126,7 +134,7 @@ def test_scoped_recovery_rehearsal(tmp_path):
     _git(repo, "revert", "--no-edit", coordination_commit)
     _git(repo, "revert", "--no-edit", skeleton_commit)
 
-    # --- assertions: unrelated and concurrent files are byte-identical --------
+    # --- assertions: pre-existing and concurrent files are byte-identical -----
     assert _sha256(unrelated) == unrelated_hash_before
     assert _sha256(concurrent) == concurrent_hash_before
     # Git only guarantees tracked *files* are removed by the revert, not that
@@ -136,8 +144,16 @@ def test_scoped_recovery_rehearsal(tmp_path):
 
     # --- history is preserved, never rewritten ---------------------------------
     log = _git(repo, "log", "--oneline")
-    assert log.count("\n") + 1 == 5  # baseline, skeleton, message, 2 reverts
+    # baseline, skeleton, concurrent, message, 2 reverts
+    assert log.count("\n") + 1 == 6
     assert recovery_point in _git(repo, "rev-list", "HEAD")
+
+    # --- Git diff verification of the recovered state (T6-R6): relative to the
+    #     recovery point, only the concurrent unrelated work remains -----------
+    diff_names = _git(repo, "diff", "--name-only",
+                      f"{recovery_point}..HEAD").splitlines()
+    assert diff_names == ["concurrent_work.txt"], diff_names
+    assert _git(repo, "status", "--porcelain") == ""
 
     # --- post-rollback verification: native check plus coordination validator -
     exit_code, evidence = _run_native_check(repo)

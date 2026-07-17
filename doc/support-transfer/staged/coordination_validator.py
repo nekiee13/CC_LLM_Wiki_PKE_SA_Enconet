@@ -88,6 +88,16 @@ def _is_manifest(path: Path) -> bool:
     return "manifest" in path.stem.lower()
 
 
+def _paths_overlap(a: str, b: str) -> bool:
+    """True when the claim paths collide by exact match or ancestor/descendant
+    scope (T4 claim contract, T6-R4). Separators are normalized so
+    ``doc\\x`` and ``doc/x`` compare equal."""
+    pa = [p for p in a.replace("\\", "/").strip("/").split("/") if p]
+    pb = [p for p in b.replace("\\", "/").strip("/").split("/") if p]
+    shorter, longer = (pa, pb) if len(pa) <= len(pb) else (pb, pa)
+    return longer[:len(shorter)] == shorter
+
+
 def _public_fields(record: dict) -> dict:
     """Strip internal ``_path``/``_body`` tracking keys before schema validation.
 
@@ -180,8 +190,10 @@ def validate(root: Path) -> ValidationResult:
             result.errors.append(f"{msg['_path'].name}: unacknowledged active blocker")
         if "both agents synchronized" in msg.get("_body", "").lower() \
                 and mid not in replied_ids:
-            result.warnings.append(f"{msg['_path'].name}: claims synchronization without "
-                                    "a confirming reply from the other agent")
+            # T4 contract: one-sided synchronization claims are a validator
+            # failure, not advisory (T6-R4).
+            result.errors.append(f"{msg['_path'].name}: claims synchronization without "
+                                  "a confirming reply from the other agent")
 
     # --- cross-agent archival / record-prefix ownership violations, and
     #     missing/malformed resolution manifests or manifests referencing
@@ -267,10 +279,14 @@ def validate(root: Path) -> ValidationResult:
             if a.get("task") == b.get("task"):
                 result.errors.append(f"claims: {a.get('task')} actively claimed by "
                                       "both agents")
-            overlap = set(a.get("anticipated_files", [])) & set(b.get("anticipated_files", []))
+            overlap = sorted(
+                f"{pa} ~ {pb}"
+                for pa in a.get("anticipated_files", [])
+                for pb in b.get("anticipated_files", [])
+                if _paths_overlap(str(pa), str(pb)))
             if overlap:
                 result.errors.append(f"claims: {a.get('task')} and {b.get('task')} "
-                                      f"overlap on {sorted(overlap)}")
+                                      f"overlap on {overlap}")
 
     # --- prohibited sensitive content patterns ------------------------------
     for msg in all_messages:
@@ -321,9 +337,9 @@ def render_board(root: Path) -> str:
         return expires is None or expires > now
 
     active_claims = sorted((c for c in claims if _is_active(c)),
-                            key=lambda c: c.get("task", ""))
+                            key=lambda c: str(c.get("task", "")))
     released_claims = sorted((c for c in claims if c.get("status") == "released"),
-                              key=lambda c: c.get("task", ""))
+                              key=lambda c: str(c.get("task", "")))
     archived_count = len(list((coord / "archive").glob("*.md"))) \
         if (coord / "archive").is_dir() else 0
 
@@ -340,7 +356,19 @@ def render_board(root: Path) -> str:
     lines += [f"- `{m.get('message_id', m['_path'].stem)}` — {m.get('type', '?')}, "
               f"{m.get('from_agent', '?')} -> {m.get('to_agent', '?')}: "
               f"{m.get('task', '')}" for m in active] or ["- none"]
-    lines += ["", "## Archive", "", f"- {archived_count} records in `coordination/archive/`", ""]
+    # T4 board contract: the board also names the current handoff pointer
+    # (T6-R5). The board reports, never interprets, the pointer.
+    pointer_line = "HANDOFF.md missing"
+    handoff_pointer = root / "HANDOFF.md"
+    if handoff_pointer.is_file():
+        for ln in handoff_pointer.read_text(encoding="utf-8").splitlines():
+            if ln.strip().startswith("- Record:"):
+                pointer_line = ln.strip()[2:]
+                break
+        else:
+            pointer_line = "HANDOFF.md present but names no record"
+    lines += ["", "## Pointers", "", f"- {pointer_line}",
+              f"- Archive: {archived_count} records in `coordination/archive/`", ""]
     return "\n".join(lines)
 
 

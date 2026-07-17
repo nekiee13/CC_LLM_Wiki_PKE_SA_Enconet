@@ -36,10 +36,42 @@ site; none imports or path-references anything outside `staged/`, so the same
 files can later be copied unmodified into a target's `scripts/` or `tools/`
 tree (T4.2/T7/T8) without edits.
 
+## Corrections after independent review (T6-R1..R7)
+
+Codex's review `CX_2026-07-17T214844Z_t6-staged-review-findings` did not accept the
+original checkpoint (51/52 reproduced in its environment). All seven findings were
+independently reproduced and corrected:
+
+- **T6-R1** `collect_git_state` now reports the supplied target root itself and never
+  adopts an enclosing repository's identity; the suite now passes with pytest's
+  basetemp inside or outside the Wiki worktree.
+- **T6-R2** `handoff.schema.json` accepts 40- or 64-hex HEADs and rejects
+  `status: complete` with `git_state: absent`/`unknown`; `validate_record` enforces the
+  same rule, and a code-versus-shipped-schema agreement test pins both to the same
+  verdicts on the review's probe cases.
+- **T6-R3** `compare_staleness` now covers `upstream_relation` and `worktree`.
+- **T6-R4** one-sided synchronization claims are validator errors (non-zero exit), and
+  claim overlap detects exact, ancestor/descendant, and mixed-separator collisions;
+  negative tests added for both, plus a disjoint-sibling non-collision case.
+- **T6-R5** the generated board names the current handoff pointer.
+- **T6-R6** the rehearsal seeds unrelated concurrent work after the recovery point
+  (mid-slice), preserves it through the reverts, and verifies the recovered state with
+  `git diff --name-only <recovery-point>..HEAD` == exactly the concurrent change plus a
+  clean porcelain status.
+- **T6-R7** immutable-record finalization is no-clobber (`os.link`); a concurrent
+  same-ID record with different content fails publication instead of being overwritten,
+  with a race fault test.
+
 ## Validation evidence
 
 - **passed** — staged test suite: command=`python -m pytest doc/support-transfer/staged/tests -q`
-  (run from the Wiki workspace root); exit_code=0; 52 passed, 0 failed, 0 skipped.
+  (run from the Wiki workspace root); exit_code=0; 63 passed, 0 failed, 0 skipped.
+- **passed** — environment-independence re-run (the T6-R1 scenario): command=
+  `python -m pytest doc/support-transfer/staged/tests -q --basetemp=.tmp/t6-cc-corrections-verify`
+  (disposable roots inside the Wiki worktree); exit_code=0; 63 passed.
+- **passed** — support schema validation: command=`python -c "Draft202012Validator.check_schema
+  over doc/support-transfer/templates/**/*.schema.json"`; exit_code=0; four of four valid
+  Draft 2020-12 after the T6-R2 edits.
 - **passed** — standalone CLI smoke check: command=`python -c "..."` invoking
   `coordination_validator.main([root, '--write-board'])` against a fixture built the
   same way the pytest fixtures build it; exit_code=0; `validate: 0 error(s), 0 warning(s)`.
@@ -48,7 +80,7 @@ tree (T4.2/T7/T8) without edits.
 
 ### Failure modes exercised (positive + fault-injection, all in `tmp_path` disposable roots)
 
-`coordination_validator` (28 tests) — every T4 "Validator and test contract" bullet:
+`coordination_validator` (33 tests) — every T4 "Validator and test contract" bullet:
 malformed/duplicate/mismatched message IDs; unknown author prefix and other schema
 violations (additionalProperties, enums, path-traversal patterns); invalid
 `created_at_utc`; self-reply; two-node reply cycle; unresolved `reply_to`; unacknowledged
@@ -60,9 +92,12 @@ fix) and the complete-fields positive case; manifest referencing a still-active
 (manifest `resolved_by` disagreeing with its own filename prefix); overlapping active
 claims by task and by file; invalid renewal/release order; inconsistent expiry;
 sensitive content in a message body and in a claim note; stale and missing
-`BOARD.md`; a bare root with no installed schemas.
+`BOARD.md`; a bare root with no installed schemas; one-sided synchronization failing
+closed (with the confirmed counterpart clean); ancestor/descendant and mixed-separator
+claim collisions (with disjoint siblings clean); and the board naming the current
+handoff pointer.
 
-`handoff_publisher` (18 tests) — every T5 "Test contract" bullet applicable without a
+`handoff_publisher` (29 tests) — every T5 "Test contract" bullet applicable without a
 target-native check harness: positive complete/partial/blocked publication; interruption
 `before-record-write` (no trace left), `after-record-before-pointer` (orphan record,
 retry adopts without rewriting), and `after-pointer-before-log` (retry logs exactly
@@ -76,19 +111,25 @@ T45-F1 fix); `current` state accepting both a 40-hex SHA-1 and a 64-hex SHA-256 
 artifact — no live effect since both real targets are SHA-1 today); a too-short HEAD
 refused; sensitive content in the objective refused; a path-traversal artifact
 refused; a hand-corrupted record missing a required heading refused on re-parse;
-`collect_git_state` returning `absent` for a non-Git directory; and, against a real
-disposable Git repository, staleness comparison reporting a HEAD divergence after a
-second commit rather than silently normalizing it.
+`status: complete` with `git_state: absent`/`unknown` refused (with `partial`+absent
+accepted); the code-versus-shipped-schema agreement probes; `collect_git_state`
+returning `absent` for a non-Git directory and for a directory merely inside an
+enclosing repository; the no-clobber race test; staleness reporting
+upstream/worktree-only divergence; and, against a real disposable Git repository,
+staleness comparison reporting a HEAD divergence after a second commit rather than
+silently normalizing it.
 
 `test_recovery_rehearsal.py` (1 test, T6.4) — a disposable Git repository seeded with
-an unrelated pre-existing file and a placeholder native check; publishes a two-commit
-neutral-skeleton-then-coordination slice; a third (handoff) step is attempted with a
-deliberately failed check and refused by `handoff_publisher`'s own validation before
-any file is written; scoped rollback then reverts only the two slice commits
-(`git revert`, never `reset --hard`); the unrelated and a separately-seeded
-"concurrent work" file are asserted byte-identical (SHA-256) before and after; Git
-history is preserved (5 commits: baseline, skeleton, message, two reverts; the
-original recovery-point SHA remains in `rev-list`); and post-rollback verification
+an unrelated pre-existing file and a placeholder native check; publishes a
+neutral-skeleton-then-coordination slice with unrelated concurrent work committed
+mid-slice by "another actor"; a third (handoff) step is attempted with a deliberately
+failed check and refused by `handoff_publisher`'s own validation before any file is
+written; scoped rollback then reverts only the two slice commits (`git revert`, never
+`reset --hard`); the pre-existing and concurrent files are asserted byte-identical
+(SHA-256) before and after; Git history is preserved (6 commits: baseline, skeleton,
+concurrent, message, two reverts; the original recovery-point SHA remains in
+`rev-list`); `git diff --name-only <recovery-point>..HEAD` names exactly the
+concurrent change and porcelain status is clean; and post-rollback verification
 re-runs the placeholder native check (passes) and `coordination_validator.validate`
 (correctly reports the coordination schema as absent again, proving the recovered
 state is genuinely clean rather than silently accepted).

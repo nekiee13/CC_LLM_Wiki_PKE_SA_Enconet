@@ -29,7 +29,7 @@
       "allOf": [
         {"if": {"properties": {"state": {"const": "absent"}}}, "then": {"properties": {"branch": {"type": "null"}, "head": {"type": "null"}}}},
         {"if": {"properties": {"state": {"const": "unknown"}}}, "then": {"properties": {"head": {"type": "null"}}}},
-        {"if": {"properties": {"state": {"enum": ["current", "stale"]}}}, "then": {"properties": {"root": {"type": "string", "minLength": 1}, "branch": {"type": "string", "minLength": 1}, "head": {"type": "string", "pattern": "^[a-f0-9]{40}$"}}}}
+        {"if": {"properties": {"state": {"enum": ["current", "stale"]}}}, "then": {"properties": {"root": {"type": "string", "minLength": 1}, "branch": {"type": "string", "minLength": 1}, "head": {"type": "string", "pattern": "^([a-f0-9]{40}|[a-f0-9]{64})$"}}}}
       ]
     },
     "index_state": {"enum": ["current", "stale", "absent", "unknown", "not-configured"]},
@@ -38,6 +38,9 @@
     "next_action": {"type": "object", "additionalProperties": false, "required": ["owner", "prerequisites", "action", "stop_condition"], "properties": {"owner": {"type": "string", "minLength": 1}, "prerequisites": {"type": "array", "items": {"type": "string"}}, "action": {"type": "string", "minLength": 1}, "stop_condition": {"type": "string", "minLength": 1}}},
     "follow_up_queue": {"type": "array", "items": {"type": "string"}}
   },
+  "allOf": [
+    {"if": {"properties": {"status": {"const": "complete"}}, "required": ["status"]}, "then": {"properties": {"git_state": {"properties": {"state": {"enum": ["current", "stale"]}}}}}}
+  ],
   "$defs": {
     "check": {
       "type": "object",

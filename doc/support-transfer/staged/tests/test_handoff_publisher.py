@@ -24,7 +24,9 @@ def make_record(**overrides) -> hp.HandoffRecord:
         objective="Prove the staged handoff publisher against a disposable root.",
         checks=[hp.Check(name="unit", state="passed", command="pytest -q", exit_code=0,
                          evidence="12 passed")],
-        git_state=hp.GitState(state="absent", root=None, branch=None, head=None),
+        git_state=hp.GitState(state="current", root="/r", branch="main",
+                              head=VALID_HEAD_1, upstream_relation="synchronized",
+                              worktree="clean"),
         next_action=hp.NextAction(owner="claude-code", action="Continue T6",
                                   stop_condition="Codex review complete"),
         work_completed=["Built the staged publisher."],
@@ -57,7 +59,8 @@ def test_positive_publish_lifecycle(tmp_path):
     assert reread.record_id == record.record_id
     assert reread.status == record.status
     assert reread.checks[0].name == "unit"
-    assert reread.git_state.state == "absent"
+    assert reread.git_state.state == "current"
+    assert reread.git_state.head == VALID_HEAD_1
 
 
 def test_positive_partial_and_blocked_status(tmp_path):
@@ -180,6 +183,64 @@ def test_current_git_state_with_short_head_rejected(tmp_path):
         hp.publish(tmp_path / "target", record)
 
 
+@pytest.mark.parametrize("git_state", [
+    pytest.param(hp.GitState(state="absent"), id="complete-with-absent"),
+    pytest.param(hp.GitState(state="unknown", root="/r", branch="main"),
+                id="complete-with-unknown"),
+])
+def test_complete_status_with_absent_or_unknown_git_rejected(tmp_path, git_state):
+    record = make_record(git_state=git_state)
+    with pytest.raises(hp.PublishError, match="use partial or blocked"):
+        hp.publish(tmp_path / "target", record)
+
+
+def test_absent_git_supported_with_partial_status(tmp_path):
+    record = make_record(status="partial", git_state=hp.GitState(state="absent"))
+    assert hp.publish(tmp_path / "target", record).exit_code == 0
+
+
+def _normalize_for_schema(record: hp.HandoffRecord) -> dict:
+    data = {k: v for k, v in vars(record).items()}
+    data["checks"] = [vars(c) for c in record.checks]
+    data["git_state"] = vars(record.git_state)
+    data["next_action"] = vars(record.next_action)
+    return data
+
+
+def test_code_and_shipped_schema_agree_on_probes():
+    """The staged validator and templates/handoff/handoff.schema.json must give
+    the same verdict on the review's probe cases (T6-R2)."""
+    import json
+    from pathlib import Path
+
+    import jsonschema
+
+    schema = json.loads(
+        (Path(__file__).resolve().parent.parent.parent / "templates" / "handoff"
+         / "handoff.schema.json").read_text(encoding="utf-8"))
+
+    def schema_ok(record):
+        try:
+            jsonschema.validate(_normalize_for_schema(record), schema)
+            return True
+        except jsonschema.ValidationError:
+            return False
+
+    probes = [
+        make_record(),                                                   # SHA-1, complete
+        make_record(git_state=hp.GitState(state="current", root="/r", branch="main",
+                                          head=VALID_HEAD_2, worktree="clean")),  # SHA-256
+        make_record(git_state=hp.GitState(state="absent")),              # complete+absent
+        make_record(status="partial", git_state=hp.GitState(state="absent")),
+        make_record(git_state=hp.GitState(state="absent", head=VALID_HEAD_1)),  # fabricated
+    ]
+    for record in probes:
+        code_ok = not hp.validate_record(record)
+        assert code_ok == schema_ok(record), (
+            f"code={code_ok} schema={schema_ok(record)} for status={record.status} "
+            f"git={vars(record.git_state)}")
+
+
 # --------------------------------------------------------------- boundaries
 
 def test_sensitive_content_in_objective_rejected(tmp_path):
@@ -216,6 +277,45 @@ def test_collect_git_state_absent_for_non_repo(tmp_path):
     state = hp.collect_git_state(plain)
     assert state.state == "absent"
     assert state.root is None and state.branch is None and state.head is None
+
+
+@pytest.mark.skipif(subprocess.run(["git", "--version"], capture_output=True).returncode != 0,
+                    reason="git is not available")
+def test_collect_git_state_does_not_adopt_enclosing_repo(tmp_path):
+    """T6-R1: a target root that merely sits inside some parent repository's
+    worktree must report absent, not the parent's identity."""
+    repo = tmp_path / "outer"
+    repo.mkdir()
+    _git(repo, "init", "-q")
+    inner = repo / "not-a-repo-itself"
+    inner.mkdir()
+    state = hp.collect_git_state(inner)
+    assert state.state == "absent"
+    assert state.root is None and state.head is None
+
+
+def test_atomic_write_no_clobber_never_overwrites(tmp_path):
+    """T6-R7: finalization of an immutable record must fail, not overwrite,
+    when the ID appeared concurrently."""
+    target = tmp_path / "support" / "handoffs" / "2026-07-17T010000Z-abc1234.md"
+    target.parent.mkdir(parents=True)
+    target.write_text("first-writer content\n", encoding="utf-8")
+    with pytest.raises(FileExistsError):
+        hp._atomic_write(target, "second-writer content\n", no_clobber=True)
+    assert target.read_text(encoding="utf-8") == "first-writer content\n"
+    assert list(target.parent.glob(".*.tmp-*")) == []
+
+
+def test_staleness_reports_upstream_and_worktree_divergence():
+    """T6-R3: identical HEAD but changed upstream relation or worktree must
+    still report divergence."""
+    recorded = hp.GitState(state="current", root="/r", branch="main", head=VALID_HEAD_1,
+                           upstream_relation="synchronized", worktree="clean")
+    current = hp.GitState(state="current", root="/r", branch="main", head=VALID_HEAD_1,
+                          upstream_relation="ahead-behind:1\t0", worktree="dirty")
+    diffs = hp.compare_staleness(recorded, current)
+    assert any(d.startswith("upstream_relation:") for d in diffs)
+    assert any(d.startswith("worktree:") for d in diffs)
 
 
 @pytest.mark.skipif(subprocess.run(["git", "--version"], capture_output=True).returncode != 0,

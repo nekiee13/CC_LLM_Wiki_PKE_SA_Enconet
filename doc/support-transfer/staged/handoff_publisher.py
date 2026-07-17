@@ -122,7 +122,14 @@ class PublishResult:
 # --------------------------------------------------------------- Git state
 
 def collect_git_state(root: Path) -> GitState:
-    """Collect the actual current Git state under ``root`` without mutating it."""
+    """Collect the actual current Git state of exactly ``root`` without mutating it.
+
+    Contract (T6-R1): the reported state describes the supplied target root
+    itself. If ``root`` is not itself a repository root — including when it
+    merely sits *inside* some enclosing repository's worktree — the state is
+    ``absent``; this function never walks upward and adopts a parent
+    repository's identity.
+    """
     def run(*args: str) -> str | None:
         try:
             out = subprocess.run(["git", "-C", str(root), *args], capture_output=True,
@@ -134,6 +141,11 @@ def collect_git_state(root: Path) -> GitState:
     top = run("rev-parse", "--show-toplevel")
     if top is None:
         return GitState(state="absent", root=None, branch=None, head=None)
+    try:
+        if Path(top).resolve() != Path(root).resolve():
+            return GitState(state="absent", root=None, branch=None, head=None)
+    except OSError:
+        return GitState(state="unknown", root=top, branch=None, head=None)
     head = run("rev-parse", "HEAD")
     branch = run("rev-parse", "--abbrev-ref", "HEAD")
     if head is None:
@@ -153,9 +165,13 @@ def collect_git_state(root: Path) -> GitState:
 
 
 def compare_staleness(recorded: GitState, current: GitState) -> list[str]:
-    """Field-by-field divergence; never silently normalized."""
+    """Field-by-field divergence; never silently normalized.
+
+    Covers every recorded Git fact the T5 contract names: root, branch,
+    HEAD, upstream relation, and worktree observation (T6-R3).
+    """
     diffs = []
-    for name in ("state", "root", "branch", "head"):
+    for name in ("state", "root", "branch", "head", "upstream_relation", "worktree"):
         rv, cv = getattr(recorded, name), getattr(current, name)
         if rv != cv:
             diffs.append(f"{name}: recorded {rv!r} != current {cv!r}")
@@ -237,6 +253,9 @@ def validate_record(record: HandoffRecord) -> list[str]:
     if record.status == "complete" and any(c.state == "failed" for c in record.checks):
         errs.append("status cannot be complete while a check state is failed "
                     "(never complete with an implied pass)")
+    if record.status == "complete" and record.git_state.state in ("absent", "unknown"):
+        errs.append("status cannot be complete with git_state absent/unknown; "
+                    "use partial or blocked as appropriate")
     na = record.next_action
     if not na.owner.strip():
         errs.append("next_action.owner must not be empty")
@@ -373,14 +392,28 @@ def render_pointer(record: HandoffRecord, record_relpath: str) -> str:
 
 # --------------------------------------------------------------- publication
 
-def _atomic_write(path: Path, text: str) -> None:
+def _atomic_write(path: Path, text: str, *, no_clobber: bool = False) -> None:
+    """Write ``text`` durably, then atomically finalize at ``path``.
+
+    ``no_clobber=True`` (immutable records, T6-R7) finalizes with
+    ``os.link``, which fails with FileExistsError if the ID appeared between
+    the caller's existence check and this write — an ``os.replace`` there
+    would silently overwrite a concurrently published record. The
+    replaceable pointer keeps ``os.replace`` semantics.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.parent / f".{path.name}.tmp-{os.getpid()}-{uuid.uuid4().hex[:8]}"
     with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(text)
         fh.flush()
         os.fsync(fh.fileno())
-    os.replace(tmp, path)
+    if no_clobber:
+        try:
+            os.link(tmp, path)
+        finally:
+            os.unlink(tmp)
+    else:
+        os.replace(tmp, path)
 
 
 def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None) -> PublishResult:
@@ -413,7 +446,17 @@ def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None) -
         raise FaultInjected("interrupted before record publish")
 
     if not adopted:
-        _atomic_write(record_path, rendered)
+        try:
+            _atomic_write(record_path, rendered, no_clobber=True)
+        except FileExistsError:
+            # A same-ID record landed between the existence check above and
+            # finalization. Adopt it only if byte-identical; never overwrite.
+            if record_path.read_text(encoding="utf-8") == rendered:
+                adopted = True
+            else:
+                raise PublishError(
+                    f"record id {record.record_id!r} was published concurrently with "
+                    "different content; immutable records are never overwritten") from None
 
     if fault_at == "after-record-before-pointer":
         raise FaultInjected("interrupted between record and pointer")
