@@ -1,0 +1,16 @@
+task: SUPPORT-TRANSFER-T4-T5-CORRECTIONS
+agent: codex
+status: released
+claimed_at_utc: 2026-07-17T00:26:28Z
+last_renewed_at_utc: 2026-07-17T00:26:28Z
+expires_at_utc: 2026-07-17T03:26:28Z
+anticipated_files:
+  - doc\support-transfer\templates\handoff\handoff.schema.json
+  - doc\support-transfer\templates\coordination\resolution-manifest.schema.json
+  - doc\support-transfer\templates\coordination\resolution-manifest.template.md
+  - doc\support-transfer\T4_COORDINATION_BOOTSTRAP_CONTRACT.md
+  - doc\support-transfer\T4_T5_REVIEW_DISPOSITION.md
+  - doc\support-transfer\README.md
+  - Enconet\wiki\log.md
+note: Reproduce/correct T45-F1/F2 and record evidence-based planning/publication boundary; no target writes.
+released_at_utc: 2026-07-17T00:27:48Z

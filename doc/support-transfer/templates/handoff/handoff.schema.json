@@ -14,7 +14,24 @@
     "remaining_work": {"type": "array", "items": {"type": "string"}},
     "decisions": {"type": "array", "items": {"type": "string"}},
     "checks": {"type": "array", "items": {"$ref": "#/$defs/check"}},
-    "git_state": {"type": "object", "required": ["state", "root", "branch", "head", "upstream_relation", "worktree"], "additionalProperties": false, "properties": {"state": {"enum": ["current", "stale", "absent", "unknown"]}, "root": {"type": ["string", "null"]}, "branch": {"type": ["string", "null"]}, "head": {"type": ["string", "null"]}, "upstream_relation": {"type": "string"}, "worktree": {"type": "string"}}},
+    "git_state": {
+      "type": "object",
+      "required": ["state", "root", "branch", "head", "upstream_relation", "worktree"],
+      "additionalProperties": false,
+      "properties": {
+        "state": {"enum": ["current", "stale", "absent", "unknown"]},
+        "root": {"type": ["string", "null"]},
+        "branch": {"type": ["string", "null"]},
+        "head": {"type": ["string", "null"]},
+        "upstream_relation": {"type": "string"},
+        "worktree": {"type": "string"}
+      },
+      "allOf": [
+        {"if": {"properties": {"state": {"const": "absent"}}}, "then": {"properties": {"branch": {"type": "null"}, "head": {"type": "null"}}}},
+        {"if": {"properties": {"state": {"const": "unknown"}}}, "then": {"properties": {"head": {"type": "null"}}}},
+        {"if": {"properties": {"state": {"enum": ["current", "stale"]}}}, "then": {"properties": {"root": {"type": "string", "minLength": 1}, "branch": {"type": "string", "minLength": 1}, "head": {"type": "string", "pattern": "^[a-f0-9]{40}$"}}}}
+      ]
+    },
     "index_state": {"enum": ["current", "stale", "absent", "unknown", "not-configured"]},
     "blockers": {"type": "array", "items": {"type": "string"}},
     "artifacts": {"type": "array", "items": {"type": "string", "pattern": "^(?![A-Za-z]:|[\\\\/]|\\.\\.(?:[\\\\/]|$)|.*[\\\\/]\\.\\.(?:[\\\\/]|$)).+"}},

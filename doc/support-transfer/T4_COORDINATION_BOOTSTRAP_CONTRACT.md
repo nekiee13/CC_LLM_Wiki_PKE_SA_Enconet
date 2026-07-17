@@ -134,7 +134,8 @@ The target-local validator must fail non-zero for:
 - malformed/duplicate IDs, filenames, timestamps, prefixes, types, paths, or unknown fields;
 - unresolved `reply_to`, self-reply, or reply cycles;
 - cross-agent archival or record-prefix ownership violations;
-- blockers archived without an allowed disposition and confirmation evidence;
+- blockers archived without an allowed disposition and confirmation evidence, or a
+  `deferred-until` disposition without an objective condition/date and deferral owner;
 - missing/malformed resolution manifests or manifests referencing active/missing records;
 - overlapping active claims, invalid renewal/release order, or inconsistent expiry;
 - stale/generated-board differences;
