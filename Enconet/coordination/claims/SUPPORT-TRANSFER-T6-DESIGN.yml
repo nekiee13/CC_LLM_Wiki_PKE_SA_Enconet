@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-T6-DESIGN
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T21:21:28Z
+last_renewed_at_utc: 2026-07-17T21:21:28Z
+expires_at_utc: 2026-07-18T21:21:28Z
+anticipated_files:
+  - doc/support-transfer/T6_VALIDATION_RECOVERY_GATE_CONTRACT.md
+  - doc/support-transfer/T6_STAGED_EXECUTABLE_CHECKPOINT.md
+  - doc/support-transfer/staged
+  - doc/support-transfer/templates/milestone-packet.template.md
+  - doc/support-transfer/README.md
+note: Prepare planning-only T6 validation/recovery/gate design (T6.1-T6.4) plus staged executable coordination validator and handoff publisher prototypes with disposable-root positive and fault-injection tests; Wiki workspace only, no target writes, CC_FIN untouched.
+released_at_utc: 2026-07-17T21:38:02Z
