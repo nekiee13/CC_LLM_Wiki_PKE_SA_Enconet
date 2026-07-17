@@ -1,0 +1,11 @@
+task: SUPPORT-TRANSFER-M2-RR3
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T23:22:38Z
+last_renewed_at_utc: 2026-07-17T23:22:38Z
+expires_at_utc: 2026-07-18T23:22:38Z
+anticipated_files:
+  - doc/support-transfer/M2_BASELINE_FAILURE_SET.md
+  - doc/support-transfer/README.md
+note: Close M2-RR3: replace U+0008 with literal backslash-b in the normative regex, boundary-terminate the fallback token grammar, control-character audit, mechanical demonstration.
+released_at_utc: 2026-07-17T23:23:40Z

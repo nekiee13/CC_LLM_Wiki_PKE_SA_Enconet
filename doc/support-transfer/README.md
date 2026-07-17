@@ -33,7 +33,7 @@ applicable owner gate authorizes publication.
 | `staged/` | Staged coordination-validator and handoff-publisher prototypes plus disposable-root positive/fault-injection tests (T4.1-artifact, T4.3, T5.2, T6.4 evidence) | Accepted (`CX_2026-07-17T222326Z`, staged-level only) |
 | `T6_STAGED_EXECUTABLE_CHECKPOINT.md` | Staged-executable evidence, 67/67 passing tests, all review-round corrections, and explicit pending boundary | Accepted (staged-level only) |
 | `M2_PREFLIGHT_EVIDENCE.md` | Read-only CC_FIN baseline reverification, native-check results, dry-run collision check, recovery anchor | Corrected per M2-F1/F4/F5 |
-| `M2_BASELINE_FAILURE_SET.md` | Tuple-based baseline failure fingerprint with deterministic normalization rule (normative T7.3 comparison contract) | Corrected per M2-RR1 |
+| `M2_BASELINE_FAILURE_SET.md` | Tuple-based baseline failure fingerprint with deterministic normalization rule (normative T7.3 comparison contract) | Corrected per M2-RR1/RR3 |
 | `M2_DRY_RUN_MANIFEST.md` | Exact per-slice file inventory (slice 4 deferred), existing-file dispositions, disposable-copy validation | Corrected per M2-RR2 |
 | `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Corrected per M2-F1..F5 and M2-RR1/RR2; pending Codex re-review, then owner decision |
 

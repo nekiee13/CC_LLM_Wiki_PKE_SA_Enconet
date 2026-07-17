@@ -37,17 +37,35 @@ outside the repository) must satisfy all of:
 Applied to the concatenation of the JUnit `message` attribute and element text of each
 `<failure>`/`<error>`:
 
-1. If the text matches the regex `No module named \W{0,3}<mod>` for a declared pinned
+1. If the text matches the regex `No module named \W{0,3}<mod>\b` for a declared pinned
    dependency (`torch`, `matplotlib`) — the `\W{0,3}` tolerates quote styles and
    escaped quotes in subprocess-captured tracebacks — the class is
    `import-unavailable:<mod>` and the normalized signature is the canonical string
    `ModuleNotFoundError: No module named '<mod>'`, regardless of the top-level wrapper
    (this is a causal signature, not the literal JUnit first line).
-2. Otherwise, if it matches `No module named \W{0,3}<other>`, the class is
-   `import-unavailable:<other>` with the analogous canonical signature.
+2. Otherwise, if it matches `No module named \W{0,3}([A-Za-z0-9_]+(?:\.[A-Za-z0-9_]+)*)\b`,
+   the class is `import-unavailable:<captured token>` with the analogous canonical
+   signature; the captured token grammar is dotted Python-identifier segments and the
+   trailing `\b` prevents a prefix match from being classified as an exact module
+   name.
 3. Otherwise the class is `assertion` and the normalized signature is the JUnit
    `message` attribute's first line, whitespace-collapsed and truncated to 120
    characters.
+
+## Mechanical demonstration of the documented rule (M2-RR3)
+
+The exact patterns above, compiled from this file's own text, classify these four
+sample inputs as follows (reproduced by the audit script in the archive message
+closing M2-RR3):
+
+| Sample input (abbreviated) | Classified as |
+|---|---|
+| `ModuleNotFoundError: No module named 'torch'` (normal quotes) | `import-unavailable:torch` |
+| `...trainer.py", line 8, in <module>
+ import torch
+ModuleNotFoundError: No module named \'torch\'` (subprocess-escaped quotes) | `import-unavailable:torch` |
+| `ModuleNotFoundError: No module named 'matplotlib'` | `import-unavailable:matplotlib` |
+| `AssertionError: assert '2026-03-27' == '2026-03-26'` | `assertion` (rule 3 first-line signature) |
 
 | Node ID | Outcome | Class | Normalized signature |
 |---|---|---|---|
