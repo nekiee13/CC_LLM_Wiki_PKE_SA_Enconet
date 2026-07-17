@@ -1,0 +1,11 @@
+task: SUPPORT-TRANSFER-T6-ARCHIVE-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T22:27:58Z
+last_renewed_at_utc: 2026-07-17T22:27:58Z
+expires_at_utc: 2026-07-18T22:27:58Z
+anticipated_files:
+  - Enconet/coordination/messages
+  - Enconet/coordination/archive
+note: Archive four resolved-and-confirmed CC_ T6 review requests with an immutable resolution manifest (ADR-0018).
+released_at_utc: 2026-07-17T22:29:02Z
