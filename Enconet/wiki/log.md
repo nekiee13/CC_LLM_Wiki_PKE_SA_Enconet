@@ -122,3 +122,5 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - design-checkpoint-accepted | 2026-07-17T00:34:05Z | SUPPORT-SYSTEM-TRANSFER-T4-T5 | Owner accepted T45-F1/F2 and the planning/publication boundary after Claude reverified 22/22 cases. Exactly T5.1's four definitional criteria close. T4.1-artifact/T4.3/T5.2 await disposable staged executables/fault injection; T4.2 and target-installed T4.1/T5.3 await T7/T8. No wholesale T4/T5 completion or target write; M2/M3 gates remain closed. Durable checkpoint: `doc/support-transfer/T4_T5_DESIGN_CHECKPOINT.md` (OWNER/CC/CX)
 
 - handoff-created | 2026-07-17T00:58:19Z | handoffs/2026-07-17T005819Z-nogit.md | complete | unavailable
+
+- handoff-created | 2026-07-17T00:59:28Z | handoffs/2026-07-17T005928Z-4e01d88.md | complete | 4e01d88e47eb0d6eaaaec2869ed4b16342cf727e
