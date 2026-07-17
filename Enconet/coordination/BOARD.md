@@ -112,11 +112,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-17T002449Z_t4-t5-design-review-findings` — review_request, claude-code -> codex: SUPPORT-TRANSFER-T4-T5
-- `CX_2026-07-17T001630Z_review-coordination-handoff-design` — review_request, codex -> claude-code: SUPPORT-TRANSFER-T4-T5
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
-- Archive: 263 records in `coordination/archive/`
+- Archive: 266 records in `coordination/archive/`
 
-Generated: 2026-07-17T00:27:49Z
+Generated: 2026-07-17T00:29:07Z
