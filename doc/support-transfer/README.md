@@ -22,5 +22,9 @@ applicable owner gate authorizes publication.
 | `templates/` | Neutral governance and record templates for later gated publication | Accepted T3 |
 | `T3_REVIEW_DISPOSITION.md` | Independent T3 findings and explicit dispositions | Complete |
 | `T3_COMPLETION.md` | Immutable T3 closure evidence and authorization boundary | Complete |
+| `T4_COORDINATION_BOOTSTRAP_CONTRACT.md` | Neutral protocol, lifecycle, ownership, claims, board, guidance, and validator design | T4 design candidate v1.0 |
+| `T5_HANDOFF_CONTINUITY_CONTRACT.md` | Clone-complete handoff, atomic publication, staleness, and continuity design | T5 design candidate v1.0 |
+| `templates/coordination/` | Neutral coordination schemas and templates | T4 design candidate |
+| `templates/handoff/` | Neutral handoff schema and templates | T5 design candidate |
 
 Records marked candidate become accepted only through the gate named in the Master Plan.

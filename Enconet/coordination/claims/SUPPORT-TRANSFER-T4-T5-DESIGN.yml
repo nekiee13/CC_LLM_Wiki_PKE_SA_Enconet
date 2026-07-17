@@ -1,0 +1,15 @@
+task: SUPPORT-TRANSFER-T4-T5-DESIGN
+agent: codex
+status: released
+claimed_at_utc: 2026-07-17T00:08:45Z
+last_renewed_at_utc: 2026-07-17T00:08:45Z
+expires_at_utc: 2026-07-17T06:08:45Z
+anticipated_files:
+  - doc\support-transfer\T4_COORDINATION_BOOTSTRAP_CONTRACT.md
+  - doc\support-transfer\T5_HANDOFF_CONTINUITY_CONTRACT.md
+  - doc\support-transfer\templates\coordination
+  - doc\support-transfer\templates\handoff
+  - doc\support-transfer\README.md
+  - Enconet\wiki\log.md
+note: Prepare planning-only T4/T5 neutral coordination and handoff/continuity contracts; no target writes and no Claude-owned infrastructure edits.
+released_at_utc: 2026-07-17T00:15:49Z
