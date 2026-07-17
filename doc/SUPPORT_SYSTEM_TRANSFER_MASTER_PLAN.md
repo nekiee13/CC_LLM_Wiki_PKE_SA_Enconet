@@ -7,7 +7,7 @@
 | Plan ID | `SUPPORT-SYSTEM-TRANSFER` |
 | Version | 1.0 — controlled candidate |
 | Date | 2026-07-17 |
-| Status | M1 approved on 2026-07-16T23:31:30Z for corrected profiles v1.0; T3 planning is authorized, target publication remains blocked pending M2 |
+| Status | M1 approved on 2026-07-16T23:31:30Z for corrected profiles v1.0; T3 complete; T5.1, T4.3, T5.2, and T6.4 closed on accepted design/staged evidence (`852d9e4`); target publication remains blocked pending M2 |
 | Owner | Human project owner |
 | Implementers | Codex and Claude Code within their ownership boundaries |
 | Source contract | `doc/Support_system.md`, accepted by the owner on 2026-07-17 |
@@ -340,6 +340,11 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T4.1 — Bootstrap neutral coordination records
 
+**Status:** staged artifact/validator evidence accepted at `852d9e4`
+(`doc/support-transfer/T6_STAGED_EXECUTABLE_CHECKPOINT.md`; Codex acceptance
+`CX_2026-07-17T222326Z`); the criteria below remain unmarked because they require the
+structure to exist target-locally, which awaits gated T7/T8 installation.
+
 - [ ] Protocol, messages/archive/claims structure, board contract, and validator exist before
   either agent claims complete synchronization.
 - [ ] Active, resolved, confirmed, and archived states match the agreed contract.
@@ -354,10 +359,14 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T4.3 — Validate claims, review, and archive behavior
 
-- [ ] Overlapping active claims fail.
-- [ ] Message schemas, reply chains, blockers, resolution manifests, and board freshness are tested.
-- [ ] Each agent archives only its own resolved and confirmed messages.
-- [ ] One agent cannot declare the other agent's infrastructure synchronized.
+**Status:** completed at the staged level at `852d9e4`; evidence
+`doc/support-transfer/staged/` (33 validator tests, 67/67 suite), independently accepted
+by Codex (`CX_2026-07-17T222326Z`). Target re-verification occurs at T7/T8 installation.
+
+- [x] Overlapping active claims fail.
+- [x] Message schemas, reply chains, blockers, resolution manifests, and board freshness are tested.
+- [x] Each agent archives only its own resolved and confirmed messages.
+- [x] One agent cannot declare the other agent's infrastructure synchronized.
 
 ## EPIC T5 — Implement handoff and session continuity
 
@@ -374,10 +383,15 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T5.2 — Publish deterministic repo-local handoff tooling
 
-- [ ] Immutable record validates before mutable pointer publication.
-- [ ] Publication is atomic or fails without advancing the pointer.
-- [ ] Complete, partial, and blocked statuses are supported.
-- [ ] Staleness, absent Git, malformed evidence, and interrupted publication are tested.
+**Status:** completed at the staged level at `852d9e4`; evidence
+`doc/support-transfer/staged/handoff_publisher.py` plus 33 publisher tests (67/67
+suite), independently accepted by Codex (`CX_2026-07-17T222326Z`). "Publish" to a
+target repository remains pending gated T7/T8 installation.
+
+- [x] Immutable record validates before mutable pointer publication.
+- [x] Publication is atomic or fails without advancing the pointer.
+- [x] Complete, partial, and blocked statuses are supported.
+- [x] Staleness, absent Git, malformed evidence, and interrupted publication are tested.
 
 ### Task T5.3 — Integrate start and close continuity
 
@@ -413,9 +427,14 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T6.4 — Prove scoped recovery
 
-- [ ] A disposable or otherwise safe rehearsal demonstrates partial-publication abort and rollback.
-- [ ] Rollback touches only transfer-owned paths and preserves target history and unrelated changes.
-- [ ] Native product checks and Git diff verify the recovered state.
+**Status:** completed at `852d9e4`; evidence
+`doc/support-transfer/staged/tests/test_recovery_rehearsal.py` (disposable Git
+repository, mid-slice concurrent work preserved, revert-only rollback, Git diff
+verification), independently accepted by Codex (`CX_2026-07-17T222326Z`).
+
+- [x] A disposable or otherwise safe rehearsal demonstrates partial-publication abort and rollback.
+- [x] Rollback touches only transfer-owned paths and preserves target history and unrelated changes.
+- [x] Native product checks and Git diff verify the recovered state.
 
 ## EPIC T7 — Publish and accept the CC_FIN pilot
 
