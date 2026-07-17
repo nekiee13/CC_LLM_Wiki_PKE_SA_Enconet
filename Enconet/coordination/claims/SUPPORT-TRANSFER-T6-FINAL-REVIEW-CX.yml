@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-T6-FINAL-REVIEW-CX
+agent: codex
+status: released
+claimed_at_utc: 2026-07-17T22:11:30Z
+last_renewed_at_utc: 2026-07-17T22:11:30Z
+expires_at_utc: 2026-07-18T02:11:30Z
+anticipated_files:
+  - doc/support-transfer/staged/handoff_publisher.py
+  - doc/support-transfer/templates/handoff/handoff.schema.json
+  - doc/support-transfer/staged/tests/test_handoff_publisher.py
+  - doc/support-transfer/T6_STAGED_EXECUTABLE_CHECKPOINT.md
+note: Final independent review of T6-R2b correction at 32315c0.
+released_at_utc: 2026-07-17T22:13:12Z
