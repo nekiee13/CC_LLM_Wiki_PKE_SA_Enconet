@@ -26,6 +26,7 @@ applicable owner gate authorizes publication.
 | `T5_HANDOFF_CONTINUITY_CONTRACT.md` | Clone-complete handoff, atomic publication, staleness, and continuity design | T5 design candidate v1.0 |
 | `templates/coordination/` | Neutral coordination schemas and templates | T4 design candidate |
 | `templates/handoff/` | Neutral handoff schema and templates | T5 design candidate |
-| `T4_T5_REVIEW_DISPOSITION.md` | T4/T5 findings and design-versus-publication boundary | Codex complete; owner pending |
+| `T4_T5_REVIEW_DISPOSITION.md` | T4/T5 findings and design-versus-publication boundary | Complete |
+| `T4_T5_DESIGN_CHECKPOINT.md` | Partial checkpoint closing T5.1 only and preserving pending boundaries | Accepted |
 
 Records marked candidate become accepted only through the gate named in the Master Plan.

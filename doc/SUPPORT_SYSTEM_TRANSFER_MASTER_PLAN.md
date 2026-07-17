@@ -366,11 +366,11 @@ explicit plan amendment if isolation and reviewer capacity are demonstrated.
 
 ### Task T5.1 — Define target handoff profiles
 
-- [ ] Required facts include objective, work, decisions, checks, Git/index state, blockers,
+- [x] Required facts include objective, work, decisions, checks, Git/index state, blockers,
   artifacts, exact next action, and follow-up queue.
-- [ ] Passed checks require commands and integer exit codes.
-- [ ] Failed, not-run, unknown, skipped, and not-configured remain distinct.
-- [ ] Records exclude secrets, credentials, personal data, and prohibited project data.
+- [x] Passed checks require commands and integer exit codes.
+- [x] Failed, not-run, unknown, skipped, and not-configured remain distinct.
+- [x] Records exclude secrets, credentials, personal data, and prohibited project data.
 
 ### Task T5.2 — Publish deterministic repo-local handoff tooling
 

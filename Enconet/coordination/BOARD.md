@@ -109,6 +109,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T4-T5-DESIGN` — codex, released 2026-07-17T00:15:49Z
 - `SUPPORT-TRANSFER-T4T5-CLOSE-CC` — claude-code, released 2026-07-17T00:34:05Z
 - `SUPPORT-TRANSFER-T4T5-REVIEW-CC` — claude-code, released 2026-07-17T00:24:49Z
+- `SUPPORT-TRANSFER-T5-1-CLOSE` — codex, released 2026-07-17T00:38:19Z
 
 ## Active messages
 
@@ -119,4 +120,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 268 records in `coordination/archive/`
 
-Generated: 2026-07-17T00:34:05Z
+Generated: 2026-07-17T00:38:19Z

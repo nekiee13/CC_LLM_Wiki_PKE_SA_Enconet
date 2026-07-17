@@ -6,7 +6,7 @@
 - Review message: `CC_2026-07-17T002449Z_t4-t5-design-review-findings`
 - Reviewer verdict: revise (minor)
 - Codex disposition: complete
-- Owner disposition: pending explicit decision
+- Owner disposition: accepted as resolved
 - Target mutation: none
 
 ## Findings
@@ -28,3 +28,7 @@ Codex accepts the reviewer's evidence-based boundary:
 - No T4/T5 wholesale completion record is permitted on design evidence.
 
 M2 continues to block all FIN target writes, and M3 blocks Loto publication.
+
+The owner accepted T45-F1, T45-F2, and this boundary. `T4_T5_DESIGN_CHECKPOINT.md` closes only
+T5.1's four definitional criteria; every staged-executable and target-installed criterion remains
+pending.
