@@ -1,6 +1,6 @@
 task: INDEX-REFRESH
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-17T00:46:04Z
 last_renewed_at_utc: 2026-07-17T00:46:04Z
 expires_at_utc: 2026-07-17T03:46:04Z
@@ -8,3 +8,4 @@ anticipated_files:
   - Enconet\coordination\BOARD.md
   - Enconet\coordination\claims\INDEX-REFRESH.yml
 note: Refresh three ADR-0019 shared documentation profiles from clean committed HEAD bb0695d using explicit filtered tracked paths before handoff; code index unchanged.
+released_at_utc: 2026-07-17T01:00:53Z
