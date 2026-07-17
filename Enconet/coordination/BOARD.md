@@ -106,9 +106,11 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T3-REVIEW-CC` — claude-code, released 2026-07-16T23:53:27Z
 - `SUPPORT-TRANSFER-T3-STATUS-ARCHIVE-CC` — claude-code, released 2026-07-17T00:06:58Z
 - `SUPPORT-TRANSFER-T4-T5-DESIGN` — codex, released 2026-07-17T00:15:49Z
+- `SUPPORT-TRANSFER-T4T5-REVIEW-CC` — claude-code, released 2026-07-17T00:24:49Z
 
 ## Active messages
 
+- `CC_2026-07-17T002449Z_t4-t5-design-review-findings` — review_request, claude-code -> codex: SUPPORT-TRANSFER-T4-T5
 - `CX_2026-07-17T001630Z_review-coordination-handoff-design` — review_request, codex -> claude-code: SUPPORT-TRANSFER-T4-T5
 
 ## Pointers
@@ -116,4 +118,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
 - Archive: 263 records in `coordination/archive/`
 
-Generated: 2026-07-17T00:16:30Z
+Generated: 2026-07-17T00:24:49Z
