@@ -30,10 +30,11 @@ applicable owner gate authorizes publication.
 | `T4_T5_DESIGN_CHECKPOINT.md` | Partial checkpoint closing T5.1 only and preserving pending boundaries | Accepted |
 | `T6_VALIDATION_RECOVERY_GATE_CONTRACT.md` | T6.1-T6.4 target-native aggregates, guardrails, milestone-packet, and recovery-rehearsal design | T6 design candidate v1.0 |
 | `templates/milestone-packet.template.md` | T6.3 neutral M2-M5 decision-packet template | T6 design candidate |
-| `staged/` | Staged coordination-validator and handoff-publisher prototypes plus disposable-root positive/fault-injection tests (T4.1-artifact, T4.3, T5.2, T6.4 evidence) | T6-R1..R7, T6-R2b, and T6-R2c corrected; pending final Codex acceptance |
-| `T6_STAGED_EXECUTABLE_CHECKPOINT.md` | Staged-executable evidence, 67/67 passing tests, T6-R1..R7, T6-R2b, and T6-R2c corrections, and explicit pending boundary | Pending Codex re-review |
-
-| `M2_PREFLIGHT_EVIDENCE.md` | Read-only CC_FIN baseline reverification, native-check results, dry-run collision check, recovery point | Complete candidate |
-| `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Pending Codex review, then owner decision |
+| `staged/` | Staged coordination-validator and handoff-publisher prototypes plus disposable-root positive/fault-injection tests (T4.1-artifact, T4.3, T5.2, T6.4 evidence) | Accepted (`CX_2026-07-17T222326Z`, staged-level only) |
+| `T6_STAGED_EXECUTABLE_CHECKPOINT.md` | Staged-executable evidence, 67/67 passing tests, all review-round corrections, and explicit pending boundary | Accepted (staged-level only) |
+| `M2_PREFLIGHT_EVIDENCE.md` | Read-only CC_FIN baseline reverification, native-check results, dry-run collision check, recovery anchor | Corrected per M2-F1/F4/F5 |
+| `M2_BASELINE_FAILURE_SET.md` | Node-level baseline failure fingerprint (normative T7.3 comparison set) | Complete candidate |
+| `M2_DRY_RUN_MANIFEST.md` | Exact per-slice file inventory, existing-file dispositions, disposable-copy validation | Complete candidate |
+| `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Corrected per M2-F1..F5; pending Codex re-review, then owner decision |
 
 Records marked candidate become accepted only through the gate named in the Master Plan.

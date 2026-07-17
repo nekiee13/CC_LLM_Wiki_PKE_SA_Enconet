@@ -20,6 +20,10 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
 
 - Preflight facts, native baseline run, and dry-run collision check:
   `M2_PREFLIGHT_EVIDENCE.md`
+- Node-level baseline failure fingerprint (normative T7.3 comparison set):
+  `M2_BASELINE_FAILURE_SET.md`
+- Exact per-slice file inventory, existing-file dispositions, and disposable-copy
+  render/validation evidence: `M2_DRY_RUN_MANIFEST.md`
 - M1-accepted profile and manifest: `CC_FIN_SUPPORT_PROFILE.md`,
   `PUBLICATION_ROLLBACK_MANIFESTS.md`, `M1_APPROVAL.md`
 - Accepted staged executables and rehearsal: `T6_STAGED_EXECUTABLE_CHECKPOINT.md`
@@ -29,39 +33,52 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
 
 ## Recommended decision set
 
-1. Accept the recovery point `238c207` and revert-only rollback for every slice.
-2. Authorize publication of the neutral support skeleton (support index, status, log,
-   decisions/ledgers) as slice 1, exactly per the manifest path list.
-3. Authorize the coordination core (protocol, schemas, templates, empty queues,
-   generated board, validator under `scripts/`) as slice 2.
-4. Authorize the handoff core (schema, templates, `make_handoff`-equivalent publisher
-   under `scripts/`, `HANDOFF.md` pointer) as slice 3.
-5. Authorize focused support tests under existing `tests/` as slice 4, discovered by
-   FIN's native pytest.
-6. Record the native-baseline disposition: treat the 32 environment-caused
-   failures/errors (torch, matplotlib) as `unavailable` on this machine, and accept
-   the 22 pre-existing date-sensitive assertion failures as the recorded product
-   baseline for support purposes — support slices must not change any of these counts
-   in either direction; T7.3 verifies against this exact recorded set.
-7. Keep the Codex-owned `AGENTS.md` support-navigation addition with Codex as author
-   (agent-owned payloads stay with their owner), sequenced after the neutral slices.
-8. Defer the `followup-ml-gate.yml` `master`→`main` correction to its own isolated
-   commit under M1 item 8's existing authorization, with the exact one-line diff
-   reviewed at publication time.
-9. Claude implements the slices this cycle (session role reversal stands); Codex
-   independently reviews each slice; neither marks T7 criteria without the other's
-   review.
+1. Accept `238c207` as the M2 recovery anchor: slice 1 starts there; each later slice
+   records and verifies its own clean pre-slice parent HEAD and rolls back by reverting
+   only its named commits to that parent — never a broad reset across accepted slices.
+2. Authorize publication of the neutral support skeleton (9 files) as slice 1, plus the
+   one-line link in `docs/README.md`, exactly per `M2_DRY_RUN_MANIFEST.md`.
+3. Authorize the coordination core (14 files including `scripts/agent_coord.py` and
+   `scripts/_support_shared.py`) as slice 2, per the manifest inventory.
+4. Authorize the handoff core (7 files including `scripts/make_handoff.py` and the
+   initial `HANDOFF.md` pointer) as slice 3, per the manifest inventory.
+5. Authorize `scripts/validate_support.py` and the two focused support test modules
+   under existing `tests/` as slice 4, discovered by FIN's native pytest.
+6. **Baseline disposition (owner choice required).** The recorded baseline is not
+   green: 24 torch and 11 matplotlib outcomes stem from an interpreter missing the
+   project's own pinned dependencies, and 19 assertion failures are pre-existing at
+   `238c207` with no common root cause established. Choose one:
+   **(a)** establish the declared dependency environment (install pinned
+   torch/matplotlib), re-run, and re-record the fingerprint before slice 1; or
+   **(b)** accept the exact node-level fingerprint in `M2_BASELINE_FAILURE_SET.md` as
+   the T7.3 comparison set. Under either choice the acceptance rule is set-based, not
+   count-based: after each slice a like-for-like re-run must show **no new failing or
+   erroring node**; all support-specific checks must pass; a listed node may resolve
+   only with an explicit recorded explanation; silent replacement of one failure by
+   another is a stop condition even at equal counts; date-dependent drift in listed
+   nodes is recorded and dispositioned.
+7. Authorize the Codex-authored slice 5 for Codex-owned/assigned edits per M1 item 7:
+   the `AGENTS.md` packaging fact and support navigation, and the
+   `docs/governance-transition.md` unsafe-reset wording replacement. Claude authors
+   neither file's content.
+8. Authorize the `followup-ml-gate.yml` `master`→`main` correction as its own isolated
+   slice 6 under M1 item 8, with the exact one-line diff
+   (`-      - master` / `+      - main`) reviewed at publication time. No `.gitignore`
+   edit is planned; a proven need would require a new owner decision.
+9. Claude implements the shared-neutral slices this cycle (session role reversal
+   stands); Codex authors slice 5 and independently reviews every slice; neither agent
+   marks a T7 criterion without the other's review.
 
 ## Risks and controls
 
 | Risk | Control | Residual owner choice |
 |---|---|---|
-| Baseline is not green in this environment | Truthful recorded baseline (item 6); support slices assert unchanged counts, never "fix" product tests | Accept recorded-baseline approach or require a green environment first |
+| Baseline is not green in this environment | Node-level fingerprint (item 6): no-new-failing-node rule, explained resolutions only, silent replacement is a stop condition | Item 6(a) dependency environment first, or 6(b) fingerprinted red baseline |
 | Support slice touches product behavior | Manifest path allowlist; per-slice preflight diff; T7.3 product-preservation check | Accept slice sequencing |
 | Partial publication leaves inconsistent state | Small isolated commits; staged no-clobber/atomic tooling; accepted T6.4 rollback rehearsal | Accept revert-only recovery |
 | Cross-agent ownership violation | Slices 1-4 are shared-neutral; agent-owned payloads authored only by their owner (items 7, 9) | Retain role assignments |
 | Hosted behavior changes unnoticed | Workflow edit isolated to its own reviewed commit (item 8) | Authorize, defer, or reject item 8 timing |
-| Date-sensitive product tests drift during publication window | Baseline set recorded at exact date/HEAD; T7.3 compares like-for-like | Accept comparison method |
+| Listed baseline nodes drift during the publication window | Node-level set recorded at exact date/HEAD; like-for-like re-runs; drift recorded and dispositioned, never averaged away | Accept comparison method |
 
 ## Alternatives
 
@@ -75,11 +92,13 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
 
 ## Recovery impact in plain language
 
-Every slice starts from the recorded clean commit `238c207` and adds only named support
-files. If anything goes wrong, the slice is undone with a revert commit limited to that
-slice; product files, history, and any concurrent work are untouched — this exact
-procedure was rehearsed and independently accepted as T6.4 evidence. CC_Loto is not
-touched at all until the separate M3 decision.
+Slice 1 starts from the recorded clean commit `238c207`; each later slice starts from
+the verified clean result of the previous accepted slice and records that parent commit
+before writing anything. Every slice adds only its named support files. If anything goes
+wrong, the slice is undone with a revert commit limited to exactly that slice's commits,
+back to its recorded parent; product files, earlier accepted slices, history, and any
+concurrent work are untouched — this exact procedure was rehearsed and independently
+accepted as T6.4 evidence. CC_Loto is not touched at all until the separate M3 decision.
 
 ## Owner decision record
 

@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-M2-CORRECTIONS
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T23:00:36Z
+last_renewed_at_utc: 2026-07-17T23:00:36Z
+expires_at_utc: 2026-07-18T23:00:36Z
+anticipated_files:
+  - doc/support-transfer/M2_DECISION_PACKET.md
+  - doc/support-transfer/M2_PREFLIGHT_EVIDENCE.md
+  - doc/support-transfer/M2_BASELINE_FAILURE_SET.md
+  - doc/support-transfer/M2_DRY_RUN_MANIFEST.md
+  - doc/support-transfer/README.md
+note: Correct M2-F1..F5 from CX_2026-07-17T225526Z: exact failure classification, node-ID fingerprint baseline, per-slice file inventory with rendered diffs, per-slice recovery parents, observation-vs-causality separation.
+released_at_utc: 2026-07-17T23:04:07Z

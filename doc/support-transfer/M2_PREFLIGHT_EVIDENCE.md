@@ -17,9 +17,11 @@ outside the repository).
 | Remote | `https://github.com/nekiee13/CC_FIN.git` | `git remote get-url origin` |
 | Worktree | clean | `git status --porcelain` (empty) |
 
-**Recovery point for every M2 slice: `238c207c73970f3d3c6dc00c2db5932ebeca7be4`.**
-Rollback is revert-only per `PUBLICATION_ROLLBACK_MANIFESTS.md`; the staged rehearsal
-proving this procedure is accepted T6.4 evidence.
+**Recovery anchor for the M2 publication: `238c207c73970f3d3c6dc00c2db5932ebeca7be4`**
+(the M1-accepted baseline; slice 1 starts here). Each later slice records and verifies
+its own clean pre-slice parent HEAD and reverts only its named commits back to that
+parent (M2-F4); rollback is revert-only per `PUBLICATION_ROLLBACK_MANIFESTS.md`, and the
+staged rehearsal proving this procedure is accepted T6.4 evidence.
 
 ## 2. Target-native baseline checks
 
@@ -28,20 +30,21 @@ Command: `PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider
 
 Result: **343 tests: 276 passed, 51 failed, 3 collection errors, 13 skipped** (14.5 s).
 
-Root-cause classification of the 54 failures/errors:
+Machine-verified classification of the 54 failure/error outcomes (corrected per M2-F1;
+full node-level fingerprint in `M2_BASELINE_FAILURE_SET.md`):
 
 | Class | Count | Detail |
 |---|---|---|
-| `ModuleNotFoundError: torch` | 21 (18 failures + 3 collection errors) | ANN training/eval modules; torch is not installed in this machine's default interpreter |
-| `ModuleNotFoundError: matplotlib` | 11 | chart/panel render tests |
-| Assertion failures | 22 | predominantly date-comparison assertions (e.g. `'2026-03-27' == '2026-03-26'`, `'2025-08-01' == '2025-07-30'`) and `QA_FH3_MISSING` status assertions — consistent with date-sensitive tests evaluated on 2026-07-18, not with any repository change (HEAD is the untouched M1 baseline) |
+| `import-unavailable: torch` | 24 (21 failures + 3 collection errors) | `torch==2.6.0` is **pinned in `requirements.txt`** — a declared project dependency, not an optional test extra — but is not installed in this machine's interpreter |
+| `import-unavailable: matplotlib` | 11 | `matplotlib==3.7.5` likewise pinned in `requirements.txt` and not installed |
+| Assertion failures | 19 | observed set spans date-comparison assertions (e.g. `'2026-03-27' == '2026-03-26'`), QA status-code assertions, and sign/value assertions; all 19 are proven pre-existing at the untouched baseline, but **no common root cause is established** — some may be date-sensitive, others are not (M2-F5) |
 
-Truthful state for M2 purposes: the baseline is **not green in this environment**. The
-environment classes (torch, matplotlib) are machine limitations, `unavailable` in the T5
-vocabulary. The 22 assertion failures are pre-existing at the untouched baseline and
-owner disposition is required on how the M2 gate treats them (see packet). Support
-transfer changed nothing: the identical failure set exists at `238c207` with no support
-file present.
+Truthful state for M2 purposes: the baseline is **not green in this environment**, and
+the 35 import outcomes reflect an interpreter that does not satisfy the project's own
+declared dependencies. The 19 assertion failures are pre-existing at the untouched
+baseline (`238c207`, no support file present); their causes are recorded as observed,
+not attributed. The owner's explicit choice between establishing the declared dependency
+environment first and accepting the fingerprinted red baseline is put in the packet.
 
 ## 3. Publication-manifest dry run (no writes)
 
@@ -56,6 +59,10 @@ Every manifest-listed **existing modifiable** path is present: `AGENTS.md`,
 The known workflow defect is confirmed still present: `followup-ml-gate.yml` line 6
 filters on `master` while the repository branch is `main` (M1 item 8 authorized the
 isolated correction).
+
+The exact per-slice create/modify inventory, ownership classification, rendered diffs
+for existing files, and the disposable-copy render/validation evidence are in
+`M2_DRY_RUN_MANIFEST.md` (M2-F3).
 
 ## 4. Staged-executable evidence
 
