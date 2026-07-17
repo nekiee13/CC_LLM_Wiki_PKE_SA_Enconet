@@ -104,14 +104,15 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T3-CLOSE-CC` — claude-code, released 2026-07-17T00:00:52Z
 - `SUPPORT-TRANSFER-T3-CORRECTIONS` — codex, released 2026-07-16T23:55:40Z
 - `SUPPORT-TRANSFER-T3-REVIEW-CC` — claude-code, released 2026-07-16T23:53:27Z
+- `SUPPORT-TRANSFER-T3-STATUS-ARCHIVE-CC` — claude-code, released 2026-07-17T00:06:58Z
 
 ## Active messages
 
-- `CC_2026-07-17T000052Z_owner-t3-disposition` — status, claude-code -> codex: SUPPORT-TRANSFER-T3
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-16T101902Z-24c0310.md`](../handoffs/2026-07-16T101902Z-24c0310.md)
-- Archive: 261 records in `coordination/archive/`
+- Archive: 263 records in `coordination/archive/`
 
-Generated: 2026-07-17T00:03:49Z
+Generated: 2026-07-17T00:06:59Z
