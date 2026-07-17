@@ -49,6 +49,21 @@ independently reproduced and corrected:
   `status: complete` with `git_state: absent`/`unknown`; `validate_record` enforces the
   same rule, and a code-versus-shipped-schema agreement test pins both to the same
   verdicts on the review's probe cases.
+- **T6-R2b** (second-round finding) the shipped schema is now authoritative at
+  publication: `publish()` validates the fully normalized record against the
+  target-local `support/schemas/handoff.schema.json` (explicit `schema_path` override
+  supported) after the handwritten checks and before any write; a missing schema
+  refuses publication rather than degrading. The schema's `absent` rule now requires
+  `root`, `branch`, and `head` all null (closing the absent+fabricated-root
+  divergence), and the complete-with-failed-check rule is encoded in the schema's
+  `allOf`. Regressions: absent+fabricated-root rejected by code, schema, and
+  publication; a bare target without the schema refused; a target whose installed
+  schema is stricter than the handwritten checks blocks publication (schema verdict
+  alone suffices to refuse). Audit note: the sensitive-content scan, the exact
+  `created_at_utc` timestamp format, and record/pointer identity re-verification
+  remain code-side checks the schema cannot express; because publication requires
+  BOTH verdicts, every remaining asymmetry fails closed (a record either side
+  rejects cannot publish).
 - **T6-R3** `compare_staleness` now covers `upstream_relation` and `worktree`.
 - **T6-R4** one-sided synchronization claims are validator errors (non-zero exit), and
   claim overlap detects exact, ancestor/descendant, and mixed-separator collisions;
@@ -65,10 +80,10 @@ independently reproduced and corrected:
 ## Validation evidence
 
 - **passed** — staged test suite: command=`python -m pytest doc/support-transfer/staged/tests -q`
-  (run from the Wiki workspace root); exit_code=0; 63 passed, 0 failed, 0 skipped.
+  (run from the Wiki workspace root); exit_code=0; 66 passed, 0 failed, 0 skipped.
 - **passed** — environment-independence re-run (the T6-R1 scenario): command=
-  `python -m pytest doc/support-transfer/staged/tests -q --basetemp=.tmp/t6-cc-corrections-verify`
-  (disposable roots inside the Wiki worktree); exit_code=0; 63 passed.
+  `python -m pytest doc/support-transfer/staged/tests -q --basetemp=.tmp/t6-r2b-verify`
+  (disposable roots inside the Wiki worktree); exit_code=0; 66 passed.
 - **passed** — support schema validation: command=`python -c "Draft202012Validator.check_schema
   over doc/support-transfer/templates/**/*.schema.json"`; exit_code=0; four of four valid
   Draft 2020-12 after the T6-R2 edits.
@@ -84,8 +99,8 @@ independently reproduced and corrected:
 malformed/duplicate/mismatched message IDs; unknown author prefix and other schema
 violations (additionalProperties, enums, path-traversal patterns); invalid
 `created_at_utc`; self-reply; two-node reply cycle; unresolved `reply_to`; unacknowledged
-active blocker (plus the acknowledged-clean counterpart); one-sided-synchronization
-warning; archived message with no covering manifest; `deferred-until` missing
+active blocker (plus the acknowledged-clean counterpart); archived message with no
+covering manifest; `deferred-until` missing
 `deferred_until`/`deferral_owner` (schema-rejected, reproducing the corrected T45-F2
 fix) and the complete-fields positive case; manifest referencing a still-active
 (unarchived) message; manifest referencing an unknown message; cross-agent archival
@@ -97,7 +112,7 @@ closed (with the confirmed counterpart clean); ancestor/descendant and mixed-sep
 claim collisions (with disjoint siblings clean); and the board naming the current
 handoff pointer.
 
-`handoff_publisher` (29 tests) — every T5 "Test contract" bullet applicable without a
+`handoff_publisher` (32 tests) — every T5 "Test contract" bullet applicable without a
 target-native check harness: positive complete/partial/blocked publication; interruption
 `before-record-write` (no trace left), `after-record-before-pointer` (orphan record,
 retry adopts without rewriting), and `after-pointer-before-log` (retry logs exactly

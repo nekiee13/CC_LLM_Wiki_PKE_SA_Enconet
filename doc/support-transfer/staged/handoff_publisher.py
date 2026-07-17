@@ -34,6 +34,8 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 
+import jsonschema
+
 from _shared import scan_sensitive, split_frontmatter
 
 RECORD_ID_RE = re.compile(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{6}Z-[a-f0-9]{7,40}$")
@@ -272,6 +274,38 @@ def validate_record(record: HandoffRecord) -> list[str]:
     return errs
 
 
+def normalize_record(record: HandoffRecord) -> dict:
+    """The fully normalized object the shipped JSON Schema validates."""
+    data = dict(vars(record))
+    data["checks"] = [vars(c) for c in record.checks]
+    data["git_state"] = vars(record.git_state)
+    data["next_action"] = vars(record.next_action)
+    return data
+
+
+def schema_errors(record: HandoffRecord, schema: dict) -> list[str]:
+    """Validate the normalized record against the target-local shipped schema."""
+    validator = jsonschema.Draft202012Validator(schema)
+    return [f"schema: {err.json_path}: {err.message}"
+            for err in validator.iter_errors(normalize_record(record))]
+
+
+def _load_handoff_schema(root: Path, schema_path: Path | None) -> dict:
+    """Load ``support/schemas/handoff.schema.json`` (or an explicit override).
+
+    The schema is a mandatory part of the clone-complete target contract
+    (T6-R2b): publication without it is refused rather than degraded to the
+    handwritten checks alone.
+    """
+    path = schema_path or root / "support" / "schemas" / "handoff.schema.json"
+    if not path.is_file():
+        raise PublishError(f"missing target-local handoff schema: {path}")
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise PublishError(f"unreadable handoff schema {path}: {exc}") from exc
+
+
 # --------------------------------------------------------------- rendering
 
 def _bullets(items: list[str]) -> str:
@@ -416,8 +450,14 @@ def _atomic_write(path: Path, text: str, *, no_clobber: bool = False) -> None:
         os.replace(tmp, path)
 
 
-def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None) -> PublishResult:
+def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None,
+            schema_path: Path | None = None) -> PublishResult:
     """Run the T5 deterministic publication protocol against ``root``.
+
+    Publication requires BOTH the handwritten semantic checks and the
+    target-local shipped ``support/schemas/handoff.schema.json`` (override via
+    ``schema_path``) to accept the fully normalized record; either verdict
+    alone cannot publish (T6-R2b).
 
     ``fault_at`` simulates an interruption at a named checkpoint for tests:
     ``"before-record-write"``, ``"after-record-before-pointer"``, or
@@ -427,6 +467,10 @@ def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None) -
     errors = validate_record(record)
     if errors:
         raise PublishError("validation failed:\n" + "\n".join(errors))
+    schema = _load_handoff_schema(root, schema_path)
+    errors = schema_errors(record, schema)
+    if errors:
+        raise PublishError("schema validation failed:\n" + "\n".join(errors))
 
     handoffs_dir = root / "support" / "handoffs"
     record_path = handoffs_dir / f"{record.record_id}.md"

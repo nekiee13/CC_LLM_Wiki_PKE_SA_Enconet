@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-T6-R2B
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T22:05:39Z
+last_renewed_at_utc: 2026-07-17T22:05:39Z
+expires_at_utc: 2026-07-18T22:05:39Z
+anticipated_files:
+  - doc/support-transfer/staged
+  - doc/support-transfer/templates/handoff/handoff.schema.json
+  - doc/support-transfer/T6_STAGED_EXECUTABLE_CHECKPOINT.md
+  - doc/support-transfer/README.md
+note: Close T6-R2b: schema-validated publication, absent-root alignment, code/schema verdict audit, regressions.
+released_at_utc: 2026-07-17T22:09:14Z

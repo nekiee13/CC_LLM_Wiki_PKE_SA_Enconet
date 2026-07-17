@@ -27,7 +27,7 @@
         "worktree": {"type": "string"}
       },
       "allOf": [
-        {"if": {"properties": {"state": {"const": "absent"}}}, "then": {"properties": {"branch": {"type": "null"}, "head": {"type": "null"}}}},
+        {"if": {"properties": {"state": {"const": "absent"}}}, "then": {"properties": {"root": {"type": "null"}, "branch": {"type": "null"}, "head": {"type": "null"}}}},
         {"if": {"properties": {"state": {"const": "unknown"}}}, "then": {"properties": {"head": {"type": "null"}}}},
         {"if": {"properties": {"state": {"enum": ["current", "stale"]}}}, "then": {"properties": {"root": {"type": "string", "minLength": 1}, "branch": {"type": "string", "minLength": 1}, "head": {"type": "string", "pattern": "^([a-f0-9]{40}|[a-f0-9]{64})$"}}}}
       ]
@@ -39,7 +39,7 @@
     "follow_up_queue": {"type": "array", "items": {"type": "string"}}
   },
   "allOf": [
-    {"if": {"properties": {"status": {"const": "complete"}}, "required": ["status"]}, "then": {"properties": {"git_state": {"properties": {"state": {"enum": ["current", "stale"]}}}}}}
+    {"if": {"properties": {"status": {"const": "complete"}}, "required": ["status"]}, "then": {"properties": {"git_state": {"properties": {"state": {"enum": ["current", "stale"]}}}, "checks": {"not": {"contains": {"required": ["state"], "properties": {"state": {"const": "failed"}}}}}}}}
   ],
   "$defs": {
     "check": {
