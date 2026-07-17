@@ -1,11 +1,10 @@
 task: INDEX-REFRESH
 agent: codex
-status: released
-claimed_at_utc: 2026-07-16T22:51:52Z
-last_renewed_at_utc: 2026-07-16T22:51:52Z
-expires_at_utc: 2026-07-16T23:51:52Z
+status: active
+claimed_at_utc: 2026-07-17T00:46:04Z
+last_renewed_at_utc: 2026-07-17T00:46:04Z
+expires_at_utc: 2026-07-17T03:46:04Z
 anticipated_files:
-  - doc\SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md
-  - Enconet\wiki\log.md
-note: Refresh shared-neutral documentation indexes after T0.4 review corrections at committed HEAD 312da51.
-released_at_utc: 2026-07-16T22:53:06Z
+  - Enconet\coordination\BOARD.md
+  - Enconet\coordination\claims\INDEX-REFRESH.yml
+note: Refresh three ADR-0019 shared documentation profiles from clean committed HEAD bb0695d using explicit filtered tracked paths before handoff; code index unchanged.
