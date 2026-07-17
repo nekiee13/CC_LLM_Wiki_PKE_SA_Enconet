@@ -51,9 +51,8 @@ independently reproduced and corrected:
   verdicts on the review's probe cases.
 - **T6-R2b** (second-round finding) the shipped schema is now authoritative at
   publication: `publish()` validates the fully normalized record against the
-  target-local `support/schemas/handoff.schema.json` (explicit `schema_path` override
-  supported) after the handwritten checks and before any write; a missing schema
-  refuses publication rather than degrading. The schema's `absent` rule now requires
+  target-local `support/schemas/handoff.schema.json` after the handwritten checks and
+  before any write; a missing schema refuses publication rather than degrading. The schema's `absent` rule now requires
   `root`, `branch`, and `head` all null (closing the absent+fabricated-root
   divergence), and the complete-with-failed-check rule is encoded in the schema's
   `allOf`. Regressions: absent+fabricated-root rejected by code, schema, and
@@ -64,6 +63,12 @@ independently reproduced and corrected:
   remain code-side checks the schema cannot express; because publication requires
   BOTH verdicts, every remaining asymmetry fails closed (a record either side
   rejects cannot publish).
+- **T6-R2c** (third-round finding) the `schema_path` override introduced by the R2b
+  fix was itself a bypass surface — an external permissive schema could override a
+  stricter installed one. The override is removed entirely: publication always loads
+  `root/support/schemas/handoff.schema.json` and nothing else, with a regression
+  proving an attempted override is refused (`TypeError`) before any write while the
+  installed stricter schema still governs.
 - **T6-R3** `compare_staleness` now covers `upstream_relation` and `worktree`.
 - **T6-R4** one-sided synchronization claims are validator errors (non-zero exit), and
   claim overlap detects exact, ancestor/descendant, and mixed-separator collisions;
@@ -80,10 +85,10 @@ independently reproduced and corrected:
 ## Validation evidence
 
 - **passed** — staged test suite: command=`python -m pytest doc/support-transfer/staged/tests -q`
-  (run from the Wiki workspace root); exit_code=0; 66 passed, 0 failed, 0 skipped.
+  (run from the Wiki workspace root); exit_code=0; 67 passed, 0 failed, 0 skipped.
 - **passed** — environment-independence re-run (the T6-R1 scenario): command=
-  `python -m pytest doc/support-transfer/staged/tests -q --basetemp=.tmp/t6-r2b-verify`
-  (disposable roots inside the Wiki worktree); exit_code=0; 66 passed.
+  `python -m pytest doc/support-transfer/staged/tests -q --basetemp=.tmp/t6-r2c-verify`
+  (disposable roots inside the Wiki worktree); exit_code=0; 67 passed.
 - **passed** — support schema validation: command=`python -c "Draft202012Validator.check_schema
   over doc/support-transfer/templates/**/*.schema.json"`; exit_code=0; four of four valid
   Draft 2020-12 after the T6-R2 edits.
@@ -112,7 +117,7 @@ closed (with the confirmed counterpart clean); ancestor/descendant and mixed-sep
 claim collisions (with disjoint siblings clean); and the board naming the current
 handoff pointer.
 
-`handoff_publisher` (32 tests) — every T5 "Test contract" bullet applicable without a
+`handoff_publisher` (33 tests) — every T5 "Test contract" bullet applicable without a
 target-native check harness: positive complete/partial/blocked publication; interruption
 `before-record-write` (no trace left), `after-record-before-pointer` (orphan record,
 retry adopts without rewriting), and `after-pointer-before-log` (retry logs exactly
@@ -127,7 +132,9 @@ artifact — no live effect since both real targets are SHA-1 today); a too-shor
 refused; sensitive content in the objective refused; a path-traversal artifact
 refused; a hand-corrupted record missing a required heading refused on re-parse;
 `status: complete` with `git_state: absent`/`unknown` refused (with `partial`+absent
-accepted); the code-versus-shipped-schema agreement probes; `collect_git_state`
+accepted); the code-versus-shipped-schema agreement probes; the missing-schema,
+stricter-installed-schema, and refused-external-override publication cases;
+`collect_git_state`
 returning `absent` for a non-Git directory and for a directory merely inside an
 enclosing repository; the no-clobber race test; staleness reporting
 upstream/worktree-only divergence; and, against a real disposable Git repository,

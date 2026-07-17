@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-T6-R2C
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T22:15:36Z
+last_renewed_at_utc: 2026-07-17T22:15:36Z
+expires_at_utc: 2026-07-18T22:15:36Z
+anticipated_files:
+  - doc/support-transfer/staged
+  - doc/support-transfer/T6_STAGED_EXECUTABLE_CHECKPOINT.md
+  - doc/support-transfer/README.md
+note: Close T6-R2c: remove the schema_path override so publication always loads the target-local shipped schema; regression + checkpoint update.
+released_at_utc: 2026-07-17T22:18:39Z

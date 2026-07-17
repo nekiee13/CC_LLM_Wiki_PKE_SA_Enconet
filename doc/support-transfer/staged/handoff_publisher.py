@@ -290,14 +290,16 @@ def schema_errors(record: HandoffRecord, schema: dict) -> list[str]:
             for err in validator.iter_errors(normalize_record(record))]
 
 
-def _load_handoff_schema(root: Path, schema_path: Path | None) -> dict:
-    """Load ``support/schemas/handoff.schema.json`` (or an explicit override).
+def _load_handoff_schema(root: Path) -> dict:
+    """Load the target-local ``support/schemas/handoff.schema.json``.
 
     The schema is a mandatory part of the clone-complete target contract
     (T6-R2b): publication without it is refused rather than degraded to the
-    handwritten checks alone.
+    handwritten checks alone. There is deliberately no override parameter
+    (T6-R2c) — an external schema path could bypass a stricter installed
+    schema, so the installed one is the only authority.
     """
-    path = schema_path or root / "support" / "schemas" / "handoff.schema.json"
+    path = root / "support" / "schemas" / "handoff.schema.json"
     if not path.is_file():
         raise PublishError(f"missing target-local handoff schema: {path}")
     try:
@@ -450,14 +452,14 @@ def _atomic_write(path: Path, text: str, *, no_clobber: bool = False) -> None:
         os.replace(tmp, path)
 
 
-def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None,
-            schema_path: Path | None = None) -> PublishResult:
+def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None) -> PublishResult:
     """Run the T5 deterministic publication protocol against ``root``.
 
     Publication requires BOTH the handwritten semantic checks and the
-    target-local shipped ``support/schemas/handoff.schema.json`` (override via
-    ``schema_path``) to accept the fully normalized record; either verdict
-    alone cannot publish (T6-R2b).
+    target-local shipped ``support/schemas/handoff.schema.json`` to accept
+    the fully normalized record; either verdict alone cannot publish
+    (T6-R2b). The installed schema cannot be overridden from outside the
+    target (T6-R2c).
 
     ``fault_at`` simulates an interruption at a named checkpoint for tests:
     ``"before-record-write"``, ``"after-record-before-pointer"``, or
@@ -467,7 +469,7 @@ def publish(root: Path, record: HandoffRecord, *, fault_at: str | None = None,
     errors = validate_record(record)
     if errors:
         raise PublishError("validation failed:\n" + "\n".join(errors))
-    schema = _load_handoff_schema(root, schema_path)
+    schema = _load_handoff_schema(root)
     errors = schema_errors(record, schema)
     if errors:
         raise PublishError("schema validation failed:\n" + "\n".join(errors))

@@ -114,6 +114,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T6-DESIGN` — claude-code, released 2026-07-17T21:38:02Z
 - `SUPPORT-TRANSFER-T6-FINAL-REVIEW-CX` — codex, released 2026-07-17T22:13:12Z
 - `SUPPORT-TRANSFER-T6-R2B` — claude-code, released 2026-07-17T22:09:14Z
+- `SUPPORT-TRANSFER-T6-R2C` — claude-code, released 2026-07-17T22:18:39Z
 - `SUPPORT-TRANSFER-T6-REREVIEW-CX` — codex, released 2026-07-17T22:02:46Z
 - `SUPPORT-TRANSFER-T6-REVIEW-CX` — codex, released 2026-07-17T21:48:44Z
 
@@ -122,6 +123,7 @@ and ADRs are the records.
 - `CC_2026-07-17T213833Z_t6-design-and-staged-executables-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-T6-DESIGN
 - `CC_2026-07-17T215918Z_t6-r1-r7-corrected-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-T6-CORRECTIONS
 - `CC_2026-07-17T220914Z_t6-r2b-schema-authoritative-publication` — review_request, claude-code -> codex: SUPPORT-TRANSFER-T6-R2B
+- `CC_2026-07-17T221839Z_t6-r2c-override-removed-final-acceptance` — review_request, claude-code -> codex: SUPPORT-TRANSFER-T6-R2C
 - `CX_2026-07-17T214844Z_t6-staged-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-T6-DESIGN
 - `CX_2026-07-17T220246Z_t6-corrections-rereview-r2-open` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-T6-CORRECTIONS
 - `CX_2026-07-17T221312Z_t6-final-review-r2c-schema-override` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-T6-R2B
@@ -131,4 +133,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 272 records in `coordination/archive/`
 
-Generated: 2026-07-17T22:13:12Z
+Generated: 2026-07-17T22:18:39Z

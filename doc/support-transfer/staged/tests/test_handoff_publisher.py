@@ -270,6 +270,30 @@ def test_publication_requires_target_local_schema(tmp_path):
     assert not (root / "support" / "handoffs").exists()
 
 
+def test_external_schema_override_refused(tmp_path):
+    """T6-R2c regression: publication accepts no schema override, so an
+    external permissive schema cannot bypass a stricter installed one — the
+    call is refused before any write."""
+    import json
+
+    root = make_target(tmp_path)
+    schema_file = root / "support" / "schemas" / "handoff.schema.json"
+    schema = json.loads(schema_file.read_text(encoding="utf-8"))
+    schema["properties"]["objective"] = {"type": "string", "minLength": 500}
+    schema_file.write_text(json.dumps(schema), encoding="utf-8")
+    permissive = tmp_path / "outside-root-permissive.schema.json"
+    permissive.write_text(json.dumps({"type": "object"}), encoding="utf-8")
+
+    record = make_record()
+    with pytest.raises(TypeError):
+        hp.publish(root, record, schema_path=permissive)
+    assert not (root / "support" / "handoffs").exists()
+    assert not (root / "HANDOFF.md").exists()
+    # and the installed stricter schema still governs the normal call
+    with pytest.raises(hp.PublishError, match="schema validation failed"):
+        hp.publish(root, record)
+
+
 def test_schema_verdict_alone_blocks_publication(tmp_path):
     """T6-R2b: the shipped schema is authoritative at publication — a record
     the handwritten checks accept cannot publish if the target-local schema
