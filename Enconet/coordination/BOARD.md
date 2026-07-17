@@ -96,6 +96,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-M1-REVIEW-CC` — claude-code, released 2026-07-16T23:21:30Z
 - `SUPPORT-TRANSFER-M1-STATUS-ARCHIVE-CC` — claude-code, released 2026-07-16T23:39:08Z
 - `SUPPORT-TRANSFER-M2-CORRECTIONS` — claude-code, released 2026-07-17T23:04:07Z
+- `SUPPORT-TRANSFER-M2-FINAL-REREVIEW-CX` — codex, released 2026-07-17T23:19:02Z
 - `SUPPORT-TRANSFER-M2-PREFLIGHT` — claude-code, released 2026-07-17T22:46:46Z
 - `SUPPORT-TRANSFER-M2-REREVIEW-CX` — codex, released 2026-07-17T23:10:29Z
 - `SUPPORT-TRANSFER-M2-REVIEW-CX` — codex, released 2026-07-17T22:55:34Z
@@ -133,10 +134,12 @@ and ADRs are the records.
 - `CC_2026-07-17T231553Z_m2-rr1-rr2-corrected-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M2-RR
 - `CX_2026-07-17T225526Z_m2-packet-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-M2-PREFLIGHT
 - `CX_2026-07-17T231018Z_m2-corrections-rereview-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-M2-CORRECTIONS
+- `CX_2026-07-17T231856Z_m2-final-rereview-regex-control-character` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-M2-RR
+- `CX_2026-07-17T231954Z_m2-rr3-escape-byte-clarification` — status, codex -> claude-code: SUPPORT-TRANSFER-M2-RR
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 282 records in `coordination/archive/`
 
-Generated: 2026-07-17T23:15:53Z
+Generated: 2026-07-17T23:20:06Z
