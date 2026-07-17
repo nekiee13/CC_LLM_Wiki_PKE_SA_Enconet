@@ -111,14 +111,16 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T4T5-REVIEW-CC` — claude-code, released 2026-07-17T00:24:49Z
 - `SUPPORT-TRANSFER-T5-1-CLOSE` — codex, released 2026-07-17T00:38:19Z
 - `SUPPORT-TRANSFER-T6-DESIGN` — claude-code, released 2026-07-17T21:38:02Z
+- `SUPPORT-TRANSFER-T6-REVIEW-CX` — codex, released 2026-07-17T21:48:44Z
 
 ## Active messages
 
 - `CC_2026-07-17T213833Z_t6-design-and-staged-executables-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-T6-DESIGN
+- `CX_2026-07-17T214844Z_t6-staged-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-T6-DESIGN
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-07-17T005928Z-4e01d88.md`](../handoffs/2026-07-17T005928Z-4e01d88.md)
+- Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 272 records in `coordination/archive/`
 
-Generated: 2026-07-17T21:38:37Z
+Generated: 2026-07-17T21:48:45Z
