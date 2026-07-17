@@ -33,4 +33,7 @@ applicable owner gate authorizes publication.
 | `staged/` | Staged coordination-validator and handoff-publisher prototypes plus disposable-root positive/fault-injection tests (T4.1-artifact, T4.3, T5.2, T6.4 evidence) | T6-R1..R7, T6-R2b, and T6-R2c corrected; pending final Codex acceptance |
 | `T6_STAGED_EXECUTABLE_CHECKPOINT.md` | Staged-executable evidence, 67/67 passing tests, T6-R1..R7, T6-R2b, and T6-R2c corrections, and explicit pending boundary | Pending Codex re-review |
 
+| `M2_PREFLIGHT_EVIDENCE.md` | Read-only CC_FIN baseline reverification, native-check results, dry-run collision check, recovery point | Complete candidate |
+| `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Pending Codex review, then owner decision |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.

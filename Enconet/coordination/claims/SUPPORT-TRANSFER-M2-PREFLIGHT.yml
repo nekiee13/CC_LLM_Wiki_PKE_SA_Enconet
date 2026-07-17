@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-M2-PREFLIGHT
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-17T22:34:33Z
+last_renewed_at_utc: 2026-07-17T22:34:33Z
+expires_at_utc: 2026-07-18T22:34:33Z
+anticipated_files:
+  - doc/support-transfer/M2_DECISION_PACKET.md
+  - doc/support-transfer/M2_PREFLIGHT_EVIDENCE.md
+  - doc/support-transfer/README.md
+note: Prepare the M2 decision packet: read-only CC_FIN baseline re-verification, native baseline checks (no-write flags), publication-manifest dry run, recovery point. No CC_FIN write; owner decides M2.
+released_at_utc: 2026-07-17T22:46:46Z
