@@ -42,4 +42,8 @@ applicable owner gate authorizes publication.
 | `SLICE1_RENDER_EVIDENCE.md` | Rendered slice-1 tree evidence: fail-closed render, disposable-root read-back, content decisions | Complete candidate |
 | `rendered/slice1/` | Byte authority for slice-1 content commit A `339026c` | Published; byte-verified by both agents |
 
+| `SLICE2_PREJOB_BRIEFING.md` | Slice-2 v2 protocol (LF byte rule; codex implements, claude-code reviews) | Executed; slice 2 published at CC_FIN `d442373` |
+| `SLICE2_RENDER_EVIDENCE.md` | Slice-2 render/adaptation/fault-injection evidence | Complete |
+| `rendered/slice2/` | Byte authority for slice-2 content commit A `367fde8` | Published; byte-verified by both agents |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.

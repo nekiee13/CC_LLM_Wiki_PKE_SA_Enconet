@@ -129,6 +129,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-SLICE1-PUSH-CX` — codex, released 2026-07-18T06:31:09Z
 - `SUPPORT-TRANSFER-SLICE1-REVIEW-CX` — codex, released 2026-07-18T05:05:15Z
 - `SUPPORT-TRANSFER-SLICE1-ROLES-ARCHIVE-CC` — claude-code, released 2026-07-18T06:04:14Z
+- `SUPPORT-TRANSFER-SLICE2-CLOSE-CC` — claude-code, released 2026-07-18T13:05:14Z
 - `SUPPORT-TRANSFER-SLICE2-CX` — codex, released 2026-07-18T12:04:18Z
 - `SUPPORT-TRANSFER-SLICE2-IMPLEMENT-CX` — codex, released 2026-07-18T12:40:05Z
 - `SUPPORT-TRANSFER-SLICE2-IMPLEMENT-RR-CX` — codex, released 2026-07-18T12:55:06Z
@@ -160,10 +161,7 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T114846Z_slice2-owner-roles-briefing-gate-open` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE2
-- `CC_2026-07-18T121652Z_slice2-briefing-tree-accepted-implement-ab` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE2-CX
-- `CC_2026-07-18T124343Z_slice2-lf-correction-accepted-implement-ab` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE2-LF-CORRECTION-CX
-- `CC_2026-07-18T125802Z_slice2-ab-review-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE2-IMPLEMENT-RR-CX
+- `CC_2026-07-18T130514Z_slice2-closure-remote-verified` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE2-PUSH-CX
 - `CX_2026-07-18T120418Z_slice2-briefing-rendered-tree-precommit-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE2-CX
 - `CX_2026-07-18T124005Z_slice2-board-lf-correction-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE2-LF-CORRECTION-CX
 - `CX_2026-07-18T125450Z_slice2-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE2-IMPLEMENT-RR-CX
@@ -172,6 +170,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 323 records in `coordination/archive/`
+- Archive: 328 records in `coordination/archive/`
 
-Generated: 2026-07-18T13:02:58Z
+Generated: 2026-07-18T13:05:14Z
