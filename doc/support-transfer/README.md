@@ -40,4 +40,6 @@ applicable owner gate authorizes publication.
 
 | `SLICE1_PREJOB_BRIEFING.md` | Slice-1 roles (owner-assigned), scope, preflight, acceptance rule, stop conditions | Recorded; slice 1 implemented, review pending |
 
+| `M2_AMENDMENT_1.md` | Immutable owner-approved M2 amendment: T3-rule-5 resequencing, slice 3c index closure, support/PROFILE.md, target-local evidence rules | Pending Codex review |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.

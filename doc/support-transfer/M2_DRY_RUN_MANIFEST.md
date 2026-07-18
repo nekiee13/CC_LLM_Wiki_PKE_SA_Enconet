@@ -7,12 +7,14 @@ accepted staged executables (`doc/support-transfer/staged/`, `852d9e4`); renderi
 replaces template placeholders with CC_FIN values and fails on any unresolved
 placeholder.
 
-## Slice 1 — neutral support skeleton (9 creates + 1 modification)
+## Slice 1 — neutral support records (amended by M2_AMENDMENT_1.md: 9 creates, no modification)
+
+Per T3 publication rule 5, `support/README.md` and the `docs/README.md` link move to
+slice 3c (index closure) so no committed slice contains dangling links.
 
 | Path | Source | Class |
 |---|---|---|
-| `docs/README.md` **(modification)** | one line added: `- [Support system](../support/README.md) — repo-local governance, coordination, and handoff core` | Existing target authority; link-only edit |
-| `support/README.md` | `support-index.template.md` | Shared-neutral, controlled |
+| `support/PROFILE.md` | clone-complete rendering of the M1-approved CC_FIN support profile v1.0 (M2_AMENDMENT_1.md §2) | Shared-neutral, controlled |
 | `support/current-status.md` | `current-status.template.md` | Shared-neutral, replaceable |
 | `support/log.md` | `event-log.template.md` | Shared-neutral, append-only |
 | `support/RECORD-KEEPING.md` | `record-keeping.template.md` | Shared-neutral, controlled |
@@ -53,6 +55,16 @@ placeholder.
 | `scripts/make_handoff.py` | staged `handoff_publisher.py` | Shared-neutral implementation |
 | `HANDOFF.md` | `handoff-pointer.template.md` (initial pointer) | Shared-neutral, replaceable |
 
+## Slice 3c — index closure (added by M2_AMENDMENT_1.md: 1 create + 1 modification)
+
+Rendered only after slices 2 and 3, when `coordination/BOARD.md` and `HANDOFF.md`
+exist (T3 publication rule 5); precedes every agent-owned addition.
+
+| Path | Source | Class |
+|---|---|---|
+| `support/README.md` | `support-index.template.md`, with the full accepted FIN rendering list: enhanced plan, project docs index, architecture/AS-IS (`docs/project/AS-IS.md`), freshness ledger, feature ADRs, workflows/forms, and release/package status (state labeled: release adapter inventory-only, no tags/releases) | Shared-neutral, controlled |
+| `docs/README.md` **(modification)** | one line added: `- [Support system](../support/README.md) — repo-local governance, coordination, and handoff core` | Existing target authority; link-only edit |
+
 ## Slice 4 — aggregate validator and focused tests (DEFERRED from this decision, M2-RR2)
 
 The planned `scripts/validate_support.py` (T6.1 aggregate) and the two focused support
@@ -71,7 +83,7 @@ test modules; and pass independent review.
 |---|---|---|---|
 | `AGENTS.md` | **Codex-owned** | Packaging-fact correction plus support-navigation section per M1 item 7; content authored by Codex only, in a Codex-claimed slice | Authorize as Codex-authored slice 5; Claude renders no diff for this file |
 | `docs/governance-transition.md` | Existing target authority | Replace unsafe routine-reset wording with evidence-first recovery per M1 items 7/8 disposition; assigned to Codex by M1 item 7 | Authorize as part of Codex-authored slice 5 |
-| `docs/README.md` | Existing target authority | Link-only, one line added under the docs index: `- [Support system](../support/README.md) — repo-local governance, coordination, and handoff core` | Authorize with slice 1 (rendered diff is exactly that single added line) |
+| `docs/README.md` | Existing target authority | Link-only, one line added under the docs index: `- [Support system](../support/README.md) — repo-local governance, coordination, and handoff core` | Authorize with slice 3c (rendered diff is exactly that single added line; moved from slice 1 by M2_AMENDMENT_1.md) |
 | `.github/workflows/followup-ml-gate.yml` | Hosted governance | One-line diff at line 6: `-      - master` / `+      - main` (M1 item 8) | Authorize as its own isolated slice 6 with exact-diff review at publication |
 | `.gitignore` | Existing target authority | **No edit planned** — preflight surfaced no support runtime artifact requiring it | Defer; new owner decision required if a need is proven later |
 

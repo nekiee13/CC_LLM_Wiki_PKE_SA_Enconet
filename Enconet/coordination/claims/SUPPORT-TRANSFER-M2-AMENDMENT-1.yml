@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-M2-AMENDMENT-1
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T05:08:35Z
+last_renewed_at_utc: 2026-07-18T05:08:35Z
+expires_at_utc: 2026-07-19T05:08:35Z
+anticipated_files:
+  - doc/support-transfer/M2_AMENDMENT_1.md
+  - doc/support-transfer/M2_DRY_RUN_MANIFEST.md
+  - doc/support-transfer/SLICE1_PREJOB_BRIEFING.md
+  - doc/support-transfer/README.md
+note: Record owner-approved M2 amendment 1 (T3-rule-5 resequencing, index-closure sub-slice, support/PROFILE.md addition, target-local evidence rules) and request Codex review before rebuilding the unpushed slice-1 commit.
+released_at_utc: 2026-07-18T05:10:14Z

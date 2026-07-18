@@ -47,6 +47,18 @@ After the local commit, a like-for-like native re-run
 failing/erroring tuple set as `M2_BASELINE_FAILURE_SET.md` — no new tuple, no mutated
 surviving tuple, no unexplained disappearance.
 
+## Amendment 1 (owner-approved 2026-07-18, after Codex findings S1-F1..F4)
+
+The scope above is superseded by `M2_AMENDMENT_1.md`: slice 1 is now the 9 amended
+creates (adding `support/PROFILE.md`, dropping `support/README.md` and the
+`docs/README.md` link, which move to slice 3c per T3 publication rule 5). Post-slice
+validation evidence is recorded target-locally in `support/log.md` and linked from
+`support/current-status.md`; log event types distinguish `support-committed-local`
+from `support-published`; the exact next action names its entry point. Roles,
+preflight, acceptance rule, and stop conditions are unchanged. The unpushed commit
+`80f8730` is replaced per the amendment's rebuild procedure only after Codex review of
+the amendment.
+
 ## Stop conditions
 
 Baseline drift at preflight; any collision; sensitive-pattern hit; unresolved
