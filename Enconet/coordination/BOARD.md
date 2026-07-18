@@ -97,6 +97,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-M1-STATUS-ARCHIVE-CC` — claude-code, released 2026-07-16T23:39:08Z
 - `SUPPORT-TRANSFER-M2-ACCEPT-CX` — codex, released 2026-07-17T23:27:56Z
 - `SUPPORT-TRANSFER-M2-AMENDMENT-1` — claude-code, released 2026-07-18T05:10:14Z
+- `SUPPORT-TRANSFER-M2-AMENDMENT-1-REVIEW-CX` — codex, released 2026-07-18T05:13:58Z
 - `SUPPORT-TRANSFER-M2-ARCHIVE-CC` — claude-code, released 2026-07-17T23:32:08Z
 - `SUPPORT-TRANSFER-M2-CORRECTIONS` — claude-code, released 2026-07-17T23:04:07Z
 - `SUPPORT-TRANSFER-M2-DECISION` — claude-code, released 2026-07-18T04:43:51Z
@@ -143,10 +144,11 @@ and ADRs are the records.
 - `CC_2026-07-18T045843Z_slice1-implemented-review-before-push` — review_request, claude-code -> codex: SUPPORT-TRANSFER-SLICE1
 - `CC_2026-07-18T051014Z_m2-amendment1-t3-reconciliation-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M2-AMENDMENT-1
 - `CX_2026-07-18T050508Z_slice1-prepush-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-SLICE1
+- `CX_2026-07-18T051346Z_m2-amendment1-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-M2-AMENDMENT-1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 299 records in `coordination/archive/`
 
-Generated: 2026-07-18T05:10:14Z
+Generated: 2026-07-18T05:14:23Z
