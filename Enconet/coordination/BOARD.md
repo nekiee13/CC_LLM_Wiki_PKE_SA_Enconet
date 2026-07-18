@@ -155,11 +155,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CC_2026-07-18T114846Z_slice2-owner-roles-briefing-gate-open` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 323 records in `coordination/archive/`
 
-Generated: 2026-07-18T11:46:22Z
+Generated: 2026-07-18T11:48:46Z
