@@ -188,10 +188,11 @@ and ADRs are the records.
 - `CX_2026-07-18T150846Z_slice6-prewrite-one-line-render-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
 - `CX_2026-07-18T154949Z_slice6-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX
 - `CX_2026-07-18T160847Z_slice6-pushed-hosted-evidence-inaccessible` — blocker, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-PUSH-CX
+- `CX_2026-07-18T161202Z_slice6-hosted-blocker-jointly-confirmed-owner-input-required` — acknowledgement, codex -> both: SUPPORT-TRANSFER-SLICE6-PUSH-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 369 records in `coordination/archive/`
 
-Generated: 2026-07-18T16:10:52Z
+Generated: 2026-07-18T16:12:02Z
