@@ -126,6 +126,13 @@ validator = replace_once(
 )
 validator = replace_once(
     validator,
+    '    board_path.write_text(render_board(root) + f"\\nGenerated: {stamp}\\n", encoding="utf-8")',
+    '    board_path.write_text(render_board(root) + f"\\nGenerated: {stamp}\\n", '
+    'encoding="utf-8", newline="\\n")',
+    "platform-stable board newlines",
+)
+validator = replace_once(
+    validator,
     '    parser.add_argument("--write-board", action="store_true",\n'
     '                         help="regenerate coordination/BOARD.md before validating")',
     '    parser.add_argument("--write-board", action="store_true",\n'

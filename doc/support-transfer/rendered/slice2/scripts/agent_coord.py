@@ -374,7 +374,7 @@ def write_board(root: Path, *, timestamp: str | None = None) -> Path:
     stamp = timestamp or datetime.now(timezone.utc).strftime(TS_FMT)
     if _parse_ts(stamp) is None:
         raise ValueError("timestamp must use YYYY-MM-DDTHH:MM:SSZ")
-    board_path.write_text(render_board(root) + f"\nGenerated: {stamp}\n", encoding="utf-8")
+    board_path.write_text(render_board(root) + f"\nGenerated: {stamp}\n", encoding="utf-8", newline="\n")
     return board_path
 
 

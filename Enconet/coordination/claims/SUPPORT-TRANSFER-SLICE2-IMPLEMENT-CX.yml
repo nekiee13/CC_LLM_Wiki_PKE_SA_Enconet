@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-SLICE2-IMPLEMENT-CX
+agent: codex
+status: released
+claimed_at_utc: 2026-07-18T12:18:46Z
+last_renewed_at_utc: 2026-07-18T12:18:46Z
+expires_at_utc: 2026-07-18T16:18:46Z
+anticipated_files:
+  - C:/xPY/xPrj/CC_FIN/coordination
+  - C:/xPY/xPrj/CC_FIN/scripts/agent_coord.py
+  - C:/xPY/xPrj/CC_FIN/scripts/_support_shared.py
+  - C:/xPY/xPrj/CC_FIN/support/current-status.md
+  - C:/xPY/xPrj/CC_FIN/support/log.md
+note: Implement independently accepted slice-2 content/evidence commits A/B locally; validate and hand to Claude before any push
+released_at_utc: 2026-07-18T12:40:05Z

@@ -45,8 +45,10 @@ authority. Exact reproduction uses:
    is Markdown and claim loading remains YAML-only. Initial validation with all three
    placeholders returned 0 errors, 0 warnings and BOARD archive count 0.
 3. **Deterministic BOARD** — `write_board` and the target CLI accept a reviewed UTC
-   timestamp. Omitting it retains normal current-UTC behavior. The generated header
-   names `agent_coord.render_board`, matching the installed module.
+   timestamp and `write_board` uses explicit LF newlines, preventing Windows CRLF
+   translation from changing the reviewed/staged blob. Omitting the timestamp retains
+   normal current-UTC behavior. The generated header names
+   `agent_coord.render_board`, matching the installed module.
 4. **Pre-slice-3 pointer state** — absence is represented, not hidden. Disposable
    probe results: initial validation exit 0; copying a HANDOFF pointer without BOARD
    regeneration produced the expected stale-board error and exit 1; regeneration
@@ -74,6 +76,30 @@ expired claims do not retain exclusivity. The first harness import also created 
 local `__pycache__` files before bytecode suppression was applied; the final inventory
 audit caught them, and a fixed-timestamp regeneration removed them. Final state is
 exactly 14 files and zero cache directories. All disposable roots were removed.
+
+## Pre-commit staging stop and LF correction
+
+After Claude accepted briefing v1, Codex copied the 14 candidate files into clean
+CC_FIN and staged exactly those 14 paths. The mandatory staged-blob comparison stopped
+before commit A: 13 blobs matched, while `coordination/BOARD.md` differed. The source
+BOARD had Windows CRLF bytes because target `Path.write_text` used platform-default
+newline translation; Git correctly normalized the staged blob to LF. No commit was
+created. Codex unstaged and removed only the 14 uncommitted slice-2 files, restoring
+CC_FIN clean at `879bcb507e461282c68cb20beab77c0def9019a4`, divergence `0 0`.
+
+Briefing v2 and the corrected target writer now pass `newline="\n"` explicitly.
+Post-correction evidence:
+
+- fixed-timestamp render: exit 0, 14 exact files, target validation 0 errors/warnings;
+- BOARD raw-byte audit: 0 CR bytes, 18 LF bytes;
+- simulated CC_FIN Git filtering for every reviewed path: 14 raw blobs compared,
+  mismatch count 0;
+- target-adapted controlled-time suite: 33 passed, exit 0;
+- CC_FIN remains clean/synchronized and all 14 paths are absent.
+
+This changes the rendered target script by the explicit LF argument. BOARD's logical
+content and timestamp are unchanged, but its working-tree byte production is now
+platform-stable. Independent rereview is required before another target copy.
 
 ## Initial BOARD state
 

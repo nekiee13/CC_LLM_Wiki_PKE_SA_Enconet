@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-SLICE2-LF-CORRECTION-CX
+agent: codex
+status: released
+claimed_at_utc: 2026-07-18T12:40:05Z
+last_renewed_at_utc: 2026-07-18T12:40:05Z
+expires_at_utc: 2026-07-18T14:40:05Z
+anticipated_files:
+  - doc/support-transfer/SLICE2_PREJOB_BRIEFING.md
+  - doc/support-transfer/SLICE2_RENDER_EVIDENCE.md
+  - doc/support-transfer/rendered/render_slice2.py
+  - doc/support-transfer/rendered/slice2/scripts/agent_coord.py
+note: Correct BOARD platform-newline byte mismatch exposed by mandatory pre-commit staged-blob comparison; rereview before target copy
+released_at_utc: 2026-07-18T12:40:05Z

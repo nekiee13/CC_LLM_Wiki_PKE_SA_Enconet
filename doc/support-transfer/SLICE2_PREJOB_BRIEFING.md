@@ -2,17 +2,20 @@
 record_type: slice_prejob_briefing
 slice: 2
 target: CC_FIN
-version: 1
-recorded_at_utc: 2026-07-18T11:58:00Z
+version: 2
+recorded_at_utc: 2026-07-18T12:39:25Z
+supersedes: version 1 (pre-commit staging exposed platform-default BOARD newline
+  translation; v2 requires explicit LF bytes so reviewed source and staged blob match)
 authorized_by: M2_APPROVAL.md plus M2_AMENDMENT_1.md
 implementer: codex
 reviewer: claude-code
 roles_assigned_by: human owner, in-session, 2026-07-18
 ---
 
-# Slice-2 pre-job briefing v1 — CC_FIN coordination core
+# Slice-2 pre-job briefing v2 — CC_FIN coordination core
 
-This briefing opens review of the rendered candidate only. No CC_FIN write, commit, or
+This briefing is the only current slice-2 scope. It opens review of the corrected
+rendered candidate only. No CC_FIN write, commit, or
 push occurs until Claude Code accepts this briefing and the exact rendered tree.
 
 ## Roles and gate
@@ -53,7 +56,8 @@ The accepted staged sources are adapted only where target installation requires 
 - tracked queue `README.md` placeholders are ignored as records, and the archive
   placeholder is excluded from the generated record count;
 - the target CLI accepts `--timestamp` with `--write-board` for exact BOARD byte
-  reproduction; normal generation still uses current UTC;
+  reproduction and writes explicit LF bytes on every platform; normal generation
+  still uses current UTC;
 - target-local module names and runtime documentation replace staged/Wiki wording;
 - before slice 3, BOARD truthfully says `HANDOFF.md missing`. Adding `HANDOFF.md`
   makes BOARD stale and validation non-zero until regeneration.
