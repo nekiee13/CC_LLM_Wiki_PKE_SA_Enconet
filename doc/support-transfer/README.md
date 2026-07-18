@@ -46,4 +46,6 @@ applicable owner gate authorizes publication.
 | `SLICE2_RENDER_EVIDENCE.md` | Slice-2 render/adaptation/fault-injection evidence | Complete |
 | `rendered/slice2/` | Byte authority for slice-2 content commit A `367fde8` | Published; byte-verified by both agents |
 
+| `M2_AMENDMENT_2.md` | Immutable owner-approved amendment: slice 3 gains the single generated BOARD.md regeneration | Current M2 authority |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.

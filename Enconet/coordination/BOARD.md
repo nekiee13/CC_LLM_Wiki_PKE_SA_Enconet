@@ -106,6 +106,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-M2-ACCEPT-CX` — codex, released 2026-07-17T23:27:56Z
 - `SUPPORT-TRANSFER-M2-AMENDMENT-1` — claude-code, released 2026-07-18T05:10:14Z
 - `SUPPORT-TRANSFER-M2-AMENDMENT-1-REVIEW-CX` — codex, released 2026-07-18T05:13:58Z
+- `SUPPORT-TRANSFER-M2-AMENDMENT-2` — claude-code, released 2026-07-18T13:13:08Z
 - `SUPPORT-TRANSFER-M2-ARCHIVE-CC` — claude-code, released 2026-07-17T23:32:08Z
 - `SUPPORT-TRANSFER-M2-CORRECTIONS` — claude-code, released 2026-07-17T23:04:07Z
 - `SUPPORT-TRANSFER-M2-DECISION` — claude-code, released 2026-07-18T04:43:51Z
@@ -163,6 +164,7 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-18T131112Z_ack-slice3-roles-board-scope-flag` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE3-CX
+- `CC_2026-07-18T131308Z_owner-approved-m2-amendment-2-board-modification` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE3-CX
 - `CX_2026-07-18T131009Z_slice3-owner-roles-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE3-CX
 
 ## Pointers
@@ -170,4 +172,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 335 records in `coordination/archive/`
 
-Generated: 2026-07-18T13:11:13Z
+Generated: 2026-07-18T13:13:08Z
