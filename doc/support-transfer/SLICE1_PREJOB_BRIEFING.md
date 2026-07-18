@@ -2,66 +2,91 @@
 record_type: slice_prejob_briefing
 slice: 1
 target: CC_FIN
-recorded_at_utc: 2026-07-18T04:56:00Z
-authorized_by: M2_APPROVAL.md (owner, 2026-07-17T23:52:40Z)
+version: 2
+recorded_at_utc: 2026-07-18T05:20:00Z
+supersedes: version 1 (2026-07-18T04:56:00Z, retained in Git history; its scope
+  conflicted with T3 publication rule 5 and was rejected by review finding S1-F1)
+authorized_by: M2_APPROVAL.md plus M2_AMENDMENT_1.md
 implementer: claude-code
 reviewer: codex
 roles_assigned_by: human owner, in-session, 2026-07-18
 ---
 
-# Slice-1 pre-job briefing — CC_FIN neutral support skeleton
+# Slice-1 pre-job briefing v2 — CC_FIN neutral support records
 
-## Roles (this slice, owner-assigned per M2 amendment 3)
+This version is the **only current scope**; version 1 is superseded in full (AM1-F3).
 
-- Implementer: claude-code. Reviewer: codex. Independent review by the reviewer is
-  required before push and before any acceptance statement.
+## Roles
 
-## Scope (exactly the M2_DRY_RUN_MANIFEST.md slice-1 inventory)
+Implementer: claude-code. Reviewer: codex. Independent review is required before push
+and before any acceptance statement.
 
-9 creates: `support/README.md`, `support/current-status.md`, `support/log.md`,
-`support/RECORD-KEEPING.md`, `support/decisions/README.md`,
-`support/decisions/adr.template.md`, `support/AFI.md`, `support/LESSONS-LEARNED.md`,
-`support/GOOD-PRACTICES.md` — rendered from the accepted T3 templates with FIN values;
-rendering fails on any unresolved placeholder.
+## Exact scope — 8 creates, no modification
 
-1 modification: `docs/README.md` gains exactly one line:
-`- [Support system](../support/README.md) — repo-local governance, coordination, and handoff core`
+The slice content is byte-for-byte the reviewed rendered tree in
+`doc/support-transfer/rendered/slice1/` (evidence: `SLICE1_RENDER_EVIDENCE.md`):
 
-Nothing else. One commit, one concern, committed locally; **no push before review**.
+`support/PROFILE.md`, `support/current-status.md`, `support/log.md`,
+`support/RECORD-KEEPING.md`, `support/decisions/README.md`, `support/AFI.md`,
+`support/LESSONS-LEARNED.md`, `support/GOOD-PRACTICES.md`
 
-## Preflight checklist (executed and recorded before writing)
+Explicitly **not** in slice 1: `support/README.md` and the `docs/README.md` link
+(slice 3c, after coordination and handoff cores); `support/decisions/adr.template.md`
+(AM1-F4: not an authorized target path).
 
-1. HEAD equals recovery anchor `238c207c73970f3d3c6dc00c2db5932ebeca7be4`; porcelain
-   empty; synchronized `0 0` with `origin/main`.
-2. All 9 creation paths absent; `docs/README.md` present.
-3. Rendered content passes the sensitive-content scan (staged `_shared.scan_sensitive`)
-   and contains no unresolved `{{...}}` placeholder.
-4. No Wiki path, Wiki project name in a runtime role, or cross-repository reference in
-   any rendered file.
+## Exceptional replacement of the rejected commit (one-time, this slice only)
 
-## Acceptance rule (M2 item 6)
+The rejected, never-pushed local commit `80f87308545875aeeed0bd8d35f6c65ab8f5cb1e` is
+removed before re-implementation:
 
-After the local commit, a like-for-like native re-run
-(`PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider
---continue-on-collection-errors`, JUnit outside the repo) must show the identical
-failing/erroring tuple set as `M2_BASELINE_FAILURE_SET.md` — no new tuple, no mutated
-surviving tuple, no unexplained disappearance.
+- Preconditions (all verified immediately before the command): porcelain empty;
+  `HEAD` equals `80f8730...`; exactly `1 0` against `origin/main` (never pushed).
+- Command: `git reset --hard 238c207c73970f3d3c6dc00c2db5932ebeca7be4`
+- Postchecks: `HEAD` equals the anchor `238c207...`; porcelain empty; `0 0` against
+  `origin/main`.
+- This is authorized once, for this rejected unpushed commit, by M2_AMENDMENT_1.md §5;
+  it is never a routine recovery method and never permitted after a push.
 
-## Amendment 1 (owner-approved 2026-07-18, after Codex findings S1-F1..F4)
+## Preflight (after the replacement, before writing)
 
-The scope above is superseded by `M2_AMENDMENT_1.md`: slice 1 is now the 9 amended
-creates (adding `support/PROFILE.md`, dropping `support/README.md` and the
-`docs/README.md` link, which move to slice 3c per T3 publication rule 5). Post-slice
-validation evidence is recorded target-locally in `support/log.md` and linked from
-`support/current-status.md`; log event types distinguish `support-committed-local`
-from `support-published`; the exact next action names its entry point. Roles,
-preflight, acceptance rule, and stop conditions are unchanged. The unpushed commit
-`80f8730` is replaced per the amendment's rebuild procedure only after Codex review of
-the amendment.
+1. `HEAD` equals anchor `238c207c73970f3d3c6dc00c2db5932ebeca7be4`; porcelain empty;
+   `0 0` against `origin/main`.
+2. All 8 creation paths absent; no `support/` directory exists.
+3. The rendered source tree's own evidence is current (`SLICE1_RENDER_EVIDENCE.md`).
+
+## Two-commit evidence protocol (AM1-F2)
+
+1. **Content commit A**: copy the rendered tree byte-for-byte; `git add support`;
+   verify staged paths are exactly the 8 files; commit. `support/log.md` carries the
+   `support-committed-local` event (no SHA self-reference); `support/current-status.md`
+   states validation as **pending** with the exact command as entry point.
+2. **Validation run against A's tree**: with porcelain clean at A, run exactly
+   `PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider
+   --continue-on-collection-errors -q --tb=no -W ignore --junitxml=<outside-repo>` from
+   the repository root; record the integer exit code; compare tuples against
+   `M2_BASELINE_FAILURE_SET.md`.
+3. **Evidence commit B**: append one `support-validated` event to `support/log.md`
+   carrying the exact command, integer exit code, tuple result
+   (expected 54/54, 0 new / 0 gone / 0 mutated), and **commit A's SHA** as the tested
+   tree; refresh `support/current-status.md` (validation summary now literal, next
+   action = reviewer). Commit B's diff must touch only these two files — neither is a
+   native-suite input (`pytest.ini` `testpaths = tests`), which is why the A-tree
+   result remains valid for the slice.
+4. **Final verification**: porcelain empty; `HEAD == B`; `B^ == A`;
+   `git diff A..B --name-only` is exactly `support/current-status.md` and
+   `support/log.md`.
+
+## Slice identity and recovery
+
+The slice comprises **commits A and B**. Rollback (only with reviewer/owner direction):
+`git revert` B then A, restoring the parent recorded in the preflight; never
+`reset --hard`, never after push. Push happens only after reviewer acceptance of both
+commits.
 
 ## Stop conditions
 
-Baseline drift at preflight; any collision; sensitive-pattern hit; unresolved
-placeholder; any new/mutated/vanished tuple after commit; any file outside the
-inventory appearing in `git status`. On stop: no push, scoped revert of the local
-commit only, report to owner and reviewer.
+Precondition or postcheck failure at the exceptional replacement; preflight drift;
+any staged path outside the 8; byte difference from the reviewed rendered tree; any
+new/disappeared/mutated tuple; commit B touching anything beyond the two evidence
+files; reviewer findings. On stop: no push, report to reviewer and owner with the
+exact failing check.

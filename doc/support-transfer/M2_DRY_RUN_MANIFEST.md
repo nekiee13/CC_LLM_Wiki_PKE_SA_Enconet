@@ -7,10 +7,14 @@ accepted staged executables (`doc/support-transfer/staged/`, `852d9e4`); renderi
 replaces template placeholders with CC_FIN values and fails on any unresolved
 placeholder.
 
-## Slice 1 — neutral support records (amended by M2_AMENDMENT_1.md: 9 creates, no modification)
+## Slice 1 — neutral support records (amended by M2_AMENDMENT_1.md and AM1 corrections: 8 creates, no modification)
 
 Per T3 publication rule 5, `support/README.md` and the `docs/README.md` link move to
-slice 3c (index closure) so no committed slice contains dangling links.
+slice 3c (index closure) so no committed slice contains dangling links. Per AM1-F4 the
+ADR design template is not installed target-side (T3 instantiates it only as
+`support/decisions/ADR-SUP-NNNN-slug.md`). The exact rendered content is
+`rendered/slice1/` with evidence in `SLICE1_RENDER_EVIDENCE.md`; the two-commit
+evidence protocol is defined in `SLICE1_PREJOB_BRIEFING.md` v2.
 
 | Path | Source | Class |
 |---|---|---|
@@ -19,7 +23,6 @@ slice 3c (index closure) so no committed slice contains dangling links.
 | `support/log.md` | `event-log.template.md` | Shared-neutral, append-only |
 | `support/RECORD-KEEPING.md` | `record-keeping.template.md` | Shared-neutral, controlled |
 | `support/decisions/README.md` | `adr-register.template.md` | Shared-neutral, controlled |
-| `support/decisions/adr.template.md` | `adr.template.md` | Shared-neutral, template |
 | `support/AFI.md` | `afi-ledger.template.md` | Shared-neutral, curated ledger |
 | `support/LESSONS-LEARNED.md` | `lessons-ledger.template.md` | Shared-neutral, curated ledger |
 | `support/GOOD-PRACTICES.md` | `good-practices-ledger.template.md` | Shared-neutral, curated ledger |

@@ -37,9 +37,9 @@ applicable owner gate authorizes publication.
 | `M2_DRY_RUN_MANIFEST.md` | Exact per-slice file inventory (slice 4 deferred), existing-file dispositions, disposable-copy validation | Corrected per M2-RR2 |
 | `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Accepted by Codex (`CX_2026-07-17T232749Z`); owner-approved with amendments |
 | `M2_APPROVAL.md` | Immutable owner M2 decision: slices 1-3/5/6 authorized, slice 4 deferred, baseline deferred to FIN-side final migration, roles per pre-job briefing | Accepted |
-
-| `SLICE1_PREJOB_BRIEFING.md` | Slice-1 roles (owner-assigned), scope, preflight, acceptance rule, stop conditions | Recorded; slice 1 implemented, review pending |
-
-| `M2_AMENDMENT_1.md` | Immutable owner-approved M2 amendment: T3-rule-5 resequencing, slice 3c index closure, support/PROFILE.md, target-local evidence rules | Pending Codex review |
+| `M2_AMENDMENT_1.md` | Immutable owner-approved M2 amendment: T3-rule-5 resequencing, slice 3c index closure, support/PROFILE.md, target-local evidence rules | Current M2 authority; direction accepted by Codex, implementation-readiness corrections applied |
+| `SLICE1_PREJOB_BRIEFING.md` | Slice-1 v2 single scope: 8 creates, exceptional replacement procedure, two-commit evidence protocol, stop conditions | Recorded; awaiting Codex re-review before re-implementation (rejected local commit `80f8730` superseded, unpushed) |
+| `SLICE1_RENDER_EVIDENCE.md` | Rendered slice-1 tree evidence: fail-closed render, disposable-root read-back, content decisions | Complete candidate |
+| `rendered/slice1/` | Exact byte content proposed for slice-1 content commit A | Pending Codex re-review |
 
 Records marked candidate become accepted only through the gate named in the Master Plan.
