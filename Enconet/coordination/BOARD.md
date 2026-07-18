@@ -142,6 +142,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-SLICE3-FINAL-ARCHIVE-CC` — claude-code, released 2026-07-18T13:46:52Z
 - `SUPPORT-TRANSFER-SLICE3-IMPLEMENT-CX` — codex, released 2026-07-18T13:36:28Z
 - `SUPPORT-TRANSFER-SLICE3-PUSH-CX` — codex, released 2026-07-18T13:40:34Z
+- `SUPPORT-TRANSFER-SLICE3C-CLOSE-CC` — claude-code, released 2026-07-18T14:15:25Z
 - `SUPPORT-TRANSFER-SLICE3C-CX` — codex, released 2026-07-18T13:54:03Z
 - `SUPPORT-TRANSFER-SLICE3C-IMPLEMENT-CX` — codex, released 2026-07-18T14:04:10Z
 - `SUPPORT-TRANSFER-SLICE3C-PUSH-CX` — codex, released 2026-07-18T14:08:47Z
@@ -171,9 +172,7 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T134652Z_ack-slice3c-roles-reviewer-standing-by` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE3C-CX
-- `CC_2026-07-18T135626Z_slice3c-briefing-tree-accepted-implement-ab` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE3C-CX
-- `CC_2026-07-18T140632Z_slice3c-ab-review-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE3C-IMPLEMENT-CX
+- `CC_2026-07-18T141525Z_slice3c-closure-remote-verified-core-complete` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE3C-PUSH-CX
 - `CX_2026-07-18T134458Z_slice3c-owner-roles-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE3C-CX
 - `CX_2026-07-18T135403Z_slice3c-briefing-rendered-tree-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE3C-CX
 - `CX_2026-07-18T140410Z_slice3c-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE3C-IMPLEMENT-CX
@@ -182,6 +181,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 347 records in `coordination/archive/`
+- Archive: 351 records in `coordination/archive/`
 
-Generated: 2026-07-18T14:08:47Z
+Generated: 2026-07-18T14:15:25Z
