@@ -87,10 +87,10 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
 
 | Risk | Control | Residual owner choice |
 |---|---|---|
-| Baseline is not green in this environment | Node-level fingerprint (item 6): no-new-failing-node rule, explained resolutions only, silent replacement is a stop condition | Item 6(a) dependency environment first, or 6(b) fingerprinted red baseline |
+| Baseline is not green in this environment | Tuple contract (item 6): no new tuple, surviving-tuple stability, explained resolutions only, silent replacement is a stop condition | Decided: disposition deferred to the FIN-side final migration record (owner amendment 1) |
 | Support slice touches product behavior | Manifest path allowlist; per-slice preflight diff; T7.3 product-preservation check | Accept slice sequencing |
 | Partial publication leaves inconsistent state | Small isolated commits; staged no-clobber/atomic tooling; accepted T6.4 rollback rehearsal | Accept revert-only recovery |
-| Cross-agent ownership violation | Slices 1-4 are shared-neutral; agent-owned payloads authored only by their owner (items 7, 9) | Retain role assignments |
+| Cross-agent ownership violation | Slices 1-3 are shared-neutral (slice 4 deferred and unauthorized); agent-owned payloads authored only by their owning agent (item 7) | Decided: fixed file ownership with implementer/reviewer assigned per slice pre-job briefing (owner amendments 2-3) |
 | Hosted behavior changes unnoticed | Workflow edit isolated to its own reviewed commit (item 8) | Authorize, defer, or reject item 8 timing |
 | Listed baseline nodes drift during the publication window | Node-level set recorded at exact date/HEAD; like-for-like re-runs; drift recorded and dispositioned, never averaged away | Accept comparison method |
 
