@@ -123,6 +123,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 - `SUPPORT-TRANSFER-SLICE1` — claude-code, released 2026-07-18T04:58:43Z
 - `SUPPORT-TRANSFER-SLICE1-CX` — codex, released 2026-07-18T06:12:40Z
+- `SUPPORT-TRANSFER-SLICE1-PUSH-CX` — codex, released 2026-07-18T06:31:09Z
 - `SUPPORT-TRANSFER-SLICE1-REVIEW-CX` — codex, released 2026-07-18T05:05:15Z
 - `SUPPORT-TRANSFER-SLICE1-ROLES-ARCHIVE-CC` — claude-code, released 2026-07-18T06:04:14Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
@@ -154,10 +155,11 @@ and ADRs are the records.
 - `CC_2026-07-18T060414Z_role-switch-briefing-v6-handover` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE1
 - `CC_2026-07-18T062858Z_slice1-ab-review-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE1-CX
 - `CX_2026-07-18T061240Z_slice1-ab-implemented-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE1-CX
+- `CX_2026-07-18T063109Z_slice1-push-complete-remote-confirmation` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-SLICE1-PUSH-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 314 records in `coordination/archive/`
 
-Generated: 2026-07-18T06:28:58Z
+Generated: 2026-07-18T06:31:09Z
