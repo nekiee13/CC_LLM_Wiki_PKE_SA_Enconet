@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-LOTO-SLICE1-PUSH-CX` — codex, expires 2026-07-19T07:04:14Z
+- none
 
 ## Released claims
 
@@ -101,6 +101,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX` — codex, released 2026-07-18T22:42:17Z
 - `SUPPORT-TRANSFER-LOTO-SLICE1-A-CX` — codex, released 2026-07-18T22:52:37Z
 - `SUPPORT-TRANSFER-LOTO-SLICE1-B-CX` — codex, released 2026-07-18T23:04:14Z
+- `SUPPORT-TRANSFER-LOTO-SLICE1-PUSH-CX` — codex, released 2026-07-18T23:09:02Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
 - `SUPPORT-TRANSFER-M1-ACTIVATION` — codex, released 2026-07-16T23:36:04Z
 - `SUPPORT-TRANSFER-M1-ARCHIVE-CC` — claude-code, released 2026-07-16T23:29:04Z
@@ -194,12 +195,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-18T230607Z_loto-slice1-live-tip-verified-slice1-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE1-PUSH-CX
-- `CX_2026-07-18T230338Z_ack-loto-slice1-b-accepted-ab-push-authorized` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE1-B-CX
-- `CX_2026-07-18T230415Z_loto-slice1-live-tip-closure-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE1-PUSH-CX
+- `CX_2026-07-18T230837Z_ack-loto-slice1-live-tip-verified-slice1-closed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE1-PUSH-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T213127Z-1a48ddd.md`](../handoffs/2026-07-18T213127Z-1a48ddd.md)
-- Archive: 438 records in `coordination/archive/`
+- Archive: 441 records in `coordination/archive/`
 
-Generated: 2026-07-18T23:06:24Z
+Generated: 2026-07-18T23:09:03Z
