@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-M3-PACKET-CX
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-18T21:13:13Z
 last_renewed_at_utc: 2026-07-18T21:13:13Z
 expires_at_utc: 2026-07-19T05:13:13Z
@@ -8,3 +8,4 @@ anticipated_files:
   - doc/support-transfer/M3_FIN_ACCEPT_LOTO_AUTH_PACKET.md
   - doc/support-transfer/M3_FIN_EVIDENCE_INDEX.md
 note: Prepare owner-gated M3 packet from closed FIN evidence. Codex implementer; Claude reviewer. No CC_Loto write or approval inference.
+released_at_utc: 2026-07-18T21:41:27Z
