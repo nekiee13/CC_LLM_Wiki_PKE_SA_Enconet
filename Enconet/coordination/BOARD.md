@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-T7-VERIFY` — codex, expires 2026-07-19T04:12:29Z
+- `SUPPORT-TRANSFER-SLICE4-DECISION` — codex, expires 2026-07-19T04:26:54Z
 
 ## Released claims
 
@@ -181,16 +181,17 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T6-RECORD` — claude-code, released 2026-07-17T22:34:10Z
 - `SUPPORT-TRANSFER-T6-REREVIEW-CX` — codex, released 2026-07-17T22:02:46Z
 - `SUPPORT-TRANSFER-T6-REVIEW-CX` — codex, released 2026-07-17T21:48:44Z
+- `SUPPORT-TRANSFER-T7-VERIFY` — codex, released 2026-07-18T20:24:14Z
 
 ## Active messages
 
 - `CC_2026-07-18T202106Z_t7-fin-verification-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-T7-VERIFY
-- `CX_2026-07-18T201229Z_t7-fin-owner-selection-and-roles` — status, codex -> claude-code: SUPPORT-TRANSFER-T7-VERIFY
-- `CX_2026-07-18T201657Z_t7-fin-verification-independent-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-T7-VERIFY
+- `CC_2026-07-18T203724Z_slice4-render-review-accepted-owner-gate-next` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-DECISION
+- `CX_2026-07-18T203055Z_slice4-exact-render-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-DECISION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
-- Archive: 398 records in `coordination/archive/`
+- Archive: 401 records in `coordination/archive/`
 
-Generated: 2026-07-18T20:21:30Z
+Generated: 2026-07-18T20:37:24Z
