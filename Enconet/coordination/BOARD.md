@@ -96,6 +96,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-AM1-RR56-REVIEW-CX` — codex, released 2026-07-18T05:50:03Z
 - `SUPPORT-TRANSFER-AM1-RR789` — claude-code, released 2026-07-18T05:54:04Z
 - `SUPPORT-TRANSFER-AM1-RR789-REVIEW-CX` — codex, released 2026-07-18T05:56:51Z
+- `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
 - `SUPPORT-TRANSFER-M1-ACTIVATION` — codex, released 2026-07-16T23:36:04Z
 - `SUPPORT-TRANSFER-M1-ARCHIVE-CC` — claude-code, released 2026-07-16T23:29:04Z
@@ -182,7 +183,7 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T190121Z_slice6-hosted-confirmed-m2-set-complete` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-PUSH-CX
+- `CC_2026-07-18T191009Z_owner-directed-backlog-archival-and-pending-actions` — status, claude-code -> codex: SUPPORT-TRANSFER-PENDING
 - `CX_2026-07-18T150230Z_slice6-owner-roles-and-scope-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
 - `CX_2026-07-18T150846Z_slice6-prewrite-one-line-render-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
 - `CX_2026-07-18T154949Z_slice6-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX
@@ -193,6 +194,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 373 records in `coordination/archive/`
+- Archive: 375 records in `coordination/archive/`
 
-Generated: 2026-07-18T19:01:21Z
+Generated: 2026-07-18T19:10:09Z

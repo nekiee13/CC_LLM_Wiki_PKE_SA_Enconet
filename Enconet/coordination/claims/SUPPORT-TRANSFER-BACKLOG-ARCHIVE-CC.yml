@@ -1,0 +1,11 @@
+task: SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T19:09:33Z
+last_renewed_at_utc: 2026-07-18T19:09:33Z
+expires_at_utc: 2026-07-19T19:09:33Z
+anticipated_files:
+  - Enconet/coordination/messages
+  - Enconet/coordination/archive
+note: Owner-directed backlog archival: archive the confirmed CC_ closure record with manifest; message Codex with pending actions incl. its CX backlog archival.
+released_at_utc: 2026-07-18T19:10:09Z
