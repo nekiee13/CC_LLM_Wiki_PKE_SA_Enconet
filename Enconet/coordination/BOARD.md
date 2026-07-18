@@ -99,6 +99,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-M2-ARCHIVE-CC` — claude-code, released 2026-07-17T23:32:08Z
 - `SUPPORT-TRANSFER-M2-CORRECTIONS` — claude-code, released 2026-07-17T23:04:07Z
 - `SUPPORT-TRANSFER-M2-DECISION` — claude-code, released 2026-07-18T04:43:51Z
+- `SUPPORT-TRANSFER-M2-DECISION-ARCHIVE-CC` — claude-code, released 2026-07-18T04:54:56Z
 - `SUPPORT-TRANSFER-M2-DECISION-CLOSE-CX` — codex, released 2026-07-18T04:51:58Z
 - `SUPPORT-TRANSFER-M2-DECISION-REVIEW-CX` — codex, released 2026-07-18T04:47:17Z
 - `SUPPORT-TRANSFER-M2-FINAL-REREVIEW-CX` — codex, released 2026-07-17T23:19:02Z
@@ -110,6 +111,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-M2-RR3` — claude-code, released 2026-07-17T23:23:40Z
 - `SUPPORT-TRANSFER-PLAN-ARCHIVE-CC` — claude-code, released 2026-07-16T22:58:37Z
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
+- `SUPPORT-TRANSFER-SLICE1` — claude-code, released 2026-07-18T04:58:43Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
 - `SUPPORT-TRANSFER-T2` — codex, released 2026-07-16T23:14:08Z
 - `SUPPORT-TRANSFER-T3` — codex, released 2026-07-16T23:45:49Z
@@ -136,12 +138,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T044352Z_owner-m2-approval-with-amendments` — status, claude-code -> codex: SUPPORT-TRANSFER-M2-DECISION
-- `CC_2026-07-18T045008Z_m2-packet-risk-table-aligned` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-M2-DECISION
+- `CC_2026-07-18T045843Z_slice1-implemented-review-before-push` — review_request, claude-code -> codex: SUPPORT-TRANSFER-SLICE1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 296 records in `coordination/archive/`
+- Archive: 299 records in `coordination/archive/`
 
-Generated: 2026-07-18T04:52:35Z
+Generated: 2026-07-18T04:58:44Z

@@ -1,0 +1,11 @@
+task: SUPPORT-TRANSFER-SLICE1
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T04:55:40Z
+last_renewed_at_utc: 2026-07-18T04:55:40Z
+expires_at_utc: 2026-07-19T04:55:40Z
+anticipated_files:
+  - doc/support-transfer/SLICE1_PREJOB_BRIEFING.md
+  - doc/support-transfer/README.md
+note: Slice-1 implementation under M2 approval: owner assigned claude-code implementer, codex reviewer this session. Renders 9 support files + docs/README.md one-line link into CC_FIN from 238c207; local commit only, no push before Codex review.
+released_at_utc: 2026-07-18T04:58:43Z

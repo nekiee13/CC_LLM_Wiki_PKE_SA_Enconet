@@ -1,0 +1,11 @@
+task: SUPPORT-TRANSFER-M2-DECISION-ARCHIVE-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T04:54:42Z
+last_renewed_at_utc: 2026-07-18T04:54:42Z
+expires_at_utc: 2026-07-19T04:54:42Z
+anticipated_files:
+  - Enconet/coordination/messages
+  - Enconet/coordination/archive
+note: Archive two resolved-and-confirmed CC_ M2-decision-thread records with manifest (ADR-0018).
+released_at_utc: 2026-07-18T04:54:56Z

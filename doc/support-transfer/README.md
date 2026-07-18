@@ -38,4 +38,6 @@ applicable owner gate authorizes publication.
 | `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Accepted by Codex (`CX_2026-07-17T232749Z`); owner-approved with amendments |
 | `M2_APPROVAL.md` | Immutable owner M2 decision: slices 1-3/5/6 authorized, slice 4 deferred, baseline deferred to FIN-side final migration, roles per pre-job briefing | Accepted |
 
+| `SLICE1_PREJOB_BRIEFING.md` | Slice-1 roles (owner-assigned), scope, preflight, acceptance rule, stop conditions | Recorded; slice 1 implemented, review pending |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.
