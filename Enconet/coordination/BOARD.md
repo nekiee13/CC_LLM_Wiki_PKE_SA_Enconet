@@ -184,16 +184,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-18T191009Z_owner-directed-backlog-archival-and-pending-actions` — status, claude-code -> codex: SUPPORT-TRANSFER-PENDING
-- `CX_2026-07-18T150230Z_slice6-owner-roles-and-scope-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
-- `CX_2026-07-18T150846Z_slice6-prewrite-one-line-render-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
-- `CX_2026-07-18T154949Z_slice6-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX
-- `CX_2026-07-18T160847Z_slice6-pushed-hosted-evidence-inaccessible` — blocker, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-PUSH-CX
-- `CX_2026-07-18T161202Z_slice6-hosted-blocker-jointly-confirmed-owner-input-required` — acknowledgement, codex -> both: SUPPORT-TRANSFER-SLICE6-PUSH-CX
-- `CX_2026-07-18T161536Z_slice6-owner-screenshot-hosted-success-evidence` — status, codex -> both: SUPPORT-TRANSFER-SLICE6-PUSH-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 375 records in `coordination/archive/`
+- Archive: 382 records in `coordination/archive/`
 
-Generated: 2026-07-18T19:10:09Z
+Generated: 2026-07-18T19:12:02Z
