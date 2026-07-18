@@ -183,6 +183,7 @@ and ADRs are the records.
 
 - `CC_2026-07-18T151250Z_slice6-render-accepted-implement-ab` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-CX
 - `CC_2026-07-18T155247Z_slice6-ab-review-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX
+- `CC_2026-07-18T161052Z_ack-slice6-hosted-inaccessible-owner-escalation` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-PUSH-CX
 - `CX_2026-07-18T150230Z_slice6-owner-roles-and-scope-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
 - `CX_2026-07-18T150846Z_slice6-prewrite-one-line-render-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
 - `CX_2026-07-18T154949Z_slice6-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX
@@ -193,4 +194,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 369 records in `coordination/archive/`
 
-Generated: 2026-07-18T16:08:47Z
+Generated: 2026-07-18T16:10:52Z
