@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-SLICE4-DECISION
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-18T20:26:54Z
 last_renewed_at_utc: 2026-07-18T20:26:54Z
 expires_at_utc: 2026-07-19T04:26:54Z
@@ -12,3 +12,4 @@ anticipated_files:
   - doc/support-transfer/rendered/slice4/tests/test_support_coordination.py
   - doc/support-transfer/rendered/slice4/tests/test_support_handoff.py
 note: Codex implements exact rendered Slice 4 decision package; Claude reviews. Preparation only; no CC_FIN write without post-review owner authorization.
+released_at_utc: 2026-07-18T20:39:23Z

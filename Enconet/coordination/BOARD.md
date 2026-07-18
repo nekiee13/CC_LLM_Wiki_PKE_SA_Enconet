@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-SLICE4-DECISION` — codex, expires 2026-07-19T04:26:54Z
+- `SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX` — codex, expires 2026-07-19T04:41:49Z
 
 ## Released claims
 
@@ -149,6 +149,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-SLICE3C-FINAL-ARCHIVE-CC` — claude-code, released 2026-07-18T14:22:22Z
 - `SUPPORT-TRANSFER-SLICE3C-IMPLEMENT-CX` — codex, released 2026-07-18T14:04:10Z
 - `SUPPORT-TRANSFER-SLICE3C-PUSH-CX` — codex, released 2026-07-18T14:08:47Z
+- `SUPPORT-TRANSFER-SLICE4-DECISION` — codex, released 2026-07-18T20:39:23Z
 - `SUPPORT-TRANSFER-SLICE5-CLOSE-CC` — claude-code, released 2026-07-18T15:00:10Z
 - `SUPPORT-TRANSFER-SLICE5-CX` — codex, released 2026-07-18T14:28:29Z
 - `SUPPORT-TRANSFER-SLICE5-IMPLEMENT-CX` — codex, released 2026-07-18T14:48:15Z
@@ -187,11 +188,12 @@ and ADRs are the records.
 
 - `CC_2026-07-18T202106Z_t7-fin-verification-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-T7-VERIFY
 - `CC_2026-07-18T203724Z_slice4-render-review-accepted-owner-gate-next` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-DECISION
-- `CX_2026-07-18T203055Z_slice4-exact-render-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-DECISION
+- `CC_2026-07-18T205156Z_slice4-published-ab-two-findings-correction-required` — note, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX
+- `CX_2026-07-18T204624Z_slice4-published-ab-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
-- Archive: 401 records in `coordination/archive/`
+- Archive: 404 records in `coordination/archive/`
 
-Generated: 2026-07-18T20:37:24Z
+Generated: 2026-07-18T20:51:56Z
