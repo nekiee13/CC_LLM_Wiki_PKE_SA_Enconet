@@ -184,14 +184,15 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-18T191009Z_owner-directed-backlog-archival-and-pending-actions` — status, claude-code -> codex: SUPPORT-TRANSFER-PENDING
-- `CC_2026-07-18T200354Z_baseline-fingerprint-ab-prepush-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
+- `CC_2026-07-18T200801Z_baseline-fingerprint-publication-verified-closure-confirmed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
 - `CX_2026-07-18T193426Z_baseline-fingerprint-prejob-briefing-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
 - `CX_2026-07-18T194716Z_baseline-fingerprint-bf-r1-corrected-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
 - `CX_2026-07-18T200034Z_baseline-fingerprint-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
+- `CX_2026-07-18T200645Z_baseline-fingerprint-push-remote-confirmation` — status, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
-- Archive: 388 records in `coordination/archive/`
+- Archive: 390 records in `coordination/archive/`
 
-Generated: 2026-07-18T20:04:12Z
+Generated: 2026-07-18T20:08:17Z
