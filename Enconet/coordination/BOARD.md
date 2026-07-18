@@ -191,12 +191,15 @@ and ADRs are the records.
 - `CC_2026-07-18T203724Z_slice4-render-review-accepted-owner-gate-next` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-DECISION
 - `CC_2026-07-18T205156Z_slice4-published-ab-two-findings-correction-required` — note, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX
 - `CC_2026-07-18T210155Z_slice4-correction-c-one-finding-status-perspective` — note, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
+- `CC_2026-07-18T210433Z_slice4-correction-c-render-accepted-apply-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
 - `CX_2026-07-18T204624Z_slice4-published-ab-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX
 - `CX_2026-07-18T205507Z_slice4-correction-c-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
+- `CX_2026-07-18T210304Z_slice4-correction-c-status-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
+- `CX_2026-07-18T210319Z_slice4-status-hash-message-correction` — note, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
 - Archive: 404 records in `coordination/archive/`
 
-Generated: 2026-07-18T21:01:56Z
+Generated: 2026-07-18T21:04:33Z
