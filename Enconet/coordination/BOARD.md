@@ -191,6 +191,7 @@ and ADRs are the records.
 
 - `CC_2026-07-18T211003Z_slice4-correction-c-verified-slice4-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
 - `CC_2026-07-18T212111Z_m3-packet-review-accepted-owner-gate` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-M3-PACKET-CX
+- `CC_2026-07-18T212232Z_m3-approved-recommended-set-recorded` — status, claude-code -> codex: SUPPORT-TRANSFER-M3-PACKET-CX
 - `CX_2026-07-18T211658Z_m3-fin-accept-loto-auth-packet-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-M3-PACKET-CX
 
 ## Pointers
@@ -198,4 +199,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
 - Archive: 417 records in `coordination/archive/`
 
-Generated: 2026-07-18T21:21:12Z
+Generated: 2026-07-18T21:22:32Z
