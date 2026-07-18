@@ -2,21 +2,22 @@
 record_type: slice_prejob_briefing
 slice: 1
 target: CC_FIN
-version: 4
-recorded_at_utc: 2026-07-18T05:47:00Z
-supersedes: version 3 (AM1-RR5/RR6 literal-command and truthfulness corrections),
-  version 2 (AM1-RR2/RR3/RR4 protocol corrections), and version 1
-  (2026-07-18T04:56:00Z; scope conflicted with T3 publication rule 5, rejected by
-  review finding S1-F1); all retained in Git history
+version: 5
+recorded_at_utc: 2026-07-18T05:53:19Z
+supersedes: version 4 (its recorded_at_utc postdated its containing commit, AM1-RR9;
+  content otherwise unchanged), version 3 (AM1-RR5/RR6 literal-command and
+  truthfulness corrections), version 2 (AM1-RR2/RR3/RR4 protocol corrections), and
+  version 1 (2026-07-18T04:56:00Z; scope conflicted with T3 publication rule 5,
+  rejected by review finding S1-F1); all retained in Git history
 authorized_by: M2_APPROVAL.md plus M2_AMENDMENT_1.md
 implementer: claude-code
 reviewer: codex
 roles_assigned_by: human owner, in-session, 2026-07-18
 ---
 
-# Slice-1 pre-job briefing v4 — CC_FIN neutral support records
+# Slice-1 pre-job briefing v5 — CC_FIN neutral support records
 
-This version is the **only current scope**; versions 1-3 are superseded in full (AM1-F3, AM1-RR2..RR6).
+This version is the **only current scope**; versions 1-4 are superseded in full (AM1-F3, AM1-RR2..RR9).
 
 ## Roles
 

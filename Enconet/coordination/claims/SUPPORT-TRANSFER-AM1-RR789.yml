@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-AM1-RR789
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T05:52:54Z
+last_renewed_at_utc: 2026-07-18T05:53:03Z
+expires_at_utc: 2026-07-19T05:53:03Z
+anticipated_files:
+  - doc/support-transfer/rendered/render_slice1.py
+  - doc/support-transfer/SLICE1_PREJOB_BRIEFING.md
+  - doc/support-transfer/SLICE1_RENDER_EVIDENCE.md
+  - doc/support-transfer/M2_DRY_RUN_MANIFEST.md
+  - doc/support-transfer/README.md
+note: Close AM1-RR7/RR8/RR9: current-version references, committed render timestamp in the reproduction example, briefing v5 with actual authoring time preceding its containing commit; re-run 8/8 hash comparison.
+released_at_utc: 2026-07-18T05:54:04Z

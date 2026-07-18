@@ -45,7 +45,7 @@ T3's asset map instantiates it only as `support/decisions/ADR-SUP-NNNN-slug.md` 
 
 ## AM1-RR5/RR6 corrections and byte authority
 
-- **RR5**: the rendered status and briefing v3 now carry one literal PowerShell
+- **RR5**: the rendered status and briefing v5 now carry one literal PowerShell
   command as the exact entry point (environment-assignment form; fixed report names
   `fin_slice1_A.xml`/`fin_slice1_B.xml` under `$env:TEMP`; `-q`, `--tb=no`,
   `--junitxml` fixed; no `-W` or other behavior change). No meta-placeholder remains
@@ -54,7 +54,7 @@ T3's asset map instantiates it only as `support/decisions/ADR-SUP-NNNN-slug.md` 
   ("rendered and disposable read-back verified"); the stale `support-committed-local`
   statement below was corrected.
 - **Byte authority**: the committed rendered tree — not a fresh renderer run — is
-  commit A's byte authority (briefing v3's byte-for-byte rule). The retained renderer
+  commit A's byte authority (briefing v5's byte-for-byte rule). The retained renderer
   additionally accepts `--timestamp <reviewed UTC>` for exact byte reproduction; this
   was mechanically demonstrated (fresh render stamped, then re-run with `--timestamp`
   produced all 8 files SHA-256-identical, exit 0). A fresh run without `--timestamp`

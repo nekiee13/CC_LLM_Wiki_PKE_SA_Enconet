@@ -7,7 +7,7 @@ Byte authority: the COMMITTED rendered tree is commit A's byte authority. A fres
 run stamps a fresh UTC time into the two timestamped records unless the reviewed
 timestamp is supplied for exact byte reproduction:
 
-    python render_slice1.py --timestamp 2026-07-18T05:29:51Z
+    python render_slice1.py --timestamp 2026-07-18T05:42:39Z
 """
 import argparse
 import re, sys, shutil
