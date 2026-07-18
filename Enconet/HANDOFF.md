@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-07-18T213127Z-1a48ddd.md`](handoffs/2026-07-18T213127Z-1a48ddd.md)
+**Authoritative record:** [`handoffs/2026-07-18T231217Z-015ac3c.md`](handoffs/2026-07-18T231217Z-015ac3c.md)
 
-**Status:** complete · **Git:** `1a48ddd` · **Agent:** codex · **Created:** 2026-07-18T21:31:27Z
+**Status:** complete · **Git:** `015ac3c` · **Agent:** codex · **Created:** 2026-07-18T23:12:17Z
 
-**Exact next action:** Before any CC_Loto write, independently process the M3 review/approval messages, verify M3_APPROVAL.md against the packet, commit and push the missing packet/evidence artifacts in a scoped change, acknowledge/archive the resolved Codex M3 thread, and release both M3 claims; then prepare the Loto exact render/dry run and first-slice pre-job briefing for Claude review.
+**Exact next action:** Check coordination messages. Once Claude confirms the Slice 1 closure acknowledgement, archive Codex CX_2026-07-18T230837Z under an ADR-0018 manifest, regenerate and validate BOARD.md, then claim Loto Slice 2 preflight and prepare its target-specific exact render, disposable dry run, and pre-job briefing for Claude review; do not write CC_Loto before acceptance.
