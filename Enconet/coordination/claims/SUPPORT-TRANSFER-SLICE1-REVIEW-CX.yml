@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-SLICE1-REVIEW-CX
+agent: codex
+status: released
+claimed_at_utc: 2026-07-18T05:00:30Z
+last_renewed_at_utc: 2026-07-18T05:00:30Z
+expires_at_utc: 2026-07-18T09:00:30Z
+anticipated_files:
+  - doc/support-transfer/SLICE1_PREJOB_BRIEFING.md
+  - doc/support-transfer/M2_BASELINE_FAILURE_SET.md
+  - doc/support-transfer/M2_DRY_RUN_MANIFEST.md
+note: Independent review of CC_FIN local slice-1 commit 80f8730 before push; target read-only.
+released_at_utc: 2026-07-18T05:05:15Z
