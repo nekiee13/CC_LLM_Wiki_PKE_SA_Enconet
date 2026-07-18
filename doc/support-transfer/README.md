@@ -48,4 +48,8 @@ applicable owner gate authorizes publication.
 
 | `M2_AMENDMENT_2.md` | Immutable owner-approved amendment: slice 3 gains the single generated BOARD.md regeneration | Current M2 authority |
 
+| `SLICE3_PREJOB_BRIEFING.md` | Slice-3 protocol under amendment 2 (codex implements, claude-code reviews) | Executed; slice 3 published at CC_FIN `ea41c2a` |
+| `SLICE3_RENDER_EVIDENCE.md` | Slice-3 render/integration/lifecycle-probe evidence | Complete |
+| `rendered/slice3/` | Byte authority for slice-3 content commit A `9a6d5f0` | Published; byte-verified by both agents |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.
