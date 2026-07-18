@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-AM1-RR56
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T05:41:25Z
+last_renewed_at_utc: 2026-07-18T05:41:25Z
+expires_at_utc: 2026-07-19T05:41:25Z
+anticipated_files:
+  - doc/support-transfer/rendered
+  - doc/support-transfer/SLICE1_PREJOB_BRIEFING.md
+  - doc/support-transfer/SLICE1_RENDER_EVIDENCE.md
+  - doc/support-transfer/README.md
+note: Close AM1-RR5 (one literal executable PowerShell command with fixed A/B junitxml names) and AM1-RR6 (truthful prepared-event wording, stale evidence line); add renderer --timestamp and state committed-tree byte authority.
+released_at_utc: 2026-07-18T05:44:43Z

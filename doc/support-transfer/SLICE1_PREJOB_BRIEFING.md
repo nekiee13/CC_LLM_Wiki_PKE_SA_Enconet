@@ -2,20 +2,21 @@
 record_type: slice_prejob_briefing
 slice: 1
 target: CC_FIN
-version: 3
-recorded_at_utc: 2026-07-18T05:32:00Z
-supersedes: version 2 (AM1-RR2/RR3/RR4 protocol corrections; retained in Git history)
-  and version 1 (2026-07-18T04:56:00Z; scope conflicted with T3 publication rule 5,
-  rejected by review finding S1-F1)
+version: 4
+recorded_at_utc: 2026-07-18T05:47:00Z
+supersedes: version 3 (AM1-RR5/RR6 literal-command and truthfulness corrections),
+  version 2 (AM1-RR2/RR3/RR4 protocol corrections), and version 1
+  (2026-07-18T04:56:00Z; scope conflicted with T3 publication rule 5, rejected by
+  review finding S1-F1); all retained in Git history
 authorized_by: M2_APPROVAL.md plus M2_AMENDMENT_1.md
 implementer: claude-code
 reviewer: codex
 roles_assigned_by: human owner, in-session, 2026-07-18
 ---
 
-# Slice-1 pre-job briefing v3 — CC_FIN neutral support records
+# Slice-1 pre-job briefing v4 — CC_FIN neutral support records
 
-This version is the **only current scope**; versions 1 and 2 are superseded in full (AM1-F3, AM1-RR2/RR3/RR4).
+This version is the **only current scope**; versions 1-3 are superseded in full (AM1-F3, AM1-RR2..RR6).
 
 ## Roles
 
@@ -62,13 +63,12 @@ removed before re-implementation:
    the truthful `support-prepared` event (render/verification time);
    `support/current-status.md` states validation as **pending** with the exact command
    as entry point. No record claims commit A exists before it does.
-2. **Validation run against A's tree**: with porcelain clean at A, run exactly the
-   accepted baseline command `PYTHONDONTWRITEBYTECODE=1 python -m pytest
-   -p no:cacheprovider --continue-on-collection-errors` from the repository root, with
-   reporting-only additions permitted (`-q`, `--tb=no`,
-   `--junitxml=<outside-repo>`) and **no `-W` or other behavior-altering flag**
-   (AM1-RR3); record the integer exit code; compare tuples against
-   `M2_BASELINE_FAILURE_SET.md`.
+2. **Validation run against A's tree**: with porcelain clean at A, run exactly this
+   one literal PowerShell command from the repository root (AM1-RR3/RR5 — accepted
+   baseline behavior plus fixed reporting-only additions; no `-W` or other
+   behavior-altering flag):
+   `$env:PYTHONDONTWRITEBYTECODE='1'; python -m pytest -p no:cacheprovider --continue-on-collection-errors -q --tb=no --junitxml="$env:TEMP\fin_slice1_A.xml"`
+   Record the integer exit code; compare tuples against `M2_BASELINE_FAILURE_SET.md`.
 3. **Evidence commit B**: append two events to `support/log.md` under this
    deterministic rule (AM1-RR2): a `support-committed-local` event whose timestamp is
    **commit A's committer time converted to UTC** (from
@@ -77,12 +77,14 @@ removed before re-implementation:
    (expected 54/54, 0 new / 0 gone / 0 mutated), and **commit A's SHA** as the tested
    tree; refresh `support/current-status.md` (validation summary now literal, next
    action = reviewer). Commit B's diff must touch only these two files.
-4. **Final-tree validation at B (AM1-RR4)**: with porcelain clean at B, re-run the
-   same like-for-like command and confirm the identical tuple set at HEAD B, plus
-   focused B-tree checks (sensitive scan, relative links, status/log consistency:
-   the recorded A SHA equals `B^`). These results are review evidence the reviewer
-   reproduces independently; no further evidence commit is written (the target-local
-   event truthfully records A as the tested tree of its result).
+4. **Final-tree validation at B (AM1-RR4/RR5)**: with porcelain clean at B, re-run
+   the identical command with only the fixed report name changed:
+   `$env:PYTHONDONTWRITEBYTECODE='1'; python -m pytest -p no:cacheprovider --continue-on-collection-errors -q --tb=no --junitxml="$env:TEMP\fin_slice1_B.xml"`
+   and confirm the identical tuple set at HEAD B, plus focused B-tree checks
+   (sensitive scan, relative links, status/log consistency: the recorded A SHA equals
+   `B^`). These results are review evidence the reviewer reproduces independently; no
+   further evidence commit is written (the target-local event truthfully records A as
+   the tested tree of its result).
 5. **Final identity verification**: porcelain empty; `HEAD == B`; `B^ == A`;
    `git diff A..B --name-only` is exactly `support/current-status.md` and
    `support/log.md`.

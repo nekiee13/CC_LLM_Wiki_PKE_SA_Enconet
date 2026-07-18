@@ -14,7 +14,7 @@ slice 3c (index closure) so no committed slice contains dangling links. Per AM1-
 ADR design template is not installed target-side (T3 instantiates it only as
 `support/decisions/ADR-SUP-NNNN-slug.md`). The exact rendered content is
 `rendered/slice1/` with evidence in `SLICE1_RENDER_EVIDENCE.md`; the two-commit
-evidence protocol is defined in `SLICE1_PREJOB_BRIEFING.md` v3.
+evidence protocol is defined in `SLICE1_PREJOB_BRIEFING.md` v4.
 
 | Path | Source | Class |
 |---|---|---|

@@ -43,6 +43,26 @@ T3's asset map instantiates it only as `support/decisions/ADR-SUP-NNNN-slug.md` 
   for the backdated event type, `-W ignore`, and the RR1 rule set via
   whitespace-tolerant matching); exit_code=0.
 
+## AM1-RR5/RR6 corrections and byte authority
+
+- **RR5**: the rendered status and briefing v3 now carry one literal PowerShell
+  command as the exact entry point (environment-assignment form; fixed report names
+  `fin_slice1_A.xml`/`fin_slice1_B.xml` under `$env:TEMP`; `-q`, `--tb=no`,
+  `--junitxml` fixed; no `-W` or other behavior change). No meta-placeholder remains
+  in any rendered command.
+- **RR6**: the prepared event states exactly the facts available at its timestamp
+  ("rendered and disposable read-back verified"); the stale `support-committed-local`
+  statement below was corrected.
+- **Byte authority**: the committed rendered tree — not a fresh renderer run — is
+  commit A's byte authority (briefing v3's byte-for-byte rule). The retained renderer
+  additionally accepts `--timestamp <reviewed UTC>` for exact byte reproduction; this
+  was mechanically demonstrated (fresh render stamped, then re-run with `--timestamp`
+  produced all 8 files SHA-256-identical, exit 0). A fresh run without `--timestamp`
+  intentionally stamps a new UTC into the two timestamped records.
+- **passed** — post-RR5/RR6 disposable-root re-verification (8/8; probes added for
+  meta-placeholders, the literal command appearing exactly twice in the status, the B
+  report name, and prepared-event wording); exit_code=0.
+
 ## Content decisions visible in the rendered tree
 
 - `support/PROFILE.md` (new, Controlled): clone-complete target-local profile authority
@@ -57,8 +77,12 @@ T3's asset map instantiates it only as `support/decisions/ADR-SUP-NNNN-slug.md` 
   next-action entry point; the validation summary states the expected literal outcome
   as **pending** and explains the two-commit evidence protocol — no validation result
   is authored before it exists (AM1-F2/S1-F3).
-- `support/log.md`: initial event uses type `support-committed-local` (not
-  `support-published`), naming commit A as unreviewed and unpushed.
+- `support/log.md`: the initial (and only) rendered event is `support-prepared`,
+  stating the render + disposable read-back facts available at its timestamp; the
+  `support-committed-local` and `support-validated` events are appended by evidence
+  commit B with their actual UTC times under the briefing's deterministic rule
+  (AM1-RR2/RR6 — nothing is backdated, and independent reviewer verification is never
+  claimed at the render timestamp).
 - `support/decisions/README.md`: existing FIN decision authorities listed with
   architecture/AS-IS included; no renumbering.
 

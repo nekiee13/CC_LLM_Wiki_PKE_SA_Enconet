@@ -38,7 +38,7 @@ applicable owner gate authorizes publication.
 | `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Accepted by Codex (`CX_2026-07-17T232749Z`); owner-approved with amendments |
 | `M2_APPROVAL.md` | Immutable owner M2 decision: slices 1-3/5/6 authorized, slice 4 deferred, baseline deferred to FIN-side final migration, roles per pre-job briefing | Accepted |
 | `M2_AMENDMENT_1.md` | Immutable owner-approved M2 amendment: T3-rule-5 resequencing, slice 3c index closure, support/PROFILE.md, target-local evidence rules | Current M2 authority; direction accepted by Codex, implementation-readiness corrections applied |
-| `SLICE1_PREJOB_BRIEFING.md` | Slice-1 v3 single scope: 8 creates, exceptional replacement, two-commit protocol with deterministic event times and final-B validation | Recorded; awaiting Codex re-review before re-implementation (rejected local commit `80f8730` superseded, unpushed) |
+| `SLICE1_PREJOB_BRIEFING.md` | Slice-1 v4 single scope: 8 creates, exceptional replacement, two-commit protocol with literal commands, deterministic event times, final-B validation | Recorded; awaiting Codex re-review before re-implementation (rejected local commit `80f8730` superseded, unpushed) |
 | `SLICE1_RENDER_EVIDENCE.md` | Rendered slice-1 tree evidence: fail-closed render, disposable-root read-back, content decisions | Complete candidate |
 | `rendered/slice1/` | Exact byte content proposed for slice-1 content commit A | Pending Codex re-review |
 

@@ -2,7 +2,14 @@
 
 Fail-closed: unresolved placeholders, sensitive patterns, Wiki references, or
 unresolvable relative Markdown links abort before any file is written.
+
+Byte authority: the COMMITTED rendered tree is commit A's byte authority. A fresh
+run stamps a fresh UTC time into the two timestamped records unless the reviewed
+timestamp is supplied for exact byte reproduction:
+
+    python render_slice1.py --timestamp 2026-07-18T05:29:51Z
 """
+import argparse
 import re, sys, shutil
 from pathlib import Path
 from datetime import datetime, timezone
@@ -13,7 +20,13 @@ from _shared import scan_sensitive
 
 TPL = WIKI / 'doc/support-transfer/templates'
 OUT = WIKI / 'doc/support-transfer/rendered/slice1'
-NOW = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+_args = argparse.ArgumentParser(description=__doc__)
+_args.add_argument('--timestamp', help='fixed UTC render timestamp '
+                   '(YYYY-MM-DDTHH:MM:SSZ) for exact byte reproduction')
+_ns = _args.parse_args()
+if _ns.timestamp:
+    datetime.strptime(_ns.timestamp, '%Y-%m-%dT%H:%M:%SZ')
+NOW = _ns.timestamp or datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 BASE = '238c207c73970f3d3c6dc00c2db5932ebeca7be4'
 
 PROFILE = """# CC_FIN support profile (target-local controlled authority)
@@ -138,10 +151,13 @@ authorities = (
     "- Documentation index and freshness ledger: `docs/README.md`, `docs/documentation_freshness_ledger.md`\n"
     "- GitHub workflows, templates, and issue governance: `.github/`")
 
-PYTEST_CMD = ("PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider "
-              "--continue-on-collection-errors"
-              " (reporting-only additions permitted: -q --tb=no "
-              "--junitxml=<outside-repo>)")
+# One literal, executable PowerShell command (AM1-RR5). The A and B runs differ
+# only in the fixed report filename; reporting-only flags, no -W or other
+# behavior change.
+PYTEST_CMD_A = ("$env:PYTHONDONTWRITEBYTECODE='1'; python -m pytest "
+                "-p no:cacheprovider --continue-on-collection-errors -q --tb=no "
+                '--junitxml="$env:TEMP' + chr(0x5c) + 'fin_slice1_A.xml"')
+PYTEST_CMD_B = PYTEST_CMD_A.replace('fin_slice1_A.xml', 'fin_slice1_B.xml')
 
 values = {
     'PROJECT_NAME': 'CC_FIN',
@@ -160,21 +176,25 @@ values = {
     'COORDINATION_SUMMARY': ('The coordination core (protocol, queues, claims, generated board) '
         'arrives with slice 2; no target-local messages, claims, or blockers exist yet.'),
     'VALIDATION_SUMMARY': ('Pending for this slice: after content commit A, the like-for-like '
-        'native run executes exactly `' + PYTEST_CMD + '` from the repository root; expected '
-        'literal outcome is exit code 1 with the identical recorded failing/erroring tuple set '
-        '(54 nodes, 0 new / 0 gone / 0 mutated). The result is recorded as a support-validated '
-        'event in [log.md](log.md) by evidence commit B, which touches only log.md and this '
-        'file (neither is collected by the native suite: pytest testpaths=tests). No validation '
-        'claim is authored before the run exists.'),
+        'native run executes exactly this PowerShell command from the repository root: `'
+        + PYTEST_CMD_A + '`. Expected literal outcome is exit code 1 with the identical '
+        'recorded failing/erroring tuple set (54 nodes, 0 new / 0 gone / 0 mutated). The '
+        'result is recorded as a support-validated event in [log.md](log.md) by evidence '
+        'commit B, which touches only log.md and this file (neither is collected by the '
+        'native suite: pytest testpaths=tests). The final-tree check re-runs the identical '
+        'command at clean HEAD B with the report name fin_slice1_B.xml. No validation claim '
+        'is authored before the run exists.'),
     'NEXT_ACTION_OWNER': 'claude-code (implementer this slice)',
     'NEXT_ACTION_PREREQUISITES': 'content commit A exists; worktree clean',
-    'NEXT_ACTION': ('Run the like-for-like native suite (entry point: `' + PYTEST_CMD + '` from '
-        'the repository root), compare tuples against the recorded baseline set, then write '
-        'evidence commit B appending the support-validated event to log.md and refreshing this '
+    'NEXT_ACTION': ('Run the like-for-like native suite (entry point, one literal PowerShell '
+        'command from the repository root: `' + PYTEST_CMD_A + '`), compare tuples against '
+        'the recorded baseline set, then write evidence commit B appending the '
+        'support-committed-local and support-validated events to log.md and refreshing this '
         'status; then hand to reviewer codex'),
     'NEXT_ACTION_STOP_CONDITION': ('Any new, disappeared, or mutated tuple; any porcelain entry '
         'outside log.md and current-status.md at commit B; reviewer findings'),
-    'STATUS_EVIDENCE_LINKS': ('- Slice-1 events (committed-local, then support-validated) in [log.md](log.md)\n'
+    'STATUS_EVIDENCE_LINKS': ('- Slice-1 events (support-prepared now; support-committed-local '
+        'and support-validated appended by evidence commit B) in [log.md](log.md)\n'
         '- Record classes in [RECORD-KEEPING.md](RECORD-KEEPING.md)\n'
         '- Sensitivity/module/recovery authority in [PROFILE.md](PROFILE.md)'),
 }
@@ -197,10 +217,10 @@ record_keeping = record_keeping.replace(
 
 log_initial = render('event-log').rstrip('\n') + '\n' + (
     f'support-prepared | {NOW} | SLICE-1 | Eight neutral support records rendered and '
-    'independently verified for slice-1 content commit A under owner-approved transfer '
-    'gate M2 amendment 1; the commit-operation and validation events are appended by '
-    'evidence commit B with their actual UTC times; implementer claude-code, reviewer '
-    'codex | claude-code\n')
+    'disposable read-back verified for slice-1 content commit A under owner-approved '
+    'transfer gate M2 amendment 1; the commit-operation and validation events are '
+    'appended by evidence commit B with their actual UTC times; implementer '
+    'claude-code, reviewer codex | claude-code\n')
 
 values['TARGET_DECISION_AUTHORITIES'] = authorities
 adr_register = render('adr-register')
