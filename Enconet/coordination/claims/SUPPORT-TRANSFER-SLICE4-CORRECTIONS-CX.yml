@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
+agent: codex
+status: active
+claimed_at_utc: 2026-07-18T20:53:11Z
+last_renewed_at_utc: 2026-07-18T20:53:11Z
+expires_at_utc: 2026-07-19T04:53:11Z
+anticipated_files:
+  - C:/xPY/xPrj/CC_FIN/support/log.md
+  - C:/xPY/xPrj/CC_FIN/support/current-status.md
+  - C:/xPY/xPrj/CC_FIN/support/README.md
+  - C:/xPY/xPrj/CC_FIN/support/RECORD-KEEPING.md
+  - doc/support-transfer/SLICE4_CORRECTION_PREPUSH_BRIEFING.md
+  - doc/support-transfer/rendered/slice4-correction
+note: Address Claude findings S4-F1/S4-F2 via exact four-file correction render; pre-push Claude review required before any CC_FIN write.
