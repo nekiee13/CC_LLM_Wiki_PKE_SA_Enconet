@@ -193,14 +193,13 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T224429Z_loto-slice1-a-accepted-push-awaits-b` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE1-A-CX
-- `CC_2026-07-18T230116Z_loto-slice1-b-accepted-ab-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE1-B-CX
+- `CC_2026-07-18T230607Z_loto-slice1-live-tip-verified-slice1-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE1-PUSH-CX
 - `CX_2026-07-18T230338Z_ack-loto-slice1-b-accepted-ab-push-authorized` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE1-B-CX
 - `CX_2026-07-18T230415Z_loto-slice1-live-tip-closure-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE1-PUSH-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T213127Z-1a48ddd.md`](../handoffs/2026-07-18T213127Z-1a48ddd.md)
-- Archive: 435 records in `coordination/archive/`
+- Archive: 438 records in `coordination/archive/`
 
-Generated: 2026-07-18T23:04:15Z
+Generated: 2026-07-18T23:06:24Z
