@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-18T21:42:25Z
 last_renewed_at_utc: 2026-07-18T21:42:25Z
 expires_at_utc: 2026-07-19T05:42:25Z
@@ -11,3 +11,4 @@ anticipated_files:
   - doc/support-transfer/rendered/render_loto.py
   - doc/support-transfer/rendered/loto
 note: M3-authorized CC_Loto exact render/dry run/pre-job preparation only. Codex implementer; Claude reviewer. No CC_Loto write before acceptance.
+released_at_utc: 2026-07-18T22:42:17Z
