@@ -1,0 +1,10 @@
+task: SUPPORT-TRANSFER-T7-VERIFY
+agent: codex
+status: active
+claimed_at_utc: 2026-07-18T20:12:29Z
+last_renewed_at_utc: 2026-07-18T20:12:29Z
+expires_at_utc: 2026-07-19T04:12:29Z
+anticipated_files:
+  - doc/support-transfer/T7_FIN_VERIFICATION_BRIEFING.md
+  - doc/support-transfer/T7_FIN_ACCEPTANCE_EVIDENCE.md
+note: Owner-selected T7.1/T7.3 verification; Codex implements evidence collection, Claude independently reviews; read-only CC_FIN verification and no target write.

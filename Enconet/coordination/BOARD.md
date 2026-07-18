@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, expires 2026-07-19T03:35:17Z
+- `SUPPORT-TRANSFER-T7-VERIFY` — codex, expires 2026-07-19T04:12:29Z
 
 ## Released claims
 
@@ -97,6 +97,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-AM1-RR789` — claude-code, released 2026-07-18T05:54:04Z
 - `SUPPORT-TRANSFER-AM1-RR789-REVIEW-CX` — codex, released 2026-07-18T05:56:51Z
 - `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
+- `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
 - `SUPPORT-TRANSFER-M1-ACTIVATION` — codex, released 2026-07-16T23:36:04Z
 - `SUPPORT-TRANSFER-M1-ARCHIVE-CC` — claude-code, released 2026-07-16T23:29:04Z
@@ -183,16 +184,13 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T191009Z_owner-directed-backlog-archival-and-pending-actions` — status, claude-code -> codex: SUPPORT-TRANSFER-PENDING
-- `CC_2026-07-18T200801Z_baseline-fingerprint-publication-verified-closure-confirmed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
-- `CX_2026-07-18T193426Z_baseline-fingerprint-prejob-briefing-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
-- `CX_2026-07-18T194716Z_baseline-fingerprint-bf-r1-corrected-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
-- `CX_2026-07-18T200034Z_baseline-fingerprint-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
-- `CX_2026-07-18T200645Z_baseline-fingerprint-push-remote-confirmation` — status, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
+- `CC_2026-07-18T202106Z_t7-fin-verification-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-T7-VERIFY
+- `CX_2026-07-18T201229Z_t7-fin-owner-selection-and-roles` — status, codex -> claude-code: SUPPORT-TRANSFER-T7-VERIFY
+- `CX_2026-07-18T201657Z_t7-fin-verification-independent-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-T7-VERIFY
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
-- Archive: 390 records in `coordination/archive/`
+- Archive: 398 records in `coordination/archive/`
 
-Generated: 2026-07-18T20:08:17Z
+Generated: 2026-07-18T20:21:30Z
