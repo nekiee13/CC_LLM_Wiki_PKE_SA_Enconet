@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-AM1-RR
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T05:28:18Z
+last_renewed_at_utc: 2026-07-18T05:28:18Z
+expires_at_utc: 2026-07-19T05:28:18Z
+anticipated_files:
+  - doc/support-transfer/rendered
+  - doc/support-transfer/SLICE1_PREJOB_BRIEFING.md
+  - doc/support-transfer/SLICE1_RENDER_EVIDENCE.md
+  - doc/support-transfer/README.md
+note: Close AM1-RR1..RR4: carry the M1 Git/hosted-workflow and product-boundary rules into PROFILE.md; truthful prepared-event log with deterministic committed-event injection at B; restore accepted like-for-like flags; final B-tree validation step; retain the renderer in-repo.
+released_at_utc: 2026-07-18T05:31:19Z

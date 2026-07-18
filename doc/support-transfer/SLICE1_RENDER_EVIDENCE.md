@@ -8,8 +8,10 @@ T3's asset map instantiates it only as `support/decisions/ADR-SUP-NNNN-slug.md` 
 
 ## Render protocol (fail-closed)
 
-- **passed** — render + first-pass checks: command=`python <scratchpad>/render_slice1.py`
-  (from the workspace root); exit_code=0. The renderer aborts before writing any file
+- **passed** — render + first-pass checks: command=
+  `python doc/support-transfer/rendered/render_slice1.py` (renderer retained in-repo
+  alongside its output; the committed rendered tree plus the independent read-back
+  below are the reproducible authority); exit_code=0. The renderer aborts before writing any file
   on: unresolved `{{...}}` placeholder, sensitive-content pattern
   (staged `_shared.scan_sensitive`), forbidden reference tokens (`LLM_Wiki`, `03_PKE`,
   `Enconet`, `xPY`), or a relative Markdown link that resolves neither inside the slice
@@ -21,6 +23,25 @@ T3's asset map instantiates it only as `support/decisions/ADR-SUP-NNNN-slug.md` 
   placeholder, no sensitive pattern, no forbidden token including absolute-path forms,
   no link escaping the root, no dangling link); exit_code=0; the disposable root was
   removed afterward.
+
+## AM1-RR corrections (re-rendered and re-verified)
+
+- **RR1**: `support/PROFILE.md` now carries the active M1 `Git and hosted workflow`
+  rules (main-only, small reversible commits, sequential review-before-push, no force
+  push/history rewrite/broad reset/branch-protection mutation/tag/release, hosted
+  protection `unknown` until verified, workflow mismatch only via its separate
+  approval) and the product-work boundary (product issues stay in the product
+  plan/GitHub; release creation out of scope), with the amendment's one-time reset
+  exception stated narrowly as history.
+- **RR2**: the rendered `support/log.md` carries only a truthful `support-prepared`
+  event; the `support-committed-local` event is appended by evidence commit B with
+  commit A's committer time (deterministic rule in the briefing), and
+  `support/current-status.md` no longer claims commit A exists.
+- **RR3**: every rendered command reference uses the accepted baseline flags with
+  reporting-only additions; `-W ignore` is removed everywhere.
+- **passed** — post-correction disposable-root re-verification (8/8 files; adds probes
+  for the backdated event type, `-W ignore`, and the RR1 rule set via
+  whitespace-tolerant matching); exit_code=0.
 
 ## Content decisions visible in the rendered tree
 

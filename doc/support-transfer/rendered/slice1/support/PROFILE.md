@@ -78,6 +78,23 @@ tracked files, moderate support-record growth, Git retention, and support valida
 measured in seconds. No database, service, queue, or runtime dependency enters the
 product.
 
+## Git and hosted workflow
+
+Work stays on `main` in small reversible commits. Publication is sequential and
+reviewed before push. No force push, history rewrite, broad reset, branch-protection
+mutation, tag, or release is authorized. Hosted branch protection remains `unknown`
+until independently verified. The known workflow branch-filter mismatch is handled
+only through its separately approved isolated change. One narrow exception exists as
+history: the owner's transfer-gate amendment authorized a single reset of one rejected,
+never-pushed local commit to its recorded parent; that authorization was one-time and
+never extends to routine recovery or to any pushed commit.
+
+## Product-work boundary
+
+Product issues, backlog, and progress stay in the product Master Plan and GitHub
+issue governance; support records link to them and never form a competing backlog.
+Release creation remains out of scope for support work.
+
 ## Recovery
 
 Before each publication slice, capture HEAD, upstream, clean status, and the allowed

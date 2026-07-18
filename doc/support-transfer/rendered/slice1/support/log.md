@@ -7,4 +7,4 @@ Format:
 `event-type | UTC timestamp | stable subject ID | evidence-based statement | source/actor`
 
 <!-- Append events below this line. -->
-support-committed-local | 2026-07-18T05:18:33Z | SLICE-1 | Eight neutral support records committed locally as slice-1 content commit A under owner-approved transfer gate M2 amendment 1; unreviewed and unpushed; validation run and evidence commit B follow; implementer claude-code, reviewer codex | claude-code
+support-prepared | 2026-07-18T05:29:51Z | SLICE-1 | Eight neutral support records rendered and independently verified for slice-1 content commit A under owner-approved transfer gate M2 amendment 1; the commit-operation and validation events are appended by evidence commit B with their actual UTC times; implementer claude-code, reviewer codex | claude-code
