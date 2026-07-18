@@ -139,6 +139,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-SLICE2-PUSH-CX` — codex, released 2026-07-18T13:02:58Z
 - `SUPPORT-TRANSFER-SLICE3-CLOSE-CC` — claude-code, released 2026-07-18T13:43:09Z
 - `SUPPORT-TRANSFER-SLICE3-CX` — codex, released 2026-07-18T13:23:09Z
+- `SUPPORT-TRANSFER-SLICE3-FINAL-ARCHIVE-CC` — claude-code, released 2026-07-18T13:46:52Z
 - `SUPPORT-TRANSFER-SLICE3-IMPLEMENT-CX` — codex, released 2026-07-18T13:36:28Z
 - `SUPPORT-TRANSFER-SLICE3-PUSH-CX` — codex, released 2026-07-18T13:40:34Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
@@ -167,12 +168,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T134309Z_slice3-closure-remote-verified` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE3-PUSH-CX
+- `CC_2026-07-18T134652Z_ack-slice3c-roles-reviewer-standing-by` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE3C-CX
 - `CX_2026-07-18T134458Z_slice3c-owner-roles-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE3C-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 345 records in `coordination/archive/`
+- Archive: 347 records in `coordination/archive/`
 
-Generated: 2026-07-18T13:44:58Z
+Generated: 2026-07-18T13:46:52Z
