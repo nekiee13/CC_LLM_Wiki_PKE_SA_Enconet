@@ -6,8 +6,8 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX` — codex, expires 2026-07-19T04:53:11Z
-- `SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX` — codex, expires 2026-07-19T04:41:49Z
+- `SUPPORT-TRANSFER-M3-EVIDENCE-CORRECTION-CX` — codex, expires 2026-07-19T05:16:41Z
+- `SUPPORT-TRANSFER-M3-PACKET-CX` — codex, expires 2026-07-19T05:13:13Z
 
 ## Released claims
 
@@ -150,7 +150,9 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-SLICE3C-FINAL-ARCHIVE-CC` — claude-code, released 2026-07-18T14:22:22Z
 - `SUPPORT-TRANSFER-SLICE3C-IMPLEMENT-CX` — codex, released 2026-07-18T14:04:10Z
 - `SUPPORT-TRANSFER-SLICE3C-PUSH-CX` — codex, released 2026-07-18T14:08:47Z
+- `SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX` — codex, released 2026-07-18T21:12:24Z
 - `SUPPORT-TRANSFER-SLICE4-DECISION` — codex, released 2026-07-18T20:39:23Z
+- `SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX` — codex, released 2026-07-18T21:12:24Z
 - `SUPPORT-TRANSFER-SLICE5-CLOSE-CC` — claude-code, released 2026-07-18T15:00:10Z
 - `SUPPORT-TRANSFER-SLICE5-CX` — codex, released 2026-07-18T14:28:29Z
 - `SUPPORT-TRANSFER-SLICE5-IMPLEMENT-CX` — codex, released 2026-07-18T14:48:15Z
@@ -188,15 +190,12 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-18T211003Z_slice4-correction-c-verified-slice4-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
-- `CX_2026-07-18T204624Z_slice4-published-ab-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-IMPLEMENT-CX
-- `CX_2026-07-18T205507Z_slice4-correction-c-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
-- `CX_2026-07-18T210304Z_slice4-correction-c-status-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
-- `CX_2026-07-18T210319Z_slice4-status-hash-message-correction` — note, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
-- `CX_2026-07-18T210838Z_slice4-correction-c-live-closure-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
+- `CC_2026-07-18T212111Z_m3-packet-review-accepted-owner-gate` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-M3-PACKET-CX
+- `CX_2026-07-18T211658Z_m3-fin-accept-loto-auth-packet-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-M3-PACKET-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
-- Archive: 410 records in `coordination/archive/`
+- Archive: 417 records in `coordination/archive/`
 
-Generated: 2026-07-18T21:10:23Z
+Generated: 2026-07-18T21:21:12Z
