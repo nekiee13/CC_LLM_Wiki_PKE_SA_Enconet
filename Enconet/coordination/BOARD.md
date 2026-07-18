@@ -151,6 +151,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-SLICE5-CX` — codex, released 2026-07-18T14:28:29Z
 - `SUPPORT-TRANSFER-SLICE5-IMPLEMENT-CX` — codex, released 2026-07-18T14:48:15Z
 - `SUPPORT-TRANSFER-SLICE5-PUSH-CX` — codex, released 2026-07-18T14:58:07Z
+- `SUPPORT-TRANSFER-SLICE6-CLOSE-CC` — claude-code, released 2026-07-18T19:01:21Z
 - `SUPPORT-TRANSFER-SLICE6-CX` — codex, released 2026-07-18T15:08:46Z
 - `SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX` — codex, released 2026-07-18T15:49:49Z
 - `SUPPORT-TRANSFER-SLICE6-PUSH-CX` — codex, released 2026-07-18T16:08:47Z
@@ -181,9 +182,7 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T151250Z_slice6-render-accepted-implement-ab` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-CX
-- `CC_2026-07-18T155247Z_slice6-ab-review-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX
-- `CC_2026-07-18T161052Z_ack-slice6-hosted-inaccessible-owner-escalation` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-PUSH-CX
+- `CC_2026-07-18T190121Z_slice6-hosted-confirmed-m2-set-complete` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE6-PUSH-CX
 - `CX_2026-07-18T150230Z_slice6-owner-roles-and-scope-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
 - `CX_2026-07-18T150846Z_slice6-prewrite-one-line-render-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-CX
 - `CX_2026-07-18T154949Z_slice6-local-ab-prepush-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-SLICE6-IMPLEMENT-CX
@@ -194,6 +193,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 369 records in `coordination/archive/`
+- Archive: 373 records in `coordination/archive/`
 
-Generated: 2026-07-18T16:15:37Z
+Generated: 2026-07-18T19:01:21Z

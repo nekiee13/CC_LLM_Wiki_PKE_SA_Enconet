@@ -7,7 +7,7 @@
 | Plan ID | `SUPPORT-SYSTEM-TRANSFER` |
 | Version | 1.0 — controlled candidate |
 | Date | 2026-07-17 |
-| Status | M1 approved 2026-07-16; T3 complete; T5.1, T4.3, T5.2, T6.4 closed on accepted evidence (`852d9e4`); **M2 approved with amendments 2026-07-17T23:52:40Z** (`doc/support-transfer/M2_APPROVAL.md`): slices 1-3, 5, 6 authorized, slice 4 deferred, baseline disposition deferred to FIN-side final migration, roles per pre-job briefing; **amendment 1 (2026-07-18, `doc/support-transfer/M2_AMENDMENT_1.md`) is current authority** — T3-rule-5 resequencing, slice 3c index closure, target-local `support/PROFILE.md`; CC_Loto blocked pending M3 |
+| Status | M1 approved 2026-07-16; T3 complete; T5.1, T4.3, T5.2, T6.4 closed on accepted evidence (`852d9e4`); **M2 approved with amendments 2026-07-17T23:52:40Z** (`doc/support-transfer/M2_APPROVAL.md`): slices 1-3, 5, 6 authorized, slice 4 deferred, baseline disposition deferred to FIN-side final migration, roles per pre-job briefing; amendments 1-2 current authority; **M2 publication set COMPLETE 2026-07-18**: slices 1/2/3/3c/5/6 published to CC_FIN (`879bcb5`→`d442373`→`ea41c2a`→`9841751`→`9b79b5e`→`1d61534`), 54-tuple baseline preserved, hosted followup-ml-gate run #1 succeeded on `main` (owner screenshot evidence); slice 4 deferred; CC_Loto blocked pending M3 |
 | Owner | Human project owner |
 | Implementers | Codex and Claude Code within their ownership boundaries |
 | Source contract | `doc/Support_system.md`, accepted by the owner on 2026-07-17 |

@@ -60,4 +60,8 @@ applicable owner gate authorizes publication.
 | `SLICE5_RENDER_EVIDENCE.md` | Slice-5 exact-diff/packaging-fact/board-invariance evidence | Complete |
 | `rendered/slice5/` | Byte authority for slice-5 content commit A `5affe97` | Published; byte-verified by both agents |
 
+| `SLICE6_PREJOB_BRIEFING.md` | Slice-6 one-line workflow protocol with post-push hosted-evidence gate | Executed; slice 6 published at CC_FIN `1d61534`; hosted run #1 succeeded (owner evidence) |
+| `SLICE6_RENDER_EVIDENCE.md` | Slice-6 single-substitution/line-ending/board-invariance evidence | Complete |
+| `rendered/slice6/` | Byte authority for slice-6 content commit A `e687c57` | Published; byte-verified by both agents |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.
