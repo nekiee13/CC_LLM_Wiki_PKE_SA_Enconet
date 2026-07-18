@@ -56,4 +56,8 @@ applicable owner gate authorizes publication.
 | `SLICE3C_RENDER_EVIDENCE.md` | Slice-3c render/link/board-invariance evidence | Complete |
 | `rendered/slice3c/` | Byte authority for slice-3c content commit A `d2d6e63` | Published; byte-verified by both agents |
 
+| `SLICE5_PREJOB_BRIEFING.md` | Slice-5 protocol (codex authors owned/assigned edits, claude-code reviews scope/semantics) | Executed; slice 5 published at CC_FIN `9b79b5e` |
+| `SLICE5_RENDER_EVIDENCE.md` | Slice-5 exact-diff/packaging-fact/board-invariance evidence | Complete |
+| `rendered/slice5/` | Byte authority for slice-5 content commit A `5affe97` | Published; byte-verified by both agents |
+
 Records marked candidate become accepted only through the gate named in the Master Plan.
