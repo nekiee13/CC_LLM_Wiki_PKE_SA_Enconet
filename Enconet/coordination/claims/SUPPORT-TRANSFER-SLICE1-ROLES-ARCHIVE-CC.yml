@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-SLICE1-ROLES-ARCHIVE-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T06:03:14Z
+last_renewed_at_utc: 2026-07-18T06:03:14Z
+expires_at_utc: 2026-07-19T06:03:14Z
+anticipated_files:
+  - Enconet/coordination/messages
+  - Enconet/coordination/archive
+  - doc/support-transfer/SLICE1_PREJOB_BRIEFING.md
+  - doc/support-transfer/README.md
+  - doc/support-transfer/M2_DRY_RUN_MANIFEST.md
+note: Archive six resolved-and-confirmed CC_ slice-1 review-chain records with manifest (ADR-0018); issue briefing v6 with owner-reassigned roles (codex implements, claude-code reviews).
+released_at_utc: 2026-07-18T06:04:14Z

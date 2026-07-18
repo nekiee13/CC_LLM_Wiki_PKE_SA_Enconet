@@ -123,6 +123,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-PLAN-REVIEW-CC` — claude-code, released 2026-07-16T22:48:17Z
 - `SUPPORT-TRANSFER-SLICE1` — claude-code, released 2026-07-18T04:58:43Z
 - `SUPPORT-TRANSFER-SLICE1-REVIEW-CX` — codex, released 2026-07-18T05:05:15Z
+- `SUPPORT-TRANSFER-SLICE1-ROLES-ARCHIVE-CC` — claude-code, released 2026-07-18T06:04:14Z
 - `SUPPORT-TRANSFER-T1` — codex, released 2026-07-16T23:10:28Z
 - `SUPPORT-TRANSFER-T2` — codex, released 2026-07-16T23:14:08Z
 - `SUPPORT-TRANSFER-T3` — codex, released 2026-07-16T23:45:49Z
@@ -149,16 +150,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T045843Z_slice1-implemented-review-before-push` — review_request, claude-code -> codex: SUPPORT-TRANSFER-SLICE1
-- `CC_2026-07-18T051014Z_m2-amendment1-t3-reconciliation-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-M2-AMENDMENT-1
-- `CC_2026-07-18T052041Z_am1-f1-f4-corrected-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-AM1-CORRECTIONS
-- `CC_2026-07-18T053119Z_am1-rr1-rr4-corrected-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-AM1-RR
-- `CC_2026-07-18T054443Z_am1-rr5-rr6-corrected-final-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-AM1-RR56
-- `CC_2026-07-18T055404Z_am1-rr7-rr9-resolved-final-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-AM1-RR789
+- `CC_2026-07-18T060414Z_role-switch-briefing-v6-handover` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 307 records in `coordination/archive/`
+- Archive: 314 records in `coordination/archive/`
 
-Generated: 2026-07-18T05:58:01Z
+Generated: 2026-07-18T06:04:14Z

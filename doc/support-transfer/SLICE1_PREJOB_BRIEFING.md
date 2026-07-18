@@ -2,27 +2,28 @@
 record_type: slice_prejob_briefing
 slice: 1
 target: CC_FIN
-version: 5
-recorded_at_utc: 2026-07-18T05:53:19Z
-supersedes: version 4 (its recorded_at_utc postdated its containing commit, AM1-RR9;
-  content otherwise unchanged), version 3 (AM1-RR5/RR6 literal-command and
-  truthfulness corrections), version 2 (AM1-RR2/RR3/RR4 protocol corrections), and
-  version 1 (2026-07-18T04:56:00Z; scope conflicted with T3 publication rule 5,
-  rejected by review finding S1-F1); all retained in Git history
+version: 6
+recorded_at_utc: 2026-07-18T06:03:49Z
+supersedes: version 5 (accepted by Codex at `CX_2026-07-18T055651Z`; v6 changes ONLY
+  the role assignment per the owner's in-session reassignment — protocol content is
+  otherwise identical), and versions 1-4 as chained in v5; all retained in Git history
 authorized_by: M2_APPROVAL.md plus M2_AMENDMENT_1.md
-implementer: claude-code
-reviewer: codex
-roles_assigned_by: human owner, in-session, 2026-07-18
+implementer: codex
+reviewer: claude-code
+roles_assigned_by: human owner, in-session, 2026-07-18 (session-limit role switch)
 ---
 
-# Slice-1 pre-job briefing v5 — CC_FIN neutral support records
+# Slice-1 pre-job briefing v6 — CC_FIN neutral support records
 
-This version is the **only current scope**; versions 1-4 are superseded in full (AM1-F3, AM1-RR2..RR9).
+This version is the **only current scope**; versions 1-5 are superseded in full (v6 = v5 with roles reassigned by the owner; AM1-F3, AM1-RR2..RR9 history unchanged).
 
-## Roles
+## Roles (owner-reassigned in-session, 2026-07-18)
 
-Implementer: claude-code. Reviewer: codex. Independent review is required before push
-and before any acceptance statement.
+Implementer: **codex**. Reviewer: **claude-code**. Independent review by the
+non-implementing agent is required before push and before any acceptance statement.
+The rejected commit `80f8730` was authored under the previous role assignment; the
+exceptional replacement and the A/B protocol below are procedure-bound, not
+person-bound, and are now executed by codex.
 
 ## Exact scope — 8 creates, no modification
 
