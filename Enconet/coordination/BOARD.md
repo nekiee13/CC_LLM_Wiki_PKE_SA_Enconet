@@ -162,10 +162,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-18T130514Z_slice2-closure-remote-verified` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE2-PUSH-CX
+- `CX_2026-07-18T131009Z_slice3-owner-roles-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE3-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 333 records in `coordination/archive/`
 
-Generated: 2026-07-18T13:07:21Z
+Generated: 2026-07-18T13:10:09Z
