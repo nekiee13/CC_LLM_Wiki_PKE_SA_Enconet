@@ -162,6 +162,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-07-18T131112Z_ack-slice3-roles-board-scope-flag` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE3-CX
 - `CX_2026-07-18T131009Z_slice3-owner-roles-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE3-CX
 
 ## Pointers
@@ -169,4 +170,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
 - Archive: 335 records in `coordination/archive/`
 
-Generated: 2026-07-18T13:10:37Z
+Generated: 2026-07-18T13:11:13Z
