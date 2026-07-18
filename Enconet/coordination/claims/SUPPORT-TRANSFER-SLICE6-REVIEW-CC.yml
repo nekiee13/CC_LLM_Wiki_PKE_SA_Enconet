@@ -1,0 +1,11 @@
+task: SUPPORT-TRANSFER-SLICE6-REVIEW-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T15:12:12Z
+last_renewed_at_utc: 2026-07-18T15:12:12Z
+expires_at_utc: 2026-07-19T15:12:12Z
+anticipated_files:
+  - Enconet/coordination/messages
+  - Enconet/coordination/archive
+note: Slice-6 pre-write review acceptance; archive the confirmed slice-5 closure record with manifest.
+released_at_utc: 2026-07-18T15:12:50Z
