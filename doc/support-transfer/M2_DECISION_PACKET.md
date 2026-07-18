@@ -48,15 +48,16 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
    authorization once rendered content, disposable-copy tests (truthful states,
    `--no-record`, non-zero composition), native pytest discovery evidence, and
    independent review exist.
-6. **Baseline disposition (owner choice required).** The recorded baseline is not
-   green: 24 torch and 11 matplotlib outcomes stem from an interpreter missing the
+6. **Baseline disposition (amended by owner, 2026-07-18).** The recorded baseline is
+   not green: 24 torch and 11 matplotlib outcomes stem from an interpreter missing the
    project's own pinned dependencies, and 19 assertion failures are pre-existing at
-   `238c207` with no common root cause established. Choose one:
-   **(a)** establish the declared dependency environment (install pinned
-   torch/matplotlib), re-run, and re-record the fingerprint before slice 1; or
-   **(b)** accept the exact node-level fingerprint in `M2_BASELINE_FAILURE_SET.md` as
-   the T7.3 comparison set. Under either choice the acceptance rule is the tuple
-   contract in `M2_BASELINE_FAILURE_SET.md` (M2-RR1): the comparison unit is
+   `238c207` with no common root cause established. The owner **defers** the green/red
+   baseline resolution until after support implementation. As the **final migration
+   step** of the FIN support implementation, the node-level failure fingerprint is
+   recorded into FIN's own support records so that FIN carries its baseline standalone,
+   with no runtime or reference dependency on this Wiki repository. Until then, the
+   protective acceptance rule for every slice is the tuple contract in
+   `M2_BASELINE_FAILURE_SET.md` (M2-RR1): the comparison unit is
    `(node_id, outcome, class, normalized_signature)` under its documented
    deterministic normalization rule; a like-for-like re-run after each slice must show
    no new tuple, exact tuple stability for every surviving node (a changed failure
@@ -64,17 +65,23 @@ worktree clean, synchronized with `origin/main`. No drift disposition is require
    replacement is a stop condition even at equal counts), explained disappearance only,
    all support-specific checks passing, and date-dependent drift in listed nodes
    recorded and dispositioned.
-7. Authorize the Codex-authored slice 5 for Codex-owned/assigned edits per M1 item 7:
-   the `AGENTS.md` packaging fact and support navigation, and the
-   `docs/governance-transition.md` unsafe-reset wording replacement. Claude authors
-   neither file's content.
+7. Authorize slice 5 for the agent-owned/assigned edits per M1 item 7: the `AGENTS.md`
+   packaging fact and support navigation, and the `docs/governance-transition.md`
+   unsafe-reset wording replacement. **Ownership rule (fixed):** agent-owned guidance
+   files are authored only by their owning agent — `AGENTS.md` content is always
+   Codex-authored, `CLAUDE.md`/`.claude/` content always Claude-authored, regardless of
+   session roles.
 8. Authorize the `followup-ml-gate.yml` `master`→`main` correction as its own isolated
    slice 6 under M1 item 8, with the exact one-line diff
    (`-      - master` / `+      - main`) reviewed at publication time. No `.gitignore`
    edit is planned; a proven need would require a new owner decision.
-9. Claude implements the shared-neutral slices this cycle (session role reversal
-   stands); Codex authors slice 5 and independently reviews every slice; neither agent
-   marks a T7 criterion without the other's review.
+9. **Roles per pre-job briefing (amended by owner, 2026-07-18).** Implementer and
+   reviewer for each shared-neutral slice are **not fixed in this packet**; they are
+   assigned at a pre-job briefing for that slice and may change between sessions. Two
+   invariants hold regardless of assignment: every slice receives independent review by
+   the non-implementing agent before acceptance, and neither agent marks a T7 criterion
+   without the other's review. The agent-ownership rule in item 7 is unaffected by role
+   rotation.
 
 ## Risks and controls
 
@@ -109,5 +116,10 @@ accepted as T6.4 evidence. CC_Loto is not touched at all until the separate M3 d
 
 ## Owner decision record
 
-Pending. No approval, rejection, or deferral has been recorded. This packet authorizes
-nothing until the owner's explicit decision is recorded here with a UTC timestamp.
+**Approved on 2026-07-18** with the recommended decision set as amended in the same
+session: item 6 baseline disposition deferred to a FIN-side final migration record,
+item 7 restated as the fixed agent-ownership rule, and item 9 changed to
+per-pre-job-briefing role assignment. Slices 1-3, 5, and 6 are authorized under
+per-slice preflight, per-slice parent recovery, and independent review; slice 4 remains
+deferred and unauthorized. The durable decision record is `M2_APPROVAL.md`. No FIN
+write occurs before the first slice's pre-job briefing.

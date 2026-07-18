@@ -35,6 +35,7 @@ applicable owner gate authorizes publication.
 | `M2_PREFLIGHT_EVIDENCE.md` | Read-only CC_FIN baseline reverification, native-check results, dry-run collision check, recovery anchor | Corrected per M2-F1/F4/F5 |
 | `M2_BASELINE_FAILURE_SET.md` | Tuple-based baseline failure fingerprint with deterministic normalization rule (normative T7.3 comparison contract) | Corrected per M2-RR1/RR3 |
 | `M2_DRY_RUN_MANIFEST.md` | Exact per-slice file inventory (slice 4 deferred), existing-file dispositions, disposable-copy validation | Corrected per M2-RR2 |
-| `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Corrected per M2-F1..F5 and M2-RR1/RR2; pending Codex re-review, then owner decision |
+| `M2_DECISION_PACKET.md` | T6.3 consolidated owner decision packet for FIN publication | Accepted by Codex (`CX_2026-07-17T232749Z`); owner-approved with amendments |
+| `M2_APPROVAL.md` | Immutable owner M2 decision: slices 1-3/5/6 authorized, slice 4 deferred, baseline deferred to FIN-side final migration, roles per pre-job briefing | Accepted |
 
 Records marked candidate become accepted only through the gate named in the Master Plan.

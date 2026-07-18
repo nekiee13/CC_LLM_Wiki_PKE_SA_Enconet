@@ -7,7 +7,7 @@
 | Plan ID | `SUPPORT-SYSTEM-TRANSFER` |
 | Version | 1.0 — controlled candidate |
 | Date | 2026-07-17 |
-| Status | M1 approved on 2026-07-16T23:31:30Z for corrected profiles v1.0; T3 complete; T5.1, T4.3, T5.2, and T6.4 closed on accepted design/staged evidence (`852d9e4`); target publication remains blocked pending M2 |
+| Status | M1 approved 2026-07-16; T3 complete; T5.1, T4.3, T5.2, T6.4 closed on accepted evidence (`852d9e4`); **M2 approved with amendments 2026-07-17T23:52:40Z** (`doc/support-transfer/M2_APPROVAL.md`): slices 1-3, 5, 6 authorized, slice 4 deferred, baseline disposition deferred to FIN-side final migration, roles per pre-job briefing; CC_Loto blocked pending M3 |
 | Owner | Human project owner |
 | Implementers | Codex and Claude Code within their ownership boundaries |
 | Source contract | `doc/Support_system.md`, accepted by the owner on 2026-07-17 |
