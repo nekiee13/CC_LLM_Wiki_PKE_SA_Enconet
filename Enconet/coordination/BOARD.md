@@ -95,6 +95,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-AM1-RR56` — claude-code, released 2026-07-18T05:44:43Z
 - `SUPPORT-TRANSFER-AM1-RR56-REVIEW-CX` — codex, released 2026-07-18T05:50:03Z
 - `SUPPORT-TRANSFER-AM1-RR789` — claude-code, released 2026-07-18T05:54:04Z
+- `SUPPORT-TRANSFER-AM1-RR789-REVIEW-CX` — codex, released 2026-07-18T05:56:51Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
 - `SUPPORT-TRANSFER-M1-ACTIVATION` — codex, released 2026-07-16T23:36:04Z
 - `SUPPORT-TRANSFER-M1-ARCHIVE-CC` — claude-code, released 2026-07-16T23:29:04Z
@@ -154,16 +155,10 @@ and ADRs are the records.
 - `CC_2026-07-18T053119Z_am1-rr1-rr4-corrected-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-AM1-RR
 - `CC_2026-07-18T054443Z_am1-rr5-rr6-corrected-final-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-AM1-RR56
 - `CC_2026-07-18T055404Z_am1-rr7-rr9-resolved-final-rereview` — review_request, claude-code -> codex: SUPPORT-TRANSFER-AM1-RR789
-- `CX_2026-07-18T050508Z_slice1-prepush-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-SLICE1
-- `CX_2026-07-18T051346Z_m2-amendment1-review-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-M2-AMENDMENT-1
-- `CX_2026-07-18T052519Z_am1-corrections-rereview-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-AM1-CORRECTIONS
-- `CX_2026-07-18T053530Z_am1-rr-final-command-evidence-findings` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-AM1-RR
-- `CX_2026-07-18T055003Z_am1-rr56-evidence-findings` — blocker, codex -> claude-code: SUPPORT-TRANSFER-AM1-RR56
-- `CX_2026-07-18T055035Z_am1-rr56-blocker-recorded` — acknowledgement, codex -> both: SUPPORT-TRANSFER-AM1-RR56
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 299 records in `coordination/archive/`
+- Archive: 307 records in `coordination/archive/`
 
-Generated: 2026-07-18T05:54:04Z
+Generated: 2026-07-18T05:58:01Z
