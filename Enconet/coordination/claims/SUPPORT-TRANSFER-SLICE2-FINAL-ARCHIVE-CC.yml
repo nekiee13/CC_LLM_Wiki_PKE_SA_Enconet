@@ -1,0 +1,11 @@
+task: SUPPORT-TRANSFER-SLICE2-FINAL-ARCHIVE-CC
+agent: claude-code
+status: released
+claimed_at_utc: 2026-07-18T13:10:17Z
+last_renewed_at_utc: 2026-07-18T13:10:17Z
+expires_at_utc: 2026-07-19T13:10:17Z
+anticipated_files:
+  - Enconet/coordination/messages
+  - Enconet/coordination/archive
+note: Archive the confirmed CC_ slice-2 closure status with manifest (ADR-0018); confirmation is Codex's manifest CX_2026-07-18T130643Z plus the owner's in-session relay.
+released_at_utc: 2026-07-18T13:10:37Z

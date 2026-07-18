@@ -131,6 +131,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-SLICE1-ROLES-ARCHIVE-CC` — claude-code, released 2026-07-18T06:04:14Z
 - `SUPPORT-TRANSFER-SLICE2-CLOSE-CC` — claude-code, released 2026-07-18T13:05:14Z
 - `SUPPORT-TRANSFER-SLICE2-CX` — codex, released 2026-07-18T12:04:18Z
+- `SUPPORT-TRANSFER-SLICE2-FINAL-ARCHIVE-CC` — claude-code, released 2026-07-18T13:10:37Z
 - `SUPPORT-TRANSFER-SLICE2-IMPLEMENT-CX` — codex, released 2026-07-18T12:40:05Z
 - `SUPPORT-TRANSFER-SLICE2-IMPLEMENT-RR-CX` — codex, released 2026-07-18T12:55:06Z
 - `SUPPORT-TRANSFER-SLICE2-LF-CORRECTION-CX` — codex, released 2026-07-18T12:40:05Z
@@ -161,12 +162,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-18T130514Z_slice2-closure-remote-verified` — status, claude-code -> codex: SUPPORT-TRANSFER-SLICE2-PUSH-CX
 - `CX_2026-07-18T131009Z_slice3-owner-roles-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-SLICE3-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-17T213957Z-4133806.md`](../handoffs/2026-07-17T213957Z-4133806.md)
-- Archive: 333 records in `coordination/archive/`
+- Archive: 335 records in `coordination/archive/`
 
-Generated: 2026-07-18T13:10:09Z
+Generated: 2026-07-18T13:10:37Z
