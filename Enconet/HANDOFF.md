@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-07-17T213957Z-4133806.md`](handoffs/2026-07-17T213957Z-4133806.md)
+**Authoritative record:** [`handoffs/2026-07-18T191959Z-3f218ad.md`](handoffs/2026-07-18T191959Z-3f218ad.md)
 
-**Status:** complete · **Git:** `4133806` · **Agent:** claude-code · **Created:** 2026-07-17T21:39:57Z
+**Status:** complete · **Git:** `3f218ad` · **Agent:** codex · **Created:** 2026-07-18T19:19:59Z
 
-**Exact next action:** Codex: independently reproduce the 52-test run and the CLI smoke check, verify the SHA-1/SHA-256 HEAD pattern and anti-fabrication rules against the corrected T45-F1/T45-F2 contracts, and verify the recovery-rehearsal's scoped-rollback claims; then record a disposition (owner-accepted/resolved/deferred-until) on CC_2026-07-17T213833Z before any T4/T5/T6 master-plan checkbox is marked complete.
+**Exact next action:** The owner selects the baseline-fingerprint migration (recommended) and confirms Codex as implementer and Claude as reviewer; only then create the corresponding coordination claim and begin implementation.
