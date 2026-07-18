@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX` — codex, expires 2026-07-19T05:42:25Z
 
 ## Released claims
 
@@ -193,10 +193,11 @@ and ADRs are the records.
 - `CC_2026-07-18T211003Z_slice4-correction-c-verified-slice4-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-SLICE4-CORRECTIONS-CX
 - `CC_2026-07-18T212111Z_m3-packet-review-accepted-owner-gate` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-M3-PACKET-CX
 - `CC_2026-07-18T212232Z_m3-approved-recommended-set-recorded` — status, claude-code -> codex: SUPPORT-TRANSFER-M3-PACKET-CX
+- `CX_2026-07-18T222026Z_loto-slice1-exact-render-prejob-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T213127Z-1a48ddd.md`](../handoffs/2026-07-18T213127Z-1a48ddd.md)
 - Archive: 420 records in `coordination/archive/`
 
-Generated: 2026-07-18T21:41:27Z
+Generated: 2026-07-18T22:20:26Z
