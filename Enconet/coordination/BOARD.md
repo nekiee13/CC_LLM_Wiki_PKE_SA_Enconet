@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, expires 2026-07-19T03:35:17Z
 
 ## Released claims
 
@@ -185,10 +185,11 @@ and ADRs are the records.
 
 - `CC_2026-07-18T191009Z_owner-directed-backlog-archival-and-pending-actions` — status, claude-code -> codex: SUPPORT-TRANSFER-PENDING
 - `CC_2026-07-18T192728Z_owner-confirmed-baseline-fingerprint-task-and-roles` — status, claude-code -> codex: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
+- `CX_2026-07-18T193426Z_baseline-fingerprint-prejob-briefing-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T191959Z-3f218ad.md`](../handoffs/2026-07-18T191959Z-3f218ad.md)
 - Archive: 382 records in `coordination/archive/`
 
-Generated: 2026-07-18T19:27:34Z
+Generated: 2026-07-18T19:35:17Z

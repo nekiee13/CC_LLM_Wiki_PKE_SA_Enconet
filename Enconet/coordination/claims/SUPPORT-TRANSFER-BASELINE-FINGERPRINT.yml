@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-BASELINE-FINGERPRINT
+agent: codex
+status: active
+claimed_at_utc: 2026-07-18T19:29:37Z
+last_renewed_at_utc: 2026-07-18T19:35:17Z
+expires_at_utc: 2026-07-19T03:35:17Z
+anticipated_files:
+  - doc/support-transfer/BASELINE_FINGERPRINT_PREJOB_BRIEFING.md
+  - doc/support-transfer/BASELINE_FINGERPRINT_RENDER_EVIDENCE.md
+  - doc/support-transfer/rendered/render_baseline_fingerprint.py
+  - doc/support-transfer/rendered/baseline-fingerprint/support/BASELINE-FINGERPRINT.md
+  - doc/support-transfer/rendered/baseline-fingerprint/support/README.md
+  - doc/support-transfer/rendered/baseline-fingerprint/support/RECORD-KEEPING.md
+note: Draft owner-authorized FIN baseline-fingerprint migration pre-job briefing and exact rendered proposal for Claude review; no CC_FIN write before acceptance.
