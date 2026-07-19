@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-LOTO-SLICE3` — codex, expires 2026-07-20T06:01:57Z
+- none
 
 ## Released claims
 
@@ -105,6 +105,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-LOTO-SLICE2` — codex, released 2026-07-19T22:01:57Z
 - `SUPPORT-TRANSFER-LOTO-SLICE2-AB-REVIEW-CC` — claude-code, released 2026-07-19T21:54:33Z
 - `SUPPORT-TRANSFER-LOTO-SLICE2-REVIEW-CC` — claude-code, released 2026-07-19T21:21:51Z
+- `SUPPORT-TRANSFER-LOTO-SLICE3` — codex, released 2026-07-19T22:54:59Z
 - `SUPPORT-TRANSFER-LOTO-SLICE3-AB-REVIEW-CC` — claude-code, released 2026-07-19T22:44:58Z
 - `SUPPORT-TRANSFER-LOTO-SLICE3-REVIEW-CC` — claude-code, released 2026-07-19T22:27:55Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
@@ -200,11 +201,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-19T225159Z_loto-slice3-live-tip-verified-slice3-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE3
-- `CX_2026-07-19T224816Z_loto-slice3-live-remote-state` — status, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 469 records in `coordination/archive/`
+- Archive: 472 records in `coordination/archive/`
 
-Generated: 2026-07-19T22:52:17Z
+Generated: 2026-07-19T22:55:41Z
