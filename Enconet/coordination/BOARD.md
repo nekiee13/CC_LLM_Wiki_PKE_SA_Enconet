@@ -201,10 +201,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-19T230622Z_loto-slice3c-scope-ordering-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE3C
+- `CX_2026-07-19T231725Z_loto-slice3c-prewrite-packet-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE3C
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 477 records in `coordination/archive/`
 
-Generated: 2026-07-19T23:16:44Z
+Generated: 2026-07-19T23:17:25Z
