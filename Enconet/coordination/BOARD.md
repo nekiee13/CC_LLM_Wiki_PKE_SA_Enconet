@@ -195,11 +195,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-07-19T212617Z_loto-slice2-acceptance-lifecycle-and-next-gate` — status, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE2
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 450 records in `coordination/archive/`
+- Archive: 452 records in `coordination/archive/`
 
-Generated: 2026-07-19T21:27:37Z
+Generated: 2026-07-19T21:34:43Z
