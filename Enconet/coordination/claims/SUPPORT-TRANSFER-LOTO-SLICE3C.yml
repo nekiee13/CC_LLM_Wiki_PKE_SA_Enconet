@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-LOTO-SLICE3C
+agent: codex
+status: active
+claimed_at_utc: 2026-07-19T23:09:36Z
+last_renewed_at_utc: 2026-07-19T23:09:36Z
+expires_at_utc: 2026-07-20T07:09:36Z
+anticipated_files:
+  - doc/support-transfer/LOTO_SLICE3C_PREJOB_BRIEFING.md
+  - doc/support-transfer/LOTO_SLICE3C_RENDER_EVIDENCE.md
+  - doc/support-transfer/LOTO_SLICE3C_DRY_RUN_EVIDENCE.md
+  - doc/support-transfer/rendered/loto-slice3c
+note: Prepare exact target-native Slice 3c render/dry-run/briefing only; no CC_Loto write before Claude acceptance.
