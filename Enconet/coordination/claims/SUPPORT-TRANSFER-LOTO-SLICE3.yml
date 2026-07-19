@@ -1,0 +1,14 @@
+task: SUPPORT-TRANSFER-LOTO-SLICE3
+agent: codex
+status: active
+claimed_at_utc: 2026-07-19T22:01:57Z
+last_renewed_at_utc: 2026-07-19T22:01:57Z
+expires_at_utc: 2026-07-20T06:01:57Z
+anticipated_files:
+  - doc/support-transfer/LOTO_SLICE3_PREJOB_BRIEFING.md
+  - doc/support-transfer/LOTO_SLICE3_RENDER_EVIDENCE.md
+  - doc/support-transfer/LOTO_SLICE3_DRY_RUN_EVIDENCE.md
+  - doc/support-transfer/rendered/render_loto_slice3.py
+  - doc/support-transfer/rendered/loto-slice3
+  - Enconet/coordination
+note: Prepare CC_Loto Slice 3 handoff core exact render and disposable validation, including target-generated coordination/BOARD.md modification; no CC_Loto write before Claude review.

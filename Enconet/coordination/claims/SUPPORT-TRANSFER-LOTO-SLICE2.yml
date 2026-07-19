@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-LOTO-SLICE2
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-19T21:06:34Z
 last_renewed_at_utc: 2026-07-19T21:06:34Z
 expires_at_utc: 2026-07-20T05:06:34Z
@@ -12,3 +12,4 @@ anticipated_files:
   - doc/support-transfer/rendered/loto-slice2
   - Enconet/coordination
 note: Prepare CC_Loto Slice 2 target-specific 14-file coordination-core exact render, disposable dry run, and pre-job briefing for independent Claude review; no CC_Loto write before acceptance.
+released_at_utc: 2026-07-19T22:01:57Z
