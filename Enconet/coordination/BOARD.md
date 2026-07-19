@@ -198,10 +198,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-19T215934Z_loto-slice2-live-tip-verified-slice2-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE2
+- `CX_2026-07-19T220903Z_loto-slice3-handoff-core-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 459 records in `coordination/archive/`
 
-Generated: 2026-07-19T22:08:08Z
+Generated: 2026-07-19T22:09:04Z
