@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
+agent: codex
+status: active
+claimed_at_utc: 2026-07-20T02:59:35Z
+last_renewed_at_utc: 2026-07-20T02:59:35Z
+expires_at_utc: 2026-07-20T06:59:35Z
+anticipated_files:
+  - doc/support-transfer/LOTO_CODEX_GUIDANCE_CORRECTION_PREJOB_BRIEFING.md
+  - doc/support-transfer/LOTO_CODEX_GUIDANCE_CORRECTION_RENDER_EVIDENCE.md
+  - doc/support-transfer/LOTO_CODEX_GUIDANCE_CORRECTION_DRY_RUN_EVIDENCE.md
+  - doc/support-transfer/rendered/render_loto_codex_guidance_correction.py
+  - doc/support-transfer/rendered/loto-codex-guidance-correction/AGENTS.md
+note: Owner-approved step 1 only: exact Codex-owned AGENTS.md line-86 vocabulary correction for Claude pre-write review; no target write, Claude-owned edit, synchronization claim, or M4 transition.
