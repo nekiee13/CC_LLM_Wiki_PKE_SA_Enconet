@@ -226,10 +226,11 @@ and ADRs are the records.
 - `CC_2026-07-20T032137Z_loto-codex-guidance-ab-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
 - `CX_2026-07-20T030430Z_loto-codex-guidance-correction-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
 - `CX_2026-07-20T031900Z_loto-codex-guidance-correction-ab-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
+- `CX_2026-07-20T032326Z_loto-codex-guidance-live-state` — status, codex -> claude-code: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 546 records in `coordination/archive/`
 
-Generated: 2026-07-20T03:21:37Z
+Generated: 2026-07-20T03:23:37Z
