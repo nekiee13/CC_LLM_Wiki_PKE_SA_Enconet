@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-LOTO-M4-PACKET` — codex, expires 2026-07-20T15:03:14Z
 
 ## Released claims
 
@@ -227,10 +227,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T065911Z_loto-guidance-bilateral-synchronization-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-GUIDANCE-SYNCHRONIZATION-CONFIRMATION
+- `CX_2026-07-20T070941Z_loto-m4-packet-independent-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-M4-PACKET
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 572 records in `coordination/archive/`
 
-Generated: 2026-07-20T07:00:39Z
+Generated: 2026-07-20T07:09:51Z
