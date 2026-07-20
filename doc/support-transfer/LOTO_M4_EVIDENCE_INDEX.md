@@ -146,6 +146,12 @@ does not establish product health or M4 acceptance. See
 
 - Anchor presence is not proof of anchor correctness. Guidance prose was cross-checked against the
   executable schema and tool authority.
+- Adversarial negative-path review materially improved the installed validator. Slice 6 v1 could
+  return exit `0` when an applicable check was `unknown` or `unavailable`, so a missing native
+  executable or wrong support-operator environment could validate nothing without failing the
+  aggregate. The finding was accepted before any target write; v2 fails closed, and the two final-tip
+  probes now demonstrate exit `1`. This was a real fail-open defect caught by independent review,
+  not by repeating the happy path.
 - Semantic checks must validate meaning rather than incidental formatting. During the alignment
   cycle, a Claude-side schema `$ref` lookup assumption and a Codex-side multiline-regex assumption
   were disclosed, corrected, and independently rechecked.
