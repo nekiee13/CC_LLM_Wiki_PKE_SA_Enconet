@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT` — claude-code, expires 2026-07-21T03:30:48Z
 
 ## Released claims
 
@@ -222,12 +222,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-20T032548Z_loto-codex-guidance-live-tip-verified-step1-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
 - `CX_2026-07-20T032853Z_loto-codex-guidance-step1-closure-confirmed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 554 records in `coordination/archive/`
+- Archive: 556 records in `coordination/archive/`
 
-Generated: 2026-07-20T03:29:00Z
+Generated: 2026-07-20T03:30:48Z
