@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
 agent: claude-code
-status: active
+status: released
 claimed_at_utc: 2026-07-20T00:40:47Z
 last_renewed_at_utc: 2026-07-20T00:40:47Z
 expires_at_utc: 2026-07-21T00:40:47Z
@@ -11,3 +11,4 @@ anticipated_files:
   - doc/support-transfer/rendered/render_loto_cc_guidance.py
   - doc/support-transfer/rendered/loto-cc-guidance
 note: Claude-authored CC_Loto CLAUDE.md packaging-correction slice: exact render, disposable dry run, pre-job briefing for Codex independent review; no target write before acceptance
+released_at_utc: 2026-07-20T01:12:53Z
