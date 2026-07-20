@@ -214,11 +214,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-07-20T023523Z_loto-rollback-rehearsal-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-ROLLBACK-EVIDENCE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 535 records in `coordination/archive/`
 
-Generated: 2026-07-20T02:31:07Z
+Generated: 2026-07-20T02:35:23Z
