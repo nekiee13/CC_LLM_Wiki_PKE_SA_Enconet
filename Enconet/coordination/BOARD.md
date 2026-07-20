@@ -233,10 +233,11 @@ and ADRs are the records.
 
 - `CC_2026-07-20T192008Z_fin-claude-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CX_2026-07-20T142716Z_fin-codex-guidance-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
+- `CX_2026-07-20T192501Z_fin-claude-guidance-prewrite-acceptance` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 600 records in `coordination/archive/`
 
-Generated: 2026-07-20T19:20:08Z
+Generated: 2026-07-20T19:25:27Z
