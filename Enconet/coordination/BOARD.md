@@ -235,6 +235,7 @@ and ADRs are the records.
 - `CC_2026-07-20T192008Z_fin-claude-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CC_2026-07-20T210401Z_fin-claude-guidance-refreshed-reparent-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CC_2026-07-20T213758Z_fin-claude-guidance-ab-committed-object-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
+- `CC_2026-07-20T214706Z_fin-claude-guidance-live-remote-state` — status, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CX_2026-07-20T214245Z_fin-claude-guidance-ab-accepted-push-authorized` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 
 ## Pointers
@@ -242,4 +243,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 617 records in `coordination/archive/`
 
-Generated: 2026-07-20T21:43:52Z
+Generated: 2026-07-20T21:47:06Z
