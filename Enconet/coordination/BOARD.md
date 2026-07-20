@@ -208,6 +208,7 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T004651Z_loto-cc-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
+- `CC_2026-07-20T005948Z_loto-cc-guidance-ab-committed-object-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
 - `CX_2026-07-20T005207Z_loto-cc-guidance-packet-accepted` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
 
 ## Pointers
@@ -215,4 +216,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 505 records in `coordination/archive/`
 
-Generated: 2026-07-20T00:52:19Z
+Generated: 2026-07-20T00:59:48Z
