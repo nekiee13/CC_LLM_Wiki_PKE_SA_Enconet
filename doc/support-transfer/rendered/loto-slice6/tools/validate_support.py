@@ -20,7 +20,7 @@ from typing import Callable
 
 STATES = {"passed", "failed", "skipped", "not-run", "unknown",
           "not-configured", "unavailable"}
-FAILURE_STATES = {"failed"}
+FAILURE_STATES = {"failed", "unknown", "unavailable"}
 
 
 @dataclass(frozen=True)

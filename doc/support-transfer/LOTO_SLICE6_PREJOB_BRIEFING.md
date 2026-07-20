@@ -2,8 +2,8 @@
 record_type: slice_prejob_briefing
 slice: 6
 target: CC_Loto
-version: 1
-recorded_at_utc: 2026-07-20T01:21:41Z
+version: 2
+recorded_at_utc: 2026-07-20T01:34:11Z
 authorized_by: M3_APPROVAL.md items 5-8; T6_VALIDATION_RECOVERY_GATE_CONTRACT.md T6.1
 implementer: codex
 reviewer: claude-code
@@ -11,7 +11,7 @@ target_parent: f549b40665c2321ff46168d43c67b2f2f9422bd5
 status: pre-write-review-required
 ---
 
-# CC_Loto Slice 6 validators/tests — pre-job briefing v1
+# CC_Loto Slice 6 validators/tests — pre-job briefing v2
 
 This packet opens independent pre-write review only. It authorizes no CC_Loto write, commit, push,
 dependency/product change, hosted action, aggregate-acceptance claim, rollback claim, or M4 transition.
@@ -51,9 +51,16 @@ PyYAML/jsonschema for the installed coordination and handoff modules. `--native-
 target-requirements interpreter only for `run_tests.py`. This preserves the already accepted
 dependency boundary; no repository dependency or pytest assumption is introduced.
 
-Literal aggregate states are limited to the T5 vocabulary. Only `failed` produces a nonzero result.
-The current bootstrap handoff is `not-configured`; the installed schema and coordination checks are
-`passed`; optional native and hosted CI are `not-run`. `blocked` is never a check result.
+Literal aggregate states are limited to the T5 vocabulary. Applicable `failed`, `unknown`, and
+`unavailable` checks fail closed with a nonzero result. Deliberate `not-run`, `skipped`, and
+`not-configured` states remain non-failing. The current bootstrap handoff is `not-configured`; the
+installed schema and coordination checks are `passed`; optional native and hosted CI are `not-run`.
+`blocked` is never a check result.
+
+The focused tracked-file test first requires `git rev-parse --is-inside-work-tree`; a source export
+without Git skips that one invariant rather than erroring. If Git is found, the test requires
+`git rev-parse --show-toplevel` to equal the candidate root before calling `git ls-files`, so it
+cannot silently measure an enclosing repository.
 
 ## Verified preflight
 
@@ -61,7 +68,9 @@ The current bootstrap handoff is `not-configured`; the installed schema and coor
   `f549b40665c2321ff46168d43c67b2f2f9422bd5`; divergence `0 0`; porcelain empty.
 - Two complete disposable renders reproduced all three SHA-256 values and Git objects.
 - Each overlay ran the aggregate with `--no-record`, kept `coordination/BOARD.md` byte-identical,
-  stayed clean, and proved an injected applicable failure returns `1`.
+  stayed clean, and proved applicable `failed`/`unknown`/`unavailable` states return `1`.
+- A non-Git source-export overlay ran all five focused tests with exactly the tracked-digest
+  invariant skipped; it did not error or search an enclosing repository.
 - Focused support discovery adds five contract tests. Proportional native layers passed at the
   candidate tree: core-unit 42/42, contract 30/30, state-integrity 3/3, all exit `0`.
 

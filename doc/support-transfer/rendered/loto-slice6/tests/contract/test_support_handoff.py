@@ -29,6 +29,14 @@ aggregate = load_aggregate()
 
 
 def tracked_digest(root: Path) -> str:
+    inside = subprocess.run(["git", "rev-parse", "--is-inside-work-tree"], cwd=root,
+                            text=True, capture_output=True, check=False)
+    if inside.returncode != 0 or inside.stdout.strip() != "true":
+        raise unittest.SkipTest("tracked-file invariant requires an exact Git worktree")
+    top = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=root,
+                         text=True, capture_output=True, check=True)
+    if Path(top.stdout.strip()).resolve() != root.resolve():
+        raise AssertionError("Git top-level does not equal the candidate repository root")
     names = subprocess.run(["git", "ls-files", "-z"], cwd=root, check=True,
                            capture_output=True).stdout.split(b"\0")
     digest = hashlib.sha256()

@@ -49,11 +49,16 @@ class SupportCoordinationTests(unittest.TestCase):
         self.assertEqual(native.state, "failed")
         self.assertEqual(aggregate.exit_code(results), 1)
 
-    def test_non_failure_states_do_not_fail_aggregate(self):
-        states = ["passed", "skipped", "not-run", "unknown", "not-configured", "unavailable"]
+    def test_result_state_exit_semantics(self):
+        non_failure = ["passed", "skipped", "not-run", "not-configured"]
         results = [aggregate.CheckResult(str(index), state, "probe")
-                   for index, state in enumerate(states)]
+                   for index, state in enumerate(non_failure)]
         self.assertEqual(aggregate.exit_code(results), 0)
+        for state in ("failed", "unknown", "unavailable"):
+            with self.subTest(state=state):
+                self.assertEqual(
+                    aggregate.exit_code([aggregate.CheckResult("probe", state, "applicable")]), 1
+                )
 
 
 if __name__ == "__main__":

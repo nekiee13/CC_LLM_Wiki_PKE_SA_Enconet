@@ -50,7 +50,7 @@ from typing import Callable
 
 STATES = {"passed", "failed", "skipped", "not-run", "unknown",
           "not-configured", "unavailable"}
-FAILURE_STATES = {"failed"}
+FAILURE_STATES = {"failed", "unknown", "unavailable"}
 
 
 @dataclass(frozen=True)
@@ -235,11 +235,16 @@ class SupportCoordinationTests(unittest.TestCase):
         self.assertEqual(native.state, "failed")
         self.assertEqual(aggregate.exit_code(results), 1)
 
-    def test_non_failure_states_do_not_fail_aggregate(self):
-        states = ["passed", "skipped", "not-run", "unknown", "not-configured", "unavailable"]
+    def test_result_state_exit_semantics(self):
+        non_failure = ["passed", "skipped", "not-run", "not-configured"]
         results = [aggregate.CheckResult(str(index), state, "probe")
-                   for index, state in enumerate(states)]
+                   for index, state in enumerate(non_failure)]
         self.assertEqual(aggregate.exit_code(results), 0)
+        for state in ("failed", "unknown", "unavailable"):
+            with self.subTest(state=state):
+                self.assertEqual(
+                    aggregate.exit_code([aggregate.CheckResult("probe", state, "applicable")]), 1
+                )
 
 
 if __name__ == "__main__":
@@ -278,6 +283,14 @@ aggregate = load_aggregate()
 
 
 def tracked_digest(root: Path) -> str:
+    inside = subprocess.run(["git", "rev-parse", "--is-inside-work-tree"], cwd=root,
+                            text=True, capture_output=True, check=False)
+    if inside.returncode != 0 or inside.stdout.strip() != "true":
+        raise unittest.SkipTest("tracked-file invariant requires an exact Git worktree")
+    top = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=root,
+                         text=True, capture_output=True, check=True)
+    if Path(top.stdout.strip()).resolve() != root.resolve():
+        raise AssertionError("Git top-level does not equal the candidate repository root")
     names = subprocess.run(["git", "ls-files", "-z"], cwd=root, check=True,
                            capture_output=True).stdout.split(b"\0")
     digest = hashlib.sha256()
@@ -383,6 +396,23 @@ with tempfile.TemporaryDirectory(prefix="ls6-", dir=temp_root) as tmp:
         path.write_text(content, encoding="utf-8", newline="\n")
         py_compile.compile(str(path), doraise=True)
 
+    # A source export without .git must skip only the tracked-digest assertion,
+    # not error or search upward into an unrelated repository.
+    env = os.environ.copy()
+    env["PYTHONDONTWRITEBYTECODE"] = "1"
+    env["DYNAMIX_OUTPUT_DIR"] = str(Path(tmp) / "runtime" / "Output")
+    env["DYNAMIX_MODEL_CACHE_DIR"] = str(Path(tmp) / "runtime" / "ModelCache")
+    no_git = run([
+        native_python, "run_tests.py", "--layer", "contract",
+        "--pattern", "test_support_*.py", "--verbosity", "1",
+    ], cwd=root, env=env)
+    no_git_output = no_git.stdout + "\n" + no_git.stderr
+    if [int(value) for value in re.findall(r"Ran (\d+) tests?", no_git_output)] != [5]:
+        raise AssertionError("non-Git focused run did not discover five tests")
+    if "skipped=1" not in no_git_output:
+        raise AssertionError("non-Git focused run did not skip the tracked-digest assertion")
+    print("NON-GIT EXPORT PASSED: 5 focused tests, tracked-digest assertion skipped=1")
+
     run(["git", "init"], cwd=root)
     run(["git", "config", "user.name", "Slice 6 Review"], cwd=root)
     run(["git", "config", "user.email", "slice6@example.invalid"], cwd=root)
@@ -391,11 +421,6 @@ with tempfile.TemporaryDirectory(prefix="ls6-", dir=temp_root) as tmp:
 
     board = root / "coordination/BOARD.md"
     board_before = board.read_bytes()
-    env = os.environ.copy()
-    env["PYTHONDONTWRITEBYTECODE"] = "1"
-    env["DYNAMIX_OUTPUT_DIR"] = str(Path(tmp) / "runtime" / "Output")
-    env["DYNAMIX_MODEL_CACHE_DIR"] = str(Path(tmp) / "runtime" / "ModelCache")
-
     aggregate = run([
         sys.executable, "tools/validate_support.py", "--root", ".",
         "--native-python", native_python, "--no-record",
@@ -412,6 +437,28 @@ with tempfile.TemporaryDirectory(prefix="ls6-", dir=temp_root) as tmp:
         raise AssertionError("aggregate lost truthful not-run states")
     if board.read_bytes() != board_before:
         raise AssertionError("coordination/BOARD.md changed during aggregate validation")
+
+    missing_native = subprocess.run([
+        sys.executable, "tools/validate_support.py", "--root", ".",
+        "--native-python", str(Path(tmp) / "missing-python.exe"), "--no-record",
+    ], cwd=root, env=env, text=True, capture_output=True, check=False)
+    if missing_native.returncode != 1 or "native-contract-support: unavailable" not in missing_native.stdout:
+        raise AssertionError(
+            "missing applicable native interpreter did not fail closed\n"
+            + missing_native.stdout + missing_native.stderr
+        )
+    print("OPERATOR PROBE PASSED: missing native interpreter -> unavailable, exit 1")
+
+    wrong_operator = subprocess.run([
+        native_python, "tools/validate_support.py", "--root", ".",
+        "--native-python", native_python, "--no-record",
+    ], cwd=root, env=env, text=True, capture_output=True, check=False)
+    if wrong_operator.returncode != 1 or "coordination: unavailable" not in wrong_operator.stdout:
+        raise AssertionError(
+            "product interpreter missing support dependencies did not fail closed\n"
+            + wrong_operator.stdout + wrong_operator.stderr
+        )
+    print("OPERATOR PROBE PASSED: wrong support interpreter -> unavailable, exit 1")
 
     expected = {"core-unit": 42, "contract": 30, "state-integrity": 3}
     for layer, expected_count in expected.items():
@@ -431,9 +478,13 @@ with tempfile.TemporaryDirectory(prefix="ls6-", dir=temp_root) as tmp:
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
-    if module.exit_code([module.CheckResult("injected", "failed", "proof")]) != 1:
-        raise AssertionError("injected applicable failure did not return aggregate exit 1")
-    print("FAILURE PROBE PASSED: injected applicable failure -> exit 1")
+    for state in ("failed", "unknown", "unavailable"):
+        if module.exit_code([module.CheckResult("injected", state, "proof")]) != 1:
+            raise AssertionError(f"injected applicable {state} did not return aggregate exit 1")
+    for state in ("passed", "skipped", "not-run", "not-configured"):
+        if module.exit_code([module.CheckResult("injected", state, "proof")]) != 0:
+            raise AssertionError(f"deliberate/non-failure {state} returned nonzero")
+    print("FAIL-CLOSED PROBE PASSED: failed/unknown/unavailable -> 1; deliberate states -> 0")
 
     if run(["git", "status", "--porcelain"], cwd=root).stdout:
         raise AssertionError("disposable overlay changed tracked content")

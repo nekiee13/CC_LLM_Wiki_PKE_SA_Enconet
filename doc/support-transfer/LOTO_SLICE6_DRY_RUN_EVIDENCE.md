@@ -2,7 +2,7 @@
 record_type: disposable_dry_run_evidence
 target: CC_Loto
 slice: 6
-recorded_at_utc: 2026-07-20T01:21:41Z
+recorded_at_utc: 2026-07-20T01:34:11Z
 target_parent: f549b40665c2321ff46168d43c67b2f2f9422bd5
 ---
 
@@ -29,7 +29,12 @@ unchanged, and synchronized at `f549b40`.
 | Hosted CI in local aggregate | `not-run` | truthful non-pass |
 | Generated board after aggregate | byte-identical | passed |
 | `--no-record` tracked mutation | none | passed |
-| Injected applicable failure | aggregate exit `1` | passed |
+| Applicable `failed`, `unknown`, `unavailable` probes | aggregate exit `1` each | passed |
+| Deliberate/non-failure state probes | aggregate exit `0` each | passed |
+| Missing `--native-python` executable | native check `unavailable`, aggregate exit `1` | passed |
+| Product interpreter used as support operator | coordination `unavailable`, aggregate exit `1` | passed |
+| Non-Git source export | 5 discovered; tracked digest skipped 1 | passed |
+| Enclosing-repository guard | top-level must equal candidate root | enforced |
 | Final disposable porcelain | empty | passed |
 | Real target divergence/porcelain | `0 0` / empty | passed |
 
@@ -51,10 +56,13 @@ support-tool slice and were **not run**; that is not a pass.
 
 ## Attempt accounting
 
-The initial invocation was blocked before overlay creation by the filesystem sandbox denying the
-renderer access to its system-temporary child directory. The same command was approved outside that
-sandbox and completed successfully. A second approved complete invocation also succeeded and
-reproduced all hashes and results. No attempt is excluded.
+For v1, the initial invocation was blocked before overlay creation by the filesystem sandbox denying
+the renderer access to its system-temporary child directory. The same command was approved outside
+that sandbox and completed successfully; a second approved v1 invocation also succeeded. Claude's
+independent review then found the unavailable/unknown exit-code and Git-root defects. Codex accepted
+both findings and produced v2. Two approved complete v2 invocations succeeded, reproduced all
+corrected hashes, exercised the non-Git skip, and passed the expanded fail-closed probes. No attempt
+or superseded result is excluded.
 
 ## Stop conditions
 
