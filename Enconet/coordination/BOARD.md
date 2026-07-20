@@ -100,6 +100,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-FIN-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T11:21:41Z
+- `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-REVIEW-CC` — claude-code, released 2026-07-20T19:32:12Z
 - `SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION` — codex, released 2026-07-20T13:13:25Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-REVIEW-CC` — claude-code, released 2026-07-20T02:23:12Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-VALIDATION` — codex, released 2026-07-20T02:24:50Z
@@ -232,6 +233,7 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T192008Z_fin-claude-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
+- `CC_2026-07-20T193212Z_fin-codex-agents-packet-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CX_2026-07-20T142716Z_fin-codex-guidance-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CX_2026-07-20T192501Z_fin-claude-guidance-prewrite-acceptance` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 
@@ -240,4 +242,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 600 records in `coordination/archive/`
 
-Generated: 2026-07-20T19:25:27Z
+Generated: 2026-07-20T19:32:12Z
