@@ -227,11 +227,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T065911Z_loto-guidance-bilateral-synchronization-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-GUIDANCE-SYNCHRONIZATION-CONFIRMATION
-- `CX_2026-07-20T065616Z_loto-guidance-bilateral-anchors-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-SYNCHRONIZATION-CONFIRMATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 570 records in `coordination/archive/`
+- Archive: 572 records in `coordination/archive/`
 
-Generated: 2026-07-20T06:59:11Z
+Generated: 2026-07-20T07:00:39Z
