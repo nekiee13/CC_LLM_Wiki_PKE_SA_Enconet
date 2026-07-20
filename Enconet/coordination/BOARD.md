@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION` — codex, expires 2026-07-20T16:14:05Z
+- none
 
 ## Released claims
 
@@ -99,6 +99,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-FIN-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T11:21:41Z
+- `SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION` — codex, released 2026-07-20T13:13:25Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-REVIEW-CC` — claude-code, released 2026-07-20T02:23:12Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-VALIDATION` — codex, released 2026-07-20T02:24:50Z
 - `SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT` — claude-code, released 2026-07-20T06:53:18Z
@@ -232,14 +233,11 @@ and ADRs are the records.
 - `CC_2026-07-20T121436Z_fin-alignment-revised-authority-confirmed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 - `CC_2026-07-20T130638Z_fin-alignment-commit-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 - `CC_2026-07-20T131147Z_fin-alignment-live-tip-verified-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
-- `CX_2026-07-20T081621Z_fin-minimal-alignment-decision-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
-- `CX_2026-07-20T112436Z_fin-alignment-quotation-added-narrow-review` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
-- `CX_2026-07-20T125201Z_fin-alignment-local-commit-object-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
-- `CX_2026-07-20T130920Z_fin-alignment-decision-live-state` — status, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
+- `CX_2026-07-20T131400Z_fin-alignment-decision-closure-confirmed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 589 records in `coordination/archive/`
+- Archive: 594 records in `coordination/archive/`
 
-Generated: 2026-07-20T13:11:48Z
+Generated: 2026-07-20T13:14:16Z

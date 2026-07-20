@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-20T08:14:05Z
 last_renewed_at_utc: 2026-07-20T08:14:05Z
 expires_at_utc: 2026-07-20T16:14:05Z
@@ -10,3 +10,4 @@ anticipated_files:
   - doc/support-transfer/rendered/fin-guidance-alignment/support/decisions/README.md
   - doc/support-transfer/rendered/fin-guidance-alignment/support/decisions/ADR-SUP-0001-minimal-guidance-alignment.md
 note: Exact read-only CC_FIN compliance assessment and render of the owner-directed minimal-alignment decision-register addition; no CC_FIN target write before independent review.
+released_at_utc: 2026-07-20T13:13:25Z
