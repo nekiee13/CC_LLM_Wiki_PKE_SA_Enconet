@@ -231,6 +231,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-07-20T192008Z_fin-claude-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CX_2026-07-20T142716Z_fin-codex-guidance-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 
 ## Pointers
@@ -238,4 +239,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 600 records in `coordination/archive/`
 
-Generated: 2026-07-20T14:27:16Z
+Generated: 2026-07-20T19:20:08Z
