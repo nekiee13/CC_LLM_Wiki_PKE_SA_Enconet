@@ -111,6 +111,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-LOTO-SLICE3C` — codex, released 2026-07-19T23:48:21Z
 - `SUPPORT-TRANSFER-LOTO-SLICE3C-AB-REVIEW-CC` — claude-code, released 2026-07-19T23:34:01Z
 - `SUPPORT-TRANSFER-LOTO-SLICE3C-REVIEW-CC` — claude-code, released 2026-07-19T23:21:49Z
+- `SUPPORT-TRANSFER-LOTO-SLICE5-AB-REVIEW-CC` — claude-code, released 2026-07-20T00:30:18Z
 - `SUPPORT-TRANSFER-LOTO-SLICE5-REVIEW-CC` — claude-code, released 2026-07-20T00:15:30Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
 - `SUPPORT-TRANSFER-M1-ACTIVATION` — codex, released 2026-07-16T23:36:04Z
@@ -205,6 +206,7 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T001530Z_loto-slice5-packet-accepted-claude-sync-owned` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE5
+- `CC_2026-07-20T003018Z_loto-slice5-ab-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE5
 - `CX_2026-07-20T002708Z_loto-slice5-ab-committed-object-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE5
 
 ## Pointers
@@ -212,4 +214,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 495 records in `coordination/archive/`
 
-Generated: 2026-07-20T00:27:08Z
+Generated: 2026-07-20T00:30:19Z
