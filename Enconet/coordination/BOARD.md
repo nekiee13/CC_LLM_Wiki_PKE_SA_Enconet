@@ -209,11 +209,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-07-20T012413Z_loto-slice6-validators-tests-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE6
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 515 records in `coordination/archive/`
 
-Generated: 2026-07-20T01:23:16Z
+Generated: 2026-07-20T01:24:21Z
