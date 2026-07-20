@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION` — codex, expires 2026-07-20T16:14:05Z
 
 ## Released claims
 
@@ -228,11 +228,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-07-20T081621Z_fin-minimal-alignment-decision-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 587 records in `coordination/archive/`
 
-Generated: 2026-07-20T08:09:17Z
+Generated: 2026-07-20T08:16:22Z
