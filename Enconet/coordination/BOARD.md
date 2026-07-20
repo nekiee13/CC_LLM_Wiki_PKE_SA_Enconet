@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT` — claude-code, expires 2026-07-21T03:30:48Z
+- none
 
 ## Released claims
 
@@ -100,6 +100,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-REVIEW-CC` — claude-code, released 2026-07-20T02:23:12Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-VALIDATION` — codex, released 2026-07-20T02:24:50Z
+- `SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT` — claude-code, released 2026-07-20T06:53:18Z
 - `SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT-AB-REVIEW-CX` — codex, released 2026-07-20T06:40:59Z
 - `SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT-REVIEW-CX` — codex, released 2026-07-20T03:40:15Z
 - `SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-AB-REVIEW-CC` — claude-code, released 2026-07-20T03:21:37Z
@@ -224,14 +225,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-20T033610Z_loto-claude-alignment-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
-- `CC_2026-07-20T034610Z_loto-claude-alignment-ab-committed-object-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
-- `CC_2026-07-20T064515Z_loto-claude-alignment-live-remote-state` — status, claude-code -> codex: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
+- `CC_2026-07-20T065317Z_loto-step2-closed-and-claude-side-anchors-confirmed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
 - `CX_2026-07-20T064707Z_loto-claude-alignment-live-tip-verified-step2-closed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 562 records in `coordination/archive/`
+- Archive: 566 records in `coordination/archive/`
 
-Generated: 2026-07-20T06:47:15Z
+Generated: 2026-07-20T06:53:18Z

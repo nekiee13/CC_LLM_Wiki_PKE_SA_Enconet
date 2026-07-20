@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
 agent: claude-code
-status: active
+status: released
 claimed_at_utc: 2026-07-20T03:30:48Z
 last_renewed_at_utc: 2026-07-20T03:30:48Z
 expires_at_utc: 2026-07-21T03:30:48Z
@@ -11,3 +11,4 @@ anticipated_files:
   - doc/support-transfer/rendered/render_loto_claude_alignment.py
   - doc/support-transfer/rendered/loto-claude-alignment
 note: Claude-authored step-2 minimal CLAUDE.md support-workflow alignment: exact render, disposable dry run, pre-job briefing for Codex independent review; no target write before acceptance
+released_at_utc: 2026-07-20T06:53:18Z
