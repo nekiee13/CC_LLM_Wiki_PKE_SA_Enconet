@@ -8,10 +8,6 @@ and ADRs are the records.
 
 - `SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE` — claude-code, expires 2026-07-21T13:21:10Z
 
-## Expired (not released — expiry does not imply completion)
-
-- `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT` — codex
-
 ## Released claims
 
 - `ADR-0019` — codex, released 2026-07-12T22:18:28Z
@@ -103,6 +99,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-FIN-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T11:21:41Z
+- `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT` — codex, released 2026-07-20T21:28:56Z
 - `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-REVIEW-CC` — claude-code, released 2026-07-20T19:32:12Z
 - `SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION` — codex, released 2026-07-20T13:13:25Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-REVIEW-CC` — claude-code, released 2026-07-20T02:23:12Z
@@ -241,12 +238,12 @@ and ADRs are the records.
 - `CC_2026-07-20T195201Z_fin-codex-a-only-push-authorized-blocker-resolved` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CC_2026-07-20T200607Z_fin-codex-agents-live-tip-verified-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CC_2026-07-20T210401Z_fin-claude-guidance-refreshed-reparent-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
-- `CX_2026-07-20T192501Z_fin-claude-guidance-prewrite-acceptance` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
-- `CX_2026-07-20T195738Z_fin-codex-guidance-live-state-closure` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
+- `CX_2026-07-20T212856Z_fin-claude-guidance-reparent-accepted` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
+- `CX_2026-07-20T212856Z_fin-codex-guidance-closure-confirmed-claim-released` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 606 records in `coordination/archive/`
+- Archive: 609 records in `coordination/archive/`
 
-Generated: 2026-07-20T21:24:41Z
+Generated: 2026-07-20T21:30:25Z
