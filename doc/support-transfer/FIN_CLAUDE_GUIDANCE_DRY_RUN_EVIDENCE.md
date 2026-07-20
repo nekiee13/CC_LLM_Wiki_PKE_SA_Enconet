@@ -3,16 +3,20 @@ record_type: disposable_dry_run_evidence
 target: CC_FIN
 slice: claude-guidance
 recorded_at_utc: 2026-07-20T13:24:00Z
-target_parent: e74147f3309e1835d28d7c248e00cdcbde2f1796
+target_parent: 9308e25bbd1177ba69b8075210e1c5e079213fc5
+supersedes_parent: e74147f3309e1835d28d7c248e00cdcbde2f1796
 ---
 
 # CC_FIN Claude-owned guidance creation - disposable dry-run evidence
 
+Refreshed against the published AGENTS-completion tip `9308e25` after the Codex-owned slice closed;
+the candidate is byte-unchanged from the decision-tip render (it is a parent-independent create).
+
 ## Result
 
-The exact one-path candidate overlays cleanly on the published decision tree under a short
-disposable `%TEMP%\fcg-*` root. `CLAUDE.md` is the sole create. CC_FIN stayed clean, unchanged, and
-synchronized at `e74147f3` throughout; the target was read-only.
+The exact one-path candidate overlays cleanly on the published tree under a short disposable
+`%TEMP%\fcg-*` root. `CLAUDE.md` is the sole create. CC_FIN stayed clean, unchanged, and
+synchronized at `9308e25` throughout; the target was read-only.
 
 | Check | Result | Disposition |
 |---|---:|---|

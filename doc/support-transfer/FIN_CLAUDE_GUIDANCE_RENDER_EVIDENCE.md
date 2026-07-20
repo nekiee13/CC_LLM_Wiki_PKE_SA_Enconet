@@ -2,8 +2,9 @@
 record_type: exact_render_evidence
 target: CC_FIN
 slice: claude-guidance
-recorded_at_utc: 2026-07-20T13:24:00Z
-target_parent: e74147f3309e1835d28d7c248e00cdcbde2f1796
+recorded_at_utc: 2026-07-20T20:06:00Z
+target_parent: 9308e25bbd1177ba69b8075210e1c5e079213fc5
+supersedes_parent: e74147f3309e1835d28d7c248e00cdcbde2f1796
 authorized_by: ADR-SUP-0001 (accepted); implementation item - Claude-owned CLAUDE.md
 implementer: claude-code
 reviewer: codex
@@ -11,12 +12,21 @@ reviewer: codex
 
 # CC_FIN Claude-owned guidance creation - exact-render evidence
 
+## Parent refresh
+
+This packet was first rendered against the decision tip `e74147f3` and accepted by Codex with no
+finding. After the separately gated Codex-owned `AGENTS.md` completion published and closed at
+`9308e25bbd1177ba69b8075210e1c5e079213fc5`, this evidence was refreshed against that new parent per
+the agreed serialization. Because `CLAUDE.md` is a create, its bytes do not depend on the parent:
+the candidate SHA-256 and Git object are unchanged across the reparent, and only the renderer's
+parent/`AGENTS.md`-object preconditions moved.
+
 ## Control
 
-- Target branch: `main`; local HEAD and `origin/main` at the published decision tip
-  `e74147f3309e1835d28d7c248e00cdcbde2f1796`; divergence `0 0`; porcelain empty; zero tags.
+- Target branch: `main`; local HEAD and `origin/main` at the published AGENTS-completion tip
+  `9308e25bbd1177ba69b8075210e1c5e079213fc5`; divergence `0 0`; porcelain empty; zero tags.
 - Renderer: [`rendered/render_fin_claude_guidance.py`](rendered/render_fin_claude_guidance.py),
-  SHA-256 `EC61BF98FCE456B3E95ACCFD217A4EF0AB073393E6BE4FE5E9A47896591EE123`.
+  SHA-256 `080247C5350C30F58BEC1D79D16697215F2DF430EAF7E94971506CBE014513BD`.
 - Exact byte authority:
   [`rendered/fin-claude-guidance/CLAUDE.md`](rendered/fin-claude-guidance/CLAUDE.md).
 - Scope: one Claude-owned create, root `CLAUDE.md`; no other path. CC_FIN read-only throughout.
@@ -69,7 +79,8 @@ in the CC_Loto Slice 6 review; it is disclosed here and is not fixed by this doc
 ## Ownership, scope, and native-path guarantees
 
 - Codex-owned `AGENTS.md` is byte-identical to the source working tree in the disposable overlay,
-  and the parent `AGENTS.md` object is required to equal `d04bf3b8`.
+  and the parent `AGENTS.md` object is required to equal `4cca3734` (the published AGENTS-completion
+  object; it was `d04bf3b8` at the superseded decision-tip render).
 - The candidate references only FIN-native paths (`scripts/agent_coord.py`, `python -m pytest`,
   `support/PROFILE.md`, `coordination/TEAM_PROTOCOL.md`); the renderer fails on any cross-target
   token (`tools/support/...`, `run_tests.py`, `--native-python`, `dynamix`, `CC_Loto`).

@@ -24,8 +24,12 @@ from pathlib import Path
 WIKI = Path(__file__).resolve().parents[3]
 OUT = WIKI / "doc/support-transfer/rendered/fin-claude-guidance"
 FIN = Path("C:/xPY/xPrj/CC_FIN")
-PARENT = "e74147f3309e1835d28d7c248e00cdcbde2f1796"
-PARENT_AGENTS_OBJECT = "d04bf3b8d1167e993e1c5c2d8d9cf33c296b5747"
+# Refreshed after the Codex AGENTS.md slice closed: the parent moved from the decision tip
+# e74147f3 to the published AGENTS-completion tip 9308e25, and AGENTS.md is now object 4cca3734.
+# The CLAUDE.md candidate is a create and its bytes do not depend on the parent, so the candidate
+# object is unchanged; only these preconditions move.
+PARENT = "9308e25bbd1177ba69b8075210e1c5e079213fc5"
+PARENT_AGENTS_OBJECT = "4cca3734d8c789038b1142a64be2eec2c5edbccc"
 
 sys.path.insert(0, str(WIKI / "doc/support-transfer/staged"))
 from _shared import scan_sensitive  # noqa: E402

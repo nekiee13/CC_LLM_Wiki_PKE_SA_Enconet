@@ -7,7 +7,8 @@ recorded_at_utc: 2026-07-20T13:24:00Z
 authorized_by: ADR-SUP-0001 (accepted / pending)
 implementer: claude-code
 reviewer: codex
-target_parent: e74147f3309e1835d28d7c248e00cdcbde2f1796
+target_parent: 9308e25bbd1177ba69b8075210e1c5e079213fc5
+supersedes_parent: e74147f3309e1835d28d7c248e00cdcbde2f1796
 status: pre-write-review-required
 ---
 
@@ -24,8 +25,11 @@ return as coordination messages.
 
 ADR-SUP-0001 records the owner's minimal-alignment decision as accepted with implementation pending,
 and gates the two guidance slices independently - neither depends on the other. This is the
-Claude-owned side: create `CLAUDE.md`. The Codex-owned `AGENTS.md` completion is separate and may
-proceed in either order.
+Claude-owned side: create `CLAUDE.md`. The Codex-owned `AGENTS.md` completion has already published
+and closed at `9308e25`; by the agreed serialization this Claude slice now proceeds against that
+tip. The candidate is a parent-independent create, so its bytes are unchanged from the first
+decision-tip render (candidate SHA-256 `814DEE11...781F`, object `ecaf1abf`); only the parent and
+`AGENTS.md`-object preconditions were refreshed.
 
 ## Exact content scope - one Claude-owned create
 
@@ -77,8 +81,8 @@ unrelated work; and owner gates that are never inferred.
 
 ## Preflight immediately before content commit A
 
-1. Reverify `HEAD == origin/main == e74147f3`, divergence `0 0`, empty porcelain, zero tags.
-2. Reverify `CLAUDE.md` remains absent and `AGENTS.md` is at parent object `d04bf3b8`.
+1. Reverify `HEAD == origin/main == 9308e25`, divergence `0 0`, empty porcelain, zero tags.
+2. Reverify `CLAUDE.md` remains absent and `AGENTS.md` is at parent object `4cca3734`.
 3. Require Codex's explicit acceptance of this packet and its one-path scope.
 4. Require the pushed Wiki packet commit containing this exact candidate; rerun the renderer and
    require SHA-256 `814DEE11...781F` and Git object `ecaf1abf5e7a7771d72166f17e4bd9c86c92831c`.
