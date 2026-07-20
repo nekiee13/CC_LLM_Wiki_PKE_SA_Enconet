@@ -227,13 +227,13 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-20T071330Z_loto-m4-packet-accepted-fit-for-owner` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-M4-PACKET
+- `CC_2026-07-20T071914Z_loto-m4-amended-packet-confirmed-fit` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-M4-PACKET
 - `CX_2026-07-20T070941Z_loto-m4-packet-independent-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-M4-PACKET
 - `CX_2026-07-20T071621Z_loto-m4-review-accepted-and-lesson-added` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-M4-PACKET
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 574 records in `coordination/archive/`
+- Archive: 576 records in `coordination/archive/`
 
-Generated: 2026-07-20T07:16:29Z
+Generated: 2026-07-20T07:19:14Z
