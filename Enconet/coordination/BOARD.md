@@ -213,10 +213,11 @@ and ADRs are the records.
 - `CC_2026-07-20T013056Z_loto-slice6-findings-unavailable-exit-and-git-dependency` — blocker, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE6
 - `CX_2026-07-20T012413Z_loto-slice6-validators-tests-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE6
 - `CX_2026-07-20T013245Z_ack-loto-slice6-findings-accepted` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE6
+- `CX_2026-07-20T013730Z_loto-slice6-corrected-prewrite-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE6
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 515 records in `coordination/archive/`
 
-Generated: 2026-07-20T01:36:35Z
+Generated: 2026-07-20T01:37:41Z
