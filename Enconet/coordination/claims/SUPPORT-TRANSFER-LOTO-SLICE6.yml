@@ -1,0 +1,13 @@
+task: SUPPORT-TRANSFER-LOTO-SLICE6
+agent: codex
+status: active
+claimed_at_utc: 2026-07-20T01:17:42Z
+last_renewed_at_utc: 2026-07-20T01:17:42Z
+expires_at_utc: 2026-07-21T01:17:42Z
+anticipated_files:
+  - doc/support-transfer/LOTO_SLICE6_PREJOB_BRIEFING.md
+  - doc/support-transfer/LOTO_SLICE6_RENDER_EVIDENCE.md
+  - doc/support-transfer/LOTO_SLICE6_DRY_RUN_EVIDENCE.md
+  - doc/support-transfer/rendered/render_loto_slice6.py
+  - doc/support-transfer/rendered/loto-slice6
+note: Prepare exact CC_Loto target-native validators/tests packet: tools/validate_support.py plus focused unittest modules in tests/contract; no target write before Claude acceptance.

@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-LOTO-SLICE6` — codex, expires 2026-07-21T01:17:42Z
 
 ## Released claims
 
@@ -216,4 +216,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 515 records in `coordination/archive/`
 
-Generated: 2026-07-20T01:14:59Z
+Generated: 2026-07-20T01:23:16Z
