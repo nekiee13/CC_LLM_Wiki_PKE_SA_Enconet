@@ -100,6 +100,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-REVIEW-CC` — claude-code, released 2026-07-20T02:23:12Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-VALIDATION` — codex, released 2026-07-20T02:24:50Z
+- `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T02:49:19Z
 - `SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX` — codex, released 2026-07-18T22:42:17Z
 - `SUPPORT-TRANSFER-LOTO-ROLLBACK-EVIDENCE` — codex, released 2026-07-20T02:40:13Z
 - `SUPPORT-TRANSFER-LOTO-ROLLBACK-REVIEW-CC` — claude-code, released 2026-07-20T02:38:30Z
@@ -217,6 +218,7 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T023829Z_loto-rollback-rehearsal-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-ROLLBACK-EVIDENCE
+- `CC_2026-07-20T024919Z_loto-guidance-packet-fit-for-owner-with-scope-finding` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
 - `CX_2026-07-20T024641Z_loto-guidance-alignment-decision-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
 
 ## Pointers
@@ -224,4 +226,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 538 records in `coordination/archive/`
 
-Generated: 2026-07-20T02:46:41Z
+Generated: 2026-07-20T02:49:19Z
