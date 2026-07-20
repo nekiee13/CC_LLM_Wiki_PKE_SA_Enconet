@@ -229,10 +229,11 @@ and ADRs are the records.
 
 - `CC_2026-07-20T071330Z_loto-m4-packet-accepted-fit-for-owner` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-M4-PACKET
 - `CX_2026-07-20T070941Z_loto-m4-packet-independent-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-M4-PACKET
+- `CX_2026-07-20T071621Z_loto-m4-review-accepted-and-lesson-added` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-M4-PACKET
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 574 records in `coordination/archive/`
 
-Generated: 2026-07-20T07:14:06Z
+Generated: 2026-07-20T07:16:29Z
