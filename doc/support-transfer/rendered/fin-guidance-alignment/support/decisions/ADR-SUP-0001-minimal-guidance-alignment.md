@@ -24,6 +24,10 @@ The repository's target-native alignment authority is
 ownership, truthful validation, safe recovery, and target gates while allowing agent-specific
 wording and product guidance.
 
+The human project owner directed: **“Check if agents.md and claude.md at CC_FIN comply to minimal
+alignment. Add minimal alignment to decision log.”** The five required meanings below are derived
+from the installed target-native template; they are not represented as verbatim owner wording.
+
 ## Decision
 
 CC_FIN will use minimal semantic alignment for its two agent guidance files. Both files must expose
@@ -42,6 +46,9 @@ second product backlog.
 
 - Decision state is **Accepted**; implementation state is **Pending**.
 - Codex owns any later `AGENTS.md` correction or completion. Claude Code reviews that slice.
+- The existing `AGENTS.md` warning that checks prevented by a real blocker must never imply pass is
+  retained; the later Codex slice adds missing `not-configured`, safe-recovery, and owner-gate
+  semantics without recasting `blocked` as a successful result.
 - Claude Code owns any later creation or edit of `CLAUDE.md`. Codex reviews that slice.
 - Each guidance slice requires its own exact render, preflight, review, validation, committed-object
   check, and scoped recovery evidence before publication.

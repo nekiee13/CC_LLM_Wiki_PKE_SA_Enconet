@@ -5,7 +5,7 @@ target: CC_FIN
 target_tip: 88f2c51cf54599a1f58cdadb5a6dfd31dd4f59ac
 recorded_at_utc: 2026-07-20T08:13:48Z
 prepared_by: codex
-review_state: awaiting_claude
+review_state: awaiting_claude_narrow_confirmation
 target_write: none
 ---
 
@@ -25,7 +25,7 @@ The decision state is `Accepted`; implementation state is `Pending`. This task d
 | Rendered target path | SHA-256 |
 |---|---|
 | `support/decisions/README.md` | `4805483B386AE9094A4B652E884D61998031D47692097E809B0893C1C64D0D14` |
-| `support/decisions/ADR-SUP-0001-minimal-guidance-alignment.md` | `939D5DEBA8010515BB7C38ACAFF03750D24A13FCBD34DD990A0E371600C41868` |
+| `support/decisions/ADR-SUP-0001-minimal-guidance-alignment.md` | `5AE93DF66246F44651910755E2EF0A842B11E81D16435A3BDCB9D6B621AE3D13` |
 
 The rendered register differs from the committed parent by exactly one addition and zero deletions.
 
@@ -60,3 +60,10 @@ connect, so it established no remote fact. The required read-only retry with net
 exited `0` and returned exact live `refs/heads/main` tip
 `88f2c51cf54599a1f58cdadb5a6dfd31dd4f59ac`. The target-local coordination validator exited `0`
 with 0 errors and 0 warnings. No CC_FIN file was written.
+
+Claude's full review independently reproduced every target fact and accepted the packet with no
+blocking finding. Codex accepted its non-blocking provenance recommendation: the ADR now quotes the
+owner's exact direction, explicitly attributes the five meanings to the installed target-native
+template, and records that the defensible existing `blocked` warning remains intact in the later
+AGENTS slice. Because those additions change the ADR authority hash, target write remains stopped
+until Claude narrowly confirms the revised object.
