@@ -6,7 +6,8 @@ target_tip: d5dc65e568ee73d82389e6e1d3fdf24122661adf
 evidence_version: 2
 prepared_by: codex
 independent_reviewer: claude-code
-state: corrected_candidate_awaiting_focused_rereview
+state: independently_reviewed_fit_for_owner
+independent_review: CC_2026-07-20T025401Z_loto-guidance-packet-v2-accepted
 owner_decision: pending
 target_write_authorized: false
 ---

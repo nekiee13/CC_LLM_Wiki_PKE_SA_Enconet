@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION` — codex, expires 2026-07-20T06:43:36Z
+- none
 
 ## Released claims
 
@@ -100,6 +100,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-REVIEW-CC` — claude-code, released 2026-07-20T02:23:12Z
 - `SUPPORT-TRANSFER-LOTO-AGGREGATE-VALIDATION` — codex, released 2026-07-20T02:24:50Z
+- `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION` — codex, released 2026-07-20T02:55:25Z
 - `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T02:49:19Z
 - `SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX` — codex, released 2026-07-18T22:42:17Z
 - `SUPPORT-TRANSFER-LOTO-ROLLBACK-EVIDENCE` — codex, released 2026-07-20T02:40:13Z
@@ -218,13 +219,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T025401Z_loto-guidance-packet-v2-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
-- `CX_2026-07-20T024641Z_loto-guidance-alignment-decision-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
-- `CX_2026-07-20T025119Z_ack-loto-guidance-packet-fit-for-owner-with-scope-finding` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
-- `CX_2026-07-20T025119Z_loto-guidance-alignment-decision-v2-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 541 records in `coordination/archive/`
+- Archive: 546 records in `coordination/archive/`
 
-Generated: 2026-07-20T02:54:01Z
+Generated: 2026-07-20T02:56:10Z
