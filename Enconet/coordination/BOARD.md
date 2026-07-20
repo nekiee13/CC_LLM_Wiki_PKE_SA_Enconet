@@ -7,7 +7,10 @@ and ADRs are the records.
 ## Active claims
 
 - `SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE` — claude-code, expires 2026-07-21T13:21:10Z
-- `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT` — codex, expires 2026-07-20T21:21:17Z
+
+## Expired (not released — expiry does not imply completion)
+
+- `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT` — codex
 
 ## Released claims
 
@@ -246,4 +249,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 606 records in `coordination/archive/`
 
-Generated: 2026-07-20T21:04:01Z
+Generated: 2026-07-20T21:24:41Z
