@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
+agent: codex
+status: active
+claimed_at_utc: 2026-07-20T13:21:17Z
+last_renewed_at_utc: 2026-07-20T13:21:17Z
+expires_at_utc: 2026-07-20T21:21:17Z
+anticipated_files:
+  - doc/support-transfer/FIN_CODEX_ALIGNMENT_PREJOB_BRIEFING.md
+  - doc/support-transfer/FIN_CODEX_ALIGNMENT_RENDER_DRY_RUN_EVIDENCE.md
+  - doc/support-transfer/rendered/render_fin_codex_alignment.py
+  - doc/support-transfer/rendered/fin-codex-alignment/AGENTS.md
+note: Codex-owned CC_FIN AGENTS minimal-alignment completion: exact render, disposable dry run, and pre-write review only; no CC_FIN target write before Claude acceptance.
