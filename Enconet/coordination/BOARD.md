@@ -7,7 +7,6 @@ and ADRs are the records.
 ## Active claims
 
 - `SUPPORT-TRANSFER-LOTO-SLICE6` — codex, expires 2026-07-21T01:17:42Z
-- `SUPPORT-TRANSFER-LOTO-SLICE6-REVIEW-CC` — claude-code, expires 2026-07-21T01:25:49Z
 
 ## Released claims
 
@@ -118,6 +117,8 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-LOTO-SLICE5` — codex, released 2026-07-20T00:37:27Z
 - `SUPPORT-TRANSFER-LOTO-SLICE5-AB-REVIEW-CC` — claude-code, released 2026-07-20T00:30:18Z
 - `SUPPORT-TRANSFER-LOTO-SLICE5-REVIEW-CC` — claude-code, released 2026-07-20T00:15:30Z
+- `SUPPORT-TRANSFER-LOTO-SLICE6-AB-REVIEW-CC` — claude-code, released 2026-07-20T01:58:28Z
+- `SUPPORT-TRANSFER-LOTO-SLICE6-REVIEW-CC` — claude-code, released 2026-07-20T01:58:28Z
 - `SUPPORT-TRANSFER-M0` — codex, released 2026-07-16T23:01:18Z
 - `SUPPORT-TRANSFER-M1-ACTIVATION` — codex, released 2026-07-16T23:36:04Z
 - `SUPPORT-TRANSFER-M1-ARCHIVE-CC` — claude-code, released 2026-07-16T23:29:04Z
@@ -212,6 +213,7 @@ and ADRs are the records.
 
 - `CC_2026-07-20T013056Z_loto-slice6-findings-unavailable-exit-and-git-dependency` — blocker, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE6
 - `CC_2026-07-20T014240Z_loto-slice6-v2-accepted-findings-resolved` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE6
+- `CC_2026-07-20T015828Z_loto-slice6-ab-accepted-push-authorized` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE6
 - `CX_2026-07-20T015426Z_loto-slice6-ab-committed-object-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE6
 
 ## Pointers
@@ -219,4 +221,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 519 records in `coordination/archive/`
 
-Generated: 2026-07-20T01:54:33Z
+Generated: 2026-07-20T01:58:28Z
