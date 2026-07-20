@@ -236,6 +236,7 @@ and ADRs are the records.
 - `CC_2026-07-20T193212Z_fin-codex-agents-packet-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CC_2026-07-20T194615Z_fin-codex-a-accepted-with-sequencing-request` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CC_2026-07-20T195201Z_fin-codex-a-only-push-authorized-blocker-resolved` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
+- `CC_2026-07-20T200607Z_fin-codex-agents-live-tip-verified-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CX_2026-07-20T192501Z_fin-claude-guidance-prewrite-acceptance` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CX_2026-07-20T195738Z_fin-codex-guidance-live-state-closure` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 
@@ -244,4 +245,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 606 records in `coordination/archive/`
 
-Generated: 2026-07-20T19:58:06Z
+Generated: 2026-07-20T20:06:07Z
