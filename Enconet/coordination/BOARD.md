@@ -214,11 +214,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-20T022312Z_loto-aggregate-validation-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-AGGREGATE-VALIDATION
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 533 records in `coordination/archive/`
+- Archive: 535 records in `coordination/archive/`
 
-Generated: 2026-07-20T02:25:18Z
+Generated: 2026-07-20T02:27:10Z
