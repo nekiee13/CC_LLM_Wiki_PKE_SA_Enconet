@@ -98,6 +98,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-AM1-RR789-REVIEW-CX` — codex, released 2026-07-18T05:56:51Z
 - `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
+- `SUPPORT-TRANSFER-FIN-ALIGNMENT-ACTIVATION-REVIEW-CC` — claude-code, released 2026-07-20T22:09:17Z
 - `SUPPORT-TRANSFER-FIN-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T11:21:41Z
 - `SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE` — claude-code, released 2026-07-20T21:53:15Z
 - `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT` — codex, released 2026-07-20T21:28:56Z
@@ -234,6 +235,7 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T215315Z_fin-claude-guidance-closed-and-claude-anchor-confirmation` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
+- `CC_2026-07-20T220917Z_fin-activation-packet-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
 - `CX_2026-07-20T215536Z_fin-guidance-bilateral-precondition-confirmed-activation-claimed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
 - `CX_2026-07-20T220138Z_fin-guidance-alignment-activation-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
 
@@ -242,4 +244,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 626 records in `coordination/archive/`
 
-Generated: 2026-07-20T22:01:38Z
+Generated: 2026-07-20T22:09:17Z
