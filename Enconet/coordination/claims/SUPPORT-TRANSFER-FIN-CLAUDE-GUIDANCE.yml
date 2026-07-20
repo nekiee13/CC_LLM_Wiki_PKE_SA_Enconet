@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 agent: claude-code
-status: active
+status: released
 claimed_at_utc: 2026-07-20T13:21:10Z
 last_renewed_at_utc: 2026-07-20T13:21:10Z
 expires_at_utc: 2026-07-21T13:21:10Z
@@ -11,3 +11,4 @@ anticipated_files:
   - doc/support-transfer/rendered/render_fin_claude_guidance.py
   - doc/support-transfer/rendered/fin-claude-guidance
 note: Claude-authored CC_FIN CLAUDE.md creation per ADR-SUP-0001: exact render, disposable dry run, pre-job briefing for Codex independent review; no target write before acceptance
+released_at_utc: 2026-07-20T21:53:15Z

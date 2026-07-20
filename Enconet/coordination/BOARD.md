@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION` — codex, expires 2026-07-21T05:55:36Z
 
 ## Released claims
 
@@ -234,11 +234,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T215315Z_fin-claude-guidance-closed-and-claude-anchor-confirmation` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
-- `CX_2026-07-20T214930Z_fin-claude-guidance-live-closure-and-codex-anchor-confirmation` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
+- `CX_2026-07-20T215536Z_fin-guidance-bilateral-precondition-confirmed-activation-claimed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 624 records in `coordination/archive/`
+- Archive: 626 records in `coordination/archive/`
 
-Generated: 2026-07-20T21:53:15Z
+Generated: 2026-07-20T21:56:01Z

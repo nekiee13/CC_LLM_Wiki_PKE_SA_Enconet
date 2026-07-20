@@ -1,0 +1,12 @@
+task: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
+agent: codex
+status: active
+claimed_at_utc: 2026-07-20T21:55:36Z
+last_renewed_at_utc: 2026-07-20T21:55:36Z
+expires_at_utc: 2026-07-21T05:55:36Z
+anticipated_files:
+  - doc/support-transfer/FIN_GUIDANCE_ALIGNMENT_ACTIVATION_PREJOB_BRIEFING.md
+  - doc/support-transfer/FIN_GUIDANCE_ALIGNMENT_ACTIVATION_RENDER_EVIDENCE.md
+  - doc/support-transfer/rendered/render_fin_guidance_alignment_activation.py
+  - doc/support-transfer/rendered/fin-guidance-alignment-activation
+note: Codex authors the shared-neutral ADR-SUP-0001 completion/register/status/log exact render; Claude independently reviews; no CC_FIN write before acceptance.
