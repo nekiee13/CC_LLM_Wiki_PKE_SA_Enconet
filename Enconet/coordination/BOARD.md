@@ -228,11 +228,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-07-20T073541Z_loto-m4-terminal-archive-request` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-M4-PACKET
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 585 records in `coordination/archive/`
+- Archive: 587 records in `coordination/archive/`
 
-Generated: 2026-07-20T07:40:03Z
+Generated: 2026-07-20T08:09:17Z
