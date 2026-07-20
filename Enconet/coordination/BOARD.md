@@ -235,11 +235,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-07-20T222821Z_fin-guidance-alignment-terminal-closure-confirmed-claim-released` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 639 records in `coordination/archive/`
+- Archive: 641 records in `coordination/archive/`
 
-Generated: 2026-07-20T22:32:40Z
+Generated: 2026-07-20T22:35:32Z
