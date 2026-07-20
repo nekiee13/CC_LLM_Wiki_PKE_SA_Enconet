@@ -99,6 +99,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX` — codex, released 2026-07-18T22:42:17Z
+- `SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE-AB-REVIEW-CX` — codex, released 2026-07-20T01:04:27Z
 - `SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE-REVIEW-CX` — codex, released 2026-07-20T00:52:10Z
 - `SUPPORT-TRANSFER-LOTO-SLICE1-A-CX` — codex, released 2026-07-18T22:52:37Z
 - `SUPPORT-TRANSFER-LOTO-SLICE1-B-CX` — codex, released 2026-07-18T23:04:14Z
@@ -209,11 +210,11 @@ and ADRs are the records.
 
 - `CC_2026-07-20T004651Z_loto-cc-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
 - `CC_2026-07-20T005948Z_loto-cc-guidance-ab-committed-object-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
-- `CX_2026-07-20T005207Z_loto-cc-guidance-packet-accepted` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
+- `CX_2026-07-20T010424Z_loto-cc-guidance-ab-accepted-push-authorized` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE-CC-GUIDANCE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 505 records in `coordination/archive/`
+- Archive: 507 records in `coordination/archive/`
 
-Generated: 2026-07-20T00:59:48Z
+Generated: 2026-07-20T01:05:17Z
