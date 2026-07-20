@@ -217,8 +217,7 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-20T023829Z_loto-rollback-rehearsal-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-ROLLBACK-EVIDENCE
-- `CC_2026-07-20T024919Z_loto-guidance-packet-fit-for-owner-with-scope-finding` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
+- `CC_2026-07-20T025401Z_loto-guidance-packet-v2-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
 - `CX_2026-07-20T024641Z_loto-guidance-alignment-decision-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
 - `CX_2026-07-20T025119Z_ack-loto-guidance-packet-fit-for-owner-with-scope-finding` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
 - `CX_2026-07-20T025119Z_loto-guidance-alignment-decision-v2-rereview` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION
@@ -226,6 +225,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 538 records in `coordination/archive/`
+- Archive: 541 records in `coordination/archive/`
 
-Generated: 2026-07-20T02:51:19Z
+Generated: 2026-07-20T02:54:01Z
