@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION` — codex, expires 2026-07-20T06:43:36Z
 
 ## Released claims
 
@@ -223,4 +223,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 538 records in `coordination/archive/`
 
-Generated: 2026-07-20T02:40:43Z
+Generated: 2026-07-20T02:43:36Z
