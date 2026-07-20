@@ -236,12 +236,11 @@ and ADRs are the records.
 
 - `CC_2026-07-20T215315Z_fin-claude-guidance-closed-and-claude-anchor-confirmation` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CC_2026-07-20T220917Z_fin-activation-packet-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
-- `CX_2026-07-20T215536Z_fin-guidance-bilateral-precondition-confirmed-activation-claimed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
-- `CX_2026-07-20T220138Z_fin-guidance-alignment-activation-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
+- `CX_2026-07-20T221554Z_fin-guidance-alignment-activation-local-commit-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-ACTIVATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 626 records in `coordination/archive/`
+- Archive: 629 records in `coordination/archive/`
 
-Generated: 2026-07-20T22:09:17Z
+Generated: 2026-07-20T22:16:19Z
