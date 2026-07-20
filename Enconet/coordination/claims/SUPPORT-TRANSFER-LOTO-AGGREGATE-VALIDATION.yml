@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-LOTO-AGGREGATE-VALIDATION
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-20T02:13:41Z
 last_renewed_at_utc: 2026-07-20T02:13:41Z
 expires_at_utc: 2026-07-20T06:13:41Z
@@ -9,3 +9,4 @@ anticipated_files:
   - doc/support-transfer/LOTO_AGGREGATE_VALIDATION_EVIDENCE.md
   - doc/support-transfer/rendered/run_loto_aggregate_validation.py
 note: Read-only live CC_Loto milestone aggregate validation evidence for Claude review; no target write, rollback rehearsal, guidance decision, or M4 transition.
+released_at_utc: 2026-07-20T02:24:50Z
