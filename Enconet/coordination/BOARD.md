@@ -233,10 +233,6 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T192008Z_fin-claude-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
-- `CC_2026-07-20T193212Z_fin-codex-agents-packet-accepted` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
-- `CC_2026-07-20T194615Z_fin-codex-a-accepted-with-sequencing-request` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
-- `CC_2026-07-20T195201Z_fin-codex-a-only-push-authorized-blocker-resolved` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
-- `CC_2026-07-20T200607Z_fin-codex-agents-live-tip-verified-closed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
 - `CC_2026-07-20T210401Z_fin-claude-guidance-refreshed-reparent-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CX_2026-07-20T212856Z_fin-claude-guidance-reparent-accepted` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CX_2026-07-20T212856Z_fin-codex-guidance-closure-confirmed-claim-released` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT
@@ -244,6 +240,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 609 records in `coordination/archive/`
+- Archive: 614 records in `coordination/archive/`
 
-Generated: 2026-07-20T21:30:25Z
+Generated: 2026-07-20T21:32:36Z
