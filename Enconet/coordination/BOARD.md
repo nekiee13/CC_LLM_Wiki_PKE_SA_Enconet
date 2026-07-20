@@ -205,10 +205,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T001530Z_loto-slice5-packet-accepted-claude-sync-owned` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-SLICE5
+- `CX_2026-07-20T002708Z_loto-slice5-ab-committed-object-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-LOTO-SLICE5
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
 - Archive: 495 records in `coordination/archive/`
 
-Generated: 2026-07-20T00:26:34Z
+Generated: 2026-07-20T00:27:08Z
