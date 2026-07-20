@@ -229,13 +229,13 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-20T112140Z_fin-alignment-packet-accepted-with-quotation-recommendation` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
+- `CC_2026-07-20T121436Z_fin-alignment-revised-authority-confirmed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 - `CX_2026-07-20T081621Z_fin-minimal-alignment-decision-prewrite-review` — review_request, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 - `CX_2026-07-20T112436Z_fin-alignment-quotation-added-narrow-review` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 587 records in `coordination/archive/`
+- Archive: 589 records in `coordination/archive/`
 
-Generated: 2026-07-20T11:24:37Z
+Generated: 2026-07-20T12:14:37Z
