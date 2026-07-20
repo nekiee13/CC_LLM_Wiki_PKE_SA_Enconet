@@ -69,12 +69,17 @@ text and future drift.
 
 ## Codex-side factual defect found
 
-`AGENTS.md` currently tells Codex to report checks as `passed`, `failed`, `skipped`, `unavailable`,
-`blocked`, `unknown`, or `not run`. This conflicts with the accepted T6 contract, installed
+`AGENTS.md` line 86 currently tells Codex to report checks as `passed`, `failed`, `skipped`,
+`unavailable`, `blocked`, `unknown`, or `not run`. This conflicts with the accepted T6 contract, installed
 aggregate, and handoff schema: it wrongly includes `blocked` as a check result and omits
 `not-configured`. Alignment must not copy this defect. If the owner approves alignment, a separate
 Codex-owned correction should first replace that sentence with the exact canonical vocabulary; Claude
 reviews that slice independently.
+
+The other `blocked` occurrence, line 129's warning never to report a validation as passed when it was
+blocked, is not a check-vocabulary declaration. It correctly describes an execution prevented by a
+real blocker and remains outside the correction. The later renderer must pin the exact corrected
+enumeration rather than require the word `blocked` to disappear from the whole file.
 
 ## Other exclusions
 

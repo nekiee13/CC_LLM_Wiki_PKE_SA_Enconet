@@ -3,10 +3,10 @@ record_type: owner_decision_packet
 decision_id: LOTO-GUIDANCE-ALIGNMENT
 target: CC_Loto
 target_tip: d5dc65e568ee73d82389e6e1d3fdf24122661adf
-evidence_version: 1
+evidence_version: 2
 prepared_by: codex
 independent_reviewer: claude-code
-state: candidate_awaiting_independent_review
+state: corrected_candidate_awaiting_focused_rereview
 owner_decision: pending
 target_write_authorized: false
 ---
@@ -42,9 +42,11 @@ not edit that file. M4 remains closed.
 
 The recommendation is **approve minimal semantic alignment**:
 
-1. Approve correcting Codex-owned `AGENTS.md` to use the canonical check vocabulary. The current
-   sentence wrongly treats `blocked` as a check result and omits `not-configured`; the accepted
-   contract reserves `blocked` for handoff/blocker state.
+1. Approve correcting only Codex-owned `AGENTS.md` line 86's check enumeration to use the canonical
+   vocabulary. That sentence wrongly treats `blocked` as a check result and omits `not-configured`;
+   the accepted contract reserves `blocked` for handoff/blocker state. Line 129's separate warning
+   about a validation being blocked by a real blocker remains correct and outside the slice. The
+   renderer must pin the exact corrected enumeration, not ban the word `blocked` file-wide.
 2. After that correction is independently reviewed and published, approve adding one concise
    support-workflow section to Claude-owned `CLAUDE.md` covering the six
    groups defined in the comparison: ownership, read order, coordination lifecycle, validation
@@ -75,6 +77,12 @@ The recommendation is **approve minimal semantic alignment**:
 | A known bad check vocabulary is copied during alignment | Correct `AGENTS.md` first and pin Claude's candidate to the installed schema/aggregate vocabulary | Approve the correction or intentionally retain the inconsistency |
 | “Synchronized” is claimed prematurely | Require published live-tip confirmation by both agents | Owner may defer synchronization status until later |
 | Guidance approval is confused with M4 acceptance | Separate claims, packets, records, and owner decisions | Decide guidance first or explicitly defer it past M4 preparation |
+
+The first risk is already observable, not theoretical: Claude followed the complete support workflow
+in this transfer because the session began in the Wiki workspace and inherited its guidance. A future
+Claude session opened directly inside CC_Loto would receive no target-local instruction to read the
+handoff, inspect messages and claims, require evidence before acceptance, use the fail-closed check
+vocabulary, or keep M4 non-inferable. Minimal alignment closes that specific context-loss failure mode.
 
 ## Alternatives
 
