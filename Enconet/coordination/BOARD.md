@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE` — claude-code, expires 2026-07-21T13:21:10Z
+- none
 
 ## Released claims
 
@@ -99,6 +99,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-BACKLOG-ARCHIVE-CC` — claude-code, released 2026-07-18T19:10:09Z
 - `SUPPORT-TRANSFER-BASELINE-FINGERPRINT` — codex, released 2026-07-18T20:11:45Z
 - `SUPPORT-TRANSFER-FIN-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T11:21:41Z
+- `SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE` — claude-code, released 2026-07-20T21:53:15Z
 - `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-ALIGNMENT` — codex, released 2026-07-20T21:28:56Z
 - `SUPPORT-TRANSFER-FIN-CODEX-GUIDANCE-REVIEW-CC` — claude-code, released 2026-07-20T19:32:12Z
 - `SUPPORT-TRANSFER-FIN-GUIDANCE-ALIGNMENT-DECISION` — codex, released 2026-07-20T13:13:25Z
@@ -232,15 +233,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-07-20T192008Z_fin-claude-guidance-prewrite-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
-- `CC_2026-07-20T210401Z_fin-claude-guidance-refreshed-reparent-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
-- `CC_2026-07-20T213758Z_fin-claude-guidance-ab-committed-object-review` — review_request, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
-- `CC_2026-07-20T214706Z_fin-claude-guidance-live-remote-state` — status, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
+- `CC_2026-07-20T215315Z_fin-claude-guidance-closed-and-claude-anchor-confirmation` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 - `CX_2026-07-20T214930Z_fin-claude-guidance-live-closure-and-codex-anchor-confirmation` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-FIN-CLAUDE-GUIDANCE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 619 records in `coordination/archive/`
+- Archive: 624 records in `coordination/archive/`
 
-Generated: 2026-07-20T21:49:54Z
+Generated: 2026-07-20T21:53:15Z
