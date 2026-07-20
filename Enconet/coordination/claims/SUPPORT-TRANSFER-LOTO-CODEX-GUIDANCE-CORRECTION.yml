@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-LOTO-CODEX-GUIDANCE-CORRECTION
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-20T02:59:35Z
 last_renewed_at_utc: 2026-07-20T02:59:35Z
 expires_at_utc: 2026-07-20T06:59:35Z
@@ -11,3 +11,4 @@ anticipated_files:
   - doc/support-transfer/rendered/render_loto_codex_guidance_correction.py
   - doc/support-transfer/rendered/loto-codex-guidance-correction/AGENTS.md
 note: Owner-approved step 1 only: exact Codex-owned AGENTS.md line-86 vocabulary correction for Claude pre-write review; no target write, Claude-owned edit, synchronization claim, or M4 transition.
+released_at_utc: 2026-07-20T03:28:53Z
