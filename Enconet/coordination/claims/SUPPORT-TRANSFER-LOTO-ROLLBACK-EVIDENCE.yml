@@ -1,6 +1,6 @@
 task: SUPPORT-TRANSFER-LOTO-ROLLBACK-EVIDENCE
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-07-20T02:31:07Z
 last_renewed_at_utc: 2026-07-20T02:31:07Z
 expires_at_utc: 2026-07-20T06:31:07Z
@@ -9,3 +9,4 @@ anticipated_files:
   - doc/support-transfer/LOTO_ROLLBACK_REHEARSAL_EVIDENCE.md
   - doc/support-transfer/rendered/run_loto_rollback_rehearsal.py
 note: Disposable clone of frozen CC_Loto tip; real named git revert commits, unrelated-work hash preservation, and post-recovery aggregate/native validation. No live target write or M4 transition.
+released_at_utc: 2026-07-20T02:40:13Z
