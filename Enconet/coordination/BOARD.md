@@ -109,6 +109,7 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-ACTIVATION` — codex, released 2026-07-20T02:58:27Z
 - `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-DECISION` — codex, released 2026-07-20T02:55:25Z
 - `SUPPORT-TRANSFER-LOTO-GUIDANCE-ALIGNMENT-REVIEW-CC` — claude-code, released 2026-07-20T02:49:19Z
+- `SUPPORT-TRANSFER-LOTO-GUIDANCE-SYNCHRONIZATION-CONFIRMATION` — codex, released 2026-07-20T06:56:16Z
 - `SUPPORT-TRANSFER-LOTO-PREFLIGHT-CX` — codex, released 2026-07-18T22:42:17Z
 - `SUPPORT-TRANSFER-LOTO-ROLLBACK-EVIDENCE` — codex, released 2026-07-20T02:40:13Z
 - `SUPPORT-TRANSFER-LOTO-ROLLBACK-REVIEW-CC` — claude-code, released 2026-07-20T02:38:30Z
@@ -226,11 +227,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-07-20T065317Z_loto-step2-closed-and-claude-side-anchors-confirmed` — acknowledgement, claude-code -> codex: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
-- `CX_2026-07-20T064707Z_loto-claude-alignment-live-tip-verified-step2-closed` — acknowledgement, codex -> claude-code: SUPPORT-TRANSFER-LOTO-CLAUDE-GUIDANCE-ALIGNMENT
+- `CX_2026-07-20T065616Z_loto-guidance-bilateral-anchors-confirmed` — status, codex -> claude-code: SUPPORT-TRANSFER-LOTO-GUIDANCE-SYNCHRONIZATION-CONFIRMATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 566 records in `coordination/archive/`
+- Archive: 568 records in `coordination/archive/`
 
-Generated: 2026-07-20T06:53:18Z
+Generated: 2026-07-20T06:56:23Z
