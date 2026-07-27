@@ -81,6 +81,43 @@ Record dependency or encoding failures as failures, not as successful verificati
 - Do not claim that `/handoff` is fully integrated with project state until the related master-plan
   acceptance criteria and validators are implemented.
 
+## Permanent token-efficiency goal
+
+Optimize token consumption throughout project work without weakening processing quality, evidence
+integrity, validation rigor, controlled-document requirements, or human gates.
+
+- Check jdocmunch/jcodemunch index identity and freshness before broad exploration. Prefer indexed
+  section or symbol retrieval when the index is current; use a stale index only for navigation and
+  verify every relied-on conclusion against the current filesystem.
+- Use narrow `rg` patterns, explicit paths, result limits, and only the context required for the
+  decision. Avoid broad recursive output when a symbol, section, manifest row, or exact identifier
+  can answer the question.
+- Read complete mandatory contracts, controlled sources required by the task, high-risk review
+  records, and any file whose full context is necessary for a safe decision. Token efficiency must
+  never silently truncate required evidence.
+- For later audit stages, retrieve canonical criterion-scoped evidence from SQLite and
+  `active_crumbs` using stable crumb, quote, chunk, and provenance references. Escalate from compact
+  metadata to exact evidence, adjacent chunks, and finally the full source whenever ambiguity,
+  conflict, missing context, or reviewer need requires it.
+- Keep deterministic work in scripts: chunking, quote linking, schema checks, scoring, package
+  construction, validation, and report/dashboard rendering. Use LLM context for semantic judgment,
+  exception review, and synthesis that actually requires it.
+- For repeat sieving or revised candidate generations, review the generation diff and changed crumbs
+  first, with unchanged content proven by stable identifiers and hashes. Fall back to a full
+  comparison whenever hashes, lineage, or diff completeness cannot be proven. Full baseline review
+  remains required at the applicable approval gate.
+- Summarize routine validation output while preserving exact commands, integer exit codes, counts,
+  warnings, failures, and artifact paths. Preserve complete logs and inspect them when summaries are
+  insufficient or diagnosis is required.
+- Run focused tests during iteration, then every mandatory aggregate and gate validation at the
+  required publication boundary. Targeted tests reduce iteration cost; they never replace required
+  full validation.
+- Treat indexes as commit-scoped evidence. Prefer incremental changed-path refreshes and one
+  verified clean-tip reconciliation; use a full rebuild after unproven deletions/renames, scope or
+  parser changes, integrity failure, or unreconcilable Git history.
+- When efficiency measures would constrain correct completion, use the broader read or validation
+  method and tell the owner which concrete quality or evidence constraint required it.
+
 ## Audit command routing
 
 Run `python scripts/audit_command.py audit-status` at session start. All simple stage

@@ -136,3 +136,4 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-07-18T23:11:23Z | handoffs/2026-07-18T231123Z-nogit.md | complete | unavailable
 
 - handoff-created | 2026-07-18T23:12:17Z | handoffs/2026-07-18T231217Z-015ac3c.md | complete | 015ac3c044a86b3cd1155c4f08fb8634e9d47d60
+- improvement-recorded | 2026-07-27T21:25:50Z | AFI-TOKEN-001 | Owner directed P0-P6 token-efficiency options, unverified saving projections, Claude's independent evaluation, fallback/blind-spot/metric-gaming/telemetry risks, and a separately gated prospective A/B pilot concept into the AFI ledger. The item is non-blocking and deferred until explicit pilot authorization; no pipeline, gate, target, or measurement-storage change is authorized (OWNER/CC/CX).

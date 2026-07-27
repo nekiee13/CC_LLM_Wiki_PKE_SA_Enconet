@@ -57,6 +57,45 @@ recordkeeping requirements.
 - Do not run repair/migration scripts until target-root, dry-run, and backup behavior are reviewed.
 - Never report skipped, blocked, or unrun validation as passed.
 
+## Permanent token-efficiency goal
+
+Optimize token consumption across every project in this workspace without weakening processing
+quality, evidence integrity, validation rigor, controlled-document requirements, or human approval
+gates. This is a standing objective, not a per-request preference, and it never overrides any rule
+in Authority and safety above.
+
+- **Retrieve narrow before reading wide.** Check jcodemunch/jdocmunch/jdatamunch index identity and
+  freshness before broad exploration; prefer indexed section/symbol/row retrieval
+  (`get_symbol_source`, `get_file_outline`, `search_symbols`, `get_section`, `get_rows`,
+  `describe_dataset`) over whole-file reads when the index is current. A stale index (recorded HEAD
+  differs from the live tree) is a navigation aid only — verify any relied-on conclusion against the
+  live tree. Use `rg`/`Grep` with tight `-A`/`-B`/`-C` and explicit path/glob/type scope to answer
+  existence or classification questions instead of reading the file.
+- **Mandatory full-read and broader-context escalation remains required.** Read complete mandatory
+  contracts or schemas, required controlled sources, immutable review/handoff/coordination records,
+  and any file about to be edited or published, in full. Escalate from compact metadata to exact
+  evidence, adjacent context, and finally the full source whenever ambiguity, conflict, missing
+  context, or reviewer need requires it. Token efficiency must never silently truncate required
+  evidence.
+- **Targeted tests never replace mandatory validation.** Use focused tests, changed-scope lint, and
+  `git diff <paths>` for iteration; still run every mandatory aggregate or gate validation at its
+  required boundary before it is reported as passed. Summarize routine command output (e.g.
+  `pytest -q`, `--tb=line`, `grep -c`, `tail`) and expand to full output only for a failure under
+  active investigation.
+- **Indexes are commit-scoped; stale conclusions require live verification.** Refresh only the
+  specific changed paths after edits rather than rebuilding whole indexes; reserve a full
+  reconciliation for deletions/renames, scope or ignore-rule changes, parser/index-format changes,
+  integrity-verification failure, or unreconcilable Git history. Do not present a stale index as
+  current.
+- **Do not re-read.** Reuse content already established in context (files, diffs, manifests,
+  records) instead of re-reading it across turns or subagent calls, once freshness is confirmed.
+
+**Escalation clause.** When the lean method would constrain the task — a range read misses needed
+context, a summary hides the signal, an index cannot show uncommitted work — use the fuller method
+the task needs, but say so that turn: state that a heavier read or broader validation was used and
+the specific reason. Correctness and evidence integrity outrank the token goal; the obligation is
+to escalate visibly, not to silently degrade the work or silently overspend.
+
 ## Working protocol
 
 1. Read this file and the nearest project `CLAUDE.md`.

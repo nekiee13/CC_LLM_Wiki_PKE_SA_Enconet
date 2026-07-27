@@ -25,6 +25,7 @@ Navigation: workspace overview at [`../README.md`](../README.md); project docs a
 | [RECORD-KEEPING.md](RECORD-KEEPING.md) | Which records exist, where, and their immutability/lifecycle rules |
 | [SKILLS.md](SKILLS.md) | Skill inventory and placement rules for both agents |
 | [INDEXING.md](INDEXING.md) | Documentation/code index profiles, mandatory options, caveats |
+| [TOKEN_EFFICIENCY_PROPOSAL.md](TOKEN_EFFICIENCY_PROPOSAL.md) | Non-authoritative, quality-preserving proposal for token measurement, evidence packets, delta review, and acceptance criteria |
 | [GIT_CONVENTIONS.md](GIT_CONVENTIONS.md) | Commit tags, ignore policy, line endings, identity (Task C0.2) |
 | [GUIDANCE_PAIRS.json](GUIDANCE_PAIRS.json) | Guidance-pair drift manifest consumed by `scripts/check_guidance_drift.py` (Task C2.1) |
 | [Support_system.md](Support_system.md) | Owner-accepted portable software-development support framework: core, modules, principles, and conformance profile |

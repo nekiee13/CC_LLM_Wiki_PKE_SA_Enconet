@@ -19,6 +19,7 @@ and ADRs are the records.
 - `ADR-0022` — codex, released 2026-07-16T05:00:38Z
 - `ADR-0022-KNOWLEDGE-LINKS` — codex, released 2026-07-16T05:00:38Z
 - `AFI-EPIC12-URL` — codex, released 2026-07-15T21:38:42Z
+- `AFI-TOKEN-001` — codex, released 2026-07-27T21:51:08Z
 - `C1.4` — codex, released 2026-07-11T21:51:59Z
 - `C2.1` — claude-code, released 2026-07-11T21:27:34Z
 - `C2.2` — claude-code, released 2026-07-11T21:36:18Z
@@ -232,6 +233,12 @@ and ADRs are the records.
 - `SUPPORT-TRANSFER-T6-REREVIEW-CX` — codex, released 2026-07-17T22:02:46Z
 - `SUPPORT-TRANSFER-T6-REVIEW-CX` — codex, released 2026-07-17T21:48:44Z
 - `SUPPORT-TRANSFER-T7-VERIFY` — codex, released 2026-07-18T20:24:14Z
+- `TOKEN-EFFICIENCY-ANCHORS` — codex, released 2026-07-27T20:53:58Z
+- `TOKEN-EFFICIENCY-CLAUDE-GUIDANCE` — claude-code, released 2026-07-27T20:37:12Z
+- `TOKEN-EFFICIENCY-GUIDANCE` — codex, released 2026-07-27T19:59:19Z
+- `TOKEN-EFFICIENCY-PROPOSAL` — codex, released 2026-07-27T20:03:24Z
+- `TOKEN-EFFICIENCY-PROPOSAL-AMENDMENT` — codex, released 2026-07-27T20:04:31Z
+- `TOKEN-EFFICIENCY-WORKSPACE` — codex, released 2026-07-27T20:00:51Z
 
 ## Active messages
 
@@ -240,6 +247,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 641 records in `coordination/archive/`
+- Archive: 671 records in `coordination/archive/`
 
-Generated: 2026-07-20T22:35:32Z
+Generated: 2026-07-27T22:00:25Z

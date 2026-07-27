@@ -43,6 +43,31 @@ exports) as historical/source input, not a current implementation contract.
 - Generations are immutable: new RUN-id per attempt, candidates stay inactive until the
   recorded human decision, downstream stages read `active_crumbs` only.
 
+## Token-efficiency application in this pipeline
+
+Applies the workspace-root permanent token-efficiency goal to Enconet's audit pipeline. Raw
+intake and promotion reads stay full and mandatory — extraction accuracy depends on complete
+source text, and this section does not relax that.
+
+- For later audit stages (linking, evaluation, report, dashboard), retrieve canonical
+  criterion-scoped evidence from SQLite and `active_crumbs` using stable crumb, quote, chunk, and
+  provenance references rather than re-reading whole incoming documents or chunk dumps. Escalate
+  from compact metadata to exact evidence, adjacent chunks, and finally the full controlled source
+  whenever ambiguity, conflict, missing context, broken traceability, or reviewer need requires it.
+- Query growing manifests (`manifests/*.csv`) and append-only records (`wiki/log.md`,
+  `wiki/evidence/matrix.*`) by stable run/source identifier or the relevant tail/section during
+  routine work; read the complete file only at `/audit-close`, `/handoff`, or whenever the full
+  history is what the decision actually needs.
+- Keep deterministic pipeline work — chunking, quote linking, schema checks, scoring, package
+  construction, and report/dashboard rendering — in scripts. Reserve LLM context for semantic
+  judgment, exception review, and synthesis that actually requires it.
+- For repeat sieving or revised candidate generations, review the generation diff and changed
+  crumbs first, proven unchanged by stable identifiers and hashes; fall back to a full comparison
+  whenever hashes, lineage, or diff completeness cannot be proven. Full baseline review remains
+  required at the applicable approval gate.
+- Targeted checks never replace `/audit-validate`, the aggregate suite, or a required gate
+  packet; run those in full at the required boundary regardless of what ran during iteration.
+
 ## Audit commands (EPIC17)
 
 Run `/audit-status` at session start. Each pipeline stage has exactly one Claude slash

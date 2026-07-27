@@ -106,6 +106,44 @@
           "id": "check-messages-active-review",
           "description": "Owner's 'check messages' authorizes same-turn review/validation/response to actionable messages; evidence required for acknowledgement (2026-07-12)",
           "patterns": ["check messages", "read-only", "evidence"]
+        },
+        {
+          "id": "token-efficiency-quality-floor",
+          "description": "Token optimization must not weaken processing quality, evidence integrity, or human approval gates",
+          "pattern": "token consumption.{0,160}without weakening processing quality.{0,100}evidence integrity.{0,160}human approval gates"
+        },
+        {
+          "id": "token-efficiency-full-read-escalation",
+          "description": "Mandatory full reads and broader-context escalation remain required when evidence need demands them",
+          "claude_patterns": [
+            "Mandatory full-read and broader-context escalation remains required",
+            "ambiguity, conflict, missing context",
+            "full source"
+          ],
+          "codex_patterns": [
+            "Read mandatory contracts",
+            "Ambiguity, conflict, missing context",
+            "full source"
+          ]
+        },
+        {
+          "id": "token-efficiency-validation-floor",
+          "description": "Targeted tests/checks never replace mandatory full validation",
+          "claude_pattern": "Targeted tests never replace mandatory validation",
+          "codex_pattern": "Targeted checks never replace required full validation"
+        },
+        {
+          "id": "token-efficiency-index-freshness",
+          "description": "Indexes are commit-scoped; stale conclusions require verification against the live tree",
+          "claude_patterns": [
+            "Indexes are commit-scoped; stale conclusions require live verification",
+            "Do not present a stale index as current"
+          ],
+          "codex_patterns": [
+            "indexes as commit-scoped evidence",
+            "stale indexes only as navigation aids",
+            "verify.{0,80}live tree"
+          ]
         }
       ],
       "documented_differences": [
@@ -188,6 +226,50 @@
           "id": "handoff-helper-usage",
           "description": "make_handoff.py renders/validates/publishes the record and pointer (C3)",
           "pattern": "make_handoff\\.py"
+        },
+        {
+          "id": "token-efficiency-criterion-escalation",
+          "description": "Later audit stages use criterion-scoped active evidence with escalation through adjacent context to the full source",
+          "patterns": [
+            "criterion-scoped evidence",
+            "active_crumbs",
+            "stable crumb, quote, chunk",
+            "adjacent chunks",
+            "full (controlled )?source"
+          ]
+        },
+        {
+          "id": "token-efficiency-deterministic-scripts",
+          "description": "Deterministic pipeline work remains in scripts and LLM context is reserved for semantic judgment",
+          "patterns": [
+            "deterministic (pipeline )?work.{0,180}in scripts",
+            "LLM context",
+            "semantic judgment"
+          ]
+        },
+        {
+          "id": "token-efficiency-gate-validation",
+          "description": "Targeted Enconet checks never replace aggregate or gate validation",
+          "claude_patterns": [
+            "Targeted checks never replace",
+            "/audit-validate",
+            "required gate"
+          ],
+          "codex_patterns": [
+            "Targeted tests.{0,100}never replace required full validation",
+            "mandatory aggregate and gate validation"
+          ]
+        },
+        {
+          "id": "token-efficiency-diff-first-resieving",
+          "description": "Repeat sieving reviews verified generation diffs first and falls back to full comparison when proof is incomplete",
+          "patterns": [
+            "repeat sieving",
+            "generation diff and changed crumbs first",
+            "stable identifiers and hashes",
+            "fall back to a full comparison",
+            "Full baseline review remains required"
+          ]
         }
       ],
       "documented_differences": [

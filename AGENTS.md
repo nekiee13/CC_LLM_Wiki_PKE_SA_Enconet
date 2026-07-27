@@ -56,6 +56,34 @@ requirements defined here.
   backup strategy have been reviewed.
 - Never report a validation as passed when it was skipped, blocked, or not run.
 
+## Permanent token-efficiency goal
+
+Optimize token consumption across all workspace projects without weakening processing quality,
+evidence integrity, validation rigor, controlled-document requirements, or human approval gates.
+
+- Check jdocmunch/jcodemunch index identity and freshness before broad exploration. Prefer indexed
+  section and symbol retrieval when current; use stale indexes only as navigation aids and verify
+  relied-on conclusions against the live tree.
+- Prefer narrow `rg` patterns, explicit paths, bounded results, and the minimum context required for
+  the decision. Retrieve stable identifiers, summaries, and exact sections or symbols before reading
+  whole files.
+- Read mandatory contracts, required controlled sources, high-risk review records, and any file
+  whose complete context is necessary for correctness in full. Never silently truncate required
+  evidence to satisfy a token target.
+- Escalate retrieval according to evidence need: compact metadata, exact evidence, adjacent context,
+  then the full source. Ambiguity, conflict, missing context, or reviewer need requires escalation.
+- Keep deterministic parsing, linking, validation, scoring, and artifact generation in scripts.
+  Reserve LLM context for semantic judgment, exception review, and synthesis that requires it.
+- Summarize routine command output while retaining exact commands, integer exit codes, counts,
+  warnings, failures, and artifact paths. Preserve and inspect full logs when diagnosis requires them.
+- Use focused tests during iteration, then run every mandatory aggregate or gate validation at its
+  required boundary. Targeted checks never replace required full validation.
+- Treat indexes as commit-scoped evidence. Prefer changed-path refreshes and a verified clean-tip
+  reconciliation; rebuild fully after unproven deletion/rename handling, scope or parser changes,
+  integrity failures, or unreconcilable history.
+- If an efficiency method would constrain safe or correct completion, use the broader method and
+  state the concrete quality or evidence reason.
+
 ## Working protocol
 
 1. Read this file and the nearest project `AGENTS.md`.
