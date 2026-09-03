@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 
 import db_util
+import citation_renderer
 from build_evaluation_package import validate_package, validate_source
 from finding_workflow import APPROVALS, render_template
 
@@ -68,12 +69,12 @@ def require_report_gates(package: dict) -> None:
 
 def _citation(row: dict) -> str:
     if row.get("evidence_item_id"):
-        return f"[crumb:{row['evidence_item_id']}]"
+        return citation_renderer.render("crumb", row["evidence_item_id"])
     if row.get("gap_id"):
-        return f"[gap:{row['gap_id']}]"
+        return citation_renderer.render("gap", row["gap_id"])
     if row.get("finding_id"):
-        return f"[finding:{row['finding_id']}]"
-    return "[source:package]"
+        return citation_renderer.render("finding", row["finding_id"])
+    return citation_renderer.render("source", "package")
 
 
 def render(package: dict, template: Path = TEMPLATE) -> str:
@@ -109,23 +110,40 @@ def render(package: dict, template: Path = TEMPLATE) -> str:
     criterion_blocks = []
     for row in package["evaluations"]:
         ruling = applicability.get(row["criterion_id"], {})
-        evidence = " ".join(f"[crumb:{item}]" for item in row.get("evidence_ids", [])) or "[source:package]"
+        evidence = " ".join(
+            citation_renderer.render("crumb", item) for item in row.get("evidence_ids", [])
+        ) or citation_renderer.render("source", "package")
+        evaluation = citation_renderer.render(
+            "evaluation", row["evaluation_id"], label=row["criterion_id"]
+        )
+        document = citation_renderer.render(
+            "document", ruling.get("scope_source_doc_id", ""),
+        )
         criterion_blocks.append(
-            f"### {row['criterion_id']} — {row.get('criterion_name', '')}\n\n"
+            f"### {evaluation} — {row.get('criterion_name', '')}\n\n"
             f"- classification: `{row['classification']}`\n"
             f"- applicability: `{'applicable' if ruling.get('applicable') else 'not-applicable'}`\n"
-            f"- justification: {ruling.get('justification', 'n-a')} [document:{ruling.get('scope_source_doc_id', 'n-a')}]\n"
+            f"- justification: {ruling.get('justification', 'n-a')} {document}\n"
             f"- rationale: {row.get('rationale', '')} {evidence}"
         )
-    gap_lines = [f"- {row['gap_id']}: {row['description']} {_citation(row)}" for row in package["gaps"]]
-    action_lines = [f"- {row['action_id']}: {row['description']} {_citation(row)}" for row in actions]
-    finding_lines = [f"- {row['finding_id']}: {row['title']} — {row['body']} {_citation(row)}" for row in findings]
+    gap_lines = [
+        f"- {citation_renderer.render('gap', row['gap_id'])} (gap context): "
+        f"{row['description']} {_citation(row)}" for row in package["gaps"]
+    ]
+    action_lines = [
+        f"- {citation_renderer.render('action', row['action_id'])}: "
+        f"{row['description']} {_citation(row)}" for row in actions
+    ]
+    finding_lines = [
+        f"- {citation_renderer.render('finding', row['finding_id'])}: "
+        f"{row['title']} — {row['body']} {_citation(row)}" for row in findings
+    ]
     counts = ["| classification | count |", "|---|---:|"] + [
         f"| {name} | {count} |" for name, count in sorted(metrics["classification_counts"].items())
     ]
     appendix = ["| criterion | classification | evidence |", "|---|---|---|"] + [
         f"| {row['criterion_id']} | {row['classification']} | "
-        f"{' '.join('[crumb:'+item+']' for item in row.get('evidence_ids', [])) or '[source:package]'} |"
+        f"{' '.join(citation_renderer.render('crumb', item) for item in row.get('evidence_ids', [])) or citation_renderer.render('source', 'package')} |"
         for row in package["evaluations"]
     ]
     values = {
@@ -136,7 +154,7 @@ def render(package: dict, template: Path = TEMPLATE) -> str:
         "scope": f"- run_id: `{run['run_id']}`\n- supplier: `{run.get('supplier', '')}`\n- scoring_model_version: `{run.get('scoring_model_version', '')}`",
         "method": text["method"].format(schema=package["schema_version"]),
         "coverage": "\n".join(counts), "criteria": "\n\n".join(criterion_blocks),
-        "gaps": "\n".join(gap_lines) or "- none [source:package]",
+        "gaps": "\n".join(gap_lines) or f"- none {citation_renderer.render('source', 'package')}",
         "actions": "\n".join(action_lines) or text["none_actions"],
         "recommendations": "\n".join(finding_lines) or text["none_findings"],
         "score": f"**{metrics['consolidated_score']} / 100** — **{metrics['applicable_count']}** applicable criteria (`{metrics['classification']}`).",

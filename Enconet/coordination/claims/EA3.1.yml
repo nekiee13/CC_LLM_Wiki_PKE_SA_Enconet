@@ -1,0 +1,18 @@
+task: EA3.1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T22:16:03Z
+last_renewed_at_utc: 2026-09-03T22:16:03Z
+expires_at_utc: 2026-09-04T06:16:03Z
+anticipated_files:
+  - Enconet/scripts/citation_renderer.py
+  - Enconet/scripts/generate_report.py
+  - Enconet/scripts/validate_report.py
+  - Enconet/tests/test_citation_renderer.py
+  - Enconet/tests/test_epic11_report.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA3.1.yml
+  - Enconet/coordination/messages/CX_*ea3-1*.md
+note: Implement EA3.1 only: centralized typed Markdown citation rendering across report sections, without generating or publishing controlled report files.
+released_at_utc: 2026-09-03T22:25:19Z

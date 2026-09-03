@@ -699,13 +699,13 @@ meeting.
 
 **Acceptance criteria**
 
-- [ ] No report section constructs `[type:ID]` strings independently.
-- [ ] Human-readable stable IDs remain visible in the link text.
-- [ ] Action lines expose both action-detail navigation and their existing finding lineage without
+- [x] No report section constructs `[type:ID]` strings independently.
+- [x] Human-readable stable IDs remain visible in the link text.
+- [x] Action lines expose both action-detail navigation and their existing finding lineage without
   conflating the two.
-- [ ] Gap self-links cannot trigger recursive resolution and are labeled/presented as gap context,
+- [x] Gap self-links cannot trigger recursive resolution and are labeled/presented as gap context,
   not affirmative evidence.
-- [ ] Unsupported references fail report generation rather than becoming dead labels.
+- [x] Unsupported references fail report generation rather than becoming dead labels.
 
 **Dependencies:** EA0.4, EA1.2.
 
@@ -1206,7 +1206,7 @@ The feature is complete only when all of the following are true:
 | EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [x] |
 | EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [x] |
 | EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [x] |
-| EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [ ] |
+| EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [x] |
 | EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [ ] |
 | EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [ ] |
 | EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [ ] |
@@ -1239,7 +1239,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA2.4 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-candidate evidence drawer now provides a deterministic traceable citation, a visible clipboard
-fallback, and a selected-evidence print layout. Start **EA3.1** next to centralize typed citation
-rendering before portable report links are introduced.
+EA0.1–EA3.1 and EA5.1 are complete, with independent Claude review queued under ADR-0023. Every
+report reference now uses one fail-closed typed renderer, with stable visible IDs and distinct
+primary-object and lineage citations. Start **EA3.2** next to emit portable relative links from
+candidate reports to the Evidence Explorer.

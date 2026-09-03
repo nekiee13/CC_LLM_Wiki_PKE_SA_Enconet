@@ -79,8 +79,17 @@ def validate(package: dict, report: str, *, db: Path | None = None,
         end = report.find(f"## {headings[8]}")
         recommendations = report[start:end]
         for line in recommendations.splitlines():
-            if line.startswith("- ") and not re.search(r"\[(?:crumb|gap|finding):[^]]+\]", line):
-                errors.append("citation-less recommendation")
+            if line.startswith("- "):
+                typed_links = re.findall(
+                    r"\[(?:crumb|gap|finding|source):[^]]+\]\([^)]+\)", line
+                )
+                new_primary = re.search(r"^- \[finding:[^]]+\]\([^)]+\):", line)
+                if (new_primary and len(typed_links) < 2) or (
+                    not new_primary and not re.search(
+                        r"\[(?:crumb|gap|finding):[^]]+\](?:\([^)]+\))?", line
+                    )
+                ):
+                    errors.append("citation-less recommendation")
     return errors
 
 
