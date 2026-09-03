@@ -576,10 +576,10 @@ filing cabinet onto the screen.
 
 **Acceptance criteria**
 
-- [ ] HTML remains a single self-contained file.
-- [ ] Embedded data round-trips without text corruption.
-- [ ] Package and bundle hashes are visible in artifact metadata.
-- [ ] Existing dashboard validation passes.
+- [x] HTML remains a single self-contained file.
+- [x] Embedded data round-trips without text corruption.
+- [x] Package and bundle hashes are visible in artifact metadata.
+- [x] Existing dashboard validation passes.
 
 **Dependencies:** EA1.4.
 
@@ -1202,7 +1202,7 @@ The feature is complete only when all of the following are true:
 | EA1.2 | Complete reference entity graph | M1 | EA1.1 | [x] |
 | EA1.3 | Adjacent chunk context | M1 | EA1.1 | [x] |
 | EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [x] |
-| EA2.1 | Embed validated payload | M2 | EA1.4 | [ ] |
+| EA2.1 | Embed validated payload | M2 | EA1.4 | [x] |
 | EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [ ] |
 | EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [ ] |
 | EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [ ] |
@@ -1239,7 +1239,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA1.4 are complete, with independent Claude review queued under ADR-0023. The deterministic
-run-scoped bundle resolves all 62 production evaluation crumbs and is published only beneath the
-candidate-output boundary. Start **EA2.1** next to safely embed the validated evidence payload in
-the self-contained dashboard.
+EA0.1–EA2.1 are complete, with independent Claude review queued under ADR-0023. The validated
+62-crumb evidence payload is safely embedded in a single self-contained candidate dashboard, with
+matching package and bundle hashes visible in artifact metadata. Start **EA5.1** next because its
+owner-approved browser harness is a dependency of the clickable evidence controls in EA2.2.

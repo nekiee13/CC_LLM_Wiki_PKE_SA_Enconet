@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import sys
@@ -13,6 +14,7 @@ from pathlib import Path
 import yaml
 
 import db_util
+import validate_evidence_bundle
 from build_dashboard_data import build, validate_data
 from build_evaluation_package import validate_package, validate_source
 from finding_workflow import APPROVALS
@@ -23,6 +25,10 @@ STATE = ENCONET / "project-state.yml"
 OUTPUTS = ENCONET / "outputs"
 RUNS = ENCONET / "manifests" / "validation_runs.csv"
 DATA_BLOCK = re.compile(r'<script id="dashboard-data" type="application/json">(.*?)</script>', re.DOTALL)
+EVIDENCE_BLOCK = re.compile(
+    r'<script id="evidence-bundle" type="application/json" '
+    r'data-sha256="([0-9a-f]*)">(.*?)</script>', re.DOTALL,
+)
 SECTIONS = ["dashboard-header", "metric-bar", "executive-summary", "distribution",
             "dashboard-controls", "criterion-cards", "criterion-matrix", "priority-actions",
             "dashboard-footer"]
@@ -36,7 +42,7 @@ BINDINGS = ["weighted_score", "applicable_count", "classification_counts", "crit
 
 
 def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
-             approvals: Path = APPROVALS) -> list[str]:
+             approvals: Path = APPROVALS, evidence_bundle: dict | None = None) -> list[str]:
     errors = validate_package(package) + validate_data(data)
     if db is not None:
         errors.extend(validate_source(package, db, approvals))
@@ -77,6 +83,38 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
                 errors.append("embedded dashboard data mismatch")
         except json.JSONDecodeError:
             errors.append("embedded dashboard data is invalid JSON")
+    if evidence_bundle is not None:
+        bundle_errors = validate_evidence_bundle.validate(evidence_bundle)
+        errors.extend(f"invalid evidence bundle: {error}" for error in bundle_errors)
+        matches = EVIDENCE_BLOCK.findall(html)
+        if len(matches) != 1:
+            errors.append("embedded evidence bundle count must be one")
+        else:
+            digest, payload = matches[0]
+            try:
+                embedded_bundle = json.loads(payload)
+                if embedded_bundle != evidence_bundle:
+                    errors.append("embedded evidence bundle mismatch")
+            except json.JSONDecodeError:
+                errors.append("embedded evidence bundle is invalid JSON")
+            expected_hash = hashlib.sha256(
+                validate_evidence_bundle.canonical_bytes(evidence_bundle)
+            ).hexdigest()
+            if digest != expected_hash:
+                errors.append("embedded evidence bundle hash mismatch")
+            if expected_hash not in html:
+                errors.append("bundle hash missing from artifact metadata")
+            package_hash = evidence_bundle.get("lineage", {}).get("package", {}).get("sha256")
+            if not package_hash or package_hash not in html:
+                errors.append("package hash missing from artifact metadata")
+        for field in ("run_id", "supplier", "deliverable_language"):
+            if evidence_bundle.get("metadata", {}).get(field) != data.get(field):
+                errors.append(f"evidence bundle/dashboard mismatch: {field}")
+        for element_id in (
+            "artifact-metadata", "metadata-package-hash", "metadata-bundle-hash",
+        ):
+            if f'id="{element_id}"' not in html:
+                errors.append(f"missing evidence artifact metadata element: {element_id}")
     return list(dict.fromkeys(errors))
 
 

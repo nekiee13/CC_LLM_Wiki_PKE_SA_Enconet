@@ -1,0 +1,18 @@
+task: EA2.1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T20:43:31Z
+last_renewed_at_utc: 2026-09-03T20:43:31Z
+expires_at_utc: 2026-09-04T04:43:31Z
+anticipated_files:
+  - Enconet/scripts/generate_dashboard.py
+  - Enconet/scripts/validate_dashboard.py
+  - Enconet/templates/dashboard-template.html
+  - Enconet/tests/test_evidence_dashboard_payload.py
+  - Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA2.1.yml
+  - Enconet/coordination/messages/CX_*ea2-1*.md
+note: Implement EA2.1 only: safely embed one validated evidence payload plus package/bundle hashes in a self-contained candidate dashboard; preserve published outputs.
+released_at_utc: 2026-09-03T20:51:48Z

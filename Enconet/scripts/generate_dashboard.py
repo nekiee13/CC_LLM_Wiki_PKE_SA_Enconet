@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import os
 import re
 import sys
+import tempfile
 from pathlib import Path
 
 import db_util
+import evidence_access_policy
+import validate_evidence_bundle
 from build_dashboard_data import validate_data
 from build_evaluation_package import validate_source
 from finding_workflow import APPROVALS
@@ -26,11 +31,29 @@ UI = {
 }
 
 
-def _script_json(value: dict) -> str:
-    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")).replace("<", "\\u003c")
+def _script_json(value: object) -> str:
+    return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+            .replace("&", "\\u0026").replace("<", "\\u003c")
+            .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
 
 
-def render(data: dict, template: Path = TEMPLATE) -> str:
+def _bundle_hash(bundle: dict) -> str:
+    return hashlib.sha256(validate_evidence_bundle.canonical_bytes(bundle)).hexdigest()
+
+
+def _validate_bundle_for_dashboard(bundle: dict, data: dict) -> None:
+    metadata = bundle.get("metadata", {})
+    for field in ("run_id", "supplier", "deliverable_language"):
+        if metadata.get(field) != data.get(field):
+            raise ValueError(f"evidence bundle/dashboard mismatch: {field}")
+    errors = validate_evidence_bundle.validate(bundle)
+    if errors:
+        raise ValueError("invalid evidence bundle: " + "; ".join(errors))
+
+
+def render(
+    data: dict, template: Path = TEMPLATE, *, evidence_bundle: dict | None = None
+) -> str:
     errors = validate_data(data)
     if errors:
         raise ValueError("invalid dashboard data: " + "; ".join(errors))
@@ -38,10 +61,21 @@ def render(data: dict, template: Path = TEMPLATE) -> str:
     if language not in UI:
         raise ValueError("unsupported deliverable_language")
     source = template.read_text(encoding="utf-8")
-    if source.count("__DASHBOARD_DATA__") != 1 or source.count("__DASHBOARD_UI__") != 1:
+    markers = (
+        "__DASHBOARD_DATA__", "__DASHBOARD_UI__", "__EVIDENCE_BUNDLE__",
+        "__EVIDENCE_BUNDLE_SHA256__",
+    )
+    if any(source.count(marker) != 1 for marker in markers):
         raise ValueError("dashboard template injection markers are invalid")
+    if evidence_bundle is not None:
+        _validate_bundle_for_dashboard(evidence_bundle, data)
+        evidence_hash = _bundle_hash(evidence_bundle)
+    else:
+        evidence_hash = ""
     return (source.replace("__DASHBOARD_DATA__", _script_json(data))
-            .replace("__DASHBOARD_UI__", _script_json(UI[language])).rstrip() + "\n")
+            .replace("__DASHBOARD_UI__", _script_json(UI[language]))
+            .replace("__EVIDENCE_BUNDLE__", _script_json(evidence_bundle))
+            .replace("__EVIDENCE_BUNDLE_SHA256__", evidence_hash).rstrip() + "\n")
 
 
 def default_outputs(data: dict) -> tuple[Path, Path]:
@@ -50,33 +84,78 @@ def default_outputs(data: dict) -> tuple[Path, Path]:
     return OUTPUTS / filename, WIKI / filename
 
 
-def main() -> int:
+def _atomic_write_text(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", newline="\n", prefix=f".{path.name}.",
+            suffix=".tmp", dir=path.parent, delete=False,
+        ) as handle:
+            temporary = Path(handle.name)
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+        temporary = None
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("package", type=Path)
     parser.add_argument("dashboard_data", type=Path)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--wiki-output", type=Path)
+    parser.add_argument("--evidence-bundle", type=Path)
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--approvals", type=Path, default=APPROVALS)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     try:
         package = json.loads(args.package.read_text(encoding="utf-8"))
         data = json.loads(args.dashboard_data.read_text(encoding="utf-8"))
+        bundle = (
+            json.loads(args.evidence_bundle.read_text(encoding="utf-8"))
+            if args.evidence_bundle else None
+        )
+        if bundle is not None:
+            package_hash = hashlib.sha256(args.package.read_bytes()).hexdigest()
+            if package_hash != bundle.get("lineage", {}).get("package", {}).get("sha256"):
+                raise ValueError("package bytes do not match evidence bundle lineage")
         source_errors = validate_source(package, args.db, args.approvals)
         if source_errors:
             raise ValueError(source_errors[0])
         require_report_gates(package)
-        content = render(data)
+        content = render(data, evidence_bundle=bundle)
         from validate_dashboard import validate  # local import avoids CLI import cycle
-        errors = validate(package, data, content)
+        errors = validate(package, data, content, evidence_bundle=bundle)
         if errors:
             raise ValueError(errors[0])
-        default_output, default_wiki = default_outputs(data)
-        output, wiki_output = args.output or default_output, args.wiki_output or default_wiki
-        for path in (output, wiki_output):
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content, encoding="utf-8", newline="\n")
-        print(f"generate_dashboard: PASS - {output} ; {wiki_output}")
+        if bundle is not None:
+            if args.output is None:
+                raise ValueError("--output is required with --evidence-bundle")
+            if args.wiki_output is not None:
+                raise ValueError("--wiki-output is forbidden for evidence-access candidates")
+            output = args.output.resolve()
+            evidence_access_policy.require_output_target(output)
+            expected = evidence_access_policy.candidate_path(
+                bundle["metadata"]["run_id"], output.name
+            ).resolve()
+            if output != expected:
+                raise evidence_access_policy.PolicyError(
+                    f"candidate output must be directly under the selected run directory: {expected}"
+                )
+            _atomic_write_text(output, content)
+            print(f"generate_dashboard: PASS - {output} - evidence bundle embedded")
+        else:
+            default_output, default_wiki = default_outputs(data)
+            output, wiki_output = args.output or default_output, args.wiki_output or default_wiki
+            for path in (output, wiki_output):
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(content, encoding="utf-8", newline="\n")
+            print(f"generate_dashboard: PASS - {output} ; {wiki_output}")
         return 0
     except Exception as exc:  # noqa: BLE001 - publication boundary fails closed
         print(f"generate_dashboard: FAIL - {exc}", file=sys.stderr)
