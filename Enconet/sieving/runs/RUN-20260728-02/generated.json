@@ -1,0 +1,258 @@
+{
+  "document": {
+    "name": "RU-73-04,R2_PROCEDURE_FOR_THE_RELAP5_TRANSIENT_ANA.md",
+    "title": "Procedure for the RELAP5 Transient Analyses",
+    "date": "2017-11-17",
+    "revision": "2",
+    "doc_id": "DOC-0023",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0023-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The nodalization developer prepares and maintains the base input deck and its supporting notebook worksheets.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "3.1 Nodalization Developer, page 10, lines 248-259"}],
+      "evidence_quotes": [
+        {"quote_original": "1. preparation of base input deck", "quote_language": "en"},
+        {"quote_original": "2. preparation of worksheets for RELAP5 notebook", "quote_language": "en"},
+        {"quote_original": "3. maintenance (minor revisions) of the base input deck", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The nodalization supervisor oversees model preparation, approves the notebook, maintains restart files, and verifies model applicability.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "3.2 Nodalization Supervisor, pages 10-11, lines 260-281"}],
+      "evidence_quotes": [
+        {"quote_original": "supervision of the preparation and the maintenance (minor revisions) of the base", "quote_language": "en"},
+        {"quote_original": "2. approval of RELAP5 notebook", "quote_language": "en"},
+        {"quote_original": "verification of the applicability of the base input deck to the specific transient", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The RELAP software engineer is responsible for program installation, maintenance, testing, script preparation, and software modification.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "3.4 RELAP Software Engineer, page 11, lines 294-309"}],
+      "evidence_quotes": [
+        {"quote_original": "1. installation and maintenance of RELAP5 and RELAP5 plot programs", "quote_language": "en"},
+        {"quote_original": "2. testing of RELAP5 program and RELAP5 plot programs", "quote_language": "en"},
+        {"quote_original": "4. modifications of software", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-004",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "The base input model must represent the plant, retain traceable geometry and input data, and reproduce reference steady-state conditions within predefined limits.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.3.1 Base RELAP5 files, pages 14-15, lines 407-449"}],
+      "evidence_quotes": [
+        {"quote_original": "Base input deck shall be complete and prepared to represent model of respective NPP in compliance with Ref. [2].", "quote_language": "en"},
+        {"quote_original": "1. geometrical fidelity with the plant is achieved and well documented (verified by the base input deck notebook that ensures all the input data are traceable and close physical representation of the actual plant).", "quote_language": "en"},
+        {"quote_original": "2. referenced steady-state condition is satisfactory reproduced (that is, difference between calculation results and reference is within predefined limits as verified by Steady-State Technical Report).", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-005",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "A supervisor must verify and approve base-model applicability to the specified initial conditions, systems, and protection setpoints before transient analysis proceeds.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.2.1.4 Base input deck applicability, page 18, lines 525-534"}],
+      "evidence_quotes": [
+        {"quote_original": "d. Nodalization supervisor shall verify base input deck applicability according to format presented in Appendix 6.6.", "quote_language": "en"},
+        {"quote_original": "e. RELAP5 analyst shall proceed with transient analysis only if base input deck is approved as applicable.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-006",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Transient analysis inputs include defined initial and boundary conditions and identified physical phenomena relevant to the safety analysis.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.2.1 Transient Analysis Preparation, pages 17-18, lines 488-524"}],
+      "evidence_quotes": [
+        {"quote_original": "Initial and boundary conditions shall be defined according to the transient specifications:", "quote_language": "en"},
+        {"quote_original": "1. Main phenomena shall be identified:", "quote_language": "en"},
+        {"quote_original": "2. Relevant thermohydraulic aspects shall be defined for main phenomena (e.g. if core dryout is identified as main phenomena than relevant thermohydraulic aspects may be rod surface temperature and core level).", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-007",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "The procedure establishes a systematic instruction set for preparing RELAP5 models, documentation, calculations, and results.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "1.1 Purpose and 1.2 Scope, page 6, lines 125-139"}],
+      "evidence_quotes": [
+        {"quote_original": "The purpose of the procedure is to provide systematic approach to the accident/transient analyses using RELAP5 computer code. It is also intended to describe necessary requirements for the preparation of the input models, documentation and output results.", "quote_language": "en"},
+        {"quote_original": "This procedure gives the instructions for specific activities for performing accident / transient analysis using RELAP5 computer code.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-008",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Installed executables and auxiliary files are frozen, authenticated, and write-protected to prevent unauthorized change.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.1 RELAP5 installation requirements, pages 12-13, lines 316-350"}],
+      "evidence_quotes": [
+        {"quote_original": "6. All files in RELAP5 root directory shall be write-protected for all other users.", "quote_language": "en"},
+        {"quote_original": "1. Executable version shall be frozen and protected by authentication process.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-009",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Base input decks use controlled revision identifiers, are write-protected, and require new output and restart files for each revision.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.3 Base RELAP5 files, pages 15-16, lines 420-482"}],
+      "evidence_quotes": [
+        {"quote_original": "2. characters 6 to 8 shall be used for numbering of base input deck revisions, (e.g. e0a may stand for 0 revision for end of life configuration and b0a for beginning of life)", "quote_language": "en"},
+        {"quote_original": "Base input deck shall be write-protected by nodalization supervisor.", "quote_language": "en"},
+        {"quote_original": "4.1.3.2.6. Base output shall be created for each version or revision of base input deck", "quote_language": "en"},
+        {"quote_original": "4.1.3.3.6. Base restart shall be created for each version or revision of base input deck.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-010",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "RELAP5 outputs and restart files automatically carry the executable version and the associated base and run input-deck identifiers.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.1.2 RELAP5 requirements, page 13, lines 344-350"}],
+      "evidence_quotes": [
+        {"quote_original": "2. Source code version, time, date and size of executable version shall be written at the beginning of each RELAP5 created output and in the header of RELAP5 restart file.", "quote_language": "en"},
+        {"quote_original": "3. Base input deck and run input deck ID shall be automatically included in every RELAP5 created output and restart file.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-011",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Every worksheet used to construct the nodalization model is subject to independent review before final notebook release.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.3.1 RELAP5 Nodalization Notebook, pages 22-23, lines 684-721"}],
+      "evidence_quotes": [
+        {"quote_original": "4.3.1.3. Each worksheet shall be independently reviewed.", "quote_language": "en"},
+        {"quote_original": "4.3.1.4. Final release of each version of RELAP5 Nodalization Notebook shall be", "quote_language": "en"},
+        {"quote_original": "processed as a new revision of Technical Report and approved.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-012",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "RELAP5 calculations are evaluated against defined trip status, boundary-condition, mass-error, and phenomenological acceptance criteria.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.2.2.5 Analysis of the calculations, pages 20-21, lines 616-650"}],
+      "evidence_quotes": [
+        {"quote_original": "1. RELAP5 output analysis shall include:", "quote_language": "en"},
+        {"quote_original": "a. check of trip status", "quote_language": "en"},
+        {"quote_original": "c. boundary conditions compliance", "quote_language": "en"},
+        {"quote_original": "b. relative mass error is less than 1%", "quote_language": "en"},
+        {"quote_original": "c. the prediction of relative thermohydraulic aspects is explained and justified", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-013",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "Calculation status is explicitly classified as successful, failed, doubtful, or unsatisfactory, with further analysis conditioned on the result.",
+      "item_type": "status_statement",
+      "entities": {},
+      "sources": [{"source_locator": "4.2.2.4-4.2.2.5 RELAP5 calculations, pages 20-22, lines 607-676"}],
+      "evidence_quotes": [
+        {"quote_original": "a. successful finish on trip 600 without errors in case which analyst shall proceed to 4.2.2.5;", "quote_language": "en"},
+        {"quote_original": "4. The results of the analysis of RELAP5 calculation shall be considered doubtful if:", "quote_language": "en"},
+        {"quote_original": "5. The results of the analysis shall be considered unsatisfactory if:", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-014",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "Unsatisfactory analysis results are retained in a deviation report and trigger documentation of encountered problems and known model restrictions.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.2.2.5 Analysis of the calculations, page 22, lines 676-692"}],
+      "evidence_quotes": [
+        {"quote_original": "should the analysis be considered unsatisfactory, RELAP5", "quote_language": "en"},
+        {"quote_original": "contain information of the problems encountered during the", "quote_language": "en"},
+        {"quote_original": "analysis. RELAP5 analyst shall initiate steady-state report", "quote_language": "en"},
+        {"quote_original": "update of know restrictions in the use of the program and", "quote_language": "en"},
+        {"quote_original": "base input deck.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-015",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Doubtful calculation results require specified corrective steps such as time-step reduction, parametric study, expert consultation, or model renodalization.",
+      "item_type": "action",
+      "entities": {},
+      "sources": [{"source_locator": "4.2.2.5 Analysis of the calculations, page 21, lines 642-675"}],
+      "evidence_quotes": [
+        {"quote_original": "b. Relative mass error is greater than 1%. Corrective action is to decrease maximum time step size according to the specifications from Vol. 2, Appendix A, ch.3 of Ref. [1].", "quote_language": "en"},
+        {"quote_original": "c. The prediction of relative thermohydraulic aspects is not completely understood. Corrective action is to consult literature or qualified user - expert.", "quote_language": "en"},
+        {"quote_original": "ii) to run parametric study for critical parameters;", "quote_language": "en"},
+        {"quote_original": "iii) to request renodalization or update of base input deck after consultation with qualified user.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-016",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "The analysis workbook preserves specifications, conditions, applicability approval, run inputs, graphs, changes, and analysis notes.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [{"source_locator": "4.3.3 RELAP5 Analysis Workbook, pages 23-24, lines 731-753"}],
+      "evidence_quotes": [
+        {"quote_original": "4. approval of base input deck applicability;", "quote_language": "en"},
+        {"quote_original": "5. description of inputs for run input decks and plot variables file;", "quote_language": "en"},
+        {"quote_original": "6. graphs of main plot variables for each run;", "quote_language": "en"},
+        {"quote_original": "7. explanations for introduced changes;", "quote_language": "en"},
+        {"quote_original": "8. notes of the graphs analysis.", "quote_language": "en"}
+      ]
+    },
+    {
+      "item_id": "DOC0023-017",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Run inputs, outputs, plot data, workbooks, and technical reports are retained with separate backup copies.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [{"source_locator": "4.2.2.5 Final output forms, page 22, lines 689-706"}],
+      "evidence_quotes": [
+        {"quote_original": "6. RELAP5 analyst shall store all run input and output files in the", "quote_language": "en"},
+        {"quote_original": "transient working directory. Separate backup copies shall be stored on", "quote_language": "en"},
+        {"quote_original": "some removable computer storage media.", "quote_language": "en"},
+        {"quote_original": "a.     RELAP5 Workbook as specified in 4.3.3.", "quote_language": "en"},
+        {"quote_original": "c.     RELAP5 Analysis Technical Report as specified in 4.3.4.", "quote_language": "en"}
+      ]
+    }
+  ]
+}

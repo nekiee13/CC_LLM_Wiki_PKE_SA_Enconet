@@ -1,0 +1,94 @@
+{
+  "document": {
+    "name": "RU-73-02,R2_SOFTWARE_VERIFICATION_AND_VALIDATION_C.md",
+    "title": "Software Verification and Validation Control",
+    "date": "2017-11-17",
+    "revision": "2",
+    "doc_id": "DOC-0038",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0038-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The director supplies V&V resources, the lead software engineer plans and implements V&V, and QA ensures compliance with the approved program.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "3. Responsibilities, page 7, lines 130-151"}],
+      "evidence_quotes": [{"quote_original": "1. To establish appropriate measures and resources for software verification", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0038-002",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Every developed software product receives a specific V&V plan covering requirements, design, verification testing, and validation testing.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1 V&V of Software Developed by Enconet, page 8, lines 161-169"}],
+      "evidence_quotes": [{"quote_original": "### 4.1.1 Each software developed shall contain specifically developed V&V plan.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0038-003",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Verification occurs at defined development phases, while validation at implementation completion confirms the code satisfies requirements.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1 V&V of Software Developed by Enconet, page 8, lines 171-175"}],
+      "evidence_quotes": [{"quote_original": "### 4.1.4 Software validation is performed at the end of the implementation phase to ensure that the code satisfies the requirements.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0038-004",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "V&V documentation defines tasks and acceptance criteria for verification and validation across the development lifecycle.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.6 V&V Documentation, page 9, lines 183-199"}],
+      "evidence_quotes": [{"quote_original": "4.1.6.1 Tasks and criteria for accomplishing the verification of the", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0038-005",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "The V&V record includes verification and validation execution results and the results of reviews and tests.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.6 V&V Documentation, page 9, lines 183-199"}],
+      "evidence_quotes": [{"quote_original": "4.1.6.5 Results of reviews and tests.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0038-006",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Purchased engineering software must be supported by verification and validation documentation.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.2 V&V of Purchased Software, page 9, lines 216-219"}],
+      "evidence_quotes": [{"quote_original": "4.2.1 All purchased engineering software should have Verification and", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0038-007",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "Nonconformances identified during V&V reviews are documented in the software NCR and NCR log.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.8 Software Nonconformance, page 9, lines 212-214"}],
+      "evidence_quotes": [{"quote_original": "4.1.8 Nonconformance identified during the V&V verification reviews shall be", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0038-008",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Software V&V activities, configurations, execution results, reviews, tests, and software status are documented.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1.5-4.1.6 V&V Documentation, pages 8-9, lines 175-199"}],
+      "evidence_quotes": [{"quote_original": "### 4.1.5 The results of software V&V activities shall be documented.", "quote_language": "en"}]
+    }
+  ]
+}

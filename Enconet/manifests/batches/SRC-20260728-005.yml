@@ -1,0 +1,37 @@
+schema_version: '1.0'
+record_type: continuation_batch_state
+batch_id: SRC-20260728-005
+ingest_batch_id: ING-20260728-005
+created_at_utc: '2026-07-27T23:47:04Z'
+status: completed
+continuation_from_phase: sieved
+phase: sieved
+supplier: enconet
+deliverable_language: null
+size_class: small
+documents:
+- filename: PP-82-01,R6_AUDITI.md
+  logical_id: PP-82-01
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0030
+- filename: PP-83-01,R5_UPRAVLJANJE_NESUKLADNIM_PROIZVODOM.md
+  logical_id: PP-83-01
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0031
+- filename: PP-85-01,R4_POPRAVNE_I_PREVENTIVNE_RADNJE.md
+  logical_id: PP-85-01
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0032
+gates:
+  G1: {status: approved, date: 2026-07-28, decision_ref: G1-20260728-SRC005}
+  G2: {status: pending, date: null, decision_ref: null}
+  G3: {status: pending, date: null, decision_ref: null}
+  G4: {status: pending, date: null, decision_ref: null}
+  G5: {status: pending, date: null, decision_ref: null}
+  G6: {status: pending, date: null, decision_ref: null}
+  G7: {status: pending, date: null, decision_ref: null}
+benchmarks_locked: true
+completed_at_utc: '2026-07-27T23:51:23Z'

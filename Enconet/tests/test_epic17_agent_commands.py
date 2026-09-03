@@ -114,6 +114,16 @@ def test_status_reports_phase_gates_actions_and_last_validation(
     assert "last_validation: 2026-07-16T00:00:00Z | fixture.py | PASS | 0" in output
 
 
+def test_status_counts_open_actions_from_live_state_column(tmp_path: Path) -> None:
+    database = tmp_path / "audit.sqlite"
+    with sqlite3.connect(database) as connection:
+        connection.execute("CREATE TABLE auditor_actions(action_id TEXT, state TEXT)")
+        connection.executemany("INSERT INTO auditor_actions VALUES (?, ?)", [
+            ("ACT-0001", "open"), ("ACT-0002", "closed"), ("ACT-0003", "open"),
+        ])
+    assert audit_command._open_actions(database) == 2
+
+
 def test_gate_matches_current_phase_and_stops_at_packet_creation(
     tmp_path: Path, capsys,
 ) -> None:

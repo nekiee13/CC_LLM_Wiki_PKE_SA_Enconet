@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import re
 import sqlite3
 import sys
 from pathlib import Path
@@ -22,7 +23,18 @@ import validate_frontmatter  # noqa: E402
 def state_fixture(tmp_path: Path, phase: str = "setup") -> Path:
     path = tmp_path / "project-state.yml"
     text = (ROOT / "project-state.yml").read_text(encoding="utf-8")
-    text = text.replace("phase: setup", f"phase: {phase}", 1)
+    text, phase_count = re.subn(
+        r"(?m)^phase:\s*\S+\s*$", f"phase: {phase}", text, count=1,
+    )
+    assert phase_count == 1
+    for gate in (f"G{number}" for number in range(1, 8)):
+        text, gate_count = re.subn(
+            rf"(?m)^(\s{{2}}{gate}:\s*)\{{[^\r\n]*?\}}",
+            rf"\1{{status: pending, date: null, decision_ref: null}}",
+            text,
+            count=1,
+        )
+        assert gate_count == 1
     path.write_text(text, encoding="utf-8")
     return path
 
@@ -139,7 +151,9 @@ def test_gate_packet_is_standalone_unique_and_recording_does_not_advance(tmp_pat
     log.write_text("", encoding="utf-8")
     gate_packet.record_packet(packet, state=state, approvals=approvals, log=log)
     assert yaml.safe_load(state.read_text(encoding="utf-8"))["phase"] == "setup"
-    frontmatter, _ = gate_packet.split_frontmatter(packet.read_text(encoding="utf-8"))
+    packet_text = packet.read_text(encoding="utf-8")
+    assert all(line == line.rstrip() for line in packet_text.splitlines())
+    frontmatter, _ = gate_packet.split_frontmatter(packet_text)
     assert frontmatter["decision"] == "approved"
     assert frontmatter["reviewer"] == "Owner"
 

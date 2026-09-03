@@ -1,0 +1,54 @@
+{
+  "document": {
+    "name": "RU-82-01,R3_PRAĆENJE_I_MJERENJE_ZADOVOLJSTVA_KUPAC.md",
+    "title": "Praćenje i mjerenje zadovoljstva kupaca",
+    "date": "2017-11-17",
+    "revision": "3",
+    "doc_id": "DOC-0042",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0042-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The director monitors customer information and decides actions, while project leaders collect and analyze feedback in their areas.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 3, lines 84-94"}],
+      "evidence_quotes": [{"quote_original": "Direktor Enconeta odgovoran je da prati informacije o kupcima i zadovoljstvu", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0042-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "The instruction defines indicators, measures, and methods for collecting customer information and measuring satisfaction.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "1. Svrha, page 3, lines 54-55"}],
+      "evidence_quotes": [{"quote_original": "Svrha ove radne upute je da definira indikatore, mjerila i postupke kod", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0042-003",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Indirect satisfaction monitoring analyzes complaint frequency, causes, and costs to inform management measures.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Praćenje zadovoljstva kupaca, page 5, lines 187-196"}],
+      "evidence_quotes": [{"quote_original": "- analiza broja, učestalosti, uzroka i troškova reklamacija kupaca", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0042-004",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Customer satisfaction is documented through the controlled OB-OZK-037 evaluation form and supporting analyses.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Praćenje zadovoljstva kupaca and form, pages 5-7, lines 178-181 and 239-292"}],
+      "evidence_quotes": [{"quote_original": "# OCJENA ZADOVOLJSTVA KUPCA", "quote_language": "hr"}]
+    }
+  ]
+}

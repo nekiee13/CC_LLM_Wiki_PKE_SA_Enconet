@@ -1,0 +1,54 @@
+{
+  "document": {
+    "name": "RU-82-04,R3_PRAĆENJE_I_MJERENJE_USPJEŠNOSTI_PROJEK.md",
+    "title": "Praćenje i mjerenje uspješnosti projekata",
+    "date": "2017-11-17",
+    "revision": "3",
+    "doc_id": "DOC-0044",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0044-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The project lead tracks planned execution and evaluates customer or reviewer feedback, while QA evaluates internal reviews and audits.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 3, lines 85-91"}],
+      "evidence_quotes": [{"quote_original": "Voditelj QA odgovoran je da, na osnovu rezultata internih provjera i internih audita, dade ocjenu za svaki projekt.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0044-002",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Project success is verified before delivery using internal independent technical and QA reviews plus external customer or reviewer verification.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.1-6.2 Metode i ocjenjivanje projekta, page 4, lines 100-124"}],
+      "evidence_quotes": [{"quote_original": "Ocjena projekta se provodi na kraju projekta i mora se donijeti prije isporuke projekta kupcu.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0044-003",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "An unacceptable project-performance score requires preparation of a new project revision.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Postupak ocjenjivanja i status projekta, page 4, lines 126-130"}],
+      "evidence_quotes": [{"quote_original": "0 - 10 bodova => Potrebna je izrada nove revizije projekta", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0044-004",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "QA maintains records of project-performance monitoring and the controlled scoring form.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Postupak ocjenjivanja i status projekta, page 5, line 138"}],
+      "evidence_quotes": [{"quote_original": "Voditelj QA održava zapise o provedenom postupku praćenja uspješnosti projekata.", "quote_language": "hr"}]
+    }
+  ]
+}

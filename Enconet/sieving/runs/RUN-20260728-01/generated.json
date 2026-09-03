@@ -1,0 +1,366 @@
+{
+  "document": {
+    "name": "PK-SUK-001,R9(Priručnik_kvalitete_norma_ISO_9001-2.md",
+    "title": "Priručnik kvalitete — Norma ISO 9001:2015",
+    "date": "2023-04-14",
+    "revision": "9",
+    "doc_id": "DOC-0022",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0022-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Direktor definira odgovornosti i komunikacijske metode te osigurava organizacijske, ljudske i tehničke resurse za provedbu sustava upravljanja kvalitetom.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5.3 Organizacijske uloge, odgovornosti i ovlaštenja, lines 435-451"}],
+      "evidence_quotes": [
+        {"quote_original": "- Definira odgovornosti i metode komuniciranja u cilju djelotvorne provedbe SUK-a", "quote_language": "hr"},
+        {"quote_original": "- Osigura organizacijske, ljudske i tehničke resurse", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Predstavnik direktora za nadzor SUK-a neovisno osigurava uspostavu i održavanje procesa te izvještava direktora o djelovanju i potrebnim poboljšanjima.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Predstavnik direktora za nadzor SUK-a, lines 453-465"}],
+      "evidence_quotes": [
+        {"quote_original": "Direktor Enconeta imenuje Predstavnika dir. za nadzor SUK-a, koji neovisno o ostalim poslovima i odgovornostima, ima ovlaštenja i odgovornosti da:", "quote_language": "hr"},
+        {"quote_original": "- Osigura da su procesi, nužni za SUK, uspostavljeni, primijenjeni i održavani", "quote_language": "hr"},
+        {"quote_original": "- Obavještava direktora o djelovanju i potrebi poboljšavanja SUK-a", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-003",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Sustav upravljanja kvalitetom obuhvaća organizaciju, odgovornosti, procese, postupke i resurse potrebne za ostvarivanje politike i ciljeva kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.4 Sustav upravljanja kvalitetom i njegovi procesi, lines 352-356"}],
+      "evidence_quotes": [{"quote_original": "Sustav upravljanja kvalitete Enconeta, usklađen sa zahtjevima međunarodne norme ISO 9001:2015, obuhvaća organizaciju, ovlaštenja i odgovornosti, procese, postupke i resurse koji u međusobnom i zajedničkom djelovanju osiguravaju ostvarivanje utvrđene politike i ciljeva kvalitete, odnosno zadovoljenje zahtjeva i očekivanja kupca.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-004",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Direktor mora uspostaviti djelotvoran dokumentiran sustav kvalitete, osigurati njegovu provedbu i poboljšavanje te provoditi pregled sustava.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5.1.1 Vodstvo i opredijeljenost, lines 386-400"}],
+      "evidence_quotes": [
+        {"quote_original": "- Uspostavi djelotvoran i dokumentiran SUK", "quote_language": "hr"},
+        {"quote_original": "- Osigura provođenje i stalno poboljšavanje SUK-a", "quote_language": "hr"},
+        {"quote_original": "- Provodi pregled SUK-a (ocjena direktora)", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-005",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Plan realizacije projektiranja definira faze, preglede, verifikacije, validacije, odgovornosti i upravljanje vezama među uključenim grupama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.3.2 Planiranje projektiranja i razvoja, lines 826-842"}],
+      "evidence_quotes": [
+        {"quote_original": "- Pojedine faze procesa", "quote_language": "hr"},
+        {"quote_original": "- Pregledi, ocjene, verifikacije i validacije koji su primjereni svakoj fazi", "quote_language": "hr"},
+        {"quote_original": "- Odgovornosti i ovlaštenja za izvođenje procesa", "quote_language": "hr"},
+        {"quote_original": "- Upravljanje vezama i komunikacijama između grupa koje su uključene u aktivnosti projektiranja i razvoja", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-006",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Ulazni podaci projektiranja moraju obuhvatiti funkcionalne zahtjeve, pravne zahtjeve, iskustva sličnih projekata, ostale potrebne zahtjeve i procjenu rizika.",
+      "item_type": "requirement",
+      "entities": {},
+      "sources": [{"source_locator": "8.3.3 Ulazni podaci za projektiranje i razvoj, lines 860-870"}],
+      "evidence_quotes": [
+        {"quote_original": "- Zahtjeve na funkciju i karakteristike proizvoda", "quote_language": "hr"},
+        {"quote_original": "- Odgovarajuće zakonske i pravne zahtjeve", "quote_language": "hr"},
+        {"quote_original": "- Procjena rizika za uspješno izvođenje i završetak projekta", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-007",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "U definiranim kontrolnim točkama mora se verificirati sukladnost rezultata projektiranja s ulaznim zahtjevima i validirati namijenjena uporaba proizvoda.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.3.4 Kontrola projektiranja i razvoja, lines 883-900"}],
+      "evidence_quotes": [
+        {"quote_original": "U odgovarajućim kontrolnim točkama, definiranim u Planu realizacije, treba verificirati da li rezultati projektiranja i razvoja udovoljavaju ulaznim podacima i zahtjevima a na način definiran postupkom PP-73-01 «Proces projektiranja i razvoja».", "quote_language": "hr"},
+        {"quote_original": "U odgovarajućim kontrolnim točkama, definiranim u planu zadatka, treba utvrditi da li proizvod odgovara namijenjenoj upotrebi a na način definiran postupkom PP-73-01 «Proces projektiranja i razvoja».", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-008",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Rezultati projektiranja moraju omogućiti verifikaciju prema ulazima, biti odobreni prije objavljivanja i sadržavati kriterije prihvatljivosti.",
+      "item_type": "requirement",
+      "entities": {},
+      "sources": [{"source_locator": "8.3.5 Izlazni podaci projektiranja i razvoja, lines 892-905"}],
+      "evidence_quotes": [
+        {"quote_original": "- Biti u obliku koji omogućava verifikaciju s obzirom na ulazne podatke", "quote_language": "hr"},
+        {"quote_original": "- Biti odobreni prije objavljivanja", "quote_language": "hr"},
+        {"quote_original": "- Definirati kriterije prihvatljivosti za proizvod ili na njih upućivati", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-009",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Promjene projektiranja moraju se ocijeniti, verificirati, validirati i odobriti prije primjene, uključujući ocjenu posljedica.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.3.6 Promjene u projektiranju i razvoju, lines 907-915"}],
+      "evidence_quotes": [
+        {"quote_original": "Promjene u projektiranju i razvoju, kada je to svrsishodno, treba ocijeniti, ovjeriti, utvrditi prihvatljivost i odobriti prije primjene.", "quote_language": "hr"},
+        {"quote_original": "Ocjena promjene treba sadržavati i ocjenu posljedica za sastavne dijelove i ranije isporučene proizvode.", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-010",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "Dokumenti nabave moraju jasno opisati naručeni proizvod i, prema potrebi, sadržavati zahtjeve za odobravanje, opremu, osposobljenost osoblja i sustav kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.4.3 Informacije za vanjske pružatelje usluga, lines 954-960"}],
+      "evidence_quotes": [{"quote_original": "Dokumenti nabave moraju sadržavati podatke koji jasno i nedvosmisleno opisuju naručeni proizvod. Ako je potrebno, tim podacima treba dodati zahtjeve za odobravanje proizvoda, procesa, postupaka i opreme te zahtjeve za osposobljenost osoblja i zahtjeve za SUK.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-011",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Procedure definiraju odgovornosti, slijed aktivnosti, dokumentacijske podloge i nadzorne aktivnosti, dok radne upute detaljno određuju način izvođenja složenih aktivnosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "7.5.1 Dokumentirana informacija, lines 687-719"}],
+      "evidence_quotes": [
+        {"quote_original": "- Odgovornosti, ovlaštenja i komunikaciju osoba koje vode, obavljaju, verificiraju ili nadziru aktivnosti", "quote_language": "hr"},
+        {"quote_original": "- Slijed aktivnosti", "quote_language": "hr"},
+        {"quote_original": "- Nadzorne aktivnosti koje se trebaju primijeniti", "quote_language": "hr"},
+        {"quote_original": "Radne upute su dokumenti koji opisuju način i metodu odvijanja pojedinih aktivnosti u poslovnom procesu.", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-012",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Procesi se moraju odvijati u kontroliranim uvjetima uz dostupne informacije, postupke i radne upute te odgovarajuću opremu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.5.1 Upravljanje proizvodnjom i pružanjem usluga, lines 964-979"}],
+      "evidence_quotes": [
+        {"quote_original": "- Raspoloživost informacija o proizvodu", "quote_language": "hr"},
+        {"quote_original": "- Raspoloživost postupaka i radnih uputa, kada je to potrebno", "quote_language": "hr"},
+        {"quote_original": "- Uporabu odgovarajuće opreme i sredstava", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-013",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Upravljanje dokumentima zahtijeva odobrenje prije uporabe, kontrolu revizija, dostupnost važećih revizija i sprečavanje uporabe nevažećih dokumenata.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "7.5.2 Upravljanje dokumentima, lines 721-738"}],
+      "evidence_quotes": [
+        {"quote_original": "- Dokumenti odobreni prije upotrebe", "quote_language": "hr"},
+        {"quote_original": "- Definirane izmjene i trenutni status revizije dokumenta", "quote_language": "hr"},
+        {"quote_original": "- Zadnje revizije dokumenta dostupne na mjestu upotrebe", "quote_language": "hr"},
+        {"quote_original": "- Spriječene mogućnosti upotrebe nevažećih dokumenata", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-014",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Dobavljači se odabiru, ocjenjuju i ponovno ocjenjuju prema utvrđenim kriterijima, najmanje jednom godišnje, uz korištenje zapisa prijemne kontrole i drugih dokaza.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.4.1 Proces nabave, lines 919-939"}],
+      "evidence_quotes": [
+        {"quote_original": "- Treba utvrditi kriterije za odabir, ocjenu i ponovnu ocjenu dobavljača", "quote_language": "hr"},
+        {"quote_original": "Najmanje jedanput godišnje Enconet ocjenjuje svoje dobavljače. Ocjenjivanje se provodi po utvrđenim kriterijima a podloge za to su zapisi o ulaznoj (prijemnoj) kontroli te drugi dokazi i saznanja o dobavljačima.", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-015",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Prijemni pregled i inspekcija verificiraju sukladnost nabavljenog proizvoda s ugovornim zahtjevima količine i kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.4.2 Ovjera/verifikacija nabavljenoga proizvoda, lines 946-952"}],
+      "evidence_quotes": [{"quote_original": "Enconet mora uspostaviti i primjenjivati postupke pregleda i inspekcije kako bi verificirao da nabavljeni proizvod udovoljava traženim zahtjevima. Kod postupka prijemne (ulazne) kontrole treba utvrditi da li je proizvod sukladan zahtjevima iz Ugovora po količini i kvaliteti, a ako ne udovoljava tim zahtjevima, treba definirati daljnji status tog proizvoda u skladu s postupkom PP-74-01 «Proces nabave i ocjenjivanje dobavljača».", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-016",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "Sustav označivanja mora osigurati jednoznačnu identifikaciju proizvoda, kupca i revizije tijekom realizacije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.5.2 Označivanje i sljedivost, lines 982-988"}],
+      "evidence_quotes": [{"quote_original": "Kad god je primjereno, Enconet treba uspostaviti i obnavljati dokumentirane postupke za prepoznavanje proizvoda tijekom realizacije. Sistem označivanja mora osigurati jednoznačno prepoznavanje proizvoda (koji proizvod, za kojega kupca, status odnosno revizija i sl.) Posebno će se voditi briga o označavanju statusa proizvoda s obzirom na zahtjev za nadzor i mjerenje.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-017",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "Procesi čiji se rezultati ne mogu naknadno verificirati moraju se validirati uz kriterije odobravanja, posebne metode, odobrenu opremu, osposobljeno osoblje i zapise.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.5.5 Validacija procesa proizvodnje i pružanja usluga, lines 1010-1024"}],
+      "evidence_quotes": [
+        {"quote_original": "Procese, koji se ne mogu verificirati naknadnim praćenjem i mjerenjem, Enconet mora validirati kako bi dokazao sposobnost tih procesa za ostvarivanje planiranih rezultata.", "quote_language": "hr"},
+        {"quote_original": "- Odrediti kriterije za vrednovanje i odobravanje tih procesa", "quote_language": "hr"},
+        {"quote_original": "- Odobriti opremu i sredstva te verificirati osposobljenost osoblja", "quote_language": "hr"},
+        {"quote_original": "- Definirati potrebne zapise", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-018",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Nadzor i mjerenje karakteristika proizvoda provode se u planiranim fazama radi verifikacije zahtjeva, a proizvod se ne isporučuje bez dokaza o prihvatljivosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.6 Nadzor nad proizvodom i mjerenje proizvoda, lines 1045-1060"}],
+      "evidence_quotes": [
+        {"quote_original": "Enconet će provoditi radnje nadzora a, prema potrebi, i mjerenja karakteristika proizvoda kako bi se verificiralo da su zahtjevi za proizvod ispunjeni.", "quote_language": "hr"},
+        {"quote_original": "Enconet neće isporučiti proizvod kupcu ako nije prošao potrebne nadzore i mjerenja koji dokazuju ispravnost proizvoda odnosno zadovoljenje zahtjeva kupca.", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-019",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "Plan realizacije proizvoda mora utvrditi aktivnosti verifikacije, validacije, nadzora, inspekcije i ispitivanja te kriterije prihvaćanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.1 Operativno planiranje i nadzor, lines 765-776"}],
+      "evidence_quotes": [{"quote_original": "- Radnje i aktivnosti za verifikaciju, validaciju, nadzor, inspekciju i ispitivanje koje su svojstvene tom proizvodu te kriterije za prihvaćanje proizvoda", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-020",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "Program nadzora mjerne i testne opreme određuje njezino označivanje, korištenje, kalibraciju, održavanje i čuvanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "7.1.5 Sredstva za praćenje i mjerenje, lines 567-573"}],
+      "evidence_quotes": [{"quote_original": "Mjerna i testna oprema nabavlja se prvenstveno na zahtjev kupca. Zahtjevi su specificirani u ponudi i tehničkim specifikacijama projekta. Enconet će nabaviti traženu opremu i koristiti je u skladu s postupkom RU-82-05, «Program nadzora mjerne i testne opreme», koja specificira i određuje način označavanja, korištenja, kalibracije, održavanja i čuvanja mjerne i testne opreme.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-021",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "Dokumentirani postupci moraju kontrolirati identifikaciju, rukovanje, pakiranje, skladištenje i zaštitu proizvoda i njegovih sastavnih dijelova.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.5.4 Čuvanje proizvoda, lines 1002-1008"}],
+      "evidence_quotes": [{"quote_original": "Kako bi se očuvala sukladnost proizvoda tijekom procesa realizacije Enconet mora uspostaviti i održavati dokumentirane postupke za identifikaciju (označivanje), rukovanje, pakiranje, skladištenje i zaštitu proizvoda. Sve ovo odnosi se kako na cijeli proizvod tako i na sastavne dijelove proizvoda.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-022",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "Označivanje proizvoda mora posebno identificirati njegov status u odnosu na zahtjeve nadzora i mjerenja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.5.2 Označivanje i sljedivost, lines 982-988"}],
+      "evidence_quotes": [{"quote_original": "Posebno će se voditi briga o označavanju statusa proizvoda s obzirom na zahtjev za nadzor i mjerenje.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-023",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "Nesukladni proizvod mora se identificirati, izdvojiti i nadzirati radi sprečavanja neželjene uporabe, a popravljeni proizvod ponovno verificirati.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "8.7 Nadzor nesukladnih izlaznih podataka, lines 1062-1079"}],
+      "evidence_quotes": [
+        {"quote_original": "Enconet će uspostaviti i održavati dokumentirani postupak za identificiranje (primjerena oznaka, mjesto čuvanja i sl.), nadzor radi sprečavanja neželjenog korištenja, način upravljanja te odgovornosti i ovlaštenja za postupanje s nesukladnim proizvodom.", "quote_language": "hr"},
+        {"quote_original": "Kada se nesukladni proizvod doradi (popravi), mora se ponovo provesti postupak verifikacije kako bi se dokazala sukladnost sa zahtjevima.", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-024",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Za nesukladnosti se analiziraju uzroci i posljedice, provode korektivne akcije te provjerava njihova učinkovitost i mogućnost ponavljanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "10.2 Nesukladnosti i popravna mjera, lines 1196-1222"}],
+      "evidence_quotes": [
+        {"quote_original": "- analiziraju se uzroci i posljedice", "quote_language": "hr"},
+        {"quote_original": "- primjenjuju se korektivne akcije", "quote_language": "hr"},
+        {"quote_original": "- provjerava se mogućnost pojave sličnih nesukladnosti", "quote_language": "hr"},
+        {"quote_original": "- provjerava se učinkovitost poduzetih popravnih mjera", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-025",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Zapisi kvalitete objektivno dokazuju provedbu aktivnosti i sukladnost sa zahtjevima te se kontroliraju u pogledu identifikacije, pretraživanja, čuvanja, zaštite i uklanjanja.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [{"source_locator": "7.5.3 Upravljanje zapisima, lines 740-762"}],
+      "evidence_quotes": [
+        {"quote_original": "Zapisi kvalitete kao rezultat izvođenja procedura i radnih uputa predstavljaju objektivni dokaz provedenosti određene aktivnosti i njene sukladnosti s traženim zahtjevima.", "quote_language": "hr"},
+        {"quote_original": "- Identifikacija zapisa", "quote_language": "hr"},
+        {"quote_original": "- Pretraživanje i pronalaženje", "quote_language": "hr"},
+        {"quote_original": "- Pohrana, zaštita i način uklanjanja", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-026",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Zapisi nadzora i mjerenja čuvaju se kao dokaz sukladnosti proizvoda s kriterijima prihvaćanja.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [{"source_locator": "8.6 Nadzor nad proizvodom i mjerenje proizvoda, lines 1045-1059"}],
+      "evidence_quotes": [{"quote_original": "Zapisi o nadzoru i, prema potrebi mjerenju, tijekom procesa, održavaju se kao dokaz o sukladnosti proizvoda s kriterijima prihvaćanja.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0022-027",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Interni auditi planiraju se u primjerenim intervalima prema važnosti procesa i prethodnim rezultatima, uz kriterije koji osiguravaju neovisnost auditora.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "9.2 Unutarnja prosudba — Auditi, lines 1131-1144"}],
+      "evidence_quotes": [
+        {"quote_original": "Enconet mora planirati i provoditi interne audite u primjerenim intervalima kako bi utvrdio je li sustav upravljanja kvalitetom:", "quote_language": "hr"},
+        {"quote_original": "Područja, zahtjevi, učestalost i metode internih audita bit će određeni na osnovu statusa i važnosti pojedinih procesa i područja koji će biti auditirani te rezultata prethodnih audita.", "quote_language": "hr"},
+        {"quote_original": "Kako bi se osigurala stručnost, objektivnost i nepristranost postupka auditiranja, Enconet će utvrditi i pridržavati se kriterija za izbor auditora te osigurati da auditori ne auditiraju procese i područja u kojima sami rade.", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0022-028",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Po nalazima audita moraju se pokrenuti radnje za uklanjanje nesukladnosti i uzroka, a naknadnim auditom provjeriti provedba uz održavanje zapisa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "9.2 Unutarnja prosudba — Auditi, lines 1145-1150"}],
+      "evidence_quotes": [{"quote_original": "Odgovorne osobe auditiranih područja moraju osigurati da se pokrenu radnje za uklanjanje nesukladnosti i njihovih uzroka. Naknadnim auditom treba provjeriti da li su te radnje izvršene a zapise o rezultatima provjere treba održavati.", "quote_language": "hr"}]
+    }
+  ]
+}

@@ -43,6 +43,29 @@ def test_parser_level_one_two_offsets_and_level_three_containment():
         assert text[chunk.char_start:chunk.char_end] == chunk.text
 
 
+def test_markdown_level_one_two_take_precedence_over_numbered_lists():
+    text = (
+        "# Manual\n"
+        "Preamble\n"
+        "## Scope\n"
+        "1. numbered list item\n"
+        "## Scope\n"
+        "Repeated title under a distinct source line\n"
+        "### Nested detail\n"
+    )
+    chunks, warnings = chunk_document.parse_chunks(text)
+    assert [chunk.heading_path for chunk in chunks] == [
+        "Manual [line 1]",
+        "Manual [line 1] > Scope [line 3]",
+        "Manual [line 1] > Scope [line 5]",
+    ]
+    assert "1. numbered list item" in chunks[1].text
+    assert "### Nested detail" in chunks[2].text
+    assert warnings == []
+    for chunk in chunks:
+        assert text[chunk.char_start:chunk.char_end] == chunk.text
+
+
 def test_whole_document_fallback_size_warning_and_rejections():
     chunks, warnings = chunk_document.parse_chunks("No numeric headings here", max_chars=5)
     assert chunks[0].heading_path == "whole-document"

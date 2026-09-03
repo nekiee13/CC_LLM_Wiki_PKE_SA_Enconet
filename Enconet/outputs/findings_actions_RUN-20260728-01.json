@@ -1,0 +1,174 @@
+{
+  "findings": [
+    {
+      "finding_id": "FIND-0001",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_IV",
+      "gap_id": "GAP-APP_B_IV-01",
+      "title": "Nedostaje provedbeni uzorak prijenosa zahtjeva u nabavu",
+      "body": "Sustav propisuje prijenos regulatornih, tehničkih i QA zahtjeva u nabavne dokumente, ali pregledani paket ne sadrži reprezentativni dovršeni nabavni paket kojim bi se potvrdila dosljedna provedba.",
+      "severity": "medium",
+      "confidence": "high",
+      "basis": "GAP-APP_B_IV-01 i ocjena APP_B_IV",
+      "verification_status": "pending"
+    },
+    {
+      "finding_id": "FIND-0002",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_VII",
+      "gap_id": "GAP-APP_B_VII-01",
+      "title": "Ograničeni objektivni dokazi nadzora dobavljača",
+      "body": "Postupci zahtijevaju odabir, ocjenjivanje, ponovnu ocjenu i prijemnu verifikaciju dobavljača, ali nisu dostavljeni dostatni završeni zapisi koji potvrđuju provedbu kroz reprezentativni uzorak.",
+      "severity": "medium",
+      "confidence": "high",
+      "basis": "GAP-APP_B_VII-01 i ocjena APP_B_VII",
+      "verification_status": "pending"
+    },
+    {
+      "finding_id": "FIND-0003",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_VIII",
+      "gap_id": "GAP-APP_B_VIII-01",
+      "title": "Nije demonstrirana cjelovita sljedljivost fizičkih stavki",
+      "body": "Identifikacija i sljedljivost propisane su za proizvode, opremu i računalne datoteke, ali paket ne pokazuje cjelovit tok sljedljivosti reprezentativne fizičke stavke kroz sve relevantne faze.",
+      "severity": "low",
+      "confidence": "high",
+      "basis": "GAP-APP_B_VIII-01 i ocjena APP_B_VIII",
+      "verification_status": "pending"
+    },
+    {
+      "finding_id": "FIND-0004",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_IX",
+      "gap_id": "GAP-APP_B_IX-01",
+      "title": "Nedostaju kvalifikacijski dokazi za posebne procese",
+      "body": "Program sadrži opće zahtjeve za posebne procese, ali nisu dostavljene odobrene specifične procedure niti zapisi o kvalifikaciji osoblja, postupaka i opreme za konkretne posebne procese.",
+      "severity": "medium",
+      "confidence": "high",
+      "basis": "GAP-APP_B_IX-01 i ocjena APP_B_IX",
+      "verification_status": "pending"
+    },
+    {
+      "finding_id": "FIND-0005",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_X",
+      "gap_id": "GAP-APP_B_X-01",
+      "title": "Ograničen uzorak izvršenih neovisnih inspekcija",
+      "body": "Neovisnost inspektora i dokumentirani kriteriji prihvatljivosti jasno su zahtijevani, ali pregledani paket ne sadrži širi uzorak izvršenih inspekcijskih planova, kontrolnih lista i rezultata.",
+      "severity": "low",
+      "confidence": "high",
+      "basis": "GAP-APP_B_X-01 i ocjena APP_B_X",
+      "verification_status": "pending"
+    },
+    {
+      "finding_id": "FIND-0006",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_XI",
+      "gap_id": "GAP-APP_B_XI-01",
+      "title": "Nedostaje cjelovit provedbeni uzorak ispitnog programa",
+      "body": "Dostavljene procedure definiraju ispitne uvjete i kriterije prihvatljivosti, ali nema reprezentativnog skupa završenih zapisnika koji bi pokrio cjelokupni opseg opreme i usluga.",
+      "severity": "medium",
+      "confidence": "high",
+      "basis": "GAP-APP_B_XI-01 i ocjena APP_B_XI",
+      "verification_status": "pending"
+    },
+    {
+      "finding_id": "FIND-0007",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_XIII",
+      "gap_id": "GAP-APP_B_XIII-01",
+      "title": "Ograničeni zapisi rukovanja i skladištenja fizičkih proizvoda",
+      "body": "Kontrole rukovanja, pakiranja, skladištenja, otpreme i zaštite su dokumentirane, ali nisu dostavljeni dostatni izvedbeni zapisi za reprezentativne fizičke proizvode.",
+      "severity": "low",
+      "confidence": "high",
+      "basis": "GAP-APP_B_XIII-01 i ocjena APP_B_XIII",
+      "verification_status": "pending"
+    },
+    {
+      "finding_id": "FIND-0008",
+      "evaluation_run_id": "RUN-20260728-01",
+      "criterion_id": "APP_B_XIV",
+      "gap_id": "GAP-APP_B_XIV-01",
+      "title": "Nedostaje objedinjena provedbena evidencija statusnih oznaka",
+      "body": "Više procedura zahtijeva jasne statusne oznake za inspekciju, ispitivanje, kalibraciju i nesukladnost, ali nije dostavljen objedinjeni registar ili širi uzorak takvih evidencija.",
+      "severity": "low",
+      "confidence": "high",
+      "basis": "GAP-APP_B_XIV-01 i ocjena APP_B_XIV",
+      "verification_status": "pending"
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "ACT-0002",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0001",
+      "action_type": "sample_test",
+      "description": "Odabrati reprezentativni uzorak završenih nabavnih paketa i verificirati prijenos svih primjenjivih regulatornih, tehničkih i QA zahtjeva.",
+      "state": "open",
+      "priority": true
+    },
+    {
+      "action_id": "ACT-0003",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0002",
+      "action_type": "sample_test",
+      "description": "Pregledati uzorak ocjena i ponovnih ocjena dobavljača, prijemnih pregleda te rješavanja utvrđenih odstupanja.",
+      "state": "open",
+      "priority": true
+    },
+    {
+      "action_id": "ACT-0004",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0003",
+      "action_type": "sample_test",
+      "description": "Pratiti reprezentativnu fizičku stavku od prijema do uporabe i potvrditi neprekinutu identifikaciju i sljedljivost.",
+      "state": "open",
+      "priority": false
+    },
+    {
+      "action_id": "ACT-0005",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0004",
+      "action_type": "verification",
+      "description": "Nakon dostave posebnih procedura verificirati važeće kvalifikacije osoblja, postupaka i opreme na najmanje jednom izvedenom posebnom procesu.",
+      "state": "open",
+      "priority": true
+    },
+    {
+      "action_id": "ACT-0006",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0005",
+      "action_type": "sample_test",
+      "description": "Pregledati uzorak izvršenih inspekcija i potvrditi neovisnost osoblja, kriterije prihvatljivosti i evidentirano odobrenje rezultata.",
+      "state": "open",
+      "priority": false
+    },
+    {
+      "action_id": "ACT-0007",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0006",
+      "action_type": "sample_test",
+      "description": "Pregledati reprezentativni uzorak završenih ispitnih zapisa za opremu, softver i tehničke usluge.",
+      "state": "open",
+      "priority": true
+    },
+    {
+      "action_id": "ACT-0008",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0007",
+      "action_type": "sample_test",
+      "description": "Pregledati zapise rukovanja, otpreme i skladištenja reprezentativnih fizičkih proizvoda te potvrditi propisane uvjete zaštite.",
+      "state": "open",
+      "priority": false
+    },
+    {
+      "action_id": "ACT-0009",
+      "evaluation_run_id": "RUN-20260728-01",
+      "finding_id": "FIND-0008",
+      "action_type": "sample_test",
+      "description": "Pregledati uzorak statusnih oznaka i registara za inspekciju, ispitivanje, kalibraciju i nesukladne stavke.",
+      "state": "open",
+      "priority": false
+    }
+  ]
+}

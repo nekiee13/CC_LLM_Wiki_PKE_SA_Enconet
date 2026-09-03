@@ -118,6 +118,17 @@ integrity, validation rigor, controlled-document requirements, or human gates.
 - When efficiency measures would constrain correct completion, use the broader read or validation
   method and tell the owner which concrete quality or evidence constraint required it.
 
+## Operating mode
+
+- The project owner declares the working mode at the beginning of each session; that declaration
+  is authoritative for the session.
+- Development of the wiki framework and maintenance work, including modifications,
+  troubleshooting, and upgrades, use the dual-agent Codex and Claude Code setup.
+- Production sessions use a single agent. Do not initiate dual-agent coordination, delegation,
+  claims, review requests, or synchronization work unless the owner changes the declared mode.
+- Agent infrastructure ownership and safety boundaries remain in force in both modes. In
+  particular, Codex must not modify Claude Code-owned files or infrastructure in production mode.
+
 ## Audit command routing
 
 Run `python scripts/audit_command.py audit-status` at session start. All simple stage

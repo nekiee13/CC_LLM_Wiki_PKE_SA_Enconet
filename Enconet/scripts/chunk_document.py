@@ -13,6 +13,9 @@ from source_registry import ENCONET
 
 DERIVED = ENCONET / "derived"
 HEADING = re.compile(r"(?m)^(?P<number>\d+(?:\.\d+)*)(?:\.(?=\s|$)|(?=\s))[^\r\n]*$")
+MARKDOWN_HEADING = re.compile(
+    r"(?m)^(?P<marks>#{1,2})[ \t]+(?P<title>.*?\S)[ \t]*#*[ \t]*$"
+)
 
 
 @dataclass(frozen=True)
@@ -28,13 +31,36 @@ def _heading_path(number: str) -> str:
     return parts[0] if len(parts) == 1 else f"{parts[0]} > {parts[0]}.{parts[1]}"
 
 
+def _markdown_boundaries(text: str) -> list[tuple[re.Match[str], str]]:
+    boundaries: list[tuple[re.Match[str], str]] = []
+    parent: str | None = None
+    for match in MARKDOWN_HEADING.finditer(text):
+        line = text.count("\n", 0, match.start()) + 1
+        locator = f"{match.group('title').strip()} [line {line}]"
+        if len(match.group("marks")) == 1:
+            parent = locator
+            path = locator
+        else:
+            path = f"{parent} > {locator}" if parent else locator
+        boundaries.append((match, path))
+    return boundaries
+
+
 def parse_chunks(text: str, *, min_chars: int = 1,
                  max_chars: int = 50_000) -> tuple[list[Chunk], list[str]]:
     if min_chars < 1 or max_chars < min_chars:
         raise ValueError("chunk bounds require 1 <= min_chars <= max_chars")
     if not text.strip():
         raise ValueError("empty document cannot be chunked")
-    boundaries = [m for m in HEADING.finditer(text) if len(m.group("number").split(".")) <= 2]
+    markdown = _markdown_boundaries(text)
+    if markdown:
+        boundaries = markdown
+    else:
+        boundaries = [
+            (match, _heading_path(match.group("number")))
+            for match in HEADING.finditer(text)
+            if len(match.group("number").split(".")) <= 2
+        ]
     warnings: list[str] = []
     if not boundaries:
         chunks = [Chunk("whole-document", text, 0, len(text))]
@@ -42,13 +68,12 @@ def parse_chunks(text: str, *, min_chars: int = 1,
     else:
         chunks = []
         seen: set[str] = set()
-        for index, match in enumerate(boundaries):
-            path = _heading_path(match.group("number"))
+        for index, (match, path) in enumerate(boundaries):
             if path in seen:
                 raise ValueError(f"duplicate heading path: {path}")
             seen.add(path)
             start = 0 if index == 0 else match.start()
-            end = boundaries[index + 1].start() if index + 1 < len(boundaries) else len(text)
+            end = boundaries[index + 1][0].start() if index + 1 < len(boundaries) else len(text)
             chunk_text = text[start:end]
             if not chunk_text.strip():
                 raise ValueError(f"empty chunk at heading path: {path}")

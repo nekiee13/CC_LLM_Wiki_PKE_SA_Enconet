@@ -1,0 +1,37 @@
+schema_version: '1.0'
+record_type: continuation_batch_state
+batch_id: SRC-20260728-006
+ingest_batch_id: ING-20260728-006
+created_at_utc: '2026-07-27T23:51:45Z'
+status: completed
+continuation_from_phase: sieved
+phase: sieved
+supplier: enconet
+deliverable_language: null
+size_class: small
+documents:
+- filename: PP-85-02,R2_UPRAVLJANJE_RIZICIMA.md
+  logical_id: PP-85-02
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0033
+- filename: RU-42-03,R2_ODRŽAVANJE_RAČUNALNE_INFRASTRUKTURE.md
+  logical_id: RU-42-03
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0034
+- filename: RU-54-01,R3_PLANIRANJE_I_OSTVARIVANJE_CILJEVA_KVAL.md
+  logical_id: RU-54-01
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0035
+gates:
+  G1: {status: approved, date: 2026-07-28, decision_ref: G1-20260728-SRC006}
+  G2: {status: pending, date: null, decision_ref: null}
+  G3: {status: pending, date: null, decision_ref: null}
+  G4: {status: pending, date: null, decision_ref: null}
+  G5: {status: pending, date: null, decision_ref: null}
+  G6: {status: pending, date: null, decision_ref: null}
+  G7: {status: pending, date: null, decision_ref: null}
+benchmarks_locked: true
+completed_at_utc: '2026-07-27T23:54:57Z'

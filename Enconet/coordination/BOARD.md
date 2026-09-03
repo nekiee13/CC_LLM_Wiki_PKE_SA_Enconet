@@ -46,6 +46,7 @@ and ADRs are the records.
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
 - `DATA-BACKUP` — codex, released 2026-07-13T21:06:39Z
+- `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
 - `EPIC10` — codex, released 2026-07-13T22:39:14Z
@@ -81,7 +82,7 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
-- `INDEX-REFRESH` — codex, released 2026-07-17T01:00:53Z
+- `INDEX-REFRESH` — codex, released 2026-07-27T22:38:39Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-REVIEW-CC` — claude-code, released 2026-07-16T22:10:30Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
@@ -242,11 +243,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CC_2026-09-03T015008Z_production-commit-review-approved` — acknowledgement, claude-code -> codex: ENCONET-PRODUCTION-COMMIT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-07-18T231217Z-015ac3c.md`](../handoffs/2026-07-18T231217Z-015ac3c.md)
-- Archive: 671 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
+- Archive: 675 records in `coordination/archive/`
 
-Generated: 2026-07-27T22:00:25Z
+Generated: 2026-09-03T02:53:17Z

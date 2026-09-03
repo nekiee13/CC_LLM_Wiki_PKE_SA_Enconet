@@ -1,55 +1,43 @@
 # Enconet current status
 
-Replaceable snapshot (doc/RECORD-KEEPING.md): overwrite freely; history lives in
-`wiki/log.md`, `handoffs/`, and git. Last replaced: 2026-07-16 (EPIC18 harness
-independently accepted, both agent skill sets synchronized, and live migration validated).
+Replaceable snapshot (doc/RECORD-KEEPING.md). Last replaced: 2026-07-28.
 
 ## Phase
 
-Master-plan execution started (owner authorization 2026-07-12). `project-state.yml`
-phase: **setup**. ALIGNMENT_PLAN G0–G5 remain complete and cross-confirmed.
+`project-state.yml` phase: **closed**.
 
-## EPIC status
+G1 through G7 are approved for evaluation run `RUN-20260728-01`. The controlled
+deliverable language is Croatian (`hr`).
 
-| EPIC | Content | Status |
-|---|---|---|
-| 0 | Scaffold & governance | complete (commits d47bd1f, 0643d49); claim released |
-| 1 | Machine-readable contracts | complete; negative-path tests pass, taxonomy single ownership enforced, aggregate L0-L5 green; claim released |
-| 2 | Controlled SQLite data backbone | complete; schema, idempotent initializer, shared DB helper, and integrity negative tests green |
-| 3 | Raw intake & document registry | complete; controlled promotion, dual DB/CSV registry, text extraction, immutability validator, and negative tests green |
-| 4 | Chunking pipeline | complete; level-1/2 parser, atomic writer, quality warnings/rejections, offset/provenance validator, and negative tests green |
-| 5 | Sieving pipeline | complete; authority-aware APP_B crumb ingestion and side-leak correction validated and cross-reviewed |
-| 6 | Chunk↔crumb traceability | complete; live quote/chunk traceability validated and cross-reviewed |
-| 7 | Requirement registry | complete; 18/18 Appendix B criteria covered and migrated into the live registry |
-| 8 | Evaluation engine | complete; schema applied and pre-G2 findings fixed; live evaluation remains gated on G2/G3 inputs |
-| 9 | Evidence matrix and gap model | complete; pre-execution matrix has 18 RULE and 0 DOCUMENT evidence, with no fabricated gaps/actions |
-| 10 | Findings and auditor actions | complete and independently accepted; approval retry and signed-gate robustness fixes pass; empty live state preserved; claim released |
-| 11 | Evaluation Report generator | complete and independently accepted; report issuance/validation re-derive the package from SQLite and controlled approvals; provenance blocker resolved at b7173f5; no live report generated before G2/G3/G4; claim released |
-| 12 | Dashboard generator | complete and independently accepted; package-derived data, offline localized HTML, consistency/forbidden-pattern validation, and JS smoke checks pass; claim released; no live dashboard generated |
-| 13 | Validation layer and aggregate runner | complete and independently accepted; transitive no-record hygiene finding resolved and phases now derive from the canonical vocabulary; 111 Enconet tests and aggregate L0-L5 pass; claim released |
-| 14 | Audit state machine and human gates | complete and independently reviewed; production DB continuity and rejected-packet lifecycle findings resolved; 123 tests and aggregate validation pass; live state remains setup with all gates pending |
-| 15 | Sieving subsystem integration | complete and independently accepted; single vendored library wiring, exact dependency pins, effective private pandas API guard, warning/strict contract drift, and locked CSV/XLSX fixtures pass; F1 guard-coverage gap resolved with negative self-tests; claim released |
-| 16 | Reference benchmark fixtures and regression | complete and independently accepted; scoring and dashboard-rendering fixtures remain deliberately separate, locked regressions and aggregate enforcement pass, and `benchmarks_locked` is true; claim released |
-| 17 | Agent command and workflow interfaces | complete and independently accepted; canonical 12-command registry, fail-closed dispatcher, status/gate/closeout behavior, synchronized Codex and Claude adapters, and strict cross-agent validation pass; review observations O1/O2 resolved with actionable option placement and registry-owned script routing; 144 tests pass; claim released |
-| 18 | Sieving iteration and tuning harness | implementation complete and independently accepted; immutable generations, active-only downstream evidence, metrics/diff/scoring, approval-bound decisions, playbook, prompt registry, and synchronized Codex/Claude skills pass strict validation; O1 lesson-link check tightened after review; additive live migration completed with backup, integrity/FK checks pass, and the legacy active run has a committed 18-crumb/100%-linked metrics report; 151 tests pass; claim released. Task 18.5 operational acceptance and the project-level pilot-loop demonstration remain honestly pending human approval of a representative golden set |
+## Controlled result
 
-## Open items
+- 26 supplier documents and 234 active DOCUMENT evidence crumbs.
+- All 18 Appendix B criteria are applicable and evaluated.
+- Consolidated result: **87.5 / 100 — substantially matched**.
+- Distribution: 10 fully, 7 substantially, 1 partially.
+- 8 approved findings: 4 medium and 4 low; none high or critical.
+- 9 approved open auditor actions, including 4 priority actions.
+- Inactive candidate `RUN-20260723-02` was explicitly rejected.
 
-- `sieving/DATA` external backup location — resolved 2026-07-13: owner-designated USB
-  volume `WIKI_BCKP` (serial `DFF9-9A03`), with a 68/68-file checksum-verified snapshot
-  under `PKE_SA_NQA1/Enconet/ADR-0002/2026-07-13T210221Z/` (ADR-0002).
-- Scoring model calibration deferred to Gate G3 (ADR-0013).
+## Deliverables
+
+- [`../outputs/enconet_appendix_b_evaluation_package.json`](../outputs/enconet_appendix_b_evaluation_package.json)
+- [`../outputs/enconet_appendix_b_evaluation_report.md`](../outputs/enconet_appendix_b_evaluation_report.md)
+- [`../outputs/enconet_appendix_b_dashboard_data.json`](../outputs/enconet_appendix_b_dashboard_data.json)
+- [`../outputs/enconet_appendix_b_dashboard.html`](../outputs/enconet_appendix_b_dashboard.html)
+- [`../outputs/closeout_manifest_RUN-20260728-01.json`](../outputs/closeout_manifest_RUN-20260728-01.json)
+
+The full aggregate validation passed at `closed`: raw sources, chunks,
+sieving harness, traceability, Appendix B JSON, requirements, evaluation,
+findings, structure, frontmatter, report, dashboard, and both benchmark checks.
+
+## Open follow-up
+
+The nine approved auditor actions remain open for supplier follow-up. They are
+controlled audit outputs and do not prevent issuance or G7 closeout.
 
 ## Next action
 
-At the first representative controlled intake batch, have the owner select and approve the pilot
-golden document/excerpt and expected crumbs before any prompt promotion; then demonstrate the full
-re-sieve → metrics → diff → golden score → promote/rollback loop. Until then the draft fixture is
-diagnostic only and the live state remains setup/G1 pending;
-do not advance `project-state.yml` or create a live gate packet without a real human gate.
-Retain
-AFI-DASH-001 for generic external-URL validation hardening. Do not create live
-findings/actions, a report, or a dashboard
-until G2 supplier evidence/applicability, G3 scoring calibration, and G4 approval exist.
-Any future non-CLI report issuer must enforce canonical DB+approvals source proof
-before publication; package-only library rendering/validation is not an issuance boundary.
+Execute the nine approved supplier follow-up actions, prioritizing `ACT-0002`,
+`ACT-0003`, `ACT-0005`, and `ACT-0007`. Any future evaluation is a new controlled
+run and must begin with its applicable intake and human gates.

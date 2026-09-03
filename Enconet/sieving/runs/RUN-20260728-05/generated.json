@@ -1,0 +1,74 @@
+{
+  "document": {
+    "name": "PP-42-02,R5_Upravljanje_zapisima_kvalitete.pdf.md",
+    "title": "Upravljanje zapisima kvalitete",
+    "date": "2024-11-25",
+    "revision": "5",
+    "doc_id": "DOC-0026",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0026-001",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "The QA lead establishes and maintains record identification, collection, registration, storage, protection, and destruction controls.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 4, lines 107-115"}],
+      "evidence_quotes": [{"quote_original": "Voditelj QA poslova odgovoran je za uspostavu i održavanje sustava upravljanja zapisima kvalitete, odnosno njihovu identifikaciju, prikupljanje, evidenciju, pohranu, zaštitu i uništavanje.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0026-002",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Quality records demonstrate conformance and system effectiveness, include important subcontractor records, and must be signed, dated, readable, complete, and identifiable.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6. Postupak, page 4, line 119"}],
+      "evidence_quotes": [{"quote_original": "Svi zapisi su potpisani, datirani, čitljivi, kompletni i prepoznatljivi glede proizvoda ili usluge.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0026-003",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Records are classified for permanent retention, five-year retention, or retention until the next revision.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.1 Klasifikacija i vrijeme čuvanja zapisa, page 4, lines 121-133"}],
+      "evidence_quotes": [{"quote_original": "Svi zapisi, neovisno jesu li nastali u Enconetu ili dolaze od kupca, dobavljača odnosno trećih osoba, klasificiraju se s obzirom na vremensko razdoblje čuvanja:", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0026-004",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Quality records receive a unique IOD number to preserve identification and traceability throughout their lifecycle.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Označivanje i objavljivanje zapisa, page 5, lines 140-152"}],
+      "evidence_quotes": [{"quote_original": "Svi dokumenti sa statusom zapisa kvalitete moraju biti jedinstveno označeni IOD\nbrojem prema točki 6.4 postupka PP-42-01 «Upravljanje dokumentima» (Ref. 6)\nkako bi se osigurala njihova prepoznatljivost i sljedivost u svim fazama upravljanja\nzapisima kvalitete.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0026-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Records are continuously collected and stored in labeled physical binders or electronic media to support maintenance and retrieval.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.3 Prikupljanje, evidencija i pronalaženje zapisa, page 5, lines 154-183"}],
+      "evidence_quotes": [{"quote_original": "Radi evidencije, održavanja te pretraživanja/pronalaženja i korištenja, zapisi se\nulažu u označene registratore (papirnati zapisi) odnosno upisuju na elektronski\nmedij (elektronski zapisi).", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0026-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Records are stored under environmental and physical protections, then destroyed under owner responsibility after the retention period expires.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.4 Pohrana, zaštita i uništavanje zapisa, page 6, lines 190-199"}],
+      "evidence_quotes": [{"quote_original": "Zapisi se čuvaju u odgovarajućim datotekama, kutijama, policama, kabinetima i/ili protupožarnim ormarima u suhom prostoru i s posebnim mjerama zaštite, tako da se izbjegne propadanje i uništavanje i spriječi njihov gubitak, sukladno specificiranim uredbama i standardima, ugovornim zahtjevima i internim uputama Enconeta u skladu s postupkom PP-42-01.", "quote_language": "hr"}]
+    }
+  ]
+}

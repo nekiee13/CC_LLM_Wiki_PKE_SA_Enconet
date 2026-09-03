@@ -78,10 +78,11 @@ def _open_actions(database: Path) -> int:
         if not exists:
             return 0
         columns = {row[1] for row in connection.execute("PRAGMA table_info(auditor_actions)")}
-        if "status" not in columns:
+        action_state = "state" if "state" in columns else "status" if "status" in columns else None
+        if action_state is None:
             return 0
         return int(connection.execute(
-            "SELECT count(*) FROM auditor_actions WHERE status='open'"
+            f"SELECT count(*) FROM auditor_actions WHERE {action_state}='open'"
         ).fetchone()[0])
 
 

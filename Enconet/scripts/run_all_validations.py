@@ -22,6 +22,7 @@ STATE = ENCONET / "project-state.yml"
 RUNS = ENCONET / "manifests" / "validation_runs.csv"
 OUTPUTS = ENCONET / "outputs"
 DATA = ENCONET / "sieving" / "DATA"
+SIEVE_RUNS = ENCONET / "sieving" / "runs"
 BENCHMARKS = ENCONET / "benchmarks" / "validate_benchmarks.py"
 VOCABULARIES = ENCONET / "schemas" / "vocabularies.yml"
 AUDIT_STATES = yaml.safe_load(VOCABULARIES.read_text(encoding="utf-8"))["vocabularies"]["audit_states"]["values"]
@@ -89,6 +90,24 @@ def discover_app_b_json(root: Path) -> Path | None:
         if isinstance(payload, dict) and "document" in payload and "items" in payload:
             return path
     return None
+
+
+def discover_active_app_b_json(db: Path, runs_root: Path = SIEVE_RUNS) -> Path | None:
+    """Prefer the exact JSON artifact for the active live generation."""
+    with db_util.connect(db) as conn:
+        table = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name='sieve_runs'"
+        ).fetchone()
+        if table is None:
+            return None
+        row = conn.execute(
+            "SELECT run_id FROM sieve_runs WHERE is_active=1 "
+            "ORDER BY completed_at DESC, started_at DESC LIMIT 1"
+        ).fetchone()
+    if row is None:
+        return None
+    path = runs_root / str(row[0]) / "generated.json"
+    return path if path.is_file() else None
 
 
 def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
@@ -181,7 +200,9 @@ def main() -> int:
         phase_rank(phase)
         supplier = state["supplier"]
         run_id = args.run_id or (discover_run_id(args.db) if applicable("evaluation", phase) else None)
-        app_b_json = args.app_b_json or (discover_app_b_json(args.data_root) if applicable("app_b_json", phase) else None)
+        app_b_json = args.app_b_json
+        if app_b_json is None and applicable("app_b_json", phase):
+            app_b_json = discover_active_app_b_json(args.db) or discover_app_b_json(args.data_root)
         check_commands = commands(phase=phase, supplier=supplier, db=args.db, outputs=args.outputs,
                                   run_id=run_id, app_b_json=app_b_json,
                                   no_record=args.no_record)

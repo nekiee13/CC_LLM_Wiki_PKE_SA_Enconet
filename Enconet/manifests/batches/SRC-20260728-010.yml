@@ -1,0 +1,32 @@
+schema_version: '1.0'
+record_type: continuation_batch_state
+batch_id: SRC-20260728-010
+ingest_batch_id: ING-20260728-010
+created_at_utc: '2026-07-28T00:11:49Z'
+status: completed
+continuation_from_phase: sieved
+phase: sieved
+supplier: enconet
+deliverable_language: null
+size_class: small
+documents:
+- filename: RU-82-05,R2_PROGRAM_NADZORA_MJERNE_I_TESTNE_OPREME.md
+  logical_id: RU-82-05
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0045
+- filename: RU-82-06,R0_EVALUACIJA_IZVJEŠTAJA_O_POGONSKOM_ISKU.md
+  logical_id: RU-82-06
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0046
+gates:
+  G1: {status: approved, date: 2026-07-28, decision_ref: G1-20260728-SRC010}
+  G2: {status: pending, date: null, decision_ref: null}
+  G3: {status: pending, date: null, decision_ref: null}
+  G4: {status: pending, date: null, decision_ref: null}
+  G5: {status: pending, date: null, decision_ref: null}
+  G6: {status: pending, date: null, decision_ref: null}
+  G7: {status: pending, date: null, decision_ref: null}
+benchmarks_locked: true
+completed_at_utc: '2026-07-28T00:14:51Z'

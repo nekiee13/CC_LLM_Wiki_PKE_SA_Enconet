@@ -1,0 +1,74 @@
+{
+  "document": {
+    "name": "PP-85-01,R4_POPRAVNE_I_PREVENTIVNE_RADNJE.md",
+    "title": "Popravne i preventivne radnje",
+    "date": "2017-11-17",
+    "revision": "4",
+    "doc_id": "DOC-0032",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0032-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The director establishes and approves the corrective-action system, project leads implement actions, and the QA lead reviews causes, approves closure, and reports status.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 4, lines 106-130"}],
+      "evidence_quotes": [{"quote_original": "Direktor Enconeta odgovoran je za uspostavu sustava i odobravanje popravnih i", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0032-002",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Observed nonconformities and adverse conditions are reviewed to determine whether corrective or preventive action is necessary.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6. Postupak, page 4, lines 132-151"}],
+      "evidence_quotes": [{"quote_original": "Sve uočene nesukladnosti, nedostaci i odstupanja koja loše utječu na kvalitetu", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0032-003",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Approved corrective actions assign an owner, deadlines, resources, documentation, verification activities, and effectiveness criteria.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.1 Popravne radnje, pages 4-5, lines 153-197"}],
+      "evidence_quotes": [{"quote_original": "Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0032-004",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Preventive action removes causes of potential nonconformities and improves the quality system using accumulated performance information.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Preventivne radnje, page 6, lines 200-224"}],
+      "evidence_quotes": [{"quote_original": "Preventivnim radnjama otkrivaju se i uklanjaju uzroci mogućih nesukladnosti, te se unapređuje cjelokupni SUK.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0032-005",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Preventive-action plans define controlled activities, effectiveness measures, and a monitoring period with management reporting.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Preventivne radnje, page 6, line 224"}],
+      "evidence_quotes": [{"quote_original": "Utvrđuje se i vremensko razdoblje u kojem će se pratiti rezultati provedbe preventivne radnje o čemu će se izvještavati direktor Enconeta i voditelj QA poslova.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0032-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Documents produced while initiating, implementing, and monitoring corrective and preventive actions are controlled as class-ZK1 or ZK2 quality records.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.3 Dokumentacija, page 6, lines 226-228"}],
+      "evidence_quotes": [{"quote_original": "Dokumentacija koja je nastala tijekom iniciranja, provođenja i praćenja učinkovitosti popravne/preventivne radnje predstavlja zapise kvalitete i razvrstana je u dokumente klase ZK1 i ZK2, te se za nju primjenjuju zahtjevi prema postupku PP-42-02 (Ref. 6).", "quote_language": "hr"}]
+    }
+  ]
+}

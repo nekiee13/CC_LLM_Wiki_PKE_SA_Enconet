@@ -1,0 +1,74 @@
+{
+  "document": {
+    "name": "RU-73-03,R3_SOFTWARE_INSTALLATION,_KEEPING,_HANDLI.md",
+    "title": "Software Installation, Keeping, Handling and Maintenance Control",
+    "date": "2017-11-17",
+    "revision": "3",
+    "doc_id": "DOC-0039",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0039-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The director provides resources, the software engineer performs installation and maintenance, and QA ensures compliance with the approved program.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "3. Responsibilities, page 7, lines 137-154"}],
+      "evidence_quotes": [{"quote_original": "1. Software installation, keeping, handling, storing and maintenance.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0039-002",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Software installation is performed under the installation procedure supplied with the controlled software documentation.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1 Installation, page 8, lines 164-181"}],
+      "evidence_quotes": [{"quote_original": "### 4.1.2 Installation shall be performed according to installation procedure provided within software documentation or using automatic installation procedure if provided with original software.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0039-003",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "Accompanying test cases verify successful software installation.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1 Installation, page 8, line 181"}],
+      "evidence_quotes": [{"quote_original": "### 4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0039-004",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "Original software is permanently archived, installation uses backup media, and backups are distributed across local, optical, and server storage.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.2 Storage control and control of physical media, page 9, lines 189-216"}],
+      "evidence_quotes": [{"quote_original": "4.2.3 Installation of the software is performed using backup copy.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0039-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Installation date and hardware platform are recorded in the installation log.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.1 Installation, page 8, line 179"}],
+      "evidence_quotes": [{"quote_original": "### 4.1.3 The installation date and hardware platform shall be recorded in installation log list.", "quote_language": "en"}]
+    },
+    {
+      "item_id": "DOC0039-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Original packages and backup copies are inventoried, permanently retained where required, and media contents are periodically verified.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "4.2 Storage control and control of physical media, pages 9-10, lines 205-240"}],
+      "evidence_quotes": [{"quote_original": "4.2.11 Every two year content of above mentioned media has to be verified.", "quote_language": "en"}]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+schema_version: '1.0'
+record_type: continuation_batch_state
+batch_id: SRC-20260728-001
+ingest_batch_id: ING-20260728-001
+created_at_utc: '2026-07-27T23:04:38Z'
+status: completed
+continuation_from_phase: sieved
+phase: sieved
+supplier: enconet
+deliverable_language: null
+size_class: large
+documents:
+- filename: PK-SUK-001,R9(Priručnik_kvalitete_norma_ISO_9001-2.md
+  logical_id: PK-SUK-001
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0022
+gates:
+  G1: {status: approved, date: 2026-07-28, decision_ref: G1-20260728-SRC001}
+  G2: {status: pending, date: null, decision_ref: null}
+  G3: {status: pending, date: null, decision_ref: null}
+  G4: {status: pending, date: null, decision_ref: null}
+  G5: {status: pending, date: null, decision_ref: null}
+  G6: {status: pending, date: null, decision_ref: null}
+  G7: {status: pending, date: null, decision_ref: null}
+benchmarks_locked: true
+completed_at_utc: '2026-07-27T23:19:11Z'

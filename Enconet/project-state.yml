@@ -19,17 +19,17 @@
 # corresponding gate decision is recorded in manifests/approvals.csv.
 # Never hand-edit past "setup" without a recorded decision.
 
-phase: setup
+phase: closed
 supplier: enconet
-deliverable_language: null
+deliverable_language: hr
 
 gates:
-  G1: {status: pending, date: null, decision_ref: null}  # Registry
-  G2: {status: pending, date: null, decision_ref: null}  # Evidence + applicability
-  G3: {status: pending, date: null, decision_ref: null}  # Evaluation
-  G4: {status: pending, date: null, decision_ref: null}  # Findings
-  G5: {status: pending, date: null, decision_ref: null}  # Report
-  G6: {status: pending, date: null, decision_ref: null}  # Dashboard
-  G7: {status: pending, date: null, decision_ref: null}  # Closeout
+  G1: {status: approved, date: 2026-07-23, decision_ref: G1-20260723-SRC001}  # Registry
+  G2: {status: approved, date: 2026-07-28, decision_ref: G2-20260728-FULL}  # Evidence + applicability
+  G3: {status: approved, date: 2026-07-28, decision_ref: G3-RUN-20260728-01}  # Evaluation
+  G4: {status: approved, date: 2026-07-28, decision_ref: G4-RUN-20260728-01}  # Findings
+  G5: {status: approved, date: 2026-07-28, decision_ref: G5-RUN-20260728-01}  # Report
+  G6: {status: approved, date: 2026-07-28, decision_ref: G6-RUN-20260728-01}  # Dashboard
+  G7: {status: approved, date: 2026-07-28, decision_ref: G7-RUN-20260728-01}  # Closeout
 
 benchmarks_locked: true

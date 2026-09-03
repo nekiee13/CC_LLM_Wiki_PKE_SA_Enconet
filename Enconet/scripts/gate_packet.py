@@ -44,11 +44,13 @@ def render_frontmatter(data: dict[str, object]) -> str:
 def create_packet(
     *, gate: str, supplier: str, decision_ref: str, summary: str,
     evidence: str, validation: str, output: Path, template: Path = TEMPLATE,
+    scope_id: str = "project", state_source: str = "project-state.yml",
 ) -> Path:
     if not re.fullmatch(r"G[1-7]", gate):
         raise StateError(f"invalid gate: {gate}")
     _safe_token(supplier, "supplier")
     _safe_token(decision_ref, "decision reference")
+    _safe_token(scope_id, "scope ID")
     if not decision_ref.startswith(gate + "-"):
         raise StateError(f"decision reference {decision_ref} does not belong to {gate}")
     if output.exists():
@@ -57,11 +59,19 @@ def create_packet(
         raise StateError("G2 packet evidence must include the active generation metrics path")
     for existing in output.parent.glob("*.md") if output.parent.exists() else []:
         existing_data, _ = split_frontmatter(existing.read_text(encoding="utf-8"))
-        if existing_data.get("gate") == gate and existing_data.get("supplier") == supplier:
-            raise StateError(f"packet already exists for {gate} and supplier {supplier}: {existing}")
+        existing_scope = str(existing_data.get("scope_id", "project"))
+        if (existing_data.get("gate") == gate
+                and existing_data.get("supplier") == supplier
+                and existing_scope == scope_id):
+            raise StateError(
+                f"packet already exists for {gate}, supplier {supplier}, "
+                f"and scope {scope_id}: {existing}"
+            )
     replacements = {
         "{{GATE}}": gate,
         "{{SUPPLIER}}": supplier,
+        "{{SCOPE_ID}}": scope_id,
+        "{{STATE_SOURCE}}": state_source,
         "{{DECISION_REF}}": decision_ref,
         "{{SUMMARY}}": summary.strip(),
         "{{EVIDENCE_POINTERS}}": evidence.strip(),
@@ -99,8 +109,8 @@ def record_packet(
     }[row["decision"]]
     record = (
         "<!-- DECISION_RECORD_START -->\n"
-        f"Decision: **{row['decision']}**  \nDate: {row['date']}  \n"
-        f"Reviewer: {row['reviewer']}  \nApproval reference: `{decision_ref}`\n"
+        f"Decision: **{row['decision']}**\n\nDate: {row['date']}\n\n"
+        f"Reviewer: {row['reviewer']}\n\nApproval reference: `{decision_ref}`\n"
         "<!-- DECISION_RECORD_END -->"
     )
     body, count = re.subn(
@@ -128,6 +138,8 @@ def main(argv: list[str] | None = None) -> int:
     create.add_argument("--summary", required=True)
     create.add_argument("--evidence", required=True)
     create.add_argument("--validation", required=True)
+    create.add_argument("--scope-id", default="project")
+    create.add_argument("--state-source", default="project-state.yml")
     create.add_argument("--output", type=Path)
     create.add_argument("--template", type=Path, default=TEMPLATE)
     record = sub.add_parser("record")
@@ -142,7 +154,9 @@ def main(argv: list[str] | None = None) -> int:
             create_packet(gate=args.gate, supplier=args.supplier,
                           decision_ref=args.decision_ref, summary=args.summary,
                           evidence=args.evidence, validation=args.validation,
-                          output=output, template=args.template)
+                          output=output, template=args.template,
+                          scope_id=args.scope_id,
+                          state_source=args.state_source)
             print(f"created {output}")
             print("STOP: human decision required; no state transition was performed")
         else:

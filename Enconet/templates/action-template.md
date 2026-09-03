@@ -8,7 +8,7 @@ evaluation_run: "{{evaluation_run}}"
 action_type: "{{action_type}}"
 linked_to: "{{linked_to}}"
 state: "{{state}}"
-priority: "{{priority}}"
+priority: {{priority}}
 approval_ref: "{{approval_ref}}"
 ---
 

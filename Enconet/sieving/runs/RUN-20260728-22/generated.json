@@ -1,0 +1,54 @@
+{
+  "document": {
+    "name": "RU-82-03,R3_PRAĆENJE_I_MJERENJE_OSPOSOBLJENOSTI_PR.md",
+    "title": "Praćenje i mjerenje osposobljenosti procesa",
+    "date": "2017-11-17",
+    "revision": "3",
+    "doc_id": "DOC-0043",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0043-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Management monitors process condition and improvement actions, process owners assess capability, and QA evaluates all core processes.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 3, lines 89-98"}],
+      "evidence_quotes": [{"quote_original": "Direktor Enconeta odgovoran je da prati ocjene i stanje u procesima te prema", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0043-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Core-process capability is evaluated annually using indicators for nonconformities, corrective actions, personnel, equipment, conditions, and methods.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.1-6.2 Metode i ocjenjivanje procesa, page 4, lines 107-127"}],
+      "evidence_quotes": [{"quote_original": "Procesi se ocjenjuju, u pravilu, svake godine. Direktor može donijeti odluku i o drugačijim intervalima ocjenjivanja.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0043-003",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Low process-capability scores require urgent corrective action, while intermediate scores require continual-improvement measures.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Postupak ocjenjivanja i status procesa, page 4, lines 127-135"}],
+      "evidence_quotes": [{"quote_original": "0 - 10 bodova => Potrebne su hitne popravne radnje", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0043-004",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "The QA lead maintains records of completed process-capability measurements.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Postupak ocjenjivanja i status procesa, page 4, line 133"}],
+      "evidence_quotes": [{"quote_original": "Voditelj QA održava zapise o provedenom postupku mjerenja osposobljenosti procesa.", "quote_language": "hr"}]
+    }
+  ]
+}

@@ -3,12 +3,13 @@ id: {{DECISION_REF}}
 type: gate-decision
 status: draft
 content_origin: mixed
-source: project-state.yml; manifests/approvals.csv
+source: {{STATE_SOURCE}}; manifests/approvals.csv
 gate: {{GATE}}
 decision: pending
 decision_date: n-a
 reviewer: n-a
 supplier: {{SUPPLIER}}
+scope_id: {{SCOPE_ID}}
 ---
 
 # {{GATE}} decision packet — {{SUPPLIER}}

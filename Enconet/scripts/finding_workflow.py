@@ -93,7 +93,7 @@ def action_page_values(row: dict) -> dict[str, object]:
         "source": f"db:auditor_actions/{row['action_id']}; {linked}",
         "evaluation_run": row["evaluation_run_id"], "action_type": row["action_type"],
         "linked_to": linked, "state": row["state"],
-        "priority": str(bool(row["priority"])).lower(),
+        "priority": bool(row["priority"]),
         "approval_ref": row.get("approval_ref") or "n-a",
         "description": row["description"],
     }

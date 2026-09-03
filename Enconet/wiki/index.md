@@ -26,6 +26,22 @@ engineering documentation lives in [`../../doc/`](../../doc/README.md).
 - [`../sieving/PROJECT_INFO.md`](../sieving/PROJECT_INFO.md) — design decisions record
 - [`../sieving/PROVENANCE.md`](../sieving/PROVENANCE.md) — append-only provenance log
 
+## Controlled intake
+
+- [`../manifests/raw_sources.csv`](../manifests/raw_sources.csv) — immutable-source registry
+- [`../manifests/batches/`](../manifests/batches/) — completed intake-batch records
+- [`gates/G2-20260728-FULL-enconet.md`](gates/G2-20260728-FULL-enconet.md) —
+  approved full-scope evidence and applicability review
+- [`gates/G7-RUN-20260728-01-enconet.md`](gates/G7-RUN-20260728-01-enconet.md) —
+  approved closeout decision for the completed evaluation
+
+## Deliverables
+
+- [`../outputs/enconet_appendix_b_evaluation_package.json`](../outputs/enconet_appendix_b_evaluation_package.json)
+- [`../outputs/enconet_appendix_b_evaluation_report.md`](../outputs/enconet_appendix_b_evaluation_report.md)
+- [`../outputs/enconet_appendix_b_dashboard.html`](../outputs/enconet_appendix_b_dashboard.html)
+- [`../outputs/closeout_manifest_RUN-20260728-01.json`](../outputs/closeout_manifest_RUN-20260728-01.json)
+
 ## Coordination
 
 - [`../coordination/TEAM_PROTOCOL.md`](../coordination/TEAM_PROTOCOL.md) — neutral protocol authority (ADR-0017/0018)

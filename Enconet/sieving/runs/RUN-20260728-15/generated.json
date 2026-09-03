@@ -1,0 +1,54 @@
+{
+  "document": {
+    "name": "RU-63-02,R3_UVOĐENJE_PRIPRAVNIKA_U_POSAO.md",
+    "title": "Uvođenje pripravnika u posao",
+    "date": "2017-11-17",
+    "revision": "3",
+    "doc_id": "DOC-0036",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0036-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The director appoints the mentor, who develops the program and guides, monitors, and evaluates the trainee.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 4, lines 109-119"}],
+      "evidence_quotes": [{"quote_original": "Mentor izrađuje program uvođenja u posao, stručno vodi, pomaže, prati i ocjenjuje uspješnost pripravnika u provođenju programa.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0036-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Trainees receive a defined program covering quality-system principles and job-specific processes, resources, organization, and work methods.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.2 Sadržaj pripravničkog programa, page 5, lines 151-168"}],
+      "evidence_quotes": [{"quote_original": "- temeljna načela sustava za upravljanje kvalitetom.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0036-003",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "A qualified mentor evaluates work output, quality, understanding, planning, initiative, and interpersonal performance at the end of training.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.3 Praćenje i ocjenjivanje uspješnosti, page 5, lines 170-188"}],
+      "evidence_quotes": [{"quote_original": "Iz vrednovanja navedenih elemenata proizlazi konačna ocjena uspješnosti pripravničkog staža. Ocjenu treba pismeno obrazložiti.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0036-004",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "The trainee maintains an internship diary and reports monthly progress to the mentor.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 4, line 119"}],
+      "evidence_quotes": [{"quote_original": "Pripravnik je dužan voditi evidenciju (dnevnik stažiranja) o provođenju pripravničkog programa.", "quote_language": "hr"}]
+    }
+  ]
+}

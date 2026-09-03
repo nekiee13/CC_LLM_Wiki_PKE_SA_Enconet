@@ -1,0 +1,54 @@
+{
+  "document": {
+    "name": "RU-54-01,R3_PLANIRANJE_I_OSTVARIVANJE_CILJEVA_KVAL.md",
+    "title": "Planiranje i ostvarivanje ciljeva kvalitete",
+    "date": "2017-11-17",
+    "revision": "3",
+    "doc_id": "DOC-0035",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0035-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "The director establishes quality objectives and assigns monitoring responsibility, while the QA lead oversees objective planning and achievement.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "5. Odgovornosti, page 3, lines 87-96"}],
+      "evidence_quotes": [{"quote_original": "Voditelj QA odgovoran je da, sa stanovišta sustava kvalitete, prati planiranje i", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0035-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Quality objectives derive from company policy and are established for strategic, annual, quarterly, or monthly horizons.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.1 Uvod, page 4, lines 103-122"}],
+      "evidence_quotes": [{"quote_original": "Dugoročni, strateški ciljevi kvalitete Enconeta definirani su u «Izjavi o politici i ciljevima kvalitete» (Priručnik kvalitete).", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0035-003",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Each objective defines its measure, time period, responsible monitor, and planned target, followed by signed completion reporting.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.3 Postupak planiranja i praćenja ciljeva kvalitete, page 5, lines 158-170"}],
+      "evidence_quotes": [{"quote_original": "Na kraju planiranog termina odgovorna osoba upisuje i potpisuje realizaciju odgovarajućeg cilja.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0035-004",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Management analyzes objective achievement and assigns corrective actions, owners, and deadlines for unmet objectives.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "6.3 Postupak planiranja i praćenja ciljeva kvalitete, page 5, line 172"}],
+      "evidence_quotes": [{"quote_original": "Za neostvarene ciljeve, prema potrebi, definira popravne radnje s odgovornim nositeljima i rokovima realizacije.", "quote_language": "hr"}]
+    }
+  ]
+}

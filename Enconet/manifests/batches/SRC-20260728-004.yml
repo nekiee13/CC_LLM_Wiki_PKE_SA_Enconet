@@ -1,0 +1,37 @@
+schema_version: '1.0'
+record_type: continuation_batch_state
+batch_id: SRC-20260728-004
+ingest_batch_id: ING-20260728-004
+created_at_utc: '2026-07-27T23:36:46Z'
+status: completed
+continuation_from_phase: sieved
+phase: sieved
+supplier: enconet
+deliverable_language: null
+size_class: small
+documents:
+- filename: PP-62-01,R4_IZOBRAZBA_I_UVJEŽBAVANJE_OSOBLJA.md
+  logical_id: PP-62-01
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0027
+- filename: PP-72-01,R5_PROCES_MARKETINGA,_UGOVARANJA_I_PRODAJ.md
+  logical_id: PP-72-01
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0028
+- filename: PP-73-01,R6_PROCES_PROJEKTIRANJA_I_RAZVOJA.md
+  logical_id: PP-73-01
+  change_type: new
+  supersedes: null
+  doc_id: DOC-0029
+gates:
+  G1: {status: approved, date: 2026-07-28, decision_ref: G1-20260728-SRC004}
+  G2: {status: pending, date: null, decision_ref: null}
+  G3: {status: pending, date: null, decision_ref: null}
+  G4: {status: pending, date: null, decision_ref: null}
+  G5: {status: pending, date: null, decision_ref: null}
+  G6: {status: pending, date: null, decision_ref: null}
+  G7: {status: pending, date: null, decision_ref: null}
+benchmarks_locked: true
+completed_at_utc: '2026-07-27T23:43:48Z'

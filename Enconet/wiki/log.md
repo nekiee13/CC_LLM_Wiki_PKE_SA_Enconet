@@ -136,4 +136,133 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-07-18T23:11:23Z | handoffs/2026-07-18T231123Z-nogit.md | complete | unavailable
 
 - handoff-created | 2026-07-18T23:12:17Z | handoffs/2026-07-18T231217Z-015ac3c.md | complete | 015ac3c044a86b3cd1155c4f08fb8634e9d47d60
+
+- source-intake | 2026-07-23T10:05:20Z | SRC-20260723-001 | One large new ENCONET DOCUMENT source, `ENCONET__PRAVILNIK_O_RADU+SISTEMATIZACIJA_I_ORGANI.md`, was promoted as immutable `DOC-0021`, extracted to `derived/DOC-0021.txt`, and passed `python scripts/validate_raw_sources.py` with exit code 0. G1 packet `G1-20260723-SRC001-enconet` was created for owner review; downstream ingestion has not started and 25 incoming documents remain (CX).
+
+- 2026-07-23T10:08:17Z | `gate-decision` | G1 approved as `G1-20260723-SRC001` by project-owner
+
+- 2026-07-23T10:08:17Z | `state-transition` | setup -> registered
+
+- 2026-07-23T10:10:54Z | `state-transition` | registered -> chunked
+
+- 2026-07-23T10:15:29Z | `state-transition` | chunked -> sieved
+
+- ingest-boundary | 2026-07-23T11:10:59Z | ING-20260723-001 | `DOC-0021` produced 138 validated Markdown-aware chunks. Active `RUN-20260723-01` imported 34 DOCUMENT crumbs and linked 60/60 quotes; quality review then created inactive corrected candidate `RUN-20260723-02` with four conservative classification/evidence changes, 34 crumbs, 60/60 linked quotes, 100% field completeness, and zero exceptions. Candidate promotion is blocked by the pending human golden approval. The phase-aware aggregate passes with the active run artifact, the complete suite passes 152 tests, G2 packet `G2-20260723-ING001-enconet` is pending, and 25 incoming documents remain untouched (CX).
+
+- handoff-created | 2026-07-23T11:33:17Z | handoffs/2026-07-23T113317Z-nogit.md | blocked | unavailable
+
+- handoff-created | 2026-07-23T11:34:15Z | handoffs/2026-07-23T113415Z-a8d332d.md | blocked | a8d332d2471131b9a03f8db86e76a1ab691e4de9
+
 - improvement-recorded | 2026-07-27T21:25:50Z | AFI-TOKEN-001 | Owner directed P0-P6 token-efficiency options, unverified saving projections, Claude's independent evaluation, fallback/blind-spot/metric-gaming/telemetry risks, and a separately gated prospective A/B pilot concept into the AFI ledger. The item is non-blocking and deferred until explicit pilot authorization; no pipeline, gate, target, or measurement-storage change is authorized (OWNER/CC/CX).
+
+- handoff-created | 2026-07-27T22:42:01Z | handoffs/2026-07-27T224201Z-62a0251.md | blocked | 62a0251d406238bce6e17aad971b505c4c04d732
+
+- 2026-07-27T23:13:58Z | `gate-decision` | G1 approved as `G1-20260728-SRC001` by project-owner
+
+- 2026-07-27T23:13:58Z | `state-transition` | setup -> registered
+
+- 2026-07-27T23:14:06Z | `state-transition` | registered -> chunked
+
+- 2026-07-27T23:18:15Z | `state-transition` | chunked -> sieved
+
+- 2026-07-27T23:21:50Z | `gate-decision` | G1 approved as `G1-20260728-SRC002` by project-owner
+
+- 2026-07-27T23:21:50Z | `state-transition` | setup -> registered
+
+- 2026-07-27T23:21:51Z | `state-transition` | registered -> chunked
+
+- 2026-07-27T23:24:53Z | `state-transition` | chunked -> sieved
+
+- 2026-07-27T23:28:30Z | `gate-decision` | G1 approved as `G1-20260728-SRC003` by project-owner
+
+- 2026-07-27T23:28:30Z | `state-transition` | setup -> registered
+
+- 2026-07-27T23:28:31Z | `state-transition` | registered -> chunked
+
+- 2026-07-27T23:34:41Z | `state-transition` | chunked -> sieved
+
+- 2026-07-27T23:40:03Z | `gate-decision` | G1 approved as `G1-20260728-SRC004` by project-owner
+
+- 2026-07-27T23:40:04Z | `state-transition` | setup -> registered
+
+- 2026-07-27T23:40:20Z | `state-transition` | registered -> chunked
+
+- 2026-07-27T23:43:14Z | `state-transition` | chunked -> sieved
+
+- 2026-07-27T23:48:33Z | `gate-decision` | G1 approved as `G1-20260728-SRC005` by project-owner
+
+- 2026-07-27T23:48:33Z | `state-transition` | setup -> registered
+
+- 2026-07-27T23:48:34Z | `state-transition` | registered -> chunked
+
+- 2026-07-27T23:50:58Z | `state-transition` | chunked -> sieved
+
+- 2026-07-27T23:52:59Z | `gate-decision` | G1 approved as `G1-20260728-SRC006` by project-owner
+
+- 2026-07-27T23:52:59Z | `state-transition` | setup -> registered
+
+- 2026-07-27T23:53:00Z | `state-transition` | registered -> chunked
+
+- 2026-07-27T23:54:36Z | `state-transition` | chunked -> sieved
+
+- 2026-07-27T23:56:25Z | `gate-decision` | G1 approved as `G1-20260728-SRC007` by project-owner
+
+- 2026-07-27T23:56:25Z | `state-transition` | setup -> registered
+
+- 2026-07-27T23:56:26Z | `state-transition` | registered -> chunked
+
+- 2026-07-27T23:58:23Z | `state-transition` | chunked -> sieved
+
+- 2026-07-28T00:05:54Z | `gate-decision` | G1 approved as `G1-20260728-SRC008` by project-owner
+
+- 2026-07-28T00:05:54Z | `state-transition` | setup -> registered
+
+- 2026-07-28T00:05:56Z | `state-transition` | registered -> chunked
+
+- 2026-07-28T00:08:00Z | `state-transition` | chunked -> sieved
+
+- 2026-07-28T00:09:40Z | `gate-decision` | G1 approved as `G1-20260728-SRC009` by project-owner
+
+- 2026-07-28T00:09:40Z | `state-transition` | setup -> registered
+
+- 2026-07-28T00:09:41Z | `state-transition` | registered -> chunked
+
+- 2026-07-28T00:11:06Z | `state-transition` | chunked -> sieved
+
+- 2026-07-28T00:12:55Z | `gate-decision` | G1 approved as `G1-20260728-SRC010` by project-owner
+
+- 2026-07-28T00:12:55Z | `state-transition` | setup -> registered
+
+- 2026-07-28T00:12:56Z | `state-transition` | registered -> chunked
+
+- 2026-07-28T00:14:30Z | `state-transition` | chunked -> sieved
+
+- 2026-07-28T00:21:56Z | `gate-decision` | G2 approved as `G2-20260728-FULL` by project-owner
+
+- 2026-07-28T00:21:58Z | `state-transition` | sieved -> evidence_reviewed
+
+- 2026-07-28T00:32:06Z | `gate-decision` | G3 approved as `G3-RUN-20260728-01` by project-owner
+
+- 2026-07-28T00:32:09Z | `state-transition` | evidence_reviewed -> evaluated
+
+- 2026-07-28T00:34:21Z | `state-transition` | evaluated -> findings_drafted
+
+- 2026-07-28T00:37:49Z | `gate-decision` | G4 approved as `G4-RUN-20260728-01` by project-owner
+
+- 2026-07-28T00:38:44Z | `state-transition` | findings_drafted -> findings_approved
+
+- 2026-07-28T00:41:47Z | `gate-decision` | G5 approved as `G5-RUN-20260728-01` by project-owner
+
+- 2026-07-28T00:41:49Z | `state-transition` | findings_approved -> report_ready
+
+- 2026-07-28T00:43:53Z | `gate-decision` | G6 approved as `G6-RUN-20260728-01` by project-owner
+
+- 2026-07-28T00:43:55Z | `state-transition` | report_ready -> dashboard_ready
+
+- 2026-07-28T00:48:50Z | `gate-decision` | G7 approved as `G7-RUN-20260728-01` by project-owner
+
+- 2026-07-28T00:48:53Z | `state-transition` | dashboard_ready -> closed
+
+- handoff-created | 2026-07-28T00:51:41Z | handoffs/2026-07-28T005141Z-62a0251.md | complete | 62a0251d406238bce6e17aad971b505c4c04d732
+
+- handoff-created | 2026-09-03T01:44:05Z | handoffs/2026-09-03T014405Z-62a0251.md | partial | 62a0251d406238bce6e17aad971b505c4c04d732

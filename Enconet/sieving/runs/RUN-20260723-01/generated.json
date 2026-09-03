@@ -1,0 +1,420 @@
+{
+  "document": {
+    "name": "ENCONET__PRAVILNIK_O_RADU+SISTEMATIZACIJA_I_ORGANI.md",
+    "title": "Pravilnik o radu društva ENCONET d.o.o., Revizija 2",
+    "date": "2023-06-30",
+    "revision": "2",
+    "doc_id": "DOC-0021",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "DOC0021-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Prilog definira organizacijske dijelove, radna mjesta, osnovne opise poslova i uvjete za njihovo obavljanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "Organizacija i sistematizacija radnih mjesta, članak 1, line 1276"}],
+      "evidence_quotes": [{"quote_original": "U skladu sa Zakonom o radu i Pravilnikom o radu od dana 30. lipnja 2023.g. uređuje se organizacija rada u ENCONET d.o.o. (dalje u tekstu: „Društvo\"), te se između ostalog, utvrđuju, nazivi pojedinih organizacijskih dijelova i radnih mjesta, popis i osnovni opisi radnih mjesta i uvjeti bitni za obavljanje poslova odnosnog radnog mjesta odnosno za sklapanje ugovora o radu.", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Voditeljima projekata dodijeljene su odgovornosti za nadzor kvalitete, resurse, rokove i primjenu odgovarajućih postupaka.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Organizacija i sistematizacija radnih mjesta, članak 2, lines 1291-1296"}],
+      "evidence_quotes": [
+        {"quote_original": "- Vođenje i nadzor izrade projekata (resursi, rokovi, kvaliteta, troškovi)", "quote_language": "hr"},
+        {"quote_original": "- Osiguravanje primjene odgovarajućih postupaka i metoda rada u svrhu izvršenja projekata", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Organizacijska shema prikazuje osiguranje kvalitete kao zasebnu cjelinu neposredno povezanu s upravom društva.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "Organizacijska shema ENCONET d.o.o. 1/3, lines 1341-1353"}],
+      "evidence_quotes": [
+        {"quote_original": "    B[UPRAVA DRUŠTVA]", "quote_language": "hr"},
+        {"quote_original": "    D[OSIGURANJE KVALITETE]", "quote_language": "hr"},
+        {"quote_original": "    B --- D", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-004",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Direktor imenuje predstavnika uprave za kvalitetu i osigurava resurse za djelotvorno odvijanje procesa.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto direktor, lines 1447-1449"}],
+      "evidence_quotes": [
+        {"quote_original": "- Osiguranje svih potrebnih resursa (kadrovi, prostori, oprema i sl.) za djelotvorno odvijanje svih procesa", "quote_language": "hr"},
+        {"quote_original": "- Imenovanje voditelja projekata, predstavnika uprave za kvalitetu i dr.", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Direktor je odgovoran osigurati uvjete za izradu, uvođenje, provođenje i unapređenje sustava upravljanja kvalitetom.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto direktor, line 1444"}],
+      "evidence_quotes": [{"quote_original": "- Osiguranje uvjeta za izradu, uvođenje, provođenje i unapređenje sustava za upravljanje kvalitetom", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-006",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Voditelju QA poslova dodijeljeno je osiguravanje sukladnosti sustava upravljanja kvalitetom s ISO 9001 i zahtjevima 10 CFR 50 Appendix B.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto voditelj QA poslova, lines 1547-1550"}],
+      "evidence_quotes": [
+        {"quote_original": "• Vođenje poslova upravljanja kvalitetom", "quote_language": "hr"},
+        {"quote_original": "zahtjevima iz nuklearne industrije (10CFR50 App. B)", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-007",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Voditelj QA poslova izvještava o stanju sustava, planira poboljšanja i sudjeluje u upravinoj ocjeni sustava.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto voditelj QA poslova, lines 1556-1559"}],
+      "evidence_quotes": [
+        {"quote_original": "• Izvještavanje o stanju SUK-a", "quote_language": "hr"},
+        {"quote_original": "• Planiranje i ostvarivanje poboljšanja SUK-a", "quote_language": "hr"},
+        {"quote_original": "• Sudjelovanje kod izrade Direktorove ocjene SUK-a", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-008",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Voditelj QA poslova planira i provodi izobrazbu djelatnika o sustavu upravljanja kvalitetom.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto voditelj QA poslova, line 1557"}],
+      "evidence_quotes": [{"quote_original": "• Planiranje i provođenje izobrazbe djelatnika o SUK-u", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-009",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Vodeći inženjer osiguranja kvalitete pregledava i odobrava dokumentaciju projektnih promjena.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer osiguranja kvalitete, line 1745"}],
+      "evidence_quotes": [{"quote_original": "• Pregled i odobravanje dokumentacije u sklopu projektnih promjena u nuklearnoj elektrani", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-010",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Vodeći inženjer kontrole konfiguracije pregledava pakete projektnih promjena i sudjeluje u njihovom pregledu u projektnim timovima.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer kontrole konfiguracije, lines 1936-1941"}],
+      "evidence_quotes": [
+        {"quote_original": "• Pregled paketa projektnih promjena u nuklearnoj elektrani", "quote_language": "hr"},
+        {"quote_original": "• Sudjelovanje u projektnim timovima za izvođenje projekata i pregled projektnih promjena u", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-011",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Vodeći inženjer za modifikacije izrađuje projektnu dokumentaciju te stručno pregledava dokumentaciju ponuđača i projektnu dokumentaciju.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer za modifikacije, lines 2100-2106"}],
+      "evidence_quotes": [
+        {"quote_original": "• Izrada projektne dokumentacije i koordinacija izvedenih radova", "quote_language": "hr"},
+        {"quote_original": "• Podrška u pripremi i provedbi projekta kroz pripremu ulaznih podataka, pregled, komentiranje i praćenje projektne dokumentacije ponuđača (dobavljača) opreme", "quote_language": "hr"},
+        {"quote_original": "• Pružanje stručnog pregleda projektne dokumentacije na elektro području inženjeringa u nuklearnoj elektrani", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-012",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "Vodeći inženjer osiguranja kvalitete pregledava i obrađuje tehničke specifikacije, narudžbenice i ugovore nabave.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer osiguranja kvalitete, lines 1741-1742"}],
+      "evidence_quotes": [
+        {"quote_original": "• Pregled i procesiranje nabavne dokumentacije u skladu sa procesima u nuklearnoj", "quote_language": "hr"},
+        {"quote_original": "  elektrani(tehničke specifikacije, narudžbenice, ugovori, ...)", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-013",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "Inženjer potpore nabavi definira tehničke zahtjeve i priprema tehničke specifikacije za nabavu roba i usluga.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto inženjer potpore nabavi, lines 2212-2218"}],
+      "evidence_quotes": [
+        {"quote_original": "• Definiranje tehničkih zahtjeva za nabavu roba i usluga", "quote_language": "hr"},
+        {"quote_original": "• Podrška inicijatoru narudžbenice za robu i usluge kroz pripremu tehničkih specifikacija", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-014",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Aktivnosti kontrole kvalitete izvode se prema definiranim postupcima, procedurama i uputama.",
+      "item_type": "process_step",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer kontrole kvalitete, line 1700"}],
+      "evidence_quotes": [{"quote_original": "• Izvođenje aktivnosti kontrole kvalitete prema definiranim postupcima, procedurama i uputama izvođača radova i/ili kontrolnim postupcima", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-015",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Modifikacije nuklearne elektrane operativno se vode u skladu s važećim postupcima i standardima nuklearne industrije.",
+      "item_type": "process_step",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer za modifikacije, line 2098"}],
+      "evidence_quotes": [{"quote_original": "• Priprema i operativno vođenje modifikacija nuklearnoj elektrani u skladu sa važećim postupcima i standardima u nuklearnoj industriji", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-016",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Administrativna potpora obrađuje tehnološku i netehnološku dokumentaciju uz osiguravanje sljedljivosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto referent za administrativne i komunikacijske poslove, lines 1793-1795"}],
+      "evidence_quotes": [
+        {"quote_original": "• Vođenje tehničke dokumentacije iz područja osiguranja i kontrole kvalitete", "quote_language": "hr"},
+        {"quote_original": "• Administrativna potpora pri procesiranju tehnološke i ne-tehnološke dokumentacije", "quote_language": "hr"},
+        {"quote_original": "(nacrti, procedure, ...) uz osiguravanje procesa sljedljivosti", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-017",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Tehničar nadzora dokumentacije kontrolirano postavlja zapise u sustav i administrativno podupire distribuciju dokumenata nabave.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto tehničar nadzora dokumentacije, lines 2177-2179"}],
+      "evidence_quotes": [
+        {"quote_original": "• Skeniranje zapisa, obrada i kontrolirano postavljanje u sustav za nadzor dokumentacije", "quote_language": "hr"},
+        {"quote_original": "• Podrška inženjeru i vodećem inženjeru za nadzor dokumenata pri distribuciji dokumenata nabave -", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-018",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Vodeći inženjer osiguranja kvalitete ocjenjuje i nadzire dobavljače.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer osiguranja kvalitete, line 1740"}],
+      "evidence_quotes": [{"quote_original": "• Ocjenjivanje i nadzor dobavljača u nuklearnoj elektrani", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-019",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Inženjer potpore nabavi ocjenjuje ponude prema sigurnosnim i tehničkim zahtjevima te sudjeluje u inspekcijskom pregledu od ulazne kontrole do skladišta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto inženjer potpore nabavi, lines 2214-2216"}],
+      "evidence_quotes": [
+        {"quote_original": "• Ocjenjivanje ponuda za robu i usluge prema sigurnosnim i tehničkim zahtjevima", "quote_language": "hr"},
+        {"quote_original": "• Sudjelovanje u inspekcijskom pregledu postupka nabave robe od ulazne kontrole do prijenosa u skladište", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-020",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "Kontrola konfiguracije obuhvaća održavanje podataka o opremi i postavljanje identifikacijskih oznaka.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer kontrole konfiguracije, lines 1931-1935"}],
+      "evidence_quotes": [
+        {"quote_original": "• Sustavno ažuriranje postojećih podataka u bazama kontrole konfiguracije opreme u nuklearnoj elektrani", "quote_language": "hr"},
+        {"quote_original": "• Sudjelovanje u pripremi, izradi i postavljanju identifikacijskih oznaka opreme u tehnološkom dijelu nuklearne elektrane", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-021",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "Inženjer kontrole konfiguracije periodično pregledava i označava opremu te provjerava podatke o pojedinačnoj opremi.",
+      "item_type": "process_step",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto inženjer kontrole konfiguracije, lines 1982-1985"}],
+      "evidence_quotes": [
+        {"quote_original": "• Periodični pregled i označavanje opreme u skladu sa valjanim postupcima", "quote_language": "hr"},
+        {"quote_original": "• Obavljanje vizualnog pregleda nuklearne elektrane za provjeru podataka o pojedinačnoj opremi", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-022",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Vodeći inženjer kontrole kvalitete izvodi neovisni nadzor u tehnološkom dijelu elektrane.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer kontrole kvalitete, line 1707"}],
+      "evidence_quotes": [{"quote_original": "• Izvođenje aktivnosti neovisnog nadzora u tehnološkom djelu elektrane", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-023",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "Vodeći inženjer za elektromotorno upravljane ventile izvodi, dokumentira i evaluira rezultate testiranja te revidira postupke i učestalost testiranja.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer za elektromotorno upravljane ventile, lines 1632-1634"}],
+      "evidence_quotes": [
+        {"quote_original": "- Izvođenje, dokumentiranje i evaluacija rezultata testiranja elektromotorno upravljanih ventila", "quote_language": "hr"},
+        {"quote_original": "- Revizija postupaka i frekvencije izvođenja testiranja statičkih i dinamičkih elektromotorno upravljanih ventila", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-024",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "Vodeći inženjer osiguranja kvalitete izrađuje planove nadzora i nadzire testiranje opreme.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer osiguranja kvalitete, lines 1746-1747"}],
+      "evidence_quotes": [
+        {"quote_original": "• Izrada planova nadzora, nadzor izvedbe aktivnosti i testiranja opreme u nuklearnoj", "quote_language": "hr"},
+        {"quote_original": "  elektrani", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-025",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "Vodeći inženjer nadzora starenja kablova izvodi programski predviđena mjerenja i pregledava rezultate kalibracijskih mjerenja.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer nadzora starenja kablova, lines 1664-1665"}],
+      "evidence_quotes": [
+        {"quote_original": "- Izvođenje mjerenja predviđenih programom nadzora staranja kablova", "quote_language": "hr"},
+        {"quote_original": "- Pregled rezultata kalibracijskih mjerenja na kabelima", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-026",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "Inženjer potpore nabavi podupire održavanje i kontrolu robe pohranjene u nuklearnoj elektrani.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto inženjer potpore nabavi, line 2220"}],
+      "evidence_quotes": [{"quote_original": "• Potpora svim aktivnostima održavanje i kontrole skladištene robe u nuklearnoj elektrani", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-027",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "Voditelj QA poslova analizira utvrđene nesukladnosti.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto voditelj QA poslova, line 1552"}],
+      "evidence_quotes": [{"quote_original": "• Analiza nađenih nesukladnosti", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-028",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "Vodeći inženjer kontrole kvalitete bilježi tehnička i procesna odstupanja prema važećim zahtjevima.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer kontrole kvalitete, line 1701"}],
+      "evidence_quotes": [{"quote_original": "• Bilježenje svih tehničkih i procesnih odstupanja u skladu sa važećim zahtjevima", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-029",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Voditelj QA poslova nadzire popravne radnje, verificira njihov rezultat i prati preventivne akcije.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto voditelj QA poslova, lines 1553-1555"}],
+      "evidence_quotes": [
+        {"quote_original": "• Nadzor provođenja popravnih radnji", "quote_language": "hr"},
+        {"quote_original": "• Verifikacija da su popravne radnje postigle željeni rezultat", "quote_language": "hr"},
+        {"quote_original": "• Identifikacija preventivnih akcija i praćenje njihovog provođenja", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-030",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Vodeći inženjer za elektromotorno upravljane ventile provodi analize i akcije u okviru programa korektivnih radnji.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer za elektromotorno upravljane ventile, line 1635"}],
+      "evidence_quotes": [{"quote_original": "- Provođenje analiza, akcija i izvršenje istih u okviru programa korektivnih radnji iz područja elektromotorno upravljanih ventila", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-031",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Administrativno radno mjesto odgovorno je za arhiviranje QA i druge dokumentacije.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto referent za administrativne, nabavne, računovodstvene i kadrovske poslove, line 1516"}],
+      "evidence_quotes": [{"quote_original": "- Arhiviranje financijske, kadrovske, QA i druge dokumentacije", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-032",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Vodeći inženjer osiguranja kvalitete priprema i arhivira postupke i programe osiguranja kvalitete.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer osiguranja kvalitete, lines 1743-1744"}],
+      "evidence_quotes": [
+        {"quote_original": "• Pregled i procesiranje te priprema i arhiviranje postupaka i programa iz područja osiguranja", "quote_language": "hr"},
+        {"quote_original": "  kvalitete u nuklearnoj elektrani", "quote_language": "hr"}
+      ]
+    },
+    {
+      "item_id": "DOC0021-033",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Voditelj QA poslova planira i provodi interne i eksterne audite.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto voditelj QA poslova, line 1551"}],
+      "evidence_quotes": [{"quote_original": "• Planiranje i provođenje internih i eksternih audita", "quote_language": "hr"}]
+    },
+    {
+      "item_id": "DOC0021-034",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Vodeći inženjer osiguranja kvalitete provodi planirane audite procesa, organizacijskih jedinica i dobavljača, izrađuje izvještaje i prati korektivne akcije.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [{"source_locator": "Radno mjesto vodeći inženjer osiguranja kvalitete, lines 1737-1739"}],
+      "evidence_quotes": [
+        {"quote_original": "• Izvođenje audita procesa, organizacijskih jedinica, dobavljača opreme i/ili usluga u skladu", "quote_language": "hr"},
+        {"quote_original": "  sa godišnjim planom, priprema izvještaja s procjena (audita), te praćenje izvođenja", "quote_language": "hr"},
+        {"quote_original": "  korektivnih akcija", "quote_language": "hr"}
+      ]
+    }
+  ]
+}

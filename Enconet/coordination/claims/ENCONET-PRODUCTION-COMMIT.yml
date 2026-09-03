@@ -1,0 +1,10 @@
+task: ENCONET-PRODUCTION-COMMIT
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T01:30:27Z
+last_renewed_at_utc: 2026-09-03T01:30:27Z
+expires_at_utc: 2026-09-03T09:30:27Z
+anticipated_files:
+  - Enconet/**
+note: Owner-authorized Enconet-only production closeout boundary; exclude Enconet/.obsidian, Enconet/.tmp, all doc/support-transfer paths, and all Claude-owned infrastructure. Claude Code assigned reviewer.
+released_at_utc: 2026-09-03T02:53:11Z
