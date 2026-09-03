@@ -415,12 +415,14 @@ tools from that box.
 
 - [ ] Every evaluation reference resolves or generation fails closed.
 - [ ] Production bundle generation is deterministic.
-- [ ] SQLite is opened read-only and queried with parameters.
-- [ ] Bundle validation is independent of the renderer.
+- [x] SQLite is opened read-only and queried with parameters.
+- [x] Bundle validation is independent of the renderer.
 
 ## Task EA1.1 — Implement a read-only crumb resolver
 
 **GitHub issue title:** `EA1.1: Resolve crumb → quotes → chunk → document`
+
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
 
 **ELI5:** Given a crumb number, retrieve the note, every highlighted sentence, and the exact source
 chapter it came from.
@@ -440,10 +442,10 @@ chapter it came from.
 
 **Acceptance criteria**
 
-- [ ] Resolver returns the complete production sample correctly, including all three quotes.
-- [ ] Resolver never writes to the database.
-- [ ] Cross-document or hash-inconsistent traceability fails closed.
-- [ ] Focused unit suite passes.
+- [x] Resolver returns the complete production sample correctly, including all three quotes.
+- [x] Resolver never writes to the database.
+- [x] Cross-document or hash-inconsistent traceability fails closed.
+- [x] Focused unit suite passes.
 
 **Dependencies:** EA0.3–EA0.4, EA0.6.
 
@@ -1192,7 +1194,7 @@ The feature is complete only when all of the following are true:
 | EA0.4 | Navigation/safety/accessibility contract | M0 | EA0.3 | [x] |
 | EA0.5 | Create isolated Conda environment | M0 | — | [x] |
 | EA0.6 | Install/verify controlled dependencies | M0 | EA0.5 | [x] |
-| EA1.1 | Read-only crumb resolver | M1 | EA0.3–EA0.4, EA0.6 | [ ] |
+| EA1.1 | Read-only crumb resolver | M1 | EA0.3–EA0.4, EA0.6 | [x] |
 | EA1.2 | Complete reference entity graph | M1 | EA1.1 | [ ] |
 | EA1.3 | Adjacent chunk context | M1 | EA1.1 | [ ] |
 | EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [ ] |
@@ -1233,6 +1235,6 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA0.6 are complete, with independent Claude review queued under ADR-0023. The versioned
-evidence-bundle and navigation contracts are executable and verified. Start **EA1.1** next to build
-the read-only crumb resolver against SQLite without mutating audit state.
+EA0.1–EA1.1 are complete, with independent Claude review queued under ADR-0023. The read-only crumb
+resolver now retrieves complete source evidence and fails closed on broken traceability. Start
+**EA1.2** next to resolve the remaining report-reference entity graph within the selected run.

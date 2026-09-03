@@ -1,0 +1,15 @@
+task: EA1.1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T17:43:31Z
+last_renewed_at_utc: 2026-09-03T17:43:31Z
+expires_at_utc: 2026-09-04T01:43:31Z
+anticipated_files:
+  - Enconet/scripts/evidence_resolver.py
+  - Enconet/tests/test_evidence_crumb_resolver.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA1.1.yml
+  - Enconet/coordination/messages/CX_*ea1-1*.md
+note: Implement EA1.1 only: read-only parameterized SQLite crumb resolver with fail-closed traceability; no renderer or controlled-output changes.
+released_at_utc: 2026-09-03T18:18:42Z
