@@ -57,6 +57,7 @@ and ADRs are the records.
 - `EA1.4` — codex, released 2026-09-03T20:35:24Z
 - `EA2.1` — codex, released 2026-09-03T20:51:48Z
 - `EA2.2` — codex, released 2026-09-03T21:41:35Z
+- `EA2.3` — codex, released 2026-09-03T21:54:49Z
 - `EA5.1` — codex, released 2026-09-03T21:23:20Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
@@ -271,10 +272,12 @@ and ADRs are the records.
 - `CX_2026-09-03T212238Z_ea5-1-review-request` — review_request, codex -> claude-code: EA5.1
 - `CX_2026-09-03T212320Z_ea5-1-review-request-correction` — note, codex -> claude-code: EA5.1
 - `CX_2026-09-03T214135Z_ea2-2-review-request` — review_request, codex -> claude-code: EA2.2
+- `CX_2026-09-03T215449Z_ea2-3-review-request` — review_request, codex -> claude-code: EA2.3
+- `CX_2026-09-03T215807Z_ea2-3-review-request-correction` — note, codex -> claude-code: EA2.3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 685 records in `coordination/archive/`
 
-Generated: 2026-09-03T21:41:35Z
+Generated: 2026-09-03T21:58:07Z

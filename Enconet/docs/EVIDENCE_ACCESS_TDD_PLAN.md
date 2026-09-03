@@ -629,10 +629,10 @@ conclusion.
 
 **Acceptance criteria**
 
-- [ ] Exact quotes are highlighted without altering displayed source text.
-- [ ] Ambiguous/repeated matches are disclosed rather than silently selecting one.
-- [ ] A failed highlight still shows the quote, locator, and chunk with a warning.
-- [ ] Adjacent navigation stays within the selected document.
+- [x] Exact quotes are highlighted without altering displayed source text.
+- [x] Ambiguous/repeated matches are disclosed rather than silently selecting one.
+- [x] A failed highlight still shows the quote, locator, and chunk with a warning.
+- [x] Adjacent navigation stays within the selected document.
 
 **Dependencies:** EA1.3, EA2.2.
 
@@ -1204,7 +1204,7 @@ The feature is complete only when all of the following are true:
 | EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [x] |
 | EA2.1 | Embed validated payload | M2 | EA1.4 | [x] |
 | EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [x] |
-| EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [ ] |
+| EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [x] |
 | EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [ ] |
 | EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [ ] |
 | EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [ ] |
@@ -1239,7 +1239,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA2.2 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-candidate dashboard now exposes each crumb as a keyboard-operable control and opens the exact
-read-only source evidence in an accessible drawer. Start **EA2.3** next to add safe quote
-highlighting and bounded adjacent-chunk navigation.
+EA0.1–EA2.3 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+candidate evidence drawer now highlights exact source quotes, discloses ambiguous, normalized,
+and failed matches, and navigates bounded adjacent chunks without crossing documents. Start
+**EA2.4** next to add owner-friendly copy and print controls for complete evidence records.

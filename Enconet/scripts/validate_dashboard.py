@@ -114,19 +114,23 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
             "artifact-metadata", "metadata-package-hash", "metadata-bundle-hash",
             "evidence-backdrop", "evidence-drawer", "evidence-panel-heading",
             "evidence-close", "evidence-status", "evidence-resolved-content",
-            "evidence-quotes", "evidence-primary-chunk",
+            "evidence-quotes", "evidence-primary-chunk", "evidence-previous-chunk",
+            "evidence-next-chunk", "evidence-current-chunk-id",
+            "evidence-highlight-status", "evidence-chunk-text",
         ):
             if f'id="{element_id}"' not in html:
                 errors.append(f"missing evidence artifact metadata element: {element_id}")
         for function in (
             "evidenceControl", "appendEvidenceControls", "renderEvidenceCrumb",
-            "openEvidence", "closeEvidence",
+            "openEvidence", "closeEvidence", "quoteRanges", "renderHighlightedText",
+            "renderChunk", "navigateChunk",
         ):
             if not re.search(rf"function\s+{re.escape(function)}\s*\(", html):
                 errors.append(f"missing evidence navigation JS function: {function}")
         evidence_contract = (
             'role="dialog"', 'aria-modal="true"', 'tabindex="-1"',
             'role="status"', 'aria-live="polite"', 'data-evidence-id',
+            'data-quote-ids', "document.createTextNode(source.slice(start,end))",
             "JavaScript is required to open the embedded evidence; reference IDs "
             "remain visible for manual lookup.",
         )

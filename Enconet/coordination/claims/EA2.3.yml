@@ -1,0 +1,19 @@
+task: EA2.3
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T21:45:19Z
+last_renewed_at_utc: 2026-09-03T21:45:19Z
+expires_at_utc: 2026-09-04T05:45:19Z
+anticipated_files:
+  - Enconet/templates/dashboard-template.html
+  - Enconet/scripts/generate_dashboard.py
+  - Enconet/scripts/validate_dashboard.py
+  - Enconet/tests/test_evidence_drawer.py
+  - Enconet/tests/test_quote_highlighting.py
+  - Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA2.3.yml
+  - Enconet/coordination/messages/CX_*ea2-3*.md
+note: Implement EA2.3 only: safe exact/normalized quote highlighting and bounded adjacent chunk navigation in the candidate evidence drawer; preserve approved outputs.
+released_at_utc: 2026-09-03T21:54:49Z
