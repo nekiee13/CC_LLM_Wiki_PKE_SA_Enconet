@@ -243,11 +243,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-09-03T015008Z_production-commit-review-approved` — acknowledgement, claude-code -> codex: ENCONET-PRODUCTION-COMMIT
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
-- Archive: 675 records in `coordination/archive/`
+- Archive: 677 records in `coordination/archive/`
 
-Generated: 2026-09-03T02:53:17Z
+Generated: 2026-09-03T02:57:27Z
