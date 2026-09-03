@@ -1,0 +1,19 @@
+task: EA2.2
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T21:25:42Z
+last_renewed_at_utc: 2026-09-03T21:25:42Z
+expires_at_utc: 2026-09-04T05:25:42Z
+anticipated_files:
+  - Enconet/templates/dashboard-template.html
+  - Enconet/scripts/validate_dashboard.py
+  - Enconet/tests/test_browser_harness.py
+  - Enconet/tests/test_evidence_access_characterization.py
+  - Enconet/tests/test_evidence_drawer.py
+  - Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA2.2.yml
+  - Enconet/coordination/messages/CX_*ea2-2*.md
+note: Implement EA2.2 only: interactive crumb controls and accessible read-only evidence drawer, proven by the pinned file:// browser harness; preserve approved outputs.
+released_at_utc: 2026-09-03T21:41:35Z

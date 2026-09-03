@@ -30,6 +30,23 @@ UI = {
     "hr": {"title":"Nadzorna ploča ocjene Dodatka B","kicker":"Izvanmrežna nadzorna ploča","score":"Ponderirana ocjena","applicable":"Primjenjivi kriteriji","classification":"Klasifikacija","summary":"Sažetak","summary_text":"Paket sadrži {count} primjenjivih kriterija s ponderiranom ocjenom {score}.","distribution":"Raspodjela klasifikacija","filter":"Ocjena","search":"Pretraži","sort":"Obrni redoslijed","expand":"Proširi sve","collapse":"Sažmi sve","print":"Ispiši","criteria":"Kartice kriterija","matrix":"Matrica ocjene","actions":"Prioritetne radnje","details":"Prikaži / sakrij pojedinosti","affirmative":"Potvrdno","contrary":"Suprotno","judgement":"Prosudba","none":"nema","na":"nije primjenjivo","all":"Sve ocjene","id":"Kriterij","name":"Naziv","rating":"Ocjena","criterion_score":"Bodovi","evidence":"Dokazi","none_actions":"Nema odobrenih prioritetnih radnji."},
 }
 
+EVIDENCE_UI = {
+    "en": {"evidence_title": "Source evidence", "evidence_close": "Close evidence",
+           "evidence_statement": "Statement", "evidence_document": "Source document",
+           "evidence_traceability": "Traceability", "evidence_quotes": "Exact quotes",
+           "evidence_chunk": "Source chapter", "evidence_unavailable": "Evidence unavailable"},
+    "sl": {"evidence_title": "Izvorni dokaz", "evidence_close": "Zapri dokaz",
+           "evidence_statement": "Trditev", "evidence_document": "Izvorni dokument",
+           "evidence_traceability": "Sledljivost", "evidence_quotes": "Natančni navedki",
+           "evidence_chunk": "Izvorno poglavje", "evidence_unavailable": "Dokaz ni na voljo"},
+    "hr": {"evidence_title": "Izvorni dokaz", "evidence_close": "Zatvori dokaz",
+           "evidence_statement": "Tvrdnja", "evidence_document": "Izvorni dokument",
+           "evidence_traceability": "Sljedivost", "evidence_quotes": "Točni citati",
+           "evidence_chunk": "Izvorno poglavlje", "evidence_unavailable": "Dokaz nije dostupan"},
+}
+for _language, _labels in EVIDENCE_UI.items():
+    UI[_language].update(_labels)
+
 
 def _script_json(value: object) -> str:
     return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))

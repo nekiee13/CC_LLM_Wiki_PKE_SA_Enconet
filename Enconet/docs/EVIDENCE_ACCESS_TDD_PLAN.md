@@ -602,10 +602,10 @@ filing cabinet onto the screen.
 
 **Acceptance criteria**
 
-- [ ] Production sample opens the correct chunk and all three quotes.
-- [ ] Drawer does not mutate evaluation data.
-- [ ] Keyboard-only navigation completes the same workflow as mouse navigation.
-- [ ] Existing criterion filter, search, sort, expand, collapse, and print controls still work.
+- [x] Production sample opens the correct chunk and all three quotes.
+- [x] Drawer does not mutate evaluation data.
+- [x] Keyboard-only navigation completes the same workflow as mouse navigation.
+- [x] Existing criterion filter, search, sort, expand, collapse, and print controls still work.
 
 **Dependencies:** EA2.1.
 
@@ -1203,7 +1203,7 @@ The feature is complete only when all of the following are true:
 | EA1.3 | Adjacent chunk context | M1 | EA1.1 | [x] |
 | EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [x] |
 | EA2.1 | Embed validated payload | M2 | EA1.4 | [x] |
-| EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [ ] |
+| EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [x] |
 | EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [ ] |
 | EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [ ] |
 | EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [ ] |
@@ -1239,7 +1239,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA2.1 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-Owner-approved pinned browser harness now verifies the candidate through `file://`, fails
-actionably when its runtime is unavailable, and retains real diagnostics on failure. Start
-**EA2.2** next to implement the clickable evidence controls and accessible detail drawer.
+EA0.1–EA2.2 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+candidate dashboard now exposes each crumb as a keyboard-operable control and opens the exact
+read-only source evidence in an accessible drawer. Start **EA2.3** next to add safe quote
+highlighting and bounded adjacent-chunk navigation.

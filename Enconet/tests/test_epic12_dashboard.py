@@ -112,10 +112,6 @@ def test_renderer_is_deterministic_localized_self_contained_and_valid(language: 
     assert validate_dashboard.validate(source, data, first) == []
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason="EA0.1 RED: dashboard evidence references are still rendered as inert text",
-)
 def test_dashboard_evidence_references_render_as_interactive_controls():
     _source, data = dashboard_data()
     html = generate_dashboard.render(data)

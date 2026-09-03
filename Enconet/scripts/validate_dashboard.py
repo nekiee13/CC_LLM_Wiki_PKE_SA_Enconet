@@ -112,9 +112,27 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
                 errors.append(f"evidence bundle/dashboard mismatch: {field}")
         for element_id in (
             "artifact-metadata", "metadata-package-hash", "metadata-bundle-hash",
+            "evidence-backdrop", "evidence-drawer", "evidence-panel-heading",
+            "evidence-close", "evidence-status", "evidence-resolved-content",
+            "evidence-quotes", "evidence-primary-chunk",
         ):
             if f'id="{element_id}"' not in html:
                 errors.append(f"missing evidence artifact metadata element: {element_id}")
+        for function in (
+            "evidenceControl", "appendEvidenceControls", "renderEvidenceCrumb",
+            "openEvidence", "closeEvidence",
+        ):
+            if not re.search(rf"function\s+{re.escape(function)}\s*\(", html):
+                errors.append(f"missing evidence navigation JS function: {function}")
+        evidence_contract = (
+            'role="dialog"', 'aria-modal="true"', 'tabindex="-1"',
+            'role="status"', 'aria-live="polite"', 'data-evidence-id',
+            "JavaScript is required to open the embedded evidence; reference IDs "
+            "remain visible for manual lookup.",
+        )
+        for marker in evidence_contract:
+            if marker not in html:
+                errors.append(f"missing evidence navigation contract marker: {marker}")
     return list(dict.fromkeys(errors))
 
 

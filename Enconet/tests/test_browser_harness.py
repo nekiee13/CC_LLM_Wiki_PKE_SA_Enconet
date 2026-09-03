@@ -95,10 +95,6 @@ def test_http_navigation_is_rejected_before_browser_launch(tmp_path: Path):
         )
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason="EA5.1 RED retained for EA2.2: candidate has no interactive crumb control yet",
-)
 def test_candidate_has_interactive_crumb_control(tmp_path: Path):
     result = browser_harness.run_check(
         CANDIDATE,
