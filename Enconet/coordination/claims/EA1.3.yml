@@ -1,0 +1,18 @@
+task: EA1.3
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T19:51:57Z
+last_renewed_at_utc: 2026-09-03T19:51:57Z
+expires_at_utc: 2026-09-04T03:51:57Z
+anticipated_files:
+  - Enconet/scripts/evidence_resolver.py
+  - Enconet/tests/test_evidence_adjacent_context.py
+  - Enconet/schemas/evidence_bundle.schema.json
+  - Enconet/scripts/validate_evidence_bundle.py
+  - Enconet/tests/test_evidence_bundle_schema.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA1.3.yml
+  - Enconet/coordination/messages/CX_*ea1-3*.md
+note: Implement EA1.3 only: bounded same-document previous/next chunk context with explicit document-edge versus truncation semantics.
+released_at_utc: 2026-09-03T20:14:07Z

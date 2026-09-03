@@ -62,6 +62,8 @@ def valid_bundle() -> dict:
                 "source_sha256": "d" * 64,
                 "previous_chunk_id": None,
                 "next_chunk_id": None,
+                "context_truncated_before": False,
+                "context_truncated_after": False,
                 "viewer_target": "#evidence/chunk/CHUNK-DOC-0021-0105",
             }
         ],
@@ -208,6 +210,16 @@ def test_action_priority_matches_canonical_database_boolean_semantics():
     invalid["actions"][0]["priority"] = 2
     assert _has_error(invalid, "wrong type: action.priority")
 
+
+def test_chunk_context_boundary_flags_are_boolean_and_consistent():
+    invalid_type = valid_bundle()
+    invalid_type["chunks"][0]["context_truncated_before"] = 1
+    assert _has_error(invalid_type, "wrong type: chunk.context_truncated_before")
+
+    conflicting = valid_bundle()
+    conflicting["chunks"][0]["previous_chunk_id"] = "CHUNK-DOC-0021-0104"
+    conflicting["chunks"][0]["context_truncated_before"] = True
+    assert _has_error(conflicting, "inconsistent chunk context boundary")
 
 def test_duplicate_quote_ids_and_source_positions_are_rejected():
     duplicate_id = valid_bundle()

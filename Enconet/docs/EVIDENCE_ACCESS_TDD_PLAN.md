@@ -491,6 +491,8 @@ make every label lead somewhere useful.
 
 **GitHub issue title:** `EA1.3: Provide bounded previous/next source context`
 
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Let the Owner look one page before or after the quoted chapter without dumping the whole
 filing cabinet onto the screen.
 
@@ -506,9 +508,9 @@ filing cabinet onto the screen.
 
 **Acceptance criteria**
 
-- [ ] No adjacent navigation crosses a document boundary.
-- [ ] First/last chunk behavior is explicit and visible.
-- [ ] Context limits are documented and validated.
+- [x] No adjacent navigation crosses a document boundary.
+- [x] First/last chunk behavior is explicit and visible.
+- [x] Context limits are documented and validated.
 
 **Dependencies:** EA1.1.
 
@@ -1198,7 +1200,7 @@ The feature is complete only when all of the following are true:
 | EA0.6 | Install/verify controlled dependencies | M0 | EA0.5 | [x] |
 | EA1.1 | Read-only crumb resolver | M1 | EA0.3–EA0.4, EA0.6 | [x] |
 | EA1.2 | Complete reference entity graph | M1 | EA1.1 | [x] |
-| EA1.3 | Adjacent chunk context | M1 | EA1.1 | [ ] |
+| EA1.3 | Adjacent chunk context | M1 | EA1.1 | [x] |
 | EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [ ] |
 | EA2.1 | Embed validated payload | M2 | EA1.4 | [ ] |
 | EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [ ] |
@@ -1237,6 +1239,6 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA1.2 are complete, with independent Claude review queued under ADR-0023. The run-scoped
-registry now resolves every production report reference and rejects silent cross-run relationships.
-Start **EA1.3** next to add bounded previous/next chunk context without crossing documents.
+EA0.1–EA1.3 are complete, with independent Claude review queued under ADR-0023. Evidence context
+now includes bounded, same-document previous/next chunks with explicit truncation versus document
+edges. Start **EA1.4** next to generate and validate the deterministic run-scoped evidence bundle.

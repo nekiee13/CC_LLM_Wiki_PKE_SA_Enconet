@@ -123,7 +123,8 @@
       "additionalProperties": false,
       "required": [
         "chunk_id", "document_id", "sequence", "heading_path", "text", "char_start",
-        "char_end", "source_sha256", "previous_chunk_id", "next_chunk_id", "viewer_target"
+        "char_end", "source_sha256", "previous_chunk_id", "next_chunk_id",
+        "context_truncated_before", "context_truncated_after", "viewer_target"
       ],
       "properties": {
         "chunk_id": {"$ref": "#/$defs/chunkId"},
@@ -136,6 +137,8 @@
         "source_sha256": {"$ref": "#/$defs/sha256"},
         "previous_chunk_id": {"anyOf": [{"$ref": "#/$defs/chunkId"}, {"type": "null"}]},
         "next_chunk_id": {"anyOf": [{"$ref": "#/$defs/chunkId"}, {"type": "null"}]},
+        "context_truncated_before": {"type": "boolean"},
+        "context_truncated_after": {"type": "boolean"},
         "viewer_target": {"type": "string", "pattern": "^#evidence/chunk/CHUNK-DOC-\\d{4}-\\d{4}$"}
       }
     },

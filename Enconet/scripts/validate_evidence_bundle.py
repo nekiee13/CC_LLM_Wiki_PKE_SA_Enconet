@@ -33,7 +33,8 @@ ENTITY_FIELDS = {
     },
     "chunks": {
         "chunk_id", "document_id", "sequence", "heading_path", "text", "char_start",
-        "char_end", "source_sha256", "previous_chunk_id", "next_chunk_id", "viewer_target",
+        "char_end", "source_sha256", "previous_chunk_id", "next_chunk_id",
+        "context_truncated_before", "context_truncated_after", "viewer_target",
     },
     "evaluations": {
         "evaluation_id", "criterion_id", "evidence_crumb_ids", "gap_ids", "viewer_target",
@@ -259,6 +260,13 @@ def validate(bundle: object, schema_path: Path = SCHEMA) -> list[str]:
         if (isinstance(row["char_start"], int) and isinstance(row["char_end"], int)
                 and row["char_end"] < row["char_start"]):
             errors.append("invalid chunk character range")
+        for field in ("context_truncated_before", "context_truncated_after"):
+            if not isinstance(row[field], bool):
+                errors.append(f"wrong type: chunk.{field}")
+        if ((row["previous_chunk_id"] is not None and row["context_truncated_before"] is True)
+                or (row["next_chunk_id"] is not None
+                    and row["context_truncated_after"] is True)):
+            errors.append(f"inconsistent chunk context boundary: {row['chunk_id']}")
     for row in collections["quotes"]:
         if not isinstance(row["source_order"], int) or isinstance(row["source_order"], bool):
             errors.append("wrong type: quote.source_order")
@@ -318,6 +326,18 @@ def validate(bundle: object, schema_path: Path = SCHEMA) -> list[str]:
         _orphan(row["document_id"], ids["documents"], "document", row["chunk_id"], errors)
         _orphan(row["previous_chunk_id"], ids["chunks"], "chunk", row["chunk_id"], errors)
         _orphan(row["next_chunk_id"], ids["chunks"], "chunk", row["chunk_id"], errors)
+        previous = indexes["chunks"].get(row["previous_chunk_id"])
+        following = indexes["chunks"].get(row["next_chunk_id"])
+        if previous is not None and (
+            previous["document_id"] != row["document_id"]
+            or previous["next_chunk_id"] != row["chunk_id"]
+        ):
+            errors.append(f"inconsistent previous chunk: {row['chunk_id']}")
+        if following is not None and (
+            following["document_id"] != row["document_id"]
+            or following["previous_chunk_id"] != row["chunk_id"]
+        ):
+            errors.append(f"inconsistent next chunk: {row['chunk_id']}")
     for row in collections["evaluations"]:
         _orphan_many(row["evidence_crumb_ids"], ids["crumbs"], "crumb", row["evaluation_id"], errors)
         _orphan_many(row["gap_ids"], ids["gaps"], "gap", row["evaluation_id"], errors)

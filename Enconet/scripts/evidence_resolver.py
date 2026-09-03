@@ -13,6 +13,7 @@ import evidence_navigation
 
 
 ENCONET = Path(__file__).resolve().parents[1]
+MAX_CONTEXT_RADIUS = 2
 
 
 class EvidenceIntegrityError(RuntimeError):
@@ -52,8 +53,15 @@ def _target(entity_type: str, entity_id: str) -> str:
         ) from exc
 
 
-def resolve_crumb(db_path: Path | str, crumb_id: str) -> ResolvedCrumb | None:
-    """Resolve one active crumb or return None when it is not active/present."""
+def resolve_crumb(
+    db_path: Path | str, crumb_id: str, *, context_radius: int = 1
+) -> ResolvedCrumb | None:
+    """Resolve one active crumb with at most two adjacent chunks on each side."""
+    if (not isinstance(context_radius, int) or isinstance(context_radius, bool)
+            or not 0 <= context_radius <= MAX_CONTEXT_RADIUS):
+        raise ValueError(
+            f"context_radius must be an integer from 0 to {MAX_CONTEXT_RADIUS}"
+        )
     with _connect_readonly(db_path) as connection:
         crumb = connection.execute(
             """
@@ -97,7 +105,7 @@ def resolve_crumb(db_path: Path | str, crumb_id: str) -> ResolvedCrumb | None:
             rows_by_quote.setdefault(row["quote_id"], []).append(row)
 
         quote_entities: list[dict] = []
-        chunk_entities: dict[str, dict] = {}
+        linked_chunk_ids: set[str] = set()
         for source_order, quote_id in enumerate(sorted(rows_by_quote), start=1):
             rows = rows_by_quote[quote_id]
             if len(rows) > 1:
@@ -136,18 +144,65 @@ def resolve_crumb(db_path: Path | str, crumb_id: str) -> ResolvedCrumb | None:
                 "confidence": confidence,
                 "viewer_target": _target("quote", quote_id),
             })
+            linked_chunk_ids.add(row["chunk_id"])
+
+        ordered_chunks = connection.execute(
+            "SELECT * FROM document_chunks WHERE doc_id = ? "
+            "ORDER BY char_start, char_end, chunk_id",
+            (crumb["doc_id"],),
+        ).fetchall()
+        position_by_id = {
+            row["chunk_id"]: position for position, row in enumerate(ordered_chunks)
+        }
+        missing_positions = linked_chunk_ids - set(position_by_id)
+        if missing_positions:
+            raise EvidenceIntegrityError(
+                f"missing chunk {sorted(missing_positions)[0]} for crumb {crumb_id}"
+            )
+        included_positions: set[int] = set()
+        for chunk_id in linked_chunk_ids:
+            position = position_by_id[chunk_id]
+            start = max(0, position - context_radius)
+            end = min(len(ordered_chunks), position + context_radius + 1)
+            included_positions.update(range(start, end))
+
+        chunk_entities: dict[str, dict] = {}
+        projected_chunk_ids: list[str] = []
+        for position in sorted(included_positions):
+            row = ordered_chunks[position]
             chunk_id = row["chunk_id"]
+            if row["source_sha256"] != crumb["sha256"]:
+                raise EvidenceIntegrityError(
+                    f"source hash mismatch for context chunk {chunk_id}"
+                )
+            previous_position = position - 1
+            next_position = position + 1
+            previous_id = (
+                ordered_chunks[previous_position]["chunk_id"]
+                if previous_position in included_positions else None
+            )
+            next_id = (
+                ordered_chunks[next_position]["chunk_id"]
+                if next_position in included_positions else None
+            )
             chunk_entities[chunk_id] = {
                 "chunk_id": chunk_id,
-                "document_id": row["chunk_document_id"],
+                "document_id": row["doc_id"],
                 "sequence": int(chunk_id.rsplit("-", 1)[1]),
                 "heading_path": row["heading_path"],
                 "text": row["chunk_text"],
                 "char_start": row["char_start"],
                 "char_end": row["char_end"],
                 "source_sha256": row["source_sha256"],
+                "previous_chunk_id": previous_id,
+                "next_chunk_id": next_id,
+                "context_truncated_before": position > 0 and previous_id is None,
+                "context_truncated_after": (
+                    position < len(ordered_chunks) - 1 and next_id is None
+                ),
                 "viewer_target": _target("chunk", chunk_id),
             }
+            projected_chunk_ids.append(chunk_id)
 
         evaluation_ids = [
             row[0] for row in connection.execute(
@@ -157,7 +212,7 @@ def resolve_crumb(db_path: Path | str, crumb_id: str) -> ResolvedCrumb | None:
             )
         ]
         quote_ids = [row["quote_id"] for row in quote_entities]
-        chunk_ids = sorted(chunk_entities)
+        chunk_ids = sorted(linked_chunk_ids)
         return {
             "crumb": {
                 "crumb_id": crumb["item_id"],
@@ -181,7 +236,7 @@ def resolve_crumb(db_path: Path | str, crumb_id: str) -> ResolvedCrumb | None:
                 "viewer_target": _target("document", crumb["doc_id"]),
             },
             "quotes": quote_entities,
-            "chunks": [chunk_entities[chunk_id] for chunk_id in chunk_ids],
+            "chunks": [chunk_entities[chunk_id] for chunk_id in projected_chunk_ids],
         }
 
 
@@ -389,6 +444,63 @@ def build_entity_registry(
         )
         add(_entity("document", doc_id, documents[doc_id], {"crumbs": related_crumbs}))
 
+    merged_chunks: dict[str, dict] = {}
+    context_for_chunks: dict[str, set[str]] = {}
+    for crumb_id, projection in sorted(crumb_projections.items()):
+        for chunk in projection["chunks"]:
+            chunk_id = chunk["chunk_id"]
+            context_for_chunks.setdefault(chunk_id, set()).add(crumb_id)
+            existing = merged_chunks.get(chunk_id)
+            if existing is None:
+                merged_chunks[chunk_id] = dict(chunk)
+                continue
+            stable_fields = (
+                "document_id", "sequence", "heading_path", "text", "char_start",
+                "char_end", "source_sha256", "viewer_target",
+            )
+            if any(existing[field] != chunk[field] for field in stable_fields):
+                raise EvidenceIntegrityError(f"conflicting context chunk: {chunk_id}")
+            for pointer in ("previous_chunk_id", "next_chunk_id"):
+                if existing[pointer] is None:
+                    existing[pointer] = chunk[pointer]
+                elif chunk[pointer] is not None and existing[pointer] != chunk[pointer]:
+                    raise EvidenceIntegrityError(
+                        f"conflicting {pointer} for context chunk: {chunk_id}"
+                    )
+            existing["context_truncated_before"] = (
+                existing["context_truncated_before"]
+                or chunk["context_truncated_before"]
+            )
+            existing["context_truncated_after"] = (
+                existing["context_truncated_after"]
+                or chunk["context_truncated_after"]
+            )
+
+    # A chunk may appear at the truncated edge of one crumb window and in the middle of another.
+    # Merge the known edge before deriving final truncation flags.
+    for chunk_id, chunk in sorted(merged_chunks.items()):
+        previous = chunk["previous_chunk_id"]
+        following = chunk["next_chunk_id"]
+        if previous is not None:
+            neighbor = merged_chunks.get(previous)
+            if neighbor is None:
+                raise EvidenceIntegrityError(f"missing merged previous chunk: {previous}")
+            if neighbor["next_chunk_id"] not in {None, chunk_id}:
+                raise EvidenceIntegrityError(f"conflicting merged chunk edge: {previous}")
+            neighbor["next_chunk_id"] = chunk_id
+        if following is not None:
+            neighbor = merged_chunks.get(following)
+            if neighbor is None:
+                raise EvidenceIntegrityError(f"missing merged next chunk: {following}")
+            if neighbor["previous_chunk_id"] not in {None, chunk_id}:
+                raise EvidenceIntegrityError(f"conflicting merged chunk edge: {following}")
+            neighbor["previous_chunk_id"] = chunk_id
+    for chunk in merged_chunks.values():
+        if chunk["previous_chunk_id"] is not None:
+            chunk["context_truncated_before"] = False
+        if chunk["next_chunk_id"] is not None:
+            chunk["context_truncated_after"] = False
+
     for crumb_id, projection in sorted(crumb_projections.items()):
         crumb_data = projection["crumb"]
         add(_entity("crumb", crumb_id, crumb_data, {
@@ -407,18 +519,26 @@ def build_entity_registry(
                     "chunk": _reference("chunk", quote["chunk_id"]),
                     "document": _reference("document", crumb_data["document_id"]),
                 }))
-        for chunk in projection["chunks"]:
-            reference = _reference("chunk", chunk["chunk_id"])
-            if reference not in entities:
-                related = sorted(
-                    _reference("crumb", other_id)
-                    for other_id, other in crumb_projections.items()
-                    if chunk["chunk_id"] in other["crumb"]["chunk_ids"]
-                )
-                add(_entity("chunk", chunk["chunk_id"], chunk, {
-                    "document": _reference("document", chunk["document_id"]),
-                    "crumbs": related,
-                }))
+
+    for chunk_id, chunk in sorted(
+        merged_chunks.items(),
+        key=lambda item: (
+            item[1]["document_id"], item[1]["char_start"], item[1]["char_end"], item[0]
+        ),
+    ):
+        direct_crumbs = sorted(
+            _reference("crumb", other_id)
+            for other_id, other in crumb_projections.items()
+            if chunk_id in other["crumb"]["chunk_ids"]
+        )
+        context_crumbs = sorted(
+            _reference("crumb", value) for value in context_for_chunks[chunk_id]
+        )
+        add(_entity("chunk", chunk_id, chunk, {
+            "document": _reference("document", chunk["document_id"]),
+            "crumbs": direct_crumbs,
+            "context_for_crumbs": context_crumbs,
+        }))
 
     gaps_by_evaluation: dict[str, list[str]] = {}
     for row in gaps:
