@@ -1,0 +1,18 @@
+task: EA4.2
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T23:11:26Z
+last_renewed_at_utc: 2026-09-03T23:11:26Z
+expires_at_utc: 2026-09-04T07:11:26Z
+anticipated_files:
+  - Enconet/templates/review-workspace-template.html
+  - Enconet/scripts/generate_review_workspace.py
+  - Enconet/scripts/validate_review_workspace.py
+  - Enconet/tests/test_review_workspace.py
+  - Enconet/outputs/candidates/evidence_access/review_workspace.html
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA4.2.yml
+  - Enconet/coordination/messages/CX_*ea4-2*.md
+note: Implement EA4.2 only: self-contained offline run-selection page rendered from validated catalog, with browser/accessibility/security tests; preserve published artifacts.
+released_at_utc: 2026-09-03T23:16:40Z

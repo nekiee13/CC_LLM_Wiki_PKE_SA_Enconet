@@ -810,6 +810,8 @@ belong together.
 
 **GitHub issue title:** `EA4.2: Add a self-contained review workspace landing page`
 
+**Status:** Completed by Codex on 2026-09-04; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Give the Owner one front door with a list of completed audits rather than a folder full of
 similarly named files.
 
@@ -825,11 +827,11 @@ similarly named files.
 
 **Acceptance criteria**
 
-- [ ] Owner can select the Enconet Appendix B run and open its evidence explorer in two actions or
+- [x] Owner can select the Enconet Appendix B run and open its evidence explorer in two actions or
   fewer.
-- [ ] Page works offline without a server.
-- [ ] Candidate and approved artifacts are visually distinct.
-- [ ] No local directory-scanning permission is requested.
+- [x] Page works offline without a server.
+- [x] Candidate and approved artifacts are visually distinct.
+- [x] No local directory-scanning permission is requested.
 
 **Dependencies:** EA4.1.
 
@@ -1216,7 +1218,7 @@ The feature is complete only when all of the following are true:
 | EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [x] |
 | EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [x] |
 | EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [x] |
-| EA4.2 | Offline run-selection page | M3 | EA4.1 | [ ] |
+| EA4.2 | Offline run-selection page | M3 | EA4.1 | [x] |
 | EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [ ] |
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [ ] |
@@ -1245,7 +1247,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA4.1 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-explicit registry now generates a deterministic catalog containing exactly one fully validated,
-hash-bound production candidate; unrelated output files are never enumerated. Start **EA4.2** next
-to render the self-contained offline run-selection workspace from that catalog.
+EA0.1–EA4.2 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+self-contained workspace opens the registered production Evidence Explorer from `file://` in one
+click, with filtering, keyboard selection, visible candidate/approved state, and fail-closed
+artifact availability. Start **EA4.3** next to define and verify the relocatable package manifest.
