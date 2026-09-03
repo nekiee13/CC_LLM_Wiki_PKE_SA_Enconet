@@ -166,7 +166,7 @@ tests.
 - [x] Candidate artifact naming/promotion policy is recorded without editing the frozen master or
   alignment plans.
 - [x] Current plain-text citations are captured by failing characterization tests.
-- [ ] Evidence bundle schema and URI/fragment grammar are machine-readable.
+- [x] Evidence bundle schema and URI/fragment grammar are machine-readable.
 - [ ] No task contradicts ADR-0007, ADR-0008, or ADR-0011.
 - [x] Base Conda environment exists at `C:\xPY\vEnv\WikiEnconet` with Python 3.13.15 and
   pip 26.2.1.
@@ -283,6 +283,8 @@ nothing gets lost or mixed up.
 
 **GitHub issue title:** `EA0.4: Specify deep-link, file-safety, and accessible-viewer behavior`
 
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Decide exactly what every button does, including what happens when something is missing,
 before drawing the screen.
 
@@ -302,10 +304,10 @@ before drawing the screen.
 
 **Acceptance criteria**
 
-- [ ] All supported reference types have one unambiguous target grammar.
-- [ ] Unknown targets produce a visible “evidence unavailable” state, never a blank panel.
-- [ ] Evidence is inserted using safe text APIs, not interpreted as HTML.
-- [ ] Minimum accessibility behavior is testable without human guesswork.
+- [x] All supported reference types have one unambiguous target grammar.
+- [x] Unknown targets produce a visible “evidence unavailable” state, never a blank panel.
+- [x] Evidence is inserted using safe text APIs, not interpreted as HTML.
+- [x] Minimum accessibility behavior is testable without human guesswork.
 
 **Dependencies:** EA0.3.
 
@@ -1187,7 +1189,7 @@ The feature is complete only when all of the following are true:
 | EA0.1 | Characterize broken navigation | M0 | — | [x] |
 | EA0.2 | Architecture/output decision | M0 | EA0.1 | [x] |
 | EA0.3 | Evidence bundle schema | M0 | EA0.2 | [x] |
-| EA0.4 | Navigation/safety/accessibility contract | M0 | EA0.3 | [ ] |
+| EA0.4 | Navigation/safety/accessibility contract | M0 | EA0.3 | [x] |
 | EA0.5 | Create isolated Conda environment | M0 | — | [x] |
 | EA0.6 | Install/verify controlled dependencies | M0 | EA0.5 | [x] |
 | EA1.1 | Read-only crumb resolver | M1 | EA0.3–EA0.4, EA0.6 | [ ] |
@@ -1231,6 +1233,6 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA0.3, EA0.5, and EA0.6 are complete, with independent Claude review queued under ADR-0023.
-The versioned evidence-bundle schema and semantic validator are now executable contracts. Start
-**EA0.4** next to freeze deep-link grammar, failure presentation, safety, and accessibility behavior.
+EA0.1–EA0.6 are complete, with independent Claude review queued under ADR-0023. The versioned
+evidence-bundle and navigation contracts are executable and verified. Start **EA1.1** next to build
+the read-only crumb resolver against SQLite without mutating audit state.

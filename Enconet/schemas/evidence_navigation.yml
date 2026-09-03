@@ -1,0 +1,72 @@
+# EA0.4 canonical offline Evidence Explorer navigation contract.
+# Later renderer/browser tasks must implement this contract without weakening it.
+schema_version: "1.0"
+
+targets:
+  prefix: "#evidence/"
+  grammar: "#evidence/<entity_type>/<canonical_ascii_id>"
+  encoding: "canonical ASCII only; percent-encoded aliases are rejected"
+  entity_types:
+    crumb:
+      id_regex: '^CRUMB-DOC-\d{4}-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{4}$'
+    document:
+      id_regex: '^DOC-\d{4}$'
+    chunk:
+      id_regex: '^CHUNK-DOC-\d{4}-\d{4}$'
+    quote:
+      id_regex: '^QUOTE-DOC-\d{4}-\d{4}-\d{2}$'
+    evaluation:
+      id_regex: '^EVAL-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)$'
+    gap:
+      id_regex: '^GAP-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{2}$'
+    finding:
+      id_regex: '^FIND-\d{4}$'
+    action:
+      id_regex: '^ACT-\d{4}$'
+
+failure_state:
+  status: unavailable
+  default_language: en
+  messages:
+    en: Evidence unavailable
+    sl: Dokaz ni na voljo
+    hr: Dokaz nije dostupan
+  blank_panel_allowed: false
+  preserve_requested_target: true
+
+history:
+  activate: push
+  initial_load: replace
+  popstate: none
+  hashchange: none
+
+interaction:
+  controls: [a, button]
+  activation_keys: [Enter, Space]
+  native_activation:
+    a: [Enter]
+    button: [Enter, Space]
+  focus_after_navigation: evidence-panel-heading
+  panel_heading_tabindex: -1
+  error_announcement:
+    role: status
+    aria_live: polite
+
+no_script:
+  required: true
+  message: JavaScript is required to open the embedded evidence; reference IDs remain visible for manual lookup.
+
+security:
+  external_urls: reject
+  allowed_url_schemes: []
+  path_traversal: reject
+  percent_encoded_aliases: reject
+  source_html: literal_text
+  source_text_insertion_api: textContent
+  source_links_automatic: false
+
+print:
+  expand_evidence: true
+  include_source_metadata: true
+  include_reference_ids: true
+  hide_interactive_controls: true

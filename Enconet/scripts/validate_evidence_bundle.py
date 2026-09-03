@@ -9,6 +9,8 @@ from typing import Any
 
 import yaml
 
+import evidence_navigation
+
 
 ENCONET = Path(__file__).resolve().parents[1]
 SCHEMA = ENCONET / "schemas" / "evidence_bundle.schema.json"
@@ -272,7 +274,11 @@ def validate(bundle: object, schema_path: Path = SCHEMA) -> list[str]:
 
     for name, (viewer_type, id_field) in VIEWER_TYPES.items():
         for row in collections[name]:
-            if row["viewer_target"] != f"#evidence/{viewer_type}/{row[id_field]}":
+            try:
+                expected_target = evidence_navigation.target(viewer_type, row[id_field])
+            except (TypeError, ValueError):
+                expected_target = None
+            if row["viewer_target"] != expected_target:
                 errors.append(f"invalid viewer_target: {row.get(id_field)}")
 
     order_keys = {

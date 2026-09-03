@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://enconet.local/schemas/evidence_bundle.schema.json",
   "title": "Enconet offline evidence bundle",
+  "$comment": "Canonical viewer-target semantics are owned by evidence_navigation.yml and enforced by validate_evidence_bundle.py.",
   "type": "object",
   "additionalProperties": false,
   "required": [

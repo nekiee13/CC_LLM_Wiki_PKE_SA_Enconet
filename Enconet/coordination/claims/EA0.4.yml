@@ -1,0 +1,19 @@
+task: EA0.4
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T17:26:58Z
+last_renewed_at_utc: 2026-09-03T17:26:58Z
+expires_at_utc: 2026-09-04T01:26:58Z
+anticipated_files:
+  - Enconet/schemas/evidence_navigation.yml
+  - Enconet/scripts/evidence_navigation.py
+  - Enconet/tests/test_evidence_navigation_contract.py
+  - Enconet/schemas/evidence_bundle.schema.json
+  - Enconet/scripts/validate_evidence_bundle.py
+  - Enconet/tests/test_evidence_bundle_schema.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA0.4.yml
+  - Enconet/coordination/messages/CX_*ea0-4*.md
+note: Implement EA0.4 only: deep-link grammar, safety, failure-state, accessibility, history, no-script, and print contracts; no report/dashboard UI implementation.
+released_at_utc: 2026-09-03T17:37:23Z
