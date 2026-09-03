@@ -247,6 +247,8 @@ before anyone pours concrete.
 
 **GitHub issue title:** `EA0.3: Specify a versioned evidence-bundle contract`
 
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Define the labeled boxes used to carry evidence from the database to the browser, so
 nothing gets lost or mixed up.
 
@@ -270,10 +272,10 @@ nothing gets lost or mixed up.
 
 **Acceptance criteria**
 
-- [ ] Schema rejects orphan crumb, quote, chunk, document, and evaluation references.
-- [ ] Schema supports Croatian/Slovenian/English Unicode without escaping away the readable text.
-- [ ] Schema version is explicit and validated.
-- [ ] Ordering rules make equivalent inputs byte-identical.
+- [x] Schema rejects orphan crumb, quote, chunk, document, and evaluation references.
+- [x] Schema supports Croatian/Slovenian/English Unicode without escaping away the readable text.
+- [x] Schema version is explicit and validated.
+- [x] Ordering rules make equivalent inputs byte-identical.
 
 **Dependencies:** EA0.2.
 
@@ -1184,7 +1186,7 @@ The feature is complete only when all of the following are true:
 |---|---|---|---|---|
 | EA0.1 | Characterize broken navigation | M0 | — | [x] |
 | EA0.2 | Architecture/output decision | M0 | EA0.1 | [x] |
-| EA0.3 | Evidence bundle schema | M0 | EA0.2 | [ ] |
+| EA0.3 | Evidence bundle schema | M0 | EA0.2 | [x] |
 | EA0.4 | Navigation/safety/accessibility contract | M0 | EA0.3 | [ ] |
 | EA0.5 | Create isolated Conda environment | M0 | — | [x] |
 | EA0.6 | Install/verify controlled dependencies | M0 | EA0.5 | [x] |
@@ -1229,7 +1231,6 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1, EA0.2, EA0.5, and EA0.6 are complete, with independent Claude review queued under
-ADR-0023. ADR-0024 selects the offline architecture, candidate location, canonical-name policy,
-and controlled promotion approach; browser-test dependencies remain deferred to the separate
-EA5.1 owner decision. Start **EA0.3** next to define and test the versioned evidence-bundle schema.
+EA0.1–EA0.3, EA0.5, and EA0.6 are complete, with independent Claude review queued under ADR-0023.
+The versioned evidence-bundle schema and semantic validator are now executable contracts. Start
+**EA0.4** next to freeze deep-link grammar, failure presentation, safety, and accessibility behavior.

@@ -1,0 +1,16 @@
+task: EA0.3
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T16:54:37Z
+last_renewed_at_utc: 2026-09-03T16:54:37Z
+expires_at_utc: 2026-09-04T00:54:37Z
+anticipated_files:
+  - Enconet/schemas/evidence_bundle.schema.json
+  - Enconet/scripts/validate_evidence_bundle.py
+  - Enconet/tests/test_evidence_bundle_schema.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA0.3.yml
+  - Enconet/coordination/messages/CX_*ea0-3*.md
+note: Implement EA0.3 only: versioned evidence-bundle schema, semantic validator, RED/GREEN tests, and tracking; no production projection or controlled-output writes.
+released_at_utc: 2026-09-03T17:20:45Z
