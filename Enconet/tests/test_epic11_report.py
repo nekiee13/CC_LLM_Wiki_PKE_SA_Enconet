@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import copy
+import re
 import sys
 from pathlib import Path
 
@@ -66,6 +67,40 @@ def test_report_is_deterministic_localized_and_consistent():
     assert "## Povzetek" in first and "## Priporočila" in first
     assert "FIND-0001" in first and "ACT-0001" in first
     assert validate_report.validate(data, first) == []
+
+
+@pytest.mark.xfail(
+    strict=True,
+    reason="EA0.1 RED: report reference tokens are plain text until evidence links are implemented",
+)
+def test_report_reference_tokens_are_navigable_markdown_links():
+    report = generate_report.render(package())
+    expected_labels = (
+        "crumb:CRUMB-DOC-0001-APP_B_I-0001",
+        "document:DOC-0001",
+        "gap:GAP-APP_B_I-01",
+        "finding:FIND-0001",
+    )
+    missing = [
+        label
+        for label in expected_labels
+        if re.search(rf"\[{re.escape(label)}\]\([^)\r\n]+\)", report) is None
+    ]
+    assert missing == [], f"plain-text report references are not navigable: {missing}"
+
+
+@pytest.mark.xfail(
+    strict=True,
+    reason="EA0.1 RED: actions need a primary link while retaining their finding citation",
+)
+def test_action_identifier_is_primary_link_and_finding_citation_remains_linked():
+    report = generate_report.render(package())
+    assert re.search(r"\[(?:action:)?ACT-0001\]\([^)\r\n]+\)", report), (
+        "ACT-0001 is bare text instead of a primary action link"
+    )
+    assert re.search(r"\[finding:FIND-0001\]\([^)\r\n]+\)", report), (
+        "the action's finding citation must remain independently navigable"
+    )
 
 
 def test_report_refuses_missing_gate_and_unapproved_objects_are_excluded():

@@ -165,7 +165,7 @@ tests.
 - [ ] Owner selects the offline Evidence Explorer as the first delivery target.
 - [ ] Candidate artifact naming/promotion policy is recorded without editing the frozen master or
   alignment plans.
-- [ ] Current plain-text citations are captured by failing characterization tests.
+- [x] Current plain-text citations are captured by failing characterization tests.
 - [ ] Evidence bundle schema and URI/fragment grammar are machine-readable.
 - [ ] No task contradicts ADR-0007, ADR-0008, or ADR-0011.
 - [x] Base Conda environment exists at `C:\xPY\vEnv\WikiEnconet` with Python 3.13.15 and
@@ -176,6 +176,8 @@ tests.
 ## Task EA0.1 — Reproduce and characterize the broken navigation
 
 **GitHub issue title:** `EA0.1: Add RED tests for non-navigable report and dashboard citations`
+
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
 
 **ELI5:** Before fixing the door, prove that the current handle does not open it.
 
@@ -198,11 +200,11 @@ tests.
 
 **Acceptance criteria**
 
-- [ ] RED output proves the report uses plain `[type:ID]` text.
-- [ ] RED output proves the dashboard renders crumb IDs as non-interactive text.
-- [ ] The fixture contains no copied/fabricated evidence; expected values come from controlled test
+- [x] RED output proves the report uses plain `[type:ID]` text.
+- [x] RED output proves the dashboard renders crumb IDs as non-interactive text.
+- [x] The fixture contains no copied/fabricated evidence; expected values come from controlled test
   data or a stable golden fixture.
-- [ ] Existing tests remain green apart from the new expected RED tests on the feature branch.
+- [x] Existing tests remain green apart from the new expected RED tests on the feature branch.
 
 **Dependencies:** none.
 
@@ -1177,7 +1179,7 @@ The feature is complete only when all of the following are true:
 
 | ID | Issue | Milestone | Depends on | Status |
 |---|---|---|---|---|
-| EA0.1 | Characterize broken navigation | M0 | — | [ ] |
+| EA0.1 | Characterize broken navigation | M0 | — | [x] |
 | EA0.2 | Architecture/output decision | M0 | EA0.1 | [ ] |
 | EA0.3 | Evidence bundle schema | M0 | EA0.2 | [ ] |
 | EA0.4 | Navigation/safety/accessibility contract | M0 | EA0.3 | [ ] |
