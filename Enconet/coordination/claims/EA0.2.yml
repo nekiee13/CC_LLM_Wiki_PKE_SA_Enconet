@@ -1,0 +1,17 @@
+task: EA0.2
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T16:35:16Z
+last_renewed_at_utc: 2026-09-03T16:37:09Z
+expires_at_utc: 2026-09-04T00:37:09Z
+anticipated_files:
+  - Enconet/decisions/CX_ADR-0024-offline-evidence-explorer-and-candidate-output-policy.md
+  - Enconet/decisions/README.md
+  - Enconet/scripts/evidence_access_policy.py
+  - Enconet/tests/test_evidence_access_governance.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA0.2.yml
+  - Enconet/coordination/messages/CX_*ea0-2*.md
+note: Implement EA0.2 only: owner-authorized offline Evidence Explorer ADR, executable candidate-output policy, and RED/GREEN governance tests; Claude review deferred under ADR-0023.
+released_at_utc: 2026-09-03T16:46:25Z

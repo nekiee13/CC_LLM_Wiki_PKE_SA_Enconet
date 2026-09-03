@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| Status | Reviewed — Claude approved 2026-09-03; owner architecture gate required before implementation |
+| Status | Active — offline architecture approved in ADR-0024; implementation proceeds task by task |
 | Plan ID | EVIDENCE-ACCESS-TDD |
 | Created | 2026-09-03 |
 | Requested by | Project owner |
@@ -162,8 +162,8 @@ tests.
 
 **Epic acceptance criteria**
 
-- [ ] Owner selects the offline Evidence Explorer as the first delivery target.
-- [ ] Candidate artifact naming/promotion policy is recorded without editing the frozen master or
+- [x] Owner selects the offline Evidence Explorer as the first delivery target.
+- [x] Candidate artifact naming/promotion policy is recorded without editing the frozen master or
   alignment plans.
 - [x] Current plain-text citations are captured by failing characterization tests.
 - [ ] Evidence bundle schema and URI/fragment grammar are machine-readable.
@@ -212,6 +212,8 @@ tests.
 
 **GitHub issue title:** `EA0.2: Approve offline Evidence Explorer architecture and candidate-output policy`
 
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Agree on which house we are building and where the temporary construction copy lives
 before anyone pours concrete.
 
@@ -233,10 +235,11 @@ before anyone pours concrete.
 
 **Acceptance criteria**
 
-- [ ] Owner decision has an immutable reference.
-- [ ] Existing approved artifact bytes remain unchanged during development.
-- [ ] The decision explicitly states whether a future local web service would supersede ADR-0007.
-- [ ] Governance tests pass.
+- [x] Owner decision has an immutable reference.
+- [x] Existing approved artifact bytes remain unchanged during development.
+- [x] The decision explicitly states that a future local web service requires an ADR superseding
+  ADR-0007; ADR-0024 does not supersede it.
+- [x] Governance tests pass.
 
 **Dependencies:** EA0.1.
 
@@ -1180,7 +1183,7 @@ The feature is complete only when all of the following are true:
 | ID | Issue | Milestone | Depends on | Status |
 |---|---|---|---|---|
 | EA0.1 | Characterize broken navigation | M0 | — | [x] |
-| EA0.2 | Architecture/output decision | M0 | EA0.1 | [ ] |
+| EA0.2 | Architecture/output decision | M0 | EA0.1 | [x] |
 | EA0.3 | Evidence bundle schema | M0 | EA0.2 | [ ] |
 | EA0.4 | Navigation/safety/accessibility contract | M0 | EA0.3 | [ ] |
 | EA0.5 | Create isolated Conda environment | M0 | — | [x] |
@@ -1224,11 +1227,9 @@ The feature is complete only when all of the following are true:
 - `needs:claude-review`
 - `status:blocked`
 
-## 8. First actionable issue
+## 8. Next actionable issue
 
-EA0.5 is complete under the Owner's explicit environment-creation instruction, and EA0.6 has a
-truthful RED baseline but no project dependencies installed. Start **EA0.1** only after the Owner
-accepts this plan as the tracking baseline. EA0.1 is allowed to add tests and fixtures but not to
-change production rendering. EA0.2 is the first architecture stop: no Evidence Explorer
-implementation proceeds until the Owner confirms the offline architecture, candidate-output
-location, browser-test dependency policy, and promotion approach.
+EA0.1, EA0.2, EA0.5, and EA0.6 are complete, with independent Claude review queued under
+ADR-0023. ADR-0024 selects the offline architecture, candidate location, canonical-name policy,
+and controlled promotion approach; browser-test dependencies remain deferred to the separate
+EA5.1 owner decision. Start **EA0.3** next to define and test the versioned evidence-bundle schema.
