@@ -11,6 +11,12 @@ lives in [`../../doc/`](../../doc/README.md).
 | [ALIGNMENT_PLAN.md](ALIGNMENT_PLAN.md) | **Canonical** alignment plan (waves G0–G5, acceptance criteria); frozen — reopening requires the owner |
 | [CX_CC_RECONCILIATION.md](CX_CC_RECONCILIATION.md) | The CX/CC merge agreement behind the canonical plans |
 
+## Active delivery plans
+
+| File | Status |
+|---|---|
+| [EVIDENCE_ACCESS_TDD_PLAN.md](EVIDENCE_ACCESS_TDD_PLAN.md) | **Reviewed** GitHub-issues-style TDD plan for clickable report-to-source evidence access; Claude approved with no residual findings and implementation waits for the owner architecture gate |
+
 The other authoritative project documents live one level up:
 [`../MASTER_DEVELOPMENT_PLAN.md`](../MASTER_DEVELOPMENT_PLAN.md) (canonical, v1.4),
 [`../decisions/README.md`](../decisions/README.md) (ADR register),
