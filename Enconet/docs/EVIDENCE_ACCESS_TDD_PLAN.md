@@ -535,11 +535,11 @@ filing cabinet onto the screen.
 
 **Acceptance criteria**
 
-- [ ] Two builds from unchanged inputs are byte-identical.
-- [ ] Bundle includes only evidence reachable from the selected run, unless an explicitly approved
+- [x] Two builds from unchanged inputs are byte-identical.
+- [x] Bundle includes only evidence reachable from the selected run, unless an explicitly approved
   context option says otherwise.
-- [ ] Generation fails before publication if one reference is unresolved.
-- [ ] Production bundle reports 62/62 evaluation crumbs resolved.
+- [x] Generation fails before publication if one reference is unresolved.
+- [x] Production bundle reports 62/62 evaluation crumbs resolved.
 
 **Dependencies:** EA1.1–EA1.3.
 
@@ -1201,7 +1201,7 @@ The feature is complete only when all of the following are true:
 | EA1.1 | Read-only crumb resolver | M1 | EA0.3–EA0.4, EA0.6 | [x] |
 | EA1.2 | Complete reference entity graph | M1 | EA1.1 | [x] |
 | EA1.3 | Adjacent chunk context | M1 | EA1.1 | [x] |
-| EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [ ] |
+| EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [x] |
 | EA2.1 | Embed validated payload | M2 | EA1.4 | [ ] |
 | EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [ ] |
 | EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [ ] |
@@ -1239,6 +1239,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA1.3 are complete, with independent Claude review queued under ADR-0023. Evidence context
-now includes bounded, same-document previous/next chunks with explicit truncation versus document
-edges. Start **EA1.4** next to generate and validate the deterministic run-scoped evidence bundle.
+EA0.1–EA1.4 are complete, with independent Claude review queued under ADR-0023. The deterministic
+run-scoped bundle resolves all 62 production evaluation crumbs and is published only beneath the
+candidate-output boundary. Start **EA2.1** next to safely embed the validated evidence payload in
+the self-contained dashboard.

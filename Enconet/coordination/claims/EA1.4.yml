@@ -1,0 +1,17 @@
+task: EA1.4
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T20:18:15Z
+last_renewed_at_utc: 2026-09-03T20:18:15Z
+expires_at_utc: 2026-09-04T04:18:15Z
+anticipated_files:
+  - Enconet/scripts/generate_evidence_bundle.py
+  - Enconet/tests/test_evidence_bundle_cli.py
+  - Enconet/tests/fixtures/evidence_bundle_golden.sha256
+  - Enconet/outputs/candidates/evidence_access/RUN-20260728-01/evidence_bundle.json
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA1.4.yml
+  - Enconet/coordination/messages/CX_*ea1-4*.md
+note: Implement EA1.4 only: deterministic validated run-scoped evidence-bundle CLI with atomic candidate-only output and fail-closed publication.
+released_at_utc: 2026-09-03T20:35:24Z
