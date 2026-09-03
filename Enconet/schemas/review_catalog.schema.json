@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://enconet.local/schemas/review_catalog.schema.json",
+  "title": "Validated offline review package catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "ordering_policy", "runs"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "ordering_policy": {"const": "run-id-v1"},
+    "runs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["run_id", "supplier", "framework", "status", "language", "generated_at_utc", "artifacts"],
+        "properties": {
+          "run_id": {"type": "string", "pattern": "^RUN-[0-9]{8}-[0-9]{2}$"},
+          "supplier": {"type": "string", "pattern": "^[a-z0-9_-]+$"},
+          "framework": {"type": "string", "pattern": "^[a-z0-9_-]+$"},
+          "status": {"enum": ["candidate", "approved"]},
+          "language": {"enum": ["en", "sl", "hr"]},
+          "generated_at_utc": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"},
+          "artifacts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["bundle", "package", "report", "viewer"],
+            "properties": {
+              "bundle": {"$ref": "#/$defs/artifact"},
+              "package": {"$ref": "#/$defs/artifact"},
+              "report": {"$ref": "#/$defs/artifact"},
+              "viewer": {"$ref": "#/$defs/artifact"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1, "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

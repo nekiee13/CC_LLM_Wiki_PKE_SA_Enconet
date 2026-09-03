@@ -782,6 +782,8 @@ page.
 
 **GitHub issue title:** `EA4.1: Generate a deterministic catalog of validated review packages`
 
+**Status:** Completed by Codex on 2026-09-04; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Make a trustworthy library index instead of asking the browser to guess which loose files
 belong together.
 
@@ -797,10 +799,10 @@ belong together.
 
 **Acceptance criteria**
 
-- [ ] Every catalog row has supplier, framework, run ID, status, language, generated date, hashes,
+- [x] Every catalog row has supplier, framework, run ID, status, language, generated date, hashes,
   and artifact links.
-- [ ] Catalog cannot advertise an artifact that failed validation.
-- [ ] Production run appears exactly once.
+- [x] Catalog cannot advertise an artifact that failed validation.
+- [x] Production run appears exactly once.
 
 **Dependencies:** EA1.4, EA3.3.
 
@@ -1213,7 +1215,7 @@ The feature is complete only when all of the following are true:
 | EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [x] |
 | EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [x] |
 | EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [x] |
-| EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [ ] |
+| EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [x] |
 | EA4.2 | Offline run-selection page | M3 | EA4.1 | [ ] |
 | EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [ ] |
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
@@ -1243,7 +1245,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA3.3 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-candidate's 200 report citations now pass deterministic publication validation against the sibling
-viewer, embedded bundle, package, and live lineage hashes. Start **EA4.1** next to generate a
-deterministic catalog of validated review packages.
+EA0.1–EA4.1 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+explicit registry now generates a deterministic catalog containing exactly one fully validated,
+hash-bound production candidate; unrelated output files are never enumerated. Start **EA4.2** next
+to render the self-contained offline run-selection workspace from that catalog.

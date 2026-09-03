@@ -1,0 +1,19 @@
+task: EA4.1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T23:03:13Z
+last_renewed_at_utc: 2026-09-03T23:03:13Z
+expires_at_utc: 2026-09-04T07:03:13Z
+anticipated_files:
+  - Enconet/schemas/review_packages.yml
+  - Enconet/schemas/review_catalog.schema.json
+  - Enconet/scripts/generate_review_catalog.py
+  - Enconet/scripts/validate_review_catalog.py
+  - Enconet/tests/test_review_catalog.py
+  - Enconet/outputs/candidates/evidence_access/review_catalog.json
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA4.1.yml
+  - Enconet/coordination/messages/CX_*ea4-1*.md
+note: Implement EA4.1 only: explicit registered review-package contract and deterministic validated catalog; ignore arbitrary output files and preserve published artifacts.
+released_at_utc: 2026-09-03T23:09:22Z
