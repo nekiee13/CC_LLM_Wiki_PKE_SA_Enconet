@@ -1,0 +1,20 @@
+task: EA1.2
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T18:31:01Z
+last_renewed_at_utc: 2026-09-03T18:41:45Z
+expires_at_utc: 2026-09-04T02:41:45Z
+anticipated_files:
+  - Enconet/scripts/evidence_resolver.py
+  - Enconet/tests/test_evidence_entity_graph.py
+  - Enconet/schemas/evidence_navigation.yml
+  - Enconet/tests/test_evidence_navigation_contract.py
+  - Enconet/schemas/evidence_bundle.schema.json
+  - Enconet/scripts/validate_evidence_bundle.py
+  - Enconet/tests/test_evidence_bundle_schema.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA1.2.yml
+  - Enconet/coordination/messages/CX_*ea1-2*.md
+note: Implement EA1.2 run-scoped graph; reconcile source:package target and production DB priority 0/1 with navigation/bundle contracts.
+released_at_utc: 2026-09-03T18:50:59Z

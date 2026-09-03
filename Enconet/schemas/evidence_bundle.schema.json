@@ -234,7 +234,7 @@
       "properties": {
         "action_id": {"$ref": "#/$defs/actionId"},
         "description": {"type": "string", "minLength": 1},
-        "priority": {"type": "integer", "minimum": 1},
+        "priority": {"type": "integer", "minimum": 0, "maximum": 1},
         "finding_id": {"anyOf": [{"$ref": "#/$defs/findingId"}, {"type": "null"}]},
         "gap_id": {"anyOf": [{"$ref": "#/$defs/gapId"}, {"type": "null"}]},
         "viewer_target": {"type": "string", "pattern": "^#evidence/action/ACT-\\d{4}$"}

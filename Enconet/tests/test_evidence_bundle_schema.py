@@ -196,6 +196,19 @@ def test_invalid_ids_and_wrong_types_are_rejected(mutation, fragment: str):
     assert _has_error(bundle, fragment)
 
 
+def test_action_priority_matches_canonical_database_boolean_semantics():
+    non_priority = valid_bundle()
+    non_priority["actions"][0]["priority"] = 0
+    assert bundle_validation.validate(non_priority) == []
+
+    invalid = valid_bundle()
+    invalid["actions"][0]["priority"] = -1
+    assert _has_error(invalid, "wrong type: action.priority")
+
+    invalid["actions"][0]["priority"] = 2
+    assert _has_error(invalid, "wrong type: action.priority")
+
+
 def test_duplicate_quote_ids_and_source_positions_are_rejected():
     duplicate_id = valid_bundle()
     duplicate_id["quotes"][1]["quote_id"] = duplicate_id["quotes"][0]["quote_id"]

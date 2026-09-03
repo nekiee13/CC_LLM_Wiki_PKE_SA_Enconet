@@ -269,7 +269,8 @@ def validate(bundle: object, schema_path: Path = SCHEMA) -> list[str]:
                 or not 0 <= confidence <= 1):
             errors.append("invalid confidence")
     for row in collections["actions"]:
-        if not isinstance(row["priority"], int) or isinstance(row["priority"], bool) or row["priority"] < 1:
+        if (not isinstance(row["priority"], int) or isinstance(row["priority"], bool)
+                or row["priority"] not in {0, 1}):
             errors.append("wrong type: action.priority")
 
     for name, (viewer_type, id_field) in VIEWER_TYPES.items():

@@ -23,6 +23,7 @@ CASES = (
     ("gap", "GAP-APP_B_I-01"),
     ("finding", "FIND-0001"),
     ("action", "ACT-0001"),
+    ("source", "package"),
 )
 
 
@@ -59,9 +60,10 @@ def test_navigation_id_grammar_matches_the_canonical_id_registry():
         "action": "action_id",
     }
     target_specs = contract()["targets"]["entity_types"]
-    assert set(target_specs) == set(mapping)
+    assert set(target_specs) == set(mapping) | {"source"}
     for entity_type, registry_name in mapping.items():
         assert target_specs[entity_type]["id_regex"] == registry[registry_name]["regex"]
+    assert target_specs["source"]["id_regex"] == "^package$"
 
 
 @pytest.mark.parametrize(

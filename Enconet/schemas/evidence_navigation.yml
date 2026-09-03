@@ -23,6 +23,8 @@ targets:
       id_regex: '^FIND-\d{4}$'
     action:
       id_regex: '^ACT-\d{4}$'
+    source:
+      id_regex: '^package$'
 
 failure_state:
   status: unavailable

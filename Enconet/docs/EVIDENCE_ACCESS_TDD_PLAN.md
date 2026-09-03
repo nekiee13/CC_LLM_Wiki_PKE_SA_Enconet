@@ -453,6 +453,8 @@ chapter it came from.
 
 **GitHub issue title:** `EA1.2: Complete the report-reference entity graph`
 
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Some labels point to evidence, while others point to a document, gap, finding, or action;
 make every label lead somewhere useful.
 
@@ -476,12 +478,12 @@ make every label lead somewhere useful.
 
 **Acceptance criteria**
 
-- [ ] Every reference type currently emitted by the report has a defined viewer presentation.
-- [ ] Newly linked action IDs and their existing finding citations remain distinct and both work.
-- [ ] A gap self-link renders missing-evidence and relationship context once, with no recursive UI
+- [x] Every reference type currently emitted by the report has a defined viewer presentation.
+- [x] Newly linked action IDs and their existing finding citations remain distinct and both work.
+- [x] A gap self-link renders missing-evidence and relationship context once, with no recursive UI
   expansion or misleading source-evidence claim.
-- [ ] Lineage never silently crosses run boundaries.
-- [ ] Circular or duplicate relationships are handled deterministically.
+- [x] Lineage never silently crosses run boundaries.
+- [x] Circular or duplicate relationships are handled deterministically.
 
 **Dependencies:** EA1.1.
 
@@ -1195,7 +1197,7 @@ The feature is complete only when all of the following are true:
 | EA0.5 | Create isolated Conda environment | M0 | — | [x] |
 | EA0.6 | Install/verify controlled dependencies | M0 | EA0.5 | [x] |
 | EA1.1 | Read-only crumb resolver | M1 | EA0.3–EA0.4, EA0.6 | [x] |
-| EA1.2 | Complete reference entity graph | M1 | EA1.1 | [ ] |
+| EA1.2 | Complete reference entity graph | M1 | EA1.1 | [x] |
 | EA1.3 | Adjacent chunk context | M1 | EA1.1 | [ ] |
 | EA1.4 | Evidence bundle CLI | M1 | EA1.1–EA1.3 | [ ] |
 | EA2.1 | Embed validated payload | M2 | EA1.4 | [ ] |
@@ -1235,6 +1237,6 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA1.1 are complete, with independent Claude review queued under ADR-0023. The read-only crumb
-resolver now retrieves complete source evidence and fails closed on broken traceability. Start
-**EA1.2** next to resolve the remaining report-reference entity graph within the selected run.
+EA0.1–EA1.2 are complete, with independent Claude review queued under ADR-0023. The run-scoped
+registry now resolves every production report reference and rejects silent cross-run relationships.
+Start **EA1.3** next to add bounded previous/next chunk context without crossing documents.
