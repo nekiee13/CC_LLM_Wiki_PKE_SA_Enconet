@@ -903,6 +903,8 @@ similarly named files.
 
 **GitHub issue title:** `EA5.2: Add evidence bundle, link, browser, and portability validators`
 
+**Status:** Completed by Codex on 2026-09-04; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Add the new door and keys to the building’s final safety inspection.
 
 **Tests first — RED**
@@ -917,10 +919,10 @@ similarly named files.
 
 **Acceptance criteria**
 
-- [ ] Aggregate output preserves exact command, integer exit code, counts, and artifact paths.
-- [ ] Validation does not rewrite controlled outputs.
-- [ ] Existing 14 checks remain green and new checks are additive.
-- [ ] One deliberately broken fixture proves fail-closed behavior.
+- [x] Aggregate output preserves exact command, integer exit code, counts, and artifact paths.
+- [x] Validation does not rewrite controlled outputs.
+- [x] Existing 14 checks remain green and new checks are additive.
+- [x] One deliberately broken fixture proves fail-closed behavior.
 
 **Dependencies:** EA3.3, EA4.3, EA5.1.
 
@@ -1223,7 +1225,7 @@ The feature is complete only when all of the following are true:
 | EA4.2 | Offline run-selection page | M3 | EA4.1 | [x] |
 | EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [x] |
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
-| EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [ ] |
+| EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [ ] |
 | EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [ ] |
@@ -1249,8 +1251,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA4.3 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-deterministic review package remains functional after relocation to a path containing spaces and
-non-ASCII text, and its manifest rejects missing, renamed, unlisted, or changed files. Start
-**EA5.2** next to make the evidence, report-link, browser, and portability validators part of the
-canonical aggregate release check.
+EA0.1–EA5.2 are complete, with independent Claude review queued under ADR-0023. The canonical
+closed-phase aggregate now runs the original 14 checks plus four ordered, phase-aware evidence
+checks and fails release when bundle, report-link, real-browser, or portable-package validation
+fails. Start **EA5.3** next to enforce the security, encoding, artifact-size, and browser-performance
+budgets for the offline evidence package.

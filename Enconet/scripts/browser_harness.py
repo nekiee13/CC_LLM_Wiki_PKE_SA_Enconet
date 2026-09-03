@@ -221,7 +221,11 @@ def main(argv: list[str] | None = None) -> int:
         if not result["passed"]:
             print(f"browser_harness: FAIL - {result['error']}", file=sys.stderr)
             return 1
-        print(f"browser_harness: PASS - {result['url']}")
+        print(
+            "browser_harness: PASS - "
+            f"bundles={result['evidence_bundle_count']} "
+            f"interactive={result['interactive_crumb_count']} - {result['url']}"
+        )
         return 0
     except BrowserHarnessError as exc:
         print(f"browser_harness: FAIL - {exc}", file=sys.stderr)

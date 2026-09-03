@@ -2,8 +2,10 @@
 """Validate the versioned offline evidence bundle."""
 from __future__ import annotations
 
+import argparse
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -395,3 +397,29 @@ def validate(bundle: object, schema_path: Path = SCHEMA) -> list[str]:
             errors.append(f"inconsistent evaluation gap index: {evaluation['evaluation_id']}")
 
     return sorted(set(errors))
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("bundle", type=Path)
+    args = parser.parse_args(argv)
+    try:
+        bundle = json.loads(args.bundle.read_text(encoding="utf-8"))
+        errors = validate(bundle)
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        errors = [f"bundle read failed: {exc}"]
+        bundle = {}
+    if errors:
+        for error in errors:
+            print(f"validate_evidence_bundle: FAIL - {error}", file=sys.stderr)
+        return 1
+    counts = " ".join(
+        f"{name}={len(bundle[name])}"
+        for name in ("documents", "chunks", "evaluations", "crumbs", "quotes", "gaps", "findings", "actions")
+    )
+    print(f"validate_evidence_bundle: PASS - {counts} - {args.bundle}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

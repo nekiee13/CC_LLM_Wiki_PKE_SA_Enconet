@@ -85,11 +85,23 @@ def test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged():
     assert all("--no-record" in command_map[name] for name in logging_children)
     manifest = ENCONET / "manifests" / "validation_runs.csv"
     before = manifest.read_bytes()
+    controlled_outputs = [
+        ENCONET / "outputs" / "enconet_appendix_b_evaluation_package.json",
+        ENCONET / "outputs" / "enconet_appendix_b_evaluation_report.md",
+        ENCONET / "outputs" / "enconet_appendix_b_dashboard_data.json",
+        ENCONET / "outputs" / "enconet_appendix_b_dashboard.html",
+        ENCONET / "outputs" / "candidates" / "evidence_access" / "review_catalog.json",
+        ENCONET / "outputs" / "candidates" / "evidence_access" / "review_workspace.html",
+        ENCONET / "outputs" / "candidates" / "evidence_access" / "portable_package"
+        / "package_manifest.json",
+    ]
+    output_bytes = {path: path.read_bytes() for path in controlled_outputs}
     result = subprocess.run([sys.executable, str(ENCONET / "scripts" / "run_all_validations.py"),
                              "--no-record"], cwd=ENCONET, capture_output=True, text=True,
                             encoding="utf-8", errors="replace", timeout=60)
     assert result.returncode == 0, result.stdout + result.stderr
     assert manifest.read_bytes() == before
+    assert {path: path.read_bytes() for path in controlled_outputs} == output_bytes
 
 
 def test_structure_accepts_contract_tree_and_rejects_missing_misnamed_or_misplaced(local_tmp_path: Path):

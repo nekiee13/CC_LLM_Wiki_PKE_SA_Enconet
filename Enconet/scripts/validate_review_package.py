@@ -143,7 +143,11 @@ def main(argv: list[str] | None = None) -> int:
         for error in errors:
             print(f"validate_review_package: FAIL - {error}", file=sys.stderr)
         return 1
-    print(f"validate_review_package: PASS - {args.package_root}")
+    manifest = json.loads((args.package_root / "package_manifest.json").read_text(encoding="utf-8"))
+    print(
+        "validate_review_package: PASS - "
+        f"files={len(manifest['files'])} runs={len(manifest['run_ids'])} - {args.package_root}"
+    )
     return 0
 
 

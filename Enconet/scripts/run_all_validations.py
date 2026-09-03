@@ -33,12 +33,15 @@ PHASES = [state for state in AUDIT_STATES if state != "failed"]
 MINIMUM_PHASE = {
     "raw_sources": "registered", "chunks": "chunked", "sieving_harness": "chunked", "traceability": "sieved",
     "app_b_json": "sieved", "requirements": "evidence_reviewed",
-    "evaluation": "evaluated", "findings": "findings_drafted",
+    "evaluation": "evaluated", "evidence_bundle": "evaluated", "findings": "findings_drafted",
     "structure": "setup", "frontmatter": "evidence_reviewed",
-    "report": "report_ready", "dashboard": "dashboard_ready",
+    "report": "report_ready", "report_links": "report_ready",
+    "browser_evidence": "report_ready", "dashboard": "dashboard_ready",
+    "review_package": "dashboard_ready",
 }
 ORDER = ["raw_sources", "chunks", "sieving_harness", "traceability", "app_b_json", "requirements",
-         "evaluation", "findings", "structure", "frontmatter", "report", "dashboard"]
+         "evaluation", "evidence_bundle", "findings", "structure", "frontmatter", "report",
+         "report_links", "browser_evidence", "dashboard", "review_package"]
 BENCHMARK_ORDER = ["benchmark_scoring", "benchmark_dashboard"]
 
 
@@ -48,6 +51,7 @@ class Check:
     state: str
     code: int | None
     detail: str
+    command: tuple[str, ...] | None = None
 
 
 def phase_rank(phase: str) -> int:
@@ -118,6 +122,15 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
     report = outputs / f"{supplier}_appendix_b_evaluation_report.md"
     dashboard_data = outputs / f"{supplier}_appendix_b_dashboard_data.json"
     dashboard = outputs / f"{supplier}_appendix_b_dashboard.html"
+    evidence_root = outputs / "candidates" / "evidence_access"
+    evidence_run = evidence_root / run_id if run_id else None
+    bundle = evidence_run / "evidence_bundle.json" if evidence_run else None
+    evidence_report = (
+        evidence_run / f"{supplier}_appendix_b_evaluation_report.md" if evidence_run else None
+    )
+    evidence_viewer = (
+        evidence_run / f"{supplier}_appendix_b_dashboard.html" if evidence_run else None
+    )
     app_b = [py, str(SCRIPTS / "validate_app_b_json.py"), str(app_b_json)] if app_b_json else None
     if app_b is not None and phase_rank(phase) >= phase_rank("evaluated"):
         app_b.append("--strict")
@@ -130,13 +143,30 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
         "requirements": [py, str(SCRIPTS / "validate_requirements.py"), "--db", str(db)],
         "evaluation": ([py, str(SCRIPTS / "validate_evaluation.py"), "--db", str(db),
                         "--run-id", run_id] if run_id else None),
+        "evidence_bundle": (
+            [py, str(SCRIPTS / "validate_evidence_bundle.py"), str(bundle)] if bundle else None
+        ),
         "findings": [py, str(SCRIPTS / "validate_findings.py"), "--db", str(db), "--phase", phase],
         "structure": [py, str(SCRIPTS / "validate_structure.py"), "--phase", phase],
         "frontmatter": [py, str(SCRIPTS / "validate_frontmatter.py"), "--phase", phase],
         "report": [py, str(SCRIPTS / "validate_report.py"), str(package), str(report),
                    "--db", str(db), "--phase", phase],
+        "report_links": (
+            [py, str(SCRIPTS / "validate_report_links.py"), str(evidence_report),
+             str(evidence_viewer), str(package), "--project-root", str(ENCONET)]
+            if evidence_report and evidence_viewer else None
+        ),
+        "browser_evidence": (
+            [py, str(SCRIPTS / "browser_harness.py"), "check", str(evidence_viewer),
+             "--artifacts", str(evidence_root / "validation_artifacts" / "browser_evidence"),
+             "--require-interactive"] if evidence_viewer else None
+        ),
         "dashboard": [py, str(SCRIPTS / "validate_dashboard.py"), str(package),
                       str(dashboard_data), str(dashboard), "--db", str(db), "--phase", phase],
+        "review_package": [
+            py, str(SCRIPTS / "validate_review_package.py"),
+            str(evidence_root / "portable_package"),
+        ],
     }
     if no_record:
         for name in ("chunks", "traceability", "requirements", "evaluation", "findings",
@@ -168,8 +198,20 @@ def run(phase: str, command_map: dict[str, list[str] | None],
             checks.append(Check(name, "FAIL", 1, "required input could not be discovered"))
             continue
         code, detail = executor(command)
-        checks.append(Check(name, "PASS" if code == 0 else "FAIL", code, detail))
+        checks.append(Check(
+            name, "PASS" if code == 0 else "FAIL", code, detail, tuple(command)
+        ))
     return checks
+
+
+def format_check(check: Check) -> str:
+    """Render a lossless one-line aggregate record for operators and logs."""
+    suffix = f" exit={check.code}" if check.code is not None else ""
+    command = (
+        f" command={json.dumps(list(check.command), ensure_ascii=False)}"
+        if check.command is not None else " command=null"
+    )
+    return f"[{check.state}] {check.name}{suffix}{command} - {check.detail}"
 
 
 def append(checks: list[Check], phase: str, code: int, *, path: Path = RUNS) -> None:
@@ -210,13 +252,14 @@ def main() -> int:
         if benchmarks_required(phase, args.benchmarks):
             for name, command in benchmark_commands().items():
                 code, detail = execute(command)
-                checks.append(Check(name, "PASS" if code == 0 else "FAIL", code, detail))
+                checks.append(Check(
+                    name, "PASS" if code == 0 else "FAIL", code, detail, tuple(command)
+                ))
     except Exception as exc:  # noqa: BLE001 - aggregate boundary fails closed
         print(f"aggregate: FAIL - {exc}", file=sys.stderr)
         return 1
     for check in checks:
-        suffix = f" exit={check.code}" if check.code is not None else ""
-        print(f"[{check.state}] {check.name}{suffix} - {check.detail}")
+        print(format_check(check))
     failed = [check.name for check in checks if check.state == "FAIL"]
     code = int(bool(failed))
     print(f"aggregate: {'FAIL (' + ', '.join(failed) + ')' if failed else 'PASS'}")
