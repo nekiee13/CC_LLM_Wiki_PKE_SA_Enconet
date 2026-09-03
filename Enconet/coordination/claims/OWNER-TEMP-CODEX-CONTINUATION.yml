@@ -1,0 +1,14 @@
+task: OWNER-TEMP-CODEX-CONTINUATION
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T15:59:19Z
+last_renewed_at_utc: 2026-09-03T15:59:19Z
+expires_at_utc: 2026-09-03T19:59:19Z
+anticipated_files:
+  - Enconet/decisions/CX_ADR-0023-temporary-codex-continuation-with-deferred-claude-review.md
+  - Enconet/decisions/README.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/OWNER-TEMP-CODEX-CONTINUATION.yml
+  - Enconet/coordination/messages/CX_*owner-temporary-codex-continuation*.md
+note: Record owner directive authorizing task-by-task Codex continuation while Claude review is temporarily deferred.
+released_at_utc: 2026-09-03T16:00:21Z

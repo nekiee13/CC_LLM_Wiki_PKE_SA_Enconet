@@ -34,6 +34,7 @@ Context → Decision → Consequences.
 | [ADR-0020](CX_ADR-0020-regulatory-authority-and-interpretive-standard.md) | Appendix B is the governing baseline, Part 21 is a mandatory nonconformance add-on, and NQA-1 is the interpretive/implementation standard | Project | Accepted |
 | [ADR-0021](CX_ADR-0021-improvement-knowledge-lifecycle.md) | Evidence lifecycle for AFIs, lessons learned, and good practices | Workspace + projects | Accepted |
 | [ADR-0022](CX_ADR-0022-batched-source-intake-and-ingestion.md) | Bounded source promotion and ingestion with new/updated lineage tracking | Project | Accepted |
+| [ADR-0023](CX_ADR-0023-temporary-codex-continuation-with-deferred-claude-review.md) | Codex continues the Evidence Access TDD plan one task at a time while Claude review is temporarily deferred, not waived | Project + coordination | Accepted (temporary) |
 
 All decided 2026-07-11 by the project owner (D-1…D-6 from `docs/CX_CC_RECONCILIATION.md` §6
 and the six domain decisions from `MASTER_DEVELOPMENT_PLAN.md` §8), except ADR-0007 which
@@ -51,3 +52,8 @@ evidence-based lifecycle for improvement and operational-knowledge records.
 ADR-0022 was decided 2026-07-16 by the project owner to limit source promotion and
 ingestion to one large or two-to-three small documents per batch, with durable
 new/updated classification and predecessor tracking.
+
+ADR-0023 was decided 2026-09-03 by the project owner to permit bounded, sequential Codex
+implementation of the reviewed Evidence Access TDD plan while Claude is temporarily unavailable.
+Independent review is deferred and queued through immutable coordination messages; all human gates
+and infrastructure ownership boundaries remain in force.

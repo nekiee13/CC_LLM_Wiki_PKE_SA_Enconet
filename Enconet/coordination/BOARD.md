@@ -84,6 +84,7 @@ and ADRs are the records.
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
 - `INDEX-REFRESH` — codex, released 2026-07-27T22:38:39Z
+- `OWNER-TEMP-CODEX-CONTINUATION` — codex, released 2026-09-03T16:00:21Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-REVIEW-CC` — claude-code, released 2026-07-16T22:10:30Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
@@ -244,11 +245,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-09-03T155959Z_owner-temporary-codex-continuation` — status, codex -> claude-code: OWNER-TEMP-CODEX-CONTINUATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 685 records in `coordination/archive/`
 
-Generated: 2026-09-03T15:42:48Z
+Generated: 2026-09-03T16:00:27Z
