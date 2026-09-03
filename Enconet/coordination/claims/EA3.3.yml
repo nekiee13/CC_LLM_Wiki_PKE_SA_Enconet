@@ -1,0 +1,15 @@
+task: EA3.3
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T22:46:52Z
+last_renewed_at_utc: 2026-09-03T22:46:52Z
+expires_at_utc: 2026-09-04T06:46:52Z
+anticipated_files:
+  - Enconet/scripts/validate_report_links.py
+  - Enconet/tests/test_report_link_validator.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA3.3.yml
+  - Enconet/coordination/messages/CX_*ea3-3*.md
+note: Implement EA3.3 only: deterministic fail-closed validation of every candidate report citation against its sibling viewer and embedded matched bundle; no published output changes.
+released_at_utc: 2026-09-03T22:55:17Z

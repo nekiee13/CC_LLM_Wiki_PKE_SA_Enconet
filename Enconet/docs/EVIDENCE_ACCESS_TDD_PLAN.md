@@ -740,6 +740,8 @@ meeting.
 
 **GitHub issue title:** `EA3.3: Fail publication on dead or mismatched evidence links`
 
+**Status:** Completed by Codex on 2026-09-04; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Before handing the report to the Owner, automatically click-check every address on the
 page.
 
@@ -756,9 +758,9 @@ page.
 
 **Acceptance criteria**
 
-- [ ] Validator reports exact report location and broken target.
-- [ ] Zero dead/mismatched links in the production candidate.
-- [ ] Validator is deterministic and returns a non-zero exit code on failure.
+- [x] Validator reports exact report location and broken target.
+- [x] Zero dead/mismatched links in the production candidate.
+- [x] Validator is deterministic and returns a non-zero exit code on failure.
 
 **Dependencies:** EA1.4, EA3.2.
 
@@ -1210,7 +1212,7 @@ The feature is complete only when all of the following are true:
 | EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [x] |
 | EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [x] |
 | EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [x] |
-| EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [ ] |
+| EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [x] |
 | EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [ ] |
 | EA4.2 | Offline run-selection page | M3 | EA4.1 | [ ] |
 | EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [ ] |
@@ -1241,7 +1243,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA3.2 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-candidate report now contains portable relative links to its sibling Evidence Explorer, and direct
-fragments survive relocation, refresh, and browser history navigation. Start **EA3.3** next to fail
-publication on dead, stale, duplicated, or run-mismatched evidence links.
+EA0.1–EA3.3 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+candidate's 200 report citations now pass deterministic publication validation against the sibling
+viewer, embedded bundle, package, and live lineage hashes. Start **EA4.1** next to generate a
+deterministic catalog of validated review packages.
