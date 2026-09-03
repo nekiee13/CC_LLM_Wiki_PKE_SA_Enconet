@@ -246,6 +246,7 @@ def validate(
     viewer_path: Path,
     package_path: Path,
     project_root: Path = ENCONET,
+    verify_lineage: bool = True,
 ) -> list[str]:
     """Return deterministic publication-blocking errors for the artifact trio."""
     errors: list[str] = []
@@ -276,7 +277,8 @@ def validate(
     package_hash = hashlib.sha256(package_path.read_bytes()).hexdigest()
     if bundle.get("lineage", {}).get("package", {}).get("sha256") != package_hash:
         errors.append("package/viewer mismatch: package lineage sha256")
-    errors.extend(_lineage_errors(bundle, project_root))
+    if verify_lineage:
+        errors.extend(_lineage_errors(bundle, project_root))
 
     if report_path.resolve().parent != viewer_path.resolve().parent:
         errors.append("report and viewer are not sibling artifacts")
@@ -327,6 +329,7 @@ def validate_paths(
     package_path: Path,
     *,
     project_root: Path = ENCONET,
+    verify_lineage: bool = True,
 ) -> list[str]:
     """Read the artifact trio and return errors without raising at the CLI boundary."""
     for path, kind in (
@@ -344,6 +347,7 @@ def validate_paths(
         return validate(
             report, viewer, package, report_path=report_path, viewer_path=viewer_path,
             package_path=package_path, project_root=project_root,
+            verify_lineage=verify_lineage,
         )
     except Exception as exc:  # noqa: BLE001 - CLI must fail closed on malformed artifacts
         return [f"artifact validation failed: {exc}"]

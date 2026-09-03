@@ -839,6 +839,8 @@ similarly named files.
 
 **GitHub issue title:** `EA4.3: Verify review package works after controlled relocation`
 
+**Status:** Completed by Codex on 2026-09-04; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Prove the whole review folder still works when copied to the Owner’s computer.
 
 **Tests first — RED**
@@ -852,9 +854,9 @@ similarly named files.
 
 **Acceptance criteria**
 
-- [ ] Complete package passes after relocation to a path containing spaces and non-ASCII text.
-- [ ] No link depends on repository root, drive letter, or developer username.
-- [ ] Missing/changed files are detected by manifest validation.
+- [x] Complete package passes after relocation to a path containing spaces and non-ASCII text.
+- [x] No link depends on repository root, drive letter, or developer username.
+- [x] Missing/changed files are detected by manifest validation.
 
 **Dependencies:** EA3.3, EA4.2.
 
@@ -1219,7 +1221,7 @@ The feature is complete only when all of the following are true:
 | EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [x] |
 | EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [x] |
 | EA4.2 | Offline run-selection page | M3 | EA4.1 | [x] |
-| EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [ ] |
+| EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [x] |
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [ ] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [ ] |
@@ -1247,7 +1249,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA4.2 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-self-contained workspace opens the registered production Evidence Explorer from `file://` in one
-click, with filtering, keyboard selection, visible candidate/approved state, and fail-closed
-artifact availability. Start **EA4.3** next to define and verify the relocatable package manifest.
+EA0.1–EA4.3 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+deterministic review package remains functional after relocation to a path containing spaces and
+non-ASCII text, and its manifest rejects missing, renamed, unlisted, or changed files. Start
+**EA5.2** next to make the evidence, report-link, browser, and portability validators part of the
+canonical aggregate release check.
