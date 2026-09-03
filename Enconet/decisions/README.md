@@ -36,6 +36,7 @@ Context → Decision → Consequences.
 | [ADR-0022](CX_ADR-0022-batched-source-intake-and-ingestion.md) | Bounded source promotion and ingestion with new/updated lineage tracking | Project | Accepted |
 | [ADR-0023](CX_ADR-0023-temporary-codex-continuation-with-deferred-claude-review.md) | Codex continues the Evidence Access TDD plan one task at a time while Claude review is temporarily deferred, not waived | Project + coordination | Accepted (temporary) |
 | [ADR-0024](CX_ADR-0024-offline-evidence-explorer-and-candidate-output-policy.md) | Offline static Evidence Explorer with read-only evidence, isolated candidates, and human-gated atomic promotion | Project | Accepted |
+| [ADR-0025](CX_ADR-0025-browser-harness-dependency-and-runtime.md) | Playwright 1.62.0 with its matching isolated Chromium headless-shell runtime | Project + user environment | Accepted |
 
 All decided 2026-07-11 by the project owner (D-1…D-6 from `docs/CX_CC_RECONCILIATION.md` §6
 and the six domain decisions from `MASTER_DEVELOPMENT_PLAN.md` §8), except ADR-0007 which
@@ -63,3 +64,6 @@ ADR-0024 was decided 2026-09-03 when the project owner approved the reviewed Evi
 plan and instructed Codex to proceed with EA0.2. It selects the offline static Evidence Explorer,
 protects the approved report/dashboard bytes during candidate development, and leaves any future
 live service dependent on an explicit ADR superseding ADR-0007.
+
+ADR-0025 was decided 2026-09-03 when the project owner explicitly approved Playwright 1.62.0 and
+its matching Chromium headless shell under the dedicated WikiEnconet Conda environment for EA5.1.

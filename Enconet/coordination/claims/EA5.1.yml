@@ -1,0 +1,22 @@
+task: EA5.1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T20:56:06Z
+last_renewed_at_utc: 2026-09-03T20:56:06Z
+expires_at_utc: 2026-09-04T04:56:06Z
+anticipated_files:
+  - Enconet/decisions/CX_ADR-0025-browser-harness-dependency-and-runtime.md
+  - Enconet/decisions/README.md
+  - Enconet/environment.yml
+  - Enconet/sieving/requirements.txt
+  - Enconet/schemas/browser_harness.yml
+  - Enconet/scripts/browser_harness.py
+  - Enconet/tests/test_browser_harness.py
+  - Enconet/tests/test_conda_environment.py
+  - Enconet/docs/BROWSER_TESTING.md
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA5.1.yml
+  - Enconet/coordination/messages/CX_*ea5-1*.md
+note: Implement EA5.1 only: owner-approved Playwright 1.62.0 with matching pinned Chromium headless shell, file-URL harness, actionable preflight, and retained failure artifacts.
+released_at_utc: 2026-09-03T21:23:20Z

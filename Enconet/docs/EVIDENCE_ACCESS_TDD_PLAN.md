@@ -882,10 +882,10 @@ similarly named files.
 
 **Acceptance criteria**
 
-- [ ] Harness tests `file://` behavior, not only an HTTP test server.
-- [ ] Browser/runtime absence produces an actionable non-zero failure.
-- [ ] Test artifacts (screenshot/DOM/log) are retained on failure.
-- [ ] Dependency choice is owner-approved before installation.
+- [x] Harness tests `file://` behavior, not only an HTTP test server.
+- [x] Browser/runtime absence produces an actionable non-zero failure.
+- [x] Test artifacts (screenshot/DOM/log) are retained on failure.
+- [x] Dependency choice is owner-approved before installation.
 
 **Dependencies:** EA0.2; may begin before EA2 but must be ready for EA2.2.
 
@@ -1212,7 +1212,7 @@ The feature is complete only when all of the following are true:
 | EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [ ] |
 | EA4.2 | Offline run-selection page | M3 | EA4.1 | [ ] |
 | EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [ ] |
-| EA5.1 | Headless browser harness | M2 | EA0.2 | [ ] |
+| EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [ ] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [ ] |
 | EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] |
@@ -1239,7 +1239,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA2.1 are complete, with independent Claude review queued under ADR-0023. The validated
-62-crumb evidence payload is safely embedded in a single self-contained candidate dashboard, with
-matching package and bundle hashes visible in artifact metadata. Start **EA5.1** next because its
-owner-approved browser harness is a dependency of the clickable evidence controls in EA2.2.
+EA0.1–EA2.1 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+Owner-approved pinned browser harness now verifies the candidate through `file://`, fails
+actionably when its runtime is unavailable, and retains real diagnostics on failure. Start
+**EA2.2** next to implement the clickable evidence controls and accessible detail drawer.

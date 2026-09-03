@@ -22,6 +22,7 @@ MODULE_BY_DISTRIBUTION = {
     "PyYAML": "yaml",
     "pytest": "pytest",
     "pytest-cov": "pytest_cov",
+    "playwright": "playwright",
 }
 
 
