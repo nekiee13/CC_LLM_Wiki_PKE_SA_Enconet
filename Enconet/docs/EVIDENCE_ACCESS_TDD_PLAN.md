@@ -38,9 +38,10 @@ reference and inspect the exact supporting source information.
 - All 62 distinct crumbs used by the production evaluation resolve to a crumb, quote, and chunk.
 - One crumb may contain multiple quotes; the viewer must preserve and show all of them.
 - The owner-required Conda prefix `C:\xPY\vEnv\WikiEnconet` was created on 2026-09-03
-  with Python 3.13.15 and pip 26.2.1. Core project dependencies are intentionally not yet
-  installed: the first isolated `verify_install.py` run is the recorded RED baseline and reports
-  four missing runtime dependencies (`pandas`, `openpyxl`, `typer`, and `rich`).
+  with Python 3.13.15 and pip 26.2.1. EA0.6 installed the repository-pinned dependencies into
+  that exact prefix. The first isolated `verify_install.py` run remains the recorded RED baseline
+  (four missing runtime dependencies); the GREEN rerun reports zero dependency, structure, or
+  import errors.
 - The generated dashboard is already an approved offline, self-contained browser artifact.
 - ADR-0007 retired the separate Streamlit sieving GUI. A new standalone GUI or live service
   requires a superseding owner decision.
@@ -169,7 +170,7 @@ tests.
 - [ ] No task contradicts ADR-0007, ADR-0008, or ADR-0011.
 - [x] Base Conda environment exists at `C:\xPY\vEnv\WikiEnconet` with Python 3.13.15 and
   pip 26.2.1.
-- [ ] The isolated environment contains declared dependencies and passes installation, focused,
+- [x] The isolated environment contains declared dependencies and passes installation, focused,
   and aggregate verification without borrowing packages from the base environment.
 
 ## Task EA0.1 — Reproduce and characterize the broken navigation
@@ -344,6 +345,8 @@ another project.
 
 **GitHub issue title:** `EA0.6: Make the WikiEnconet Conda environment reproducible and project-ready`
 
+**Status:** Completed by Codex on 2026-09-03; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** The empty toolbox now exists; install the labeled tools and prove every command takes its
 tools from that box.
 
@@ -379,13 +382,15 @@ tools from that box.
 
 **Acceptance criteria**
 
-- [ ] Environment specification is committed and recreates a clean compatible environment.
-- [ ] `verify_install.py` passes from `C:\xPY\vEnv\WikiEnconet`.
-- [ ] Complete existing pytest suite passes from the new environment.
-- [ ] Aggregate validation passes from the new environment.
-- [ ] `sys.executable` and `sys.prefix` resolve inside `C:\xPY\vEnv\WikiEnconet`.
-- [ ] Required package versions match controlled declarations exactly.
-- [ ] No project dependency is installed into Conda `base` or the user site directory.
+- [x] Environment specification is committed and recreates a clean compatible environment.
+- [x] `verify_install.py` passes from `C:\xPY\vEnv\WikiEnconet`.
+- [x] Complete existing pytest suite passes from the new environment.
+- [x] Aggregate validation passes from the new environment.
+- [x] `sys.executable` and `sys.prefix` resolve inside `C:\xPY\vEnv\WikiEnconet`.
+- [x] Required package versions match controlled declarations exactly.
+- [x] No project dependency was installed into Conda `base` or the user site directory; the
+  installation command targeted the exact environment interpreter and the isolation test proves
+  all declared modules resolve beneath its prefix.
 
 **Dependencies:** EA0.5; implementation begins after the plan/architecture gate is accepted.
 
@@ -1177,7 +1182,7 @@ The feature is complete only when all of the following are true:
 | EA0.3 | Evidence bundle schema | M0 | EA0.2 | [ ] |
 | EA0.4 | Navigation/safety/accessibility contract | M0 | EA0.3 | [ ] |
 | EA0.5 | Create isolated Conda environment | M0 | — | [x] |
-| EA0.6 | Install/verify controlled dependencies | M0 | EA0.5 | [-] RED captured |
+| EA0.6 | Install/verify controlled dependencies | M0 | EA0.5 | [x] |
 | EA1.1 | Read-only crumb resolver | M1 | EA0.3–EA0.4, EA0.6 | [ ] |
 | EA1.2 | Complete reference entity graph | M1 | EA1.1 | [ ] |
 | EA1.3 | Adjacent chunk context | M1 | EA1.1 | [ ] |

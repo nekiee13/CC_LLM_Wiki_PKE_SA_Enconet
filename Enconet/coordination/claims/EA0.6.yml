@@ -1,0 +1,15 @@
+task: EA0.6
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T16:04:53Z
+last_renewed_at_utc: 2026-09-03T16:04:53Z
+expires_at_utc: 2026-09-04T00:04:53Z
+anticipated_files:
+  - Enconet/environment.yml
+  - Enconet/tests/test_conda_environment.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA0.6.yml
+  - Enconet/coordination/messages/CX_*ea0-6*.md
+note: Implement EA0.6 only: controlled Conda specification, isolation/reproducibility tests, dependency install and verification; Claude review deferred by ADR-0023.
+released_at_utc: 2026-09-03T16:20:47Z

@@ -46,6 +46,8 @@ and ADRs are the records.
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
 - `DATA-BACKUP` — codex, released 2026-07-13T21:06:39Z
+- `EA0.1` — codex, released 2026-09-03T16:04:53Z
+- `EA0.6` — codex, released 2026-09-03T16:20:47Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -246,10 +248,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-09-03T155959Z_owner-temporary-codex-continuation` — status, codex -> claude-code: OWNER-TEMP-CODEX-CONTINUATION
+- `CX_2026-09-03T162021Z_ea0-6-review-request` — review_request, codex -> claude-code: EA0.6
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 685 records in `coordination/archive/`
 
-Generated: 2026-09-03T16:00:27Z
+Generated: 2026-09-03T16:20:47Z

@@ -1,0 +1,15 @@
+task: EA0.1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T16:01:26Z
+last_renewed_at_utc: 2026-09-03T16:01:26Z
+expires_at_utc: 2026-09-04T00:01:26Z
+anticipated_files:
+  - Enconet/tests/test_epic11_report.py
+  - Enconet/tests/test_epic12_dashboard.py
+  - Enconet/tests/test_evidence_access_characterization.py
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA0.1.yml
+  - Enconet/coordination/messages/CX_*ea0-1*.md
+note: Implement EA0.1 characterization tests only; production rendering remains unchanged and Claude review is deferred under ADR-0023.
+released_at_utc: 2026-09-03T16:04:53Z
