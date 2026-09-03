@@ -1,0 +1,21 @@
+task: EA3.2
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T22:28:00Z
+last_renewed_at_utc: 2026-09-03T22:28:00Z
+expires_at_utc: 2026-09-04T06:28:00Z
+anticipated_files:
+  - Enconet/scripts/citation_renderer.py
+  - Enconet/scripts/generate_report.py
+  - Enconet/templates/dashboard-template.html
+  - Enconet/scripts/validate_dashboard.py
+  - Enconet/tests/test_portable_report_links.py
+  - Enconet/tests/test_evidence_drawer.py
+  - Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_evaluation_report.md
+  - Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA3.2.yml
+  - Enconet/coordination/messages/CX_*ea3-2*.md
+note: Implement EA3.2 only: portable candidate-report viewer links and direct fragment/history navigation in the matched offline dashboard; preserve approved outputs.
+released_at_utc: 2026-09-03T22:41:41Z

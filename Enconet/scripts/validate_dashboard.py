@@ -114,6 +114,7 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
             "artifact-metadata", "metadata-package-hash", "metadata-bundle-hash",
             "evidence-backdrop", "evidence-drawer", "evidence-panel-heading",
             "evidence-close", "evidence-status", "evidence-resolved-content",
+            "evidence-entity-context", "evidence-context-label", "evidence-context-values",
             "evidence-quotes", "evidence-primary-chunk", "evidence-previous-chunk",
             "evidence-next-chunk", "evidence-current-chunk-id",
             "evidence-highlight-status", "evidence-chunk-text",
@@ -125,7 +126,9 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
                 errors.append(f"missing evidence artifact metadata element: {element_id}")
         for function in (
             "evidenceControl", "appendEvidenceControls", "renderEvidenceCrumb",
-            "openEvidence", "closeEvidence", "quoteRanges", "renderHighlightedText",
+            "evidenceCrumbFor", "resolveEvidenceTarget", "renderEntityContext", "openEvidence",
+            "hideEvidence", "closeEvidence", "navigateEvidenceLocation",
+            "quoteRanges", "renderHighlightedText",
             "renderChunk", "navigateChunk", "buildEvidenceCitation",
             "copyEvidenceCitation", "printEvidence",
         ):
@@ -136,6 +139,8 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
             'role="status"', 'aria-live="polite"', 'data-evidence-id',
             'data-quote-ids', "document.createTextNode(source.slice(start,end))",
             "body.evidence-print>main", "window.addEventListener('afterprint'",
+            "window.addEventListener('popstate'", "window.addEventListener('hashchange'",
+            "navigateEvidenceLocation('initial_load')",
             "JavaScript is required to open the embedded evidence; reference IDs "
             "remain visible for manual lookup.",
         )

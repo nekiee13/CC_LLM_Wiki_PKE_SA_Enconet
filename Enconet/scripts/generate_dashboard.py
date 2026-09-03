@@ -32,6 +32,7 @@ UI = {
 
 EVIDENCE_UI = {
     "en": {"evidence_title": "Source evidence", "evidence_close": "Close evidence",
+           "evidence_context": "Requested report record",
            "evidence_statement": "Statement", "evidence_document": "Source document",
            "evidence_traceability": "Traceability", "evidence_quotes": "Exact quotes",
            "evidence_chunk": "Source chapter", "evidence_unavailable": "Evidence unavailable",
@@ -46,6 +47,7 @@ EVIDENCE_UI = {
            "copy_success": "Citation copied",
            "copy_fallback": "Copying was denied; the citation is selected below"},
     "sl": {"evidence_title": "Izvorni dokaz", "evidence_close": "Zapri dokaz",
+           "evidence_context": "Zahtevani zapis poročila",
            "evidence_statement": "Trditev", "evidence_document": "Izvorni dokument",
            "evidence_traceability": "Sledljivost", "evidence_quotes": "Natančni navedki",
            "evidence_chunk": "Izvorno poglavje", "evidence_unavailable": "Dokaz ni na voljo",
@@ -60,6 +62,7 @@ EVIDENCE_UI = {
            "copy_success": "Navedek je kopiran",
            "copy_fallback": "Kopiranje ni dovoljeno; navedek je označen spodaj"},
     "hr": {"evidence_title": "Izvorni dokaz", "evidence_close": "Zatvori dokaz",
+           "evidence_context": "Traženi zapis izvješća",
            "evidence_statement": "Tvrdnja", "evidence_document": "Izvorni dokument",
            "evidence_traceability": "Sljedivost", "evidence_quotes": "Točni citati",
            "evidence_chunk": "Izvorno poglavlje", "evidence_unavailable": "Dokaz nije dostupan",

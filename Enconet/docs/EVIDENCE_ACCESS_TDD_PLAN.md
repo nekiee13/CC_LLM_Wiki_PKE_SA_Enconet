@@ -713,6 +713,8 @@ meeting.
 
 **GitHub issue title:** `EA3.2: Link report citations to Evidence Explorer fragments`
 
+**Status:** Completed by Codex on 2026-09-04; independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Put the browser address of the correct drawer behind every report label.
 
 **Tests first — RED**
@@ -727,10 +729,10 @@ meeting.
 
 **Acceptance criteria**
 
-- [ ] Links do not contain machine-specific absolute paths.
-- [ ] Links work after moving the complete output package to another directory/computer.
-- [ ] Direct fragment navigation, refresh, and browser back/forward work.
-- [ ] English/Croatian report variants target the correct run bundle.
+- [x] Links do not contain machine-specific absolute paths.
+- [x] Links work after moving the complete output package to another directory/computer.
+- [x] Direct fragment navigation, refresh, and browser back/forward work.
+- [x] English/Croatian report variants target the correct run bundle.
 
 **Dependencies:** EA2.2, EA3.1.
 
@@ -1207,7 +1209,7 @@ The feature is complete only when all of the following are true:
 | EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [x] |
 | EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [x] |
 | EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [x] |
-| EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [ ] |
+| EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [x] |
 | EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [ ] |
 | EA4.1 | Validated review catalog | M3 | EA1.4, EA3.3 | [ ] |
 | EA4.2 | Offline run-selection page | M3 | EA4.1 | [ ] |
@@ -1239,7 +1241,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA3.1 and EA5.1 are complete, with independent Claude review queued under ADR-0023. Every
-report reference now uses one fail-closed typed renderer, with stable visible IDs and distinct
-primary-object and lineage citations. Start **EA3.2** next to emit portable relative links from
-candidate reports to the Evidence Explorer.
+EA0.1–EA3.2 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+candidate report now contains portable relative links to its sibling Evidence Explorer, and direct
+fragments survive relocation, refresh, and browser history navigation. Start **EA3.3** next to fail
+publication on dead, stale, duplicated, or run-mismatched evidence links.

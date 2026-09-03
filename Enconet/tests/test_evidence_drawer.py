@@ -115,6 +115,26 @@ def test_unknown_target_shows_localized_announced_error_without_blank_panel(page
     assert page.evaluate("document.activeElement.id") == "evidence-panel-heading"
 
 
+def test_direct_fragment_survives_refresh_and_browser_history(page):
+    target = f"#evidence/crumb/{SAMPLE_CRUMB}"
+    page.goto(CANDIDATE.resolve().as_uri() + target, wait_until="load")
+    assert page.locator("#evidence-drawer").is_visible()
+    assert page.locator("#evidence-statement").text_content() == SAMPLE_STATEMENT
+
+    page.reload(wait_until="load")
+    assert page.locator("#evidence-drawer").is_visible()
+    assert page.locator("#evidence-requested-target").text_content() == target
+
+    page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+    _sample_control(page).click()
+    assert page.locator("#evidence-drawer").is_visible()
+    page.go_back(wait_until="load")
+    assert page.locator("#evidence-drawer").is_hidden()
+    page.go_forward(wait_until="load")
+    assert page.locator("#evidence-drawer").is_visible()
+    assert page.locator("#evidence-statement").text_content() == SAMPLE_STATEMENT
+
+
 def test_open_and_close_do_not_mutate_embedded_evaluation_data(page):
     before = page.locator("#evidence-bundle").text_content()
     _sample_control(page).click()

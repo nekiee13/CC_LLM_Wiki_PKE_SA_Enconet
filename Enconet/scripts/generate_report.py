@@ -5,12 +5,15 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
+import tempfile
 from pathlib import Path
 
 import db_util
 import citation_renderer
+import evidence_access_policy
 from build_evaluation_package import validate_package, validate_source
 from finding_workflow import APPROVALS, render_template
 
@@ -67,17 +70,32 @@ def require_report_gates(package: dict) -> None:
         raise ValueError(f"approved {'/'.join(missing)} report gate(s) missing for {run_id}")
 
 
-def _citation(row: dict) -> str:
+def portable_viewer_path(report_output: Path, viewer_output: Path) -> str:
+    """Return a relocation-safe viewer path for two sibling package artifacts."""
+    report = report_output.resolve()
+    viewer = viewer_output.resolve()
+    if report.parent != viewer.parent:
+        raise ValueError("report and evidence viewer must be sibling artifacts")
+    return viewer.name
+
+
+def _citation(row: dict, *, viewer_path: str | None = None) -> str:
     if row.get("evidence_item_id"):
-        return citation_renderer.render("crumb", row["evidence_item_id"])
+        return citation_renderer.render(
+            "crumb", row["evidence_item_id"], viewer_path=viewer_path
+        )
     if row.get("gap_id"):
-        return citation_renderer.render("gap", row["gap_id"])
+        return citation_renderer.render("gap", row["gap_id"], viewer_path=viewer_path)
     if row.get("finding_id"):
-        return citation_renderer.render("finding", row["finding_id"])
-    return citation_renderer.render("source", "package")
+        return citation_renderer.render(
+            "finding", row["finding_id"], viewer_path=viewer_path
+        )
+    return citation_renderer.render("source", "package", viewer_path=viewer_path)
 
 
-def render(package: dict, template: Path = TEMPLATE) -> str:
+def render(
+    package: dict, template: Path = TEMPLATE, *, viewer_path: str | None = None
+) -> str:
     errors = validate_package(package)
     if errors:
         raise ValueError("invalid evaluation package: " + "; ".join(errors))
@@ -111,13 +129,15 @@ def render(package: dict, template: Path = TEMPLATE) -> str:
     for row in package["evaluations"]:
         ruling = applicability.get(row["criterion_id"], {})
         evidence = " ".join(
-            citation_renderer.render("crumb", item) for item in row.get("evidence_ids", [])
-        ) or citation_renderer.render("source", "package")
+            citation_renderer.render("crumb", item, viewer_path=viewer_path)
+            for item in row.get("evidence_ids", [])
+        ) or citation_renderer.render("source", "package", viewer_path=viewer_path)
         evaluation = citation_renderer.render(
-            "evaluation", row["evaluation_id"], label=row["criterion_id"]
+            "evaluation", row["evaluation_id"], label=row["criterion_id"],
+            viewer_path=viewer_path,
         )
         document = citation_renderer.render(
-            "document", ruling.get("scope_source_doc_id", ""),
+            "document", ruling.get("scope_source_doc_id", ""), viewer_path=viewer_path,
         )
         criterion_blocks.append(
             f"### {evaluation} — {row.get('criterion_name', '')}\n\n"
@@ -127,23 +147,25 @@ def render(package: dict, template: Path = TEMPLATE) -> str:
             f"- rationale: {row.get('rationale', '')} {evidence}"
         )
     gap_lines = [
-        f"- {citation_renderer.render('gap', row['gap_id'])} (gap context): "
-        f"{row['description']} {_citation(row)}" for row in package["gaps"]
+        f"- {citation_renderer.render('gap', row['gap_id'], viewer_path=viewer_path)} (gap context): "
+        f"{row['description']} {_citation(row, viewer_path=viewer_path)}"
+        for row in package["gaps"]
     ]
     action_lines = [
-        f"- {citation_renderer.render('action', row['action_id'])}: "
-        f"{row['description']} {_citation(row)}" for row in actions
+        f"- {citation_renderer.render('action', row['action_id'], viewer_path=viewer_path)}: "
+        f"{row['description']} {_citation(row, viewer_path=viewer_path)}" for row in actions
     ]
     finding_lines = [
-        f"- {citation_renderer.render('finding', row['finding_id'])}: "
-        f"{row['title']} — {row['body']} {_citation(row)}" for row in findings
+        f"- {citation_renderer.render('finding', row['finding_id'], viewer_path=viewer_path)}: "
+        f"{row['title']} — {row['body']} {_citation(row, viewer_path=viewer_path)}"
+        for row in findings
     ]
     counts = ["| classification | count |", "|---|---:|"] + [
         f"| {name} | {count} |" for name, count in sorted(metrics["classification_counts"].items())
     ]
     appendix = ["| criterion | classification | evidence |", "|---|---|---|"] + [
         f"| {row['criterion_id']} | {row['classification']} | "
-        f"{' '.join(citation_renderer.render('crumb', item) for item in row.get('evidence_ids', [])) or citation_renderer.render('source', 'package')} |"
+        f"{' '.join(citation_renderer.render('crumb', item, viewer_path=viewer_path) for item in row.get('evidence_ids', [])) or citation_renderer.render('source', 'package', viewer_path=viewer_path)} |"
         for row in package["evaluations"]
     ]
     values = {
@@ -154,7 +176,7 @@ def render(package: dict, template: Path = TEMPLATE) -> str:
         "scope": f"- run_id: `{run['run_id']}`\n- supplier: `{run.get('supplier', '')}`\n- scoring_model_version: `{run.get('scoring_model_version', '')}`",
         "method": text["method"].format(schema=package["schema_version"]),
         "coverage": "\n".join(counts), "criteria": "\n\n".join(criterion_blocks),
-        "gaps": "\n".join(gap_lines) or f"- none {citation_renderer.render('source', 'package')}",
+        "gaps": "\n".join(gap_lines) or f"- none {citation_renderer.render('source', 'package', viewer_path=viewer_path)}",
         "actions": "\n".join(action_lines) or text["none_actions"],
         "recommendations": "\n".join(finding_lines) or text["none_findings"],
         "score": f"**{metrics['consolidated_score']} / 100** — **{metrics['applicable_count']}** applicable criteria (`{metrics['classification']}`).",
@@ -170,22 +192,62 @@ def default_output(package: dict) -> Path:
     return OUTPUTS / f"{supplier}_appendix_b_evaluation_report.md"
 
 
-def main() -> int:
+def _atomic_write_text(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", newline="\n", prefix=f".{path.name}.",
+            suffix=".tmp", dir=path.parent, delete=False,
+        ) as handle:
+            temporary = Path(handle.name)
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+        temporary = None
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("package", type=Path)
     parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--viewer-output", type=Path,
+        help="sibling evidence viewer for a portable candidate report",
+    )
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--approvals", type=Path, default=APPROVALS)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     try:
         package = json.loads(args.package.read_text(encoding="utf-8"))
         source_errors = validate_source(package, args.db, args.approvals)
         if source_errors:
             raise ValueError(source_errors[0])
         output = args.output or default_output(package)
-        content = render(package)
-        output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(content, encoding="utf-8", newline="\n")
+        if args.viewer_output is not None:
+            if args.output is None:
+                raise ValueError("--output is required with --viewer-output")
+            output = output.resolve()
+            viewer_output = args.viewer_output.resolve()
+            evidence_access_policy.require_output_target(output)
+            expected = evidence_access_policy.candidate_path(
+                package["run"]["run_id"], output.name
+            ).resolve()
+            if output != expected:
+                raise evidence_access_policy.PolicyError(
+                    f"candidate output must be directly under the selected run directory: {expected}"
+                )
+            viewer_path = portable_viewer_path(output, viewer_output)
+            content = render(package, viewer_path=viewer_path)
+            _atomic_write_text(output, content)
+        else:
+            content = render(package)
+            output.parent.mkdir(parents=True, exist_ok=True)
+            output.write_text(content, encoding="utf-8", newline="\n")
         print(f"generate_report: PASS - {output}")
         return 0
     except Exception as exc:  # noqa: BLE001 - CLI fail-closed boundary
