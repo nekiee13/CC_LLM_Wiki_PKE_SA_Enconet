@@ -117,13 +117,17 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
             "evidence-quotes", "evidence-primary-chunk", "evidence-previous-chunk",
             "evidence-next-chunk", "evidence-current-chunk-id",
             "evidence-highlight-status", "evidence-chunk-text",
+            "evidence-record-actions", "evidence-copy", "evidence-print",
+            "evidence-copy-status", "evidence-citation-output",
+            "evidence-citation-print",
         ):
             if f'id="{element_id}"' not in html:
                 errors.append(f"missing evidence artifact metadata element: {element_id}")
         for function in (
             "evidenceControl", "appendEvidenceControls", "renderEvidenceCrumb",
             "openEvidence", "closeEvidence", "quoteRanges", "renderHighlightedText",
-            "renderChunk", "navigateChunk",
+            "renderChunk", "navigateChunk", "buildEvidenceCitation",
+            "copyEvidenceCitation", "printEvidence",
         ):
             if not re.search(rf"function\s+{re.escape(function)}\s*\(", html):
                 errors.append(f"missing evidence navigation JS function: {function}")
@@ -131,6 +135,7 @@ def validate(package: dict, data: dict, html: str, *, db: Path | None = None,
             'role="dialog"', 'aria-modal="true"', 'tabindex="-1"',
             'role="status"', 'aria-live="polite"', 'data-evidence-id',
             'data-quote-ids', "document.createTextNode(source.slice(start,end))",
+            "body.evidence-print>main", "window.addEventListener('afterprint'",
             "JavaScript is required to open the embedded evidence; reference IDs "
             "remain visible for manual lookup.",
         )

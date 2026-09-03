@@ -656,9 +656,9 @@ meeting.
 
 **Acceptance criteria**
 
-- [ ] Copied citation contains enough stable information to re-query the database.
-- [ ] Printed evidence identifies run, package, source, crumb, quote, and chunk.
-- [ ] Denied clipboard permission does not lose information.
+- [x] Copied citation contains enough stable information to re-query the database.
+- [x] Printed evidence identifies run, package, source, crumb, quote, and chunk.
+- [x] Denied clipboard permission does not lose information.
 
 **Dependencies:** EA2.2–EA2.3.
 
@@ -1205,7 +1205,7 @@ The feature is complete only when all of the following are true:
 | EA2.1 | Embed validated payload | M2 | EA1.4 | [x] |
 | EA2.2 | Clickable evidence drawer | M2 | EA2.1, EA5.1 | [x] |
 | EA2.3 | Quote highlight/context navigation | M2 | EA1.3, EA2.2 | [x] |
-| EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [ ] |
+| EA2.4 | Copy/print evidence record | M2 | EA2.2–EA2.3 | [x] |
 | EA3.1 | Typed citation renderer | M2 | EA0.4, EA1.2 | [ ] |
 | EA3.2 | Portable report deep links | M2 | EA2.2, EA3.1 | [ ] |
 | EA3.3 | Report-link validator | M2 | EA1.4, EA3.2 | [ ] |
@@ -1239,7 +1239,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA2.3 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
-candidate evidence drawer now highlights exact source quotes, discloses ambiguous, normalized,
-and failed matches, and navigates bounded adjacent chunks without crossing documents. Start
-**EA2.4** next to add owner-friendly copy and print controls for complete evidence records.
+EA0.1–EA2.4 and EA5.1 are complete, with independent Claude review queued under ADR-0023. The
+candidate evidence drawer now provides a deterministic traceable citation, a visible clipboard
+fallback, and a selected-evidence print layout. Start **EA3.1** next to centralize typed citation
+rendering before portable report links are introduced.
