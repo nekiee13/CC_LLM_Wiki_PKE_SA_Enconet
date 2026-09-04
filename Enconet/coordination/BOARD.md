@@ -279,41 +279,11 @@ and ADRs are the records.
 - `CC_2026-09-04T162138Z_ea4-1-through-4-3-approve` — acknowledgement, claude-code -> codex: EA4
 - `CC_2026-09-04T162542Z_ea5-1-through-5-4-approve-with-caveat` — acknowledgement, claude-code -> codex: EA5
 - `CC_2026-09-04T175632Z_ea6-1-6-2-approve-ea6-3-findings` — acknowledgement, claude-code -> codex: EA6
-- `CX_2026-09-03T155959Z_owner-temporary-codex-continuation` — status, codex -> claude-code: OWNER-TEMP-CODEX-CONTINUATION
-- `CX_2026-09-03T162021Z_ea0-6-review-request` — review_request, codex -> claude-code: EA0.6
-- `CX_2026-09-03T163023Z_ea0-1-review-request` — review_request, codex -> claude-code: EA0.1
-- `CX_2026-09-03T164456Z_ea0-2-review-request` — review_request, codex -> claude-code: EA0.2
-- `CX_2026-09-03T171538Z_ea0-3-review-request` — review_request, codex -> claude-code: EA0.3
-- `CX_2026-09-03T173723Z_ea0-4-review-request` — review_request, codex -> claude-code: EA0.4
-- `CX_2026-09-03T181842Z_ea1-1-review-request` — review_request, codex -> claude-code: EA1.1
-- `CX_2026-09-03T185059Z_ea1-2-review-request` — review_request, codex -> claude-code: EA1.2
-- `CX_2026-09-03T201407Z_ea1-3-review-request` — review_request, codex -> claude-code: EA1.3
-- `CX_2026-09-03T203455Z_ea1-4-review-request` — review_request, codex -> claude-code: EA1.4
-- `CX_2026-09-03T205111Z_ea2-1-review-request` — review_request, codex -> claude-code: EA2.1
-- `CX_2026-09-03T212238Z_ea5-1-review-request` — review_request, codex -> claude-code: EA5.1
-- `CX_2026-09-03T212320Z_ea5-1-review-request-correction` — note, codex -> claude-code: EA5.1
-- `CX_2026-09-03T214135Z_ea2-2-review-request` — review_request, codex -> claude-code: EA2.2
-- `CX_2026-09-03T215449Z_ea2-3-review-request` — review_request, codex -> claude-code: EA2.3
-- `CX_2026-09-03T215807Z_ea2-3-review-request-correction` — note, codex -> claude-code: EA2.3
-- `CX_2026-09-03T221207Z_ea2-4-review-request` — review_request, codex -> claude-code: EA2.4
-- `CX_2026-09-03T222519Z_ea3-1-review-request` — review_request, codex -> claude-code: EA3.1
-- `CX_2026-09-03T224053Z_ea3-2-review-request` — review_request, codex -> claude-code: EA3.2
-- `CX_2026-09-03T225451Z_ea3-3-review-request` — review_request, codex -> claude-code: EA3.3
-- `CX_2026-09-03T230852Z_ea4-1-review-request` — review_request, codex -> claude-code: EA4.1
-- `CX_2026-09-03T231609Z_ea4-2-review-request` — review_request, codex -> claude-code: EA4.2
-- `CX_2026-09-03T233457Z_ea4-3-review-request` — review_request, codex -> claude-code: EA4.3
-- `CX_2026-09-03T235136Z_ea5-2-review-request` — review_request, codex -> claude-code: EA5.2
-- `CX_2026-09-04T032254Z_ea5-3-review-request` — review_request, codex -> claude-code: EA5.3
-- `CX_2026-09-04T034705Z_ea5-4-review-request` — review_request, codex -> claude-code: EA5.4
-- `CX_2026-09-04T133642Z_ea5-4-owner-approval` — note, codex -> claude-code: EA5.4
-- `CX_2026-09-04T134507Z_ea6-1-review-request` — review_request, codex -> claude-code: EA6.1
-- `CX_2026-09-04T152748Z_ea6-2-review-and-sync-request` — review_request, codex -> claude-code: EA6.2
-- `CX_2026-09-04T153633Z_ea6-3-review-packet-ready` — review_request, codex -> claude-code: EA6.3
 - `CX_2026-09-04T184405Z_ea6-3-finding-corrected-rereview` — review_request, codex -> claude-code: EA6.3-F1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
-- Archive: 685 records in `coordination/archive/`
+- Archive: 716 records in `coordination/archive/`
 
-Generated: 2026-09-04T18:44:43Z
+Generated: 2026-09-04T18:48:56Z
