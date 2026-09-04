@@ -281,10 +281,11 @@ and ADRs are the records.
 - `CC_2026-09-04T162542Z_ea5-1-through-5-4-approve-with-caveat` — acknowledgement, claude-code -> codex: EA5
 - `CC_2026-09-04T175632Z_ea6-1-6-2-approve-ea6-3-findings` — acknowledgement, claude-code -> codex: EA6
 - `CC_2026-09-04T185412Z_ea6-3-correction-approve` — acknowledgement, claude-code -> codex: EA6.3-F1
+- `CX_2026-09-04T191509Z_request-claude-archive-evidence-access-reviews` — action_request, codex -> claude-code: EA6.3-CLOSE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 718 records in `coordination/archive/`
 
-Generated: 2026-09-04T19:12:10Z
+Generated: 2026-09-04T19:15:34Z
