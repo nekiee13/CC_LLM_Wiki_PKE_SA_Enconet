@@ -1121,8 +1121,9 @@ official shelf.
   replacement, rollback, and final-name link resolution.
 - [x] Rollback-safe five-file promotion mechanism and immutable result-manifest contract implemented.
 - [x] Replace the superseded Owner promotion packet after chapter-reference UAT and re-review pass.
-- [ ] Owner explicitly approves both fixed G5 and G6 Evidence Access decision references.
-- [ ] Execute promotion, validate final published artifacts, close coordination, and publish handoff.
+- [x] Owner explicitly approves both fixed G5 and G6 Evidence Access decision references.
+- [x] Execute promotion and validate final published artifacts.
+- [ ] Close coordination and publish the verified handoff.
 
 **Tests first — RED**
 
@@ -1264,7 +1265,7 @@ The feature is complete only when all of the following are true:
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
-| EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] |
+| EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] closeout |
 | EA7.1 | Measure need for live service | M5 | EA5.4/feedback | [ ] deferred |
 | EA7.2 | Superseding ADR and separate plan | M5 | EA7.1 + owner | [ ] deferred |
 
@@ -1284,8 +1285,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-The Owner-requested corresponding chapter reference is implemented, and both **EA5.4 Owner UAT and
-EA6.3 focused review are approved** for the exact candidate fingerprints. The replacement EA6.4
-gate packet is ready. The next action is the Owner's explicit decision on both
-`G5-EVIDENCE-ACCESS-RUN-20260728-01` and `G6-EVIDENCE-ACCESS-RUN-20260728-01`; do not execute
-promotion before that separate authorization is recorded.
+The Owner-requested corresponding chapter reference is implemented and promoted after EA5.4 UAT,
+EA6.3 independent review, and explicit G5/G6 authorization. All five canonical artifacts match the
+release manifest, 200 final-name evidence links resolve, and the post-promotion aggregate passes
+21/21. The next action is administrative closeout: commit the release evidence, close coordination,
+and publish a verified handoff. EA7 remains an optional separate Owner decision.

@@ -1,12 +1,12 @@
 # EA6.4 Evidence Access promotion gate
 
-Gate status: **AWAITING OWNER PROMOTION DECISION**
+Gate status: **PROMOTED**
 
 Release: `EA6.4-RUN-20260728-01`
 
-The chapter-reference candidate has passed renewed Owner UAT and independent Claude review. This
-packet asks one narrow question: may the accepted Evidence Explorer candidate replace the five
-protected canonical report/dashboard copies? It does not authorize a live service and does
+The chapter-reference candidate passed renewed Owner UAT and independent Claude review. The Owner
+explicitly approved both G5 and G6 Evidence Access decisions, and the controlled transaction
+replaced the five protected canonical report/dashboard copies. This does not authorize a live service and does
 not modify the closed audit findings, score, source evidence, or database.
 
 ## Exact candidate
@@ -57,20 +57,22 @@ Promotion success is recorded at
 `outputs/evidence_access_release_manifest_RUN-20260728-01.json`; it includes timestamp, approval
 references, independent-review identity, candidate-manifest hash, and all five final hashes.
 
-## Owner promotion decision required
+## Owner promotion decision — approved and executed
 
-To approve promotion, the Owner must explicitly authorize both immutable decision references:
+The Owner explicitly authorized both immutable decision references:
 
 - `G5-EVIDENCE-ACCESS-RUN-20260728-01` — replace the two canonical report copies.
 - `G6-EVIDENCE-ACCESS-RUN-20260728-01` — replace the two canonical dashboard copies and wiki copy.
 
-Suggested unambiguous approval text:
+Recorded approval text:
 
 > Owner approves EA6.4 promotion of `EA6.4-RUN-20260728-01` under both
 > `G5-EVIDENCE-ACCESS-RUN-20260728-01` and `G6-EVIDENCE-ACCESS-RUN-20260728-01`.
 
-This packet does not itself authorize execution. Until that exact promotion approval is recorded,
-the controlled script stops before changing any protected output.
+Execution completed at `2026-09-04T22:10:23Z`. The immutable result is
+`outputs/evidence_access_release_manifest_RUN-20260728-01.json`; all five recorded destination
+hashes match the approved candidate. Post-promotion aggregate validation passed 21/21 and all 200
+canonical report evidence links resolved.
 
-ELI5: the exact new book passed both inspections. This final question asks whether it may replace
-the old book on the official shelf.
+ELI5: the exact new book passed both inspections, the Owner approved the shelf replacement, and the
+new book is now on the official shelf with a signed receipt recording exactly what changed.

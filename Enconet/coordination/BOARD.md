@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `EA6.4-PROMOTION` — codex, expires 2026-09-05T22:07:27Z
 
 ## Released claims
 
@@ -281,10 +281,11 @@ and ADRs are the records.
 - `CC_2026-09-04T210535Z_ea6-4-promotion-guardrails-approve` — acknowledgement, claude-code -> codex: EA6.4
 - `CC_2026-09-04T213922Z_chapter-reference-approve-with-observation` — acknowledgement, claude-code -> codex: EA6.3-CHAPTER-REFERENCE
 - `CX_2026-09-04T220042Z_owner-chapter-uat-approved` — note, codex -> claude-code: EA5.4-CHAPTER-UAT
+- `CX_2026-09-04T221539Z_evidence-access-promoted` — note, codex -> claude-code: EA6.4-PROMOTION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 736 records in `coordination/archive/`
 
-Generated: 2026-09-04T22:00:54Z
+Generated: 2026-09-04T22:15:52Z

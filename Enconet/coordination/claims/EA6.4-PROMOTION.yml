@@ -1,0 +1,18 @@
+task: EA6.4-PROMOTION
+agent: codex
+status: active
+claimed_at_utc: 2026-09-04T22:07:27Z
+last_renewed_at_utc: 2026-09-04T22:07:27Z
+expires_at_utc: 2026-09-05T22:07:27Z
+anticipated_files:
+  - manifests/approvals.csv
+  - schemas/evidence_access_promotion.yml
+  - docs/acceptance/EA6.4_PROMOTION_GATE.md
+  - docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - outputs/enconet_appendix_b_evaluation_report.md
+  - outputs/enconet_appendix_b_evaluation_report_hr.md
+  - outputs/enconet_appendix_b_dashboard.html
+  - outputs/enconet_appendix_b_dashboard_hr.html
+  - wiki/dashboards/enconet_appendix_b_dashboard.html
+  - outputs/evidence_access_release_manifest_RUN-20260728-01.json
+note: Execute explicitly authorized G5/G6 chapter-reference promotion and validate canonical outputs.
