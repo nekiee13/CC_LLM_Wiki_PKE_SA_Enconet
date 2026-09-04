@@ -11,6 +11,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+import yaml
+
 import db_util
 import evidence_access_policy
 import validate_evidence_bundle
@@ -21,6 +23,7 @@ from generate_report import require_report_gates
 
 ENCONET = Path(__file__).resolve().parents[1]
 TEMPLATE = ENCONET / "templates" / "dashboard-template.html"
+EVIDENCE_BUDGETS = ENCONET / "schemas" / "evidence_access_budgets.yml"
 OUTPUTS = ENCONET / "outputs"
 WIKI = ENCONET / "wiki" / "dashboards"
 
@@ -82,9 +85,14 @@ for _language, _labels in EVIDENCE_UI.items():
 
 
 def _script_json(value: object) -> str:
-    return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
-            .replace("&", "\\u0026").replace("<", "\\u003c")
-            .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
+    serialized = (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+                  .replace("&", "\\u0026").replace("<", "\\u003c")
+                  .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
+    return re.sub(
+        "[\x7f-\x9f\u202a-\u202e\u2066-\u2069]",
+        lambda match: f"\\u{ord(match.group()):04x}",
+        serialized,
+    )
 
 
 def _bundle_hash(bundle: dict) -> str:
@@ -99,6 +107,15 @@ def _validate_bundle_for_dashboard(bundle: dict, data: dict) -> None:
     errors = validate_evidence_bundle.validate(bundle)
     if errors:
         raise ValueError("invalid evidence bundle: " + "; ".join(errors))
+    budgets = yaml.safe_load(EVIDENCE_BUDGETS.read_text(encoding="utf-8"))
+    bundle_bytes = len(validate_evidence_bundle.canonical_bytes(bundle))
+    size_limit = budgets["size_bytes"]["bundle"]
+    if bundle_bytes > size_limit:
+        raise ValueError(f"bundle size budget exceeded: {bundle_bytes} > {size_limit}")
+    for name, limit in budgets["projection_counts"].items():
+        count = len(bundle[name])
+        if count > limit:
+            raise ValueError(f"{name} projection budget exceeded: {count} > {limit}")
 
 
 def render(

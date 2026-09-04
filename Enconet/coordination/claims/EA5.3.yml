@@ -1,0 +1,20 @@
+task: EA5.3
+agent: codex
+status: released
+claimed_at_utc: 2026-09-03T23:55:42Z
+last_renewed_at_utc: 2026-09-04T03:19:39Z
+expires_at_utc: 2026-09-04T11:19:39Z
+anticipated_files:
+  - Enconet/schemas/evidence_access_budgets.yml
+  - Enconet/scripts/validate_evidence_access_budgets.py
+  - Enconet/scripts/generate_dashboard.py
+  - Enconet/scripts/validate_review_package.py
+  - Enconet/scripts/run_all_validations.py
+  - Enconet/tests/test_evidence_access_budgets.py
+  - Enconet/tests/test_evidence_aggregate_validation.py
+  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/claims/EA5.3.yml
+  - Enconet/coordination/messages/CX_*ea5-3*.md
+note: Implement EA5.3 only: explicit approved-by-execution size/projection/browser budgets, injection and Unicode safety corpus, safe manifest paths, deterministic measurements, and aggregate enforcement; preserve published artifacts.
+released_at_utc: 2026-09-04T03:23:23Z

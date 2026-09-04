@@ -85,7 +85,10 @@ def validate(package_root: Path) -> list[str]:
         if not isinstance(row, dict) or not isinstance(row.get("path"), str):
             continue
         relative = row["path"]
-        path = package_root / Path(relative)
+        relative_path = Path(relative)
+        if relative_path.is_absolute() or ".." in relative_path.parts or "\\" in relative:
+            continue
+        path = package_root / relative_path
         if not path.is_file():
             errors.append(f"missing manifest file: {relative}")
             continue

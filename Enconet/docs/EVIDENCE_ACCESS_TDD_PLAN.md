@@ -870,9 +870,9 @@ similarly named files.
 
 **Epic acceptance criteria**
 
-- [ ] Unit, integration, browser, security, portability, and production checks pass.
-- [ ] Aggregate validation fails when evidence navigation is broken.
-- [ ] Performance and artifact-size limits are explicit.
+- [x] Unit, integration, browser, security, portability, and production checks pass.
+- [x] Aggregate validation fails when evidence navigation is broken.
+- [x] Performance and artifact-size limits are explicit.
 
 ## Task EA5.1 — Establish the browser test harness
 
@@ -930,6 +930,9 @@ similarly named files.
 
 **GitHub issue title:** `EA5.3: Bound and harden the offline evidence package`
 
+**Status:** Completed by Codex on 2026-09-04; budget values are authorized by the Owner's
+instruction to execute EA5.3, and independent Claude review is deferred under ADR-0023.
+
 **ELI5:** Make sure the evidence box is safe to open and not so large that the Owner’s browser
 freezes.
 
@@ -947,10 +950,10 @@ freezes.
 
 **Acceptance criteria**
 
-- [ ] No source text executes as markup or script.
-- [ ] No external request occurs during browser testing.
-- [ ] Owner-approved size and response budgets pass on the production package.
-- [ ] All multilingual fixture strings round-trip exactly.
+- [x] No source text executes as markup or script.
+- [x] No external request occurs during browser testing.
+- [x] Owner-approved size and response budgets pass on the production package.
+- [x] All multilingual fixture strings round-trip exactly.
 
 **Dependencies:** EA2.3, EA4.3.
 
@@ -1226,7 +1229,7 @@ The feature is complete only when all of the following are true:
 | EA4.3 | Portable package manifest | M3 | EA3.3, EA4.2 | [x] |
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
-| EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [ ] |
+| EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [x] |
 | EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [ ] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [ ] |
@@ -1251,8 +1254,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA5.2 are complete, with independent Claude review queued under ADR-0023. The canonical
-closed-phase aggregate now runs the original 14 checks plus four ordered, phase-aware evidence
-checks and fails release when bundle, report-link, real-browser, or portable-package validation
-fails. Start **EA5.3** next to enforce the security, encoding, artifact-size, and browser-performance
-budgets for the offline evidence package.
+EA0.1–EA5.3 are complete, with independent Claude review queued under ADR-0023. The canonical
+closed-phase aggregate now runs the original 14 checks plus five evidence checks, including the
+Owner-authorized security, encoding, size, projection, network, and browser-response budgets.
+Prepare **EA5.4** next, then stop at its human gate so the Owner can perform the fixed usability
+acceptance script against the portable review package.

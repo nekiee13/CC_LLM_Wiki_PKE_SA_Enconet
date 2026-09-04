@@ -37,11 +37,11 @@ MINIMUM_PHASE = {
     "structure": "setup", "frontmatter": "evidence_reviewed",
     "report": "report_ready", "report_links": "report_ready",
     "browser_evidence": "report_ready", "dashboard": "dashboard_ready",
-    "review_package": "dashboard_ready",
+    "review_package": "dashboard_ready", "evidence_budgets": "dashboard_ready",
 }
 ORDER = ["raw_sources", "chunks", "sieving_harness", "traceability", "app_b_json", "requirements",
          "evaluation", "evidence_bundle", "findings", "structure", "frontmatter", "report",
-         "report_links", "browser_evidence", "dashboard", "review_package"]
+         "report_links", "browser_evidence", "dashboard", "review_package", "evidence_budgets"]
 BENCHMARK_ORDER = ["benchmark_scoring", "benchmark_dashboard"]
 
 
@@ -166,6 +166,12 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
         "review_package": [
             py, str(SCRIPTS / "validate_review_package.py"),
             str(evidence_root / "portable_package"),
+        ],
+        "evidence_budgets": [
+            py, str(SCRIPTS / "validate_evidence_access_budgets.py"),
+            str(evidence_root / "portable_package"),
+            "--budgets", str(ENCONET / "schemas" / "evidence_access_budgets.yml"),
+            "--browser-config", str(ENCONET / "schemas" / "browser_harness.yml"),
         ],
     }
     if no_record:

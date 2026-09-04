@@ -1,0 +1,29 @@
+schema_version: "1.0"
+approval:
+  authority: project_owner
+  decision: EA5.3 execution authorized
+  date: 2026-09-04
+  evidence: "Owner instruction: Proceed with next task candidate."
+size_bytes:
+  bundle: 524288
+  viewer: 524288
+  workspace: 65536
+  package_payload_total: 1048576
+projection_counts:
+  documents: 100
+  chunks: 500
+  evaluations: 100
+  crumbs: 500
+  quotes: 1000
+  gaps: 500
+  findings: 500
+  actions: 500
+performance_ms:
+  viewer_initial_render: 3000
+  workspace_initial_render: 2000
+  evidence_open: 500
+  search_response: 500
+security:
+  external_requests: 0
+  path_pattern: '^[A-Za-z0-9._/-]+$'
+  forbid_literal_controls_in_html: true
