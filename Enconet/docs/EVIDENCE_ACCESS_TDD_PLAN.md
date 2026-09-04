@@ -1081,6 +1081,10 @@ asking its inventor.
 
 **GitHub issue title:** `EA6.3: Claude independently review and reproduce the complete release`
 
+**Status:** Deterministic reviewer protocol and packet prepared by Codex on 2026-09-04. Independent
+execution and the approve/findings decision await Claude's return under ADR-0023; Codex has not
+self-reviewed or completed this gate.
+
 **ELI5:** Have a second inspector check the wiring and test the buttons without trusting the first
 builder’s notes.
 
@@ -1272,6 +1276,7 @@ The feature is complete only when all of the following are true:
 
 EA0.1–EA6.1 are complete. **EA6.2** documentation and its clean rebuild rehearsal are implemented,
 but its final acceptance item awaits Claude-owned interpreter-guidance synchronization or an
-explicit Owner-accepted exception. Claude also remains required for EA6.3 independent review under
-ADR-0023. Do not begin promotion-dependent EA6.4 until those gates are satisfied or the Owner records
-the applicable explicit exception(s).
+explicit Owner-accepted exception. The **EA6.3** deterministic review packet is prepared and
+validated; Claude must now execute its eight commands, adjudicate ten risk checks, and return an
+immutable approve/findings record. Do not begin promotion-dependent EA6.4 until those gates are
+satisfied or the Owner records the applicable explicit exception(s).

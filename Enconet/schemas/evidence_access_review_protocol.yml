@@ -1,0 +1,67 @@
+schema_version: "1.0"
+review_id: EA6.3-RUN-20260728-01
+status: awaiting_claude
+reviewer: claude-code
+implementation_base: 34c6351dcf32277b4c5057eda187edb50e3e086d
+implementation_tip: e6713769c0206322ab3c31555a77a1ad46600927
+run_id: RUN-20260728-01
+candidate_manifest_sha256: efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012
+approved_report_sha256: 0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175
+approved_dashboard_sha256: 15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07
+expected_counts:
+  package_files: 6
+  runs: 1
+  criteria: 18
+  crumbs: 62
+  report_links: 200
+commands:
+  - id: implementation-diff
+    text: >-
+      git diff 34c6351dcf32277b4c5057eda187edb50e3e086d e6713769c0206322ab3c31555a77a1ad46600927 -- .
+  - id: validate-candidate
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\validate_evidence_access_candidate.py --contract schemas\evidence_access_release_candidate.yml --project-root .
+  - id: validate-documentation
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\validate_evidence_access_docs.py --contract schemas\evidence_access_operations.yml --operations docs\EVIDENCE_ACCESS_OPERATIONS.md --architecture docs\EVIDENCE_ACCESS_ARCHITECTURE.md --upgrade docs\EVIDENCE_ACCESS_UPGRADE_GUIDE.md --project-root .
+  - id: full-tests
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' -m pytest -q -p no:cacheprovider
+  - id: sieving-tests
+    text: >-
+      Push-Location sieving; & 'C:\xPY\vEnv\WikiEnconet\python.exe' -m pytest -q -p no:cacheprovider; Pop-Location
+  - id: verify-install
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' sieving\verify_install.py
+  - id: aggregate
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\audit_command.py audit-validate -- --no-record
+  - id: browser
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\browser_harness.py check outputs\candidates\evidence_access\portable_package\RUN-20260728-01\evidence_explorer.html --artifacts <REVIEW_ARTIFACT_DIRECTORY> --require-interactive
+risk_checks:
+  - id: database-read-only
+    description: Resolver is read-only/query-only and does not mutate SQLite.
+  - id: evidence-lineage
+    description: Run, document, source, crumb, quote, and chunk identities remain exact.
+  - id: report-deep-links
+    description: All report entity links open the intended portable viewer target.
+  - id: browser-behavior
+    description: Deep links, history, focus, keyboard, search, copy, print, and context work.
+  - id: hostile-text
+    description: Source text cannot execute as HTML or script and Unicode round-trips exactly.
+  - id: zero-network
+    description: Browser review makes no external request.
+  - id: safe-paths
+    description: Catalog, manifest, contract, and output paths cannot escape their roots.
+  - id: deterministic-package
+    description: Clean rebuild reproduces the pinned package manifest and stable counts.
+  - id: controlled-outputs
+    description: Candidate work does not rewrite the approved report or dashboard.
+  - id: governance
+    description: Owner UAT is distinct from independent review and promotion remains blocked.
+review_decision:
+  decision:
+  reviewed_at_utc:
+  message_id:
+  findings: []
