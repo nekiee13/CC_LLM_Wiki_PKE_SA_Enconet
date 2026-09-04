@@ -6,16 +6,19 @@ Reviewer: Claude Code
 
 Reviewer decision: **AWAITING CLAUDE**
 
-Codex prepared this packet but cannot perform the independent review.
-Claude must execute these checks independently, inspect the implementation rather than trusting prior summaries, and publish
-an immutable `CC_` approval or findings record. Codex must not complete the reviewer decision.
+Claude's first pass produced the high-severity finding recorded in
+`CC_2026-09-04T175632Z_ea6-1-6-2-approve-ea6-3-findings`. Codex reproduced it with a RED
+Playwright test, corrected document/package rendering, rebuilt the candidate, and reopened Owner
+UAT because the artifact fingerprints changed. Claude must now re-review the correction and
+publish a new immutable `CC_` decision. Claude must execute these checks independently.
+Codex must not complete the reviewer decision.
 
 ## Fixed review boundary
 
-- Implementation base: `34c6351dcf32277b4c5057eda187edb50e3e086d`
-- Implementation tip: `e6713769c0206322ab3c31555a77a1ad46600927`
+- Correction base: `03d1ce0644fd84fe2f8cc36f186158bf1bc64b9a`
+- Correction tip: `459e2412b99d529ab3e9268dbffdd74859b12b4e`
 - Production run: `RUN-20260728-01`
-- Portable manifest: `efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012`
+- Portable manifest: `89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217`
 - Approved report: `0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175`
 - Approved dashboard: `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07`
 - Expected: six package files, one run, 18 criteria, 62 crumbs, and 200 report evidence links.
@@ -30,7 +33,7 @@ counts, warnings, failures, and artifact paths.
 
 <!-- review-command:implementation-diff -->
 ```powershell
-git diff 34c6351dcf32277b4c5057eda187edb50e3e086d e6713769c0206322ab3c31555a77a1ad46600927 -- .
+git diff 03d1ce0644fd84fe2f8cc36f186158bf1bc64b9a 459e2412b99d529ab3e9268dbffdd74859b12b4e -- .
 ```
 
 <!-- review-command:validate-candidate -->

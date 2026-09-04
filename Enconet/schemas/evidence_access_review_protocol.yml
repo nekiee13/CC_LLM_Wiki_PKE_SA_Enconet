@@ -2,10 +2,10 @@ schema_version: "1.0"
 review_id: EA6.3-RUN-20260728-01
 status: awaiting_claude
 reviewer: claude-code
-implementation_base: 34c6351dcf32277b4c5057eda187edb50e3e086d
-implementation_tip: e6713769c0206322ab3c31555a77a1ad46600927
+implementation_base: 03d1ce0644fd84fe2f8cc36f186158bf1bc64b9a
+implementation_tip: 459e2412b99d529ab3e9268dbffdd74859b12b4e
 run_id: RUN-20260728-01
-candidate_manifest_sha256: efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012
+candidate_manifest_sha256: 89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217
 approved_report_sha256: 0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175
 approved_dashboard_sha256: 15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07
 expected_counts:
@@ -17,7 +17,7 @@ expected_counts:
 commands:
   - id: implementation-diff
     text: >-
-      git diff 34c6351dcf32277b4c5057eda187edb50e3e086d e6713769c0206322ab3c31555a77a1ad46600927 -- .
+      git diff 03d1ce0644fd84fe2f8cc36f186158bf1bc64b9a 459e2412b99d529ab3e9268dbffdd74859b12b4e -- .
   - id: validate-candidate
     text: >-
       & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\validate_evidence_access_candidate.py --contract schemas\evidence_access_release_candidate.yml --project-root .

@@ -22,7 +22,7 @@ def test_protocol_pins_independent_reviewer_scope_and_blank_decision():
     assert contract["review_id"] == "EA6.3-RUN-20260728-01"
     assert contract["status"] == "awaiting_claude"
     assert contract["reviewer"] == "claude-code"
-    assert contract["implementation_tip"] == "e6713769c0206322ab3c31555a77a1ad46600927"
+    assert contract["implementation_tip"] == "459e2412b99d529ab3e9268dbffdd74859b12b4e"
     assert contract["run_id"] == "RUN-20260728-01"
     assert len(contract["commands"]) == 8
     assert len(contract["risk_checks"]) >= 8
