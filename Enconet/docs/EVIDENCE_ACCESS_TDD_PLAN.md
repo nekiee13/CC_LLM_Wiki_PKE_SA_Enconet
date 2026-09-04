@@ -1123,7 +1123,7 @@ official shelf.
 - [x] Replace the superseded Owner promotion packet after chapter-reference UAT and re-review pass.
 - [x] Owner explicitly approves both fixed G5 and G6 Evidence Access decision references.
 - [x] Execute promotion and validate final published artifacts.
-- [ ] Close coordination and publish the verified handoff.
+- [x] Close coordination and publish the verified handoff.
 
 **Tests first — RED**
 
@@ -1265,7 +1265,7 @@ The feature is complete only when all of the following are true:
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
-| EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] closeout |
+| EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [x] |
 | EA7.1 | Measure need for live service | M5 | EA5.4/feedback | [ ] deferred |
 | EA7.2 | Superseding ADR and separate plan | M5 | EA7.1 + owner | [ ] deferred |
 
@@ -1285,8 +1285,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-The Owner-requested corresponding chapter reference is implemented and promoted after EA5.4 UAT,
-EA6.3 independent review, and explicit G5/G6 authorization. All five canonical artifacts match the
-release manifest, 200 final-name evidence links resolve, and the post-promotion aggregate passes
-21/21. The next action is administrative closeout: commit the release evidence, close coordination,
-and publish a verified handoff. EA7 remains an optional separate Owner decision.
+The Owner-requested corresponding chapter reference is implemented, promoted, validated, and
+closed under the verified handoff in `HANDOFF.md`. **No required Evidence Access release action
+remains.** EA7 remains an optional separate Owner decision; absent that decision, continue the nine
+approved supplier follow-up actions from the closed production audit.
