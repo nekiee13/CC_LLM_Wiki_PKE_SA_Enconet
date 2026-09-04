@@ -215,16 +215,16 @@ def test_real_candidate_links_resolve_from_final_published_names(tmp_path: Path)
     ) == []
 
 
-def test_production_contract_is_pending_and_pins_the_exact_five_file_set() -> None:
+def test_production_contract_awaits_owner_promotion_and_pins_exact_five_file_set() -> None:
     contract = yaml.safe_load((ENCONET / "schemas/evidence_access_promotion.yml").read_text(encoding="utf-8"))
-    assert contract["status"] == "blocked_reapproval_required"
+    assert contract["status"] == "awaiting_owner_promotion"
+    assert contract["independent_review"] == "CC_2026-09-04T213922Z_chapter-reference-approve-with-observation"
     assert contract["required_approvals"] == {
         "report": "G5-EVIDENCE-ACCESS-RUN-20260728-01",
         "dashboard": "G6-EVIDENCE-ACCESS-RUN-20260728-01",
     }
     assert len(contract["promotion"]) == len(contract["baseline"]) == 5
-    with pytest.raises(promotion.PromotionError, match="not awaiting Owner promotion"):
-        promotion._load_contract(ENCONET / "schemas/evidence_access_promotion.yml")
+    assert promotion._load_contract(ENCONET / "schemas/evidence_access_promotion.yml")["release_id"] == "EA6.4-RUN-20260728-01"
     result = ENCONET / contract["result_manifest"]
     if result.exists():
         assert json.loads(result.read_text(encoding="utf-8"))["status"] == "promoted"

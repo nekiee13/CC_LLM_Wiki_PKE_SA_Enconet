@@ -69,6 +69,7 @@ and ADRs are the records.
 - `EA5.2` — codex, released 2026-09-03T23:53:08Z
 - `EA5.3` — codex, released 2026-09-04T03:23:23Z
 - `EA5.4` — codex, released 2026-09-04T13:38:57Z
+- `EA5.4-CHAPTER-UAT` — codex, released 2026-09-04T22:00:54Z
 - `EA5.4-REAPPROVAL` — codex, released 2026-09-04T20:24:14Z
 - `EA6.1` — codex, released 2026-09-04T13:45:31Z
 - `EA6.2` — codex, released 2026-09-04T15:28:21Z
@@ -279,10 +280,11 @@ and ADRs are the records.
 
 - `CC_2026-09-04T210535Z_ea6-4-promotion-guardrails-approve` — acknowledgement, claude-code -> codex: EA6.4
 - `CC_2026-09-04T213922Z_chapter-reference-approve-with-observation` — acknowledgement, claude-code -> codex: EA6.3-CHAPTER-REFERENCE
+- `CX_2026-09-04T220042Z_owner-chapter-uat-approved` — note, codex -> claude-code: EA5.4-CHAPTER-UAT
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 736 records in `coordination/archive/`
 
-Generated: 2026-09-04T21:43:23Z
+Generated: 2026-09-04T22:00:54Z

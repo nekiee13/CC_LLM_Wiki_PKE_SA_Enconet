@@ -1,6 +1,6 @@
 schema_version: "1.0"
 uat_id: EA5.4-RUN-20260728-01
-status: awaiting_owner
+status: approved
 run_id: RUN-20260728-01
 package_root: outputs/candidates/evidence_access/portable_package
 primary_crumb_id: CRUMB-DOC-0021-APP_B_I-0003
@@ -50,7 +50,7 @@ steps:
     action: open_package_record
     expected: The package citation shows run and package metadata without presenting an arbitrary crumb, quote, or chapter as exact evidence.
 owner_decision:
-  decision: null
-  decided_at_utc: null
-  decision_reference: null
+  decision: approve
+  decided_at_utc: "2026-09-04T21:52:04Z"
+  decision_reference: "Owner chat approval on 2026-09-04: Owner approves the corrected ten-step UAT for the chapter-reference candidate"
   observed_defects: []

@@ -1,6 +1,6 @@
 schema_version: "1.0"
 release_id: EA6.4-RUN-20260728-01
-status: blocked_reapproval_required
+status: awaiting_owner_promotion
 run_id: RUN-20260728-01
 candidate_manifest:
   path: outputs/candidates/evidence_access/portable_package/package_manifest.json
@@ -8,7 +8,7 @@ candidate_manifest:
 required_approvals:
   report: G5-EVIDENCE-ACCESS-RUN-20260728-01
   dashboard: G6-EVIDENCE-ACCESS-RUN-20260728-01
-independent_review: CC_2026-09-04T185412Z_ea6-3-correction-approve
+independent_review: CC_2026-09-04T213922Z_chapter-reference-approve-with-observation
 promotion:
   - source: outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_evaluation_report.md
     destination: outputs/enconet_appendix_b_evaluation_report.md

@@ -1,0 +1,16 @@
+task: EA5.4-CHAPTER-UAT
+agent: codex
+status: released
+claimed_at_utc: 2026-09-04T21:52:17Z
+last_renewed_at_utc: 2026-09-04T21:52:17Z
+expires_at_utc: 2026-09-05T21:52:17Z
+anticipated_files:
+  - schemas/evidence_access_uat.yml
+  - docs/acceptance/EA5.4_OWNER_UAT.md
+  - schemas/evidence_access_promotion.yml
+  - docs/acceptance/EA6.4_PROMOTION_GATE.md
+  - docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - tests/test_evidence_access_uat.py
+  - tests/test_evidence_access_promotion.py
+note: Record Owner chapter-reference UAT approval and prepare non-executing EA6.4 promotion packet.
+released_at_utc: 2026-09-04T22:00:54Z

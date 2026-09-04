@@ -1,15 +1,12 @@
 # EA6.4 Evidence Access promotion gate
 
-Gate status: **SUPERSEDED — CHAPTER-REFERENCE CANDIDATE REQUIRES REAPPROVAL**
+Gate status: **AWAITING OWNER PROMOTION DECISION**
 
 Release: `EA6.4-RUN-20260728-01`
 
-This packet is retained as historical preparation evidence. It no longer asks for a decision: the
-Owner requested explicit corresponding chapter references after it was prepared, changing the
-candidate fingerprints and reopening UAT plus independent review. A replacement packet must be
-prepared after those gates approve the new bytes. The eventual narrow question remains whether the
-accepted Evidence Explorer candidate may replace
-the five protected canonical report/dashboard copies? It does not authorize a live service and does
+The chapter-reference candidate has passed renewed Owner UAT and independent Claude review. This
+packet asks one narrow question: may the accepted Evidence Explorer candidate replace the five
+protected canonical report/dashboard copies? It does not authorize a live service and does
 not modify the closed audit findings, score, source evidence, or database.
 
 ## Exact candidate
@@ -21,8 +18,8 @@ not modify the closed audit findings, score, source evidence, or database.
   `d490c07545e584d21ed0324d82cf3f4bbe75b50f1bf975d19877d4ad2558ee94`
 - Published dashboard SHA-256 after promotion:
   `c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d`
-- Owner UAT: reopened for the chapter-reference candidate.
-- Independent review: reopened because the viewer and portable-package bytes changed.
+- Owner UAT: approved at `2026-09-04T21:52:04Z` for these exact fingerprints.
+- Independent review: approved in `CC_2026-09-04T213922Z_chapter-reference-approve-with-observation`.
 
 ## Exact replacement set
 
@@ -37,12 +34,14 @@ not modify the closed audit findings, score, source evidence, or database.
 No dashboard-data JSON, evaluation package, raw source, database, or Claude-owned file is in the
 replacement set.
 
-## Historical release evidence
+## Verified release evidence
 
-The earlier candidate passed its focused, full-regression, package, link, aggregate, browser, Owner
-UAT, and independent-review checks. Those results remain audit history, but they do **not** approve
-the chapter-reference candidate because its viewer and package fingerprints differ. Fresh UAT and
-independent review are required before a replacement promotion packet can be created.
+- Owner chapter-reference UAT: APPROVE; ten steps, four pinned artifacts, no observed defects.
+- Independent review: APPROVE; 421 project tests, 49 sieving tests, 21/21 aggregate checks.
+- Candidate validator: PASS; six files, 18 criteria, 62 crumbs.
+- Portable-package validator: PASS; six files, one run.
+- Report-link validator: PASS; 200 evidence links.
+- Browser evidence: PASS; one bundle, 124 interactive targets, zero external requests.
 
 ## Transaction and recovery behavior
 
@@ -58,11 +57,20 @@ Promotion success is recorded at
 `outputs/evidence_access_release_manifest_RUN-20260728-01.json`; it includes timestamp, approval
 references, independent-review identity, candidate-manifest hash, and all five final hashes.
 
-## No Owner promotion decision is requested by this packet
+## Owner promotion decision required
 
-Do not approve or execute promotion from this superseded packet. First complete the reopened Owner
-UAT and independent review for the chapter-reference fingerprints. If both approve, create a new
-promotion packet that pins those decisions and the validated artifact hashes.
+To approve promotion, the Owner must explicitly authorize both immutable decision references:
 
-ELI5: the book gained chapter labels after the old checks. Check that exact new book again before
-anyone asks to place it on the official shelf.
+- `G5-EVIDENCE-ACCESS-RUN-20260728-01` — replace the two canonical report copies.
+- `G6-EVIDENCE-ACCESS-RUN-20260728-01` — replace the two canonical dashboard copies and wiki copy.
+
+Suggested unambiguous approval text:
+
+> Owner approves EA6.4 promotion of `EA6.4-RUN-20260728-01` under both
+> `G5-EVIDENCE-ACCESS-RUN-20260728-01` and `G6-EVIDENCE-ACCESS-RUN-20260728-01`.
+
+This packet does not itself authorize execution. Until that exact promotion approval is recorded,
+the controlled script stops before changing any protected output.
+
+ELI5: the exact new book passed both inspections. This final question asks whether it may replace
+the old book on the official shelf.

@@ -1120,7 +1120,7 @@ official shelf.
 - [x] RED tests cover missing approval, failed validation, hash drift/stale candidate, partial
   replacement, rollback, and final-name link resolution.
 - [x] Rollback-safe five-file promotion mechanism and immutable result-manifest contract implemented.
-- [ ] Replace the superseded Owner promotion packet after chapter-reference UAT and re-review pass.
+- [x] Replace the superseded Owner promotion packet after chapter-reference UAT and re-review pass.
 - [ ] Owner explicitly approves both fixed G5 and G6 Evidence Access decision references.
 - [ ] Execute promotion, validate final published artifacts, close coordination, and publish handoff.
 
@@ -1260,7 +1260,7 @@ The feature is complete only when all of the following are true:
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [x] |
-| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] reopened |
+| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [x] |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
@@ -1284,8 +1284,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-The Owner-requested corresponding chapter reference has been added to each quote card and copied/
-printed citation using the stored linked chunk `heading_path`, and **EA6.3 focused review is
-approved**. EA5.4 Owner UAT remains reopened for these exact bytes. Do not execute promotion or seek
-G5/G6 promotion approval until that UAT approval is recorded and the gate packet is regenerated for
-the exact candidate fingerprints.
+The Owner-requested corresponding chapter reference is implemented, and both **EA5.4 Owner UAT and
+EA6.3 focused review are approved** for the exact candidate fingerprints. The replacement EA6.4
+gate packet is ready. The next action is the Owner's explicit decision on both
+`G5-EVIDENCE-ACCESS-RUN-20260728-01` and `G6-EVIDENCE-ACCESS-RUN-20260728-01`; do not execute
+promotion before that separate authorization is recorded.
