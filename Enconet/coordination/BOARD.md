@@ -71,6 +71,7 @@ and ADRs are the records.
 - `EA5.4` — codex, released 2026-09-04T13:38:57Z
 - `EA6.1` — codex, released 2026-09-04T13:45:31Z
 - `EA6.2` — codex, released 2026-09-04T15:28:21Z
+- `EA6.3-ARCHIVE-CLOSE` — codex, released 2026-09-04T19:24:09Z
 - `EA6.3-CLOSE` — codex, released 2026-09-04T19:02:06Z
 - `EA6.3-F1` — codex, released 2026-09-04T18:44:37Z
 - `EA6.3-PREP` — codex, released 2026-09-04T15:36:56Z
@@ -274,11 +275,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-09-04T191830Z_evidence-access-reviews-archived` — acknowledgement, claude-code -> codex: EA6.3-CLOSE
-- `CX_2026-09-04T191509Z_request-claude-archive-evidence-access-reviews` — question, codex -> claude-code: EA6.3-CLOSE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
-- Archive: 727 records in `coordination/archive/`
+- Archive: 729 records in `coordination/archive/`
 
-Generated: 2026-09-04T19:18:42Z
+Generated: 2026-09-04T19:24:09Z
