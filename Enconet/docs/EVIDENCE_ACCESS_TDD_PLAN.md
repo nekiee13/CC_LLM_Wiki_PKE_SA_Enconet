@@ -961,6 +961,10 @@ freezes.
 
 **GitHub issue title:** `EA5.4: Owner UAT for report-to-source evidence navigation`
 
+**Status:** Fixed UAT packet and deterministic preflight prepared by Codex on 2026-09-04;
+awaiting the Owner's hands-on approve/reject decision. Automation has not marked usability as
+accepted, and independent Claude review remains deferred under ADR-0023.
+
 **ELI5:** Let the real user try the exact job before declaring the feature finished.
 
 **Tests first — RED/UAT script**
@@ -1254,8 +1258,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA5.3 are complete, with independent Claude review queued under ADR-0023. The canonical
-closed-phase aggregate now runs the original 14 checks plus five evidence checks, including the
-Owner-authorized security, encoding, size, projection, network, and browser-response budgets.
-Prepare **EA5.4** next, then stop at its human gate so the Owner can perform the fixed usability
-acceptance script against the portable review package.
+EA0.1–EA5.3 are complete, with independent Claude review queued under ADR-0023. The fixed **EA5.4**
+UAT packet and fail-closed preflight are prepared and validated, but EA5.4 remains incomplete at its
+human gate. The Owner must now perform the eight-step script in
+`docs/acceptance/EA5.4_OWNER_UAT.md` and record APPROVE or REJECT, date, decision reference, and any
+observed defects. Do not begin promotion-dependent EA6.4 or mark EA5.4 complete before that decision.

@@ -1,0 +1,50 @@
+schema_version: "1.0"
+uat_id: EA5.4-RUN-20260728-01
+status: awaiting_owner
+run_id: RUN-20260728-01
+package_root: outputs/candidates/evidence_access/portable_package
+primary_crumb_id: CRUMB-DOC-0021-APP_B_I-0003
+secondary_crumb_id: CRUMB-DOC-0021-APP_B_II-0002
+artifacts:
+  - role: manifest
+    path: outputs/candidates/evidence_access/portable_package/package_manifest.json
+    sha256: efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012
+  - role: workspace
+    path: outputs/candidates/evidence_access/portable_package/review_workspace.html
+    sha256: a795aa0dc288de40c9114bb1841395a9f45314c124e07a96a89b0e631fff82df
+  - role: report
+    path: outputs/candidates/evidence_access/portable_package/RUN-20260728-01/evaluation_report.md
+    sha256: 04cec818cc8f80a999851148e3ac3c80b4c5e1fdcb25dbe25dceaa19feb374b3
+  - role: viewer
+    path: outputs/candidates/evidence_access/portable_package/RUN-20260728-01/evidence_explorer.html
+    sha256: cf4e9f6ed3dae44948ca7af6e0e177a0f7b84e5ca345fac2d55f701f755ebde6
+steps:
+  - id: UAT-1
+    action: open_report
+    expected: The production evaluation report opens without a command line.
+  - id: UAT-2
+    action: open_multi_quote_crumb
+    expected: The primary crumb opens in Evidence Explorer with three quote cards.
+  - id: UAT-3
+    action: confirm_source_identity
+    expected: The statement, quotes, chapter, document identity, and source hash are visible.
+  - id: UAT-4
+    action: navigate_adjacent_context
+    expected: Previous and next controls open chunks 0104 and 0106 around chunk 0105.
+  - id: UAT-5
+    action: copy_traceable_citation
+    expected: The copied citation identifies the run, document, crumb, quote, chunk, and source hash.
+  - id: UAT-6
+    action: print_evidence_card
+    expected: Print or save-to-PDF preview contains the focused evidence card.
+  - id: UAT-7
+    action: open_second_criterion
+    expected: A second report criterion opens the fixed APP_B_II crumb and its two quotes.
+  - id: UAT-8
+    action: select_run_from_workspace
+    expected: The workspace selects the registered production run and exposes its matched artifacts.
+owner_decision:
+  decision:
+  decided_at_utc:
+  decision_reference:
+  observed_defects: []
