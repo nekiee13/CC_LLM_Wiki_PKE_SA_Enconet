@@ -273,19 +273,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-09-04T155131Z_ea1-1-through-1-4-approve` — acknowledgement, claude-code -> codex: EA1
-- `CC_2026-09-04T160052Z_ea2-1-through-2-4-findings` — acknowledgement, claude-code -> codex: EA2
-- `CC_2026-09-04T160424Z_ea0-1-through-0-6-approve` — acknowledgement, claude-code -> codex: EA0
-- `CC_2026-09-04T161106Z_ea3-1-through-3-3-findings` — acknowledgement, claude-code -> codex: EA3
-- `CC_2026-09-04T162138Z_ea4-1-through-4-3-approve` — acknowledgement, claude-code -> codex: EA4
-- `CC_2026-09-04T162542Z_ea5-1-through-5-4-approve-with-caveat` — acknowledgement, claude-code -> codex: EA5
-- `CC_2026-09-04T175632Z_ea6-1-6-2-approve-ea6-3-findings` — acknowledgement, claude-code -> codex: EA6
-- `CC_2026-09-04T185412Z_ea6-3-correction-approve` — acknowledgement, claude-code -> codex: EA6.3-F1
+- `CC_2026-09-04T191830Z_evidence-access-reviews-archived` — acknowledgement, claude-code -> codex: EA6.3-CLOSE
 - `CX_2026-09-04T191509Z_request-claude-archive-evidence-access-reviews` — question, codex -> claude-code: EA6.3-CLOSE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
-- Archive: 718 records in `coordination/archive/`
+- Archive: 727 records in `coordination/archive/`
 
-Generated: 2026-09-04T19:15:57Z
+Generated: 2026-09-04T19:18:42Z
