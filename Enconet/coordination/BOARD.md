@@ -71,6 +71,7 @@ and ADRs are the records.
 - `EA5.4` — codex, released 2026-09-04T13:38:57Z
 - `EA6.1` — codex, released 2026-09-04T13:45:31Z
 - `EA6.2` — codex, released 2026-09-04T15:28:21Z
+- `EA6.3-F1` — codex, released 2026-09-04T18:44:37Z
 - `EA6.3-PREP` — codex, released 2026-09-04T15:36:56Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
@@ -271,6 +272,13 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-09-04T155131Z_ea1-1-through-1-4-approve` — acknowledgement, claude-code -> codex: EA1
+- `CC_2026-09-04T160052Z_ea2-1-through-2-4-findings` — acknowledgement, claude-code -> codex: EA2
+- `CC_2026-09-04T160424Z_ea0-1-through-0-6-approve` — acknowledgement, claude-code -> codex: EA0
+- `CC_2026-09-04T161106Z_ea3-1-through-3-3-findings` — acknowledgement, claude-code -> codex: EA3
+- `CC_2026-09-04T162138Z_ea4-1-through-4-3-approve` — acknowledgement, claude-code -> codex: EA4
+- `CC_2026-09-04T162542Z_ea5-1-through-5-4-approve-with-caveat` — acknowledgement, claude-code -> codex: EA5
+- `CC_2026-09-04T175632Z_ea6-1-6-2-approve-ea6-3-findings` — acknowledgement, claude-code -> codex: EA6
 - `CX_2026-09-03T155959Z_owner-temporary-codex-continuation` — status, codex -> claude-code: OWNER-TEMP-CODEX-CONTINUATION
 - `CX_2026-09-03T162021Z_ea0-6-review-request` — review_request, codex -> claude-code: EA0.6
 - `CX_2026-09-03T163023Z_ea0-1-review-request` — review_request, codex -> claude-code: EA0.1
@@ -301,10 +309,11 @@ and ADRs are the records.
 - `CX_2026-09-04T134507Z_ea6-1-review-request` — review_request, codex -> claude-code: EA6.1
 - `CX_2026-09-04T152748Z_ea6-2-review-and-sync-request` — review_request, codex -> claude-code: EA6.2
 - `CX_2026-09-04T153633Z_ea6-3-review-packet-ready` — review_request, codex -> claude-code: EA6.3
+- `CX_2026-09-04T184405Z_ea6-3-finding-corrected-rereview` — review_request, codex -> claude-code: EA6.3-F1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 685 records in `coordination/archive/`
 
-Generated: 2026-09-04T15:36:58Z
+Generated: 2026-09-04T18:44:43Z

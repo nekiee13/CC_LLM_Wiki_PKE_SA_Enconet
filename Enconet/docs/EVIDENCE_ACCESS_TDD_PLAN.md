@@ -1084,7 +1084,7 @@ asking its inventor.
 
 **Status:** Claude reproduced all commands and returned FINDINGS on 2026-09-04: document and package
 targets presented arbitrary crumbs. Codex reproduced the defect with a RED browser test, corrected
-entity-only rendering, rebuilt the candidate, and is preparing the changed hashes for re-review.
+entity-only rendering, rebuilt the candidate, and submitted changed hashes for focused re-review.
 
 **ELI5:** Have a second inspector check the wiring and test the buttons without trusting the first
 builder’s notes.
