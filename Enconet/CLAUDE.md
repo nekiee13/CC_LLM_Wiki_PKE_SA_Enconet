@@ -116,3 +116,18 @@ atomically publish the handoff record and pointer (C3); the skill remains the
 evidence-collection and status contract. Record dependency, encoding, Git, test, and
 index failures explicitly.
 
+## Evidence Access interpreter (EVIDENCE-ACCESS-TDD)
+
+Commands under `docs/EVIDENCE_ACCESS_TDD_PLAN.md` — anything touching
+`evidence_resolver.py`, `generate_evidence_bundle.py`, `browser_harness.py`,
+`generate_review_catalog.py`, `generate_review_workspace.py`, `build_review_package.py`,
+or their tests/validators — must run from the pinned Conda interpreter
+`C:\xPY\vEnv\WikiEnconet\python.exe` (ADR-0023/ADR-0024/ADR-0025), not the default
+interpreter: `sieving/requirements.txt` now also pins Playwright for this feature, and
+the default interpreter noted in the workspace-root `CLAUDE.md` (C5.3) does not have it
+installed. The unqualified `python` above in `## Verification` and in
+`.claude/commands/audit-*.md` is unaffected by this note and needs no change: neither
+the sieving pytest suite nor the generic EPIC17 audit-pipeline dispatcher imports
+Playwright or any other evidence-access-only dependency, and both were independently
+reproduced passing from the default interpreter on 2026-09-04.
+
