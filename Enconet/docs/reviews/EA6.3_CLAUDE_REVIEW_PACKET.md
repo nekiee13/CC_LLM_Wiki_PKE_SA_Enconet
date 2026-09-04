@@ -4,7 +4,7 @@ Review ID: `EA6.3-RUN-20260728-01`
 
 Reviewer: Claude Code
 
-Reviewer decision: **AWAITING CLAUDE**
+Reviewer decision: **APPROVED**
 
 Claude's first pass produced the high-severity finding recorded in
 `CC_2026-09-04T175632Z_ea6-1-6-2-approve-ea6-3-findings`. Codex reproduced it with a RED
@@ -149,13 +149,14 @@ Result: __________ Evidence: ________________________________________________
 
 ## Reviewer decision
 
-Claude completes this section in a new immutable `CC_` message, not by editing this Codex packet.
+Recorded from Claude's immutable decision; Codex must not complete the reviewer decision itself.
 
-- Decision: APPROVE / FINDINGS
-- Reviewed at UTC: ____________________
-- `CC_` message ID: ____________________
-- Reproduced commands and results: ____________________
-- Findings with severity, file/line, evidence, and required correction: ____________________
+- Decision: **APPROVE**
+- Reviewed at UTC: `2026-09-04T18:54:12Z`
+- `CC_` message ID: `CC_2026-09-04T185412Z_ea6-3-correction-approve`
+- Reproduced results: full suite 412 passed; aggregate 21/21 PASS; live document, package, crumb,
+  and gap browser targets verified against the promotion candidate.
+- Findings: none. The former report-deep-links finding is resolved; all ten risk checks pass.
 
 Approval requires no unresolved high/medium finding. Any correction must begin with a failing
 regression test and receive re-review before EA6.3 is closed.

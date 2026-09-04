@@ -47,13 +47,19 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
         errors.append("review protocol fields mismatch")
     if contract.get("schema_version") != "1.0":
         errors.append("unsupported review protocol schema_version")
-    if contract.get("status") != "awaiting_claude" or contract.get("reviewer") != "claude-code":
+    status = contract.get("status")
+    if status not in {"awaiting_claude", "approved", "findings"}:
+        errors.append("invalid independent review status")
+    if contract.get("reviewer") != "claude-code":
         errors.append("independent review must remain assigned to Claude")
     if contract.get("run_id") != "RUN-20260728-01":
         errors.append("review run identity mismatch")
     commands = contract.get("commands") if isinstance(contract.get("commands"), list) else []
     risks = contract.get("risk_checks") if isinstance(contract.get("risk_checks"), list) else []
-    summary.update(commands=len(commands), risks=len(risks), decision="awaiting_claude")
+    summary.update(commands=len(commands), risks=len(risks), decision={
+        "awaiting_claude": "awaiting_claude", "approved": "approve",
+        "findings": "findings",
+    }.get(status, "unknown"))
     if len(commands) != 8 or len({row.get("id") for row in commands if isinstance(row, dict)}) != 8:
         errors.append("review command set must contain eight unique commands")
     if len(risks) != 10 or len({row.get("id") for row in risks if isinstance(row, dict)}) != 10:
@@ -72,12 +78,47 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
             continue
         if f"risk-check:{row['id']}" not in packet or row["description"] not in packet:
             errors.append(f"review packet missing risk check: {row['id']}")
+    decision = contract.get("review_decision")
     blank = {"decision": None, "reviewed_at_utc": None, "message_id": None, "findings": []}
-    if contract.get("review_decision") != blank:
-        errors.append("awaiting review contains a premature reviewer decision")
+    if status == "awaiting_claude":
+        if decision != blank:
+            errors.append("awaiting review contains a premature reviewer decision")
+    else:
+        expected = "approve" if status == "approved" else "findings"
+        complete = (
+            isinstance(decision, dict)
+            and decision.get("decision") == expected
+            and isinstance(decision.get("reviewed_at_utc"), str)
+            and re.fullmatch(
+                r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z",
+                decision["reviewed_at_utc"],
+            ) is not None
+            and isinstance(decision.get("message_id"), str)
+            and decision["message_id"].startswith("CC_")
+            and isinstance(decision.get("findings"), list)
+        )
+        if not complete:
+            errors.append(f"{status} review requires a complete independent decision")
+        elif status == "approved" and decision["findings"]:
+            errors.append("approved review cannot contain unresolved findings")
+        elif status == "findings" and not decision["findings"]:
+            errors.append("findings review requires at least one finding")
+        if complete:
+            message_name = f"{decision['message_id']}.md"
+            message_paths = [
+                project_root / "coordination" / "messages" / message_name,
+                project_root / "coordination" / "archive" / message_name,
+            ]
+            if not any(path.is_file() for path in message_paths):
+                errors.append("independent reviewer decision record is missing")
+    decision_marker = {
+        "awaiting_claude": "Reviewer decision: **AWAITING CLAUDE**",
+        "approved": "Reviewer decision: **APPROVED**",
+        "findings": "Reviewer decision: **FINDINGS**",
+    }.get(status, "Reviewer decision:")
     for marker in [
         str(contract.get("review_id")), str(contract.get("implementation_tip")),
-        str(contract.get("candidate_manifest_sha256")), "Reviewer decision: **AWAITING CLAUDE**",
+        str(contract.get("candidate_manifest_sha256")), decision_marker,
     ]:
         if marker not in packet:
             errors.append(f"review packet missing marker: {marker}")

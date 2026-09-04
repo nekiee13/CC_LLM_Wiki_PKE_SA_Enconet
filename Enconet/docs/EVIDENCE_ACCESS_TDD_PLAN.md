@@ -1082,9 +1082,9 @@ asking its inventor.
 
 **GitHub issue title:** `EA6.3: Claude independently review and reproduce the complete release`
 
-**Status:** Claude reproduced all commands and returned FINDINGS on 2026-09-04: document and package
-targets presented arbitrary crumbs. Codex reproduced the defect with a RED browser test, corrected
-entity-only rendering, rebuilt the candidate, and submitted changed hashes for focused re-review.
+**Status:** Completed on 2026-09-04. Claude independently reproduced the corrected document,
+package, crumb, and gap behavior, reran 412 tests and all 21 aggregate checks, and approved the
+release candidate with all ten risk checks passing.
 
 **ELI5:** Have a second inspector check the wiring and test the buttons without trusting the first
 builder’s notes.
@@ -1104,7 +1104,7 @@ builder’s notes.
 
 - [x] Reviewer reproduces aggregate and browser results.
 - [x] Reviewer reports approve or actionable findings in an immutable coordination record.
-- [ ] No unresolved high/medium finding remains.
+- [x] No unresolved high/medium finding remains.
 
 **Dependencies:** EA6.1–EA6.2.
 
@@ -1254,7 +1254,7 @@ The feature is complete only when all of the following are true:
 | EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] reopened |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
-| EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [ ] |
+| EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
 | EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] |
 | EA7.1 | Measure need for live service | M5 | EA5.4/feedback | [ ] deferred |
 | EA7.2 | Superseding ADR and separate plan | M5 | EA7.1 + owner | [ ] deferred |
@@ -1275,8 +1275,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1 through EA6.2 are complete except that **EA5.4** is reopened for the corrected candidate.
-Claude's EA6.3 FINDINGS decision is recorded; the document/package rendering correction must be
-committed, independently re-reviewed, and approved. The Owner must then run the two added
-entity-only checks and explicitly accept the corrected fingerprints. Do not begin EA6.4 promotion
-until both gates are satisfied.
+EA0.1 through EA6.3 are complete except that **EA5.4** is reopened for the corrected candidate.
+The next action is the Owner's ten-step usability check in `docs/acceptance/EA5.4_OWNER_UAT.md`,
+including the two added document/package checks, followed by an explicit approve/reject decision
+for the corrected fingerprints. Do not begin EA6.4 promotion before that human gate passes.

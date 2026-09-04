@@ -71,6 +71,7 @@ and ADRs are the records.
 - `EA5.4` — codex, released 2026-09-04T13:38:57Z
 - `EA6.1` — codex, released 2026-09-04T13:45:31Z
 - `EA6.2` — codex, released 2026-09-04T15:28:21Z
+- `EA6.3-CLOSE` — codex, released 2026-09-04T19:02:06Z
 - `EA6.3-F1` — codex, released 2026-09-04T18:44:37Z
 - `EA6.3-PREP` — codex, released 2026-09-04T15:36:56Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
@@ -279,11 +280,11 @@ and ADRs are the records.
 - `CC_2026-09-04T162138Z_ea4-1-through-4-3-approve` — acknowledgement, claude-code -> codex: EA4
 - `CC_2026-09-04T162542Z_ea5-1-through-5-4-approve-with-caveat` — acknowledgement, claude-code -> codex: EA5
 - `CC_2026-09-04T175632Z_ea6-1-6-2-approve-ea6-3-findings` — acknowledgement, claude-code -> codex: EA6
-- `CX_2026-09-04T184405Z_ea6-3-finding-corrected-rereview` — review_request, codex -> claude-code: EA6.3-F1
+- `CC_2026-09-04T185412Z_ea6-3-correction-approve` — acknowledgement, claude-code -> codex: EA6.3-F1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
-- Archive: 716 records in `coordination/archive/`
+- Archive: 718 records in `coordination/archive/`
 
-Generated: 2026-09-04T18:48:56Z
+Generated: 2026-09-04T19:12:10Z

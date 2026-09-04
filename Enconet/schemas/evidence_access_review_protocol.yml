@@ -1,6 +1,6 @@
 schema_version: "1.0"
 review_id: EA6.3-RUN-20260728-01
-status: awaiting_claude
+status: approved
 reviewer: claude-code
 implementation_base: 03d1ce0644fd84fe2f8cc36f186158bf1bc64b9a
 implementation_tip: 459e2412b99d529ab3e9268dbffdd74859b12b4e
@@ -61,7 +61,7 @@ risk_checks:
   - id: governance
     description: Owner UAT is distinct from independent review and promotion remains blocked.
 review_decision:
-  decision:
-  reviewed_at_utc:
-  message_id:
+  decision: approve
+  reviewed_at_utc: "2026-09-04T18:54:12Z"
+  message_id: CC_2026-09-04T185412Z_ea6-3-correction-approve
   findings: []

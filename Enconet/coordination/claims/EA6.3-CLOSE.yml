@@ -1,0 +1,15 @@
+task: EA6.3-CLOSE
+agent: codex
+status: released
+claimed_at_utc: 2026-09-04T19:00:20Z
+last_renewed_at_utc: 2026-09-04T19:00:20Z
+expires_at_utc: 2026-09-04T21:00:20Z
+anticipated_files:
+  - schemas/evidence_access_review_protocol.yml
+  - scripts/validate_evidence_access_review_packet.py
+  - tests/test_evidence_access_review_packet.py
+  - docs/reviews/EA6.3_CLAUDE_REVIEW_PACKET.md
+  - docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - coordination/messages/CX_2026-09-04T184405Z_ea6-3-finding-corrected-rereview.md
+note: Record Claude approval and close independent review; Owner UAT remains pending
+released_at_utc: 2026-09-04T19:02:06Z
