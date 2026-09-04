@@ -21,6 +21,7 @@ import validate_review_package
 COMMAND_IDS = {
     "verify-environment", "validate-candidate", "validate-package", "validate-uat",
     "aggregate", "build-portable", "open-workspace", "hash-baseline",
+    "promotion-stop", "promotion-execute",
 }
 TOPICS = {
     "operations": ["Conda environment", "Open and use", "Build", "Validate", "Transfer", "Recovery", "Failure guide"],

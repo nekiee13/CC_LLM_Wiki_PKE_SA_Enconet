@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 import sys
 from pathlib import Path
@@ -87,9 +88,17 @@ def test_candidate_writes_are_allowed_but_published_overwrite_requires_all_gates
 
 def test_approved_artifact_hashes_are_frozen_during_candidate_development():
     assert policy.APPROVED_ARTIFACT_SHA256
-    for relative_path, expected_hash in policy.APPROVED_ARTIFACT_SHA256.items():
-        content = (ENCONET / relative_path).read_bytes()
-        assert hashlib.sha256(content).hexdigest() == expected_hash
+    release_manifest = ENCONET / "outputs/evidence_access_release_manifest_RUN-20260728-01.json"
+    if not release_manifest.exists():
+        for relative_path, expected_hash in policy.APPROVED_ARTIFACT_SHA256.items():
+            content = (ENCONET / relative_path).read_bytes()
+            assert hashlib.sha256(content).hexdigest() == expected_hash
+    else:
+        release = json.loads(release_manifest.read_text(encoding="utf-8"))
+        released = {row["path"]: row["sha256"] for row in release["artifacts"]}
+        assert release["status"] == "promoted"
+        for relative_path, expected_hash in released.items():
+            assert hashlib.sha256((ENCONET / relative_path).read_bytes()).hexdigest() == expected_hash
 
 
 def test_owner_adr_selects_offline_delivery_and_defers_any_live_service():

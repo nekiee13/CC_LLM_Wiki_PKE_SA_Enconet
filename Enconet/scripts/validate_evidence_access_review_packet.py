@@ -123,20 +123,38 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
         if marker not in packet:
             errors.append(f"review packet missing marker: {marker}")
 
+    release_manifest = (
+        project_root / "outputs" / f"evidence_access_release_manifest_{contract.get('run_id')}.json"
+    )
     hashes = {
         "candidate manifest": (
             project_root / "outputs" / "candidates" / "evidence_access" / "portable_package" / "package_manifest.json",
             contract.get("candidate_manifest_sha256"),
         ),
-        "approved report": (
-            project_root / "outputs" / "enconet_appendix_b_evaluation_report.md",
-            contract.get("approved_report_sha256"),
-        ),
-        "approved dashboard": (
-            project_root / "outputs" / "enconet_appendix_b_dashboard.html",
-            contract.get("approved_dashboard_sha256"),
-        ),
     }
+    if not release_manifest.is_file():
+        hashes.update({
+            "approved report": (
+                project_root / "outputs" / "enconet_appendix_b_evaluation_report.md",
+                contract.get("approved_report_sha256"),
+            ),
+            "approved dashboard": (
+                project_root / "outputs" / "enconet_appendix_b_dashboard.html",
+                contract.get("approved_dashboard_sha256"),
+            ),
+        })
+    else:
+        try:
+            release = yaml.safe_load(release_manifest.read_text(encoding="utf-8"))
+            if (
+                not isinstance(release, dict)
+                or release.get("status") != "promoted"
+                or release.get("candidate_manifest_sha256")
+                != contract.get("candidate_manifest_sha256")
+            ):
+                errors.append("promoted release does not match the independently reviewed candidate")
+        except (OSError, UnicodeError, yaml.YAMLError) as exc:
+            errors.append(f"promoted release manifest is unreadable: {exc}")
     for label, (path, expected) in hashes.items():
         if not isinstance(expected, str) or SHA256.fullmatch(expected) is None:
             errors.append(f"invalid {label} hash")

@@ -25,6 +25,12 @@ commands:
   - id: hash-baseline
     text: >-
       Get-FileHash outputs\enconet_appendix_b_evaluation_report.md -Algorithm SHA256; Get-FileHash outputs\enconet_appendix_b_dashboard.html -Algorithm SHA256
+  - id: promotion-stop
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\promote_evidence_access.py --contract schemas\evidence_access_promotion.yml
+  - id: promotion-execute
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\promote_evidence_access.py --contract schemas\evidence_access_promotion.yml --execute
 rehearsal:
   catalog: outputs/candidates/evidence_access/review_catalog.json
   source_root: .

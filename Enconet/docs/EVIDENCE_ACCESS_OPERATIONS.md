@@ -101,6 +101,44 @@ Get-FileHash outputs\enconet_appendix_b_evaluation_report.md -Algorithm SHA256; 
 Expected report SHA-256: `0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175`.
 Expected dashboard SHA-256: `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07`.
 
+## Promotion gate
+
+Promotion is a separate Owner decision. Ten-step usability approval and Claude's independent
+technical approval prove that the candidate is acceptable to consider; neither authorizes replacing
+the five protected report/dashboard copies. The fixed transaction is defined by
+`schemas/evidence_access_promotion.yml` and requires both signed approval rows:
+
+- `G5-EVIDENCE-ACCESS-RUN-20260728-01` for the report copies.
+- `G6-EVIDENCE-ACCESS-RUN-20260728-01` for the dashboard and wiki-dashboard copies.
+
+Running the command without `--execute` is always a stop-only check and changes nothing.
+
+<!-- command:promotion-stop -->
+```powershell
+& 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\promote_evidence_access.py --contract schemas\evidence_access_promotion.yml
+```
+
+After the Owner explicitly approves the exact EA6.4 packet and both immutable rows have been
+recorded in `manifests/approvals.csv`, use the controlled command below. Do not copy the files by
+hand.
+
+<!-- command:promotion-execute -->
+```powershell
+& 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\promote_evidence_access.py --contract schemas\evidence_access_promotion.yml --execute
+```
+
+The command rechecks signed approvals, candidate and baseline hashes, UAT, independent review,
+portable-package integrity, and the full aggregate before writing. It stages all five files and
+keeps byte-for-byte backups. A handled replacement or post-validation failure rolls every changed
+destination back. Success additionally reruns final-name link resolution, an interactive zero-network
+browser check, package validation, and the aggregate, then writes
+`outputs/evidence_access_release_manifest_RUN-20260728-01.json` with the final hashes. An existing
+result manifest or unfinished transaction fails closed instead of repeating promotion.
+
+ELI5: two keys are needed to open the official cabinet—one for the report and one for the dashboard.
+The tool checks both keys, swaps the whole matched set, inspects it, and puts the old set back if any
+inspection fails.
+
 ## Transfer
 
 1. Validate the source package.

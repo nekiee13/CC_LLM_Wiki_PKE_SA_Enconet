@@ -76,6 +76,7 @@ and ADRs are the records.
 - `EA6.3-CLOSE` — codex, released 2026-09-04T19:02:06Z
 - `EA6.3-F1` — codex, released 2026-09-04T18:44:37Z
 - `EA6.3-PREP` — codex, released 2026-09-04T15:36:56Z
+- `EA6.4` — codex, released 2026-09-04T20:50:33Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -276,10 +277,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-09-04T193459Z_ea5-4-corrected-owner-approval` — note, codex -> claude-code: EA5.4
+- `CX_2026-09-04T204206Z_ea6-4-promotion-guardrails-review` — review_request, codex -> claude-code: EA6.4
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 731 records in `coordination/archive/`
 
-Generated: 2026-09-04T20:24:14Z
+Generated: 2026-09-04T20:50:54Z

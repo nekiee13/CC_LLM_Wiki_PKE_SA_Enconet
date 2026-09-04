@@ -1115,6 +1115,15 @@ builder’s notes.
 **ELI5:** Only after all inspections pass does the Owner authorize moving the candidate onto the
 official shelf.
 
+**Implementation status**
+
+- [x] RED tests cover missing approval, failed validation, hash drift/stale candidate, partial
+  replacement, rollback, and final-name link resolution.
+- [x] Rollback-safe five-file promotion mechanism and immutable result-manifest contract implemented.
+- [x] Exact Owner promotion packet prepared at `docs/acceptance/EA6.4_PROMOTION_GATE.md`.
+- [ ] Owner explicitly approves both fixed G5 and G6 Evidence Access decision references.
+- [ ] Execute promotion, validate final published artifacts, close coordination, and publish handoff.
+
 **Tests first — RED**
 
 - Promotion tests for missing owner approval, failed validator, hash drift, partial copy, and stale
@@ -1275,6 +1284,7 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1 through EA6.3 and the corrected EA5.4 Owner UAT are complete. **EA6.4** is next: implement and
-validate the promotion guardrails, prepare the exact human gate packet, and stop for explicit Owner
-promotion authorization before changing canonical outputs.
+EA0.1 through EA6.3 and the corrected EA5.4 Owner UAT are complete. EA6.4 guardrails are implemented
+and its exact human gate packet is prepared. **The next action is an explicit Owner decision on both
+`G5-EVIDENCE-ACCESS-RUN-20260728-01` and `G6-EVIDENCE-ACCESS-RUN-20260728-01`.** Do not execute
+promotion or change canonical outputs before that decision is recorded.

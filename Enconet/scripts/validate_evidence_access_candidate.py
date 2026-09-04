@@ -101,11 +101,34 @@ def validate(contract_path: Path, project_root: Path) -> tuple[list[str], dict]:
     }:
         errors.append("approved baseline fields mismatch")
     else:
+        release_manifest = (
+            project_root / "outputs" / f"evidence_access_release_manifest_{run_id}.json"
+        )
+        released_hashes: dict[str, object] | None = None
+        if release_manifest.is_file():
+            try:
+                release = json.loads(release_manifest.read_text(encoding="utf-8"))
+                if (
+                    release.get("release_id") != f"EA6.4-{run_id}"
+                    or release.get("status") != "promoted"
+                    or release.get("candidate_manifest_sha256")
+                    != contract.get("package_manifest_sha256")
+                ):
+                    errors.append("promoted release manifest identity mismatch")
+                released_hashes = {
+                    row.get("path"): row.get("sha256")
+                    for row in release.get("artifacts", []) if isinstance(row, dict)
+                }
+            except (OSError, UnicodeError, AttributeError, json.JSONDecodeError) as exc:
+                errors.append(f"promoted release manifest is unreadable: {exc}")
         for role in ("report", "dashboard"):
+            path = _safe(project_root, baseline[f"{role}_path"])
+            expected = baseline[f"{role}_sha256"]
+            if released_hashes is not None and path is not None:
+                relative = path.relative_to(project_root.resolve()).as_posix()
+                expected = released_hashes.get(relative)
             error = _hash_error(
-                _safe(project_root, baseline[f"{role}_path"]),
-                baseline[f"{role}_sha256"],
-                f"approved {role}",
+                path, expected, f"approved {role}",
             )
             if error:
                 errors.append(error)
