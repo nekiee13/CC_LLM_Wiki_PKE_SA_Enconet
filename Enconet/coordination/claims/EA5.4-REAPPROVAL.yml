@@ -1,0 +1,14 @@
+task: EA5.4-REAPPROVAL
+agent: codex
+status: released
+claimed_at_utc: 2026-09-04T19:34:59Z
+last_renewed_at_utc: 2026-09-04T19:34:59Z
+expires_at_utc: 2026-09-04T21:34:59Z
+anticipated_files:
+  - schemas/evidence_access_uat.yml
+  - docs/acceptance/EA5.4_OWNER_UAT.md
+  - tests/test_evidence_access_uat.py
+  - docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - coordination/messages
+note: Record Owner approval of corrected ten-step UAT; no promotion
+released_at_utc: 2026-09-04T20:24:14Z

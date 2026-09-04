@@ -961,9 +961,9 @@ freezes.
 
 **GitHub issue title:** `EA5.4: Owner UAT for report-to-source evidence navigation`
 
-**Status:** Reopened on 2026-09-04 after independent review found a document/package rendering
-defect outside the original eight-step UAT. The correction has browser regression coverage and the
-fixed ten-step packet now awaits a new Owner decision for the changed candidate fingerprints.
+**Status:** Completed on 2026-09-04. After the independent-review correction changed the candidate
+fingerprints, the Owner explicitly approved the corrected ten-step workflow with no observed
+defects; the prior approval remains preserved as historical evidence.
 
 **ELI5:** Let the real user try the exact job before declaring the feature finished.
 
@@ -988,9 +988,9 @@ fixed ten-step packet now awaits a new Owner decision for the changed candidate 
 
 **Acceptance criteria**
 
-- [ ] Owner completes the corrected script without repository knowledge or command-line use.
+- [x] Owner completes the corrected script without repository knowledge or command-line use.
 - [x] Every observed defect has a regression test.
-- [ ] Owner records a new approve/reject decision for the corrected candidate fingerprints.
+- [x] Owner records a new approve/reject decision for the corrected candidate fingerprints.
 
 **Dependencies:** EA2–EA5.3.
 
@@ -1251,7 +1251,7 @@ The feature is complete only when all of the following are true:
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [x] |
-| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] reopened |
+| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [x] |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
@@ -1275,7 +1275,6 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1 through EA6.3 are complete except that **EA5.4** is reopened for the corrected candidate.
-The next action is the Owner's ten-step usability check in `docs/acceptance/EA5.4_OWNER_UAT.md`,
-including the two added document/package checks, followed by an explicit approve/reject decision
-for the corrected fingerprints. Do not begin EA6.4 promotion before that human gate passes.
+EA0.1 through EA6.3 and the corrected EA5.4 Owner UAT are complete. **EA6.4** is next: implement and
+validate the promotion guardrails, prepare the exact human gate packet, and stop for explicit Owner
+promotion authorization before changing canonical outputs.
