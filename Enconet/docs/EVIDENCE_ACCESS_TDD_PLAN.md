@@ -961,9 +961,9 @@ freezes.
 
 **GitHub issue title:** `EA5.4: Owner UAT for report-to-source evidence navigation`
 
-**Status:** Completed on 2026-09-04. The Owner explicitly approved the eight-step workflow as
-working and easy enough to use; the decision is recorded in `schemas/evidence_access_uat.yml` and
-`docs/acceptance/EA5.4_OWNER_UAT.md`. Independent Claude review remains deferred under ADR-0023.
+**Status:** Reopened on 2026-09-04 after independent review found a document/package rendering
+defect outside the original eight-step UAT. The correction has browser regression coverage and the
+fixed ten-step packet now awaits a new Owner decision for the changed candidate fingerprints.
 
 **ELI5:** Let the real user try the exact job before declaring the feature finished.
 
@@ -977,7 +977,9 @@ working and easy enough to use; the decision is recorded in `schemas/evidence_ac
   5. copy a traceable citation;
   6. print/save the evidence card;
   7. return to the report and open another criterion; and
-  8. select the run from the landing page.
+  8. select the run from the landing page;
+  9. open a document-wide citation without an invented crumb; and
+  10. open the package record without an invented crumb.
 
 **Implementation — GREEN**
 
@@ -986,9 +988,9 @@ working and easy enough to use; the decision is recorded in `schemas/evidence_ac
 
 **Acceptance criteria**
 
-- [x] Owner completes the script without repository knowledge or command-line use.
-- [x] Every observed defect has a regression test (no defects were reported).
-- [x] Owner records approve/reject with date and decision reference.
+- [ ] Owner completes the corrected script without repository knowledge or command-line use.
+- [x] Every observed defect has a regression test.
+- [ ] Owner records a new approve/reject decision for the corrected candidate fingerprints.
 
 **Dependencies:** EA2–EA5.3.
 
@@ -1046,9 +1048,8 @@ Owner already approved.
 or extend the current offline solution, while clearly distinguishing current approved behavior
 from possible future changes.
 
-**Status:** Documentation implementation completed by Codex on 2026-09-04 and executable rehearsal
-passes. Task acceptance remains open only for Claude-owned interpreter-guidance synchronization or
-an explicit Owner-accepted exception; Codex has not modified Claude-owned files.
+**Status:** Completed on 2026-09-04. Documentation and executable rehearsal pass; Claude confirmed
+the scoped Conda-interpreter boundary and synchronized its own guidance in commit `03d1ce0`.
 
 **ELI5:** Write the instruction card so the next person can rebuild and open the package without
 asking its inventor.
@@ -1072,7 +1073,7 @@ asking its inventor.
 - [x] A reviewer can reproduce the candidate from documented commands.
 - [x] Documentation does not advertise Streamlit or an unapproved server.
 - [x] Recovery procedure identifies exact immutable artifacts/commits.
-- [ ] Claude-owned interpreter guidance is either synchronized by Claude and confirmed through the
+- [x] Claude-owned interpreter guidance is either synchronized by Claude and confirmed through the
   neutral channel, or an owner-accepted exception is recorded; Codex does not modify it.
 
 **Dependencies:** EA6.1.
@@ -1081,9 +1082,9 @@ asking its inventor.
 
 **GitHub issue title:** `EA6.3: Claude independently review and reproduce the complete release`
 
-**Status:** Deterministic reviewer protocol and packet prepared by Codex on 2026-09-04. Independent
-execution and the approve/findings decision await Claude's return under ADR-0023; Codex has not
-self-reviewed or completed this gate.
+**Status:** Claude reproduced all commands and returned FINDINGS on 2026-09-04: document and package
+targets presented arbitrary crumbs. Codex reproduced the defect with a RED browser test, corrected
+entity-only rendering, rebuilt the candidate, and is preparing the changed hashes for re-review.
 
 **ELI5:** Have a second inspector check the wiring and test the buttons without trusting the first
 builder’s notes.
@@ -1101,8 +1102,8 @@ builder’s notes.
 
 **Acceptance criteria**
 
-- [ ] Reviewer reproduces aggregate and browser results.
-- [ ] Reviewer reports approve or actionable findings in an immutable coordination record.
+- [x] Reviewer reproduces aggregate and browser results.
+- [x] Reviewer reports approve or actionable findings in an immutable coordination record.
 - [ ] No unresolved high/medium finding remains.
 
 **Dependencies:** EA6.1–EA6.2.
@@ -1250,9 +1251,9 @@ The feature is complete only when all of the following are true:
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [x] |
-| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [x] |
+| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] reopened |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
-| EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [ ] |
+| EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [ ] |
 | EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] |
 | EA7.1 | Measure need for live service | M5 | EA5.4/feedback | [ ] deferred |
@@ -1274,9 +1275,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA6.1 are complete. **EA6.2** documentation and its clean rebuild rehearsal are implemented,
-but its final acceptance item awaits Claude-owned interpreter-guidance synchronization or an
-explicit Owner-accepted exception. The **EA6.3** deterministic review packet is prepared and
-validated; Claude must now execute its eight commands, adjudicate ten risk checks, and return an
-immutable approve/findings record. Do not begin promotion-dependent EA6.4 until those gates are
-satisfied or the Owner records the applicable explicit exception(s).
+EA0.1 through EA6.2 are complete except that **EA5.4** is reopened for the corrected candidate.
+Claude's EA6.3 FINDINGS decision is recorded; the document/package rendering correction must be
+committed, independently re-reviewed, and approved. The Owner must then run the two added
+entity-only checks and explicitly accept the corrected fingerprints. Do not begin EA6.4 promotion
+until both gates are satisfied.

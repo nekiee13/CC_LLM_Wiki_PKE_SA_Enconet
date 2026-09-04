@@ -1,6 +1,6 @@
 schema_version: "1.0"
 uat_id: EA5.4-RUN-20260728-01
-status: approved
+status: awaiting_owner
 run_id: RUN-20260728-01
 package_root: outputs/candidates/evidence_access/portable_package
 primary_crumb_id: CRUMB-DOC-0021-APP_B_I-0003
@@ -8,16 +8,16 @@ secondary_crumb_id: CRUMB-DOC-0021-APP_B_II-0002
 artifacts:
   - role: manifest
     path: outputs/candidates/evidence_access/portable_package/package_manifest.json
-    sha256: efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012
+    sha256: 89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217
   - role: workspace
     path: outputs/candidates/evidence_access/portable_package/review_workspace.html
-    sha256: a795aa0dc288de40c9114bb1841395a9f45314c124e07a96a89b0e631fff82df
+    sha256: 37c8e0df1d01334031c538b5f7c45118f64122965c74194b827c2e78c26b17b8
   - role: report
     path: outputs/candidates/evidence_access/portable_package/RUN-20260728-01/evaluation_report.md
     sha256: 04cec818cc8f80a999851148e3ac3c80b4c5e1fdcb25dbe25dceaa19feb374b3
   - role: viewer
     path: outputs/candidates/evidence_access/portable_package/RUN-20260728-01/evidence_explorer.html
-    sha256: cf4e9f6ed3dae44948ca7af6e0e177a0f7b84e5ca345fac2d55f701f755ebde6
+    sha256: 74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2
 steps:
   - id: UAT-1
     action: open_report
@@ -43,8 +43,14 @@ steps:
   - id: UAT-8
     action: select_run_from_workspace
     expected: The workspace selects the registered production run and exposes its matched artifacts.
+  - id: UAT-9
+    action: open_document_record
+    expected: A document citation shows DOC-0024 metadata without presenting an arbitrary crumb, quote, or chapter as exact evidence.
+  - id: UAT-10
+    action: open_package_record
+    expected: The package citation shows run and package metadata without presenting an arbitrary crumb, quote, or chapter as exact evidence.
 owner_decision:
-  decision: approve
-  decided_at_utc: "2026-09-04T13:34:47Z"
-  decision_reference: "Owner chat approval on 2026-09-04: APPROVED. It works and is easy enough to use."
+  decision:
+  decided_at_utc:
+  decision_reference:
   observed_defects: []

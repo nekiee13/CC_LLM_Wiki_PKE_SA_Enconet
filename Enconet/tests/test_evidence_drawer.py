@@ -115,6 +115,30 @@ def test_unknown_target_shows_localized_announced_error_without_blank_panel(page
     assert page.evaluate("document.activeElement.id") == "evidence-panel-heading"
 
 
+@pytest.mark.parametrize(
+    ("target", "expected_context"),
+    [
+        ("#evidence/document/DOC-0024", "DOC-0024"),
+        ("#evidence/source/package", "RUN-20260728-01"),
+    ],
+)
+def test_document_and_package_targets_show_only_the_requested_entity(
+    page, target: str, expected_context: str
+):
+    """Broad entity links must not present an arbitrary crumb as exact evidence."""
+    page.evaluate("target => openEvidence(target)", target)
+
+    assert page.locator("#evidence-drawer").is_visible()
+    assert page.locator("#evidence-requested-target").text_content() == target
+    context = page.locator("#evidence-entity-context")
+    assert context.is_visible()
+    assert expected_context in context.text_content()
+    crumb_content = page.locator("#evidence-crumb-content")
+    assert crumb_content.count() == 1
+    assert crumb_content.is_hidden()
+    assert "CRUMB-" not in page.locator("#evidence-resolved-content").text_content()
+
+
 def test_direct_fragment_survives_refresh_and_browser_history(page):
     target = f"#evidence/crumb/{SAMPLE_CRUMB}"
     page.goto(CANDIDATE.resolve().as_uri() + target, wait_until="load")

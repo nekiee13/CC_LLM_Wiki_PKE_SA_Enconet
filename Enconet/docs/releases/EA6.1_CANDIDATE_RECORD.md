@@ -20,7 +20,7 @@ The portable package at `outputs/candidates/evidence_access/portable_package` co
 | Evaluation package | `RUN-20260728-01/evaluation_package.json` |
 
 The package manifest SHA-256 is
-`efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012`. It declares all six
+`89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217`. It declares all six
 payload files and their hashes. The bundle contains 18 criterion evaluations and 62 resolvable
 crumbs. The 14 exact source hashes are pinned in `schemas/evidence_access_release_candidate.yml`.
 

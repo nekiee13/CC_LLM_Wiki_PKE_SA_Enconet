@@ -28,6 +28,6 @@ commands:
 rehearsal:
   catalog: outputs/candidates/evidence_access/review_catalog.json
   source_root: .
-  expected_manifest_sha256: efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012
+  expected_manifest_sha256: 89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217
   expected_files: 6
   expected_runs: 1

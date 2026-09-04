@@ -128,10 +128,18 @@ def test_moved_report_href_opens_exact_evidence_for_all_report_entity_types(
                     page.goto(destination.resolve().as_uri() + target, wait_until="load")
                     assert page.locator("#evidence-drawer").is_visible()
                     assert page.locator("#evidence-requested-target").text_content() == target
-                    assert page.locator("#evidence-reference-id").text_content().startswith("CRUMB-")
-                    assert page.locator(".evidence-quote").count() > 0
                     context = page.locator("#evidence-entity-context")
                     assert context.is_hidden() is (entity_type == "crumb")
+                    crumb_content = page.locator("#evidence-crumb-content")
+                    if entity_type in {"document", "source"}:
+                        assert crumb_content.is_hidden()
+                        assert "CRUMB-" not in context.text_content()
+                    else:
+                        assert crumb_content.is_visible()
+                        assert page.locator(
+                            "#evidence-reference-id"
+                        ).text_content().startswith("CRUMB-")
+                        assert page.locator(".evidence-quote").count() > 0
                     if entity_type == "gap":
                         assert "description" in context.text_content()
                         assert target.rsplit("/", 1)[1] in context.text_content()

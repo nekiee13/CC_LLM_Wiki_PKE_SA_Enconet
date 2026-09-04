@@ -23,6 +23,8 @@ EXPECTED_ACTIONS = [
     "print_evidence_card",
     "open_second_criterion",
     "select_run_from_workspace",
+    "open_document_record",
+    "open_package_record",
 ]
 EXPECTED_ROLES = ["manifest", "workspace", "report", "viewer"]
 SHA256 = re.compile(r"[0-9a-f]{64}")
@@ -88,7 +90,7 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
         steps = []
         errors.append("UAT steps must be an array")
     summary["steps"] = len(steps)
-    if [row.get("id") for row in steps if isinstance(row, dict)] != [f"UAT-{n}" for n in range(1, 9)]:
+    if [row.get("id") for row in steps if isinstance(row, dict)] != [f"UAT-{n}" for n in range(1, 11)]:
         errors.append("UAT step identities mismatch")
     if [row.get("action") for row in steps if isinstance(row, dict)] != EXPECTED_ACTIONS:
         errors.append("UAT step actions mismatch")
