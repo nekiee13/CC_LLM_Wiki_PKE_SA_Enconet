@@ -1082,9 +1082,9 @@ asking its inventor.
 
 **GitHub issue title:** `EA6.3: Claude independently review and reproduce the complete release`
 
-**Status:** Reopened. Claude's 2026-09-04 approval remains valid historical evidence for the prior
-candidate, but the Owner-requested chapter-reference presentation changed viewer/package bytes and
-requires a focused re-review.
+**Status:** Completed on 2026-09-04. Claude independently reproduced the chapter-reference display,
+candidate fingerprints, full and sieving regressions, and all 21 aggregate checks, then approved
+the exact candidate with one documented non-blocking unreachable-code observation.
 
 **ELI5:** Have a second inspector check the wiring and test the buttons without trusting the first
 builder’s notes.
@@ -1263,7 +1263,7 @@ The feature is complete only when all of the following are true:
 | EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] reopened |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
-| EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [ ] reopened |
+| EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
 | EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] |
 | EA7.1 | Measure need for live service | M5 | EA5.4/feedback | [ ] deferred |
 | EA7.2 | Superseding ADR and separate plan | M5 | EA7.1 + owner | [ ] deferred |
@@ -1285,7 +1285,7 @@ The feature is complete only when all of the following are true:
 ## 8. Next actionable issue
 
 The Owner-requested corresponding chapter reference has been added to each quote card and copied/
-printed citation using the stored linked chunk `heading_path`. Because this changes candidate bytes,
-**EA5.4 UAT and EA6.3 focused review are reopened**, and the prior EA6.4 packet is superseded. Do not
-execute promotion or seek G5/G6 promotion approval until both reapprovals are recorded and the gate
-packet is regenerated for the exact candidate fingerprints.
+printed citation using the stored linked chunk `heading_path`, and **EA6.3 focused review is
+approved**. EA5.4 Owner UAT remains reopened for these exact bytes. Do not execute promotion or seek
+G5/G6 promotion approval until that UAT approval is recorded and the gate packet is regenerated for
+the exact candidate fingerprints.

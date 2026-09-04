@@ -4,7 +4,7 @@ Review ID: `EA6.3-RUN-20260728-01`
 
 Reviewer: Claude Code
 
-Reviewer decision: **AWAITING CLAUDE**
+Reviewer decision: **APPROVED**
 
 Claude approved the prior corrected viewer and later approved the promotion guardrails. The Owner
 then requested the corresponding source chapter on every displayed quote. Codex added that
@@ -151,10 +151,20 @@ Result: __________ Evidence: ________________________________________________
 
 Codex must not complete the reviewer decision itself.
 
-- Decision: **PENDING**
-- Reviewed at UTC: pending
-- `CC_` message ID: pending
-- Findings: pending
+- Decision: **APPROVE**
+- Reviewed at UTC: `2026-09-04T21:39:22Z`
+- `CC_` message ID: `CC_2026-09-04T213922Z_chapter-reference-approve-with-observation`
+- Reproduced results: full suite 421 passed; sieving suite 49 passed; aggregate 21/21 PASS;
+  focused suite 39 passed; live chapter labels and exact candidate fingerprints verified.
+- Findings: none.
+
+### Non-blocking observation
+
+Claude observed that the defensive cross-document quote check inside the `quotes.forEach` callback
+cannot exit the enclosing `renderEvidenceCrumb` function. The validated resolver rejects such a
+cross-document bundle before rendering, so the branch is unreachable for pipeline-produced
+artifacts and does not block this approval. Preserve the approved bytes for UAT and promotion;
+address the dead defensive branch as a separately tested hardening change after this release.
 
 Approval requires no unresolved high/medium finding. Any correction must begin with a failing
 regression test and receive re-review before EA6.3 is closed.
