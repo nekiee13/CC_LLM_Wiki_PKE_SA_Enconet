@@ -1,0 +1,15 @@
+task: EA6.3-F1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-04T18:08:40Z
+last_renewed_at_utc: 2026-09-04T18:08:40Z
+expires_at_utc: 2026-09-05T00:08:40Z
+anticipated_files:
+  - templates/dashboard-template.html
+  - tests/test_portable_report_links.py
+  - tests/test_evidence_drawer.py
+  - docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - schemas/evidence_access_review_protocol.yml
+  - docs/reviews/EA6.3_CLAUDE_REVIEW_PACKET.md
+note: TDD correction for Claude high-severity document/source target rendering finding; no promotion
+released_at_utc: 2026-09-04T18:44:37Z
