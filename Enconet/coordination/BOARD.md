@@ -274,11 +274,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-09-04T191830Z_evidence-access-reviews-archived` — acknowledgement, claude-code -> codex: EA6.3-CLOSE
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
-- Archive: 729 records in `coordination/archive/`
+- Archive: 731 records in `coordination/archive/`
 
-Generated: 2026-09-04T19:24:09Z
+Generated: 2026-09-04T19:26:39Z
