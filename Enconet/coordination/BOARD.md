@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EA6.4-PROMOTION` — codex, expires 2026-09-05T22:07:27Z
+- none
 
 ## Released claims
 
@@ -79,6 +79,7 @@ and ADRs are the records.
 - `EA6.3-PREP` — codex, released 2026-09-04T15:36:56Z
 - `EA6.4` — codex, released 2026-09-04T20:50:33Z
 - `EA6.4-CHAPTER-REFERENCE` — codex, released 2026-09-04T21:31:25Z
+- `EA6.4-PROMOTION` — codex, released 2026-09-04T22:21:46Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -288,4 +289,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-09-03T014405Z-62a0251.md`](../handoffs/2026-09-03T014405Z-62a0251.md)
 - Archive: 736 records in `coordination/archive/`
 
-Generated: 2026-09-04T22:15:52Z
+Generated: 2026-09-04T22:21:46Z
