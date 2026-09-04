@@ -1046,6 +1046,10 @@ Owner already approved.
 or extend the current offline solution, while clearly distinguishing current approved behavior
 from possible future changes.
 
+**Status:** Documentation implementation completed by Codex on 2026-09-04 and executable rehearsal
+passes. Task acceptance remains open only for Claude-owned interpreter-guidance synchronization or
+an explicit Owner-accepted exception; Codex has not modified Claude-owned files.
+
 **ELI5:** Write the instruction card so the next person can rebuild and open the package without
 asking its inventor.
 
@@ -1065,9 +1069,9 @@ asking its inventor.
 
 **Acceptance criteria**
 
-- [ ] A reviewer can reproduce the candidate from documented commands.
-- [ ] Documentation does not advertise Streamlit or an unapproved server.
-- [ ] Recovery procedure identifies exact immutable artifacts/commits.
+- [x] A reviewer can reproduce the candidate from documented commands.
+- [x] Documentation does not advertise Streamlit or an unapproved server.
+- [x] Recovery procedure identifies exact immutable artifacts/commits.
 - [ ] Claude-owned interpreter guidance is either synchronized by Claude and confirmed through the
   neutral channel, or an owner-accepted exception is recorded; Codex does not modify it.
 
@@ -1266,8 +1270,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA6.1 are complete, with the Owner's usability approval recorded and independent Claude
-review queued under ADR-0023. Execute **EA6.2** next to produce the Owner-requested thorough build,
-operation, validation, transfer, recovery, architecture, and future-upgrade documentation. Do not
-begin promotion-dependent EA6.4 before EA6.3 independent review is complete or an explicit Owner
-exception is recorded.
+EA0.1–EA6.1 are complete. **EA6.2** documentation and its clean rebuild rehearsal are implemented,
+but its final acceptance item awaits Claude-owned interpreter-guidance synchronization or an
+explicit Owner-accepted exception. Claude also remains required for EA6.3 independent review under
+ADR-0023. Do not begin promotion-dependent EA6.4 until those gates are satisfied or the Owner records
+the applicable explicit exception(s).

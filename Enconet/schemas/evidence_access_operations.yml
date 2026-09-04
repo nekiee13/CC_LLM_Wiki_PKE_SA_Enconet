@@ -1,0 +1,33 @@
+schema_version: "1.0"
+python: C:\xPY\vEnv\WikiEnconet\python.exe
+commands:
+  - id: verify-environment
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' sieving\verify_install.py
+  - id: validate-candidate
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\validate_evidence_access_candidate.py --contract schemas\evidence_access_release_candidate.yml --project-root .
+  - id: validate-package
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\validate_review_package.py outputs\candidates\evidence_access\portable_package
+  - id: validate-uat
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\validate_evidence_access_uat.py --contract schemas\evidence_access_uat.yml --packet docs\acceptance\EA5.4_OWNER_UAT.md --project-root .
+  - id: aggregate
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\audit_command.py audit-validate -- --no-record
+  - id: build-portable
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' scripts\build_review_package.py --catalog outputs\candidates\evidence_access\review_catalog.json --source-root . --output <EMPTY_OUTPUT_DIRECTORY>
+  - id: open-workspace
+    text: >-
+      & 'C:\xPY\vEnv\WikiEnconet\python.exe' -m webbrowser -t 'file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/portable_package/review_workspace.html'
+  - id: hash-baseline
+    text: >-
+      Get-FileHash outputs\enconet_appendix_b_evaluation_report.md -Algorithm SHA256; Get-FileHash outputs\enconet_appendix_b_dashboard.html -Algorithm SHA256
+rehearsal:
+  catalog: outputs/candidates/evidence_access/review_catalog.json
+  source_root: .
+  expected_manifest_sha256: efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012
+  expected_files: 6
+  expected_runs: 1
