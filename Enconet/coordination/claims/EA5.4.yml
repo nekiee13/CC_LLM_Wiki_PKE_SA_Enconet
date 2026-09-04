@@ -1,17 +1,10 @@
 task: EA5.4
 agent: codex
 status: released
-claimed_at_utc: 2026-09-04T03:28:14Z
-last_renewed_at_utc: 2026-09-04T03:28:14Z
-expires_at_utc: 2026-09-04T11:28:14Z
+claimed_at_utc: 2026-09-04T13:34:47Z
+last_renewed_at_utc: 2026-09-04T13:34:47Z
+expires_at_utc: 2026-09-04T21:34:47Z
 anticipated_files:
-  - Enconet/docs/acceptance/EA5.4_OWNER_UAT.md
-  - Enconet/schemas/evidence_access_uat.yml
-  - Enconet/scripts/validate_evidence_access_uat.py
-  - Enconet/tests/test_evidence_access_uat.py
-  - Enconet/docs/EVIDENCE_ACCESS_TDD_PLAN.md
-  - Enconet/coordination/BOARD.md
-  - Enconet/coordination/claims/EA5.4.yml
-  - Enconet/coordination/messages/CX_*ea5-4*.md
-note: Prepare EA5.4 fixed Owner UAT packet and deterministic preflight only; stop for human approve/reject and do not self-approve usability.
-released_at_utc: 2026-09-04T03:47:37Z
+  - Enconet/coordination/messages/CX_2026-09-04T*_ea5-4-owner-approval.md
+note: Record the Owner's explicit EA5.4 APPROVED decision and close the human gate without changing candidate artifacts.
+released_at_utc: 2026-09-04T13:38:57Z

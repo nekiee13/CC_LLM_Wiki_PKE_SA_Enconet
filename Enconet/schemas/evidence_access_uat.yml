@@ -1,6 +1,6 @@
 schema_version: "1.0"
 uat_id: EA5.4-RUN-20260728-01
-status: awaiting_owner
+status: approved
 run_id: RUN-20260728-01
 package_root: outputs/candidates/evidence_access/portable_package
 primary_crumb_id: CRUMB-DOC-0021-APP_B_I-0003
@@ -44,7 +44,7 @@ steps:
     action: select_run_from_workspace
     expected: The workspace selects the registered production run and exposes its matched artifacts.
 owner_decision:
-  decision:
-  decided_at_utc:
-  decision_reference:
+  decision: approve
+  decided_at_utc: "2026-09-04T13:34:47Z"
+  decision_reference: "Owner chat approval on 2026-09-04: APPROVED. It works and is easy enough to use."
   observed_defects: []

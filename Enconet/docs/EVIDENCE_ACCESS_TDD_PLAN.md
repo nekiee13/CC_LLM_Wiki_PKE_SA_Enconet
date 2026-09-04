@@ -961,9 +961,9 @@ freezes.
 
 **GitHub issue title:** `EA5.4: Owner UAT for report-to-source evidence navigation`
 
-**Status:** Fixed UAT packet and deterministic preflight prepared by Codex on 2026-09-04;
-awaiting the Owner's hands-on approve/reject decision. Automation has not marked usability as
-accepted, and independent Claude review remains deferred under ADR-0023.
+**Status:** Completed on 2026-09-04. The Owner explicitly approved the eight-step workflow as
+working and easy enough to use; the decision is recorded in `schemas/evidence_access_uat.yml` and
+`docs/acceptance/EA5.4_OWNER_UAT.md`. Independent Claude review remains deferred under ADR-0023.
 
 **ELI5:** Let the real user try the exact job before declaring the feature finished.
 
@@ -986,9 +986,9 @@ accepted, and independent Claude review remains deferred under ADR-0023.
 
 **Acceptance criteria**
 
-- [ ] Owner completes the script without repository knowledge or command-line use.
-- [ ] Every observed defect has a regression test.
-- [ ] Owner records approve/reject with date and decision reference.
+- [x] Owner completes the script without repository knowledge or command-line use.
+- [x] Every observed defect has a regression test (no defects were reported).
+- [x] Owner records approve/reject with date and decision reference.
 
 **Dependencies:** EA2–EA5.3.
 
@@ -1037,6 +1037,10 @@ Owner already approved.
 ## Task EA6.2 — Document operation and recovery
 
 **GitHub issue title:** `EA6.2: Document build, validate, open, transfer, and rollback procedures`
+
+**Owner direction:** Documentation must be thorough enough to support a later decision to upgrade
+or extend the current offline solution, while clearly distinguishing current approved behavior
+from possible future changes.
 
 **ELI5:** Write the instruction card so the next person can rebuild and open the package without
 asking its inventor.
@@ -1234,7 +1238,7 @@ The feature is complete only when all of the following are true:
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [x] |
-| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] |
+| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [x] |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [ ] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [ ] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [ ] |
@@ -1258,8 +1262,9 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA5.3 are complete, with independent Claude review queued under ADR-0023. The fixed **EA5.4**
-UAT packet and fail-closed preflight are prepared and validated, but EA5.4 remains incomplete at its
-human gate. The Owner must now perform the eight-step script in
-`docs/acceptance/EA5.4_OWNER_UAT.md` and record APPROVE or REJECT, date, decision reference, and any
-observed defects. Do not begin promotion-dependent EA6.4 or mark EA5.4 complete before that decision.
+EA0.1–EA5.4 are complete, with the Owner's usability approval recorded and independent Claude
+review queued under ADR-0023. Execute **EA6.1** next to formalize and verify the complete production
+candidate. Then execute **EA6.2** to produce the Owner-requested thorough build, operation,
+validation, transfer, recovery, architecture, and future-upgrade documentation. Do not begin
+promotion-dependent EA6.4 before EA6.3 independent review is complete or an explicit Owner exception
+is recorded.

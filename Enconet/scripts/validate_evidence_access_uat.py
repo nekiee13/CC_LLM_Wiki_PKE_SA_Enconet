@@ -76,8 +76,9 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
         errors.append("unsupported UAT schema_version")
     if contract.get("uat_id") != "EA5.4-RUN-20260728-01":
         errors.append("unexpected UAT identity")
-    if contract.get("status") != "awaiting_owner":
-        errors.append("UAT status must remain awaiting_owner")
+    status = contract.get("status")
+    if status not in {"awaiting_owner", "approved", "rejected"}:
+        errors.append("invalid UAT status")
     run_id = contract.get("run_id")
     if run_id != "RUN-20260728-01":
         errors.append("unexpected UAT run_id")
@@ -104,9 +105,28 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
         "decision_reference": None,
         "observed_defects": [],
     }
-    if decision != expected_blank:
-        errors.append("awaiting packet contains a premature Owner decision")
-    summary["decision"] = contract.get("status", "unknown")
+    if status == "awaiting_owner":
+        if decision != expected_blank:
+            errors.append("awaiting packet contains a premature Owner decision")
+        summary["decision"] = "awaiting_owner"
+    else:
+        expected_decision = "approve" if status == "approved" else "reject"
+        complete = (
+            isinstance(decision, dict)
+            and decision.get("decision") == expected_decision
+            and isinstance(decision.get("decided_at_utc"), str)
+            and re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", decision["decided_at_utc"]) is not None
+            and isinstance(decision.get("decision_reference"), str)
+            and bool(decision["decision_reference"].strip())
+            and isinstance(decision.get("observed_defects"), list)
+        )
+        if not complete:
+            errors.append(f"{status} UAT requires a complete Owner decision")
+        elif status == "approved" and decision["observed_defects"]:
+            errors.append("approved UAT cannot contain unresolved observed defects")
+        elif status == "rejected" and not decision["observed_defects"]:
+            errors.append("rejected UAT requires at least one observed defect")
+        summary["decision"] = expected_decision
 
     artifacts = contract.get("artifacts")
     if not isinstance(artifacts, list):
@@ -166,7 +186,12 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
     except (OSError, UnicodeError) as exc:
         errors.append(f"UAT packet is unreadable: {exc}")
         packet = ""
-    for marker in [str(contract.get("uat_id")), str(run_id), "Owner decision: **AWAITING OWNER**"]:
+    decision_marker = {
+        "awaiting_owner": "Owner decision: **AWAITING OWNER**",
+        "approved": "Owner decision: **APPROVED**",
+        "rejected": "Owner decision: **REJECTED**",
+    }.get(status, "Owner decision:")
+    for marker in [str(contract.get("uat_id")), str(run_id), decision_marker]:
         if marker not in packet:
             errors.append(f"UAT packet missing marker: {marker}")
     for row in artifacts:
