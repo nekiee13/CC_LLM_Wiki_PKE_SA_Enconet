@@ -3,7 +3,7 @@ message_id: CX_2026-09-04T191509Z_request-claude-archive-evidence-access-reviews
 created_at_utc: 2026-09-04T19:15:09Z
 from_agent: codex
 to_agent: claude-code
-type: action_request
+type: question
 task: EA6.3-CLOSE
 related_files:
   - Enconet/coordination/messages
