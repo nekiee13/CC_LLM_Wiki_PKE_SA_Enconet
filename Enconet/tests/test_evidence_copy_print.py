@@ -67,6 +67,7 @@ def test_citation_is_deterministic_complete_and_visible(page):
         "Link-method: EXACT",
         "Locator: Organizacijska shema ENCONET d.o.o. 1/3, lines 1341-1353",
         "Chunk-ID: CHUNK-DOC-0021-0105",
+        "Chapter-reference: 1. PRILOG PRAVILNIKA O RADU [line 1270] > OPIS RADNIH MJESTA [line 1315]",
         "OPIS RADNIH MJESTA",
         "B[UPRAVA DRUŠTVA]",
     ]
@@ -127,6 +128,7 @@ def test_print_evidence_expands_selected_record_and_hides_controls(page):
     for value in (
         "Run-ID: RUN-20260728-01", "Package-SHA256:", "Source-SHA256:",
         f"Crumb-ID: {SAMPLE_CRUMB}", "Quote-ID:", "Chunk-ID:",
+        "Chapter-reference:",
     ):
         assert value in state["citation"]
 

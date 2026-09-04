@@ -216,13 +216,15 @@ def test_real_candidate_links_resolve_from_final_published_names(tmp_path: Path)
 
 
 def test_production_contract_is_pending_and_pins_the_exact_five_file_set() -> None:
-    contract = promotion._load_contract(ENCONET / "schemas/evidence_access_promotion.yml")
-    assert contract["status"] == "awaiting_owner_promotion"
+    contract = yaml.safe_load((ENCONET / "schemas/evidence_access_promotion.yml").read_text(encoding="utf-8"))
+    assert contract["status"] == "blocked_reapproval_required"
     assert contract["required_approvals"] == {
         "report": "G5-EVIDENCE-ACCESS-RUN-20260728-01",
         "dashboard": "G6-EVIDENCE-ACCESS-RUN-20260728-01",
     }
     assert len(contract["promotion"]) == len(contract["baseline"]) == 5
+    with pytest.raises(promotion.PromotionError, match="not awaiting Owner promotion"):
+        promotion._load_contract(ENCONET / "schemas/evidence_access_promotion.yml")
     result = ENCONET / contract["result_manifest"]
     if result.exists():
         assert json.loads(result.read_text(encoding="utf-8"))["status"] == "promoted"

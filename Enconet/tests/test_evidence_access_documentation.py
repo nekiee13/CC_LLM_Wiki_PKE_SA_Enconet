@@ -27,7 +27,7 @@ def test_documentation_contract_covers_commands_and_clean_rehearsal():
         "aggregate", "build-portable", "open-workspace", "hash-baseline",
     }
     assert contract["rehearsal"]["expected_manifest_sha256"] == (
-        "89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217"
+        "f3b72fdd381453af69b97e8d6e423c749fdbe045f3b0a55e8c7d43fc22faa95d"
     )
 
 

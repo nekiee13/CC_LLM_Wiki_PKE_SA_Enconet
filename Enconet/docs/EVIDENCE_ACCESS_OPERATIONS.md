@@ -59,7 +59,7 @@ path such as `C:\Temp\enconet-review-rehearsal`; never point it at `outputs/` or
 The builder validates the catalog, copies the fixed run artifacts, regenerates portable report
 links, renders the workspace, writes a sorted manifest, then validates the finished package. A
 non-empty destination fails closed. Repeating the build from identical inputs must reproduce
-manifest SHA-256 `89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217`.
+manifest SHA-256 `f3b72fdd381453af69b97e8d6e423c749fdbe045f3b0a55e8c7d43fc22faa95d`.
 
 ## Validate
 

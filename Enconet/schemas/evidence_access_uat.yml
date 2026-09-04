@@ -1,6 +1,6 @@
 schema_version: "1.0"
 uat_id: EA5.4-RUN-20260728-01
-status: approved
+status: awaiting_owner
 run_id: RUN-20260728-01
 package_root: outputs/candidates/evidence_access/portable_package
 primary_crumb_id: CRUMB-DOC-0021-APP_B_I-0003
@@ -8,16 +8,16 @@ secondary_crumb_id: CRUMB-DOC-0021-APP_B_II-0002
 artifacts:
   - role: manifest
     path: outputs/candidates/evidence_access/portable_package/package_manifest.json
-    sha256: 89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217
+    sha256: f3b72fdd381453af69b97e8d6e423c749fdbe045f3b0a55e8c7d43fc22faa95d
   - role: workspace
     path: outputs/candidates/evidence_access/portable_package/review_workspace.html
-    sha256: 37c8e0df1d01334031c538b5f7c45118f64122965c74194b827c2e78c26b17b8
+    sha256: 3b891a37a5ef4c96dbb42890e078ceb7f88f586c6f43e40b75cafc15a3aef1b0
   - role: report
     path: outputs/candidates/evidence_access/portable_package/RUN-20260728-01/evaluation_report.md
     sha256: 04cec818cc8f80a999851148e3ac3c80b4c5e1fdcb25dbe25dceaa19feb374b3
   - role: viewer
     path: outputs/candidates/evidence_access/portable_package/RUN-20260728-01/evidence_explorer.html
-    sha256: 74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2
+    sha256: c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d
 steps:
   - id: UAT-1
     action: open_report
@@ -27,13 +27,13 @@ steps:
     expected: The primary crumb opens in Evidence Explorer with three quote cards.
   - id: UAT-3
     action: confirm_source_identity
-    expected: The statement, quotes, chapter, document identity, and source hash are visible.
+    expected: Every quote visibly names its linked chapter; the statement, document identity, chunk, and source hash are visible too.
   - id: UAT-4
     action: navigate_adjacent_context
     expected: Previous and next controls open chunks 0104 and 0106 around chunk 0105.
   - id: UAT-5
     action: copy_traceable_citation
-    expected: The copied citation identifies the run, document, crumb, quote, chunk, and source hash.
+    expected: The copied citation identifies the run, document, crumb, quote, corresponding chapter, chunk, and source hash.
   - id: UAT-6
     action: print_evidence_card
     expected: Print or save-to-PDF preview contains the focused evidence card.
@@ -50,7 +50,7 @@ steps:
     action: open_package_record
     expected: The package citation shows run and package metadata without presenting an arbitrary crumb, quote, or chapter as exact evidence.
 owner_decision:
-  decision: approve
-  decided_at_utc: "2026-09-04T19:34:59Z"
-  decision_reference: "Owner chat approval on 2026-09-04: Owner approved corrected ten-step UAT"
+  decision: null
+  decided_at_utc: null
+  decision_reference: null
   observed_defects: []

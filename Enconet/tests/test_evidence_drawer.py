@@ -68,6 +68,10 @@ def test_click_opens_exact_statement_document_quotes_chunk_and_traceability(page
     assert page.locator('[data-quote-id="QUOTE-DOC-0021-0003-01"]').count() == 1
     assert page.locator('[data-quote-id="QUOTE-DOC-0021-0003-02"]').count() == 1
     assert page.locator('[data-quote-id="QUOTE-DOC-0021-0003-03"]').count() == 1
+    chapter_references = page.locator(".quote-chapter-reference").all_text_contents()
+    assert len(chapter_references) == 3
+    assert all("Poglavlje:" in value for value in chapter_references)
+    assert all("OPIS RADNIH MJESTA" in value for value in chapter_references)
     assert page.locator('[data-chunk-id="CHUNK-DOC-0021-0105"]').count() == 1
     assert "OPIS RADNIH MJESTA" in page.locator("#evidence-heading-path").text_content()
     assert "Članak 4." in page.locator("#evidence-chunk-text").text_content()

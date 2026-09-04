@@ -20,7 +20,7 @@ The portable package at `outputs/candidates/evidence_access/portable_package` co
 | Evaluation package | `RUN-20260728-01/evaluation_package.json` |
 
 The package manifest SHA-256 is
-`89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217`. It declares all six
+`f3b72fdd381453af69b97e8d6e423c749fdbe045f3b0a55e8c7d43fc22faa95d`. It declares all six
 payload files and their hashes. The bundle contains 18 criterion evaluations and 62 resolvable
 crumbs. The 14 exact source hashes are pinned in `schemas/evidence_access_release_candidate.yml`.
 
@@ -38,5 +38,7 @@ Run the read-only contract check with:
   --contract schemas\evidence_access_release_candidate.yml --project-root .
 ```
 
-Promotion remains a separate EA6.4 human-gated operation after documentation and independent
-review. This record is not promotion authorization.
+The Owner-requested chapter-reference correction changed the viewer and package fingerprints after
+the prior UAT and independent review. UAT and independent review are therefore reopened. Promotion
+remains blocked until both approve these exact bytes and a new EA6.4 human gate is prepared. This
+record is not promotion authorization.

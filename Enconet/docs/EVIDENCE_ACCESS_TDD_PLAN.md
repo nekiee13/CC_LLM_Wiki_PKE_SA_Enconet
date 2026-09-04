@@ -1082,9 +1082,9 @@ asking its inventor.
 
 **GitHub issue title:** `EA6.3: Claude independently review and reproduce the complete release`
 
-**Status:** Completed on 2026-09-04. Claude independently reproduced the corrected document,
-package, crumb, and gap behavior, reran 412 tests and all 21 aggregate checks, and approved the
-release candidate with all ten risk checks passing.
+**Status:** Reopened. Claude's 2026-09-04 approval remains valid historical evidence for the prior
+candidate, but the Owner-requested chapter-reference presentation changed viewer/package bytes and
+requires a focused re-review.
 
 **ELI5:** Have a second inspector check the wiring and test the buttons without trusting the first
 builder’s notes.
@@ -1120,7 +1120,7 @@ official shelf.
 - [x] RED tests cover missing approval, failed validation, hash drift/stale candidate, partial
   replacement, rollback, and final-name link resolution.
 - [x] Rollback-safe five-file promotion mechanism and immutable result-manifest contract implemented.
-- [x] Exact Owner promotion packet prepared at `docs/acceptance/EA6.4_PROMOTION_GATE.md`.
+- [ ] Replace the superseded Owner promotion packet after chapter-reference UAT and re-review pass.
 - [ ] Owner explicitly approves both fixed G5 and G6 Evidence Access decision references.
 - [ ] Execute promotion, validate final published artifacts, close coordination, and publish handoff.
 
@@ -1260,10 +1260,10 @@ The feature is complete only when all of the following are true:
 | EA5.1 | Headless browser harness | M2 | EA0.2 | [x] |
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [x] |
-| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [x] |
+| EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [ ] reopened |
 | EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
-| EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
+| EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [ ] reopened |
 | EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] |
 | EA7.1 | Measure need for live service | M5 | EA5.4/feedback | [ ] deferred |
 | EA7.2 | Superseding ADR and separate plan | M5 | EA7.1 + owner | [ ] deferred |
@@ -1284,7 +1284,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1 through EA6.3 and the corrected EA5.4 Owner UAT are complete. EA6.4 guardrails are implemented
-and its exact human gate packet is prepared. **The next action is an explicit Owner decision on both
-`G5-EVIDENCE-ACCESS-RUN-20260728-01` and `G6-EVIDENCE-ACCESS-RUN-20260728-01`.** Do not execute
-promotion or change canonical outputs before that decision is recorded.
+The Owner-requested corresponding chapter reference has been added to each quote card and copied/
+printed citation using the stored linked chunk `heading_path`. Because this changes candidate bytes,
+**EA5.4 UAT and EA6.3 focused review are reopened**, and the prior EA6.4 packet is superseded. Do not
+execute promotion or seek G5/G6 promotion approval until both reapprovals are recorded and the gate
+packet is regenerated for the exact candidate fingerprints.

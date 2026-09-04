@@ -1,10 +1,10 @@
 schema_version: "1.0"
 release_id: EA6.4-RUN-20260728-01
-status: awaiting_owner_promotion
+status: blocked_reapproval_required
 run_id: RUN-20260728-01
 candidate_manifest:
   path: outputs/candidates/evidence_access/portable_package/package_manifest.json
-  sha256: 89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217
+  sha256: f3b72fdd381453af69b97e8d6e423c749fdbe045f3b0a55e8c7d43fc22faa95d
 required_approvals:
   report: G5-EVIDENCE-ACCESS-RUN-20260728-01
   dashboard: G6-EVIDENCE-ACCESS-RUN-20260728-01
@@ -18,13 +18,13 @@ promotion:
     sha256: d490c07545e584d21ed0324d82cf3f4bbe75b50f1bf975d19877d4ad2558ee94
   - source: outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
     destination: outputs/enconet_appendix_b_dashboard.html
-    sha256: 74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2
+    sha256: c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d
   - source: outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
     destination: outputs/enconet_appendix_b_dashboard_hr.html
-    sha256: 74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2
+    sha256: c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d
   - source: outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
     destination: wiki/dashboards/enconet_appendix_b_dashboard.html
-    sha256: 74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2
+    sha256: c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d
 baseline:
   - path: outputs/enconet_appendix_b_evaluation_report.md
     sha256: 0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175

@@ -1,10 +1,14 @@
 # EA6.4 Evidence Access promotion gate
 
-Gate status: **AWAITING OWNER PROMOTION DECISION**
+Gate status: **SUPERSEDED — CHAPTER-REFERENCE CANDIDATE REQUIRES REAPPROVAL**
 
 Release: `EA6.4-RUN-20260728-01`
 
-This packet asks one narrow question: may the already accepted Evidence Explorer candidate replace
+This packet is retained as historical preparation evidence. It no longer asks for a decision: the
+Owner requested explicit corresponding chapter references after it was prepared, changing the
+candidate fingerprints and reopening UAT plus independent review. A replacement packet must be
+prepared after those gates approve the new bytes. The eventual narrow question remains whether the
+accepted Evidence Explorer candidate may replace
 the five protected canonical report/dashboard copies? It does not authorize a live service and does
 not modify the closed audit findings, score, source evidence, or database.
 
@@ -12,13 +16,13 @@ not modify the closed audit findings, score, source evidence, or database.
 
 - Production run: `RUN-20260728-01`
 - Portable-package manifest SHA-256:
-  `89a55446e4fc0c36952d6020c9bd8baa8a7595d04814bf5f90d91165ea9a7217`
+  `f3b72fdd381453af69b97e8d6e423c749fdbe045f3b0a55e8c7d43fc22faa95d`
 - Published report SHA-256 after promotion:
   `d490c07545e584d21ed0324d82cf3f4bbe75b50f1bf975d19877d4ad2558ee94`
 - Published dashboard SHA-256 after promotion:
-  `74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2`
-- Owner UAT: `EA5.4-RUN-20260728-01`, approved 2026-09-04, ten of ten steps passed.
-- Independent review: `CC_2026-09-04T185412Z_ea6-3-correction-approve`, approved with no findings.
+  `c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d`
+- Owner UAT: reopened for the chapter-reference candidate.
+- Independent review: reopened because the viewer and portable-package bytes changed.
 
 ## Exact replacement set
 
@@ -26,25 +30,19 @@ not modify the closed audit findings, score, source evidence, or database.
 | --- | --- | --- |
 | `outputs/enconet_appendix_b_evaluation_report.md` | `0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175` | `d490c07545e584d21ed0324d82cf3f4bbe75b50f1bf975d19877d4ad2558ee94` |
 | `outputs/enconet_appendix_b_evaluation_report_hr.md` | `0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175` | `d490c07545e584d21ed0324d82cf3f4bbe75b50f1bf975d19877d4ad2558ee94` |
-| `outputs/enconet_appendix_b_dashboard.html` | `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07` | `74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2` |
-| `outputs/enconet_appendix_b_dashboard_hr.html` | `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07` | `74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2` |
-| `wiki/dashboards/enconet_appendix_b_dashboard.html` | `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07` | `74e54dfa2faf6e62f410febdc4d2e729fd6324d8de3edeb1d6d700e734ba04a2` |
+| `outputs/enconet_appendix_b_dashboard.html` | `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07` | `c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d` |
+| `outputs/enconet_appendix_b_dashboard_hr.html` | `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07` | `c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d` |
+| `wiki/dashboards/enconet_appendix_b_dashboard.html` | `15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07` | `c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d` |
 
 No dashboard-data JSON, evaluation package, raw source, database, or Claude-owned file is in the
 replacement set.
 
-## Verified release evidence
+## Historical release evidence
 
-- Focused EA6.4 TDD suite: 9 passed.
-- Full project regression suite: 421 passed; two third-party Typer/Click deprecation warnings.
-- Sieving regression suite: 49 passed; the same two third-party deprecation warnings.
-- Candidate validator: PASS; six files, 18 criteria, 62 crumbs.
-- Corrected Owner UAT validator: PASS; ten steps, four pinned artifacts, decision approve.
-- Independent-review validator: PASS; eight commands, ten risk checks, decision approve.
-- Portable-package validator: PASS; six files, one run.
-- Final-name report-link validator: PASS; 200 evidence links.
-- Full phase-aware aggregate: PASS; 21 of 21 checks, including interactive browser and budgets.
-- Browser evidence: PASS; one bundle, 124 interactive assertions, zero external requests.
+The earlier candidate passed its focused, full-regression, package, link, aggregate, browser, Owner
+UAT, and independent-review checks. Those results remain audit history, but they do **not** approve
+the chapter-reference candidate because its viewer and package fingerprints differ. Fresh UAT and
+independent review are required before a replacement promotion packet can be created.
 
 ## Transaction and recovery behavior
 
@@ -60,20 +58,11 @@ Promotion success is recorded at
 `outputs/evidence_access_release_manifest_RUN-20260728-01.json`; it includes timestamp, approval
 references, independent-review identity, candidate-manifest hash, and all five final hashes.
 
-## Owner decision required
+## No Owner promotion decision is requested by this packet
 
-To approve, the Owner must explicitly authorize both of these immutable decision references:
+Do not approve or execute promotion from this superseded packet. First complete the reopened Owner
+UAT and independent review for the chapter-reference fingerprints. If both approve, create a new
+promotion packet that pins those decisions and the validated artifact hashes.
 
-- `G5-EVIDENCE-ACCESS-RUN-20260728-01` — replace the two canonical report copies.
-- `G6-EVIDENCE-ACCESS-RUN-20260728-01` — replace the two canonical dashboard copies and wiki copy.
-
-Suggested unambiguous approval text:
-
-> Owner approves EA6.4 promotion of `EA6.4-RUN-20260728-01` under both
-> `G5-EVIDENCE-ACCESS-RUN-20260728-01` and `G6-EVIDENCE-ACCESS-RUN-20260728-01`.
-
-Reject or defer by naming the release and the reason. Until the exact approval is recorded, running
-the script without `--execute` stops, and `--execute` fails before changing any protected output.
-
-ELI5: UAT said the new book is easy to read, and Claude said it is correctly made. This final gate
-asks whether the new book may now replace the old book on the official shelf.
+ELI5: the book gained chapter labels after the old checks. Check that exact new book again before
+anyone asks to place it on the official shelf.
