@@ -1,0 +1,29 @@
+schema_version: "1.0"
+candidate_id: EA6.1-RUN-20260728-01
+status: candidate
+run_id: RUN-20260728-01
+package_root: outputs/candidates/evidence_access/portable_package
+package_manifest_sha256: efcbada9b59862f8f0ba00c739147a2a5e4076d0009f87b3af539a5cb60a0012
+expected_counts:
+  criteria: 18
+  crumbs: 62
+source_sha256:
+  - 1b53fc1416b34cf36dfde3a226c482c046010f5f4ae0c65dbc63b3384bf20483
+  - 30ecac5384173d0ba92cdb6d617fec2caef8d573d0b34229631f09e695ba4a78
+  - 460ea5ace2a3f1a34349dd91dc728fe5a9bfd396b68988a6c48ac9cb2a01f9b6
+  - 67321365b04bd3ed9af497b798eb995cc50aa25dc26b6034cbb997b0989e43ed
+  - 6c86f765247d36078ad85c8bc20d3ab341bf122c85a60331a5c53f66e0eab27a
+  - 77d7a95b134c6c6f59b564f866efc5a0324f08218af14f8bdd81968a3aa6fafe
+  - 9c8b0f352b59bf121a6bff17635753324161eb81187fcb47b21f4b6d626f87f7
+  - a2c316258415ae5ea18e9e057f4d1e814992ea59eb40cb70af485433221ddab3
+  - a8f111bb893d0f04794ad01fb22434c1614752700467833acfa0db2d63a9fe2c
+  - b12e97e4f426ea923ffcf1e06416309e32b3afef75bc75253be98aa83160115c
+  - ba7ed665376b86890bd4c7355cda65c4cd183ae45a721c1ed887293fb9bb1851
+  - bb69e2d82f822726e90caf59dba51271ea3a50259f96505656791b659583bbdf
+  - c0c50bdf1b4d5f974e7fbddbcd024680fc89e79c2588aa5a536c5c7d8b860f42
+  - f6b570f1d622dc8ab6d3ca2c0d39a88c37135a3528699c48c86b0add9e2dd649
+approved_baseline:
+  report_path: outputs/enconet_appendix_b_evaluation_report.md
+  report_sha256: 0af3981811ef13ba942d6ea924f3ab16675326415d2fb10e7c06097663a14175
+  dashboard_path: outputs/enconet_appendix_b_dashboard.html
+  dashboard_sha256: 15aced5b1c8237f906e9b1794a19fc06ec39ec9bc8801eba2779e6c207b98e07

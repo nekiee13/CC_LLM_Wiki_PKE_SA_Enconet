@@ -1012,6 +1012,10 @@ record.
 
 **GitHub issue title:** `EA6.1: Build candidate report, explorer, bundle, catalog, and package manifest`
 
+**Status:** Completed by Codex on 2026-09-04; the existing complete candidate is pinned by a
+machine-readable release-candidate contract and remains unpromoted. Independent Claude review is
+deferred under ADR-0023.
+
 **ELI5:** Produce a complete dress rehearsal in a separate folder before replacing anything the
 Owner already approved.
 
@@ -1027,10 +1031,10 @@ Owner already approved.
 
 **Acceptance criteria**
 
-- [ ] Candidate contains report, evidence explorer/dashboard, evidence bundle, catalog/landing page,
+- [x] Candidate contains report, evidence explorer/dashboard, evidence bundle, catalog/landing page,
   and package manifest.
-- [ ] Candidate lineage points to the exact production run and source hashes.
-- [ ] Existing approved output hashes are recorded before promotion.
+- [x] Candidate lineage points to the exact production run and source hashes.
+- [x] Existing approved output hashes are recorded before promotion.
 
 **Dependencies:** EA5.2–EA5.3.
 
@@ -1239,7 +1243,7 @@ The feature is complete only when all of the following are true:
 | EA5.2 | Aggregate validation integration | M4 | EA3.3, EA4.3, EA5.1 | [x] |
 | EA5.3 | Security/encoding/performance budgets | M4 | EA2.3, EA4.3 | [x] |
 | EA5.4 | Owner usability acceptance | M4 | EA2–EA5.3 | [x] |
-| EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [ ] |
+| EA6.1 | Production candidate generation | M4 | EA5.2–EA5.3 | [x] |
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [ ] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [ ] |
 | EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [ ] |
@@ -1262,9 +1266,8 @@ The feature is complete only when all of the following are true:
 
 ## 8. Next actionable issue
 
-EA0.1–EA5.4 are complete, with the Owner's usability approval recorded and independent Claude
-review queued under ADR-0023. Execute **EA6.1** next to formalize and verify the complete production
-candidate. Then execute **EA6.2** to produce the Owner-requested thorough build, operation,
-validation, transfer, recovery, architecture, and future-upgrade documentation. Do not begin
-promotion-dependent EA6.4 before EA6.3 independent review is complete or an explicit Owner exception
-is recorded.
+EA0.1–EA6.1 are complete, with the Owner's usability approval recorded and independent Claude
+review queued under ADR-0023. Execute **EA6.2** next to produce the Owner-requested thorough build,
+operation, validation, transfer, recovery, architecture, and future-upgrade documentation. Do not
+begin promotion-dependent EA6.4 before EA6.3 independent review is complete or an explicit Owner
+exception is recorded.
