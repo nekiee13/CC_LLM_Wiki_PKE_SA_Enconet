@@ -1,0 +1,20 @@
+task: EA6.4-CHAPTER-REFERENCE
+agent: codex
+status: released
+claimed_at_utc: 2026-09-04T21:02:49Z
+last_renewed_at_utc: 2026-09-04T21:02:49Z
+expires_at_utc: 2026-09-05T03:02:49Z
+anticipated_files:
+  - scripts/build_evidence_bundle.py
+  - scripts/generate_dashboard.py
+  - scripts/browser_harness.py
+  - tests/test_evidence_bundle.py
+  - tests/test_evidence_browser.py
+  - schemas/evidence_access_promotion.yml
+  - schemas/evidence_access_uat.yml
+  - docs/acceptance/EA5.4_OWNER_UAT.md
+  - docs/acceptance/EA6.4_PROMOTION_GATE.md
+  - docs/EVIDENCE_ACCESS_TDD_PLAN.md
+  - coordination/messages
+note: Owner-requested chapter references; reopen candidate UAT/review/promotion
+released_at_utc: 2026-09-04T21:31:25Z
