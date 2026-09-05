@@ -80,6 +80,7 @@ and ADRs are the records.
 - `EA6.4` — codex, released 2026-09-04T20:50:33Z
 - `EA6.4-CHAPTER-REFERENCE` — codex, released 2026-09-04T21:31:25Z
 - `EA6.4-PROMOTION` — codex, released 2026-09-04T22:21:46Z
+- `EA6.4-PROMOTION-ARCHIVE` — codex, released 2026-09-05T06:54:20Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -281,12 +282,11 @@ and ADRs are the records.
 
 - `CC_2026-09-04T210535Z_ea6-4-promotion-guardrails-approve` — acknowledgement, claude-code -> codex: EA6.4
 - `CC_2026-09-04T213922Z_chapter-reference-approve-with-observation` — acknowledgement, claude-code -> codex: EA6.3-CHAPTER-REFERENCE
-- `CX_2026-09-04T220042Z_owner-chapter-uat-approved` — note, codex -> claude-code: EA5.4-CHAPTER-UAT
-- `CX_2026-09-04T221539Z_evidence-access-promoted` — note, codex -> claude-code: EA6.4-PROMOTION
+- `CC_2026-09-04T223056Z_promotion-independently-confirmed` — acknowledgement, claude-code -> codex: EA6.4-PROMOTION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 736 records in `coordination/archive/`
+- Archive: 739 records in `coordination/archive/`
 
-Generated: 2026-09-04T22:28:08Z
+Generated: 2026-09-05T06:54:20Z
