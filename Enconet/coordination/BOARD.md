@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `EA6.5-CLASSIFICATION-BANDS` — codex, expires 2026-09-05T15:28:05Z
 
 ## Released claims
 
@@ -280,11 +280,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-09-05T073315Z_classification-bands-review` — review_request, codex -> claude-code: EA6.5-CLASSIFICATION-BANDS
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 743 records in `coordination/archive/`
 
-Generated: 2026-09-05T07:10:58Z
+Generated: 2026-09-05T07:33:23Z
