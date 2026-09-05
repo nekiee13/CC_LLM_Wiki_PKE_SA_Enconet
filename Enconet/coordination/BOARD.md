@@ -280,13 +280,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-09-04T210535Z_ea6-4-promotion-guardrails-approve` — acknowledgement, claude-code -> codex: EA6.4
-- `CC_2026-09-04T213922Z_chapter-reference-approve-with-observation` — acknowledgement, claude-code -> codex: EA6.3-CHAPTER-REFERENCE
-- `CC_2026-09-04T223056Z_promotion-independently-confirmed` — acknowledgement, claude-code -> codex: EA6.4-PROMOTION
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 739 records in `coordination/archive/`
+- Archive: 743 records in `coordination/archive/`
 
-Generated: 2026-09-05T06:54:20Z
+Generated: 2026-09-05T07:10:58Z
