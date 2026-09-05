@@ -1,6 +1,7 @@
 """EA2.2 real-browser tests for evidence controls and the read-only drawer."""
 from __future__ import annotations
 
+import json
 import os
 import sys
 from pathlib import Path
@@ -12,6 +13,7 @@ ENCONET = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ENCONET / "scripts"))
 
 import browser_harness  # noqa: E402
+import generate_dashboard  # noqa: E402
 
 
 CONFIG = ENCONET / "schemas" / "browser_harness.yml"
@@ -189,3 +191,35 @@ def test_existing_filter_search_sort_expand_collapse_and_print_still_work(page):
     page.evaluate("window.print = () => { window.__printCalled = true; }")
     page.locator("#print-button").click()
     assert page.evaluate("window.__printCalled") is True
+
+
+def test_distribution_is_high_to_low_with_canonical_score_bands(page):
+    data = json.loads(
+        (ENCONET / "outputs" / "enconet_appendix_b_dashboard_data.json")
+        .read_text(encoding="utf-8")
+    )
+    page_errors = []
+    page.on("pageerror", lambda error: page_errors.append(str(error)))
+    page.goto("about:blank", wait_until="load")
+    page.set_content(generate_dashboard.render(data), wait_until="load")
+    assert page_errors == []
+
+    items = page.locator("#distribution-values > div")
+    assert items.evaluate_all(
+        "elements => elements.map(element => element.dataset.rating)"
+    ) == [
+        "fully", "substantially", "partially", "minimally", "unmet",
+        "undetermined", "na",
+    ]
+    assert items.evaluate_all(
+        "elements => elements.map(element => element.dataset.scoreBand || null)"
+    ) == [
+        "[90–100]", "[70–<90]", "[40–<70]", "[10–<40]", "[0–<10]",
+        None, None,
+    ]
+    assert page.locator("#rating-filter option").evaluate_all(
+        "elements => elements.map(element => element.value)"
+    ) == [
+        "", "fully", "substantially", "partially", "minimally", "unmet",
+        "undetermined", "na",
+    ]

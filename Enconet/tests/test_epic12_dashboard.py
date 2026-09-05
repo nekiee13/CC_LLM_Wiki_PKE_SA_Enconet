@@ -112,6 +112,34 @@ def test_renderer_is_deterministic_localized_self_contained_and_valid(language: 
     assert validate_dashboard.validate(source, data, first) == []
 
 
+def test_classification_scale_is_derived_from_canonical_scoring_model():
+    scale = generate_dashboard.classification_scale()
+
+    assert [item["rating"] for item in scale] == [
+        "fully", "substantially", "partially", "minimally", "unmet",
+        "undetermined", "na",
+    ]
+    assert [item["score_band"] for item in scale] == [
+        "[90–100]", "[70–<90]", "[40–<70]", "[10–<40]", "[0–<10]",
+        None, None,
+    ]
+
+    model = yaml.safe_load(
+        (ENCONET / "schemas" / "scoring_model.yml").read_text(encoding="utf-8")
+    )
+    assert [item["min_score"] for item in scale[:5]] == [
+        threshold["min_score"] for threshold in model["classification_thresholds"]
+    ]
+
+
+def test_renderer_embeds_classification_scale_for_runtime_ordering():
+    _source, data = dashboard_data("hr")
+    html = generate_dashboard.render(data)
+
+    assert '"classification_scale":[' in html
+    assert "ui.classification_scale.forEach" in html
+
+
 def test_dashboard_evidence_references_render_as_interactive_controls():
     _source, data = dashboard_data()
     html = generate_dashboard.render(data)

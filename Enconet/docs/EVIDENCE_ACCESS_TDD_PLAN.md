@@ -1148,6 +1148,48 @@ official shelf.
 
 **Dependencies:** EA5.4, EA6.3.
 
+## Task EA6.5 — Ordered classification bands
+
+**GitHub issue title:** `EA6.5: Present classification counts high-to-low with canonical score bands`
+
+**ELI5:** Put the strongest result first and print the scoring ruler underneath each scored
+category, so the Owner does not have to remember what the labels mean.
+
+**Implementation status**
+
+- [x] Owner identified the alphabetical distribution order as a usability gap.
+- [x] RED tests reproduce the wrong order and missing intervals.
+- [x] Renderer derives order and intervals from `schemas/scoring_model.yml`.
+- [x] Focused unit and real-browser tests pass without changing approved output files.
+- [x] Build an isolated review candidate and record its old/new artifact hashes.
+- [ ] Obtain independent review and Owner acceptance before any controlled promotion.
+
+**Tests first — RED**
+
+- Unit test proving the displayed scale is derived from the canonical threshold list.
+- Real-browser test proving distribution and filter options appear as `fully`, `substantially`,
+  `partially`, `minimally`, `unmet`, `undetermined`, and `na`.
+- Browser assertion proving scored categories show `[90–100]`, `[70–<90]`, `[40–<70]`,
+  `[10–<40]`, and `[0–<10]`, while non-scored states have no invented band.
+
+**Implementation — GREEN**
+
+- Build presentation metadata from the scoring-model range, ordered thresholds, and rating keys.
+- Embed that metadata in the self-contained HTML and use it for both the distribution and filter.
+- Preserve evaluation data, classifications, counts, evidence links, and approved output bytes.
+
+**Acceptance criteria**
+
+- [x] No threshold is duplicated as UI-owned scoring logic.
+- [x] The visible order is deterministic and high-to-low.
+- [x] `undetermined` and `na` remain non-scored states without misleading intervals.
+- [x] Existing dashboard and evidence-drawer regressions pass.
+- [x] A separately identifiable candidate passes dashboard, browser, and aggregate validation.
+- [ ] Owner completes usability acceptance for the revised presentation.
+- [ ] Promotion occurs only after new review and explicit Owner authorization.
+
+**Dependencies:** EA6.4 release baseline; Owner presentation request dated 2026-09-05.
+
 ---
 
 # EPIC EA7 — Optional live local review service (deferred)
@@ -1266,6 +1308,7 @@ The feature is complete only when all of the following are true:
 | EA6.2 | Operator/recovery documentation | M4 | EA6.1 | [x] |
 | EA6.3 | Independent Claude review | M4 | EA6.1–EA6.2 | [x] |
 | EA6.4 | Human gate/promotion/closeout | M4 | EA5.4, EA6.3 | [x] |
+| EA6.5 | Ordered classification bands | M4 | EA6.4 + owner feedback | [ ] candidate |
 | EA7.1 | Measure need for live service | M5 | EA5.4/feedback | [ ] deferred |
 | EA7.2 | Superseding ADR and separate plan | M5 | EA7.1 + owner | [ ] deferred |
 

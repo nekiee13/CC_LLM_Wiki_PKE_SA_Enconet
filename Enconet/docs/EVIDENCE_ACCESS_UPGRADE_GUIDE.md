@@ -2,6 +2,44 @@
 
 This guide is for planning a future improvement. It does not authorize a change or promotion.
 
+## EA6.5 presentation candidate: ordered classification bands
+
+Owner feedback dated 2026-09-05 identified a presentation-only defect: classification counts were
+shown in dictionary/alphabetical order, so lower categories appeared between higher categories.
+EA6.5 changes presentation only; it does not change any evaluation, score, count, or threshold.
+
+The display contract is:
+
+| Order | Category | Consolidated-score band |
+| ---: | --- | --- |
+| 1 | `fully` | `[90–100]` |
+| 2 | `substantially` | `[70–<90]` |
+| 3 | `partially` | `[40–<70]` |
+| 4 | `minimally` | `[10–<40]` |
+| 5 | `unmet` | `[0–<10]` |
+| 6 | `undetermined` | no consolidated-score band |
+| 7 | `na` | no consolidated-score band |
+
+These bands are generated from `schemas/scoring_model.yml`; the HTML renderer does not own a
+second copy of the thresholds. The first band includes the scoring maximum. Every later upper
+boundary is exclusive because the next-higher category owns that exact threshold. `undetermined`
+and `na` are criterion states rather than consolidated-score classifications, so assigning them a
+numeric interval would be misleading.
+
+TDD evidence lives in `tests/test_epic12_dashboard.py` and `tests/test_evidence_drawer.py`. The
+candidate changes `scripts/generate_dashboard.py` and `templates/dashboard-template.html` only.
+Previously promoted HTML remains unchanged until an isolated revised candidate completes browser
+testing, independent review, Owner acceptance, and controlled promotion.
+
+Candidate evidence:
+
+- Review file: `outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard_EA6-5.html`
+- Promoted/prior-candidate dashboard SHA-256: `c0d63eaecf431bffb2f79e247c9ad1904f214bbc5db9169e06f67f5152472e4d`
+- EA6.5 review-file SHA-256: `5bc39042aaaae9d5486e3f468a77984c874234edf91f695a6776d5231dcd93dd`
+- Verification: 424 project tests passed; candidate dashboard validation passed; candidate headless-browser
+  check passed with one embedded bundle, 124 interactive evidence controls, and zero external requests;
+  the phase-aware aggregate passed after Chromium execution was permitted.
+
 ## Current approved behavior
 
 The current candidate is a deterministic offline package for `RUN-20260728-01`. It provides a

@@ -24,6 +24,7 @@ from generate_report import require_report_gates
 ENCONET = Path(__file__).resolve().parents[1]
 TEMPLATE = ENCONET / "templates" / "dashboard-template.html"
 EVIDENCE_BUDGETS = ENCONET / "schemas" / "evidence_access_budgets.yml"
+SCORING_MODEL = ENCONET / "schemas" / "scoring_model.yml"
 OUTPUTS = ENCONET / "outputs"
 WIKI = ENCONET / "wiki" / "dashboards"
 
@@ -102,6 +103,44 @@ def _bundle_hash(bundle: dict) -> str:
     return hashlib.sha256(validate_evidence_bundle.canonical_bytes(bundle)).hexdigest()
 
 
+def _score_label(value: int | float) -> str:
+    numeric = float(value)
+    return str(int(numeric)) if numeric.is_integer() else str(numeric)
+
+
+def classification_scale(model_path: Path = SCORING_MODEL) -> list[dict]:
+    """Build the display order and bands from the canonical scoring contract."""
+    model = yaml.safe_load(model_path.read_text(encoding="utf-8"))
+    thresholds = model["classification_thresholds"]
+    score_min, score_max = model["consolidated_score"]["range"]
+    if not thresholds or thresholds[-1]["min_score"] != score_min:
+        raise ValueError("scoring model thresholds do not cover the consolidated score range")
+
+    scale = []
+    upper = score_max
+    threshold_ratings = set()
+    for index, threshold in enumerate(thresholds):
+        rating = threshold["class"]
+        lower = threshold["min_score"]
+        if rating in threshold_ratings or lower > upper:
+            raise ValueError("scoring model thresholds are not uniquely ordered high-to-low")
+        scale.append({
+            "rating": rating,
+            "min_score": lower,
+            "score_band": (
+                f"[{_score_label(lower)}–"
+                f"{'<' if index else ''}{_score_label(upper)}]"
+            ),
+        })
+        threshold_ratings.add(rating)
+        upper = lower
+
+    for rating in model["rating_weights"]:
+        if rating not in threshold_ratings:
+            scale.append({"rating": rating, "min_score": None, "score_band": None})
+    return scale
+
+
 def _validate_bundle_for_dashboard(bundle: dict, data: dict) -> None:
     metadata = bundle.get("metadata", {})
     for field in ("run_id", "supplier", "deliverable_language"):
@@ -142,8 +181,10 @@ def render(
         evidence_hash = _bundle_hash(evidence_bundle)
     else:
         evidence_hash = ""
+    ui = dict(UI[language])
+    ui["classification_scale"] = classification_scale()
     return (source.replace("__DASHBOARD_DATA__", _script_json(data))
-            .replace("__DASHBOARD_UI__", _script_json(UI[language]))
+            .replace("__DASHBOARD_UI__", _script_json(ui))
             .replace("__EVIDENCE_BUNDLE__", _script_json(evidence_bundle))
             .replace("__EVIDENCE_BUNDLE_SHA256__", evidence_hash).rstrip() + "\n")
 
