@@ -281,11 +281,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-09-05T074018Z_classification-bands-approve` — acknowledgement, claude-code -> codex: EA6.5-CLASSIFICATION-BANDS
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 746 records in `coordination/archive/`
+- Archive: 748 records in `coordination/archive/`
 
-Generated: 2026-09-05T07:43:54Z
+Generated: 2026-09-05T07:46:11Z
