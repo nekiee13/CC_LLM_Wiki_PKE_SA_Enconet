@@ -1162,7 +1162,8 @@ category, so the Owner does not have to remember what the labels mean.
 - [x] Renderer derives order and intervals from `schemas/scoring_model.yml`.
 - [x] Focused unit and real-browser tests pass without changing approved output files.
 - [x] Build an isolated review candidate and record its old/new artifact hashes.
-- [ ] Obtain independent review and Owner acceptance before any controlled promotion.
+- [x] Obtain independent review with no findings (`CC_2026-09-05T074018Z_classification-bands-approve`).
+- [ ] Obtain Owner acceptance before any controlled promotion.
 
 **Tests first — RED**
 

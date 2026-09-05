@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EA6.5-CLASSIFICATION-BANDS` — codex, expires 2026-09-05T15:28:05Z
+- none
 
 ## Released claims
 
@@ -81,6 +81,7 @@ and ADRs are the records.
 - `EA6.4-CHAPTER-REFERENCE` — codex, released 2026-09-04T21:31:25Z
 - `EA6.4-PROMOTION` — codex, released 2026-09-04T22:21:46Z
 - `EA6.4-PROMOTION-ARCHIVE` — codex, released 2026-09-05T06:54:20Z
+- `EA6.5-CLASSIFICATION-BANDS` — codex, released 2026-09-05T07:43:46Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -280,11 +281,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-09-05T073315Z_classification-bands-review` — review_request, codex -> claude-code: EA6.5-CLASSIFICATION-BANDS
+- `CC_2026-09-05T074018Z_classification-bands-approve` — acknowledgement, claude-code -> codex: EA6.5-CLASSIFICATION-BANDS
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 743 records in `coordination/archive/`
+- Archive: 746 records in `coordination/archive/`
 
-Generated: 2026-09-05T07:33:23Z
+Generated: 2026-09-05T07:43:54Z
