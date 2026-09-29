@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local ID grammar required by the copied database helper",
+  "status": "pending deferred Claude batch review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 186,
+  "remaining_recreate_rows": 45,
+  "files": [
+    {
+      "source": "Enconet/schemas/id_patterns.yml",
+      "destination": "Ekonerg/schemas/id_patterns.yml",
+      "treatment": "adapt (local ID shapes; no source or company approval)",
+      "source_git_blob": "822f71eddeeefc0533640e4569a38dd64b6f61e2",
+      "source_bytes": 1625,
+      "source_sha256": "4bbe0e0f663d8e18b52eeddc52d647f0753331b9d6706123772069f9911584c5",
+      "destination_lf_bytes": 1284,
+      "destination_lf_sha256": "5e70697495f10d7c8be605307f24f197569895052dad547609be6ed858d1ad02"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/scripts/tests/test_db_identity.py",
+      "treatment": "new isolated two-company regression tests",
+      "destination_lf_bytes": 4053,
+      "destination_lf_sha256": "63344adf72ab9475abf965cb7e65d43922d172d9ad7894a576a3e71fa59f9d95"
+    }
+  ]
+}
