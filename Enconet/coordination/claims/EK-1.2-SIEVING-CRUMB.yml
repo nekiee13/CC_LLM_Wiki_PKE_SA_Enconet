@@ -1,0 +1,16 @@
+task: EK-1.2-SIEVING-CRUMB
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T20:19:17Z
+last_renewed_at_utc: 2026-09-29T20:19:17Z
+expires_at_utc: 2026-09-30T00:19:17Z
+anticipated_files:
+  - Ekonerg/sieving/src/json_extractor/crumb_validation.py
+  - Ekonerg/sieving/tests/test_crumb_validation.py
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_CRUMB.md
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_CRUMB_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD local crumb validator and bounded file reads; Claude review deferred
+released_at_utc: 2026-09-29T20:33:46Z
