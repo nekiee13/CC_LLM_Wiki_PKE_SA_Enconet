@@ -294,11 +294,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-09-29T133548Z_ack-ekonerg-live-transfer-approve` — acknowledgement, codex -> claude-code: EK-1.1
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 779 records in `coordination/archive/`
+- Archive: 781 records in `coordination/archive/`
 
-Generated: 2026-09-29T13:43:31Z
+Generated: 2026-09-29T14:51:56Z
