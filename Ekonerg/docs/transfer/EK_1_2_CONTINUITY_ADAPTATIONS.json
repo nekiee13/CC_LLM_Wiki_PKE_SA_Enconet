@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local session continuity only",
+  "status": "pending Claude package review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 211,
+  "files": [
+    {
+      "source": "Enconet/scripts/session_continuity.py",
+      "destination": "Ekonerg/scripts/session_continuity.py",
+      "treatment": "adapt",
+      "source_git_blob": "c1114ce8b9a45bd25be396b1ad97636060ab226e",
+      "source_bytes": 5060,
+      "source_sha256": "a14c23535cea269606948aa1a23a197b02c3d3073aa26201b36427918dd69c66",
+      "destination_lf_bytes": 6154,
+      "destination_lf_sha256": "9e3430838977ba40690e5f2eaf9f564f5587bb951d4358e196d17179088d3ef9"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/tools/tests/test_local_continuity.py",
+      "treatment": "new synthetic isolation tests",
+      "destination_lf_bytes": 11191,
+      "destination_lf_sha256": "57acc1b2712221b9993cb712d1a94d504582b985c88eb7c07cd7481d26c8d348"
+    }
+  ]
+}

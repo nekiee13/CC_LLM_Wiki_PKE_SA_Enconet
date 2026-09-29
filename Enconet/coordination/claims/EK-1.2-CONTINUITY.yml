@@ -1,0 +1,16 @@
+task: EK-1.2-CONTINUITY
+agent: codex
+status: active
+claimed_at_utc: 2026-09-29T18:01:27Z
+last_renewed_at_utc: 2026-09-29T18:01:27Z
+expires_at_utc: 2026-09-30T18:01:27Z
+anticipated_files:
+  - Ekonerg/scripts/session_continuity.py
+  - Ekonerg/tools/tests/test_local_continuity.py
+  - Ekonerg/docs/transfer/EK_1_2_CONTINUITY.md
+  - Ekonerg/docs/transfer/EK_1_2_CONTINUITY_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD local session continuity using approved state/DB/path helpers; no live audit state writes; package-only Claude review, whole EK-1.2 open.

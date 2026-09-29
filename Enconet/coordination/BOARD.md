@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `EK-1.2-CONTINUITY` — codex, expires 2026-09-30T18:01:27Z
 
 ## Released claims
 
@@ -307,4 +307,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-29T17:59:48Z
+Generated: 2026-09-29T18:01:28Z
