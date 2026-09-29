@@ -1,0 +1,17 @@
+task: EK-1.2-SOURCE-CONTRACT
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T22:46:35Z
+last_renewed_at_utc: 2026-09-29T22:46:35Z
+expires_at_utc: 2026-09-30T22:46:35Z
+anticipated_files:
+  - Ekonerg/schemas/sieving_contract.yml
+  - Ekonerg/schemas/vocabularies.yml
+  - Ekonerg/sieving/src/json_extractor/crumb_validation.py
+  - Ekonerg/sieving/src/json_extractor/extract/load_and_flatten.py
+  - Ekonerg/sieving/tests/test_crumb_validation.py
+  - Ekonerg/sieving/tests/test_extract_normalization.py
+  - Ekonerg/sieving/tests/test_foundation.py
+  - Ekonerg/sieving/tests/test_template_facade.py
+note: TDD: local empty source-code contract and generic validators; Claude review deferred
+released_at_utc: 2026-09-29T22:56:59Z
