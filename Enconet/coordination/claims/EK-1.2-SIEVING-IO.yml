@@ -1,0 +1,16 @@
+task: EK-1.2-SIEVING-IO
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T18:26:58Z
+last_renewed_at_utc: 2026-09-29T18:26:58Z
+expires_at_utc: 2026-09-29T22:26:58Z
+anticipated_files:
+  - Ekonerg/sieving/src/json_extractor/io
+  - Ekonerg/sieving/tests/test_io_paths.py
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_IO.md
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_IO_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD local sieving I/O path and export isolation; Claude reviews deferred
+released_at_utc: 2026-09-29T18:33:18Z
