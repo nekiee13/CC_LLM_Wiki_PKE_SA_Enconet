@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local sieving CLI only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 192,
+  "files": [
+    {
+      "source": "Enconet/sieving/cli.py",
+      "destination": "Ekonerg/sieving/cli.py",
+      "treatment": "adapt (project-root path expansion and pre-scan input/output guard)",
+      "source_git_blob": "428ee3c201967cbd456863f79ca2237c4c87e2f9",
+      "source_bytes": 11147,
+      "source_sha256": "c40490f59019a9772879f2643bb48e14a937362b20770b494965346e4eafe6f1",
+      "destination_lf_bytes": 10837,
+      "destination_lf_sha256": "194de98fc3577920896824ff7a92af68f581ef2b2c42b9e26cab7f21d3fa5d84"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_cli_local.py",
+      "treatment": "new isolated synthetic CLI tests",
+      "destination_lf_bytes": 9176,
+      "destination_lf_sha256": "5e8237026995dd0cec485147aede7ca4dac630fe76ec9517dc5e1c4559c5272e"
+    }
+  ]
+}
