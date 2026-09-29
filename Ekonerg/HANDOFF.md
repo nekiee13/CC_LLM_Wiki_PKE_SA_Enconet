@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T213239Z-f88c587.md`](handoffs/2026-09-29T213239Z-f88c587.md)
+**Authoritative record:** [`handoffs/2026-09-29T215659Z-6ed249d.md`](handoffs/2026-09-29T215659Z-6ed249d.md)
 
-**Status:** partial · **Git:** `f88c587` · **Agent:** codex · **Created:** 2026-09-29T21:32:39Z
+**Status:** partial · **Git:** `6ed249d` · **Agent:** codex · **Created:** 2026-09-29T21:56:59Z
 
-**Exact next action:** Continue only EK-1.2: use TDD to adapt sieving generation and harness as one coherent batch; keep the empty active prompt registry fail-closed. Do not begin EK-1.3 or ingest real documents.
+**Exact next action:** Continue EK-1.2 with a coherent TDD batch for the local database SQL schema and safe init tool, making source-code choices configuration-driven and tested with two synthetic companies; do not run migrations or create real audit data.
