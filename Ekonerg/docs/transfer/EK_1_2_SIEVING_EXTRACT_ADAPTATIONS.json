@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "parsed-JSON extraction and normalization only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 198,
+  "files": [
+    {
+      "source": "Enconet/sieving/src/json_extractor/extract/__init__.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/extract/__init__.py",
+      "treatment": "adapt (local wording, same public exports)",
+      "source_git_blob": "cd796c9df5eaa4bc4302ec41584564abb18cd1d5",
+      "source_bytes": 387,
+      "source_sha256": "f904a2f60c2f8abda11240fbb1b309f0382e2eb54cd832a19796bf50b5215214",
+      "destination_lf_bytes": 262,
+      "destination_lf_sha256": "28845ba0dddb24ae1ab5ae18bdb3379368c1ca8a698c9db67876b678e6ccb2c4"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/extract/load_and_flatten.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/extract/load_and_flatten.py",
+      "treatment": "adapt (same output fields and validation IDs, stronger shape/provenance checks)",
+      "source_git_blob": "bdb2908809b5ebfef037c8ea4e1023e78501be0d",
+      "source_bytes": 23356,
+      "source_sha256": "3724bd36b3840de636eb1a098bb52493087e7bd3e7c48f11f8ec0b4ff4f44537",
+      "destination_lf_bytes": 16127,
+      "destination_lf_sha256": "25467e1026178ae7c3a3475c3275d45aeb800a4478f31b743a70ef902ea60fd0"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_extract_normalization.py",
+      "treatment": "new synthetic extraction and provenance tests",
+      "destination_lf_bytes": 9442,
+      "destination_lf_sha256": "3072bd7dd511971005b3b67a03ccd5d65e063fe7a643d171f79e342e155c4dcb"
+    }
+  ]
+}
