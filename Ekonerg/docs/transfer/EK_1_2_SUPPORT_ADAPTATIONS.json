@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "workspace support tools and support tests only",
+  "status": "pending Claude review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 216,
+  "files": [
+    {
+      "source": "scripts/agent_coord.py",
+      "destination": "Ekonerg/scripts/agent_coord.py",
+      "treatment": "adapt",
+      "source_git_blob": "2cbf236f486c61c890d85cc0aaa9fa0b3b96f2b3",
+      "source_bytes": 20545,
+      "source_sha256": "47ac30e385e4f871f1fccdd2a4906ab6a3573b59a67f8aedea0df78a76329c70",
+      "destination_lf_bytes": 21918,
+      "destination_lf_sha256": "458199758342f68e5bfcbc22cbea346b0f4be5281504b27149da52fbb2eea6da"
+    },
+    {
+      "source": "scripts/check_guidance_drift.py",
+      "destination": "Ekonerg/scripts/check_guidance_drift.py",
+      "treatment": "adapt",
+      "source_git_blob": "4d41d914cea977a31a3dff4117641d615094fcb6",
+      "source_bytes": 4521,
+      "source_sha256": "2cd0e9e2aa4adb2d6772ffaf5fe8dfdcd7c1c0d049da7390651f96a6c7593af2",
+      "destination_lf_bytes": 4529,
+      "destination_lf_sha256": "62dfa7efe6090f6734dd16e6968d06ee4de83a25273b6687867d9c3819788817"
+    },
+    {
+      "source": "scripts/check_skill_structure.py",
+      "destination": "Ekonerg/scripts/check_skill_structure.py",
+      "treatment": "adapt",
+      "source_git_blob": "d6168ad548c4a8df2162acc6cab14f793db18d64",
+      "source_bytes": 6711,
+      "source_sha256": "fc69c7772747c5874a57857a80e469ca4ef6dc4a265445c51fcb590b7649f58b",
+      "destination_lf_bytes": 7882,
+      "destination_lf_sha256": "1d0205c3824b4899a10d385eae858c01866c0c94bed3ee8819d74e150d799e76"
+    },
+    {
+      "source": "scripts/make_handoff.py",
+      "destination": "Ekonerg/scripts/make_handoff.py",
+      "treatment": "adapt",
+      "source_git_blob": "5ad79616d767865ed1d299d5dccc9b3de719cb1a",
+      "source_bytes": 13482,
+      "source_sha256": "e5346e0091ba76050f62e2f42df0387046d94590dfe48955735adaaad54ef448",
+      "destination_lf_bytes": 14688,
+      "destination_lf_sha256": "49e99f69caa9bc6a6483152caf186c2b40e534f02e8d12916851394a46cde2f6"
+    },
+    {
+      "source": "scripts/run_validation.py",
+      "destination": "Ekonerg/scripts/run_validation.py",
+      "treatment": "adapt",
+      "source_git_blob": "40e074fc8475e512f79820e10178f713eed3ce1d",
+      "source_bytes": 7969,
+      "source_sha256": "b7246772ea9f24eb69912e0b853de9362d27c9efc3b88f513dd6b481fa6a9eb5",
+      "destination_lf_bytes": 7999,
+      "destination_lf_sha256": "23a289ad806584afdcd517165022bfbdeefd3996eb265e774d7abc061a99be54"
+    },
+    {
+      "source": "scripts/tests/test_agent_coord.py",
+      "destination": "Ekonerg/scripts/tests/test_agent_coord.py",
+      "treatment": "adapt",
+      "source_git_blob": "54d1e18b73efb4d1d43cb72c67b7d2ccc28d0cd5",
+      "source_bytes": 1990,
+      "source_sha256": "0f0818531621cc6329e4e11df0caaeccc5a03f358a32c1cda70472782c1c0dda",
+      "destination_lf_bytes": 2068,
+      "destination_lf_sha256": "0da44626174401e9e86478a033b94c82832fa9c06e0713e60d608ae6d9acb69c"
+    },
+    {
+      "source": "scripts/tests/test_make_handoff.py",
+      "destination": "Ekonerg/scripts/tests/test_make_handoff.py",
+      "treatment": "adapt",
+      "source_git_blob": "be521aaf305d5be401d3f82a80d89a19dbcde331",
+      "source_bytes": 4473,
+      "source_sha256": "c527b9b74a3407b956190a1bf7d4a9062b8ab08ce7dc981d9559460eb423b0cc",
+      "destination_lf_bytes": 4678,
+      "destination_lf_sha256": "90efc8b159c385614833ce25cd77bfa8e627668250a9ae1872897ec96a6958c4"
+    },
+    {
+      "source": "scripts/tests/test_run_validation.py",
+      "destination": "Ekonerg/scripts/tests/test_run_validation.py",
+      "treatment": "adapt",
+      "source_git_blob": "7ae71154ca44d609d60d0cd697dcd0414adb6046",
+      "source_bytes": 2901,
+      "source_sha256": "bf44edb37233912f8f2c0d42c4de298a0fceeddd04e21af135a18b81ded3412e",
+      "destination_lf_bytes": 2915,
+      "destination_lf_sha256": "53e2f007bcee53786e1088c4f0ec8016cfa44422da6ada2a769e8e9d90ff0b89"
+    },
+    {
+      "source": "scripts/tests/test_skill_structure.py",
+      "destination": "Ekonerg/scripts/tests/test_skill_structure.py",
+      "treatment": "adapt",
+      "source_git_blob": "f074d5a0780cfd5e8ba039bad3e0acf34c1c38e4",
+      "source_bytes": 3463,
+      "source_sha256": "b0da4ec4a14985c55d03ee107c38deca86a3c8d6a774aa7ec44ae01ab0bff47e",
+      "destination_lf_bytes": 3456,
+      "destination_lf_sha256": "6dcc9bd88d469a32235879ac430e4b53174a5370a2756cb302b37e20694ec098"
+    }
+  ]
+}
