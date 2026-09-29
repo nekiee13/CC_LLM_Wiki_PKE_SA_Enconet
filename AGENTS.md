@@ -17,6 +17,30 @@ requirements defined here.
   pending; Claude Code owns changes to its infrastructure.
 - Put workspace-wide engineering documentation in `doc/` and project details inside the project.
 
+## Reuse axiom
+
+A new company audit must start from a company-neutral framework, not a new round of
+per-file code patches. Treat a company name, path, source edition, document ID, or
+approval embedded in reusable code as a framework defect to fix at its source.
+
+- Keep company choices in explicit, reviewed configuration and fresh intake records.
+  Do not infer regulatory applicability, source editions, storage, or approval from
+  another company's project.
+- Scripts must be copied into each project, as the owner requires, but the copy must
+  come from one versioned, tested template. Normal runtime commands must not import
+  code or read data from a sibling company project.
+- Make initialization deterministic and repeatable: preview the file plan, apply only
+  to the chosen new project, record hashes and provenance, and support safe retry.
+  A later company should need configuration, approved source intake, and validation,
+  not edits to reusable scripts.
+- Test the bootstrap and normal commands with at least two synthetic company names,
+  including spaces and non-ASCII characters, both with and without a sibling project.
+  Assert that no other company's files change. A failure calls for a reusable fix and
+  a regression test, not a one-company workaround.
+- Group related transfer changes into coherent tested batches. Keep audit evidence,
+  human approval gates, and required validation; avoid per-file review and handoff
+  ceremony when one task-level record gives the same traceability.
+
 ## Dual-agent coordination
 
 - Follow ADR-0016 through ADR-0019: separate agent infrastructure, shared project
