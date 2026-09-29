@@ -91,7 +91,7 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(len(contract["criteria"]), 18)
         ids = [item["criterion_id"] for item in contract["criteria"]]
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(self.contract.canonical_codes()[0]["allowed_locators"], ids)
+        self.assertEqual(self.contract.canonical_codes(), [])
         self.assertEqual(json.loads((self.schema_dir / "sieving_contract.yml").read_text(encoding="utf-8"))["template"]["taxonomy_id"], "APP_B")
 
 

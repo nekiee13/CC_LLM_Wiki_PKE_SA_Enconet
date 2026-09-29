@@ -5,17 +5,19 @@ This is a format check, not proof that a quote matches an approved source.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
+
+from .contract import canonical_codes
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 TAXONOMY = PROJECT_ROOT / "schemas" / "app_b_taxonomy.yml"
 LANGUAGES = {"sl", "en", "hr"}
 ROLES = {"GOVERNING", "INTERPRETIVE"}
-ROLE_CODES = {"GOVERNING": {"10CFR50_APPB", "10CFR21"}, "INTERPRETIVE": {"ASME_NQA1"}}
 APPLICABILITY = {"APPLICABLE", "CONDITIONAL", "NOT_APPLICABLE"}
 FORBIDDEN = {"statement_en", "translation_status", "meaning_flag"}
 
@@ -39,6 +41,7 @@ def _allowed(value: object, choices: set[str] | dict[str, str]) -> bool:
 
 
 def check_authority_references(refs: object, where: str, result: ValidationResult) -> None:
+    configured = {entry["ref_code"]: entry for entry in canonical_codes()}
     if not isinstance(refs, list):
         result.errors.append(f"{where}: authority_references must be a list")
         return
@@ -50,15 +53,24 @@ def check_authority_references(refs: object, where: str, result: ValidationResul
         role, code = ref.get("authority_role"), ref.get("source_code")
         if not _allowed(role, ROLES):
             result.errors.append(f"{label}: invalid authority_role {role!r}")
-        elif not _allowed(code, ROLE_CODES[role]):
+        elif not isinstance(code, str) or code not in configured or configured[code].get("authority_role") != role:
             result.errors.append(f"{label}: {code!r} is not valid for {role}")
-        if not _nonempty(ref.get("source_locator")):
+        locator = ref.get("source_locator")
+        if not _nonempty(locator):
             result.errors.append(f"{label}: source_locator is required")
+        elif isinstance(code, str) and code in configured:
+            source = configured[code]
+            if "allowed_locators" in source and locator not in source["allowed_locators"]:
+                result.errors.append(f"{label}: source_locator is not allowed for {code}")
+            elif "locator_pattern" in source and not re.fullmatch(source["locator_pattern"], locator):
+                result.errors.append(f"{label}: source_locator does not match {code} pattern")
         applicability = ref.get("applicability", "APPLICABLE")
         if not _allowed(applicability, APPLICABILITY):
             result.errors.append(f"{label}: invalid applicability {applicability!r}")
-        if code == "10CFR21" and not _nonempty(ref.get("applicability_basis")):
-            result.errors.append(f"{label}: Part 21 requires applicability_basis")
+        if ((isinstance(code, str) and code in configured
+             and configured[code].get("requires_applicability_basis"))
+                or applicability == "CONDITIONAL") and not _nonempty(ref.get("applicability_basis")):
+            result.errors.append(f"{label}: applicability_basis is required")
 
 
 # Existing callers use this name; retain it during the transfer.
@@ -149,9 +161,9 @@ def _local_file(path: Path) -> Path:
     candidate = path if path.is_absolute() else PROJECT_ROOT / path
     resolved = candidate.resolve()
     if not resolved.is_relative_to(PROJECT_ROOT):
-        raise ValueError("crumb file must be inside the Ekonerg project")
-    if any(part.casefold() == "enconet" for part in resolved.relative_to(PROJECT_ROOT).parts):
-        raise ValueError("Enconet files are not Ekonerg crumbs")
+        raise ValueError("crumb file must be inside the project")
+    if resolved.relative_to(PROJECT_ROOT).parts[0:1] != ("sieving",):
+        raise ValueError("crumb file must be inside the project's sieving folder")
     if resolved.exists() and resolved.stat().st_nlink > 1:
         raise ValueError("linked crumb file could share bytes with another project")
     return resolved

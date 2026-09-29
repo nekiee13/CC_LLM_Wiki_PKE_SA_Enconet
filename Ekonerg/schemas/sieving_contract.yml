@@ -1,11 +1,7 @@
 {
   "schema_version": "1.1",
   "template": {"id": "JSON_Template_App_B", "version": "1.1", "taxonomy_id": "APP_B"},
-  "canonical_codes": [
-    {"ref_code":"10CFR50_APPB","ref_type":"REGULATION","authority_role":"GOVERNING","title":"10 CFR Part 50 Appendix B - Quality Assurance Criteria","allowed_locators":"criteria"},
-    {"ref_code":"10CFR21","ref_type":"REGULATION","authority_role":"GOVERNING","title":"10 CFR Part 21 - Reporting of Defects and Noncompliance","locator_pattern":"^21\\.[0-9]+$"},
-    {"ref_code":"ASME_NQA1","ref_type":"STANDARD","authority_role":"INTERPRETIVE","title":"ASME NQA-1 - Quality Assurance Requirements for Nuclear Facility Applications","locator_pattern":"^REQ_(0[1-9]|1[0-8])$"}
-  ],
+  "canonical_codes": [],
   "enums": {
     "record_side":["RULE","DOCUMENT"],
     "authority_role":["GOVERNING","INTERPRETIVE"],

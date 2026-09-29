@@ -210,8 +210,8 @@ def validate_item(item: Dict[str, Any], file_path: str, config) -> List[Validati
             locator = rule.get("rule_locator", "")
             key = rule.get("rule_key", "")
             strength = rule.get("rule_strength", "")
-            canonical = [entry["ref_code"] for entry in config.get_canonical_codes()]
-            if code and code not in canonical:
+            canonical = {entry["ref_code"]: entry for entry in config.get_canonical_codes()}
+            if code and (not isinstance(code, str) or code not in canonical):
                 add("VAL-JOIN-001", f"rule.source_rules '{code}' not in canonical code table")
             if not locator:
                 add("VAL-JOIN-001", "rule.rule_locator is empty for RULE item")
@@ -220,10 +220,13 @@ def validate_item(item: Dict[str, Any], file_path: str, config) -> List[Validati
                 add("VAL-JOIN-001", f"rule.rule_key '{key}' does not match expected '{expected_key}'")
             if strength not in ("MANDATORY", "NON_MANDATORY"):
                 add("VAL-JOIN-001", f"rule.rule_strength must be MANDATORY or NON_MANDATORY, got '{strength}'")
-            if code == "10CFR50_APPB" and locator not in valid_criteria:
-                add("VAL-LOC-001", f"For 10CFR50_APPB, rule_locator '{locator}' must be a valid criterion_id")
-            elif code == "10CFR21" and not re.match(r"^21\.[0-9]+$", str(locator)):
-                add("VAL-LOC-001", f"For 10CFR21, rule_locator '{locator}' must match pattern '21.<n>'")
+            source = canonical.get(code) if isinstance(code, str) else None
+            if source and "allowed_locators" in source and locator not in source["allowed_locators"]:
+                add("VAL-LOC-001", f"For {code}, rule_locator '{locator}' is not allowed")
+            elif source and "locator_pattern" in source and (
+                not isinstance(locator, str) or not re.fullmatch(source["locator_pattern"], locator)
+            ):
+                add("VAL-LOC-001", f"For {code}, rule_locator '{locator}' does not match the configured pattern")
     elif side == "DOCUMENT":
         if item.get("rule"):
             add("VAL-RULELEAK-002", "DOCUMENT item must not have 'rule' object (RULE-only field)")

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "empty local authority-source contract and generic crumb/extract validators",
+  "status": "pending deferred Claude review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "source_manifest": "Ekonerg/docs/transfer/transfer-manifest.json",
+  "remaining_adapt_rows": 183,
+  "remaining_recreate_rows": 45,
+  "files": [
+    {"destination":"Ekonerg/schemas/sieving_contract.yml","source":"Enconet/schemas/sieving_contract.yml","source_sha256":"0bf7b684fe63cc60fd27f6b63165c6d5f4df375b9f423aa0a58a45ad20ba749e","destination_sha256":"5c3137121734523fff561e599d3b5a1c582f76a89487594d2428950c283b83ae"},
+    {"destination":"Ekonerg/schemas/vocabularies.yml","source":"Enconet/schemas/vocabularies.yml","source_sha256":"d9e00984745371a453b12b434f857af175ed5cabc7cf42f3bc9db7711eb70869","destination_sha256":"e5c7c0229f44c2e44cda2a80821c77d33e7ea04d4d71f1c41d01812b1707bbe4"},
+    {"destination":"Ekonerg/sieving/prompts/fixtures/valid_rule.json","source":"Enconet/sieving/prompts/fixtures/valid_rule.json","source_sha256":"98b272a61891cff0c22c024e434b15de62b4172d7c355a7243748dee8b7b1c74","destination_sha256":"0b5b9eee0327b0e9ce9f1e3b2016a06ba7b1160e7af1638b3fe47a54acf05bf7"},
+    {"destination":"Ekonerg/sieving/src/json_extractor/crumb_validation.py","source":"Enconet/sieving/src/json_extractor/crumb_validation.py","source_sha256":"a71afa9c74f9bd3a870f9d2293c8dbd7404923ce5178150e7dbe76155dbce983","destination_sha256":"82be0f6b10b498788d071180cfce5710198cf4538ae24984ae7a414d90dab2ca"},
+    {"destination":"Ekonerg/sieving/src/json_extractor/extract/load_and_flatten.py","source":"Enconet/sieving/src/json_extractor/extract/load_and_flatten.py","source_sha256":"3724bd36b3840de636eb1a098bb52493087e7bd3e7c48f11f8ec0b4ff4f44537","destination_sha256":"8ce9324929c4d502ea9ae4ce7a8bb4bab5d29965f09d1520e7482b864c823fc8"}
+  ],
+  "updated_tests": [
+    {"destination":"Ekonerg/sieving/tests/test_crumb_validation.py","destination_sha256":"b600701bf79c79aba651a9452a2eec1e6f996add9d6b06293e0b8b73de20ebbd"},
+    {"destination":"Ekonerg/sieving/tests/test_extract_normalization.py","destination_sha256":"752de943e0553b2f4a4f720ba9fc489dc51cb416dc83b5b17a2672c716b3aa7d"},
+    {"destination":"Ekonerg/sieving/tests/test_foundation.py","destination_sha256":"6f3e5b0bf67c3b94f9f86053c9a2c3bb41ab0744b68ff42f0f6c2e6eca12ecd1"},
+    {"destination":"Ekonerg/sieving/tests/test_prompt_registry.py","destination_sha256":"21d3ee5c1f5f40b435e6bb4d687019c2e7ace6b280638c8b036438884cbe3f4b"},
+    {"destination":"Ekonerg/sieving/tests/test_template_facade.py","destination_sha256":"9e4e2d0117ddf7293d536c1b2cf8b5ed1df2fe50ca922e08b01e5488cae64cd3"}
+  ]
+}

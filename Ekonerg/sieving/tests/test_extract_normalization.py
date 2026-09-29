@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import copy
 import importlib
+import json
 import shutil
 import sys
 import tempfile
@@ -29,8 +30,8 @@ def sample_payload() -> dict:
                 "source": [{"page": 2, "heading_path": ["Section A", "Rule"]}],
                 "entities": {"organizations": ["Zeta", "Alpha", "Alpha"]},
                 "rule": {
-                    "source_rules": "10CFR50_APPB", "rule_locator": "APP_B_I",
-                    "rule_key": "10CFR50_APPB::APP_B_I", "rule_strength": "MANDATORY",
+                    "source_rules": "DEMO_RULE", "rule_locator": "APP_B_I",
+                    "rule_key": "DEMO_RULE::APP_B_I", "rule_strength": "MANDATORY",
                     "rule_citation_text": "Synthetic citation",
                 },
             },
@@ -40,7 +41,7 @@ def sample_payload() -> dict:
                 "criterion_id": "APP_B_II", "criterion_name": "Quality Assurance Program",
                 "item_type": "control", "statement": "Synthetic procedure",
                 "evidence_quotes": ["Made-up quote"], "source": [{"page": 3}],
-                "rule_reference_ids": ["10CFR50_APPB::APP_B_II"],
+                "rule_reference_ids": ["DEMO_RULE::APP_B_II"],
                 "rule_references": [{"ref_text": "Synthetic reference"}],
             },
         ],
@@ -51,7 +52,7 @@ class ExtractTests(unittest.TestCase):
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory(prefix="ekonerg-extract-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name) / "Županija with spaces" / "Ekonerg"
+        self.project = Path(self.temp.name) / "Zeleni Pogon"
         package_dir = self.project / "sieving" / "src" / "json_extractor"
         extract_dir = package_dir / "extract"
         extract_dir.mkdir(parents=True)
@@ -65,6 +66,16 @@ class ExtractTests(unittest.TestCase):
                             extract_dir / name)
         for name in ("sieving_contract.yml", "app_b_taxonomy.yml"):
             shutil.copyfile(PROJECT / "schemas" / name, schema_dir / name)
+        self.contract_path = schema_dir / "sieving_contract.yml"
+        contract = json.loads(self.contract_path.read_text(encoding="utf-8"))
+        contract["canonical_codes"] = [{
+            "ref_code": "DEMO_RULE", "ref_type": "REGULATION",
+            "authority_role": "GOVERNING", "allowed_locators": "criteria",
+        }, {
+            "ref_code": "DEMO_GUIDE", "ref_type": "STANDARD",
+            "authority_role": "INTERPRETIVE", "locator_pattern": "^G-[0-9]+$",
+        }]
+        self.contract_path.write_text(json.dumps(contract), encoding="utf-8")
         self.addCleanup(self._forget_modules)
         self._forget_modules()
         package = types.ModuleType("ekonerg_extract_fixture")
@@ -84,14 +95,45 @@ class ExtractTests(unittest.TestCase):
         self.assertEqual(len(result.records), 2)
         self.assertEqual(result.validation_errors, [])
         rule, document = result.records
-        self.assertEqual(rule["rule_key"], "10CFR50_APPB::APP_B_I")
+        self.assertEqual(rule["rule_key"], "DEMO_RULE::APP_B_I")
         self.assertIsNone(rule["rule_ref_keys"])
-        self.assertEqual(document["rule_ref_keys"], "10CFR50_APPB::APP_B_II")
+        self.assertEqual(document["rule_ref_keys"], "DEMO_RULE::APP_B_II")
         self.assertIsNone(document["rule_key"])
         self.assertEqual(rule["entities_organizations"], "Alpha; Zeta")
         self.assertEqual(rule["source_heading_path"], "Section A > Rule")
         self.assertEqual(rule["evidence_quote_1"], "Izmišljeni citat")
         self.assertEqual(rule["doc_id"], "EK-SYN-001")
+
+    def test_generic_locator_rules_come_from_contract(self) -> None:
+        data = sample_payload()
+        data["items"][0]["rule"]["rule_locator"] = "BAD"
+        data["items"][0]["rule"]["rule_key"] = "DEMO_RULE::BAD"
+        result = self.extract.flatten_json_to_records(data, "synthetic.json")
+        self.assertIn("VAL-LOC-001", {error.rule_id for error in result.validation_errors})
+        rule = data["items"][0]["rule"]
+        rule["source_rules"] = "DEMO_GUIDE"
+        rule["rule_locator"] = "G-7"
+        rule["rule_key"] = "DEMO_GUIDE::G-7"
+        result = self.extract.flatten_json_to_records(data, "synthetic.json")
+        self.assertNotIn("VAL-LOC-001", {error.rule_id for error in result.validation_errors})
+        rule["rule_locator"] = "X-7"
+        rule["rule_key"] = "DEMO_GUIDE::X-7"
+        result = self.extract.flatten_json_to_records(data, "synthetic.json")
+        self.assertIn("VAL-LOC-001", {error.rule_id for error in result.validation_errors})
+
+    def test_no_configured_source_fails_closed(self) -> None:
+        contract = json.loads(self.contract_path.read_text(encoding="utf-8"))
+        contract["canonical_codes"] = []
+        self.contract_path.write_text(json.dumps(contract), encoding="utf-8")
+        sys.modules["ekonerg_extract_fixture.contract"].load_contract.cache_clear()
+        result = self.extract.flatten_json_to_records(sample_payload(), "synthetic.json")
+        self.assertIn("VAL-JOIN-001", {error.rule_id for error in result.validation_errors})
+
+    def test_malformed_source_code_is_reported_without_crash(self) -> None:
+        data = sample_payload()
+        data["items"][0]["rule"]["source_rules"] = ["DEMO_RULE"]
+        result = self.extract.flatten_json_to_records(data, "synthetic.json")
+        self.assertIn("VAL-JOIN-001", {error.rule_id for error in result.validation_errors})
 
     def test_canonical_mismatch_and_side_leak_are_errors(self) -> None:
         data = sample_payload()

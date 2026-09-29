@@ -77,7 +77,7 @@ class TemplateFacadeTests(unittest.TestCase):
         template, contract = self._load()
         data = contract.load_contract()
         self.assertEqual(template.get_ref_codes(), [code["ref_code"] for code in data["canonical_codes"]])
-        self.assertEqual(template.CANONICAL_CODES[0]["allowed_locators"], template.get_criterion_ids())
+        self.assertEqual(template.CANONICAL_CODES, [])
         self.assertEqual(template.RECORD_SIDE_VALUES, data["enums"]["record_side"])
         self.assertEqual(template.RULE_STRENGTH_VALUES, data["enums"]["rule_strength"])
         self.assertEqual(template.ITEM_TYPE_VALUES, data["enums"]["item_type"])

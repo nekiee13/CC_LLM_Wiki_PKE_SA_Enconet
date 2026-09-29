@@ -20,7 +20,7 @@ def rule_crumb() -> dict:
         "document": {
             "name": "Synthetic rule", "date": "2026-09-29", "document_side": "RULE",
             "authority_references": [{
-                "authority_role": "GOVERNING", "source_code": "10CFR50_APPB",
+                "authority_role": "GOVERNING", "source_code": "DEMO_RULE",
                 "source_locator": "APP_B_I", "applicability": "APPLICABLE",
             }],
         },
@@ -37,14 +37,26 @@ class CrumbValidationTests(unittest.TestCase):
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory(prefix="ekonerg-crumb-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name) / "Županija with spaces" / "Ekonerg"
+        self.project = Path(self.temp.name) / "Čista Tvrtka"
         package = self.project / "sieving" / "src" / "json_extractor"
         package.mkdir(parents=True)
-        shutil.copyfile(PACKAGE / "crumb_validation.py", package / "crumb_validation.py")
+        for name in ("crumb_validation.py", "contract.py"):
+            shutil.copyfile(PACKAGE / name, package / name)
         schemas = self.project / "schemas"
         schemas.mkdir()
         for name in ("app_b_taxonomy.yml", "sieving_contract.yml"):
             shutil.copyfile(PROJECT / "schemas" / name, schemas / name)
+        self.contract_path = schemas / "sieving_contract.yml"
+        contract = json.loads(self.contract_path.read_text(encoding="utf-8"))
+        contract["canonical_codes"] = [{
+            "ref_code": "DEMO_RULE", "ref_type": "REGULATION",
+            "authority_role": "GOVERNING", "allowed_locators": "criteria",
+        }, {
+            "ref_code": "DEMO_GUIDE", "ref_type": "STANDARD",
+            "authority_role": "INTERPRETIVE", "locator_pattern": "^G-[0-9]+$",
+            "requires_applicability_basis": True,
+        }]
+        self.contract_path.write_text(json.dumps(contract), encoding="utf-8")
         sys.path.insert(0, str(self.project / "sieving"))
         self.addCleanup(lambda: sys.path.remove(str(self.project / "sieving")))
         self.addCleanup(self._forget)
@@ -80,15 +92,37 @@ class CrumbValidationTests(unittest.TestCase):
         self.assertTrue(any("quote_language" in error for error in result.errors))
         self.assertTrue(any("statement_en" in error for error in result.errors))
 
-    def test_part21_needs_basis_and_role_code_match(self) -> None:
+    def test_configured_source_needs_basis_and_role_code_match(self) -> None:
         data = rule_crumb()
         ref = data["document"]["authority_references"][0]
-        ref["source_code"] = "10CFR21"
+        ref["source_code"] = "DEMO_GUIDE"
         result = self.validator.validate_payload(data)
         self.assertTrue(any("applicability_basis" in error for error in result.errors))
-        ref["authority_role"] = "INTERPRETIVE"
+        ref["authority_role"] = "GOVERNING"
         result = self.validator.validate_payload(data)
-        self.assertTrue(any("not valid for INTERPRETIVE" in error for error in result.errors))
+        self.assertTrue(any("not valid for GOVERNING" in error for error in result.errors))
+
+    def test_empty_contract_rejects_inherited_source_code(self) -> None:
+        contract = json.loads(self.contract_path.read_text(encoding="utf-8"))
+        contract["canonical_codes"] = []
+        self.contract_path.write_text(json.dumps(contract), encoding="utf-8")
+        result = self.validator.validate_payload(rule_crumb())
+        self.assertFalse(result.passed)
+        self.assertTrue(any("DEMO_RULE" in error for error in result.errors))
+
+    def test_source_locator_follows_selected_code_rule(self) -> None:
+        data = rule_crumb()
+        ref = data["document"]["authority_references"][0]
+        ref["source_locator"] = "BAD"
+        result = self.validator.validate_payload(data)
+        self.assertTrue(any("source_locator" in error for error in result.errors))
+        ref.update(source_code="DEMO_GUIDE", authority_role="INTERPRETIVE",
+                   source_locator="G-7", applicability_basis="Test-only basis")
+        result = self.validator.validate_payload(data)
+        self.assertTrue(result.passed)
+        ref["source_locator"] = "X-7"
+        result = self.validator.validate_payload(data)
+        self.assertTrue(any("source_locator" in error for error in result.errors))
 
     def test_strict_optional_warnings_become_errors(self) -> None:
         data = rule_crumb()

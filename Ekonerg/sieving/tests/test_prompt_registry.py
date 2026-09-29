@@ -31,12 +31,20 @@ class PromptRegistryTests(unittest.TestCase):
             shutil.copyfile(PROJECT / "sieving" / "prompts" / "fixtures" / name, fixture_dir / name)
         package = self.project / "sieving" / "src" / "json_extractor"
         package.mkdir(parents=True)
-        shutil.copyfile(PROJECT / "sieving" / "src" / "json_extractor" / "crumb_validation.py",
-                        package / "crumb_validation.py")
+        for name in ("crumb_validation.py", "contract.py"):
+            shutil.copyfile(PROJECT / "sieving" / "src" / "json_extractor" / name,
+                            package / name)
         schemas = self.project / "schemas"
         schemas.mkdir()
-        for name in ("app_b_json_schema.yml", "app_b_taxonomy.yml"):
+        for name in ("app_b_json_schema.yml", "app_b_taxonomy.yml", "sieving_contract.yml"):
             shutil.copyfile(PROJECT / "schemas" / name, schemas / name)
+        contract_path = schemas / "sieving_contract.yml"
+        contract = json.loads(contract_path.read_text(encoding="utf-8"))
+        contract["canonical_codes"] = [{
+            "ref_code": "DEMO_RULE", "ref_type": "REGULATION",
+            "authority_role": "GOVERNING", "allowed_locators": "criteria",
+        }]
+        contract_path.write_text(json.dumps(contract), encoding="utf-8")
         self.sibling = self.project.parent / "Enconet"
         self.sibling.mkdir()
         self.marker = self.sibling / "untouched.txt"

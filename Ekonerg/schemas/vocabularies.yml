@@ -1,6 +1,6 @@
 # Ekonerg-local controlled vocabulary template, adapted from the pinned framework.
-# Values for regulatory sources are template candidates, not approved Ekonerg
-# applicability or source editions. Owner-approved intake must settle those.
+# Regulatory source values are not approved. They remain empty until owner
+# intake settles applicability and source editions.
 # document_sides and authority codes mirror the local sieving_contract.yml.
 
 schema_version: "1.0"
@@ -51,12 +51,12 @@ vocabularies:
     values: [RULE, DOCUMENT]
 
   source_rules:
-    usage: "Legacy governing-code template; applicability still needs owner approval."
-    values: [10CFR50_APPB, 10CFR21]
+    usage: "No active source code until Ekonerg source intake is reviewed."
+    values: []
 
   authority_sources:
-    usage: "Role-tagged source-code template; editions and applicability are not approved."
-    values: [10CFR50_APPB, 10CFR21, ASME_NQA1]
+    usage: "No active authority source until editions and applicability are approved."
+    values: []
 
   authority_roles:
     usage: "Governing or interpretive role of a source."
