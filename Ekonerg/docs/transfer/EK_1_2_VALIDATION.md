@@ -1,6 +1,7 @@
 # EK-1.2 support path evidence
 
-Date: 2026-09-29. Codex implementation; Claude review pending.
+Date: 2026-09-29. Codex implementation; Claude approved the support package
+with no findings in `CC_2026-09-29T154514Z_ekonerg-support-paths-approve`.
 Scope: five support tools, four support test files, and fourteen isolation tests.
 Whole EK-1.2 status: **in progress**. This is a support review, not task closure.
 

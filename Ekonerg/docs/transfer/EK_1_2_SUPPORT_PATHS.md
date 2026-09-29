@@ -1,6 +1,7 @@
 # EK-1.2: local support tools
 
-Status: support package ready for Claude review. EK-1.2 is still open.
+Status: support package approved with no findings in
+`CC_2026-09-29T154514Z_ekonerg-support-paths-approve`. EK-1.2 is still open.
 Codex implements. Claude reviews. Date: 2026-09-29.
 
 ## What & Why
