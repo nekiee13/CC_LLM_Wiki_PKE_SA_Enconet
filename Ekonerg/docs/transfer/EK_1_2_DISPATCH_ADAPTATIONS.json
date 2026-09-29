@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "dispatcher, registry, state and database helpers only",
+  "status": "pending Claude review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 212,
+  "files": [
+    {
+      "source": "Enconet/scripts/audit_command.py",
+      "destination": "Ekonerg/scripts/audit_command.py",
+      "treatment": "adapt",
+      "source_git_blob": "89baee4fe996112fbb8e400de4a05cc9e0fc2c53",
+      "source_bytes": 7969,
+      "source_sha256": "1ce152fdbd73c00b1f5a2d89be814adc22ce8d24ad902fe801a5f6b6cde5315e",
+      "destination_lf_bytes": 11250,
+      "destination_lf_sha256": "36f2e5a6f944e332894d41fd7f1e997a415dd9b3d536a329cceaa7752da7fca2"
+    },
+    {
+      "source": "Enconet/scripts/audit_state.py",
+      "destination": "Ekonerg/scripts/audit_state.py",
+      "treatment": "adapt",
+      "source_git_blob": "96b595d217244b34daec275fcfb6c1c2e6451ca0",
+      "source_bytes": 9236,
+      "source_sha256": "b6ba4699cfc522dd5e2db69f1e204c579e1b8c40bacbf448bfaaa53e86cd6030",
+      "destination_lf_bytes": 9892,
+      "destination_lf_sha256": "2aab3e266aa09f22fff939fc77b48dce7bf48e63b8cda70851dd9f986ea93fa1"
+    },
+    {
+      "source": "Enconet/scripts/db_util.py",
+      "destination": "Ekonerg/scripts/db_util.py",
+      "treatment": "adapt",
+      "source_git_blob": "2c0e9d9422fe50c7de74faa0bf08eb4c5a0092fc",
+      "source_bytes": 3828,
+      "source_sha256": "58521093b4a781c544e7b2ac72c176ee3b318166d363bf1a4e82a82a98642a94",
+      "destination_lf_bytes": 3878,
+      "destination_lf_sha256": "9c7e64bc4ee2f0d10b2ace280d0b979478265004b4adf7310ea3adbbc0d75411"
+    },
+    {
+      "source": "Enconet/schemas/audit_commands.yml",
+      "destination": "Ekonerg/schemas/audit_commands.yml",
+      "treatment": "adapt",
+      "source_git_blob": "79ed1a85500c6ac197e210baff56d9d258a101e0",
+      "source_bytes": 3733,
+      "source_sha256": "732507e294cf512678c4a95d3dd9e27ded7201924a21352266dfba1d81dbacb4",
+      "destination_lf_bytes": 3730,
+      "destination_lf_sha256": "b03908f5e8f3e794b1e6cd6d69949f5250b3dba94b4432de2854861ed989946c"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/scripts/project_paths.py",
+      "treatment": "new local path guard",
+      "destination_lf_bytes": 1327,
+      "destination_lf_sha256": "52e0078b00fb62792a50c637f1456a24f80ccec3909e43c9b4ade28d368dd0d3"
+    },
+    {
+      "destination": "Ekonerg/tools/tests/test_local_dispatch.py",
+      "treatment": "new synthetic isolation tests",
+      "destination_lf_bytes": 19072,
+      "destination_lf_sha256": "2289a6008bbae8131ba2cab89e5d93d01ccc8fc592f49d2b2fba327f35c4e98c"
+    }
+  ]
+}

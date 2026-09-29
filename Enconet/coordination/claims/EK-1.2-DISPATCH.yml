@@ -1,0 +1,18 @@
+task: EK-1.2-DISPATCH
+agent: codex
+status: active
+claimed_at_utc: 2026-09-29T16:32:07Z
+last_renewed_at_utc: 2026-09-29T16:32:07Z
+expires_at_utc: 2026-09-30T16:32:07Z
+anticipated_files:
+  - Ekonerg/scripts/audit_command.py
+  - Ekonerg/scripts/audit_state.py
+  - Ekonerg/scripts/db_util.py
+  - Ekonerg/scripts/project_paths.py
+  - Ekonerg/schemas/audit_commands.yml
+  - Ekonerg/tools/tests/test_local_dispatch.py
+  - Ekonerg/docs/transfer/EK_1_2_DISPATCH.md
+  - Ekonerg/docs/transfer/EK_1_2_DISPATCH_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+note: TDD local dispatcher and dependencies; separate partial EK-1.2 review; no production state or database.
