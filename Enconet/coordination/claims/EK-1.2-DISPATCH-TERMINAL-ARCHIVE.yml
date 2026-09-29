@@ -1,0 +1,13 @@
+task: EK-1.2-DISPATCH-TERMINAL-ARCHIVE
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T17:58:32Z
+last_renewed_at_utc: 2026-09-29T17:58:32Z
+expires_at_utc: 2026-09-30T17:58:32Z
+anticipated_files:
+  - Enconet/coordination/messages/CX_2026-09-29T170451Z_ack-ekonerg-dispatch-approve.md
+  - Enconet/coordination/archive/CX_2026-09-29T170451Z_ack-ekonerg-dispatch-approve.md
+  - Enconet/coordination/archive/CX_2026-09-29T175900Z_ek12-dispatch-terminal-correction-manifest.md
+  - Enconet/coordination/BOARD.md
+note: Archive Claude-confirmed Codex terminal acknowledgement; immutably correct one prior transcribed hash; whole EK-1.2 remains open.
+released_at_utc: 2026-09-29T17:59:48Z
