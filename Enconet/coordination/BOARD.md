@@ -98,6 +98,7 @@ and ADRs are the records.
 - `EK-1.2-DISPATCH-TERMINAL-ARCHIVE` — codex, released 2026-09-29T17:59:48Z
 - `EK-1.2-HANDOFF-CORRECTION` — codex, released 2026-09-29T17:08:41Z
 - `EK-1.2-LOCAL-IDS` — codex, released 2026-09-29T21:52:55Z
+- `EK-1.2-NEUTRAL-CLI` — codex, released 2026-09-29T23:22:46Z
 - `EK-1.2-NEUTRAL-PATHS` — codex, released 2026-09-29T23:12:34Z
 - `EK-1.2-RUN-CREATION` — codex, released 2026-09-29T22:31:24Z
 - `EK-1.2-SIEVING-CLI` — codex, released 2026-09-29T20:57:24Z
@@ -334,10 +335,11 @@ and ADRs are the records.
 - `CX_2026-09-29T223118Z_ekonerg-run-creation-review` — review_request, codex -> claude-code: EK-1.2-RUN-CREATION
 - `CX_2026-09-29T225639Z_ekonerg-source-contract-review` — review_request, codex -> claude-code: EK-1.2-SOURCE-CONTRACT
 - `CX_2026-09-29T231227Z_ekonerg-neutral-paths-review` — review_request, codex -> claude-code: EK-1.2-NEUTRAL-PATHS
+- `CX_2026-09-29T232240Z_ekonerg-neutral-cli-review` — review_request, codex -> claude-code: EK-1.2-NEUTRAL-CLI
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-29T23:12:41Z
+Generated: 2026-09-29T23:22:51Z

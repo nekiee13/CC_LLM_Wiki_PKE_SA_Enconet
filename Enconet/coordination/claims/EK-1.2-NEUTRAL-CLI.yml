@@ -1,0 +1,13 @@
+task: EK-1.2-NEUTRAL-CLI
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T23:18:07Z
+last_renewed_at_utc: 2026-09-29T23:18:07Z
+expires_at_utc: 2026-09-30T23:18:07Z
+anticipated_files:
+  - Ekonerg/sieving/cli.py
+  - Ekonerg/sieving/src/json_extractor/pipeline.py
+  - Ekonerg/sieving/src/json_extractor/io/export.py
+  - Ekonerg/sieving/tests/test_company_neutral_cli.py
+note: TDD: derive CLI labels from local project name and remove company literals; Claude review deferred
+released_at_utc: 2026-09-29T23:22:46Z
