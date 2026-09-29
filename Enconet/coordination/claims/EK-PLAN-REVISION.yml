@@ -1,0 +1,16 @@
+task: EK-PLAN-REVISION
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T10:52:08Z
+last_renewed_at_utc: 2026-09-29T11:03:00Z
+expires_at_utc: 2026-09-30T11:03:00Z
+anticipated_files:
+  - Ekonerg/docs/EKONERG_AUDIT_TDD_PLAN.md
+  - Ekonerg/docs/reviews/EK_0_1_PLAN_REVIEW_EVIDENCE.md
+  - Ekonerg/tools/measure_plan_readability.py
+  - Ekonerg/tools/tests/test_measure_plan_readability.py
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+  - Enconet/coordination/BOARD.md
+note: Plan revision and review evidence only; planning handoff before Claude review; no framework transfer.
+released_at_utc: 2026-09-29T11:04:24Z
