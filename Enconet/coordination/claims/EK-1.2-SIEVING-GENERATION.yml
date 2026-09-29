@@ -1,0 +1,13 @@
+task: EK-1.2-SIEVING-GENERATION
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T21:39:07Z
+last_renewed_at_utc: 2026-09-29T21:39:07Z
+expires_at_utc: 2026-09-30T21:39:07Z
+anticipated_files:
+  - Ekonerg/scripts/sieve_generation.py
+  - Ekonerg/scripts/validate_sieving_harness.py
+  - Ekonerg/sieving/SIEVING_PLAYBOOK.md
+  - Ekonerg/tests/test_epic18_sieving_harness.py
+note: TDD batch for isolated local generation and harness; Claude review deferred per owner
+released_at_utc: 2026-09-29T21:41:21Z

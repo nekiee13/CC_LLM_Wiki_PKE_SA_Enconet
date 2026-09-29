@@ -1,0 +1,11 @@
+task: EK-1.2-LOCAL-IDS
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T21:41:27Z
+last_renewed_at_utc: 2026-09-29T21:41:27Z
+expires_at_utc: 2026-09-30T21:41:27Z
+anticipated_files:
+  - Ekonerg/schemas/id_patterns.yml
+  - Ekonerg/scripts/tests/test_db_identity.py
+note: TDD prerequisite: copy and test local ID contract required by db_util before generation tooling
+released_at_utc: 2026-09-29T21:52:55Z
