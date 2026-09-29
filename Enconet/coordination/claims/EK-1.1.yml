@@ -1,0 +1,16 @@
+task: EK-1.1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T12:05:06Z
+last_renewed_at_utc: 2026-09-29T12:05:06Z
+expires_at_utc: 2026-09-30T12:05:06Z
+anticipated_files:
+  - Ekonerg/tools/safe_transfer.py
+  - Ekonerg/tools/tests/test_safe_transfer.py
+  - Ekonerg/docs/transfer/EK_1_1_SAFE_TRANSFER.md
+  - Ekonerg/docs/transfer/EK_1_1_VALIDATION.md
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+  - Enconet/coordination/BOARD.md
+note: TDD safe preview/apply copier, tests only in isolated fixtures, real preview read-only; Claude review before real apply.
+released_at_utc: 2026-09-29T12:39:30Z

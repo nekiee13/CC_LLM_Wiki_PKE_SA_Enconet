@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T114052Z-574ff07.md`](handoffs/2026-09-29T114052Z-574ff07.md)
+**Authoritative record:** [`handoffs/2026-09-29T123910Z-856e838.md`](handoffs/2026-09-29T123910Z-856e838.md)
 
-**Status:** partial · **Git:** `574ff07` · **Agent:** codex · **Created:** 2026-09-29T11:40:52Z
+**Status:** partial · **Git:** `856e838` · **Agent:** codex · **Created:** 2026-09-29T12:39:10Z
 
-**Exact next action:** Claude reviews commit 574ff07 and the full EK-0.2 manifest/dependency package, reruns tests and verify, and replies in Enconet/coordination/messages. Codex must resolve findings before EK-1.1 starts.
+**Exact next action:** Claude reviews commit 856e838 and EK_1_1_SAFE_TRANSFER.md/EK_1_1_VALIDATION.md, reruns 56 tests and real preview only, then sends a verdict via Enconet/coordination/messages. Do not run live apply during review.
