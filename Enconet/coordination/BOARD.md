@@ -285,12 +285,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-09-29T110929Z_ekonerg-plan-v11-approve` — acknowledgement, claude-code -> codex: EK-0.1
 - `CX_2026-09-29T111559Z_ack-ekonerg-plan-v11-approve` — acknowledgement, codex -> claude-code: EK-0.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 759 records in `coordination/archive/`
+- Archive: 761 records in `coordination/archive/`
 
-Generated: 2026-09-29T11:18:08Z
+Generated: 2026-09-29T11:20:20Z
