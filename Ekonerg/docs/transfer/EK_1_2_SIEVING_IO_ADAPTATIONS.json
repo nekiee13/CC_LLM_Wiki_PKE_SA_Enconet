@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "project-local sieving JSON I/O and three export formats only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 204,
+  "files": [
+    {
+      "source": "Enconet/sieving/src/json_extractor/io/__init__.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/io/__init__.py",
+      "treatment": "adapt (local package wording, same public exports)",
+      "source_git_blob": "4f8f506bf1efa05e0a157369d6a0b7e06f5736f4",
+      "source_bytes": 442,
+      "source_sha256": "2b88648de8d023f449ef18f44e26d5a342a63ec90aaba73d8a112a944fe6ae1f",
+      "destination_lf_bytes": 340,
+      "destination_lf_sha256": "a063cfb42df860fd7c8afabb9ae83693ffbab706e9306df25bba6d4c9bf2f3d1"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/io/files.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/io/files.py",
+      "treatment": "adapt (project-local roots, glob bounds, linked-file refusal)",
+      "source_git_blob": "812892c258801c02df8fa95ee2332f5af96c6e8b",
+      "source_bytes": 4370,
+      "source_sha256": "42e9d6dba6182753ce9011a2b2fc37714bd99468b8c393b6e063d54f869d4181",
+      "destination_lf_bytes": 3378,
+      "destination_lf_sha256": "0daf9dabc9b9128636eac233110dc2ae75051a30b94b56268e7fa69282aff76c"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/io/export.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/io/export.py",
+      "treatment": "adapt (same public formats, bounded output paths and project-relative resolution)",
+      "source_git_blob": "d141903a0ddfa7d8bc74d0ca28aa1b22f6a6d942",
+      "source_bytes": 7654,
+      "source_sha256": "c3f1d5a0b51bafe785895382e19b1cd5cd793dc0cb7779b1ea95b20e5a72bd8e",
+      "destination_lf_bytes": 3812,
+      "destination_lf_sha256": "c806ee5215e7a3ab527d3ec339cecfca3a8d6bb5aa6dd01e10cf1dcd8dd2b23c"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/src/json_extractor/io/_paths.py",
+      "treatment": "new local I/O path guard",
+      "destination_lf_bytes": 959,
+      "destination_lf_sha256": "b81bf6a7bed6627f48196970db2ba1bd2ec43104a1a074a734f8013db28e53c4"
+    },
+    {
+      "destination": "Ekonerg/sieving/tests/test_io_paths.py",
+      "treatment": "new synthetic I/O isolation tests",
+      "destination_lf_bytes": 8652,
+      "destination_lf_sha256": "7a15526add7d0422658a1f8e3ddda7453ce81f270ed6e9931b23fab1727a949e"
+    }
+  ]
+}
