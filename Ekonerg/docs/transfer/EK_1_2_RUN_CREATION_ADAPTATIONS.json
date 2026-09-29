@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local guarded sieve run creation only",
+  "status": "pending deferred Claude batch review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 183,
+  "remaining_recreate_rows": 45,
+  "files": [
+    {
+      "source": "Enconet/scripts/sieve_run.py",
+      "destination": "Ekonerg/scripts/sieve_run.py",
+      "treatment": "adapt (local database and prompt paths; configured source registry; no sibling runtime imports)",
+      "source_git_blob": "448af62eccbeccacb9f275d6c489938c93017728",
+      "source_bytes": 5189,
+      "source_sha256": "a076bb5d89aabb7558a2c94a0d79eff52f772ba8bdcc941e1946e0a405e3a51b",
+      "destination_lf_bytes": 8939,
+      "destination_lf_sha256": "bd7c2bbad8d4732db045b63c304571217608cbec3c661ecefec412f4f229d8a2"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/scripts/tests/test_sieve_run_local.py",
+      "treatment": "new isolated synthetic two-company run tests",
+      "destination_lf_bytes": 9030,
+      "destination_lf_sha256": "75f8c089c02b5a172d9a58c40574ae884cd64e0578d271db6999159fcb3d4873"
+    }
+  ]
+}
