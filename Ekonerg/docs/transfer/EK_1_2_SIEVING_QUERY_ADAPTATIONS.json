@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local sieving query schema, DSL compiler and DataFrame engine only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 200,
+  "files": [
+    {
+      "source": "Enconet/sieving/src/json_extractor/query/__init__.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/query/__init__.py",
+      "treatment": "adapt (local wording, same public exports)",
+      "source_git_blob": "240d20516b4ba0fd676520757ff6589478ae6343",
+      "source_bytes": 434,
+      "source_sha256": "6cfd1f9a5c14412de0eb0e0489b6613d8480ee3b6cda7a4edcd0b2a944f19a82",
+      "destination_lf_bytes": 337,
+      "destination_lf_sha256": "11f895661f7880fd0d7fb44a0590d75474a26f8bd66e5d678192999dde8dad2e"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/query/schema.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/query/schema.py",
+      "treatment": "adapt (local contract wording, same derived field table)",
+      "source_git_blob": "6e54f250f2b7e95a07c147d6bb7f1be461733e8c",
+      "source_bytes": 2047,
+      "source_sha256": "25c1692de0728a6ceb51823beb53a708cdcbce3abebf9db88d36cb583f9f3eca",
+      "destination_lf_bytes": 2085,
+      "destination_lf_sha256": "02836ee50bf6a9959c3f6a2443a1e158337fa9ba134ca5977ba1bf1a15e4369c"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/query/compiler.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/query/compiler.py",
+      "treatment": "adapt (compact implementation preserving DSL grammar and warnings)",
+      "source_git_blob": "7ba2d274afecc8186b2cfb41f7f7d98de336ee31",
+      "source_bytes": 11565,
+      "source_sha256": "4da166e96e32d9a485dcb3f94c2f81115af9f71e2e92eb6865db7fe3ad6d072c",
+      "destination_lf_bytes": 6465,
+      "destination_lf_sha256": "3d5949004b0b5ae52dc8c7bf61c7ee9bfa403b488e459b83674aad919fd89c3d"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/query/engine.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/query/engine.py",
+      "treatment": "adapt (same filtering and 1000-clause limit, enforce limit on empty data too)",
+      "source_git_blob": "f32b111676cbbc4353f5f59d2589ae119aaf41dd",
+      "source_bytes": 6393,
+      "source_sha256": "60ffa5fa325c95b8a6ec716e3cab6844832222b43de9809b9c1f07a02b98033b",
+      "destination_lf_bytes": 4281,
+      "destination_lf_sha256": "865eef17c2a1b529b178b00e931b06e651d1413c5c53555c3f40b9378da179a8"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_query_engine.py",
+      "treatment": "new synthetic local query tests",
+      "destination_lf_bytes": 6507,
+      "destination_lf_sha256": "9ef02971f2e92efafa491e48c019a836be92abea10e348d0a6889529a3298b3b"
+    }
+  ]
+}
