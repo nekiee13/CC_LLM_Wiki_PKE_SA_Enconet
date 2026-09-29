@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EK-1.2-DISPATCH` — codex, expires 2026-09-30T16:32:07Z
+- none
 
 ## Released claims
 
@@ -91,6 +91,7 @@ and ADRs are the records.
 - `EK-1.1-LIVE-ACK` — codex, released 2026-09-29T13:37:17Z
 - `EK-1.1-REVIEW-ACK` — codex, released 2026-09-29T13:07:34Z
 - `EK-1.2` — codex, released 2026-09-29T15:38:44Z
+- `EK-1.2-DISPATCH` — codex, released 2026-09-29T16:49:09Z
 - `EK-1.2-SUPPORT-ACK` — codex, released 2026-09-29T16:14:14Z
 - `EK-PLAN-APPROVAL-ACK` — codex, released 2026-09-29T11:16:58Z
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
@@ -296,11 +297,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-09-29T164906Z_ekonerg-dispatch-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 787 records in `coordination/archive/`
 
-Generated: 2026-09-29T16:46:15Z
+Generated: 2026-09-29T16:49:11Z
