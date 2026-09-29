@@ -1,0 +1,17 @@
+task: EK-1.2-SIEVING-SCHEMA
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T21:06:14Z
+last_renewed_at_utc: 2026-09-29T21:06:14Z
+expires_at_utc: 2026-09-30T01:06:14Z
+anticipated_files:
+  - Ekonerg/schemas/app_b_json_schema.yml
+  - Ekonerg/schemas/vocabularies.yml
+  - Ekonerg/sieving/tests/test_crumb_schema_contracts.py
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_SCHEMA.md
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_SCHEMA_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD local crumb schema and vocab dependency before prompt transfer; Claude review deferred
+released_at_utc: 2026-09-29T21:10:38Z
