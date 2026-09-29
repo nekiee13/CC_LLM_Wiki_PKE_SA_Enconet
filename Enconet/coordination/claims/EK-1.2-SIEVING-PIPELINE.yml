@@ -1,0 +1,17 @@
+task: EK-1.2-SIEVING-PIPELINE
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T20:02:33Z
+last_renewed_at_utc: 2026-09-29T20:02:33Z
+expires_at_utc: 2026-09-30T00:02:33Z
+anticipated_files:
+  - Ekonerg/sieving/src/json_extractor/__init__.py
+  - Ekonerg/sieving/src/json_extractor/pipeline.py
+  - Ekonerg/sieving/tests/test_pipeline.py
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_PIPELINE.md
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_PIPELINE_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD local sieving pipeline and export gates; Claude review deferred
+released_at_utc: 2026-09-29T20:07:34Z
