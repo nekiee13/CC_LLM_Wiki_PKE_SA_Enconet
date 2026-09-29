@@ -281,11 +281,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CC_2026-09-29T093527Z_how-to-check-current-status` — note, claude-code -> codex: ENCONET-STATUS-CHECK-GUIDANCE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 748 records in `coordination/archive/`
 
-Generated: 2026-09-05T07:46:11Z
+Generated: 2026-09-29T09:35:34Z
