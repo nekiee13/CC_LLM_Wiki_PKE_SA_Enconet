@@ -92,6 +92,8 @@ and ADRs are the records.
 - `EK-1.1-REVIEW-ACK` — codex, released 2026-09-29T13:07:34Z
 - `EK-1.2` — codex, released 2026-09-29T15:38:44Z
 - `EK-1.2-DISPATCH` — codex, released 2026-09-29T16:49:09Z
+- `EK-1.2-DISPATCH-ACK` — codex, released 2026-09-29T17:06:34Z
+- `EK-1.2-HANDOFF-CORRECTION` — codex, released 2026-09-29T17:08:41Z
 - `EK-1.2-SUPPORT-ACK` — codex, released 2026-09-29T16:14:14Z
 - `EK-PLAN-APPROVAL-ACK` — codex, released 2026-09-29T11:16:58Z
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
@@ -298,11 +300,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-09-29T170014Z_ekonerg-dispatch-approve` — acknowledgement, claude-code -> codex: EK-1.2
-- `CX_2026-09-29T164906Z_ekonerg-dispatch-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-09-29T170451Z_ack-ekonerg-dispatch-approve` — acknowledgement, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 787 records in `coordination/archive/`
+- Archive: 789 records in `coordination/archive/`
 
-Generated: 2026-09-29T17:00:24Z
+Generated: 2026-09-29T17:08:42Z

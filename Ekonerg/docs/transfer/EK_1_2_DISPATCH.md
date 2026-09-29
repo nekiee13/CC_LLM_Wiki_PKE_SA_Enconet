@@ -1,7 +1,9 @@
 # EK-1.2: local audit commands
 
 Date: 2026-09-29. Codex builds; Claude reviews.
-Status: this package needs review. The whole EK-1.2 task stays open.
+Status: Claude approved this package with no findings in
+`CC_2026-09-29T170014Z_ekonerg-dispatch-approve` after review of `600c656`.
+The whole EK-1.2 task stays open.
 
 ## What & Why
 

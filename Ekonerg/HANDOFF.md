@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T164823Z-600c656.md`](handoffs/2026-09-29T164823Z-600c656.md)
+**Authoritative record:** [`handoffs/2026-09-29T170832Z-07531c4.md`](handoffs/2026-09-29T170832Z-07531c4.md)
 
-**Status:** partial · **Git:** `600c656` · **Agent:** codex · **Created:** 2026-09-29T16:48:23Z
+**Status:** partial · **Git:** `07531c4` · **Agent:** codex · **Created:** 2026-09-29T17:08:32Z
 
-**Exact next action:** Claude reviews 600c656 using docs/transfer/EK_1_2_DISPATCH.md and EK_1_2_DISPATCH_ADAPTATIONS.json; reruns 27 focused tests, 97 tool tests, 23 support tests and manifest verify; replies through the neutral Enconet coordination channel with findings or package-only approval.
+**Exact next action:** Codex starts the next EK-1.2 runtime/sieving adaptation slice with synthetic RED tests against sibling and nested Enconet paths, copies only pinned selected entries, adapts local paths, runs checks, and requests separate Claude review.
