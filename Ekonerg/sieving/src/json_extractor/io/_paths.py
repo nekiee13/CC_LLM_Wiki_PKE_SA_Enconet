@@ -5,6 +5,7 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[4]
+SIEVING_ROOT = PROJECT_ROOT / "sieving"
 
 
 def local_io_path(value: Path) -> Path:
@@ -16,11 +17,10 @@ def local_io_path(value: Path) -> Path:
     raw = Path(value)
     path = (raw if raw.is_absolute() else PROJECT_ROOT / raw).resolve()
     root = PROJECT_ROOT.resolve()
-    if not path.is_relative_to(root):
-        raise ValueError("Sieving I/O path must stay inside Ekonerg")
-    parts = path.relative_to(root).parts
-    if parts and parts[0].casefold() == "enconet":
-        raise ValueError("Sieving I/O path must not target nested Enconet")
+    # The CLI may use the project root to start a glob. Actual sieving
+    # inputs and outputs must live below the local sieving tree.
+    if path != root and not path.is_relative_to(SIEVING_ROOT.resolve()):
+        raise ValueError("Sieving I/O path must stay inside the project's sieving tree")
     if path.is_file() and path.stat().st_nlink > 1:
         raise ValueError("Sieving I/O refuses a hard-linked file")
     return path

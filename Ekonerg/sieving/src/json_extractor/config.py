@@ -14,14 +14,11 @@ PROJECT_ROOT = SIEVING_ROOT.parent
 
 
 def _local_dir(value: Path, *, label: str) -> Path:
-    """Reject outside roots and the stale nested Enconet route."""
+    """Keep sieving data and configuration under this project's sieving tree."""
     path = Path(value).resolve()
-    root = PROJECT_ROOT.resolve()
+    root = SIEVING_ROOT.resolve()
     if not path.is_relative_to(root):
-        raise ValueError(f"{label} must stay inside the Ekonerg project")
-    parts = path.relative_to(root).parts
-    if parts and parts[0].casefold() == "enconet":
-        raise ValueError(f"{label} must not target a nested Enconet folder")
+        raise ValueError(f"{label} must stay inside the project's sieving tree")
     return path
 
 

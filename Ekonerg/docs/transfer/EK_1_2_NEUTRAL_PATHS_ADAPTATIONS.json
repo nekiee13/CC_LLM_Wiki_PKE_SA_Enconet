@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "company-neutral sieving path guards",
+  "status": "pending deferred Claude review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "source_manifest": "Ekonerg/docs/transfer/transfer-manifest.json",
+  "remaining_adapt_rows": 183,
+  "remaining_recreate_rows": 45,
+  "files": [
+    {
+      "destination": "Ekonerg/sieving/src/json_extractor/config.py",
+      "source": "Enconet/sieving/src/json_extractor/config.py",
+      "source_sha256": "fac0900aee79390964b0afd598c50b951bd2d05f33d2d4f7d8e3fdeacdfdd4ee",
+      "destination_sha256": "d33c2307302ef45c84b7d907ca75a5b50c4a658a66e2f22087d935f9d7028436"
+    },
+    {
+      "destination": "Ekonerg/sieving/src/json_extractor/io/_paths.py",
+      "origin": "Ekonerg-local guard introduced in EK-1.2-SIEVING-IO",
+      "destination_sha256": "d423002b981c48a1646dd0bd1149b5cda984f6c69a6c05893e4d20aa9e7d7102"
+    }
+  ],
+  "new_tests": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_company_neutral_paths.py",
+      "destination_sha256": "e29b36be3040939f705ee69a695ff30a535c5e3ef230a7556207353206ea8c7c"
+    }
+  ]
+}
