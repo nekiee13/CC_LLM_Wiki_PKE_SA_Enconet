@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T231440Z-592bd4c.md`](handoffs/2026-09-29T231440Z-592bd4c.md)
+**Authoritative record:** [`handoffs/2026-09-29T232433Z-fe57337.md`](handoffs/2026-09-29T232433Z-fe57337.md)
 
-**Status:** partial · **Git:** `592bd4c` · **Agent:** codex · **Created:** 2026-09-29T23:14:40Z
+**Status:** partial · **Git:** `fe57337` · **Agent:** codex · **Created:** 2026-09-29T23:24:33Z
 
-**Exact next action:** In one EK-1.2 TDD batch, remove remaining company-name literals from reusable sieving CLI, pipeline and export user-facing behavior; use project-root-derived labels and test two synthetic company names with and without a sibling. Keep real sources and prompts inactive.
+**Exact next action:** Before another company-specific patch, start one EK-1.2 TDD batch to establish a versioned, company-neutral sieving template for copy-only initialization; test bootstrap and normal CLI in two synthetic company roots, with and without a sibling, and keep runtime imports project-local. Inspect the existing transfer tool and plan for template placement first.
