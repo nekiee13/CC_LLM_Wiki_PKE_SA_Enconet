@@ -1,0 +1,16 @@
+task: EK-1.2-SIEVING-CLI
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T20:50:10Z
+last_renewed_at_utc: 2026-09-29T20:50:10Z
+expires_at_utc: 2026-09-30T00:50:10Z
+anticipated_files:
+  - Ekonerg/sieving/cli.py
+  - Ekonerg/sieving/tests/test_cli_local.py
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_CLI.md
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_CLI_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD Ekonerg-local CLI input, glob and export boundaries; Claude review deferred
+released_at_utc: 2026-09-29T20:57:24Z

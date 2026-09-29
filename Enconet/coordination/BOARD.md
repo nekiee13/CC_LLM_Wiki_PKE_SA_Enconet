@@ -96,6 +96,7 @@ and ADRs are the records.
 - `EK-1.2-DISPATCH-ACK` — codex, released 2026-09-29T17:06:34Z
 - `EK-1.2-DISPATCH-TERMINAL-ARCHIVE` — codex, released 2026-09-29T17:59:48Z
 - `EK-1.2-HANDOFF-CORRECTION` — codex, released 2026-09-29T17:08:41Z
+- `EK-1.2-SIEVING-CLI` — codex, released 2026-09-29T20:57:24Z
 - `EK-1.2-SIEVING-CRUMB` — codex, released 2026-09-29T20:33:46Z
 - `EK-1.2-SIEVING-EXTRACT` — codex, released 2026-09-29T18:59:38Z
 - `EK-1.2-SIEVING-FOUNDATION` — codex, released 2026-09-29T18:20:39Z
@@ -316,10 +317,11 @@ and ADRs are the records.
 - `CX_2026-09-29T200725Z_ekonerg-sieving-pipeline-review` — review_request, codex -> claude-code: EK-1.2-SIEVING-PIPELINE
 - `CX_2026-09-29T203335Z_ekonerg-sieving-crumb-review` — review_request, codex -> claude-code: EK-1.2-SIEVING-CRUMB
 - `CX_2026-09-29T204111Z_ekonerg-sieving-template-review` — review_request, codex -> claude-code: EK-1.2-SIEVING-TEMPLATE
+- `CX_2026-09-29T205719Z_ekonerg-sieving-cli-review` — review_request, codex -> claude-code: EK-1.2-SIEVING-CLI
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-29T20:41:24Z
+Generated: 2026-09-29T20:57:31Z
