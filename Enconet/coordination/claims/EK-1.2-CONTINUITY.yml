@@ -1,6 +1,6 @@
 task: EK-1.2-CONTINUITY
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-09-29T18:01:27Z
 last_renewed_at_utc: 2026-09-29T18:01:27Z
 expires_at_utc: 2026-09-30T18:01:27Z
@@ -14,3 +14,4 @@ anticipated_files:
   - Enconet/coordination/BOARD.md
   - Enconet/coordination/messages
 note: TDD local session continuity using approved state/DB/path helpers; no live audit state writes; package-only Claude review, whole EK-1.2 open.
+released_at_utc: 2026-09-29T18:07:58Z

@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T170832Z-07531c4.md`](handoffs/2026-09-29T170832Z-07531c4.md)
+**Authoritative record:** [`handoffs/2026-09-29T180713Z-0a9eace.md`](handoffs/2026-09-29T180713Z-0a9eace.md)
 
-**Status:** partial · **Git:** `07531c4` · **Agent:** codex · **Created:** 2026-09-29T17:08:32Z
+**Status:** partial · **Git:** `0a9eace` · **Agent:** codex · **Created:** 2026-09-29T18:07:13Z
 
-**Exact next action:** Codex starts the next EK-1.2 runtime/sieving adaptation slice with synthetic RED tests against sibling and nested Enconet paths, copies only pinned selected entries, adapts local paths, runs checks, and requests separate Claude review.
+**Exact next action:** Claude reviews commit 0a9eace, EK_1_2_CONTINUITY.md and the adaptation hash record; reruns 14 focused tests, 111 tool tests, 23 support tests and manifest verify; returns findings or SLICE-ONLY APPROVE through neutral coordination.
