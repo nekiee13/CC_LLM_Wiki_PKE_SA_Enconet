@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "fresh inactive prompt bundle",
+  "status": "pending deferred Claude batch review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 187,
+  "remaining_recreate_rows": 45,
+  "files": [
+    {
+      "source": "Enconet/sieving/prompts/active.yml",
+      "destination": "Ekonerg/sieving/prompts/active.yml",
+      "treatment": "adapt (empty activation until approved local intake)",
+      "source_git_blob": "04c5c91182ad729b90b7455ae8b2e0a8215ae442",
+      "source_bytes": 80,
+      "source_sha256": "d53163d79cfaabdbc3bc8a37088d42ec37cbc41353974163e1afcca0f342dae4",
+      "destination_lf_bytes": 195,
+      "destination_lf_sha256": "491e925bd55a68b0d2741c3d5de7530819ff0d05b876b20ea1bf214c43adc075"
+    },
+    {
+      "source": "Enconet/sieving/prompts/appb_document_v1.md",
+      "destination": "Ekonerg/sieving/prompts/appb_document_v1.md",
+      "treatment": "adapt (company-neutral candidate tied to local schema)",
+      "source_git_blob": "e7edbf73c76a69b9c7e9653c65a81086497e0654",
+      "source_bytes": 468,
+      "source_sha256": "6009cfdbf519e334ba03f707576ae65b4cf002c828b55aa5238af6796d2e4e50",
+      "destination_lf_bytes": 725,
+      "destination_lf_sha256": "dfbf9a8b22cb4d310c0ca897c285a9c84a168a06ce98b321619ff317bac288ed"
+    },
+    {
+      "source": "Enconet/sieving/prompts/appb_rule_v1.md",
+      "destination": "Ekonerg/sieving/prompts/appb_rule_v1.md",
+      "treatment": "adapt (company-neutral candidate tied to approved run context)",
+      "source_git_blob": "ad80d3df46bd7b489adfabccf1b6f54644a3d106",
+      "source_bytes": 732,
+      "source_sha256": "b1efe49bf92d8782a7b262a936d9799229d5ec92010b517fe8baa0105bdbe1cc",
+      "destination_lf_bytes": 1067,
+      "destination_lf_sha256": "c9cbae553f9a5f9ec54d650f04474876c3d83fe87cdb3aad39507ea40fe8716f"
+    },
+    {
+      "source": "Enconet/sieving/prompts/CHANGELOG.md",
+      "destination": "Ekonerg/sieving/prompts/CHANGELOG.md",
+      "treatment": "recreate (fresh history with no inherited promotion)",
+      "source_git_blob": "6ab32d9a9c4e729e1d9b23b0600fa50f3e9677c6",
+      "source_bytes": 832,
+      "source_sha256": "efddee7081ad26b82b87962da17e5649d39fc33e3f0e1e6c5b989b1e5288d890",
+      "destination_lf_bytes": 729,
+      "destination_lf_sha256": "8c5c6aedbf4d33853a2206cc9a4aa2527cddc680d33c30faffe719ecbb5bc588"
+    },
+    {
+      "source": "Enconet/sieving/prompts/fixtures/valid_document.json",
+      "destination": "Ekonerg/sieving/prompts/fixtures/valid_document.json",
+      "treatment": "recreate (invented source-free valid document example)",
+      "source_git_blob": "ba93c0ff7b0f70c0ba212bd6ea36bb99159816a3",
+      "source_bytes": 499,
+      "source_sha256": "ac4bc61ccac2586b0104c0ce4dfa7d00da9d7102b1e8a8d5d333a45c9fbb655e",
+      "destination_lf_bytes": 610,
+      "destination_lf_sha256": "cbf7d9ea07e184aa642e166e20065adf39ac199318e961116a85559488d7a5d0"
+    },
+    {
+      "source": "Enconet/sieving/prompts/fixtures/valid_rule.json",
+      "destination": "Ekonerg/sieving/prompts/fixtures/valid_rule.json",
+      "treatment": "recreate (invented source-free valid rule example)",
+      "source_git_blob": "657f479ef6c0d920768b152798f99283ce01bbec",
+      "source_bytes": 632,
+      "source_sha256": "98b272a61891cff0c22c024e434b15de62b4172d7c355a7243748dee8b7b1c74",
+      "destination_lf_bytes": 867,
+      "destination_lf_sha256": "6b931f0b3e5e6d7279912474717b8af42a2fe4e9f11150f31eafd9a329dc2dac"
+    },
+    {
+      "source": "Enconet/sieving/prompts/fixtures/malformed_placeholder.json",
+      "destination": "Ekonerg/sieving/prompts/fixtures/malformed_placeholder.json",
+      "treatment": "recreate (invented invalid example for rejection tests)",
+      "source_git_blob": "54b661c528470ee52c97378fd0ce14a19c4928cc",
+      "source_bytes": 350,
+      "source_sha256": "c60373bed2ee25b674fce77782bafaff2e2a917e657dfbea3b6fc7f7312acf75",
+      "destination_lf_bytes": 395,
+      "destination_lf_sha256": "9683aa64d378d4c64503e08b0095eda4f4fe6d6d62010cd9189ede9d83d5e6e0"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_prompt_registry.py",
+      "treatment": "new isolated synthetic prompt-bundle tests",
+      "destination_lf_bytes": 5198,
+      "destination_lf_sha256": "1b99fb7e4eacc30901db44f16aa9afffa1db9469ccd2623ce8479b7544b97750"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "document": {
+    "name": "synthetic-company-procedure.json",
+    "date": "n-a",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "synthetic-document-1",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Invented procedure step for a parser test.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [{"source_locator": "synthetic-section-1"}],
+      "evidence_quotes": [
+        {"quote_original": "Invented review step, not source evidence.", "quote_language": "en"}
+      ]
+    }
+  ]
+}

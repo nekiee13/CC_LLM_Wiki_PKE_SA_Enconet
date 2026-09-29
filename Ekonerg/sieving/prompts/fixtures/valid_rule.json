@@ -1,0 +1,30 @@
+{
+  "document": {
+    "name": "synthetic-rule.json",
+    "date": "n-a",
+    "document_side": "RULE",
+    "authority_references": [
+      {
+        "authority_role": "GOVERNING",
+        "source_code": "10CFR50_APPB",
+        "source_locator": "APP_B_I",
+        "applicability": "CONDITIONAL",
+        "applicability_basis": "Synthetic parser fixture; no company applicability decision."
+      }
+    ]
+  },
+  "items": [
+    {
+      "item_id": "synthetic-rule-1",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Invented rule statement for a parser test.",
+      "item_type": "requirement",
+      "entities": {},
+      "sources": [{"source_locator": "synthetic-rule-section-1"}],
+      "evidence_quotes": [
+        {"quote_original": "Invented rule words, not source evidence.", "quote_language": "en"}
+      ]
+    }
+  ]
+}
