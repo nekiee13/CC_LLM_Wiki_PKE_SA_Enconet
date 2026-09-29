@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T180713Z-0a9eace.md`](handoffs/2026-09-29T180713Z-0a9eace.md)
+**Authoritative record:** [`handoffs/2026-09-29T182213Z-014ed18.md`](handoffs/2026-09-29T182213Z-014ed18.md)
 
-**Status:** partial · **Git:** `0a9eace` · **Agent:** codex · **Created:** 2026-09-29T18:07:13Z
+**Status:** partial · **Git:** `014ed18` · **Agent:** codex · **Created:** 2026-09-29T18:22:13Z
 
-**Exact next action:** Claude reviews commit 0a9eace, EK_1_2_CONTINUITY.md and the adaptation hash record; reruns 14 focused tests, 111 tool tests, 23 support tests and manifest verify; returns findings or SLICE-ONLY APPROVE through neutral coordination.
+**Exact next action:** Claude reviews continuity commit 0a9eace and sieving foundation commit 39f292d, responds to both active CX requests with findings or slice-only approval. Codex then resolves findings and continues remaining sieving package with synthetic path/import tests.

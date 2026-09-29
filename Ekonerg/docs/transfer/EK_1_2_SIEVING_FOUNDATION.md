@@ -39,7 +39,6 @@ The tests do not read a real audit document or run an old repair tool.
 | `python -B -m unittest discover -s Ekonerg\tools\tests -q` | 0 | 111 tool tests passed. |
 | `python -B -m pytest Ekonerg\scripts\tests -q -p no:cacheprovider` | 0 | 23 support tests passed. |
 | `python -B Ekonerg\tools\transfer_manifest.py verify` | 0 | 1,963 manifest rows and the 275-file scan match. |
-| Read-only hash and Git-blob comparison of the adaptation JSON | 0 | All four source blobs and five destination hashes match. |
 
 The focused test command first failed inside the filesystem sandbox because
 Windows Temp was not writable there. It passed with the approved Temp access.
