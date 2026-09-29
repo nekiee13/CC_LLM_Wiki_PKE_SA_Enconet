@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "empty company-neutral database schema and safe local initializer",
+  "status": "pending deferred Claude batch review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 184,
+  "remaining_recreate_rows": 45,
+  "files": [
+    {
+      "source": "Enconet/db/schema.sql",
+      "destination": "Ekonerg/db/schema.sql",
+      "treatment": "adapt (empty schema; source choices stored as reviewed records rather than code enums)",
+      "source_git_blob": "86cf2bf54b0acc95808a8a75ee408dbfe9d294da",
+      "source_bytes": 13746,
+      "source_sha256": "97abce1b5fc2c78cd19824eacf5c3fabb8e38bf672a98796435d4b573cfeb7e5",
+      "destination_lf_bytes": 15139,
+      "destination_lf_sha256": "07bc63c718c5458470aa90c147182d386b6a09e3a5bff79c01c0d8f5eb15c6a5"
+    },
+    {
+      "source": "Enconet/scripts/init_db.py",
+      "destination": "Ekonerg/scripts/init_db.py",
+      "treatment": "adapt (local path, empty initialization, no reset or taxonomy seeding)",
+      "source_git_blob": "0ba0f1d316c013661e4b26f9332eb0f65c5762ec",
+      "source_bytes": 2951,
+      "source_sha256": "41a7e27487b6471f07bb9ed9b9f859ebe9998cd56a9c8df7757f2ecf3e29d323",
+      "destination_lf_bytes": 3617,
+      "destination_lf_sha256": "8bf19c35f798b0942d246ad3f6502ee7b10af532d56bc5b3fc4c0fc4fc581df9"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/scripts/tests/test_db_bootstrap.py",
+      "treatment": "new isolated synthetic bootstrap tests",
+      "destination_lf_bytes": 7891,
+      "destination_lf_sha256": "ee7912f8c3f414217c76a8d03d2bcba0e5caa0e20c38e1e52ceb247bf6922116"
+    }
+  ]
+}
