@@ -86,6 +86,7 @@ and ADRs are the records.
 - `EK-0.2-ACK` — codex, released 2026-09-29T11:51:24Z
 - `EK-0.2-FINAL-ARCHIVE` — codex, released 2026-09-29T11:58:44Z
 - `EK-1.1` — codex, released 2026-09-29T12:39:30Z
+- `EK-1.1-FINAL-ARCHIVE` — codex, released 2026-09-29T13:16:37Z
 - `EK-1.1-REVIEW-ACK` — codex, released 2026-09-29T13:07:34Z
 - `EK-PLAN-APPROVAL-ACK` — codex, released 2026-09-29T11:16:58Z
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
@@ -291,11 +292,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-09-29T130447Z_ack-ekonerg-safe-transfer-approve` — acknowledgement, codex -> claude-code: EK-1.1
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 773 records in `coordination/archive/`
+- Archive: 775 records in `coordination/archive/`
 
-Generated: 2026-09-29T13:13:53Z
+Generated: 2026-09-29T13:16:37Z
