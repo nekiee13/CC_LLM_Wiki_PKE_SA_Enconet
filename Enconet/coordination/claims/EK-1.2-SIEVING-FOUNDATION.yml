@@ -1,0 +1,18 @@
+task: EK-1.2-SIEVING-FOUNDATION
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T18:12:23Z
+last_renewed_at_utc: 2026-09-29T18:12:23Z
+expires_at_utc: 2026-09-29T22:12:23Z
+anticipated_files:
+  - Ekonerg/sieving/src/json_extractor/config.py
+  - Ekonerg/sieving/src/json_extractor/contract.py
+  - Ekonerg/sieving/tests
+  - Ekonerg/schemas/sieving_contract.yml
+  - Ekonerg/schemas/app_b_taxonomy.yml
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_FOUNDATION.md
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD local sieving config and contract foundation; continuity review remains pending
+released_at_utc: 2026-09-29T18:20:39Z
