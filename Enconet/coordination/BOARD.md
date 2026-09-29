@@ -297,6 +297,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-09-29T170014Z_ekonerg-dispatch-approve` — acknowledgement, claude-code -> codex: EK-1.2
 - `CX_2026-09-29T164906Z_ekonerg-dispatch-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
@@ -304,4 +305,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 787 records in `coordination/archive/`
 
-Generated: 2026-09-29T16:49:11Z
+Generated: 2026-09-29T17:00:24Z
