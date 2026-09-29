@@ -1,0 +1,11 @@
+task: EK-1.2-RUN-CREATION
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T22:23:43Z
+last_renewed_at_utc: 2026-09-29T22:23:43Z
+expires_at_utc: 2026-09-30T22:23:43Z
+anticipated_files:
+  - Ekonerg/scripts/sieve_run.py
+  - Ekonerg/scripts/tests/test_sieve_run_local.py
+note: TDD local run creation with synthetic source registry and inactive prompt fail-closed; no real audit writes
+released_at_utc: 2026-09-29T22:31:24Z
