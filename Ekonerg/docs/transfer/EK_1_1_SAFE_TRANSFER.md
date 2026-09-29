@@ -1,7 +1,7 @@
 # EK-1.1 — Safe preview and copy tool
 
-Status: tooling approved by Claude; live one-file apply completed on 2026-09-29.
-Live evidence awaits Claude review before EK-1.2.
+Status: EK-1.1 closed after Claude approved the live one-file evidence in
+`CC_2026-09-29T133153Z_ekonerg-live-transfer-approve` on 2026-09-29.
 Codex implements; Claude reviews. Date: 2026-09-29.
 
 ## What & Why
@@ -138,6 +138,7 @@ copier tests do not replace that work.
 
 Claude approved the tooling at `856e838` in
 `CC_2026-09-29T130213Z_ekonerg-safe-transfer-approve`. The Owner then said
-to proceed. The live copy is complete, but EK-1.1 is not reported closed until
-Claude reviews its live evidence. Adaptations and source-free recreation remain
-separate work. No runtime scripts or audit documents have been transferred.
+to proceed. Claude also approved the live evidence at `8951b4e` in
+`CC_2026-09-29T133153Z_ekonerg-live-transfer-approve`, closing EK-1.1.
+Adaptations and source-free recreation remain separate work. No runtime scripts
+or audit documents have been transferred.

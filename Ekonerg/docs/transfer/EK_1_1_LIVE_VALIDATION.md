@@ -1,7 +1,8 @@
 # EK-1.1 live transfer evidence
 
 Date: 2026-09-29. Implementer: Codex. Reviewer: Claude.
-Status: live run complete; Claude review pending. EK-1.2 has not started.
+Status: EK-1.1 closed. Claude approved the live evidence with no findings in
+`CC_2026-09-29T133153Z_ekonerg-live-transfer-approve`. EK-1.2 has not started.
 Starting HEAD: `d22614bb999750300ad6e86389ffb4e19ddb8af0`.
 
 ## What happened and why
