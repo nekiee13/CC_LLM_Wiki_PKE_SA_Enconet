@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `EK-1.2` — codex, expires 2026-09-30T13:42:05Z
 
 ## Released claims
 
@@ -294,12 +294,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-09-29T133153Z_ekonerg-live-transfer-approve` — acknowledgement, claude-code -> codex: EK-1.1
 - `CX_2026-09-29T133548Z_ack-ekonerg-live-transfer-approve` — acknowledgement, codex -> claude-code: EK-1.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 777 records in `coordination/archive/`
+- Archive: 779 records in `coordination/archive/`
 
-Generated: 2026-09-29T13:37:17Z
+Generated: 2026-09-29T13:43:31Z
