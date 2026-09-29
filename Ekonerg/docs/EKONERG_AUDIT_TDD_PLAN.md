@@ -106,7 +106,8 @@ The clean database may contain fixed criterion definitions. All source-derived a
 
 **What & Why:** Define exactly what will move. This prevents a folder copy from bringing old evidence or approvals into the new audit.
 
-**Depends on:** None.  
+**Depends on:** None.
+
 **Labels:** `epic`, `planning`, `review`, `M1`
 
 #### Task EK-0.1 — Publish the plan and request Claude's review
@@ -165,7 +166,8 @@ The clean database may contain fixed criterion definitions. All source-derived a
 
 **What & Why:** Give Ekonerg its own tools and clear paths. Running an Ekonerg command must never read or change Enconet's audit by mistake.
 
-**Depends on:** EK-0.  
+**Depends on:** EK-0.
+
 **Labels:** `epic`, `transfer`, `isolation`, `M1`
 
 #### Task EK-1.1 — Build a safe copy process
@@ -258,7 +260,8 @@ The clean database may contain fixed criterion definitions. All source-derived a
 
 **What & Why:** Start with empty notebooks as well as empty source folders. Old approvals or run IDs could make a new audit look finished when it has not begun.
 
-**Depends on:** EK-1.  
+**Depends on:** EK-1.
+
 **Labels:** `epic`, `database`, `clean-state`, `M1`
 
 #### Task EK-2.1 — Create the Ekonerg skeleton and ledgers
@@ -353,7 +356,8 @@ Plant test contamination in an isolated fixture:
 
 **What & Why:** Keep the useful rules while removing details that belong to one finished audit. Both agents must follow the same tested workflow.
 
-**Depends on:** EK-2.  
+**Depends on:** EK-2.
+
 **Labels:** `epic`, `contracts`, `tests`, `governance`, `M1`
 
 #### Task EK-3.1 — Separate reusable rules from run records
@@ -444,7 +448,8 @@ Plant test contamination in an isolated fixture:
 
 **What & Why:** Run a small rehearsal before using real documents. This checks that the copied tools still fit together.
 
-**Depends on:** EK-3.  
+**Depends on:** EK-3.
+
 **Labels:** `epic`, `integration`, `recovery`, `M1`
 
 #### Task EK-4.1 — Test intake, extraction, and evidence links
@@ -562,7 +567,8 @@ Plant test contamination in an isolated fixture:
 
 **What & Why:** Decide which documents and company activities the audit covers. This prevents the tools from filling gaps with guesses.
 
-**Depends on:** Accepted M1.  
+**Depends on:** Accepted M1.
+
 **Labels:** `epic`, `intake`, `owner-gate`, `M2`
 
 #### Task EK-5.1 — Prepare the owner's source and scope checklist
@@ -624,7 +630,8 @@ Codex prepares the checklist; the owner supplies and approves:
 
 **What & Why:** Build Ekonerg's evidence from its own sources. Every later conclusion must lead back to these files.
 
-**Depends on:** EK-5.  
+**Depends on:** EK-5.
+
 **Labels:** `epic`, `ingestion`, `traceability`, `M2`
 
 #### Task EK-6.1 — Register and process regulatory sources
@@ -712,7 +719,8 @@ Codex prepares the checklist; the owner supplies and approves:
 
 **What & Why:** Turn reviewed evidence into clear judgments and follow-up actions. A score is useful only when its basis is visible.
 
-**Depends on:** EK-6.  
+**Depends on:** EK-6.
+
 **Labels:** `epic`, `evaluation`, `findings`, `M2`
 
 #### Task EK-7.1 — Record scoring approval and draft evaluations
@@ -774,7 +782,8 @@ Codex prepares the checklist; the owner supplies and approves:
 
 **What & Why:** Give the owner a readable report and a usable evidence viewer, both built from the same audit facts.
 
-**Depends on:** EK-7.  
+**Depends on:** EK-7.
+
 **Labels:** `epic`, `report`, `dashboard`, `UAT`, `M2`
 
 #### Task EK-8.1 — Build the report and evidence package
@@ -861,7 +870,8 @@ Codex prepares the checklist; the owner supplies and approves:
 
 **What & Why:** Leave a clear, reliable record of what was done and what remains open.
 
-**Depends on:** EK-8.  
+**Depends on:** EK-8.
+
 **Labels:** `epic`, `closeout`, `handoff`, `M2`
 
 #### Task EK-9.1 — Reconcile records and prepare G7
@@ -921,9 +931,12 @@ Codex prepares the checklist; the owner supplies and approves:
 
 ### Review brief to send
 
-**Task:** `EK-PLAN-REVIEW`  
-**Recipient:** Claude  
-**Implementer:** Codex  
+**Task:** `EK-PLAN-REVIEW`
+
+**Recipient:** Claude
+
+**Implementer:** Codex
+
 **Requested verdict:** Approve, approve with non-blocking notes, or request changes.
 
 > Review the Ekonerg clean-transfer and first-audit TDD plan.
