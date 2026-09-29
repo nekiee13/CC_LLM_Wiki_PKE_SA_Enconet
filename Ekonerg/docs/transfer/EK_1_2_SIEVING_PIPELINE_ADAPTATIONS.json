@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local sieving package entry and pipeline only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 196,
+  "files": [
+    {
+      "source": "Enconet/sieving/src/json_extractor/__init__.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/__init__.py",
+      "treatment": "adapt (local template wording and same public exports)",
+      "source_git_blob": "13247a11cce6322eb42c858932e6d69d16702148",
+      "source_bytes": 703,
+      "source_sha256": "68ea9aae7bfedad66931cd4370b3b146a0f6fb96de643fdda6a17ff5337ed401",
+      "destination_lf_bytes": 292,
+      "destination_lf_sha256": "c38eb744114a2adc43510a7926df502fb3a2a759f07a344e850a660375a2cee2"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/pipeline.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/pipeline.py",
+      "treatment": "adapt (local imports, bad-file export block, preserved explicit validation reason)",
+      "source_git_blob": "90cf16fa4e94eb17a15abe6e43cefd9796e064eb",
+      "source_bytes": 10231,
+      "source_sha256": "f55b97ccd296ddee297902c1cfc22b8b2f36ffb4c4ff4ecbc69299b83ea55419",
+      "destination_lf_bytes": 5506,
+      "destination_lf_sha256": "89c9a8d723c56927b9108b34dd9e2198784bfb074606b782a84323ff83063940"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_pipeline.py",
+      "treatment": "new isolated synthetic integration tests",
+      "destination_lf_bytes": 7933,
+      "destination_lf_sha256": "d92eecb630c73794dace1520fa9f46e52e107e0fca603eeb2043014714fe2a06"
+    }
+  ]
+}
