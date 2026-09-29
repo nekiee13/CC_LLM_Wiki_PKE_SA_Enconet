@@ -84,6 +84,7 @@ and ADRs are the records.
 - `EA6.5-CLASSIFICATION-BANDS` — codex, released 2026-09-05T07:43:46Z
 - `EK-0.2` — codex, released 2026-09-29T11:41:12Z
 - `EK-0.2-ACK` — codex, released 2026-09-29T11:51:24Z
+- `EK-0.2-FINAL-ARCHIVE` — codex, released 2026-09-29T11:58:44Z
 - `EK-PLAN-APPROVAL-ACK` — codex, released 2026-09-29T11:16:58Z
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `EK-PLAN-FINAL-ARCHIVE` — codex, released 2026-09-29T11:24:37Z
@@ -288,11 +289,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-09-29T114913Z_ack-ekonerg-transfer-manifest-approve` — acknowledgement, codex -> claude-code: EK-0.2
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 767 records in `coordination/archive/`
+- Archive: 769 records in `coordination/archive/`
 
-Generated: 2026-09-29T11:55:20Z
+Generated: 2026-09-29T11:58:44Z
