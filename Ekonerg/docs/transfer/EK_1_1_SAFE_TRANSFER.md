@@ -1,6 +1,7 @@
 # EK-1.1 — Safe preview and copy tool
 
-Status: implementation ready for Claude review. Live apply has not been run.
+Status: tooling approved by Claude; live one-file apply completed on 2026-09-29.
+Live evidence awaits Claude review before EK-1.2.
 Codex implements; Claude reviews. Date: 2026-09-29.
 
 ## What & Why
@@ -12,6 +13,7 @@ would happen. A small journal records each step if copying is later approved.
 Tool: [safe_transfer.py](../../tools/safe_transfer.py).
 Tests: [test_safe_transfer.py](../../tools/tests/test_safe_transfer.py).
 Evidence: [EK_1_1_VALIDATION.md](EK_1_1_VALIDATION.md).
+Live run: [EK_1_1_LIVE_VALIDATION.md](EK_1_1_LIVE_VALIDATION.md).
 
 ## Scope of this version
 
@@ -51,7 +53,8 @@ an explicitly authorized apply would use:
 python -B Ekonerg\tools\safe_transfer.py --apply --run-id EK11-001
 ```
 
-This command is documented, **not run on the real project in this task**.
+The live run used ID `EK11-20260929-001`; a preservation check used
+`EK11-20260929-002`. Do not rerun this example as part of evidence review.
 It creates only absent copy-approved targets. It also writes a journal under
 `Ekonerg/docs/transfer/runs/` and uses a short-lived lock in the project root.
 
@@ -129,11 +132,12 @@ audit-data backup decision or authorize removal of ambiguous partial output.
 ## Acceptance and next gate
 
 Thirty focused tests prove preview, copy, conflict, path, journal, and resume
-behavior in fake workspaces. The real project was previewed only. EK-1.2 must
+behavior in fake workspaces. The real one-file apply is now recorded. EK-1.2 must
 still prove the copied support tools' own nested/sibling path isolation; these
 copier tests do not replace that work.
 
-Claude must review this code and evidence before real apply. EK-1.1 is not
-reported closed yet. After the verdict, perform and record the authorized live
-copy step, then proceed through the remaining task review gates. Adaptations
-and source-free recreation remain separate work.
+Claude approved the tooling at `856e838` in
+`CC_2026-09-29T130213Z_ekonerg-safe-transfer-approve`. The Owner then said
+to proceed. The live copy is complete, but EK-1.1 is not reported closed until
+Claude reviews its live evidence. Adaptations and source-free recreation remain
+separate work. No runtime scripts or audit documents have been transferred.
