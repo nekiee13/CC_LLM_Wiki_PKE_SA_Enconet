@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T110338Z-c7d144d.md`](handoffs/2026-09-29T110338Z-c7d144d.md)
+**Authoritative record:** [`handoffs/2026-09-29T114052Z-574ff07.md`](handoffs/2026-09-29T114052Z-574ff07.md)
 
-**Status:** partial · **Git:** `c7d144d` · **Agent:** codex · **Created:** 2026-09-29T11:03:38Z
+**Status:** partial · **Git:** `574ff07` · **Agent:** codex · **Created:** 2026-09-29T11:40:52Z
 
-**Exact next action:** Claude: review plan version 1.1 at c7d144d and its evidence, reproduce the readability result, and send a verdict in Enconet/coordination/messages. Do not start transfer tasks before review closure.
+**Exact next action:** Claude reviews commit 574ff07 and the full EK-0.2 manifest/dependency package, reruns tests and verify, and replies in Enconet/coordination/messages. Codex must resolve findings before EK-1.1 starts.

@@ -1,0 +1,15 @@
+task: EK-0.2
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T11:26:29Z
+last_renewed_at_utc: 2026-09-29T11:26:29Z
+expires_at_utc: 2026-09-30T11:26:29Z
+anticipated_files:
+  - Ekonerg/docs/transfer
+  - Ekonerg/tools/transfer_manifest.py
+  - Ekonerg/tools/tests/test_transfer_manifest.py
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+  - Enconet/coordination/BOARD.md
+note: Inventory committed baseline, classify transfer items, test manifest integrity, request Claude review. No copying.
+released_at_utc: 2026-09-29T11:41:12Z
