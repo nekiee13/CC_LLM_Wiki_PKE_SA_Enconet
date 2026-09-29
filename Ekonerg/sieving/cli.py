@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Ekonerg-local JSON sieving query and export command.
+"""Project-local JSON sieving query and export command.
 
-Paths start at the Ekonerg project root, even when run from another folder.
+Paths start at this project root, even when run from another folder.
 Diagnostic overrides are not owner approval or audit findings.
 """
 from __future__ import annotations
@@ -20,7 +20,7 @@ from src.json_extractor.io._paths import PROJECT_ROOT, local_io_path
 from src.json_extractor.pipeline import export_pipeline_result, run_pipeline
 
 
-app = typer.Typer(help="Ekonerg-local JSON sieving query and export")
+app = typer.Typer(help=f"{PROJECT_ROOT.name}-local JSON sieving query and export")
 console = Console()
 _WILDCARDS = "*?["
 
@@ -85,7 +85,7 @@ def _checked_path(raw: Optional[str], default: Path) -> Path:
 
 @app.command()
 def query(
-    files: Optional[List[str]] = typer.Option(None, "--files", "-f", help="Ekonerg-local JSON files or globs"),
+    files: Optional[List[str]] = typer.Option(None, "--files", "-f", help=f"{PROJECT_ROOT.name}-local JSON files or globs"),
     all_files: bool = typer.Option(False, "--all", "-a", help="Process all JSON files in the local data folder"),
     data_dir: Optional[str] = typer.Option(None, "--data-dir", "-d", help="Project-relative data folder"),
     filter_expr: Optional[str] = typer.Option(None, "--filter", help="Query filter expression"),
@@ -221,7 +221,7 @@ def list_files(data_dir: Optional[str] = typer.Option(None, "--data-dir", "-d", 
 def info() -> None:
     """Show paths and unapproved template labels, without reading documents."""
     config = get_config()
-    console.print("\n[cyan]Ekonerg JSON Sieving - Configuration[/cyan]")
+    console.print(f"\n[cyan]{PROJECT_ROOT.name} JSON Sieving - Configuration[/cyan]")
     console.print(f"Data directory: {config.data_dir}")
     console.print(f"Config directory: {config.config_dir}")
     console.print(f"Column defaults file: {config.column_defaults_path}")

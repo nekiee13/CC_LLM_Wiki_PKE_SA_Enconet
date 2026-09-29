@@ -1,4 +1,4 @@
-"""Ekonerg-local discovery, extraction, filtering, and guarded export."""
+"""Project-local discovery, extraction, filtering, and guarded export."""
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -57,7 +57,7 @@ def run_pipeline(
     allow_unfiltered_preview: bool = False,
     strict: bool = False,
 ) -> PipelineResult:
-    """Run against Ekonerg-local files; never treat validation as approval."""
+    """Run against project-local files; never treat validation as approval."""
     config = get_config()
     paths = (discover_json_files(data_dir or config.data_dir, file_patterns)
              if file_paths is None else list(file_paths))

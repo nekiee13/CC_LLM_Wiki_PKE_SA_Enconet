@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "company-neutral sieving CLI labels and reusable module text",
+  "status": "pending deferred Claude review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "source_manifest": "Ekonerg/docs/transfer/transfer-manifest.json",
+  "remaining_adapt_rows": 183,
+  "remaining_recreate_rows": 45,
+  "files": [
+    {"destination":"Ekonerg/sieving/cli.py","source":"Enconet/sieving/cli.py","source_sha256":"c40490f59019a9772879f2643bb48e14a937362b20770b494965346e4eafe6f1","destination_sha256":"d396e04573429eb04ada13da4576b47c0994a7e04dd7bc121196d26963985688"},
+    {"destination":"Ekonerg/sieving/src/json_extractor/pipeline.py","source":"Enconet/sieving/src/json_extractor/pipeline.py","source_sha256":"f55b97ccd296ddee297902c1cfc22b8b2f36ffb4c4ff4ecbc69299b83ea55419","destination_sha256":"948c628a435fc263977f0ea903e4f930c5e39ca95efbe5270c2f8d7d69f8c558"},
+    {"destination":"Ekonerg/sieving/src/json_extractor/io/export.py","source":"Enconet/sieving/src/json_extractor/io/export.py","source_sha256":"c3f1d5a0b51bafe785895382e19b1cd5cd793dc0cb7779b1ea95b20e5a72bd8e","destination_sha256":"cd8117b1ccf89cc7d1714c366018cbdbb04fb6e30bd2ed21663543d0997390e2"}
+  ],
+  "new_tests": [
+    {"destination":"Ekonerg/sieving/tests/test_company_neutral_cli.py","destination_sha256":"71636b58c3f34b3fc120393887f18f12b4aae2af7cbfc740e247549aa915a71e"}
+  ]
+}

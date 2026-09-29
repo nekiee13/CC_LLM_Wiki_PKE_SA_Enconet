@@ -25,7 +25,7 @@ def export_to_csv(
     output_path: Path,
     columns: Optional[List[str]] = None,
 ) -> None:
-    """Write selected columns as UTF-8-BOM CSV within Ekonerg."""
+    """Write selected columns as UTF-8-BOM CSV inside this project."""
     path = local_io_path(output_path)
     _selected(df, columns).to_csv(path, index=False, encoding="utf-8-sig")
 
@@ -36,7 +36,7 @@ def export_to_xlsx(
     columns: Optional[List[str]] = None,
     sheet_name: str = "RESULT",
 ) -> None:
-    """Write selected columns as XLSX within Ekonerg."""
+    """Write selected columns as XLSX inside this project."""
     raw = Path(output_path)
     path = local_io_path(raw if raw.suffix.lower() == ".xlsx" else raw.with_suffix(".xlsx"))
     _selected(df, columns).to_excel(
@@ -49,7 +49,7 @@ def export_to_markdown(
     output_path: Path,
     columns: Optional[List[str]] = None,
 ) -> None:
-    """Write a Markdown table within Ekonerg."""
+    """Write a Markdown table inside this project."""
     raw = Path(output_path)
     path = local_io_path(raw if raw.suffix.lower() in (".md", ".markdown") else raw.with_suffix(".md"))
     selected = _selected(df, columns)
