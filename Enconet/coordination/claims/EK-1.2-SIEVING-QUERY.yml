@@ -1,0 +1,16 @@
+task: EK-1.2-SIEVING-QUERY
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T18:37:10Z
+last_renewed_at_utc: 2026-09-29T18:37:10Z
+expires_at_utc: 2026-09-29T22:37:10Z
+anticipated_files:
+  - Ekonerg/sieving/src/json_extractor/query
+  - Ekonerg/sieving/tests/test_query_engine.py
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_QUERY.md
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_QUERY_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD local sieving query schema/parser/engine; Claude review deferred
+released_at_utc: 2026-09-29T18:44:04Z
