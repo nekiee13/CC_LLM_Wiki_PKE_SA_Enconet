@@ -2,9 +2,9 @@
 
 | Document control | Value |
 |---|---|
-| Version | 1.0 — exported owner-discussed plan |
+| Version | 1.1 — path-safety review changes and measured readability |
 | Date | 2026-09-29 |
-| Status | Draft for Claude review; not an implementation completion record |
+| Status | Version 1.0 approved with notes; version 1.1 awaits Claude review |
 | Implementer | Codex |
 | Reviewer | Claude, after every task |
 | Source baseline | `9f20430c95334daa4c3cedb7ee71b002bd3be739` |
@@ -130,7 +130,7 @@ The clean database may contain fixed criterion definitions. All source-derived a
 - [ ] Plain-language prose is checked for Flesch–Kincaid grade ≤9.
 - [ ] The readability check records its tool, version, result, and excluded code/path/table tokens.
 
-**Review status:** Pending. Export and review delivery are authorized. Framework implementation has not started. Formal readability measurement remains an open acceptance check; it is not reported as passed.
+**Review status:** Claude approved version 1.0 with notes. This revision adds the required path checks. Its prose passes the grade-nine limit. The tool, counts, exclusions, and test results are in the [review evidence](reviews/EK_0_1_PLAN_REVIEW_EVIDENCE.md). Claude must review this revision before this task closes. No framework files have been transferred.
 
 #### Task EK-0.2 — Freeze the source and list every transfer item
 
@@ -147,8 +147,19 @@ The clean database may contain fixed criterion definitions. All source-derived a
 - Use committed framework files from `9f20430` as the source baseline.
 - Record source path, destination, hash, purpose, and treatment.
 - Classify each item as copy, adapt, recreate, or exclude.
+- Mark the three support tools below as **adapt**, not a plain copy.
 - Inspect dependencies reached through imports, subprocesses, templates, schemas, and tests.
 - Review file contents, not just folder names.
+
+**Required path changes:** These are folder addresses stored in code. Each copied tool must point to the new project. A tool that runs without an error can still use the wrong folder.
+
+| Workspace source tool | Names to check and adapt | Required local target |
+|---|---|---|
+| `scripts/agent_coord.py` | `ROOT`, `COORD`, `HANDOFF_POINTER` | `Ekonerg/`, its `coordination/`, and its `HANDOFF.md` |
+| `scripts/run_validation.py` | `WORKSPACE`, `ENCONET`, `SIEVING`, plus each command and working folder | Ekonerg code, tests, and `sieving/` |
+| `scripts/make_handoff.py` | `WORKSPACE`, `DEFAULT_PROJECT`, `SCHEMA_PATH`, default `--project-id`, and Git-root lookup | Ekonerg handoffs and a local copy of the schema; actual workspace Git root |
+
+The handoff tool accepts a project path today. We must still copy it under the owner's rule. Review its defaults and schema path after the move. No audit command may call a shared support script.
 
 **Acceptance criteria:**
 
@@ -156,6 +167,7 @@ The clean database may contain fixed criterion definitions. All source-derived a
 - [ ] Every transferred file has a recorded origin.
 - [ ] Real data and old decisions are excluded, including those under `schemas/`.
 - [ ] Local uncommitted changes are excluded.
+- [ ] All three tools above are marked adapt, with each path change explained.
 - [ ] Claude approves the manifest before files are copied.
 
 **Epic exit:** The plan and transfer manifest have passed review.
@@ -209,6 +221,11 @@ The clean database may contain fixed criterion definitions. All source-derived a
 - Run an isolated copy with no Enconet directory beside it.
 - Detect imports or subprocess calls into Enconet or workspace script folders.
 - Reject output targets outside the chosen project during normal audit commands.
+- Build a test workspace with fake Enconet and Ekonerg folders. Never use live audit data for these tests.
+- Run the copied coordination tool's claim, message, and status commands. Check that the new records appear only in the fake Ekonerg folder.
+- Compare the fake Enconet file list, content hashes, and file change times before and after. Its coordination files and handoff pointer must not change.
+- Run the copied validation and handoff tools in the same test workspace. Check each command's target and working folder, plus the handoff and schema paths.
+- Check both wrong-path cases: a nested Enconet folder inside Ekonerg, and the Enconet folder beside Ekonerg. Neither may receive output.
 
 **GREEN work:**
 
@@ -217,6 +234,9 @@ The clean database may contain fixed criterion definitions. All source-derived a
 - Route local coordination to Ekonerg's own records.
 - Copy required support schemas and test helpers.
 - Remove dependencies on an editable Python package installed from Enconet.
+- Apply and test every path change listed in EK-0.2. Keep the project root distinct from the shared Git root.
+
+**Why both wrong paths matter:** An unchanged support-tool copy would point inside Ekonerg to a nested Enconet folder. A partial fix could point back to the real Enconet project beside it. Tests must prove the intended target as well as rule out both wrong targets.
 
 **Acceptance criteria:**
 
@@ -225,6 +245,9 @@ The clean database may contain fixed criterion definitions. All source-derived a
 - [ ] Paths with spaces and Croatian characters work.
 - [ ] Approved provenance text may name Enconet; active runtime references may not.
 - [ ] Local support-tool tests pass.
+- [ ] Commands create the expected Ekonerg records and no stray nested Enconet folder.
+- [ ] The fake sibling Enconet file list, bytes, and file change times stay unchanged.
+- [ ] Claude checks the test results before this task closes.
 
 #### Task EK-1.3 — Verify the shared environment
 
@@ -243,6 +266,7 @@ The clean database may contain fixed criterion definitions. All source-derived a
 - Add a local environment guide and dependency specification.
 - Test the browser with an invented offline page.
 - If a dependency change is required, record its effect on both projects before changing the shared environment.
+- If the shared environment cannot pass, stop and ask the owner to choose a remedy. Do not create a new audit environment or upgrade shared packages without that decision.
 
 **Acceptance criteria:**
 
