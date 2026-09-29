@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local sieving crumb validator only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 195,
+  "files": [
+    {
+      "source": "Enconet/sieving/src/json_extractor/crumb_validation.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/crumb_validation.py",
+      "treatment": "adapt (local taxonomy, bounded file reads, malformed-type diagnostics)",
+      "source_git_blob": "77677415b5a6e5fddf099371e5a044124cb6d558",
+      "source_bytes": 7110,
+      "source_sha256": "a71afa9c74f9bd3a870f9d2293c8dbd7404923ce5178150e7dbe76155dbce983",
+      "destination_lf_bytes": 8106,
+      "destination_lf_sha256": "afe1ad66122398fa55c6a3bd72aabd7e04f6044567acea98d53dc554e1079927"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_crumb_validation.py",
+      "treatment": "new isolated synthetic tests",
+      "destination_lf_bytes": 6846,
+      "destination_lf_sha256": "83fc725a6307fd990e678fd77d9dbc5ce1227982fdf904ba8f0fd5d30e7a1a5f"
+    }
+  ]
+}
