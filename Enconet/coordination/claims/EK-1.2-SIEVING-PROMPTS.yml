@@ -1,0 +1,16 @@
+task: EK-1.2-SIEVING-PROMPTS
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T21:22:41Z
+last_renewed_at_utc: 2026-09-29T21:22:41Z
+expires_at_utc: 2026-09-30T01:22:41Z
+anticipated_files:
+  - Ekonerg/sieving/prompts
+  - Ekonerg/sieving/tests/test_prompt_registry.py
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_PROMPTS.md
+  - Ekonerg/docs/transfer/EK_1_2_SIEVING_PROMPTS_ADAPTATIONS.json
+  - Ekonerg/HANDOFF.md
+  - Enconet/coordination/BOARD.md
+  - Enconet/coordination/messages
+note: TDD one coherent prompt registry, text and synthetic fixture batch; inactive until approved intake
+released_at_utc: 2026-09-29T21:27:31Z
