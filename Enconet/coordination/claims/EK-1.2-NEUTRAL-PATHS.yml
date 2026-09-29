@@ -1,0 +1,12 @@
+task: EK-1.2-NEUTRAL-PATHS
+agent: codex
+status: released
+claimed_at_utc: 2026-09-29T23:06:54Z
+last_renewed_at_utc: 2026-09-29T23:06:54Z
+expires_at_utc: 2026-09-30T23:06:54Z
+anticipated_files:
+  - Ekonerg/sieving/src/json_extractor/config.py
+  - Ekonerg/sieving/src/json_extractor/io/_paths.py
+  - Ekonerg/sieving/tests/test_company_neutral_paths.py
+note: TDD: replace company-named nested guards with project-local sieving boundary; Claude review deferred
+released_at_utc: 2026-09-29T23:12:34Z
