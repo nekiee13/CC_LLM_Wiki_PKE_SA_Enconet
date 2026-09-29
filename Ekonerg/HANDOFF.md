@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T221520Z-da267a5.md`](handoffs/2026-09-29T221520Z-da267a5.md)
+**Authoritative record:** [`handoffs/2026-09-29T223556Z-372be9d.md`](handoffs/2026-09-29T223556Z-372be9d.md)
 
-**Status:** partial · **Git:** `da267a5` · **Agent:** codex · **Created:** 2026-09-29T22:15:20Z
+**Status:** partial · **Git:** `372be9d` · **Agent:** codex · **Created:** 2026-09-29T22:35:56Z
 
-**Exact next action:** Continue EK-1.2 with a TDD batch that connects local database helpers and run creation to the empty source registry using synthetic approvals only; verify no inherited source code, sibling access, or real audit writes. Do not run a migration or real intake.
+**Exact next action:** Continue EK-1.2 with one TDD batch to remove inherited source-code choices from the local crumb validator and sieving source contract; use empty reviewed configuration and two synthetic company names, and keep all real prompts inactive.
