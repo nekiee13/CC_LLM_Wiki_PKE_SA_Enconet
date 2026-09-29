@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local crumb schema and vocabulary dependencies only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 190,
+  "files": [
+    {
+      "source": "Enconet/schemas/app_b_json_schema.yml",
+      "destination": "Ekonerg/schemas/app_b_json_schema.yml",
+      "treatment": "adapt (local format contract; explicit unapproved source scope)",
+      "source_git_blob": "366166bf8bad1d06411c2c5f8a66822882deb38e",
+      "source_bytes": 3331,
+      "source_sha256": "afb45c8d2113268a3ce51d18f6c4999e22bc3fb3aa1c7d2cc5efbc94a03ad82f",
+      "destination_lf_bytes": 2564,
+      "destination_lf_sha256": "ec83b374b6ee2634c03dda67b55fd251a3ee95f7f25c68baa838396ab9f3523a"
+    },
+    {
+      "source": "Enconet/schemas/vocabularies.yml",
+      "destination": "Ekonerg/schemas/vocabularies.yml",
+      "treatment": "adapt (local vocabulary template; no Ekonerg applicability decision)",
+      "source_git_blob": "42154769792233eacdb397c9ca4e362dc7bb01be",
+      "source_bytes": 3204,
+      "source_sha256": "d9e00984745371a453b12b434f857af175ed5cabc7cf42f3bc9db7711eb70869",
+      "destination_lf_bytes": 2520,
+      "destination_lf_sha256": "1450b685cbf9af39fa7ab7ee6068d2cf924eedc607c68d51ea22c2c157c02a78"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_crumb_schema_contracts.py",
+      "treatment": "new isolated synthetic contract tests",
+      "destination_lf_bytes": 3900,
+      "destination_lf_sha256": "75eca1d69e9c7b0aeee5ff0f7a6d37b2e135268f25ad2b32aad1744d5165063f"
+    }
+  ]
+}
