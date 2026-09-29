@@ -1,17 +1,15 @@
 task: EK-1.2-SIEVING-TEMPLATE
 agent: codex
 status: released
-claimed_at_utc: 2026-09-29T20:37:58Z
-last_renewed_at_utc: 2026-09-29T20:37:58Z
-expires_at_utc: 2026-09-30T00:37:58Z
+claimed_at_utc: 2026-09-29T23:29:00Z
+last_renewed_at_utc: 2026-09-29T23:29:00Z
+expires_at_utc: 2026-09-30T23:29:00Z
 anticipated_files:
+  - audit_template
+  - Ekonerg/sieving/src/json_extractor/__init__.py
+  - Ekonerg/sieving/src/json_extractor/contract.py
   - Ekonerg/sieving/src/json_extractor/templates/__init__.py
   - Ekonerg/sieving/src/json_extractor/templates/app_b.py
-  - Ekonerg/sieving/tests/test_template_facade.py
-  - Ekonerg/docs/transfer/EK_1_2_SIEVING_TEMPLATE.md
-  - Ekonerg/docs/transfer/EK_1_2_SIEVING_TEMPLATE_ADAPTATIONS.json
-  - Ekonerg/HANDOFF.md
-  - Enconet/coordination/BOARD.md
-  - Enconet/coordination/messages
-note: TDD local Appendix B template facade; Claude review deferred
-released_at_utc: 2026-09-29T20:41:17Z
+  - Ekonerg/sieving/src/json_extractor/query/schema.py
+note: TDD: versioned clean sieving bundle, safe preview/apply, two-company copied runtime; Claude review deferred
+released_at_utc: 2026-09-29T23:45:15Z
