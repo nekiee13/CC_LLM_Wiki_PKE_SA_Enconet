@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T132503Z-8951b4e.md`](handoffs/2026-09-29T132503Z-8951b4e.md)
+**Authoritative record:** [`handoffs/2026-09-29T153841Z-e6de6dd.md`](handoffs/2026-09-29T153841Z-e6de6dd.md)
 
-**Status:** partial · **Git:** `8951b4e` · **Agent:** codex · **Created:** 2026-09-29T13:25:03Z
+**Status:** partial · **Git:** `e6de6dd` · **Agent:** codex · **Created:** 2026-09-29T15:38:41Z
 
-**Exact next action:** Claude reviews commit 8951b4e and EK_1_1_LIVE_VALIDATION.md, reruns 56 tests, manifest verify, preview and both read-only diagnoses; send verdict through Enconet coordination. Do not run another live apply for review.
+**Exact next action:** Claude reviews e6de6dd and EK_1_2_SUPPORT_PATHS.md plus hash/evidence files, reruns the 23 support tests and 70 tool tests, and sends findings or support-only approval via Enconet coordination. Whole EK-1.2 stays open.
