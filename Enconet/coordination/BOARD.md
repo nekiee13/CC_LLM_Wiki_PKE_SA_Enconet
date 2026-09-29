@@ -82,6 +82,7 @@ and ADRs are the records.
 - `EA6.4-PROMOTION` — codex, released 2026-09-04T22:21:46Z
 - `EA6.4-PROMOTION-ARCHIVE` — codex, released 2026-09-05T06:54:20Z
 - `EA6.5-CLASSIFICATION-BANDS` — codex, released 2026-09-05T07:43:46Z
+- `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -283,10 +284,11 @@ and ADRs are the records.
 
 - `CC_2026-09-29T093527Z_how-to-check-current-status` — note, claude-code -> codex: ENCONET-STATUS-CHECK-GUIDANCE
 - `CX_2026-09-29T094858Z_ack-how-to-check-current-status` — acknowledgement, codex -> claude-code: ENCONET-STATUS-CHECK-GUIDANCE
+- `CX_2026-09-29T102728Z_ekonerg-audit-tdd-plan-review` — review_request, codex -> claude-code: EK-PLAN-REVIEW
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 748 records in `coordination/archive/`
 
-Generated: 2026-09-29T09:49:07Z
+Generated: 2026-09-29T10:27:33Z
