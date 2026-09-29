@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local sieving configuration and canonical template foundation only",
+  "status": "pending Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 207,
+  "files": [
+    {
+      "source": "Enconet/schemas/sieving_contract.yml",
+      "destination": "Ekonerg/schemas/sieving_contract.yml",
+      "treatment": "adapt (unchanged bytes, approval status remains provisional)",
+      "source_git_blob": "0a872ce47914fbc35c47c2607887c5b5e4f6d5fa",
+      "source_bytes": 5034,
+      "source_sha256": "0bf7b684fe63cc60fd27f6b63165c6d5f4df375b9f423aa0a58a45ad20ba749e",
+      "destination_lf_bytes": 5034,
+      "destination_lf_sha256": "0bf7b684fe63cc60fd27f6b63165c6d5f4df375b9f423aa0a58a45ad20ba749e"
+    },
+    {
+      "source": "Enconet/schemas/app_b_taxonomy.yml",
+      "destination": "Ekonerg/schemas/app_b_taxonomy.yml",
+      "treatment": "adapt (provenance note only; parsed YAML equal)",
+      "source_git_blob": "9eec9d2f81ad2fc89a8ba737ba0229fe93cd6287",
+      "source_bytes": 4746,
+      "source_sha256": "7ca8c2bc9b208e9dfe409db4b09ce23772037c6ca491f67c0fa8936ab069fa1c",
+      "destination_lf_bytes": 4284,
+      "destination_lf_sha256": "0d580154122c70254c5a1717f47bd4c8d926f4bf8ed4ccd082ea995086d243ea"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/config.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/config.py",
+      "treatment": "adapt (local defaults and resolved path bounds)",
+      "source_git_blob": "eae15823c4419eb1772a02422f90c92b2c95de76",
+      "source_bytes": 2700,
+      "source_sha256": "fac0900aee79390964b0afd598c50b951bd2d05f33d2d4f7d8e3fdeacdfdd4ee",
+      "destination_lf_bytes": 3408,
+      "destination_lf_sha256": "839413201cee9f8763008ff9b0e7dc5ed6098fae5de4727a322f6ee0a2c385f8"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/contract.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/contract.py",
+      "treatment": "adapt (local template wording, unchanged parsing and code expansion)",
+      "source_git_blob": "7e57b3ece4f4c71f355c19cd12cd7c4d0b3dc554",
+      "source_bytes": 1830,
+      "source_sha256": "ff4b2946187062db34d18f07016727b59ea45c05b66592e3d178e0e65c7f4307",
+      "destination_lf_bytes": 1924,
+      "destination_lf_sha256": "ef8183ed35be43df00c42d4ae7bd8a0f87a4bf0135d2a2609211969664f12f8a"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_foundation.py",
+      "treatment": "new synthetic isolation tests",
+      "destination_lf_bytes": 4382,
+      "destination_lf_sha256": "e3fcaea0b2260ca8553124c598149c4124d7decb56eae36412f566609d81dd37"
+    }
+  ]
+}
