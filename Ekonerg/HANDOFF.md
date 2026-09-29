@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-29T232433Z-fe57337.md`](handoffs/2026-09-29T232433Z-fe57337.md)
+**Authoritative record:** [`handoffs/2026-09-29T234842Z-2ddeeec.md`](handoffs/2026-09-29T234842Z-2ddeeec.md)
 
-**Status:** partial · **Git:** `fe57337` · **Agent:** codex · **Created:** 2026-09-29T23:24:33Z
+**Status:** partial · **Git:** `2ddeeec` · **Agent:** codex · **Created:** 2026-09-29T23:48:42Z
 
-**Exact next action:** Before another company-specific patch, start one EK-1.2 TDD batch to establish a versioned, company-neutral sieving template for copy-only initialization; test bootstrap and normal CLI in two synthetic company roots, with and without a sibling, and keep runtime imports project-local. Inspect the existing transfer tool and plan for template placement first.
+**Exact next action:** Continue one EK-1.2 TDD batch: extend the versioned clean template to project-local support tools, with synthetic copy/run/no-sibling checks; do not apply to real Ekonerg or activate sources before required review and owner decisions.
