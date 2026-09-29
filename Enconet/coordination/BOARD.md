@@ -92,6 +92,7 @@ and ADRs are the records.
 - `EK-1.1-REVIEW-ACK` — codex, released 2026-09-29T13:07:34Z
 - `EK-1.2` — codex, released 2026-09-29T15:38:44Z
 - `EK-1.2-CONTINUITY` — codex, released 2026-09-29T18:07:58Z
+- `EK-1.2-DB-BOOTSTRAP` — codex, released 2026-09-29T22:13:25Z
 - `EK-1.2-DISPATCH` — codex, released 2026-09-29T16:49:09Z
 - `EK-1.2-DISPATCH-ACK` — codex, released 2026-09-29T17:06:34Z
 - `EK-1.2-DISPATCH-TERMINAL-ARCHIVE` — codex, released 2026-09-29T17:59:48Z
@@ -326,10 +327,11 @@ and ADRs are the records.
 - `CX_2026-09-29T212156Z_ekonerg-reuse-axiom-sync` — note, codex -> claude-code: EK-REUSE-AXIOM
 - `CX_2026-09-29T212723Z_ekonerg-sieving-prompts-review` — review_request, codex -> claude-code: EK-1.2-SIEVING-PROMPTS
 - `CX_2026-09-29T215248Z_ekonerg-local-ids-review` — review_request, codex -> claude-code: EK-1.2-LOCAL-IDS
+- `CX_2026-09-29T221319Z_ekonerg-db-bootstrap-review` — review_request, codex -> claude-code: EK-1.2-DB-BOOTSTRAP
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-29T21:53:02Z
+Generated: 2026-09-29T22:13:32Z
