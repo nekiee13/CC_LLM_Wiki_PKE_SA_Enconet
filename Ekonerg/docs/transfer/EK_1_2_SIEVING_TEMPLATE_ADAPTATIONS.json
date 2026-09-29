@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task": "EK-1.2",
+  "scope": "local Appendix B template facade only",
+  "status": "pending deferred Claude slice review; whole EK-1.2 incomplete",
+  "source_commit": "9f20430c95334daa4c3cedb7ee71b002bd3be739",
+  "remaining_adapt_rows": 193,
+  "files": [
+    {
+      "source": "Enconet/sieving/src/json_extractor/templates/__init__.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/templates/__init__.py",
+      "treatment": "adapt (local package wording and same public export)",
+      "source_git_blob": "0360fd2e15adc5b9f1618fa53fc6731a56d89d7f",
+      "source_bytes": 223,
+      "source_sha256": "355484d092e5a7fdf78d34965521a71176cedf9cc19fa57a624d2c93a6ab8977",
+      "destination_lf_bytes": 123,
+      "destination_lf_sha256": "6da618c315de4d6d257c59e6748af80c4b12f783589869787bd4b0a2ad2655a1"
+    },
+    {
+      "source": "Enconet/sieving/src/json_extractor/templates/app_b.py",
+      "destination": "Ekonerg/sieving/src/json_extractor/templates/app_b.py",
+      "treatment": "adapt (project-local contract and provisional-template notice)",
+      "source_git_blob": "dae76d51152bc2c81a740e980d61723378720ff8",
+      "source_bytes": 1501,
+      "source_sha256": "b0ee278efe96f98fa8984ca9544a16141a14b90d19e2b764196cef56ae92cca0",
+      "destination_lf_bytes": 1571,
+      "destination_lf_sha256": "2ad06d3219083993889eceb77bff46c20e2d92475479e4a852a4183180b4ae6a"
+    }
+  ],
+  "new_files": [
+    {
+      "destination": "Ekonerg/sieving/tests/test_template_facade.py",
+      "treatment": "new isolated synthetic tests",
+      "destination_lf_bytes": 4369,
+      "destination_lf_sha256": "6b69d558aa4e955b7a81a5f0ce1b52d090ff012d5d87f056a121f8a3f1efb11d"
+    }
+  ]
+}
