@@ -47,6 +47,21 @@ presence there is not intake approval. The guidance check still fails until
 the owner-approved guidance-pair record exists. These are candidate slices;
 a full new-audit bootstrap still needs the remaining Epic 1 tools and gates.
 
+The state bundle copies local database and audit-state scripts plus their
+schema and empty source vocabularies. It does **not** create a database or a
+project-state record during copy. Its manifest is
+[`state/v1/manifest.json`](state/v1/manifest.json). Preview and apply use the
+same guarded engine and a separate state journal:
+
+```powershell
+python -B audit_template/bootstrap_state.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_state.py --target "C:\path\to\New Audit" --apply --run-id state-first
+```
+
+Database initialization is a later, explicit local command. It starts with
+zero source, company, criterion, or approval rows. Do not run it against the
+live Ekonerg project until the clean-state task reaches its gate.
+
 The tests use invented documents and two fake company folders. One has a fake
 sibling audit; the other has none. They check that copied commands work from
 another working folder and that no sibling files change. No live audit is

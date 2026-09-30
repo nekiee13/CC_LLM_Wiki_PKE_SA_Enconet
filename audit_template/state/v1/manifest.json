@@ -1,0 +1,14 @@
+{
+  "template_version": "1.0.0",
+  "scope": "database-and-state-runtime",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "db/schema.sql", "sha256": "07bc63c718c5458470aa90c147182d386b6a09e3a5bff79c01c0d8f5eb15c6a5", "bytes": 15139},
+    {"path": "schemas/id_patterns.yml", "sha256": "5e70697495f10d7c8be605307f24f197569895052dad547609be6ed858d1ad02", "bytes": 1284},
+    {"path": "schemas/vocabularies.yml", "sha256": "14131522868b19e4e8cdbccb68146d472d7dfeffbe98d58a6ab1a4aa9d95c90f", "bytes": 2430},
+    {"path": "scripts/audit_state.py", "sha256": "4aa2881306752ab10b5405f28f384d9bb9b24740b9183f7b98be74c79a443130", "bytes": 9953},
+    {"path": "scripts/db_util.py", "sha256": "9c7e64bc4ee2f0d10b2ace280d0b979478265004b4adf7310ea3adbbc0d75411", "bytes": 3878},
+    {"path": "scripts/init_db.py", "sha256": "d002fd43af1699ded84e0d4be8748fcabf8586d0d5c4affa087005f1e5a7b0a7", "bytes": 3678},
+    {"path": "scripts/project_paths.py", "sha256": "8d77de08e2840052f759499d19bca1dc1f526d7245c19bc5fc038402333d6af4", "bytes": 1753}
+  ]
+}
