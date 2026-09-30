@@ -100,6 +100,7 @@ and ADRs are the records.
 - `EK-1.2-HANDOFF-CORRECTION` — codex, released 2026-09-29T17:08:41Z
 - `EK-1.2-LOCAL-IDS` — codex, released 2026-09-29T21:52:55Z
 - `EK-1.2-NEUTRAL-CLI` — codex, released 2026-09-29T23:22:46Z
+- `EK-1.2-NEUTRAL-ID-PATTERNS-V1` — codex, released 2026-09-30T19:19:04Z
 - `EK-1.2-NEUTRAL-PATHS` — codex, released 2026-09-29T23:12:34Z
 - `EK-1.2-PHASE-VALIDATOR-V1` — codex, released 2026-09-30T17:27:02Z
 - `EK-1.2-RUN-CREATION` — codex, released 2026-09-29T22:31:24Z
@@ -347,10 +348,11 @@ and ADRs are the records.
 - `CX_2026-09-30T041657Z_reusable-dispatch-bundle-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T172651Z_reusable-phase-validator-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T184027Z_reusable-setup-validation-bundle-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-09-30T191858Z_neutral-id-pattern-repair-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-30T18:40:40Z
+Generated: 2026-09-30T19:19:04Z

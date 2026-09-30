@@ -1,0 +1,14 @@
+task: EK-1.2-NEUTRAL-ID-PATTERNS-V1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-30T19:09:33Z
+last_renewed_at_utc: 2026-09-30T19:09:33Z
+expires_at_utc: 2026-09-30T23:09:33Z
+anticipated_files:
+  - audit_template/state/v1/schemas/id_patterns.yml
+  - audit_template/state/v1/manifest.json
+  - audit_template/tests/test_bootstrap_state.py
+  - Ekonerg/schemas/id_patterns.yml
+  - Ekonerg/scripts/tests/test_db_identity.py
+note: TDD repair of source-level Appendix B ID grammar; local Ekonerg sync without document intake or DB creation.
+released_at_utc: 2026-09-30T19:19:04Z
