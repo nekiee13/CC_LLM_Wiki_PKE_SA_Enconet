@@ -73,7 +73,28 @@ class CrumbValidationTests(unittest.TestCase):
         result = self.validator.validate_payload(rule_crumb(), strict=True)
         self.assertTrue(result.passed)
         self.assertEqual(result.errors, [])
-        self.assertTrue(self.validator.TAXONOMY.is_relative_to(self.project))
+        self.assertEqual(self.validator.load_contract()["template"]["taxonomy_file"],
+                         "app_b_taxonomy.yml")
+
+    def test_synthetic_taxonomy_drives_crumb_checks(self) -> None:
+        contract = json.loads(self.contract_path.read_text(encoding="utf-8"))
+        contract["template"].update(taxonomy_id="TEST_SET", taxonomy_file="synthetic_taxonomy.yml")
+        self.contract_path.write_text(json.dumps(contract), encoding="utf-8")
+        (self.project / "schemas/synthetic_taxonomy.yml").write_text(
+            "taxonomy_id: TEST_SET\ncriteria:\n"
+            "  - criterion_id: AREA_2\n    criterion_name: Area Two\n",
+            encoding="utf-8",
+        )
+        self.validator.load_contract.cache_clear()
+        crumb = rule_crumb()
+        crumb["document"]["authority_references"][0]["source_locator"] = "AREA_2"
+        crumb["items"][0].update(criterion_id="AREA_2", criterion_name="Area Two")
+        crumb["items"][0]["sources"][0]["source_locator"] = "AREA_2"
+        result = self.validator.validate_payload(crumb, strict=True)
+        self.assertEqual(result.errors, [])
+        crumb["items"][0]["criterion_id"] = "APP_B_I"
+        rejected = self.validator.validate_payload(crumb)
+        self.assertTrue(any("unknown criterion_id/name" in error for error in rejected.errors))
 
     def test_document_side_rejects_rule_fields_and_refs(self) -> None:
         data = rule_crumb()

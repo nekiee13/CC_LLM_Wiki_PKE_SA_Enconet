@@ -1,4 +1,7 @@
-"""Copy a versioned, source-free sieving runtime into one new audit project.
+"""Preview or copy the versioned v1 sieving candidate into one project.
+
+The v1 contract still selects an Appendix B taxonomy. It is not a clean
+company-neutral bootstrap; see README.md before applying it elsewhere.
 
 Preview is read-only. Apply needs a run ID and never overwrites a file. A new
 run ID can safely pick up matching files left by an interrupted prior run.

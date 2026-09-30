@@ -94,6 +94,54 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(self.contract.canonical_codes(), [])
         self.assertEqual(json.loads((self.schema_dir / "sieving_contract.yml").read_text(encoding="utf-8"))["template"]["taxonomy_id"], "APP_B")
 
+    def test_taxonomy_config_rejects_foreign_path_mismatch_and_duplicates(self) -> None:
+        path = self.schema_dir / "sieving_contract.yml"
+        original = json.loads(path.read_text(encoding="utf-8"))
+        foreign = self.project.parent / "Enconet" / "taxonomy.yml"
+        foreign.parent.mkdir(exist_ok=True)
+        foreign.write_text("taxonomy_id: FOREIGN\ncriteria: []\n", encoding="utf-8")
+        before = (foreign.read_bytes(), foreign.stat().st_mtime_ns)
+
+        contract = json.loads(json.dumps(original))
+        del contract["template"]["taxonomy_file"]
+        path.write_text(json.dumps(contract), encoding="utf-8")
+        self.contract.load_contract.cache_clear()
+        with self.assertRaises(ValueError):
+            self.contract.load_contract()
+
+        contract = json.loads(json.dumps(original))
+        contract["template"]["taxonomy_file"] = "../Enconet/taxonomy.yml"
+        path.write_text(json.dumps(contract), encoding="utf-8")
+        self.contract.load_contract.cache_clear()
+        with self.assertRaises(ValueError):
+            self.contract.load_contract()
+
+        contract["template"]["taxonomy_file"] = "synthetic_taxonomy.yml"
+        path.write_text(json.dumps(contract), encoding="utf-8")
+        taxonomy = self.schema_dir / "synthetic_taxonomy.yml"
+        taxonomy.write_text("taxonomy_id: WRONG\ncriteria:\n"
+                            "  - criterion_id: AREA_2\n    criterion_name: Area Two\n",
+                            encoding="utf-8")
+        self.contract.load_contract.cache_clear()
+        with self.assertRaises(ValueError):
+            self.contract.load_contract()
+
+        contract["template"]["taxonomy_id"] = "TEST_SET"
+        path.write_text(json.dumps(contract), encoding="utf-8")
+        taxonomy.write_text("taxonomy_id: TEST_SET\ncriteria:\n"
+                            "  - criterion_id: AREA_2\n    criterion_name: Area Two\n"
+                            "  - criterion_id: AREA_2\n    criterion_name: Duplicate\n",
+                            encoding="utf-8")
+        self.contract.load_contract.cache_clear()
+        with self.assertRaises(ValueError):
+            self.contract.load_contract()
+
+        taxonomy.write_text("taxonomy_id: TEST_SET\ncriteria: []\n", encoding="utf-8")
+        self.contract.load_contract.cache_clear()
+        with self.assertRaises(ValueError):
+            self.contract.load_contract()
+        self.assertEqual((foreign.read_bytes(), foreign.stat().st_mtime_ns), before)
+
 
 if __name__ == "__main__":
     unittest.main()

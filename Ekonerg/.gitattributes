@@ -2,6 +2,9 @@
 # This does not touch source documents in incoming/ or controlled evidence.
 .gitattributes text eol=lf
 scripts/*.py text eol=lf
+sieving/cli.py text eol=lf
+sieving/src/**/*.py text eol=lf
+sieving/prompts/active.yml text eol=lf
 schemas/*.yml text eol=lf
 manifests/*.csv text eol=lf
 wiki/**/.gitkeep text eol=lf

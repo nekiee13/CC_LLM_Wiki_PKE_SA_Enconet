@@ -144,6 +144,13 @@ class ExtractTests(unittest.TestCase):
         self.assertIn("VAL-TAX-002", ids)
         self.assertIn("VAL-RULELEAK-002", ids)
 
+    def test_template_identity_must_match_local_contract(self) -> None:
+        data = sample_payload()
+        data["items"][0]["template_id"] = "Other_Template"
+        data["items"][0]["template_version"] = "9"
+        result = self.extract.flatten_json_to_records(data, "synthetic.json")
+        self.assertIn("VAL-COMMON-001", {error.rule_id for error in result.validation_errors})
+
     def test_malformed_quote_and_source_shapes_are_errors_not_truncated(self) -> None:
         data = sample_payload()
         item = data["items"][0]

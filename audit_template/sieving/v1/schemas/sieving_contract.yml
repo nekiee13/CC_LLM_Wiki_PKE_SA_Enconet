@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "template": {"id": "JSON_Template_App_B", "version": "1.1", "taxonomy_id": "APP_B"},
+  "template": {"id": "JSON_Template_App_B", "version": "1.1", "taxonomy_id": "APP_B", "taxonomy_file": "app_b_taxonomy.yml"},
   "canonical_codes": [],
   "enums": {
     "record_side":["RULE","DOCUMENT"],
@@ -33,7 +33,7 @@
   },
   "query_fields": [
     {"name":"record_side","type":"enum","description":"RULE or DOCUMENT discriminator","enum":"record_side"},
-    {"name":"criterion_id","type":"enum","description":"Appendix B criterion ID","values_from":"criterion_ids"},
+    {"name":"criterion_id","type":"enum","description":"Configured criterion ID","values_from":"criterion_ids"},
     {"name":"criterion_name","type":"enum","description":"Canonical criterion name","values_from":"criterion_names"},
     {"name":"item_type","type":"enum","description":"Type of extracted item","enum":"item_type"},
     {"name":"doc_id","type":"string","description":"Document identifier"},

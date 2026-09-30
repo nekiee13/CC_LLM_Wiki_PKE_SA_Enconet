@@ -76,6 +76,9 @@ class SetupValidationBundleTests(unittest.TestCase):
                     attributes = (target / ".gitattributes").read_bytes()
                     self.assertIn(b".gitattributes text eol=lf", attributes)
                     self.assertIn(b"scripts/*.py text eol=lf", attributes)
+                    self.assertIn(b"sieving/src/**/*.py text eol=lf", attributes)
+                    self.assertIn(b"sieving/cli.py text eol=lf", attributes)
+                    self.assertIn(b"sieving/prompts/active.yml text eol=lf", attributes)
 
                     def run(script: str, *args: str) -> subprocess.CompletedProcess[str]:
                         return subprocess.run(

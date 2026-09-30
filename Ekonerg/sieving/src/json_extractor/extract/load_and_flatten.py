@@ -152,13 +152,15 @@ def validate_item(item: Dict[str, Any], file_path: str, config) -> List[Validati
     def add(rule_id: str, message: str, severity: str = "ERROR") -> None:
         errors.append(ValidationError(file_path, item_id, rule_id, severity, message))
 
-    if not item.get("template_id"):
-        add("VAL-COMMON-001", "template_id is empty")
-    if not item.get("template_version"):
-        add("VAL-COMMON-001", "template_version is empty")
+    template = load_contract()["template"]
+    for field, expected in (("template_id", template["id"]),
+                            ("template_version", template["version"])):
+        if item.get(field) != expected:
+            add("VAL-COMMON-001", f"{field} must be '{expected}', got '{item.get(field, '')}'")
     taxonomy_id = item.get("taxonomy_id", "")
-    if taxonomy_id != "APP_B":
-        add("VAL-COMMON-001", f"taxonomy_id must be 'APP_B', got '{taxonomy_id}'")
+    expected_taxonomy = template["taxonomy_id"]
+    if taxonomy_id != expected_taxonomy:
+        add("VAL-COMMON-001", f"taxonomy_id must be '{expected_taxonomy}', got '{taxonomy_id}'")
 
     criterion_id = item.get("criterion_id", "")
     valid_criteria = [entry["criterion_id"] for entry in config.get_canonical_criteria()]

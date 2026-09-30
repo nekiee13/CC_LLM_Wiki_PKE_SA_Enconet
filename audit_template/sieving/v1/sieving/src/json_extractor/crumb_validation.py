@@ -9,13 +9,10 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-import yaml
-
-from .contract import canonical_codes
+from .contract import canonical_codes, load_contract
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-TAXONOMY = PROJECT_ROOT / "schemas" / "app_b_taxonomy.yml"
 LANGUAGES = {"sl", "en", "hr"}
 ROLES = {"GOVERNING", "INTERPRETIVE"}
 APPLICABILITY = {"APPLICABLE", "CONDITIONAL", "NOT_APPLICABLE"}
@@ -104,7 +101,7 @@ def validate_payload(payload: object, *, strict: bool = False) -> ValidationResu
     if "source_rules" in document and document.get("source_rules") is not None:
         result.errors.append("document.source_rules: legacy non-null field is forbidden by ADR-0020")
 
-    taxonomy = yaml.safe_load(TAXONOMY.read_text(encoding="utf-8"))["criteria"]
+    taxonomy = load_contract()["criteria"]
     pairs = {entry["criterion_id"]: entry["criterion_name"] for entry in taxonomy}
     seen: set[str] = set()
     for index, item in enumerate(items):

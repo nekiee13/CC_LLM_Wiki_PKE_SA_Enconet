@@ -27,9 +27,9 @@ def synthetic_document() -> dict:
     return {
         "document": {"doc_id": "SYN-BOOT-1", "filename": "made-up.json", "title": "Synthetic"},
         "items": [{
-            "item_id": "D-1", "record_side": "DOCUMENT", "template_id": "JSON_Template_App_B",
-            "template_version": "1.1", "taxonomy_id": "APP_B", "criterion_id": "APP_B_I",
-            "criterion_name": "Organization", "item_type": "control", "statement": "Made-up control",
+            "item_id": "D-1", "record_side": "DOCUMENT", "template_id": "Synthetic_Template",
+            "template_version": "1.1", "taxonomy_id": "TEST_SET", "criterion_id": "AREA_2",
+            "criterion_name": "Area Two", "item_type": "control", "statement": "Made-up control",
             "evidence_quotes": ["Made-up quote"], "source": [{"page": 1}],
         }],
     }
@@ -91,6 +91,19 @@ class BootstrapSievingTests(unittest.TestCase):
                     self.assertTrue(Path(first["journal"]).is_file())
                     self.assertTrue(Path(second["journal"]).is_file())
 
+                    contract_path = target / "schemas/sieving_contract.yml"
+                    contract = json.loads(contract_path.read_text(encoding="utf-8"))
+                    contract["template"] = {
+                        "id": "Synthetic_Template", "version": "1.1",
+                        "taxonomy_id": "TEST_SET", "taxonomy_file": "synthetic_taxonomy.yml",
+                    }
+                    contract_path.write_text(json.dumps(contract), encoding="utf-8")
+                    (target / "schemas/synthetic_taxonomy.yml").write_text(
+                        "taxonomy_id: TEST_SET\ncriteria:\n"
+                        "  - criterion_id: AREA_2\n    criterion_name: Area Two\n",
+                        encoding="utf-8",
+                    )
+
                     data_dir = target / "sieving/DATA"
                     output_dir = target / "sieving/outputs"
                     data_dir.mkdir()
@@ -111,6 +124,7 @@ class BootstrapSievingTests(unittest.TestCase):
                     )
                     self.assertEqual(query.returncode, 0, query.stdout + query.stderr)
                     self.assertTrue((output_dir / "result.csv").is_file())
+                    self.assertIn("AREA_2", (output_dir / "result.csv").read_text(encoding="utf-8"))
                     if has_sibling:
                         self.assertEqual(snapshot(sibling), before_sibling)
                     else:
