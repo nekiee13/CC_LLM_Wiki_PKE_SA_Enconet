@@ -1,0 +1,13 @@
+{
+  "template_version": "1.0.0",
+  "scope": "project-support-and-empty-incoming",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "handoff_schema.yml", "sha256": "79908730a5519ae245eb0418641192fe9938582c37ac7f13d33e061efb7b358f", "bytes": 644},
+    {"path": "incoming/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b", "bytes": 1},
+    {"path": "scripts/agent_coord.py", "sha256": "0c8dee3f49862632cfc47cb50bc1c6190b50792db2ca08725294c014626b0fe6", "bytes": 21918},
+    {"path": "scripts/check_guidance_drift.py", "sha256": "49f4616f8942d1f5215ef53e42c4077122b21f34818aa9ad66439a08df9a49d8", "bytes": 4531},
+    {"path": "scripts/check_skill_structure.py", "sha256": "2997e9774e1824b68bf0128b46aa3c8b156e4e81224089f3d4e043af20477e84", "bytes": 7890},
+    {"path": "scripts/make_handoff.py", "sha256": "437fd91fe9f417ae355025fb96db7df03899964768f2d6bf17e836d0d14991e8", "bytes": 14685}
+  ]
+}

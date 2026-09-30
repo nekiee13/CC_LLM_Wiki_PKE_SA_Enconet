@@ -1,6 +1,6 @@
-# Candidate sieving bootstrap (v1)
+# Candidate audit bootstrap components (v1)
 
-This is a company-neutral, source-free part of the audit framework. It copies
+The sieving bundle is a company-neutral, source-free part of the audit framework. It copies
 the sieving command, its local Python package, two schemas, and an empty active
 prompt list into one chosen project. It does **not** copy company documents,
 old extraction results, audit decisions, a database, or approval to use a law.
@@ -30,8 +30,22 @@ before it copies. It refuses changed existing files, links, and reused run IDs.
 It writes a per-run journal under `.bootstrap/sieving-v1/`. If a run stops part
 way, inspect that journal, then use a **new** run ID: same-hash files are kept,
 and only missing files are copied. It never removes or overwrites owner files.
-This is only the sieving slice; a full new-audit bootstrap still needs the
-remaining Epic 1 support tools and approval gates.
+The support bundle is a second versioned component. It copies the local
+coordination, handoff, guidance, and skill checks, their handoff schema, and
+an empty `incoming/` folder marker. Its manifest is
+[`support/v1/manifest.json`](support/v1/manifest.json). It uses the same guarded
+copy engine, with a separate journal and lock:
+
+```powershell
+python -B audit_template/bootstrap_support.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_support.py --target "C:\path\to\New Audit" --apply --run-id support-first
+```
+
+Existing owner documents in a project's `incoming/` folder are never listed
+in the template manifest, read, or overwritten by this bootstrap. A file's
+presence there is not intake approval. The guidance check still fails until
+the owner-approved guidance-pair record exists. These are candidate slices;
+a full new-audit bootstrap still needs the remaining Epic 1 tools and gates.
 
 The tests use invented documents and two fake company folders. One has a fake
 sibling audit; the other has none. They check that copied commands work from
