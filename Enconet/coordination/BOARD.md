@@ -102,6 +102,7 @@ and ADRs are the records.
 - `EK-1.2-NEUTRAL-CLI` — codex, released 2026-09-29T23:22:46Z
 - `EK-1.2-NEUTRAL-ID-PATTERNS-V1` — codex, released 2026-09-30T19:19:04Z
 - `EK-1.2-NEUTRAL-PATHS` — codex, released 2026-09-29T23:12:34Z
+- `EK-1.2-NEUTRAL-SIEVING-CONTRACT-V1` — codex, released 2026-09-30T19:47:14Z
 - `EK-1.2-PHASE-VALIDATOR-V1` — codex, released 2026-09-30T17:27:02Z
 - `EK-1.2-RUN-CREATION` — codex, released 2026-09-29T22:31:24Z
 - `EK-1.2-SETUP-VALIDATION-BUNDLE-V1` — codex, released 2026-09-30T18:40:35Z
@@ -349,10 +350,11 @@ and ADRs are the records.
 - `CX_2026-09-30T172651Z_reusable-phase-validator-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T184027Z_reusable-setup-validation-bundle-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T191858Z_neutral-id-pattern-repair-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-09-30T194707Z_taxonomy-neutral-sieving-runtime-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-30T19:19:04Z
+Generated: 2026-09-30T19:47:19Z
