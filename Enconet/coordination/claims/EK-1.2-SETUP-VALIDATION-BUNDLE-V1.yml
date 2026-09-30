@@ -1,0 +1,14 @@
+task: EK-1.2-SETUP-VALIDATION-BUNDLE-V1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-30T17:38:35Z
+last_renewed_at_utc: 2026-09-30T17:38:35Z
+expires_at_utc: 2026-09-30T21:38:35Z
+anticipated_files:
+  - audit_template
+  - Ekonerg/scripts/validate_structure.py
+  - Ekonerg/schemas/wiki_structure.yml
+  - Ekonerg/manifests/validation_runs.csv
+  - Ekonerg/wiki
+note: TDD neutral setup-structure validator, empty wiki scaffold, and header-only validation manifest; no Appendix B criteria or incoming intake.
+released_at_utc: 2026-09-30T18:40:35Z
