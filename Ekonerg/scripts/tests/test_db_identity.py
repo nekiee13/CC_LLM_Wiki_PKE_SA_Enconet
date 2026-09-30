@@ -49,6 +49,20 @@ def test_id_contract_examples_and_invalid_values() -> None:
     assert "Enconet" not in CONTRACT.read_text(encoding="utf-8")
 
 
+def test_criterion_scoped_ids_accept_neutral_tokens_without_approving_them() -> None:
+    data = yaml.safe_load(CONTRACT.read_text(encoding="utf-8"))["patterns"]
+    for name, valid in {
+        "crumb_id": "CRUMB-DOC-0001-AREA_2-0001",
+        "requirement_id": "REQ-AREA_2-01",
+        "evaluation_id": "EVAL-AREA_2",
+        "gap_id": "GAP-AREA_2-01",
+    }.items():
+        pattern = re.compile(data[name]["regex"])
+        assert pattern.fullmatch(valid), name
+        assert not pattern.fullmatch(valid.replace("AREA_2", "AREA__2")), name
+    assert "APP_B" not in CONTRACT.read_text(encoding="utf-8")
+
+
 @pytest.mark.parametrize(("company_name", "with_sibling"), [
     ("Audit Beta with spaces", False),
     ("Ekonerg ogled Čakovec", True),
@@ -71,10 +85,14 @@ root = Path(db_util.__file__).resolve().parents[1]
 assert db_util.DEFAULT_DB == root / 'db' / 'nqa_audit.sqlite'
 assert db_util.id_patterns()['doc_id'].fullmatch('DOC-0001')
 assert not db_util.id_patterns()['doc_id'].fullmatch('DOC-EKONERG-0001')
+assert db_util.id_patterns()['requirement_id'].fullmatch('REQ-AREA_2-01')
+assert db_util.id_patterns()['requirement_id'].fullmatch('REQ-APP_B_IV-01')
 (root / 'db').mkdir()
 with db_util.connect(root / 'db' / 'test.sqlite') as conn:
     conn.execute('CREATE TABLE documents (doc_id TEXT PRIMARY KEY)')
+    conn.execute('CREATE TABLE requirements (requirement_id TEXT PRIMARY KEY)')
     db_util.insert(conn, 'documents', {'doc_id': 'DOC-0001'})
+    db_util.insert(conn, 'requirements', {'requirement_id': 'REQ-AREA_2-01'})
     try:
         db_util.insert(conn, 'documents', {'doc_id': 'DOC-ENCONET-0002'})
     except ValueError as exc:

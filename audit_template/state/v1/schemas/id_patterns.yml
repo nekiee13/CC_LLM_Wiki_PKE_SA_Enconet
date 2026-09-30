@@ -1,5 +1,7 @@
 # Local ID grammar for audit records. Shape does not grant source approval.
 # The same pattern works for any company that uses this framework.
+# Criterion tokens use uppercase letters, digits, and single underscores.
+# A matching token is not an approved criterion or source edition.
 schema_version: "1.0"
 
 patterns:
@@ -13,17 +15,17 @@ patterns:
     example: "QUOTE-DOC-0001-0001-01"
     regex: '^QUOTE-DOC-\d{4}-\d{4}-\d{2}$'
   crumb_id:
-    example: "CRUMB-DOC-0001-APP_B_IV-0001"
-    regex: '^CRUMB-DOC-\d{4}-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{4}$'
+    example: "CRUMB-DOC-0001-AREA_2-0001"
+    regex: '^CRUMB-DOC-\d{4}-[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*-\d{4}$'
   requirement_id:
-    example: "REQ-APP_B_IV-01"
-    regex: '^REQ-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{2}$'
+    example: "REQ-AREA_2-01"
+    regex: '^REQ-[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*-\d{2}$'
   evaluation_id:
-    example: "EVAL-APP_B_IV"
-    regex: '^EVAL-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)$'
+    example: "EVAL-AREA_2"
+    regex: '^EVAL-[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$'
   gap_id:
-    example: "GAP-APP_B_IV-01"
-    regex: '^GAP-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\d{2}$'
+    example: "GAP-AREA_2-01"
+    regex: '^GAP-[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*-\d{2}$'
   finding_id:
     example: "FIND-0001"
     regex: '^FIND-\d{4}$'

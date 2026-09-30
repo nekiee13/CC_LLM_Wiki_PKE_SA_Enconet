@@ -4,11 +4,14 @@ from __future__ import annotations
 import hashlib
 from contextlib import closing
 from pathlib import Path
+import re
 import sqlite3
 import subprocess
 import sys
 import tempfile
 import unittest
+
+import yaml
 
 
 TEMPLATE = Path(__file__).resolve().parents[1]
@@ -22,6 +25,26 @@ def snapshot(root: Path) -> dict[str, tuple[bytes, int]]:
 
 
 class StateBundleTests(unittest.TestCase):
+    def test_criterion_scoped_ids_have_neutral_shape_only(self) -> None:
+        contract = yaml.safe_load(
+            (state.BUNDLE / "schemas/id_patterns.yml").read_text(encoding="utf-8")
+        )
+        cases = {
+            "crumb_id": ("CRUMB-DOC-0001-AREA_2-0001", "CRUMB-DOC-0001-APP_B_IV-0001"),
+            "requirement_id": ("REQ-AREA_2-01", "REQ-APP_B_IV-01"),
+            "evaluation_id": ("EVAL-AREA_2", "EVAL-APP_B_IV"),
+            "gap_id": ("GAP-AREA_2-01", "GAP-APP_B_IV-01"),
+        }
+        for name, valid in cases.items():
+            pattern = re.compile(contract["patterns"][name]["regex"])
+            for candidate in valid:
+                self.assertIsNotNone(pattern.fullmatch(candidate), (name, candidate))
+            for candidate in (valid[0].replace("AREA_2", "area_2"),
+                              valid[0].replace("AREA_2", "AREA__2"),
+                              valid[0].replace("AREA_2", "AREA/2")):
+                self.assertIsNone(pattern.fullmatch(candidate), (name, candidate))
+        self.assertNotIn("APP_B", (state.BUNDLE / "schemas/id_patterns.yml").read_text(encoding="utf-8"))
+
     def test_manifest_is_source_free_and_hash_locked(self) -> None:
         manifest = state.load_manifest()
         self.assertEqual(manifest["template_version"], "1.0.0")
