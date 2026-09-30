@@ -1,0 +1,10 @@
+{
+  "template_version": "1.0.0",
+  "scope": "dispatcher-and-layered-preflight",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "schemas/audit_commands.yml", "sha256": "b03908f5e8f3e794b1e6cd6d69949f5250b3dba94b4432de2854861ed989946c", "bytes": 3730},
+    {"path": "scripts/audit_command.py", "sha256": "9fefcc665aa3b6d07e1be0085cddfc62347927ba15631b9a72a3f1edeed5e5fc", "bytes": 11311},
+    {"path": "scripts/run_validation.py", "sha256": "5068d8108c8615d2c7f3146848295606172a9874c98bd9f48b5c6acaf1b9dc64", "bytes": 8447}
+  ]
+}

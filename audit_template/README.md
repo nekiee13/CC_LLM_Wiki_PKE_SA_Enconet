@@ -62,6 +62,17 @@ Database initialization is a later, explicit local command. It starts with
 zero source, company, criterion, or approval rows. Do not run it against the
 live Ekonerg project until the clean-state task reaches its gate.
 
+The dispatch bundle adds the local command registry, phase-aware command
+router, and layered preflight runner. It depends on the state bundle's local
+path, database, and state helpers. This slice does not include the phase-aware
+`run_all_validations.py`; `audit-validate` and `audit-close` fail closed until
+that tool is separately transferred and tested. Preview before applying:
+
+```powershell
+python -B audit_template/bootstrap_dispatch.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_dispatch.py --target "C:\path\to\New Audit" --apply --run-id dispatch-first
+```
+
 The tests use invented documents and two fake company folders. One has a fake
 sibling audit; the other has none. They check that copied commands work from
 another working folder and that no sibling files change. No live audit is
