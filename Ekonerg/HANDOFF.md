@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-30T032824Z-101ce18.md`](handoffs/2026-09-30T032824Z-101ce18.md)
+**Authoritative record:** [`handoffs/2026-09-30T034112Z-cdb952f.md`](handoffs/2026-09-30T034112Z-cdb952f.md)
 
-**Status:** partial · **Git:** `101ce18` · **Agent:** codex · **Created:** 2026-09-30T03:28:24Z
+**Status:** partial · **Git:** `cdb952f` · **Agent:** codex · **Created:** 2026-09-30T03:41:12Z
 
-**Exact next action:** Continue one EK-1.2 TDD batch for the remaining project-local runtime and validation scripts, testing copied commands in two synthetic company roots with and without a sibling; leave Ekonerg/incoming untouched and do not begin real intake.
+**Exact next action:** Continue one EK-1.2 TDD batch for project-local dispatcher and aggregate validation tools in two synthetic company roots, with and without a sibling; do not process Ekonerg/incoming.
