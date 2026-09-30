@@ -73,6 +73,22 @@ python -B audit_template/bootstrap_dispatch.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_dispatch.py --target "C:\path\to\New Audit" --apply --run-id dispatch-first
 ```
 
+The phase-validation bundle adds the one local aggregate command used by
+`audit-validate` and `audit-close`. It keeps the phase matrix, but it does not
+include the many child validators. A missing required validator is a failure,
+not a pass. Its own discovery reads an existing database in read-only SQLite
+mode and does not create one. Child validators have separate write behavior.
+Preview and apply are separate:
+
+```powershell
+python -B audit_template/bootstrap_phase_validation.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_phase_validation.py --target "C:\path\to\New Audit" --apply --run-id phase-first
+```
+
+Do not run the live aggregate until the project state, child validators, and
+owner gates are ready. `--no-record` skips the aggregate manifest row; it is
+not a general promise that every child validator is read-only.
+
 The tests use invented documents and two fake company folders. One has a fake
 sibling audit; the other has none. They check that copied commands work from
 another working folder and that no sibling files change. No live audit is
