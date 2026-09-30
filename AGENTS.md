@@ -23,6 +23,14 @@ A new company audit must start from a company-neutral framework, not a new round
 per-file code patches. Treat a company name, path, source edition, document ID, or
 approval embedded in reusable code as a framework defect to fix at its source.
 
+The shared audit question is whether each company's own QA system meets 10 CFR 50
+Appendix B requirements, using ASME NQA-1 to interpret those requirements. This
+applies to Enconet, Ekonerg, and planned IBE, IMK, TEKOL, and IGH audits. Appendix B
+criteria are therefore a common framework baseline, not company evidence to strip
+from a clean copy. Keep each company's source documents, approved editions, mappings,
+evidence, findings, and conclusions separate. This mission does not itself select an
+ASME NQA-1 edition or approve any source intake or audit result.
+
 - Keep company choices in explicit, reviewed configuration and fresh intake records.
   Do not infer regulatory applicability, source editions, storage, or approval from
   another company's project.

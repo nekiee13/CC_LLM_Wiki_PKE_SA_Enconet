@@ -1,7 +1,7 @@
 """Preview or copy the versioned v1 sieving candidate into one project.
 
-The v1 contract still selects an Appendix B taxonomy. It is not a clean
-company-neutral bootstrap; see README.md before applying it elsewhere.
+The v1 contract selects the shared Appendix B criterion baseline. This does
+not approve a company source set or ASME NQA-1 edition; see README.md.
 
 Preview is read-only. Apply needs a run ID and never overwrites a file. A new
 run ID can safely pick up matching files left by an interrupted prior run.

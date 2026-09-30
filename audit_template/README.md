@@ -1,12 +1,13 @@
 # Candidate audit bootstrap components (v1)
 
-The sieving runtime can now read a project-local taxonomy named by its
-contract, but the v1 bundle still includes an Appendix B taxonomy and selects
-it in the copied contract. **Do not treat v1 as a clean, company-neutral
-bootstrap for another audit.** A later reviewed bundle must start with no
-selected regulatory taxonomy. The current bundle copies no company documents,
-old extraction results, audit decisions, database, or source approval. It is
-a candidate until Claude reviews the EK-1.2 evidence.
+The sieving runtime reads a project-local taxonomy named by its contract. The
+v1 bundle includes and selects the Appendix B criteria because every planned
+company audit asks the same question: does that company's own QA system meet
+Appendix B requirements, interpreted using ASME NQA-1? A clean copy may keep
+this shared criterion baseline. It does not copy company documents, old
+extraction results, audit decisions, a database, or source approval. The owner
+must still approve the source set and edition for each audit. This bundle is a
+candidate until Claude reviews the EK-1.2 evidence.
 
 Why copy? The owner requires each audit to have its own scripts. The copied
 command reads code and data from its own project, not this template or another
@@ -20,8 +21,8 @@ From the workspace root, preview an **existing** new project folder:
 python -B audit_template/bootstrap_sieving.py --target "C:\path\to\New Audit"
 ```
 
-Only after the source-specific configuration is resolved and the plan and
-target are reviewed, apply to that same folder with a new run ID:
+Only after the plan and target are reviewed, apply to that same folder with a
+new run ID. Copying the shared criteria is not source intake or approval:
 
 ```powershell
 python -B audit_template/bootstrap_sieving.py --target "C:\path\to\New Audit" --apply --run-id first-run
