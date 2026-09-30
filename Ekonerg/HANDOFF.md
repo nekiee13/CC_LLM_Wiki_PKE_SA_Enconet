@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-30T173038Z-0d4ba4c.md`](handoffs/2026-09-30T173038Z-0d4ba4c.md)
+**Authoritative record:** [`handoffs/2026-09-30T184643Z-270a070.md`](handoffs/2026-09-30T184643Z-270a070.md)
 
-**Status:** partial · **Git:** `0d4ba4c` · **Agent:** codex · **Created:** 2026-09-30T17:30:38Z
+**Status:** partial · **Git:** `270a070` · **Agent:** codex · **Created:** 2026-09-30T18:46:43Z
 
-**Exact next action:** Implement one coherent TDD batch of project-local child validators and required config from the versioned template, starting with setup-phase checks. Verify missing dependencies fail closed in two synthetic roots; do not process Ekonerg/incoming.
+**Exact next action:** In one TDD batch, neutralize Appendix B-specific ID patterns at the versioned source and copy them safely; then resume local child validators. Do not process Ekonerg/incoming until owner approvals.
