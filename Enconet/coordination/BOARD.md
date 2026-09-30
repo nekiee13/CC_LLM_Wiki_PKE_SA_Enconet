@@ -113,6 +113,7 @@ and ADRs are the records.
 - `EK-1.2-SIEVING-SCHEMA` — codex, released 2026-09-29T21:10:38Z
 - `EK-1.2-SIEVING-TEMPLATE` — codex, released 2026-09-29T23:45:15Z
 - `EK-1.2-SOURCE-CONTRACT` — codex, released 2026-09-29T22:56:59Z
+- `EK-1.2-STATE-BUNDLE-V1` — codex, released 2026-09-30T03:39:50Z
 - `EK-1.2-SUPPORT-ACK` — codex, released 2026-09-29T16:14:14Z
 - `EK-1.2-SUPPORT-BUNDLE-V1` — codex, released 2026-09-30T03:26:56Z
 - `EK-PLAN-APPROVAL-ACK` — codex, released 2026-09-29T11:16:58Z
@@ -339,10 +340,11 @@ and ADRs are the records.
 - `CX_2026-09-29T232240Z_ekonerg-neutral-cli-review` — review_request, codex -> claude-code: EK-1.2-NEUTRAL-CLI
 - `CX_2026-09-29T234507Z_reusable-sieving-bundle-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T032649Z_reusable-support-bundle-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-09-30T033943Z_reusable-state-bundle-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-30T03:26:56Z
+Generated: 2026-09-30T03:39:52Z
