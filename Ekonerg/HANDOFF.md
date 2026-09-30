@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-30T034112Z-cdb952f.md`](handoffs/2026-09-30T034112Z-cdb952f.md)
+**Authoritative record:** [`handoffs/2026-09-30T041944Z-6a989ce.md`](handoffs/2026-09-30T041944Z-6a989ce.md)
 
-**Status:** partial · **Git:** `cdb952f` · **Agent:** codex · **Created:** 2026-09-30T03:41:12Z
+**Status:** partial · **Git:** `6a989ce` · **Agent:** codex · **Created:** 2026-09-30T04:19:44Z
 
-**Exact next action:** Continue one EK-1.2 TDD batch for project-local dispatcher and aggregate validation tools in two synthetic company roots, with and without a sibling; do not process Ekonerg/incoming.
+**Exact next action:** Implement one TDD slice for the company-neutral phase-aware run_all_validations.py from a versioned template. Test failure on absent validators and isolation in two synthetic roots. Do not process Ekonerg/incoming.
