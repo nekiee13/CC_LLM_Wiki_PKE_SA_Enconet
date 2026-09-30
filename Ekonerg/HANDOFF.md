@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-30T192233Z-a881204.md`](handoffs/2026-09-30T192233Z-a881204.md)
+**Authoritative record:** [`handoffs/2026-09-30T194845Z-2da3339.md`](handoffs/2026-09-30T194845Z-2da3339.md)
 
-**Status:** partial · **Git:** `a881204` · **Agent:** codex · **Created:** 2026-09-30T19:22:33Z
+**Status:** partial · **Git:** `2da3339` · **Agent:** codex · **Created:** 2026-09-30T19:48:45Z
 
-**Exact next action:** In one TDD batch, remove APP_B assumptions from the reusable sieving contract and extractor while keeping Ekonerg intake closed; do not ingest incoming documents or infer Ekonerg taxonomy.
+**Exact next action:** In a separate TDD batch, make the sieving bootstrap default unconfigured and company-neutral, removing the default APP_B selection and source-specific facade from the reusable copy; keep live intake closed and wait for owner scope before configuring Ekonerg.
