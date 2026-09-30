@@ -1,0 +1,8 @@
+# Keep copied framework text and its journals byte-stable on every checkout.
+# This does not touch source documents in incoming/ or controlled evidence.
+.gitattributes text eol=lf
+scripts/*.py text eol=lf
+schemas/*.yml text eol=lf
+manifests/*.csv text eol=lf
+wiki/**/.gitkeep text eol=lf
+.bootstrap/**/*.jsonl text eol=lf

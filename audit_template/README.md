@@ -89,6 +89,22 @@ Do not run the live aggregate until the project state, child validators, and
 owner gates are ready. `--no-record` skips the aggregate manifest row; it is
 not a general promise that every child validator is read-only.
 
+The setup-validation bundle installs only the neutral wiki folder and page
+filename check, a reviewed folder contract, an empty validation-log header,
+six empty wiki directory markers, and a local Git rule that keeps copied
+framework text and journals at LF on each checkout. The rule does not cover
+incoming source documents. The bundle does not approve any criterion or
+source. The optional apply uses its own journal and does not overwrite files:
+
+```powershell
+python -B audit_template/bootstrap_setup_validation.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_setup_validation.py --target "C:\path\to\New Audit" --apply --run-id setup-first
+```
+
+The structure checker depends on the local state bundle for audit phase names.
+It can pass on an empty, correctly shaped wiki; that says nothing about audit
+evidence, source approval, or the later validation layers.
+
 The tests use invented documents and two fake company folders. One has a fake
 sibling audit; the other has none. They check that copied commands work from
 another working folder and that no sibling files change. No live audit is

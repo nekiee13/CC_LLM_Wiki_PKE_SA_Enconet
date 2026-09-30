@@ -1,0 +1,22 @@
+{"event": "start", "manifest_sha256": "cbf7dfc0f86f6e51785ef7be2832bfd853f316f78c88a10cd746d91dd2d999a6", "run_id": "setup-validation-20260930-03", "target": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Ekonerg", "template_version": "1.0.0"}
+{"event": "intent", "path": ".gitattributes", "sha256": "5bf75c99c0d1b25355f0702f85e3513973dedfca1c72630274b51ab137d17cc7"}
+{"event": "created", "path": ".gitattributes", "sha256": "5bf75c99c0d1b25355f0702f85e3513973dedfca1c72630274b51ab137d17cc7"}
+{"event": "intent", "path": "manifests/validation_runs.csv", "sha256": "47d72de674045112842beeb44e09021d9a5ccb6399b13097ca2baaccab7883a4"}
+{"event": "preserved", "path": "manifests/validation_runs.csv", "sha256": "47d72de674045112842beeb44e09021d9a5ccb6399b13097ca2baaccab7883a4"}
+{"event": "intent", "path": "schemas/wiki_structure.yml", "sha256": "36e9caa43cf8c489e7d30d35d51f533525613f4e26247d37a695b3a07f861ed2"}
+{"event": "preserved", "path": "schemas/wiki_structure.yml", "sha256": "36e9caa43cf8c489e7d30d35d51f533525613f4e26247d37a695b3a07f861ed2"}
+{"event": "intent", "path": "scripts/validate_structure.py", "sha256": "da76676f4c0c4c36eeba516f50059103899e409fa5b69ab613df5316b8c29772"}
+{"event": "preserved", "path": "scripts/validate_structure.py", "sha256": "da76676f4c0c4c36eeba516f50059103899e409fa5b69ab613df5316b8c29772"}
+{"event": "intent", "path": "wiki/actions/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "preserved", "path": "wiki/actions/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "intent", "path": "wiki/criteria/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "preserved", "path": "wiki/criteria/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "intent", "path": "wiki/dashboards/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "preserved", "path": "wiki/dashboards/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "intent", "path": "wiki/evidence/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "preserved", "path": "wiki/evidence/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "intent", "path": "wiki/findings/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "preserved", "path": "wiki/findings/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "intent", "path": "wiki/gates/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"event": "preserved", "path": "wiki/gates/.gitkeep", "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"}
+{"created": 1, "event": "complete", "preserved": 9}
