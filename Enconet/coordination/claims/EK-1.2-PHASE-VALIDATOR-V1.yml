@@ -1,0 +1,11 @@
+task: EK-1.2-PHASE-VALIDATOR-V1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-30T04:22:24Z
+last_renewed_at_utc: 2026-09-30T04:22:24Z
+expires_at_utc: 2026-09-30T08:22:24Z
+anticipated_files:
+  - audit_template
+  - Ekonerg/scripts/run_all_validations.py
+note: TDD company-neutral phase-aware validator candidate; synthetic isolation only, no live audit run or incoming intake.
+released_at_utc: 2026-09-30T17:27:02Z

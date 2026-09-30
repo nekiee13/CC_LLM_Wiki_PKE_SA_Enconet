@@ -101,6 +101,7 @@ and ADRs are the records.
 - `EK-1.2-LOCAL-IDS` — codex, released 2026-09-29T21:52:55Z
 - `EK-1.2-NEUTRAL-CLI` — codex, released 2026-09-29T23:22:46Z
 - `EK-1.2-NEUTRAL-PATHS` — codex, released 2026-09-29T23:12:34Z
+- `EK-1.2-PHASE-VALIDATOR-V1` — codex, released 2026-09-30T17:27:02Z
 - `EK-1.2-RUN-CREATION` — codex, released 2026-09-29T22:31:24Z
 - `EK-1.2-SIEVING-CLI` — codex, released 2026-09-29T20:57:24Z
 - `EK-1.2-SIEVING-CRUMB` — codex, released 2026-09-29T20:33:46Z
@@ -343,10 +344,11 @@ and ADRs are the records.
 - `CX_2026-09-30T032649Z_reusable-support-bundle-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T033943Z_reusable-state-bundle-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T041657Z_reusable-dispatch-bundle-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-09-30T172651Z_reusable-phase-validator-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-30T04:17:09Z
+Generated: 2026-09-30T17:27:05Z
