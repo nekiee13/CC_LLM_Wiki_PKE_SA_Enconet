@@ -1,0 +1,13 @@
+task: EK-1.2-DISPATCH-VALIDATION-BUNDLE-V1
+agent: codex
+status: released
+claimed_at_utc: 2026-09-30T04:09:09Z
+last_renewed_at_utc: 2026-09-30T04:09:09Z
+expires_at_utc: 2026-10-01T04:09:09Z
+anticipated_files:
+  - audit_template
+  - Ekonerg/scripts/audit_command.py
+  - Ekonerg/scripts/run_validation.py
+  - Ekonerg/schemas/audit_commands.yml
+note: TDD candidate: copy project-local dispatcher and layered validation runner into a versioned guarded bundle; synthetic two-company and fail-closed tests; no live intake.
+released_at_utc: 2026-09-30T04:17:05Z
