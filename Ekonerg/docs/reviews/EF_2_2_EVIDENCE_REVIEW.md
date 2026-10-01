@@ -1,15 +1,17 @@
-# EF-2.2 first QMS evidence batch review packet
+# EF-2.2 QMS evidence batch review packet (B01-B03)
 
-The first EF-2.2 batch is a draft desk review of four supplied QMS files:
+The first EF-2.2 batches are a draft desk review of seven supplied QMS files:
 the Rev. 5 management manual and three procedures for training, quality plans,
-and project plans. The local evidence draft contains ten exact Croatian quotes
-linked to Appendix B Organization and QA Program rows. All ten quotes were
-verified against the pinned work copies by source ID, revision, heading, line,
-and text. No printed page was invented.
+project plans, document control, study/project control, and activity
+verification. The local evidence draft contains twenty exact Croatian quotes
+linked to Appendix B rows. All twenty quotes were verified against the pinned
+work copies by source ID, revision, heading, line, and text. No printed page
+was invented.
 
 The documents state roles, training plans, quality-plan fields, project phases,
-and document-control responsibilities. They do not by themselves prove that
-the controls operate. No score, finding, or conformity conclusion was made.
+document-control responsibilities, independent design checks, change control,
+and verification records. They do not by themselves prove that the controls
+operate. No score, finding, or conformity conclusion was made.
 
 Open source and evidence items:
 
@@ -23,11 +25,23 @@ Open source and evidence items:
   confirmation (QMS-002).
 - Completed plans, training records, appointments, interviews, and samples
   were not supplied. Implementation remains open (QMS-004).
+- The design-control procedure cites missing RSP-03, RSP-04, RSP-05, and RSP-06
+  for nuclear document control, input data, customer documents, and design
+  verification (QMS-005).
+- Document-control logs, design reviews, control plans, verifier appointments,
+  inspection records, and change records were not supplied (QMS-006).
+- Linked image files referenced by the document-control and verification
+  procedures are absent; their content is not assumed (IMG-001).
+
+Seventeen named QMS files remain pending: SRC-008, SRC-010 through SRC-013,
+SRC-015 through SRC-017, SRC-020, SRC-021, SRC-023 through SRC-025, and
+SRC-027 through SRC-030. The full 24-file QMS coverage check is therefore not
+complete.
 
 The detailed draft, quote JSON, batch log, and check record remain local in
 `Ekonerg/work/fast_audit/EF-20261001-01/` and are ignored by Git. G1/G2 and
 Claude review remain pending. The next batch will read another small set of
-procedures tied to document control or design verification.
+procedures selected by Appendix B relevance.
 
 Reviewer: Claude. Please check quote fidelity, source completeness handling,
 the policy-versus-implementation distinction, and the open issue wording.
