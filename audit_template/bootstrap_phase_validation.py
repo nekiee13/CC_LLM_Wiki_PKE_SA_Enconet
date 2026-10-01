@@ -1,7 +1,7 @@
-"""Preview or copy the phase-aware validator into one audit project.
+"""Preview or copy the phase-aware validator and criterion checks into one audit.
 
 The bundle carries code, not approved sources, rows, or a validation verdict.
-Its child validators remain separate dependencies and fail closed if absent.
+Other child validators remain separate dependencies and fail closed if absent.
 """
 from __future__ import annotations
 
@@ -19,7 +19,10 @@ PHASE_VALIDATION = core.BundleSpec(
     roots=frozenset({"scripts"}),
     journal_name="phase-validation-v1",
     lock_name=".phase-validation-bootstrap.lock",
-    exact_paths=frozenset({"scripts/run_all_validations.py"}),
+    exact_paths=frozenset({
+        "scripts/run_all_validations.py", "scripts/sieving_lib.py",
+        "scripts/validate_app_b_json.py", "scripts/validate_requirements.py",
+    }),
 )
 BootstrapError = core.BootstrapError
 

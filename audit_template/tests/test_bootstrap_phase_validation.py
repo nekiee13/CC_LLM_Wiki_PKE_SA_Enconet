@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import hashlib
+from contextlib import closing
 from pathlib import Path
+import sqlite3
 import subprocess
 import sys
 import tempfile
@@ -13,6 +15,7 @@ TEMPLATE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(TEMPLATE))
 import bootstrap_dispatch as dispatch  # noqa: E402
 import bootstrap_phase_validation as phase_bundle  # noqa: E402
+import bootstrap_sieving as sieving_bundle  # noqa: E402
 import bootstrap_state as state_bundle  # noqa: E402
 
 
@@ -25,14 +28,101 @@ class PhaseValidationBundleTests(unittest.TestCase):
     def test_manifest_is_hash_locked_and_company_neutral(self) -> None:
         manifest = phase_bundle.load_manifest()
         self.assertEqual(manifest["scope"], "phase-aware-validation-runtime")
-        self.assertEqual([row["path"] for row in manifest["files"]],
-                         ["scripts/run_all_validations.py"])
-        row = manifest["files"][0]
-        data = (phase_bundle.BUNDLE / row["path"]).read_bytes()
-        self.assertEqual((len(data), hashlib.sha256(data).hexdigest()),
-                         (row["bytes"], row["sha256"]))
-        self.assertNotIn(b"Enconet", data)
-        self.assertNotIn(b"Ekonerg", data)
+        self.assertEqual([row["path"] for row in manifest["files"]], [
+            "scripts/run_all_validations.py", "scripts/sieving_lib.py",
+            "scripts/validate_app_b_json.py", "scripts/validate_requirements.py",
+        ])
+        for row in manifest["files"]:
+            data = (phase_bundle.BUNDLE / row["path"]).read_bytes()
+            self.assertEqual((len(data), hashlib.sha256(data).hexdigest()),
+                             (row["bytes"], row["sha256"]))
+            self.assertNotIn(b"Enconet", data)
+            self.assertNotIn(b"Ekonerg", data)
+
+    def test_criterion_validators_fail_closed_and_use_local_sources(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="phase-criteria-", dir=TEMPLATE / "tests") as temp:
+            root = Path(temp)
+            target = root / "Čista Tvrtka"
+            sibling = root / "Enconet"
+            target.mkdir()
+            sibling.mkdir()
+            (sibling / "marker.txt").write_text("unchanged", encoding="utf-8")
+            state_bundle.apply(target, "state-first")
+            sieving_bundle.apply(target, "sieving-first")
+            phase_bundle.apply(target, "phase-first")
+            before_sibling = snapshot(sibling)
+
+            def run(script: str, *args: str) -> subprocess.CompletedProcess[str]:
+                return subprocess.run(
+                    [sys.executable, "-B", str(target / "scripts" / script), *args],
+                    cwd=sibling, capture_output=True, text=True, encoding="utf-8", timeout=30,
+                )
+
+            missing_db = target / "db" / "nqa_audit.sqlite"
+            absent = run("validate_requirements.py", "--no-record")
+            self.assertEqual(absent.returncode, 1, absent.stdout + absent.stderr)
+            self.assertIn("FAIL", absent.stderr)
+            self.assertFalse(missing_db.exists())
+
+            foreign = sibling / "foreign.json"
+            foreign.write_text("{}", encoding="utf-8")
+            rejected = run("validate_app_b_json.py", str(foreign))
+            self.assertEqual(rejected.returncode, 1, rejected.stdout + rejected.stderr)
+            self.assertIn("FAIL", rejected.stderr)
+            local_json = target / "sieving" / "DATA" / "invented.json"
+            local_json.parent.mkdir()
+            local_json.write_text("{}", encoding="utf-8")
+            invalid = run("validate_app_b_json.py", str(local_json))
+            self.assertEqual(invalid.returncode, 1, invalid.stdout + invalid.stderr)
+            self.assertIn("FAIL", invalid.stderr)
+
+            with closing(sqlite3.connect(missing_db)) as conn, conn:
+                conn.executescript(
+                    "CREATE TABLE criteria (criterion_id TEXT);"
+                    "CREATE TABLE crumbs (item_id TEXT, document_side TEXT);"
+                    "CREATE TABLE requirements (requirement_id TEXT, criterion_id TEXT, "
+                    "source_item_id TEXT, is_subrequirement INTEGER, parent_requirement_id TEXT);"
+                )
+            empty = run("validate_requirements.py", "--no-record")
+            self.assertEqual(empty.returncode, 1, empty.stdout + empty.stderr)
+            self.assertIn("criteria", empty.stderr)
+            self.assertFalse((target / "manifests/validation_runs.csv").exists())
+
+            import yaml
+            taxonomy = yaml.safe_load((target / "schemas/app_b_taxonomy.yml").read_text(encoding="utf-8"))
+            with closing(sqlite3.connect(missing_db)) as conn, conn:
+                for criterion in taxonomy["criteria"]:
+                    criterion_id = criterion["criterion_id"]
+                    conn.execute("INSERT INTO criteria VALUES (?)", (criterion_id,))
+                    conn.execute("INSERT INTO crumbs VALUES (?, 'RULE')", (f"crumb-{criterion_id}",))
+                    conn.execute("INSERT INTO requirements VALUES (?, ?, ?, 0, NULL)",
+                                 (f"REQ-{criterion_id}-01", criterion_id, f"crumb-{criterion_id}"))
+            covered = run("validate_requirements.py", "--no-record")
+            self.assertEqual(covered.returncode, 0, covered.stdout + covered.stderr)
+            self.assertIn("PASS", covered.stdout)
+            self.assertFalse((target / "manifests/validation_runs.csv").exists())
+            with closing(sqlite3.connect(missing_db)) as conn, conn:
+                conn.execute("UPDATE crumbs SET document_side='DOCUMENT' WHERE item_id=?",
+                             ("crumb-APP_B_I",))
+            wrong_side = run("validate_requirements.py", "--no-record")
+            self.assertEqual(wrong_side.returncode, 1, wrong_side.stdout + wrong_side.stderr)
+            self.assertIn("without RULE crumb", wrong_side.stderr)
+            with closing(sqlite3.connect(missing_db)) as conn, conn:
+                conn.execute("UPDATE crumbs SET document_side='RULE' WHERE item_id=?",
+                             ("crumb-APP_B_I",))
+            missing_log = run("validate_requirements.py")
+            self.assertEqual(missing_log.returncode, 1, missing_log.stdout + missing_log.stderr)
+            self.assertIn("record could not be written", missing_log.stderr)
+            self.assertFalse((target / "manifests/validation_runs.csv").exists())
+            log = target / "manifests" / "validation_runs.csv"
+            log.parent.mkdir()
+            log.write_text("run_utc,validator,phase,result,exit_code,details\n", encoding="utf-8")
+            recorded = run("validate_requirements.py")
+            self.assertEqual(recorded.returncode, 0, recorded.stdout + recorded.stderr)
+            self.assertIn("validate_requirements.py,unknown,PASS,0", log.read_text(encoding="utf-8"))
+            self.assertEqual(snapshot(sibling), before_sibling | {
+                "foreign.json": (foreign.read_bytes(), foreign.stat().st_mtime_ns)
+            })
 
     def test_copied_phase_matrix_is_monotonic(self) -> None:
         with tempfile.TemporaryDirectory(prefix="phase-matrix-", dir=TEMPLATE / "tests") as temp:
@@ -84,7 +174,7 @@ class PhaseValidationBundleTests(unittest.TestCase):
                     self.assertEqual(snapshot(target), before)
                     self.assertEqual(plan["files"][0]["state"], "create")
                     applied = phase_bundle.apply(target, "phase-first")
-                    self.assertEqual(len(applied["created"]), 1)
+                    self.assertEqual(len(applied["created"]), 4)
 
                     def run(*args: str) -> subprocess.CompletedProcess[str]:
                         return subprocess.run(
@@ -169,7 +259,7 @@ class PhaseValidationBundleTests(unittest.TestCase):
                     self.assertIn("run_all_validations.py,setup,PASS,0", manifest.read_text(encoding="utf-8"))
                     repeat = phase_bundle.apply(target, "phase-second")
                     self.assertEqual(repeat["created"], [])
-                    self.assertEqual(len(repeat["preserved"]), 1)
+                    self.assertEqual(len(repeat["preserved"]), 4)
                     if with_sibling:
                         self.assertEqual(snapshot(sibling), before_sibling)
                     else:

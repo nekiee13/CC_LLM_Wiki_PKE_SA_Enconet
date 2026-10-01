@@ -76,12 +76,14 @@ python -B audit_template/bootstrap_dispatch.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_dispatch.py --target "C:\path\to\New Audit" --apply --run-id dispatch-first
 ```
 
-The phase-validation bundle adds the one local aggregate command used by
-`audit-validate` and `audit-close`. It keeps the phase matrix, but it does not
-include the many child validators. A missing required validator is a failure,
-not a pass. Its own discovery reads an existing database in read-only SQLite
-mode and does not create one. Child validators have separate write behavior.
-Preview and apply are separate:
+The phase-validation bundle adds the local aggregate command used by
+`audit-validate` and `audit-close`, plus its local Appendix B JSON and
+requirement-coverage checks. Those checks cannot create a missing database or
+call another company's sieving library. Other child validators are still
+missing: a missing required validator is a failure, not a pass. The aggregate
+and requirement checks read an existing database in read-only SQLite mode.
+This bundle needs the local state and sieving bundles first. Validation records
+require an existing, correctly shaped log. Preview and apply are separate:
 
 ```powershell
 python -B audit_template/bootstrap_phase_validation.py --target "C:\path\to\New Audit"

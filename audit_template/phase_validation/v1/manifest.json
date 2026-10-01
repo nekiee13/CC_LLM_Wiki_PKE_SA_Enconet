@@ -3,6 +3,9 @@
   "scope": "phase-aware-validation-runtime",
   "status": "candidate-pending-review",
   "files": [
-    {"path": "scripts/run_all_validations.py", "sha256": "d5979627128b2e1edda819c1509a60fc57f5b22e6bf337a77c4c9e5f195ad748", "bytes": 15328}
+    {"path": "scripts/run_all_validations.py", "sha256": "d5979627128b2e1edda819c1509a60fc57f5b22e6bf337a77c4c9e5f195ad748", "bytes": 15328},
+    {"path": "scripts/sieving_lib.py", "sha256": "a9f81277b35ec2f5eac808abac9d5c7eb91f2c4485c5904b628a239ad01de745", "bytes": 299},
+    {"path": "scripts/validate_app_b_json.py", "sha256": "8d35339c6bf214281afd9b52fe1c70dea53ac0a219fadf1293e432c3401698e7", "bytes": 1244},
+    {"path": "scripts/validate_requirements.py", "sha256": "ee829d7bc72199260af32e637681cc1e4b5ca5656abb4e01b4270d724e8c2551", "bytes": 4690}
   ]
 }
