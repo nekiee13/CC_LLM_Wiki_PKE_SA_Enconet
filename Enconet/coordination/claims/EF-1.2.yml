@@ -1,0 +1,13 @@
+task: EF-1.2
+agent: codex
+status: released
+claimed_at_utc: 2026-10-01T20:40:22Z
+last_renewed_at_utc: 2026-10-01T20:40:22Z
+expires_at_utc: 2026-10-02T20:40:22Z
+anticipated_files:
+  - Ekonerg/work/fast_audit/EF-20261001-01
+  - Ekonerg/tools/fast_audit_copy.py
+  - Ekonerg/tools/tests/test_fast_audit_copy.py
+  - Ekonerg/docs/reviews/EF_1_2_READING_ROUTE_REVIEW.md
+note: Prove local source copy and direct-reading route for Ekonerg fast audit
+released_at_utc: 2026-10-01T20:46:53Z
