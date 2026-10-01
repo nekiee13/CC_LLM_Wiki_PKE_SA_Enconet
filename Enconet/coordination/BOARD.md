@@ -82,6 +82,7 @@ and ADRs are the records.
 - `EA6.4-PROMOTION` — codex, released 2026-09-04T22:21:46Z
 - `EA6.4-PROMOTION-ARCHIVE` — codex, released 2026-09-05T06:54:20Z
 - `EA6.5-CLASSIFICATION-BANDS` — codex, released 2026-09-05T07:43:46Z
+- `EF-1.1` — codex, released 2026-10-01T20:29:07Z
 - `EK-0.2` — codex, released 2026-09-29T11:41:12Z
 - `EK-0.2-ACK` — codex, released 2026-09-29T11:51:24Z
 - `EK-0.2-FINAL-ARCHIVE` — codex, released 2026-09-29T11:58:44Z
@@ -121,6 +122,7 @@ and ADRs are the records.
 - `EK-1.2-STATE-BUNDLE-V1` — codex, released 2026-09-30T03:39:50Z
 - `EK-1.2-SUPPORT-ACK` — codex, released 2026-09-29T16:14:14Z
 - `EK-1.2-SUPPORT-BUNDLE-V1` — codex, released 2026-09-30T03:26:56Z
+- `EK-FAST-PLAN` — codex, released 2026-10-01T20:19:47Z
 - `EK-PLAN-APPROVAL-ACK` — codex, released 2026-09-29T11:16:58Z
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `EK-PLAN-FINAL-ARCHIVE` — codex, released 2026-09-29T11:24:37Z
@@ -370,10 +372,12 @@ and ADRs are the records.
 - `CX_2026-10-01T181824Z_reusable-evidence-matrix-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-01T192156Z_reusable-gap-workflow-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-01T194330Z_gated-evaluation-workflow-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-10-01T201945Z_ekonerg-fast-audit-plan-review` — review_request, codex -> claude-code: EK-FAST-PLAN
+- `CX_2026-10-01T202901Z_ekonerg-source-register-review` — review_request, codex -> claude-code: EF-1.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-10-01T19:43:47Z
+Generated: 2026-10-01T20:29:12Z
