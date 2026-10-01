@@ -1,0 +1,9 @@
+{
+  "template_version": "1.0.0",
+  "scope": "sieving-score-and-empty-approvals-only",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "manifests/approvals.csv", "sha256": "4df03e5c2cd5e7b612f7f6b1c6eb33cd72944c7805d79f87902c9039b36dc56a", "bytes": 39},
+    {"path": "scripts/score_sieving.py", "sha256": "e14f5707601376620e7aaf15e2fe0d92c7921d5cee3a680196dd17683877b7f1", "bytes": 6565}
+  ]
+}

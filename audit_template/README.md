@@ -172,3 +172,14 @@ Claude's separate installation and review.
 python -B audit_template/bootstrap_codex_sieving_skills.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_codex_sieving_skills.py --target "C:\path\to\New Audit" --apply --run-id codex-skills-first
 ```
+
+The sieving-score bundle installs a local golden-set scoring command and an
+empty approval ledger. Strict scoring writes no score when the golden set is
+pending or lacks a matching human approval row. `--allow-draft` writes a
+diagnostic result that is never promotion-ready. The score command reads only
+paths within its project and never changes an existing score file.
+
+```powershell
+python -B audit_template/bootstrap_sieving_score.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_sieving_score.py --target "C:\path\to\New Audit" --apply --run-id score-first
+```
