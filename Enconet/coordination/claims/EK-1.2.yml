@@ -1,16 +1,15 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T14:48:32Z
-last_renewed_at_utc: 2026-10-01T14:48:32Z
-expires_at_utc: 2026-10-02T14:48:32Z
+claimed_at_utc: 2026-10-01T15:00:25Z
+last_renewed_at_utc: 2026-10-01T15:00:25Z
+expires_at_utc: 2026-10-02T15:00:25Z
 anticipated_files:
-  - audit_template/bootstrap_sieving_analysis.py
-  - audit_template/sieving_analysis/v1
-  - audit_template/tests/test_bootstrap_sieving_analysis.py
+  - audit_template/bootstrap_crumb_import.py
+  - audit_template/crumb_import/v1
+  - audit_template/tests/test_bootstrap_crumb_import.py
   - audit_template/README.md
   - audit_template/.gitattributes
-  - Ekonerg/scripts/sieve_metrics.py
-  - Ekonerg/scripts/sieve_diff.py
-note: Versioned local metrics/diff scripts with read-only DB, local paths, duplicate-preserving diff; synthetic tests only
-released_at_utc: 2026-10-01T14:55:17Z
+  - Ekonerg/scripts/import_crumbs.py
+note: Versioned strict local crumb import; linking deferred because source linker deletes all links
+released_at_utc: 2026-10-01T15:07:19Z
