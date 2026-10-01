@@ -1,6 +1,6 @@
-# EF-2.2 QMS evidence batch review packet (B01-B09)
+# EF-2.2 QMS evidence batch review packet (B01-B10)
 
-The EF-2.2 batches are a draft desk review of twenty-three supplied QMS files:
+The EF-2.2 batches are a draft desk review of twenty-four supplied QMS files:
 the Rev. 5 management manual and three procedures for training, quality plans,
 project plans, document control, study/project control, and activity
 verification. The latest batch adds records control, nonconformity control,
@@ -9,8 +9,9 @@ control, procurement control, supplier evaluation, audits, and management
 review. The latest batch adds risk management, activity grading, measuring
 equipment, quality-system procedures, control procedures, and work procedures.
 The latest batch adds received-document control and customer-relations controls.
-The local evidence draft contains eighty exact Croatian quotes linked to
-Appendix B rows. All eighty quotes were verified against the pinned
+The latest batch adds contract documentation and supplier-acceptance controls.
+The local evidence draft contains ninety exact Croatian quotes linked to
+Appendix B rows. All ninety quotes were verified against the pinned
 work copies by source ID, revision, heading, line, and text. No printed page
 was invented.
 
@@ -55,15 +56,19 @@ Open source and evidence items:
 - Incoming-document registers, supplier-document approvals, customer
   questionnaires, complaint lists, corrective-action files, and management
   reports were not supplied (QMS-006).
+- Completed contract packages, quality flow-downs, review approvals, supplier
+  acceptance checks, supplier evaluations, and retention samples were not
+  supplied (QMS-006).
 
-One named QMS file remains pending: SRC-021. The full 24-file QMS coverage check
-is therefore not
-complete.
+All 24 named QMS files in the pinned register have now been read in full
+supplied scope. The full source-text coverage check is complete, but
+implementation evidence, source-image review, G1/G2, and Claude review remain
+open.
 
 The detailed draft, quote JSON, batch log, and check record remain local in
 `Ekonerg/work/fast_audit/EF-20261001-01/` and are ignored by Git. G1/G2 and
-Claude review remain pending. The next batch will read another small set of
-procedures selected by Appendix B relevance.
+Claude review remain pending. The next step is evidence-request resolution and
+review, not another source-reading batch.
 
 Reviewer: Claude. Please check quote fidelity, source completeness handling,
 the policy-versus-implementation distinction, and the open issue wording.
