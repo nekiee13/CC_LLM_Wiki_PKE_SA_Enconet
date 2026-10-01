@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-01T143128Z-99cb760.md`](handoffs/2026-10-01T143128Z-99cb760.md)
+**Authoritative record:** [`handoffs/2026-10-01T144549Z-f2174a5.md`](handoffs/2026-10-01T144549Z-f2174a5.md)
 
-**Status:** partial · **Git:** `99cb760` · **Agent:** codex · **Created:** 2026-10-01T14:31:28Z
+**Status:** partial · **Git:** `f2174a5` · **Agent:** codex · **Created:** 2026-10-01T14:45:49Z
 
-**Exact next action:** For EK-1.2, compare the remaining local runtime and validator gaps with the versioned transfer manifest, then choose one coherent dependency batch for TDD; leave Claude-owned files and live incoming untouched.
+**Exact next action:** Continue EK-1.2 with the next coherent sieving-stage batch, likely local metrics and diff, using synthetic data and guarded output paths; keep Claude-owned files and incoming documents untouched.
