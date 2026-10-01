@@ -193,3 +193,14 @@ files. The diff keeps repeated crumbs distinct rather than merging them.
 python -B audit_template/bootstrap_sieving_analysis.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_sieving_analysis.py --target "C:\path\to\New Audit" --apply --run-id analysis-first
 ```
+
+The crumb-import bundle adds strict, transactional import of one local JSON
+file into an existing local sieve run. It does not create a database, read
+incoming documents, link quotes, or make metrics. A validation or insert
+failure leaves the run unchanged. Quote linking and final metrics are later
+stages; this import alone is not evidence verification.
+
+```powershell
+python -B audit_template/bootstrap_crumb_import.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_crumb_import.py --target "C:\path\to\New Audit" --apply --run-id import-first
+```
