@@ -90,7 +90,7 @@ and ADRs are the records.
 - `EK-1.1-LIVE` — codex, released 2026-09-29T13:25:06Z
 - `EK-1.1-LIVE-ACK` — codex, released 2026-09-29T13:37:17Z
 - `EK-1.1-REVIEW-ACK` — codex, released 2026-09-29T13:07:34Z
-- `EK-1.2` — codex, released 2026-10-01T03:22:17Z
+- `EK-1.2` — codex, released 2026-10-01T03:34:34Z
 - `EK-1.2-CONTINUITY` — codex, released 2026-09-29T18:07:58Z
 - `EK-1.2-DB-BOOTSTRAP` — codex, released 2026-09-29T22:13:25Z
 - `EK-1.2-DISPATCH` — codex, released 2026-09-29T16:49:09Z
@@ -354,10 +354,11 @@ and ADRs are the records.
 - `CX_2026-09-30T195348Z_owner-app-b-scope-correction` — note, codex -> claude-code: EK-1.2
 - `CX_2026-10-01T024952Z_owner-regulatory-files-present` — note, codex -> claude-code: EK-1.2
 - `CX_2026-10-01T032210Z_criterion-validator-batch-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-10-01T033427Z_source-validator-batch-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-10-01T03:22:17Z
+Generated: 2026-10-01T03:34:34Z
