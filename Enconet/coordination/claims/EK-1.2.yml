@@ -1,16 +1,16 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T14:38:23Z
-last_renewed_at_utc: 2026-10-01T14:38:23Z
-expires_at_utc: 2026-10-02T14:38:23Z
+claimed_at_utc: 2026-10-01T14:48:32Z
+last_renewed_at_utc: 2026-10-01T14:48:32Z
+expires_at_utc: 2026-10-02T14:48:32Z
 anticipated_files:
-  - audit_template/bootstrap_sieving_score.py
-  - audit_template/sieving_score/v1
-  - audit_template/tests/test_bootstrap_sieving_score.py
+  - audit_template/bootstrap_sieving_analysis.py
+  - audit_template/sieving_analysis/v1
+  - audit_template/tests/test_bootstrap_sieving_analysis.py
   - audit_template/README.md
   - audit_template/.gitattributes
-  - Ekonerg/scripts/score_sieving.py
-  - Ekonerg/manifests/approvals.csv
-note: Versioned local golden scoring with empty approval ledger and fail-closed tests; no live source intake
-released_at_utc: 2026-10-01T14:43:31Z
+  - Ekonerg/scripts/sieve_metrics.py
+  - Ekonerg/scripts/sieve_diff.py
+note: Versioned local metrics/diff scripts with read-only DB, local paths, duplicate-preserving diff; synthetic tests only
+released_at_utc: 2026-10-01T14:55:17Z

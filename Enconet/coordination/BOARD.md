@@ -90,7 +90,7 @@ and ADRs are the records.
 - `EK-1.1-LIVE` — codex, released 2026-09-29T13:25:06Z
 - `EK-1.1-LIVE-ACK` — codex, released 2026-09-29T13:37:17Z
 - `EK-1.1-REVIEW-ACK` — codex, released 2026-09-29T13:07:34Z
-- `EK-1.2` — codex, released 2026-10-01T14:43:31Z
+- `EK-1.2` — codex, released 2026-10-01T14:55:17Z
 - `EK-1.2-CONTINUITY` — codex, released 2026-09-29T18:07:58Z
 - `EK-1.2-DB-BOOTSTRAP` — codex, released 2026-09-29T22:13:25Z
 - `EK-1.2-DISPATCH` — codex, released 2026-09-29T16:49:09Z
@@ -360,10 +360,11 @@ and ADRs are the records.
 - `CX_2026-10-01T141046Z_sieving-harness-batch-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-01T142402Z_codex-sieving-skills-batch-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-01T144330Z_sieving-score-batch-review` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-10-01T145517Z_sieving-analysis-batch-review` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-10-01T14:43:31Z
+Generated: 2026-10-01T14:55:17Z
