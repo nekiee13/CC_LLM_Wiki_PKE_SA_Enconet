@@ -114,3 +114,14 @@ The tests use invented documents and two fake company folders. One has a fake
 sibling audit; the other has none. They check that copied commands work from
 another working folder and that no sibling files change. No live audit is
 created by the tests.
+
+The source-validation bundle adds the local raw-source registry helper and
+two read-only checks. The checks fail when a database or registered source is
+missing. The chunk check also fails when there are no chunks. This copy does
+not promote files from `incoming/`, create chunks, or approve any source.
+It needs the state bundle's local path helper and ID grammar. Preview first:
+
+```powershell
+python -B audit_template/bootstrap_source_validation.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_source_validation.py --target "C:\path\to\New Audit" --apply --run-id source-first
+```
