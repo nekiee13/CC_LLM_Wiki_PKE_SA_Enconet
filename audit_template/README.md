@@ -215,3 +215,16 @@ not human approval. Metrics remain a separate step.
 python -B audit_template/bootstrap_crumb_link.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_crumb_link.py --target "C:\path\to\New Audit" --apply --run-id link-first
 ```
+
+The resieve bundle adds a preview-first, measured candidate workflow and its
+local run-creation dependency. It
+requires a completed active generation, strict local JSON, and a reviewed
+local prompt. Apply creates an inactive candidate, imports and links quotes,
+then writes metrics and a diff only if every quote links. A later error can
+leave that candidate in place; inspect it and use a new run ID rather than
+overwriting it. Human promotion remains a separate approval step.
+
+```powershell
+python -B audit_template/bootstrap_resieve.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_resieve.py --target "C:\path\to\New Audit" --apply --run-id resieve-first
+```
