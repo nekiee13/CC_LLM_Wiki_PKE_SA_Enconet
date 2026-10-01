@@ -204,3 +204,14 @@ stages; this import alone is not evidence verification.
 python -B audit_template/bootstrap_crumb_import.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_crumb_import.py --target "C:\path\to\New Audit" --apply --run-id import-first
 ```
+
+The crumb-link bundle adds a preview-first script for one completed run. It
+links quotes only to chunks of the same registered document. Existing links
+are preserved, and a conflict fails instead of replacing them. An unmatched
+quote is printed in JSON and makes apply exit with code 2; links alone are
+not human approval. Metrics remain a separate step.
+
+```powershell
+python -B audit_template/bootstrap_crumb_link.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_crumb_link.py --target "C:\path\to\New Audit" --apply --run-id link-first
+```
