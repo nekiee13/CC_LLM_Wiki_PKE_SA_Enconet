@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-01T173124Z-272fff4.md`](handoffs/2026-10-01T173124Z-272fff4.md)
+**Authoritative record:** [`handoffs/2026-10-01T174930Z-1af76c2.md`](handoffs/2026-10-01T174930Z-1af76c2.md)
 
-**Status:** partial · **Git:** `272fff4` · **Agent:** codex · **Created:** 2026-10-01T17:31:24Z
+**Status:** partial · **Git:** `1af76c2` · **Agent:** codex · **Created:** 2026-10-01T17:49:30Z
 
-**Exact next action:** Check owner activation-policy answer and Claude review queue. If still pending, choose another independent EK-1.2 missing runtime path or prepare the source-intake gate design without moving incoming files. Keep real documents untouched until approval.
+**Exact next action:** Check Claude review queue and owner activation answer. If pending, choose one independent EK-1.2 path from the transfer manifest; do not process incoming without owner intake approval.
