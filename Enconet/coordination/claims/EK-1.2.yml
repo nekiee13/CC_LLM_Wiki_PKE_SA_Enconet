@@ -1,15 +1,13 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T15:00:25Z
-last_renewed_at_utc: 2026-10-01T15:00:25Z
-expires_at_utc: 2026-10-02T15:00:25Z
+claimed_at_utc: 2026-10-01T15:14:20Z
+last_renewed_at_utc: 2026-10-01T15:14:20Z
+expires_at_utc: 2026-10-01T17:14:20Z
 anticipated_files:
-  - audit_template/bootstrap_crumb_import.py
-  - audit_template/crumb_import/v1
-  - audit_template/tests/test_bootstrap_crumb_import.py
-  - audit_template/README.md
-  - audit_template/.gitattributes
-  - Ekonerg/scripts/import_crumbs.py
-note: Versioned strict local crumb import; linking deferred because source linker deletes all links
-released_at_utc: 2026-10-01T15:07:19Z
+  - audit_template/bootstrap_crumb_link.py
+  - audit_template/crumb_link/v1
+  - audit_template/tests/test_bootstrap_crumb_link.py
+  - Ekonerg/scripts/link_crumbs.py
+note: Safe per-run quote-linking batch; Claude review deferred
+released_at_utc: 2026-10-01T16:44:20Z
