@@ -1,0 +1,12 @@
+{
+  "template_version": "1.0.0",
+  "scope": "approval-gated-evaluation-workflow-only",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "scripts/evaluation_engine.py", "sha256": "0976736f282ddc6309ddb06d86d6bc77752cb62dd1a09bbb5ec7b979fe4640f8", "bytes": 13424},
+    {"path": "scripts/rule_applicability.py", "sha256": "6530146459a7106e86e291adfa0435dd84d14b28a6c12427c965774242411cd3", "bytes": 1321},
+    {"path": "scripts/score_evaluation.py", "sha256": "14f277f645d43a49e46b971c2805a62a366695257125dfbedff93b71c00df2b3", "bytes": 1387},
+    {"path": "scripts/validate_evaluation.py", "sha256": "b07706271a5581bfe174b213057bab41d94c77d7c5a73eaba45e8344f9d269a5", "bytes": 4825},
+    {"path": "scripts/write_evaluation.py", "sha256": "87491860e29593c740bc22cd28420f718912fd959535b48e7a9da5f385aad4d4", "bytes": 1271}
+  ]
+}

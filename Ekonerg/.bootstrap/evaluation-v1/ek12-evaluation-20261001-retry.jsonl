@@ -1,0 +1,12 @@
+{"event": "start", "manifest_sha256": "9a9b3c22502cdf4c54f0e44ffb7e7f53957647c5994bd6121efeadcef41af137", "run_id": "ek12-evaluation-20261001-retry", "target": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Ekonerg", "template_version": "1.0.0"}
+{"event": "intent", "path": "scripts/evaluation_engine.py", "sha256": "0976736f282ddc6309ddb06d86d6bc77752cb62dd1a09bbb5ec7b979fe4640f8"}
+{"event": "preserved", "path": "scripts/evaluation_engine.py", "sha256": "0976736f282ddc6309ddb06d86d6bc77752cb62dd1a09bbb5ec7b979fe4640f8"}
+{"event": "intent", "path": "scripts/rule_applicability.py", "sha256": "6530146459a7106e86e291adfa0435dd84d14b28a6c12427c965774242411cd3"}
+{"event": "preserved", "path": "scripts/rule_applicability.py", "sha256": "6530146459a7106e86e291adfa0435dd84d14b28a6c12427c965774242411cd3"}
+{"event": "intent", "path": "scripts/score_evaluation.py", "sha256": "14f277f645d43a49e46b971c2805a62a366695257125dfbedff93b71c00df2b3"}
+{"event": "preserved", "path": "scripts/score_evaluation.py", "sha256": "14f277f645d43a49e46b971c2805a62a366695257125dfbedff93b71c00df2b3"}
+{"event": "intent", "path": "scripts/validate_evaluation.py", "sha256": "b07706271a5581bfe174b213057bab41d94c77d7c5a73eaba45e8344f9d269a5"}
+{"event": "preserved", "path": "scripts/validate_evaluation.py", "sha256": "b07706271a5581bfe174b213057bab41d94c77d7c5a73eaba45e8344f9d269a5"}
+{"event": "intent", "path": "scripts/write_evaluation.py", "sha256": "87491860e29593c740bc22cd28420f718912fd959535b48e7a9da5f385aad4d4"}
+{"event": "preserved", "path": "scripts/write_evaluation.py", "sha256": "87491860e29593c740bc22cd28420f718912fd959535b48e7a9da5f385aad4d4"}
+{"created": 0, "event": "complete", "preserved": 5}
