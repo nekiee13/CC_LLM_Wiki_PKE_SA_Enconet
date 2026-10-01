@@ -1,19 +1,19 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T13:59:18Z
-last_renewed_at_utc: 2026-10-01T13:59:18Z
-expires_at_utc: 2026-10-02T13:59:18Z
+claimed_at_utc: 2026-10-01T14:16:18Z
+last_renewed_at_utc: 2026-10-01T14:16:18Z
+expires_at_utc: 2026-10-02T14:16:18Z
 anticipated_files:
-  - audit_template/bootstrap_sieving_harness.py
-  - audit_template/sieving_harness/v1
-  - audit_template/tests/test_bootstrap_sieving_harness.py
+  - audit_template/bootstrap_codex_sieving_skills.py
+  - audit_template/codex_sieving_skills/v1
+  - audit_template/tests/test_bootstrap_codex_sieving_skills.py
   - audit_template/README.md
   - audit_template/.gitattributes
-  - Ekonerg/scripts/validate_sieving_harness.py
-  - Ekonerg/scripts/validate_sieving_skill_drift.py
-  - Ekonerg/schemas/sieving_skill_contract.yml
-  - Ekonerg/sieving/SIEVING_PLAYBOOK.md
-  - Ekonerg/benchmarks/sieving_golden/manifest.yml
-note: Local sieving harness/checker contracts; no skills or source intake
-released_at_utc: 2026-10-01T14:10:52Z
+  - scripts/check_skill_structure.py
+  - scripts/tests/test_check_skill_structure.py
+  - Ekonerg/.agents/skills/sieving-run/SKILL.md
+  - Ekonerg/.agents/skills/crumb-quality/SKILL.md
+  - Ekonerg/.agents/skills/sieving-tuning/SKILL.md
+note: Versioned project-local Codex sieving skills and multi-project structure-checker regression; no Claude edits or source intake
+released_at_utc: 2026-10-01T14:24:11Z
