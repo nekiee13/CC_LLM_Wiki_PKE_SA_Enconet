@@ -72,6 +72,17 @@ def test_same_name_in_two_projects_passes(tmp_path):
     assert code == 0, out
 
 
+def test_paired_skill_can_be_installed_in_one_new_project_first(tmp_path):
+    """An incomplete second project does not break a complete first pair."""
+    ws = tmp_path / "ws"
+    for dot in (".claude", ".agents"):
+        make_skill(ws / "First Audit", dot, "sieving-run")
+    make_skill(ws / "Second Audit", ".agents", "sieving-run")
+    code, out = run_checker(ws, tmp_path / "home_cc", tmp_path / "home_cx")
+    assert code == 0, out
+    assert "paired skill 'sieving-run'" in out
+
+
 def test_paired_skill_scope_mismatch_fails(tmp_path):
     """Same name on both agents but at different scopes breaks the pair."""
     ws = tmp_path / "ws"

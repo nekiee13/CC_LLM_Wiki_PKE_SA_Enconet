@@ -114,12 +114,16 @@ def validate(entries) -> tuple[list[str], list[str]]:
     shared = set(by_agent["claude-code"]) & set(by_agent["codex"])
     for name in sorted(shared):
         cc, cx = by_agent["claude-code"][name], by_agent["codex"][name]
-        if cc == cx:
-            infos.append(f"paired skill '{name}' at scope(s) "
-                         f"{', '.join(sorted(cc))} on both sides")
-        else:
+        # Different projects do not shadow each other. A new project's Codex
+        # skill may arrive before Claude installs its own counterpart there.
+        # Global/workspace scopes do overlap project scopes and still fail.
+        broad = {scope for scope in cc | cx if not scope.startswith("project:")}
+        if broad and cc != cx:
             errors.append(f"paired skill '{name}' scope mismatch: "
                           f"claude-code={sorted(cc)} vs codex={sorted(cx)}")
+        elif cc & cx:
+            infos.append(f"paired skill '{name}' at scope(s) "
+                         f"{', '.join(sorted(cc & cx))} on both sides")
     return errors, infos
 
 

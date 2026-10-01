@@ -161,3 +161,14 @@ present. `--allow-pending-claude` is diagnostic only and never grants approval.
 python -B audit_template/bootstrap_sieving_harness.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_sieving_harness.py --target "C:\path\to\New Audit" --apply --run-id harness-first
 ```
+
+The Codex sieving-skills bundle installs only three project-local Codex
+skills and a local LF rule for their files. It does not create Claude-owned
+skills, grant source approval, or make a prompt active. The skill-drift check
+can report Claude as pending for diagnostics; full readiness still needs
+Claude's separate installation and review.
+
+```powershell
+python -B audit_template/bootstrap_codex_sieving_skills.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_codex_sieving_skills.py --target "C:\path\to\New Audit" --apply --run-id codex-skills-first
+```
