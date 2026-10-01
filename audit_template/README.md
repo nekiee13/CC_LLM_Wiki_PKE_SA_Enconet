@@ -228,3 +228,14 @@ overwriting it. Human promotion remains a separate approval step.
 python -B audit_template/bootstrap_resieve.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_resieve.py --target "C:\path\to\New Audit" --apply --run-id resieve-first
 ```
+
+The chunking bundle adds a preview-first local command. It reads only a
+registered document's derived text and writes chunks once. It refuses a
+second write, missing headings, and chunks outside the chosen size bounds.
+Apply records offsets in the local database and a new local JSON artifact;
+it does not approve source intake or an audit result.
+
+```powershell
+python -B audit_template/bootstrap_chunking.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_chunking.py --target "C:\path\to\New Audit" --apply --run-id chunk-first
+```
