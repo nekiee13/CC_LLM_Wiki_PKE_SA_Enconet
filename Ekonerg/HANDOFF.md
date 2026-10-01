@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-01T133039Z-2c6b6b8.md`](handoffs/2026-10-01T133039Z-2c6b6b8.md)
+**Authoritative record:** [`handoffs/2026-10-01T135421Z-8ef0b7b.md`](handoffs/2026-10-01T135421Z-8ef0b7b.md)
 
-**Status:** partial · **Git:** `2c6b6b8` · **Agent:** codex · **Created:** 2026-10-01T13:30:39Z
+**Status:** partial · **Git:** `8ef0b7b` · **Agent:** codex · **Created:** 2026-10-01T13:54:21Z
 
-**Exact next action:** Continue EK-1.2 with the next coherent missing local runtime dependency batch and synthetic tests; keep incoming and later-stage approvals untouched.
+**Exact next action:** Continue EK-1.2 by assessing the sieving-harness validator and its missing local dependencies in synthetic roots; keep Claude-owned files and live incoming untouched.
