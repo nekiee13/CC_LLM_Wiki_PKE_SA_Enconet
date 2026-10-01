@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-30T195512Z-f7a6a22.md`](handoffs/2026-09-30T195512Z-f7a6a22.md)
+**Authoritative record:** [`handoffs/2026-10-01T025236Z-2419da9.md`](handoffs/2026-10-01T025236Z-2419da9.md)
 
-**Status:** partial · **Git:** `f7a6a22` · **Agent:** codex · **Created:** 2026-09-30T19:55:12Z
+**Status:** partial · **Git:** `2419da9` · **Agent:** codex · **Created:** 2026-10-01T02:52:36Z
 
-**Exact next action:** Continue EK-1.2 framework transfer against the shared Appendix B baseline; review remaining template components without stripping APP_B, keep Ekonerg incoming untouched, and await Claude review and owner source-edition approval before intake.
+**Exact next action:** Continue EK-1.2 clean framework transfer and Claude review, preserving shared Appendix B baseline. At EK-5.1, register the six owner-selected regulatory files with hashes and approved source metadata; do not ingest incoming until that gate.
