@@ -1,14 +1,18 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T18:23:24Z
-last_renewed_at_utc: 2026-10-01T18:23:24Z
-expires_at_utc: 2026-10-02T18:23:24Z
+claimed_at_utc: 2026-10-01T19:29:59Z
+last_renewed_at_utc: 2026-10-01T19:29:59Z
+expires_at_utc: 2026-10-02T19:29:59Z
 anticipated_files:
-  - audit_template/bootstrap_gap_workflow.py
-  - audit_template/gap_workflow/v1
-  - audit_template/tests/test_bootstrap_gap_workflow.py
-  - Ekonerg/scripts/gap_register.py
-  - Ekonerg/scripts/validate_gaps.py
-note: Local synthetic-tested gap registration and read-only validation; no live audit DB or intake
-released_at_utc: 2026-10-01T19:22:02Z
+  - audit_template/bootstrap_evaluation.py
+  - audit_template/evaluation/v1
+  - audit_template/tests/test_bootstrap_evaluation.py
+  - audit_template/.gitattributes
+  - Ekonerg/scripts/evaluation_engine.py
+  - Ekonerg/scripts/rule_applicability.py
+  - Ekonerg/scripts/write_evaluation.py
+  - Ekonerg/scripts/score_evaluation.py
+  - Ekonerg/scripts/validate_evaluation.py
+note: Synthetic evaluation workflow transfer; no live intake, G2/G3 approval, or findings
+released_at_utc: 2026-10-01T19:43:41Z
