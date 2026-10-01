@@ -1,5 +1,10 @@
 # Ekonerg Audit Framework — Clean Transfer and First Audit
 
+> Update, 2026-10-01: The owner has stopped the framework-first work order.
+> Use the [fast audit plan](EKONERG_FAST_AUDIT_PLAN.md) for the next document work.
+> This file remains the record of the full framework scope. EK-1.2 and pending
+> reviews remain open; owner gates and release claims still need evidence.
+
 | Document control | Value |
 |---|---|
 | Version | 1.1 — path-safety review changes and measured readability |
