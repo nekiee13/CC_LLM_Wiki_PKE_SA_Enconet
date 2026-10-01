@@ -1,0 +1,10 @@
+{
+  "template_version": "1.0.0",
+  "scope": "offline-evidence-links-only",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "schemas/evidence_navigation.yml", "sha256": "bdce18e8173c20c0a74a262e3196a1c84bf4e90d63a27cd82f297d7c93440058", "bytes": 1966},
+    {"path": "scripts/citation_renderer.py", "sha256": "e0f22b12360e7b672611a5fd07602e7357b4f018d2a11746396b369a165ff6b4", "bytes": 1918},
+    {"path": "scripts/evidence_navigation.py", "sha256": "d0fab0315beb66388ecf4e3c997539e69e161f4628755b47495e25b7edd947f7", "bytes": 3117}
+  ]
+}
