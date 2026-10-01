@@ -1,13 +1,14 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T17:53:51Z
-last_renewed_at_utc: 2026-10-01T17:53:51Z
-expires_at_utc: 2026-10-02T17:53:51Z
+claimed_at_utc: 2026-10-01T18:23:24Z
+last_renewed_at_utc: 2026-10-01T18:23:24Z
+expires_at_utc: 2026-10-02T18:23:24Z
 anticipated_files:
-  - audit_template/bootstrap_evidence_matrix.py
-  - audit_template/evidence_matrix/v1
-  - audit_template/tests/test_bootstrap_evidence_matrix.py
-  - Ekonerg/scripts/build_matrix.py
-note: Company-neutral, read-only 18-criterion evidence matrix with guarded first-write output; synthetic tests only
-released_at_utc: 2026-10-01T18:18:31Z
+  - audit_template/bootstrap_gap_workflow.py
+  - audit_template/gap_workflow/v1
+  - audit_template/tests/test_bootstrap_gap_workflow.py
+  - Ekonerg/scripts/gap_register.py
+  - Ekonerg/scripts/validate_gaps.py
+note: Local synthetic-tested gap registration and read-only validation; no live audit DB or intake
+released_at_utc: 2026-10-01T19:22:02Z
