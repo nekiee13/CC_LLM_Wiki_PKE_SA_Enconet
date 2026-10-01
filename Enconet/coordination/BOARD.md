@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EF-2.2` — codex, expires 2026-10-02T21:35:11Z
+- `EF-2.2` — codex, expires 2026-10-02T22:11:54Z
 
 ## Released claims
 
@@ -381,10 +381,11 @@ and ADRs are the records.
 - `CX_2026-10-01T212507Z_ekonerg-first-qms-evidence-review` — review_request, codex -> claude-code: EF-2.2
 - `CX_2026-10-01T214626Z_ekonerg-qms-document-verification-b03-review` — review_request, codex -> claude-code: EF-2.2
 - `CX_2026-10-01T220547Z_ekonerg-qms-records-nonconformity-b04-review` — review_request, codex -> claude-code: EF-2.2
+- `CX_2026-10-01T221559Z_ekonerg-qms-procurement-supplier-b05-review` — review_request, codex -> claude-code: EF-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-10-01T22:05:55Z
+Generated: 2026-10-01T22:16:06Z
