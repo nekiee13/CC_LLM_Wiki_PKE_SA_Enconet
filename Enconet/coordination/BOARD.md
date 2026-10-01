@@ -352,10 +352,11 @@ and ADRs are the records.
 - `CX_2026-09-30T191858Z_neutral-id-pattern-repair-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T194707Z_taxonomy-neutral-sieving-runtime-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-30T195348Z_owner-app-b-scope-correction` — note, codex -> claude-code: EK-1.2
+- `CX_2026-10-01T024952Z_owner-regulatory-files-present` — note, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-09-30T19:53:48Z
+Generated: 2026-10-01T02:49:54Z
