@@ -1,13 +1,13 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T15:14:20Z
-last_renewed_at_utc: 2026-10-01T15:14:20Z
-expires_at_utc: 2026-10-01T17:14:20Z
+claimed_at_utc: 2026-10-01T16:52:57Z
+last_renewed_at_utc: 2026-10-01T16:52:57Z
+expires_at_utc: 2026-10-01T18:52:57Z
 anticipated_files:
-  - audit_template/bootstrap_crumb_link.py
-  - audit_template/crumb_link/v1
-  - audit_template/tests/test_bootstrap_crumb_link.py
-  - Ekonerg/scripts/link_crumbs.py
-note: Safe per-run quote-linking batch; Claude review deferred
-released_at_utc: 2026-10-01T16:44:20Z
+  - audit_template/bootstrap_resieve.py
+  - audit_template/resieve/v1
+  - audit_template/tests/test_bootstrap_resieve.py
+  - Ekonerg/scripts/resieve_run.py
+note: Additive candidate resieve orchestration with preflight and no active-run overwrite
+released_at_utc: 2026-10-01T17:03:23Z
