@@ -1,0 +1,12 @@
+{"event": "start", "manifest_sha256": "5a5f3efa55f86f1dbd53529537bf47648a4320b4591cee9d1d20b94e5d4618ef", "run_id": "evidence-validators-20261001-01", "target": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Ekonerg", "template_version": "1.0.0"}
+{"event": "intent", "path": "manifests/link_exceptions.csv", "sha256": "b33e726d55f803c035eed0b380729dbefee8673b4543e60ec6398d128382b365"}
+{"event": "created", "path": "manifests/link_exceptions.csv", "sha256": "b33e726d55f803c035eed0b380729dbefee8673b4543e60ec6398d128382b365"}
+{"event": "intent", "path": "schemas/page_types.yml", "sha256": "bb0de0f6e2bfb26578726a0e1d673332549d49a2e241a0fe76c663b50ee555a1"}
+{"event": "created", "path": "schemas/page_types.yml", "sha256": "bb0de0f6e2bfb26578726a0e1d673332549d49a2e241a0fe76c663b50ee555a1"}
+{"event": "intent", "path": "schemas/required_fields.yml", "sha256": "9e273eb02bae901e316aa310632eb8b82242b380a28b50f47e1b298c6e22432d"}
+{"event": "created", "path": "schemas/required_fields.yml", "sha256": "9e273eb02bae901e316aa310632eb8b82242b380a28b50f47e1b298c6e22432d"}
+{"event": "intent", "path": "scripts/validate_frontmatter.py", "sha256": "8d5a1b396a42572c8d12d80d98b5daeb0e0a5cf83e5429f7719d704d55fb1675"}
+{"event": "created", "path": "scripts/validate_frontmatter.py", "sha256": "8d5a1b396a42572c8d12d80d98b5daeb0e0a5cf83e5429f7719d704d55fb1675"}
+{"event": "intent", "path": "scripts/validate_traceability.py", "sha256": "5957f95341f00d868ca293a3a3ee43686c2670a10d81f1094f5fb73cf05a0365"}
+{"event": "created", "path": "scripts/validate_traceability.py", "sha256": "5957f95341f00d868ca293a3a3ee43686c2670a10d81f1094f5fb73cf05a0365"}
+{"created": 5, "event": "complete", "preserved": 0}

@@ -1,0 +1,12 @@
+{
+  "template_version": "1.0.0",
+  "scope": "evidence-validation-runtime-only",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "manifests/link_exceptions.csv", "sha256": "b33e726d55f803c035eed0b380729dbefee8673b4543e60ec6398d128382b365", "bytes": 42},
+    {"path": "schemas/page_types.yml", "sha256": "bb0de0f6e2bfb26578726a0e1d673332549d49a2e241a0fe76c663b50ee555a1", "bytes": 998},
+    {"path": "schemas/required_fields.yml", "sha256": "9e273eb02bae901e316aa310632eb8b82242b380a28b50f47e1b298c6e22432d", "bytes": 1522},
+    {"path": "scripts/validate_frontmatter.py", "sha256": "8d5a1b396a42572c8d12d80d98b5daeb0e0a5cf83e5429f7719d704d55fb1675", "bytes": 8153},
+    {"path": "scripts/validate_traceability.py", "sha256": "5957f95341f00d868ca293a3a3ee43686c2670a10d81f1094f5fb73cf05a0365", "bytes": 5993}
+  ]
+}

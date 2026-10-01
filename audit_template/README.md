@@ -125,3 +125,15 @@ It needs the state bundle's local path helper and ID grammar. Preview first:
 python -B audit_template/bootstrap_source_validation.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_source_validation.py --target "C:\path\to\New Audit" --apply --run-id source-first
 ```
+
+The evidence-validation bundle adds local quote-to-chunk and wiki-frontmatter
+checks. Its exception ledger contains only a header: it does not grant any
+exception or approval. The page schemas define shapes, not real pages. The
+traceability check reads SQLite in read-only mode and rejects an empty quote
+set. Both checks need the state bundle's local path helper; the frontmatter
+check also needs the local taxonomy and vocabulary. Preview before copying:
+
+```powershell
+python -B audit_template/bootstrap_evidence_validation.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_evidence_validation.py --target "C:\path\to\New Audit" --apply --run-id evidence-first
+```
