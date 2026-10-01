@@ -183,3 +183,13 @@ paths within its project and never changes an existing score file.
 python -B audit_template/bootstrap_sieving_score.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_sieving_score.py --target "C:\path\to\New Audit" --apply --run-id score-first
 ```
+
+The sieving-analysis bundle adds local metrics and generation diffs. Both
+read an existing local database in SQLite read-only mode; neither creates a
+database or changes a run. They reject foreign paths and existing output
+files. The diff keeps repeated crumbs distinct rather than merging them.
+
+```powershell
+python -B audit_template/bootstrap_sieving_analysis.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_sieving_analysis.py --target "C:\path\to\New Audit" --apply --run-id analysis-first
+```
