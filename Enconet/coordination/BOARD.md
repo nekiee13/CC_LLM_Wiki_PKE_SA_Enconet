@@ -84,6 +84,7 @@ and ADRs are the records.
 - `EA6.5-CLASSIFICATION-BANDS` — codex, released 2026-09-05T07:43:46Z
 - `EF-1.1` — codex, released 2026-10-01T20:29:07Z
 - `EF-1.2` — codex, released 2026-10-01T20:46:53Z
+- `EF-2.1` — codex, released 2026-10-01T21:05:06Z
 - `EK-0.2` — codex, released 2026-09-29T11:41:12Z
 - `EK-0.2-ACK` — codex, released 2026-09-29T11:51:24Z
 - `EK-0.2-FINAL-ARCHIVE` — codex, released 2026-09-29T11:58:44Z
@@ -376,10 +377,11 @@ and ADRs are the records.
 - `CX_2026-10-01T201945Z_ekonerg-fast-audit-plan-review` — review_request, codex -> claude-code: EK-FAST-PLAN
 - `CX_2026-10-01T202901Z_ekonerg-source-register-review` — review_request, codex -> claude-code: EF-1.1
 - `CX_2026-10-01T204646Z_ekonerg-reading-route-review` — review_request, codex -> claude-code: EF-1.2
+- `CX_2026-10-01T210500Z_ekonerg-rule-map-review` — review_request, codex -> claude-code: EF-2.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-10-01T20:46:58Z
+Generated: 2026-10-01T21:05:13Z
