@@ -1,0 +1,16 @@
+{
+  "template_version": "1.0.0",
+  "scope": "sieving-harness-readiness-only",
+  "status": "candidate-pending-review",
+  "files": [
+    {"path": "benchmarks/sieving_golden/manifest.yml", "sha256": "683f633f417e0d27203385197fcc72e014caade117828ade519546c6515e83e1", "bytes": 220},
+    {"path": "schemas/sieving_skill_contract.yml", "sha256": "298e39a068ccf5b9467f104ac077e5e454f26a2cc6bea319404528ac9962a2db", "bytes": 429},
+    {"path": "scripts/validate_sieving_harness.py", "sha256": "e56c31180d5cc298f9fd9d94a8228d78e56f34b253670a98d9ba0b10b4765ce1", "bytes": 8196},
+    {"path": "scripts/validate_sieving_skill_drift.py", "sha256": "7d597604455a96644d2604f3dd538cda5fcd1044b3ea7a3f70625e20398365e2", "bytes": 2741},
+    {"path": "sieving/SIEVING_PLAYBOOK.md", "sha256": "855e1463e689e137fa2e359903d7a19c807706bc7eec0f126de9970bd4a92c0e", "bytes": 1701},
+    {"path": "sieving/prompts/.gitattributes", "sha256": "d2eb1a317920a1e2fd04a1b7352ef04bfb1f0b9f4d0594f4dc395a87ce2ccfba", "bytes": 17},
+    {"path": "sieving/prompts/CHANGELOG.md", "sha256": "8c5c6aedbf4d33853a2206cc9a4aa2527cddc680d33c30faffe719ecbb5bc588", "bytes": 729},
+    {"path": "sieving/prompts/appb_document_v1.md", "sha256": "dfbf9a8b22cb4d310c0ca897c285a9c84a168a06ce98b321619ff317bac288ed", "bytes": 725},
+    {"path": "sieving/prompts/appb_rule_v1.md", "sha256": "c9cbae553f9a5f9ec54d650f04474876c3d83fe87cdb3aad39507ea40fe8716f", "bytes": 1067}
+  ]
+}

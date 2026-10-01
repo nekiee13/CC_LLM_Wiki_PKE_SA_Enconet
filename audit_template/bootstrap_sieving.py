@@ -1,6 +1,6 @@
-"""Preview or copy the versioned v1 sieving candidate into one project.
+"""Preview or copy one versioned audit-template bundle into one project.
 
-The v1 contract selects the shared Appendix B criterion baseline. This does
+The selected bundle's manifest defines its exact scope. Copying a bundle does
 not approve a company source set or ASME NQA-1 edition; see README.md.
 
 Preview is read-only. Apply needs a run ID and never overwrites a file. A new

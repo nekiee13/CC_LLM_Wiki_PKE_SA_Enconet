@@ -149,3 +149,15 @@ and evidence-validation contracts already copied. Preview before applying:
 python -B audit_template/bootstrap_schema_validation.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_schema_validation.py --target "C:\path\to\New Audit" --apply --run-id schema-first
 ```
+
+The sieving-harness bundle adds a local readiness check, a skill-semantics
+contract and checker, a neutral playbook, an empty golden-set placeholder,
+and two inactive prompt candidates with a blank local history. It does not
+install Codex or Claude skills, activate prompts, create a database, or
+approve sieving. The normal checker must fail until those prerequisites are
+present. `--allow-pending-claude` is diagnostic only and never grants approval.
+
+```powershell
+python -B audit_template/bootstrap_sieving_harness.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_sieving_harness.py --target "C:\path\to\New Audit" --apply --run-id harness-first
+```
