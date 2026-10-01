@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-01T144549Z-f2174a5.md`](handoffs/2026-10-01T144549Z-f2174a5.md)
+**Authoritative record:** [`handoffs/2026-10-01T145710Z-babe7b2.md`](handoffs/2026-10-01T145710Z-babe7b2.md)
 
-**Status:** partial · **Git:** `f2174a5` · **Agent:** codex · **Created:** 2026-10-01T14:45:49Z
+**Status:** partial · **Git:** `babe7b2` · **Agent:** codex · **Created:** 2026-10-01T14:57:10Z
 
-**Exact next action:** Continue EK-1.2 with the next coherent sieving-stage batch, likely local metrics and diff, using synthetic data and guarded output paths; keep Claude-owned files and incoming documents untouched.
+**Exact next action:** Continue EK-1.2 with the next coherent local sieving-stage dependency batch, likely strict import and quote linking, using synthetic tests and no live source intake.
