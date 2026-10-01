@@ -137,3 +137,15 @@ check also needs the local taxonomy and vocabulary. Preview before copying:
 python -B audit_template/bootstrap_evidence_validation.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_evidence_validation.py --target "C:\path\to\New Audit" --apply --run-id evidence-first
 ```
+
+The schema-validation bundle adds the Appendix B JSON shape, offline dashboard
+shape, evaluation package shape, placeholder scoring model, and local contract checker. It
+compares source codes to the local sieving contract; an empty list means source
+selection is still pending, not approved. Numeric scoring values also stay
+unapproved until a local G3 decision. The checker needs the state, sieving,
+and evidence-validation contracts already copied. Preview before applying:
+
+```powershell
+python -B audit_template/bootstrap_schema_validation.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_schema_validation.py --target "C:\path\to\New Audit" --apply --run-id schema-first
+```
