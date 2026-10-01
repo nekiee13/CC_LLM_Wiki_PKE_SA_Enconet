@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-01T203229Z-daabd01.md`](handoffs/2026-10-01T203229Z-daabd01.md)
+**Authoritative record:** [`handoffs/2026-10-01T204910Z-1d50f9b.md`](handoffs/2026-10-01T204910Z-1d50f9b.md)
 
-**Status:** partial · **Git:** `daabd01` · **Agent:** codex · **Created:** 2026-10-01T20:32:29Z
+**Status:** partial · **Git:** `1d50f9b` · **Agent:** codex · **Created:** 2026-10-01T20:49:10Z
 
-**Exact next action:** Begin EF-1.2 as a separate task: make byte-identical local work copies, prove direct quote lookup and safe retry, and leave G1 pending until an actual owner decision.
+**Exact next action:** Begin EF-2.1 as a separate task: draft the Appendix B 18-criterion requirement map with exact SRC-002 citations, then add reviewed NQA-1 links; keep scope and G1 status explicit.
