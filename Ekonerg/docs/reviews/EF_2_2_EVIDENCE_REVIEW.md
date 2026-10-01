@@ -1,14 +1,15 @@
-# EF-2.2 QMS evidence batch review packet (B01-B06)
+# EF-2.2 QMS evidence batch review packet (B01-B07)
 
-The EF-2.2 batches are a draft desk review of fifteen supplied QMS files:
+The EF-2.2 batches are a draft desk review of eighteen supplied QMS files:
 the Rev. 5 management manual and three procedures for training, quality plans,
 project plans, document control, study/project control, and activity
 verification. The latest batch adds records control, nonconformity control,
 and corrective-action control. The latest batch adds supplier study/project
 control, procurement control, supplier evaluation, audits, and management
-review. The local evidence draft contains fifty exact
+review. The latest batch adds risk management, activity grading, and measuring
+equipment controls. The local evidence draft contains sixty exact
 Croatian quotes
-linked to Appendix B rows. All fifty quotes were verified against the pinned
+linked to Appendix B rows. All sixty quotes were verified against the pinned
 work copies by source ID, revision, heading, line, and text. No printed page
 was invented.
 
@@ -46,10 +47,11 @@ Open source and evidence items:
 - Audit plans, checklists, auditor qualifications, reports, follow-up files,
   management-review inputs, minutes, and action logs were not supplied
   (QMS-006).
+- Risk registers, completed risk assessments, calibration records, equipment
+  lists, graded plans, and implementation samples were not supplied (QMS-006).
 
-Nine named QMS files remain pending: SRC-008, SRC-010 through SRC-013,
-SRC-015, SRC-017, SRC-020, and SRC-021. The full 24-file QMS coverage check
-is therefore not
+Six named QMS files remain pending: SRC-011, SRC-012, SRC-013, SRC-015,
+SRC-020, and SRC-021. The full 24-file QMS coverage check is therefore not
 complete.
 
 The detailed draft, quote JSON, batch log, and check record remain local in
