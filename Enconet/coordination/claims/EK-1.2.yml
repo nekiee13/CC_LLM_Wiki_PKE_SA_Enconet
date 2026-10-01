@@ -1,19 +1,16 @@
 task: EK-1.2
 agent: codex
 status: released
-claimed_at_utc: 2026-10-01T14:16:18Z
-last_renewed_at_utc: 2026-10-01T14:16:18Z
-expires_at_utc: 2026-10-02T14:16:18Z
+claimed_at_utc: 2026-10-01T14:38:23Z
+last_renewed_at_utc: 2026-10-01T14:38:23Z
+expires_at_utc: 2026-10-02T14:38:23Z
 anticipated_files:
-  - audit_template/bootstrap_codex_sieving_skills.py
-  - audit_template/codex_sieving_skills/v1
-  - audit_template/tests/test_bootstrap_codex_sieving_skills.py
+  - audit_template/bootstrap_sieving_score.py
+  - audit_template/sieving_score/v1
+  - audit_template/tests/test_bootstrap_sieving_score.py
   - audit_template/README.md
   - audit_template/.gitattributes
-  - scripts/check_skill_structure.py
-  - scripts/tests/test_check_skill_structure.py
-  - Ekonerg/.agents/skills/sieving-run/SKILL.md
-  - Ekonerg/.agents/skills/crumb-quality/SKILL.md
-  - Ekonerg/.agents/skills/sieving-tuning/SKILL.md
-note: Versioned project-local Codex sieving skills and multi-project structure-checker regression; no Claude edits or source intake
-released_at_utc: 2026-10-01T14:24:11Z
+  - Ekonerg/scripts/score_sieving.py
+  - Ekonerg/manifests/approvals.csv
+note: Versioned local golden scoring with empty approval ledger and fail-closed tests; no live source intake
+released_at_utc: 2026-10-01T14:43:31Z
