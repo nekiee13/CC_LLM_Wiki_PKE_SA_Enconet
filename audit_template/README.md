@@ -239,3 +239,15 @@ it does not approve source intake or an audit result.
 python -B audit_template/bootstrap_chunking.py --target "C:\path\to\New Audit"
 python -B audit_template/bootstrap_chunking.py --target "C:\path\to\New Audit" --apply --run-id chunk-first
 ```
+
+The text-extraction bundle uses the source-validation bundle's local
+`source_registry.py` helper. It adds a preview-first command for a registered,
+write-locked local raw file with a matching manifest and SHA-256. It supports
+UTF-8 plain-text formats only. Apply first-writes derived text and records
+the extraction method; it refuses replacement and never reads `incoming`.
+Other formats need their own reviewed extractor.
+
+```powershell
+python -B audit_template/bootstrap_text_extraction.py --target "C:\path\to\New Audit"
+python -B audit_template/bootstrap_text_extraction.py --target "C:\path\to\New Audit" --apply --run-id extract-first
+```
