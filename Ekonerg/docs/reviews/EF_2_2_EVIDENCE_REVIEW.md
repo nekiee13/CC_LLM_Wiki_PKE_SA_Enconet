@@ -1,16 +1,20 @@
-# EF-2.2 QMS evidence batch review packet (B01-B03)
+# EF-2.2 QMS evidence batch review packet (B01-B04)
 
-The first EF-2.2 batches are a draft desk review of seven supplied QMS files:
+The EF-2.2 batches are a draft desk review of ten supplied QMS files:
 the Rev. 5 management manual and three procedures for training, quality plans,
 project plans, document control, study/project control, and activity
-verification. The local evidence draft contains twenty exact Croatian quotes
-linked to Appendix B rows. All twenty quotes were verified against the pinned
+verification. The latest batch adds records control, nonconformity control,
+and corrective-action control. The local evidence draft contains thirty exact
+Croatian quotes
+linked to Appendix B rows. All thirty quotes were verified against the pinned
 work copies by source ID, revision, heading, line, and text. No printed page
 was invented.
 
 The documents state roles, training plans, quality-plan fields, project phases,
 document-control responsibilities, independent design checks, change control,
-and verification records. They do not by themselves prove that the controls
+and verification records. They also describe record retention, nonconformity
+disposition, and corrective-action workflows. They do not by themselves prove
+that the controls
 operate. No score, finding, or conformity conclusion was made.
 
 Open source and evidence items:
@@ -32,10 +36,12 @@ Open source and evidence items:
   inspection records, and change records were not supplied (QMS-006).
 - Linked image files referenced by the document-control and verification
   procedures are absent; their content is not assumed (IMG-001).
+- Record, nonconformity, corrective-action, trend, and management-report
+  samples were not supplied (QMS-006).
 
-Seventeen named QMS files remain pending: SRC-008, SRC-010 through SRC-013,
-SRC-015 through SRC-017, SRC-020, SRC-021, SRC-023 through SRC-025, and
-SRC-027 through SRC-030. The full 24-file QMS coverage check is therefore not
+Fourteen named QMS files remain pending: SRC-008, SRC-010 through SRC-013,
+SRC-015, SRC-017, SRC-020, SRC-021, SRC-023 through SRC-025, and SRC-027
+through SRC-028. The full 24-file QMS coverage check is therefore not
 complete.
 
 The detailed draft, quote JSON, batch log, and check record remain local in
