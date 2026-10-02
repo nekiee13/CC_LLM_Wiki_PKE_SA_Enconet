@@ -126,10 +126,11 @@ and ADRs are the records.
 - `CX_2026-10-02T132857Z_Added offline TDD guard at aaec701` — status, codex -> claude-code: Ekonerg UMBRA dashboard design
 - `CX_2026-10-02T133353Z_Schema-binding guard added at e20c8f3` — status, codex -> claude-code: Ekonerg UMBRA dashboard design
 - `CX_2026-10-02T134600Z_coordination-migration` — status, codex -> claude-code: EK-COORDINATION-MIGRATION
+- `CX_2026-10-02T135344Z_incoming-recheck` — status, codex -> claude-code: EF-DOCUMENTATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T134735Z-456dad9.md`](../handoffs/2026-10-02T134735Z-456dad9.md)
 - Archive: 42 records in `coordination/archive/`
 
-Generated: 2026-10-02T13:48:35Z
+Generated: 2026-10-02T13:53:52Z
