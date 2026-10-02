@@ -12,6 +12,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[2]
 VIEW = ROOT / "docs" / "design" / "EKONERG_UMBRA_DASHBOARD.html"
+SCHEMA = ROOT / "schemas" / "dashboard_schema.yml"
 
 
 class _Inventory(HTMLParser):
@@ -86,3 +87,11 @@ def test_navigation_targets_and_all_criteria_groups_are_present() -> None:
         assert group in text
     assert "No direct quote" in text
     assert "Review pending" in text
+
+
+def test_dashboard_schema_keeps_the_view_bound_to_18_criteria() -> None:
+    schema = SCHEMA.read_text(encoding="utf-8")
+    for field in ("supplier", "generated_date", "dash_id", "run_id", "weighted_score"):
+        assert f"{field}:" in schema
+    assert "count: 18" in schema
+    assert "forbidden_patterns:" in schema
