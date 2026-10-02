@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T031848Z-e3653ee.md`](handoffs/2026-10-02T031848Z-e3653ee.md)
+**Authoritative record:** [`handoffs/2026-10-02T032530Z-e06ca76.md`](handoffs/2026-10-02T032530Z-e06ca76.md)
 
-**Status:** partial · **Git:** `e3653ee` · **Agent:** codex · **Created:** 2026-10-02T03:18:48Z
+**Status:** partial · **Git:** `e06ca76` · **Agent:** codex · **Created:** 2026-10-02T03:25:30Z
 
-**Exact next action:** Obtain Claude review and the owner's explicit scope/evidence decision. Resolve source-image and missing-reference questions, then update G2 status. Do not score until G2 is accepted.
+**Exact next action:** Obtain Claude's independent review of EF-2.3/EF-3.1 and capture the owner's detailed scope and evidence-acceptance decision. Then update G2 and only after acceptance consider formal assessment.
