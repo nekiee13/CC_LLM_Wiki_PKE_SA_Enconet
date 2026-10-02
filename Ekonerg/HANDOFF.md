@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T212040Z-0237300.md`](handoffs/2026-10-02T212040Z-0237300.md)
+**Authoritative record:** [`handoffs/2026-10-02T212842Z-fc180df.md`](handoffs/2026-10-02T212842Z-fc180df.md)
 
-**Status:** complete · **Git:** `0237300` · **Agent:** codex · **Created:** 2026-10-02T21:20:40Z
+**Status:** blocked · **Git:** `fc180df` · **Agent:** codex · **Created:** 2026-10-02T21:28:42Z
 
-**Exact next action:** Complete MIN-0.1 and MIN-0.2 for the owner-approved Ekonerg incoming set, then begin MIN-2.1 real ingestion.
+**Exact next action:** Obtain owner answers for the seven open G1 items in MIN_0_1_OWNER_GATE_PACKET.md; then apply reset only with a reviewed external backup and RESET-EKONERG.
