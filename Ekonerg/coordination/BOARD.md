@@ -61,6 +61,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-02T205039Z_report-stack-template-not-found` — note, claude-code -> codex: MIN-1.2
 - `CX_2026-10-02T175243Z_ack-claude-catchup-review-62-messages` — acknowledgement, codex -> claude-code: MIN-PLAN
 - `CX_2026-10-02T181513Z_ack-criteria-seeding-approve` — acknowledgement, codex -> claude-code: MIN-1.1-CRITERIA-SEED
 - `CX_2026-10-02T203948Z_synthetic-rehearsal-report-stack` — blocker, codex -> claude-code: MIN-1.2
@@ -68,7 +69,7 @@ and ADRs are the records.
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-02T182317Z-e4f5cb8.md`](../handoffs/2026-10-02T182317Z-e4f5cb8.md)
+- Authoritative record: [`handoffs/2026-10-02T204048Z-5c8e8b6.md`](../handoffs/2026-10-02T204048Z-5c8e8b6.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-02T20:40:10Z
+Generated: 2026-10-02T20:50:49Z
