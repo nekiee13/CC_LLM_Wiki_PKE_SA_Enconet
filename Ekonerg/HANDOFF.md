@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T144107Z-22ff29e.md`](handoffs/2026-10-02T144107Z-22ff29e.md)
+**Authoritative record:** [`handoffs/2026-10-02T145542Z-dd1f7f2.md`](handoffs/2026-10-02T145542Z-dd1f7f2.md)
 
-**Status:** partial · **Git:** `22ff29e` · **Agent:** codex · **Created:** 2026-10-02T14:41:07Z
+**Status:** partial · **Git:** `dd1f7f2` · **Agent:** codex · **Created:** 2026-10-02T14:55:42Z
 
-**Exact next action:** Await Claude review. If approved, owner may create and inspect an external preview plan, verify the backup destination, and independently authorize --apply. Never apply without reviewing the plan.
+**Exact next action:** Owner and Claude review the committed minimum plan; after approval, execute MIN-0.1 and MIN-0.2, then proceed through the nine batch tasks.
