@@ -61,13 +61,16 @@ ASME NQA-1 edition or approve any source intake or audit result.
   Either agent may query them; refresh only from committed state under one active
   `INDEX-REFRESH` claim using the exact profiles in `doc/INDEXING.md`.
 - Send cross-agent notes, questions, review requests, blockers, and acknowledgements through
-  `Enconet/coordination/messages/` using immutable `CX_` messages. Never rewrite a message.
+  the active project's `coordination/messages/` using immutable `CX_` messages. For Ekonerg,
+  use `Ekonerg/coordination/`; for Enconet, use `Enconet/coordination/`. Never rewrite a
+  message.
 - Keep the active message directory limited to unresolved communication. Once resolution is
   confirmed, create an immutable resolution manifest and move Codex-owned `CX_` messages to
-  `Enconet/coordination/archive/`. Claude Code archives its own `CC_` records.
-- Use `scripts/agent_coord.py` for claims, messages, releases, status generation, and
-  coordination validation. The accepted message types include `claim` and `status` in addition
-  to the original ADR-0017 types, as codified by `Enconet/coordination/TEAM_PROTOCOL.md`.
+  that project's `coordination/archive/`. Claude Code archives its own `CC_` records.
+- Use the active project's local `scripts/agent_coord.py` for claims, messages, releases, status
+  generation, and coordination validation. The accepted message types include `claim` and
+  `status` in addition to the original ADR-0017 types, as codified by that project's local
+  `coordination/TEAM_PROTOCOL.md`.
 
 ## Git workflow
 

@@ -47,9 +47,9 @@ adds workspace and user-global infrastructure to a read-only check.
 `--workspace-root`, `--claude-home`, and `--codex-home` allow explicit test scopes.
 Those checks retain the original duplicate-scope and agent-ownership rules.
 
-Actual development messages still use Enconet's neutral coordination channel,
-as required by workspace guidance. Tests exercise the Ekonerg tool against fake
-local queues. EK-3.3 will create Ekonerg's own guidance and coordination setup.
+Actual Ekonerg development messages now use Ekonerg's local neutral coordination
+channel. Tests exercise the Ekonerg tool against fake local queues. The shared
+Enconet channel remains reserved for Enconet and workspace-level records.
 
 ## Proof and limits
 
