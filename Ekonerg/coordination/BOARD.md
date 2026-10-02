@@ -130,10 +130,11 @@ and ADRs are the records.
 - `CX_2026-10-02T135957Z_draft-assessment-checks` — review_request, codex -> claude-code: EF-3.1
 - `CX_2026-10-02T140642Z_quote-recheck` — status, codex -> claude-code: EF-3.1
 - `CX_2026-10-02T141518Z_owner-scope-decision` — status, codex -> claude-code: EF-3.1
+- `CX_2026-10-02T144016Z_reset-command-review` — review_request, codex -> claude-code: EK-RESET
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T142052Z-aba8e66.md`](../handoffs/2026-10-02T142052Z-aba8e66.md)
 - Archive: 42 records in `coordination/archive/`
 
-Generated: 2026-10-02T14:21:02Z
+Generated: 2026-10-02T14:40:23Z
