@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T204048Z-5c8e8b6.md`](handoffs/2026-10-02T204048Z-5c8e8b6.md)
+**Authoritative record:** [`handoffs/2026-10-02T205353Z-546a5e3.md`](handoffs/2026-10-02T205353Z-546a5e3.md)
 
-**Status:** blocked · **Git:** `5c8e8b6` · **Agent:** codex · **Created:** 2026-10-02T20:40:48Z
+**Status:** blocked · **Git:** `546a5e3` · **Agent:** codex · **Created:** 2026-10-02T20:53:53Z
 
-**Exact next action:** Obtain an approved company-neutral source for the missing report stack or owner direction to implement it as a bounded batch; then write the MIN-1.2 RED test before implementation.
+**Exact next action:** Obtain owner decision to build a bounded company-neutral audit_template/report_stack/v1 bundle or defer MIN-1.2/1.3; do not initialize the real Ekonerg database meanwhile.

@@ -66,10 +66,11 @@ and ADRs are the records.
 - `CX_2026-10-02T181513Z_ack-criteria-seeding-approve` — acknowledgement, codex -> claude-code: MIN-1.1-CRITERIA-SEED
 - `CX_2026-10-02T203948Z_synthetic-rehearsal-report-stack` — blocker, codex -> claude-code: MIN-1.2
 - `CX_2026-10-02T204004Z_ack-synthetic-rehearsal-report-stack` — acknowledgement, codex -> codex: MIN-1.2
+- `CX_2026-10-02T205149Z_ack-report-stack-template-not-found` — acknowledgement, codex -> claude-code: MIN-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T204048Z-5c8e8b6.md`](../handoffs/2026-10-02T204048Z-5c8e8b6.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-02T20:50:49Z
+Generated: 2026-10-02T20:51:49Z
