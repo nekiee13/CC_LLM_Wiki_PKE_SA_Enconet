@@ -109,6 +109,12 @@ company-neutral Appendix B criteria rows. The fresh database has the table but
 no rows, so evaluation cannot start without this small seed step. This removes
 the risk of silently reading Enconet or writing to the wrong project.
 
+**Work:**
+
+1. Create the empty database with `init_db.py`.
+2. Run `seed_criteria.py` and verify the 18 rows.
+3. Repeat the command and confirm that the first seed is preserved.
+
 **Acceptance criteria:**
 
 - [ ] Every command used by the test chain resolves paths under Ekonerg.
