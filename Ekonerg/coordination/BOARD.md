@@ -131,10 +131,11 @@ and ADRs are the records.
 - `CX_2026-10-02T140642Z_quote-recheck` — status, codex -> claude-code: EF-3.1
 - `CX_2026-10-02T141518Z_owner-scope-decision` — status, codex -> claude-code: EF-3.1
 - `CX_2026-10-02T144016Z_reset-command-review` — review_request, codex -> claude-code: EK-RESET
+- `CX_2026-10-02T145148Z_minimum-operational-plan` — review_request, codex -> claude-code: MIN-PLAN
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T144107Z-22ff29e.md`](../handoffs/2026-10-02T144107Z-22ff29e.md)
 - Archive: 42 records in `coordination/archive/`
 
-Generated: 2026-10-02T14:41:15Z
+Generated: 2026-10-02T14:51:54Z
