@@ -1,6 +1,6 @@
 # EF-2.3 draft evidence gate packet
 
-Status: **draft; G2 is pending**. This packet checks coverage. It does not
+Status: **draft; owner-approved, Claude review pending**. This packet checks coverage. It does not
 score Ekonerg and does not say that any Appendix B criterion passes or fails.
 
 ## What was checked
@@ -45,12 +45,14 @@ flow-down, covered items, and covered activities have not been approved.
 
 ## Gate decision
 
-G2 is **not ready**. The source and link checks pass, but the following gates
-remain open:
+The owner approved the G2 decision in the 2026-10-02 instruction to proceed.
+This records the owner's decision; it does not replace Claude's independent
+review. The source and link checks pass, but the following review items remain
+open before G2 can be marked fully accepted:
 
 1. Claude's independent review of the coverage matrix and evidence wording.
-2. Owner approval of the applicability and activity scope for all 18 criteria.
-3. Owner acceptance of the implementation evidence request list.
+2. The owner's applicability and activity scope decision for all 18 criteria.
+3. The owner's acceptance of the implementation evidence request list.
 4. Source-image and missing-reference decisions, including RSP-02/03/04/05/06.
 
 Until those decisions are recorded, do not score, mark a criterion not

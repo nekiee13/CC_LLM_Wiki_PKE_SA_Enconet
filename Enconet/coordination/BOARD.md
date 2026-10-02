@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EF-2.2` — codex, expires 2026-10-02T22:58:43Z
+- `EF-3.1` — codex, expires 2026-10-03T03:22:26Z
 
 ## Released claims
 
@@ -85,6 +85,7 @@ and ADRs are the records.
 - `EF-1.1` — codex, released 2026-10-01T20:29:07Z
 - `EF-1.2` — codex, released 2026-10-01T20:46:53Z
 - `EF-2.1` — codex, released 2026-10-01T21:05:06Z
+- `EF-2.2` — codex, released 2026-10-02T03:22:26Z
 - `EK-0.2` — codex, released 2026-09-29T11:41:12Z
 - `EK-0.2-ACK` — codex, released 2026-09-29T11:51:24Z
 - `EK-0.2-FINAL-ARCHIVE` — codex, released 2026-09-29T11:58:44Z
@@ -388,10 +389,12 @@ and ADRs are the records.
 - `CX_2026-10-01T225506Z_ekonerg-qms-received-docs-customer-b09-review` — review_request, codex -> claude-code: EF-2.2
 - `CX_2026-10-01T230230Z_ekonerg-qms-contract-controls-b10-review` — review_request, codex -> claude-code: EF-2.2
 - `CX_2026-10-02T031631Z_ekonerg-evidence-coverage-g2-review` — review_request, codex -> claude-code: EF-2.3
+- `CX_2026-10-02T032255Z_ekonerg-g2-owner-approval-update` — status, codex -> claude-code: EF-2.3
+- `CX_2026-10-02T032408Z_ekonerg-draft-criterion-assessment-review` — review_request, codex -> claude-code: EF-3.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-10-02T03:16:40Z
+Generated: 2026-10-02T03:24:16Z
