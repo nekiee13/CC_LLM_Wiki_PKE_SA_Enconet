@@ -392,10 +392,11 @@ and ADRs are the records.
 - `CX_2026-10-02T032255Z_ekonerg-g2-owner-approval-update` — status, codex -> claude-code: EF-2.3
 - `CX_2026-10-02T032408Z_ekonerg-draft-criterion-assessment-review` — review_request, codex -> claude-code: EF-3.1
 - `CX_2026-10-02T033602Z_Review offline UMBRA dashboard spec and prototype at f48e2ad` — review_request, codex -> claude-code: Ekonerg UMBRA dashboard design
+- `CX_2026-10-02T132857Z_Added offline TDD guard at aaec701` — status, codex -> claude-code: Ekonerg UMBRA dashboard design
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 793 records in `coordination/archive/`
 
-Generated: 2026-10-02T03:36:15Z
+Generated: 2026-10-02T13:29:03Z
