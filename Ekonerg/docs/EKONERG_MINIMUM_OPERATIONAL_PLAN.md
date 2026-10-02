@@ -1,8 +1,8 @@
 # Ekonerg minimum operational audit plan
 
-**Status:** proposed  
+**Status:** proposed
 **Goal:** run one controlled Ekonerg audit from document intake to a traceable
-report.  
+report.
 **Assignee:** Codex implements. Claude reviews when available. The owner makes
 the gate and release decisions.
 
@@ -47,7 +47,7 @@ failing test, make the smallest fix, then run the required checks.
 then make a safe empty run. This prevents old results or changed documents from
 mixing with the new audit.
 
-**Owner:** Owner for approvals; Codex for implementation.  
+**Owner:** Owner for approvals; Codex for implementation.
 **Depends on:** This plan and the 31-file incoming set.
 
 ### Task MIN-0.1 — Record the one-page owner gate packet
@@ -97,8 +97,8 @@ or the reusable framework. This gives the audit a clean starting line.
 Test it with fake data first, so real QMS files are not used to debug paths or
 code.
 
-**Owner:** Codex.  
-**Depends on:** MIN-0.2.  
+**Owner:** Codex.
+**Depends on:** MIN-0.2.
 **Exit rule:** no new transfer slice is opened unless an acceptance test fails.
 
 ### Task MIN-1.1 — Wire the minimum local runtime as one batch
@@ -137,7 +137,7 @@ used.
 **What & Why:** Use the proven chain on the owner's 31 files. Keep source
 intake, extracted text, crumbs, and audit judgments separate.
 
-**Owner:** Codex.  
+**Owner:** Codex.
 **Depends on:** MIN-0.1, MIN-0.2, and MIN-1.2.
 
 ### Task MIN-2.1 — Ingest and chunk the approved source set
@@ -188,7 +188,7 @@ owner's scope. This turns a pile of crumbs into an audit checklist.
 **What & Why:** Turn accepted evidence into reviewed judgments and a report.
 Keep the report tied to the database and source hashes so it can be checked.
 
-**Owner:** Codex prepares; owner approves.  
+**Owner:** Codex prepares; owner approves.
 **Depends on:** MIN-2.1 through MIN-2.3.
 
 ### Task MIN-3.1 — Pass the evidence gate and record evaluations
