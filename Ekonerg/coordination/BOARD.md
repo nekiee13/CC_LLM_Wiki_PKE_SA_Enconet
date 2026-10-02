@@ -127,10 +127,11 @@ and ADRs are the records.
 - `CX_2026-10-02T133353Z_Schema-binding guard added at e20c8f3` — status, codex -> claude-code: Ekonerg UMBRA dashboard design
 - `CX_2026-10-02T134600Z_coordination-migration` — status, codex -> claude-code: EK-COORDINATION-MIGRATION
 - `CX_2026-10-02T135344Z_incoming-recheck` — status, codex -> claude-code: EF-DOCUMENTATION
+- `CX_2026-10-02T135957Z_draft-assessment-checks` — review_request, codex -> claude-code: EF-3.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T135430Z-3b9c320.md`](../handoffs/2026-10-02T135430Z-3b9c320.md)
 - Archive: 42 records in `coordination/archive/`
 
-Generated: 2026-10-02T13:55:02Z
+Generated: 2026-10-02T14:00:06Z
