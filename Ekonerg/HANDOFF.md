@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T212842Z-fc180df.md`](handoffs/2026-10-02T212842Z-fc180df.md)
+**Authoritative record:** [`handoffs/2026-10-02T214455Z-0bef065.md`](handoffs/2026-10-02T214455Z-0bef065.md)
 
-**Status:** blocked · **Git:** `fc180df` · **Agent:** codex · **Created:** 2026-10-02T21:28:42Z
+**Status:** blocked · **Git:** `0bef065` · **Agent:** codex · **Created:** 2026-10-02T21:44:55Z
 
-**Exact next action:** Obtain owner answers for the seven open G1 items in MIN_0_1_OWNER_GATE_PACKET.md; then apply reset only with a reviewed external backup and RESET-EKONERG.
+**Exact next action:** Owner confirms one external backup path; then run reset preview again, obtain the exact RESET-EKONERG authorization, apply with journal and backup verification, and only then begin ingestion.
