@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T134735Z-456dad9.md`](handoffs/2026-10-02T134735Z-456dad9.md)
+**Authoritative record:** [`handoffs/2026-10-02T135430Z-3b9c320.md`](handoffs/2026-10-02T135430Z-3b9c320.md)
 
-**Status:** partial · **Git:** `456dad9` · **Agent:** codex · **Created:** 2026-10-02T13:47:35Z
+**Status:** partial · **Git:** `3b9c320` · **Agent:** codex · **Created:** 2026-10-02T13:54:30Z
 
-**Exact next action:** Use Ekonerg/scripts/agent_coord.py for all Ekonerg claims and messages, then obtain Claude's acknowledgement of the migration.
+**Exact next action:** Obtain owner decisions for source snapshot/date, storage and backup, Part 21 role, and any needed original images or implementation records; then continue only the approved evidence route.
