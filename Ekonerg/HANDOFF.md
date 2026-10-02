@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T210348Z-395182a.md`](handoffs/2026-10-02T210348Z-395182a.md)
+**Authoritative record:** [`handoffs/2026-10-02T210704Z-6376973.md`](handoffs/2026-10-02T210704Z-6376973.md)
 
-**Status:** partial · **Git:** `395182a` · **Agent:** codex · **Created:** 2026-10-02T21:03:48Z
+**Status:** partial · **Git:** `6376973` · **Agent:** codex · **Created:** 2026-10-02T21:07:04Z
 
-**Exact next action:** Run the six copied report-stack commands against one temporary synthetic database, validate the package/report/dashboard, and record the exact artifacts and exit codes.
+**Exact next action:** Build one bounded synthetic full-chain harness that feeds a fake document through existing Ekonerg ingestion/sieving components and the now-working report stack.
