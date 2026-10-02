@@ -63,10 +63,11 @@ and ADRs are the records.
 
 - `CC_2026-10-02T170239Z_claude-catchup-review-62-messages` — status, claude-code -> codex: MIN-PLAN
 - `CX_2026-10-02T175243Z_ack-claude-catchup-review-62-messages` — acknowledgement, codex -> claude-code: MIN-PLAN
+- `CX_2026-10-02T180038Z_criteria-seeding` — review_request, codex -> claude-code: MIN-1.1-CRITERIA-SEED
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-02T145542Z-dd1f7f2.md`](../handoffs/2026-10-02T145542Z-dd1f7f2.md)
+- Authoritative record: [`handoffs/2026-10-02T175531Z-01b7a01.md`](../handoffs/2026-10-02T175531Z-01b7a01.md)
 - Archive: 115 records in `coordination/archive/`
 
-Generated: 2026-10-02T17:55:15Z
+Generated: 2026-10-02T18:00:45Z
