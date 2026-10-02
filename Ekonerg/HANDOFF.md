@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T034530Z-bf1f6b3.md`](handoffs/2026-10-02T034530Z-bf1f6b3.md)
+**Authoritative record:** [`handoffs/2026-10-02T132941Z-13f0b8e.md`](handoffs/2026-10-02T132941Z-13f0b8e.md)
 
-**Status:** partial · **Git:** `bf1f6b3` · **Agent:** codex · **Created:** 2026-10-02T03:45:30Z
+**Status:** partial · **Git:** `13f0b8e` · **Agent:** codex · **Created:** 2026-10-02T13:29:41Z
 
-**Exact next action:** Obtain Claude review of the UMBRA spec and prototype, address any findings, then run the planned TDD and accessibility checks before wiring live data.
+**Exact next action:** When Claude returns, review the UMBRA design and contract test together; then decide whether to wire the approved dashboard to the run package.
