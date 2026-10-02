@@ -1,0 +1,16 @@
+{"event": "start", "manifest_sha256": "95149fd934e4110ccdf67cfc37cce5d8c843b94cfa6d1d8f8edd235843039291", "run_id": "report-stack-20261002-01", "target": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Ekonerg", "template_version": "1.0.0"}
+{"event": "intent", "path": "scripts/build_dashboard_data.py", "sha256": "f2ed3898d39aba754fdaab18883ce7bf2a9dd585e227380971829f79fef3527c"}
+{"event": "created", "path": "scripts/build_dashboard_data.py", "sha256": "f2ed3898d39aba754fdaab18883ce7bf2a9dd585e227380971829f79fef3527c"}
+{"event": "intent", "path": "scripts/build_evaluation_package.py", "sha256": "2de71ad4e9573816ef81ad638f9f0090e2ea470ad888d8f7755d94b6146f62b4"}
+{"event": "created", "path": "scripts/build_evaluation_package.py", "sha256": "2de71ad4e9573816ef81ad638f9f0090e2ea470ad888d8f7755d94b6146f62b4"}
+{"event": "intent", "path": "scripts/generate_dashboard.py", "sha256": "773606a290d72d4fe8839c236db7d20715ffae056eed46b896c74d27d6abf0a5"}
+{"event": "created", "path": "scripts/generate_dashboard.py", "sha256": "773606a290d72d4fe8839c236db7d20715ffae056eed46b896c74d27d6abf0a5"}
+{"event": "intent", "path": "scripts/generate_report.py", "sha256": "70a1604df1e8ec742cd4e340247173c61fa311ebc16856fe3693492216e1d821"}
+{"event": "created", "path": "scripts/generate_report.py", "sha256": "70a1604df1e8ec742cd4e340247173c61fa311ebc16856fe3693492216e1d821"}
+{"event": "intent", "path": "scripts/report_stack_core.py", "sha256": "4c93f0ea9f0d75624a5a20fb01fe53e32bd38b4f511a3751551cf1e3725de3f9"}
+{"event": "created", "path": "scripts/report_stack_core.py", "sha256": "4c93f0ea9f0d75624a5a20fb01fe53e32bd38b4f511a3751551cf1e3725de3f9"}
+{"event": "intent", "path": "scripts/validate_dashboard.py", "sha256": "5af3b2dc624343f843c4fb2cb2ad85ef8d4580b125388d455f540fb7f1eaf0b5"}
+{"event": "created", "path": "scripts/validate_dashboard.py", "sha256": "5af3b2dc624343f843c4fb2cb2ad85ef8d4580b125388d455f540fb7f1eaf0b5"}
+{"event": "intent", "path": "scripts/validate_report.py", "sha256": "18860171fc9ada1d7f8e35376d7b5001f3049ec753a3609b5be86430ba61b5be"}
+{"event": "created", "path": "scripts/validate_report.py", "sha256": "18860171fc9ada1d7f8e35376d7b5001f3049ec753a3609b5be86430ba61b5be"}
+{"created": 7, "event": "complete", "preserved": 0}
