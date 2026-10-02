@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T182317Z-e4f5cb8.md`](handoffs/2026-10-02T182317Z-e4f5cb8.md)
+**Authoritative record:** [`handoffs/2026-10-02T204048Z-5c8e8b6.md`](handoffs/2026-10-02T204048Z-5c8e8b6.md)
 
-**Status:** partial · **Git:** `e4f5cb8` · **Agent:** codex · **Created:** 2026-10-02T18:23:17Z
+**Status:** blocked · **Git:** `5c8e8b6` · **Agent:** codex · **Created:** 2026-10-02T20:40:48Z
 
-**Exact next action:** Proceed with the next grouped MIN-1.1 runtime task only after the owner gate; keep the synthetic rehearsal ahead of real evidence.
+**Exact next action:** Obtain an approved company-neutral source for the missing report stack or owner direction to implement it as a bounded batch; then write the MIN-1.2 RED test before implementation.
