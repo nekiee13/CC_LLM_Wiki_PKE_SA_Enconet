@@ -69,10 +69,11 @@ and ADRs are the records.
 - `CX_2026-10-02T205149Z_ack-report-stack-template-not-found` — acknowledgement, codex -> claude-code: MIN-1.2
 - `CX_2026-10-02T210320Z_report-stack-template-and-runtime` — review_request, codex -> claude-code: MIN-1.2
 - `CX_2026-10-02T210650Z_copied-runtime-rehearsal-complete` — status, codex -> claude-code: MIN-1.2
+- `CX_2026-10-02T212020Z_full-synthetic-chain-pass` — review_request, codex -> claude-code: MIN-1.2
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-02T210704Z-6376973.md`](../handoffs/2026-10-02T210704Z-6376973.md)
+- Authoritative record: [`handoffs/2026-10-02T212040Z-0237300.md`](../handoffs/2026-10-02T212040Z-0237300.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-02T21:10:05Z
+Generated: 2026-10-02T21:20:47Z

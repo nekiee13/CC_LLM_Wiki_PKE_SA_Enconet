@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T210704Z-6376973.md`](handoffs/2026-10-02T210704Z-6376973.md)
+**Authoritative record:** [`handoffs/2026-10-02T212040Z-0237300.md`](handoffs/2026-10-02T212040Z-0237300.md)
 
-**Status:** partial · **Git:** `6376973` · **Agent:** codex · **Created:** 2026-10-02T21:07:04Z
+**Status:** complete · **Git:** `0237300` · **Agent:** codex · **Created:** 2026-10-02T21:20:40Z
 
-**Exact next action:** Build one bounded synthetic full-chain harness that feeds a fake document through existing Ekonerg ingestion/sieving components and the now-working report stack.
+**Exact next action:** Complete MIN-0.1 and MIN-0.2 for the owner-approved Ekonerg incoming set, then begin MIN-2.1 real ingestion.
