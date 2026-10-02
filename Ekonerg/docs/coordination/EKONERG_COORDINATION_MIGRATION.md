@@ -10,12 +10,14 @@ The Ekonerg project now owns its communication queue under
 `Ekonerg/coordination/`.
 
 - 64 active Ekonerg messages moved to `Ekonerg/coordination/messages/`.
-- 42 Ekonerg archive records moved to `Ekonerg/coordination/archive/`.
+- 41 Ekonerg archive records moved to `Ekonerg/coordination/archive/`; one
+  mixed resolution manifest remains in Enconet because it also closes an
+  Enconet status acknowledgement.
 - 49 Ekonerg claim records moved to `Ekonerg/coordination/claims/`.
 - The neutral protocol was copied to `Ekonerg/coordination/TEAM_PROTOCOL.md`.
 - Ekonerg's board was regenerated with the local script.
 
-The records retain their original filenames, message IDs, timestamps, contents,
+The moved records retain their original filenames, message IDs, timestamps, contents,
 and `CX_`/`CC_` ownership prefixes. No source documents, evidence, or audit
 database rows were moved.
 
