@@ -128,10 +128,11 @@ and ADRs are the records.
 - `CX_2026-10-02T134600Z_coordination-migration` — status, codex -> claude-code: EK-COORDINATION-MIGRATION
 - `CX_2026-10-02T135344Z_incoming-recheck` — status, codex -> claude-code: EF-DOCUMENTATION
 - `CX_2026-10-02T135957Z_draft-assessment-checks` — review_request, codex -> claude-code: EF-3.1
+- `CX_2026-10-02T140642Z_quote-recheck` — status, codex -> claude-code: EF-3.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T140216Z-7e63eec.md`](../handoffs/2026-10-02T140216Z-7e63eec.md)
 - Archive: 42 records in `coordination/archive/`
 
-Generated: 2026-10-02T14:02:34Z
+Generated: 2026-10-02T14:06:49Z
