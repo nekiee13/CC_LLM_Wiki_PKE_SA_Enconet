@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T214455Z-0bef065.md`](handoffs/2026-10-02T214455Z-0bef065.md)
+**Authoritative record:** [`handoffs/2026-10-02T215850Z-a4f61fd.md`](handoffs/2026-10-02T215850Z-a4f61fd.md)
 
-**Status:** blocked · **Git:** `0bef065` · **Agent:** codex · **Created:** 2026-10-02T21:44:55Z
+**Status:** blocked · **Git:** `a4f61fd` · **Agent:** codex · **Created:** 2026-10-02T21:58:50Z
 
-**Exact next action:** Owner confirms one external backup path; then run reset preview again, obtain the exact RESET-EKONERG authorization, apply with journal and backup verification, and only then begin ingestion.
+**Exact next action:** Owner explicitly authorizes reset with RESET-EKONERG-NO-BACKUP; then run the existing hash-checked preview plan in no-backup mode, verify the result, and begin ingestion.
