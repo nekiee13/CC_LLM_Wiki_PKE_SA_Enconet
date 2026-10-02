@@ -1,6 +1,7 @@
 # MIN-0.1 owner gate packet
 
-**Status:** pending owner G1 decision; no source promotion or audit conclusion.
+**Status:** G1 approved by owner; reset apply still waiting for a safe external
+backup path.
 
 ## What this packet covers
 
@@ -42,25 +43,63 @@ The incoming files remain the owner-controlled source drop.
 These statements are recorded owner direction. They do not by themselves
 approve source editions or close the conditional applicability questions.
 
-## Open G1 decisions for the owner
+## G1 decision update
+
+The owner approved this exact 31-file source set. The approval reference used
+for the dated snapshot is `G1-EKONERG-2026-10-02`.
+
+The owner requested `Ekonerg/backup` for reset backups. The reset command
+rejects that path because it is inside the project it would reset. This guard
+must stay in place: a backup inside the project could be deleted by the reset.
+Use a sibling path such as
+`C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Ekonerg-backup` or
+`C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\backup\Ekonerg` instead.
+
+## Supplier boundary — ELI5
+
+Think of the boundary as a fence around the audit. The fence contains
+Ekonerg's own QA system and the work Ekonerg delivers. It does not automatically
+make every company that Ekonerg buys from a second audit target.
+
+If an outside supplier or subcontractor can affect Ekonerg's quality result,
+we check how Ekonerg controls that work: supplier selection, contract flow-down,
+acceptance, and follow-up. We record the outside company as evidence about
+Ekonerg's control, not as a new audited supplier. The owner said Ekonerg is the
+only supplier in this audit scope; the supplier list and one flow-down sample
+are still needed to test that boundary.
+
+## Remaining G1 clarifications
 
 Please record one decision for each item:
 
 1. **Source snapshot/effective date:** what date or controlled snapshot should
    identify these exact 31 files?
-2. **Source approval:** approve this exact register for G1, or list changes.
-3. **NQA-1 edition:** confirm that the supplied preface and split files are the
+2. **NQA-1 edition:** confirm that the supplied preface and split files are the
    intended interpretation set. The preface states 2015; the split files do
    not prove edition completeness by themselves.
-4. **NRC dates:** the Appendix B and Part 21 files do not state a capture or
+3. **NRC dates:** the Appendix B and Part 21 files do not state a capture or
    effective date in the checked headings. Confirm how that uncertainty should
    be recorded.
 5. **Missing images:** 26 Markdown files link to image assets not present in
    `incoming/`. Confirm that affected claims stay unverified unless the
    original assets are supplied.
-6. **Controlled backup:** name the approved backup location outside Ekonerg.
-7. **Supplier boundary:** provide the supplier/subcontractor list and one
+6. **Controlled backup:** confirm a sibling/external path. `Ekonerg/backup`
+   cannot be used by the guarded reset command.
+7. **Supplier boundary evidence:** provide the supplier/subcontractor list and one
    flow-down sample if covered work is outsourced.
+
+## Dated source snapshot
+
+Created without copying source text:
+
+- Path: `Ekonerg/out/2026-10-02/source_snapshot.json`
+- Command: `python -B Ekonerg/scripts/source_snapshot.py --date 2026-10-02 --g1-ref G1-EKONERG-2026-10-02`
+- Exit code: **0**
+- Contents: 31 relative paths, byte counts, and SHA-256 hashes; no document text.
+
+The `out/YYYY-MM-DD/` folder is for immutable result snapshots. Each audit run
+should write its package, report, dashboard, validation record, and source hash
+manifest under its date/run folder. Do not overwrite an existing snapshot.
 
 ## MIN-0.2 reset preview
 
@@ -78,5 +117,7 @@ exact confirmation token `RESET-EKONERG`. It must wait for that confirmation.
 
 ## Gate result
 
-**G1 is pending.** Real ingestion must not start until the owner records the
-source snapshot, source approval, backup location, and any corrections above.
+**G1 is approved.** Real ingestion may start after the reset plan is applied
+with a confirmed external backup directory. The remaining source-edition,
+NRC-date, missing-image, and supplier-boundary items stay visible as audit
+limitations or evidence requests; they do not get silently filled in.
