@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T142052Z-aba8e66.md`](handoffs/2026-10-02T142052Z-aba8e66.md)
+**Authoritative record:** [`handoffs/2026-10-02T144107Z-22ff29e.md`](handoffs/2026-10-02T144107Z-22ff29e.md)
 
-**Status:** partial · **Git:** `aba8e66` · **Agent:** codex · **Created:** 2026-10-02T14:20:52Z
+**Status:** partial · **Git:** `22ff29e` · **Agent:** codex · **Created:** 2026-10-02T14:41:07Z
 
-**Exact next action:** Use representative design, engineering, and consultancy samples to test the six conditional criteria; obtain supplier flow-down evidence if applicable; trace one Part 21 nonconformance and corrective action; keep results draft until evidence acceptance.
+**Exact next action:** Await Claude review. If approved, owner may create and inspect an external preview plan, verify the backup destination, and independently authorize --apply. Never apply without reviewing the plan.
