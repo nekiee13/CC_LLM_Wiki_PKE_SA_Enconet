@@ -8,8 +8,12 @@ meaning of the evidence without declaring pass, fail, or not applicable.
 
 The Ekonerg documents describe a broad quality-system design. They do not show
 that staff used the controls on real work. Twelve criteria have policy text
-linked to them; six have no direct mapped quote in this draft set. All 18
-criteria remain open for scope and implementation evidence.
+linked to them; six have no direct mapped quote in this draft set. The owner
+has defined the working activity scope as design, engineering services, and
+consultancy, and has made Part 21 relevant mainly to nonconformances and
+corrective actions. The preliminary applicability screen therefore has 12
+applicable and 6 conditional criteria, with no final N/A decision. See
+[`EF_3_1_OWNER_SCOPE_DECISION.md`](EF_3_1_OWNER_SCOPE_DECISION.md).
 
 ## Criterion summary
 
@@ -42,4 +46,6 @@ direct quote” is not treated as a failure or N/A. Confirm whether any wording
 would improperly bypass the owner's scope decision.
 
 Formal scoring and findings remain blocked until the evidence and applicability
-gates are accepted.
+gates are accepted. Part I of ASME NQA-1 is the mandatory interpretation
+baseline; Part II is not mandatory by itself, and no NQA-1 text outside the
+approved scope should be treated as an automatic duty.
