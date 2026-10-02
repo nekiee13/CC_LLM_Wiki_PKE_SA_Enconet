@@ -1,6 +1,6 @@
 # MIN-0.1 owner gate packet
 
-**Status:** G1 approved by owner; local audit backup waived by owner.
+**Status:** G1 approved by owner; no-local-backup reset completed; intake is ready.
 
 ## What this packet covers
 
@@ -99,7 +99,11 @@ The `out/YYYY-MM-DD/` folder is for immutable result snapshots. Each audit run
 should write its package, report, dashboard, validation record, and source hash
 manifest under its date/run folder. Do not overwrite an existing snapshot.
 
-## MIN-0.2 reset preview
+A post-reset source snapshot was also recorded at
+`Ekonerg/out/2026-10-03/source_snapshot.json`. It contains the same 31 incoming
+files and hashes, proving that reset did not change the owner-provided sources.
+
+## MIN-0.2 reset preview and apply
 
 A read-only reset preview was run before any real intake:
 
@@ -108,17 +112,21 @@ A read-only reset preview was run before any real intake:
 - Plan SHA-256: `15c441c652ffc287c92cf266205a460e3ec8c35f7de42b8e44aa074b5434b571`
 - Candidates: **49 files** — 46 delete, 3 truncate.
 - Incoming snapshot: 31 files; hashes match the source register.
-- Apply: **not run**. No backup was created and no project file was removed.
+- Apply: completed on 2026-10-03 with `--no-backup` and
+  `RESET-EKONERG-NO-BACKUP`; 46 files deleted and 3 manifests reset to headers.
+- Backup result: `owner-waived`; no local archive was created, per owner decision.
+- Post-apply verification: all 49 planned targets matched the requested result;
+  incoming and framework files remained present.
 
 The reset command now has two explicit modes. Normal apply creates an external
 generated-state backup and requires `RESET-EKONERG`. The owner-approved
 no-local-backup mode requires `--no-backup` plus the separate token
-`RESET-EKONERG-NO-BACKUP`. No apply has been run yet.
+`RESET-EKONERG-NO-BACKUP`. The owner authorized and completed the no-local-backup
+apply on 2026-10-03.
 
 ## Gate result
 
-**G1 is approved.** Real ingestion may start after the reset plan is applied
-with the owner's no-local-backup choice explicitly confirmed at execution.
+**G1 is approved and reset is complete.** Real ingestion may now start.
 The remaining source-edition,
 NRC-date, missing-image, and supplier-boundary items stay visible as audit
 limitations or evidence requests; they do not get silently filled in.
