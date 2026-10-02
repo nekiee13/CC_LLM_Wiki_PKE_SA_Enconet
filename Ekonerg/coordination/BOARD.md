@@ -61,6 +61,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-02T170239Z_claude-catchup-review-62-messages` — status, claude-code -> codex: MIN-PLAN
 - `CX_2026-09-29T180755Z_ekonerg-continuity-review` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-09-29T182027Z_ekonerg-sieving-foundation-review` — review_request, codex -> claude-code: EK-1.2-SIEVING-FOUNDATION
 - `CX_2026-09-29T183312Z_ekonerg-sieving-io-review` — review_request, codex -> claude-code: EK-1.2-SIEVING-IO
@@ -139,4 +140,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-02T145542Z-dd1f7f2.md`](../handoffs/2026-10-02T145542Z-dd1f7f2.md)
 - Archive: 42 records in `coordination/archive/`
 
-Generated: 2026-10-02T14:56:59Z
+Generated: 2026-10-02T17:02:44Z
