@@ -104,8 +104,10 @@ code.
 ### Task MIN-1.1 — Wire the minimum local runtime as one batch
 
 **What & Why:** Make ingestion, chunking, sieving, crumb import, validation,
-evaluation, and reporting use only the Ekonerg tree. This removes the risk of
-silently reading Enconet or writing to the wrong project.
+evaluation, and reporting use only the Ekonerg tree. Also load the 18
+company-neutral Appendix B criteria rows. The fresh database has the table but
+no rows, so evaluation cannot start without this small seed step. This removes
+the risk of silently reading Enconet or writing to the wrong project.
 
 **Acceptance criteria:**
 
@@ -113,6 +115,8 @@ silently reading Enconet or writing to the wrong project.
 - [ ] No command imports code or data from Enconet.
 - [ ] A synthetic company name with spaces and Croatian letters works.
 - [ ] A synthetic sibling project remains byte-for-byte unchanged.
+- [ ] A fresh database is seeded once with exactly the 18 criteria from the
+  local taxonomy, using a deterministic test-covered command.
 - [ ] The batch has one review record with exact test commands and exit codes.
 
 ### Task MIN-1.2 — Run one synthetic end-to-end rehearsal
