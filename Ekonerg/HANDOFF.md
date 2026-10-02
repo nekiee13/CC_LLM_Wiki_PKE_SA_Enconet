@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-02T133457Z-6206471.md`](handoffs/2026-10-02T133457Z-6206471.md)
+**Authoritative record:** [`handoffs/2026-10-02T134735Z-456dad9.md`](handoffs/2026-10-02T134735Z-456dad9.md)
 
-**Status:** partial · **Git:** `6206471` · **Agent:** codex · **Created:** 2026-10-02T13:34:57Z
+**Status:** partial · **Git:** `456dad9` · **Agent:** codex · **Created:** 2026-10-02T13:47:35Z
 
-**Exact next action:** When Claude returns, review the UMBRA design and schema-binding tests; then decide whether to wire the approved dashboard to a reviewed run package.
+**Exact next action:** Use Ekonerg/scripts/agent_coord.py for all Ekonerg claims and messages, then obtain Claude's acknowledgement of the migration.
