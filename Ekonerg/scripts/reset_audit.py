@@ -5,7 +5,8 @@ The command deliberately does not reset the project framework, incoming
 documents, coordination history, or immutable handoff/review records. It
 removes only known runtime/output locations and clears mutable validation
 manifests back to their headers. Preview is the default. Apply requires a
-hash-checked external plan, an external backup directory, and an exact
+hash-checked external plan and an exact confirmation token. Normal apply
+creates an external backup; a deliberate no-backup mode uses a different
 confirmation token.
 """
 
@@ -27,6 +28,7 @@ from project_paths import configure_standard_streams
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIRMATION = "RESET-EKONERG"
+NO_BACKUP_CONFIRMATION = "RESET-EKONERG-NO-BACKUP"
 PLAN_VERSION = 1
 
 # These are generated audit state locations. Framework code, schemas, prompts,
@@ -262,23 +264,48 @@ def _external_backup_dir(backup_dir: Path, root: Path) -> Path:
     return backup_dir
 
 
-def apply_plan(plan_path: Path | str, project_root: Path | str, backup_dir: Path | str,
-               *, confirmation: str) -> dict[str, object]:
-    """Back up and apply a plan only after all fingerprints still match."""
-    if confirmation != CONFIRMATION:
-        raise ResetError(f"exact confirmation required: {CONFIRMATION}")
+def apply_plan(plan_path: Path | str, project_root: Path | str,
+               backup_dir: Path | str | None, *, confirmation: str) -> dict[str, object]:
+    """Apply a plan only after all fingerprints still match.
+
+    ``backup_dir=None`` deliberately skips the generated-state backup. This
+    owner-controlled trade-off has a separate confirmation token.
+    """
+    expected_confirmation = NO_BACKUP_CONFIRMATION if backup_dir is None else CONFIRMATION
+    if confirmation != expected_confirmation:
+        raise ResetError(f"exact confirmation required: {expected_confirmation}")
     root = _assert_root(Path(project_root))
     plan = _load_plan(plan_path)
     current = build_plan(root)
     _compare_plan(plan, current, root)
-    backup_root = _external_backup_dir(Path(backup_dir), root)
-    archive = _backup_path(backup_root, str(plan["plan_sha256"]))
-    if archive.exists():
-        raise ResetError(f"backup already exists: {archive}")
+    archive: Path | None = None
+    if backup_dir is not None:
+        backup_root = _external_backup_dir(Path(backup_dir), root)
+        archive = _backup_path(backup_root, str(plan["plan_sha256"]))
+        if archive.exists():
+            raise ResetError(f"backup already exists: {archive}")
 
     candidates = list(plan["candidates"])
     entries: list[dict[str, object]] = []
-    with ZipFile(archive, "x", compression=ZIP_DEFLATED) as bundle:
+    if archive is not None:
+        with ZipFile(archive, "x", compression=ZIP_DEFLATED) as bundle:
+            for entry in candidates:
+                relative = str(entry["relative_path"])
+                path = root / Path(relative)
+                actual = _fingerprint(path, root)
+                expected = {key: entry[key] for key in ("relative_path", "sha256", "size", "mtime_ns")}
+                if actual != expected:
+                    raise ResetError(f"reset target changed since preview: {relative}")
+                bundle.write(path, arcname=relative)
+                entries.append(actual)
+            bundle.writestr("reset-plan.json", _canonical(plan))
+
+        with ZipFile(archive, "r") as bundle:
+            names = set(bundle.namelist())
+            expected_names = {str(entry["relative_path"]) for entry in candidates} | {"reset-plan.json"}
+            if names != expected_names:
+                raise ResetError("backup archive contents do not match the reset plan")
+    else:
         for entry in candidates:
             relative = str(entry["relative_path"])
             path = root / Path(relative)
@@ -286,15 +313,7 @@ def apply_plan(plan_path: Path | str, project_root: Path | str, backup_dir: Path
             expected = {key: entry[key] for key in ("relative_path", "sha256", "size", "mtime_ns")}
             if actual != expected:
                 raise ResetError(f"reset target changed since preview: {relative}")
-            bundle.write(path, arcname=relative)
             entries.append(actual)
-        bundle.writestr("reset-plan.json", _canonical(plan))
-
-    with ZipFile(archive, "r") as bundle:
-        names = set(bundle.namelist())
-        expected_names = {str(entry["relative_path"]) for entry in candidates} | {"reset-plan.json"}
-        if names != expected_names:
-            raise ResetError("backup archive contents do not match the reset plan")
 
     deleted = truncated = 0
     for entry in candidates:
@@ -311,7 +330,9 @@ def apply_plan(plan_path: Path | str, project_root: Path | str, backup_dir: Path
             path.write_bytes(header.encode("utf-8"))
             truncated += 1
     _prune_empty_dirs(root)
-    return {"backup": str(archive), "deleted": deleted, "truncated": truncated,
+    return {"backup": str(archive) if archive is not None else None,
+            "backup_status": "created" if archive is not None else "owner-waived",
+            "deleted": deleted, "truncated": truncated,
             "plan_sha256": plan["plan_sha256"]}
 
 
@@ -333,7 +354,9 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--plan", type=Path, help="external plan file (write in preview, read in apply)")
     parser.add_argument("--apply", action="store_true", help="apply a previously written plan")
-    parser.add_argument("--backup-dir", type=Path, help="external backup directory required by --apply")
+    parser.add_argument("--backup-dir", type=Path, help="external backup directory for normal apply")
+    parser.add_argument("--no-backup", action="store_true",
+                        help="skip generated-state backup; requires the no-backup token")
     parser.add_argument("--confirm", help=f"must equal {CONFIRMATION} for --apply")
     args = parser.parse_args(argv)
     try:
@@ -345,9 +368,10 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 print(json.dumps({"mode": "preview", **plan}, ensure_ascii=False, sort_keys=True))
             return 0
-        if not args.plan or not args.backup_dir:
-            raise ResetError("--apply requires --plan and --backup-dir")
-        result = apply_plan(args.plan, ROOT, args.backup_dir, confirmation=args.confirm or "")
+        if not args.plan or (args.backup_dir is not None and args.no_backup) or (args.backup_dir is None and not args.no_backup):
+            raise ResetError("--apply requires exactly one of --backup-dir or --no-backup")
+        result = apply_plan(args.plan, ROOT, None if args.no_backup else args.backup_dir,
+                            confirmation=args.confirm or "")
         print(json.dumps({"mode": "apply", **result}, ensure_ascii=False, sort_keys=True))
         return 0
     except (OSError, ResetError, UnicodeError, ValueError) as exc:

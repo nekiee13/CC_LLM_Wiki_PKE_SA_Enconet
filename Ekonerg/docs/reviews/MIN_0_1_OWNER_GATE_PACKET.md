@@ -1,7 +1,6 @@
 # MIN-0.1 owner gate packet
 
-**Status:** G1 approved by owner; reset apply still waiting for a safe external
-backup path.
+**Status:** G1 approved by owner; local audit backup waived by owner.
 
 ## What this packet covers
 
@@ -48,12 +47,11 @@ approve source editions or close the conditional applicability questions.
 The owner approved this exact 31-file source set. The approval reference used
 for the dated snapshot is `G1-EKONERG-2026-10-02`.
 
-The owner requested `Ekonerg/backup` for reset backups. The reset command
-rejects that path because it is inside the project it would reset. This guard
-must stay in place: a backup inside the project could be deleted by the reset.
-Use a sibling path such as
-`C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Ekonerg-backup` or
-`C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\backup\Ekonerg` instead.
+The owner will protect the original documents outside this audit project. The
+owner therefore waived a second local backup of generated audit state. The
+`Ekonerg/backup` folder is not used. If a local generated-state backup is ever
+wanted, it must still be outside the project because a backup inside the
+project could be deleted by reset.
 
 ## Supplier boundary — ELI5
 
@@ -83,8 +81,8 @@ Please record one decision for each item:
 5. **Missing images:** 26 Markdown files link to image assets not present in
    `incoming/`. Confirm that affected claims stay unverified unless the
    original assets are supplied.
-6. **Controlled backup:** confirm a sibling/external path. `Ekonerg/backup`
-   cannot be used by the guarded reset command.
+6. **Reset backup choice:** owner waived the local generated-state backup;
+   original-document protection remains the owner's responsibility.
 7. **Supplier boundary evidence:** provide the supplier/subcontractor list and one
    flow-down sample if covered work is outsourced.
 
@@ -105,19 +103,22 @@ manifest under its date/run folder. Do not overwrite an existing snapshot.
 
 A read-only reset preview was run before any real intake:
 
-- Command: `python -B Ekonerg/scripts/reset_audit.py --plan reset-plans/ekonerg-reset-min0-2.json`
+- Command: `python -B Ekonerg/scripts/reset_audit.py --plan reset-plans/ekonerg-reset-2026-10-02-g1.json`
 - Exit code: **0**
 - Plan SHA-256: `15c441c652ffc287c92cf266205a460e3ec8c35f7de42b8e44aa074b5434b571`
 - Candidates: **49 files** — 46 delete, 3 truncate.
 - Incoming snapshot: 31 files; hashes match the source register.
 - Apply: **not run**. No backup was created and no project file was removed.
 
-The reset apply needs the owner-selected external backup directory and the
-exact confirmation token `RESET-EKONERG`. It must wait for that confirmation.
+The reset command now has two explicit modes. Normal apply creates an external
+generated-state backup and requires `RESET-EKONERG`. The owner-approved
+no-local-backup mode requires `--no-backup` plus the separate token
+`RESET-EKONERG-NO-BACKUP`. No apply has been run yet.
 
 ## Gate result
 
 **G1 is approved.** Real ingestion may start after the reset plan is applied
-with a confirmed external backup directory. The remaining source-edition,
+with the owner's no-local-backup choice explicitly confirmed at execution.
+The remaining source-edition,
 NRC-date, missing-image, and supplier-boundary items stay visible as audit
 limitations or evidence requests; they do not get silently filled in.

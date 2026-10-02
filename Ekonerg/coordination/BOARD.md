@@ -72,10 +72,11 @@ and ADRs are the records.
 - `CX_2026-10-02T212020Z_full-synthetic-chain-pass` — review_request, codex -> claude-code: MIN-1.2
 - `CX_2026-10-02T212759Z_owner-gate-packet-and-reset-preview` — review_request, codex -> claude-code: MIN-0.1
 - `CX_2026-10-02T214252Z_g1-approved-source-snapshot` — status, codex -> claude-code: MIN-0.1
+- `CX_2026-10-02T215720Z_owner-waived-local-backup` — status, codex -> claude-code: MIN-0.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T214455Z-0bef065.md`](../handoffs/2026-10-02T214455Z-0bef065.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-02T21:46:58Z
+Generated: 2026-10-02T21:57:35Z

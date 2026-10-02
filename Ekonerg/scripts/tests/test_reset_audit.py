@@ -11,7 +11,7 @@ from uuid import uuid4
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from reset_audit import ResetError, apply_plan, build_plan, write_plan
+from reset_audit import NO_BACKUP_CONFIRMATION, ResetError, apply_plan, build_plan, write_plan
 
 
 @pytest.fixture
@@ -109,6 +109,22 @@ def test_apply_backs_up_then_removes_only_audit_state(scratch: Path) -> None:
         "object_id,decision,date,reviewer,notes\n"
     )
     assert (sibling / "keep.txt").read_text(encoding="utf-8") == "other company\n"
+
+
+def test_apply_can_skip_local_backup_only_with_distinct_owner_token(scratch: Path) -> None:
+    root, _ = _project(scratch)
+    plan_path = scratch / "reset-plan.json"
+    write_plan(build_plan(root), plan_path)
+
+    with pytest.raises(ResetError, match=NO_BACKUP_CONFIRMATION):
+        apply_plan(plan_path, root, None, confirmation="RESET-EKONERG")
+
+    result = apply_plan(plan_path, root, None, confirmation=NO_BACKUP_CONFIRMATION)
+
+    assert result["backup"] is None
+    assert result["backup_status"] == "owner-waived"
+    assert not (root / "db" / "nqa_audit.sqlite").exists()
+    assert len(list((root / "incoming").iterdir())) == 1
 
 
 def test_apply_refuses_plan_drift_before_deletion(scratch: Path) -> None:
