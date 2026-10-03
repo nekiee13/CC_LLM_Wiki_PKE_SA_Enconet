@@ -13,3 +13,10 @@ Before promotion or tuning, record the local golden-set result, reviewer
 decision, decision reference, and lesson in the relevant local skill. Rejection
 or promotion requires a fresh human decision; activation alone does not make a
 draft golden set approved.
+
+## Recall-first collection rule (owner instruction, 2026-10-03)
+
+During sieving, prefer high recall. Keep plausible and borderline crumbs when
+the source supports them, preserve the exact quote and chapter locator, and mark
+uncertain criterion mapping in the statement for later review. Do not invent
+source facts or treat a fuzzy candidate as a confirmed audit conclusion.

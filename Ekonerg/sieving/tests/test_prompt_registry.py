@@ -84,6 +84,8 @@ class PromptRegistryTests(unittest.TestCase):
         self.assertIn('DOCUMENT_SIDE: "RULE"', rule)
         self.assertIn('DOCUMENT_SIDE: "DOCUMENT"', document)
         self.assertIn("AUTHORITY_REFERENCES: []", document)
+        self.assertIn("Recall-first collection rule", rule)
+        self.assertIn("Recall-first collection rule", document)
 
     def test_fresh_history_has_no_old_promotion_or_score(self) -> None:
         history = (self.prompts / "CHANGELOG.md").read_text(encoding="utf-8")

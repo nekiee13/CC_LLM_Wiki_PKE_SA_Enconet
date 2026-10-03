@@ -66,6 +66,12 @@ write down the crumbs that a good sieve should return. The tool compares a test
 run with that key. A match means the shape and wording are close; it does not
 prove that the whole audit is correct.
 
+The owner also set a recall-first rule for sieving: keep plausible and
+borderline crumbs when the source supports them. Preserve the exact quote and
+chapter path, and mark an uncertain criterion mapping as a candidate for later
+review. This widens collection without inventing facts or calling a candidate
+an audit conclusion.
+
 Fresh Ekonerg draft keys are available for review:
 
 - [`manifest_rule.yml`](../../benchmarks/sieving_golden/manifest_rule.yml) —
