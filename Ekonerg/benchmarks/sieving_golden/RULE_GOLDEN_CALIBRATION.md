@@ -2,17 +2,17 @@
 
 ## Status
 
-**Draft — pending human approval**
+**Owner-approved calibration**
 
 - Source: `DOC-0002` — `10CFR_Part 50_-_Appendix_B.md`
 - Side: `RULE`
 - Prompt: `appb_rule_v1`
-- Approval reference: none yet
+- Approval reference: `GOLDEN-RULE-20261003-OWNER`
 - YAML manifest: [`manifest_rule.yml`](manifest_rule.yml)
 
-This is a small answer key for testing the RULE sieve. It tells us which
-regulatory crumbs a good run should find. It does not approve the source, prove
-audit compliance, or replace human review.
+This is a small answer key for testing the RULE sieve. The owner approved this
+calibration set. It tells us which regulatory crumbs a good run should find; it
+does not prove audit compliance or replace review of vendor evidence.
 
 The sieve uses a recall-first rule. It should keep plausible, source-supported
 crumbs, including borderline ones, while preserving exact quotes and chapter

@@ -86,6 +86,14 @@ Fresh Ekonerg draft keys are available for review:
 All three are marked `pending_human_approval`. They contain Ekonerg source
 quotes only; no Enconet answer key or approval was copied.
 
+The RULE calibration is now owner-approved as
+`GOLDEN-RULE-20261003-OWNER`. The DOCUMENT calibrations remain pending. For
+vendor documents, a high-level reference is only a lead. Full alignment needs
+deeper objective evidence, such as roles, approvals, records, outputs,
+acceptance criteria, training, revision history, or implementation examples.
+The DOCUMENT sieve should collect these broadly and flag missing depth instead
+of treating a reference alone as proof.
+
 ## Current gate
 
 - Incoming source set: G1 approved, 31 files.
@@ -96,7 +104,8 @@ quotes only; no Enconet answer key or approval was copied.
 - Real crumbs: none created yet.
 - Active prompts: `appb_rule_v1` and `appb_document_v1`, activated by explicit
   owner instruction on 2026-10-03.
-- Golden drafts: prepared, but not approved.
+- RULE golden: owner-approved; DOCUMENT golden drafts: prepared, but not
+  approved.
 - Next required step: run a small controlled test set; do not process all 31
   documents until the test output and golden drafts are reviewed.
 

@@ -20,3 +20,12 @@ During sieving, prefer high recall. Keep plausible and borderline crumbs when
 the source supports them, preserve the exact quote and chapter locator, and mark
 uncertain criterion mapping in the statement for later review. Do not invent
 source facts or treat a fuzzy candidate as a confirmed audit conclusion.
+
+## Vendor evidence depth rule (owner clarification, 2026-10-03)
+
+A vendor's high-level reference to a regulation, standard, or QMS process is a
+lead, not objective proof. The DOCUMENT sieve should also seek deeper evidence:
+roles, approvals, records, registers, forms, reports, outputs, acceptance
+criteria, training, revision history, and implementation examples. If the
+deeper evidence is absent, retain the reference as a candidate and flag that
+objective evidence was not shown.

@@ -23,6 +23,16 @@ Broad collection is preferred; later review may reject or downgrade a
 candidate. This is fuzzy interpretation for recall, not permission to alter
 source text.
 
+Vendor evidence depth rule: a high-level reference to a regulation, standard,
+or QMS process is a lead, not objective proof that the control works. Look in
+the vendor document for deeper evidence such as named roles, approval or review
+steps, controlled records, registers, forms, reports, outputs, acceptance
+criteria, training records, revision history, or examples of implementation.
+Collect those details as separate source-supported crumbs when they can be
+linked to an Appendix B criterion. If only the high-level reference is present,
+keep it as a candidate and state that objective evidence was not shown; do not
+silently treat the reference as full alignment.
+
 Run context placeholder:
 
 ```yaml
