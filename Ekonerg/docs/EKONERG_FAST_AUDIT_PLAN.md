@@ -59,6 +59,13 @@ Deferred work includes full code transfer, broad code cleanup, a live audit data
 - Treat missing evidence as an open issue. It is not proof that a control failed or passed.
 - Ask only for missing facts or choices that affect the work. Keep unrelated document work moving.
 - Use one result record per task, with its batches listed inside it. Keep exact checks, results, file paths, and open points.
+- Aim for 30–50 pages of reading per sieving batch. Small documents of about
+  10 pages are batched as triplets; medium documents of about 15–30 pages are
+  batched as pairs; large documents over 40 pages are single-document batches,
+  including user-prepared documents over 100 pages. Page count is a planning
+  estimate only, not a document key or evidence locator.
+- Codex decides boundary cases near 30–40 pages, pairs above 50 pages, or
+  files without a reliable page estimate, and records a short sizing reason.
 - Keep source text and evidence-bearing outputs local unless the owner permits their distribution. A code commit is not permission to upload the documents.
 
 For any necessary code fix, use test-driven development, or TDD. First write a test that shows the defect. Then make the smallest fix, run the test, and run the required checks for that change. Test path changes with fake companies, including spaces and Croatian letters. Do not use real source text as test data.
@@ -168,7 +175,9 @@ Claude's pending software reviews remain pending. Codex can prepare draft work f
 **Work:**
 
 1. Read the QMS manual first for the stated scope. Then read the related procedures in small batches.
-2. Keep the existing batch size: one large file or two to three small files. Preserve batch order and record the outcome.
+2. Use three small files, two medium files, or one large file according to the
+   batch-sizing table in the local sieving playbook. Codex records a short
+   sizing reason for boundary cases and preserves batch order.
 3. Read full relevant sections, tables, notes, and references. Record both support and contrary evidence.
 4. Give each quote a stable ID. Save its exact text, source ID, revision, heading, and line range. Add the printed page if the file has one.
 5. Note referenced documents that were not supplied. Separate a stated policy from records that prove it was used.

@@ -633,7 +633,14 @@ Codex prepares the checklist; the owner supplies and approves:
 
 **Checks first:**
 
-- Reject a batch above the existing limit.
+- Target about 30–50 pages of reading per batch.
+- Use triplets for small documents of about 10 pages, pairs for medium
+  documents of about 15–30 pages, and one document for a large document over
+  40 pages.
+- Keep a user-prepared 100+ page document as one batch. Do not merge it with
+  another document to fill a page target.
+- Let Codex choose the grouping for a document near 30–40 pages, a pair above
+  50 pages, or a missing page estimate; record a short sizing reason.
 - Reject mixed large-document batches or missing source metadata.
 
 **Work:**
@@ -641,13 +648,17 @@ Codex prepares the checklist; the owner supplies and approves:
 - Start with governing and interpretive sources.
 - Then process QMS scope and core quality documents.
 - Continue through the remaining approved QMS set.
-- Use one large document or two to three small documents per batch.
+- Use the page-guided rule in the local playbook: three small documents, two
+  medium documents, or one large document. Treat page counts as workload
+  estimates only; preserve chapter paths as evidence locators.
 - Prepare the G1 records and the batch continuation plan.
 
 **Acceptance criteria:**
 
 - [ ] The owner approves the selected first batch and registry evidence.
 - [ ] Each later batch has its own recorded checks and required decisions.
+- [ ] Each batch records document class, page estimate, estimated total,
+  chapter range, and any Codex sizing rationale.
 - [ ] The plan does not reuse an earlier batch's approval for new files.
 - [ ] Unsupported file types stop with a clear explanation.
 
