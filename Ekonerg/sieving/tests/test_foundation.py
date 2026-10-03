@@ -96,7 +96,17 @@ class FoundationTests(unittest.TestCase):
             [{"ref_code": "DOC-0001", "ref_type": "REGULATION",
               "authority_role": "GOVERNING"},
              {"ref_code": "DOC-0002", "ref_type": "REGULATION",
-              "authority_role": "GOVERNING"}],
+              "authority_role": "GOVERNING"},
+             {"ref_code": "DOC-0003", "ref_type": "STANDARD",
+              "authority_role": "INTERPRETIVE"},
+             {"ref_code": "DOC-0004", "ref_type": "STANDARD",
+              "authority_role": "INTERPRETIVE"},
+             {"ref_code": "DOC-0005", "ref_type": "STANDARD",
+              "authority_role": "INTERPRETIVE"},
+             {"ref_code": "DOC-0006", "ref_type": "STANDARD",
+              "authority_role": "INTERPRETIVE"},
+             {"ref_code": "DOC-0007", "ref_type": "STANDARD",
+              "authority_role": "INTERPRETIVE"}],
         )
         self.assertEqual(json.loads((self.schema_dir / "sieving_contract.yml").read_text(encoding="utf-8"))["template"]["taxonomy_id"], "APP_B")
 
