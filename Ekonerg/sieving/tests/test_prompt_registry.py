@@ -1,4 +1,4 @@
-"""Synthetic tests for the clean, inactive Ekonerg prompt bundle."""
+"""Synthetic tests for the owner-authorized Ekonerg prompt bundle."""
 from __future__ import annotations
 
 import importlib
@@ -62,10 +62,12 @@ class PromptRegistryTests(unittest.TestCase):
             if name == "src" or name.startswith("src."):
                 del sys.modules[name]
 
-    def test_registry_has_no_active_prompt_before_owner_intake(self) -> None:
+    def test_registry_has_owner_authorized_active_prompts(self) -> None:
         registry = yaml.safe_load((self.prompts / "active.yml").read_text(encoding="utf-8"))
         self.assertEqual(registry["schema_version"], "1.0")
-        self.assertEqual(registry["active"], {})
+        self.assertEqual(registry["active"], {
+            "RULE": "appb_rule_v1", "DOCUMENT": "appb_document_v1",
+        })
         self.assertIn("owner", (self.prompts / "active.yml").read_text(encoding="utf-8").lower())
 
     def test_candidates_match_local_schema_without_company_specific_text(self) -> None:
@@ -85,7 +87,7 @@ class PromptRegistryTests(unittest.TestCase):
 
     def test_fresh_history_has_no_old_promotion_or_score(self) -> None:
         history = (self.prompts / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertIn("candidate", history.lower())
+        self.assertIn("active", history.lower())
         self.assertIn("owner", history.lower())
         self.assertNotIn("Enconet", history)
         self.assertNotIn("2026-07-13", history)

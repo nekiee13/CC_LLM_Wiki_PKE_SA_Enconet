@@ -5,3 +5,7 @@ status: pending_human_approval
 approval_ref: null
 document: null
 expected_crumbs: []
+draft_manifests:
+  RULE: manifest_rule.yml
+  DOCUMENT: manifest_document.yml
+  DOCUMENT_CORRECTIVE: manifest_document_corrective.yml

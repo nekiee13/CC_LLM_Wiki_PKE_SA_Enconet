@@ -62,11 +62,12 @@ the local generation-decision stage is now present and tested.*
 - Real Ekonerg intake is now present locally: 31 registered documents and 411
   validated chunks. Source copies and derived text remain local and are not
   committed; the hash register is committed.
-- The local prompt registry has no active prompt. Candidate rule/document
-  prompts remain pending owner and reviewer activation, so no real crumbs or
-  audit conclusions have been produced.
+- The local prompt registry now has owner-authorized active RULE and DOCUMENT
+  prompts (`appb_rule_v1` and `appb_document_v1`). Claude review and golden
+  approval remain pending, so no production crumbs or audit conclusions have
+  been produced.
 - The sieving harness now has every required local stage, including
-  `sieve_generation.py`; its remaining failures are the intentional empty
-  prompt slots. The golden calibration set is still pending human approval.
+  `sieve_generation.py`; readiness now passes with the intentional pending-
+  golden note. The golden calibration set is still pending human approval.
 - M1 cannot be accepted until EK-1 through EK-4 close and the owner explicitly accepts the
   M1 evidence packet (Task EK-4.4).

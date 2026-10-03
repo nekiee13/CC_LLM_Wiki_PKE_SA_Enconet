@@ -1,11 +1,12 @@
-# No prompt is active until owner-approved source intake and a reviewed test run.
-# Candidate text files may exist below without authorizing document processing.
+# Prompts activated by explicit owner instruction on 2026-10-03.
+# Claude review and golden calibration approval remain pending.
 schema_version: "1.0"
 # Owner/reviewer candidates for evaluation:
 #   RULE: appb_rule_v1.md
 #   DOCUMENT: appb_document_v1.md
-# Keep this mapping empty until one candidate is approved and activated.
 candidates:
   RULE: appb_rule_v1
   DOCUMENT: appb_document_v1
-active: {}
+active:
+  RULE: appb_rule_v1
+  DOCUMENT: appb_document_v1

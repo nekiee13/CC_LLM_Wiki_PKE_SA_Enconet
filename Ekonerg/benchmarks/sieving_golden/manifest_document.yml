@@ -1,0 +1,26 @@
+schema_version: "1.0"
+fixture_version: "ekonerg-document-draft-2026-10-03"
+status: pending_human_approval
+approval_ref: null
+document:
+  doc_id: DOC-0031
+  filename: "Priručnik_sustava_upravljanja_rev.5.md"
+  side: DOCUMENT
+  purpose: "Draft calibration for exact Ekonerg control extraction."
+expected_crumbs:
+  - item_id: GOLDEN-DOCUMENT-001
+    criterion_id: APP_B_I
+    criterion_name: Organization
+    statement: "EKONERG je ustrojen u sedam stručnih odjela s Q/EP/HS službom i zajedničkim službama."
+    source:
+      source_locator: "1.1. Osnovni podaci o EKONERG-u"
+    quotes:
+      - "EKONERG je ustrojen u sedam stručnih odjela s Q/EP/HS službom i zajedničkim službama."
+  - item_id: GOLDEN-DOCUMENT-002
+    criterion_id: APP_B_II
+    criterion_name: Quality Assurance Program
+    statement: "Sustav upravljanja u EKONERG-u, opisan u ovom Priručniku, sastoji se od sustava upravljanja:"
+    source:
+      source_locator: "1.2. Sustav upravljanja kvalitetom, zaštitom okoliša i zaštitom zdravlja i sigurnošću pri radu u EKONERG-u"
+    quotes:
+      - "Sustav upravljanja u EKONERG-u, opisan u ovom Priručniku, sastoji se od sustava upravljanja:"

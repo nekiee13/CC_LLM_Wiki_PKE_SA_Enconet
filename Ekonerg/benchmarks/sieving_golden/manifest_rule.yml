@@ -1,0 +1,33 @@
+schema_version: "1.0"
+fixture_version: "ekonerg-rule-draft-2026-10-03"
+status: pending_human_approval
+approval_ref: null
+document:
+  doc_id: DOC-0002
+  filename: "10CFR_Part 50_-_Appendix_B.md"
+  side: RULE
+  purpose: "Draft calibration for exact Appendix B rule extraction."
+expected_crumbs:
+  - item_id: GOLDEN-RULE-001
+    criterion_id: APP_B_I
+    criterion_name: Organization
+    statement: "The applicant shall be responsible for the establishment and execution of the quality assurance program."
+    source:
+      source_locator: "I. Organization"
+    quotes:
+      - |-
+        The applicant shall be responsible for the establishment and execution of the quality assurance  
+        program.
+  - item_id: GOLDEN-RULE-002
+    criterion_id: APP_B_VI
+    criterion_name: Document Control
+    statement: "Measures shall be established to control the issuance of documents."
+    source:
+      source_locator: "VI. Document Control"
+    quotes:
+      - "Measures shall be established to control the issuance of documents, such as instructions, procedures, and drawings, including changes thereto, which prescribe all activities affecting quality."
+authority_references:
+  - authority_role: GOVERNING
+    source_code: DOC-0002
+    source_locator: "I. Organization; VI. Document Control"
+    applicability: APPLICABLE

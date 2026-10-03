@@ -1,0 +1,18 @@
+schema_version: "1.0"
+fixture_version: "ekonerg-document-corrective-draft-2026-10-03"
+status: pending_human_approval
+approval_ref: null
+document:
+  doc_id: DOC-0030
+  filename: "PQ10.2-2_r10_Kontrola_korektivnih_akcija.md"
+  side: DOCUMENT
+  purpose: "Draft calibration for corrective-action control extraction."
+expected_crumbs:
+  - item_id: GOLDEN-DOCUMENT-CORRECTIVE-001
+    criterion_id: APP_B_XVI
+    criterion_name: Corrective Action
+    statement: "Svrha ovog postupka je da utvrdi odgovornosti i postupak za provođenje korektivnih akcija u EKONERG-u odnosno kod dobavljača."
+    source:
+      source_locator: "1.2. Svrha"
+    quotes:
+      - "Svrha ovog postupka je da utvrdi odgovornosti i postupak za provođenje korektivnih akcija u EKONERG-u odnosno kod dobavljača."

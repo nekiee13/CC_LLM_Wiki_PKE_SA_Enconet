@@ -83,10 +83,15 @@ and ADRs are the records.
 - `CX_2026-10-03T060726Z_chapter-locator-contract` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T061226Z_local-generation-stage` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T061433Z_clean-state-validation` — status, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T062010Z_sieving-batch-rules` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T062214Z_sieving-batch-rules-correction` — status, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T062912Z_ekonerg-batch-plan` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T063214Z_batch-plan-preflight` — status, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T064625Z_prompt-activation-golden-calibration` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-03T001000Z-57a3c28.md`](../handoffs/2026-10-03T001000Z-57a3c28.md)
+- Authoritative record: [`handoffs/2026-10-03T061626Z-73288f2.md`](../handoffs/2026-10-03T061626Z-73288f2.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T06:14:41Z
+Generated: 2026-10-03T06:50:36Z
