@@ -27,10 +27,11 @@ the plan or the archived review records directly.
 
 ## Milestone M2 — First Ekonerg audit
 
-*In progress: the clean runtime is ready and the approved 31-file intake has
-been registered, extracted, and chunked. The active RULE and DOCUMENT prompts
-have passed a bounded controlled test; full-document sieving remains pending
-review and bounded batch execution.*
+*In progress: the approved 31-file intake is registered, extracted, and
+chunked. All eight QMS batches are processed. Regulatory batches R-01 through
+R-07 are processed as separate Part 21, Appendix B, and NQA-1 streams. Active
+and candidate runs remain subject to review; no audit conclusion has been
+made.*
 
 | Epic | Task | Status |
 |---|---|---|
@@ -55,6 +56,11 @@ review and bounded batch execution.*
 
 ## Notes
 
+- Current M2 processing update: R-01 through R-07 have reports and review
+  requests. R-01 Part 21, R-02 Appendix B, and R-04 Part I are requirement
+  streams. R-03, R-05, R-06, and R-07 are explicitly interpretive or guidance
+  streams. The eight bounded QMS batches are also processed. Review and
+  generation decisions remain open.
 - EK-1.2 is the current open task: the local support-tool foundation (`agent_coord.py`,
   `run_validation.py`, `make_handoff.py`, `check_guidance_drift.py`,
   `check_skill_structure.py`, and their tests) is reviewed and approved, but the task as a
