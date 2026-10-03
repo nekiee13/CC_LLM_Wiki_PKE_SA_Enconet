@@ -284,10 +284,11 @@ and ADRs are the records.
 
 - `CX_2026-10-03T180041Z_q10-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-03T180823Z_q11-recall-run` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-10-03T181147Z_q12-recall-run` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 754 records in `coordination/archive/`
 
-Generated: 2026-10-03T18:08:30Z
+Generated: 2026-10-03T18:11:47Z

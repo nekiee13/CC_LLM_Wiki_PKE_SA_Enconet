@@ -77,3 +77,23 @@ against Appendix B; it is not a conformance conclusion.
 
 After Q-11, active vendor coverage is **21 runs and 145 crumbs**. Three vendor
 documents remain without an active run: `DOC-0021`, `DOC-0022`, and `DOC-0031`.
+
+## Q-12 continuation
+
+The next uncovered document was processed:
+
+- Source: `DOC-0021` — `PQ08.2-2_r5_Priprema_i_postupanje_s_ugovornom_doku.md`.
+- Run: `RUN-20261003-37`.
+- Crumbs collected: **12**.
+- Quote links: **15/16 (93.8%)**. One quote omitted the source heading prefix
+  and was left unmatched by the linker.
+- Rejected items: 0.
+- Failed items: 0.
+
+The run captured contract and offer review, supplier controls, quality-plan
+inputs, approval, document identification, closeout checks, and controlled
+record retention. The unmatched quote remains an evidence-preparation defect,
+not a conformance conclusion.
+
+After Q-12, active vendor coverage is **22 runs and 157 crumbs**. Two vendor
+documents remain without an active run: `DOC-0022` and `DOC-0031`.
