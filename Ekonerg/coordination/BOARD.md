@@ -90,10 +90,11 @@ and ADRs are the records.
 - `CX_2026-10-03T064625Z_prompt-activation-golden-calibration` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T071723Z_recall-first-fuzzy-sieving-rule` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T072622Z_rule-golden-prepared` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T100224Z_rule-golden-markdown-presentation` — status, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T09:49:28Z
+Generated: 2026-10-03T10:02:48Z

@@ -77,6 +77,7 @@ Fresh Ekonerg draft keys are available for review:
 - [`manifest_rule.yml`](../../benchmarks/sieving_golden/manifest_rule.yml) —
   six Appendix B rule crumbs spanning organization, program, design, document
   control, purchased services, and records.
+  The readable presentation is [`RULE_GOLDEN_CALIBRATION.md`](../../benchmarks/sieving_golden/RULE_GOLDEN_CALIBRATION.md).
 - [`manifest_document.yml`](../../benchmarks/sieving_golden/manifest_document.yml)
   — two Ekonerg manual crumbs.
 - [`manifest_document_corrective.yml`](../../benchmarks/sieving_golden/manifest_document_corrective.yml)
