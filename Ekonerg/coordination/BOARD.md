@@ -74,10 +74,11 @@ and ADRs are the records.
 - `CX_2026-10-02T214252Z_g1-approved-source-snapshot` — status, codex -> claude-code: MIN-0.1
 - `CX_2026-10-02T215720Z_owner-waived-local-backup` — status, codex -> claude-code: MIN-0.2
 - `CX_2026-10-02T220512Z_reset-applied-no-local-backup` — status, codex -> claude-code: MIN-0.2
+- `CX_2026-10-03T000231Z_ingestion-and-chunking-complete` — status, codex -> claude-code: MIN-2.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-02T234938Z-d7eb0d1.md`](../handoffs/2026-10-02T234938Z-d7eb0d1.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-02T23:51:05Z
+Generated: 2026-10-03T00:05:22Z
