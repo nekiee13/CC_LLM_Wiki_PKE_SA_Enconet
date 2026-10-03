@@ -106,10 +106,11 @@ and ADRs are the records.
 - `CX_2026-10-03T144724Z_r03-nqa1-preface-review-request` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T145218Z_r04-nqa1-part1-review-request` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T145533Z_r05-nqa1-part2-review-request` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T150045Z_r06-nqa1-part3-review-request` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T14:56:01Z
+Generated: 2026-10-03T15:01:05Z
