@@ -35,3 +35,26 @@ it must not be treated as linked evidence.
 Five vendor documents still have no active sieve run: `DOC-0011`, `DOC-0020`,
 `DOC-0021`, `DOC-0022`, and `DOC-0031`. The coverage guard therefore remains
 red until those documents receive v2 runs.
+
+## Q-10 continuation
+
+The next uncovered document was processed with the same owner-authorized prompt:
+
+- Source: `DOC-0011` — `PQ07.5-2_r8_Postupci_sustava_kvalitete,_sustava_za.md`.
+- Run: `RUN-20261003-35`.
+- Crumbs collected: **12**.
+- Quote links: **12/13 (92.3%)**. One crumb contains two quotes; one of those
+  quotes combined text across a formatting break and was correctly left
+  unmatched by the linker.
+- Rejected items: 0.
+- Failed items: 0.
+
+This continuation adds direct evidence for document control, responsibilities,
+procedure content, objective-evidence requirements, revision distribution, and
+record retention. The unmatched quote is an evidence-preparation defect, not a
+conformance conclusion; it remains visible for later correction or candidate
+regeneration.
+
+After Q-10, active vendor coverage is **20 runs and 133 crumbs**. Four vendor
+documents remain without an active run: `DOC-0020`, `DOC-0021`, `DOC-0022`, and
+`DOC-0031`.
