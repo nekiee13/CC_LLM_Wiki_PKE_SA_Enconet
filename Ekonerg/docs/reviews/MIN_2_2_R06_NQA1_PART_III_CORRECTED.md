@@ -16,15 +16,15 @@ The raw source is unchanged.
 - Prompt: `appb_rule_v1`.
 - Candidate input: `sieving/runs/r06_doc0006_corrected.json`.
 - Candidate quotes: 7/7 exact source matches.
-- Intended next generation: `RUN-20261003-41`.
+- Applied candidate: `RUN-20261003-41` (generation 3, inactive).
+- Metrics: 6 crumbs, 7/7 quote links (100%), 0 rejected, 0 failed.
+- Diff: only the corrected quote and its regenerated crumb identity changed;
+  crumb count stayed at 6.
 
 ## Safety gate
 
-The local resieve tool refused to create `RUN-20261003-41` because inactive
-candidate `RUN-20261003-30` has no recorded generation decision. This is the
-correct fail-closed behavior. No database row, active crumb, or prior
-generation was changed.
-
-To continue, an owner-approved decision must reject `RUN-20261003-30` with a
-recorded decision reference. After that decision, the corrected candidate can
-be previewed and applied as generation 3, then reviewed before promotion.
+The owner approved rejection of `RUN-20261003-30` with decision reference
+`R06-GEN2-REJECT-20261003-OWNER`. The rejected generation remains in the
+database for traceability. The corrected generation is now an inactive review
+candidate; it is not promoted and does not replace the active generation until
+the required review decision is recorded.

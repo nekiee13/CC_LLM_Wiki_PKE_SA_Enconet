@@ -66,6 +66,7 @@ and ADRs are the records.
 - `MIN-2.2-DOC0016-V2-GOLDEN` — codex, released 2026-10-03T20:29:41Z
 - `MIN-2.2-Q09-CANDIDATE` — codex, released 2026-10-03T20:06:09Z
 - `MIN-2.2-R06-PARTIII-CORRECTION` — codex, released 2026-10-03T20:41:08Z
+- `MIN-2.2-R06-REJECT-AND-RESIEVE` — codex, released 2026-10-03T20:47:22Z
 
 ## Active messages
 
@@ -80,10 +81,11 @@ and ADRs are the records.
 - `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T204101Z_r06-partiii-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T204707Z_r06-generation3-review` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 228 records in `coordination/archive/`
 
-Generated: 2026-10-03T20:41:08Z
+Generated: 2026-10-03T20:47:22Z

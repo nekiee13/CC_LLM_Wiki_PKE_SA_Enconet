@@ -38,3 +38,9 @@ chunk. It uses criterion intent cards to collect direct controls, supporting
 controls, and candidate leads without a fixed crumb cap. It remains a candidate
 until its pilot and fresh owner/reviewer decision are recorded; activation is
 not implied by creating the prompt.
+
+## Generation rejection lesson
+
+| Prompt | Side | Event | Generation | Date | Decision by | Scope | Lesson |
+|---|---|---|---|---|---|---|---|
+| `appb_rule_v1` | RULE | candidate rejected | `RUN-20261003-30` | 2026-10-03 | Owner | R-06 Part III source-marker correction | `sieving-tuning`: preserve em-dash-delimited source markers exactly before creating a replacement generation. |
