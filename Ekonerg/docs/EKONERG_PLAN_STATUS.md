@@ -1,6 +1,6 @@
 # Ekonerg Audit Framework — Plan Status
 
-Snapshot date: 2026-09-29. Source plan: [`EKONERG_AUDIT_TDD_PLAN.md`](EKONERG_AUDIT_TDD_PLAN.md)
+Snapshot date: 2026-10-03. Source plan: [`EKONERG_AUDIT_TDD_PLAN.md`](EKONERG_AUDIT_TDD_PLAN.md)
 (v1.1). Implementer: Codex. Reviewer: Claude. Status reflects coordination records in
 `Ekonerg/coordination/archive/` as of this snapshot; it is not a substitute for reading
 the plan or the archived review records directly.
@@ -27,14 +27,15 @@ the plan or the archived review records directly.
 
 ## Milestone M2 — First Ekonerg audit
 
-*Blocked: depends on owner acceptance of M1, which has not been reached.*
+*In progress: the clean runtime is ready and the approved 31-file intake has
+been registered, extracted, and chunked. Sieving waits for prompt activation.*
 
 | Epic | Task | Status |
 |---|---|---|
 | EK-5 — Define and approve the real input set | EK-5.1 — Prepare the owner's source and scope checklist | ⬜ Not started |
 | EK-5 | EK-5.2 — Approve the intake order and first batch | ⬜ Not started |
-| EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | ⬜ Not started |
-| EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | ⬜ Not started |
+| EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | ✅ Registered, extracted, and chunked; sieving pending prompt activation |
+| EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | ✅ Registered, extracted, and chunked; sieving pending prompt activation |
 | EK-6 | EK-6.3 — Review evidence quality and approve G2 | ⬜ Not started |
 | EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | ⬜ Not started |
 | EK-7 | EK-7.2 — Draft findings and follow-up actions | ⬜ Not started |
@@ -57,7 +58,11 @@ the plan or the archived review records directly.
   `check_skill_structure.py`, and their tests) is reviewed and approved, but the task as a
   whole stays open until the audit dispatcher/registry closeout, runtime/sieving path
   adaptation, and the remaining `DEPENDENCY_REVIEW.md` items are submitted and reviewed.
-- No real or test audit data has been ingested; the clean-state definition in the plan
-  (Section 1) has not been violated by any work reviewed so far.
+- Real Ekonerg intake is now present locally: 31 registered documents and 411
+  validated chunks. Source copies and derived text remain local and are not
+  committed; the hash register is committed.
+- The local prompt registry has no active prompt. Candidate rule/document
+  prompts remain pending owner and reviewer activation, so no real crumbs or
+  audit conclusions have been produced.
 - M1 cannot be accepted until EK-1 through EK-4 close and the owner explicitly accepts the
   M1 evidence packet (Task EK-4.4).
