@@ -138,18 +138,20 @@ and ADRs are the records.
 - `CX_2026-10-03T115010Z_q06-batch-complete` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T120410Z_q07-batch-complete` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T121510Z_q08-batch-complete` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T142148Z_r01-part21-review-request` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T144017Z_r02-appendix-b-review-request` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T144724Z_r03-nqa1-preface-review-request` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T145218Z_r04-nqa1-part1-review-request` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T145533Z_r05-nqa1-part2-review-request` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T150045Z_r06-nqa1-part3-review-request` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T150441Z_r07-nqa1-part4-review-request` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T163041Z_ek6-3-g2-packet-review` — review_request, codex -> claude-code: EK-6.3
+- `CX_2026-10-03T165959Z_ack-r01-part21-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T170002Z_ack-r02-appendix-b-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T170004Z_ack-r03-nqa1-preface-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T170007Z_ack-r04-nqa1-part1-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T170009Z_ack-r05-nqa1-part2-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T170012Z_ack-r06-nqa1-part3-findings` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T170014Z_ack-r07-nqa1-part4-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T170017Z_ack-ek6-3-g2-packet-findings` — acknowledgement, codex -> claude-code: EK-6.3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 123 records in `coordination/archive/`
+- Archive: 130 records in `coordination/archive/`
 
-Generated: 2026-10-03T16:50:04Z
+Generated: 2026-10-03T17:00:51Z
