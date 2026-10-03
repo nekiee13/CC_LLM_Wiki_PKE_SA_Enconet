@@ -1,7 +1,9 @@
 # Project-local controlled vocabulary template, adapted from the pinned framework.
-# Regulatory source values are not approved. They remain empty until owner
-# intake settles applicability and source editions.
+# The owner-approved G1 Appendix B source is configured locally. Other source
+# editions and applicability decisions remain explicit intake choices.
 # document_sides and authority codes mirror the local sieving_contract.yml.
+# Vocabulary values are not approved evidence by themselves; the approval
+# record and source hash remain the authority.
 
 schema_version: "1.0"
 
@@ -51,12 +53,12 @@ vocabularies:
     values: [RULE, DOCUMENT]
 
   source_rules:
-    usage: "No active source code until this project's source intake is reviewed."
-    values: []
+    usage: "Owner-approved governing source codes for this project."
+    values: [DOC-0002]
 
   authority_sources:
-    usage: "No active authority source until editions and applicability are approved."
-    values: []
+    usage: "Owner-approved authority source codes for this project."
+    values: [DOC-0002]
 
   authority_roles:
     usage: "Governing or interpretive role of a source."

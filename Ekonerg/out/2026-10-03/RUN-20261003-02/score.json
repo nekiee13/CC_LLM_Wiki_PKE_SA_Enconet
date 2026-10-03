@@ -1,0 +1,33 @@
+{
+  "fixture_version": "ekonerg-document-objective-evidence-approved-2026-10-03",
+  "found": 8,
+  "golden_approval_ref": "GOLDEN-DOCUMENT-OBJECTIVE-20261003-OWNER",
+  "golden_approved": true,
+  "missed": 0,
+  "per_criterion": {
+    "APP_B_X": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVI": {
+      "found": 2,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVII": {
+      "found": 2,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVIII": {
+      "found": 3,
+      "missed": 0,
+      "spurious": 0
+    }
+  },
+  "promotion_ready": true,
+  "prompt_version": "appb_document_v1",
+  "schema_version": "1.0",
+  "spurious": 0
+}

@@ -91,7 +91,11 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(len(contract["criteria"]), 18)
         ids = [item["criterion_id"] for item in contract["criteria"]]
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(self.contract.canonical_codes(), [])
+        self.assertEqual(
+            self.contract.canonical_codes(),
+            [{"ref_code": "DOC-0002", "ref_type": "REGULATION",
+              "authority_role": "GOVERNING"}],
+        )
         self.assertEqual(json.loads((self.schema_dir / "sieving_contract.yml").read_text(encoding="utf-8"))["template"]["taxonomy_id"], "APP_B")
 
     def test_taxonomy_config_rejects_foreign_path_mismatch_and_duplicates(self) -> None:

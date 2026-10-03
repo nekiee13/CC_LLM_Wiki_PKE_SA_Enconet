@@ -1,7 +1,13 @@
 {
   "schema_version": "1.1",
   "template": {"id": "JSON_Template_App_B", "version": "1.1", "taxonomy_id": "APP_B", "taxonomy_file": "app_b_taxonomy.yml"},
-  "canonical_codes": [],
+  "canonical_codes": [
+    {
+      "ref_code": "DOC-0002",
+      "ref_type": "REGULATION",
+      "authority_role": "GOVERNING"
+    }
+  ],
   "enums": {
     "record_side":["RULE","DOCUMENT"],
     "authority_role":["GOVERNING","INTERPRETIVE"],

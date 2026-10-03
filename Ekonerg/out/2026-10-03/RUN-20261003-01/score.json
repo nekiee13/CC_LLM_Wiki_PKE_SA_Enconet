@@ -1,0 +1,43 @@
+{
+  "fixture_version": "ekonerg-rule-recall-first-approved-2026-10-03",
+  "found": 6,
+  "golden_approval_ref": "GOLDEN-RULE-20261003-OWNER",
+  "golden_approved": true,
+  "missed": 0,
+  "per_criterion": {
+    "APP_B_I": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_II": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_III": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_VI": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_VII": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVII": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    }
+  },
+  "promotion_ready": true,
+  "prompt_version": "appb_rule_v1",
+  "schema_version": "1.0",
+  "spurious": 0
+}
