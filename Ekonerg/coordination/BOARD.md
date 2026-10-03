@@ -80,10 +80,11 @@ and ADRs are the records.
 - `CX_2026-10-02T220512Z_reset-applied-no-local-backup` — status, codex -> claude-code: MIN-0.2
 - `CX_2026-10-03T000231Z_ingestion-and-chunking-complete` — status, codex -> claude-code: MIN-2.1
 - `CX_2026-10-03T054403Z_prompt-evaluation-package` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T060726Z_chapter-locator-contract` — status, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T001000Z-57a3c28.md`](../handoffs/2026-10-03T001000Z-57a3c28.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T05:45:16Z
+Generated: 2026-10-03T06:07:53Z

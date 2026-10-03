@@ -30,10 +30,10 @@ is intentional and is not an approval.
 ### DOCUMENT prompt
 
 - Does it extract Ekonerg controls without calling them regulatory rules?
-- Does every quote point to a heading, page, or other usable locator?
+- Does every quote point to a chapter, heading, section, or other usable locator?
 - Does it keep the company document separate from governing authority?
 - Does it avoid treating a policy statement as proof that staff used the control?
-- Does it preserve missing images or missing pages as evidence limits?
+- Does it preserve missing images or missing chapters/sections as evidence limits?
 
 ## Decision record
 
@@ -47,6 +47,17 @@ Choose one decision for each candidate:
 Activation is a separate step. A candidate file alone never authorizes real
 sieving. After activation, run a small reviewed test set before processing all
 31 documents.
+
+## Storage contract
+
+The database preserves chapter structure, not page IDs:
+
+- `document_chunks.heading_path` is the canonical chapter/heading path.
+- `crumb_sources.source_heading_path` carries that path into evidence records.
+- `source_locator` identifies the chapter or section text used by a crumb.
+
+Page numbers may appear as optional source metadata, but they are never the
+document key and must not replace the chapter path.
 
 ## Current gate
 

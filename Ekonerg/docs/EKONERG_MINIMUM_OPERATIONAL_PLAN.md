@@ -160,7 +160,7 @@ pieces. Hashes show that the audit uses the files the owner supplied.
 - [ ] All 31 files are registered under the approved G1 record.
 - [ ] All source hashes match before and after extraction.
 - [ ] Extracted text and chunks link back to one source ID and hash.
-- [ ] Missing images and missing pages are listed as open issues.
+- [ ] Missing images and missing chapters/sections are listed as open issues.
 - [ ] No file outside `Ekonerg/incoming/` is treated as owner evidence.
 
 ### Task MIN-2.2 — Sieve, validate, and import crumbs as one batch

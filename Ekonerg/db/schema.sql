@@ -124,6 +124,7 @@ CREATE TABLE IF NOT EXISTS crumbs (
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) STRICT;
 
+-- Chapter/heading paths are canonical; page is optional metadata only.
 CREATE TABLE IF NOT EXISTS crumb_sources (
     source_id INTEGER PRIMARY KEY,
     item_id TEXT NOT NULL REFERENCES crumbs(item_id) ON DELETE CASCADE,

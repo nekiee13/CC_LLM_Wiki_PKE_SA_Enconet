@@ -6,9 +6,11 @@ owner-approved intake and run context identify the company document.
 
 Turn one approved company document into JSON with top-level `document` and
 `items`. Preserve each quote exactly as it appears in that source. Keep
-its page, heading, or section locator. Use the local Appendix B criterion
+its chapter, heading, or section locator. Use the local Appendix B criterion
 ID/name pairs. Do not create normative authority or RULE-only fields on
-the DOCUMENT side. Do not invent a quote, source, or approval.
+the DOCUMENT side. Do not invent a quote, source, or approval. Preserve the
+chapter path used by the local chunk store; page numbers are not document
+identifiers.
 
 Run context placeholder:
 

@@ -7,7 +7,7 @@ edition, authority role, and applicability.
 
 Turn one approved normative source into JSON with top-level `document` and
 `items`. Preserve every quote exactly as it appears in that source. Each
-item needs its source locator and original-language evidence quote. Use
+item needs its chapter or section locator and original-language evidence quote. Use
 the local Appendix B criterion ID/name pairs. Do not invent source text,
 an edition, or an applicability decision.
 
