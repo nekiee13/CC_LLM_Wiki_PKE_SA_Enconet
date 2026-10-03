@@ -97,3 +97,22 @@ not a conformance conclusion.
 
 After Q-12, active vendor coverage is **22 runs and 157 crumbs**. Two vendor
 documents remain without an active run: `DOC-0022` and `DOC-0031`.
+
+## Q-13 continuation
+
+The next uncovered document was processed:
+
+- Source: `DOC-0022` — `PQ08.3-1_r4_Kontrola_studijskih_projektnih_radova_.md`.
+- Run: `RUN-20261003-38`.
+- Crumbs collected: **14**.
+- Quote links: **21/21 (100%)**.
+- Rejected items: 0.
+- Failed items: 0.
+
+The run captured design inputs, independent review and verification, quality
+plans, oversight, collaboration controls, change approval, corrective-action
+leads, and retention of design records. The `APP_B_XVI` entries are retained as
+candidate leads until the underlying corrective-action records are checked.
+
+After Q-13, active vendor coverage is **23 runs and 171 crumbs**. Only the
+management manual `DOC-0031` remains without an active run.
