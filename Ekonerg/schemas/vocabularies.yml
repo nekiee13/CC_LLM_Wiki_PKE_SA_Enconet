@@ -54,11 +54,11 @@ vocabularies:
 
   source_rules:
     usage: "Owner-approved governing source codes for this project."
-    values: [DOC-0002]
+    values: [DOC-0001, DOC-0002]
 
   authority_sources:
     usage: "Owner-approved authority source codes for this project."
-    values: [DOC-0002]
+    values: [DOC-0001, DOC-0002]
 
   authority_roles:
     usage: "Governing or interpretive role of a source."

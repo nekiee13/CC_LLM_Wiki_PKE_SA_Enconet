@@ -93,7 +93,9 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(
             self.contract.canonical_codes(),
-            [{"ref_code": "DOC-0002", "ref_type": "REGULATION",
+            [{"ref_code": "DOC-0001", "ref_type": "REGULATION",
+              "authority_role": "GOVERNING"},
+             {"ref_code": "DOC-0002", "ref_type": "REGULATION",
               "authority_role": "GOVERNING"}],
         )
         self.assertEqual(json.loads((self.schema_dir / "sieving_contract.yml").read_text(encoding="utf-8"))["template"]["taxonomy_id"], "APP_B")

@@ -101,10 +101,11 @@ and ADRs are the records.
 - `CX_2026-10-03T115010Z_q06-batch-complete` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T120410Z_q07-batch-complete` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T121510Z_q08-batch-complete` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T142148Z_r01-part21-review-request` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T14:14:19Z
+Generated: 2026-10-03T14:32:01Z
