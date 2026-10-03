@@ -6,7 +6,11 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EF-3.1` — codex, expires 2026-10-03T03:22:26Z
+- none
+
+## Expired (not released — expiry does not imply completion)
+
+- `EF-3.1` — codex
 
 ## Released claims
 
@@ -75,10 +79,11 @@ and ADRs are the records.
 - `CX_2026-10-02T215720Z_owner-waived-local-backup` — status, codex -> claude-code: MIN-0.2
 - `CX_2026-10-02T220512Z_reset-applied-no-local-backup` — status, codex -> claude-code: MIN-0.2
 - `CX_2026-10-03T000231Z_ingestion-and-chunking-complete` — status, codex -> claude-code: MIN-2.1
+- `CX_2026-10-03T054403Z_prompt-evaluation-package` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T001000Z-57a3c28.md`](../handoffs/2026-10-03T001000Z-57a3c28.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T00:13:33Z
+Generated: 2026-10-03T05:45:16Z
