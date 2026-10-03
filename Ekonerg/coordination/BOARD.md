@@ -63,6 +63,7 @@ and ADRs are the records.
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `EK-PLAN-FINAL-ARCHIVE` — codex, released 2026-09-29T11:24:37Z
 - `EK-PLAN-REVISION` — codex, released 2026-09-29T11:04:24Z
+- `MIN-2.2-DOC0016-V2-GOLDEN` — codex, released 2026-10-03T20:29:41Z
 - `MIN-2.2-Q09-CANDIDATE` — codex, released 2026-10-03T20:06:09Z
 
 ## Active messages
@@ -121,10 +122,11 @@ and ADRs are the records.
 - `CX_2026-10-03T182454Z_claude-review-batch-ack` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 182 records in `coordination/archive/`
 
-Generated: 2026-10-03T20:24:09Z
+Generated: 2026-10-03T20:29:42Z
