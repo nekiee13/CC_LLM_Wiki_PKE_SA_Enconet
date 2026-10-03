@@ -94,6 +94,8 @@ acceptance criteria, training, revision history, or implementation examples.
 The DOCUMENT sieve should collect these broadly and flag missing depth instead
 of treating a reference alone as proof.
 
+The objective-evidence draft is [`manifest_document_objective.yml`](../../benchmarks/sieving_golden/manifest_document_objective.yml), with a readable summary in [`DOCUMENT_OBJECTIVE_EVIDENCE_CALIBRATION.md`](../../benchmarks/sieving_golden/DOCUMENT_OBJECTIVE_EVIDENCE_CALIBRATION.md).
+
 ## Current gate
 
 - Incoming source set: G1 approved, 31 files.

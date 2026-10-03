@@ -1,0 +1,74 @@
+schema_version: "1.0"
+fixture_version: "ekonerg-document-objective-evidence-draft-2026-10-03"
+status: pending_human_approval
+approval_ref: null
+document:
+  doc_id: DOC-0027
+  filename: "PQ09.2_r9_Provjere.md"
+  side: DOCUMENT
+  purpose: "Draft calibration for deep, objective-evidence extraction from a vendor QMS procedure."
+expected_crumbs:
+  - item_id: GOLDEN-OBJECTIVE-001
+    criterion_id: APP_B_X
+    criterion_name: Inspection
+    statement: "Candidate control: audits review procedures, instructions, records, and performance of activities; verify the depth of implementation evidence."
+    source:
+      source_locator: "3.5. Provođenje provjera, 3.5.1"
+    quotes:
+      - "3.5.1. Provjera, koja se provodi prema ovom postupku, sastoji se od pregleda postupaka, uputa, zapisa i samog izvođenja aktivnosti."
+  - item_id: GOLDEN-OBJECTIVE-002
+    criterion_id: APP_B_XVIII
+    criterion_name: Audits
+    statement: "Objective-evidence rule: audit records and other objective evidence are compared with applicable written requirements."
+    source:
+      source_locator: "3.5. Provođenje provjera, 3.5.7"
+    quotes:
+      - "3.5.7. Svi zapisi ili drugi objektivni dokazi koje generira provjeravani odjel/tim/organizacija uspoređuju se s primjenjivim zahtjevima pisanih postupaka, uputa, Priručnika sustava upravljanja ili drugih primjenjivih dokumenata."
+  - item_id: GOLDEN-OBJECTIVE-003
+    criterion_id: APP_B_XVIII
+    criterion_name: Audits
+    statement: "Candidate output: each audit produces a documented audit report prepared by the audit team lead."
+    source:
+      source_locator: "3.6. Izvještaji o provjeri, 3.6.2"
+    quotes:
+      - "3.6.2. Po završetku svake provjere, Voditelj tima za provjeru priprema izvještaj o provjeri koji uključuje:"
+  - item_id: GOLDEN-OBJECTIVE-004
+    criterion_id: APP_B_XVIII
+    criterion_name: Audits
+    statement: "Candidate approval control: the audit report is reviewed and approved by the Q/EP/HS service manager."
+    source:
+      source_locator: "3.6. Izvještaji o provjeri, 3.6.4"
+    quotes:
+      - "2. 3.6.4. Izvještaj provjere pregledava i odobrava Voditelj Q/EP/HS službe."
+  - item_id: GOLDEN-OBJECTIVE-005
+    criterion_id: APP_B_XVI
+    criterion_name: Corrective Action
+    statement: "Candidate corrective-action input: the responsible team or supplier must answer audit nonconformities within 15 days of receiving the report."
+    source:
+      source_locator: "3.6. Izvještaji o provjeri, 3.6.7"
+    quotes:
+      - "5. 3.6.7. Voditelj tima, odnosno odgovorna osoba dobavljača dužni su dostaviti Voditelju Q/EP/HS službe odgovor na neusklađenosti s provjere u roku od 15 dana od primanja izvještaja o provjeri."
+  - item_id: GOLDEN-OBJECTIVE-006
+    criterion_id: APP_B_XVI
+    criterion_name: Corrective Action
+    statement: "Candidate follow-up output: proposed corrective actions are approved, followed up, and used to close or reopen the nonconformance form."
+    source:
+      source_locator: "3.6. Izvještaji o provjeri, 3.6.8"
+    quotes:
+      - "6. 3.6.8. Voditelj Q/EP/HS službe će odobriti predložene akcije (popravne radnje) i pratiti njihovo provođenje (follow-up), te u slučaju da su zadovoljavajuće zatvoriti IN obrazac, odnosno u protivnom otvoriti novi."
+  - item_id: GOLDEN-OBJECTIVE-007
+    criterion_id: APP_B_XVII
+    criterion_name: Quality Assurance Records
+    statement: "Candidate records control: audit records and reports are retained for the contract period or at least five years."
+    source:
+      source_locator: "4. ZAPISI"
+    quotes:
+      - "Voditelj Q/EP/HS službe mora čuvati sve zapise s provjere, te izvještaje o provjerama kako je specificirano u ugovoru, odnosno minimalno pet godina."
+  - item_id: GOLDEN-OBJECTIVE-008
+    criterion_id: APP_B_XVII
+    criterion_name: Quality Assurance Records
+    statement: "Candidate status record: a status list tracks completed audits and opened nonconformance or corrective-action reports."
+    source:
+      source_locator: "4. ZAPISI"
+    quotes:
+      - "Voditelj Q/EP/HS službe mora voditi listu statusa provjera, u koju ažurira podatke o obavljenim provjerama i pokrenutim izvještajima o neusklađenosti / korektivnim akcijama. Lista se čuva minimalno 2 godine nakon zadnje provjere na listi, odnosno u skladu s odredbom ugovora."
