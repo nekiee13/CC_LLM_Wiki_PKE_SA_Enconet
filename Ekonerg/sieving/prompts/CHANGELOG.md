@@ -29,3 +29,11 @@ roles, approvals, records, registers, forms, reports, outputs, acceptance
 criteria, training, revision history, and implementation examples. If the
 deeper evidence is absent, retain the reference as a candidate and flag that
 objective evidence was not shown.
+
+## Concept-recall candidate v2 (2026-10-03)
+
+`appb_document_v2_concept_recall` adds a second pass over every chapter or
+chunk. It uses criterion intent cards to collect direct controls, supporting
+controls, and candidate leads without a fixed crumb cap. It remains a candidate
+until its pilot and fresh owner/reviewer decision are recorded; activation is
+not implied by creating the prompt.
