@@ -87,7 +87,9 @@ All three are marked `pending_human_approval`. They contain Ekonerg source
 quotes only; no Enconet answer key or approval was copied.
 
 The RULE calibration is now owner-approved as
-`GOLDEN-RULE-20261003-OWNER`. The DOCUMENT calibrations remain pending. For
+`GOLDEN-RULE-20261003-OWNER`. The objective-evidence DOCUMENT calibration is
+also owner-approved as `GOLDEN-DOCUMENT-OBJECTIVE-20261003-OWNER`; the original
+manual and corrective-action DOCUMENT drafts remain pending. For
 vendor documents, a high-level reference is only a lead. Full alignment needs
 deeper objective evidence, such as roles, approvals, records, outputs,
 acceptance criteria, training, revision history, or implementation examples.

@@ -2,11 +2,12 @@
 
 ## Status
 
-**Draft — pending human approval**
+**Owner-approved calibration**
 
 - Source: `DOC-0027` — `PQ09.2_r9_Provjere.md`
 - Side: `DOCUMENT`
 - Prompt: `appb_document_v1`
+- Approval reference: `GOLDEN-DOCUMENT-OBJECTIVE-20261003-OWNER`
 - YAML manifest: [`manifest_document_objective.yml`](manifest_document_objective.yml)
 
 This calibration tests the deeper evidence that a vendor QMS document should
