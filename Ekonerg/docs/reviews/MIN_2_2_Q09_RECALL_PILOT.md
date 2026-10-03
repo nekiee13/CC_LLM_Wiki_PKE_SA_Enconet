@@ -58,3 +58,22 @@ regeneration.
 After Q-10, active vendor coverage is **20 runs and 133 crumbs**. Four vendor
 documents remain without an active run: `DOC-0020`, `DOC-0021`, `DOC-0022`, and
 `DOC-0031`.
+
+## Q-11 continuation
+
+The following uncovered document was then processed:
+
+- Source: `DOC-0020` — `PQ08.2-1_r6_Odnosi_s_Naručiteljima.md`.
+- Run: `RUN-20261003-36`.
+- Crumbs collected: **12**.
+- Quote links: **14/14 (100%)**.
+- Rejected items: 0.
+- Failed items: 0.
+
+The run captured customer-requirement communication, assigned roles, customer
+feedback records, complaint handling, nonconformance/corrective-action triggers,
+and retention of complaint evidence. This is supporting evidence to review
+against Appendix B; it is not a conformance conclusion.
+
+After Q-11, active vendor coverage is **21 runs and 145 crumbs**. Three vendor
+documents remain without an active run: `DOC-0021`, `DOC-0022`, and `DOC-0031`.
