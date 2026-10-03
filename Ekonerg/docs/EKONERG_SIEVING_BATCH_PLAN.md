@@ -64,3 +64,17 @@ hashes or evidence identifiers.
 Before any batch is run, Codex must record the source hashes, prompt version,
 document IDs, chapter range, page estimate, and batch rationale. This plan is
 not evidence and does not bypass the empty prompt registry or golden-set gate.
+
+## Pre-run check — 2026-10-03
+
+- Batch coverage: **PASS** — 31 planned IDs match 31 registry rows (7 RULE,
+  24 DOCUMENT).
+- `python -B scripts/validate_raw_sources.py --db db/nqa_audit.sqlite`:
+  **PASS**.
+- `python -B scripts/validate_chunks.py --db db/nqa_audit.sqlite --no-record`:
+  **PASS** — all 411 chunks verified.
+- `python -B scripts/validate_sieving_harness.py --allow-pending-claude`:
+  **expected gate stop** — active RULE and DOCUMENT prompts are empty; the
+  golden calibration set is pending human approval.
+
+No batch has been executed and no crumb has been created.
