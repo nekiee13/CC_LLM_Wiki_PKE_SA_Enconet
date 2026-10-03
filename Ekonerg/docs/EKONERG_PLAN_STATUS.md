@@ -61,6 +61,10 @@ made.*
   streams. R-03, R-05, R-06, and R-07 are explicitly interpretive or guidance
   streams. The eight bounded QMS batches are also processed. Review and
   generation decisions remain open.
+- EK-6.3 packet prepared: diagnostic 18-criterion matrix and draft
+  applicability bases are ready. Twelve criteria are provisionally likely
+  applicable; six remain conditional pending contract or project evidence.
+  Owner G2 approval is still required; no applicability rulings were written.
 - EK-1.2 is the current open task: the local support-tool foundation (`agent_coord.py`,
   `run_validation.py`, `make_handoff.py`, `check_guidance_drift.py`,
   `check_skill_structure.py`, and their tests) is reviewed and approved, but the task as a

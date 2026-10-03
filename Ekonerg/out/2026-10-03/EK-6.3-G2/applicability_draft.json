@@ -1,0 +1,33 @@
+{
+  "status": "draft_pending_owner_G2",
+  "supplier": "Ekonerg",
+  "scope_boundary": "Audit Ekonerg's QA system. Other companies are not audit targets; supplier controls are checked only where supplier work can affect Ekonerg quality.",
+  "source_basis": [
+    "DOC-0017: activity levels include study, design, consulting, engineering, testing, and other services.",
+    "DOC-0012/DOC-0013: controlled and work procedures govern Ekonerg activities.",
+    "DOC-0024/DOC-0025: purchasing and supplier evaluation controls.",
+    "DOC-0027/DOC-0028: verification, audits, and management review.",
+    "DOC-0029/DOC-0030: nonconformance, Part 21, and corrective action controls."
+  ],
+  "rulings": [
+    {"criterion_id":"APP_B_I","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0008","DOC-0015","DOC-0027"],"basis":"Ekonerg procedures assign QA, management, team, and verification roles across its organization and supplier oversight."},
+    {"criterion_id":"APP_B_II","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0014","DOC-0018"],"basis":"The QMS document-control and quality-plan procedures cover Ekonerg activities and contracts."},
+    {"criterion_id":"APP_B_III","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0017","DOC-0019"],"basis":"Ekonerg documents identify study, design, engineering, and project-control activities, including review and verification stages."},
+    {"criterion_id":"APP_B_IV","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0024","DOC-0025"],"basis":"Procurement and supplier-evaluation procedures control purchased services and requirements."},
+    {"criterion_id":"APP_B_V","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0012","DOC-0013"],"basis":"Ekonerg uses controlled procedures and work procedures for quality-affecting activities."},
+    {"criterion_id":"APP_B_VI","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0014","DOC-0015"],"basis":"Issued and received documents, revisions, distribution, and retention are controlled."},
+    {"criterion_id":"APP_B_VII","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0024","DOC-0025","DOC-0023"],"basis":"Ekonerg controls purchasing, supplier evaluation, and supplier design-work verification."},
+    {"criterion_id":"APP_B_VIII","recommendation":"CONDITIONAL","scope_source_doc_ids":["DOC-0017","DOC-0024"],"basis":"The evidence shows services and project work, but does not yet prove that Ekonerg fabricates or installs traceable physical items. Confirm per contract or project."},
+    {"criterion_id":"APP_B_IX","recommendation":"CONDITIONAL","scope_source_doc_ids":["DOC-0013","DOC-0017"],"basis":"The evidence describes engineering and testing services, not welding, heat treating, or nondestructive examination performed by Ekonerg. Confirm whether any project invokes a special process."},
+    {"criterion_id":"APP_B_X","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0012","DOC-0027","DOC-0023"],"basis":"Control procedures, internal checks, supplier checks, and design-work verification require inspection or review activities."},
+    {"criterion_id":"APP_B_XI","recommendation":"CONDITIONAL","scope_source_doc_ids":["DOC-0017","DOC-0013"],"basis":"Testing is listed among Ekonerg activity types, but the applicable test program and acceptance limits must be confirmed for each project."},
+    {"criterion_id":"APP_B_XII","recommendation":"CONDITIONAL","scope_source_doc_ids":["DOC-0010","DOC-0013"],"basis":"Ekonerg controls measuring equipment, but its use in a particular safety-related activity must be confirmed from project evidence."},
+    {"criterion_id":"APP_B_XIII","recommendation":"CONDITIONAL","scope_source_doc_ids":["DOC-0015","DOC-0016"],"basis":"Document and record storage is evidenced; handling, storage, and shipping of nuclear items is not yet evidenced for Ekonerg's service scope."},
+    {"criterion_id":"APP_B_XIV","recommendation":"CONDITIONAL","scope_source_doc_ids":["DOC-0012","DOC-0017"],"basis":"Inspection and testing controls exist, but item or system operating-status marking is not shown. Confirm if a contract requires it."},
+    {"criterion_id":"APP_B_XV","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0029"],"basis":"Ekonerg has a procedure for deviations and nonconformances in Ekonerg and supplier activities."},
+    {"criterion_id":"APP_B_XVI","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0030","DOC-0029","DOC-0001"],"basis":"Corrective-action, nonconformance, and Part 21 reporting controls are explicitly documented."},
+    {"criterion_id":"APP_B_XVII","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0016","DOC-0019","DOC-0030"],"basis":"Quality records, project records, and corrective-action records have defined control or retention evidence."},
+    {"criterion_id":"APP_B_XVIII","recommendation":"APPLICABLE","scope_source_doc_ids":["DOC-0027","DOC-0028"],"basis":"Ekonerg documents internal checks, management review, reporting, and follow-up activities."}
+  ],
+  "decision_note": "No criterion is marked NOT_APPLICABLE yet. Conditional criteria need contract or project evidence before a final N/A decision. Owner G2 approval is required before writing rulings to the audit database."
+}
