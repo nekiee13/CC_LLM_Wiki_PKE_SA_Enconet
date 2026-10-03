@@ -1,0 +1,27 @@
+{
+  "status": "approved_g2",
+  "approval_ref": "G2-RUN-20261003-32",
+  "supplier": "Ekonerg",
+  "source_draft": "applicability_draft.json",
+  "decision_note": "Owner approved the 12 applicable and 6 conditional preliminary decisions. Conditional criteria remain in audit scope for work-sample testing and are not final NOT_APPLICABLE decisions.",
+  "rulings": [
+    {"criterion_id": "APP_B_I", "applicable": true, "justification": "Owner-approved G2: applicable. Ekonerg procedures assign QA, management, team, and verification roles across its organization and supplier oversight.", "scope_source_doc_id": "DOC-0008"},
+    {"criterion_id": "APP_B_II", "applicable": true, "justification": "Owner-approved G2: applicable. The QMS document-control and quality-plan procedures cover Ekonerg activities and contracts.", "scope_source_doc_id": "DOC-0014"},
+    {"criterion_id": "APP_B_III", "applicable": true, "justification": "Owner-approved G2: applicable. Ekonerg documents identify study, design, engineering, and project-control activities, including review and verification stages.", "scope_source_doc_id": "DOC-0017"},
+    {"criterion_id": "APP_B_IV", "applicable": true, "justification": "Owner-approved G2: applicable. Procurement and supplier-evaluation procedures control purchased services and requirements.", "scope_source_doc_id": "DOC-0024"},
+    {"criterion_id": "APP_B_V", "applicable": true, "justification": "Owner-approved G2: applicable. Ekonerg uses controlled procedures and work procedures for quality-affecting activities.", "scope_source_doc_id": "DOC-0012"},
+    {"criterion_id": "APP_B_VI", "applicable": true, "justification": "Owner-approved G2: applicable. Issued and received documents, revisions, distribution, and retention are controlled.", "scope_source_doc_id": "DOC-0014"},
+    {"criterion_id": "APP_B_VII", "applicable": true, "justification": "Owner-approved G2: applicable. Ekonerg controls purchasing, supplier evaluation, and supplier design-work verification.", "scope_source_doc_id": "DOC-0024"},
+    {"criterion_id": "APP_B_VIII", "applicable": true, "justification": "Owner-approved G2: conditional and kept in scope. The evidence does not yet prove that Ekonerg fabricates or installs traceable physical items; confirm per contract or project before any future N/A decision.", "scope_source_doc_id": "DOC-0017"},
+    {"criterion_id": "APP_B_IX", "applicable": true, "justification": "Owner-approved G2: conditional and kept in scope. The evidence does not yet show Ekonerg special processes; confirm whether any project invokes one before any future N/A decision.", "scope_source_doc_id": "DOC-0013"},
+    {"criterion_id": "APP_B_X", "applicable": true, "justification": "Owner-approved G2: applicable. Control procedures, internal checks, supplier checks, and design-work verification require inspection or review activities.", "scope_source_doc_id": "DOC-0012"},
+    {"criterion_id": "APP_B_XI", "applicable": true, "justification": "Owner-approved G2: conditional and kept in scope. Testing is listed among Ekonerg activity types; confirm the applicable test program and acceptance limits for each project.", "scope_source_doc_id": "DOC-0017"},
+    {"criterion_id": "APP_B_XII", "applicable": true, "justification": "Owner-approved G2: conditional and kept in scope. Ekonerg controls measuring equipment; confirm its use in a covered safety-related activity.", "scope_source_doc_id": "DOC-0010"},
+    {"criterion_id": "APP_B_XIII", "applicable": true, "justification": "Owner-approved G2: conditional and kept in scope. Document and record storage is evidenced; confirm whether handling, storage, or shipping of physical items is required.", "scope_source_doc_id": "DOC-0015"},
+    {"criterion_id": "APP_B_XIV", "applicable": true, "justification": "Owner-approved G2: conditional and kept in scope. Confirm whether a contract requires item or system operating-status marking.", "scope_source_doc_id": "DOC-0012"},
+    {"criterion_id": "APP_B_XV", "applicable": true, "justification": "Owner-approved G2: applicable. Ekonerg has a procedure for deviations and nonconformances in Ekonerg and supplier activities.", "scope_source_doc_id": "DOC-0029"},
+    {"criterion_id": "APP_B_XVI", "applicable": true, "justification": "Owner-approved G2: applicable. Corrective-action, nonconformance, and Part 21 reporting controls are explicitly documented.", "scope_source_doc_id": "DOC-0030"},
+    {"criterion_id": "APP_B_XVII", "applicable": true, "justification": "Owner-approved G2: applicable. Quality records, project records, and corrective-action records have defined control or retention evidence.", "scope_source_doc_id": "DOC-0016"},
+    {"criterion_id": "APP_B_XVIII", "applicable": true, "justification": "Owner-approved G2: applicable. Ekonerg documents internal checks, management review, reporting, and follow-up activities.", "scope_source_doc_id": "DOC-0027"}
+  ]
+}

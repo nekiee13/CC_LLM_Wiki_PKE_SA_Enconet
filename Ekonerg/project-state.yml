@@ -1,13 +1,13 @@
 # Ekonerg audit state. This is a fresh run; no gate decision is inherited.
 # State transitions must be recorded by scripts/audit_state.py after approval.
 
-phase: setup
+phase: evidence_reviewed
 supplier: ekonerg
 deliverable_language: null
 
 gates:
-  G1: {status: pending, date: null, decision_ref: null}
-  G2: {status: pending, date: null, decision_ref: null}
+  G1: {status: approved, date: 2026-10-02, decision_ref: G1-EKONERG-2026-10-02}
+  G2: {status: approved, date: 2026-10-03, decision_ref: G2-RUN-20261003-32}
   G3: {status: pending, date: null, decision_ref: null}
   G4: {status: pending, date: null, decision_ref: null}
   G5: {status: pending, date: null, decision_ref: null}

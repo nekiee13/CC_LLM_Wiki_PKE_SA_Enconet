@@ -22,7 +22,8 @@ def main() -> int:
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
     try:
-        rulings = json.loads(local_path(args.matrix).read_text(encoding="utf-8"))
+        matrix = json.loads(local_path(args.matrix).read_text(encoding="utf-8"))
+        rulings = matrix.get("rulings") if isinstance(matrix, dict) else matrix
         result = write_rulings(args.db, run_id=args.run_id, supplier=args.supplier,
                                language=args.language, rulings=rulings, apply=args.apply)
         print(json.dumps(result, sort_keys=True))

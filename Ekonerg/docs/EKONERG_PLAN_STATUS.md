@@ -39,7 +39,7 @@ made.*
 | EK-5 | EK-5.2 — Approve the intake order and first batch | ⬜ Not started |
 | EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | 🟡 Registered, extracted, chunked; controlled RULE test passed; full sieving pending |
 | EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | 🟡 Registered, extracted, chunked; controlled objective-evidence test passed; full batches pending |
-| EK-6 | EK-6.3 — Review evidence quality and approve G2 | ⬜ Not started |
+| EK-6 | EK-6.3 — Review evidence quality and approve G2 | ✅ G2 approved; 18 applicability rows applied for RUN-20261003-32 |
 | EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | ⬜ Not started |
 | EK-7 | EK-7.2 — Draft findings and follow-up actions | ⬜ Not started |
 | EK-8 — Generate, test, and release Croatian outputs | EK-8.1 — Build the report and evidence package | ⬜ Not started |
@@ -61,10 +61,10 @@ made.*
   streams. R-03, R-05, R-06, and R-07 are explicitly interpretive or guidance
   streams. The eight bounded QMS batches are also processed. Review and
   generation decisions remain open.
-- EK-6.3 packet prepared: diagnostic 18-criterion matrix and draft
-  applicability bases are ready. Twelve criteria are provisionally likely
-  applicable; six remain conditional pending contract or project evidence.
-  Owner G2 approval is still required; no applicability rulings were written.
+- EK-6.3 G2 is approved under `G2-RUN-20261003-32`. Twelve criteria are
+  applicable and six remain conditional in scope; none is a final N/A. The
+  18-row applicability matrix is written to the database. Formal evaluations
+  and scoring now wait for G3 model approval and human judgments.
 - EK-1.2 is the current open task: the local support-tool foundation (`agent_coord.py`,
   `run_validation.py`, `make_handoff.py`, `check_guidance_drift.py`,
   `check_skill_structure.py`, and their tests) is reviewed and approved, but the task as a

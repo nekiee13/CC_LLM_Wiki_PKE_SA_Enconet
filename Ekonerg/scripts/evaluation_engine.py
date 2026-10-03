@@ -97,11 +97,14 @@ def score_rating(rating: str, *, scoring_model: dict | None = None) -> float | N
 
 def _raw_document(conn: sqlite3.Connection, doc_id: str) -> None:
     doc = conn.execute("SELECT filename,sha256,document_side FROM documents WHERE doc_id=?", (doc_id,)).fetchone()
-    if doc is None or doc["document_side"] != "RULE":
-        raise ValueError(f"scope source is not a registered RULE document: {doc_id}")
-    if conn.execute("SELECT 1 FROM approved_sources WHERE source_sha256=? AND authority_role='GOVERNING'",
-                    (doc["sha256"],)).fetchone() is None:
-        raise ValueError(f"scope source lacks approved governing-source record: {doc_id}")
+    if doc is None:
+        raise ValueError(f"scope source is not a registered document: {doc_id}")
+    if doc["document_side"] == "RULE" and conn.execute(
+            "SELECT 1 FROM approved_sources WHERE source_sha256=? AND authority_role='GOVERNING'",
+            (doc["sha256"],)).fetchone() is None:
+        raise ValueError(f"scope RULE source lacks approved governing-source record: {doc_id}")
+    if doc["document_side"] not in {"RULE", "DOCUMENT"}:
+        raise ValueError(f"scope source has an invalid document side: {doc_id}")
     path = local_path(RAW / doc["filename"])
     if not path.is_relative_to(RAW) or not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != doc["sha256"]:
         raise ValueError(f"scope source raw bytes missing or changed: {doc_id}")
