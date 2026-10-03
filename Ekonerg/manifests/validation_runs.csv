@@ -1,1 +1,3 @@
 run_utc,validator,phase,result,exit_code,details
+2026-10-03T16:23:03Z,validate_chunks.py,setup,FAIL,1,1 error(s); first: local database is missing: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Ekonerg\Ekonerg\db\nqa_audit.sqlite
+2026-10-03T16:23:10Z,validate_chunks.py,setup,PASS,0,all chunks verified
