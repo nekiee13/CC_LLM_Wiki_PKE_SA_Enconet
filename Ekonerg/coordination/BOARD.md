@@ -145,10 +145,12 @@ and ADRs are the records.
 - `CX_2026-10-03T173625Z_concept-recall-v2-review` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T174141Z_concept-recall-v2-activated` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T175149Z_concept-recall-pilot-result` — note, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T182356Z_conditional-applicability-guard` — acknowledgement, codex -> claude-code: EK-6.3
+- `CX_2026-10-03T182454Z_claude-review-batch-ack` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 139 records in `coordination/archive/`
 
-Generated: 2026-10-03T17:52:07Z
+Generated: 2026-10-03T18:25:10Z
