@@ -1,6 +1,6 @@
 task: EK-6.3-CONDITIONAL-GUARD
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-10-03T19:44:30Z
 last_renewed_at_utc: 2026-10-03T19:44:30Z
 expires_at_utc: 2026-10-04T03:44:30Z
@@ -10,3 +10,4 @@ anticipated_files:
   - scripts/tests/test_evaluation_scope_source.py
   - docs/reviews/MIN_2_2_EK6_3_G2_APPLIED.md
 note: Implement explicit conditional-applicability guard before G3 scoring; add tests and record validation.
+released_at_utc: 2026-10-03T19:56:24Z

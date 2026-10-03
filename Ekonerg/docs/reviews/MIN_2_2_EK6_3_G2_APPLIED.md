@@ -32,3 +32,21 @@ confirmation before any later N/A decision.
 - Ekonerg script tests: `58 passed`.
 - Formal criterion evaluations and scoring are still pending G3 approval and
   human evidence judgments.
+
+## Conditional-evaluation guard
+
+The six conditional criteria are now stored with an explicit
+`applicability_state=conditional` value. This keeps them in scope without
+letting the scoring engine treat them as confirmed applicable controls.
+
+- A criterion in the conditional state cannot receive a scored rating until
+  an owner confirmation reference is recorded.
+- `scripts/confirm_applicability.py` records that confirmation and the owner
+  approval reference before evaluation can proceed.
+- Legacy rows are upgraded from their owner-approved conditional justification
+  text without changing source evidence.
+- The matrix and validation tools show the conditional state and preserve the
+  confirmation reference.
+
+The six rows for `RUN-20261003-32` were migrated successfully and have no
+confirmation reference yet. Therefore G3 scoring remains blocked by design.

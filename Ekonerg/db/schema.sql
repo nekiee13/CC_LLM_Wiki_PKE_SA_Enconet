@@ -188,6 +188,9 @@ CREATE TABLE IF NOT EXISTS criterion_applicability (
     evaluation_run_id TEXT NOT NULL REFERENCES evaluation_runs(run_id) ON DELETE CASCADE,
     criterion_id TEXT NOT NULL REFERENCES criteria(criterion_id) ON DELETE RESTRICT,
     applicable INTEGER NOT NULL CHECK (applicable IN (0,1)),
+    applicability_state TEXT NOT NULL DEFAULT 'applicable'
+        CHECK (applicability_state IN ('applicable','conditional','not-applicable')),
+    conditional_confirmation_ref TEXT,
     justification TEXT NOT NULL CHECK (length(trim(justification)) > 0),
     scope_source_doc_id TEXT NOT NULL REFERENCES documents(doc_id) ON DELETE RESTRICT,
     approved_by TEXT NOT NULL,

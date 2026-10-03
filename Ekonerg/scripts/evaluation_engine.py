@@ -19,6 +19,7 @@ MODEL = ROOT / "schemas/scoring_model.yml"
 RAW = ROOT / "raw"
 RATINGS = {"fully", "substantially", "partially", "minimally", "unmet", "undetermined", "na"}
 POSITIVE = {"fully", "substantially"}
+CONDITIONAL_BLOCKED_RATINGS = RATINGS - {"undetermined"}
 DIMENSIONS = ("coverage", "completeness", "accuracy", "clarity", "alignment")
 SUMMARIES = ("affirmative_summary", "contrary_summary", "judge_ruling", "rationale")
 
@@ -110,6 +111,100 @@ def _raw_document(conn: sqlite3.Connection, doc_id: str) -> None:
         raise ValueError(f"scope source raw bytes missing or changed: {doc_id}")
 
 
+def _ensure_applicability_guard_schema(conn: sqlite3.Connection) -> None:
+    """Upgrade older local databases before writing applicability decisions.
+
+    The project database predates the explicit conditional state.  The upgrade
+    is additive and derives the six already-approved conditional rows from
+    their owner-approved justification text once, preserving all source data.
+    """
+    columns = {row[1] for row in conn.execute("PRAGMA table_info(criterion_applicability)")}
+    if "applicability_state" not in columns:
+        conn.execute(
+            "ALTER TABLE criterion_applicability ADD COLUMN applicability_state TEXT NOT NULL DEFAULT 'applicable' "
+            "CHECK (applicability_state IN ('applicable','conditional','not-applicable'))"
+        )
+    if "conditional_confirmation_ref" not in columns:
+        conn.execute(
+            "ALTER TABLE criterion_applicability ADD COLUMN conditional_confirmation_ref TEXT"
+        )
+    conn.execute(
+        "UPDATE criterion_applicability SET applicability_state='conditional' "
+        "WHERE applicable=1 AND lower(justification) LIKE '%conditional%' "
+        "AND applicability_state='applicable'"
+    )
+    conn.execute(
+        "UPDATE criterion_applicability SET applicability_state='not-applicable' "
+        "WHERE applicable=0 AND applicability_state='applicable'"
+    )
+
+
+def _applicability_state(item: dict) -> tuple[str, str | None]:
+    """Normalize a ruling while keeping legacy G2 JSON readable."""
+    justification = item["justification"]
+    state = item.get("applicability_state")
+    if state is None:
+        state = "conditional" if "conditional" in justification.casefold() else (
+            "applicable" if item["applicable"] else "not-applicable"
+        )
+    if state not in {"applicable", "conditional", "not-applicable"}:
+        raise ValueError("invalid applicability_state")
+    if state == "not-applicable" and item["applicable"]:
+        raise ValueError("not-applicable state requires applicable=false")
+    if state in {"applicable", "conditional"} and not item["applicable"]:
+        raise ValueError("applicable or conditional state requires applicable=true")
+    confirmation = item.get("conditional_confirmation_ref")
+    if confirmation is not None:
+        confirmation = _text(confirmation, "conditional_confirmation_ref")
+    if state == "conditional" and confirmation:
+        raise ValueError("conditional ruling cannot carry a confirmation reference")
+    return state, confirmation
+
+
+def _check_conditional_evaluation(ruling: sqlite3.Row | dict, rating: str) -> None:
+    """Reject scored classifications until a conditional scope is confirmed."""
+    if (ruling["applicability_state"] == "conditional" and
+            not ruling["conditional_confirmation_ref"] and
+            rating in CONDITIONAL_BLOCKED_RATINGS):
+        raise ValueError("conditional applicability requires confirmation before evaluation")
+
+
+def confirm_applicability(db: Path, *, run_id: str, criterion_id: str,
+                          confirmation_ref: str, apply: bool = False) -> dict:
+    """Record an approved confirmation for one previously conditional criterion."""
+    _id(run_id, "run_id")
+    criterion_id = _text(criterion_id, "criterion_id")
+    confirmation = _approval(_text(confirmation_ref, "confirmation_ref"))
+    with closing(_connect(db, write=apply)) as conn:
+        if apply:
+            conn.execute("BEGIN IMMEDIATE")
+            _ensure_applicability_guard_schema(conn)
+        row = conn.execute(
+            "SELECT applicability_state, conditional_confirmation_ref "
+            "FROM criterion_applicability WHERE evaluation_run_id=? AND criterion_id=?",
+            (run_id, criterion_id),
+        ).fetchone()
+        if row is None:
+            raise ValueError("applicability ruling is missing")
+        if row["applicability_state"] != "conditional":
+            raise ValueError("only a conditional ruling can be confirmed")
+        if conn.execute(
+                "SELECT 1 FROM criterion_evaluations WHERE evaluation_run_id=? AND criterion_id=?",
+                (run_id, criterion_id)).fetchone() is not None:
+            raise ValueError("confirmation is refused after evaluation evidence exists")
+        if apply:
+            conn.execute(
+                "UPDATE criterion_applicability SET applicability_state='applicable', "
+                "conditional_confirmation_ref=?, approved_by=?, approved_date=? "
+                "WHERE evaluation_run_id=? AND criterion_id=?",
+                (confirmation_ref, confirmation["reviewer"], confirmation["date"],
+                 run_id, criterion_id),
+            )
+            conn.commit()
+    return {"mode": "apply" if apply else "preview", "run_id": run_id,
+            "criterion_id": criterion_id, "confirmation_ref": confirmation_ref}
+
+
 def write_rulings(db: Path, *, run_id: str, supplier: str, language: str,
                   rulings: object, apply: bool = False) -> dict:
     _id(run_id, "run_id")
@@ -120,12 +215,19 @@ def write_rulings(db: Path, *, run_id: str, supplier: str, language: str,
         raise ValueError("exactly 18 applicability rulings required")
     normalized = []
     for item in rulings:
-        if not isinstance(item, dict) or set(item) != {"criterion_id", "applicable", "justification", "scope_source_doc_id"}:
+        allowed = {"criterion_id", "applicable", "justification", "scope_source_doc_id",
+                   "applicability_state", "conditional_confirmation_ref"}
+        if not isinstance(item, dict) or not set(item) <= allowed or not {
+            "criterion_id", "applicable", "justification", "scope_source_doc_id"
+        } <= set(item):
             raise ValueError("applicability ruling has missing or unknown fields")
         if type(item["applicable"]) is not bool:
             raise ValueError("applicable must be true or false")
+        state, confirmation = _applicability_state(item)
         normalized.append({"criterion_id": _text(item["criterion_id"], "criterion_id"),
                            "applicable": int(item["applicable"]),
+                           "applicability_state": state,
+                           "conditional_confirmation_ref": confirmation,
                            "justification": _text(item["justification"], "justification"),
                            "scope_source_doc_id": _id(item["scope_source_doc_id"], "doc_id"),
                            "approved_by": approval["reviewer"], "approved_date": approval["date"],
@@ -133,6 +235,7 @@ def write_rulings(db: Path, *, run_id: str, supplier: str, language: str,
     with closing(_connect(db, write=apply)) as conn:
         if apply:
             conn.execute("BEGIN IMMEDIATE")
+            _ensure_applicability_guard_schema(conn)
         criteria = {row[0] for row in conn.execute("SELECT criterion_id FROM criteria")}
         taxonomy = yaml.safe_load(local_path(ROOT / "schemas/app_b_taxonomy.yml").read_text(encoding="utf-8"))
         canonical = {row["criterion_id"] for row in taxonomy["criteria"]}
@@ -148,6 +251,8 @@ def write_rulings(db: Path, *, run_id: str, supplier: str, language: str,
                 any(row[key] != expected[row["criterion_id"]][key] for key in expected[row["criterion_id"]]) for row in rows
             ):
                 raise ValueError("existing applicability run differs; refusing rewrite")
+            if apply:
+                conn.commit()
             return {"mode": "preserve" if apply else "preview", "run_id": run_id, "rulings": 18}
         if apply:
             db_util.insert(conn, "evaluation_runs", {"run_id": run_id, "supplier": supplier,
@@ -193,12 +298,14 @@ def write_evaluation(db: Path, *, run_id: str, record: object,
         run = conn.execute("SELECT scoring_model_version FROM evaluation_runs WHERE run_id=?", (run_id,)).fetchone()
         if run is None or run["scoring_model_version"] != scoring["model_version"]:
             raise ValueError("evaluation run scoring model differs from approved G3 version")
-        ruling = conn.execute("SELECT applicable FROM criterion_applicability WHERE evaluation_run_id=? AND criterion_id=?",
+        ruling = conn.execute("SELECT applicable, applicability_state, conditional_confirmation_ref "
+                              "FROM criterion_applicability WHERE evaluation_run_id=? AND criterion_id=?",
                               (run_id, cid)).fetchone()
         if ruling is None:
             raise ValueError("approved applicability ruling missing")
         if (not ruling["applicable"] and rating != "na") or (ruling["applicable"] and rating == "na"):
             raise ValueError("classification conflicts with applicability ruling")
+        _check_conditional_evaluation(ruling, rating)
         if rating == "na" and (evidence_ids or any(values[name] for name in DIMENSIONS)):
             raise ValueError("not-applicable record must not carry evidence or scored dimensions")
         document_count = 0

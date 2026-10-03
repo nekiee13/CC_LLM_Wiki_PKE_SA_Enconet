@@ -55,7 +55,8 @@ def build(db: Path, run_id: str | None = None) -> list[dict]:
         rows: list[dict] = []
         for cid in baseline:
             app = conn.execute(
-                "SELECT applicable FROM criterion_applicability "
+                "SELECT applicable, applicability_state, conditional_confirmation_ref "
+                "FROM criterion_applicability "
                 "WHERE evaluation_run_id=? AND criterion_id=?", (run_id, cid),
             ).fetchone() if run_id is not None else None
             run_filter = " AND e.evaluation_run_id=?" if run_id is not None else ""
@@ -65,8 +66,10 @@ def build(db: Path, run_id: str | None = None) -> list[dict]:
             rows.append({
                 "criterion_id": cid,
                 "criterion_name": criteria[cid],
-                "applicability": ("applicable" if app["applicable"] else "not-applicable")
-                                 if app is not None else "unruled",
+                "applicability": app["applicability_state"] if app is not None else "unruled",
+                "conditional_confirmation_ref": (
+                    app["conditional_confirmation_ref"] if app is not None else None
+                ),
                 "rule_evidence_count": _count(conn,
                     "SELECT count(*) FROM active_crumbs WHERE criterion_id=? AND document_side='RULE'", (cid,)),
                 "document_evidence_count": _count(conn,

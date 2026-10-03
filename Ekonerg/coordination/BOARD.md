@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `EK-6.3-CONDITIONAL-GUARD` — codex, expires 2026-10-04T03:44:30Z
+- none
 
 ## Expired (not released — expiry does not imply completion)
 
@@ -57,6 +57,7 @@ and ADRs are the records.
 - `EK-1.2-STATE-BUNDLE-V1` — codex, released 2026-09-30T03:39:50Z
 - `EK-1.2-SUPPORT-ACK` — codex, released 2026-09-29T16:14:14Z
 - `EK-1.2-SUPPORT-BUNDLE-V1` — codex, released 2026-09-30T03:26:56Z
+- `EK-6.3-CONDITIONAL-GUARD` — codex, released 2026-10-03T19:56:24Z
 - `EK-FAST-PLAN` — codex, released 2026-10-01T20:19:47Z
 - `EK-PLAN-APPROVAL-ACK` — codex, released 2026-09-29T11:16:58Z
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
@@ -119,10 +120,11 @@ and ADRs are the records.
 - `CX_2026-10-03T175149Z_concept-recall-pilot-result` — note, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T182356Z_conditional-applicability-guard` — acknowledgement, codex -> claude-code: EK-6.3
 - `CX_2026-10-03T182454Z_claude-review-batch-ack` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T195546Z_conditional-applicability-guard-implemented` — review_request, codex -> claude-code: EK-6.3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 171 records in `coordination/archive/`
 
-Generated: 2026-10-03T19:49:15Z
+Generated: 2026-10-03T19:56:24Z

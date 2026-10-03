@@ -8,7 +8,10 @@ import sys
 import yaml
 
 import db_util
-from evaluation_engine import _approval, _approved_model, _connect, _id, _raw_document, ROOT, POSITIVE, score_rating
+from evaluation_engine import (
+    _approval, _approved_model, _check_conditional_evaluation, _connect, _id,
+    _raw_document, ROOT, POSITIVE, score_rating,
+)
 from project_paths import configure_standard_streams, local_path
 
 
@@ -67,6 +70,10 @@ def validate(db: Path, run_id: str) -> list[str]:
                 errors.append(f"evidence-supported flag mismatch: {cid}")
             if cid in rulings and (bool(rulings[cid]["applicable"]) == (evaluation["rating"] == "na")):
                 errors.append(f"rating conflicts with applicability: {cid}")
+            try:
+                _check_conditional_evaluation(rulings[cid], evaluation["rating"])
+            except ValueError:
+                errors.append(f"conditional applicability lacks confirmation: {cid}")
             if scoring is not None and evaluation["score"] != score_rating(evaluation["rating"], scoring_model=scoring):
                 errors.append(f"score mismatch: {cid}")
         for row in conn.execute("PRAGMA foreign_key_check"):
