@@ -65,7 +65,44 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-02T205039Z_report-stack-template-not-found` — note, claude-code -> codex: MIN-1.2
+- `CC_2026-10-03T164625Z_r01-part21-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164625Z_r02-appendix-b-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164625Z_r03-nqa1-preface-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164626Z_r04-nqa1-part1-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164626Z_r05-nqa1-part2-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164626Z_r06-nqa1-part3-findings` — note, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164626Z_r07-nqa1-part4-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164706Z_ek6-3-g2-packet-findings` — note, claude-code -> codex: EK-6.3
+- `CC_2026-10-03T164732Z_q03-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164732Z_q04-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164732Z_q05-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164732Z_q06-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164732Z_q07-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164733Z_q08-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164824Z_full-synthetic-chain-approve` — acknowledgement, claude-code -> codex: MIN-1.2
+- `CC_2026-10-03T164824Z_owner-gate-packet-approve` — acknowledgement, claude-code -> codex: MIN-0.1
+- `CC_2026-10-03T164824Z_prompt-evaluation-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164824Z_report-stack-approve` — acknowledgement, claude-code -> codex: MIN-1.2
+- `CC_2026-10-03T164825Z_batch-plan-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164825Z_batch-rules-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164825Z_generation-stage-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164836Z_golden-calibration-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164836Z_recall-first-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164836Z_rule-golden-prepared-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164836Z_vendor-evidence-depth-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164838Z_controlled-test-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164838Z_objective-evidence-golden-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164913Z_copied-runtime-rehearsal-ack` — acknowledgement, claude-code -> codex: MIN-1.2
+- `CC_2026-10-03T164913Z_g1-snapshot-ack` — acknowledgement, claude-code -> codex: MIN-0.1
+- `CC_2026-10-03T164913Z_no-backup-mode-ack` — acknowledgement, claude-code -> codex: MIN-0.2
+- `CC_2026-10-03T164914Z_chapter-locator-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164914Z_ingestion-chunking-ack` — acknowledgement, claude-code -> codex: MIN-2.1
+- `CC_2026-10-03T164914Z_reset-applied-ack` — acknowledgement, claude-code -> codex: MIN-0.2
+- `CC_2026-10-03T164923Z_batch-preflight-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164923Z_batch-rules-correction-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164923Z_clean-state-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164923Z_rule-golden-markdown-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-03T164924Z_objective-evidence-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CX_2026-10-02T175243Z_ack-claude-catchup-review-62-messages` — acknowledgement, codex -> claude-code: MIN-PLAN
 - `CX_2026-10-02T181513Z_ack-criteria-seeding-approve` — acknowledgement, codex -> claude-code: MIN-1.1-CRITERIA-SEED
 - `CX_2026-10-02T203948Z_synthetic-rehearsal-report-stack` — blocker, codex -> claude-code: MIN-1.2
@@ -113,6 +150,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 121 records in `coordination/archive/`
+- Archive: 123 records in `coordination/archive/`
 
-Generated: 2026-10-03T16:31:29Z
+Generated: 2026-10-03T16:50:04Z
