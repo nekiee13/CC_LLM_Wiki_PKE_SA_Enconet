@@ -7,7 +7,8 @@ golden-set approval remain pending; no source-edition decision was carried over.
 | Candidate | Side | State | Test score | Decision |
 |---|---|---|---|---|
 | `appb_rule_v1` | RULE | active, owner-authorized | draft calibration pending | `PROMPT-RULE-20261003-V1`; Claude review pending |
-| `appb_document_v1` | DOCUMENT | active, owner-authorized | draft calibration pending | `PROMPT-DOCUMENT-20261003-V1`; Claude review pending |
+| `appb_document_v1` | DOCUMENT | previous | draft calibration pending | `PROMPT-DOCUMENT-20261003-V1`; retained for comparison |
+| `appb_document_v2_concept_recall` | DOCUMENT | active, owner-authorized | pilot pending | `PROMPT-DOCUMENT-20261003-V2`; Claude review pending |
 
 Before promotion or tuning, record the local golden-set result, reviewer
 decision, decision reference, and lesson in the relevant local skill. Rejection

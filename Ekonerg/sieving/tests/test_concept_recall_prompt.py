@@ -29,6 +29,6 @@ def test_concept_recall_prompt_requires_two_pass_fuzzy_collection():
     assert "exact source quote" in prompt
 
 
-def test_v2_is_a_candidate_until_explicit_activation():
+def test_v2_is_the_owner_activated_document_prompt():
     active = yaml.safe_load((PROMPTS / "active.yml").read_text(encoding="utf-8"))
-    assert active["active"]["DOCUMENT"] == "appb_document_v1"
+    assert active["active"]["DOCUMENT"] == "appb_document_v2_concept_recall"

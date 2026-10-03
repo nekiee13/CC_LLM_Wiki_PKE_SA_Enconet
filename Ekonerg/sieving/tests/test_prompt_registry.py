@@ -66,7 +66,7 @@ class PromptRegistryTests(unittest.TestCase):
         registry = yaml.safe_load((self.prompts / "active.yml").read_text(encoding="utf-8"))
         self.assertEqual(registry["schema_version"], "1.0")
         self.assertEqual(registry["active"], {
-            "RULE": "appb_rule_v1", "DOCUMENT": "appb_document_v1",
+            "RULE": "appb_rule_v1", "DOCUMENT": "appb_document_v2_concept_recall",
         })
         self.assertIn("owner", (self.prompts / "active.yml").read_text(encoding="utf-8").lower())
 
