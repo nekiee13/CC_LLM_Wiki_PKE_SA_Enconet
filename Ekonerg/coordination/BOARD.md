@@ -96,10 +96,11 @@ and ADRs are the records.
 - `CX_2026-10-03T102236Z_objective-evidence-golden-approved` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T104111Z_controlled-sieving-test-complete` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T111650Z_q03-batch-complete` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T113205Z_q04-batch-complete` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T11:20:09Z
+Generated: 2026-10-03T12:16:43Z
