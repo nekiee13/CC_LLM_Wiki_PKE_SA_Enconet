@@ -28,15 +28,16 @@ the plan or the archived review records directly.
 ## Milestone M2 — First Ekonerg audit
 
 *In progress: the clean runtime is ready and the approved 31-file intake has
-been registered, extracted, and chunked. Sieving waits for prompt activation;
-the local generation-decision stage is now present and tested.*
+been registered, extracted, and chunked. The active RULE and DOCUMENT prompts
+have passed a bounded controlled test; full-document sieving remains pending
+review and bounded batch execution.*
 
 | Epic | Task | Status |
 |---|---|---|
 | EK-5 — Define and approve the real input set | EK-5.1 — Prepare the owner's source and scope checklist | ⬜ Not started |
 | EK-5 | EK-5.2 — Approve the intake order and first batch | ⬜ Not started |
-| EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | ✅ Registered, extracted, and chunked; sieving pending prompt activation |
-| EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | ✅ Registered, extracted, and chunked; sieving pending prompt activation |
+| EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | 🟡 Registered, extracted, chunked; controlled RULE test passed; full sieving pending |
+| EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | 🟡 Registered, extracted, chunked; controlled objective-evidence test passed; full batches pending |
 | EK-6 | EK-6.3 — Review evidence quality and approve G2 | ⬜ Not started |
 | EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | ⬜ Not started |
 | EK-7 | EK-7.2 — Draft findings and follow-up actions | ⬜ Not started |
@@ -63,9 +64,9 @@ the local generation-decision stage is now present and tested.*
   validated chunks. Source copies and derived text remain local and are not
   committed; the hash register is committed.
 - The local prompt registry now has owner-authorized active RULE and DOCUMENT
-  prompts (`appb_rule_v1` and `appb_document_v1`). Claude review and golden
-  approval remain pending, so no production crumbs or audit conclusions have
-  been produced.
+  prompts (`appb_rule_v1` and `appb_document_v1`). RULE and objective DOCUMENT
+  golden calibrations are owner-approved. Claude review remains pending; the
+  controlled test is not production evidence and creates no audit conclusion.
 - The sieving harness now has every required local stage, including
   `sieve_generation.py`; readiness now passes with the intentional pending-
   golden note. The golden calibration set is still pending human approval.
