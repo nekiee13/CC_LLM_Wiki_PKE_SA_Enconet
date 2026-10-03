@@ -282,11 +282,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-10-03T180041Z_q10-recall-run` — review_request, codex -> claude-code: EK-1.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 754 records in `coordination/archive/`
 
-Generated: 2026-10-03T17:57:03Z
+Generated: 2026-10-03T18:02:47Z
