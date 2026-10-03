@@ -1,12 +1,12 @@
 schema_version: "1.0"
-fixture_version: "ekonerg-rule-draft-2026-10-03"
+fixture_version: "ekonerg-rule-recall-first-draft-2026-10-03"
 status: pending_human_approval
 approval_ref: null
 document:
   doc_id: DOC-0002
   filename: "10CFR_Part 50_-_Appendix_B.md"
   side: RULE
-  purpose: "Draft calibration for exact Appendix B rule extraction."
+  purpose: "Draft calibration for broad, exact Appendix B rule extraction."
 expected_crumbs:
   - item_id: GOLDEN-RULE-001
     criterion_id: APP_B_I
@@ -26,8 +26,40 @@ expected_crumbs:
       source_locator: "VI. Document Control"
     quotes:
       - "Measures shall be established to control the issuance of documents, such as instructions, procedures, and drawings, including changes thereto, which prescribe all activities affecting quality."
+  - item_id: GOLDEN-RULE-003
+    criterion_id: APP_B_II
+    criterion_name: Quality Assurance Program
+    statement: "The applicant shall establish a quality assurance program which complies with the requirements of this appendix."
+    source:
+      source_locator: "II. Quality Assurance Program"
+    quotes:
+      - "The applicant shall establish at the earliest practicable time, consistent with the schedule for accomplishing the activities, a quality assurance program which complies with the  requirements of this appendix."
+  - item_id: GOLDEN-RULE-004
+    criterion_id: APP_B_III
+    criterion_name: Design Control
+    statement: "Measures shall be established to assure that applicable regulatory requirements and the design basis are correctly translated into design documents."
+    source:
+      source_locator: "III. Design Control"
+    quotes:
+      - "Measures shall be established to assure that applicable regulatory requirements and the design basis"
+  - item_id: GOLDEN-RULE-005
+    criterion_id: APP_B_VII
+    criterion_name: Control of Purchased Material, Equipment, and Services
+    statement: "Measures shall be established to assure that purchased material, equipment, and services conform to the procurement documents."
+    source:
+      source_locator: "VII. Control of Purchased Material, Equipment, and Services"
+    quotes:
+      - "Measures shall be established to assure that purchased material, equipment, and services, whether purchased directly or through contractors and subcontractors, conform to the procurement documents."
+  - item_id: GOLDEN-RULE-006
+    criterion_id: APP_B_XVII
+    criterion_name: Quality Assurance Records
+    statement: "Sufficient records shall be maintained to furnish evidence of activities affecting quality."
+    source:
+      source_locator: "XVII. Quality Assurance Records"
+    quotes:
+      - "Sufficient records shall be maintained to furnish evidence of activities affecting quality."
 authority_references:
   - authority_role: GOVERNING
     source_code: DOC-0002
-    source_locator: "I. Organization; VI. Document Control"
+    source_locator: "I. Organization; II. Quality Assurance Program; III. Design Control; VI. Document Control; VII. Control of Purchased Material, Equipment, and Services; XVII. Quality Assurance Records"
     applicability: APPLICABLE
