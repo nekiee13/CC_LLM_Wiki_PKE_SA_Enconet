@@ -63,6 +63,17 @@ document key and must not replace the chapter path.
 
 - Incoming source set: G1 approved, 31 files.
 - Extraction and chunking: complete, 411 validated chunks.
+- Local sieving stages: complete; `sieve_generation.py` is now copied into
+  Ekonerg and guarded by a regression test. The harness no longer reports a
+  missing local stage.
 - Real crumbs: none created yet.
 - Active prompt: none.
 - Next required decision: owner/reviewer prompt approval and activation.
+
+## Readiness check (2026-10-03)
+
+- `python -m pytest Ekonerg/scripts/tests -q` — PASS, 57 tests.
+- `python -B Ekonerg/scripts/validate_sieving_harness.py --allow-pending-claude`
+  — expected gate failure only: both active prompt slots are empty.
+- Golden calibration remains pending human approval. No real sieve run was
+  started and no prompt was activated by this change.

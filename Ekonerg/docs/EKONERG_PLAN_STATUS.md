@@ -28,7 +28,8 @@ the plan or the archived review records directly.
 ## Milestone M2 — First Ekonerg audit
 
 *In progress: the clean runtime is ready and the approved 31-file intake has
-been registered, extracted, and chunked. Sieving waits for prompt activation.*
+been registered, extracted, and chunked. Sieving waits for prompt activation;
+the local generation-decision stage is now present and tested.*
 
 | Epic | Task | Status |
 |---|---|---|
@@ -64,5 +65,8 @@ been registered, extracted, and chunked. Sieving waits for prompt activation.*
 - The local prompt registry has no active prompt. Candidate rule/document
   prompts remain pending owner and reviewer activation, so no real crumbs or
   audit conclusions have been produced.
+- The sieving harness now has every required local stage, including
+  `sieve_generation.py`; its remaining failures are the intentional empty
+  prompt slots. The golden calibration set is still pending human approval.
 - M1 cannot be accepted until EK-1 through EK-4 close and the owner explicitly accepts the
   M1 evidence packet (Task EK-4.4).
