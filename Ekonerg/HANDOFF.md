@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-03T001000Z-57a3c28.md`](handoffs/2026-10-03T001000Z-57a3c28.md)
+**Authoritative record:** [`handoffs/2026-10-03T061626Z-73288f2.md`](handoffs/2026-10-03T061626Z-73288f2.md)
 
-**Status:** blocked · **Git:** `57a3c28` · **Agent:** codex · **Created:** 2026-10-03T00:10:00Z
+**Status:** partial · **Git:** `73288f2` · **Agent:** codex · **Created:** 2026-10-03T06:16:26Z
 
-**Exact next action:** Obtain prompt activation decision, then register approved authority sources, run rule/document sieving in bounded batches, validate crumbs, and record counts under the dated output folder.
+**Exact next action:** Obtain prompt and golden-set decisions, then activate only approved versions and run a small reviewed sieving batch.
