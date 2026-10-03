@@ -82,10 +82,11 @@ and ADRs are the records.
 - `CX_2026-10-03T054403Z_prompt-evaluation-package` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T060726Z_chapter-locator-contract` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T061226Z_local-generation-stage` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-03T061433Z_clean-state-validation` — status, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T001000Z-57a3c28.md`](../handoffs/2026-10-03T001000Z-57a3c28.md)
 - Archive: 121 records in `coordination/archive/`
 
-Generated: 2026-10-03T06:12:31Z
+Generated: 2026-10-03T06:14:41Z
