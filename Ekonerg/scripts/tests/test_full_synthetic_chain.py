@@ -21,8 +21,10 @@ def run(root: Path, script: str, *args: str) -> subprocess.CompletedProcess[str]
 
 
 def copy_project(root: Path) -> None:
-    for folder in ("scripts", "db", "schemas", "sieving"):
+    for folder in ("scripts", "schemas", "sieving"):
         shutil.copytree(PROJECT / folder, root / folder, dirs_exist_ok=True)
+    (root / "db").mkdir()
+    shutil.copyfile(PROJECT / "db" / "schema.sql", root / "db" / "schema.sql")
     (root / "raw").mkdir()
     (root / "manifests").mkdir()
 
