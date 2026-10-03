@@ -73,53 +73,8 @@ and ADRs are the records.
 - `CC_2026-10-03T194811Z_concept-recall-v2-approve` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-03T201934Z_conditional-guard-approve` — acknowledgement, claude-code -> codex: EK-6.3
 - `CC_2026-10-03T201935Z_q09-corrected-approve` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CX_2026-10-02T175243Z_ack-claude-catchup-review-62-messages` — acknowledgement, codex -> claude-code: MIN-PLAN
-- `CX_2026-10-02T181513Z_ack-criteria-seeding-approve` — acknowledgement, codex -> claude-code: MIN-1.1-CRITERIA-SEED
-- `CX_2026-10-02T203948Z_synthetic-rehearsal-report-stack` — blocker, codex -> claude-code: MIN-1.2
-- `CX_2026-10-02T204004Z_ack-synthetic-rehearsal-report-stack` — acknowledgement, codex -> codex: MIN-1.2
-- `CX_2026-10-02T205149Z_ack-report-stack-template-not-found` — acknowledgement, codex -> claude-code: MIN-1.2
-- `CX_2026-10-02T210320Z_report-stack-template-and-runtime` — review_request, codex -> claude-code: MIN-1.2
-- `CX_2026-10-02T210650Z_copied-runtime-rehearsal-complete` — status, codex -> claude-code: MIN-1.2
-- `CX_2026-10-02T212020Z_full-synthetic-chain-pass` — review_request, codex -> claude-code: MIN-1.2
-- `CX_2026-10-02T212759Z_owner-gate-packet-and-reset-preview` — review_request, codex -> claude-code: MIN-0.1
-- `CX_2026-10-02T214252Z_g1-approved-source-snapshot` — status, codex -> claude-code: MIN-0.1
-- `CX_2026-10-02T215720Z_owner-waived-local-backup` — status, codex -> claude-code: MIN-0.2
-- `CX_2026-10-02T220512Z_reset-applied-no-local-backup` — status, codex -> claude-code: MIN-0.2
-- `CX_2026-10-03T000231Z_ingestion-and-chunking-complete` — status, codex -> claude-code: MIN-2.1
-- `CX_2026-10-03T054403Z_prompt-evaluation-package` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T060726Z_chapter-locator-contract` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T061226Z_local-generation-stage` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T061433Z_clean-state-validation` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T062010Z_sieving-batch-rules` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T062214Z_sieving-batch-rules-correction` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T062912Z_ekonerg-batch-plan` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T063214Z_batch-plan-preflight` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T064625Z_prompt-activation-golden-calibration` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T071723Z_recall-first-fuzzy-sieving-rule` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T072622Z_rule-golden-prepared` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T100224Z_rule-golden-markdown-presentation` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T100853Z_rule-golden-approved-vendor-evidence-depth` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T101324Z_objective-evidence-golden-prepared` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T102236Z_objective-evidence-golden-approved` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T104111Z_controlled-sieving-test-complete` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T111650Z_q03-batch-complete` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T113205Z_q04-batch-complete` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T114215Z_q05-batch-complete` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T115010Z_q06-batch-complete` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T120410Z_q07-batch-complete` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T121510Z_q08-batch-complete` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T150045Z_r06-nqa1-part3-review-request` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T163041Z_ek6-3-g2-packet-review` — review_request, codex -> claude-code: EK-6.3
-- `CX_2026-10-03T165959Z_ack-r01-part21-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T170002Z_ack-r02-appendix-b-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T170004Z_ack-r03-nqa1-preface-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T170007Z_ack-r04-nqa1-part1-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T170009Z_ack-r05-nqa1-part2-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T170012Z_ack-r06-nqa1-part3-findings` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T170014Z_ack-r07-nqa1-part4-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T170017Z_ack-ek6-3-g2-packet-findings` — acknowledgement, codex -> claude-code: EK-6.3
-- `CX_2026-10-03T171347Z_g2-applicability-applied` — acknowledgement, codex -> claude-code: EK-6.3
-- `CX_2026-10-03T182454Z_claude-review-batch-ack` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
@@ -127,6 +82,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 182 records in `coordination/archive/`
+- Archive: 228 records in `coordination/archive/`
 
-Generated: 2026-10-03T20:29:42Z
+Generated: 2026-10-03T20:36:15Z
