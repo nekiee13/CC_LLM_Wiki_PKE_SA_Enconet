@@ -1,3 +1,6 @@
 # Owner-supplied documents and local audit work stay out of Git.
 /incoming/
 /work/fast_audit/
+/raw/
+/derived/
+/db/*.sqlite

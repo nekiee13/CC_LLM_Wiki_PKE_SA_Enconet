@@ -13,8 +13,8 @@ files in `Ekonerg/incoming/`.
 - Folder: `Ekonerg/incoming/`
 - Files: **31 Markdown files**
 - Total bytes: **1,851,547**
-- Register: `Ekonerg/work/fast_audit/EF-20261001-01/source_register.csv`
-- Register SHA-256: `f0b62b19a989ec9960d39df56181c34d6821be3d050ffd4c37b0beb64c516662`
+- Register: `Ekonerg/manifests/raw_sources.csv`
+- Register SHA-256: `19de710132a8a3eb98e4f8b5f3d2709ac0c55a4dc28996b365a67cc032af8e14`
 - Last independent register check: 31 rows, 31 files, no changed hashes,
   no duplicate IDs or hashes, and strict UTF-8 decoding passed.
 
