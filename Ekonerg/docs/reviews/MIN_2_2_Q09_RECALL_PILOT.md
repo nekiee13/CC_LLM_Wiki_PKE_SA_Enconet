@@ -116,3 +116,24 @@ candidate leads until the underlying corrective-action records are checked.
 
 After Q-13, active vendor coverage is **23 runs and 171 crumbs**. Only the
 management manual `DOC-0031` remains without an active run.
+
+## Q-14 continuation and coverage close
+
+The final uncovered document was processed:
+
+- Source: `DOC-0031` — `Priručnik_sustava_upravljanja_rev.5.md`.
+- Run: `RUN-20261003-39`.
+- Crumbs collected: **18**.
+- Quote links: **24/24 (100%)**.
+- Rejected items: 0.
+- Failed items: 0.
+
+The run captured the manual's Appendix B scope, document control, roles,
+controlled copies, records, design/procurement/audit/corrective-action leads,
+and its definitions of objective evidence and quality assurance. Heading-only
+items are candidate leads until the referenced procedures and records are
+checked.
+
+The coverage guard now passes: **24 of 24** registered vendor documents have
+active runs and non-zero crumbs, for **189 active crumbs** total. This closes
+the recall-coverage pass; it does not create conformance findings or a score.
