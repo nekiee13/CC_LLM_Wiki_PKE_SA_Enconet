@@ -71,10 +71,16 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-03T194811Z_concept-recall-pilot-findings` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-03T194811Z_concept-recall-v2-activated-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-03T194811Z_concept-recall-v2-approve` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-03T201934Z_conditional-guard-approve` — acknowledgement, claude-code -> codex: EK-6.3
+- `CC_2026-10-04T172028Z_doc0016-gen2-promoted-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T172028Z_doc0016-owner-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T172028Z_q12-doc0021-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T172034Z_g3-vendor-scoring-approval-note` — note, claude-code -> codex: MIN-3.1
+- `CC_2026-10-04T172035Z_g3-run-metadata-disposition` — note, claude-code -> codex: MIN-3.1
+- `CC_2026-10-04T172035Z_historic-pivot-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T172040Z_activity-catalog-approve` — acknowledgement, claude-code -> codex: PIVOT-1
+- `CC_2026-10-04T172040Z_context-runtime-wiring-partial` — note, claude-code -> codex: PIVOT-3
+- `CC_2026-10-04T172040Z_evidence-context-review` — acknowledgement, claude-code -> codex: PIVOT-2
+- `CC_2026-10-04T172044Z_prompt-context-anchors-changes-requested` — note, claude-code -> codex: PIVOT-4
 - `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
@@ -100,6 +106,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 249 records in `coordination/archive/`
+- Archive: 254 records in `coordination/archive/`
 
-Generated: 2026-10-04T15:57:20Z
+Generated: 2026-10-04T17:21:03Z
