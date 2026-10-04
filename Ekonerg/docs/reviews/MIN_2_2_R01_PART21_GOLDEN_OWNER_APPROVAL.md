@@ -1,6 +1,8 @@
 # R-01 Part 21 golden-fixture owner approval
 
-**Status:** pending owner decision
+**Status:** approved by owner on 2026-10-05; generation promoted
+
+**Approval reference:** `GOLDEN-DOC0001-PART21-20261005-OWNER`
 
 ## Approval scope
 
@@ -20,24 +22,21 @@ conformity, audit findings, or the final audit score.
 ## Owner decision
 
 ```text
-Decision:        [ ] APPROVE   [ ] APPROVE WITH CHANGES   [ ] REJECT
+Decision:        [x] APPROVE   [ ] APPROVE WITH CHANGES   [ ] REJECT
 
-Owner:           ______________________________________
-Decision date:   ______________________________________
-Decision ref:    ______________________________________
+Owner:           Owner
+Decision date:   2026-10-05
+Decision ref:    GOLDEN-DOC0001-PART21-20261005-OWNER
 
-Items to change or reject (write "none" if not applicable):
-_______________________________________________________
-_______________________________________________________
+Items to change or reject: none
 
-Owner comments:
-_______________________________________________________
-_______________________________________________________
+Owner comments: Approved calibration scope only. Applicability and conformity
+remain separate decisions.
 ```
 
 ## After approval
 
-Codex will record the fixture approval, change the manifest status to
-`approved`, rerun the strict score, and use that score in the controlled
-promotion command. Golden approval alone does not decide applicability or
-conformity.
+Codex recorded the fixture approval, changed the manifest status to `approved`,
+reran the strict score, and promoted `RUN-20261003-24` using the separate
+owner-approved generation decision. Golden approval and generation promotion
+do not decide applicability or conformity.

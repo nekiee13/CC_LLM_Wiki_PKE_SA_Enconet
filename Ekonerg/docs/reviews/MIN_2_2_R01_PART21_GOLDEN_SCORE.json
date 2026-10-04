@@ -1,0 +1,38 @@
+{
+  "fixture_version": "ekonerg-rule-doc0001-part21-v1-draft-2026-10-05",
+  "found": 8,
+  "golden_approval_ref": "GOLDEN-DOC0001-PART21-20261005-OWNER",
+  "golden_approved": true,
+  "missed": 0,
+  "per_criterion": {
+    "APP_B_I": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_IV": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_VI": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVI": {
+      "found": 4,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVII": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    }
+  },
+  "promotion_ready": true,
+  "prompt_version": "appb_rule_v1",
+  "schema_version": "1.0",
+  "spurious": 0
+}

@@ -100,4 +100,5 @@ made.*
 - The owner approved `RUN-20261003-24` as the corrected Part 21 generation.
   The approval is recorded as `R01-PART21-GEN2-PROMOTE-20261005-OWNER`.
 - Fuzzy AHP is deferred. It is not part of the current audit scoring path.
-- Promotion remains fail-closed until an approved golden-score artifact exists.
+- The Part 21 golden fixture is owner-approved and `RUN-20261003-24` is
+  promoted. The aggregate remains blocked by historical traceability records.

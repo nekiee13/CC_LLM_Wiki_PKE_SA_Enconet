@@ -82,11 +82,11 @@ The corrected non-exact list is recorded by quote ID and full item ID:
 match. `CRUMB-DOC-0001-APP_B_XVI-0003` contains one exact quote and one
 non-exact quote; only `QUOTE-DOC-0001-0004-01` is listed above.
 
-The owner decision `R01-PART21-GEN2-PROMOTE-20261005-OWNER` is now recorded in
-`manifests/approvals.csv`. The controlled promotion command remains blocked
-because no approved golden score artifact was supplied; no gate was bypassed.
-The active `DOC-0001` run therefore remains `RUN-20261003-23`. No exception or
-audit score was created for any mismatch.
+The owner decision `R01-PART21-GEN2-PROMOTE-20261005-OWNER` and the golden
+fixture approval `GOLDEN-DOC0001-PART21-20261005-OWNER` are recorded in
+`manifests/approvals.csv`. The strict score passed and the controlled command
+promoted `RUN-20261003-24`; `RUN-20261003-23` is now superseded. No exception
+or audit conformity score was created for any traceability mismatch.
 
 The post-repair generated-state hash is:
 
@@ -97,9 +97,7 @@ The post-repair generated-state hash is:
 
 ## Gate decision
 
-MIN-2.2 remains open. Requirement coverage is now green, and Claude approved
-the exact matcher. The remaining gates are the missing metrics artifacts for
-rejected `RUN-20261004-43`, unresolved traceability differences, and the
-approved score artifact required by the controlled generation-promotion
-command. No audit score, finding, or conclusion is produced while the
-aggregate gate is red.
+MIN-2.2 remains open. Requirement coverage is green, the harness passes, and
+the Part 21 corrected generation is promoted. The remaining gate is unresolved
+historical traceability differences. No audit score, finding, or conclusion is
+produced while the aggregate gate is red.
