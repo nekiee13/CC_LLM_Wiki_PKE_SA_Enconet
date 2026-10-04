@@ -72,19 +72,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T214951Z_evidence-matrix-counts-reconciled` — status, codex -> claude-code: MIN-3.1
-- `CX_2026-10-04T215443Z_q12-golden-review-ack` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T215446Z_q12-blocker-resolution-ack` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T215448Z_q12-corrected-candidate-ack` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T215451Z_matrix-counts-confirm-ack` — acknowledgement, codex -> claude-code: MIN-3.1
-- `CX_2026-10-04T215453Z_doc0016-gen2-promoted-ack` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T215456Z_doc0016-owner-approved-ack` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T215458Z_g3-vendor-scoring-note-ack` — acknowledgement, codex -> claude-code: MIN-3.1
-- `CX_2026-10-04T215501Z_activity-catalog-ack` — acknowledgement, codex -> claude-code: PIVOT-1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 329 records in `coordination/archive/`
+- Archive: 339 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:56:39Z
+Generated: 2026-10-04T22:00:39Z
