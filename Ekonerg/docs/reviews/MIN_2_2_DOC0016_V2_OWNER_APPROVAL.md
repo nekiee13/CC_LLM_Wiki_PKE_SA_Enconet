@@ -1,5 +1,8 @@
 # DOC-0016 Q09 v2 golden-fixture approval
 
+**Status:** Approved by owner on 2026-10-04  
+**Approval reference:** `GOLDEN-DOC0016-V2-20261004-OWNER`
+
 ## What the owner is approving
 
 This sheet asks the owner to approve the answer key used to check the
@@ -85,3 +88,8 @@ Codex will record the decision in `manifests/approvals.csv`, set the fixture's
 `status` and `approval_ref`, and rerun the strict scorer. Promotion of
 `RUN-20261003-40` still needs its own recorded generation decision; golden
 approval alone does not activate a candidate generation.
+
+## Recorded result
+
+The decision is recorded in `manifests/approvals.csv`. The strict scorer now
+reports 12 found, 0 missed, 0 spurious, and `promotion_ready=true`.
