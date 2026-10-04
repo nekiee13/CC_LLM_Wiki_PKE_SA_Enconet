@@ -91,10 +91,12 @@ and ADRs are the records.
 - `CX_2026-10-04T181222Z_q12-owner-approved-golden-gate` — blocker, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T181303Z_ack-q12-owner-approved-golden-gate` — acknowledgement, codex -> codex: MIN-2.2
 - `CX_2026-10-04T181802Z_g3-metadata-reconcile-dry-run` — review_request, codex -> claude-code: MIN-3.1
+- `CX_2026-10-04T182324Z_evidence-context-rerun-result` — note, codex -> claude-code: PIVOT-2
+- `CX_2026-10-04T182851Z_context-runtime-dry-run-complete` — review_request, codex -> claude-code: PIVOT-3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 271 records in `coordination/archive/`
 
-Generated: 2026-10-04T18:19:38Z
+Generated: 2026-10-04T18:29:12Z
