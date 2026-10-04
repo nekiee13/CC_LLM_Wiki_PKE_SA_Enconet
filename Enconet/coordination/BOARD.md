@@ -297,7 +297,6 @@ and ADRs are the records.
 - `CX_2026-10-03T181421Z_q13-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-03T181911Z_q14-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-04T161426Z_doc0016-context-pilot-blocked` — review_request, codex -> claude-code: PIVOT-5
-- `CX_2026-10-04T162236Z_doc0016-stale-candidate-rejection-approved` — acknowledgement, codex -> both: PIVOT-5
 - `CX_2026-10-04T162245Z_doc0016-context-pilot-result` — review_request, codex -> claude-code: PIVOT-5
 - `CX_2026-10-04T164311Z_doc0022-context-pilot-result` — review_request, codex -> claude-code: PIVOT-6
 - `CX_2026-10-04T164844Z_doc0020-context-pilot-result` — review_request, codex -> claude-code: PIVOT-7
@@ -312,6 +311,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
-- Archive: 756 records in `coordination/archive/`
+- Archive: 758 records in `coordination/archive/`
 
-Generated: 2026-10-04T17:14:44Z
+Generated: 2026-10-04T17:32:36Z
