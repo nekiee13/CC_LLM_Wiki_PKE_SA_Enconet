@@ -22,6 +22,13 @@ the source supports them, preserve the exact quote and chapter locator, and mark
 uncertain criterion mapping in the statement for later review. Do not invent
 source facts or treat a fuzzy candidate as a confirmed audit conclusion.
 
+## Evidence context anchors (framework pivot, 2026-10-04)
+
+The active document prompt now requests optional evidence types and source-stated
+project, contract, supplier, revision, and date anchors. Anchors are never
+inferred. Existing crumbs and the v2 prompt version remain valid; the extension
+only adds context when the source explicitly supports it.
+
 ## Vendor evidence depth rule (owner clarification, 2026-10-03)
 
 A vendor's high-level reference to a regulation, standard, or QMS process is a

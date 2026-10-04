@@ -46,6 +46,28 @@ high-level reference without deeper proof, keep the reference as a
 `candidate_lead` and say `objective evidence not shown`. Never turn a lead into
 a positive audit conclusion.
 
+## Evidence context anchors
+
+For each crumb, add the strongest source-supported context that is stated in the
+same document or record. Use the optional `evidence_type` field with one of:
+
+- `policy_or_procedure`
+- `objective_record`
+- `approval`
+- `design_input`, `design_output`, or `design_verification`
+- `procurement_requirement` or `supplier_evaluation`
+- `inspection_result`, `test_result`, or `calibration_record`
+- `training_record`, `nonconformance`, or `corrective_action`
+- `audit_record` or `management_review`
+- `candidate_lead`
+
+Add an optional `context` object only when the source states the value. It may
+contain `project_ref`, `contract_ref`, `supplier_ref`, `source_revision`, and
+`evidence_date`. Keep values verbatim enough to identify the source record. Do
+not guess a project, contract, supplier, revision, or date from a filename or
+from another document. Missing context stays missing. A `candidate_lead` may
+carry context, but context does not upgrade it to objective evidence.
+
 ## Output rules
 
 - Use the canonical Appendix B criterion ID and name.
@@ -64,4 +86,5 @@ SOURCE_RULES: null
 AUTHORITY_REFERENCES: []
 CONCEPT_CARDS: "sieving/prompts/appb_concepts.yml"
 RECALL_PASS_COUNT: 2
+CONTEXT_FIELDS: "schemas/evidence_context.yml"
 ```

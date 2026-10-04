@@ -29,6 +29,15 @@ def test_concept_recall_prompt_requires_two_pass_fuzzy_collection():
     assert "exact source quote" in prompt
 
 
+def test_concept_recall_prompt_requests_source_supported_context_anchors():
+    prompt = (PROMPTS / "appb_document_v2_concept_recall.md").read_text(encoding="utf-8")
+    assert "Evidence context anchors" in prompt
+    assert "evidence_type" in prompt
+    assert "project_ref" in prompt
+    assert "guess a project" in prompt
+    assert "CONTEXT_FIELDS" in prompt
+
+
 def test_v2_is_the_owner_activated_document_prompt():
     active = yaml.safe_load((PROMPTS / "active.yml").read_text(encoding="utf-8"))
     assert active["active"]["DOCUMENT"] == "appb_document_v2_concept_recall"
