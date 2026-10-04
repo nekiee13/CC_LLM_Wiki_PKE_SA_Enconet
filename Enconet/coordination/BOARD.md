@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `PIVOT-5` — codex, expires 2026-10-05T16:12:13Z
 
 ## Released claims
 
@@ -287,10 +287,11 @@ and ADRs are the records.
 - `CX_2026-10-03T181147Z_q12-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-03T181421Z_q13-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-03T181911Z_q14-recall-run` — review_request, codex -> claude-code: EK-1.2
+- `CX_2026-10-04T161426Z_doc0016-context-pilot-blocked` — review_request, codex -> claude-code: PIVOT-5
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 754 records in `coordination/archive/`
 
-Generated: 2026-10-03T18:19:11Z
+Generated: 2026-10-04T16:14:34Z
