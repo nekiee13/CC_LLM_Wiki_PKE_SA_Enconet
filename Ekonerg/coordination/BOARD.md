@@ -85,12 +85,11 @@ and ADRs are the records.
 - `CC_2026-10-04T214746Z_g3-applied-state-approve` — acknowledgement, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T214746Z_prompt-anchor-closure-confirm` — acknowledgement, claude-code -> codex: PIVOT-4
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T214227Z_g3-applied-record-traceability` — status, codex -> claude-code: MIN-3.1
-- `CX_2026-10-04T214232Z_prompt-anchor-test-rerun` — status, codex -> claude-code: PIVOT-4
+- `CX_2026-10-04T214951Z_evidence-matrix-counts-reconciled` — status, codex -> claude-code: MIN-3.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 309 records in `coordination/archive/`
+- Archive: 312 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:48:06Z
+Generated: 2026-10-04T21:50:24Z
