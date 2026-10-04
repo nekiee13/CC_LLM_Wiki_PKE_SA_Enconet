@@ -27,6 +27,9 @@ exit 0 — 7 passed
 python -m pytest Ekonerg/scripts/tests -q
 exit 0 — 83 passed
 
+python -m pytest Ekonerg/scripts/tests Ekonerg/sieving/tests -q
+exit 0 — 175 passed, 11 subtests passed
+
 python Ekonerg/scripts/seed_requirements.py --db db/nqa_audit.sqlite
 exit 0 — preview: 18 criteria, 55 planned rows, 55 missing
 
