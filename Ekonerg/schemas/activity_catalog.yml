@@ -1,0 +1,96 @@
+# Reusable audit activity view derived from the two historic supplier reports.
+# This is a reporting crosswalk. It does not decide applicability or scoring.
+schema_version: "1.0"
+catalog_id: "SUPPLIER_AUDIT_ACTIVITIES"
+status_vocabulary:
+  - satisfactory
+  - unsatisfactory
+  - not_applicable
+  - not_audited
+activities:
+  - activity_id: ACT_CONTRACTING
+    report_order: 1
+    name: "Contracting"
+    description: "Review of contract scope, requirements, approvals, and traceability."
+    criterion_ids: [APP_B_I, APP_B_II, APP_B_III, APP_B_IV, APP_B_VII]
+  - activity_id: ACT_DESIGN
+    report_order: 2
+    name: "Design"
+    description: "Control of design inputs, outputs, reviews, verification, changes, and qualified personnel."
+    criterion_ids: [APP_B_I, APP_B_II, APP_B_III, APP_B_V, APP_B_VI, APP_B_XVII]
+  - activity_id: ACT_COMMERCIAL_DEDICATION
+    report_order: 3
+    name: "Commercial dedication"
+    description: "Dedication of commercial items when this activity is in the supplier scope."
+    criterion_ids: [APP_B_VII, APP_B_VIII, APP_B_X, APP_B_XV, APP_B_XVII]
+  - activity_id: ACT_SOFTWARE_QA
+    report_order: 4
+    name: "Software QA"
+    description: "Control, verification, configuration, and records for software used in quality-affecting work."
+    criterion_ids: [APP_B_III, APP_B_V, APP_B_VI, APP_B_XI, APP_B_XII, APP_B_XVII]
+  - activity_id: ACT_PROCUREMENT
+    report_order: 5
+    name: "Procurement"
+    description: "Flow-down of technical and quality requirements and control of suppliers and purchased services."
+    criterion_ids: [APP_B_IV, APP_B_VII, APP_B_XVII]
+  - activity_id: ACT_PRODUCTION_HANDLING
+    report_order: 6
+    name: "Production, installation, product control, handling, storage, and transport"
+    description: "Control of physical work and item status from production or installation through delivery."
+    criterion_ids: [APP_B_VII, APP_B_VIII, APP_B_X, APP_B_XI, APP_B_XIII, APP_B_XIV, APP_B_XV, APP_B_XVII]
+  - activity_id: ACT_SPECIAL_PROCESSES
+    report_order: 7
+    name: "Special processes"
+    description: "Qualification and control of processes whose results cannot be fully verified later."
+    criterion_ids: [APP_B_IX, APP_B_XVII]
+  - activity_id: ACT_TESTING_INSPECTION
+    report_order: 8
+    name: "Testing, inspection, and measuring equipment"
+    description: "Planning, approval, performance, acceptance criteria, results, and equipment control."
+    criterion_ids: [APP_B_X, APP_B_XI, APP_B_XII, APP_B_XIV, APP_B_XVII]
+  - activity_id: ACT_DOCUMENT_CONTROL
+    report_order: 9
+    name: "Document control"
+    description: "Preparation, review, approval, issue, revision, and distribution of controlled documents."
+    criterion_ids: [APP_B_V, APP_B_VI, APP_B_XVII]
+  - activity_id: ACT_ORGANIZATION_PROGRAM
+    report_order: 10
+    name: "Organization and QA program"
+    description: "Authority, responsibility, independence, planning, and management oversight of the QA program."
+    criterion_ids: [APP_B_I, APP_B_II, APP_B_XVIII]
+  - activity_id: ACT_NONCONFORMING_PART21
+    report_order: 11
+    name: "Nonconforming products and Part 21"
+    description: "Identification, disposition, screening, reporting, and records for nonconforming conditions."
+    criterion_ids: [APP_B_XV, APP_B_XVI, APP_B_XVII]
+  - activity_id: ACT_INTERNAL_AUDITS
+    report_order: 12
+    name: "Internal audits"
+    description: "Planning, independence, qualification, performance, reporting, and follow-up of audits."
+    criterion_ids: [APP_B_II, APP_B_XVIII, APP_B_XVII]
+  - activity_id: ACT_CORRECTIVE_ACTION
+    report_order: 13
+    name: "Corrective action"
+    description: "Evaluation of adverse conditions, cause analysis, prevention, management reporting, and effectiveness."
+    criterion_ids: [APP_B_XVI, APP_B_XVII]
+  - activity_id: ACT_TRAINING_CERTIFICATION
+    report_order: 14
+    name: "Training and certification"
+    description: "Qualification, training, certification, and personnel records for quality-affecting work."
+    criterion_ids: [APP_B_I, APP_B_II, APP_B_XVII]
+  - activity_id: ACT_FIELD_SERVICES
+    report_order: 15
+    name: "Field services"
+    description: "On-site engineering, installation oversight, hold or witness points, and field records."
+    criterion_ids: [APP_B_VII, APP_B_X, APP_B_XI, APP_B_XIII, APP_B_XIV, APP_B_XVII]
+  - activity_id: ACT_RECORDS
+    report_order: 16
+    name: "Quality assurance records"
+    description: "Identification, completion, retention, retrieval, protection, and disposition of QA records."
+    criterion_ids: [APP_B_XVII]
+  - activity_id: ACT_ISO_CONTEXT
+    report_order: 17
+    name: "ISO 14001 and ISO 45001 context"
+    description: "Context-only management-system information; it is not an Appendix B criterion."
+    criterion_ids: []
+    out_of_baseline: true

@@ -88,10 +88,15 @@ and ADRs are the records.
 - `CX_2026-10-04T094808Z_g3-run-metadata-reconcile` — blocker, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T094846Z_ack-g3-run-metadata-reconcile` — acknowledgement, codex -> codex: MIN-3.1
 - `CX_2026-10-04T095621Z_historic-audit-pivot-analysis` — review_request, codex -> claude-code: MIN-3.1
+- `CX_2026-10-04T100616Z_activity-catalog-crosswalk` — review_request, codex -> claude-code: PIVOT-1
+- `CX_2026-10-04T100630Z_ack-concept-recall-pilot-findings` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T100630Z_ack-concept-recall-v2-activated-ack` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T100630Z_ack-concept-recall-v2-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T100630Z_ack-conditional-guard-approve` — acknowledgement, codex -> claude-code: EK-6.3
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 249 records in `coordination/archive/`
 
-Generated: 2026-10-04T09:56:27Z
+Generated: 2026-10-04T10:06:38Z

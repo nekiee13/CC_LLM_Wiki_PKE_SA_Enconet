@@ -62,7 +62,7 @@ def validate(schemas: Path = SCHEMAS) -> tuple[list[str], list[str]]:
     names = ["app_b_taxonomy.yml", "id_patterns.yml", "vocabularies.yml",
              "app_b_json_schema.yml", "scoring_model.yml", "dashboard_schema.yml",
              "page_types.yml", "required_fields.yml", "evaluation_package_schema.yml",
-             "sieving_contract.yml"]
+             "sieving_contract.yml", "activity_catalog.yml"]
     data = {name: _load(root, name, errors) for name in names}
     tax, patterns, voc = (data[name] for name in names[:3])
     model = data["scoring_model.yml"]
@@ -71,6 +71,7 @@ def validate(schemas: Path = SCHEMAS) -> tuple[list[str], list[str]]:
     fields = data["required_fields.yml"]
     package = data["evaluation_package_schema.yml"]
     sieving = data["sieving_contract.yml"]
+    activities = data["activity_catalog.yml"]
 
     criteria = tax.get("criteria") or []
     if not isinstance(criteria, list) or len(criteria) != 18:
@@ -84,6 +85,34 @@ def validate(schemas: Path = SCHEMAS) -> tuple[list[str], list[str]]:
             errors.append(f"app_b_taxonomy.yml: description missing: {row['criterion_id']}")
     if "criteria" in sieving:
         errors.append("sieving_contract.yml must not re-declare Appendix B criteria")
+
+    activity_rows = activities.get("activities") or []
+    expected_activity_ids = [
+        "ACT_CONTRACTING", "ACT_DESIGN", "ACT_COMMERCIAL_DEDICATION", "ACT_SOFTWARE_QA",
+        "ACT_PROCUREMENT", "ACT_PRODUCTION_HANDLING", "ACT_SPECIAL_PROCESSES",
+        "ACT_TESTING_INSPECTION", "ACT_DOCUMENT_CONTROL", "ACT_ORGANIZATION_PROGRAM",
+        "ACT_NONCONFORMING_PART21", "ACT_INTERNAL_AUDITS", "ACT_CORRECTIVE_ACTION",
+        "ACT_TRAINING_CERTIFICATION", "ACT_FIELD_SERVICES", "ACT_RECORDS", "ACT_ISO_CONTEXT",
+    ]
+    activity_ids = [row.get("activity_id") for row in activity_rows if isinstance(row, dict)]
+    if activities.get("catalog_id") != "SUPPLIER_AUDIT_ACTIVITIES":
+        errors.append("activity_catalog.yml: catalog_id is invalid")
+    if activity_ids != expected_activity_ids:
+        errors.append("activity_catalog.yml: activity sequence differs from historic report order")
+    if len(activity_rows) != 17 or len(set(activity_ids)) != len(activity_ids):
+        errors.append("activity_catalog.yml: exactly 17 unique activities required")
+    canonical_ids = set(CRITERIA)
+    for row in activity_rows:
+        if not isinstance(row, dict) or not str(row.get("name") or "").strip():
+            errors.append("activity_catalog.yml: activity name missing")
+            continue
+        mapped = row.get("criterion_ids")
+        if not isinstance(mapped, list) or any(item not in canonical_ids for item in mapped):
+            errors.append(f"activity_catalog.yml: invalid criterion mapping: {row.get('activity_id')}")
+        if not str(row.get("description") or "").strip():
+            errors.append(f"activity_catalog.yml: description missing: {row.get('activity_id')}")
+    if "APP_B_XVIII" not in {item for row in activity_rows for item in (row.get("criterion_ids") or [])}:
+        errors.append("activity_catalog.yml: audit activity must map to APP_B_XVIII")
 
     id_patterns = patterns.get("patterns") or {}
     required_patterns = {"doc_id", "chunk_id", "quote_id", "crumb_id", "requirement_id",
