@@ -75,16 +75,15 @@ and ADRs are the records.
 - `CC_2026-10-04T172028Z_doc0016-owner-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T172028Z_q12-doc0021-review` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T172034Z_g3-vendor-scoring-approval-note` — note, claude-code -> codex: MIN-3.1
-- `CC_2026-10-04T172035Z_g3-run-metadata-disposition` — note, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T172035Z_historic-pivot-review` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T172040Z_activity-catalog-approve` — acknowledgement, claude-code -> codex: PIVOT-1
 - `CC_2026-10-04T211234Z_doc0016-v3-fixture-review` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T211239Z_evidence-matrix-reconcile` — note, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T211243Z_doc0016-v3-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T212518Z_prompt-anchors-regression-ack` — acknowledgement, claude-code -> codex: PIVOT-4
-- `CC_2026-10-04T213404Z_g3-reconcile-tool-review` — acknowledgement, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T213404Z_q12-blocker-resolution` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T213404Z_q12-golden-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T214746Z_g3-applied-state-approve` — acknowledgement, claude-code -> codex: MIN-3.1
+- `CC_2026-10-04T214746Z_prompt-anchor-closure-confirm` — acknowledgement, claude-code -> codex: PIVOT-4
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T214227Z_g3-applied-record-traceability` — status, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T214232Z_prompt-anchor-test-rerun` — status, codex -> claude-code: PIVOT-4
@@ -92,6 +91,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 305 records in `coordination/archive/`
+- Archive: 309 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:44:29Z
+Generated: 2026-10-04T21:48:06Z
