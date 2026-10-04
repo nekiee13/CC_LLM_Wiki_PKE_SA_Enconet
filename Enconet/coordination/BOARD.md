@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `PIVOT-5` — codex, expires 2026-10-05T16:12:13Z
+- none
 
 ## Released claims
 
@@ -122,6 +122,7 @@ and ADRs are the records.
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
 - `INDEX-REFRESH` — codex, released 2026-07-27T22:38:39Z
 - `OWNER-TEMP-CODEX-CONTINUATION` — codex, released 2026-09-03T16:00:21Z
+- `PIVOT-5` — codex, released 2026-10-04T16:31:01Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-REVIEW-CC` — claude-code, released 2026-07-16T22:10:30Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
@@ -296,4 +297,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 756 records in `coordination/archive/`
 
-Generated: 2026-10-04T16:27:23Z
+Generated: 2026-10-04T16:31:01Z
