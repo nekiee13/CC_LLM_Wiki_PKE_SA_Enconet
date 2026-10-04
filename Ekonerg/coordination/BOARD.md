@@ -78,18 +78,13 @@ and ADRs are the records.
 - `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T204707Z_r06-generation3-review` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T063025Z_doc0006-partiii-rule-golden-draft` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T063205Z_ack-doc0016-golden-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T063205Z_ack-r06-generation3-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T063553Z_ack-doc0006-golden-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T064009Z_r06-gen3-owner-approved-promotion-held` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T064830Z_r06-gen3-promoted` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T065113Z_ack-r06-gen3-promoted-confirm` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 243 records in `coordination/archive/`
+- Archive: 249 records in `coordination/archive/`
 
-Generated: 2026-10-04T06:52:02Z
+Generated: 2026-10-04T06:52:31Z
