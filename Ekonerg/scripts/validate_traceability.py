@@ -7,22 +7,18 @@ import csv
 from contextlib import closing
 from datetime import date, datetime, timezone
 from pathlib import Path
-import re
 import sqlite3
 import sys
 
 from project_paths import local_path
 import db_util
+from evidence_matching import quote_matches
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCEPTIONS = ROOT / "manifests" / "link_exceptions.csv"
 RUNS = ROOT / "manifests" / "validation_runs.csv"
 EXCEPTION_HEADER = ["crumb_id", "quote_id", "reason", "approved_by", "date"]
 RUN_HEADER = ["run_utc", "validator", "phase", "result", "exit_code", "details"]
-
-
-def normalize(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip().casefold()
 
 
 def _exceptions(path: Path) -> tuple[set[tuple[str, str]], list[str]]:
@@ -82,7 +78,7 @@ def validate(db_path: Path, *, exceptions_path: Path = EXCEPTIONS) -> list[str]:
                     errors.append(f"cross-document link: {key[1]} -> {link['chunk_id']}")
                 if link["source_sha256"] != link["document_sha"]:
                     errors.append(f"checksum chain mismatch: {link['chunk_id']}")
-                if normalize(quote["quote_original"]) not in normalize(link["chunk_text"]) and key not in approved:
+                if not quote_matches(quote["quote_original"], link["chunk_text"]) and key not in approved:
                     errors.append(f"quote absent from linked chunk: {key[1]}")
         for crumb in conn.execute("SELECT item_id FROM crumbs"):
             if not conn.execute("SELECT 1 FROM crumb_quotes WHERE item_id=?", (crumb[0],)).fetchone():

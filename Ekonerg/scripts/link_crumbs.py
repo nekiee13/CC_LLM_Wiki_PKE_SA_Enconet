@@ -6,18 +6,14 @@ import argparse
 from contextlib import closing
 import json
 from pathlib import Path
-import re
 import sqlite3
 import sys
 
 import db_util
+from evidence_matching import quote_matches
 from project_paths import configure_standard_streams, local_path
 
 ROOT = Path(__file__).resolve().parents[1]
-
-
-def normalize(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip().casefold()
 
 
 def _plan(conn: sqlite3.Connection, run_id: str) -> tuple[dict, list[tuple]]:
@@ -57,7 +53,7 @@ def _plan(conn: sqlite3.Connection, run_id: str) -> tuple[dict, list[tuple]]:
         literal = quote["quote_original"]
         exact = [chunk for chunk in chunks if literal in chunk["chunk_text"]]
         matches = exact or [chunk for chunk in chunks
-                            if normalize(literal) in normalize(chunk["chunk_text"])]
+                            if quote_matches(literal, chunk["chunk_text"])]
         method = "EXACT" if exact else "NORMALIZED"
         expected = {(quote["item_id"], quote["quote_id"], chunk["chunk_id"],
                      method, 1.0 if exact else 0.95) for chunk in matches}

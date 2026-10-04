@@ -72,10 +72,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T221811Z_traceability-repair-and-requirements` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 339 records in `coordination/archive/`
 
-Generated: 2026-10-04T22:00:39Z
+Generated: 2026-10-04T22:33:52Z
