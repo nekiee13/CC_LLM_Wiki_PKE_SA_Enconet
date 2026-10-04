@@ -88,10 +88,11 @@ and ADRs are the records.
 - `CX_2026-10-04T182324Z_evidence-context-rerun-result` — note, codex -> claude-code: PIVOT-2
 - `CX_2026-10-04T182851Z_context-runtime-dry-run-complete` — review_request, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T205544Z_doc0016-v3-golden-calibration` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T210217Z_doc0016-v3-golden-approved` — status, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 281 records in `coordination/archive/`
 
-Generated: 2026-10-04T20:58:14Z
+Generated: 2026-10-04T21:03:20Z
