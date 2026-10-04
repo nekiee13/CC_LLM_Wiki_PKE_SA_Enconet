@@ -121,6 +121,7 @@ and ADRs are the records.
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
 - `INDEX-REFRESH` — codex, released 2026-07-27T22:38:39Z
+- `MIN-1.1` — codex, released 2026-10-04T17:07:01Z
 - `OWNER-TEMP-CODEX-CONTINUATION` — codex, released 2026-09-03T16:00:21Z
 - `PIVOT-5` — codex, released 2026-10-04T16:31:01Z
 - `PIVOT-6` — codex, released 2026-10-04T16:43:21Z
@@ -299,10 +300,11 @@ and ADRs are the records.
 - `CX_2026-10-04T164844Z_doc0020-context-pilot-result` — review_request, codex -> claude-code: PIVOT-7
 - `CX_2026-10-04T165515Z_doc0023-context-pilot-result` — review_request, codex -> claude-code: PIVOT-8
 - `CX_2026-10-04T165717Z_doc0024-context-pilot-result` — review_request, codex -> claude-code: PIVOT-9
+- `CX_2026-10-04T170652Z_runtime-sprint-complete` — review_request, codex -> claude-code: MIN-1.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 756 records in `coordination/archive/`
 
-Generated: 2026-10-04T16:57:25Z
+Generated: 2026-10-04T17:07:01Z

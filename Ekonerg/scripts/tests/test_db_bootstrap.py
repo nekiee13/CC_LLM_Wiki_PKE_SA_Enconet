@@ -26,7 +26,7 @@ REQUIRED_TABLES = {
 def _copy_local_project(root: Path) -> None:
     (root / "scripts").mkdir(parents=True)
     (root / "db").mkdir()
-    for name in ("init_db.py", "project_paths.py"):
+    for name in ("init_db.py", "db_util.py", "project_paths.py"):
         shutil.copyfile(PROJECT / "scripts" / name, root / "scripts" / name)
     shutil.copyfile(PROJECT / "db" / "schema.sql", root / "db" / "schema.sql")
 
