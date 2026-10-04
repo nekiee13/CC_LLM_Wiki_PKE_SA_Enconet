@@ -42,15 +42,15 @@ a scored rating until their applicability is confirmed.
 ## Owner decision
 
 ```text
-Decision:        [ ] APPROVE   [ ] APPROVE WITH CHANGES   [ ] REJECT
+Decision:        [x] APPROVE   [ ] APPROVE WITH CHANGES   [ ] REJECT
 
-Owner:           ______________________________________
-Decision date:   ______________________________________
+Owner:           Project owner
+Decision date:   2026-10-04
 Decision ref:    G3-RUN-20261003-32
 
 Required changes or comments:
-_______________________________________________________
-_______________________________________________________
+Scoring model 1.0-ekonerg-20261004 is approved for vendor-crumb evaluation.
+Conditional criteria remain blocked until their applicability is separately confirmed.
 ```
 
 ### Meaning of the choices

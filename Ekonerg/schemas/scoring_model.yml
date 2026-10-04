@@ -1,8 +1,8 @@
-# Framework scoring candidate; numeric values are NOT approved for an audit.
-# A local G3 approval must name the version before real scoring is accepted.
+# Owner-approved local scoring model for the Ekonerg evaluation run.
 schema_version: "1.0"
-model_version: "0.1-placeholder"
-calibration_status: "pending human calibration approval"
+model_version: "1.0-ekonerg-20261004"
+calibration_status: "approved"
+approval_ref: "G3-RUN-20261003-32"
 rating_weights:
   fully: 1.00
   substantially: 0.75
@@ -23,5 +23,5 @@ classification_thresholds:
   - {min_score: 10.0, class: minimally}
   - {min_score: 0.0, class: unmet}
 change_log:
-  - version: "0.1-placeholder"
-    note: "Framework candidate only; each audit needs local calibration approval."
+  - version: "1.0-ekonerg-20261004"
+    note: "Owner-approved G3 calibration for vendor-crumb evaluation run RUN-20261003-32."
