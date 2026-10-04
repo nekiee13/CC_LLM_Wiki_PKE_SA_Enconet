@@ -1,0 +1,57 @@
+{
+  "crumb_count": 14,
+  "crumbs_per_criterion": {
+    "APP_B_I": 2,
+    "APP_B_II": 1,
+    "APP_B_III": 5,
+    "APP_B_IV": 0,
+    "APP_B_IX": 0,
+    "APP_B_V": 0,
+    "APP_B_VI": 2,
+    "APP_B_VII": 0,
+    "APP_B_VIII": 0,
+    "APP_B_X": 2,
+    "APP_B_XI": 0,
+    "APP_B_XII": 0,
+    "APP_B_XIII": 0,
+    "APP_B_XIV": 0,
+    "APP_B_XV": 0,
+    "APP_B_XVI": 1,
+    "APP_B_XVII": 1,
+    "APP_B_XVIII": 0
+  },
+  "doc_id": "DOC-0022",
+  "failed_item_count": 0,
+  "field_completeness_percent": {
+    "evidence_quote": 100.0,
+    "item_type": 100.0,
+    "quote_language": 100.0,
+    "source": 100.0,
+    "statement": 100.0
+  },
+  "generation": 1,
+  "previous_generation": null,
+  "prompt_version": "appb_document_v2_concept_recall",
+  "quote_verification": {
+    "linked": 21,
+    "rate_percent": 100.0,
+    "total": 21
+  },
+  "rejected_item_count": 0,
+  "run_id": "RUN-20261003-38",
+  "schema_version": "1.0",
+  "status": "active",
+  "zero_crumb_criteria": [
+    "APP_B_IV",
+    "APP_B_V",
+    "APP_B_VII",
+    "APP_B_VIII",
+    "APP_B_IX",
+    "APP_B_XI",
+    "APP_B_XII",
+    "APP_B_XIII",
+    "APP_B_XIV",
+    "APP_B_XV",
+    "APP_B_XVIII"
+  ]
+}
