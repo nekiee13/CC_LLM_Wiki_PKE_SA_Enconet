@@ -84,7 +84,6 @@ and ADRs are the records.
 - `CX_2026-10-04T074233Z_q12-doc0021-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T094808Z_g3-run-metadata-reconcile` — blocker, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T094846Z_ack-g3-run-metadata-reconcile` — acknowledgement, codex -> codex: MIN-3.1
-- `CX_2026-10-04T095621Z_historic-audit-pivot-analysis` — review_request, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T105638Z_evidence-context-contract` — review_request, codex -> claude-code: PIVOT-2
 - `CX_2026-10-04T154946Z_context-runtime-wiring` — review_request, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T155714Z_prompt-context-anchors` — review_request, codex -> claude-code: PIVOT-4
@@ -93,6 +92,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 269 records in `coordination/archive/`
+- Archive: 271 records in `coordination/archive/`
 
-Generated: 2026-10-04T17:58:25Z
+Generated: 2026-10-04T18:04:54Z
