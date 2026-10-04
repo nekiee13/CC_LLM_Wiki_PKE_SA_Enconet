@@ -54,9 +54,17 @@ def validate(db: Path, run_id: str) -> list[str]:
                 errors.append(f"{cid}: {exc}")
             if ruling["decision_ref"] != f"G2-{run_id}":
                 errors.append(f"G2 decision reference differs: {cid}")
-            if g2 is not None and (ruling["approved_by"] != g2["reviewer"] or
-                                   ruling["approved_date"] != g2["date"]):
-                errors.append(f"G2 signer or date differs: {cid}")
+            signer = g2
+            confirmation_ref = ruling["conditional_confirmation_ref"]
+            if confirmation_ref:
+                try:
+                    signer = _approval(confirmation_ref)
+                except ValueError as exc:
+                    errors.append(f"{cid}: {exc}")
+                    signer = None
+            if signer is not None and (ruling["approved_by"] != signer["reviewer"] or
+                                       ruling["approved_date"] != signer["date"]):
+                errors.append(f"applicability signer or date differs: {cid}")
         for cid, evaluation in evaluations.items():
             links = conn.execute("SELECT c.criterion_id,c.document_side,r.is_active FROM evaluation_evidence x "
                                  "JOIN crumbs c ON c.item_id=x.item_id JOIN sieve_runs r ON r.run_id=c.sieve_run_id "

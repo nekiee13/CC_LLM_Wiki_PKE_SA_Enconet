@@ -47,3 +47,8 @@ No criterion is marked final N/A. The matrix now has 18 applicable criteria.
   testing/inspection/measuring equipment.
 
 The refreshed matrix is `out/2026-10-04/MIN-3.1-evidence-matrix-v2.md`.
+
+The confirmation migration guard and evaluation validator were also corrected
+so confirmed rows keep their confirmation reference and signer. The structural
+validator now reports only the real remaining blocker: evaluation records have
+not yet been created.
