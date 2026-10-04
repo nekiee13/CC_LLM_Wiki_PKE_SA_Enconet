@@ -1,6 +1,7 @@
 # G3 run-metadata reconciliation
 
-**Status:** Dry run complete; owner apply decision pending  
+**Status:** Applied under owner approval on 2026-10-04  
+**Approval reference:** `G3-METADATA-RECONCILE-20261004-OWNER`  
 **Target:** `RUN-20261003-32`  
 **Current value:** `0.1-placeholder`  
 **Approved model:** `1.0-ekonerg-20261004`
@@ -60,5 +61,11 @@ Comments:
 _______________________________________________________
 ```
 
-After approval, the tool will be run with that decision reference. No hand
-edit is permitted.
+The apply command used the recorded decision reference. No hand edit was
+permitted.
+
+## Recorded result
+
+The owner approved the apply under the reference above. The controlled tool
+updated exactly one field on `RUN-20261003-32`; no evaluation, score, finding,
+crumb, or source row was written.
