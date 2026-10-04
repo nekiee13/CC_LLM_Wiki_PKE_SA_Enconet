@@ -1,7 +1,7 @@
 # G3 run-metadata reconciliation
 
-**Status:** Applied under owner approval on 2026-10-04  
-**Approval reference:** `G3-METADATA-RECONCILE-20261004-OWNER`  
+**Status:** Applied under owner approval on 2026-10-04
+**Approval reference:** `G3-METADATA-RECONCILE-20261004-OWNER`
 **Target:** `RUN-20261003-32`  
 **Current value:** `0.1-placeholder`  
 **Approved model:** `1.0-ekonerg-20261004`
