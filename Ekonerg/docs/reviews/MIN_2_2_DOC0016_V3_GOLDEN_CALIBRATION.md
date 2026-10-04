@@ -1,6 +1,6 @@
 # MIN-2.2 DOC-0016 v3 golden calibration
 
-**Status:** Pending owner golden-fixture approval and Claude review
+**Status:** Golden fixture approved; Claude review and generation promotion remain pending
 
 ## What changed
 
@@ -23,7 +23,7 @@ candidate was then created as `RUN-20261004-49`.
 | Golden found | 12 |
 | Golden missed | 0 |
 | Golden spurious | 0 |
-| Promotion ready | No — fixture has no owner approval yet |
+| Promotion ready | Yes — golden gate passed; generation approval is still separate |
 
 The fixture contains the same 12 reviewed DOC-0016 control ideas plus the
 source-stated context fields. It does not turn candidate leads into positive
@@ -31,11 +31,12 @@ audit conclusions. Anchors remain source-supported only and are never guessed.
 
 ## Owner gate
 
-Please review and approve the fixture if correct. Suggested approval reference:
+The owner approved the fixture with reference
 `GOLDEN-DOC0016-V3-20261004-OWNER`.
 
-Approval is a separate gate from the earlier Option A decision. Until it is
-recorded, v3 remains a candidate and is not active.
+This approval is separate from the earlier Option A decision. V3 remains a
+candidate and is not active until a separate generation-promotion decision is
+recorded.
 
 ## Artifacts
 
@@ -43,4 +44,4 @@ recorded, v3 remains a candidate and is not active.
 - Candidate input: `sieving/DATA/production/2026-10-04/q09_doc0016_v3_calibration.json`
 - Run metrics: `sieving/runs/RUN-20261004-49/metrics.json`
 - Golden fixture: `benchmarks/sieving_golden/manifest_document_doc0016_v3.yml`
-- Golden score: `docs/reviews/MIN_2_2_DOC0016_V3_GOLDEN_SCORE_DRAFT.json`
+- Golden score: `docs/reviews/MIN_2_2_DOC0016_V3_GOLDEN_SCORE.json`
