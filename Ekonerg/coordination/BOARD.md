@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- `MIN-2.2-DOC0006-RULE-GOLDEN` — codex, expires 2026-10-04T08:29:35Z
+- none
 
 ## Expired (not released — expiry does not imply completion)
 
@@ -63,6 +63,7 @@ and ADRs are the records.
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `EK-PLAN-FINAL-ARCHIVE` — codex, released 2026-09-29T11:24:37Z
 - `EK-PLAN-REVISION` — codex, released 2026-09-29T11:04:24Z
+- `MIN-2.2-DOC0006-RULE-GOLDEN` — codex, released 2026-10-04T06:30:32Z
 - `MIN-2.2-DOC0016-V2-GOLDEN` — codex, released 2026-10-03T20:29:41Z
 - `MIN-2.2-Q09-CANDIDATE` — codex, released 2026-10-03T20:06:09Z
 - `MIN-2.2-R06-PARTIII-CORRECTION` — codex, released 2026-10-03T20:41:08Z
@@ -84,10 +85,11 @@ and ADRs are the records.
 - `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T204101Z_r06-partiii-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T204707Z_r06-generation3-review` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T063025Z_doc0006-partiii-rule-golden-draft` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 230 records in `coordination/archive/`
 
-Generated: 2026-10-04T06:29:39Z
+Generated: 2026-10-04T06:30:32Z

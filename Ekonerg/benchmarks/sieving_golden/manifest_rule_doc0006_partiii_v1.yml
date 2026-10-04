@@ -1,0 +1,69 @@
+schema_version: '1.0'
+fixture_version: ekonerg-rule-doc0006-partiii-v1-draft-2026-10-04
+status: pending_human_approval
+approval_ref: null
+document:
+  doc_id: DOC-0006
+  filename: ASME_NQA-1_129-206_Part_3.md
+  side: RULE
+  purpose: Draft calibration for nonmandatory ASME NQA-1 Part III guidance extraction; exact source quotes only.
+  authority_role: INTERPRETIVE
+  applicability: CONDITIONAL
+prompt_version: appb_rule_v1
+expected_crumbs:
+- item_id: R06-DOC0006-001
+  criterion_id: APP_B_II
+  criterion_name: Quality Assurance Program
+  statement: Part III contains nonmandatory guidance for implementing Parts I and II, and alternative methods may satisfy
+    the requirements.
+  source:
+    source_locator: PART III Introduction > 100 Purpose
+  quotes:
+  - This part contains nonmandatory guidance on approaches and methods to implement the requirements of Parts I and II.
+  - Alternative approaches and methods may be used to satisfy Parts I and II requirements.
+- item_id: R06-DOC0006-002
+  criterion_id: APP_B_II
+  criterion_name: Quality Assurance Program
+  statement: Part III guidance may be placed in a QA program or in policies, protocols, instructions, and procedures.
+  source:
+    source_locator: PART III Introduction > 200 Applicability
+  quotes:
+  - 'Application of this Part''s — Part III — guidance may be achieved by either or both of the following approaches when
+    implementing Parts I and II requirements:'
+- item_id: R06-DOC0006-003
+  criterion_id: APP_B_II
+  criterion_name: Quality Assurance Program
+  statement: Part III guidance says quality assurance should be embedded across work planning, performance, verification,
+    documentation, close-out, and delivery.
+  source:
+    source_locator: Subpart 3.1-2.1 > 500 Work Processes
+  quotes:
+  - Quality assurance is the tool for ensuring that the product meets specified requirements
+- item_id: R06-DOC0006-004
+  criterion_id: APP_B_II
+  criterion_name: Quality Assurance Program
+  statement: Part III guidance supports a graded approach because items and services may need different levels of control
+    and verification.
+  source:
+    source_locator: Subpart 3.1-2.1 > 502 Graded Approach
+  quotes:
+  - Items and services may require varying degrees of control and verification to ensure compliance with requirements.
+- item_id: R06-DOC0006-005
+  criterion_id: APP_B_II
+  criterion_name: Quality Assurance Program
+  statement: Part III guidance links defined work requirements and tasks to training and qualification needs.
+  source:
+    source_locator: Subpart 3.1-2.1 > 600 Training and Qualification
+  quotes:
+  - The definition of work requirements, individual work tasks, and their collection into a work process should be used to
+    determine the individual and collective training and qualification needs.
+- item_id: R06-DOC0006-006
+  criterion_id: APP_B_XVIII
+  criterion_name: Audits
+  statement: Part III guidance says work objectives should have acceptance criteria and performance should be measured against
+    meaningful parameters.
+  source:
+    source_locator: Subpart 3.1-2.1 > 700 Assessment of Performance
+  quotes:
+  - Work task objectives should be clearly established with in-process and final acceptance criteria.
+
