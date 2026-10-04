@@ -11,9 +11,11 @@
    `out/2026-10-05/traceability-repair/prelink-metrics/`.
 2. Used the existing `link_crumbs.py` preview and apply path. Exact or
    presentation-only matches added links; unmatched text was not forced.
-3. Added `evidence_matching.py`. It handles Markdown/HTML presentation noise,
-   duplicate list markers from extraction, and explicit ellipsis excerpts.
-   It does not use a similarity score.
+3. Added `evidence_matching.py`. It handles Markdown/HTML presentation noise
+   and duplicate list markers from extraction. It does not case-fold, apply
+   Unicode normalization, use a similarity score, or accept ellipsis excerpts.
+   A link is valid only when the quote is a source substring after that
+   presentation-only cleanup.
 4. Added `seed_requirements.py`. It previews and idempotently seeds distinct
    requirement statements from active RULE crumbs. It does not write scores,
    evaluations, findings, or source documents.
@@ -28,7 +30,7 @@ python -m pytest Ekonerg/scripts/tests -q
 exit 0 — 83 passed
 
 python -m pytest Ekonerg/scripts/tests Ekonerg/sieving/tests -q
-exit 0 — 175 passed, 11 subtests passed
+exit 0 — 176 passed, 11 subtests passed
 
 python Ekonerg/scripts/seed_requirements.py --db db/nqa_audit.sqlite
 exit 0 — preview: 18 criteria, 55 planned rows, 55 missing
@@ -47,15 +49,29 @@ python Ekonerg/scripts/run_all_validations.py --no-record
 exit 1 — sieving_harness, traceability
 ```
 
-The harness failure is the Claude-owned `sieving-tuning` skill check. The
-traceability validator still sees 14 unlinked quotes across all generations;
-two are in active runs:
+Claude confirmed that the `sieving-tuning` skill counterpart is now present,
+so the harness gate is cleared. With the stricter source-substring matcher,
+the traceability validator now reports 16 unresolved quote records across all
+generations. Four are in active runs:
 
 - `QUOTE-DOC-0030-0002-01`: source wording differs (`Uvjeti` versus `Uvjete`).
-- `QUOTE-DOC-0011-0011-01`: source wording differs (`imaju` versus `imati`).
+- `QUOTE-DOC-0001-0004-01`: the stored quote is not a raw substring of its
+  linked chunk.
+- `QUOTE-DOC-0001-0006-01`: the stored quote is not a raw substring of its
+  linked chunk.
+- `QUOTE-DOC-0011-0011-01`: no raw source substring link exists (`imaju`
+  versus `imati`).
 
-The remaining 12 unlinked quotes are in inactive candidate, rejected, or
-superseded generations. No exception or score was created for any mismatch.
+The active-link reconciliation currently finds 318 link rows: 313 exact raw
+substrings and 5 non-exact links. The four active quote records above include
+two quotes without links. Claude's review identifies seven non-exact active
+crumbs when counting the source-side quote set; this count difference is under
+reconciliation and is not being hidden by matcher relaxation.
+
+The active `DOC-0001` run remains `RUN-20261003-23`. The corrected candidate
+`RUN-20261003-24` still lacks an owner decision in `manifests/approvals.csv`,
+so it has not been promoted. No exception or score was created for any
+mismatch.
 
 The post-repair generated-state hash is:
 

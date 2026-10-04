@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import re
-import unicodedata
 
 
 _IMAGE_OR_LINK = re.compile(r"!?(?:\[([^\]]*)\]\([^)]*\))")
@@ -12,34 +11,26 @@ _DUPLICATE_LIST_MARKER = re.compile(r"(?<!\w)(\d+)\.\s*\1\.\s*")
 
 
 def normalize(value: str) -> str:
-    """Remove presentation-only markup and normalize whitespace for matching."""
-    text = unicodedata.normalize("NFKC", value or "")
+    """Remove presentation-only markup and normalize whitespace for matching.
+
+    This intentionally does not case-fold or Unicode-normalize text. Evidence
+    links must remain exact source-substring decisions after presentation-only
+    markup is removed.
+    """
+    text = value or ""
     text = _IMAGE_OR_LINK.sub(lambda match: match.group(1) or " ", text)
     text = _HTML_TAG.sub(" ", text)
     text = _MARKDOWN_MARKER.sub("", text)
     text = _DUPLICATE_LIST_MARKER.sub(r"\1. ", text)
-    return re.sub(r"\s+", " ", text).strip().casefold()
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def quote_matches(quote: str, chunk: str) -> bool:
-    """Return true for a literal quote or explicit-ellipsis excerpt.
+    """Return true only when the quote is a source substring.
 
-    Ellipsis matching is deliberately limited to ordered, non-empty segments.
-    It does not use a similarity score and therefore cannot turn unrelated text
-    into evidence.
+    Presentation-only Markdown/HTML noise may be removed, but omitted text
+    marked with an ellipsis is not a linkable quote.
     """
     normalized_quote = normalize(quote)
     normalized_chunk = normalize(chunk)
-    if not normalized_quote or normalized_quote in normalized_chunk:
-        return bool(normalized_quote)
-    parts = [normalize(part) for part in re.split(r"(?:\.\.\.|…)", quote)]
-    parts = [part for part in parts if part]
-    if len(parts) < 2:
-        return False
-    position = 0
-    for part in parts:
-        position = normalized_chunk.find(part, position)
-        if position < 0:
-            return False
-        position += len(part)
-    return True
+    return bool(normalized_quote) and normalized_quote in normalized_chunk
