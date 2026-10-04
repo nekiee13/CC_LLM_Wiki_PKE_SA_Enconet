@@ -75,6 +75,26 @@ def test_legacy_applicability_rows_are_migrated_to_explicit_conditional_state():
     assert row == ("conditional", None)
 
 
+def test_confirmed_conditional_row_is_not_reclassified_by_migration():
+    conn = sqlite3.connect(":memory:")
+    conn.execute(
+        "CREATE TABLE criterion_applicability ("
+        "evaluation_run_id TEXT, criterion_id TEXT, applicable INTEGER, "
+        "justification TEXT NOT NULL, applicability_state TEXT NOT NULL, "
+        "conditional_confirmation_ref TEXT)"
+    )
+    conn.execute(
+        "INSERT INTO criterion_applicability VALUES (?,?,?,?,?,?)",
+        ("RUN-1", "APP_B_VIII", 1, "conditional", "applicable", "G2-CONFIRM-001"),
+    )
+    evaluation_engine._ensure_applicability_guard_schema(conn)
+    row = conn.execute(
+        "SELECT applicability_state, conditional_confirmation_ref "
+        "FROM criterion_applicability"
+    ).fetchone()
+    assert row == ("applicable", "G2-CONFIRM-001")
+
+
 def test_conditional_evaluation_requires_confirmation():
     ruling = {
         "applicability_state": "conditional",

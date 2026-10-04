@@ -131,7 +131,8 @@ def _ensure_applicability_guard_schema(conn: sqlite3.Connection) -> None:
     conn.execute(
         "UPDATE criterion_applicability SET applicability_state='conditional' "
         "WHERE applicable=1 AND lower(justification) LIKE '%conditional%' "
-        "AND applicability_state='applicable'"
+        "AND applicability_state='applicable' "
+        "AND conditional_confirmation_ref IS NULL"
     )
     conn.execute(
         "UPDATE criterion_applicability SET applicability_state='not-applicable' "
