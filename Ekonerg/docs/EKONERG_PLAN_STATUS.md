@@ -94,3 +94,10 @@ made.*
   golden note. The golden calibration set is still pending human approval.
 - M1 cannot be accepted until EK-1 through EK-4 close and the owner explicitly accepts the
   M1 evidence packet (Task EK-4.4).
+
+### Latest owner decisions — 2026-10-05
+
+- The owner approved `RUN-20261003-24` as the corrected Part 21 generation.
+  The approval is recorded as `R01-PART21-GEN2-PROMOTE-20261005-OWNER`.
+- Fuzzy AHP is deferred. It is not part of the current audit scoring path.
+- Promotion remains fail-closed until an approved golden-score artifact exists.
