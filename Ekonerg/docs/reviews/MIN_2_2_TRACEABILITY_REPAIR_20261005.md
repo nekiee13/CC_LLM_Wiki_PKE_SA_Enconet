@@ -1,7 +1,7 @@
 # MIN-2.2 sprint repair — traceability and requirement rows
 
-**Date:** 2026-10-05  
-**Status:** partial; the gate remains open  
+**Date:** 2026-10-05
+**Status:** partial; the gate remains open
 **Scope:** one aggregate repair batch; no new document slice was opened.
 
 ## What changed
@@ -53,6 +53,13 @@ two are in active runs:
 
 The remaining 12 unlinked quotes are in inactive candidate, rejected, or
 superseded generations. No exception or score was created for any mismatch.
+
+The post-repair generated-state hash is:
+
+- `db/nqa_audit.sqlite`: `c54a479cb5dc0ef725b6521fa78ab39ea6a25eb118d5e7e8a5aead06c551e3b3`
+- `sieving/runs/RUN-20261003-05/metrics.json`: `183652ebb4357d58b33e6f075f1365b38d3509c96f062fe2bab34e286ac21721`
+- `sieving/runs/RUN-20261003-14/metrics.json`: `26bee574374154a80d146a360beec40504e6f7ed117166b99c03dc1047d95d78`
+- `sieving/runs/RUN-20261003-23/metrics.json`: `ff7c163e49230b49fd0a8a50cc73c1bf2ae8d7cf8003cd9bef3bce279e7a9fee`
 
 ## Gate decision
 
