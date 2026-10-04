@@ -13,20 +13,20 @@ The schema and additive `crumb_context` storage checks pass.
 
 ## Aggregate suite rerun
 
-The aggregate scripts suite was rerun with `TEMP` and `TMP` pointed at a
-project-local temporary root so the earlier global-temp permission issue would
-not be hidden:
+The aggregate scripts and sieving suites were rerun after the v3 active-prompt
+assertion was updated:
 
 ```text
 python -m pytest Ekonerg/scripts/tests -q
-exit 1
-26 passed, 1 failed, 44 errors, 2 warnings in 11.41s
+exit 0
+76 passed in 11.24s
+
+python -m pytest Ekonerg/scripts/tests Ekonerg/sieving/tests -q
+exit 0
+168 passed, 11 subtests passed in 33.53s
 ```
 
-The 44 errors are still Windows protected-temp-directory ACL failures while
-pytest tries to create numbered temporary folders. The one failure is the
-existing symlink-privilege test (`WinError 1314`), which needs Windows
-developer-mode or equivalent symlink privilege. This is an environment gate,
-not a failed evidence-context assertion.
+The earlier temporary-directory, symlink, and stale-v2 assertion failures did
+not recur in this rerun. The v3 active-prompt assertion is green.
 
 No audit database, crumbs, or source files were changed by this rerun.

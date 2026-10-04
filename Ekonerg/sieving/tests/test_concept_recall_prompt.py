@@ -38,6 +38,6 @@ def test_concept_recall_prompt_requests_source_supported_context_anchors():
     assert "CONTEXT_FIELDS" in prompt
 
 
-def test_v2_is_the_owner_activated_document_prompt():
+def test_v3_is_the_owner_activated_document_prompt():
     active = yaml.safe_load((PROMPTS / "active.yml").read_text(encoding="utf-8"))
-    assert active["active"]["DOCUMENT"] == "appb_document_v2_concept_recall"
+    assert active["active"]["DOCUMENT"] == "appb_document_v3_context_anchors"

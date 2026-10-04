@@ -13,8 +13,8 @@ not create findings.
 - Run: `RUN-20261003-32`
 - Criteria: 18/18 present
 - Applicability: 18 applicable, 0 conditional, 0 final N/A
-- Evidence rows: 189 document crumbs and 54 rule crumbs
-- Anchored document crumbs: 11
+- Evidence rows: 189 document crumbs and 55 RULE crumbs
+- Anchored document crumbs: 12
 - Findings: 0
 - Actions: 0
 
@@ -31,9 +31,9 @@ as proof that staff used a control, and candidate leads remain leads.
 
 ## Artifacts
 
-- Matrix: `out/2026-10-04/MIN-3.1-evidence-matrix-v2.md`
-- Machine-readable matrix: `out/2026-10-04/MIN-3.1-evidence-matrix-v2.json`
-- Source command: `python Ekonerg/scripts/build_matrix.py --db db/nqa_audit.sqlite --run-id RUN-20261003-32 --json out/2026-10-04/MIN-3.1-evidence-matrix.json --markdown out/2026-10-04/MIN-3.1-evidence-matrix.md`
+- Matrix: `out/2026-10-04/MIN-3.1-evidence-matrix-v3.md`
+- Machine-readable matrix: `out/2026-10-04/MIN-3.1-evidence-matrix-v3.json`
+- Source command: `python Ekonerg/scripts/build_matrix.py --db db/nqa_audit.sqlite --run-id RUN-20261003-32 --json out/2026-10-04/MIN-3.1-evidence-matrix-v3.json --markdown out/2026-10-04/MIN-3.1-evidence-matrix-v3.md`
 
 ## Next gate
 

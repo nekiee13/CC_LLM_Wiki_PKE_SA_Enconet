@@ -36,6 +36,9 @@ The six criteria were converted from `conditional` to `applicable` for
 `G2-HISTORIC-SIX-20261004-OWNER`. This does not mean the controls conform. It
 only means the audit must ask the questions and collect current evidence.
 No criterion is marked final N/A. The matrix now has 18 applicable criteria.
+The historic reports are the basis for keeping these six questions in scope;
+they are not current applicability decisions, and scoring these six remains
+gated on current Ekonerg evidence.
 
 ## Source anchors
 
@@ -46,7 +49,7 @@ No criterion is marked final N/A. The matrix now has 18 applicable criteria.
 - SA23-1 lines 425–487: handling/storage/transport, special processes, and
   testing/inspection/measuring equipment.
 
-The refreshed matrix is `out/2026-10-04/MIN-3.1-evidence-matrix-v2.md`.
+The refreshed matrix is `out/2026-10-04/MIN-3.1-evidence-matrix-v3.md`.
 
 The confirmation migration guard and evaluation validator were also corrected
 so confirmed rows keep their confirmation reference and signer. The structural

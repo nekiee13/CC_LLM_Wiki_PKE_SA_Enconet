@@ -42,3 +42,12 @@ The untyped and unanchored values are reported as-is. No historical crumb or
 context row was rewritten.
 
 Machine-readable evidence: `PIVOT_3_CONTEXT_RUNTIME_DRY_RUN.json`.
+
+## Post-promotion matrix reconciliation
+
+The earlier dry run intentionally recorded the pre-promotion state. After the
+owner-approved v3 DOC-0016 generation became active, a fresh read-only matrix
+shows the expected current state: 189 DOCUMENT crumbs, 55 RULE crumbs, and 12
+anchored DOCUMENT crumbs. The v3 matrix is
+`out/2026-10-04/MIN-3.1-evidence-matrix-v3.md`. No historical crumb or context
+row was rewritten; the change is the approved active-generation selection.
