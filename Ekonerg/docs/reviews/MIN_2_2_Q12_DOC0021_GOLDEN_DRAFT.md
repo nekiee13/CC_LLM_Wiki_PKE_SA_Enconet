@@ -1,6 +1,7 @@
 # Q12 DOC-0021 golden-calibration draft
 
-**Status:** Pending human approval  
+**Status:** Approved by owner on 2026-10-04
+**Approval reference:** `GOLDEN-DOC0021-Q12-V2-20261004-OWNER`
 **Candidate:** `RUN-20261004-42`  
 **Prompt:** `appb_document_v2_concept_recall`
 
@@ -50,3 +51,14 @@ _______________________________________________________
 
 Only after this fixture is approved can the controlled promotion command use
 the score as its independent golden gate.
+
+## Recorded result
+
+The owner approved this 12-crumb answer key under the reference above. The
+strict score and generation promotion are recorded separately below.
+
+Strict score: `MIN_2_2_Q12_DOC0021_GOLDEN_SCORE.json` reports found=12,
+missed=0, spurious=0, and `promotion_ready=true`.
+
+Promotion: `RUN-20261004-42` is now active under
+`Q12-DOC0021-GEN2-PROMOTE-20261004-OWNER`; `RUN-20261003-37` is superseded.

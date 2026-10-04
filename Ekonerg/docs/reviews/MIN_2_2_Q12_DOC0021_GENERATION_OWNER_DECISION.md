@@ -58,3 +58,8 @@ superseded without changing source documents or unrelated runs.
 The owner approved the generation decision under the reference above. The
 controlled promotion still requires a matching approved golden score; no
 promotion is claimed until that independent gate is available.
+
+The golden fixture was subsequently approved as
+`GOLDEN-DOC0021-Q12-V2-20261004-OWNER`. Strict scoring passed with 12 found,
+0 missed, and 0 spurious crumbs. The controlled promotion then activated
+`RUN-20261004-42` and superseded `RUN-20261003-37`.
