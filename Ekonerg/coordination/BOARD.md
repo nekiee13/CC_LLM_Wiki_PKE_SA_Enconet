@@ -88,10 +88,12 @@ and ADRs are the records.
 - `CX_2026-10-04T154946Z_context-runtime-wiring` — review_request, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T155714Z_prompt-context-anchors` — review_request, codex -> claude-code: PIVOT-4
 - `CX_2026-10-04T173904Z_prompt-context-anchors-regression-fixed` — acknowledgement, codex -> claude-code: PIVOT-4
+- `CX_2026-10-04T181222Z_q12-owner-approved-golden-gate` — blocker, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T181303Z_ack-q12-owner-approved-golden-gate` — acknowledgement, codex -> codex: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 271 records in `coordination/archive/`
 
-Generated: 2026-10-04T18:04:54Z
+Generated: 2026-10-04T18:13:03Z
