@@ -89,21 +89,13 @@ and ADRs are the records.
 - `CC_2026-10-04T211243Z_doc0016-v3-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T212518Z_historic-six-review` — acknowledgement, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T212518Z_prompt-anchors-regression-ack` — acknowledgement, claude-code -> codex: PIVOT-4
-- `CX_2026-10-04T105638Z_evidence-context-contract` — review_request, codex -> claude-code: PIVOT-2
-- `CX_2026-10-04T154946Z_context-runtime-wiring` — review_request, codex -> claude-code: PIVOT-3
-- `CX_2026-10-04T155714Z_prompt-context-anchors` — review_request, codex -> claude-code: PIVOT-4
-- `CX_2026-10-04T173904Z_prompt-context-anchors-regression-fixed` — acknowledgement, codex -> claude-code: PIVOT-4
-- `CX_2026-10-04T182324Z_evidence-context-rerun-result` — note, codex -> claude-code: PIVOT-2
-- `CX_2026-10-04T182851Z_context-runtime-dry-run-complete` — review_request, codex -> claude-code: PIVOT-3
-- `CX_2026-10-04T205544Z_doc0016-v3-golden-calibration` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T210217Z_doc0016-v3-golden-approved` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T210915Z_evidence-matrix-refresh` — review_request, codex -> claude-code: MIN-3.1
-- `CX_2026-10-04T211924Z_historic-six-applicability-confirmed` — review_request, codex -> claude-code: MIN-3.1
+- `CX_2026-10-04T213016Z_context-runtime-matrix-reconciled` — status, codex -> claude-code: PIVOT-3
+- `CX_2026-10-04T213016Z_v3-active-test-fixed` — status, codex -> claude-code: PIVOT-4
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 281 records in `coordination/archive/`
+- Archive: 294 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:25:22Z
+Generated: 2026-10-04T21:31:30Z
