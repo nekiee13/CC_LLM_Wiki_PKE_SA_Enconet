@@ -78,18 +78,17 @@ and ADRs are the records.
 - `CC_2026-10-04T062921Z_doc0016-golden-approve` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T062921Z_r06-corrected-candidate-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T062921Z_r06-generation3-approve` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CX_2026-10-03T150045Z_r06-nqa1-part3-review-request` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T170012Z_ack-r06-nqa1-part3-findings` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T204101Z_r06-partiii-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T204707Z_r06-generation3-review` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T063025Z_doc0006-partiii-rule-golden-draft` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T063205Z_ack-doc0016-golden-approve` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T063205Z_ack-r06-generation3-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 230 records in `coordination/archive/`
+- Archive: 235 records in `coordination/archive/`
 
-Generated: 2026-10-04T06:30:32Z
+Generated: 2026-10-04T06:32:45Z
