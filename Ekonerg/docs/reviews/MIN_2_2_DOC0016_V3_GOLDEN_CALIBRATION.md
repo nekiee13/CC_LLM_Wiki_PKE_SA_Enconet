@@ -1,6 +1,6 @@
 # MIN-2.2 DOC-0016 v3 golden calibration
 
-**Status:** Golden fixture approved; Claude review and generation promotion remain pending
+**Status:** Golden fixture approved; generation promoted; Claude review remains pending
 
 ## What changed
 
@@ -34,9 +34,9 @@ audit conclusions. Anchors remain source-supported only and are never guessed.
 The owner approved the fixture with reference
 `GOLDEN-DOC0016-V3-20261004-OWNER`.
 
-This approval is separate from the earlier Option A decision. V3 remains a
-candidate and is not active until a separate generation-promotion decision is
-recorded.
+This approval was separate from the earlier Option A decision. The generation
+was promoted after the owner authorized
+`DOC0016-V3-GEN5-PROMOTE-20261004-OWNER`.
 
 ## Artifacts
 

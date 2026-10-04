@@ -1,6 +1,6 @@
 # PIVOT-4 prompt-anchor provenance decision
 
-**Status:** Option A selected; fresh calibration pending
+**Status:** Option A completed; v3 promoted
 
 ## Why a decision is needed
 
@@ -42,6 +42,7 @@ Create a new prompt version, calibrate it with a fresh golden fixture, and
 obtain approval before activation. Existing v2 approval remains unchanged.
 ```
 
-The new candidate is `appb_document_v3_context_anchors`. It is not active and
-has no golden approval yet. Anchors remain source-supported only, are never
-guessed, and `candidate_lead` remains separate from objective evidence.
+The new prompt `appb_document_v3_context_anchors` was calibrated and promoted
+as DOC-0016 generation `RUN-20261004-49` after the separate golden approval.
+Anchors remain source-supported only, are never guessed, and `candidate_lead`
+remains separate from objective evidence.

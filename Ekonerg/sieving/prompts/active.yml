@@ -1,6 +1,7 @@
 # Prompts activated by explicit owner instruction on 2026-10-03.
-# Claude review remains pending. RULE and objective DOCUMENT golden
-# calibrations are owner-approved; older DOCUMENT drafts remain pending.
+# DOCUMENT v3 was promoted after owner-approved Option A calibration on 2026-10-04.
+# RULE and DOCUMENT golden calibrations are owner-approved; Claude review remains
+# recorded separately in coordination/messages/.
 schema_version: "1.0"
 # Owner/reviewer candidates for evaluation:
 #   RULE: appb_rule_v1.md
@@ -10,4 +11,4 @@ candidates:
   DOCUMENT: appb_document_v1
 active:
   RULE: appb_rule_v1
-  DOCUMENT: appb_document_v2_concept_recall
+  DOCUMENT: appb_document_v3_context_anchors

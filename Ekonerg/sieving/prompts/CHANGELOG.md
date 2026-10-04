@@ -9,7 +9,7 @@ golden-set approval remain pending; no source-edition decision was carried over.
 | `appb_rule_v1` | RULE | active, owner-authorized | draft calibration pending | `PROMPT-RULE-20261003-V1`; Claude review pending |
 | `appb_document_v1` | DOCUMENT | previous | draft calibration pending | `PROMPT-DOCUMENT-20261003-V1`; retained for comparison |
 | `appb_document_v2_concept_recall` | DOCUMENT | active, owner-authorized | pilot pending | `PROMPT-DOCUMENT-20261003-V2`; Claude review pending |
-| `appb_document_v3_context_anchors` | DOCUMENT | candidate, owner-selected Option A | fresh DOC-0016 calibration pending | `PIVOT-4-OPTION-A-20261004-OWNER`; not active until golden approval |
+| `appb_document_v3_context_anchors` | DOCUMENT | active, owner-approved | DOC-0016 v3 golden and generation approved | `DOC0016-V3-GEN5-PROMOTE-20261004-OWNER` |
 
 Before promotion or tuning, record the local golden-set result, reviewer
 decision, decision reference, and lesson in the relevant local skill. Rejection
@@ -61,3 +61,4 @@ not implied by creating the prompt.
 |---|---|---|---|---|---|---|---|
 | `appb_rule_v1` | RULE | candidate rejected | `RUN-20261003-30` | 2026-10-03 | Owner | R-06 Part III source-marker correction | `sieving-tuning`: preserve em-dash-delimited source markers exactly before creating a replacement generation. |
 | `appb_document_v2_concept_recall` | DOCUMENT | candidate promoted | `RUN-20261003-40` | 2026-10-04 | Owner | Q09 DOC-0016 exact-quote correction | `sieving-tuning`: preserve localized source spelling and verify every quote as an exact source substring before promotion. |
+| `appb_document_v3_context_anchors` | DOCUMENT | candidate promoted | `RUN-20261004-49` | 2026-10-04 | Owner | PIVOT-4 source-context-anchor versioning | `sieving-tuning`: keep source-stated context anchors, never infer them, and retain candidate leads as leads. |
