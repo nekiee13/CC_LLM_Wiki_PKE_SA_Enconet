@@ -68,10 +68,21 @@ two quotes without links. Claude's review identifies seven non-exact active
 crumbs when counting the source-side quote set; this count difference is under
 reconciliation and is not being hidden by matcher relaxation.
 
-The active `DOC-0001` run remains `RUN-20261003-23`. The corrected candidate
-`RUN-20261003-24` still lacks an owner decision in `manifests/approvals.csv`,
-so it has not been promoted. No exception or score was created for any
-mismatch.
+The full item IDs in Claude's raw-source check are:
+
+- `CRUMB-DOC-0030-APP_B_XVI-0002`
+- `CRUMB-DOC-0030-APP_B_XVI-0003`
+- `CRUMB-DOC-0019-APP_B_III-0003`
+- `CRUMB-DOC-0001-APP_B_XVI-0003`
+- `CRUMB-DOC-0001-APP_B_XVI-0004`
+- `CRUMB-DOC-0011-APP_B_VI-0002`
+- `CRUMB-DOC-0011-APP_B_VI-0003`
+
+The owner decision `R01-PART21-GEN2-PROMOTE-20261005-OWNER` is now recorded in
+`manifests/approvals.csv`. The controlled promotion command remains blocked
+because no approved golden score artifact was supplied; no gate was bypassed.
+The active `DOC-0001` run therefore remains `RUN-20261003-23`. No exception or
+audit score was created for any mismatch.
 
 The post-repair generated-state hash is:
 
@@ -82,7 +93,9 @@ The post-repair generated-state hash is:
 
 ## Gate decision
 
-MIN-2.2 remains open. Requirement coverage is now green. The remaining
-traceability differences need source-review or an owner-approved disposition;
-the missing Claude skill needs Claude-side action. No audit score, finding, or
-conclusion is produced while the aggregate gate is red.
+MIN-2.2 remains open. Requirement coverage is now green, and Claude approved
+the exact matcher. The remaining gates are the missing metrics artifacts for
+rejected `RUN-20261004-43`, unresolved traceability differences, and the
+approved score artifact required by the controlled generation-promotion
+command. No audit score, finding, or conclusion is produced while the
+aggregate gate is red.
