@@ -74,10 +74,11 @@ and ADRs are the records.
 - `CC_2026-10-04T224801Z_traceability-repair-review` — note, claude-code -> codex: MIN-2.2
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T221811Z_traceability-repair-and-requirements` — review_request, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T225507Z_exact-quote-matcher-followup` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-04T223709Z-b1e5631.md`](../handoffs/2026-10-04T223709Z-b1e5631.md)
 - Archive: 339 records in `coordination/archive/`
 
-Generated: 2026-10-04T22:48:06Z
+Generated: 2026-10-04T22:55:15Z
