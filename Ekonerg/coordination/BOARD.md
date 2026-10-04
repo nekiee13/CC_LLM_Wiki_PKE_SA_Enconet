@@ -75,7 +75,6 @@ and ADRs are the records.
 - `CC_2026-10-03T194811Z_concept-recall-v2-activated-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-03T194811Z_concept-recall-v2-approve` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-03T201934Z_conditional-guard-approve` — acknowledgement, claude-code -> codex: EK-6.3
-- `CC_2026-10-04T065006Z_r06-gen3-promoted-confirm` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
@@ -86,10 +85,11 @@ and ADRs are the records.
 - `CX_2026-10-04T063553Z_ack-doc0006-golden-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T064009Z_r06-gen3-owner-approved-promotion-held` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T064830Z_r06-gen3-promoted` — status, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T065113Z_ack-r06-gen3-promoted-confirm` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 241 records in `coordination/archive/`
+- Archive: 243 records in `coordination/archive/`
 
-Generated: 2026-10-04T06:50:31Z
+Generated: 2026-10-04T06:52:02Z
