@@ -1,6 +1,6 @@
 # PIVOT-4 prompt-anchor provenance decision
 
-**Status:** Pending owner decision
+**Status:** Option A selected; fresh calibration pending
 
 ## Why a decision is needed
 
@@ -32,15 +32,16 @@ the existing v2 name and approval reference.
 ## Decision record
 
 ```text
-Decision:        [ ] A — NEW VERSION   [ ] B — NO RECALIBRATION   [ ] DEFER
-
-Owner:           ______________________________________
-Decision date:   ______________________________________
-Decision ref:    ______________________________________
+Decision:        [x] A — NEW VERSION   [ ] B — NO RECALIBRATION   [ ] DEFER
+Owner:           Owner
+Decision date:   2026-10-04
+Decision ref:    PIVOT-4-OPTION-A-20261004-OWNER
 
 Comments:
-_______________________________________________________
-_______________________________________________________
+Create a new prompt version, calibrate it with a fresh golden fixture, and
+obtain approval before activation. Existing v2 approval remains unchanged.
 ```
 
-Until this is recorded, no new prompt promotion or golden result is claimed.
+The new candidate is `appb_document_v3_context_anchors`. It is not active and
+has no golden approval yet. Anchors remain source-supported only, are never
+guessed, and `candidate_lead` remains separate from objective evidence.

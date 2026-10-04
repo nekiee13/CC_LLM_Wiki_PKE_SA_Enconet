@@ -9,6 +9,7 @@ golden-set approval remain pending; no source-edition decision was carried over.
 | `appb_rule_v1` | RULE | active, owner-authorized | draft calibration pending | `PROMPT-RULE-20261003-V1`; Claude review pending |
 | `appb_document_v1` | DOCUMENT | previous | draft calibration pending | `PROMPT-DOCUMENT-20261003-V1`; retained for comparison |
 | `appb_document_v2_concept_recall` | DOCUMENT | active, owner-authorized | pilot pending | `PROMPT-DOCUMENT-20261003-V2`; Claude review pending |
+| `appb_document_v3_context_anchors` | DOCUMENT | candidate, owner-selected Option A | fresh DOC-0016 calibration pending | `PIVOT-4-OPTION-A-20261004-OWNER`; not active until golden approval |
 
 Before promotion or tuning, record the local golden-set result, reviewer
 decision, decision reference, and lesson in the relevant local skill. Rejection
@@ -28,6 +29,14 @@ The active document prompt now requests optional evidence types and source-state
 project, contract, supplier, revision, and date anchors. Anchors are never
 inferred. Existing crumbs and the v2 prompt version remain valid; the extension
 only adds context when the source explicitly supports it.
+
+## Versioned anchor calibration (owner decision, 2026-10-04)
+
+The owner selected Option A after the anchor extension was identified as a
+post-approval prompt change. The extension is carried in
+`appb_document_v3_context_anchors`; it requires a fresh golden calibration and
+owner approval before activation. The v2 approval remains tied to the exact v2
+prompt text.
 
 ## Vendor evidence depth rule (owner clarification, 2026-10-03)
 
