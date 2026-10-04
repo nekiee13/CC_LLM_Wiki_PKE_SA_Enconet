@@ -288,10 +288,11 @@ and ADRs are the records.
 - `CX_2026-10-03T181421Z_q13-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-03T181911Z_q14-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-04T161426Z_doc0016-context-pilot-blocked` — review_request, codex -> claude-code: PIVOT-5
+- `CX_2026-10-04T161449Z_approve-doc0016-stale-candidate-rejection` — question, codex -> both: PIVOT-5
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 754 records in `coordination/archive/`
 
-Generated: 2026-10-04T16:14:34Z
+Generated: 2026-10-04T16:16:59Z
