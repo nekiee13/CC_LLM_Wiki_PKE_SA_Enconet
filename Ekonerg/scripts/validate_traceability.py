@@ -44,15 +44,19 @@ def _exceptions(path: Path) -> tuple[set[tuple[str, str]], list[str]]:
     return approved, errors
 
 
-def validate(db_path: Path, *, exceptions_path: Path = EXCEPTIONS) -> list[str]:
+def validate(db_path: Path, *, exceptions_path: Path = EXCEPTIONS,
+             active_only: bool = False) -> list[str]:
     database = local_path(db_path)
     approved, errors = _exceptions(local_path(exceptions_path))
     if not database.is_file():
         return errors + [f"local database is missing: {database}"]
     with closing(sqlite3.connect(database.as_uri() + "?mode=ro", uri=True)) as conn:
         conn.row_factory = sqlite3.Row
+        scope = " JOIN sieve_runs r ON r.run_id=c.sieve_run_id" if active_only else ""
+        active_clause = " WHERE r.is_active=1" if active_only else ""
         quotes = conn.execute(
             "SELECT q.*, c.doc_id FROM crumb_quotes q JOIN crumbs c ON c.item_id=q.item_id"
+            + scope + active_clause
         ).fetchall()
         if not quotes:
             errors.append("database has no crumb quotes")
@@ -80,7 +84,10 @@ def validate(db_path: Path, *, exceptions_path: Path = EXCEPTIONS) -> list[str]:
                     errors.append(f"checksum chain mismatch: {link['chunk_id']}")
                 if not quote_matches(quote["quote_original"], link["chunk_text"]) and key not in approved:
                     errors.append(f"quote absent from linked chunk: {key[1]}")
-        for crumb in conn.execute("SELECT item_id FROM crumbs"):
+        crumbs_query = "SELECT c.item_id FROM crumbs c"
+        if active_only:
+            crumbs_query += " JOIN sieve_runs r ON r.run_id=c.sieve_run_id WHERE r.is_active=1"
+        for crumb in conn.execute(crumbs_query):
             if not conn.execute("SELECT 1 FROM crumb_quotes WHERE item_id=?", (crumb[0],)).fetchone():
                 errors.append(f"crumb without quote: {crumb[0]}")
         for row in conn.execute("PRAGMA foreign_key_check"):
@@ -103,10 +110,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--exceptions", type=Path, default=EXCEPTIONS)
+    parser.add_argument("--active-only", action="store_true",
+                        help="validate only quotes in active sieve generations")
     parser.add_argument("--no-record", action="store_true")
     args = parser.parse_args()
     try:
-        errors = validate(args.db, exceptions_path=args.exceptions)
+        errors = validate(args.db, exceptions_path=args.exceptions,
+                          active_only=args.active_only)
     except (OSError, ValueError, KeyError, TypeError, sqlite3.Error) as exc:
         errors = [str(exc)]
     for error in errors:

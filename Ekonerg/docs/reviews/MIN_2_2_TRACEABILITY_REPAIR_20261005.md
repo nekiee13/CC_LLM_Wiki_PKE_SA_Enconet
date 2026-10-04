@@ -95,6 +95,23 @@ The post-repair generated-state hash is:
 - `sieving/runs/RUN-20261003-14/metrics.json`: `26bee574374154a80d146a360beec40504e6f7ed117166b99c03dc1047d95d78`
 - `sieving/runs/RUN-20261003-23/metrics.json`: `ff7c163e49230b49fd0a8a50cc73c1bf2ae8d7cf8003cd9bef3bce279e7a9fee`
 
+## Live-run scope update (2026-10-05)
+
+The aggregate validator now invokes `validate_traceability.py --active-only`.
+This is an explicit scope rule for the live audit: only the active generation
+for each document is checked. The validator's default remains strict
+full-history mode, so rejected and superseded generations are still preserved
+for historical repair.
+
+The active-only check now has two unresolved quote records:
+
+- `QUOTE-DOC-0030-0002-01` (`Uvjeti` versus source `Uvjete`)
+- `QUOTE-DOC-0011-0011-01` (`imaju` versus source `imati`)
+
+No fuzzy or similarity link was invented. The aggregate remains red until these
+two active records receive corrected candidate evidence or an explicitly
+approved exception.
+
 ## Gate decision
 
 MIN-2.2 remains open. Requirement coverage is green, the harness passes, and
