@@ -5,6 +5,18 @@ Snapshot date: 2026-10-03. Source plan: [`EKONERG_AUDIT_TDD_PLAN.md`](EKONERG_AU
 `Ekonerg/coordination/archive/` as of this snapshot; it is not a substitute for reading
 the plan or the archived review records directly.
 
+## Sprint update — 2026-10-05
+
+MIN-2.2 remains open, but one blocker is reduced. The requirement validator now
+passes: 18 criteria are covered by 55 deterministic rows seeded from active RULE
+crumbs. Conservative quote matching added 25 safe links across the affected runs;
+two active quotes still differ from the extracted source text and remain open.
+Twelve more unmatched quotes belong to inactive generations. The aggregate gate
+still fails on traceability and the missing Claude-owned `sieving-tuning` skill.
+No scoring, findings, or audit conclusion were produced.
+
+Evidence: `docs/reviews/MIN_2_2_TRACEABILITY_REPAIR_20261005.md`.
+
 ## Milestone M1 — Clean framework
 
 | Epic | Task | Status |
