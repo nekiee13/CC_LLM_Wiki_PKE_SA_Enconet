@@ -10,7 +10,7 @@ generation for `DOC-0016` (`PQ07.5-7_r10_Kontrola_zapisa.md`). The source says
 ## Candidate
 
 - Previous active generation: `RUN-20261003-33`.
-- Corrected inactive candidate: `RUN-20261003-40` (generation 2).
+- Corrected candidate: `RUN-20261003-40` (generation 2, now active).
 - Prompt: `appb_document_v2_concept_recall` (unchanged).
 - Candidate input: `sieving/runs/q09_doc0016_v2_corrected.json`.
 - Candidate input SHA-256: `6A781A7C9021E6B3783A79F8286EBFEB2458EF18A4B6B59FB28D4886860DBD5B`.
@@ -32,3 +32,10 @@ Evidence files:
 
 This is a source-processing correction only. It does not create an audit
 conclusion or change criterion applicability.
+
+## Promotion record
+
+- Golden fixture approval: `GOLDEN-DOC0016-V2-20261004-OWNER`.
+- Generation promotion approval: `DOC0016-GEN2-PROMOTE-20261004-OWNER`.
+- The database now records `RUN-20261003-40` as the active generation for
+  `DOC-0016`; the prior generation `RUN-20261003-33` is superseded.

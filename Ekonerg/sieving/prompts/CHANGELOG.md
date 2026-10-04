@@ -44,3 +44,4 @@ not implied by creating the prompt.
 | Prompt | Side | Event | Generation | Date | Decision by | Scope | Lesson |
 |---|---|---|---|---|---|---|---|
 | `appb_rule_v1` | RULE | candidate rejected | `RUN-20261003-30` | 2026-10-03 | Owner | R-06 Part III source-marker correction | `sieving-tuning`: preserve em-dash-delimited source markers exactly before creating a replacement generation. |
+| `appb_document_v2_concept_recall` | DOCUMENT | candidate promoted | `RUN-20261003-40` | 2026-10-04 | Owner | Q09 DOC-0016 exact-quote correction | `sieving-tuning`: preserve localized source spelling and verify every quote as an exact source substring before promotion. |
