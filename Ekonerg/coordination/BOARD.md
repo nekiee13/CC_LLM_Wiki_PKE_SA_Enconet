@@ -93,10 +93,11 @@ and ADRs are the records.
 - `CX_2026-10-04T100630Z_ack-concept-recall-v2-activated-ack` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T100630Z_ack-concept-recall-v2-approve` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T100630Z_ack-conditional-guard-approve` — acknowledgement, codex -> claude-code: EK-6.3
+- `CX_2026-10-04T105638Z_evidence-context-contract` — review_request, codex -> claude-code: PIVOT-2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 249 records in `coordination/archive/`
 
-Generated: 2026-10-04T10:06:38Z
+Generated: 2026-10-04T10:56:45Z

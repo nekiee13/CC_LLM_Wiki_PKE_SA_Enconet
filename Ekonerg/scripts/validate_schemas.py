@@ -62,7 +62,7 @@ def validate(schemas: Path = SCHEMAS) -> tuple[list[str], list[str]]:
     names = ["app_b_taxonomy.yml", "id_patterns.yml", "vocabularies.yml",
              "app_b_json_schema.yml", "scoring_model.yml", "dashboard_schema.yml",
              "page_types.yml", "required_fields.yml", "evaluation_package_schema.yml",
-             "sieving_contract.yml", "activity_catalog.yml"]
+             "sieving_contract.yml", "activity_catalog.yml", "evidence_context.yml"]
     data = {name: _load(root, name, errors) for name in names}
     tax, patterns, voc = (data[name] for name in names[:3])
     model = data["scoring_model.yml"]
@@ -72,6 +72,7 @@ def validate(schemas: Path = SCHEMAS) -> tuple[list[str], list[str]]:
     package = data["evaluation_package_schema.yml"]
     sieving = data["sieving_contract.yml"]
     activities = data["activity_catalog.yml"]
+    evidence_context = data["evidence_context.yml"]
 
     criteria = tax.get("criteria") or []
     if not isinstance(criteria, list) or len(criteria) != 18:
@@ -113,6 +114,19 @@ def validate(schemas: Path = SCHEMAS) -> tuple[list[str], list[str]]:
             errors.append(f"activity_catalog.yml: description missing: {row.get('activity_id')}")
     if "APP_B_XVIII" not in {item for row in activity_rows for item in (row.get("criterion_ids") or [])}:
         errors.append("activity_catalog.yml: audit activity must map to APP_B_XVIII")
+
+    context_fields = evidence_context.get("context_fields") or {}
+    evidence_types = evidence_context.get("evidence_types") or []
+    required_context_fields = {"project_ref", "contract_ref", "supplier_ref", "source_revision", "evidence_date"}
+    if set(context_fields) != required_context_fields:
+        errors.append("evidence_context.yml: context fields differ from the local anchor contract")
+    if not isinstance(evidence_types, list) or len(evidence_types) != len(set(evidence_types)) or not evidence_types:
+        errors.append("evidence_context.yml: evidence_types must be a unique non-empty list")
+    for field, spec in context_fields.items():
+        if not isinstance(spec, dict) or spec.get("type") != "string" or not str(spec.get("meaning") or "").strip():
+            errors.append(f"evidence_context.yml: invalid context field: {field}")
+    if "objective_record" not in evidence_types or "candidate_lead" not in evidence_types:
+        errors.append("evidence_context.yml: objective_record and candidate_lead are required evidence types")
 
     id_patterns = patterns.get("patterns") or {}
     required_patterns = {"doc_id", "chunk_id", "quote_id", "crumb_id", "requirement_id",
