@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-03T061626Z-73288f2.md`](handoffs/2026-10-03T061626Z-73288f2.md)
+**Authoritative record:** [`handoffs/2026-10-04T223709Z-b1e5631.md`](handoffs/2026-10-04T223709Z-b1e5631.md)
 
-**Status:** partial · **Git:** `73288f2` · **Agent:** codex · **Created:** 2026-10-03T06:16:26Z
+**Status:** partial · **Git:** `b1e5631` · **Agent:** codex · **Created:** 2026-10-04T22:37:09Z
 
-**Exact next action:** Obtain prompt and golden-set decisions, then activate only approved versions and run a small reviewed sieving batch.
+**Exact next action:** Owner or Claude reviews the two active quote mismatches and decides correction or documented disposition; Claude supplies or confirms the sieving-tuning skill, then rerun the aggregate validation.
