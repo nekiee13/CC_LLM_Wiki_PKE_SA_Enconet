@@ -3,7 +3,7 @@
 **Status:** Applied under owner approval on 2026-10-04
 **Approval reference:** `G3-METADATA-RECONCILE-20261004-OWNER`
 **Target:** `RUN-20261003-32`  
-**Current value:** `0.1-placeholder`  
+**Original value:** `0.1-placeholder`
 **Approved model:** `1.0-ekonerg-20261004`
 
 ## What and why
@@ -51,21 +51,31 @@ The dry run confirms that no live row changed.
 ## Owner apply decision
 
 ```text
-Decision:        [ ] APPROVE APPLY   [ ] REJECT   [ ] DEFER
+Decision:        [x] APPROVE APPLY   [ ] REJECT   [ ] DEFER
 
-Owner:           ______________________________________
-Decision date:   ______________________________________
-Decision ref:    ______________________________________
+Owner:           Owner
+Decision date:   2026-10-04
+Decision ref:    G3-METADATA-RECONCILE-20261004-OWNER
 
 Comments:
-_______________________________________________________
+Change only the scoring-model version for RUN-20261003-32.
 ```
 
-The apply command used the recorded decision reference. No hand edit was
-permitted.
+The apply command was run from the `Ekonerg` project root. It used the
+recorded decision reference and wrote the immutable JSON evidence record:
+
+```text
+python scripts/reconcile_run_metadata.py --run-id RUN-20261003-32 --old-version 0.1-placeholder --new-version 1.0-ekonerg-20261004 --decision-ref G3-METADATA-RECONCILE-20261004-OWNER --evidence docs/reviews/MIN_3_1_G3_RUN_METADATA_APPLY.json --apply
+```
+
+No hand edit was permitted. The apply record is
+`MIN_3_1_G3_RUN_METADATA_APPLY.json`.
 
 ## Recorded result
 
 The owner approved the apply under the reference above. The controlled tool
 updated exactly one field on `RUN-20261003-32`; no evaluation, score, finding,
-crumb, or source row was written.
+crumb, or source row was written. The recorded before hash is
+`f9a88532058dff322ae3911879c8255893c2160f441bf8c0ea8ffdb777e75010`; the
+recorded after hash is
+`385a7ff1bf9a7209a9a8374e3d674b87ccd681c7e954dbc044cc74ce54870f26`.
