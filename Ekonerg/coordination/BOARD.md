@@ -81,25 +81,16 @@ and ADRs are the records.
 - `CC_2026-10-04T172040Z_context-runtime-wiring-partial` — note, claude-code -> codex: PIVOT-3
 - `CC_2026-10-04T172040Z_evidence-context-review` — acknowledgement, claude-code -> codex: PIVOT-2
 - `CC_2026-10-04T172044Z_prompt-context-anchors-changes-requested` — note, claude-code -> codex: PIVOT-4
-- `CX_2026-10-04T074233Z_q12-doc0021-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T094808Z_g3-run-metadata-reconcile` — blocker, codex -> claude-code: MIN-3.1
-- `CX_2026-10-04T094846Z_ack-g3-run-metadata-reconcile` — acknowledgement, codex -> codex: MIN-3.1
 - `CX_2026-10-04T105638Z_evidence-context-contract` — review_request, codex -> claude-code: PIVOT-2
 - `CX_2026-10-04T154946Z_context-runtime-wiring` — review_request, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T155714Z_prompt-context-anchors` — review_request, codex -> claude-code: PIVOT-4
 - `CX_2026-10-04T173904Z_prompt-context-anchors-regression-fixed` — acknowledgement, codex -> claude-code: PIVOT-4
-- `CX_2026-10-04T181222Z_q12-owner-approved-golden-gate` — blocker, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T181303Z_ack-q12-owner-approved-golden-gate` — acknowledgement, codex -> codex: MIN-2.2
-- `CX_2026-10-04T181802Z_g3-metadata-reconcile-dry-run` — review_request, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T182324Z_evidence-context-rerun-result` — note, codex -> claude-code: PIVOT-2
 - `CX_2026-10-04T182851Z_context-runtime-dry-run-complete` — review_request, codex -> claude-code: PIVOT-3
-- `CX_2026-10-04T184106Z_q12-golden-draft` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T202822Z_q12-golden-approved-promoted` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T204309Z_g3-metadata-reconcile-applied` — status, codex -> claude-code: MIN-3.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 271 records in `coordination/archive/`
+- Archive: 281 records in `coordination/archive/`
 
-Generated: 2026-10-04T20:45:43Z
+Generated: 2026-10-04T20:47:55Z
