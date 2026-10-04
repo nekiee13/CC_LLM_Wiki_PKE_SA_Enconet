@@ -126,6 +126,7 @@ and ADRs are the records.
 - `PIVOT-6` — codex, released 2026-10-04T16:43:21Z
 - `PIVOT-7` — codex, released 2026-10-04T16:48:52Z
 - `PIVOT-8` — codex, released 2026-10-04T16:55:22Z
+- `PIVOT-9` — codex, released 2026-10-04T16:57:25Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-REVIEW-CC` — claude-code, released 2026-07-16T22:10:30Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
@@ -297,10 +298,11 @@ and ADRs are the records.
 - `CX_2026-10-04T164311Z_doc0022-context-pilot-result` — review_request, codex -> claude-code: PIVOT-6
 - `CX_2026-10-04T164844Z_doc0020-context-pilot-result` — review_request, codex -> claude-code: PIVOT-7
 - `CX_2026-10-04T165515Z_doc0023-context-pilot-result` — review_request, codex -> claude-code: PIVOT-8
+- `CX_2026-10-04T165717Z_doc0024-context-pilot-result` — review_request, codex -> claude-code: PIVOT-9
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 756 records in `coordination/archive/`
 
-Generated: 2026-10-04T16:55:22Z
+Generated: 2026-10-04T16:57:25Z
