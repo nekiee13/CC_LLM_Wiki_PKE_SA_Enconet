@@ -60,7 +60,7 @@
     },
     "item": {
       "required": ["item_id", "record_side", "template_id", "template_version", "taxonomy_id", "criterion_id", "criterion_name", "item_type", "statement", "evidence_quotes", "source"],
-      "allowed": ["item_id", "record_side", "template_id", "template_version", "taxonomy_id", "criterion_id", "criterion_name", "item_type", "statement", "evidence_quotes", "source", "entities", "rule", "rule_reference_ids", "rule_references"]
+      "allowed": ["item_id", "record_side", "template_id", "template_version", "taxonomy_id", "criterion_id", "criterion_name", "item_type", "statement", "evidence_quotes", "source", "entities", "evidence_type", "context", "rule", "rule_reference_ids", "rule_references"]
     }
   },
   "columns": {

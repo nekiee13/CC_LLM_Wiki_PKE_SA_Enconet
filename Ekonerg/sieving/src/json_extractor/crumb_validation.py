@@ -9,6 +9,8 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import yaml
+
 from .contract import canonical_codes, load_contract
 
 
@@ -17,6 +19,17 @@ LANGUAGES = {"sl", "en", "hr"}
 ROLES = {"GOVERNING", "INTERPRETIVE"}
 APPLICABILITY = {"APPLICABLE", "CONDITIONAL", "NOT_APPLICABLE"}
 FORBIDDEN = {"statement_en", "translation_status", "meaning_flag"}
+CONTEXT_FIELDS = {"project_ref", "contract_ref", "supplier_ref", "source_revision", "evidence_date"}
+
+
+def _evidence_types() -> set[str]:
+    path = PROJECT_ROOT / "schemas" / "evidence_context.yml"
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except (OSError, yaml.YAMLError):
+        return set()
+    values = data.get("evidence_types") if isinstance(data, dict) else None
+    return set(values) if isinstance(values, list) and all(isinstance(value, str) for value in values) else set()
 
 
 @dataclass
@@ -145,6 +158,18 @@ def validate_payload(payload: object, *, strict: bool = False) -> ValidationResu
                 result.errors.append(f"{where}.authority_references: DOCUMENT items require an empty list")
         if side == "DOCUMENT" and any(key in item for key in ("rule", "rule_locator", "rule_key", "rule_strength")):
             result.errors.append(f"{where}: RULE-only fields forbidden on DOCUMENT side")
+        if "evidence_type" in item and item["evidence_type"] not in _evidence_types():
+            result.errors.append(f"{where}.evidence_type: invalid value {item['evidence_type']!r}")
+        context = item.get("context")
+        if context is not None:
+            if not isinstance(context, dict):
+                result.errors.append(f"{where}.context: must be an object")
+            else:
+                for key in sorted(set(context) - CONTEXT_FIELDS):
+                    result.errors.append(f"{where}.context.{key}: unknown field")
+                for key in sorted(CONTEXT_FIELDS & set(context)):
+                    if not _nonempty(context[key]):
+                        result.errors.append(f"{where}.context.{key}: must be non-empty text")
         for optional in ("item_type", "entities"):
             if optional not in item:
                 result.warnings.append(f"{where}.{optional}: optional field missing")

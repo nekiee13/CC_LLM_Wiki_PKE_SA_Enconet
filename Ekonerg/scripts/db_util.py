@@ -14,6 +14,23 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB = ROOT / "db" / "nqa_audit.sqlite"
 PATTERNS = ROOT / "schemas" / "id_patterns.yml"
 SAFE_IDENTIFIER = re.compile(r"^[a-z][a-z0-9_]*$")
+CONTEXT_SCHEMA = """
+CREATE TABLE IF NOT EXISTS crumb_context (
+    item_id TEXT PRIMARY KEY REFERENCES crumbs(item_id) ON DELETE CASCADE,
+    evidence_type TEXT,
+    project_ref TEXT,
+    contract_ref TEXT,
+    supplier_ref TEXT,
+    source_revision TEXT,
+    evidence_date TEXT,
+    CHECK (evidence_type IS NULL OR length(trim(evidence_type)) > 0),
+    CHECK (project_ref IS NULL OR length(trim(project_ref)) > 0),
+    CHECK (contract_ref IS NULL OR length(trim(contract_ref)) > 0),
+    CHECK (supplier_ref IS NULL OR length(trim(supplier_ref)) > 0),
+    CHECK (source_revision IS NULL OR length(trim(source_revision)) > 0),
+    CHECK (evidence_date IS NULL OR length(trim(evidence_date)) > 0)
+) STRICT;
+"""
 
 ID_COLUMNS = {
     "documents": {"doc_id": "doc_id"},
@@ -45,6 +62,11 @@ def connect(path: Path | str = DEFAULT_DB) -> sqlite3.Connection:
         conn.close()
         raise RuntimeError("SQLite foreign-key enforcement could not be enabled")
     return conn
+
+
+def ensure_crumb_context_schema(conn: sqlite3.Connection) -> None:
+    """Apply the additive context-table migration to an older local database."""
+    conn.executescript(CONTEXT_SCHEMA)
 
 
 def _validate_ids(table: str, values: Mapping[str, Any]) -> None:

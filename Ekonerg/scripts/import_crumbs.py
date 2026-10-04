@@ -30,6 +30,7 @@ def import_file(db: Path, json_path: Path, *, run_id: str) -> int:
         raise ValueError("strict crumb validation failed: " + "; ".join(result.errors))
     document, items = payload["document"], payload["items"]
     with closing(db_util.connect(database)) as conn, conn:
+        db_util.ensure_crumb_context_schema(conn)
         run = db_util.lookup(conn, "sieve_runs", "run_id", run_id)
         if run is None:
             raise ValueError(f"unknown sieve run: {run_id}")
@@ -90,6 +91,16 @@ def import_file(db: Path, json_path: Path, *, run_id: str) -> int:
                     "applicability": ref.get("applicability", "APPLICABLE"),
                     "applicability_basis": ref.get("applicability_basis"),
                 })
+            context = item.get("context") or {}
+            context_values = {
+                "item_id": crumb_id,
+                "evidence_type": item.get("evidence_type"),
+                **{field: context.get(field) for field in (
+                    "project_ref", "contract_ref", "supplier_ref", "source_revision", "evidence_date"
+                )},
+            }
+            if any(value is not None for key, value in context_values.items() if key != "item_id"):
+                db_util.insert(conn, "crumb_context", context_values)
         conn.execute("UPDATE sieve_runs SET completed_at=CURRENT_TIMESTAMP WHERE run_id=?", (run_id,))
     return len(items)
 

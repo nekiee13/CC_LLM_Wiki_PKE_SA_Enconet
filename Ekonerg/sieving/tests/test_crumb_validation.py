@@ -44,7 +44,7 @@ class CrumbValidationTests(unittest.TestCase):
             shutil.copyfile(PACKAGE / name, package / name)
         schemas = self.project / "schemas"
         schemas.mkdir()
-        for name in ("app_b_taxonomy.yml", "sieving_contract.yml"):
+        for name in ("app_b_taxonomy.yml", "sieving_contract.yml", "evidence_context.yml"):
             shutil.copyfile(PROJECT / "schemas" / name, schemas / name)
         self.contract_path = schemas / "sieving_contract.yml"
         contract = json.loads(self.contract_path.read_text(encoding="utf-8"))
@@ -75,6 +75,29 @@ class CrumbValidationTests(unittest.TestCase):
         self.assertEqual(result.errors, [])
         self.assertEqual(self.validator.load_contract()["template"]["taxonomy_file"],
                          "app_b_taxonomy.yml")
+
+    def test_optional_evidence_context_accepts_valid_anchor_and_type(self) -> None:
+        data = rule_crumb()
+        data["items"][0].update(
+            evidence_type="objective_record",
+            context={
+                "project_ref": "MOD-1281",
+                "contract_ref": "PO-17",
+                "supplier_ref": "Synthetic supplier",
+                "source_revision": "rev. 2",
+                "evidence_date": "2026-09-29",
+            },
+        )
+        result = self.validator.validate_payload(data, strict=True)
+        self.assertTrue(result.passed, result.errors)
+
+    def test_optional_evidence_context_rejects_unknown_type_and_anchor(self) -> None:
+        data = rule_crumb()
+        data["items"][0].update(evidence_type="invented_type", context={"project": "MOD-1"})
+        result = self.validator.validate_payload(data)
+        self.assertFalse(result.passed)
+        self.assertTrue(any("evidence_type" in error for error in result.errors))
+        self.assertTrue(any("unknown field" in error for error in result.errors))
 
     def test_synthetic_taxonomy_drives_crumb_checks(self) -> None:
         contract = json.loads(self.contract_path.read_text(encoding="utf-8"))

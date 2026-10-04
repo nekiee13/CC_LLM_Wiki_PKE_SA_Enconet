@@ -28,6 +28,8 @@ item_block:
     source: {tier: strict, meaning: "non-empty page, heading, or section locator"}
   optional_fields:
     item_type: {tier: warning, enum_from: sieving_contract.enums.item_type}
+    evidence_type: {tier: warning, enum_from: evidence_context.evidence_types}
+    context: {tier: warning, schema: evidence_context.context_fields}
     entities: {tier: warning}
 
 evidence_quote:

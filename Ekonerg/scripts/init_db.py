@@ -10,6 +10,7 @@ from contextlib import closing
 from pathlib import Path
 
 from project_paths import configure_standard_streams, local_path
+import db_util
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,7 +23,7 @@ REQUIRED_TABLES = {
     "criterion_evaluations", "gaps", "findings", "auditor_actions", "sieve_runs",
     "evaluation_runs", "dashboard_runs", "validation_runs", "sieve_run_authorities",
     "crumb_authority_refs", "evaluation_evidence", "sieve_generation_events",
-    "approved_sources",
+    "approved_sources", "crumb_context",
 }
 
 
@@ -37,14 +38,22 @@ def _check_existing(db_path: Path) -> str:
         )}
         integrity = conn.execute("PRAGMA integrity_check").fetchone()[0]
         foreign_errors = conn.execute("PRAGMA foreign_key_check").fetchall()
-    if (version != SCHEMA_VERSION or not REQUIRED_TABLES <= tables or
+    legacy_required = REQUIRED_TABLES - {"crumb_context"}
+    if (version != SCHEMA_VERSION or not legacy_required <= tables or
             integrity != "ok" or foreign_errors):
-        missing = sorted(REQUIRED_TABLES - tables)
+        missing = sorted(legacy_required - tables)
         raise RuntimeError(
             f"refusing incomplete or incompatible existing database: {db_path}; "
             f"schema version {version}; missing tables {missing}; integrity {integrity}; "
             f"foreign key errors {len(foreign_errors)}"
         )
+    with closing(sqlite3.connect(db_path)) as conn:
+        db_util.ensure_crumb_context_schema(conn)
+        conn.commit()
+    if "crumb_context" not in tables:
+        tables.add("crumb_context")
+    if not REQUIRED_TABLES <= tables:
+        raise RuntimeError(f"database migration did not create required tables: {db_path}")
     return "already initialized; existing data preserved"
 
 

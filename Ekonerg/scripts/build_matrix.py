@@ -33,6 +33,16 @@ def _count(conn: sqlite3.Connection, query: str, params: tuple[str, ...]) -> int
     return conn.execute(query, params).fetchone()[0]
 
 
+def _evidence_types(conn: sqlite3.Connection, criterion_id: str) -> dict[str, int]:
+    rows = conn.execute(
+        "SELECT COALESCE(x.evidence_type, 'untyped') AS evidence_type, count(*) AS count "
+        "FROM active_crumbs c LEFT JOIN crumb_context x ON x.item_id=c.item_id "
+        "WHERE c.criterion_id=? AND c.document_side='DOCUMENT' "
+        "GROUP BY COALESCE(x.evidence_type, 'untyped') ORDER BY evidence_type", (criterion_id,)
+    )
+    return {row["evidence_type"]: int(row["count"]) for row in rows}
+
+
 def build(db: Path, run_id: str | None = None) -> list[dict]:
     """Read a complete local baseline; never initialize or mutate the database."""
     if run_id is not None and db_util.id_patterns()["run_id"].fullmatch(run_id) is None:
@@ -74,6 +84,12 @@ def build(db: Path, run_id: str | None = None) -> list[dict]:
                     "SELECT count(*) FROM active_crumbs WHERE criterion_id=? AND document_side='RULE'", (cid,)),
                 "document_evidence_count": _count(conn,
                     "SELECT count(*) FROM active_crumbs WHERE criterion_id=? AND document_side='DOCUMENT'", (cid,)),
+                "anchored_document_evidence_count": _count(conn,
+                    "SELECT count(*) FROM active_crumbs c JOIN crumb_context x ON x.item_id=c.item_id "
+                    "WHERE c.criterion_id=? AND c.document_side='DOCUMENT' "
+                    "AND (x.project_ref IS NOT NULL OR x.contract_ref IS NOT NULL OR "
+                    "x.supplier_ref IS NOT NULL OR x.source_revision IS NOT NULL OR x.evidence_date IS NOT NULL)", (cid,)),
+                "evidence_type_counts": _evidence_types(conn, cid),
                 "gap_count": _count(conn,
                     "SELECT count(*) FROM gaps g JOIN criterion_evaluations e USING(evaluation_id) "
                     "WHERE e.criterion_id=?" + run_filter, gap_params),
@@ -100,14 +116,16 @@ def render_md(rows: list[dict], run_id: str | None = None) -> str:
         "---", "id: evidence-matrix", "type: evidence", "status: generated",
         "content_origin: generated", f"source: {source}", "criterion_id: n-a",
         "generated_by: scripts/build_matrix.py", "---",
-        "| Criterion | Applicability | RULE | DOCUMENT | Gaps | Findings | Actions |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        "| Criterion | Applicability | RULE | DOCUMENT | Anchored | Evidence types | Gaps | Findings | Actions |",
+        "|---|---:|---:|---:|---:|---|---:|---:|---:|",
     ]
     for row in rows:
         name = row["criterion_name"].replace("|", "\\|").replace("\r", " ").replace("\n", " ")
         lines.append(
             f"| {row['criterion_id']} {name} | {row['applicability']} | "
             f"{row['rule_evidence_count']} | {row['document_evidence_count']} | "
+            f"{row['anchored_document_evidence_count']} | "
+            f"{', '.join(f'{key}:{value}' for key, value in row['evidence_type_counts'].items()) or 'none'} | "
             f"{row['gap_count']} | {row['finding_count']} | {row['action_count']} |"
         )
     return "\n".join(lines) + "\n"
