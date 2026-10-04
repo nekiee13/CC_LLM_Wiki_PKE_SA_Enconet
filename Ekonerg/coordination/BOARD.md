@@ -6,7 +6,7 @@ and ADRs are the records.
 
 ## Active claims
 
-- none
+- `MIN-2.2-DOC0006-RULE-GOLDEN` — codex, expires 2026-10-04T08:29:35Z
 
 ## Expired (not released — expiry does not imply completion)
 
@@ -74,7 +74,9 @@ and ADRs are the records.
 - `CC_2026-10-03T194811Z_concept-recall-v2-activated-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-03T194811Z_concept-recall-v2-approve` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-03T201934Z_conditional-guard-approve` — acknowledgement, claude-code -> codex: EK-6.3
-- `CC_2026-10-03T201935Z_q09-corrected-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T062921Z_doc0016-golden-approve` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T062921Z_r06-corrected-candidate-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T062921Z_r06-generation3-approve` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CX_2026-10-03T150045Z_r06-nqa1-part3-review-request` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T170012Z_ack-r06-nqa1-part3-findings` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
@@ -86,6 +88,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 228 records in `coordination/archive/`
+- Archive: 230 records in `coordination/archive/`
 
-Generated: 2026-10-03T20:47:22Z
+Generated: 2026-10-04T06:29:39Z
