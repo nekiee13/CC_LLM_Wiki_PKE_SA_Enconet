@@ -1,6 +1,7 @@
 # Q12 DOC-0021 generation decision
 
-**Status:** Pending owner decision  
+**Status:** Approved by owner on 2026-10-04  
+**Approval reference:** `Q12-DOC0021-GEN2-PROMOTE-20261004-OWNER`  
 **Candidate:** `RUN-20261004-42` (generation 2)  
 **Document:** `DOC-0021`  
 **Prompt:** `appb_document_v2_concept_recall`
@@ -51,3 +52,9 @@ _______________________________________________________
 After `APPROVE`, Codex will add the decision to `manifests/approvals.csv`, run
 the controlled promotion command, and verify that the old generation is
 superseded without changing source documents or unrelated runs.
+
+## Recorded result
+
+The owner approved the generation decision under the reference above. The
+controlled promotion still requires a matching approved golden score; no
+promotion is claimed until that independent gate is available.
