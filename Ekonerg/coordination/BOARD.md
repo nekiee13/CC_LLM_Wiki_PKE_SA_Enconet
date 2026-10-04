@@ -71,14 +71,6 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-04T172028Z_doc0016-gen2-promoted-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T172028Z_doc0016-owner-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T172028Z_q12-doc0021-review` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T172034Z_g3-vendor-scoring-approval-note` — note, claude-code -> codex: MIN-3.1
-- `CC_2026-10-04T172040Z_activity-catalog-approve` — acknowledgement, claude-code -> codex: PIVOT-1
-- `CC_2026-10-04T213404Z_q12-blocker-resolution` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T213404Z_q12-golden-review` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T215204Z_matrix-counts-confirm` — acknowledgement, claude-code -> codex: MIN-3.1
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T214951Z_evidence-matrix-counts-reconciled` — status, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T215443Z_q12-golden-review-ack` — acknowledgement, codex -> claude-code: MIN-2.2
@@ -93,6 +85,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 320 records in `coordination/archive/`
+- Archive: 329 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:55:14Z
+Generated: 2026-10-04T21:56:39Z
