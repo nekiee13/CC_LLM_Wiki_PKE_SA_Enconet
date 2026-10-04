@@ -14,6 +14,22 @@ import sieving_lib  # noqa: F401 - makes the copied json_extractor package impor
 from json_extractor.crumb_validation import validate_file
 
 ROOT = Path(__file__).resolve().parents[1]
+CONTEXT_ANCHORS = ("project_ref", "contract_ref", "supplier_ref", "source_revision", "evidence_date")
+
+
+def _validate_context_requirements(items: list[dict]) -> None:
+    """Require at least one source anchor when an evidence type is declared."""
+    for index, item in enumerate(items):
+        if "evidence_type" not in item:
+            continue
+        context = item.get("context")
+        if not isinstance(context, dict) or not any(
+            isinstance(context.get(field), str) and context[field].strip()
+            for field in CONTEXT_ANCHORS
+        ):
+            raise ValueError(
+                f"items[{index}].evidence_type requires at least one source context anchor"
+            )
 
 
 def import_file(db: Path, json_path: Path, *, run_id: str) -> int:
@@ -29,6 +45,7 @@ def import_file(db: Path, json_path: Path, *, run_id: str) -> int:
     if not result.passed:
         raise ValueError("strict crumb validation failed: " + "; ".join(result.errors))
     document, items = payload["document"], payload["items"]
+    _validate_context_requirements(items)
     with closing(db_util.connect(database)) as conn, conn:
         db_util.ensure_crumb_context_schema(conn)
         run = db_util.lookup(conn, "sieve_runs", "run_id", run_id)

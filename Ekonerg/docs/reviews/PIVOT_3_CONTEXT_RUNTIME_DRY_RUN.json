@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "database": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Ekonerg\\db\\nqa_audit.sqlite",
+  "migration_idempotence": {
+    "before": {
+      "schema_hash": "844345a0a2fa007b628f84be8627a95b3deb5d7a94cb531386a0bfee2399b195",
+      "table_count": 23,
+      "row_counts": {
+        "approved_sources": 7,
+        "auditor_actions": 0,
+        "criteria": 18,
+        "criterion_applicability": 18,
+        "criterion_evaluations": 0,
+        "crumb_authority_refs": 146,
+        "crumb_chunk_links": 460,
+        "crumb_context": 63,
+        "crumb_quotes": 498,
+        "crumb_sources": 390,
+        "crumbs": 390,
+        "dashboard_runs": 0,
+        "document_chunks": 411,
+        "documents": 31,
+        "evaluation_evidence": 0,
+        "evaluation_runs": 1,
+        "findings": 0,
+        "gaps": 0,
+        "requirements": 0,
+        "sieve_generation_events": 4,
+        "sieve_run_authorities": 18,
+        "sieve_runs": 46,
+        "validation_runs": 0
+      }
+    },
+    "after_first": {
+      "schema_hash": "844345a0a2fa007b628f84be8627a95b3deb5d7a94cb531386a0bfee2399b195",
+      "table_count": 23,
+      "row_counts": {
+        "approved_sources": 7,
+        "auditor_actions": 0,
+        "criteria": 18,
+        "criterion_applicability": 18,
+        "criterion_evaluations": 0,
+        "crumb_authority_refs": 146,
+        "crumb_chunk_links": 460,
+        "crumb_context": 63,
+        "crumb_quotes": 498,
+        "crumb_sources": 390,
+        "crumbs": 390,
+        "dashboard_runs": 0,
+        "document_chunks": 411,
+        "documents": 31,
+        "evaluation_evidence": 0,
+        "evaluation_runs": 1,
+        "findings": 0,
+        "gaps": 0,
+        "requirements": 0,
+        "sieve_generation_events": 4,
+        "sieve_run_authorities": 18,
+        "sieve_runs": 46,
+        "validation_runs": 0
+      }
+    },
+    "after_second": {
+      "schema_hash": "844345a0a2fa007b628f84be8627a95b3deb5d7a94cb531386a0bfee2399b195",
+      "table_count": 23,
+      "row_counts": {
+        "approved_sources": 7,
+        "auditor_actions": 0,
+        "criteria": 18,
+        "criterion_applicability": 18,
+        "criterion_evaluations": 0,
+        "crumb_authority_refs": 146,
+        "crumb_chunk_links": 460,
+        "crumb_context": 63,
+        "crumb_quotes": 498,
+        "crumb_sources": 390,
+        "crumbs": 390,
+        "dashboard_runs": 0,
+        "document_chunks": 411,
+        "documents": 31,
+        "evaluation_evidence": 0,
+        "evaluation_runs": 1,
+        "findings": 0,
+        "gaps": 0,
+        "requirements": 0,
+        "sieve_generation_events": 4,
+        "sieve_run_authorities": 18,
+        "sieve_runs": 46,
+        "validation_runs": 0
+      }
+    },
+    "idempotent": true
+  },
+  "importer_anchor_refusal": {
+    "passed": true,
+    "error": "items[0].evidence_type requires at least one source context anchor"
+  },
+  "matrix_read_only": {
+    "before": {
+      "run_id": "RUN-20261003-32",
+      "sha256": "0bc2c7e12206908f221cf6ca51e54ca692193799d056287e9eae6aac5149332a",
+      "criteria": 18,
+      "evidence_type_counts": {
+        "untyped": 189
+      },
+      "untyped_count": 189,
+      "unanchored_document_count": 189
+    },
+    "after": {
+      "run_id": "RUN-20261003-32",
+      "sha256": "0bc2c7e12206908f221cf6ca51e54ca692193799d056287e9eae6aac5149332a",
+      "criteria": 18,
+      "evidence_type_counts": {
+        "untyped": 189
+      },
+      "untyped_count": 189,
+      "unanchored_document_count": 189
+    },
+    "hash_unchanged": true,
+    "evaluation_runs_checked": [
+      "RUN-20261003-32"
+    ],
+    "active_sieve_run_count": 31
+  },
+  "all_checks_pass": true
+}
