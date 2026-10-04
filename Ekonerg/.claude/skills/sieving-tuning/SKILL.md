@@ -17,5 +17,5 @@ If evidence is unclear, retain the active generation. Reject regressions;
 roll back only within the allowed local workflow and record the reason.
 
 Do not delete a generation or rewrite prompt history. Record the decision
-and score in the local prompt CHANGELOG, then record a reusable lesson in the
+and score in the local prompt CHANGELOG, then deposit a reusable lesson in the
 `sieving-run`, `crumb-quality`, or this skill. Never invent an approval.
