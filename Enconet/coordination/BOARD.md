@@ -123,6 +123,7 @@ and ADRs are the records.
 - `INDEX-REFRESH` — codex, released 2026-07-27T22:38:39Z
 - `OWNER-TEMP-CODEX-CONTINUATION` — codex, released 2026-09-03T16:00:21Z
 - `PIVOT-5` — codex, released 2026-10-04T16:31:01Z
+- `PIVOT-6` — codex, released 2026-10-04T16:43:21Z
 - `RAW-INTAKE-KNOWLEDGE` — codex, released 2026-07-16T04:49:37Z
 - `SUPPORT-SYSTEM-REVIEW-CC` — claude-code, released 2026-07-16T22:10:30Z
 - `SUPPORT-SYSTEM-SPEC` — codex, released 2026-07-16T22:17:10Z
@@ -291,10 +292,11 @@ and ADRs are the records.
 - `CX_2026-10-04T161426Z_doc0016-context-pilot-blocked` — review_request, codex -> claude-code: PIVOT-5
 - `CX_2026-10-04T162236Z_doc0016-stale-candidate-rejection-approved` — acknowledgement, codex -> both: PIVOT-5
 - `CX_2026-10-04T162245Z_doc0016-context-pilot-result` — review_request, codex -> claude-code: PIVOT-5
+- `CX_2026-10-04T164311Z_doc0022-context-pilot-result` — review_request, codex -> claude-code: PIVOT-6
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 756 records in `coordination/archive/`
 
-Generated: 2026-10-04T16:31:01Z
+Generated: 2026-10-04T16:43:21Z
