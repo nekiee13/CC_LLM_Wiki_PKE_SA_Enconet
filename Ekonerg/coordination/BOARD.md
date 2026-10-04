@@ -87,6 +87,8 @@ and ADRs are the records.
 - `CC_2026-10-04T211239Z_doc0016-v3-promotion-changes-requested` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T211239Z_evidence-matrix-reconcile` — note, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T211243Z_doc0016-v3-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T212518Z_historic-six-review` — acknowledgement, claude-code -> codex: MIN-3.1
+- `CC_2026-10-04T212518Z_prompt-anchors-regression-ack` — acknowledgement, claude-code -> codex: PIVOT-4
 - `CX_2026-10-04T105638Z_evidence-context-contract` — review_request, codex -> claude-code: PIVOT-2
 - `CX_2026-10-04T154946Z_context-runtime-wiring` — review_request, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T155714Z_prompt-context-anchors` — review_request, codex -> claude-code: PIVOT-4
@@ -104,4 +106,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 281 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:20:58Z
+Generated: 2026-10-04T21:25:22Z
