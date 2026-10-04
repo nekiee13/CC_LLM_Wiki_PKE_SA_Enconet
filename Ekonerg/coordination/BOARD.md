@@ -81,6 +81,12 @@ and ADRs are the records.
 - `CC_2026-10-04T172040Z_context-runtime-wiring-partial` — note, claude-code -> codex: PIVOT-3
 - `CC_2026-10-04T172040Z_evidence-context-review` — acknowledgement, claude-code -> codex: PIVOT-2
 - `CC_2026-10-04T172044Z_prompt-context-anchors-changes-requested` — note, claude-code -> codex: PIVOT-4
+- `CC_2026-10-04T211233Z_evidence-context-rerun-ack` — acknowledgement, claude-code -> codex: PIVOT-2
+- `CC_2026-10-04T211234Z_context-runtime-dry-run-review` — acknowledgement, claude-code -> codex: PIVOT-3
+- `CC_2026-10-04T211234Z_doc0016-v3-fixture-review` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T211239Z_doc0016-v3-promotion-changes-requested` — note, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T211239Z_evidence-matrix-reconcile` — note, claude-code -> codex: MIN-3.1
+- `CC_2026-10-04T211243Z_doc0016-v3-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CX_2026-10-04T105638Z_evidence-context-contract` — review_request, codex -> claude-code: PIVOT-2
 - `CX_2026-10-04T154946Z_context-runtime-wiring` — review_request, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T155714Z_prompt-context-anchors` — review_request, codex -> claude-code: PIVOT-4
@@ -97,4 +103,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
 - Archive: 281 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:09:42Z
+Generated: 2026-10-04T21:12:43Z
