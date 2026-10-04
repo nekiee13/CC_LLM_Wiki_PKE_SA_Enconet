@@ -1,7 +1,7 @@
 # Q12 DOC-0021 generation decision
 
-**Status:** Approved by owner on 2026-10-04  
-**Approval reference:** `Q12-DOC0021-GEN2-PROMOTE-20261004-OWNER`  
+**Status:** Approved by owner on 2026-10-04
+**Approval reference:** `Q12-DOC0021-GEN2-PROMOTE-20261004-OWNER`
 **Candidate:** `RUN-20261004-42` (generation 2)  
 **Document:** `DOC-0021`  
 **Prompt:** `appb_document_v2_concept_recall`
