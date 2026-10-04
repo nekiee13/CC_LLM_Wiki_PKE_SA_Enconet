@@ -81,24 +81,10 @@ and ADRs are the records.
 - `CC_2026-10-04T172040Z_context-runtime-wiring-partial` — note, claude-code -> codex: PIVOT-3
 - `CC_2026-10-04T172040Z_evidence-context-review` — acknowledgement, claude-code -> codex: PIVOT-2
 - `CC_2026-10-04T172044Z_prompt-context-anchors-changes-requested` — note, claude-code -> codex: PIVOT-4
-- `CX_2026-10-03T200513Z_q09-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T202208Z_ack-q09-corrected-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-03T202935Z_doc0016-v2-golden-draft` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T063025Z_doc0006-partiii-rule-golden-draft` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T063205Z_ack-doc0016-golden-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T063553Z_ack-doc0006-golden-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T071511Z_doc0016-golden-owner-approved` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T072016Z_doc0016-gen2-promoted` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T074233Z_q12-doc0021-corrected-candidate` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T094600Z_g3-vendor-scoring-approved` — status, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T094808Z_g3-run-metadata-reconcile` — blocker, codex -> claude-code: MIN-3.1
 - `CX_2026-10-04T094846Z_ack-g3-run-metadata-reconcile` — acknowledgement, codex -> codex: MIN-3.1
 - `CX_2026-10-04T095621Z_historic-audit-pivot-analysis` — review_request, codex -> claude-code: MIN-3.1
-- `CX_2026-10-04T100616Z_activity-catalog-crosswalk` — review_request, codex -> claude-code: PIVOT-1
-- `CX_2026-10-04T100630Z_ack-concept-recall-pilot-findings` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T100630Z_ack-concept-recall-v2-activated-ack` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T100630Z_ack-concept-recall-v2-approve` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-04T100630Z_ack-conditional-guard-approve` — acknowledgement, codex -> claude-code: EK-6.3
 - `CX_2026-10-04T105638Z_evidence-context-contract` — review_request, codex -> claude-code: PIVOT-2
 - `CX_2026-10-04T154946Z_context-runtime-wiring` — review_request, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T155714Z_prompt-context-anchors` — review_request, codex -> claude-code: PIVOT-4
@@ -107,6 +93,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 254 records in `coordination/archive/`
+- Archive: 269 records in `coordination/archive/`
 
-Generated: 2026-10-04T17:40:50Z
+Generated: 2026-10-04T17:58:25Z
