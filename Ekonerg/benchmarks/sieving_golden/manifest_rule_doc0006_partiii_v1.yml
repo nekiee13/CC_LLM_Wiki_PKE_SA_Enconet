@@ -1,7 +1,7 @@
 schema_version: '1.0'
 fixture_version: ekonerg-rule-doc0006-partiii-v1-draft-2026-10-04
-status: pending_human_approval
-approval_ref: null
+status: approved
+approval_ref: GOLDEN-DOC0006-PARTIII-20261004-OWNER
 document:
   doc_id: DOC-0006
   filename: ASME_NQA-1_129-206_Part_3.md
@@ -66,4 +66,3 @@ expected_crumbs:
     source_locator: Subpart 3.1-2.1 > 700 Assessment of Performance
   quotes:
   - Work task objectives should be clearly established with in-process and final acceptance criteria.
-
