@@ -79,7 +79,12 @@ def _database(path: Path) -> None:
 def test_active_only_excludes_rejected_historical_runs(tmp_path, monkeypatch):
     database = tmp_path / "audit.sqlite"
     exceptions = tmp_path / "link_exceptions.csv"
-    exceptions.write_text("crumb_id,quote_id,reason,approved_by,date\n", encoding="utf-8")
+    exceptions.write_text(
+        "crumb_id,quote_id,reason,approved_by,date\n"
+        "ITEM-HISTORIC,QUOTE-HISTORIC,legacy link,Owner,2026-10-05\n"
+        "ITEM-MISSING,QUOTE-MISSING,legacy link,Owner,2026-10-05\n",
+        encoding="utf-8",
+    )
     _database(database)
     monkeypatch.setattr(validate_traceability, "local_path", lambda value: Path(value))
 
@@ -90,5 +95,5 @@ def test_active_only_excludes_rejected_historical_runs(tmp_path, monkeypatch):
         database, exceptions_path=exceptions, active_only=True
     )
 
-    assert any("QUOTE-HISTORIC" in error for error in strict_errors)
+    assert any("QUOTE-MISSING" in error for error in strict_errors)
     assert live_errors == []

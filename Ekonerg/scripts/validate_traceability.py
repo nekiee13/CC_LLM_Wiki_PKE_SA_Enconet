@@ -61,8 +61,9 @@ def validate(db_path: Path, *, exceptions_path: Path = EXCEPTIONS,
         if not quotes:
             errors.append("database has no crumb quotes")
         quote_keys = {(row["item_id"], row["quote_id"]) for row in quotes}
-        for key in sorted(approved - quote_keys):
-            errors.append(f"exception has no local quote: {key[1]}")
+        if not active_only:
+            for key in sorted(approved - quote_keys):
+                errors.append(f"exception has no local quote: {key[1]}")
         for quote in quotes:
             key = (quote["item_id"], quote["quote_id"])
             links = conn.execute(
