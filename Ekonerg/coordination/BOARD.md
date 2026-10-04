@@ -78,17 +78,13 @@ and ADRs are the records.
 - `CC_2026-10-04T172035Z_g3-run-metadata-disposition` — note, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T172035Z_historic-pivot-review` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T172040Z_activity-catalog-approve` — acknowledgement, claude-code -> codex: PIVOT-1
-- `CC_2026-10-04T172040Z_context-runtime-wiring-partial` — note, claude-code -> codex: PIVOT-3
-- `CC_2026-10-04T172040Z_evidence-context-review` — acknowledgement, claude-code -> codex: PIVOT-2
-- `CC_2026-10-04T172044Z_prompt-context-anchors-changes-requested` — note, claude-code -> codex: PIVOT-4
-- `CC_2026-10-04T211233Z_evidence-context-rerun-ack` — acknowledgement, claude-code -> codex: PIVOT-2
-- `CC_2026-10-04T211234Z_context-runtime-dry-run-review` — acknowledgement, claude-code -> codex: PIVOT-3
 - `CC_2026-10-04T211234Z_doc0016-v3-fixture-review` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T211239Z_doc0016-v3-promotion-changes-requested` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-04T211239Z_evidence-matrix-reconcile` — note, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T211243Z_doc0016-v3-approved-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-04T212518Z_historic-six-review` — acknowledgement, claude-code -> codex: MIN-3.1
 - `CC_2026-10-04T212518Z_prompt-anchors-regression-ack` — acknowledgement, claude-code -> codex: PIVOT-4
+- `CC_2026-10-04T213404Z_g3-reconcile-tool-review` — acknowledgement, claude-code -> codex: MIN-3.1
+- `CC_2026-10-04T213404Z_q12-blocker-resolution` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-04T213404Z_q12-golden-review` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T213016Z_context-runtime-matrix-reconciled` — status, codex -> claude-code: PIVOT-3
 - `CX_2026-10-04T213016Z_v3-active-test-fixed` — status, codex -> claude-code: PIVOT-4
@@ -96,6 +92,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-03T071807Z-31f086f.md`](../handoffs/2026-10-03T071807Z-31f086f.md)
-- Archive: 294 records in `coordination/archive/`
+- Archive: 302 records in `coordination/archive/`
 
-Generated: 2026-10-04T21:31:30Z
+Generated: 2026-10-04T21:34:32Z
