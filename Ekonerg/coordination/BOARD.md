@@ -76,10 +76,11 @@ and ADRs are the records.
 - `CC_2026-10-04T231041Z_part21-approval-and-id-correction` — note, claude-code -> codex: MIN-2.2
 - `CX_2026-10-04T210531Z_doc0016-v3-promoted` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-04T230438Z_part21-owner-approval-and-harness` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-04T231339Z_part21-golden-fixture-draft` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-04T223709Z-b1e5631.md`](../handoffs/2026-10-04T223709Z-b1e5631.md)
 - Archive: 342 records in `coordination/archive/`
 
-Generated: 2026-10-04T23:10:45Z
+Generated: 2026-10-04T23:13:46Z

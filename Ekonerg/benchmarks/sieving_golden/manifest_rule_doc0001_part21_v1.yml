@@ -1,0 +1,87 @@
+schema_version: "1.0"
+fixture_version: "ekonerg-rule-doc0001-part21-v1-draft-2026-10-05"
+status: pending_human_approval
+approval_ref: null
+document:
+  doc_id: DOC-0001
+  filename: "10CFR_Part_21.md"
+  side: RULE
+  purpose: "Draft calibration for exact 10 CFR Part 21 requirement extraction."
+  authority_role: GOVERNING
+  applicability: APPLICABLE
+prompt_version: appb_rule_v1
+expected_crumbs:
+  - item_id: R01-DOC0001-001
+    criterion_id: APP_B_XVI
+    criterion_name: Corrective Action
+    statement: "Part 21 requires procedures to evaluate deviations and failures to comply for reportable defects and substantial safety hazards within 60 days of discovery."
+    source:
+      source_locator: "§ 21.21(a)(1)"
+    quotes:
+      - "Evaluate deviations and failures to comply to identify defects and failures to comply associated with substantial safety hazards as soon as practicable, and, except as provided in paragraph (a)(2) of this section, in all cases within 60 days of discovery"
+  - item_id: R01-DOC0001-002
+    criterion_id: APP_B_XVI
+    criterion_name: Corrective Action
+    statement: "Part 21 requires an interim report when a potentially safety-significant evaluation cannot be completed within 60 days."
+    source:
+      source_locator: "§ 21.21(a)(2)"
+    quotes:
+      - "Ensure that if an evaluation of an identified deviation or failure to comply potentially associated with a substantial safety hazard cannot be completed within 60 days from discovery of the deviation or failure to comply, an interim report is prepared and submitted to the Commission"
+  - item_id: R01-DOC0001-003
+    criterion_id: APP_B_I
+    criterion_name: Organization
+    statement: "Part 21 requires timely notification of the director or responsible officer after completion of the evaluation when a defect or safety-significant failure to comply is identified."
+    source:
+      source_locator: "§ 21.21(a)(3)"
+    quotes:
+      - "Ensure that a director or responsible officer subject to the regulations of this part is informed as soon as practicable, and, in all cases, within the 5 working days after completion of the evaluation"
+  - item_id: R01-DOC0001-004
+    criterion_id: APP_B_XVI
+    criterion_name: Corrective Action
+    statement: "Part 21 sets initial and written NRC notification timing for identified defects or failures to comply."
+    source:
+      source_locator: "§ 21.21(d)(3)"
+    quotes:
+      - "Initial notification by facsimile, which is the preferred method of notification, to the NRC Operations Center at (301) 816 - 5151 or by telephone at (301) 816 - 5100 within two days following receipt of information by the director or responsible corporate officer under paragraph (a)(1) of this section, on the identification of a defect or a failure to comply."
+      - "Written notification to the NRC at the address specified in § 21.5 within 30 days following receipt of information by the director or responsible corporate officer under paragraph (a)(3) of this section, on the identification of a defect or a failure to comply."
+  - item_id: R01-DOC0001-005
+    criterion_id: APP_B_XVI
+    criterion_name: Corrective Action
+    statement: "Part 21 written reports include the corrective action taken, planned, or ongoing and identify the responsible person or organization and completion time."
+    source:
+      source_locator: "§ 21.21(d)(4)(vii)"
+    quotes:
+      - "The corrective action which has been, is being, or will be taken; the name of the individual or organization responsible for the action; and the length of time that has been or will be taken to complete the action."
+  - item_id: R01-DOC0001-006
+    criterion_id: APP_B_IV
+    criterion_name: Procurement Document Control
+    statement: "Part 21 requires applicable procurement documents for facilities or basic components to specify that Part 21 applies."
+    source:
+      source_locator: "§ 21.31"
+    quotes:
+      - "Each individual, corporation, partnership, dedicating entity, or other entity subject to the regulations in this part shall ensure that each procurement document for a facility, or a basic component issued by him, her or it on or after January 6, 1978, specifies, when applicable, that the provisions of 10 CFR Part 21 apply."
+  - item_id: R01-DOC0001-007
+    criterion_id: APP_B_XVII
+    criterion_name: Quality Assurance Records
+    statement: "Part 21 requires retention of deviation evaluations and supplier notifications for at least five years, with longer purchaser-record periods for basic components."
+    source:
+      source_locator: "§ 21.51(a)(1)-(3)"
+    quotes:
+      - "Retain evaluations of all deviations and failures to comply for a minimum of five years after the date of the evaluation;"
+      - "Suppliers of basic components must retain any notifications sent to purchasers and affected licensees for a minimum of five years after the date of the notification."
+      - "Suppliers of basic components must retain a record of the purchasers of basic components for 10 years after delivery of the basic component or service associated with a basic component."
+  - item_id: R01-DOC0001-008
+    criterion_id: APP_B_VI
+    criterion_name: Document Control
+    statement: "Part 21 requires current regulations and adopted procedures to be posted where covered activities are conducted."
+    source:
+      source_locator: "§ 21.6(a)"
+    quotes:
+      - "Each individual, partnership, corporation, dedicating entity, or other entity subject to the regulations in this part shall post current copies of --"
+      - "The regulations in this part;"
+      - "Procedures adopted pursuant to the regulations in this part."
+authority_references:
+  - authority_role: GOVERNING
+    source_code: DOC-0001
+    source_locator: "§ 21.6; § 21.21; § 21.31; § 21.51"
+    applicability: APPLICABLE

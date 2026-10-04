@@ -68,15 +68,19 @@ two quotes without links. Claude's review identifies seven non-exact active
 crumbs when counting the source-side quote set; this count difference is under
 reconciliation and is not being hidden by matcher relaxation.
 
-The full item IDs in Claude's raw-source check are:
+The corrected non-exact list is recorded by quote ID and full item ID:
 
-- `CRUMB-DOC-0030-APP_B_XVI-0002`
-- `CRUMB-DOC-0030-APP_B_XVI-0003`
-- `CRUMB-DOC-0019-APP_B_III-0003`
-- `CRUMB-DOC-0001-APP_B_XVI-0003`
-- `CRUMB-DOC-0001-APP_B_XVI-0004`
-- `CRUMB-DOC-0011-APP_B_VI-0002`
-- `CRUMB-DOC-0011-APP_B_VI-0003`
+- `QUOTE-DOC-0030-0002-01` — `CRUMB-DOC-0030-APP_B_XVI-0002`
+- `QUOTE-DOC-0030-0003-01` — `CRUMB-DOC-0030-APP_B_XVI-0003`
+- `QUOTE-DOC-0019-0004-01` — `CRUMB-DOC-0019-APP_B_III-0003`
+- `QUOTE-DOC-0001-0004-01` — `CRUMB-DOC-0001-APP_B_XVI-0003`
+- `QUOTE-DOC-0001-0006-01` — `CRUMB-DOC-0001-APP_B_IV-0001`
+- `QUOTE-DOC-0011-0010-01` — `CRUMB-DOC-0011-APP_B_VI-0002`
+- `QUOTE-DOC-0011-0011-01` — `CRUMB-DOC-0011-APP_B_VI-0003`
+
+`CRUMB-DOC-0001-APP_B_XVI-0004` is not listed because its quote is an exact
+match. `CRUMB-DOC-0001-APP_B_XVI-0003` contains one exact quote and one
+non-exact quote; only `QUOTE-DOC-0001-0004-01` is listed above.
 
 The owner decision `R01-PART21-GEN2-PROMOTE-20261005-OWNER` is now recorded in
 `manifests/approvals.csv`. The controlled promotion command remains blocked
