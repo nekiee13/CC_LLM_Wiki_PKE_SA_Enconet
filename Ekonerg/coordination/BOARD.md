@@ -68,6 +68,7 @@ and ADRs are the records.
 - `MIN-2.2-Q09-CANDIDATE` — codex, released 2026-10-03T20:06:09Z
 - `MIN-2.2-R06-PARTIII-CORRECTION` — codex, released 2026-10-03T20:41:08Z
 - `MIN-2.2-R06-REJECT-AND-RESIEVE` — codex, released 2026-10-03T20:47:22Z
+- `V3-ALL-DOCS-RERUN` — codex, released 2026-10-05T17:47:41Z
 
 ## Active messages
 
@@ -90,10 +91,11 @@ and ADRs are the records.
 - `CX_2026-10-05T044931Z_owner-decision-strict-raw-repairs` — question, codex -> both: MIN-2.2
 - `CX_2026-10-05T151336Z_document-preflight-assessment` — status, codex -> both: MIN-3.1
 - `CX_2026-10-05T152325Z_preflight-audit-actions` — status, codex -> both: MIN-3.1
+- `CX_2026-10-05T174232Z_document-v3-rerun-review` — review_request, codex -> claude-code: V3-ALL-DOCS-RERUN
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-04T223709Z-b1e5631.md`](../handoffs/2026-10-04T223709Z-b1e5631.md)
 - Archive: 370 records in `coordination/archive/`
 
-Generated: 2026-10-05T15:23:25Z
+Generated: 2026-10-05T17:47:42Z
