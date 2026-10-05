@@ -1,7 +1,8 @@
 # MIN-2.2 owner decision request — strict raw-source repairs
 
-Status: waiting for two explicit owner decision references. No active
-generation has been changed.
+Status: owner-approved on 2026-10-06. The two approved repairs were applied
+as quote-only migrations because downstream evaluation evidence prevented a
+generation swap.
 
 ## What is being asked
 
@@ -43,10 +44,12 @@ Suggested reference IDs (owner may choose different IDs):
 
 ## Safety and next step
 
-The candidates are inactive. The active generations remain unchanged until
-both owner decisions are recorded in `manifests/approvals.csv`, then the
-controlled promotion command is run and the strict validator is rerun.
-Historical generations are retained; no source document or audit rating is
-deleted by this repair.
+The owner decisions are recorded in `manifests/approvals.csv`. The controlled
+promotion command was attempted for both candidates and refused by its
+downstream-evidence safety gate. The approved source-exact quote text was then
+applied to the two existing active quote records without changing generation,
+crumb ID, source document, or audit rating. Historical generations remain
+retained. See `MIN_2_2_STRICT_QUOTE_MIGRATION_20261006.md` for hashes and
+validation.
 
 Claude's review: `CC_2026-10-05T011103Z_strict-candidates-review`.

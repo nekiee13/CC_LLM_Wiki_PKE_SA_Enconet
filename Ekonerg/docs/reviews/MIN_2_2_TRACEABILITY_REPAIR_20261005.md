@@ -151,3 +151,12 @@ MIN-2.2 remains open. Requirement coverage is green, the harness passes, and
 the Part 21 corrected generation is promoted. The remaining gate is unresolved
 historical traceability differences. No audit score, finding, or conclusion is
 produced while the aggregate gate is red.
+
+## Owner-approved active quote resolution — 2026-10-06
+
+The owner approved the corrected source copy. Because downstream evaluation
+evidence prevents swapping the two historical generations, the affected active
+quote strings were repaired in place with source-exact text. Active-only
+traceability and aggregate validation now pass. The migration record is
+`MIN_2_2_STRICT_QUOTE_MIGRATION_20261006.md`; historical candidate generations
+remain retained and unchanged.

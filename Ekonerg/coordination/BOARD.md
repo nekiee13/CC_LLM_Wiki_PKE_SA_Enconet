@@ -123,10 +123,11 @@ and ADRs are the records.
 - `CX_2026-10-05T230005Z_judgment-form-evidence` — status, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T230005Z_scored-dashboard-review-ready` — review_request, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T230751Z_tool-run-closure` — status, codex -> claude-code: EK-7.1
+- `CX_2026-10-05T231838Z_strict-repairs-applied` — status, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 414 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:09:43Z
+Generated: 2026-10-05T23:18:38Z

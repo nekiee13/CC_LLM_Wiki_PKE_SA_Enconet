@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "migration": "strict-quote-repair",
+  "owner_decision": "Owner approved use of corrected source copy on 2026-10-06",
+  "database": "db/nqa_audit.sqlite",
+  "database_sha256_before": null,
+  "database_sha256_after": "d7b3657ac2d3687edc7ad0a62c9da742d311e771f51acb1d1c4ace53698be32e",
+  "note": "The quote update transaction committed before the first manifest write failed on a relative-path calculation. Quote-level before/after hashes are recorded below; active-only traceability validation passed afterward.",
+  "entries": [
+    {
+      "quote_id": "QUOTE-DOC-0019-0004-01",
+      "item_id": "CRUMB-DOC-0019-APP_B_III-0003",
+      "run_id": "RUN-20261003-14",
+      "decision_ref": "REPAIR-DOC0019-GEN2-20261006-OWNER",
+      "before_sha256": "d53b41046acd71501634151b89c09ec32977d812834fb8d1acbfe29e6d870dfe",
+      "after_sha256": "543522f2870f5c48a044c90dc20ad2b2ed12e1522cefca754a15d5a2940f21ef"
+    },
+    {
+      "quote_id": "QUOTE-DOC-0011-0034-01",
+      "item_id": "CRUMB-DOC-0011-APP_B_VI-0008",
+      "run_id": "RUN-20261005-51",
+      "decision_ref": "REPAIR-DOC0011-GEN3-20261006-OWNER",
+      "before_sha256": "0d52146f3e8500712e976e34e0d504a78f4104606ea5f5b3df60ae878cef8016",
+      "after_sha256": "3868289f15d0306979d8727ebd49ed102ee44f7bdde012f52411331c1e29ccff"
+    }
+  ]
+}
