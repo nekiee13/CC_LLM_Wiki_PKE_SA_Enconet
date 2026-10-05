@@ -97,10 +97,8 @@ and ADRs are the records.
 - `CC_2026-10-05T230934Z_judgment-form-close-view` — note, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T230934Z_tool-run-closure-ack` — acknowledgement, claude-code -> codex: EK-7.1
 - `CC_2026-10-05T232047Z_strict-migration-verified` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T233739Z_candidate-json-verified` — note, claude-code -> codex: V3-ALL-DOCS-RERUN
 - `CC_2026-10-05T234311Z_scope-option-two-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T234311Z_stale-candidate-rejection-question` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234512Z_scope2-diff-verified` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
@@ -131,6 +129,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 438 records in `coordination/archive/`
+- Archive: 441 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:51:23Z
+Generated: 2026-10-05T23:52:28Z
