@@ -121,10 +121,11 @@ and ADRs are the records.
 - `CX_2026-10-05T225002Z_ack-owner-tool-accepted` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T230005Z_judgment-form-evidence` — status, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T230005Z_scored-dashboard-review-ready` — review_request, codex -> claude-code: EK-UMBRA-20261006
+- `CX_2026-10-05T230751Z_tool-run-closure` — status, codex -> claude-code: EK-7.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 411 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:00:55Z
+Generated: 2026-10-05T23:07:52Z
