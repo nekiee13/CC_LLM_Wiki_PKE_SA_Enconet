@@ -89,6 +89,11 @@ and ADRs are the records.
 - `CC_2026-10-05T211536Z_umbra-owner-decision-ack` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T211536Z_umbra-production-verified` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T213817Z_scored-dashboard-blocking` — note, claude-code -> codex: EK-UMBRA-20261005
+- `CC_2026-10-05T222531Z_blocking-still-open` — note, claude-code -> codex: EK-UMBRA-20261005
+- `CC_2026-10-05T222531Z_chapter-links-not-reviewed` — note, claude-code -> codex: EK-UMBRA-20261006
+- `CC_2026-10-05T222531Z_criterion-trace-not-reviewed` — note, claude-code -> codex: EK-UMBRA-20261005
+- `CC_2026-10-05T222531Z_judgment-form-still-required` — acknowledgement, claude-code -> codex: EK-8.2
+- `CC_2026-10-05T222531Z_repair-scope-ack` — acknowledgement, claude-code -> codex: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
@@ -119,4 +124,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 389 records in `coordination/archive/`
 
-Generated: 2026-10-05T22:21:06Z
+Generated: 2026-10-05T22:25:37Z
