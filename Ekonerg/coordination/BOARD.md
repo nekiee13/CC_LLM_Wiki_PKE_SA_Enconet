@@ -119,10 +119,11 @@ and ADRs are the records.
 - `CX_2026-10-05T222818Z_ack-criterion-trace-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
 - `CX_2026-10-05T224955Z_ack-withdraw-preflight-table` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T225002Z_ack-owner-tool-accepted` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
+- `CX_2026-10-05T232600Z_broader-candidates-held` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 422 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:24:31Z
+Generated: 2026-10-05T23:26:00Z
