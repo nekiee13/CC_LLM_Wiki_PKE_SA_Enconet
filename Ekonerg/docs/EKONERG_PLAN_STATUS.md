@@ -54,7 +54,7 @@ made.*
 | EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | 🟡 Registered, extracted, chunked; controlled RULE test passed; full sieving pending |
 | EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | 🟡 Registered, extracted, chunked; controlled objective-evidence test passed; full batches pending |
 | EK-6 | EK-6.3 — Review evidence quality and approve G2 | ✅ G2 approved; 18 applicability rows applied for RUN-20261003-32 |
-| EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | 🟡 In progress — G3 approved; 18 judgment template ready |
+| EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | 🟡 In progress — G3 approved; document pre-flight assessment recorded; formal evaluation remains separate |
 | EK-7 | EK-7.2 — Draft findings and follow-up actions | ⬜ Not started |
 | EK-8 — Generate, test, and release Croatian outputs | EK-8.1 — Build the report and evidence package | ⬜ Not started |
 | EK-8 | EK-8.2 — Test the dashboard and complete owner UAT | 🟡 Dashboard generated and tested; owner UAT/Claude review pending |
@@ -78,7 +78,11 @@ made.*
 - EK-6.3 G2 is approved under `G2-RUN-20261003-32`. Twelve criteria are
   applicable and six remain conditional in scope; none is a final N/A. The
   18-row applicability matrix is written to the database. G3 model approval is
-  recorded as `G3-RUN-20261003-32`; the next open input is 18 human judgments.
+  recorded as `G3-RUN-20261003-32`. The document pre-flight assessment is
+  recorded in `docs/reviews/MIN_3_1_DOCUMENT_PREFLIGHT_20261005.md`; it uses
+  the established Enconet classification vocabulary and identifies the
+  evidence route for the real audit. Formal database ratings remain a separate
+  final-audit step.
 - EK-1.2 is the current open task: the local support-tool foundation (`agent_coord.py`,
   `run_validation.py`, `make_handoff.py`, `check_guidance_drift.py`,
   `check_skill_structure.py`, and their tests) is reviewed and approved, but the task as a
@@ -102,10 +106,10 @@ made.*
 The offline UMBRA evidence dashboard is published at
 `out/2026-10-05/EKONERG_UMBRA_DASHBOARD_2026-10-05.html`. It shows the current
 intake and evidence counts, all 18 criteria, gate state, and the B01–B10 source
-batches. It deliberately withholds the score and final classification because
-zero of the 18 human criterion judgments are recorded. The next safe action is
-owner/auditor judgment entry, followed by G4 review; no rating is inferred from
-policy text or crumb counts.
+batches. The document pre-flight assessment is published separately in
+`docs/reviews/MIN_3_1_DOCUMENT_PREFLIGHT_20261005.md`; it is the working route
+for selecting real-audit samples and weak areas. The dashboard still withholds
+the formal score because no final database evaluation rows exist.
 
 ### Latest owner decisions — 2026-10-05
 
