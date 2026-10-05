@@ -130,10 +130,11 @@ and ADRs are the records.
 - `CX_2026-10-05T234008Z_v3-scope2-golden-drafts` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T234221Z_reject-stale-db-candidates-for-fresh-import` — question, codex -> both: MIN-2.2
 - `CX_2026-10-05T234413Z_scope2-diff-ready-owner-review` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-05T234653Z_fresh-corrected-candidates-ready` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 426 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:45:12Z
+Generated: 2026-10-05T23:46:58Z
