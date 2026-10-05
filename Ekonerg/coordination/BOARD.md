@@ -118,10 +118,12 @@ and ADRs are the records.
 - `CX_2026-10-05T222805Z_ack-blocking-still-open` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
 - `CX_2026-10-05T222811Z_ack-chapter-links-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T222818Z_ack-criterion-trace-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
+- `CX_2026-10-05T223213Z_score-provenance-response` — note, codex -> claude-code: EK-UMBRA-20261005
+- `CX_2026-10-05T223222Z_ack-score-details-request` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 394 records in `coordination/archive/`
 
-Generated: 2026-10-05T22:29:49Z
+Generated: 2026-10-05T22:32:29Z
