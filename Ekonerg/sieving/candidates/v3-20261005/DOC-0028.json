@@ -1,0 +1,430 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0028",
+    "name": "PQ09.3_r6_Pregled_i_ocjena_sustava_kvalitete.md",
+    "date": "2019-01-30",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q04-DOC0028-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate management-review control: the procedure assigns management representatives and directors responsibility for preparing inputs, reviewing results, and assigning resources.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Predstavnik Uprave odgovoran je za pripremu svih podloga i njihovo prezentiranje Upravi (Direktoru EKONERG-a) u cilju obavljanja pregleda i donošenja ocjene sustava od strane Uprave.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor EKONERG-a nadležan je za razmatranje navedenih analiza, informacija i prijedloga, donošenje ocjene sustava i zaključaka o aktivnostima za poboljšanje sustava kvalitete, zaštite okoliša i sustava zaštite zdravlja i sigurnosti, te određivanje odgovornih osoba i sredstava za provedbu aktivnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0028-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Candidate program-review control: management review monitors system performance, applicable requirements, policy implementation, and quality objectives.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj se postupak primjenjuje na obvezne aktivnosti Uprave, u cilju praćenja uspješnosti i prikladnosti sustava kvalitete (uključujući i sustav kvalitete verifikacijske djelatnosti), sustava zaštite okoliša, sustava zaštite zdravlja i sigurnosti, sustava upravljanja energijom te zadovoljavanja zahtjeva primjenjivih standarda te provedbu utvrđene politike kvalitete, zaštite okoliša, zaštite zdravlja i sigurnosti i upravljanja energijom, te postizanja ciljeva u sustavu kvalitete, sustavu zaštite okoliša, sustavu zaštite zdravlja i sigurnosti i sustavu upravljanja energijom.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0028-003",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Candidate management-input control: management review considers audit findings, supplier reports, corrective-action status, complaints, training reports, and changes affecting the quality system.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.1"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregled i ocjena sustava kvalitete, uključujući i sustav kvalitete verifikacijske djelatnosti, od strane Uprave zasniva se na:\n\n- ▪ nalazima iz analize uspješnosti proizvoda i usluga (uspješnost i djelotvornost radnih postupaka na postizanje zahtijevane kvalitete, zadovoljstvo naručitelja/korisnika usluga)\n- ▪ izvještaju o radu dobavljača\n- ▪ nalazima iz internih provjera (audita) primjene i uspješnosti elemenata sustava kvalitete za postizanje utvrđenih ciljeva u kvaliteti proizvoda ili usluge\n- ▪ izvještaju o statusu korektivnih/preventivnih akcija\n- ▪ izvještajima o reklamacijama, prigovorima i žalbama\n- ▪ informacijama o promjenama uvjeta koji utječu na sustav kvalitete (nove tehnologije, novi koncepti za postizanje kvalitete, promjena tržišne strategije, promjena društvenih uvjeta, uvjeti okoliša)\n- ▪ obrazloženim prijedlozima za poboljšanje sustava kvalitete\n- ▪ aktivnostima s prethodne upravine ocjene\n- ▪ izvještaju o školovanju i treningu osoblja i dr.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0028-004",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate improvement control: management review produces written conclusions, improvement actions, responsible persons, resources, and due dates when needed.",
+      "item_type": "action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.5 Pregled i ocjena sustava"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati pregleda i zaključci, kao i odluke o daljnjim aktivnostima za poboljšanje sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom te odgovornim osobama i sredstvima za provedbu aktivnosti, daju se u pisanom obliku, u formi ocjene te preporuka za poboljšanje. Prema potrebi određuje se rok za provedbu i osoba za provjeru provedbe aktivnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0028-005",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate periodic-review control: management review is performed at least annually.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.6 Pregled i ocjena sustava"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregled i ocjena sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom od strane uprave obavlja se prema potrebi, na osnovi dokumenata s analizama, informacijama i prijedlozima, te uz inicijativu Predstavnika Uprave ili Voditelja Q/EP/HS službe, ali najmanje jednom godišnje.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0028-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate management-review records control: review input documents are kept in the Q/EP/HS and director archives for at least two years.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI > 4.1"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dokumenti iz t.3.1, 3.2, 3.3 i 3.4 ovog postupka čuvaju se u arhivi Q/EP/HS službe i arhivi Direktora EKONERG-a.\n\nRok za obvezno čuvanje dokumenta je najmanje 2 godina od dana izdavanja.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_VIII-0007",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ izvještaju o statusu korektivnih/preventivnih akcija",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_VIII-0008",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ statusu korektivnih i preventivnih akcija",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_VIII-0009",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ statusu istraživanja uzroka nezgoda te korektivnih i preventivnih akcija",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XI-0010",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 2.4. Direktori odjela dužni su pratiti ostvarenje planova unutar svog odjela i o tome periodički izvještavati Upravu",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XI-0011",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ izvještaju o radu dobavljača",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XI-0012",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ izvještajima o reklamacijama, prigovorima i žalbama",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XI-0013",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ izvještaju o školovanju i treningu osoblja i dr.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIII-0014",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovim se postupkom definiraju nadležnosti i odgovornosti za pregled od strane Uprave, sadržaj i opseg informacija o djelotvornosti sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti, sustava upravljanja energijom i okolnostima djelovanja, te opseg aktivnosti sudionika u postupku.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIII-0015",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 2.2. Voditelj Q/EP/HS službe odgovoran je za pripremu periodičkih analiza i informacija o uvjetima za primjenu sustava kvalitete, zaštite okoliša i zaštite zdravlja i sigurnosti, o uspješnosti primjene svih navedenih sustava, o zapažanjima o odstupanjima, primjedbama i reklamacijama Naručitelja, te eventualnim prijedlozima za poboljšanja sustava kvalitete, zaštite okoliša i sustava zaštite zdravlja i sigurnosti; dokument s analizama i informacijama Voditelj Q/EP/HS službe dužan je podnijeti na razmatranje direktoru EKONERG-a, te inicirati pregled sustava kvalitete, zaštite okoliša te sustava zaštite zdravlja i sigurnosti od strane Uprave.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIII-0016",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2.5. Direktor EKONERG-a nadležan je za razmatranje navedenih analiza, informacija i prijedloga, donošenje ocjene sustava i zaključaka o aktivnostima za poboljšanje sustava kvalitete, zaštite okoliša i sustava zaštite zdravlja i sigurnosti, te određivanje odgovornih osoba i sredstava za provedbu aktivnosti.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIII-0017",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ informacijama o promjenama uvjeta koji utječu na sustav kvalitete (nove tehnologije, novi koncepti za postizanje kvalitete, promjena tržišne strategije, promjena društvenih uvjeta, uvjeti okoliša)",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIV-0018",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIV-0019",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Predstavnik Uprave odgovoran je za pripremu svih podloga i njihovo prezentiranje Upravi (Direktoru EKONERG-a) u cilju obavljanja pregleda i donošenja ocjene sustava od strane Uprave. Ukoliko Predstavnik uprave nije imenovan, njegovu nulogu preuzima Voditelj Q/EP/HS službe.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIV-0020",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Vodeći verifikator, vezano za sustav kvalitete verifikacijske djelatnosti, odgovoran je za pripremu periodičkih analiza i ostalih podloga za ocjenu sustava.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0028-APP_B_XIV-0021",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.1. Pregled i ocjena sustava kvalitete, uključujući i sustav kvalitete verifikacijske djelatnosti, od strane Uprave zasniva se na:",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK"
+        }
+      ]
+    }
+  ]
+}

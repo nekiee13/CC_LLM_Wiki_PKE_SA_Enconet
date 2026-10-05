@@ -1,0 +1,473 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0024",
+    "name": "PQ08.4-2_r9_Kontrola_nabave.md",
+    "date": "2021-01-29",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q07-DOC0024-001",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate procurement scope: controls apply when Ekonerg orders a product or service and aim to ensure purchased outputs meet quality and regulatory requirements.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg and 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj se postupak primjenjuje u slučaju kad EKONERG naručuje neki proizvod ili uslugu.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Svrha ovog postupka je da uspostavi mjere kontrole koje osiguravaju da usluge ili proizvodi, naručeni po EKONERG-u, zadovoljavaju zahtjeve sustava kvalitete, sustava kvalitete Laboratorija, sustava kvalitete verifikacijske djelatnosti, sustava zaštite okoliša, sustava zaštite zdravlja i sigurnosti pri radu te da su u skladu s primjenjivom regulativom, standardima, propisima i drugim zahtjevima prema nabavnoj dokumentaciji.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0024-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate procurement-responsibility control: directors, assigned staff, and Q/EP/HS roles cover purchasing, supplier evaluation, requirements flow-down, oversight, verification, and record review.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zaduženi suradnik u odjelu/EKONERG-u odgovoran je za pripremu podloga za nabavu, pripremu nabavne dokumentacije, organizaciju nadzora nad izvođenjem radova i verifikaciju rezultata usluga, odnosno prijemnu kontrolu elemenata/usluga isporučenih od dobavljača, te pregled prateće dokumentacije/zapisa.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za unošenje zahtjeva osiguranja kvalitete, zahtjeva zaštite okoliša te zahtjeva sustava zaštite zdravlja i sigurnosti pri radu u nabavnu dokumentaciju, te za kontrolu provedbe mjera dobavljačevog sustava osiguranja kvalitete, zaštite okoliša i sustava zdravlja i sigurnosti ako to od njega zatraži Direktor odjela ili Direktor EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0024-003",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate supplier-selection control: supplier evaluation considers experience, qualifications, quality-system maturity, delivered quality, and price.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1. Evaluacija i izbor dobavljača"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osnovno mjerilo pri izboru dobavljača je njegova sposobnost da obavi uslugu/isporuči proizvod u skladu sa zahtjevima iz nabavne dokumentacije.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Evaluacija se provodi na temelju:\n\n1. 1) iskustva i dosadašnjih referentnih radova,\n2. 2) tehničke osposobljenosti i kvalifikacije osoblja dobavljača,  \n   razvijenosti sustava kvalitete, sustava zaštite okoliša te sustava zaštite zdravlja i sigurnosti  \n   pri radu\n3. 3) kvalitete dotad isporučenih usluga/elemenata,\n4. 4) cijene.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0024-004",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "Candidate procurement-document content control: procurement documents include scope, technical requirements, acceptance, quality-program elements, required records, nonconformance approval, and flow-down to lower-tier suppliers.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zahtjevi koje EKONERG uključuje u nabavnu dokumentaciju sastoje se od (ako je primjenjivo):",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "11) zahtjeva o prenošenju nabavnih zahtjeva na dobavljačeve poddobavljače",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "10) zahtjeva za izvještavanjem i odobrenjem neusklađenosti",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0024-005",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Candidate purchased-service inspection control: supplier work may be checked by planned surveillance, supplier-system review, and review of quality evidence and records.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.3. Kontrola naručenih usluga ili proizvoda"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "naručene usluge ili proizvodi podliježu po potrebi kontroli tijekom obavljanja usluga ili proizvodnje proizvoda koja se može sastojati od:\n\n1. 1) planskog nadzora tijekom obavljanja rada,\n2. 2) provjere sustava kvalitete, sustava zaštite okoliša ili sustava zaštite zdravlja i sigurnosti\n3. 3) pregleda dokumentacije kojom se dokazuje kvaliteta, ispunjenje zahtjeva u području zaštite okoliša i zaštite zdravlja i sigurnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0024-006",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate acceptance control: Ekonerg accepts supplier products or services through signatures, review, testing, or planned quality controls, and confirms completeness and quality by signature.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.4. Preuzimanje usluge/proizvoda"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Proizvodi ili usluge prema ugovoru s drugim poduzećima preuzimaju se na osnovi provjere sustava kvalitete i, ako je primjenljivo, sustava zaštite okoliša i zaštite zdravlja i sigurnosti kod dobavljača, nadzora tijekom obavljanja aktivnosti, provjere dokumenata, pregleda ili ispitivanja po isporuci potpisom odgovorne osobe, osnosno u skladu s predviđenim u planu kvalitete.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Kompletnost i kvaliteta naručene usluge/proizvoda potvrđuje se potpisom Direktora odjela / Voditelja tima nositelja radnog naloga na okončanoj situaciji.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0024-007",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate procurement-record control: procurement, supplier quality evidence, surveillance reports, final verification, handover, and incoming inspection are retained as quality records.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nabavna (ugovorna) dokumentacija čuva se kao zapis osiguranja kvalitete u skladu s postupkom PQ.7.5-7 \"Kontrola zapisa\".",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Izvještaji s provjera i nadzora i završne verifikacije (recenzije), odnosno primopredaje i ulazne kontrole također predstavljaju zapise i tretiraju se u skladu s postupkom PQ.7.5-7.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_VIII-0008",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. 5) identifikacije zahtjeva kvalitete i elemenata programa osiguranja kvalitete,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_VIII-0009",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 6) identifikacije zahtjeva sustava zaštite okoliša naročito onih koji se odnose na utvrđene značajne aspekte okoliša,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_VIII-0010",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 7) identifikacije zahtjeva sustava zaštite zdravlja i sigurnosti naročito onih koji su izdvojeni u postupku prepoznavanja opasnosti i procjene rizika,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_VIII-0011",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 8) identifikacije potrebne dokumentacije kao što su postupci, upute, specifikacije, izvještaji o pregledima, zapisi kvalitete i zaštite okoliša koje treba pripremiti i dati na pregled i odobrenje EKONERG-u,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_IX-0012",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Evaluacija i izbor dobavljača"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 2) tehničke osposobljenosti i kvalifikacije osoblja dobavljača,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Evaluacija i izbor dobavljača"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XI-0013",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Zaduženi suradnik u odjelu/EKONERG-u odgovoran je za pripremu podloga za nabavu, pripremu nabavne dokumentacije, organizaciju nadzora nad izvođenjem radova i verifikaciju rezultata usluga, odnosno prijemnu kontrolu elemenata/usluga isporučenih od dobavljača, te pregled prateće dokumentacije/zapisa.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XI-0014",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. 10) zahtjeva za izvještavanjem i odobrenjem neusklađenosti,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIII-0015",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor EKONERG-a odgovoran je za sustav kontrole nabave u cilju da se usluge ili proizvodi naručeni po EKONERG-u obavljaju, odnosno, izrađuju u skladu sa zahtjevima sustava kvalitete, uključujući i sustave kvalitete Laboratorija i verifikacijske djelatnosti, zaštite okoliša, sustava zaštite zdravlja i sigurnosti pri radu, regulativom, standardima, propisima i ostalim zahtjevima specificiranim u nabavnoj dokumentaciji. Direktor EKONERG-a može dio svoje odgovornosti prenijeti na drugog suradnika u EKONERG-u.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIII-0016",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 2.4. Voditelj Q/EP/HS službe odgovoran je za unošenje zahtjeva osiguranja kvalitete, zahtjeva zaštite okoliša te zahtjeva sustava zaštite zdravlja i sigurnosti pri radu u nabavnu dokumentaciju, te za kontrolu provedbe mjera dobavljačevog sustava osiguranja kvalitete, zaštite okoliša i sustava zdravlja i sigurnosti ako to od njega zatraži Direktor odjela ili Direktor EKONERG-a. On je također odgovoran za odobrenje promjena na listi dobavljača koje predlažu Direktori odjela.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIII-0017",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Evaluacija i izbor dobavljača"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "razvijenosti sustava kvalitete, sustava zaštite okoliša te sustava zaštite zdravlja i sigurnosti",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Evaluacija i izbor dobavljača"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIII-0018",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Evaluacija i izbor dobavljača"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Utvrđivanje kompetencija osoba koje nisu zaposlene u EKONERG-u, a obavljaju aktivnosti koje mogu imati značajan utjecaj na okoliš, za ili u ime EKONERG-a, opisano je u postupku PQ.7.1-1.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Evaluacija i izbor dobavljača"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIV-0019",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA NABAVE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA NABAVE"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIV-0020",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 3) zahtjeva za pregledima i odredbe o načinu prihvaćanja proizvoda i usluga,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIV-0021",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 4) zahtjeva za mogućnost pristupa u prostorije i k dokumentaciji dobavljača u svrhu pregleda i provjera,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0024-APP_B_XIV-0022",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 9) zahtjeva za osiguranjem kontrolirane distribucije, čuvanja, održavanja i raspolaganja zapisima kvalitete i zaštite okoliša,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2. Nabavna dokumentacija"
+        }
+      ]
+    }
+  ]
+}

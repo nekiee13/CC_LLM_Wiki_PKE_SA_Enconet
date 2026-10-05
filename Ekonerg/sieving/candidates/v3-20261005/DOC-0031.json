@@ -1,0 +1,658 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0031",
+    "name": "Priručnik_sustava_upravljanja_rev.5.md",
+    "date": "2019-01-30",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q14-DOC0031-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Ekonerg states that quality is the task of all employees and identifies a quality service that supports the system.",
+      "item_type": "organization_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1.1. Osnovni podaci o EKONERG-u"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "EKONERG temelji svoje poslovanje na kvaliteti. Kvaliteta je stoga zadaća svih zaposlenih u poduzeću, a u takvom pristupu pomaže im Služba kvalitete, zaštite okoliša te zaštite zdravlja i sigurnosti (Q/EP/HS).",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: The management system includes a quality system aligned to ISO 9001 and 10 CFR 50 Appendix B.",
+      "item_type": "program_scope",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1.2."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "kvalitetom prema ISO 9001 (važeće izdanje) i 10 CFR 50 App. B.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-003",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: The manual has a dedicated Appendix B nuclear-application addendum and links shared requirements to the main manual.",
+      "item_type": "program_scope",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1.2.1. Struktura Priručnika sustava upravljanja"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "DODATAK 1: Zahtjevi prema 10 CFR 50 App. B.- nuklearna primjena",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "U dodacima Priručnika opisane su specifičnosti navedenih sustava te se navode reference na poglavlja osnovnog dijela Priručnika u dijelu gdje se zahtjevi podudaraju.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-004",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: The Q/EP/HS service lead controls issue, use, distribution, and revision of the management-system manual.",
+      "item_type": "document_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1.2.2. Izdavanje i izmjene"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za izdavanje, primjenu, distribuciju i izmjene Priručnika sustava upravljanja odgovoran je Voditelj Q/EP/HS službe koji obavlja i pregled.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-005",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: The Ekonerg director approves the management manual and its revisions by signature.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1.2.2. Izdavanje i izmjene"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odobrenje Priručnika sustava upravljanja, kao i njegovih revizija daje svojim potpisom direktor EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-006",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Controlled copies use a distribution list, revisions go to controlled-copy holders, obsolete copies are destroyed, and both current and obsolete originals are retained in the Q/EP/HS archive.",
+      "item_type": "document_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1.2.2. Izdavanje i izmjene"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontrolirane kopije podložne su promjenama i izdaju se korištenjem distribucijske liste.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Revizije Priručnika dostavljaju se posjednicima kontroliranih kopija, a zastarjele se kopije uništavaju.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-007",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: The current manual is available read-only on the Ekonerg intranet and originals are archived.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1.2.2. Izdavanje i izmjene"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Original važeće, kao i nevažećih revizija čuva se u arhivi Q/EP/HS službe.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Važeći primjerak Priručnika nalazi se kao \"read only\" verzija na intranet sustavu EKONERG-a, te je tako dostupan svim djelatnicima.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-008",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: The manual says requirements are applied or tailored according to Ekonerg activity scope and criterion applicability; applicability must be checked against the approved audit baseline.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "s tim da se pojedini zahtjevi primjenjuju, odnosno prilagođavaju zavisno o opsegu aktivnosti EKONERG-a, odnosno primjenjivosti pojedinog kriterija.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-009",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: The manual names 10 CFR 50 Appendix B and ASME NQA-1 as references used in the integrated management system.",
+      "item_type": "reference_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "10CFR50 App. B. „Quality assurance criteria for nuclear power plants“",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "ASME NQA-1 „Quality Assurance Program Requirements for Nuclear Facilities“",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-010",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "supporting_control: The manual defines a leadership section for management commitment, quality policy, roles, responsibilities, and authorities.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 5. VODSTVO"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "## 5. VODSTVO\n\n- 5.1. Opredjeljenje Uprave\n- 5.2. Politika kvalitete\n- 5.3. Uloge, odgovornosti i ovlasti",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-011",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: The manual identifies risk and opportunity planning, quality objectives, and planning of management-system changes.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 6. PLANIRANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "## 6. PLANIRANJE\n\n- 6.1. Prepoznavanje rizika i prilika\n- 6.2. Ciljevi kvalitete i planovi za ostvarenje istih\n- 6.3. Planiranje izmjena sustava",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-012",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: The manual maps design and development as a controlled realization process; detailed design evidence must be checked in its referenced procedures.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 8. REALIZACIJA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 8.3. Projektiranje i razvoj",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-013",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "candidate_lead: The manual maps control of purchased processes, products, and services; supplier evidence must be checked in referenced procedures.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 8. REALIZACIJA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 8.4. Kontrola nabavljenih procesa, proizvoda i usluga",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-014",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "candidate_lead: The manual maps internal audits and management review; audit execution evidence must be checked in the audit procedures and records.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 9. VREDNOVANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 9.2. Interne provjere",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "- 9.3. Pregled uprave",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-015",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "candidate_lead: The manual maps nonconformity and corrective action controls; implementation evidence must be checked in referenced procedures and records.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 10. POBOLJŠANJA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 10.2. Nesukladnosti sustava i korektivne akcije",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "- 10.3. Kontinuirano poboljšanje",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-016",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: The manual defines objective evidence as information, records, or facts about service quality that can be confirmed by observation or examination.",
+      "item_type": "objective_evidence",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > 3. POJMOVI I DEFINICIJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Objektivni dokaz\n\nInformacija, zapis ili činjenica, kvantitativna ili kvalitativna, koja se odnosi na kvalitetu usluge, a bazira se na promatranju ili ispitivanju koje može biti potvrđeno (dokazano).",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-017",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: The manual defines corrective action as removing the cause of a nonconformity and preventing recurrence.",
+      "item_type": "corrective_action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > 3. POJMOVI I DEFINICIJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Korektivna akcija\n\nRadnja kojom se uklanja uzrok utvrđene neusklađenosti i sprječava ponavljanje iste",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q14-DOC0031-018",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: The manual defines quality assurance as planned and systematic actions that provide confidence the product will meet quality requirements.",
+      "item_type": "quality_assurance_definition",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > 3. POJMOVI I DEFINICIJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osiguranje kvalitete\n\nPlanirane i sustavne akcije potrebne da se stekne uvjerenje da će proizvod zadovoljiti zadane zahtjeve za kvalitetu.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_VIII-0019",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.2.1. Struktura Priručnika sustava upravljanja"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osnovni dio Priručnika navodi i referira se na postupke sustava kvalitete, koji su označeni u skladu s poglavljima na koje se odnose.",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.2.1. Struktura Priručnika sustava upravljanja"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_VIII-0020",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > 3. POJMOVI I DEFINICIJE, KRATICE > Element (\"item\")"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Općeniti naziv za strukturu, sustav, komponentu, dio ili materijal.",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > 3. POJMOVI I DEFINICIJE, KRATICE > Element (\"item\")"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XI-0021",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.1. Osnovni podaci o EKONERG-u"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - Laboratorij za ispitivanje sposobnosti",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.1. Osnovni podaci o EKONERG-u"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XI-0022",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "HRN EN ISO/IEC 17043 – \"Ocjenjivanje sukladnosti - Opći zahtjevi za ispitivanje sposobnosti\"",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XI-0023",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > 3. POJMOVI I DEFINICIJE, KRATICE > Dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pisana ili slikovna informacija koja opisuje, definira, specificira, izvještava ili potvrđuje aktivnosti, zahtjeve, postupke ili rezultate.",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > 3. POJMOVI I DEFINICIJE, KRATICE > Dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XI-0024",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > Laboratorij > Nabavna dokumentacija"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ugovorna dokumentacija, kojom se određuju zahtjevi kojima proizvod ili usluga moraju udovoljiti da bi se smatrali prihvatljivim od strane Naručitelja. Nabavna dokumentacija uključuje ugovore, radne naloge, narudžbe, naloge za isporuku, specifikacije i ponude.",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 2. NORMATIVNE REFERENCE > Laboratorij > Nabavna dokumentacija"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIII-0025",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zaštitom zdravlja i sigurnosti pri radu prema ISO 45001**",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIII-0026",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 1.2. Sustav upravljanja kvalitetom, zaštitom okoliša te zdravljem i sigurnošću pri radu u EKONERG-u",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIII-0027",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.1. Osnovni podaci o EKONERG-u"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "EKONERG - Institut za energetiku i zaštitu okoliša (u daljem tekstu EKONERG) je društvo s ograničenom odgovornošću osnovano u Zagrebu 16.11.1992. Nastalo je pretvorbom jednog dijela bivšeg Instituta za elektroprivredu i njegov je pravni slijednik u području poslovanja Studijske jedinice za termoenergetske sustave. EKONERG time nastavlja pedesetogodišnju tradiciju uspješnog poslovanja.",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.1. Osnovni podaci o EKONERG-u"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIII-0028",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.1. Osnovni podaci o EKONERG-u"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Unutar Odjela za zaštitu atmosfere i klimatske promjene formirana je Služba za verifikacijsku djelatnost koja, neovisno o drugim organizacijskim jedinicama, obavlja poslove organizacije, pripreme i provedbe verifikacije emisija stakleničkih plinova iz postrojenja klijenata.",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.1. Osnovni podaci o EKONERG-u"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIV-0029",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Hurapsh"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Tomislav Hršak, dipl.ing.sig.",
+          "quote_language": "hr",
+          "source_locator": "Hurapsh"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIV-0030",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 8. REALIZACIJA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 8.1. Planiranje i kontrola",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 8. REALIZACIJA"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIV-0031",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > PRILOZI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "PRILOG 5: Tablica radnih i kontrolnih postupaka",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > PRILOZI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0031-APP_B_XIV-0032",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.2.1. Struktura Priručnika sustava upravljanja"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osnovni dio Priručnika u prilozima sadrži Izjavu o politici i ciljevima kvalitete, Opis i shematski prikaz organizacije EKONERG-a, Tablicu procesa i njihovih veza, Tablicu postupaka sustava kvalitete te Tablicu radnih i kontrolnih postupaka.",
+          "quote_language": "hr",
+          "source_locator": "PRIRUČNIK SUSTAVA UPRAVLJANJA > 1. UVOD > 1.2.1. Struktura Priručnika sustava upravljanja"
+        }
+      ]
+    }
+  ]
+}

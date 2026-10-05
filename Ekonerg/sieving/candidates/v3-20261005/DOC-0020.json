@@ -1,0 +1,448 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0020",
+    "name": "PQ08.2-1_r6_Odnosi_s_Naručiteljima.md",
+    "date": "2016-02-15",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q11-DOC0020-001",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: The customer-relations procedure covers contacts, needs, service problems, and complaints during or after delivery.",
+      "item_type": "scope_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ovog postupka je da definira odgovornosti i opiše postupke za kontakte s Naručiteljem u cilju prepoznavanja njegovih želja i potreba, razjašnjavanje eventualnih problema tijekom pružanja usluge/izrade proizvoda, te rješavanje primjedbi ili reklamacija Naručitelja tijekom izvođenja aktivnosti ili nakon isporuke usluge/proizvoda.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: The Ekonerg director is responsible for meeting customer and other requirements and for supervising customer communication.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 2. ODGOVORNOSTI > 2.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor EKONERG-a odgovoran je za odnose s Naručiteljima u smislu opredjeljenja za ispunjenje Naručiteljevih i ostalih zahtjeva u svrhu postizanja zadovoljstva Naručitelja, te za identifikaciju i upravljanje rizicima i mogućnostima u odnosima s Naručiteljima.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Department directors own customer communication and the logging and resolution of complaints for their activities.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 2. ODGOVORNOSTI > 2.2."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor odjela odgovoran je za komunikaciju s Naručiteljem, te za evidenciju i rješavanje primjedbi i reklamacija Naručitelja vezano uz djelatnosti svoga odjela, te osigurava prepoznavanje i upravljanje rizicima i mogućnostima za procese koji su u njegovoj nadležnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-004",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: The Q/EP/HS service lead records and analyzes complaints and may initiate preventive or corrective action.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 2. ODGOVORNOSTI > 2.5."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je evidentirati i analizirati primjedbe/reklamacije Naručitelja, o tome periodički izvještavati Direktora EKONERG-a, te po potrebi pokretati preventivne/korektivne akcije za sprječavanje nastajanja odnosno ponavljanja takvih reklamacija.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-005",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: The procedure requires a customer activity questionnaire for every laboratory work order.",
+      "item_type": "process_step",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 3.1.6."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor odjela za mjerenje i analitiku odmah po dovršenju radnog naloga iz djelokruga Laboratorija, šalje Naručitelju Upitnik za ocjenu aktivnosti, koji je prikazan u prilogu A ovog postupka. Upitnik se obvezno šalje za sve radne naloge.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-006",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: The procedure requires customer questionnaires for all level I and II activities or higher-value work orders.",
+      "item_type": "process_step",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 3.1.7."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osim povremenih kontakata s Naručiteljem Direktor odjela je dužan, odmah po dovršenju radnog naloga, poslati Naručitelju Upitnik za ocjenu aktivnosti, koji je prikazan u prilogu A ovog postupka. Upitnik se obvezno šalje za sve aktivnosti nivoa I i II definiranim u postupku PQ.7-1, odnosno za radne naloge čija vrijednost prelazi 50.000,00 kn.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-007",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Customer questionnaire responses are received, listed, analyzed, and reported to management.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 3.1.9."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odgovor Naručitelja – popunjeni Upitnik za ocjenu aktivnosti dostavlja se po primitku u EKONERG-u Voditelju Q/EP/HS službe, koji ih vodi u listi, analizira i o tome periodički izvještava Upravu.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-008",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: A restricted-access complaint list is maintained.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 4. ZAPISI > 4.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evidencija primjedbi/reklamacija vodi se u Listi reklamacija, na računalu uz ograničeni pristup (Voditelj Q/EP/HS službe)",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-009",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "objective_control: Complaints can be entered as nonconformance reports or corrective-action requests.",
+      "item_type": "nonconformance_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 3.3.3."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe po potrebi otvara Izvještaj o neusklađenosti (IN) prema postupku PQ.8-1 ili Zahtjev za korektivnu akciju (ZK) u skladu s postupkom PQ.8-4.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-010",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Complaint resolution is reported in writing, logged, and used to close a nonconformance or corrective-action record when conditions are met.",
+      "item_type": "corrective_action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 3.3.5."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "O rješenju svake primjedbe/reklamacije koja je ubilježena u Listu reklamacija Voditelj tima je dužan pisano izvijestiti Voditelja Q/EP/HS službe i Direktora odjela. Voditelj Q/EP/HS službe bilježi rješenje u Listi reklamacija, a također zatvara IN ili ZK, ako su za to ostvareni uvjeti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-011",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Complaint analysis is performed periodically and reported to the Ekonerg director.",
+      "item_type": "corrective_action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 3.4.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe periodički radi analizu reklamacija i o tome izvještava Direktora EKONERG-a",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q11-DOC0020-012",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Complaint records, resolution reports, and related nonconformance or corrective-action records are retained as quality records.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ODNOSI S NARUČITELJIMA > 4. ZAPISI > 4.2.–4.3."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pisane primjedbe/reklamacije ili zapis o usmenim primjedbama/reklamacijama čuvaju se kao zapisi u skladu s postupkom PQ.4-7.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Izvještaji/zapisi o rješenju primjedbe/reklamacije Naručitelja čuvaju se u arhivi odjela i Q/EP/HS službe.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Svi izvještaji o neusklađenosti (IN) ili zahtjevi za korektivnim akcijama (ZK) vezani uz primjedbe/reklamacije Naručitelja, čuvaju se kao zapisi u skladu s postupkom PQ.4-7.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_VIII-0013",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor EKONERG-a odgovoran je za odnose s Naručiteljima u smislu opredjeljenja za ispunjenje Naručiteljevih i ostalih zahtjeva u svrhu postizanja zadovoljstva Naručitelja, te za identifikaciju i upravljanje rizicima i mogućnostima u odnosima s Naručiteljima. Odgovoran je za nadzor komunikacije s Naručiteljima, te za uspostavu i usmjeravanje takve komunikacije na, za EKONERG, strateški važne Naručitelje.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XI-0014",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ovog postupka je da definira odgovornosti i opiše postupke za kontakte s Naručiteljem u cilju prepoznavanja njegovih želja i potreba, razjašnjavanje eventualnih problema tijekom pružanja usluge/izrade proizvoda, te rješavanje primjedbi ili reklamacija Naručitelja tijekom izvođenja aktivnosti ili nakon isporuke usluge/proizvoda. Postupanje u slučaju žalbi Naručitelja i prigovora Naručitelja i ostalih zainteresiranih strana, u sustavu kvalitete verifikacijske djelatnosti, na području verifikacije izvješća o emisijama stakleničkih plinova, opisano je postupcima PQV-04 i PQV-05.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XI-0015",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Voditelj tima odgovoran je komunikaciju s Naručiteljem vezano uz obavljanje svoga radnog naloga, te je o tome dužan izvještavati Direktora svoga odjela. On je također odgovoran za rješavanje primjedbi/reklamacija na radnom nalogu.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XI-0016",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. 2.5. Voditelj Q/EP/HS službe odgovoran je evidentirati i analizirati primjedbe/reklamacije Naručitelja, o tome periodički izvještavati Direktora EKONERG-a, te po potrebi pokretati preventivne/korektivne akcije za sprječavanje nastajanja odnosno ponavljanja takvih reklamacija.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XI-0017",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > ODNOSI S NARUČITELJEM"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2.6. QA voditelj Laboratorija odgovoran je evidentirati i analizirati primjedbe/reklamacije Naručitelja, o tome periodički izvještavati Direktora odjela za mjerenje i analitiku, te po potrebi predlagati pokretanje preventivnih/korektivnih akcija za sprječavanje nastajanja odnosno ponavljanja takvih reklamacija.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > ODNOSI S NARUČITELJEM"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XIII-0018",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK > 3.1. Komunikacija s Naručiteljem na nivou odjela"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. 3.1.5. Po pitanju kvalitete, zaštite okoliša ili zdravlja i sigurnosti, za odnose s Naručiteljem po potrebi se angažira Voditelj Q/EP/HS službe ili osoba koja je određena za navedena područja na pojedinom radnom nalogu (prema planu kvalitete).",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOSTI > 3. POSTUPAK > 3.1. Komunikacija s Naručiteljem na nivou odjela"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XIII-0019",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 4.2. Pisane primjedbe/reklamacije ili zapis o usmenim primjedbama/reklamacijama čuvaju se kao zapisi u skladu s postupkom PQ.4-7.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 4. ZAPISI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XIII-0020",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 4.2. Izvještaji/zapisi o rješenju primjedbe/reklamacije Naručitelja čuvaju se u arhivi odjela i Q/EP/HS službe.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 4. ZAPISI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XIII-0021",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 4.3. Svi izvještaji o neusklađenosti (IN) ili zahtjevi za korektivnim akcijama (ZK) vezani uz primjedbe/reklamacije Naručitelja, čuvaju se kao zapisi u skladu s postupkom PQ.4-7.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 4. ZAPISI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0020-APP_B_XIV-0022",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > ODNOSI S NARUČITELJIMA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > ODNOSI S NARUČITELJIMA"
+        }
+      ]
+    }
+  ]
+}

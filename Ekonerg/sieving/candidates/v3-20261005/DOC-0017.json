@@ -1,0 +1,358 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0017",
+    "name": "PQ08.1-1_r5_Svrstavanja_aktivnosti_u_nivoe_složenosti.md",
+    "date": "2016-03-10",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q06-DOC0017-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate scope control: complexity classification applies to all Ekonerg activities performed for customers and guides the quality plan.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj se postupak primjenjuje na sve aktivnosti koje EKONERG obavlja za potrebe Naručitelja.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0017-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Candidate classification control: activity levels reflect nuclear safety class and other health, safety, environmental, system, availability, and economic factors.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak definira svrstavanje aktivnosti u nivoe složenosti u ovisnosti o sigurnosnoj klasi (za nuklearna postrojenja), te o nekim drugim elementima kao što su: utjecaj na zdravlje ljudi, utjecaj na sigurnost objekta, postrojenja i okoliša, utjecaj na sisteme i komponente sigurnosne klase, utjecaj na raspoloživost, gospodarski značaj komponente ili postrojenja i dr.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0017-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate classification responsibility control: the director establishes the system, department directors classify activities and prepare quality plans, and Q/EP/HS participates.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor EKONERG-a odgovoran je za uspostavljanje sustava za svrstavanje EKONERG-ovih aktivnosti u nivoe složenosti.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor odjela odgovoran je za svrstavanje EKONERG-ovih aktivnosti u nivoe složenosti, te definiranje i izradu plana kvalitete za te aktivnosti u skladu s pridruženim nivoom složenosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0017-004",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Candidate level-I control: complex or safety-significant design, consulting, engineering, testing, and other services require a quality plan, work plan, and quality-control plan.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1.1. Nivo složenosti I"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U ovaj se nivo svrstavaju sve studijske/projektne, konzalting i inženjering aktivnosti, ispitivanja, te ostale usluge koje se odnose na sustave s utjecajem na sigurnost nuklearnih objekata, klasificirane u odgovarajuće sigurnosne klase prema primjenjivim propisima za nuklearnu energetiku.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Za ove se aktivnosti razvijaju i plan rada i plan nadzora kvalitete (plan kontrole) prema kojima se odvijaju aktivnosti i provodi njihova kontrola.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0017-005",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Candidate level-II control: consulting, engineering, testing, measurement, and environmental activities use quality plans and work plans proportionate to complexity and importance.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1.2. Nivo složenosti II"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U ovaj se nivo svrstavaju studijske/projektne, konzalting i inženjering aktivnosti, te ispitivanja i mjerenja:",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Za ove se aktivnosti razvijaju plan rada i plan kvalitete prema kojima se odvijaju aktivnosti i provodi njihova kontrola.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0017-006",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Candidate Ekonerg-scope clue: conventional energy and industrial consulting and engineering services are classified as level II activities.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.2.2. U nivo složenosti II svrstavaju se sljedeće aktivnosti"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ konzalting i inženjering usluge na konvencionalnim energetskim i industrijskim objektima i sustavima",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_IX-0007",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1. Definiranje nivoa kvalitete > 3.1.1. Nivo složenosti I"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "opseg QA nadzora (imenovanje QA inženjera), zahtjevi za kvalifikacijom ljudstva i opreme, radni postupci i upute, primjenjivi pri provedbi tih aktivnosti.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1. Definiranje nivoa kvalitete > 3.1.1. Nivo složenosti I"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XI-0008",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1. Definiranje nivoa kvalitete > 3.1.1. Nivo složenosti I"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U ovaj se nivo svrstavaju sve studijske/projektne, konzalting i inženjering aktivnosti, ispitivanja, te ostale usluge koje se odnose na sustave s utjecajem na sigurnost nuklearnih objekata, klasificirane u odgovarajuće sigurnosne klase prema primjenjivim propisima za nuklearnu energetiku. U ovaj nivo svrstavaju se i aktivnosti koje se unutar pojedinog nuklearnog objekta tretiraju kao bitne za kvalitetu (Augmented Quality), te modifikacije koje nose oznaku „L“ (Large).",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1. Definiranje nivoa kvalitete > 3.1.1. Nivo složenosti I"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XI-0009",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.2.Nivo složenosti II"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ mjerenjima garantiranih veličina na energetskim objektima, te ispitivanjima tehničkih karakteristika energetskih postrojenja i sustava",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.2.Nivo složenosti II"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XI-0010",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.3.Nivo složenosti III"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontrola i verifikacija aktivnosti provodi se minimalno od strane Direktora odjela, koji to potvrđuje potpisom na elaboratu/izvještaju.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.3.Nivo složenosti III"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XI-0011",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3.2. Svrstavanje aktivnosti u nivoe složenosti > 3.2.2.U nivo složenosti II svrstavaju se sljedeće aktivnosti:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ ispitivanja sustava i komponenata sekundarnog dijela NE",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3.2. Svrstavanje aktivnosti u nivoe složenosti > 3.2.2.U nivo složenosti II svrstavaju se sljedeće aktivnosti:"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XIII-0012",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.2.Nivo složenosti II"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ na sustavima i komponentama s utjecajem na pouzdanost i raspoloživost postrojenja, na zdravlje i sigurnost ljudstva, opreme i okoliša, te mogućim utjecajem na sustave i komponente sigurnosne klase",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.2.Nivo složenosti II"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XIII-0013",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.2.Nivo složenosti II"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ u području zaštite okoliša",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.2.Nivo složenosti II"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XIII-0014",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3.2. Svrstavanje aktivnosti u nivoe složenosti > 3.2.2.U nivo složenosti II svrstavaju se sljedeće aktivnosti:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ studije i analize iz područja zaštite okoliša",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3.2. Svrstavanje aktivnosti u nivoe složenosti > 3.2.2.U nivo složenosti II svrstavaju se sljedeće aktivnosti:"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XIV-0015",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > SVRSTAVANJE AKTIVNOSTI U NIVOE SLOŽENOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > SVRSTAVANJE AKTIVNOSTI U NIVOE SLOŽENOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XIV-0016",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1. Definiranje nivoa kvalitete > 3.1.1. Nivo složenosti I"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za ove se aktivnosti razvijaju i plan rada i plan nadzora kvalitete (plan kontrole) prema kojima se odvijaju aktivnosti i provodi njihova kontrola. Aktivnosti vezane za NEK obavljaju se i po postupcima NEK-a.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1. Definiranje nivoa kvalitete > 3.1.1. Nivo složenosti I"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0017-APP_B_XIV-0017",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.3.Nivo složenosti III"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kao minimalno primjenjuju se standardni postupci za ugovaranje i nabavu, kontrolu dokumentacije i zapisa, rješavanje neusklađenosti, te važeći radni postupci.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 3. POSTUPAK > 3.1.3.Nivo složenosti III"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0022",
+    "name": "PQ08.3-1_r4_Kontrola_studijskih_projektnih_radova_.md",
+    "date": "2016-03-06",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q13-DOC0022-001",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: The design-control procedure covers Ekonerg study and design work that is subject to the quality system.",
+      "item_type": "scope_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na sve studijske i projektne radove koje radi EKONERG, a za koje je obavezna primjena sustava kvalitete.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-002",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: The procedure requires compliance with applicable requirements, change control, oversight, review, and verification of results.",
+      "item_type": "design_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ovog postupka je da uspostavi mjere koje će osigurati da se studijski/projektni radovi rade u skladu s primjenjivim propisima i standardima, te ugovornim dokumentima, kao i omogućiti nadzor tijekom izrade, kontrolu promjena te pregled i verifikaciju rezultata u međufazama te po dovršenju aktivnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: The project lead applies regulatory, standards, quality, and contract requirements and controls design changes.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 2.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj tima (projekta) odgovoran je za primjenu zahtjeva primjenjivih propisa i standarda, zahtjeva kvalitete i ostalih zahtjeva iz ugovora pri izradi studijskih/projektnih radova. Isti je odgovoran za kontrolu promjena studijskog/projektnog rada.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-004",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Department management assigns qualified staff, reviews and verifies results, and approves the completed work.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 2.2.–2.4."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor odjela odgovoran je da tim za izradu studijskog/projektnog rada sačinjavaju kvalificirani i osposobljeni ljudi.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor odjela odgovoran je za pregled i verifikaciju rezultata studijskog/projektnog rada.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor EKONERG-a odgovoran je za odobrenje studijskog/projektnog rada nakon provedenog pregleda i verifikacije, što potvrđuje svojim potpisom.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Study and design work is planned through a quality plan, except for quality-level III activities.",
+      "item_type": "planning_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.1.2."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Studijski/projektni radovi planiraju se planom kvalitete, osim za aktivnosti nivoa kvalitete III.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-006",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Design inputs are reviewed and verified, and questions are resolved with the originators of requirements or inputs.",
+      "item_type": "design_input",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.1.3."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ulazni podaci studijskog/projektnog rada moraju biti pregledani i verificirani od strane odgovorne osobe za izradu studijskog/projektnog rada. Sve dileme moraju se riješiti s onima koji su postavili zahtjeve/ulazne podatke.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-007",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Design activities are documented so a third party can control and verify them.",
+      "item_type": "design_record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.1.4."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Studijske/projektne aktivnosti trebaju biti tako dokumentirane da omoguće trećoj osobi kontrolu i verifikaciju.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-008",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "objective_control: In-process design control follows the quality or control plan and is performed by an independent person or group.",
+      "item_type": "inspection_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.2.1.–3.2.2."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontrola studijskih/projektnih radova provodi se prema definiranom u planu kvalitete ili planu kontrole za povremenu kontrolu u tijeku izrade.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Kontrolu (nadzor) obavlja osoba (grupa) koju imenuje Direktor odjela, a koja direktno ne sudjeluje u izradi dotičnog studijskog/projektnog rada.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-009",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "objective_control: Quality oversight checks compliance with regulations, standards, specifications, and contract requirements, and its results are documented.",
+      "item_type": "inspection_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.2.6.–3.2.7."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nadzor kvalitete se provodi u svrhu provjere da li se studijski/projektni rad izrađuje prema primjenjivim propisima, standardima, regulativi, specifikacijama i ugovorenim zahtjevima.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Rezultati kontrole (nadzora) moraju biti dokumentirani.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-010",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Final design evaluation and verification are performed by defined reviewers who did not directly perform the work when required, and the results are documented.",
+      "item_type": "design_verification",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.3.1.–3.3.7."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluacija i verifikacija studijskog rada (završna recenzija) provodi se na način definiran u Planu kvalitete.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Za projektne radove nivoa kvalitete II grupu/osobu za internu recenziju određuje Direktor odjela. Recenziju provode pojedinci koji nisu sudjelovali direktno u izradi projektnog rada.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Rezultati evaluacije i verifikacije moraju biti dokumentirani.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-011",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Collaboration controls define responsibility for preparation, review, approval, issue, distribution, revision, communication, and documentation.",
+      "item_type": "document_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.4.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "pisanim putem se utvrđuje način suradnje, odgovornost svake grupe za pripremu, pregled, odobrenje, izdavanje, distribuciju i reviziju dokumenata koji uključuju suradnju (preklapanje). Utvrditće se način komunikacije pojedinih informacija uključujući promjene, te način kontrole i dokumentiranja.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-012",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Design changes and deviations are identified, analyzed, documented, and approved by the original approving authority, with customer approval when needed.",
+      "item_type": "change_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.5.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Promjene tijekom izrade studijskih/projektnih radova, odstupanja od traženih zahtjeva u referentnoj dokumentaciji i ugovoru te odstupanja od standarda kvalitete, moraju biti identificirana, analizirana, dokumentirana i odobrena od iste osobe koja je odobrila i originalni dokument, te po potrebi od Naručitelja.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-013",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "candidate_lead: The change-control procedure explicitly includes changes caused by nonconformance and corrective or preventive action; check the linked action records.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 3.5.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "promjena uslijed utvrđene neusklađenosti",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "promjena uslijed pokrenute korektivne/preventivne akcije",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q13-DOC0022-014",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Oversight reports, final review and verification records, and change records are retained under the record-control procedure.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a > 4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izvještaji o kontroli (nadzoru), završnoj recenziji (verifikaciji) studijskog/projektnog rada te zapisi o promjenama čuvaju se u skladu s postupkom PQ.7.5-7.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_VIII-0015",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.4. Kontrola suradnje pri izradi studijskih/projektnih radova**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Identifikacija, primjena, distribucija i kontrola QA dokumentacije (Priručnika, postupaka, planova, uputa i dr.) na nuklearnom području, obavlja se sukladno radnom postupku RSP-03.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.4. Kontrola suradnje pri izradi studijskih/projektnih radova**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_IX-0016",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Izrada studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 3.1.1. Studijski/projektni radovi uključuju: studije, izvještaje istraživanja, tendersku dokumentaciju, investicijske programe, idejna rješenja, izvještaje ispitivanja, idejne projekte, glavne i izvedbene projekte, projekte izvedenog stanja i sl.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Izrada studijskih/projektnih radova"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XI-0017",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Direktor odjela odgovoran je za pregled i verifikaciju rezultata studijskog/projektnog rada.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XI-0018",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Izrada studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.1.3. Ulazni podaci studijskog/projektnog rada moraju biti pregledani i verificirani od strane odgovorne osobe za izradu studijskog/projektnog rada. Sve dileme moraju se riješiti s onima koji su postavili zahtjeve/ulazne podatke. Priprema, održavanje i distribucija ulaznih podataka i projektnih kriterija za projektne radove na nuklearnom području, opisana je u radnom postupku RSP-04.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Izrada studijskih/projektnih radova"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XI-0019",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.2. Kontrola (nadzor) studijskih/projektnih radova**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.2.4. Ovisno o kompleksnosti studijskog/projektnog rada, u obzir dolaze razni opsezi pregleda, od potpune kontrole svih postupaka i proračuna do jednostavne kontrole pristupa i rezultata.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.2. Kontrola (nadzor) studijskih/projektnih radova**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XI-0020",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.2. Kontrola (nadzor) studijskih/projektnih radova**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.2.7. Rezultati kontrole (nadzora) moraju biti dokumentirani.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.2. Kontrola (nadzor) studijskih/projektnih radova**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XIV-0021",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA EKONERG-a"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XIV-0022",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Voditelj tima (projekta) odgovoran je za primjenu zahtjeva primjenjivih propisa i standarda, zahtjeva kvalitete i ostalih zahtjeva iz ugovora pri izradi studijskih/projektnih radova. Isti je odgovoran za kontrolu promjena studijskog/projektnog rada.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XIV-0023",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 2.4. Direktor EKONERG-a odgovoran je za odobrenje studijskog/projektnog rada nakon provedenog pregleda i verifikacije, što potvrđuje svojim potpisom.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0022-APP_B_XIV-0024",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Izrada studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.1.4. Studijske/projektne aktivnosti trebaju biti tako dokumentirane da omoguće trećoj osobi kontrolu i verifikaciju.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Izrada studijskih/projektnih radova"
+        }
+      ]
+    }
+  ]
+}

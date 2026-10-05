@@ -1,0 +1,436 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0021",
+    "name": "PQ08.2-2_r5_Priprema_i_postupanje_s_ugovornom_doku.md",
+    "date": "2016-03-18",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q12-DOC0021-001",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "objective_control: The procedure controls preparation, review, approval, and distribution of offers and contracts.",
+      "item_type": "procurement_document_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 1. UVOD"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ovog postupka je definiranje načina izrade ponuda, prijedloga ugovora, ugovora, njihov pregled i odobrenje, te distribucija ugovora potpisanih od ugovornih strana.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-002",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "supporting_control: The procedure applies whether Ekonerg is the supplier or the purchaser.",
+      "item_type": "scope_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na aktivnosti u kojima je EKONERG Izvoditelj ili Naručitelj.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: The department director owns the offer or contract content, scope, price, and schedule.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 2.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor odjela ili po njemu ovlaštena osoba (u daljnjem tekstu Direktor odjela) koji priprema ili ugovara posao odgovoran je za izradu ponude, prijedloga ugovora ili ugovora po sadržaju, opsegu, cijeni i rokovima.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-004",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: For supplier contracts, the department director analyzes the supplier offer or draft contract for content, scope, price, and schedule.",
+      "item_type": "supplier_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 2.2."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kod ugovaranja isporuke ili usluge s dobavljačima Direktor odjela nositelja posla odgovoran je za analizu ponude i/ili prijedloga ugovora dobavljača po sadržaju, opsegu, cijeni i rokovima.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: The Q/EP/HS service proposes quality, environmental, and health-and-safety requirements and measures for covered activities.",
+      "item_type": "quality_requirement",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 2.3."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe, na traženje Direktora odjela, priprema prijedlog zahtjeva i mjera osiguranja kvalitete, zaštite okoliša te zdravlja i sigurnosti za aktivnosti obuhvaćene ponudom/ugovorom.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-006",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "objective_control: The final internally agreed offer or draft contract is confirmed by review participants before signature.",
+      "item_type": "review_approval",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 3.3.5."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Konačnu verziju interno usuglašenog teksta ponude ili prijedloga ugovora na osnovi svojih podloga i podloga Voditelja Q/EP/HS službe, izrađuje Direktor odjela, te ga usuglašava s Nositeljem ugovaranja.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-007",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: Contract review collects the work order, contract, and quality plan when required by the quality level.",
+      "item_type": "supplier_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 3.5.4."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Prije pregleda ugovora Nositelj Ugovaranja prikuplja podatke o radnom nalogu iz programa za vođenje radnih naloga, ili, obrazaca PQ.7-3.2 i PQ.7-3.4, primjerak Ugovora i primjerak Plana kvalitete, ukoliko se isti traži definiranim Nivoom kvalitete.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-008",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Offers and contracts carry controlled identifiers and page numbering.",
+      "item_type": "document_identification",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 3.7.4."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ponude i ugovori koji se izrađuju u EKONERG-u moraju na svim stranicama osim prve imati u lijevom donjem uglu ispisan broj ponude ili ugovora, a u desnom donjem uglu ispisan redni broj stranice kroz ukupan broj stranica ponude ili ugovora.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-009",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: At supplier-contract closeout, the director confirms complete and quality-compliant work and supplier evaluation.",
+      "item_type": "supplier_control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 3.12.1."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "da je posao obavljen kompletno i kvalitetno u skladu s Ugovorom ili Narudžbenicom",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "da je izvršena ocjena Izvoditelja (Dobavljača) prema postupku PQ.7-7.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-010",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Inquiries and work-order records are retained in designated archives and systems.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > ZAPISI > 4.1.–4.2."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Upit odnosno zapis o upitu čuva se u arhivi radnog naloga kod Direktora odjela.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Evidencija radnih naloga po odjelima vodi se na intranetu u programu za vođenje radnih naloga ili kod Direktora odjela, te centralno kod Nositelja ugovaranja.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-011",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Final offers, contracts, signed-contract registers, and originals are retained as controlled quality records.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > ZAPISI > 4.3.–4.6."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Sve izrađene ponude ili prijedlozi ugovora u svojem konačnom tekstu nalaze se na intranetu u programu za vođenje radnih naloga, ili, u arhivi radnog naloga kod Nositelja ugovaranja",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Evidencija potpisanih ugovora i narudžbenica vodi se na PC-u programom Komercijala u informatičkom sustavu uz ograničeni pristup.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Originali ugovora i ponuda čuvaju se kao zapisi osiguranja kvalitete u skladu s točkom 3.6. i 3.10. ovog postupka i postupkom PQ.4-7.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q12-DOC0021-012",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: The Ekonerg director approves price and schedule calculations and signs offers, draft contracts, and contracts.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM > 2.5."
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor EKONERG-a ili po njemu ovlaštena osoba odobrava od strane Direktora odjela izrađenu kalkulaciju cijene i rokova izvršenja, potpisuje ponude, prijedloge ugovora i ugovore, te je odgovoran za njihov sadržaj kao cjeline.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XI-0013",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti** > **3.3. Izrada ponuda ili prijedloga ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.3.7. Po odluci Naručitelja, o odabiru najprihvatljivijeg Ponuditelja, gdje je primjenljivo, jedan primjerak odluke odlaže se u arhivu radnog naloga kod Nositelja ugovaranja.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti** > **3.3. Izrada ponuda ili prijedloga ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIII-0014",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak odnosi se na izradu i pregled ponuda, prijedloga ugovora narudžbi i ugovora, te njihovu distribuciju u EKONERG-Institutu za energetiku i zaštitu okoliša ( u daljem tekstu: EKONERG).",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIII-0015",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.3. Voditelj Q/EP/HS službe, na traženje Direktora odjela, priprema prijedlog zahtjeva i mjera osiguranja kvalitete, zaštite okoliša te zdravlja i sigurnosti za aktivnosti obuhvaćene ponudom/ugovorom.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIII-0016",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.1.3 Upit se čuva u arhivi Direktora odjela.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIII-0017",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti** > **3.3. Izrada ponuda ili prijedloga ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Original kalkulacije s prilogom čuva se na intranetu u programu za vođenje radnih naloga ili u arhivi radnog naloga kod Nositelja ugovaranja.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti** > **3.3. Izrada ponuda ili prijedloga ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIV-0018",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Tomislav Hršak, dipl.ing.             | Datum:      |  |",
+          "quote_language": "hr",
+          "source_locator": "PRIPREMA I POSTUPANJE S UGOVORNOM DOKUMENTACIJOM"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIV-0019",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti** > **3.3. Izrada ponuda ili prijedloga ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.3.5. Konačnu verziju interno usuglašenog teksta ponude ili prijedloga ugovora potvrđuju sudionici u pregledu na intranetu u programu za vođenje radnih naloga, ili, izuzetno, svojim potpisom na obrascu PQ.7-3.4 u prilogu D ovog postupka. Direktor odjela prosljeđuje ponudu ili prijedlog ugovora Direktoru na potpis, te dostavlja ponudu ili prijedlog ugovora Naručitelju.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.1. Upiti** > **3.3. Izrada ponuda ili prijedloga ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIV-0020",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.5. Izrada i pregled ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 3.5.2. U slučaju da tekst ugovora dostavlja Naručitelj, Direktor odjela dužan je pregledati usuglašenost teksta ugovora s usuglašenim tekstom ponude ili prijedloga ugovora.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.5. Izrada i pregled ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0021-APP_B_XIV-0021",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.5. Izrada i pregled ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 3.5.4. Za pregled ugovora prije potpisivanja odgovoran je Nositelj ugovaranja koji uključuje Voditelja Q/EP/HS, te po potrebi ostale suradnike u EKONERG-u. Prije pregleda ugovora Nositelj Ugovaranja prikuplja podatke o radnom nalogu iz programa za vođenje radnih naloga, ili, obrazaca PQ.7-3.2 i PQ.7-3.4, primjerak Ugovora i primjerak Plana kvalitete, ukoliko se isti traži definiranim Nivoom kvalitete. Pregled ugovora i suglasnost za potpis naznačuju sudionici u pregledu na intranetu u programu za vođenje radnih naloga, ili, izuzetno, svojim potpisom na obrascu PQ.7-3.4 u prilogu D ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3.5. Izrada i pregled ugovora kod kojih je EKONERG Izvoditelj**"
+        }
+      ]
+    }
+  ]
+}

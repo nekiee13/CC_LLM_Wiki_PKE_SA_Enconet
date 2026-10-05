@@ -1,0 +1,346 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0008",
+    "name": "PQ06.1_Upravljanje_rizicima.md",
+    "date": "2016-02-09",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q04-DOC0008-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate organization boundary: risk management applies across Ekonerg and to suppliers and subcontractors whose activities affect quality or products and services.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak se primjenjuje se na sve razine organizacije unutar EKONERG-a, kao i na aktivnosti dobavljača i podizvođača koji obavljaju aktivnosti od utjecaja na okoliš te na kvalitetu proizvoda i usluga EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0008-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Candidate risk-program control: the procedure identifies hazards, assesses risk, prepares risk-reduction actions, checks effectiveness, and identifies new opportunities.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ovog postupka je opisati prepoznavanje opasnosti u procesima, utvrđivanje metode za procjenu i procjena veličine rizika, izradu podloga za aktivnosti uklanjanja ili smanjenja rizika, kontrolu učinkovitosti poduzetih mjera te prepoznavanje novih mogućnosti/prilika.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0008-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate responsibility control: the Q/EP/HS lead coordinates risk methods and reports risk-management activities to management.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 2.2"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za:\n\n- ▪ suradnju s nadležnim osobama koji će obaviti prepoznavanje opasnosti u procesima, utvrđivanje metode za procjenu rizika, kontrolu učinkovitosti poduzetih mjera te prepoznavanje novih mogućnosti i prilika\n- ▪ prepoznavanje opasnosti te upravljanje rizicima i mogućnostima u procesima za koje je nadležan\n- ▪ izvještavanje poslovodstva o aktivnostima upravljanja rizicima",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0008-004",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Candidate risk-treatment control: medium and high risks are addressed through quality plans, objectives, programs, or new and revised procedures and instructions.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.3 Aktivnosti tretmana rizika"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Mjere za uklanjanje, smanjenje ili prenošenje srednjih rizika poduzimaju se kroz planove kvalitete ili srodne dokumente.\n\nMjere za uklanjanje, smanjenje ili prenošenje velikih rizika provode se kroz ugradnju u ciljeve i programe kvalitete, ili izradu novih, odnosno korekciju postojećih, postupaka/uputa.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0008-005",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate effectiveness-check control: Q/EP/HS checks the effectiveness of risk measures and residual risks during internal quality and environmental audits.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.4 Kontrola učinkovitosti poduzetih mjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontrola učinkovitosti poduzetih mjera i kontrola preostalih rizika obavlja se od strane Q/EP/HS službe na internim auditima sustava kvalitete i sustava zaštite okoliša.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0008-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate record control: hazard lists are retained by the Q/EP/HS lead, with copies held by department directors.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Liste opasnosti čuvaju se kod voditelja Q/EP/HS službe kao zasebni dokumenti, a kopije kod direktora odjela.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_VIII-0007",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Procjena veličine svakog pojedinog rizika s Liste opasnosti obavlja se prema Matrici procjene rizika (prilog 1). Nakon procjene, na Listi opasnosti označuju se procjenjeni rizici kao veliki, srednji i mali rizici.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XI-0008",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 2.2. Voditelj Q/EP/HS službe odgovoran je za:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ izvještavanje poslovodstva o aktivnostima upravljanja rizicima",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 2.2. Voditelj Q/EP/HS službe odgovoran je za:"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XI-0009",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kriterij za procjenu rizika je odnos između vjerojatnosti pojave istog i posljedice koje može izazvati.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XI-0010",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > Matrica procjene rizika:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Procjena učinkovitosti i preostalog rizika | Mjere su učinkovite i preostali rizik je prihvatljiv                                                                                                                         |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > Matrica procjene rizika:"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XI-0011",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3.3 Aktivnosti tretmana rizika"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rizici utvrđeni kao mali rizici tretiraju se kao prihvatljivi i nema obveze daljnjeg postupanja.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3.3 Aktivnosti tretmana rizika"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XIII-0012",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1 Prepoznavanje opasnosti u procesima"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - izrada liste svih opasnosti u sustavu zaštite okoliša",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1 Prepoznavanje opasnosti u procesima"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XIII-0013",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika > Vjerojatnost:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 1. | <b>Malo vjerojatno</b> | Ne bi se trebalo dogoditi, zaštitne mjere kvalitetno implementirane |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika > Vjerojatnost:"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XIII-0014",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika > Vjerojatnost:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 2. | <b>Vjerojatno</b>      | Može se dogoditi, zaštitne mjere otežavaju događaj                  |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika > Vjerojatnost:"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XIII-0015",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika > Vjerojatnost:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 3. | <b>Vrlo vjerojatno</b> | Događa se učestalo, zaštitne mjere nedovoljne                       |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.2 Utvrđivanje metode za procjenu i procjena veličine rizika > Vjerojatnost:"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XIV-0016",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > UPRAVLJANJE RIZICIMA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > UPRAVLJANJE RIZICIMA"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0008-APP_B_XIV-0017",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 2.2. Voditelj Q/EP/HS službe odgovoran je za:"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ suradnju s nadležnim osobama koji će obaviti prepoznavanje opasnosti u procesima, utvrđivanje metode za procjenu rizika, kontrolu učinkovitosti poduzetih mjera te prepoznavanje novih mogućnosti i prilika",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 2.2. Voditelj Q/EP/HS službe odgovoran je za:"
+        }
+      ]
+    }
+  ]
+}

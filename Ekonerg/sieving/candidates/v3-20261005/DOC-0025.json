@@ -1,0 +1,469 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0025",
+    "name": "PQ08.4-3_r11_Evaluacija_i_izbor_dobavljača.md",
+    "date": "2019-01-30",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q07-DOC0025-001",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate supplier-evaluation scope: the procedure covers important products and services Ekonerg orders and defines evaluation, selection, supplier-list status, and re-evaluation.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg and 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se odnosi na sve važnije elemente/usluge koje EKONERG naručuje.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Svrha postupka je definirati odgovornost za provedbu, te način provođenja evaluacije i izbora dobavljača, vođenje liste dobavljača, te provjera i ocjenjivanje za održanje/promjene statusa na listi.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0025-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate supplier-governance control: department directors, team leaders, Q/EP/HS, and the Ekonerg director have named evaluation and approval responsibilities.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor odjela odgovoran je za evaluaciju i izbor dobavljača, te njihovo ocjenjivanje i izmjene statusa na listi dobavljača.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za evaluaciju dobavljača po pitanju sustava kvalitete, zaštite okoliša i sustava zaštite zdravlja i sigurnosti, te ažuriranje liste dobavljača i odobrenje promjena u listi statusa dobavljača za cijeli EKONERG.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0025-003",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate supplier-evaluation control: technical and organizational ability, quality systems, references, site checks, delivered outputs, and user data are considered.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1-3.2. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluacija dobavljača sastoji se od ocjene tehničke i organizacijske sposobnosti, te ocjene sustava kvalitete i, ako je primjenljivo, sustava zaštite okoliša i sustava zaštite zdravlja i sigurnosti, odnosno sposobnosti da kvalitetno obavi tražene usluge ili isporuči traženi proizvod.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe ili od njega zaduženi Q/EP/HS inženjer, obavlja evaluaciju sustava kvalitete i, ako je primjenljivo, sustava zaštite okoliša i sustava zaštite zdravlja i sigurnosti dobavljača, na temelju provjere koju provodi kod dobavljača, odnosno podataka o kvaliteti koje dobije od dobavljača ili drugih korisnika dobavljačevih proizvoda/usluga.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0025-004",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate nuclear supplier qualification control: suppliers for safety-significant or augmented-quality activities require quality-system checks before engagement and receive NS or AQ qualification only when criteria are met.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.2. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za evaluaciju dobavljača na nuklearnom području, u sustavima koji unutar kategorizacije nuklearnog objekta utječu na sigurnost (NS) i aktivnostima koje se tretiraju kao bitne za kvalitetu (AQ), obvezna je provjera sustava kvalitete, prije odluke o angažmanu dobavljača.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "U slučaju da dobavljač ima sustav kvalitete sukladan sa zahtjevima za predmetnu narudžbu i provjerom je utvrđeno da zadovoljava kriterije 10 CFR 50 App. B., uvrštava se na listu odobrenih dobavljača i dodjeljuje mu se nuklearna kvalifikacija NS (Nuclear Safety) i/ili AQ (Augmented Quality).",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0025-005",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate supplier-status control: suppliers are grouped by full or partial satisfaction, with extra checks for group II suppliers.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.4-3.5. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U grupu I svrstavaju se oni dobavljači, koji u svim elementima zadovoljavaju zahtjeve.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "U grupu II svrstavaju se dobavljači, koji u nekom od elemenata ne zadovoljavaju ili djelomično zadovoljavaju. U tom slučaju u komentaru treba upisati obrazloženje za takvu ocjenu.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "EKONERG će prvenstveno koristiti dobavljače iz grupe I, a ako bude prisiljen angažirati dobavljače iz grupe II propisat će dodatne provjere i kontrole aktivnosti dobavljača.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0025-006",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate supplier-monitoring control: nuclear-qualified long-term suppliers receive periodic checks at least every three years.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.2. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dobavljači koji ostvare nuklearnu kvalifikaciju (NS i/ili AQ) postaju potencijalno dugoročni dobavljači, te se kod njih provode redovite provjere u odgovarajućim vremenskim razmacima (najmanje jednom u tri godine).",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0025-007",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate supplier-list record control: the combined supplier-status list, with changes and comments, is retained on the controlled intranet system.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Objedinjena lista statusa dobavljača sa svim promjenama i komentarima tih promjena čuva se na informatičkom sustavu (intranet), uz neograničeni pristup korištenja i kontroliranu izmjenu statusa na listi.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_VIII-0008",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor odjela odgovoran je za evaluaciju i izbor dobavljača, te njihovo ocjenjivanje i izmjene statusa na listi dobavljača.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_VIII-0009",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Voditelj Q/EP/HS službe odgovoran je za evaluaciju dobavljača po pitanju sustava kvalitete, zaštite okoliša i sustava zaštite zdravlja i sigurnosti, te ažuriranje liste dobavljača i odobrenje promjena u listi statusa dobavljača za cijeli EKONERG.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_VIII-0010",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ako je ocjena \"djelomično zadovoljava\" ili \"ne zadovoljava\", osoba koja daje ocjenu treba obvezno navesti i razlog takve ocjene (komentar), te po potrebi predložiti korekciju statusa dobavljača na listi dobavljača. Komentar može upisati i bez da predlaže promjenu statusa.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_IX-0011",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe dobavljačima dodjeljuje i nuklearnu kvalifikaciju.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_IX-0012",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju da dobavljač nema sustav kvalitete sukladan s kriterijima 10 CFR 50 App. B., a ima certificiran sustav kvalitete prema ISO 9001 i provjerom je utvrđeno da ima odgovarajuće resurse i osposobljeno osoblje koje može izvoditi aktivnosti u skladu sa zahtjevima sustava kvalitete EKONERG-a, uvjetno se uvrštava se na listu odobrenih dobavljača, no, ne dodjeljuje mu se nuklearna kvalifikacija (NS i/ili AQ). Takvi dobavljači izvode svoje aktivnosti u okviru EKONERG-ovog QA programa.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_IX-0013",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dobavljači koji ostvare nuklearnu kvalifikaciju (NS i/ili AQ) postaju potencijalno dugoročni dobavljači, te se kod njih provode redovite provjere u odgovarajućim vremenskim razmacima (najmanje jednom u tri godine). Na listi dobavljača se, za takve dobavljače, naznačuje rok do kojeg je potrebno obaviti slijedeću provjeru. U slučaju neplanskih provjera koje su vezane za konkretnu narudžbu, kod dobavljača čiji je sustav kvalitete sukladan 10 CFR 50 App. B., provodi se samo ograničena provjera vezana za konkretnu narudžbu. Ukoliko, u postupku izbora, dva ili više dobavljača zadovoljavaju iste kriterije, prednost se daje dobavljaču koji je ovlašten od strane URSJV ili DZRNS.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XI-0014",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U svim ostalim područjima, za dobavljače koji imaju certificirani sustav kvalitete prema HRN EN ISO 9001, odnosno, akreditirani su u skladu s HRN EN ISO 17025, odnosno, HRN EN ISO 14065, dodatna evaluacija po pitanju kvalitete od strane Voditelja Q/EP/HS službe nije potrebna, osim u posebnim slučajevima prema traženju Naručitelja ili kriterijima za neplanske provjere sukladno PQ.9.2.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XI-0015",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju da se kod isporuke proizvoda/usluge ustanove veći nedostaci, koji proizvod/uslugu čine neprihvatljivom, produžuju rokove aktivnosti EKONERG-a ili mu nanose štetu u odnosu s Naručiteljem, predlaže se, uz konzultaciju s Direktorom EKONERG-a, brisanje dobavljača s liste dobavljača.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XIII-0016",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 3.1. Evaluacija dobavljača sastoji se od ocjene tehničke i organizacijske sposobnosti, te ocjene sustava kvalitete i, ako je primjenljivo, sustava zaštite okoliša i sustava zaštite zdravlja i sigurnosti, odnosno sposobnosti da kvalitetno obavi tražene usluge ili isporuči traženi proizvod.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XIII-0017",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju da dobavljač ima certificirani sustav zaštite okoliša prema HRN EN ISO 14001, certificiran sustav zaštite zdravlja i sigurnosti prema HRN EN ISO 45001, dodatna evaluacija po pitanju zaštite okoliša i zaštite zdravlja i sigurnosti, od strane Voditelja Q/EP/HS službe, nije potrebna.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XIII-0018",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ poštivanje zahtjeva sustava zaštite zdravlja i sigurnosti",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XIII-0019",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.9. Voditelj Q/EP/HS službe odobrava ocjene i promjene na listi koje daju Direktori odjela. Objedinjena lista dobavljača se, sa svim promjenama i komentarima tih promjena, čuva u programu na intranetu EKONERG-a.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XIV-0020",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > EVALUACIJA I IZBOR DOBAVLJAČA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > EVALUACIJA I IZBOR DOBAVLJAČA"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XIV-0021",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ pregleda elementa/usluge koje je dotad dobavljač isporučio,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0025-APP_B_XIV-0022",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.5. EKONERG će prvenstveno koristiti dobavljače iz grupe I, a ako bude prisiljen angažirati dobavljače iz grupe II propisat će dodatne provjere i kontrole aktivnosti dobavljača.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    }
+  ]
+}

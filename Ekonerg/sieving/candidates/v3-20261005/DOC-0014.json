@@ -1,0 +1,350 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0014",
+    "name": "PQ07.5-5_r10_Kontrola_dokumenata_koji_nastaju_u_Ekonergu.md",
+    "date": "2021-02-05",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q03-DOC0014-001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate control: the procedure sets minimum requirements for preparing, reviewing, distributing, and storing controlled documents.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak daje minimum zahtjeva za pripremu, reviziju i distribuciju i spremanje kontroliranih dokumenata.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0014-002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate approval control: the Ekonerg director approves documents and their revisions where the procedure requires approval.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor EKONERG-a odgovoran je za odobrenje pojedinih dokumenata u skladu s ovim postupkom.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0014-003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate revision control: revisions and changes are prepared and reviewed, then approved by the Ekonerg director.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1. Priručnik > 3.1.4"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Revizije i promjene pripremaju i pregledavaju u pravilu iste osobe koje su pripremile/pregledale prethodnu reviziju dokumenta, a odobrava ih Direktor EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0014-004",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate distribution control: controlled documents are posted on the intranet or sent with a controlled distribution form and distribution list.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1. Priručnik > 3.1.5"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Distribucija Priručnika te njegovih revizija i promjena obavlja se unutar EKONERG-a elektroničkim putem objavom na intranetu, ili (za vanjske primatelje) korištenjem obrasca PQ.4-5.1 (prilog A ovog postupka) uz vođenje distribucijske liste (obrazac PQ.4-5.2, prilog B ovog postupka), koju vodi Voditelj Q/EP/HS službe.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0014-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate record control: the procedure assigns storage locations for quality plans and quality-control plans.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U > 4. SPREMANJE I ČUVANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Planovi kvalitete čuvaju se u kod Direktora odjela i/ili Voditelja tima te arhivi Q/EP/HS službe.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Planovi kontrole (nadzora) kvalitete čuvaju se u arhivi Q/EP/HS službe.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0014-006",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate periodic review control: document authors review documents at least every two years when no revision occurred.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U > 3.11.4"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Autori dokumenata navedenih pod točkama 3.1, 3.2, 3.3, 3.5, 3.6, 3.7, najmanje jednom u dvije godine obavljaju pregled i, prema potrebi, daju komentare o primjerenosti, za dokumente kod kojih u međuvremenu nije bilo revizija.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_VIII-0007",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U > **3.12. Označavanje kontroliranih dokumenata žigom**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontrolirane kopije Priručnika, postupaka sustava kvalitete, sustava zaštite okoliša i sustava zaštite zdravlja i sigurnosti te radnih i kontrolnih postupaka, ukoliko nisu distribuirane elektroničkim putem, označavaju se žigom **\"Kontrolirana kopija br.\"** prikazanim u prilogu C ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U > **3.12. Označavanje kontroliranih dokumenata žigom**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_VIII-0008",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U > **3.12. Označavanje kontroliranih dokumenata žigom**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nekontrolirana kopija kontroliranog dokumenta označava se žigom **\"SAMO ZA INFORMACIJU\"** prikazanim u prilogu C ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U > **3.12. Označavanje kontroliranih dokumenata žigom**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_VIII-0009",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Radni postupci čuvaju se u skladu s postupkom PQ.7.5-4. Za svaki postupak postoji statusna lista na kojoj je dana zadnja revizija. Na distribucijskoj listi, koju vodi Voditelj Q/EP/HS službe, za svaki je postupak vidljiv popis posjednika kontrolirane kopije. Uz distribucijsku listu čuvaju se obrasci PQ.4-5.1 kao dokaz o distribuciji zadnje revizije, ukoliko distribucija nije obavljena elektroničkim putem.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIII-0010",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. 2.5. Voditelj Q/EP/HS službe odgovoran je za izradu, pregled, revizije i promjene Priručnika sustava upravljanja, općih i specifičnih postupaka sustava kvalitete, sustava zaštite okoliša te sustava zaštite zdravlja i sigurnosti, planova kontrole (nadzora) kvalitete,",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIII-0011",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "unošenje zahtjeva kvalitete, zaštite okoliša i zaštite zdravlja i sigurnosti u ugovornu dokumentaciju i radne naloge, te sudjelovanje u izradi planova kvalitete.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIII-0012",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.6. Vodeći verifikator odgovoran je za pripremu, pregled, revizije i promjene Priručnika i postupaka sustava kvalitete verifikacijske djelatnosti. Imenuje ga direktor Odjela za zaštitu atmosfere i klimatske promjene.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIII-0013",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Priručnik sustava upravljanja kvalitetom, zaštitom okoliša te zaštitom zdravlja i sigurnošću pri radu (Priručnik)"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 3.1.2. Priručnik pregledava Predstavnik uprave za upravljanje kvalitetom, zaštitom okoliša te zdravljem i sigurnošću pri radu.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 3. POSTUPAK > 3.1. Priručnik sustava upravljanja kvalitetom, zaštitom okoliša te zaštitom zdravlja i sigurnošću pri radu (Priručnik)"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIV-0014",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA DOKUMENATA KOJI NASTAJU U EKONERG-U"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIV-0015",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor EKONERG-a odgovoran je za uspostavu i primjenu sustava kontrole svih dokumenata na koje se odnosi ovaj postupak.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIV-0016",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Direktor odjela odgovoran je za pregled, ažuriranje, distribuciju i spremanje dokumentacije, na koju se odnosi ovaj postupak, unutar svog odjela.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0014-APP_B_XIV-0017",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 2.4. Voditelj tima odgovoran je za izradu i pregled planova kvalitete, terminskih planova/planova rada, radnih postupaka i uputa koje se odnose na aktivnosti njegovog tima.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    }
+  ]
+}

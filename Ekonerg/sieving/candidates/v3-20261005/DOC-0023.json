@@ -1,0 +1,318 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0023",
+    "name": "PQ08.4-1_r3_Kontrola_studijskih_projektnih_radova_dobavljača.md",
+    "date": "2016-03-06",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q07-DOC0023-001",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Candidate supplier-design scope: the procedure controls all supplier study and design work subject to Ekonerg quality, environmental, and health and safety systems.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na sve studijske/projektne radove koje za EKONERG izvodi neka druga organizacija (dobavljač), a na koje se primjenjuje sustav kvalitete, zaštite okoliša te sustav zaštite zdravlja i sigurnosti pri radu.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0023-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate supplier-design responsibility control: department directors, assigned Ekonerg staff, and Q/EP/HS roles cover planning, verification, contract requirements, and supplier-system review.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Suradnik u EKONERG-u, kojeg imenuje Direktor odjela nositelja ugovora, odgovoran je za planiranje i provedbu mjera kontrole, kao i organizaciju i provedbu međufaznih verifikacija i završne verifikacije (recenzije) studijskog/projektnog rada kojeg izvodi dobavljač.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe ili imenovani Q/EP/HS inženjer odgovoran je za unošenje zahtjeva kvalitete, zaštite okoliša, te zaštite zdravlja i sigurnosti u ugovor s dobavljačima, pregled Q/EP/HS programa dobavljača, provjeru sustava kvalitete, zaštite okoliša, te sustava zaštite zdravlja i sigurnosti dobavljača, te sudjelovanje u završnoj recenziji studijskog/projektnog rada.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0023-003",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Candidate supplier-design verification control: ongoing surveillance and interim verification follow a plan, and results must be documented.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1. Kontrola (nadzor) studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontrola studijskih/projektnih radova dobavljača provodi se prema planu za povremenu kontrolu u tijeku izrade, koji se po potrebi uključuje u ugovor s dobavljačem.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Rezultati kontrole (nadzora) izrade studijskog/projektnog rada moraju biti dokumentirani.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0023-004",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Candidate final-review control: a review committee evaluates completed supplier design work using experience, methods, calculations, and alternative calculations as defined by the quality plan or contract.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.2. Evaluacija i verifikacija studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluaciju i verifikaciju studijskog/projektnog rada (završnu recenziju) provodi po završenom radu komisija za recenziju, koju po potrebi određuje Direktor odjela.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Završna recenzija temelji se na iskustvenoj ocjeni recenzenata, kontroli korištenih metoda i proračuna, korištenju alternativnih proračuna i sl. Način završne verifikacije određuje se u planu kvalitete, odnosno ugovoru s dobavljačem.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0023-005",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate design-change control: changes and deviations from reference documents or the contract are documented and approved by the original approver when needed.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.3. Promjene u tijeku izrade studijskog rada"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Promjene u tijeku izrade studijskih/projektnih radova te odstupanja od zahtjeva u referentnoj dokumentaciji i ugovoru moraju biti dokumentirane i odobrene od iste osobe koja je odobrila originalni dokument, te po potrebi od odgovorne osobe EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q07-DOC0023-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate supplier-design records control: surveillance, final-review, change, and deviation reports are retained as quality records.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izvještaj o nadzoru izvođenja studijskih/projektnih radova te izvještaj o završnoj recenziji, kao i izvještaji o promjenama i odstupanjima u tijeku izrade studijskog/projektnog rada predstavljaju zapise i čuvaju se u skladu s postupkom PQ.7.5-7.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XI-0007",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Kontrola (nadzor) studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.1.3. Rezultati kontrole (nadzora) izrade studijskog/projektnog rada moraju biti dokumentirani.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Kontrola (nadzor) studijskih/projektnih radova"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIII-0008",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ovog postupka je da uspostavi mjere za kontrolu studijskih/projektnih radova koje za EKONERG izvodi dobavljač, u svrhu utvrđivanja ispunjenja postavljenih zahtjeva kvalitete i zaštite okoliša, naročito onih koji se odnose na utvrđene značajne aspekte okoliša, te zahtjeva sustava zaštite zdravlja i sigurnosti pri radu.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA > 1.2. Svrha"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIII-0009",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Voditelj Q/EP/HS službe ili imenovani Q/EP/HS inženjer odgovoran je za unošenje zahtjeva kvalitete, zaštite okoliša, te zaštite zdravlja i sigurnosti u ugovor s dobavljačima, pregled Q/EP/HS programa dobavljača, provjeru sustava kvalitete, zaštite okoliša, te sustava zaštite zdravlja i sigurnosti dobavljača, te sudjelovanje u završnoj recenziji studijskog/projektnog rada.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIII-0010",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Kontrola (nadzor) studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.1.2. Za aktivnosti nivoa složenosti I, ili ako je tako definirano planom kvalitete, imenuje se odgovorni Q/EP/HS inženjer, koji provjerava, po potrebi, funkcioniranje sustava kvalitete, zaštite okoliša, te sustava zaštite zdravlja i sigurnosti dobavljača, te provjerava poštivanje svih zahtjeva kvalitete, zaštite okoliša, te zaštite zdravlja i sigurnosti, pri izradi studijskog/projektnog rada.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Kontrola (nadzor) studijskih/projektnih radova"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIII-0011",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.2. Evaluacija i verifikacija studijskih/projektnih radova**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.2.3. Odgovorni Q/EP/HS inženjer obvezan je sudjelovati u završnoj recenziji, za nivoe složenosti I, u svrhu utvrđivanja jesu li poštivani svi zahtjevi kvalitete, zaštite okoliša, te zdravlja i sigurnosti.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > **3.2. Evaluacija i verifikacija studijskih/projektnih radova**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIV-0012",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIV-0013",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor odjela odgovoran je za uspostavljanje i provedbu sustava kontrole izrade te međufazne i završne verifikacije studijskih/projektnih radova koje izvodi dobavljač.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIV-0014",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 2.2. Suradnik u EKONERG-u, kojeg imenuje Direktor odjela nositelja ugovora, odgovoran je za planiranje i provedbu mjera kontrole, kao i organizaciju i provedbu međufaznih verifikacija i završne verifikacije (recenzije) studijskog/projektnog rada kojeg izvodi dobavljač.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0023-APP_B_XIV-0015",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Kontrola (nadzor) studijskih/projektnih radova"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 3.1.1. Kontrola studijskih/projektnih radova dobavljača provodi se prema planu za povremenu kontrolu u tijeku izrade, koji se po potrebi uključuje u ugovor s dobavljačem. Suradnik u EKONERG-u zadužen od Direktora odjela nositelja ugovora za kontrolu nad naručenim studijskim/projektnim radom, provodi kontrolu i međufazne verifikacije, pri čemu može uključiti i drugu stručnu osobu iz EKONERG-a.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK > 3.1. Kontrola (nadzor) studijskih/projektnih radova"
+        }
+      ]
+    }
+  ]
+}

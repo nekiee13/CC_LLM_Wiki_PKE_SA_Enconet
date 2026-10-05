@@ -1,0 +1,215 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0026",
+    "name": "PQ08.6_r3_Kontrola_i_verifikacija_aktivnosti.md",
+    "date": "2016-03-07",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q05-DOC0026-001",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Candidate inspection scope: the procedure covers Ekonerg quality-system activities except activities governed by separate design or work procedures.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupkom se obuhvaćaju sve aktivnosti u EKONERG-u na koje se primjenjuje sustav kvalitete, osim projektnih/studijskih radova na koje se primjenjuju postupak PQ.8.3-1, te aktivnosti čija je kontrola i verifikacija opisana u radnim postupcima.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0026-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate responsibility control: department directors appoint verification personnel, Q/EP/HS plans verification, and designated personnel perform and document it.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor odjela u EKONERG-u dužan je, u skladu s planom kvalitete, odrediti osobu za kontrolu/verifikaciju aktivnosti",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za planiranje kontrole i verifikacije aktivnosti koje, u skladu s planom kvalitete, provodi Q/EP/HS služba.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0026-003",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Candidate independence control: the person performing control or verification must not be responsible for the activity being performed.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.3"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osoba koja provodi kontrolu - verifikaciju aktivnosti ne smije biti odgovorna za aktivnost koja se izvodi.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0026-004",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Candidate planning control: the responsible person prepares a control plan when needed, based on the activity work plan, and identifies control or verification points.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.5"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osoba zadužena za kontrolu - verifikaciju izrađuje, po potrebi, plan kontrole, kojim definira točke u kojima obavlja kontrolu/verifikaciju. Plan kontrole izrađuje se na temelju plana rada, kojeg izrađuje osoba odgovorna za aktivnost.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0026-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate record control: control and verification results are documented and retained as quality records in the work-order or Q/EP/HS archive.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.6 and 4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svoje aktivnosti kontrole/verifikacije odgovorna osoba dokumentira zapisom o kontroli/verifikaciji odnosno na način kako je predviđeno planom kvalitete / planom kontrole.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Izvještaji o kontroli/verifikaciji predstavljaju zapise kvalitete i čuvaju se u arhivi radnog naloga u odjelu i/ili arhivi Q/EP/HS službe.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0026-APP_B_IX-0006",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 3.2. Kontrolu i verifikaciju provodi član odjela specijaliziran za područje rada na aktivnosti, kojeg određuje Direktor odjela, i/ili odgovorni Q/EP/HS inženjer, kojeg imenuje Voditelj Q/EP/HS službe.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0026-APP_B_XIV-0007",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA I VERIFIKACIJA AKTIVNOSTI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA I VERIFIKACIJA AKTIVNOSTI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0026-APP_B_XIV-0008",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha je postupka da definira odgovornosti, te način provođenja i dokumentiranje aktivnosti kontrole/verifikacije koje provodi EKONERG.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0026-APP_B_XIV-0009",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor odjela u EKONERG-u dužan je, u skladu s planom kvalitete, odrediti osobu za kontrolu/verifikaciju aktivnosti",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0026-APP_B_XIV-0010",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 2.2. Voditelj Q/EP/HS službe odgovoran je za planiranje kontrole i verifikacije aktivnosti koje, u skladu s planom kvalitete, provodi Q/EP/HS služba.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    }
+  ]
+}

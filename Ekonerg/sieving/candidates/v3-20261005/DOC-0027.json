@@ -1,0 +1,582 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0027",
+    "name": "PQ09.2_r9_Provjere.md",
+    "date": "2019-01-30",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q04-DOC0027-001",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Candidate inspection control: audits review procedures, instructions, records, and the performance of activities.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.5.1. Provođenje provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Provjera, koja se provodi prema ovom postupku, sastoji se od pregleda postupaka, uputa, zapisa i samog izvođenja aktivnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-002",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate audit evidence control: objective evidence is compared with applicable written requirements.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.5.7. Provođenje provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svi zapisi ili drugi objektivni dokazi koje generira provjeravani odjel/tim/organizacija uspoređuju se s primjenjivim zahtjevima pisanih postupaka, uputa, Priručnika sustava upravljanja ili drugih primjenjivih dokumenata.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-003",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate audit-report control: each audit produces a report with scope, team qualifications, contacts, results, nonconformities, and corrective-action proposals.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.6.2. Izvještaji o provjeri"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po završetku svake provjere, Voditelj tima za provjeru priprema izvještaj o provjeri koji uključuje:",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-004",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate audit approval control: the Q/EP/HS service manager reviews and approves the audit report.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.6.4. Izvještaji o provjeri"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izvještaj provjere pregledava i odobrava Voditelj Q/EP/HS službe.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-005",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate audit follow-up control: proposed corrective actions are approved, followed up, and used to close or reopen the nonconformance form.",
+      "item_type": "action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.6.8. Izvještaji o provjeri"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe će odobriti predložene akcije (popravne radnje) i pratiti njihovo provođenje (follow-up), te u slučaju da su zadovoljavajuće zatvoriti IN obrazac, odnosno u protivnom otvoriti novi.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate audit-record retention control: audit records and reports are kept for the contract period or at least five years.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe mora čuvati sve zapise s provjere, te izvještaje o provjerama kako je specificirano u ugovoru, odnosno minimalno pet godina.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-007",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate status-record control: a status list tracks completed audits and opened nonconformance or corrective-action reports.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe mora voditi listu statusa provjera, u koju ažurira podatke o obavljenim provjerama i pokrenutim izvještajima o neusklađenosti / korektivnim akcijama.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-008",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "Candidate auditor qualification control: the procedure defines education, training, experience, and qualification requirements for audit roles.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.8. Trening i kvalifikacija članova tima za provjeru"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pomoćni provjeritelj treba imati:\n   - ▪ visoku ili višu školsku spremu na tehničkom području ili području osiguranja kvalitete\n   - ▪ treba završiti tečaj za interne provjeritelje da se osigura poznavanje i razumijevanje normi, propisa, smjernica na kojima se temelje sustavi kvalitete, zaštite okoliša te zaštite zdravlja i sigurnosti",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-009",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate auditor independence control: audit-team members must not have direct responsibility for the activities they audit.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.5.4. Provođenje provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Članovi tima za provjeru ne smiju imati direktnu odgovornost za aktivnosti koje provjeravaju.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q04-DOC0027-010",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "Candidate audit-frequency control: supplier audits are planned at least every three years for potentially long-term nuclear-qualified suppliers.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.2. Učestalost provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Provjera dobavljača obavlja se na temelju definiranog u planu kvalitete, odnosno na zahtjev Naručitelja, te kod potencijalno dugoročnih dobavljača koji imaju nuklearnu kvalifikaciju provode se redovite provjere u odgovarajućim vremenskim razmacima (najmanje jednom u tri godine).",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_VIII-0011",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.3. Oznaka provjere"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.3.1. Provjera se označava slovom „Q“ ako se radi o sustavu kvalitete, „QV“ u sustavu kvalitete verifikacijske djelatnosti, slovom „E“ u sustavu zaštite okoliša te slovom „H“ u sustavu zaštite zdravlja i sigurnosti i brojem provjere te godinom u kojoj se provodi provjera. Broj provjere daje Voditelj Q/EP/HS službe prema listi provjera koju vodi za svaku godinu.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.3. Oznaka provjere"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_VIII-0012",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ identifikaciju Voditelja tima i članova tima za provjeru, te izjavu o kvalificiranosti",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_VIII-0013",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe mora voditi listu statusa provjera, u koju ažurira podatke o obavljenim provjerama i pokrenutim izvještajima o neusklađenosti / korektivnim akcijama. Lista se čuva minimalno 2 godine nakon zadnje provjere na listi, odnosno u skladu s odredbom ugovora.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 4. ZAPISI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_IX-0014",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dužan je održavati svoju kvalifikaciju kroz aktivno i redovito sudjelovanje na auditima te praćenje regulative, normi, postupaka, smjernica i ostalih dokumenata vezanih za područja na kojima obavlja provjeru.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_IX-0015",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.2. Učestalost provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ Provjera dobavljača obavlja se na temelju definiranog u planu kvalitete, odnosno na zahtjev Naručitelja, te kod potencijalno dugoročnih dobavljača koji imaju nuklearnu kvalifikaciju provode se redovite provjere u odgovarajućim vremenskim razmacima (najmanje jednom u tri godine).",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.2. Učestalost provjera"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_IX-0016",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri > **3.8. Trening i kvalifikacija članova tima za provjeru**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.8.6. Voditelj Q/EP/HS službe vodi listu kvalifikacija provjeritelja u skladu s gore navedenim zahtjevima.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri > **3.8. Trening i kvalifikacija članova tima za provjeru**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_IX-0017",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapise o kvalifikaciji i obavljenim provjerama na nuklearnom području od strane vodećeg auditora, voditi na obrascu iz Priloga A.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 4. ZAPISI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XI-0018",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Voditelj tima za provjeru odgovoran je za pripremu, provođenje, dokumentiranje i izvještavanje o provjeri, te ocjenu akcija predloženih na temelju nalaza provjere.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XI-0019",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.6.2. Po završetku svake provjere, Voditelj tima za provjeru priprema izvještaj o provjeri koji uključuje:",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XI-0020",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- ▪ sažetak rezultata provjere",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XI-0021",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 3.6.4. Izvještaj provjere pregledava i odobrava Voditelj Q/EP/HS službe.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3.6. Izvještaji o provjeri"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIII-0022",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj se postupak primjenjuje na provjere aktivnosti koje izvodi EKONERG ili dobavljač u sklopu sustava kvalitete, uključujući sustav kvalitete verifikacijske djelatnosti, sustava zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom. U sklopu interne provjere sustava zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom obavlja se procjena usklađenosti sa utvrđenim primjenjivim zakonskim i ostalim zahtjevima, te periodička ocjena i eventualni prijedlog revizije postupaka za izvanredne situacije.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.1. Opseg"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIII-0023",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak definira način provođenja provjera primjene i djelotvornosti sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom s ciljem osiguranja da izvedba i dokumentiranje aktivnosti od utjecaja na kvalitetu, okoliš, zdravlje i sigurnost i upravljanje energijom budu u skladu s odredbama Priručnika sustava upravljanja, te primjenjivih standarda, propisa te ugovorne dokumentacije.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIII-0024",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.2. Učestalost provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - ako se rade promjene u sustavu kvalitete, zaštite okoliša te sustavu zaštite zdravlja i sigurnosti, reorganizacije i revizije postupaka,",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.2. Učestalost provjera"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIII-0025",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.2. Učestalost provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - ako se posumnja u mogućnost negativnog utjecaja na zdravlje i sigurnost, okoliš te pouzdanost zbog odstupanja i neusklađenosti u sustavu kvalitete, zaštite okoliša i zaštite zdravlja i sigurnosti",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.2. Učestalost provjera"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIV-0026",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PROVJERE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PROVJERE"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIV-0027",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.4.2. Kontrolna lista provjere"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svaka se provjera provodi prema unaprijed pripremljenoj kontrolnoj listi, koju priprema tim za provjeru na temelju pisanih postupaka, uputa i specifikacija po kojima se provodi aktivnost koja se provjerava.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.4.2. Kontrolna lista provjere"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIV-0028",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.5. Provođenje provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.5.1. Provjera, koja se provodi prema ovom postupku, sastoji se od pregleda postupaka, uputa, zapisa i samog izvođenja aktivnosti.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.5. Provođenje provjera"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0027-APP_B_XIV-0029",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.5. Provođenje provjera"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.5.2. Svaka se provjera provodi u skladu s pripremljenom kontrolnom listom.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK > 3.5. Provođenje provjera"
+        }
+      ]
+    }
+  ]
+}

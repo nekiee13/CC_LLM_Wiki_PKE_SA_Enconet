@@ -1,0 +1,418 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0030",
+    "name": "PQ10.2-2_r10_Kontrola_korektivnih_akcija.md",
+    "date": "2024-02-26",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q03-DOC0030-001",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate scope control: corrective actions cover defects and nonconformities in Ekonerg and supplier activities and improvement of the quality system.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj se postupak primjenjuje na korektivne akcije zbog nedostataka i neusklađenosti uočenih na aktivnostima koje izvodi EKONERG, odnosno koje izvodi dobavljač, te zbog unapređenja sustava kvalitete, uključujući sustave kvalitete verifikacijske djelatnosti, sustav zaštite okoliša, sustav zaštite zdravlja i sigurnosti i sustav upravljanja energijom.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0030-002",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate trigger control: trend analysis of nonconformance, audit, or activity-surveillance reports identifies conditions requiring corrective action; not every nonconformity automatically triggers one.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.1"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Uvjete koji zahtijevaju korektivne akcije, identificira Voditelj Q/EP/HS službe ili Vodeći verifikator na temelju analize trenda izvještaja o neusklađenosti, izvještaja s provjere ili izvještaja o nadzoru aktivnosti. Svaka neusklađenost ne mora rezultirati korektivnom akcijom.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0030-003",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate approval and follow-up control: the director approves internal corrective actions, while the Q/EP/HS lead controls implementation and closes or reopens the action record.",
+      "item_type": "action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.4 and 3.6"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju potrebe korektivne akcije u EKONERG-u, Voditelj Q/EP/HS službe pokreće korektivnu akciju na ZK obrascu PQ.8-4.1. prikazanom u prilogu A ovog postupka,",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor EKONERG-a je odobrava, a Voditelj Q/EP/HS službe brine o njenom provođenju.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odobrava predloženu korektivnu akciju i kontrolira njenu provedbu, te ako je zadovoljan zaključuje ZK obrazac. U protivnom otvara novi ZK obrazac i izvještava Direktora EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0030-004",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate supplier corrective-action control: the supplier must propose corrective action within 10 days of receiving the request; Ekonerg approves and controls the action.",
+      "item_type": "action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.5"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Korektivne akcije kod dobavljača Voditelj Q/EP/HS službe inicira izdavanjem zahtjeva za korektivnu akciju (ZK) prema obrascu PQ.8-4.1. prikazanom u prilogu A ovog postupka. Odgovorna osoba dobavljača dužna je dati prijedlog korektivne akcije na ZK obrascu slanjem obrasca Voditelju Q/EP/HS službe u roku od 10 dana od primitka ZK obrasca.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0030-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate record retention control: corrective-action reports are kept in the Q/EP/HS archive for the contract period or five years after activity completion.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izvještaji o poduzetim korektivnim akcijama čuvaju se u arhivi Q/EP/HS službe u vremenu predviđenom ugovorom, odnosno u trajanju od pet godina nakon završetka aktivnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q03-DOC0030-006",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate responsibility control: named management, Q/EP/HS, and verification roles are assigned responsibility for initiating, approving, reporting, and controlling corrective actions.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za odobrenje i kontrolu provođenja korektivnih akcija.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za izvještavanje Direktora EKONERG-a o poduzetim korektivnim akcijama u EKONERG-u i kod dobavljača.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_VIII-0007",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "6. 3.10. Označavanje korektivnih akcija provodi se na slijedeći način:",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_VIII-0008",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - korektivne akcije u sustavu kvalitete označavaju se slovom „Q“ te brojem ZK i godinom. (npr. Q-01/10)",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_VIII-0009",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - korektivne akcije u sustavu kvalitete verifikacijske djelatnosti označavaju se slovima „QV“ te brojem ZK i godinom. (npr. QV-01/13)",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_VIII-0010",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - korektivne akcije u sustavu zaštite okoliša označavaju se slovom „E“ te brojem ZK i godinom. (npr. E-01/10)",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XI-0011",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.4. Voditelj Q/EP/HS službe odgovoran je za pokretanje korektivne akcije kod dobavljača u slučaju kad trend neusklađenosti ili izvještaj s provjere ukažu na potrebu korekcije u cilju sprečavanja daljih neusklađenosti, odnosno ponavljanja neusklađenosti.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XI-0012",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.6. Vodeći verifikator odgovoran je za izvještavanje nadležnog Direktora odjela i Voditelja Q/EP/HS službe o poduzetim korektivnim akcijama u sustavu kvalitete verifikacijske djelatnosti..",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XI-0013",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 2.7. Voditelj Q/EP/HS službe odgovoran je za izvještavanje Direktora EKONERG-a o poduzetim korektivnim akcijama u EKONERG-u i kod dobavljača.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XI-0014",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 3.1. Uvjete koji zahtijevaju korektivne akcije, identificira Voditelj Q/EP/HS službe ili Vodeći verifikator na temelju analize trenda izvještaja o neusklađenosti, izvještaja s provjere ili izvještaja o nadzoru aktivnosti. Svaka neusklađenost ne mora rezultirati korektivnom akcijom.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XIII-0015",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 3.3. Korektivne akcije primjenjuju se na sve situacije koje sustavno negativno utječu na kvalitetu, okoliš, zdravlje i sigurnost i upravljanje energijom.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XIII-0016",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- - korektivne/preventivne akcije u sustavu zaštite zdravlja i sigurnosti označavaju se slovom „H“ te brojem ZK i godinom. (npr. H-01/10)",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST > **3. POSTUPAK**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XIV-0017",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Harzyson"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Tomislav Hršak, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "Harzyson"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XIV-0018",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 2.3. Vodeći verifikator, u sustavu kvalitete verifikacijske djelatnosti, dužan je, na temelju analize uzroka, predložiti korektivne akcije u slučaju kad trend neusklađenosti u sustavu kvalitete verifikacijske djelatnosti, ukaže na potrebu korekcije u cilju sprečavanja daljnjih",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XIV-0019",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "neusklađenosti, odnosno, ponavljanja neusklađenosti ili pojave predvidivih odstupanja/neusklađenosti. Korektivne akcije, na temelju prijedloga Vodećeg verifikatora, pokreće Voditelj Q/EP/HS službe.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0030-APP_B_XIV-0020",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 2.5. Voditelj Q/EP/HS službe odgovoran je za odobrenje i kontrolu provođenja korektivnih akcija.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 2. ODGOVORNOST"
+        }
+      ]
+    }
+  ]
+}

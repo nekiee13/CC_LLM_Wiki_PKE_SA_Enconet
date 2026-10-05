@@ -1,0 +1,145 @@
+{
+  "criteria": {
+    "APP_B_I": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_II": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_V": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_VIII": {
+      "added": [
+        {
+          "criterion_id": "APP_B_VIII",
+          "item_id": "CRUMB-DOC-0008-APP_B_VIII-0001",
+          "quotes": [
+            "Procjena veličine svakog pojedinog rizika s Liste opasnosti obavlja se prema Matrici procjene rizika (prilog 1). Nakon procjene, na Listi opasnosti označuju se procjenjeni rizici kao veliki, srednji i mali rizici."
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit."
+        }
+      ],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_XI": {
+      "added": [
+        {
+          "criterion_id": "APP_B_XI",
+          "item_id": "CRUMB-DOC-0008-APP_B_XI-0001",
+          "quotes": [
+            "- ▪ izvještavanje poslovodstva o aktivnostima upravljanja rizicima"
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit."
+        },
+        {
+          "criterion_id": "APP_B_XI",
+          "item_id": "CRUMB-DOC-0008-APP_B_XI-0002",
+          "quotes": [
+            "Kriterij za procjenu rizika je odnos između vjerojatnosti pojave istog i posljedice koje može izazvati."
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit."
+        },
+        {
+          "criterion_id": "APP_B_XI",
+          "item_id": "CRUMB-DOC-0008-APP_B_XI-0003",
+          "quotes": [
+            "| Procjena učinkovitosti i preostalog rizika | Mjere su učinkovite i preostali rizik je prihvatljiv                                                                                                                         |"
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit."
+        },
+        {
+          "criterion_id": "APP_B_XI",
+          "item_id": "CRUMB-DOC-0008-APP_B_XI-0004",
+          "quotes": [
+            "Rizici utvrđeni kao mali rizici tretiraju se kao prihvatljivi i nema obveze daljnjeg postupanja."
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit."
+        }
+      ],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_XIII": {
+      "added": [
+        {
+          "criterion_id": "APP_B_XIII",
+          "item_id": "CRUMB-DOC-0008-APP_B_XIII-0001",
+          "quotes": [
+            "- - izrada liste svih opasnosti u sustavu zaštite okoliša"
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit."
+        },
+        {
+          "criterion_id": "APP_B_XIII",
+          "item_id": "CRUMB-DOC-0008-APP_B_XIII-0002",
+          "quotes": [
+            "| 1. | <b>Malo vjerojatno</b> | Ne bi se trebalo dogoditi, zaštitne mjere kvalitetno implementirane |"
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit."
+        },
+        {
+          "criterion_id": "APP_B_XIII",
+          "item_id": "CRUMB-DOC-0008-APP_B_XIII-0003",
+          "quotes": [
+            "| 2. | <b>Vjerojatno</b>      | Može se dogoditi, zaštitne mjere otežavaju događaj                  |"
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit."
+        },
+        {
+          "criterion_id": "APP_B_XIII",
+          "item_id": "CRUMB-DOC-0008-APP_B_XIII-0004",
+          "quotes": [
+            "| 3. | <b>Vrlo vjerojatno</b> | Događa se učestalo, zaštitne mjere nedovoljne                       |"
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit."
+        }
+      ],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_XIV": {
+      "added": [
+        {
+          "criterion_id": "APP_B_XIV",
+          "item_id": "CRUMB-DOC-0008-APP_B_XIV-0001",
+          "quotes": [
+            "Pregledao: Krešimir Brckan, dipl.ing."
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit."
+        },
+        {
+          "criterion_id": "APP_B_XIV",
+          "item_id": "CRUMB-DOC-0008-APP_B_XIV-0002",
+          "quotes": [
+            "- ▪ suradnju s nadležnim osobama koji će obaviti prepoznavanje opasnosti u procesima, utvrđivanje metode za procjenu rizika, kontrolu učinkovitosti poduzetih mjera te prepoznavanje novih mogućnosti i prilika"
+          ],
+          "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit."
+        }
+      ],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_XVII": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_XVIII": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    }
+  },
+  "doc_id": "DOC-0008",
+  "new_run_id": "RUN-20261005-53",
+  "old_run_id": "RUN-20261003-07",
+  "schema_version": "1.0"
+}

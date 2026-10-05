@@ -1,0 +1,418 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0012",
+    "name": "PQ07.5-3_r3_Kontrolni_postupci.md",
+    "date": "2016-03-06",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q05-DOC0012-001",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Candidate control-procedure scope: control procedures govern oversight of quality-system activities and activities performed by other organizations.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se odnosi na kontrolne postupke tj. radne postupke za provedbu nadzora nad primjenom sustava kvalitete i aktivnosti drugih organizacija, koje suradnici EKONERG-a koriste u kontroli provedbe aktivnosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0012-002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate document-control responsibility: preparation, review, revision, and change responsibilities are defined for control procedures.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha je ovog postupka definirati odgovornost za pripremu, pregled, revizije i promjene, te standardni format za pripremu kontrolnih postupaka.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0012-003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate approval control: a designated Q/EP/HS reviewer reviews procedures and their changes, and the Ekonerg director approves them.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe ili osoba koju odredi Voditelj Q/EP/HS službe odgovoran je za pregled kontrolnog postupka, te njegovih promjena i revizija.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor EKONERG-a odgovoran je za odobrenje kontrolnog postupka, te njegovih promjena i revizija.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0012-004",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "Candidate content control: each control procedure identifies scope, requirements, control method, generated documentation, and attachments.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1. Sadržaj kontrolnih postupaka"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. POSTUPAK KONTROLE a) Preduvjeti - ukratko treba opisati preduvjete za pristupanje aktivnosti",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "c) Dokumentacija kojom se registrira obavljanje aktivnosti | - ukratko navesti koju sve dokumentaciju treba generirati izvoditelj aktivnosti i što ona mora sadržavati",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0012-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate record and distribution control: copies are distributed using a distribution list and originals are retained in the Q/EP/HS archive.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. SPREMANJE I ČUVANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kopije kontrolnih postupaka dostavljaju se svim suradnicima EKONERG-a, koji prema njima provode kontrolne aktivnosti, u skladu s distribucijskom listom koju vodi Voditelj Q/EP/HS službe.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Originali kontrolnih postupaka čuvaju se u arhivi Q/EP/HS službe EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q05-DOC0012-006",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate current-version control: the current procedure list and current revisions are published on the Ekonerg intranet.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. SPREMANJE I ČUVANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Važeći popis kontrolnih postupaka, kao i važeća revizija svih novorazvijenih kontrolnih postupaka objavljeni su na intranet stranici EKONERG-a.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_VIII-0007",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- – alfabetski dio označava kojem području aktivnosti pripada postupak, kako slijedi:",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_VIII-0008",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| KSMA | - kontrola svojstava materijala                                |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_VIII-0009",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 3.3.4 Pregled i odobrenje postupka, te revizija i promjena označava se potpisom.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_VIII-0010",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 3.3.5 Broj revizije označava se na prvoj strani, te svim slijednim stranama postupka.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_IX-0011",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| KSPR | - kontrola specijalnih procesa (zavarivanje, toplinska obrada) |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_IX-0012",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| KBIS | - kontrola bezrazornih ispitivanja                             |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_IX-0013",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Npr. KSPR-2 predstavlja postupak br. 2 iz područja specijalnih procesa.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_IX-0014",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "candidate_lead: The source mentions a concept related to Control of Special Processes; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- 3.3.1 Kontrolni postupak te njegove revizije i promjene priprema suradnik u EKONERG-u ili druga osoba koju na temelju njenog specijalističkog znanja određuje Direktor odjela ili Voditelj Q/EP/HS službe.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_XI-0015",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| KFIS | - kontrola funkcionalnih ispitivanja                           |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_XIII-0016",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| KAKZ | - kontrola antikorozivne zaštite                               |",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. KONTROLNI POSTUPCI > **3.2. Format kontrolnih postupaka**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_XIV-0017",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLNI POSTUPCI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLNI POSTUPCI"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_XIV-0018",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 1.1. Suradnik u EKONERG-u zadužen od strane Voditelja Q/EP/HS službe ili Direktora odjela odgovoran je za pripremu kontrolnog postupka po kojem se kontrola neke aktivnosti obavlja.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_XIV-0019",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 1.2. Voditelj Q/EP/HS službe ili osoba koju odredi Voditelj Q/EP/HS službe odgovoran je za pregled kontrolnog postupka, te njegovih promjena i revizija.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0012-APP_B_XIV-0020",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 1.3. Direktor EKONERG-a odgovoran je za odobrenje kontrolnog postupka, te njegovih promjena i revizija.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    }
+  ]
+}

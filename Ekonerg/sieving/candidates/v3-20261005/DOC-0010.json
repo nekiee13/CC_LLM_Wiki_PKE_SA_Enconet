@@ -1,0 +1,271 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0010",
+    "name": "PQ07.1-2_r5_Kontrola_opreme_za_mjerenje_inspekciju_i_testiranje.md",
+    "date": "2019-01-30",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q08-DOC0010-001",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "Candidate measuring-equipment scope: the procedure covers Ekonerg equipment and instruments used for control, inspection, testing, and measurement, excluding laboratory equipment governed separately.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj se postupak primjenjuje na svu opremu/instrumente koji se u EKONERG-u koriste za provođenje kontrole, inspekcije, testiranja i mjerenja, osim opreme/instrumenata koji se koriste u Laboratoriju, što je definirano u dokumentaciji Laboratorija.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0010-002",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "Candidate calibration-control purpose: only serviceable and adjusted equipment is used, with written evidence when required.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha je ovog postupka da uspostavi kontrolni sustav koji osigurava da se za mjerenje, testiranje, inspekciju i kontrolu koristi samo ispravna i podešena oprema, te da o tome postoji pisani dokaz, ako se to u propisima ili na drugi način zahtjeva.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0010-003",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate equipment-responsibility control: department and team directors ensure serviceable equipment, equipment owners manage periodic checks, and Q/EP/HS performs periodic verification.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor odjela/voditelj tima odgovoran je da u aktivnostima svoga odjela/tima koristi samo ispravnu i podešenu opremu za mjerenje, inspekciju i testiranje.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor odjela koji je zadužen za pojedinu opremu/instrumente odgovoran je da se ona periodički provjerava i podešava, te da o tome vodi evidenciju kako se to propisima ili postupcima zahtjeva.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0010-004",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "Candidate adjustment-procedure control: local adjustment procedures define responsibilities, method, intervals, records, and status marking.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PQ.7.1-2 > 3.2"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupci trebaju opisati odgovornosti, način podešenja, intervale podešavanja za pojedinu opremu/instrumente, te način vođenja evidencije i označavanja statusa podešenosti.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0010-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate equipment-record control: equipment lists include adjustment status and control records are retained in the responsible department archive.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Liste opreme/instrumenata sa statusom podešenja čuvaju se u arhivi Direktora odjela koji je zadužen za dotičnu opremu. Zapisi o kontroli podešenosti opreme čuvaju se u arhivi odjela koji je zadužen za opremu.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_VIII-0006",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PQ.7.1-2 > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 3.2. Ako se oni provjeravaju i podešavaju u EKONERG-u, potrebno je razviti postupke za podešavanje te opreme/instrumenata u skladu sa zahtjevima propisa/standarda, te uputa proizvođača opreme/instrumenata. Postupci trebaju opisati odgovornosti, način podešenja, intervale podešavanja za pojedinu opremu/instrumente, te način vođenja evidencije i označavanja statusa podešenosti.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PQ.7.1-2 > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_VIII-0007",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PQ.7.1-2 > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 3.3. Voditelj Q/EP/HS službe ili od njega određeni Q/EP/HS inženjer periodički provjerava da li se koristi ispravna i podešena oprema/instrumenti za mjerenje, inspekciju, testiranje, te da li je ona ispravno označena statusom kalibracije, ako se zahtijeva.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PQ.7.1-2 > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_XI-0008",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor odjela/voditelj tima odgovoran je da u aktivnostima svoga odjela/tima koristi samo ispravnu i podešenu opremu za mjerenje, inspekciju i testiranje.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_XI-0009",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. 2.2. Osoba koja provodi kontrole, inspekcije, testiranja i mjerenja dužna je provjeriti da li radi s ispravnom opremom.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_XI-0010",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. 2.4. Voditelj Q/EP/HS službe zadužen je za povremenu provjeru da je oprema za mjerenje, inspekcije, testiranja i kontrole, podešena, te da o tome postoji pisani dokaz i/ili oznaka na opremi, ako se zahtijeva.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_XI-0011",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. 2.5. Direktor EKONERG-a odgovoran je za uspostavu i primjenu sustava kontrole opreme za inspekciju, mjerenje i testiranja.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_XIV-0012",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0010-APP_B_XIV-0013",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PQ.7.1-2 > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 3.4. Q/EP/HS služba periodički provjerava kod Direktora odjela u EKONERG-u da li se oprema/instrumenti za mjerenje, inspekciju, testiranje i kontrolu, za koju su zaduženi odjeli, periodički, odnosno u skladu sa zahtjevima propisa/postupaka podešava, te o tome vodi ažurna evidencija.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PQ.7.1-2 > KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE"
+        }
+      ]
+    }
+  ]
+}

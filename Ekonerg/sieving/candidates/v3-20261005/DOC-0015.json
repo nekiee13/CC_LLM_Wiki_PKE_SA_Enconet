@@ -1,0 +1,318 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0015",
+    "name": "PQ07.5-6_r5_Kontrola_dokumentacije_koju_prima_Ekonerg.md",
+    "date": "2019-01-30",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q08-DOC0015-001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate incoming-document scope: received contracts, inputs, supplier and customer records, nonconformance and corrective-action reports, quality records, laws, standards, and regulations are subject to control.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak odnosi se na svu dokumentaciju koju EKONERG prima, a za koju je obvezna primjena mjera kontrole, kao što su ugovorni dokumenti, ulazni podaci, dokumenti i zapisi dobiveni od Naručitelja, dobavljača i nadležnih tijela, izvještaji o neusklađenosti i korektivnim akcijama kod dobavljača, zapisi kvalitete, komentari i reklamacije Naručitelja, zatim zakoni, norme, propisi, itd.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0015-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate incoming-document responsibility control: directors, administrators, department staff, team leaders, and Q/EP/HS have assigned receipt, registration, distribution, logging, and retention roles.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Administrator EKONERG-a dužan je primati, registrirati i dostaviti ulaznu poštu direktoru EKONERG-a, odnosno osobi na koju je naslovljena ili na koju se odnosi.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Direktor odjela odgovoran je za evidenciju dokumenata koje dobije od administratora i njihovo čuvanje u arhivi odjela ili radnog naloga.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0015-003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate receipt and revision-control process: incoming documents are registered, routed to responsible people, and updated when a new revision arrives.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.1 and 3.6"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dokumente koji stignu poštom administrator EKONERG-a otvara i registrira.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Dokumente i zapise koje primi vezano uz radni nalog čuva voditelj tima u arhivi radnog naloga, te ih ažurira u slučaju primitka nove revizije dokumenta.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0015-004",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "Candidate external-document currency control: users check the current status of standards and laws in the relevant official databases when applying them.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.7 and 3.8"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svaki korisnik dužan je u trenutku primjene norme provjeriti njenu ažurnost na internet stranici Hrvatskog zavoda za norme.",
+          "quote_language": "hr"
+        },
+        {
+          "quote_original": "Svaki korisnik dužan je u trenutku primjene nekog akta provjeriti njegovu ažurnost na Internet stranici Narodnih novina.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0015-005",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "Candidate incoming-document review control: documents submitted for approval by suppliers or contractors are reviewed and stamped approved when required.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.9"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dokumente koje dobije na odobrenje (od dobavljača ili izvođača radova koje nadzire za Naručitelja) Voditelj/član tima pregledavaju i, ako je zahtijevano, odobravaju žigom **“ODOBRENO”** prikazanim u prilogu A ovog postupka.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q08-DOC0015-006",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate incoming-document record control: quality records related to received-document control are handled under the records-control procedure.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi kvalitete vezani uz kontrolu primljene dokumentacije tretiraju se u skladu s postupkom PQ.7.5-7.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XI-0007",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "candidate_lead: The source mentions a concept related to Test Control; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA DOKUMENTACIJE KOJU PRIMA EKONERG > 1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak odnosi se na svu dokumentaciju koju EKONERG prima, a za koju je obvezna primjena mjera kontrole, kao što su ugovorni dokumenti, ulazni podaci, dokumenti i zapisi dobiveni od Naručitelja, dobavljača i nadležnih tijela, izvještaji o neusklađenosti i korektivnim akcijama kod dobavljača, zapisi kvalitete, komentari i reklamacije Naručitelja, zatim zakoni, norme, propisi, itd. Zakonski i ostali zahtjevi sustava zaštite okoliša obradit će se u postupku sustava zaštite okoliša PE.6.1-2., dok će se zakonski i ostali zahtjevi u sustavu zaštite zdravlja i sigurnosti obraditi u postupku PHS.6.1.3.",
+          "quote_language": "hr",
+          "source_locator": "KONTROLA DOKUMENTACIJE KOJU PRIMA EKONERG > 1. UVOD > 1.1. Opseg"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIII-0008",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. 2.5. Direktor odjela odgovoran je za evidenciju dokumenata koje dobije od administratora i njihovo čuvanje u arhivi odjela ili radnog naloga.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIII-0009",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "6. 2.6. Voditelj tima odgovoran je za evidenciju i čuvanje dokumenata koje dobije u arhivi radnog naloga.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIII-0010",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "7. 2.7. Voditelj Q/EP/HS službe dužan je čuvati dokument koji dobije Q/EP/HS služba u arhivi Q/EP/HS službe.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIII-0011",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 3.3. Ponude i ugovori koji se prime distribuiraju se i čuvaju u skladu s postupkom PQ.8.2-2.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST > 3. POSTUPAK"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIV-0012",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA DOKUMENTACIJE KOJU PRIMA EKONERG"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "KONTROLA DOKUMENTACIJE KOJU PRIMA EKONERG"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIV-0013",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "KONTROLA DOKUMENTACIJE KOJU PRIMA EKONERG > 1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj postupak daje minimum zahtjeva za kontrolu distribucije i spremanja dokumentacije koju prima EKONERG.",
+          "quote_language": "hr",
+          "source_locator": "KONTROLA DOKUMENTACIJE KOJU PRIMA EKONERG > 1. UVOD > 1.2. Svrha"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIV-0014",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. 2.1. Direktor EKONERG-a odgovoran je za sustav kontrole svih dokumenata na koje se odnosi ovaj postupak.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0015-APP_B_XIV-0015",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2.8. Voditelj Q/EP/HS službe odgovoran je za periodičku provjeru sustava kontrole dokumentacije.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    }
+  ]
+}

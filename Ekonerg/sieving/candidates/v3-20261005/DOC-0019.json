@@ -1,0 +1,227 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "doc_id": "DOC-0019",
+    "name": "PQ08.1-3_r2_Plan_vođenja_projekta.md",
+    "date": "2016-03-07",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "Q06-DOC0019-001",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Candidate project-control scope: the project plan monitors phase completion and records quality records for level I and II projects.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se odnosi na plan vođenja projekta tj. aktivnosti za provedbu nadzora gotovosti pojedinih faza izrade projekta, te evidenciju referentnih zapisnika kvalitete za projekte nivoa I i II.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0019-002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate project-responsibility control: the lead designer or team leader prepares the project plan, documents activities and quality records, and tracks schedule alignment.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST > 2.1"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Glavni projektant/Voditelj tima odgovoran je za pripremu plana vođenja projekta, dokumentiranje provedenih aktivnosti i zapisnika kvalitete, te za praćenje usklađenosti obavljenih aktivnosti s terminskim planom.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0019-003",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Candidate design-phase control: the plan defines responsible people, planned dates, activities, completion dates, and quality records for each project phase.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1.1. Sadržaj postupaka plana vođenja projekta"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Glavni projektant/Voditelj tima izrađuje plan vođenja projekta kojim definira faze projekta. Za svaku fazu projekta definira odgovornu osobu, planirani rok, opis aktivnosti, datum završetka aktivnosti i zapisnike kvalitete.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0019-004",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "Candidate verification sequence: project phases include input verification, calculation and drawing verification, subcontractor verification, internal review, final verification, customer review, and delivery.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3.1.2. Sadržaj postupaka plana vođenja projekta"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "6. 6. Verifikacija ulaznih podataka\n7. 7. Ugovaranje podizvođačkih radova\n8. 8. Uvođenje podizvođača u posao\n9. 9. Verifikacija proračuna (uključuje i ručnu provjeru proračuna provedenih na računalu korištenjem specifičnih softvera)\n10. 10. Verifikacija nacrtne dokumentacije\n11. 11. Verifikacija aktivnosti podizvođača\n12. 12. Interna recenzija\n13. 13. Završna verifikacija\n14. 14. Recenzija od strane naručitelja\n15. 15. Revizija projekta prema zahtjevima naručitelja\n16. 16. Predaja projekta",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "Q06-DOC0019-005",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate project-record control: the project plan is stored on the department network server and, when needed, in the work-order binder.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. SPREMANJE I ČUVANJE"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Plana vođenja projekta čuva se na mrežnom poslužitelju u mapi RN odjela i po potrebi registratoru radnog naloga u odjelu koji priprema Plan vođenja projekta.",
+          "quote_language": "hr"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0019-APP_B_VIII-0006",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "candidate_lead: The source mentions a concept related to Identification and Control of Materials, Parts, and Components; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK PLANA VOĐENJA PROJEKTA > **3.2. Format plana vođenja projekta**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3.2.2. Plan vođenja projekta označava se oznakom PVP i brojem radnog naloga.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK PLANA VOĐENJA PROJEKTA > **3.2. Format plana vođenja projekta**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0019-APP_B_XIII-0007",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: The source mentions a concept related to Handling, Storage, and Shipping; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > **4. SPREMANJE I ČUVANJE**"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Plan vođenja projekta dostavlja se Direktoru odjela. Plana vođenja projekta čuva se na mrežnom poslužitelju u mapi RN odjela i po potrebi registratoru radnog naloga u odjelu koji priprema Plan vođenja projekta.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > **4. SPREMANJE I ČUVANJE**"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0019-APP_B_XIV-0008",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PLAN VOĐENJA PROJEKTA"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregledao: Tomislav Hršak, dipl.ing.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > PLAN VOĐENJA PROJEKTA"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0019-APP_B_XIV-0009",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kroz postupak plana vođenja projekta kontrolira se obavljanje svih aktivnosti na izradi projekta koje su bitne za osiguranje kvalitete projekta, te se prati gotovost pojedinih faza u odnosu na terminski plan.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0019-APP_B_XIV-0010",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2.2. Voditelj Q/EP/HS službe i Direktor odjela odgovorni su za pregled i provođenje plana vođenja projekta za projekte nivoa I, a kod projekata nivoa II odgovorni su Direktor odjela i Glavni projektant/Voditelj tima.",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "V3-DOC-0019-APP_B_XIV-0011",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "candidate_lead: The source mentions a concept related to Inspection, Test, and Operating Status; verify the control, implementation, and objective records during the audit.",
+      "item_type": "candidate_lead",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK PLANA VOĐENJA PROJEKTA > 3.1. Sadržaj postupaka plana vođenja projekta"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "3. 3. Izrada plana kontrole ( za nivo I )",
+          "quote_language": "hr",
+          "source_locator": "POSTUPAK SUSTAVA KVALITETE > 3. POSTUPAK PLANA VOĐENJA PROJEKTA > 3.1. Sadržaj postupaka plana vođenja projekta"
+        }
+      ]
+    }
+  ]
+}
