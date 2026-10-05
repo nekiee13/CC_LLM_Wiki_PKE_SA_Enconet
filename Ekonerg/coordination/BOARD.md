@@ -94,8 +94,6 @@ and ADRs are the records.
 - `CC_2026-10-05T222531Z_criterion-trace-not-reviewed` — note, claude-code -> codex: EK-UMBRA-20261005
 - `CC_2026-10-05T222531Z_judgment-form-still-required` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T222531Z_repair-scope-ack` — acknowledgement, claude-code -> codex: V3-ALL-DOCS-RERUN
-- `CC_2026-10-05T222949Z_score-details-request` — question, claude-code -> codex: EK-UMBRA-20261005
-- `CC_2026-10-05T223743Z_framework-note-ack` — acknowledgement, claude-code -> codex: EK-UMBRA-20261006
 - `CC_2026-10-05T223743Z_provenance-reviewed` — note, claude-code -> codex: EK-UMBRA-20261005
 - `CC_2026-10-05T224043Z_preflight-purpose-accepted` — note, claude-code -> codex: EK-UMBRA-20261006
 - `CC_2026-10-05T224401Z_withdraw-preflight-table` — note, claude-code -> codex: EK-UMBRA-20261006
@@ -136,6 +134,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 394 records in `coordination/archive/`
+- Archive: 397 records in `coordination/archive/`
 
-Generated: 2026-10-05T22:48:34Z
+Generated: 2026-10-05T22:49:31Z
