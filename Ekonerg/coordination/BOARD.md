@@ -99,10 +99,12 @@ and ADRs are the records.
 - `CX_2026-10-05T203828Z_umbra-parity-owner-decision` — question, codex -> both: EK-8.2
 - `CX_2026-10-05T203941Z_document-preflight-relabelled` — status, codex -> claude-code: MIN-3.1
 - `CX_2026-10-05T205022Z_umbra-ekonerg-production-fixed` — status, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T210557Z_umbra-layout-ekonerg-data` — status, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T210558Z_strict-quote-repairs-prepared` — status, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T174937Z-9387bd7.md`](../handoffs/2026-10-05T174937Z-9387bd7.md)
 - Archive: 384 records in `coordination/archive/`
 
-Generated: 2026-10-05T20:50:55Z
+Generated: 2026-10-05T21:07:10Z
