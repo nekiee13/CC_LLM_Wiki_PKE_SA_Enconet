@@ -46,6 +46,13 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
         }
         if len(evaluations) != 18:
             raise ValueError(f"evaluation run {run_id} must contain 18 criterion evaluations")
+        score_links: dict[str, list[str]] = {criterion_id: [] for criterion_id in evaluations}
+        for link in conn.execute(
+            "SELECT e.criterion_id, x.item_id FROM evaluation_evidence x "
+            "JOIN criterion_evaluations e ON e.evaluation_id=x.evaluation_id "
+            "WHERE e.evaluation_run_id=? ORDER BY e.criterion_id, x.item_id", (run_id,)
+        ):
+            score_links.setdefault(link["criterion_id"], []).append(link["item_id"])
     by_criterion: dict[str, list[sqlite3.Row]] = {}
     for row in rows:
         by_criterion.setdefault(row["criterion_id"], []).append(row)
@@ -64,7 +71,7 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
                  "No linked Ekonerg vendor quote is present in the active snapshot.")
         locator = first["source_locator"] if first else "n/a"
         doc_names = sorted({r["filename"] for r in evidence if r["filename"]})
-        crumb_ids = [r["item_id"] for r in evidence[:8]]
+        crumb_ids = score_links.get(criterion_id, [])
         statements = [r["statement"] for r in evidence[:3] if r["statement"]]
         aff = (f"The active Ekonerg snapshot contains {vendor_count} vendor crumb(s) "
                f"for this criterion and {rule_count} related rule crumb(s). "
@@ -86,10 +93,14 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
             "rating_label": RATING_LABELS[rating], "scale_points": RATING_POINTS[rating],
             "crumbs": f"{vendor_count} vendor / {rule_count} rule",
             "vendor_count": vendor_count, "status": status,
+            "score_crumb_ids": crumb_ids, "score_crumb_count": len(crumb_ids),
             "refs": ("Ekonerg crumbs: " + (", ".join(crumb_ids) if crumb_ids else "none") +
                      "; source documents: " + (", ".join(doc_names) if doc_names else "none")),
             "aff": aff, "con": con,
             "judge": str(evaluation["judge_ruling"]), "rationale": str(evaluation["rationale"]),
+            "summary": str(evaluation["rationale"]),
+            "score_trace": (f"{len(crumb_ids)} linked vendor crumb(s) -> {rating} "
+                            f"({RATING_POINTS[rating]}/5, {score:.0f} points)"),
             "judge": "Withheld — no human criterion judgment is recorded.",
             "verify": verify,
             "judge": str(evaluation["judge_ruling"]), "rationale": str(evaluation["rationale"]),
@@ -126,6 +137,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
                   "<title>EKONERG — 10 CFR 50 Appendix B Conformance Dashboard</title>",
                   text, count=1, flags=re.S)
     style_end = text.index("</style>")
+    text = text[:style_end] + ".criterionSummary{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.35}.scoreTrace{font-weight:750;color:var(--navy)}.crumbTrace{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--soft);font-size:12px}.crumbTrace summary{cursor:pointer;color:var(--navy);font-weight:750}.crumbTrace ul{margin:7px 0 0 18px;max-height:180px;overflow:auto}.crumbTrace li{margin:2px 0;word-break:break-word}" + text[style_end:]
     text = text[:style_end] + _dark_css() + text[style_end:]
     header = '''<header class="header">
   <h1>10 CFR 50 Appendix B — EKONERG Conformance Dashboard</h1>
@@ -210,7 +222,11 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = re.sub(r'<div class="radarBox".*?</div>\s*</div>', '</div>', text, flags=re.S)
     text = re.sub(r'function renderRadar\(\)\{.*?\n\}', '', text, flags=re.S)
     text = re.sub(r'[^\n]*radar[^\n]*\n', '', text, flags=re.I)
-    text = re.sub(r'const data = \[.*?\];\nconst labels=', 'const data = ' + matrix_json + ';\nconst labels=', text, count=1, flags=re.S)
+    text = re.sub(
+        r'const data = \[.*?\];\nconst labels=',
+        lambda _match: 'const data = ' + matrix_json + ';\nconst labels=',
+        text, count=1, flags=re.S,
+    )
     text = text.replace("const labels={fully:'Fully Matched',substantially:'Substantially Matched',partially:'Partially Matched',minimally:'Minimally Matched',unmet:'Unmet'};", "const labels={fully:'Fully Matched',substantially:'Substantially Matched',partially:'Partially Matched',minimally:'Minimally Matched',unmet:'Unmet'};")
     text = text.replace("const riskRank={unmet:5,minimally:4,partially:3,substantially:2,fully:1};", "const riskRank={unmet:5,minimally:4,partially:3,substantially:2,fully:1};")
     text = text.replace("const evidenceRank={'Strong':3,'Moderate':2,'Weak':1,'Weak to moderate':1.5};", "const evidenceRank={};")
@@ -223,10 +239,20 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', '''function cardHtml(d){
   return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="crumbTag">Evidence: ${d.crumbs}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p><p>${d.rationale}</p></div><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
 }''', text, count=1, flags=re.S)
+    text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', '''function cardHtml(d){
+  const crumbs=(d.score_crumb_ids||[]).map(id=>`<li>${id}</li>`).join('')||'<li>No linked vendor crumb; score is unmet because vendor evidence is absent.</li>';
+  return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
+}''', text, count=1, flags=re.S)
     text = text.replace("if(k==='score') return (a.score-b.score)*asc;", "if(k==='score') return (a.score-b.score)*asc;")
     text = text.replace("<th data-col=\"rating\">Verdict ${arrow('rating')}</th><th data-col=\"score\" class=\"center\">Score ${arrow('score')}</th><th data-col=\"crumbs\" class=\"center\">Evidence ${arrow('crumbs')}</th>", "<th data-col=\"rating\">Status ${arrow('rating')}</th><th data-col=\"score\" class=\"center\">Score ${arrow('score')}</th><th data-col=\"crumbs\" class=\"center\">Evidence ${arrow('crumbs')}</th>")
+    text = text.replace("<td class=\"center\">${d.crumbs}</td>", "<td class=\"center\">${d.score_crumb_count} linked crumbs</td>")
     text = text.replace("<td class=\"center\">${d.score}%</td>", "<td class=\"center\">${d.score}% · ${d.scale_points}/5</td>")
     text = text.replace("renderCards(); renderMatrix(); renderRadar();", "renderCards(); renderMatrix();")
+    text = text.replace("renderCards(); renderMatrix();", '''function cardHtml(d){
+  const crumbs=(d.score_crumb_ids||[]).map(id=>`<li>${id}</li>`).join('')||'<li>No linked vendor crumb; score is unmet because vendor evidence is absent.</li>';
+  return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
+}
+renderCards(); renderMatrix();''')
     text = re.sub(r'<div class="footer">.*?</div>', '<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Score withheld.</div>', text, count=1, flags=re.S)
     text = re.sub(r'<div class="footer">.*?</div>', f'<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Run {run_id}; score {score:.1f}%.</div>', text, count=1, flags=re.S)
     return text

@@ -45,6 +45,21 @@ The canonical evaluation package is
 - Kept the radar chart excluded as previously directed; no new workflow or
   supplier data was introduced.
 
+## Criterion traceability
+
+Each expandable criterion card now includes:
+
+- a short criterion summary and the full affirmative, contrary, and ruling
+  explanation;
+- the score in both percentage and five-level form (for example, `75% · 4/5`);
+- a score trace showing the rating, points, and number of linked vendor crumbs;
+- a collapsible list of the exact crumb IDs linked to that criterion's
+  evaluation record.
+
+The matrix also reports the number of linked score crumbs for each criterion.
+This follows the Enconet dashboard contract: `refs` are supporting crumb IDs,
+while `aff`, `con`, `judge`, and `verify` explain the criterion decision.
+
 ## Validation
 
 The generator passed and the output contains no `TEKOL`, `Withheld`, dark
