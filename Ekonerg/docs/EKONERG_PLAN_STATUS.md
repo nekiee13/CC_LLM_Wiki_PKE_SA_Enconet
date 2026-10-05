@@ -57,7 +57,7 @@ made.*
 | EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | 🟡 In progress — G3 approved; 18 judgment template ready |
 | EK-7 | EK-7.2 — Draft findings and follow-up actions | ⬜ Not started |
 | EK-8 — Generate, test, and release Croatian outputs | EK-8.1 — Build the report and evidence package | ⬜ Not started |
-| EK-8 | EK-8.2 — Test the dashboard and complete owner UAT | ⬜ Not started |
+| EK-8 | EK-8.2 — Test the dashboard and complete owner UAT | 🟡 Dashboard generated and tested; owner UAT/Claude review pending |
 | EK-8 | EK-8.3 — Release outputs under G5 and G6 | ⬜ Not started |
 | EK-9 — Close the audit and hand over follow-up work | EK-9.1 — Reconcile records and prepare G7 | ⬜ Not started |
 | EK-9 | EK-9.2 — Publish the final handoff and archive resolved work | ⬜ Not started |
@@ -96,6 +96,16 @@ made.*
   golden note. The golden calibration set is still pending human approval.
 - M1 cannot be accepted until EK-1 through EK-4 close and the owner explicitly accepts the
   M1 evidence packet (Task EK-4.4).
+
+### Dashboard update — 2026-10-05
+
+The offline UMBRA evidence dashboard is published at
+`out/2026-10-05/EKONERG_UMBRA_DASHBOARD_2026-10-05.html`. It shows the current
+intake and evidence counts, all 18 criteria, gate state, and the B01–B10 source
+batches. It deliberately withholds the score and final classification because
+zero of the 18 human criterion judgments are recorded. The next safe action is
+owner/auditor judgment entry, followed by G4 review; no rating is inferred from
+policy text or crumb counts.
 
 ### Latest owner decisions — 2026-10-05
 
