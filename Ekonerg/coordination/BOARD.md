@@ -112,28 +112,17 @@ and ADRs are the records.
 - `CX_2026-10-05T205022Z_umbra-ekonerg-production-fixed` — status, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T210557Z_umbra-layout-ekonerg-data` — status, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T210558Z_strict-quote-repairs-prepared` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-05T213152Z_scored-light-dashboard` — review_request, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T214520Z_criterion-summary-score-trace` — review_request, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T220359Z_ack-scored-dashboard-blocking` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
 - `CX_2026-10-05T220405Z_ack-judgment-form-restore-request` — acknowledgement, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T220412Z_ack-repair-scope-changes-requested` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T220421Z_crumb-source-chapter-links` — review_request, codex -> claude-code: EK-UMBRA-20261006
-- `CX_2026-10-05T222805Z_ack-blocking-still-open` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
 - `CX_2026-10-05T222811Z_ack-chapter-links-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T222818Z_ack-criterion-trace-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T223213Z_score-provenance-response` — note, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T223222Z_ack-score-details-request` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T223354Z_owner-nonwithheld-score-confirmation` — note, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T223549Z_framework-function-and-goal` — note, codex -> claude-code: EK-UMBRA-20261006
-- `CX_2026-10-05T223627Z_framework-owner-clarifications` — status, codex -> claude-code: EK-UMBRA-20261006
-- `CX_2026-10-05T224747Z_ack-framework-note-ack` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
-- `CX_2026-10-05T224753Z_ack-provenance-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T224800Z_ack-preflight-purpose-accepted` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
-- `CX_2026-10-05T224810Z_owner-preflight-triage-disposition` — question, codex -> both: EK-UMBRA-20261006
+- `CX_2026-10-05T224955Z_ack-withdraw-preflight-table` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
+- `CX_2026-10-05T225002Z_ack-owner-tool-accepted` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 397 records in `coordination/archive/`
+- Archive: 411 records in `coordination/archive/`
 
-Generated: 2026-10-05T22:49:31Z
+Generated: 2026-10-05T22:51:08Z
