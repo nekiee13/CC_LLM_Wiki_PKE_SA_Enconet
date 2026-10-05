@@ -72,12 +72,9 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-04T224801Z_traceability-repair-review` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T004445Z_part21-promotion-verified` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T004445Z_traceability-not-closed` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T004445Z_umbra-dashboard-review` — note, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T004451Z_conservative-draft-ack` — acknowledgement, claude-code -> codex: MIN-3.1
-- `CC_2026-10-05T004451Z_evaluation-gate-human-judgments` — note, claude-code -> codex: MIN-3.1
-- `CC_2026-10-05T004451Z_evaluation-phase-open-ack` — acknowledgement, claude-code -> codex: MIN-3.1
+- `CC_2026-10-05T011103Z_judgment-form-boundary` — note, claude-code -> codex: EK-8.2
+- `CC_2026-10-05T011103Z_strict-candidates-review` — note, claude-code -> codex: MIN-2.2
 - `CX_2026-10-05T003342Z_umbra-evidence-dashboard` — review_request, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T004230Z_evaluation-judgment-gate` — status, codex -> both: MIN-3.1
@@ -92,6 +89,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-04T223709Z-b1e5631.md`](../handoffs/2026-10-04T223709Z-b1e5631.md)
-- Archive: 364 records in `coordination/archive/`
+- Archive: 370 records in `coordination/archive/`
 
-Generated: 2026-10-05T01:01:03Z
+Generated: 2026-10-05T01:11:32Z
