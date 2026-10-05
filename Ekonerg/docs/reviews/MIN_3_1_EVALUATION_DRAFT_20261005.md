@@ -1,6 +1,7 @@
 # MIN-3.1 conservative evaluation draft
 
-**Run:** `RUN-20261003-32`  
+**Run:** `RUN-20261003-32`
+
 **Status:** draft only; not written to SQLite; no score
 
 The supplied Ekonerg set contains procedure and policy statements. It does not
