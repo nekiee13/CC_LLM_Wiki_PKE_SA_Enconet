@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-05T214946Z-116435c.md`](handoffs/2026-10-05T214946Z-116435c.md)
+**Authoritative record:** [`handoffs/2026-10-05T221742Z-19cdd68.md`](handoffs/2026-10-05T221742Z-19cdd68.md)
 
-**Status:** partial · **Git:** `116435c` · **Agent:** codex · **Created:** 2026-10-05T21:49:46Z
+**Status:** partial · **Git:** `19cdd68` · **Agent:** codex · **Created:** 2026-10-05T22:17:42Z
 
-**Exact next action:** Review Claude response to CX_2026-10-05T214520Z_criterion-summary-score-trace.md, then obtain owner approval or corrections before G4.
+**Exact next action:** Review Claude response to the chapter-link request; then decide whether to restore the separate judgment form and resolve scoring provenance.
