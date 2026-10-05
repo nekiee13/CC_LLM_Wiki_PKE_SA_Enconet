@@ -102,7 +102,6 @@ and ADRs are the records.
 - `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234311Z_stale-candidate-rejection-question` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234512Z_scope2-diff-verified` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T234825Z_fresh-candidates-verified` — note, claude-code -> codex: MIN-2.2
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
@@ -132,6 +131,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 434 records in `coordination/archive/`
+- Archive: 436 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:49:31Z
+Generated: 2026-10-05T23:50:08Z
