@@ -1,8 +1,11 @@
-# MIN-3.1 conservative evaluation draft
+# MIN-3.1 conservative evaluation draft (superseded)
 
 **Run:** `RUN-20261003-32`
 
-**Status:** draft only; not written to SQLite; no score
+**Status:** superseded by
+[`MIN_3_1_DOCUMENT_PREFLIGHT_20261005.md`](MIN_3_1_DOCUMENT_PREFLIGHT_20261005.md).
+This file is retained as the earlier conservative gate record; it is not the
+current Ekonerg document assessment.
 
 The supplied Ekonerg set contains procedure and policy statements. It does not
 contain completed implementation records, interviews, samples, approvals, or

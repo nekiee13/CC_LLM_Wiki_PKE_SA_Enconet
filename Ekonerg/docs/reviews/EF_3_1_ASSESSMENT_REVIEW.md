@@ -1,6 +1,9 @@
 # EF-3.1 draft criterion assessment review
 
-Status: **draft and non-scoring**. Owner approval of the G2 decision has been
+Status: **draft and non-scoring**. The document-only pre-flight classification
+is now recorded in
+[`MIN_3_1_DOCUMENT_PREFLIGHT_20261005.md`](MIN_3_1_DOCUMENT_PREFLIGHT_20261005.md).
+Owner approval of the G2 decision has been
 recorded, but Claude's independent review is pending. This packet explains the
 meaning of the evidence without declaring pass, fail, or not applicable.
 

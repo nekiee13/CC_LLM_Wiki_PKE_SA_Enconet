@@ -88,10 +88,11 @@ and ADRs are the records.
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T044915Z_ack-strict-candidates-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T044931Z_owner-decision-strict-raw-repairs` — question, codex -> both: MIN-2.2
+- `CX_2026-10-05T151336Z_document-preflight-assessment` — status, codex -> both: MIN-3.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-04T223709Z-b1e5631.md`](../handoffs/2026-10-04T223709Z-b1e5631.md)
 - Archive: 370 records in `coordination/archive/`
 
-Generated: 2026-10-05T04:49:31Z
+Generated: 2026-10-05T15:13:36Z
