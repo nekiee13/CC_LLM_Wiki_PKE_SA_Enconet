@@ -15,7 +15,7 @@ MATRIX = ROOT / "out" / "2026-10-05" / "MIN-3.1-evidence-matrix-v4.json"
 STATE = ROOT / "project-state.yml"
 
 
-def test_dashboard_uses_current_evidence_and_withholds_score() -> None:
+def test_dashboard_uses_current_evidence_and_reports_score() -> None:
     data = build_data(DB, MATRIX, STATE, "RUN-20261003-32", "2026-10-05", "DASH-20261005-0001")
     assert data["metrics"]["qms_files"] == 24
     assert data["metrics"]["vendor_crumbs"] == 189
@@ -25,9 +25,11 @@ def test_dashboard_uses_current_evidence_and_withholds_score() -> None:
     assert data["metrics"]["criteria_with_vendor_crumbs"] == 13
     assert len(data["criteria"]) == 18
     assert len(data["batches"]) == 10
-    assert data["score_state"] == "Withheld"
-    assert data["classification_state"] == "Withheld"
-    assert data["metrics"]["judgments"] == 0
+    assert data["score_state"] == "52.8%"
+    assert data["classification_state"] == "Partially"
+    assert data["metrics"]["judgments"] == 18
+    assert data["metrics"]["conformance_score"] == 52.8
+    assert data["metrics"]["rating_counts"]["unmet"] == 5
 
 
 def test_dashboard_html_is_offline_and_has_no_false_failure_label() -> None:
@@ -36,7 +38,7 @@ def test_dashboard_html_is_offline_and_has_no_false_failure_label() -> None:
     page = raw_page.casefold()
     for forbidden in ("login.microsoftonline.com", "oauth", "signin", "https://cdn.", "unpkg.com"):
         assert forbidden not in page
-    assert "withheld" in page
+    assert "52.8%" in page
     assert "no direct vendor crumb" in page
     assert 'id="judgments"' in page
     assert "fill-undetermined" in page

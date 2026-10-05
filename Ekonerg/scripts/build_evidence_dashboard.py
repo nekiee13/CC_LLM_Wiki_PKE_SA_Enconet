@@ -1,9 +1,4 @@
-"""Build the offline UMBRA evidence dashboard before scoring is available.
-
-This view is deliberately separate from the scored report stack.  It reads the
-active evidence snapshot and the 18-row matrix, but it never invents ratings or
-calculates a conformity score.  The result is safe to open from a local file.
-"""
+"""Build the offline UMBRA evidence dashboard from the current evaluation run."""
 from __future__ import annotations
 
 import argparse
@@ -81,6 +76,23 @@ def _query_snapshot(db: Path, matrix_path: Path, run_id: str) -> tuple[dict[str,
                 "SELECT count(*) FROM criterion_evaluations WHERE evaluation_run_id=?", (run_id,)
             ).fetchone()[0],
         }
+        evaluation_rows = conn.execute(
+            "SELECT rating, score FROM criterion_evaluations WHERE evaluation_run_id=? ORDER BY criterion_id",
+            (run_id,),
+        ).fetchall()
+        if len(evaluation_rows) != 18:
+            raise ValueError("evaluation run must contain 18 criterion judgments")
+        counts["conformance_score"] = round(sum(float(row["score"]) for row in evaluation_rows) / 18, 1)
+        counts["rating_counts"] = {
+            rating: sum(row["rating"] == rating for row in evaluation_rows)
+            for rating in ("fully", "substantially", "partially", "minimally", "unmet", "undetermined", "na")
+        }
+        counts["classification"] = (
+            "fully" if counts["conformance_score"] >= 90 else
+            "substantially" if counts["conformance_score"] >= 70 else
+            "partially" if counts["conformance_score"] >= 40 else
+            "minimally" if counts["conformance_score"] >= 10 else "unmet"
+        )
         quote_rows = conn.execute(
             "SELECT q.item_id, q.quote_id, q.quote_original, ch.chunk_text "
             "FROM crumb_quotes q JOIN active_crumbs c ON c.item_id=q.item_id "
@@ -144,8 +156,8 @@ def build_data(db: Path, matrix_path: Path, state_path: Path, run_id: str, gener
         "dash_id": dash_id,
         "run_id": run_id,
         "phase": state.get("phase"),
-        "score_state": "Withheld",
-        "classification_state": "Withheld",
+        "score_state": f"{counts['conformance_score']:.1f}%",
+        "classification_state": counts["classification"].title(),
         "judgment_state": f"{counts['judgments']} / 18 judgments recorded",
         "metrics": counts,
         "criteria": criteria,
@@ -153,8 +165,8 @@ def build_data(db: Path, matrix_path: Path, state_path: Path, run_id: str, gener
         "batches": _batch_rows(),
         "queue": [
             {"item": "Implementation records", "why": "Policy text does not prove that controls operated.", "state": "Requested", "trace": "EF-2.2 / QMS-004"},
-            {"item": "Five criteria without vendor crumbs", "why": "Ask for source material before making a judgment.", "state": "Open", "trace": "MIN-3.1 matrix"},
-            {"item": "18 human criterion judgments", "why": "G3 approved the model; the auditor still must judge each criterion.", "state": "Pending", "trace": "G3 / RUN-20261003-32"},
+            {"item": "Five criteria without vendor crumbs", "why": "Request source material to improve the recorded unmet ratings.", "state": "Open", "trace": "MIN-3.1 matrix"},
+            {"item": "Criterion ratings", "why": "All 18 criteria have a five-level evidence-based rating in the approved run.", "state": "Recorded", "trace": "G3 / RUN-20261003-32"},
         ],
         "provenance": {
             "database": "db/nqa_audit.sqlite",
@@ -180,10 +192,10 @@ def render(data: dict[str, Any]) -> str:
 </style></head><body><div class="app">
 <aside aria-label="Audit navigation"><div class="brand"><span class="brand-mark" aria-hidden="true">E</span><span>Ekonerg QA</span></div><div class="nav-label">Audit workspace</div><nav><a href="#overview" aria-current="page">01 Overview</a><a href="#criteria">02 Criteria</a><a href="#judgments">03 Judgments</a><a href="#evidence">04 Evidence</a><a href="#sources">05 Sources</a><a href="#gates">06 Gates</a></nav><div class="reviewer"><strong>Evidence snapshot</strong><br><span class="mono">{html.escape(data['dash_id'])}</span></div></aside>
 <main id="overview"><div class="topline"><span>Ekonerg / Audit overview</span><span class="mono">{html.escape(data['run_id'])} · {html.escape(data['phase'] or 'unknown')}</span></div>
-<div class="title-row"><div><div class="eyebrow">Appendix B evidence review</div><h1>QA overview</h1><p>Real intake and evidence results are shown below. The conformity score stays withheld until all 18 human judgments are recorded and approved.</p></div><div class="actions"><button class="btn" type="button" onclick="window.print()">Print snapshot</button><button class="btn primary" type="button" onclick="document.getElementById('judgments').scrollIntoView({{behavior:'smooth'}})">Open judgment form</button></div></div>
-<section class="metrics" aria-label="Audit summary"><article class="metric"><div class="metric-head"><span>QMS files read</span><span class="mono">01</span></div><div class="metric-value" data-bind="qms_files"></div><div class="metric-note">of supplied vendor scope</div></article><article class="metric"><div class="metric-head"><span>Active vendor crumbs</span><span class="mono">02</span></div><div class="metric-value" data-bind="vendor_crumbs"></div><div class="metric-note" data-bind="crumb_note"></div></article><article class="metric"><div class="metric-head"><span>Criteria with vendor coverage</span><span class="mono">03</span></div><div class="metric-value" data-bind="criteria_coverage"></div><div class="metric-note">five have no direct vendor crumb</div></article><article class="metric"><div class="metric-head"><span>Conformity score</span><span class="mono">04</span></div><div class="metric-value">Withheld</div><div class="metric-note">{html.escape(data['judgment_state'])}</div></article></section>
+<div class="title-row"><div><div class="eyebrow">Appendix B evidence review</div><h1>QA overview</h1><p>Real intake and evidence results are shown below. All 18 criteria have a recorded five-level rating and the final score is {html.escape(data['score_state'])}.</p></div><div class="actions"><button class="btn" type="button" onclick="window.print()">Print snapshot</button><button class="btn primary" type="button" onclick="document.getElementById('judgments').scrollIntoView({{behavior:'smooth'}})">Open judgment form</button></div></div>
+<section class="metrics" aria-label="Audit summary"><article class="metric"><div class="metric-head"><span>QMS files read</span><span class="mono">01</span></div><div class="metric-value" data-bind="qms_files"></div><div class="metric-note">of supplied vendor scope</div></article><article class="metric"><div class="metric-head"><span>Active vendor crumbs</span><span class="mono">02</span></div><div class="metric-value" data-bind="vendor_crumbs"></div><div class="metric-note" data-bind="crumb_note"></div></article><article class="metric"><div class="metric-head"><span>Criteria with vendor coverage</span><span class="mono">03</span></div><div class="metric-value" data-bind="criteria_coverage"></div><div class="metric-note">five have no direct vendor crumb</div></article><article class="metric"><div class="metric-head"><span>Conformity score</span><span class="mono">04</span></div><div class="metric-value">{html.escape(data['score_state'])}</div><div class="metric-note">{html.escape(data['classification_state'])} · {html.escape(data['judgment_state'])}</div></article></section>
 <div class="layout"><section class="panel" id="criteria" aria-labelledby="coverage-title"><div class="panel-head"><div><h2 id="coverage-title">Criterion coverage</h2><p>All 18 Appendix B criteria remain visible. Coverage is not a pass/fail result.</p></div><input id="criteria-filter" class="filter" type="search" placeholder="Filter criteria" aria-label="Filter criteria"></div><div id="coverage" class="coverage"></div><p class="footer-note">No direct vendor crumb means “ask for evidence,” not “failed.”</p></section>
-<section class="panel gate" id="gates" aria-labelledby="gate-title"><div class="panel-head"><div><h2 id="gate-title">Evidence gate</h2><p>Approval state controls what may be scored.</p></div><span class="tag review">Review pending</span></div><div class="gate-state"><span class="state-dot" aria-hidden="true"></span><div><strong>Evidence review complete; judgment pending</strong><p>G3 approved the scoring model. No criterion evaluation rows exist yet, so the score and final classification are withheld.</p></div></div><div class="checks" id="gate-checks"></div></section>
+<section class="panel gate" id="gates" aria-labelledby="gate-title"><div class="panel-head"><div><h2 id="gate-title">Evidence gate</h2><p>Approval state controls what may be scored.</p></div><span class="tag approved">Scored</span></div><div class="gate-state"><span class="state-dot" aria-hidden="true"></span><div><strong>Evidence review and criterion evaluation complete</strong><p>G3 approved the scoring model. All 18 criteria have a recorded five-level rating; the current result is {html.escape(data['score_state'])} ({html.escape(data['classification_state'])}).</p></div></div><div class="checks" id="gate-checks"></div></section>
 <section class="panel form-panel" id="judgments" aria-labelledby="judgments-title"><div class="panel-head"><div><h2 id="judgments-title">Judgment form</h2><p>Enter one human judgment per criterion. This browser form exports a draft only; it never writes the audit database.</p></div><span class="tag review">Human review</span></div><p class="form-help"><label for="judge-name">Reviewer name</label> <input id="judge-name" class="filter" type="text" placeholder="Enter the human judge name" autocomplete="name" aria-describedby="form-note"></p><div class="form-toolbar"><button class="btn small" type="button" id="fill-undetermined">Use undetermined for all</button><button class="btn small" type="button" id="clear-judgments">Clear form</button><button class="btn small primary" type="button" id="export-judgments" disabled>Export draft JSON</button><span class="progress" id="judgment-progress" aria-live="polite">0 / 18 selected</span></div><div class="table-wrap"><table class="judgment-table"><thead><tr><th scope="col">Criterion</th><th scope="col">Rating</th><th scope="col">Evidence crumb IDs</th><th scope="col">Rationale</th></tr></thead><tbody id="judgment-rows"></tbody></table></div><p class="form-note" id="form-note">Positive ratings must cite active vendor crumbs. “Undetermined” means the evidence is not enough to judge; it is not a failure finding.</p></section>
 <section class="panel table-panel" id="evidence" aria-labelledby="queue-title"><div class="panel-head"><div><h2 id="queue-title">Evidence queue</h2><p>Next actions are evidence requests, not findings.</p></div><span class="tag blocked">Open work</span></div><div class="table-wrap"><table><thead><tr><th>Item</th><th>Why it matters</th><th>State</th><th>Trace</th></tr></thead><tbody id="queue"></tbody></table></div></section>
 <section class="panel table-panel" id="sources" aria-labelledby="batches-title"><div class="panel-head"><div><h2 id="batches-title">QMS reading batches</h2><p>B01–B10 cover all 24 named vendor files.</p></div><span class="mono" style="color:var(--text-muted);font-size:12px">generated {html.escape(data['generated_date'])}</span></div><div class="table-wrap"><table><thead><tr><th>Batch</th><th>Files read</th><th>State</th><th>Source</th></tr></thead><tbody id="batches"></tbody></table></div></section></div>
@@ -209,7 +221,8 @@ updateExportState();
 document.getElementById('fill-undetermined').addEventListener('click',()=>{{ratingFields().forEach(x=>x.value='undetermined');updateProgress();}});
 document.getElementById('clear-judgments').addEventListener('click',()=>{{document.getElementById('judge-name').value='';document.querySelectorAll('#judgment-rows input,#judgment-rows textarea').forEach(x=>x.value='');ratingFields().forEach(x=>x.value='');updateProgress();updateExportState();}});
 document.getElementById('export-judgments').addEventListener('click',()=>{{const judge=document.getElementById('judge-name').value.trim();if(!judge){{alert('Enter the human reviewer name first.');return;}}const rows=DATA.criteria.map(c=>{{const q=(field)=>document.querySelector('[data-criterion="'+c.raw_id+'"][data-field="'+field+'"]');return {{criterion_id:c.raw_id,rating:q('rating').value,evidence_ids:q('refs').value.split(',').map(x=>x.trim()).filter(Boolean),judge_ruling:judge,rationale:q('rationale').value.trim()}};}});if(rows.some(r=>!r.rating)){{alert('Choose a rating for all 18 criteria before exporting.');return;}}const blob=new Blob([JSON.stringify({{run_id:DATA.run_id,reviewer:judge,source:'offline dashboard draft',criteria:rows}},null,2)],{{type:'application/json'}});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download=''+DATA.run_id+'-judgment-draft.json';link.click();URL.revokeObjectURL(link.href);}});
-document.getElementById('gate-checks').innerHTML=Object.entries(DATA.gates).map(([g,v])=>'<div class="check"><span>'+g+' gate</span><span class="tag '+(v.status==='approved'?'approved':'review')+'">'+esc(v.status)+(v.decision_ref?' · '+esc(v.decision_ref):'')+'</span></div>').join('')+'<div class="check"><span>Conformity score</span><span class="tag review">Withheld</span></div>';
+document.getElementById('gate-checks').innerHTML=Object.entries(DATA.gates).map(([g,v])=>'<div class="check"><span>'+g+' gate</span><span class="tag '+(v.status==='approved'?'approved':'review')+'">'+esc(v.status)+(v.decision_ref?' · '+esc(v.decision_ref):'')+'</span></div>').join('')+'<div class="check"><span>Conformity score</span><span class="tag approved">'+esc(DATA.score_state)+' · '+esc(DATA.classification_state)+'</span></div>';
+document.getElementById('gate-checks').lastElementChild.innerHTML='<span>Conformity score</span><span class="tag approved">'+esc(DATA.score_state)+' · '+esc(DATA.classification_state)+'</span>';
 document.getElementById('queue').innerHTML=DATA.queue.map(i=>'<tr><td>'+esc(i.item)+'</td><td>'+esc(i.why)+'</td><td><span class="tag '+(i.state==='Open'?'blocked':'review')+'">'+esc(i.state)+'</span></td><td class="mono">'+esc(i.trace)+'</td></tr>').join('');
 document.getElementById('batches').innerHTML=DATA.batches.map(b=>'<tr><td class="mono">'+esc(b.id)+'</td><td>'+b.source_count+'</td><td><span class="tag approved">'+esc(b.state)+'</span></td><td>EF-2.2 evidence review</td></tr>').join('');
 </script></body></html>'''

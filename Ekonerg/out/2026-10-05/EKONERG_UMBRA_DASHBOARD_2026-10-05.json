@@ -51,7 +51,7 @@
       "state": "Complete"
     }
   ],
-  "classification_state": "Withheld",
+  "classification_state": "Partially",
   "criteria": [
     {
       "anchored_vendor_crumbs": 2,
@@ -273,19 +273,30 @@
     }
   },
   "generated_date": "2026-10-05",
-  "judgment_state": "0 / 18 judgments recorded",
+  "judgment_state": "18 / 18 judgments recorded",
   "metrics": {
     "active_crumbs": 244,
     "active_quotes": 321,
+    "classification": "partially",
+    "conformance_score": 52.8,
     "criteria_with_vendor_crumbs": 13,
     "criteria_without_vendor_crumbs": 5,
     "exact_links": 320,
-    "judgments": 0,
+    "judgments": 18,
     "link_rows": 322,
     "normalized_links": 2,
     "qms_files": 24,
     "quote_exact_records": 319,
     "quote_non_exact_records": 2,
+    "rating_counts": {
+      "fully": 2,
+      "minimally": 0,
+      "na": 0,
+      "partially": 3,
+      "substantially": 8,
+      "undetermined": 0,
+      "unmet": 5
+    },
     "reference_files": 7,
     "registered_files": 31,
     "rule_crumbs": 55,
@@ -309,17 +320,17 @@
       "item": "Five criteria without vendor crumbs",
       "state": "Open",
       "trace": "MIN-3.1 matrix",
-      "why": "Ask for source material before making a judgment."
+      "why": "Request source material to improve the recorded unmet ratings."
     },
     {
-      "item": "18 human criterion judgments",
-      "state": "Pending",
+      "item": "Criterion ratings",
+      "state": "Recorded",
       "trace": "G3 / RUN-20261003-32",
-      "why": "G3 approved the model; the auditor still must judge each criterion."
+      "why": "All 18 criteria have a five-level evidence-based rating in the approved run."
     }
   ],
   "run_id": "RUN-20261003-32",
   "schema_version": "evidence-dashboard-1.0",
-  "score_state": "Withheld",
+  "score_state": "52.8%",
   "supplier": "Ekonerg"
 }

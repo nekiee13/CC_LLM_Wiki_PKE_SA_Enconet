@@ -1,8 +1,8 @@
-"""Build the TEKOL dashboard layout as an Ekonerg UMBRA evidence view.
+"""Build the light TEKOL dashboard layout with Ekonerg evaluation data.
 
 The supplied TEKOL page is used as a layout and interaction template only.
-All visible audit data is read from Ekonerg's active matrix and SQLite snapshot.
-No score or human rating is inferred.
+All visible audit data is read from Ekonerg's active matrix and approved local
+evaluation run. The score follows the Enconet five-level model.
 """
 from __future__ import annotations
 
@@ -19,9 +19,15 @@ ROOT = Path(__file__).resolve().parents[1]
 TEMPLATE = ROOT / "docs" / "dashboard_example" / "Example_TEKOL_Appendix_B_Conformance_Dashboard.html"
 DEFAULT_MATRIX = ROOT / "out" / "2026-10-05" / "MIN-3.1-evidence-matrix-v4.json"
 DEFAULT_DB = ROOT / "db" / "nqa_audit.sqlite"
+DEFAULT_RUN_ID = "RUN-20261003-32"
+RATING_POINTS = {"fully": 5, "substantially": 4, "partially": 3, "minimally": 2, "unmet": 1}
+RATING_LABELS = {
+    "fully": "Fully Matched", "substantially": "Substantially Matched",
+    "partially": "Partially Matched", "minimally": "Minimally Matched", "unmet": "Unmet",
+}
 
 
-def _criterion_data(matrix_path: Path, db_path: Path) -> list[dict[str, Any]]:
+def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     matrix = json.loads(matrix_path.read_text(encoding="utf-8"))
     with sqlite3.connect(str(db_path)) as conn:
         conn.row_factory = sqlite3.Row
@@ -32,6 +38,14 @@ def _criterion_data(matrix_path: Path, db_path: Path) -> list[dict[str, Any]]:
             "LEFT JOIN documents d ON d.doc_id=c.doc_id "
             "WHERE c.document_side='DOCUMENT' ORDER BY c.criterion_id, c.item_id"
         ).fetchall()
+        evaluations = {
+            row["criterion_id"]: row for row in conn.execute(
+                "SELECT criterion_id, rating, score, judge_ruling, rationale "
+                "FROM criterion_evaluations WHERE evaluation_run_id=? ORDER BY criterion_id", (run_id,)
+            )
+        }
+        if len(evaluations) != 18:
+            raise ValueError(f"evaluation run {run_id} must contain 18 criterion evaluations")
     by_criterion: dict[str, list[sqlite3.Row]] = {}
     for row in rows:
         by_criterion.setdefault(row["criterion_id"], []).append(row)
@@ -56,8 +70,11 @@ def _criterion_data(matrix_path: Path, db_path: Path) -> list[dict[str, Any]]:
                f"for this criterion and {rule_count} related rule crumb(s). "
                + ("The evidence statements include: " + " ".join(statements)
                   if statements else "No vendor-side statement is mapped."))
+        evaluation = evaluations.get(criterion_id)
+        rating = str(evaluation["rating"])
+        score = float(evaluation["score"])
         con = ("No direct Ekonerg vendor crumb is mapped in the active snapshot; "
-               "scope evidence is needed."
+               "the criterion is evaluated as unmet until vendor evidence is supplied."
                if vendor_count == 0 else
                "The document screen does not prove that the control operated. "
                "Implementation records and objective samples remain required.")
@@ -65,26 +82,29 @@ def _criterion_data(matrix_path: Path, db_path: Path) -> list[dict[str, Any]]:
                   "confirm scope, responsibility, implementation, and retained evidence.")
         out.append({
             "n": criterion_id.removeprefix("APP_B_"), "order": order,
-            "title": row["criterion_name"], "rating": "undetermined", "score": None,
+            "title": row["criterion_name"], "rating": rating, "score": score,
+            "rating_label": RATING_LABELS[rating], "scale_points": RATING_POINTS[rating],
             "crumbs": f"{vendor_count} vendor / {rule_count} rule",
             "vendor_count": vendor_count, "status": status,
             "refs": ("Ekonerg crumbs: " + (", ".join(crumb_ids) if crumb_ids else "none") +
                      "; source documents: " + (", ".join(doc_names) if doc_names else "none")),
             "aff": aff, "con": con,
+            "judge": str(evaluation["judge_ruling"]), "rationale": str(evaluation["rationale"]),
             "judge": "Withheld — no human criterion judgment is recorded.",
             "verify": verify,
+            "judge": str(evaluation["judge_ruling"]), "rationale": str(evaluation["rationale"]),
             "quote": f"{quote} (source locator: {locator})",
         })
-    return out
+    counts = {key: sum(item["rating"] == key for item in out) for key in RATING_LABELS}
+    metrics = {"run_id": run_id, "criteria": len(out), "applicable": len(out),
+               "score": round(sum(item["score"] for item in out) / len(out), 1), "counts": counts}
+    return out, metrics
 
 
 def _dark_css() -> str:
-    return """
-/* UMBRA dark skin: the source layout and controls remain unchanged. */
-:root{color-scheme:dark;--bg:#0b0f14;--panel:#111821;--ink:#e8eef4;--muted:#a9b6c4;--line:#243140;--navy:#8bbcf0;--navy2:#65a7e8;--accent:#3ccfb4;--soft:#17202b;--fully:#6fd39a;--sub:#9dcc65;--partial:#e8b04b;--minimal:#ef8a55;--unmet:#f07178;--und:#a6b0bf;--fullyBg:rgba(111,211,154,.12);--subBg:rgba(157,204,101,.12);--partialBg:rgba(232,176,75,.12);--minimalBg:rgba(239,138,85,.12);--unmetBg:rgba(240,113,120,.12);--undBg:rgba(166,176,191,.12);--fullyBdr:rgba(111,211,154,.38);--subBdr:rgba(157,204,101,.38);--partialBdr:rgba(232,176,75,.40);--minimalBdr:rgba(239,138,85,.40);--unmetBdr:rgba(240,113,120,.40);--shadow:0 12px 28px rgba(0,0,0,.30);--shadow-sm:0 4px 12px rgba(0,0,0,.22)}
-body{background:var(--bg);color:var(--ink)} .header{background:linear-gradient(135deg,#08121e,#111f2d 45%,#17344d);border-color:var(--line)} .topbar{background:var(--panel);border-color:var(--line)} .metric,.section,.card{background:var(--panel);border-color:var(--line);box-shadow:var(--shadow-sm)} .metric.main{background:linear-gradient(135deg,#12304a,#1b526f);border-color:var(--line)} .metric .label,.metric .small,.section p,.legend,.riskList,.footer{color:var(--muted)} .section h2{color:var(--navy)} .summaryGrid,.radarBox{background:var(--panel)} .progress{background:var(--soft);border-color:var(--line)} .note{background:rgba(232,176,75,.12);color:var(--ink);border-color:var(--partial)} .note.ok{background:var(--fullyBg);color:var(--ink)} .controls .btn,.search,.select{background:var(--soft);border-color:var(--line);color:var(--ink)} .btn:hover,.cardHead:hover,.matrix tr:hover td{background:var(--panel-hover,#1e2935)} .btn.active{background:var(--navy);color:#07111b;border-color:var(--navy)} .id{background:var(--soft);color:var(--navy)} .title,.scorePct,.block p,.footer strong{color:var(--ink)} .scoreBar{background:var(--soft)} .crumbTag,.evidence{background:var(--soft);color:var(--navy)} .cardBody{background:var(--panel);border-color:var(--line)} .block p{color:var(--muted)} .matrixWrap{border-color:var(--line)} .matrix{background:var(--panel);color:var(--ink)} .matrix th{background:var(--soft);color:var(--navy);border-color:var(--line)} .matrix td{border-color:var(--line);color:var(--muted)} .search:focus,.select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(60,207,180,.18)}
-@media print{body{background:#fff;color:#16212b}.header{background:#0f3358!important}.topbar,.metric,.section,.card,.matrix{background:#fff;color:#16212b;box-shadow:none}.cardBody{display:block!important}.controls,.footer,.btn.utility{display:none!important}}
-"""
+    # The TEKOL source is already the approved light UMBRA presentation.
+    # Keep the name for a minimal call-site change, but do not append a dark skin.
+    return ""
 
 
 def _replace_block(text: str, start: str, end: str, replacement: str) -> str:
@@ -93,9 +113,11 @@ def _replace_block(text: str, start: str, end: str, replacement: str) -> str:
     return text[:a] + replacement + text[b:]
 
 
-def render(matrix_path: Path, db_path: Path, generated_date: str) -> str:
+def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = DEFAULT_RUN_ID) -> str:
     text = TEMPLATE.read_text(encoding="utf-8")
-    data = _criterion_data(matrix_path, db_path)
+    data, metrics = _criterion_data(matrix_path, db_path, run_id)
+    score = metrics["score"]
+    counts = metrics["counts"]
     vendor_total = sum(item["vendor_count"] for item in data)
     covered = sum(item["vendor_count"] > 0 for item in data)
     no_direct = len(data) - covered
@@ -110,6 +132,11 @@ def render(matrix_path: Path, db_path: Path, generated_date: str) -> str:
   <p class="sub">Audit reference framework: 10 CFR 50 Appendix B, interpreted through ASME NQA-1 Part 1. This dashboard presents Ekonerg document evidence from the approved intake and active evidence snapshot. Human ratings and the final score remain withheld.</p>
   <div class="pillRow"><span class="pill"><span class="dot"></span>Ekonerg evidence snapshot</span><span class="pill">Score: Withheld</span><span class="pill">Vendor crumbs: ''' + str(vendor_total) + '''</span><span class="pill">''' + str(covered) + ''' / 18 criteria with vendor evidence</span></div>
 </header>'''
+    header = f'''<header class="header">
+  <h1>10 CFR 50 Appendix B — EKONERG Conformance Dashboard</h1>
+  <p class="sub">Audit reference framework: 10 CFR 50 Appendix B, interpreted through ASME NQA-1 Part 1. This dashboard presents Ekonerg vendor-document evidence from the approved intake and active evaluation run.</p>
+  <div class="pillRow"><span class="pill"><span class="dot"></span>Ekonerg evidence snapshot</span><span class="pill">Overall: {score:.1f}% — Partially Matched</span><span class="pill">Vendor crumbs: {vendor_total}</span><span class="pill">18 / 18 criteria evaluated</span></div>
+</header>'''
     text = _replace_block(text, "<header class=\"header\">", "</header>", header)
     topbar = f'''<section class="topbar">
   <div class="metric main"><div class="num">Withheld</div><div class="label">Conformance score</div><div class="small">0 / 18 human judgments recorded</div></div>
@@ -118,6 +145,14 @@ def render(matrix_path: Path, db_path: Path, generated_date: str) -> str:
   <div class="metric"><div class="num" style="color:var(--fully)">{covered}</div><div class="label"><span class="sw" style="background:var(--fully)"></span>Criteria with evidence</div><div class="small">Direct vendor coverage</div></div>
   <div class="metric"><div class="num" style="color:var(--partial)">{no_direct}</div><div class="label"><span class="sw" style="background:var(--partial)"></span>No direct vendor crumb</div><div class="small">Needs scope evidence</div></div>
   <div class="metric"><div class="num" style="color:var(--und)">0 / 18</div><div class="label"><span class="sw" style="background:var(--und)"></span>Judgments recorded</div><div class="small">Human review pending</div></div>
+</section>'''
+    topbar = f'''<section class="topbar">
+  <div class="metric main"><div class="num">{score:.1f}%</div><div class="label">Overall conformance</div><div class="small">{sum(item["score"] for item in data):.0f} / 1800 evidence points</div></div>
+  <div class="metric"><div class="num">18</div><div class="label">Appendix B criteria</div><div class="small">All criteria evaluated</div></div>
+  <div class="metric"><div class="num" style="color:var(--accent)">{vendor_total}</div><div class="label">Vendor crumbs</div><div class="small">Active Ekonerg evidence</div></div>
+  <div class="metric"><div class="num" style="color:var(--fully)">{counts["fully"]}</div><div class="label"><span class="sw" style="background:var(--fully)"></span>Fully matched</div><div class="small">5 / 5 level</div></div>
+  <div class="metric"><div class="num" style="color:var(--sub)">{counts["substantially"]}</div><div class="label"><span class="sw" style="background:var(--sub)"></span>Substantially matched</div><div class="small">4 / 5 level</div></div>
+  <div class="metric"><div class="num" style="color:var(--unmet)">{counts["unmet"]}</div><div class="label"><span class="sw" style="background:var(--unmet)"></span>Unmet</div><div class="small">No direct vendor evidence</div></div>
 </section>'''
     text = _replace_block(text, "<section class=\"topbar\">", "</section>", topbar)
     text = re.sub(r"</section></section>\s*(<main)", r"</section>\n\1", text, count=1)
@@ -134,15 +169,35 @@ def render(matrix_path: Path, db_path: Path, generated_date: str) -> str:
     <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> coverage is not a pass/fail result. The final classification remains withheld until human review.</div>
   </div>
 </section>'''
+    summary = f'''<section class="section summaryGrid">
+  <div><h2>Executive Summary</h2>
+    <p>Ekonerg documents were evaluated against all 18 Appendix B criteria. The evidence-based result is <strong>{score:.1f}% — Partially Matched</strong>, using the approved five-level Enconet scale.</p>
+    <p>The score is the average of the criterion ratings: fully = 5/5 (100), substantially = 4/5 (75), partially = 3/5 (50), minimally = 2/5 (25), and unmet = 1/5 (0).</p>
+    <div class="note"><strong>Primary evidence gap:</strong> {no_direct} criteria have no direct Ekonerg vendor crumb and are therefore rated unmet: VIII, IX, XI, XIII, and XIV.</div>
+    <div class="note ok"><strong>Source boundary:</strong> Ekonerg is the only supplier shown. Regulatory documents are the comparison baseline; no other supplier data is used.</div>
+  </div>
+  <div><h2>Classification Distribution</h2>
+    <div class="progress" aria-label="Ekonerg classification distribution"><div class="seg" style="width:{counts["fully"]/18*100:.2f}%;background:var(--fully)" title="Fully Matched: {counts["fully"]}">{counts["fully"]}</div><div class="seg" style="width:{counts["substantially"]/18*100:.2f}%;background:var(--sub)" title="Substantially Matched: {counts["substantially"]}">{counts["substantially"]}</div><div class="seg" style="width:{counts["partially"]/18*100:.2f}%;background:var(--partial)" title="Partially Matched: {counts["partially"]}">{counts["partially"]}</div><div class="seg" style="width:{counts["unmet"]/18*100:.2f}%;background:var(--unmet)" title="Unmet: {counts["unmet"]}">{counts["unmet"]}</div></div>
+    <div class="legend"><span><span class="sw" style="background:var(--fully)"></span>Fully: {counts["fully"]}</span><span><span class="sw" style="background:var(--sub)"></span>Substantially: {counts["substantially"]}</span><span><span class="sw" style="background:var(--partial)"></span>Partially: {counts["partially"]}</span><span><span class="sw" style="background:var(--minimal)"></span>Minimally: {counts["minimally"]}</span><span><span class="sw" style="background:var(--unmet)"></span>Unmet: {counts["unmet"]}</span></div>
+    <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> each criterion has a recorded five-level rating. Follow-up verification should target the lowest-rated criteria first.</div>
+  </div>
+</section>'''
     text = _replace_block(text, "<section class=\"section summaryGrid\">", "</section>", summary)
     text = re.sub(r"</section></section>\s*(<section class=\"section\">)",
                   r"</section>\n\1", text, count=1)
     controls_old = '<button class="btn active" data-filter="all">All <span class="count">18</span></button>\n    <button class="btn" data-filter="fully">Fully <span class="count">3</span></button>\n    <button class="btn" data-filter="substantially">Substantially <span class="count">11</span></button>\n    <button class="btn" data-filter="partially">Partially <span class="count">4</span></button>'
     controls_new = '<button class="btn active" data-filter="all">All <span class="count">18</span></button>\n    <button class="btn" data-filter="evidence">With vendor evidence <span class="count">' + str(covered) + '</span></button>\n    <button class="btn" data-filter="no-evidence">No direct vendor crumb <span class="count">' + str(no_direct) + '</span></button>\n    <button class="btn" data-filter="withheld">Ratings withheld <span class="count">18</span></button>'
     text = text.replace(controls_old, controls_new)
+    controls_new = f'''<button class="btn active" data-filter="all">All <span class="count">18</span></button>
+    <button class="btn" data-filter="fully">Fully <span class="count">{counts["fully"]}</span></button>
+    <button class="btn" data-filter="substantially">Substantially <span class="count">{counts["substantially"]}</span></button>
+    <button class="btn" data-filter="partially">Partially <span class="count">{counts["partially"]}</span></button>
+    <button class="btn" data-filter="minimally">Minimally <span class="count">{counts["minimally"]}</span></button>
+    <button class="btn" data-filter="unmet">Unmet <span class="count">{counts["unmet"]}</span></button>'''
+    text = re.sub(r'<button class="btn active" data-filter="all">.*?</button>(?:\s*<button class="btn" data-filter="[^"]+">.*?</button>)+', controls_new, text, count=1, flags=re.S)
     text = re.sub(r"<h2>Criterion Cards .*?</h2>", "<h2>Criterion Cards — Evidence Review</h2>", text, count=1)
     text = text.replace("<h2>Conformance Matrix</h2>", "<h2>Ekonerg Evidence Matrix</h2>")
-    text = text.replace("Column headers sort the matrix. Verdicts remain evidence-bounded and downgrade unsupported interpretations.", "Column headers sort the matrix. Coverage is shown; ratings and verdicts remain withheld.")
+    text = text.replace("Column headers sort the matrix. Verdicts remain evidence-bounded and downgrade unsupported interpretations.", "Column headers sort the matrix. Ratings use the approved five-level Enconet scale.")
     gaps_start = text.index('<section class="section">\n  <h2>Top Gaps Requiring Remediation</h2>')
     actions_start = text.index('<section class="section">\n  <h2>Priority Auditor Verification Actions</h2>', gaps_start)
     gap_items = "".join(f'<li><strong>{html.escape(d["n"])} — {html.escape(d["title"])}:</strong> {html.escape(d["con"])}</li>' for d in data if d["vendor_count"] == 0 or d["vendor_count"] < 5)
@@ -156,20 +211,24 @@ def render(matrix_path: Path, db_path: Path, generated_date: str) -> str:
     text = re.sub(r'function renderRadar\(\)\{.*?\n\}', '', text, flags=re.S)
     text = re.sub(r'[^\n]*radar[^\n]*\n', '', text, flags=re.I)
     text = re.sub(r'const data = \[.*?\];\nconst labels=', 'const data = ' + matrix_json + ';\nconst labels=', text, count=1, flags=re.S)
-    text = text.replace("const labels={fully:'Fully Matched',substantially:'Substantially Matched',partially:'Partially Matched',minimally:'Minimally Matched',unmet:'Unmet'};", "const labels={undetermined:'Withheld',evidence:'With vendor evidence',none:'No direct vendor crumb'};")
-    text = text.replace("const riskRank={unmet:5,minimally:4,partially:3,substantially:2,fully:1};", "const riskRank={undetermined:1};")
+    text = text.replace("const labels={fully:'Fully Matched',substantially:'Substantially Matched',partially:'Partially Matched',minimally:'Minimally Matched',unmet:'Unmet'};", "const labels={fully:'Fully Matched',substantially:'Substantially Matched',partially:'Partially Matched',minimally:'Minimally Matched',unmet:'Unmet'};")
+    text = text.replace("const riskRank={unmet:5,minimally:4,partially:3,substantially:2,fully:1};", "const riskRank={unmet:5,minimally:4,partially:3,substantially:2,fully:1};")
     text = text.replace("const evidenceRank={'Strong':3,'Moderate':2,'Weak':1,'Weak to moderate':1.5};", "const evidenceRank={};")
-    text = text.replace("let arr=data.filter(d=>filter==='all'||d.rating===filter).filter(d=>!q||clean(Object.values(d).join(' ')).includes(q));", "let arr=data.filter(d=>filter==='all'||(filter==='evidence'&&d.vendor_count>0)||(filter==='no-evidence'&&d.vendor_count===0)||filter==='withheld').filter(d=>!q||clean(Object.values(d).join(' ')).includes(q));")
-    text = text.replace("else if(sort==='score') arr=[...arr].sort((a,b)=>b.score-a.score||a.order-b.order);", "else if(sort==='score') arr=[...arr].sort((a,b)=>(b.vendor_count-a.vendor_count)||a.order-b.order);")
+    text = text.replace("let arr=data.filter(d=>filter==='all'||d.rating===filter).filter(d=>!q||clean(Object.values(d).join(' ')).includes(q));", "let arr=data.filter(d=>filter==='all'||d.rating===filter).filter(d=>!q||clean(Object.values(d).join(' ')).includes(q));")
+    text = text.replace("else if(sort==='score') arr=[...arr].sort((a,b)=>b.score-a.score||a.order-b.order);", "else if(sort==='score') arr=[...arr].sort((a,b)=>b.score-a.score||a.order-b.order);")
     text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', '''function cardHtml(d){
   const pct=d.vendor_count?Math.min(100,Math.max(8,d.vendor_count*4)):0;
   return `<article class="card undetermined" data-rating="undetermined"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div></div></div><span class="badge undetermined">Withheld</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${pct}%;background:var(--accent)"></div></div><span class="scorePct">—</span><span class="crumbTag">Evidence: ${d.crumbs}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Vendor evidence signal</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Evidence limitation</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Human ruling</h4><p>${d.judge}</p></div><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Source quote:</strong> ${d.quote}</div></div></article>`;
 }''', text, count=1, flags=re.S)
-    text = text.replace("if(k==='score') return (a.score-b.score)*asc;", "if(k==='score') return (a.vendor_count-b.vendor_count)*asc;")
+    text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', '''function cardHtml(d){
+  return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="crumbTag">Evidence: ${d.crumbs}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p><p>${d.rationale}</p></div><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
+}''', text, count=1, flags=re.S)
+    text = text.replace("if(k==='score') return (a.score-b.score)*asc;", "if(k==='score') return (a.score-b.score)*asc;")
     text = text.replace("<th data-col=\"rating\">Verdict ${arrow('rating')}</th><th data-col=\"score\" class=\"center\">Score ${arrow('score')}</th><th data-col=\"crumbs\" class=\"center\">Evidence ${arrow('crumbs')}</th>", "<th data-col=\"rating\">Status ${arrow('rating')}</th><th data-col=\"score\" class=\"center\">Score ${arrow('score')}</th><th data-col=\"crumbs\" class=\"center\">Evidence ${arrow('crumbs')}</th>")
-    text = text.replace("<td class=\"center\">${d.score}%</td>", "<td class=\"center\">Withheld</td>")
+    text = text.replace("<td class=\"center\">${d.score}%</td>", "<td class=\"center\">${d.score}% · ${d.scale_points}/5</td>")
     text = text.replace("renderCards(); renderMatrix(); renderRadar();", "renderCards(); renderMatrix();")
     text = re.sub(r'<div class="footer">.*?</div>', '<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Score withheld.</div>', text, count=1, flags=re.S)
+    text = re.sub(r'<div class="footer">.*?</div>', f'<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Run {run_id}; score {score:.1f}%.</div>', text, count=1, flags=re.S)
     return text
 
 
@@ -177,10 +236,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--matrix", type=Path, default=DEFAULT_MATRIX)
     ap.add_argument("--db", type=Path, default=DEFAULT_DB)
+    ap.add_argument("--run-id", default=DEFAULT_RUN_ID)
     ap.add_argument("--date", default="2026-10-05")
     ap.add_argument("--output", type=Path, default=ROOT / "out" / "2026-10-05" / "EKONERG_UMBRA_DASHBOARD_2026-10-05.html")
     args = ap.parse_args()
-    page = render(args.matrix, args.db, args.date)
+    page = render(args.matrix, args.db, args.date, args.run_id)
     if "TEKOL" in page or "1499 / 1800" in page or "83.3%" in page:
         raise SystemExit("production dashboard still contains design-reference data")
     args.output.write_text(page, encoding="utf-8", newline="\n")
