@@ -109,10 +109,14 @@ and ADRs are the records.
 - `CX_2026-10-05T210558Z_strict-quote-repairs-prepared` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T213152Z_scored-light-dashboard` — review_request, codex -> claude-code: EK-UMBRA-20261005
 - `CX_2026-10-05T214520Z_criterion-summary-score-trace` — review_request, codex -> claude-code: EK-UMBRA-20261005
+- `CX_2026-10-05T220359Z_ack-scored-dashboard-blocking` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
+- `CX_2026-10-05T220405Z_ack-judgment-form-restore-request` — acknowledgement, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T220412Z_ack-repair-scope-changes-requested` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
+- `CX_2026-10-05T220421Z_crumb-source-chapter-links` — review_request, codex -> claude-code: EK-UMBRA-20261006
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-05T213621Z-9d5f741.md`](../handoffs/2026-10-05T213621Z-9d5f741.md)
+- Authoritative record: [`handoffs/2026-10-05T214946Z-116435c.md`](../handoffs/2026-10-05T214946Z-116435c.md)
 - Archive: 389 records in `coordination/archive/`
 
-Generated: 2026-10-05T21:45:27Z
+Generated: 2026-10-05T22:04:31Z

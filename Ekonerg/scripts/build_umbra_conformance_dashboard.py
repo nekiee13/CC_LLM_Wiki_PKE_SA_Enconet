@@ -46,13 +46,41 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
         }
         if len(evaluations) != 18:
             raise ValueError(f"evaluation run {run_id} must contain 18 criterion evaluations")
-        score_links: dict[str, list[str]] = {criterion_id: [] for criterion_id in evaluations}
-        for link in conn.execute(
-            "SELECT e.criterion_id, x.item_id FROM evaluation_evidence x "
+        score_crumbs: dict[str, list[dict[str, Any]]] = {criterion_id: [] for criterion_id in evaluations}
+        crumb_rows = conn.execute(
+            "SELECT e.criterion_id, c.item_id, c.doc_id, d.filename, q.quote_id, "
+            "q.quote_original, q.source_locator, l.chunk_id, ch.heading_path, ch.chunk_text "
+            "FROM evaluation_evidence x "
             "JOIN criterion_evaluations e ON e.evaluation_id=x.evaluation_id "
-            "WHERE e.evaluation_run_id=? ORDER BY e.criterion_id, x.item_id", (run_id,)
-        ):
-            score_links.setdefault(link["criterion_id"], []).append(link["item_id"])
+            "JOIN crumbs c ON c.item_id=x.item_id "
+            "LEFT JOIN documents d ON d.doc_id=c.doc_id "
+            "LEFT JOIN crumb_quotes q ON q.item_id=c.item_id "
+            "LEFT JOIN crumb_chunk_links l ON l.item_id=q.item_id AND l.quote_id=q.quote_id "
+            "LEFT JOIN document_chunks ch ON ch.chunk_id=l.chunk_id "
+            "WHERE e.evaluation_run_id=? AND c.document_side='DOCUMENT' "
+            "ORDER BY e.criterion_id, c.item_id, q.quote_id, l.chunk_id", (run_id,)
+        ).fetchall()
+        by_criterion_crumb: dict[tuple[str, str], dict[str, Any]] = {}
+        for row in crumb_rows:
+            key = (row["criterion_id"], row["item_id"])
+            crumb = by_criterion_crumb.setdefault(key, {
+                "id": row["item_id"], "doc_id": row["doc_id"],
+                "filename": row["filename"] or row["doc_id"],
+                "quotes": [], "chapters": [],
+            })
+            if row["quote_id"] and not any(q["quote_id"] == row["quote_id"] for q in crumb["quotes"]):
+                crumb["quotes"].append({
+                    "quote_id": row["quote_id"], "text": row["quote_original"] or "",
+                    "locator": row["source_locator"] or "n/a",
+                })
+            if row["chunk_id"] and not any(c["chunk_id"] == row["chunk_id"] for c in crumb["chapters"]):
+                crumb["chapters"].append({
+                    "chunk_id": row["chunk_id"],
+                    "heading_path": row["heading_path"] or "Chapter locator unavailable",
+                    "text": row["chunk_text"] or "Chapter text unavailable in the source snapshot.",
+                })
+        for (criterion_id, _crumb_id), crumb in by_criterion_crumb.items():
+            score_crumbs.setdefault(criterion_id, []).append(crumb)
     by_criterion: dict[str, list[sqlite3.Row]] = {}
     for row in rows:
         by_criterion.setdefault(row["criterion_id"], []).append(row)
@@ -71,7 +99,8 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
                  "No linked Ekonerg vendor quote is present in the active snapshot.")
         locator = first["source_locator"] if first else "n/a"
         doc_names = sorted({r["filename"] for r in evidence if r["filename"]})
-        crumb_ids = score_links.get(criterion_id, [])
+        criterion_crumbs = score_crumbs.get(criterion_id, [])
+        crumb_ids = [crumb["id"] for crumb in criterion_crumbs]
         statements = [r["statement"] for r in evidence[:3] if r["statement"]]
         aff = (f"The active Ekonerg snapshot contains {vendor_count} vendor crumb(s) "
                f"for this criterion and {rule_count} related rule crumb(s). "
@@ -94,6 +123,7 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
             "crumbs": f"{vendor_count} vendor / {rule_count} rule",
             "vendor_count": vendor_count, "status": status,
             "score_crumb_ids": crumb_ids, "score_crumb_count": len(crumb_ids),
+            "score_crumbs": criterion_crumbs,
             "refs": ("Ekonerg crumbs: " + (", ".join(crumb_ids) if crumb_ids else "none") +
                      "; source documents: " + (", ".join(doc_names) if doc_names else "none")),
             "aff": aff, "con": con,
@@ -132,12 +162,17 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     vendor_total = sum(item["vendor_count"] for item in data)
     covered = sum(item["vendor_count"] > 0 for item in data)
     no_direct = len(data) - covered
-    matrix_json = json.dumps(data, ensure_ascii=False)
+    # The data is embedded in a script tag. Escape HTML-significant characters
+    # so source chapter text cannot terminate that tag or become markup.
+    matrix_json = (json.dumps(data, ensure_ascii=False)
+                   .replace("<", "\\u003c")
+                   .replace(">", "\\u003e")
+                   .replace("&", "\\u0026"))
     text = re.sub(r"<title>.*?</title>",
                   "<title>EKONERG — 10 CFR 50 Appendix B Conformance Dashboard</title>",
                   text, count=1, flags=re.S)
     style_end = text.index("</style>")
-    text = text[:style_end] + ".criterionSummary{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.35}.scoreTrace{font-weight:750;color:var(--navy)}.crumbTrace{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--soft);font-size:12px}.crumbTrace summary{cursor:pointer;color:var(--navy);font-weight:750}.crumbTrace ul{margin:7px 0 0 18px;max-height:180px;overflow:auto}.crumbTrace li{margin:2px 0;word-break:break-word}" + text[style_end:]
+    text = text[:style_end] + ".criterionSummary{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.35}.scoreTrace{font-weight:750;color:var(--navy)}.crumbTrace{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--soft);font-size:12px}.crumbTrace summary{cursor:pointer;color:var(--navy);font-weight:750}.crumbTrace ul{margin:7px 0 0 0;max-height:420px;overflow:auto;padding-left:18px}.crumbTrace li{margin:4px 0;word-break:break-word}.crumbItem{border:1px solid var(--line);border-radius:6px;padding:5px 8px;background:var(--panel)}.crumbItem summary{font-weight:700}.crumbBody{padding:8px 4px 2px}.crumbLink{color:var(--navy)}.chapterView{margin-top:7px;border-left:3px solid var(--accent);padding-left:9px}.chapterMeta{color:var(--muted);font-size:11px;margin-bottom:4px}.chapterText{white-space:pre-wrap;max-height:260px;overflow:auto;margin:0;padding:8px;background:var(--panel-raised);color:var(--ink);font:12px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace}" + text[style_end:]
     text = text[:style_end] + _dark_css() + text[style_end:]
     header = '''<header class="header">
   <h1>10 CFR 50 Appendix B — EKONERG Conformance Dashboard</h1>
@@ -249,12 +284,30 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = text.replace("<td class=\"center\">${d.score}%</td>", "<td class=\"center\">${d.score}% · ${d.scale_points}/5</td>")
     text = text.replace("renderCards(); renderMatrix(); renderRadar();", "renderCards(); renderMatrix();")
     text = text.replace("renderCards(); renderMatrix();", '''function cardHtml(d){
-  const crumbs=(d.score_crumb_ids||[]).map(id=>`<li>${id}</li>`).join('')||'<li>No linked vendor crumb; score is unmet because vendor evidence is absent.</li>';
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  })[character]);
+  const crumbs=(d.score_crumbs||[]).map(c=>{
+    const quotes=(c.quotes||[]).map(q=>`<div class="chapterMeta">Linked quote (${esc(q.quote_id)}; locator: ${esc(q.locator)}):</div><blockquote>${esc(q.text)}</blockquote>`).join('');
+    const chapters=(c.chapters||[]).map(ch=>`<div class="chapterView"><div class="chapterMeta">Source chapter: ${esc(ch.heading_path)} (${esc(ch.chunk_id)})</div><pre class="chapterText">${esc(ch.text)}</pre></div>`).join('');
+    return `<li><details class="crumbItem"><summary><span class="crumbLink">${esc(c.id)}</span> — ${esc(c.filename)}</summary><div class="crumbBody">${quotes}${chapters||'<div class="chapterMeta">No linked chapter was found in the source snapshot.</div>'}</div></details></li>`;
+  }).join('')||'<li>No linked vendor crumb; score is unmet because vendor evidence is absent.</li>';
   return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
 }
 renderCards(); renderMatrix();''')
     text = re.sub(r'<div class="footer">.*?</div>', '<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Score withheld.</div>', text, count=1, flags=re.S)
     text = re.sub(r'<div class="footer">.*?</div>', f'<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Run {run_id}; score {score:.1f}%.</div>', text, count=1, flags=re.S)
+    text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', lambda _match: '''function cardHtml(d){
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  })[character]);
+  const crumbs=(d.score_crumbs||[]).map(c=>{
+    const quotes=(c.quotes||[]).map(q=>`<div class="chapterMeta">Linked quote (${esc(q.quote_id)}; locator: ${esc(q.locator)}):</div><blockquote>${esc(q.text)}</blockquote>`).join('');
+    const chapters=(c.chapters||[]).map(ch=>`<div class="chapterView"><div class="chapterMeta">Source chapter: ${esc(ch.heading_path)} (${esc(ch.chunk_id)})</div><pre class="chapterText">${esc(ch.text)}</pre></div>`).join('');
+    return `<li><details class="crumbItem"><summary><span class="crumbLink">${esc(c.id)}</span> — ${esc(c.filename)}</summary><div class="crumbBody">${quotes}${chapters||'<div class="chapterMeta">No linked chapter was found in the source snapshot.</div>'}</div></details></li>`;
+  }).join('')||'<li>No linked vendor crumb; score is unmet because vendor evidence is absent.</li>';
+  return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
+}''', text, count=1, flags=re.S)
     return text
 
 

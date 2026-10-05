@@ -60,6 +60,10 @@ The matrix also reports the number of linked score crumbs for each criterion.
 This follows the Enconet dashboard contract: `refs` are supporting crumb IDs,
 while `aff`, `con`, `judge`, and `verify` explain the criterion decision.
 
+Selecting a crumb now opens its source document filename, chapter heading path,
+linked quote, and stored chapter text from `document_chunks`. The link is
+chapter-based, matching the Ekonerg storage model; it does not use page IDs.
+
 ## Validation
 
 The generator passed and the output contains no `TEKOL`, `Withheld`, dark
