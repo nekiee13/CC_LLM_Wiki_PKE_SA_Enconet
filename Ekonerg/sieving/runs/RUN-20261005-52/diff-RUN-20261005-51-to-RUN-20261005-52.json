@@ -1,0 +1,51 @@
+{
+  "criteria": {
+    "APP_B_I": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_II": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_V": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_VI": {
+      "added": [
+        {
+          "criterion_id": "APP_B_VI",
+          "item_id": "CRUMB-DOC-0011-APP_B_VI-0011",
+          "quotes": [
+            "Opći postupak sustava kvalitete sadrži sljedeće točke:\n\n1. 1. UVOD\n2. 1.1. Opseg\n3. 1.2 Svrha\n4. 1.3 Reference\n5. 2. ODGOVORNOST\n6. 3. POSTUPAK\n7. 4. ZAPISI\n\n### 3.3. Format specifičnih postupaka sustava kvalitete\n\n3.3.1. Specifični postupci sustava kvalitete se pripremaju na obrascima PQ.4-2.1, PQ.4-2.2 (naslovna strana i slijedna strana) prikazanim u prilogu A i B ovog postupka.\n\n3.3.2. Specifični postupci sustava kvalitete imaju naslove koji definiraju njihov sadržaj."
+          ],
+          "statement": "objective_control: General quality procedures use controlled forms and a defined document structure with scope, purpose, references, responsibilities, procedure, and records."
+        }
+      ],
+      "changed": [],
+      "removed": [
+        {
+          "criterion_id": "APP_B_VI",
+          "item_id": "CRUMB-DOC-0011-APP_B_VI-0008",
+          "quotes": [
+            "Opći postupak sustava kvalitete sadrži sljedeće točke: 1. 1. UVOD 2. 1.1. Opseg 3. 1.2 Svrha 4. 1.3 Reference 5. 2. ODGOVORNOST 6. 3. POSTUPAK 7. 4. ZAPISI"
+          ],
+          "statement": "objective_control: General quality procedures use controlled forms and a defined document structure with scope, purpose, references, responsibilities, procedure, and records."
+        }
+      ]
+    },
+    "APP_B_XVII": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    }
+  },
+  "doc_id": "DOC-0011",
+  "new_run_id": "RUN-20261005-52",
+  "old_run_id": "RUN-20261005-51",
+  "schema_version": "1.0"
+}

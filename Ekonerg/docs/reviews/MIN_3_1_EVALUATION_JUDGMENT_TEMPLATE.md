@@ -5,6 +5,10 @@
 **G3 model:** `1.0-ekonerg-20261004`
 **Status:** ready for human judgments; no ratings written
 
+**Human reviewer:** ____________________  
+The reviewer must be named before any row is written. An approval to proceed is
+not, by itself, an evaluation rating.
+
 This template is the next controlled input. For each criterion, the owner or
 auditor must choose one rating: `fully`, `substantially`, `partially`,
 `minimally`, `unmet`, or `undetermined`. Use `na` only when the approved

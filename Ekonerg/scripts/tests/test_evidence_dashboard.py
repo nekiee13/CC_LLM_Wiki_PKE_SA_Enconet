@@ -20,6 +20,8 @@ def test_dashboard_uses_current_evidence_and_withholds_score() -> None:
     assert data["metrics"]["qms_files"] == 24
     assert data["metrics"]["vendor_crumbs"] == 189
     assert data["metrics"]["active_quotes"] == 321
+    assert data["metrics"]["quote_exact_records"] == 319
+    assert data["metrics"]["quote_non_exact_records"] == 2
     assert data["metrics"]["criteria_with_vendor_crumbs"] == 13
     assert len(data["criteria"]) == 18
     assert len(data["batches"]) == 10
@@ -36,5 +38,9 @@ def test_dashboard_html_is_offline_and_has_no_false_failure_label() -> None:
         assert forbidden not in page
     assert "withheld" in page
     assert "no direct vendor crumb" in page
+    assert 'id="judgments"' in page
+    assert "fill-undetermined" in page
+    assert "export-judgments" in page
+    assert "judgment-rows" in page
     assert "<span class=\"tag blocked\">fail</span>" not in page
     assert json.loads(raw_page.split('id="dashboard-data" type="application/json">', 1)[1].split("</script>", 1)[0]) == data

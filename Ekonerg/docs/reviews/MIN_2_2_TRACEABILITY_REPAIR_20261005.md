@@ -134,6 +134,17 @@ exit 0 — aggregate PASS
 The database remains available for the separate full-history check. Historical
 rejected and superseded generations were not deleted.
 
+## Follow-up strict raw-source review — 2026-10-05
+
+Claude's follow-up review found two active quote records that link only after
+presentation cleanup (flattened list numbering/line breaks). The normal
+validator still passes its approved presentation-cleanup contract, but these
+stored quotes are not yet verbatim raw-source substrings for the stricter review
+gate. Corrected inactive candidates are prepared in
+`docs/reviews/MIN_2_2_TRACEABILITY_CANDIDATES_20261005.md`; no active generation
+was changed. An explicit owner generation decision is required before either
+candidate can be promoted.
+
 ## Gate decision
 
 MIN-2.2 remains open. Requirement coverage is green, the harness passes, and
