@@ -1,0 +1,13 @@
+task: V3-ALL-DOCS-RERUN
+agent: codex
+status: released
+claimed_at_utc: 2026-10-05T17:31:55Z
+last_renewed_at_utc: 2026-10-05T17:31:55Z
+expires_at_utc: 2026-10-06T01:31:55Z
+anticipated_files:
+  - Ekonerg/sieving/prompts/active.yml
+  - Ekonerg/sieving/candidates
+  - Ekonerg/sieving/runs
+  - Ekonerg/db/nqa_audit.sqlite
+note: Rerun all 24 Ekonerg DOCUMENT generations with owner-approved appb_document_v3_context_anchors; preserve prior runs, create inactive candidates, validate coverage and traceability.
+released_at_utc: 2026-10-05T17:47:41Z
