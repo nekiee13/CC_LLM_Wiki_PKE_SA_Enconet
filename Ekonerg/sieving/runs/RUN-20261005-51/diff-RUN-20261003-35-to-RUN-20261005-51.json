@@ -1,0 +1,52 @@
+{
+  "criteria": {
+    "APP_B_I": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_II": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_V": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    },
+    "APP_B_VI": {
+      "added": [
+        {
+          "criterion_id": "APP_B_VI",
+          "item_id": "CRUMB-DOC-0011-APP_B_VI-0009",
+          "quotes": [
+            "Revizije i promjene šalju se korisnicima kontroliranih kopija u skladu s postupkom PQ.7.5-5.",
+            "Revizije i promjene moraju na dnu svake stranice i naslovnoj stranici imati broj revizije."
+          ],
+          "statement": "objective_control: Revisions and changes are distributed to controlled-copy users, and the revision number is shown on each page and the title page."
+        }
+      ],
+      "changed": [],
+      "removed": [
+        {
+          "criterion_id": "APP_B_VI",
+          "item_id": "CRUMB-DOC-0011-APP_B_VI-0003",
+          "quotes": [
+            "Revizije i promjene šalju se korisnicima kontroliranih kopija u skladu s postupkom PQ.7.5-5. Revizije i promjene moraju na dnu svake stranice i naslovnoj stranici imati broj revizije."
+          ],
+          "statement": "objective_control: Revisions and changes are distributed to controlled-copy users, and the revision number is shown on each page and the title page."
+        }
+      ]
+    },
+    "APP_B_XVII": {
+      "added": [],
+      "changed": [],
+      "removed": []
+    }
+  },
+  "doc_id": "DOC-0011",
+  "new_run_id": "RUN-20261005-51",
+  "old_run_id": "RUN-20261003-35",
+  "schema_version": "1.0"
+}

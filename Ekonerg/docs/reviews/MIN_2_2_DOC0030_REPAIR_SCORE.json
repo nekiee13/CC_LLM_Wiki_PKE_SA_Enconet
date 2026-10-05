@@ -1,0 +1,33 @@
+{
+  "fixture_version": "ekonerg-doc0030-repair-v2-2026-10-05",
+  "found": 6,
+  "golden_approval_ref": "REPAIR-DOC0030-GEN2-20261005-OWNER",
+  "golden_approved": true,
+  "missed": 0,
+  "per_criterion": {
+    "APP_B_I": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_VII": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVI": {
+      "found": 3,
+      "missed": 0,
+      "spurious": 0
+    },
+    "APP_B_XVII": {
+      "found": 1,
+      "missed": 0,
+      "spurious": 0
+    }
+  },
+  "promotion_ready": true,
+  "prompt_version": "appb_document_v1",
+  "schema_version": "1.0",
+  "spurious": 0
+}

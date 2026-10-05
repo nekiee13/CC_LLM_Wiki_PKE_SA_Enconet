@@ -112,6 +112,28 @@ No fuzzy or similarity link was invented. The aggregate remains red until these
 two active records receive corrected candidate evidence or an explicitly
 approved exception.
 
+## Resolution (2026-10-05)
+
+The owner approved both repairs. The controlled generation decisions completed:
+
+- DOC-0030: `RUN-20261003-06` promoted with
+  `REPAIR-DOC0030-GEN2-20261005-OWNER`; score `6 found, 0 missed, 0 spurious`.
+- DOC-0011: `RUN-20261005-51` promoted with
+  `REPAIR-DOC0011-GEN2-20261005-OWNER`; score `12 found, 0 missed, 0 spurious`.
+- The intermediate DOC-0011 candidate `RUN-20261005-50` was rejected because
+  it kept one combined quote spanning sections 3.8.2 and 3.8.3. Its metrics
+  are retained for audit history.
+
+Validation now passes the live gate:
+
+```text
+python scripts/run_all_validations.py --no-record
+exit 0 — aggregate PASS
+```
+
+The database remains available for the separate full-history check. Historical
+rejected and superseded generations were not deleted.
+
 ## Gate decision
 
 MIN-2.2 remains open. Requirement coverage is green, the harness passes, and

@@ -11,9 +11,10 @@ MIN-2.2 remains open, but one blocker is reduced. The requirement validator now
 passes: 18 criteria are covered by 55 deterministic rows seeded from active RULE
 crumbs. Conservative quote matching added 25 safe links across the affected runs;
 two active quotes still differ from the extracted source text and remain open.
-The strict full-history validator still reports 16 unmatched quote records,
-while the active-only aggregate scope reports two active quote mismatches. The
-aggregate gate still fails on traceability; the sieving harness itself passes.
+The strict full-history validator retains historical mismatch records, while
+the active-only aggregate scope is now clean after owner-approved DOC-0030 and
+DOC-0011 repairs. The aggregate validation passes; evaluation and scoring are
+still separate gated phases.
 No scoring, findings, or audit conclusion were produced.
 
 Evidence: `docs/reviews/MIN_2_2_TRACEABILITY_REPAIR_20261005.md`.
@@ -102,5 +103,6 @@ made.*
   The approval is recorded as `R01-PART21-GEN2-PROMOTE-20261005-OWNER`.
 - Fuzzy AHP is deferred. It is not part of the current audit scoring path.
 - The Part 21 golden fixture is owner-approved and `RUN-20261003-24` is
-  promoted. The aggregate remains blocked by two active quote mismatches; the
-  full-history repair queue is retained separately.
+  promoted. DOC-0030 `RUN-20261003-06` and DOC-0011 `RUN-20261005-51` are also
+  promoted after owner-approved exact-source repair. The aggregate now passes;
+  historical rejected and superseded runs remain retained.

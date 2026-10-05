@@ -1,6 +1,6 @@
 # MIN-2.2 active quote repair decision
 
-**Status:** prepared for owner decision
+**Status:** completed after owner approval
 **Scope:** two active traceability blockers only
 **Rule:** use exact source text; do not approve a fuzzy or invented link
 
@@ -53,5 +53,6 @@ decision and a complete golden check.
 
 ## Current gate
 
-The aggregate remains red. No audit score, finding, or conclusion is produced
-until both active records pass the controlled repair path.
+Both active records passed the controlled repair path. The aggregate validation
+now passes. This closes the traceability repair gate; it does not itself create
+an audit score, finding, or conformity conclusion.

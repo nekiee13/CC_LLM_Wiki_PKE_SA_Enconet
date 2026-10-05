@@ -1,0 +1,143 @@
+schema_version: '1.0'
+fixture_version: ekonerg-doc0011-repair-v2-2026-10-05
+status: approved
+approval_ref: REPAIR-DOC0011-GEN2-20261005-OWNER
+document:
+  doc_id: DOC-0011
+  filename: PQ07.5-2_r8_Postupci_sustava_kvalitete,_sustava_za.md
+  side: DOCUMENT
+  purpose: Owner-approved repair snapshot for controlled generation promotion.
+expected_crumbs:
+- item_id: CRUMB-DOC-0011-APP_B_I-0009
+  criterion_id: APP_B_I
+  criterion_name: Organization
+  statement: 'objective_control: A designated Q/EP/HS person is responsible for preparing,
+    revising, and changing system procedures.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 2.1.
+  quotes:
+  - Zaduženi suradnik Q/EP/HS službe ili druga, od Voditelja Q/EP/HS službe zadužena
+    osoba, odgovorna je za pripremu postupaka sustava kvalitete, sustava zaštite okoliša,
+    sustava zaštite zdravlja i sigurnosti, sustava upravljanja energijom te njihovu
+    reviziju i promjene.
+- item_id: CRUMB-DOC-0011-APP_B_I-0010
+  criterion_id: APP_B_I
+  criterion_name: Organization
+  statement: 'objective_control: The Q/EP/HS service lead reviews procedures and their
+    revisions, with an alternate management representative review when needed.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 2.2.
+  quotes:
+  - Voditelj Q/EP/HS službe odgovoran je za pripremu općih i pregled svih postupaka
+    sustava kvalitete, sustava zaštite okoliša, sustava zaštite zdravlja i sigurnosti,
+    sustava upravljanja energijom te njihovu reviziju i promjene.
+- item_id: CRUMB-DOC-0011-APP_B_I-0011
+  criterion_id: APP_B_I
+  criterion_name: Organization
+  statement: 'objective_control: The Ekonerg director approves system procedures,
+    revisions, and changes.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 2. ODGOVORNOST > 2.3.
+  quotes:
+  - Direktor EKONERG-a odgovoran je za odobrenje postupaka sustava kvalitete, sustava
+    zaštite okoliša, sustava zaštite zdravlja i sigurnosti, sustava upravljanja energijom
+    te promjena i revizija.
+- item_id: CRUMB-DOC-0011-APP_B_I-0012
+  criterion_id: APP_B_I
+  criterion_name: Organization
+  statement: 'objective_control: Procedures assign responsibility for applying and
+    implementing their requirements.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 3.1.3.
+  quotes:
+  - Postupci trebaju definirati odgovornost za primjenu i provedbu zahtjeva iz postupka.
+- item_id: CRUMB-DOC-0011-APP_B_II-0003
+  criterion_id: APP_B_II
+  criterion_name: Quality Assurance Program
+  statement: 'supporting_control: The procedure applies across general and specific
+    quality procedures and related management-system procedures.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.1. Opseg
+  quotes:
+  - Ovaj postupak se primjenjuje na postupke sustava kvalitete (opće i specifične),
+    postupke sustava kvalitete verifikacijske djelatnosti, postupke sustava zaštite
+    okoliša, postupke sustava zaštite zdravlja i sigurnosti te postupke sustava upravljanja
+    energijom.
+- item_id: CRUMB-DOC-0011-APP_B_V-0007
+  criterion_id: APP_B_V
+  criterion_name: Instructions, Procedures, and Drawings
+  statement: 'objective_control: Quality procedures define their purpose, scope, application
+    method, and applicable references.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 3.1.2.
+  quotes:
+  - Postupci navedenih sustava trebaju sadržavati svrhu, opseg i postupak primjene,
+    te se trebaju pozivati na primjenjive propise, standarde i druge referentne dokumente.
+- item_id: CRUMB-DOC-0011-APP_B_V-0008
+  criterion_id: APP_B_V
+  criterion_name: Instructions, Procedures, and Drawings
+  statement: 'objective_control: Procedures describe the activities needed to achieve
+    their stated goal.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 3.1.4.
+  quotes:
+  - Postupci trebaju sadržavati opis aktivnosti radi postizanja cilja.
+- item_id: CRUMB-DOC-0011-APP_B_V-0009
+  criterion_id: APP_B_V
+  criterion_name: Instructions, Procedures, and Drawings
+  statement: 'objective_control: Quality procedures define the sequence and method
+    of actions needed to achieve quality and require objective evidence for evaluating
+    quality-affecting activity performance.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 3.1.5.
+  quotes:
+  - Postupci sustava kvalitete moraju definirati slijed i način provedbe akcija potrebnih
+    za postizanje kvalitete, uključujući zahtjeve za generiranjem objektivnih dokaza
+    pomoću kojih se omogućuje evaluacija izvedbe aktivnosti s utjecajem na kvalitetu.
+- item_id: CRUMB-DOC-0011-APP_B_VI-0007
+  criterion_id: APP_B_VI
+  criterion_name: Document Control
+  statement: 'objective_control: The procedure establishes controls for document content,
+    format, review, approval, revision, and change.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 1. UVOD > 1.2. Svrha
+  quotes:
+  - Svrha ovog postupka je da uspostavi zahtjeve u odnosu na sadržaj, format, pregled,
+    odobrenje, reviziju i promjenu navedenih dokumenata.
+- item_id: CRUMB-DOC-0011-APP_B_VI-0008
+  criterion_id: APP_B_VI
+  criterion_name: Document Control
+  statement: 'objective_control: General quality procedures use controlled forms and
+    a defined document structure with scope, purpose, references, responsibilities,
+    procedure, and records.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 3.2.1.–3.2.4.
+  quotes:
+  - 'Opći postupak sustava kvalitete sadrži sljedeće točke: 1. 1. UVOD 2. 1.1. Opseg
+    3. 1.2 Svrha 4. 1.3 Reference 5. 2. ODGOVORNOST 6. 3. POSTUPAK 7. 4. ZAPISI'
+- item_id: CRUMB-DOC-0011-APP_B_VI-0009
+  criterion_id: APP_B_VI
+  criterion_name: Document Control
+  statement: 'objective_control: Revisions and changes are distributed to controlled-copy
+    users, and the revision number is shown on each page and the title page.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 3.8.2.–3.8.3.
+  quotes:
+  - Revizije i promjene šalju se korisnicima kontroliranih kopija u skladu s postupkom
+    PQ.7.5-5.
+  - Revizije i promjene moraju na dnu svake stranice i naslovnoj stranici imati broj
+    revizije.
+- item_id: CRUMB-DOC-0011-APP_B_XVII-0003
+  criterion_id: APP_B_XVII
+  criterion_name: Quality Assurance Records
+  statement: 'objective_control: Original procedures are retained in the Q/EP/HS service
+    archive and the current revision is published on the Ekonerg intranet.'
+  source:
+    source_locator: POSTUPAK SUSTAVA KVALITETE > 4. SPREMANJE I ČUVANJE
+  quotes:
+  - Originali postupaka sustava kvalitete, sustava zaštite okoliša, sustava zaštite
+    zdravlja i sigurnosti i sustava upravljanja energijom čuvaju se u arhivi Q/EP/HS
+    službe.
+  - Važeća revizija postupaka sustava kvalitete, sustava zaštite okoliša, sustava
+    zaštite zdravlja i sigurnosti i sustava upravljanja energijom objavljena je na
+    intranet stranici EKONERG-a.

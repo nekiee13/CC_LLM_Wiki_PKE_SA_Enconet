@@ -1,0 +1,159 @@
+{
+  "prompt_version": "appb_document_v1",
+  "document": {
+    "doc_id": "DOC-0030",
+    "name": "PQ10.2-2_r10_Kontrola_korektivnih_akcija.md",
+    "date": "n-a",
+    "document_side": "DOCUMENT",
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "CRUMB-DOC-0030-APP_B_I-0002",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "Candidate responsibility control: named management, Q/EP/HS, and verification roles are assigned responsibility for initiating, approving, reporting, and controlling corrective actions.",
+      "item_type": "role_responsibility",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. ODGOVORNOST",
+          "source_page": null,
+          "source_heading_path": null
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za odobrenje i kontrolu provođenja korektivnih akcija.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odgovoran je za izvještavanje Direktora EKONERG-a o poduzetim korektivnim akcijama u EKONERG-u i kod dobavljača.",
+          "quote_language": "hr",
+          "source_locator": "2. ODGOVORNOST"
+        }
+      ]
+    },
+    {
+      "item_id": "CRUMB-DOC-0030-APP_B_VII-0002",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "Candidate supplier corrective-action control: the supplier must propose corrective action within 10 days of receiving the request; Ekonerg approves and controls the action.",
+      "item_type": "action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.5",
+          "source_page": null,
+          "source_heading_path": null
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Korektivne akcije kod dobavljača Voditelj Q/EP/HS službe inicira izdavanjem zahtjeva za korektivnu akciju (ZK) prema obrascu PQ.8-4.1. prikazanom u prilogu A ovog postupka. Odgovorna osoba dobavljača dužna je dati prijedlog korektivne akcije na ZK obrascu slanjem obrasca Voditelju Q/EP/HS službe u roku od 10 dana od primitka ZK obrasca.",
+          "quote_language": "hr",
+          "source_locator": "3. POSTUPAK > 3.5"
+        }
+      ]
+    },
+    {
+      "item_id": "CRUMB-DOC-0030-APP_B_XVI-0004",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate scope control: corrective actions cover defects and nonconformities in Ekonerg and supplier activities and improvement of the quality system.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. UVOD > 1.1. Opseg",
+          "source_page": null,
+          "source_heading_path": null
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovaj se postupak primjenjuje na korektivne akcije zbog nedostataka i neusklađenosti uočenih na aktivnostima koje izvodi EKONERG, odnosno koje izvodi dobavljač, te zbog unapređenja sustava kvalitete, uključujući sustave kvalitete verifikacijske djelatnosti, sustav zaštite okoliša, sustav zaštite zdravlja i sigurnosti i sustav upravljanja energijom.",
+          "quote_language": "hr",
+          "source_locator": "1. UVOD > 1.1. Opseg"
+        }
+      ]
+    },
+    {
+      "item_id": "CRUMB-DOC-0030-APP_B_XVI-0005",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate trigger control: trend analysis of nonconformance, audit, or activity-surveillance reports identifies conditions requiring corrective action; not every nonconformity automatically triggers one.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.1",
+          "source_page": null,
+          "source_heading_path": null
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Uvjete koji zahtijevaju korektivne akcije, identificira Voditelj Q/EP/HS službe ili Vodeći verifikator na temelju analize trenda izvještaja o neusklađenosti, izvještaja s provjere ili izvještaja o nadzoru aktivnosti. Svaka neusklađenost ne mora rezultirati korektivnom akcijom.",
+          "quote_language": "hr",
+          "source_locator": "3. POSTUPAK > 3.1"
+        }
+      ]
+    },
+    {
+      "item_id": "CRUMB-DOC-0030-APP_B_XVI-0006",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "Candidate approval and follow-up control: the director approves internal corrective actions, while the Q/EP/HS lead controls implementation and closes or reopens the action record.",
+      "item_type": "action",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. POSTUPAK > 3.4 and 3.6",
+          "source_page": null,
+          "source_heading_path": null
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju potrebe korektivne akcije u EKONERG-u, Voditelj Q/EP/HS službe pokreće korektivnu akciju na ZK obrascu PQ.8-4.1. prikazanom u prilogu A ovog postupka,",
+          "quote_language": "hr",
+          "source_locator": "3. POSTUPAK > 3.4 and 3.6"
+        },
+        {
+          "quote_original": "Direktor EKONERG-a je odobrava, a Voditelj Q/EP/HS službe brine o njenom provođenju.",
+          "quote_language": "hr",
+          "source_locator": "3. POSTUPAK > 3.4 and 3.6"
+        },
+        {
+          "quote_original": "Voditelj Q/EP/HS službe odobrava predloženu korektivnu akciju i kontrolira njenu provedbu, te ako je zadovoljan zaključuje ZK obrazac. U protivnom otvara novi ZK obrazac i izvještava Direktora EKONERG-a.",
+          "quote_language": "hr",
+          "source_locator": "3. POSTUPAK > 3.4 and 3.6"
+        }
+      ]
+    },
+    {
+      "item_id": "CRUMB-DOC-0030-APP_B_XVII-0002",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "Candidate record retention control: corrective-action reports are kept in the Q/EP/HS archive for the contract period or five years after activity completion.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. ZAPISI",
+          "source_page": null,
+          "source_heading_path": null
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izvještaji o poduzetim korektivnim akcijama čuvaju se u arhivi Q/EP/HS službe u vremenu predviđenom ugovorom, odnosno u trajanju od pet godina nakon završetka aktivnosti.",
+          "quote_language": "hr",
+          "source_locator": "4. ZAPISI"
+        }
+      ]
+    }
+  ]
+}
