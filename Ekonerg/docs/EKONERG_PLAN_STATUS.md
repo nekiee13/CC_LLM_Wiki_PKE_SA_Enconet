@@ -54,7 +54,7 @@ made.*
 | EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | 🟡 Registered, extracted, chunked; controlled RULE test passed; full sieving pending |
 | EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | 🟡 Registered, extracted, chunked; controlled objective-evidence test passed; full batches pending |
 | EK-6 | EK-6.3 — Review evidence quality and approve G2 | ✅ G2 approved; 18 applicability rows applied for RUN-20261003-32 |
-| EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | ⬜ Not started |
+| EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | 🟡 In progress — G3 approved; 18 judgment template ready |
 | EK-7 | EK-7.2 — Draft findings and follow-up actions | ⬜ Not started |
 | EK-8 — Generate, test, and release Croatian outputs | EK-8.1 — Build the report and evidence package | ⬜ Not started |
 | EK-8 | EK-8.2 — Test the dashboard and complete owner UAT | ⬜ Not started |
