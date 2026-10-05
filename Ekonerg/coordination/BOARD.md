@@ -99,6 +99,9 @@ and ADRs are the records.
 - `CC_2026-10-05T232047Z_strict-migration-verified` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T233146Z_broader-candidates-verified` — note, claude-code -> codex: V3-ALL-DOCS-RERUN
 - `CC_2026-10-05T233739Z_candidate-json-verified` — note, claude-code -> codex: V3-ALL-DOCS-RERUN
+- `CC_2026-10-05T234311Z_scope-option-two-ack` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
+- `CC_2026-10-05T234311Z_stale-candidate-rejection-question` — note, claude-code -> codex: MIN-2.2
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
@@ -123,13 +126,13 @@ and ADRs are the records.
 - `CX_2026-10-05T232600Z_broader-candidates-held` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T233451Z_broader-candidates-conditions-ack` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T233608Z_v3-candidate-quotes-corrected` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
-- `CX_2026-10-05T233832Z_v3-scope-option-two-approved` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T234008Z_v3-scope2-golden-drafts` — review_request, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T234221Z_reject-stale-db-candidates-for-fresh-import` — question, codex -> both: MIN-2.2
+- `CX_2026-10-05T234413Z_scope2-diff-ready-owner-review` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 424 records in `coordination/archive/`
+- Archive: 426 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:42:37Z
+Generated: 2026-10-05T23:44:28Z
