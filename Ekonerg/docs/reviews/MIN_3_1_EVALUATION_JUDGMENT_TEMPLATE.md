@@ -1,7 +1,8 @@
 # MIN-3.1 evaluation judgment template
 
-**Run:** `RUN-20261003-32`  
-**G3 model:** `1.0-ekonerg-20261004`  
+**Run:** `RUN-20261003-32`
+
+**G3 model:** `1.0-ekonerg-20261004`
 **Status:** ready for human judgments; no ratings written
 
 This template is the next controlled input. For each criterion, the owner or
