@@ -131,7 +131,6 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
             "summary": str(evaluation["rationale"]),
             "score_trace": (f"{len(crumb_ids)} linked vendor crumb(s) -> {rating} "
                             f"({RATING_POINTS[rating]}/5, {score:.0f} points)"),
-            "judge": "Withheld — no human criterion judgment is recorded.",
             "verify": verify,
             "judge": str(evaluation["judge_ruling"]), "rationale": str(evaluation["rationale"]),
             "quote": f"{quote} (source locator: {locator})",
@@ -176,8 +175,8 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = text[:style_end] + _dark_css() + text[style_end:]
     header = '''<header class="header">
   <h1>10 CFR 50 Appendix B — EKONERG Conformance Dashboard</h1>
-  <p class="sub">Audit reference framework: 10 CFR 50 Appendix B, interpreted through ASME NQA-1 Part 1. This dashboard presents Ekonerg document evidence from the approved intake and active evidence snapshot. Human ratings and the final score remain withheld.</p>
-  <div class="pillRow"><span class="pill"><span class="dot"></span>Ekonerg evidence snapshot</span><span class="pill">Score: Withheld</span><span class="pill">Vendor crumbs: ''' + str(vendor_total) + '''</span><span class="pill">''' + str(covered) + ''' / 18 criteria with vendor evidence</span></div>
+  <p class="sub">Audit reference framework: 10 CFR 50 Appendix B, interpreted through ASME NQA-1 Part 1. This dashboard presents Ekonerg document evidence and the recorded five-level criterion evaluations from the approved run.</p>
+  <div class="pillRow"><span class="pill"><span class="dot"></span>Ekonerg evidence snapshot</span><span class="pill">Recorded score: {score:.1f}%</span><span class="pill">Vendor crumbs: ''' + str(vendor_total) + '''</span><span class="pill">''' + str(covered) + ''' / 18 criteria with vendor evidence</span></div>
 </header>'''
     header = f'''<header class="header">
   <h1>10 CFR 50 Appendix B — EKONERG Conformance Dashboard</h1>
@@ -186,7 +185,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
 </header>'''
     text = _replace_block(text, "<header class=\"header\">", "</header>", header)
     topbar = f'''<section class="topbar">
-  <div class="metric main"><div class="num">Withheld</div><div class="label">Conformance score</div><div class="small">0 / 18 human judgments recorded</div></div>
+  <div class="metric main"><div class="num">{score:.1f}%</div><div class="label">Conformance score</div><div class="small">Recorded five-level evaluations</div></div>
   <div class="metric"><div class="num">18</div><div class="label">Appendix B criteria</div><div class="small">All criteria visible</div></div>
   <div class="metric"><div class="num" style="color:var(--accent)">{vendor_total}</div><div class="label">Vendor crumbs</div><div class="small">Active Ekonerg evidence</div></div>
   <div class="metric"><div class="num" style="color:var(--fully)">{covered}</div><div class="label"><span class="sw" style="background:var(--fully)"></span>Criteria with evidence</div><div class="small">Direct vendor coverage</div></div>
@@ -206,14 +205,14 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     summary = f'''<section class="section summaryGrid">
   <div><h2>Executive Summary</h2>
     <p>Ekonerg documents provide direct vendor evidence for {covered} of 18 Appendix B criteria. The active set contains {vendor_total} vendor crumbs, but document statements alone do not prove that controls operated in practice.</p>
-    <p>The dashboard therefore shows evidence coverage only. It does not issue a conformance rating or calculate a score. A named auditor must review each criterion and cite objective Ekonerg records.</p>
+    <p>The dashboard records the evidence-based five-level evaluation for each criterion. It is a pre-flight documentation review, not proof that controls operated in practice.</p>
     <div class="note"><strong>Primary evidence gap:</strong> {no_direct} criteria have no direct vendor crumb in the active snapshot. These are requests for evidence, not automatic failures.</div>
     <div class="note ok"><strong>Source boundary:</strong> Ekonerg is the only supplier shown in this production dashboard. Regulatory documents are used as the comparison baseline.</div>
   </div>
   <div><h2>Evidence Coverage Distribution</h2>
     <div class="progress" aria-label="Ekonerg evidence coverage distribution"><div class="seg" style="width:{covered/18*100:.2f}%;background:var(--fully)" title="Criteria with vendor evidence: {covered}">{covered}</div><div class="seg" style="width:{no_direct/18*100:.2f}%;background:var(--partial)" title="No direct vendor crumb: {no_direct}">{no_direct}</div></div>
-    <div class="legend"><span><span class="sw" style="background:var(--fully)"></span>Vendor evidence: {covered}</span><span><span class="sw" style="background:var(--partial)"></span>No direct vendor crumb: {no_direct}</span><span><span class="sw" style="background:var(--und)"></span>Human ratings: withheld</span></div>
-    <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> coverage is not a pass/fail result. The final classification remains withheld until human review.</div>
+    <div class="legend"><span><span class="sw" style="background:var(--fully)"></span>Vendor evidence: {covered}</span><span><span class="sw" style="background:var(--partial)"></span>No direct vendor crumb: {no_direct}</span><span><span class="sw" style="background:var(--und)"></span>Recorded ratings: {len(data)}</span></div>
+    <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> the score summarizes documented Ekonerg controls. It does not replace verification of implemented controls during the real audit.</div>
   </div>
 </section>'''
     summary = f'''<section class="section summaryGrid">
@@ -233,7 +232,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = re.sub(r"</section></section>\s*(<section class=\"section\">)",
                   r"</section>\n\1", text, count=1)
     controls_old = '<button class="btn active" data-filter="all">All <span class="count">18</span></button>\n    <button class="btn" data-filter="fully">Fully <span class="count">3</span></button>\n    <button class="btn" data-filter="substantially">Substantially <span class="count">11</span></button>\n    <button class="btn" data-filter="partially">Partially <span class="count">4</span></button>'
-    controls_new = '<button class="btn active" data-filter="all">All <span class="count">18</span></button>\n    <button class="btn" data-filter="evidence">With vendor evidence <span class="count">' + str(covered) + '</span></button>\n    <button class="btn" data-filter="no-evidence">No direct vendor crumb <span class="count">' + str(no_direct) + '</span></button>\n    <button class="btn" data-filter="withheld">Ratings withheld <span class="count">18</span></button>'
+    controls_new = '<button class="btn active" data-filter="all">All <span class="count">18</span></button>\n    <button class="btn" data-filter="evidence">With vendor evidence <span class="count">' + str(covered) + '</span></button>\n    <button class="btn" data-filter="no-evidence">No direct vendor crumb <span class="count">' + str(no_direct) + '</span></button>\n    <button class="btn" data-filter="recorded">Recorded ratings <span class="count">18</span></button>'
     text = text.replace(controls_old, controls_new)
     controls_new = f'''<button class="btn active" data-filter="all">All <span class="count">18</span></button>
     <button class="btn" data-filter="fully">Fully <span class="count">{counts["fully"]}</span></button>
@@ -269,7 +268,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = text.replace("else if(sort==='score') arr=[...arr].sort((a,b)=>b.score-a.score||a.order-b.order);", "else if(sort==='score') arr=[...arr].sort((a,b)=>b.score-a.score||a.order-b.order);")
     text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', '''function cardHtml(d){
   const pct=d.vendor_count?Math.min(100,Math.max(8,d.vendor_count*4)):0;
-  return `<article class="card undetermined" data-rating="undetermined"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div></div></div><span class="badge undetermined">Withheld</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${pct}%;background:var(--accent)"></div></div><span class="scorePct">—</span><span class="crumbTag">Evidence: ${d.crumbs}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Vendor evidence signal</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Evidence limitation</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Human ruling</h4><p>${d.judge}</p></div><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Source quote:</strong> ${d.quote}</div></div></article>`;
+  return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
 }''', text, count=1, flags=re.S)
     text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', '''function cardHtml(d){
   return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="crumbTag">Evidence: ${d.crumbs}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p><p>${d.rationale}</p></div><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
@@ -295,7 +294,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
   return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
 }
 renderCards(); renderMatrix();''')
-    text = re.sub(r'<div class="footer">.*?</div>', '<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Score withheld.</div>', text, count=1, flags=re.S)
+    text = re.sub(r'<div class="footer">.*?</div>', '<div class="footer">Standalone Ekonerg UMBRA dashboard — recorded pre-flight score from the Ekonerg active evidence snapshot.</div>', text, count=1, flags=re.S)
     text = re.sub(r'<div class="footer">.*?</div>', f'<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Run {run_id}; score {score:.1f}%.</div>', text, count=1, flags=re.S)
     text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', lambda _match: '''function cardHtml(d){
   const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({
