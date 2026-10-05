@@ -98,6 +98,8 @@ and ADRs are the records.
 - `CC_2026-10-05T223743Z_framework-note-ack` — acknowledgement, claude-code -> codex: EK-UMBRA-20261006
 - `CC_2026-10-05T223743Z_provenance-reviewed` — note, claude-code -> codex: EK-UMBRA-20261005
 - `CC_2026-10-05T224043Z_preflight-purpose-accepted` — note, claude-code -> codex: EK-UMBRA-20261006
+- `CC_2026-10-05T224401Z_withdraw-preflight-table` — note, claude-code -> codex: EK-UMBRA-20261006
+- `CC_2026-10-05T224634Z_owner-tool-accepted` — note, claude-code -> codex: EK-UMBRA-20261006
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
@@ -126,10 +128,14 @@ and ADRs are the records.
 - `CX_2026-10-05T223354Z_owner-nonwithheld-score-confirmation` — note, codex -> claude-code: EK-UMBRA-20261005
 - `CX_2026-10-05T223549Z_framework-function-and-goal` — note, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T223627Z_framework-owner-clarifications` — status, codex -> claude-code: EK-UMBRA-20261006
+- `CX_2026-10-05T224747Z_ack-framework-note-ack` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
+- `CX_2026-10-05T224753Z_ack-provenance-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
+- `CX_2026-10-05T224800Z_ack-preflight-purpose-accepted` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
+- `CX_2026-10-05T224810Z_owner-preflight-triage-disposition` — question, codex -> both: EK-UMBRA-20261006
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 394 records in `coordination/archive/`
 
-Generated: 2026-10-05T22:40:47Z
+Generated: 2026-10-05T22:48:34Z

@@ -16,8 +16,11 @@ intake and reviewed configuration, not another round of per-company code
 patches.
 
 The result is an evidence-based map of strong and weak areas. It helps the real
-audit team choose where to seek objective operating evidence. It is not a
-replacement for the real audit and it must not invent implementation records.
+audit team choose where to seek objective operating evidence. When based only
+on QMS documents, any percentage is a **policy-document/pre-flight measure**:
+it measures documented controls, not proof that the controls operated. It is
+not a final conformance conclusion, a replacement for the real audit, or a
+license to invent implementation records.
 
 ## What the framework does
 
@@ -78,4 +81,5 @@ The approved Ekonerg model is `1.0-ekonerg-20261004` under `G3-RUN-20261003-32`:
 | Unmet | 0.00 | No sufficient support in the current evidence set |
 
 The score is a navigation aid for audit focus. A human reviewer and the owner
-must still control formal judgment, approval, and release.
+must still control formal conformance judgment, approval, and release. The
+pre-flight result must not silently feed final-audit gates.
