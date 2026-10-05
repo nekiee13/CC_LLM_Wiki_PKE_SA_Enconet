@@ -85,10 +85,13 @@ and ADRs are the records.
 - `CX_2026-10-05T005710Z_ack-umbra-dashboard-review` — acknowledgement, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T005715Z_dashboard-judgment-form` — status, codex -> both: EK-8.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
+- `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T044915Z_ack-strict-candidates-review` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-05T044931Z_owner-decision-strict-raw-repairs` — question, codex -> both: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-04T223709Z-b1e5631.md`](../handoffs/2026-10-04T223709Z-b1e5631.md)
 - Archive: 370 records in `coordination/archive/`
 
-Generated: 2026-10-05T01:11:32Z
+Generated: 2026-10-05T04:49:31Z

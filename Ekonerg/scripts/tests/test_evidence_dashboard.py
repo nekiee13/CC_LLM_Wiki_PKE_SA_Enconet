@@ -41,6 +41,8 @@ def test_dashboard_html_is_offline_and_has_no_false_failure_label() -> None:
     assert 'id="judgments"' in page
     assert "fill-undetermined" in page
     assert "export-judgments" in page
+    assert 'id="export-judgments" disabled' in page
+    assert "updateexportstate" in page
     assert "judgment-rows" in page
     assert "<span class=\"tag blocked\">fail</span>" not in page
     assert json.loads(raw_page.split('id="dashboard-data" type="application/json">', 1)[1].split("</script>", 1)[0]) == data
