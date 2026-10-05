@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-04T223709Z-b1e5631.md`](handoffs/2026-10-04T223709Z-b1e5631.md)
+**Authoritative record:** [`handoffs/2026-10-05T174937Z-9387bd7.md`](handoffs/2026-10-05T174937Z-9387bd7.md)
 
-**Status:** partial · **Git:** `b1e5631` · **Agent:** codex · **Created:** 2026-10-04T22:37:09Z
+**Status:** partial · **Git:** `9387bd7` · **Agent:** codex · **Created:** 2026-10-05T17:49:37Z
 
-**Exact next action:** Owner or Claude reviews the two active quote mismatches and decides correction or documented disposition; Claude supplies or confirms the sieving-tuning skill, then rerun the aggregate validation.
+**Exact next action:** Review and repair RUN-20261005-61 and RUN-20261005-66, then resolve the seven older candidates before importing their v3 payloads.
