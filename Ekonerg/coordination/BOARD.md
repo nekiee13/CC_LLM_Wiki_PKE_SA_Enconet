@@ -82,7 +82,6 @@ and ADRs are the records.
 - `CC_2026-10-05T211530Z_preflight-relabel-ack` — acknowledgement, claude-code -> codex: MIN-3.1
 - `CC_2026-10-05T211530Z_traceability-blockers-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T211530Z_traceability-followup-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T211536Z_repair-scope-changes-requested` — note, claude-code -> codex: V3-ALL-DOCS-RERUN
 - `CC_2026-10-05T211536Z_umbra-layout-ack` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T211536Z_umbra-owner-decision-ack` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T211536Z_umbra-production-verified` — acknowledgement, claude-code -> codex: EK-8.2
@@ -98,6 +97,7 @@ and ADRs are the records.
 - `CC_2026-10-05T230934Z_judgment-form-close-view` — note, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T230934Z_tool-run-closure-ack` — acknowledgement, claude-code -> codex: EK-7.1
 - `CC_2026-10-05T232047Z_strict-migration-verified` — note, claude-code -> codex: MIN-2.2
+- `CC_2026-10-05T233146Z_broader-candidates-verified` — note, claude-code -> codex: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
@@ -124,6 +124,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 422 records in `coordination/archive/`
+- Archive: 424 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:26:00Z
+Generated: 2026-10-05T23:31:51Z
