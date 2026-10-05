@@ -123,10 +123,11 @@ and ADRs are the records.
 - `CX_2026-10-05T232600Z_broader-candidates-held` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T233451Z_broader-candidates-conditions-ack` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T233608Z_v3-candidate-quotes-corrected` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
+- `CX_2026-10-05T233832Z_v3-scope-option-two-approved` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 424 records in `coordination/archive/`
 
-Generated: 2026-10-05T23:37:39Z
+Generated: 2026-10-05T23:38:32Z
