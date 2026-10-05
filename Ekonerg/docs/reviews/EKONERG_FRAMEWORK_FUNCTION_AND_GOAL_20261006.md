@@ -18,9 +18,10 @@ patches.
 The result is an evidence-based map of strong and weak areas. It helps the real
 audit team choose where to seek objective operating evidence. When based only
 on QMS documents, any percentage is a **policy-document/pre-flight measure**:
-it measures documented controls, not proof that the controls operated. It is
-not a final conformance conclusion, a replacement for the real audit, or a
-license to invent implementation records.
+it measures documented controls, not proof that the controls operated. The
+dashboard is the completion and closure artifact for this tool run. A later
+real audit may use its weak-area route to test operating evidence; that later
+work is separate and does not keep this tool run open.
 
 ## What the framework does
 
@@ -80,6 +81,8 @@ The approved Ekonerg model is `1.0-ekonerg-20261004` under `G3-RUN-20261003-32`:
 | Minimally | 0.25 | Very limited support |
 | Unmet | 0.00 | No sufficient support in the current evidence set |
 
-The score is a navigation aid for audit focus. A human reviewer and the owner
-must still control formal conformance judgment, approval, and release. The
-pre-flight result must not silently feed final-audit gates.
+The score is the completed result of this owner-operated tool and a navigation
+aid for audit focus. It must not be presented as proof that controls operated,
+and it must not silently feed final-audit gates without the later audit's own
+evidence. Those limits describe how the result is used; they do not leave this
+tool run unfinished.

@@ -54,7 +54,7 @@ made.*
 | EK-6 — Ingest fresh regulatory and QMS evidence | EK-6.1 — Register and process regulatory sources | 🟡 Registered, extracted, chunked; controlled RULE test passed; full sieving pending |
 | EK-6 | EK-6.2 — Process Ekonerg QMS documents in bounded batches | 🟡 Registered, extracted, chunked; controlled objective-evidence test passed; full batches pending |
 | EK-6 | EK-6.3 — Review evidence quality and approve G2 | ✅ G2 approved; 18 applicability rows applied for RUN-20261003-32 |
-| EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | 🟡 In progress — G3 approved; document pre-flight assessment recorded; formal evaluation remains separate |
+| EK-7 — Evaluate Ekonerg and approve findings | EK-7.1 — Record scoring approval and draft evaluations | ✅ Tool run complete — G3 approved; all 18 five-level evaluations and the 52.8% dashboard result are published; later operating-evidence audit is separate |
 | EK-7 | EK-7.2 — Draft findings and follow-up actions | 🟡 Pre-flight actions drafted; formal findings remain gated on objective evidence |
 | EK-8 — Generate, test, and release Croatian outputs | EK-8.1 — Build the report and evidence package | ⬜ Not started |
 | EK-8 | EK-8.2 — Test the dashboard and complete owner UAT | 🟡 Dashboard generated and tested; owner UAT/Claude review pending |
@@ -108,8 +108,10 @@ The offline UMBRA evidence dashboard is published at
 intake and evidence counts, all 18 criteria, gate state, and the B01–B10 source
 batches. The document pre-flight assessment is published separately in
 `docs/reviews/MIN_3_1_DOCUMENT_PREFLIGHT_20261005.md`; it is the working route
-for selecting real-audit samples and weak areas. The dashboard still withholds
-the formal score because no final database evaluation rows exist.
+for selecting real-audit samples and weak areas. The dashboard publishes the
+completed five-level result: **52.8% (950 / 1800)**. This closes the
+owner-operated pre-flight tool run. The result points the later real audit
+toward weak areas; it does not claim that the controls operated.
 
 ### Latest owner decisions — 2026-10-05
 

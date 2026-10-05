@@ -205,19 +205,19 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     summary = f'''<section class="section summaryGrid">
   <div><h2>Executive Summary</h2>
     <p>Ekonerg documents provide direct vendor evidence for {covered} of 18 Appendix B criteria. The active set contains {vendor_total} vendor crumbs, but document statements alone do not prove that controls operated in practice.</p>
-    <p>The dashboard records the evidence-based five-level evaluation for each criterion. It is a pre-flight documentation review, not proof that controls operated in practice.</p>
+    <p>The dashboard records the evidence-based five-level evaluation for each criterion and closes this owner-operated pre-flight tool run. It is not proof that controls operated in practice.</p>
     <div class="note"><strong>Primary evidence gap:</strong> {no_direct} criteria have no direct vendor crumb in the active snapshot. These are requests for evidence, not automatic failures.</div>
     <div class="note ok"><strong>Source boundary:</strong> Ekonerg is the only supplier shown in this production dashboard. Regulatory documents are used as the comparison baseline.</div>
   </div>
   <div><h2>Evidence Coverage Distribution</h2>
     <div class="progress" aria-label="Ekonerg evidence coverage distribution"><div class="seg" style="width:{covered/18*100:.2f}%;background:var(--fully)" title="Criteria with vendor evidence: {covered}">{covered}</div><div class="seg" style="width:{no_direct/18*100:.2f}%;background:var(--partial)" title="No direct vendor crumb: {no_direct}">{no_direct}</div></div>
     <div class="legend"><span><span class="sw" style="background:var(--fully)"></span>Vendor evidence: {covered}</span><span><span class="sw" style="background:var(--partial)"></span>No direct vendor crumb: {no_direct}</span><span><span class="sw" style="background:var(--und)"></span>Recorded ratings: {len(data)}</span></div>
-    <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> the score summarizes documented Ekonerg controls. It does not replace verification of implemented controls during the real audit.</div>
+    <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> the score summarizes documented Ekonerg controls. A later real audit may verify implementation, but that downstream work does not keep this tool run open.</div>
   </div>
 </section>'''
     summary = f'''<section class="section summaryGrid">
   <div><h2>Executive Summary</h2>
-    <p>Ekonerg documents were evaluated against all 18 Appendix B criteria. The evidence-based result is <strong>{score:.1f}% — Partially Matched</strong>, using the approved five-level Enconet scale.</p>
+    <p>Ekonerg documents were evaluated against all 18 Appendix B criteria. The evidence-based result is <strong>{score:.1f}% — Partially Matched</strong>, using the approved five-level Enconet scale. This closes the owner-operated pre-flight tool run.</p>
     <p>The score is the average of the criterion ratings: fully = 5/5 (100), substantially = 4/5 (75), partially = 3/5 (50), minimally = 2/5 (25), and unmet = 1/5 (0).</p>
     <div class="note"><strong>Primary evidence gap:</strong> {no_direct} criteria have no direct Ekonerg vendor crumb and are therefore rated unmet: VIII, IX, XI, XIII, and XIV.</div>
     <div class="note ok"><strong>Source boundary:</strong> Ekonerg is the only supplier shown. Regulatory documents are the comparison baseline; no other supplier data is used.</div>
@@ -225,7 +225,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
   <div><h2>Classification Distribution</h2>
     <div class="progress" aria-label="Ekonerg classification distribution"><div class="seg" style="width:{counts["fully"]/18*100:.2f}%;background:var(--fully)" title="Fully Matched: {counts["fully"]}">{counts["fully"]}</div><div class="seg" style="width:{counts["substantially"]/18*100:.2f}%;background:var(--sub)" title="Substantially Matched: {counts["substantially"]}">{counts["substantially"]}</div><div class="seg" style="width:{counts["partially"]/18*100:.2f}%;background:var(--partial)" title="Partially Matched: {counts["partially"]}">{counts["partially"]}</div><div class="seg" style="width:{counts["unmet"]/18*100:.2f}%;background:var(--unmet)" title="Unmet: {counts["unmet"]}">{counts["unmet"]}</div></div>
     <div class="legend"><span><span class="sw" style="background:var(--fully)"></span>Fully: {counts["fully"]}</span><span><span class="sw" style="background:var(--sub)"></span>Substantially: {counts["substantially"]}</span><span><span class="sw" style="background:var(--partial)"></span>Partially: {counts["partially"]}</span><span><span class="sw" style="background:var(--minimal)"></span>Minimally: {counts["minimally"]}</span><span><span class="sw" style="background:var(--unmet)"></span>Unmet: {counts["unmet"]}</span></div>
-    <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> each criterion has a recorded five-level rating. Follow-up verification should target the lowest-rated criteria first.</div>
+    <div class="note" style="margin-top:14px"><strong>Interpretation:</strong> each criterion has a recorded five-level rating. Follow-up verification should target the lowest-rated criteria first; later real-audit work does not keep this tool run open.</div>
   </div>
 </section>'''
     text = _replace_block(text, "<section class=\"section summaryGrid\">", "</section>", summary)
@@ -294,8 +294,8 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
   return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
 }
 renderCards(); renderMatrix();''')
-    text = re.sub(r'<div class="footer">.*?</div>', '<div class="footer">Standalone Ekonerg UMBRA dashboard — recorded pre-flight score from the Ekonerg active evidence snapshot.</div>', text, count=1, flags=re.S)
-    text = re.sub(r'<div class="footer">.*?</div>', f'<div class="footer">Standalone Ekonerg UMBRA dashboard — sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Run {run_id}; score {score:.1f}%.</div>', text, count=1, flags=re.S)
+    text = re.sub(r'<div class="footer">.*?</div>', '<div class="footer">Standalone Ekonerg UMBRA dashboard — tool run complete; recorded pre-flight score from the Ekonerg active evidence snapshot.</div>', text, count=1, flags=re.S)
+    text = re.sub(r'<div class="footer">.*?</div>', f'<div class="footer">Standalone Ekonerg UMBRA dashboard — tool run complete; sources: Ekonerg active evidence snapshot, 10 CFR 50 Appendix B, ASME NQA-1 Part 1 interpretation baseline. Run {run_id}; score {score:.1f}%.</div>', text, count=1, flags=re.S)
     text = re.sub(r'function cardHtml\(d\)\{.*?\n\}', lambda _match: '''function cardHtml(d){
   const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({
     "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"

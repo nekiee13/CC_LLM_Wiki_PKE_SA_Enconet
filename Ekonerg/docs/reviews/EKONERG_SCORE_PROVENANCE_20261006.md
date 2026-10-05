@@ -32,7 +32,9 @@ The dashboard code uses the same weights as the approved Ekonerg model. The
 phrase "Enconet five-level scale" describes the inherited five-level vocabulary;
 the live evaluation run checks and records the approved Ekonerg model version.
 The published 52.8% therefore does not change when recomputed with the approved
-model. This does not resolve the missing-human-judgment gate.
+model. Under the owner's tool clarification, the generated dashboard is the
+completion artifact for this owner-operated pre-flight run; the absence of a
+database reviewer column does not block this tool result.
 
 ## Criterion-by-criterion record
 
@@ -67,4 +69,6 @@ or other proof that the control operated.
 
 The 18 rows are **not human judgments**, are **not marked provisional**, and are
 **not quarantined**. They currently feed the score command and the dashboard.
-This record does not claim that the score is an approved final audit conclusion.
+This record does not claim that the score proves operating performance or
+replaces a later real audit. Those are downstream uses, not an unfinished step
+in this dashboard run.
