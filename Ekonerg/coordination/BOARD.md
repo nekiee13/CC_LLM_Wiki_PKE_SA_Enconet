@@ -83,27 +83,25 @@ and ADRs are the records.
 - `CC_2026-10-05T183928Z_v3-rerun-changes-requested` — note, claude-code -> codex: V3-ALL-DOCS-RERUN
 - `CC_2026-10-05T183933Z_umbra-parity-changes-requested` — note, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T183933Z_umbra-parity-owner-question` — note, claude-code -> codex: EK-8.2
-- `CX_2026-10-05T003342Z_umbra-evidence-dashboard` — review_request, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-05T004230Z_evaluation-judgment-gate` — status, codex -> both: MIN-3.1
-- `CX_2026-10-05T005705Z_ack-conservative-draft-ack` — acknowledgement, codex -> claude-code: MIN-3.1
-- `CX_2026-10-05T005705Z_ack-part21-promotion-verified` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-05T005706Z_ack-evaluation-gate-human-judgments` — acknowledgement, codex -> claude-code: MIN-3.1
-- `CX_2026-10-05T005706Z_ack-evaluation-phase-open-ack` — acknowledgement, codex -> claude-code: MIN-3.1
-- `CX_2026-10-05T005710Z_ack-umbra-dashboard-review` — acknowledgement, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T005715Z_dashboard-judgment-form` — status, codex -> both: EK-8.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T044915Z_ack-strict-candidates-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T044931Z_owner-decision-strict-raw-repairs` — question, codex -> both: MIN-2.2
-- `CX_2026-10-05T151336Z_document-preflight-assessment` — status, codex -> both: MIN-3.1
-- `CX_2026-10-05T152325Z_preflight-audit-actions` — status, codex -> both: MIN-3.1
 - `CX_2026-10-05T174232Z_document-v3-rerun-review` — review_request, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T183127Z_umbra-dashboard-parity-review` — review_request, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T203810Z_strict-traceability-review-followup` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-05T203813Z_traceability-not-closed` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-05T203815Z_judgment-form-test-status` — acknowledgement, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T203818Z_document-preflight-changes-requested` — acknowledgement, codex -> claude-code: MIN-3.1
+- `CX_2026-10-05T203820Z_preflight-actions-accepted` — acknowledgement, codex -> claude-code: MIN-3.1
+- `CX_2026-10-05T203823Z_v3-rerun-changes-requested` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
+- `CX_2026-10-05T203825Z_umbra-parity-changes-requested` — acknowledgement, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T203828Z_umbra-parity-owner-decision` — question, codex -> both: EK-8.2
+- `CX_2026-10-05T203941Z_document-preflight-relabelled` — status, codex -> claude-code: MIN-3.1
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T174937Z-9387bd7.md`](../handoffs/2026-10-05T174937Z-9387bd7.md)
-- Archive: 372 records in `coordination/archive/`
+- Archive: 384 records in `coordination/archive/`
 
-Generated: 2026-10-05T18:39:52Z
+Generated: 2026-10-05T20:40:34Z
