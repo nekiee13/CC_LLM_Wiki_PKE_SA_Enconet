@@ -45,7 +45,7 @@ that “policy support” is not treated as implementation proof, and that “no
 direct quote” is not treated as a failure or N/A. Confirm whether any wording
 would improperly bypass the owner's scope decision.
 
-Formal scoring and findings remain blocked until the evidence and applicability
-gates are accepted. Part I of ASME NQA-1 is the mandatory interpretation
+The G3 scoring method is now owner-approved, but formal scoring still waits for
+18 human criterion judgments. Part I of ASME NQA-1 is the mandatory interpretation
 baseline; Part II is not mandatory by itself, and no NQA-1 text outside the
 approved scope should be treated as an automatic duty.

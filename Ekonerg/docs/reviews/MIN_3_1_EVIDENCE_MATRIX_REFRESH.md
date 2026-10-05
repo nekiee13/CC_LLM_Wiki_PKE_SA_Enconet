@@ -37,5 +37,5 @@ as proof that staff used a control, and candidate leads remain leads.
 
 ## Next gate
 
-Formal evaluation may now proceed, but no rating or audit conclusion is claimed
-by this matrix refresh.
+Formal evaluation may now proceed under the approved G3 model, but no rating or
+audit conclusion is claimed by this matrix refresh.

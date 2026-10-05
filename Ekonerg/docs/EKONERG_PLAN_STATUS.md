@@ -77,8 +77,8 @@ made.*
   generation decisions remain open.
 - EK-6.3 G2 is approved under `G2-RUN-20261003-32`. Twelve criteria are
   applicable and six remain conditional in scope; none is a final N/A. The
-  18-row applicability matrix is written to the database. Formal evaluations
-  and scoring now wait for G3 model approval and human judgments.
+  18-row applicability matrix is written to the database. G3 model approval is
+  recorded as `G3-RUN-20261003-32`; the next open input is 18 human judgments.
 - EK-1.2 is the current open task: the local support-tool foundation (`agent_coord.py`,
   `run_validation.py`, `make_handoff.py`, `check_guidance_drift.py`,
   `check_skill_structure.py`, and their tests) is reviewed and approved, but the task as a
