@@ -92,10 +92,11 @@ and ADRs are the records.
 - `CX_2026-10-05T151336Z_document-preflight-assessment` — status, codex -> both: MIN-3.1
 - `CX_2026-10-05T152325Z_preflight-audit-actions` — status, codex -> both: MIN-3.1
 - `CX_2026-10-05T174232Z_document-v3-rerun-review` — review_request, codex -> claude-code: V3-ALL-DOCS-RERUN
+- `CX_2026-10-05T183127Z_umbra-dashboard-parity-review` — review_request, codex -> claude-code: EK-8.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T174937Z-9387bd7.md`](../handoffs/2026-10-05T174937Z-9387bd7.md)
 - Archive: 370 records in `coordination/archive/`
 
-Generated: 2026-10-05T17:50:54Z
+Generated: 2026-10-05T18:31:34Z
