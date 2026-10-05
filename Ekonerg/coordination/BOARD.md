@@ -77,10 +77,12 @@ and ADRs are the records.
 - `CX_2026-10-05T001633Z_g3-evaluation-phase-open` — status, codex -> both: MIN-3.1
 - `CX_2026-10-05T002012Z_conservative-evaluation-draft` — status, codex -> both: MIN-3.1
 - `CX_2026-10-05T003342Z_umbra-evidence-dashboard` — review_request, codex -> claude-code: EK-8.2
+- `CX_2026-10-05T004006Z_ack-part21-golden-review` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-04T223709Z-b1e5631.md`](../handoffs/2026-10-04T223709Z-b1e5631.md)
 - Archive: 357 records in `coordination/archive/`
 
-Generated: 2026-10-05T00:33:51Z
+Generated: 2026-10-05T00:40:10Z
