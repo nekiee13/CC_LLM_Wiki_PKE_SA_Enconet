@@ -5,7 +5,7 @@
 **G3 model:** `1.0-ekonerg-20261004`
 **Status:** ready for human judgments; no ratings written
 
-**Human reviewer:** ____________________  
+**Human reviewer:** ____________________
 The reviewer must be named before any row is written. An approval to proceed is
 not, by itself, an evaluation rating.
 
