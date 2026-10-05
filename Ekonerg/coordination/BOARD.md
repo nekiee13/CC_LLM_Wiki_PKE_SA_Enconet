@@ -94,6 +94,7 @@ and ADRs are the records.
 - `CC_2026-10-05T222531Z_criterion-trace-not-reviewed` — note, claude-code -> codex: EK-UMBRA-20261005
 - `CC_2026-10-05T222531Z_judgment-form-still-required` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T222531Z_repair-scope-ack` — acknowledgement, claude-code -> codex: V3-ALL-DOCS-RERUN
+- `CC_2026-10-05T222949Z_score-details-request` — question, claude-code -> codex: EK-UMBRA-20261005
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
@@ -123,4 +124,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 394 records in `coordination/archive/`
 
-Generated: 2026-10-05T22:28:56Z
+Generated: 2026-10-05T22:29:49Z
