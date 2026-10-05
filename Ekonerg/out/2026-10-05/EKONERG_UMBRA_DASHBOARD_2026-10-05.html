@@ -1,44 +1,332 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Offline UMBRA evidence dashboard for the Ekonerg Appendix B audit."><title>Ekonerg · QA overview · 2026-10-05</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TEKOL — 10 CFR 50 Appendix B Conformance Dashboard</title>
 <style>
-:root{--bg-0:#0B0F14;--surface-1:#111821;--surface-2:#17202B;--surface-3:#1E2935;--border-subtle:#243140;--border-strong:#33455A;--accent-fill:#3CCFB4;--accent-text:#5FDCC6;--on-accent:#04201B;--text-primary:#E8EEF4;--text-secondary:#A9B6C4;--text-muted:#8392A3;--review:#E8B04B;--blocked:#F07178;--approved:#6FD39A;--radius-panel:12px;--radius-control:8px}
-*{box-sizing:border-box}body{margin:0;background:var(--bg-0);color:var(--text-primary);font:15px/1.55 system-ui,sans-serif}button,input{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent-fill);outline-offset:2px}.app{min-height:100vh;display:grid;grid-template-columns:232px minmax(0,1fr)}aside{display:flex;flex-direction:column;gap:28px;padding:24px 16px;background:var(--surface-1);border-right:1px solid var(--border-subtle)}.brand{display:flex;gap:10px;align-items:center;padding:4px 8px;font-weight:700}.brand-mark{width:26px;height:26px;display:grid;place-items:center;border-radius:8px;background:var(--accent-fill);color:var(--on-accent);font-weight:800}.nav-label,.eyebrow{color:var(--text-muted);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}nav{display:grid;gap:4px}nav a{padding:9px 10px;border-radius:var(--radius-control);color:var(--text-secondary);text-decoration:none}nav a:hover,nav a[aria-current=page]{background:var(--surface-3);color:var(--text-primary)}nav a[aria-current=page]{box-shadow:inset 2px 0 var(--accent-fill)}.reviewer{margin-top:auto;padding:12px 8px 0;border-top:1px solid var(--border-subtle);color:var(--text-secondary)}main{min-width:0;padding:28px}.topline,.title-row,.panel-head,.metric-head{display:flex;align-items:center;justify-content:space-between;gap:16px}.topline{color:var(--text-muted);font-size:13px}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}h1,h2,h3{margin:0;letter-spacing:-.02em}h1{font-size:clamp(28px,3vw,40px);line-height:1.1}h2{font-size:20px;line-height:1.25}h3{font-size:15px}.title-row{margin:24px 0;align-items:end}.title-row p{max-width:700px;margin:8px 0 0;color:var(--text-secondary)}.actions{display:flex;flex-wrap:wrap;gap:8px}.btn{min-height:40px;padding:0 14px;border-radius:var(--radius-control);border:1px solid var(--border-strong);background:var(--surface-3);color:var(--text-primary)}.btn.primary{border-color:transparent;background:var(--accent-fill);color:var(--on-accent);font-weight:700}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}.metric,.panel{background:var(--surface-1);border:1px solid var(--border-subtle);border-radius:var(--radius-panel)}.metric{min-height:128px;padding:16px}.metric-head{color:var(--text-muted);font-size:13px}.metric-value{margin:18px 0 4px;color:var(--accent-text);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:27px;font-weight:600}.metric-note{color:var(--text-muted);font-size:12px}.layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(320px,.7fr);gap:16px}.panel{padding:20px}.panel-head{margin-bottom:18px;align-items:start}.panel-head p{margin:4px 0 0;color:var(--text-muted);font-size:13px}.tag{display:inline-flex;align-items:center;min-height:26px;padding:0 9px;border-radius:4px;background:var(--surface-3);color:var(--text-secondary);font-size:12px;white-space:nowrap}.tag.review{background:rgba(232,176,75,.12);color:var(--review)}.tag.blocked{background:rgba(240,113,120,.12);color:var(--blocked)}.tag.approved{background:rgba(111,211,154,.12);color:var(--approved)}.coverage{display:grid;gap:8px}.coverage-row{display:grid;grid-template-columns:95px minmax(120px,1fr) 230px;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--surface-3)}.coverage-row:last-child{border-bottom:0}.coverage-id{color:var(--text-muted);font-size:12px}.bar{height:7px;overflow:hidden;border-radius:99px;background:var(--surface-3)}.bar>span{display:block;height:100%;border-radius:inherit;background:var(--accent-fill)}.bar>span.empty{background:var(--blocked)}.coverage-status{text-align:right}.gate{display:grid;gap:16px}.gate-state{display:flex;gap:10px;align-items:flex-start;padding:14px;border:1px solid rgba(232,176,75,.35);border-radius:var(--radius-control);background:rgba(232,176,75,.08)}.state-dot{width:9px;height:9px;flex:0 0 auto;margin-top:7px;border-radius:50%;background:var(--review)}.gate-state strong{display:block;color:var(--review)}.gate-state p{margin:3px 0 0;color:var(--text-secondary);font-size:13px}.checks{display:grid;gap:10px}.check{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--surface-3);font-size:13px}.check:last-child{border-bottom:0}.check span:first-child{color:var(--text-secondary)}.table-panel{grid-column:1/-1}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:620px}th,td{padding:10px;border-bottom:1px solid var(--surface-3);text-align:left;vertical-align:top}th{color:var(--text-muted);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}td{color:var(--text-secondary);font-size:13px}td:first-child{color:var(--text-primary)}.footer-note{margin-top:16px;color:var(--text-muted);font-size:12px}.filter{min-height:36px;padding:0 10px;border:1px solid var(--border-strong);border-radius:var(--radius-control);background:var(--surface-2);color:var(--text-primary)}
- .form-panel{grid-column:1/-1}.form-help{margin:0 0 14px;color:var(--text-secondary);font-size:13px}.form-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:14px}.form-toolbar .progress{margin-left:auto;color:var(--accent-text);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px}.judgment-table{min-width:980px}.judgment-table select,.judgment-table input,.judgment-table textarea{width:100%;border:1px solid var(--border-strong);border-radius:var(--radius-control);background:var(--surface-2);color:var(--text-primary);padding:8px}.judgment-table select{min-height:38px}.judgment-table textarea{min-height:54px;resize:vertical}.judgment-table th:nth-child(1){width:190px}.judgment-table th:nth-child(2){width:155px}.judgment-table th:nth-child(3){width:240px}.judgment-table th:nth-child(4){width:340px}.judgment-table td{vertical-align:top}.criterion-name{display:block;color:var(--text-primary);font-weight:600}.criterion-meta{display:block;margin-top:3px;color:var(--text-muted);font-size:12px}.form-note{margin:12px 0 0;color:var(--text-muted);font-size:12px}.btn.small{min-height:34px;padding:0 10px;font-size:13px}.btn:disabled{cursor:not-allowed;opacity:.55;filter:none}
-@media(max-width:1199px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.layout{grid-template-columns:1fr}.table-panel,.form-panel{grid-column:auto}}@media(max-width:759px){.app{display:block}aside{position:sticky;top:0;z-index:2;display:block;padding:12px 16px}.brand{display:inline-flex}nav{display:flex;overflow-x:auto;margin-top:10px}nav a{flex:0 0 auto}.nav-label,.reviewer{display:none}main{padding:20px 16px}.title-row{display:block}.actions{margin-top:14px}.metrics{grid-template-columns:1fr}.coverage-row{grid-template-columns:72px minmax(90px,1fr)}.coverage-status{grid-column:2;text-align:left}.form-toolbar .progress{margin-left:0;width:100%}}
-</style></head><body><div class="app">
-<aside aria-label="Audit navigation"><div class="brand"><span class="brand-mark" aria-hidden="true">E</span><span>Ekonerg QA</span></div><div class="nav-label">Audit workspace</div><nav><a href="#overview" aria-current="page">01 Overview</a><a href="#criteria">02 Criteria</a><a href="#judgments">03 Judgments</a><a href="#evidence">04 Evidence</a><a href="#sources">05 Sources</a><a href="#gates">06 Gates</a></nav><div class="reviewer"><strong>Evidence snapshot</strong><br><span class="mono">DASH-20261005-0001</span></div></aside>
-<main id="overview"><div class="topline"><span>Ekonerg / Audit overview</span><span class="mono">RUN-20261003-32 · evidence_reviewed</span></div>
-<div class="title-row"><div><div class="eyebrow">Appendix B evidence review</div><h1>QA overview</h1><p>Real intake and evidence results are shown below. The conformity score stays withheld until all 18 human judgments are recorded and approved.</p></div><div class="actions"><button class="btn" type="button" onclick="window.print()">Print snapshot</button><button class="btn primary" type="button" onclick="document.getElementById('judgments').scrollIntoView({behavior:'smooth'})">Open judgment form</button></div></div>
-<section class="metrics" aria-label="Audit summary"><article class="metric"><div class="metric-head"><span>QMS files read</span><span class="mono">01</span></div><div class="metric-value" data-bind="qms_files"></div><div class="metric-note">of supplied vendor scope</div></article><article class="metric"><div class="metric-head"><span>Active vendor crumbs</span><span class="mono">02</span></div><div class="metric-value" data-bind="vendor_crumbs"></div><div class="metric-note" data-bind="crumb_note"></div></article><article class="metric"><div class="metric-head"><span>Criteria with vendor coverage</span><span class="mono">03</span></div><div class="metric-value" data-bind="criteria_coverage"></div><div class="metric-note">five have no direct vendor crumb</div></article><article class="metric"><div class="metric-head"><span>Conformity score</span><span class="mono">04</span></div><div class="metric-value">Withheld</div><div class="metric-note">0 / 18 judgments recorded</div></article></section>
-<div class="layout"><section class="panel" id="criteria" aria-labelledby="coverage-title"><div class="panel-head"><div><h2 id="coverage-title">Criterion coverage</h2><p>All 18 Appendix B criteria remain visible. Coverage is not a pass/fail result.</p></div><input id="criteria-filter" class="filter" type="search" placeholder="Filter criteria" aria-label="Filter criteria"></div><div id="coverage" class="coverage"></div><p class="footer-note">No direct vendor crumb means “ask for evidence,” not “failed.”</p></section>
-<section class="panel gate" id="gates" aria-labelledby="gate-title"><div class="panel-head"><div><h2 id="gate-title">Evidence gate</h2><p>Approval state controls what may be scored.</p></div><span class="tag review">Review pending</span></div><div class="gate-state"><span class="state-dot" aria-hidden="true"></span><div><strong>Evidence review complete; judgment pending</strong><p>G3 approved the scoring model. No criterion evaluation rows exist yet, so the score and final classification are withheld.</p></div></div><div class="checks" id="gate-checks"></div></section>
-<section class="panel form-panel" id="judgments" aria-labelledby="judgments-title"><div class="panel-head"><div><h2 id="judgments-title">Judgment form</h2><p>Enter one human judgment per criterion. This browser form exports a draft only; it never writes the audit database.</p></div><span class="tag review">Human review</span></div><p class="form-help"><label for="judge-name">Reviewer name</label> <input id="judge-name" class="filter" type="text" placeholder="Enter the human judge name" autocomplete="name" aria-describedby="form-note"></p><div class="form-toolbar"><button class="btn small" type="button" id="fill-undetermined">Use undetermined for all</button><button class="btn small" type="button" id="clear-judgments">Clear form</button><button class="btn small primary" type="button" id="export-judgments" disabled>Export draft JSON</button><span class="progress" id="judgment-progress" aria-live="polite">0 / 18 selected</span></div><div class="table-wrap"><table class="judgment-table"><thead><tr><th scope="col">Criterion</th><th scope="col">Rating</th><th scope="col">Evidence crumb IDs</th><th scope="col">Rationale</th></tr></thead><tbody id="judgment-rows"></tbody></table></div><p class="form-note" id="form-note">Positive ratings must cite active vendor crumbs. “Undetermined” means the evidence is not enough to judge; it is not a failure finding.</p></section>
-<section class="panel table-panel" id="evidence" aria-labelledby="queue-title"><div class="panel-head"><div><h2 id="queue-title">Evidence queue</h2><p>Next actions are evidence requests, not findings.</p></div><span class="tag blocked">Open work</span></div><div class="table-wrap"><table><thead><tr><th>Item</th><th>Why it matters</th><th>State</th><th>Trace</th></tr></thead><tbody id="queue"></tbody></table></div></section>
-<section class="panel table-panel" id="sources" aria-labelledby="batches-title"><div class="panel-head"><div><h2 id="batches-title">QMS reading batches</h2><p>B01–B10 cover all 24 named vendor files.</p></div><span class="mono" style="color:var(--text-muted);font-size:12px">generated 2026-10-05</span></div><div class="table-wrap"><table><thead><tr><th>Batch</th><th>Files read</th><th>State</th><th>Source</th></tr></thead><tbody id="batches"></tbody></table></div></section></div>
-<p class="footer-note">Offline UMBRA evidence snapshot · sources: <span class="mono">db/nqa_audit.sqlite</span>, <span class="mono">out/2026-10-05/MIN-3.1-evidence-matrix-v4.json</span> · no conformity conclusion asserted.</p></main></div>
-<script id="dashboard-data" type="application/json">{"batches": [{"id": "B01", "source_count": 1, "state": "Complete"}, {"id": "B02", "source_count": 3, "state": "Complete"}, {"id": "B03", "source_count": 3, "state": "Complete"}, {"id": "B04", "source_count": 3, "state": "Complete"}, {"id": "B05", "source_count": 3, "state": "Complete"}, {"id": "B06", "source_count": 2, "state": "Complete"}, {"id": "B07", "source_count": 3, "state": "Complete"}, {"id": "B08", "source_count": 3, "state": "Complete"}, {"id": "B09", "source_count": 2, "state": "Complete"}, {"id": "B10", "source_count": 1, "state": "Complete"}], "classification_state": "Withheld", "criteria": [{"anchored_vendor_crumbs": 2, "applicability": "applicable", "id": "B I", "raw_id": "APP_B_I", "rule_crumbs": 5, "status": "Draft coverage + context", "title": "Organization", "vendor_crumbs": 31}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B II", "raw_id": "APP_B_II", "rule_crumbs": 18, "status": "Draft coverage", "title": "Quality Assurance Program", "vendor_crumbs": 17}, {"anchored_vendor_crumbs": 1, "applicability": "applicable", "id": "B III", "raw_id": "APP_B_III", "rule_crumbs": 2, "status": "Draft coverage + context", "title": "Design Control", "vendor_crumbs": 14}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B IV", "raw_id": "APP_B_IV", "rule_crumbs": 2, "status": "Draft coverage", "title": "Procurement Document Control", "vendor_crumbs": 4}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B V", "raw_id": "APP_B_V", "rule_crumbs": 3, "status": "Draft coverage", "title": "Instructions, Procedures, and Drawings", "vendor_crumbs": 13}, {"anchored_vendor_crumbs": 1, "applicability": "applicable", "id": "B VI", "raw_id": "APP_B_VI", "rule_crumbs": 3, "status": "Draft coverage + context", "title": "Document Control", "vendor_crumbs": 23}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B VII", "raw_id": "APP_B_VII", "rule_crumbs": 2, "status": "Draft coverage", "title": "Control of Purchased Material, Equipment, and Services", "vendor_crumbs": 12}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B VIII", "raw_id": "APP_B_VIII", "rule_crumbs": 1, "status": "No direct vendor crumb", "title": "Identification and Control of Materials, Parts, and Components", "vendor_crumbs": 0}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B IX", "raw_id": "APP_B_IX", "rule_crumbs": 1, "status": "No direct vendor crumb", "title": "Control of Special Processes", "vendor_crumbs": 0}, {"anchored_vendor_crumbs": 1, "applicability": "applicable", "id": "B X", "raw_id": "APP_B_X", "rule_crumbs": 2, "status": "Draft coverage + context", "title": "Inspection", "vendor_crumbs": 10}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B XI", "raw_id": "APP_B_XI", "rule_crumbs": 1, "status": "No direct vendor crumb", "title": "Test Control", "vendor_crumbs": 0}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B XII", "raw_id": "APP_B_XII", "rule_crumbs": 1, "status": "Draft coverage", "title": "Control of Measuring and Test Equipment", "vendor_crumbs": 3}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B XIII", "raw_id": "APP_B_XIII", "rule_crumbs": 2, "status": "No direct vendor crumb", "title": "Handling, Storage, and Shipping", "vendor_crumbs": 0}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B XIV", "raw_id": "APP_B_XIV", "rule_crumbs": 1, "status": "No direct vendor crumb", "title": "Inspection, Test, and Operating Status", "vendor_crumbs": 0}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B XV", "raw_id": "APP_B_XV", "rule_crumbs": 1, "status": "Draft coverage", "title": "Nonconforming Materials, Parts, or Components", "vendor_crumbs": 3}, {"anchored_vendor_crumbs": 0, "applicability": "applicable", "id": "B XVI", "raw_id": "APP_B_XVI", "rule_crumbs": 5, "status": "Draft coverage", "title": "Corrective Action", "vendor_crumbs": 15}, {"anchored_vendor_crumbs": 6, "applicability": "applicable", "id": "B XVII", "raw_id": "APP_B_XVII", "rule_crumbs": 3, "status": "Draft coverage + context", "title": "Quality Assurance Records", "vendor_crumbs": 34}, {"anchored_vendor_crumbs": 1, "applicability": "applicable", "id": "B XVIII", "raw_id": "APP_B_XVIII", "rule_crumbs": 2, "status": "Draft coverage + context", "title": "Audits", "vendor_crumbs": 10}], "dash_id": "DASH-20261005-0001", "gates": {"G1": {"date": "2026-10-02", "decision_ref": "G1-EKONERG-2026-10-02", "status": "approved"}, "G2": {"date": "2026-10-03", "decision_ref": "G2-RUN-20261003-32", "status": "approved"}, "G3": {"date": "2026-10-04", "decision_ref": "G3-RUN-20261003-32", "status": "approved"}, "G4": {"date": null, "decision_ref": null, "status": "pending"}, "G5": {"date": null, "decision_ref": null, "status": "pending"}, "G6": {"date": null, "decision_ref": null, "status": "pending"}, "G7": {"date": null, "decision_ref": null, "status": "pending"}}, "generated_date": "2026-10-05", "judgment_state": "0 / 18 judgments recorded", "metrics": {"active_crumbs": 244, "active_quotes": 321, "criteria_with_vendor_crumbs": 13, "criteria_without_vendor_crumbs": 5, "exact_links": 320, "judgments": 0, "link_rows": 322, "normalized_links": 2, "qms_files": 24, "quote_exact_records": 319, "quote_non_exact_records": 2, "reference_files": 7, "registered_files": 31, "rule_crumbs": 55, "vendor_crumbs": 189}, "phase": "evidence_reviewed", "provenance": {"batches": "docs/reviews/EF_2_2_EVIDENCE_REVIEW.md", "database": "db/nqa_audit.sqlite", "matrix": "out/2026-10-05/MIN-3.1-evidence-matrix-v4.json", "state": "project-state.yml"}, "queue": [{"item": "Implementation records", "state": "Requested", "trace": "EF-2.2 / QMS-004", "why": "Policy text does not prove that controls operated."}, {"item": "Five criteria without vendor crumbs", "state": "Open", "trace": "MIN-3.1 matrix", "why": "Ask for source material before making a judgment."}, {"item": "18 human criterion judgments", "state": "Pending", "trace": "G3 / RUN-20261003-32", "why": "G3 approved the model; the auditor still must judge each criterion."}], "run_id": "RUN-20261003-32", "schema_version": "evidence-dashboard-1.0", "score_state": "Withheld", "supplier": "Ekonerg"}</script><script>
-const DATA=JSON.parse(document.getElementById('dashboard-data').textContent);
-const esc=(s)=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",""":"&quot;","'":"&#39;"}[c]));
-document.querySelector('[data-bind=qms_files]').textContent=DATA.metrics.qms_files+'/'+DATA.metrics.qms_files;
-document.querySelector('[data-bind=vendor_crumbs]').textContent=DATA.metrics.vendor_crumbs;
-document.querySelector('[data-bind=crumb_note]').textContent=DATA.metrics.rule_crumbs+' active rule crumbs · '+DATA.metrics.active_quotes+' quote records ('+DATA.metrics.quote_exact_records+' exact, '+DATA.metrics.quote_non_exact_records+' non-exact)';
-document.querySelector('[data-bind=criteria_coverage]').textContent=DATA.metrics.criteria_with_vendor_crumbs+'/18';
-function coverage(){const q=document.getElementById('criteria-filter').value.toLowerCase();document.getElementById('coverage').innerHTML=DATA.criteria.filter(c=>(c.id+' '+c.title+' '+c.status).toLowerCase().includes(q)).map(c=>{const pct=c.vendor_crumbs?Math.min(100,Math.max(12,c.vendor_crumbs*5)):12;const cls=c.vendor_crumbs?'':' empty';const tag=c.vendor_crumbs?'tag':'tag blocked';return '<div class="coverage-row"><span class="coverage-id mono">'+esc(c.id)+'</span><span class="bar" aria-label="'+esc(c.status)+'"><span class="'+cls+'" style="width:'+pct+'%"></span></span><span class="coverage-status '+tag+'">'+esc(c.status)+' · '+c.vendor_crumbs+' vendor / '+c.rule_crumbs+' rule</span></div>'}).join('')||'<p class="footer-note">No criteria match.</p>'}
-document.getElementById('criteria-filter').addEventListener('input',coverage);coverage();
-const ratings=['fully','substantially','partially','minimally','unmet','undetermined','na'];
-const rowFor=(c)=>'<tr><td><span class="mono">'+esc(c.raw_id)+'</span><span class="criterion-name">'+esc(c.title)+'</span><span class="criterion-meta">'+c.vendor_crumbs+' vendor crumbs · '+esc(c.status)+'</span></td><td><select data-criterion="'+esc(c.raw_id)+'" data-field="rating" aria-label="Rating for '+esc(c.raw_id)+'"><option value="">Choose…</option>'+ratings.map(r=>'<option value="'+r+'">'+r+'</option>').join('')+'</select></td><td><input data-criterion="'+esc(c.raw_id)+'" data-field="refs" type="text" placeholder="CRUMB-…" aria-label="Evidence crumbs for '+esc(c.raw_id)+'"></td><td><textarea data-criterion="'+esc(c.raw_id)+'" data-field="rationale" placeholder="Why this rating?" aria-label="Rationale for '+esc(c.raw_id)+'"></textarea></td></tr>';
-document.getElementById('judgment-rows').innerHTML=DATA.criteria.map(rowFor).join('');
-const ratingFields=()=>Array.from(document.querySelectorAll('[data-field=rating]'));
-const updateProgress=()=>{const n=ratingFields().filter(x=>x.value).length;document.getElementById('judgment-progress').textContent=n+' / '+DATA.criteria.length+' selected';};
-const updateExportState=()=>{document.getElementById('export-judgments').disabled=!document.getElementById('judge-name').value.trim();};
-ratingFields().forEach(x=>x.addEventListener('change',updateProgress));
-document.getElementById('judge-name').addEventListener('input',updateExportState);
-updateExportState();
-document.getElementById('fill-undetermined').addEventListener('click',()=>{ratingFields().forEach(x=>x.value='undetermined');updateProgress();});
-document.getElementById('clear-judgments').addEventListener('click',()=>{document.getElementById('judge-name').value='';document.querySelectorAll('#judgment-rows input,#judgment-rows textarea').forEach(x=>x.value='');ratingFields().forEach(x=>x.value='');updateProgress();updateExportState();});
-document.getElementById('export-judgments').addEventListener('click',()=>{const judge=document.getElementById('judge-name').value.trim();if(!judge){alert('Enter the human reviewer name first.');return;}const rows=DATA.criteria.map(c=>{const q=(field)=>document.querySelector('[data-criterion="'+c.raw_id+'"][data-field="'+field+'"]');return {criterion_id:c.raw_id,rating:q('rating').value,evidence_ids:q('refs').value.split(',').map(x=>x.trim()).filter(Boolean),judge_ruling:judge,rationale:q('rationale').value.trim()};});if(rows.some(r=>!r.rating)){alert('Choose a rating for all 18 criteria before exporting.');return;}const blob=new Blob([JSON.stringify({run_id:DATA.run_id,reviewer:judge,source:'offline dashboard draft',criteria:rows},null,2)],{type:'application/json'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download=''+DATA.run_id+'-judgment-draft.json';link.click();URL.revokeObjectURL(link.href);});
-document.getElementById('gate-checks').innerHTML=Object.entries(DATA.gates).map(([g,v])=>'<div class="check"><span>'+g+' gate</span><span class="tag '+(v.status==='approved'?'approved':'review')+'">'+esc(v.status)+(v.decision_ref?' · '+esc(v.decision_ref):'')+'</span></div>').join('')+'<div class="check"><span>Conformity score</span><span class="tag review">Withheld</span></div>';
-document.getElementById('queue').innerHTML=DATA.queue.map(i=>'<tr><td>'+esc(i.item)+'</td><td>'+esc(i.why)+'</td><td><span class="tag '+(i.state==='Open'?'blocked':'review')+'">'+esc(i.state)+'</span></td><td class="mono">'+esc(i.trace)+'</td></tr>').join('');
-document.getElementById('batches').innerHTML=DATA.batches.map(b=>'<tr><td class="mono">'+esc(b.id)+'</td><td>'+b.source_count+'</td><td><span class="tag approved">'+esc(b.state)+'</span></td><td>EF-2.2 evidence review</td></tr>').join('');
-</script></body></html>
+:root{
+  --bg:#edf3f8; --panel:#ffffff; --ink:#16212b; --muted:#617181; --line:#d7e1ea;
+  --navy:#0d3158; --navy2:#184b80; --accent:#0f7b8a; --soft:#f6f9fc;
+  --shadow:0 12px 28px rgba(20,40,70,.10); --shadow-sm:0 4px 12px rgba(20,40,70,.06);
+  --fully:#1f7a3b; --sub:#5c8f23; --partial:#d08a00; --minimal:#d85b00; --unmet:#b72424; --und:#697386;
+  --fullyBg:#e8f6ec; --subBg:#eef7e8; --partialBg:#fff4d8; --minimalBg:#fff0e5; --unmetBg:#fde8e8; --undBg:#eef0f3;
+  --fullyBdr:#bfe2c8; --subBdr:#cfe2b3; --partialBdr:#f3d997; --minimalBdr:#f4c7a4; --unmetBdr:#f0bcbc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Arial,system-ui,sans-serif;font-size:14px;line-height:1.5}
+.header{background:linear-gradient(135deg,#071f38 0%,#0d3158 45%,#1b5387 100%);color:#fff;padding:30px 36px 24px;border-bottom:1px solid rgba(255,255,255,.18);position:relative;overflow:hidden}
+.header::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;background:radial-gradient(circle,rgba(255,255,255,.10) 0%,transparent 70%);pointer-events:none}
+.header h1{margin:0;font-size:27px;letter-spacing:-.3px;font-weight:850}
+.header .sub{margin:7px 0 0;color:rgba(255,255,255,.84);font-size:13px;max-width:1050px}
+.pillRow{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border:1px solid rgba(255,255,255,.28);border-radius:99px;background:rgba(255,255,255,.10);font-size:12px;font-weight:750}
+.pill.ok{background:rgba(120,200,140,.18);border-color:rgba(160,220,180,.5)}
+.dot{width:7px;height:7px;border-radius:99px;background:#9be4a8}
+.topbar{background:#fff;border-bottom:1px solid var(--line);padding:18px 36px;display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:12px}
+.metric{border:1px solid var(--line);border-radius:14px;background:#fbfdff;padding:14px;min-height:88px;transition:transform .15s ease,box-shadow .15s ease}
+.metric:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+.metric.main{background:linear-gradient(135deg,#0d3158,#1b5387);color:#fff;border-color:#0d3158}
+.metric .num{font-size:30px;font-weight:850;line-height:1}
+.metric .label{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-top:8px;font-weight:750}
+.metric.main .label{color:rgba(255,255,255,.82)}
+.metric .small{font-size:12px;color:var(--muted);margin-top:5px}
+.metric.main .small{color:rgba(255,255,255,.78)}
+.wrap{max-width:1500px;margin:0 auto;padding:22px 26px 50px}
+.section{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px;margin-bottom:18px}
+.section h2{font-size:18px;margin:0 0 12px;color:var(--navy);display:flex;align-items:center;gap:10px}
+.section h2::before{content:"";width:4px;height:18px;border-radius:2px;background:linear-gradient(180deg,var(--navy),var(--accent))}
+.section p{margin:6px 0;color:#344451}
+.summaryGrid{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+.progress{height:25px;background:#dfe7ef;border-radius:99px;display:flex;overflow:hidden;border:1px solid #cbd6e1}
+.seg{height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:850;text-shadow:0 1px 0 rgba(0,0,0,.18)}
+.legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:#344451}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-2px}
+.note{padding:11px 13px;border-left:4px solid var(--partial);background:#fff8e8;border-radius:8px;color:#3d2b00;margin-top:12px;font-size:13px}
+.note.ok{border-left-color:var(--fully);background:var(--fullyBg);color:#1d4628}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:99px;padding:8px 14px;font-size:12px;font-weight:750;cursor:pointer;transition:all .12s}
+.btn:hover{background:#f6f9fc;border-color:#bccada}
+.btn.active{background:var(--navy);color:white;border-color:var(--navy)}
+.btn .count{display:inline-block;margin-left:5px;background:rgba(255,255,255,.18);color:inherit;border-radius:99px;padding:1px 8px;font-size:11px;font-weight:850}
+.btn:not(.active) .count{background:#e8eef5;color:var(--muted)}
+.search{flex:1;min-width:240px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:13px;background:#fff;padding-right:32px}
+.search:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(15,51,88,.10)}
+.select{border:1px solid var(--line);border-radius:10px;padding:9px 11px;background:white;font-size:13px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(390px,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,40,70,.10);border-color:#bccada}
+.card.fully{border-left:4px solid var(--fully)} .card.substantially{border-left:4px solid var(--sub)} .card.partially{border-left:4px solid var(--partial)} .card.minimally{border-left:4px solid var(--minimal)} .card.unmet{border-left:4px solid var(--unmet)}
+.cardHead{padding:14px 15px 10px;display:flex;justify-content:space-between;gap:10px;align-items:flex-start;cursor:pointer;user-select:none}
+.cardHead:hover{background:#fafcff}
+.cardLeft{display:flex;align-items:flex-start;gap:10px;flex:1;min-width:0}
+.id{font-weight:900;color:var(--navy);background:#e7eef6;border-radius:8px;padding:5px 11px;min-width:46px;text-align:center;font-size:13px;letter-spacing:.4px;flex-shrink:0}
+.title{font-weight:850;font-size:15px;margin-top:4px}
+.badge{white-space:nowrap;font-size:11px;font-weight:850;text-transform:uppercase;border-radius:99px;padding:5px 11px;letter-spacing:.3px;border:1px solid transparent}
+.badge.fully{color:var(--fully);background:var(--fullyBg);border-color:var(--fullyBdr)} .badge.substantially{color:var(--sub);background:var(--subBg);border-color:var(--subBdr)} .badge.partially{color:var(--partial);background:var(--partialBg);border-color:var(--partialBdr)} .badge.minimally{color:var(--minimal);background:var(--minimalBg);border-color:var(--minimalBdr)} .badge.unmet{color:var(--unmet);background:var(--unmetBg);border-color:var(--unmetBdr)}
+.scoreLine{padding:0 15px 12px;color:var(--muted);font-size:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.scoreBar{flex:1;min-width:120px;height:7px;border-radius:99px;background:#e6ecf2;overflow:hidden}
+.scoreBar > div{height:100%;border-radius:99px}
+.scorePct{font-weight:850;color:var(--ink);font-size:13px;min-width:42px;text-align:right}
+.crumbTag{display:inline-flex;align-items:center;gap:4px;background:#eef4fa;color:var(--navy);border-radius:99px;padding:2px 8px;font-size:11px;font-weight:750}
+.cardBody{display:none;border-top:1px solid var(--line);padding:14px 15px 16px;background:#fbfdff}
+.card.open .cardBody{display:block}
+.block{margin:0 0 14px} .block:last-child{margin-bottom:0}
+.block h4{margin:0 0 4px;font-size:12px;letter-spacing:.25px;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.aff{color:var(--fully)} .con{color:var(--unmet)} .judge{color:var(--navy)} .verify{color:#6b4f00}
+.block p{margin:0;color:#344451;font-size:13px}
+.evidence{font-size:12px;color:var(--muted);padding:8px 11px;background:#f0f4f8;border-radius:10px;margin-top:10px;border-left:3px solid var(--navy2)}
+.evidence strong{color:var(--ink);font-weight:750}
+.matrixWrap{overflow:auto;border-radius:10px;border:1px solid var(--line)}
+.matrix{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+.matrix th,.matrix td{border-bottom:1px solid var(--line);padding:11px 10px;text-align:left;vertical-align:top}
+.matrix th{background:#f3f7fb;color:var(--navy);font-size:11px;text-transform:uppercase;letter-spacing:.4px;font-weight:850;position:sticky;top:0;cursor:pointer;user-select:none}
+.matrix tr:hover td{background:#fbfdff}
+.matrix td.center,.matrix th.center{text-align:center;font-weight:850}
+.riskList{margin:10px 0 0 18px;color:#344451} .riskList li{margin:6px 0}
+.footer{font-size:12px;color:var(--muted);text-align:center;margin-top:20px;padding:10px}
+.footer strong{color:var(--ink)}
+@media(max-width:1100px){.topbar{grid-template-columns:repeat(3,1fr)}.summaryGrid{grid-template-columns:1fr}}
+@media(max-width:640px){.header,.topbar{padding-left:18px;padding-right:18px}.topbar{grid-template-columns:1fr 1fr}.wrap{padding:14px}.grid{grid-template-columns:1fr}.cardHead{flex-direction:column}.controls{align-items:stretch}.search,.select{width:100%;flex:auto}}
+@media print{body{background:#fff}.controls,.footer,.btn.utility{display:none!important}.section,.card{box-shadow:none;break-inside:avoid;page-break-inside:avoid}.cardBody{display:block!important}.grid{grid-template-columns:1fr}.topbar{grid-template-columns:repeat(3,1fr)}.header{background:#0f3358!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+/* UMBRA dark skin: the source markup, data, IDs, controls, and bindings stay intact. */
+:root{
+  color-scheme:dark;
+  --bg:#0b0f14; --panel:#111821; --panel-raised:#17202b; --panel-hover:#1e2935;
+  --ink:#e8eef4; --muted:#a9b6c4; --muted-2:#8392a3;
+  --line:#243140; --line-strong:#33455a;
+  --navy:#8bbcf0; --navy2:#65a7e8; --accent:#3ccfb4; --soft:#17202b;
+  --shadow:0 12px 28px rgba(0,0,0,.30); --shadow-sm:0 4px 12px rgba(0,0,0,.22);
+  --fully:#6fd39a; --sub:#9dcc65; --partial:#e8b04b; --minimal:#ef8a55; --unmet:#f07178; --und:#a6b0bf;
+  --fullyBg:rgba(111,211,154,.12); --subBg:rgba(157,204,101,.12); --partialBg:rgba(232,176,75,.12);
+  --minimalBg:rgba(239,138,85,.12); --unmetBg:rgba(240,113,120,.12); --undBg:rgba(166,176,191,.12);
+  --fullyBdr:rgba(111,211,154,.38); --subBdr:rgba(157,204,101,.38); --partialBdr:rgba(232,176,75,.40);
+  --minimalBdr:rgba(239,138,85,.40); --unmetBdr:rgba(240,113,120,.40);
+}
+body{background:var(--bg);color:var(--ink)}
+.header{background:linear-gradient(135deg,#071019 0%,#101d2a 48%,#18354f 100%);border-bottom-color:var(--line-strong)}
+.header::after{background:radial-gradient(circle,rgba(101,167,232,.16) 0%,transparent 70%)}
+.header .sub{color:var(--muted)}
+.pill{border-color:var(--line-strong);background:rgba(255,255,255,.06)}
+.pill.ok{background:rgba(111,211,154,.14);border-color:var(--fullyBdr)}
+.dot{background:var(--fully)}
+.topbar{background:var(--panel);border-bottom-color:var(--line)}
+.metric{background:var(--panel-raised);border-color:var(--line)}
+.metric:hover{box-shadow:var(--shadow-sm)}
+.metric.main{background:linear-gradient(135deg,#132b42,#1d4667);border-color:var(--line-strong)}
+.metric .label,.metric .small{color:var(--muted)}
+.metric.main .label,.metric.main .small{color:var(--muted)}
+.section{background:var(--panel);border-color:var(--line);box-shadow:var(--shadow)}
+.section h2{color:var(--navy)}
+.section h2::before{background:linear-gradient(180deg,var(--navy),var(--accent))}
+.section p{color:var(--muted)}
+.progress{background:var(--panel-raised);border-color:var(--line-strong)}
+.legend{color:var(--muted)}
+.note{background:var(--partialBg);color:#f5dca1}
+.note.ok{background:var(--fullyBg);color:#b7efc9}
+.btn{background:var(--panel-raised);border-color:var(--line-strong);color:var(--ink)}
+.btn:hover{background:var(--panel-hover);border-color:var(--navy2)}
+.btn.active{background:var(--accent);color:#04201b;border-color:var(--accent)}
+.btn:not(.active) .count{background:var(--panel-hover);color:var(--muted)}
+.search,.select{background:var(--panel-raised);border-color:var(--line-strong);color:var(--ink)}
+.search::placeholder{color:var(--muted-2)}
+.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(60,207,180,.18)}
+.select option{background:var(--panel-raised);color:var(--ink)}
+.card{background:var(--panel-raised);border-color:var(--line);box-shadow:var(--shadow-sm)}
+.card:hover{background:var(--panel-hover);border-color:var(--line-strong);box-shadow:0 8px 18px rgba(0,0,0,.32)}
+.cardHead:hover{background:rgba(255,255,255,.035)}
+.id{color:var(--navy);background:rgba(139,188,240,.14)}
+.scoreLine{color:var(--muted)}
+.scoreBar{background:var(--line-strong)}
+.scorePct{color:var(--ink)}
+.crumbTag{background:rgba(101,167,232,.14);color:var(--navy)}
+.cardBody{background:var(--panel);border-top-color:var(--line)}
+.block p{color:var(--muted)}
+.judge{color:var(--navy)}
+.verify{color:var(--partial)}
+.evidence{background:rgba(101,167,232,.10);color:var(--muted);border-left-color:var(--navy2)}
+.evidence strong{color:var(--ink)}
+.matrixWrap{border-color:var(--line)}
+.matrix{background:var(--panel-raised);color:var(--ink)}
+.matrix th,.matrix td{border-bottom-color:var(--line)}
+.matrix th{background:var(--panel-hover);color:var(--navy)}
+.matrix tr:hover td{background:rgba(255,255,255,.035)}
+.riskList{color:var(--muted)}
+.riskList strong{color:var(--ink)}
+.footer{color:var(--muted)}
+.footer strong{color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media print{
+  :root{color-scheme:light;--bg:#fff;--panel:#fff;--panel-raised:#fff;--panel-hover:#f6f9fc;--ink:#16212b;--muted:#617181;--muted-2:#617181;--line:#d7e1ea;--line-strong:#b8c7d5;--soft:#f6f9fc}
+  body{background:#fff;color:var(--ink)}
+  .section,.card{box-shadow:none}
+  .cardBody{background:#fff}
+  .matrix{background:#fff}
+  .matrix th{background:#f3f7fb}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <h1>10 CFR 50 Appendix B — TEKOL d.d. Conformance Dashboard</h1>
+  <p class="sub">Audit reference framework: 10 CFR 50 Appendix B, interpreted through an ASME NQA-1-style evidence-based QA lens. Document set: PK_R8_(PSV-10)_v2.md, SP_4.1.1_R10_Zagotavljanje_kakovosti_v_NEK.md, plus supplied audit crumbs. Dashboard generated on 23 June 2026.</p>
+  <div class="pillRow">
+    <span class="pill ok"><span class="dot"></span>Overall: Substantially Matched</span>
+    <span class="pill">Evidence-bounded verdicts</span>
+    <span class="pill">Axiom constraint applied</span>
+    <span class="pill">18 / 18 criteria evaluated</span>
+  </div>
+</header>
+<section class="topbar">
+  <div class="metric main"><div class="num">83.3%</div><div class="label">Overall conformance</div><div class="small">1499 / 1800 evidence points</div></div>
+  <div class="metric"><div class="num">18</div><div class="label">Appendix B criteria</div><div class="small">All evaluated</div></div>
+  <div class="metric"><div class="num" style="color:var(--fully)">3</div><div class="label"><span class="sw" style="background:var(--fully)"></span>Fully matched</div><div class="small">I, VI, IX</div></div>
+  <div class="metric"><div class="num" style="color:var(--sub)">11</div><div class="label"><span class="sw" style="background:var(--sub)"></span>Substantially matched</div><div class="small">Strong controls with detail gaps</div></div>
+  <div class="metric"><div class="num" style="color:var(--partial)">4</div><div class="label"><span class="sw" style="background:var(--partial)"></span>Partially matched</div><div class="small">Material evidence gaps</div></div>
+  <div class="metric"><div class="num" style="color:var(--unmet)">0</div><div class="label"><span class="sw" style="background:var(--unmet)"></span>Unmet / minimal</div><div class="small">No criterion is unmet</div></div>
+</section>
+<main class="wrap">
+<section class="section summaryGrid">
+  <div>
+    <h2>Executive Summary</h2>
+    <p>TEKOL d.d. shows a substantially developed quality assurance system for NEK Krško surface-protection work. The strongest areas are organization, document control, special-process control, traceability, nonconformance control, corrective action, measuring-equipment control, and audits.</p>
+    <p>The main conformance risk is not absence of a QA system. The main risk is incomplete Appendix B / NQA-1-style evidence in design control, procurement QA flow-down, test control, and QA record-retention detail.</p>
+    <div class="note"><strong>Primary residual risk:</strong> Criteria III, IV, XI, and XVII contain important evidence gaps. Remediation should focus on independent design verification, procurement clauses, test-program definition, and the QA records matrix.</div>
+    <div class="note ok"><strong>Suitability statement:</strong> The documented system supports continued NEK contractor-scope coating work, subject to verification of lower-tier procedures and project records.</div>
+  </div>
+  <div>
+    <h2>Classification Distribution</h2>
+    <div class="progress" aria-label="classification distribution">
+      <div class="seg" style="width:16.67%;background:var(--fully)" title="Fully Matched: 3">3</div>
+      <div class="seg" style="width:61.11%;background:var(--sub)" title="Substantially Matched: 11">11</div>
+      <div class="seg" style="width:22.22%;background:var(--partial)" title="Partially Matched: 4">4</div>
+    </div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--fully)"></span>Fully: 3</span>
+      <span><span class="sw" style="background:var(--sub)"></span>Substantially: 11</span>
+      <span><span class="sw" style="background:var(--partial)"></span>Partially: 4</span>
+      <span><span class="sw" style="background:var(--minimal)"></span>Minimally: 0</span>
+      <span><span class="sw" style="background:var(--unmet)"></span>Unmet: 0</span>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <h2>Criterion Cards — Debate and Verdict</h2>
+  <div class="controls">
+    <button class="btn active" data-filter="all">All <span class="count">18</span></button>
+    <button class="btn" data-filter="fully">Fully <span class="count">3</span></button>
+    <button class="btn" data-filter="substantially">Substantially <span class="count">11</span></button>
+    <button class="btn" data-filter="partially">Partially <span class="count">4</span></button>
+    <input id="search" class="search" placeholder="Search criterion, evidence, gap, or action..." />
+    <select id="sort" class="select"><option value="order">Sort: Criterion order</option><option value="risk">Sort: Highest risk first</option><option value="score">Sort: Highest score first</option><option value="evidence">Sort: Evidence strength</option></select>
+    <button class="btn utility" id="expandAll">Expand all</button><button class="btn utility" id="collapseAll">Collapse all</button><button class="btn utility" id="printBtn">Print / PDF</button>
+  </div>
+  <div class="grid" id="cards"></div>
+</section>
+<section class="section">
+  <h2>Conformance Matrix</h2>
+  <p style="color:var(--muted);font-size:12px;margin:0 0 10px">Column headers sort the matrix. Verdicts remain evidence-bounded and downgrade unsupported interpretations.</p>
+  <div class="matrixWrap"><table class="matrix" id="matrix"></table></div>
+</section>
+<section class="section">
+  <h2>Top Gaps Requiring Remediation</h2>
+  <ul class="riskList">
+    <li><strong>Criterion III — Design Control:</strong> independent verification, design-interface control, design-basis translation, and deviation control need stronger direct evidence.</li>
+    <li><strong>Criterion IV — Procurement Document Control:</strong> Appendix B, regulatory, design-basis, right-of-access, records, and supplier-QA-program flow-down should be added or sampled in procurement templates.</li>
+    <li><strong>Criterion XI — Test Control:</strong> written test program structure should define prerequisites, instruments, environmental conditions, acceptance limits, result documentation, and evaluation.</li>
+    <li><strong>Criterion XVII — QA Records:</strong> a records matrix should list type, owner, storage location, retention duration, retrieval method, protection method, and disposal rules.</li>
+  </ul>
+</section>
+<section class="section">
+  <h2>Priority Auditor Verification Actions</h2>
+  <ol class="riskList" style="columns:2;column-gap:24px;margin-left:18px">
+    <li>Verify organizational independence and direct reporting of QA personnel.</li>
+    <li>Review the full Appendix B compliance matrix and current document index.</li>
+    <li>Sample design packages and verify independent design review.</li>
+    <li>Check NEK approvals for SR/AQ technological specifications and changes.</li>
+    <li>Inspect procurement templates and purchase orders for Appendix B flow-down.</li>
+    <li>Verify supplier qualification, surveillance, and reevaluation records.</li>
+    <li>Trace selected coating materials from batch certificate to installation record.</li>
+    <li>Verify nonconforming-material segregation and status marking.</li>
+    <li>Sample special-process personnel qualification records.</li>
+    <li>Sample inspection plans and verify inspector independence.</li>
+    <li>Confirm hold points, witness points, and release authority.</li>
+    <li>Review test procedures, test records, instruments, acceptance limits, and evaluations.</li>
+    <li>Inspect measuring-equipment register and calibration certificates.</li>
+    <li>Verify storage conditions against manufacturer and NEK requirements.</li>
+    <li>Check pass/fail status controls and records preventing inspection bypass.</li>
+    <li>Sample NCRs for disposition, notification, repair/rework, and reinspection.</li>
+    <li>Verify corrective-action cause analysis and effectiveness checks.</li>
+    <li>Review significant-condition classification and management-reporting thresholds.</li>
+    <li>Sample QA records for identification, retrieval, retention, and completeness.</li>
+    <li>Review two years of internal audit schedules, reports, findings, and closures.</li>
+  </ol>
+</section>
+<div class="footer">Standalone HTML dashboard — no external libraries. Sources: 10 CFR 50 Appendix B; PK_R8_(PSV-10)_v2.md; SP_4.1.1_R10_Zagotavljanje_kakovosti_v_NEK.md; supplied audit crumbs.</div>
+</main>
+<script>
+const data = [{"n": "I", "order": 1, "title": "Organization", "rating": "fully", "score": 95, "crumbs": "Strong", "refs": "SP 4.1.1 §3, §3.4, §4.1; PK_R8 §5.3; crumbs: org chart, responsibility matrix, system custodian authority", "aff": "QA work is assigned to qualified personnel. Organizational independence, independence from cost and schedule, appointment by the director, and direct reporting to the director are stated. Roles and authorities are also supported by the quality manual and crumbs.", "con": "The licensee-level retained responsibility concept is not fully transferable to a contractor. The evidence supports TEKOL supplier-scope organization, not applicant/licensee responsibility.", "judge": "Fully Matched. Written authority, independence, direct management access, and role definition are supported for the audited supplier scope.", "verify": "Verify the current organizational chart, responsibility matrix, QA appointment records, and any fallback cases where QA independence could be affected.", "quote": "QA personnel are described as qualified, organizationally independent, independent from cost and schedule, appointed by management, and directly responsible to the director."}, {"n": "II", "order": 2, "title": "Quality Assurance Program", "rating": "substantially", "score": 88, "crumbs": "Strong", "refs": "SP 4.1.1 §1, §2, §4.2; PK_R8 management-system clauses; crumbs: policy, program scope, training, resources, reviews", "aff": "A documented QA system exists and is integrated into TEKOL processes for NEK work. SR, AQ, BOP, and coating service levels are defined. Training, controlled activities, special processes, and QA monitoring are addressed.", "con": "Full plant-life QA program breadth, complete SSC listing, and all controlled-condition details are not fully visible in the provided documents. Some details are referenced to lower-level procedures.", "judge": "Substantially Matched. The contractor-scope QA program is documented and aligned with Appendix B, with remaining detail gaps in program breadth and lower-tier records.", "verify": "Review the full procedure set and confirm program coverage for all applicable SR/AQ activities, training records, QA monitoring plans, and management-review records.", "quote": "SP 4.1.1 states that the procedure responds to Appendix B criteria by referencing TEKOL system documents and defining exceptions or additional activities."}, {"n": "III", "order": 3, "title": "Design Control", "rating": "partially", "score": 62, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.3, §4.4; PK_R8 §8.3; crumbs: design planning, verification, validation, changes", "aff": "Preparation of NEK technological specifications and projects is assigned to Development and Control. PK_R8 identifies design planning, inputs, reviews, verification, validation, and change control.", "con": "Explicit regulatory design-basis translation, independent design verification, design-interface control, and deviation control are not fully demonstrated.", "judge": "Partially Matched. Basic design/specification controls exist, but Appendix B design-control rigor is only partly evidenced.", "verify": "Sample NEK design/specification packages. Confirm input requirements, independent verification signatures, interface reviews, deviation control, and NEK approval of changes.", "quote": "Documented design controls include planning, input review, verification, validation, and change approval, but independent verification is not explicit in the available evidence."}, {"n": "IV", "order": 4, "title": "Procurement Document Control", "rating": "partially", "score": 72, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.4; PK_R8 §8.4; crumbs: procurement document content and review", "aff": "Procurement requirements are defined in technological specifications, technologies, technological sheets, and system documentation. Supplier information includes product, process, approval, competence, verification, and control requirements.", "con": "Direct flow-down of Appendix B, regulatory requirements, design bases, and supplier QA program requirements is not fully visible in procurement-document text.", "judge": "Partially Matched. Procurement-document controls exist, but explicit Appendix B / NQA-1-style QA flow-down is not sufficiently evidenced.", "verify": "Sample purchase orders and supplier contracts for SR/AQ work. Check clauses for Appendix B, RG 1.54, NEK specifications, right of access, certificates, records, and supplier QA obligations.", "quote": "Procurement criteria and requirements are stated as being defined in technological specifications, technologies, technological sheets, and system documentation."}, {"n": "V", "order": 5, "title": "Instructions, Procedures, and Drawings", "rating": "substantially", "score": 86, "crumbs": "Moderate", "refs": "SP 4.1.1 referenced procedure cascade; PK_R8 documented information and operational planning; crumbs: manuals, procedures, instructions, forms", "aff": "Quality-affecting work is controlled through the quality manual, system procedures, work instructions, forms, control plans, and operating documents. PK_R8 states that acceptance criteria are defined for product/service characteristics.", "con": "Actual lower-tier work instructions, drawings, and acceptance criteria were not fully provided for every important activity.", "judge": "Substantially Matched. Procedure coverage is strong; full matching requires samples of work instructions, drawings, inspection plans, and acceptance criteria.", "verify": "Review representative DN work instructions, project drawings, technological procedures, control plans, and acceptance criteria for current NEK work.", "quote": "Documented procedures and planned control activities are identified as part of operational planning and execution."}, {"n": "VI", "order": 6, "title": "Document Control", "rating": "fully", "score": 95, "crumbs": "Strong", "refs": "SP 4.1.1 §4.6, §6, §7; PK_R8 documented information; crumbs: review, approval, revision, distribution, obsolete control", "aff": "Document creation, review, approval, marking, change control, distribution, access, storage, archiving, and prevention of obsolete-document use are directly described.", "con": "The full lower-tier SP 4.2.1 procedure was not provided, leaving minor operational sampling needs.", "judge": "Fully Matched. Document-control requirements are directly and strongly supported.", "verify": "Confirm the live document index, controlled-copy list, obsolete-document controls, and change-approval records during on-site review.", "quote": "Documentation and data are controlled through creation, review, approval, marking, change management, distribution, storage, archiving, and prevention of obsolete use."}, {"n": "VII", "order": 7, "title": "Control of Purchased Material, Equipment, and Services", "rating": "substantially", "score": 88, "crumbs": "Strong", "refs": "SP 4.1.1 §4.7, §4.11; PK_R8 §8.4; crumbs: supplier evaluation, receipt verification, approved suppliers, dedication", "aff": "Supplier selection, monitoring, re-evaluation, receipt verification, quality evidence, batch certificates, and prohibition of use without quality documentation are supported.", "con": "Evidence is less complete for supplier source inspection and supplier-control effectiveness intervals tied to importance, complexity, and quantity.", "judge": "Substantially Matched. Purchased-item control is strong for the coating-material and service scope.", "verify": "Review supplier evaluation files, approved supplier lists, receipt inspection records, batch certificates, source-surveillance decisions, and supplier performance review intervals.", "quote": "Material-control activities are governed by SP 7.4.2, and records are maintained as evidence of conformity."}, {"n": "VIII", "order": 8, "title": "Identification and Control of Materials, Parts, and Components", "rating": "substantially", "score": 90, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.8; crumbs: project numbers, batch numbers, codes, traceability", "aff": "Traceability is maintained by commercial names and batch numbers from material need identification through installation. Manufacturer package identification is used. Nonconforming materials are additionally marked and separately stored.", "con": "Evidence is strongest for coating materials and less complete for parts, components, and partially fabricated assemblies outside the coating-material scope.", "judge": "Substantially Matched. Identification and incorrect-use prevention are well supported for the audited coating scope.", "verify": "Walk down storage and work areas. Trace selected materials from batch certificate to work order, issue record, installation record, and final inspection record.", "quote": "Traceability of materials is provided by documenting commercial names and batches from need identification through installation."}, {"n": "IX", "order": 9, "title": "Control of Special Processes", "rating": "fully", "score": 95, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.9; PK_R8 special process discussion; crumbs: welding/heat treatment/coating process validation and qualified personnel", "aff": "Surface protection, visual assessment, and destructive testing are identified as special processes. Qualified personnel, verified procedures, NEK-approved specifications, standards, internal instructions, and QA monitoring are required.", "con": "Welding and heat treatment are Appendix B examples but are not central to the audited TEKOL NEK coating scope.", "judge": "Fully Matched. Special-process control is directly and strongly addressed for the audited scope.", "verify": "Sample current personnel qualifications, procedure approvals, NEK-approved technological projects, and QA monitoring records for special processes.", "quote": "SP 4.1.1 identifies surface protection, visual assessment, and destructive testing as special processes controlled by qualified personnel and approved methods."}, {"n": "X", "order": 10, "title": "Inspection", "rating": "substantially", "score": 82, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.10; PK_R8 release and control-plan clauses; crumbs: monitoring, measurement, release controls", "aff": "Quality-control plans, control-plan execution records, and realization records are identified. Qualified monitoring personnel are required under applicable ASTM guidance.", "con": "Inspector independence from the performer and mandatory hold-point consent are not fully explicit in the provided evidence.", "judge": "Substantially Matched. Inspection controls are credible and documented, with remaining gaps in independence and hold-point evidence.", "verify": "Sample control plans and completed inspection records. Verify inspector independence, hold points, witness points, release authority, and re-inspection after nonconformance.", "quote": "Inspection activities are performed according to quality-control plans and documented through control-plan execution and realization records."}, {"n": "XI", "order": 11, "title": "Test Control", "rating": "partially", "score": 52, "crumbs": "Weak to moderate", "refs": "SP 4.1.1 §4.11, §4.9; crumbs: PPS mapping to testing but limited direct detail", "aff": "Batch certificates are required. Material use without batch certificates is prohibited. Verification or testing may be performed when required by NEK specifications or when batch-certificate conformity is in doubt. Destructive testing is treated as a controlled special process.", "con": "A full Appendix B-style test program is not demonstrated. Evidence is limited for written prerequisites, instrumentation, environmental conditions, acceptance limits, documented results, and result evaluation.", "judge": "Partially Matched. Some test-related controls exist, but the Appendix B test-control structure is incomplete.", "verify": "Review SP 8.2.3, DN 10.10, and test protocols. Confirm written procedures, prerequisites, calibrated instruments, environmental conditions, acceptance limits, result evaluation, and record retention.", "quote": "Material testing is described as not separately relevant, but batch certificates and conditional verification/testing are required."}, {"n": "XII", "order": 12, "title": "Control of Measuring and Test Equipment", "rating": "substantially", "score": 88, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.12; PK_R8 measuring-equipment controls; crumbs: marking, verification, calibration", "aff": "Measuring and test equipment is controlled under SP 7.6.1. Equipment is recorded, periodically checked, and traceable to international standards. Calibration status is controlled.", "con": "Specific calibration intervals and sample calibration certificates were not included in the provided evidence.", "judge": "Substantially Matched. Measuring and test equipment control is well supported.", "verify": "Inspect equipment registers, calibration certificates, due dates, out-of-tolerance handling, and equipment-use records for recent NEK work.", "quote": "All measuring equipment is recorded and periodically checked, with traceability to international standards."}, {"n": "XIII", "order": 13, "title": "Handling, Storage, and Shipping", "rating": "substantially", "score": 84, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.13; PK_R8 preservation controls; crumbs: handling, packaging, storage, transport, damage prevention", "aff": "Handling, storage, distribution, marking of transfer containers, hazardous-chemical training, and compliance with NEK and Slovenian legal requirements are described.", "con": "Special protective environments such as product-specific temperature or humidity limits are not clearly shown in the provided evidence.", "judge": "Substantially Matched. Handling and storage controls are supported for the coating scope.", "verify": "Check material storage conditions, manufacturer storage requirements, shelf-life controls, container labeling, hazardous-material training, and transfer controls.", "quote": "Handling, storage, and distribution are performed under SP 7.4.2 and work instructions DN 15.01 and DN 15.02."}, {"n": "XIV", "order": 14, "title": "Inspection, Test, and Operating Status", "rating": "substantially", "score": 82, "crumbs": "Weak", "refs": "SP 4.1.1 §4.14; crumbs: PPS cross-reference only", "aff": "Inspection status is visible from control records or measurement protocols. Unacceptable surfaces are clearly marked and documented. Work cannot be released without required control activities.", "con": "Appendix B examples such as stamps, tags, labels, routing cards, and operating-status tags are not fully addressed. Operating-status tagging may be outside TEKOL coating scope.", "judge": "Substantially Matched. Inspection/test status is supported; operating-status control is not fully applicable unless TEKOL work can affect plant component operation.", "verify": "Confirm NEK contractual expectations for physical pass/fail marking, routing cards, release tags, and controls preventing bypass of inspection or inadvertent component operation.", "quote": "Status of control activities is shown by control records and/or measurement protocols; unacceptable surfaces are clearly marked and documented."}, {"n": "XV", "order": 15, "title": "Nonconforming Materials, Parts, or Components", "rating": "substantially", "score": 86, "crumbs": "Strong", "refs": "SP 4.1.1 §4.15; PK_R8 nonconforming outputs; crumbs: identification, segregation, concession, nuclear-project NC process", "aff": "Material, execution, and system nonconformities are defined. Nonconformities are recorded, QA Engineer involvement is required, and the customer is notified when work quality is affected. Nonconforming materials are marked and separately stored.", "con": "Detailed disposition categories and approval authority are mainly referenced to SP 8.3.1 and not fully visible in the uploaded document set.", "judge": "Substantially Matched. Nonconformance control is strong, but sample NCR records and the full procedure remain needed for full matching.", "verify": "Sample NCRs. Verify identification, documentation, segregation, disposition, customer notification, approval authority, repair/rework records, and re-inspection.", "quote": "Nonconformities are recorded and the QA Engineer is informed; the customer is also informed when work quality is affected."}, {"n": "XVI", "order": 16, "title": "Corrective Action", "rating": "substantially", "score": 88, "crumbs": "Strong", "refs": "SP 4.1.1 §4.16; PK_R8 improvement clauses; crumbs: cause analysis, recurrence prevention, effectiveness checks", "aff": "Corrective and preventive actions are controlled under SP 8.5.1. Causes are analyzed, actions are assigned, deadlines are set, execution is monitored, effectiveness is tracked, records are kept, and QA verifies implementation.", "con": "The available text does not fully define significant condition adverse to quality or formal escalation thresholds to management.", "judge": "Substantially Matched. Corrective-action controls are well supported, with remaining gaps in significance classification and escalation criteria.", "verify": "Review SP 8.5.1 and corrective-action records. Confirm significance thresholds, cause analysis, recurrence prevention, management reporting, closure, and effectiveness verification.", "quote": "Managers analyze causes, determine corrective or preventive actions, assign owners and deadlines, monitor execution, and keep records."}, {"n": "XVII", "order": 17, "title": "Quality Assurance Records", "rating": "partially", "score": 78, "crumbs": "Moderate", "refs": "SP 4.1.1 §4.17; PK_R8 record controls; crumbs: record maintenance and protection", "aff": "QA records are controlled under SP 4.2.1. Each record has identity or name, creation date, and issuer. Record type, issuer, storage owner, and archive owner are shown in quality-record evidence. PK_R8 requires legibility, protection, and accessibility.", "con": "Retention duration, exact storage location, assigned responsibility, retrieval method, and minimum inspection/test record content are not fully shown in the provided evidence.", "judge": "Partially Matched. Record control exists, but Appendix B record-retention and minimum content details are incomplete.", "verify": "Review SP 4.2.1 and the records matrix. Sample inspection, testing, audit, calibration, training, nonconformance, corrective-action, and procurement records.", "quote": "Each quality record has its identity or name, date of creation, and issuer."}, {"n": "XVIII", "order": 18, "title": "Audits", "rating": "substantially", "score": 88, "crumbs": "Strong", "refs": "SP 4.1.1 §4.18; PK_R8 §9.2, §9.3; crumbs: annual audits, trained independent auditors, audit planning", "aff": "Internal audits are performed under SP 8.2.2 at least annually. Extraordinary audits may be performed when needed. SR process and supplier audits are performed by personnel qualified to Appendix B and ANSI/ASME audit requirements.", "con": "Direct evidence for auditor independence from audited areas, formal checklists, management review of audit results, and reaudit of deficient areas is not fully shown.", "judge": "Substantially Matched. Audit-system evidence is strong; full matching requires audit plans, checklists, qualification records, reports, and follow-up closure evidence.", "verify": "Inspect two years of audit schedules, checklists, auditor qualification records, reports, findings, management review, corrective actions, and reaudit decisions.", "quote": "Regular audits are performed once per year, with extraordinary audits initiated when management identifies process concerns."}];
+const labels={fully:'Fully Matched',substantially:'Substantially Matched',partially:'Partially Matched',minimally:'Minimally Matched',unmet:'Unmet'};
+const ratingClr={fully:'var(--fully)',substantially:'var(--sub)',partially:'var(--partial)',minimally:'var(--minimal)',unmet:'var(--unmet)'};
+const ratingHex={fully:'#1f7a3b',substantially:'#5c8f23',partially:'#d08a00',minimally:'#d85b00',unmet:'#b72424'};
+const riskRank={unmet:5,minimally:4,partially:3,substantially:2,fully:1};
+const evidenceRank={'Strong':3,'Moderate':2,'Weak':1,'Weak to moderate':1.5};
+let filter='all', matrixSort={key:'order',asc:true};
+function clean(s){return (s||'').toString().toLowerCase()}
+function getFiltered(){
+  const q=clean(document.getElementById('search').value);
+  let arr=data.filter(d=>filter==='all'||d.rating===filter).filter(d=>!q||clean(Object.values(d).join(' ')).includes(q));
+  const sort=document.getElementById('sort').value;
+  if(sort==='risk') arr=[...arr].sort((a,b)=>riskRank[b.rating]-riskRank[a.rating]||a.order-b.order);
+  else if(sort==='score') arr=[...arr].sort((a,b)=>b.score-a.score||a.order-b.order);
+  else if(sort==='evidence') arr=[...arr].sort((a,b)=>(evidenceRank[b.crumbs]||0)-(evidenceRank[a.crumbs]||0)||a.order-b.order);
+  else arr=[...arr].sort((a,b)=>a.order-b.order);
+  return arr;
+}
+function cardHtml(d){
+  return `<article class="card ${d.rating}" data-rating="${d.rating}">
+    <div class="cardHead" onclick="this.parentElement.classList.toggle('open')">
+      <div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div></div></div>
+      <span class="badge ${d.rating}">${labels[d.rating]}</span>
+    </div>
+    <div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}%</span><span class="crumbTag">Evidence: ${d.crumbs}</span><span>${d.refs}</span></div>
+    <div class="cardBody">
+      <div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div>
+      <div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div>
+      <div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div>
+      <div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div>
+      <div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div>
+    </div>
+  </article>`;
+}
+function renderCards(){
+  const arr=getFiltered();
+  document.getElementById('cards').innerHTML=arr.map(cardHtml).join('')||'<p style="color:var(--muted);padding:18px">No criteria match the current filter.</p>';
+}
+function renderMatrix(){
+  const arr=[...data], k=matrixSort.key, asc=matrixSort.asc?1:-1;
+  arr.sort((a,b)=>{
+    if(k==='order') return (a.order-b.order)*asc;
+    if(k==='rating') return (riskRank[a.rating]-riskRank[b.rating])*asc;
+    if(k==='score') return (a.score-b.score)*asc;
+    if(k==='crumbs') return clean(a.crumbs).localeCompare(clean(b.crumbs))*asc;
+    return clean(a[k]).localeCompare(clean(b[k]))*asc;
+  });
+  const arrow=(col)=>matrixSort.key===col?(matrixSort.asc?'▲':'▼'):'';
+  document.getElementById('matrix').innerHTML=`<thead><tr>
+    <th data-col="order" class="center">No. ${arrow('order')}</th><th data-col="title">Title ${arrow('title')}</th><th data-col="rating">Verdict ${arrow('rating')}</th><th data-col="score" class="center">Score ${arrow('score')}</th><th data-col="crumbs" class="center">Evidence ${arrow('crumbs')}</th><th data-col="verify">Primary verification action</th>
+  </tr></thead><tbody>`+arr.map(d=>`<tr><td class="center"><strong>${d.n}</strong></td><td><strong>${d.title}</strong></td><td><span class="badge ${d.rating}">${labels[d.rating]}</span></td><td class="center">${d.score}%</td><td class="center">${d.crumbs}</td><td>${d.verify}</td></tr>`).join('')+'</tbody>';
+  document.querySelectorAll('#matrix th').forEach(th=>th.addEventListener('click',()=>{const key=th.dataset.col;if(matrixSort.key===key) matrixSort.asc=!matrixSort.asc; else {matrixSort.key=key;matrixSort.asc=true;} renderMatrix();}));
+}
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); filter=b.dataset.filter; renderCards();}));
+document.getElementById('search').addEventListener('input',renderCards);
+document.getElementById('sort').addEventListener('change',renderCards);
+document.getElementById('expandAll').addEventListener('click',()=>document.querySelectorAll('.card').forEach(c=>c.classList.add('open')));
+document.getElementById('collapseAll').addEventListener('click',()=>document.querySelectorAll('.card').forEach(c=>c.classList.remove('open')));
+document.getElementById('printBtn').addEventListener('click',()=>{document.querySelectorAll('.card').forEach(c=>c.classList.add('open'));setTimeout(()=>window.print(),100);});
+document.addEventListener('keydown',e=>{if(e.key==='/' && document.activeElement.tagName!=='INPUT'){e.preventDefault();document.getElementById('search').focus();} if(e.key==='Escape'){document.getElementById('search').value='';renderCards();}});
+renderCards(); renderMatrix();
+</script>
+</body>
+</html>
