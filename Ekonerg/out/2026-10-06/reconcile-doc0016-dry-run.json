@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "old_run_id": "RUN-20261004-49",
+  "new_run_id": "RUN-20261006-67",
+  "old_crumbs": 12,
+  "new_crumbs": 28,
+  "mapping_count": 12,
+  "mappings": [
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_I-0009",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_I-0013",
+      "criterion_id": "APP_B_I"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_I-0010",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_I-0014",
+      "criterion_id": "APP_B_I"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_III-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_III-0007",
+      "criterion_id": "APP_B_III"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_VI-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_VI-0007",
+      "criterion_id": "APP_B_VI"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_X-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_X-0007",
+      "criterion_id": "APP_B_X"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0025",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0037",
+      "criterion_id": "APP_B_XVII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0026",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0038",
+      "criterion_id": "APP_B_XVII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0027",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0039",
+      "criterion_id": "APP_B_XVII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0028",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0040",
+      "criterion_id": "APP_B_XVII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0029",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0041",
+      "criterion_id": "APP_B_XVII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0030",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0042",
+      "criterion_id": "APP_B_XVII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVIII-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVIII-0007",
+      "criterion_id": "APP_B_XVIII"
+    }
+  ],
+  "downstream_link_count": 12,
+  "downstream_links": [
+    {
+      "evaluation_id": "EVAL-APP_B_I",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_I-0009",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_I-0013"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_I",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_I-0010",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_I-0014"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_III",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_III-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_III-0007"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_VI",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_VI-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_VI-0007"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_X",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_X-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_X-0007"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0025",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0037"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0026",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0038"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0027",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0039"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0028",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0040"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0029",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0041"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVII-0030",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVII-0042"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVIII",
+      "old_item_id": "CRUMB-DOC-0016-APP_B_XVIII-0005",
+      "new_item_id": "CRUMB-DOC-0016-APP_B_XVIII-0007"
+    }
+  ],
+  "missing": [],
+  "ambiguous": [],
+  "collisions": [],
+  "ready": true,
+  "applied": false
+}

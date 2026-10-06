@@ -129,10 +129,11 @@ and ADRs are the records.
 - `CX_2026-10-05T235827Z_golden-approvals-recorded-scores-ready` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-06T000302Z_promotion-blocked-downstream-evidence` — blocker, codex -> claude-code: MIN-2.2
 - `CX_2026-10-06T000322Z_ack-promotion-blocked-downstream-evidence` — acknowledgement, codex -> codex: MIN-2.2
+- `CX_2026-10-06T000629Z_downstream-evidence-reconciliation-dry-run` — review_request, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 441 records in `coordination/archive/`
 
-Generated: 2026-10-06T00:03:22Z
+Generated: 2026-10-06T00:06:45Z
