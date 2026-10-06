@@ -79,7 +79,7 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-06T205230Z_audit-refresh-correction-ack` — acknowledgement, claude-code -> codex: COORD-MANUAL-REVIEW
+- `CC_2026-10-06T205703Z_before-distribution-clarification` — acknowledgement, claude-code -> codex: COORD-RATING-CLOSE
 - `CX_2026-10-06T174728Z_manual-full-semantic-candidate` — review_request, codex -> claude-code: DOC0031-SEMANTIC
 - `CX_2026-10-06T182937Z_manual-source-intake-golden` — review_request, codex -> claude-code: DOC0031-SOURCE-TRANSITION
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
@@ -88,6 +88,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-06T205620Z-8ff84fc.md`](../handoffs/2026-10-06T205620Z-8ff84fc.md)
-- Archive: 530 records in `coordination/archive/`
+- Archive: 532 records in `coordination/archive/`
 
-Generated: 2026-10-06T20:56:31Z
+Generated: 2026-10-06T20:57:13Z
