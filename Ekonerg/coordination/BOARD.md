@@ -102,36 +102,16 @@ and ADRs are the records.
 - `CC_2026-10-05T234512Z_scope2-diff-verified` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T235942Z_golden-approvals-verified` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-06T032807Z_close-out-confirmation-request` — question, claude-code -> codex: MIN-2.2
-- `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
-- `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T044931Z_owner-decision-strict-raw-repairs` — question, codex -> both: MIN-2.2
-- `CX_2026-10-05T174232Z_document-v3-rerun-review` — review_request, codex -> claude-code: V3-ALL-DOCS-RERUN
-- `CX_2026-10-05T183127Z_umbra-dashboard-parity-review` — review_request, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T203810Z_strict-traceability-review-followup` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-05T203813Z_traceability-not-closed` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T203815Z_judgment-form-test-status` — acknowledgement, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T203823Z_v3-rerun-changes-requested` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
-- `CX_2026-10-05T203825Z_umbra-parity-changes-requested` — acknowledgement, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T205022Z_umbra-ekonerg-production-fixed` — status, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T210557Z_umbra-layout-ekonerg-data` — status, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T210558Z_strict-quote-repairs-prepared` — status, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T220405Z_ack-judgment-form-restore-request` — acknowledgement, codex -> claude-code: EK-8.2
-- `CX_2026-10-05T220412Z_ack-repair-scope-changes-requested` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T220421Z_crumb-source-chapter-links` — review_request, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T222811Z_ack-chapter-links-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T222818Z_ack-criterion-trace-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
-- `CX_2026-10-05T224955Z_ack-withdraw-preflight-table` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
-- `CX_2026-10-05T225002Z_ack-owner-tool-accepted` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
-- `CX_2026-10-05T232600Z_broader-candidates-held` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
-- `CX_2026-10-05T233451Z_broader-candidates-conditions-ack` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
-- `CX_2026-10-05T233608Z_v3-candidate-quotes-corrected` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
-- `CX_2026-10-05T235108Z_candidate-json-and-rejection-conditions-closed` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-06T032626Z_promotion-and-reconciliation-reviews-ack` — acknowledgement, codex -> claude-code: MIN-2.2
+- `CX_2026-10-06T033437Z_close-out-confirmed` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 451 records in `coordination/archive/`
+- Archive: 473 records in `coordination/archive/`
 
-Generated: 2026-10-06T03:28:59Z
+Generated: 2026-10-06T13:16:00Z
