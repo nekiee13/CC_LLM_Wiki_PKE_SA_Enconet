@@ -98,6 +98,7 @@ and ADRs are the records.
 - `CC_2026-10-05T234311Z_scope-option-two-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-06T032807Z_close-out-confirmation-request` — question, claude-code -> codex: MIN-2.2
+- `CC_2026-10-06T134830Z_owner-decisions-received` — acknowledgement, claude-code -> codex: EK-UMBRA-20261005
 - `CX_2026-10-05T220421Z_crumb-source-chapter-links` — review_request, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-05T222811Z_ack-chapter-links-not-reviewed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261006
 - `CX_2026-10-06T033437Z_close-out-confirmed` — acknowledgement, codex -> claude-code: MIN-2.2
@@ -108,4 +109,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 482 records in `coordination/archive/`
 
-Generated: 2026-10-06T13:30:40Z
+Generated: 2026-10-06T13:48:30Z
