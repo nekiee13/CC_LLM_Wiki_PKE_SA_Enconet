@@ -99,12 +99,11 @@ and ADRs are the records.
 - `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-06T032807Z_close-out-confirmation-request` — question, claude-code -> codex: MIN-2.2
 - `CC_2026-10-06T134830Z_owner-decisions-received` — acknowledgement, claude-code -> codex: EK-UMBRA-20261005
-- `CX_2026-10-06T033437Z_close-out-confirmed` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-06T135144Z_owner-decisions-closeout-confirmed` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
+- `CX_2026-10-06T140248Z_final-backlog-closeout` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 486 records in `coordination/archive/`
+- Archive: 489 records in `coordination/archive/`
 
-Generated: 2026-10-06T13:54:45Z
+Generated: 2026-10-06T14:16:47Z
