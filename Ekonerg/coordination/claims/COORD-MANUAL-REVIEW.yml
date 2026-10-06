@@ -1,0 +1,14 @@
+task: COORD-MANUAL-REVIEW
+agent: codex
+status: released
+claimed_at_utc: 2026-10-06T20:44:39Z
+last_renewed_at_utc: 2026-10-06T20:44:39Z
+expires_at_utc: 2026-10-06T21:44:39Z
+anticipated_files:
+  - coordination/messages
+  - coordination/archive
+  - coordination/BOARD.md
+  - HANDOFF.md
+  - handoffs
+note: Verify four Claude replies, correct rating-change statement, archive confirmed bundle request only
+released_at_utc: 2026-10-06T20:45:44Z

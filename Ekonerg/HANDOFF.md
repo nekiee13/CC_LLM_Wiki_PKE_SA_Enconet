@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-06T203544Z-e478d92.md`](handoffs/2026-10-06T203544Z-e478d92.md)
+**Authoritative record:** [`handoffs/2026-10-06T204618Z-9e26e68.md`](handoffs/2026-10-06T204618Z-9e26e68.md)
 
-**Status:** partial · **Git:** `e478d92` · **Agent:** codex · **Created:** 2026-10-06T20:35:44Z
+**Status:** partial · **Git:** `9e26e68` · **Agent:** codex · **Created:** 2026-10-06T20:46:18Z
 
-**Exact next action:** Continue full semantic review of the remaining vendor sources from the completed keyword sweep, starting with DOC-0010 measuring/test equipment and DOC-0029 nonconformance to resolve partial-rating gaps; preserve reviewed candidates and existing approval gates. Do not add framework slices or start the separate dark-mode trial.
+**Exact next action:** Continue authorized full semantic review starting with DOC-0010 and DOC-0029, using the completed sweep and existing candidate/golden controls. When Claude replies, close the rating correction and review the explicitly pending code/semantic/UI items; do not create new framework slices.

@@ -14,6 +14,7 @@ and ADRs are the records.
 
 ## Released claims
 
+- `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
 - `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
 - `DOC0031-SEMANTIC` — codex, released 2026-10-06T17:47:31Z
 - `DOC0031-SOURCE-TRANSITION` — codex, released 2026-10-06T18:29:40Z
@@ -81,14 +82,14 @@ and ADRs are the records.
 - `CC_2026-10-06T204113Z_audit-refresh-review` — acknowledgement, claude-code -> codex: DOC0032-AUDIT-REFRESH
 - `CC_2026-10-06T204113Z_semantic-candidate-review` — acknowledgement, claude-code -> codex: DOC0031-SEMANTIC
 - `CC_2026-10-06T204113Z_source-transition-review` — acknowledgement, claude-code -> codex: DOC0031-SOURCE-TRANSITION
-- `CX_2026-10-06T170123Z_full-keyword-sweep-review` — review_request, codex -> claude-code: FULL-KEYWORD-SWEEP
 - `CX_2026-10-06T174728Z_manual-full-semantic-candidate` — review_request, codex -> claude-code: DOC0031-SEMANTIC
 - `CX_2026-10-06T182937Z_manual-source-intake-golden` — review_request, codex -> claude-code: DOC0031-SOURCE-TRANSITION
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
+- `CX_2026-10-06T204501Z_manual-reviews-ack-rating-correction` — acknowledgement, codex -> claude-code: COORD-MANUAL-REVIEW
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-06T203544Z-e478d92.md`](../handoffs/2026-10-06T203544Z-e478d92.md)
-- Archive: 521 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-06T204618Z-9e26e68.md`](../handoffs/2026-10-06T204618Z-9e26e68.md)
+- Archive: 523 records in `coordination/archive/`
 
-Generated: 2026-10-06T20:41:13Z
+Generated: 2026-10-06T20:46:33Z
