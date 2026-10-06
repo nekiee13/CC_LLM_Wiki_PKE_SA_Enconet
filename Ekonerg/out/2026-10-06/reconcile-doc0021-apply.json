@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "old_run_id": "RUN-20261004-42",
+  "new_run_id": "RUN-20261006-68",
+  "old_crumbs": 12,
+  "new_crumbs": 21,
+  "mapping_count": 12,
+  "mappings": [
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_I-0003",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_I-0007",
+      "criterion_id": "APP_B_I"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_I-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_I-0008",
+      "criterion_id": "APP_B_I"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_II-0002",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_II-0004",
+      "criterion_id": "APP_B_II"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_IV-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_IV-0010",
+      "criterion_id": "APP_B_IV"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_IV-0005",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_IV-0011",
+      "criterion_id": "APP_B_IV"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_IV-0006",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_IV-0012",
+      "criterion_id": "APP_B_IV"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VI-0002",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VI-0004",
+      "criterion_id": "APP_B_VI"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VII-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VII-0010",
+      "criterion_id": "APP_B_VII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VII-0005",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VII-0011",
+      "criterion_id": "APP_B_VII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VII-0006",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VII-0012",
+      "criterion_id": "APP_B_VII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_XVII-0003",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_XVII-0007",
+      "criterion_id": "APP_B_XVII"
+    },
+    {
+      "old_item_id": "CRUMB-DOC-0021-APP_B_XVII-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_XVII-0008",
+      "criterion_id": "APP_B_XVII"
+    }
+  ],
+  "downstream_link_count": 12,
+  "downstream_links": [
+    {
+      "evaluation_id": "EVAL-APP_B_I",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_I-0003",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_I-0007"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_I",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_I-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_I-0008"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_II",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_II-0002",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_II-0004"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_IV",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_IV-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_IV-0010"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_IV",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_IV-0005",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_IV-0011"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_IV",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_IV-0006",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_IV-0012"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_VI",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VI-0002",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VI-0004"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_VII",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VII-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VII-0010"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_VII",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VII-0005",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VII-0011"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_VII",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_VII-0006",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_VII-0012"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_XVII-0003",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_XVII-0007"
+    },
+    {
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "old_item_id": "CRUMB-DOC-0021-APP_B_XVII-0004",
+      "new_item_id": "CRUMB-DOC-0021-APP_B_XVII-0008"
+    }
+  ],
+  "missing": [],
+  "ambiguous": [],
+  "collisions": [],
+  "ready": true,
+  "applied": true,
+  "decision_ref": "PROMOTE-DOC0021-RUN-20261006-68-20261006-OWNER"
+}

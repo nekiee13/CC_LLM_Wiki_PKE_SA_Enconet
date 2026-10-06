@@ -100,9 +100,13 @@ def decide(
                 raise ValueError(f"{operation} requires an inactive {expected} generation")
             if target["completed_at"] is None:
                 raise ValueError("generation must be completed before activation")
+            # Evidence may be reconciled to the candidate before promotion.
+            # Block only links for this document that still point to another
+            # generation; links already mapped to the target are safe to keep.
             downstream = conn.execute(
                 "SELECT count(*) FROM evaluation_evidence e JOIN crumbs c ON c.item_id=e.item_id "
-                "WHERE c.doc_id=?", (target["doc_id"],)
+                "WHERE c.doc_id=? AND c.sieve_run_id<>?",
+                (target["doc_id"], target["run_id"]),
             ).fetchone()[0]
             if downstream:
                 raise ValueError("generation change refused after downstream evaluation evidence exists")

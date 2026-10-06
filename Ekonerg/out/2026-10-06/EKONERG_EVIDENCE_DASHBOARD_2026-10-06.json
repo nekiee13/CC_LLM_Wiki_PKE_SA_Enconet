@@ -1,0 +1,336 @@
+{
+  "batches": [
+    {
+      "id": "B01",
+      "source_count": 1,
+      "state": "Complete"
+    },
+    {
+      "id": "B02",
+      "source_count": 3,
+      "state": "Complete"
+    },
+    {
+      "id": "B03",
+      "source_count": 3,
+      "state": "Complete"
+    },
+    {
+      "id": "B04",
+      "source_count": 3,
+      "state": "Complete"
+    },
+    {
+      "id": "B05",
+      "source_count": 3,
+      "state": "Complete"
+    },
+    {
+      "id": "B06",
+      "source_count": 2,
+      "state": "Complete"
+    },
+    {
+      "id": "B07",
+      "source_count": 3,
+      "state": "Complete"
+    },
+    {
+      "id": "B08",
+      "source_count": 3,
+      "state": "Complete"
+    },
+    {
+      "id": "B09",
+      "source_count": 2,
+      "state": "Complete"
+    },
+    {
+      "id": "B10",
+      "source_count": 1,
+      "state": "Complete"
+    }
+  ],
+  "classification_state": "Partially",
+  "criteria": [
+    {
+      "anchored_vendor_crumbs": 2,
+      "applicability": "applicable",
+      "id": "B I",
+      "raw_id": "APP_B_I",
+      "rule_crumbs": 5,
+      "status": "Draft coverage + context",
+      "title": "Organization",
+      "vendor_crumbs": 31
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B II",
+      "raw_id": "APP_B_II",
+      "rule_crumbs": 18,
+      "status": "Draft coverage",
+      "title": "Quality Assurance Program",
+      "vendor_crumbs": 17
+    },
+    {
+      "anchored_vendor_crumbs": 1,
+      "applicability": "applicable",
+      "id": "B III",
+      "raw_id": "APP_B_III",
+      "rule_crumbs": 2,
+      "status": "Draft coverage + context",
+      "title": "Design Control",
+      "vendor_crumbs": 14
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B IV",
+      "raw_id": "APP_B_IV",
+      "rule_crumbs": 2,
+      "status": "Draft coverage",
+      "title": "Procurement Document Control",
+      "vendor_crumbs": 4
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B V",
+      "raw_id": "APP_B_V",
+      "rule_crumbs": 3,
+      "status": "Draft coverage",
+      "title": "Instructions, Procedures, and Drawings",
+      "vendor_crumbs": 13
+    },
+    {
+      "anchored_vendor_crumbs": 1,
+      "applicability": "applicable",
+      "id": "B VI",
+      "raw_id": "APP_B_VI",
+      "rule_crumbs": 3,
+      "status": "Draft coverage + context",
+      "title": "Document Control",
+      "vendor_crumbs": 23
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B VII",
+      "raw_id": "APP_B_VII",
+      "rule_crumbs": 2,
+      "status": "Draft coverage",
+      "title": "Control of Purchased Material, Equipment, and Services",
+      "vendor_crumbs": 12
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B VIII",
+      "raw_id": "APP_B_VIII",
+      "rule_crumbs": 1,
+      "status": "No direct vendor crumb",
+      "title": "Identification and Control of Materials, Parts, and Components",
+      "vendor_crumbs": 0
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B IX",
+      "raw_id": "APP_B_IX",
+      "rule_crumbs": 1,
+      "status": "No direct vendor crumb",
+      "title": "Control of Special Processes",
+      "vendor_crumbs": 0
+    },
+    {
+      "anchored_vendor_crumbs": 1,
+      "applicability": "applicable",
+      "id": "B X",
+      "raw_id": "APP_B_X",
+      "rule_crumbs": 2,
+      "status": "Draft coverage + context",
+      "title": "Inspection",
+      "vendor_crumbs": 10
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B XI",
+      "raw_id": "APP_B_XI",
+      "rule_crumbs": 1,
+      "status": "No direct vendor crumb",
+      "title": "Test Control",
+      "vendor_crumbs": 0
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B XII",
+      "raw_id": "APP_B_XII",
+      "rule_crumbs": 1,
+      "status": "Draft coverage",
+      "title": "Control of Measuring and Test Equipment",
+      "vendor_crumbs": 3
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B XIII",
+      "raw_id": "APP_B_XIII",
+      "rule_crumbs": 2,
+      "status": "No direct vendor crumb",
+      "title": "Handling, Storage, and Shipping",
+      "vendor_crumbs": 0
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B XIV",
+      "raw_id": "APP_B_XIV",
+      "rule_crumbs": 1,
+      "status": "No direct vendor crumb",
+      "title": "Inspection, Test, and Operating Status",
+      "vendor_crumbs": 0
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B XV",
+      "raw_id": "APP_B_XV",
+      "rule_crumbs": 1,
+      "status": "Draft coverage",
+      "title": "Nonconforming Materials, Parts, or Components",
+      "vendor_crumbs": 3
+    },
+    {
+      "anchored_vendor_crumbs": 0,
+      "applicability": "applicable",
+      "id": "B XVI",
+      "raw_id": "APP_B_XVI",
+      "rule_crumbs": 5,
+      "status": "Draft coverage",
+      "title": "Corrective Action",
+      "vendor_crumbs": 15
+    },
+    {
+      "anchored_vendor_crumbs": 6,
+      "applicability": "applicable",
+      "id": "B XVII",
+      "raw_id": "APP_B_XVII",
+      "rule_crumbs": 3,
+      "status": "Draft coverage + context",
+      "title": "Quality Assurance Records",
+      "vendor_crumbs": 34
+    },
+    {
+      "anchored_vendor_crumbs": 1,
+      "applicability": "applicable",
+      "id": "B XVIII",
+      "raw_id": "APP_B_XVIII",
+      "rule_crumbs": 2,
+      "status": "Draft coverage + context",
+      "title": "Audits",
+      "vendor_crumbs": 10
+    }
+  ],
+  "dash_id": "DASH-20261006-0001",
+  "gates": {
+    "G1": {
+      "date": "2026-10-02",
+      "decision_ref": "G1-EKONERG-2026-10-02",
+      "status": "approved"
+    },
+    "G2": {
+      "date": "2026-10-03",
+      "decision_ref": "G2-RUN-20261003-32",
+      "status": "approved"
+    },
+    "G3": {
+      "date": "2026-10-04",
+      "decision_ref": "G3-RUN-20261003-32",
+      "status": "approved"
+    },
+    "G4": {
+      "date": null,
+      "decision_ref": null,
+      "status": "pending"
+    },
+    "G5": {
+      "date": null,
+      "decision_ref": null,
+      "status": "pending"
+    },
+    "G6": {
+      "date": null,
+      "decision_ref": null,
+      "status": "pending"
+    },
+    "G7": {
+      "date": null,
+      "decision_ref": null,
+      "status": "pending"
+    }
+  },
+  "generated_date": "2026-10-06",
+  "judgment_state": "18 / 18 judgments recorded",
+  "metrics": {
+    "active_crumbs": 269,
+    "active_quotes": 346,
+    "classification": "partially",
+    "conformance_score": 52.8,
+    "criteria_with_vendor_crumbs": 13,
+    "criteria_without_vendor_crumbs": 5,
+    "exact_links": 345,
+    "judgments": 18,
+    "link_rows": 347,
+    "normalized_links": 2,
+    "qms_files": 24,
+    "quote_exact_records": 346,
+    "quote_non_exact_records": 0,
+    "rating_counts": {
+      "fully": 2,
+      "minimally": 0,
+      "na": 0,
+      "partially": 3,
+      "substantially": 8,
+      "undetermined": 0,
+      "unmet": 5
+    },
+    "reference_files": 7,
+    "registered_files": 31,
+    "rule_crumbs": 55,
+    "vendor_crumbs": 214
+  },
+  "phase": "evidence_reviewed",
+  "provenance": {
+    "batches": "docs/reviews/EF_2_2_EVIDENCE_REVIEW.md",
+    "database": "db/nqa_audit.sqlite",
+    "matrix": "out/2026-10-05/MIN-3.1-evidence-matrix-v4.json",
+    "state": "project-state.yml"
+  },
+  "queue": [
+    {
+      "item": "Implementation records",
+      "state": "Requested",
+      "trace": "EF-2.2 / QMS-004",
+      "why": "Policy text does not prove that controls operated."
+    },
+    {
+      "item": "Five criteria without vendor crumbs",
+      "state": "Open",
+      "trace": "MIN-3.1 matrix",
+      "why": "Request source material to improve the recorded unmet ratings."
+    },
+    {
+      "item": "Criterion ratings",
+      "state": "Recorded",
+      "trace": "G3 / RUN-20261003-32",
+      "why": "All 18 criteria have a five-level evidence-based rating in the approved run."
+    }
+  ],
+  "run_id": "RUN-20261003-32",
+  "schema_version": "evidence-dashboard-1.0",
+  "score_state": "52.8%",
+  "supplier": "Ekonerg"
+}
