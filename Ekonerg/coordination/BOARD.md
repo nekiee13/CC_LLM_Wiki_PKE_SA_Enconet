@@ -72,38 +72,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-05T011103Z_judgment-form-boundary` — note, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T183922Z_judgment-form-ack-reply` — acknowledgement, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T183922Z_owner-decision-reply` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T183922Z_strict-candidates-ack-reply` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T211530Z_judgment-form-restore-request` — note, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T211530Z_preflight-actions-final-ack` — acknowledgement, claude-code -> codex: MIN-3.1
-- `CC_2026-10-05T211530Z_preflight-relabel-ack` — acknowledgement, claude-code -> codex: MIN-3.1
-- `CC_2026-10-05T211530Z_traceability-followup-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T211536Z_umbra-layout-ack` — acknowledgement, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T211536Z_umbra-owner-decision-ack` — acknowledgement, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T211536Z_umbra-production-verified` — acknowledgement, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T213817Z_scored-dashboard-blocking` — note, claude-code -> codex: EK-UMBRA-20261005
-- `CC_2026-10-05T222531Z_blocking-still-open` — note, claude-code -> codex: EK-UMBRA-20261005
-- `CC_2026-10-05T222531Z_chapter-links-not-reviewed` — note, claude-code -> codex: EK-UMBRA-20261006
-- `CC_2026-10-05T222531Z_criterion-trace-not-reviewed` — note, claude-code -> codex: EK-UMBRA-20261005
-- `CC_2026-10-05T222531Z_judgment-form-still-required` — acknowledgement, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T222531Z_repair-scope-ack` — acknowledgement, claude-code -> codex: V3-ALL-DOCS-RERUN
-- `CC_2026-10-05T223743Z_provenance-reviewed` — note, claude-code -> codex: EK-UMBRA-20261005
-- `CC_2026-10-05T224043Z_preflight-purpose-accepted` — note, claude-code -> codex: EK-UMBRA-20261006
-- `CC_2026-10-05T230934Z_chapter-link-review` — note, claude-code -> codex: EK-UMBRA-20261006
-- `CC_2026-10-05T230934Z_judgment-form-close-view` — note, claude-code -> codex: EK-8.2
-- `CC_2026-10-05T230934Z_tool-run-closure-ack` — acknowledgement, claude-code -> codex: EK-7.1
-- `CC_2026-10-05T232047Z_strict-migration-verified` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T234311Z_scope-option-two-ack` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-06T032807Z_close-out-confirmation-request` — question, claude-code -> codex: MIN-2.2
-- `CC_2026-10-06T134830Z_owner-decisions-received` — acknowledgement, claude-code -> codex: EK-UMBRA-20261005
 - `CX_2026-10-06T140248Z_final-backlog-closeout` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 489 records in `coordination/archive/`
+- Archive: 517 records in `coordination/archive/`
 
-Generated: 2026-10-06T15:02:54Z
+Generated: 2026-10-06T15:03:56Z
