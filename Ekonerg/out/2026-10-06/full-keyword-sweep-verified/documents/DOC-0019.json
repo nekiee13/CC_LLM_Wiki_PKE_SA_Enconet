@@ -1,0 +1,2530 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0019",
+  "filename": "PQ08.1-3_r2_Plan_vođenja_projekta.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "1399a9374c4bd77fbd2539838cafbd9248eca7827cf9d681d31db2ed639ffd0d",
+  "registered_source_sha256": "1399a9374c4bd77fbd2539838cafbd9248eca7827cf9d681d31db2ed639ffd0d",
+  "source_changed": false,
+  "source_bytes": 4412,
+  "source_characters": 4351,
+  "source_lines": 117,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 89,
+      "char_end": 106,
+      "quote_original": "Oznaka: PQ. 8.1-3",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 134,
+      "char_end": 145,
+      "quote_original": "Revizija: 2",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "line_start": 11,
+      "line_end": 12,
+      "char_start": 147,
+      "char_end": 196,
+      "quote_original": "Pripremio: Nevenko Hladki, dipl.ing.  \n\\_\\_\\_\\_\\_",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00013",
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "line_start": 14,
+      "line_end": 15,
+      "char_start": 198,
+      "char_end": 218,
+      "quote_original": "Datum:  \n05.03.2016.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "line_start": 17,
+      "line_end": 18,
+      "char_start": 220,
+      "char_end": 269,
+      "quote_original": "Pregledao: Tomislav Hršak, dipl.ing.  \n\\_\\_\\_\\_\\_",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00017",
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "line_start": 20,
+      "line_end": 21,
+      "char_start": 271,
+      "char_end": 291,
+      "quote_original": "Datum:  \n06.03.2016.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00019",
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "line_start": 23,
+      "line_end": 24,
+      "char_start": 293,
+      "char_end": 352,
+      "quote_original": "Odobrio: Mr.sc. Zdravko Mužek, dipl.ing.stroj.  \n\\_\\_\\_\\_\\_",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00021",
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "line_start": 26,
+      "line_end": 27,
+      "char_start": 354,
+      "char_end": 374,
+      "quote_original": "Datum:  \n07.03.2016.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00029",
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "line_start": 35,
+      "line_end": 35,
+      "char_start": 461,
+      "char_end": 653,
+      "quote_original": "Postupak se odnosi na plan vođenja projekta tj. aktivnosti za provedbu nadzora gotovosti pojedinih faza izrade projekta, te evidenciju referentnih zapisnika kvalitete za projekte nivoa I i II.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis",
+            "evidenc"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00033",
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "line_start": 39,
+      "line_end": 39,
+      "char_start": 671,
+      "char_end": 840,
+      "quote_original": "Svrha je postupka da se dokumentiraju aktivnosti, zapisnici kvalitete i odgovornosti pri izradi projekta, te definira standard format za pripremu plana vođenja projekta.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00035",
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "line_start": 41,
+      "line_end": 41,
+      "char_start": 842,
+      "char_end": 1050,
+      "quote_original": "Kroz postupak plana vođenja projekta kontrolira se obavljanje svih aktivnosti na izradi projekta koje su bitne za osiguranje kvalitete projekta, te se prati gotovost pojedinih faza u odnosu na terminski plan.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "osiguranj.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00043",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 49,
+      "line_end": 49,
+      "char_start": 1123,
+      "char_end": 1339,
+      "quote_original": "2.1. Glavni projektant/Voditelj tima odgovoran je za pripremu plana vođenja projekta, dokumentiranje provedenih aktivnosti i zapisnika kvalitete, te za praćenje usklađenosti obavljenih aktivnosti s terminskim planom.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00045",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 51,
+      "line_end": 51,
+      "char_start": 1341,
+      "char_end": 1557,
+      "quote_original": "2.2. Voditelj Q/EP/HS službe i Direktor odjela odgovorni su za pregled i provođenje plana vođenja projekta za projekte nivoa I, a kod projekata nivoa II odgovorni su Direktor odjela i Glavni projektant/Voditelj tima.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn",
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00051",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 57,
+      "line_end": 57,
+      "char_start": 1649,
+      "char_end": 1879,
+      "quote_original": "3.1.1. Glavni projektant/Voditelj tima izrađuje plan vođenja projekta kojim definira faze projekta. Za svaku fazu projekta definira odgovornu osobu, planirani rok, opis aktivnosti, datum završetka aktivnosti i zapisnike kvalitete.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "rok"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00053",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 59,
+      "line_end": 59,
+      "char_start": 1881,
+      "char_end": 1951,
+      "quote_original": "3.1.2. Plan vođenja projekta mora minimalno sadržavati sljedeće faze :",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00057",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 63,
+      "line_end": 63,
+      "char_start": 2010,
+      "char_end": 2029,
+      "quote_original": "1. 1. Ulaz projekta",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00058",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 64,
+      "line_end": 64,
+      "char_start": 2030,
+      "char_end": 2058,
+      "quote_original": "2. 2. Izrada plana kvalitete",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "plan.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00059",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 65,
+      "line_end": 65,
+      "char_start": 2059,
+      "char_end": 2100,
+      "quote_original": "3. 3. Izrada plana kontrole ( za nivo I )",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00060",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 66,
+      "line_end": 66,
+      "char_start": 2101,
+      "char_end": 2151,
+      "quote_original": "4. 4. Imenovanje (glavnog) projektanta i suradnika",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00061",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 67,
+      "line_end": 67,
+      "char_start": 2152,
+      "char_end": 2187,
+      "quote_original": "5. 5. Imenovanje grupe za recenziju",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00062",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 68,
+      "line_end": 68,
+      "char_start": 2188,
+      "char_end": 2223,
+      "quote_original": "6. 6. Verifikacija ulaznih podataka",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "ulazn",
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00063",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 69,
+      "line_end": 69,
+      "char_start": 2224,
+      "char_end": 2261,
+      "quote_original": "7. 7. Ugovaranje podizvođačkih radova",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "podizvod"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00064",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 70,
+      "line_end": 70,
+      "char_start": 2262,
+      "char_end": 2296,
+      "quote_original": "8. 8. Uvođenje podizvođača u posao",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "podizvod"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00065",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 71,
+      "line_end": 71,
+      "char_start": 2297,
+      "char_end": 2420,
+      "quote_original": "9. 9. Verifikacija proračuna (uključuje i ručnu provjeru proračuna provedenih na računalu korištenjem specifičnih softvera)",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "proracun",
+            "verifikacij",
+            "softver"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00066",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 72,
+      "line_end": 72,
+      "char_start": 2421,
+      "char_end": 2463,
+      "quote_original": "10. 10. Verifikacija nacrtne dokumentacije",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "nacrt"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 73,
+      "line_end": 73,
+      "char_start": 2464,
+      "char_end": 2507,
+      "quote_original": "11. 11. Verifikacija aktivnosti podizvođača",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "podizvod"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00068",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 74,
+      "line_end": 74,
+      "char_start": 2508,
+      "char_end": 2533,
+      "quote_original": "12. 12. Interna recenzija",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00069",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 75,
+      "line_end": 75,
+      "char_start": 2534,
+      "char_end": 2562,
+      "quote_original": "13. 13. Završna verifikacija",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "zavrsn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00070",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 76,
+      "line_end": 76,
+      "char_start": 2563,
+      "char_end": 2602,
+      "quote_original": "14. 14. Recenzija od strane naručitelja",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00071",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 77,
+      "line_end": 77,
+      "char_start": 2603,
+      "char_end": 2657,
+      "quote_original": "15. 15. Revizija projekta prema zahtjevima naručitelja",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00072",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 78,
+      "line_end": 78,
+      "char_start": 2658,
+      "char_end": 2682,
+      "quote_original": "16. 16. Predaja projekta",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00074",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 80,
+      "line_end": 80,
+      "char_start": 2684,
+      "char_end": 2859,
+      "quote_original": "3.1.3. Po završetku svake od planiranih faza projekta Glavni projektant/Voditelj tima evidentira verifikaciju gotovosti od strane izvršitelja aktivnosti i zapisnike kvalitete.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00076",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "line_start": 82,
+      "line_end": 82,
+      "char_start": 2861,
+      "char_end": 3056,
+      "quote_original": "3.1.4. U slučaju da u procesu izrade projekta utvrdi bitna odstupanja od obavljanja planiranih aktivnosti i termina, Glavni projektant/Voditelj tima dužan je o tome obavijestiti Direktora odjela.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00080",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "line_start": 86,
+      "line_end": 86,
+      "char_start": 3102,
+      "char_end": 3199,
+      "quote_original": "3.2.1. Plan vođenja projekta priprema se na obrascu PQ.7-9, prikazanom u prilogu A ovog postupka.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00082",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "line_start": 88,
+      "line_end": 88,
+      "char_start": 3201,
+      "char_end": 3277,
+      "quote_original": "3.2.2. Plan vođenja projekta označava se oznakom PVP i brojem radnog naloga.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznac",
+            "broj.{0,15}nalog"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00084",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "line_start": 90,
+      "line_end": 90,
+      "char_start": 3279,
+      "char_end": 3296,
+      "quote_original": "Npr. PVP I-06-108",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00090",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "line_start": 96,
+      "line_end": 96,
+      "char_start": 3421,
+      "char_end": 3535,
+      "quote_original": "3.3.1. Plan vođenja projekta priprema Glavni projektant/Voditelj tima u suradnji s ostalim suradnicima u EKONERG-u",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odobren"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odobren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00092",
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "line_start": 98,
+      "line_end": 98,
+      "char_start": 3537,
+      "char_end": 3662,
+      "quote_original": "3.3.2. Plan vođenja projekta pregledava i odobrava Direktor odjela nositelja ugovora, te Voditelj Q/EP/HS službe (za nivo I).",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": [
+            "projekt"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "odobrav"
+          ],
+          "heading_terms": [
+            "odobren"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odobren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00096",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 102,
+      "line_end": 102,
+      "char_start": 3695,
+      "char_end": 3905,
+      "quote_original": "Plan vođenja projekta dostavlja se Direktoru odjela. Plana vođenja projekta čuva se na mrežnom poslužitelju u mapi RN odjela i po potrebi registratoru radnog naloga u odjelu koji priprema Plan vođenja projekta.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "regist"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00100",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 106,
+      "line_end": 106,
+      "char_start": 3964,
+      "char_end": 3976,
+      "quote_original": "**PRILOG A**",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00102",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 108,
+      "line_end": 108,
+      "char_start": 3978,
+      "char_end": 4082,
+      "quote_original": "| KT | Projektna faza | Zadužen | Planirani rok | Aktivnosti | Završeno | Potpis | Zapisnici kvalitete |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "rok"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00106",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 112,
+      "line_end": 112,
+      "char_start": 4294,
+      "char_end": 4313,
+      "quote_original": "(Obrazac PQ. 7-9.1)",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00108",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 114,
+      "line_end": 114,
+      "char_start": 4315,
+      "char_end": 4323,
+      "quote_original": "Strana /",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00110",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 116,
+      "line_end": 117,
+      "char_start": 4325,
+      "char_end": 4351,
+      "quote_original": "Revizija: 2  \nStranica 5/5",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 57,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "image_reference_only",
+      "block_id": "B00001",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 57,
+      "char_end": 58,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 58,
+      "char_end": 88,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 88,
+      "char_end": 89,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 89,
+      "char_end": 107,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 107,
+      "char_end": 108,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00006",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 108,
+      "char_end": 133,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "heading",
+      "block_id": "B00007",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 133,
+      "char_end": 134,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 134,
+      "char_end": 146,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 146,
+      "char_end": 147,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 147,
+      "char_end": 197,
+      "line_start": 11,
+      "line_end": 12,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 197,
+      "char_end": 198,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 198,
+      "char_end": 219,
+      "line_start": 14,
+      "line_end": 15,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 219,
+      "char_end": 220,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00014",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 220,
+      "char_end": 270,
+      "line_start": 17,
+      "line_end": 18,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 270,
+      "char_end": 271,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 271,
+      "char_end": 292,
+      "line_start": 20,
+      "line_end": 21,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "content",
+      "block_id": "B00017",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 292,
+      "char_end": 293,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 293,
+      "char_end": 353,
+      "line_start": 23,
+      "line_end": 24,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 353,
+      "char_end": 354,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00020",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 354,
+      "char_end": 375,
+      "line_start": 26,
+      "line_end": 27,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "content",
+      "block_id": "B00021",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 375,
+      "char_end": 376,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00022",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 376,
+      "char_end": 432,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "image_reference_only",
+      "block_id": "B00023",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 432,
+      "char_end": 433,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "PLAN VOĐENJA PROJEKTA",
+      "nearest_heading": "PLAN VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00024",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 433,
+      "char_end": 444,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "heading",
+      "block_id": "B00025",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 444,
+      "char_end": 445,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "blank",
+      "block_id": "B00026",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 445,
+      "char_end": 460,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "heading",
+      "block_id": "B00027",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 460,
+      "char_end": 461,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 461,
+      "char_end": 654,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "content",
+      "block_id": "B00029",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 654,
+      "char_end": 655,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 655,
+      "char_end": 670,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "heading",
+      "block_id": "B00031",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 670,
+      "char_end": 671,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 671,
+      "char_end": 841,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00033",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 841,
+      "char_end": 842,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 842,
+      "char_end": 1051,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00035",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1051,
+      "char_end": 1052,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1052,
+      "char_end": 1071,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "heading",
+      "block_id": "B00037",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1071,
+      "char_end": 1072,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1072,
+      "char_end": 1103,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00039",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1103,
+      "char_end": 1104,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00040",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1104,
+      "char_end": 1122,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "heading",
+      "block_id": "B00041",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1122,
+      "char_end": 1123,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00042",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1123,
+      "char_end": 1340,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1340,
+      "char_end": 1341,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00044",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1341,
+      "char_end": 1558,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00045",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1558,
+      "char_end": 1559,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1559,
+      "char_end": 1597,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA",
+      "nearest_heading": "3. POSTUPAK PLANA VOĐENJA PROJEKTA",
+      "kind": "heading",
+      "block_id": "B00047",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1597,
+      "char_end": 1598,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA",
+      "nearest_heading": "3. POSTUPAK PLANA VOĐENJA PROJEKTA",
+      "kind": "blank",
+      "block_id": "B00048",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1598,
+      "char_end": 1648,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "heading",
+      "block_id": "B00049",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1648,
+      "char_end": 1649,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00050",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1649,
+      "char_end": 1880,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00051",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1880,
+      "char_end": 1881,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00052",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1881,
+      "char_end": 1952,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00053",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1952,
+      "char_end": 1953,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00054",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1953,
+      "char_end": 2009,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "image_reference_only",
+      "block_id": "B00055",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 2009,
+      "char_end": 2010,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00056",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2010,
+      "char_end": 2030,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00057",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2030,
+      "char_end": 2059,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00058",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2059,
+      "char_end": 2101,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00059",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2101,
+      "char_end": 2152,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00060",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2152,
+      "char_end": 2188,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00061",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2188,
+      "char_end": 2224,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00062",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2224,
+      "char_end": 2262,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00063",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2262,
+      "char_end": 2297,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00064",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2297,
+      "char_end": 2421,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00065",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2421,
+      "char_end": 2464,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00066",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2464,
+      "char_end": 2508,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2508,
+      "char_end": 2534,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00068",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2534,
+      "char_end": 2563,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00069",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2563,
+      "char_end": 2603,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00070",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2603,
+      "char_end": 2658,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00071",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2658,
+      "char_end": 2683,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00072",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2683,
+      "char_end": 2684,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00073",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2684,
+      "char_end": 2860,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00074",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2860,
+      "char_end": 2861,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00075",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2861,
+      "char_end": 3057,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00076",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3057,
+      "char_end": 3058,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.1. Sadržaj postupaka plana vođenja projekta",
+      "nearest_heading": "3.1. Sadržaj postupaka plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00077",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3058,
+      "char_end": 3101,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "heading",
+      "block_id": "B00078",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3101,
+      "char_end": 3102,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00079",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3102,
+      "char_end": 3200,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00080",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3200,
+      "char_end": 3201,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00081",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3201,
+      "char_end": 3278,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00082",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3278,
+      "char_end": 3279,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00083",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3279,
+      "char_end": 3297,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00084",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3297,
+      "char_end": 3298,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00085",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3298,
+      "char_end": 3354,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "image_reference_only",
+      "block_id": "B00086",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 3354,
+      "char_end": 3355,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.2. Format plana vođenja projekta",
+      "nearest_heading": "3.2. Format plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00087",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3355,
+      "char_end": 3420,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "nearest_heading": "3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "kind": "heading",
+      "block_id": "B00088",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3420,
+      "char_end": 3421,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "nearest_heading": "3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00089",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3421,
+      "char_end": 3536,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "nearest_heading": "3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00090",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3536,
+      "char_end": 3537,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "nearest_heading": "3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00091",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3537,
+      "char_end": 3663,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "nearest_heading": "3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "kind": "content",
+      "block_id": "B00092",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3663,
+      "char_end": 3664,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "3. POSTUPAK PLANA VOĐENJA PROJEKTA / 3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "nearest_heading": "3.3. Priprema, pregled, odobrenje plana vođenja projekta",
+      "kind": "blank",
+      "block_id": "B00093",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3664,
+      "char_end": 3694,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "heading",
+      "block_id": "B00094",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3694,
+      "char_end": 3695,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00095",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3695,
+      "char_end": 3906,
+      "line_start": 102,
+      "line_end": 102,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00096",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3906,
+      "char_end": 3907,
+      "line_start": 103,
+      "line_end": 103,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00097",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3907,
+      "char_end": 3963,
+      "line_start": 104,
+      "line_end": 104,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "image_reference_only",
+      "block_id": "B00098",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 3963,
+      "char_end": 3964,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00099",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3964,
+      "char_end": 3977,
+      "line_start": 106,
+      "line_end": 106,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00100",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3977,
+      "char_end": 3978,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00101",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3978,
+      "char_end": 4083,
+      "line_start": 108,
+      "line_end": 108,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00102",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4083,
+      "char_end": 4188,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00103",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 4188,
+      "char_end": 4293,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00104",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 4293,
+      "char_end": 4294,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00105",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4294,
+      "char_end": 4314,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00106",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4314,
+      "char_end": 4315,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00107",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4315,
+      "char_end": 4324,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00108",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4324,
+      "char_end": 4325,
+      "line_start": 115,
+      "line_end": 115,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00109",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4325,
+      "char_end": 4351,
+      "line_start": 116,
+      "line_end": 117,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00110",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

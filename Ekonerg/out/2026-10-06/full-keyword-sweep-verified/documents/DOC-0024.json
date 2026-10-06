@@ -1,0 +1,4615 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0024",
+  "filename": "PQ08.4-2_r9_Kontrola_nabave.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "b3ad579958daaaf2271e3913fe72512f529a6b0ffbd08bff83afc0efaf763e83",
+  "registered_source_sha256": "b3ad579958daaaf2271e3913fe72512f529a6b0ffbd08bff83afc0efaf763e83",
+  "source_changed": false,
+  "source_bytes": 11982,
+  "source_characters": 11730,
+  "source_lines": 204,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 89,
+      "char_end": 105,
+      "quote_original": "Oznaka: PQ.8.4-2",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 127,
+      "char_end": 138,
+      "quote_original": "Revizija: 9",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 11,
+      "line_end": 11,
+      "char_start": 140,
+      "char_end": 176,
+      "quote_original": "Pripremio: Tomislav Hršak, dipl.ing.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00013",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 13,
+      "line_end": 13,
+      "char_start": 178,
+      "char_end": 184,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 186,
+      "char_end": 197,
+      "quote_original": "26.01.2021.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00017",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 17,
+      "line_end": 17,
+      "char_start": 199,
+      "char_end": 236,
+      "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00019",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 19,
+      "line_end": 19,
+      "char_start": 238,
+      "char_end": 244,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00021",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 21,
+      "line_end": 21,
+      "char_start": 246,
+      "char_end": 257,
+      "quote_original": "26.01.2021.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00023",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 23,
+      "line_end": 23,
+      "char_start": 259,
+      "char_end": 305,
+      "quote_original": "Odobrio: Mr.sc. Zdravko Mužek, dipl.ing.stroj.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00025",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 25,
+      "line_end": 25,
+      "char_start": 307,
+      "char_end": 313,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00027",
+      "chapter_path": "KONTROLA NABAVE",
+      "line_start": 27,
+      "line_end": 27,
+      "char_start": 315,
+      "char_end": 326,
+      "quote_original": "29.01.2021.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00033",
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "line_start": 33,
+      "line_end": 33,
+      "char_start": 356,
+      "char_end": 441,
+      "quote_original": "Ovaj se postupak primjenjuje u slučaju kad EKONERG naručuje neki proizvod ili uslugu.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00037",
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "line_start": 37,
+      "line_end": 37,
+      "char_start": 459,
+      "char_end": 885,
+      "quote_original": "Svrha ovog postupka je da uspostavi mjere kontrole koje osiguravaju da usluge ili proizvodi, naručeni po EKONERG-u, zadovoljavaju zahtjeve sustava kvalitete, sustava kvalitete Laboratorija, sustava kvalitete verifikacijske djelatnosti, sustava zaštite okoliša, sustava zaštite zdravlja i sigurnosti pri radu te da su u skladu s primjenjivom regulativom, standardima, propisima i drugim zahtjevima prema nabavnoj dokumentaciji.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00051",
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "line_start": 51,
+      "line_end": 51,
+      "char_start": 1071,
+      "char_end": 1088,
+      "quote_original": "Postupak PQ.8.2-2",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00053",
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "line_start": 53,
+      "line_end": 53,
+      "char_start": 1090,
+      "char_end": 1107,
+      "quote_original": "Postupak PQ.8.4-3",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00057",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 57,
+      "line_end": 57,
+      "char_start": 1128,
+      "char_end": 1649,
+      "quote_original": "1. 2.1. Direktor EKONERG-a odgovoran je za sustav kontrole nabave u cilju da se usluge ili proizvodi naručeni po EKONERG-u obavljaju, odnosno, izrađuju u skladu sa zahtjevima sustava kvalitete, uključujući i sustave kvalitete Laboratorija i verifikacijske djelatnosti, zaštite okoliša, sustava zaštite zdravlja i sigurnosti pri radu, regulativom, standardima, propisima i ostalim zahtjevima specificiranim u nabavnoj dokumentaciji. Direktor EKONERG-a može dio svoje odgovornosti prenijeti na drugog suradnika u EKONERG-u.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn",
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00058",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 58,
+      "line_end": 58,
+      "char_start": 1650,
+      "char_end": 1902,
+      "quote_original": "2. 2.2. Direktor odjela odgovoran je za nabavne aktivnosti za usluge/proizvode koje naručuje njegov odjel, a Direktor EKONERG-a za proizvode/usluge na nivou cijele organizacije. Direktor odjela zadužen je za evaluaciju i ocjenu dobavljača koje koristi.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz",
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00059",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 59,
+      "line_end": 59,
+      "char_start": 1903,
+      "char_end": 2210,
+      "quote_original": "3. 2.3. Zaduženi suradnik u odjelu/EKONERG-u odgovoran je za pripremu podloga za nabavu, pripremu nabavne dokumentacije, organizaciju nadzora nad izvođenjem radova i verifikaciju rezultata usluga, odnosno prijemnu kontrolu elemenata/usluga isporučenih od dobavljača, te pregled prateće dokumentacije/zapisa.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj",
+            "prijemn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "nadzor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00060",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 60,
+      "line_end": 60,
+      "char_start": 2211,
+      "char_end": 2691,
+      "quote_original": "4. 2.4. Voditelj Q/EP/HS službe odgovoran je za unošenje zahtjeva osiguranja kvalitete, zahtjeva zaštite okoliša te zahtjeva sustava zaštite zdravlja i sigurnosti pri radu u nabavnu dokumentaciju, te za kontrolu provedbe mjera dobavljačevog sustava osiguranja kvalitete, zaštite okoliša i sustava zdravlja i sigurnosti ako to od njega zatraži Direktor odjela ili Direktor EKONERG-a. On je također odgovoran za odobrenje promjena na listi dobavljača koje predlažu Direktori odjela.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)",
+            "osiguranj.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument",
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00066",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 66,
+      "line_end": 66,
+      "char_start": 2751,
+      "char_end": 2927,
+      "quote_original": "Osnovno mjerilo pri izboru dobavljača je njegova sposobnost da obavi uslugu/isporuči proizvod u skladu sa zahtjevima iz nabavne dokumentacije. Evaluacija se provodi na temelju:",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00068",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 68,
+      "line_end": 68,
+      "char_start": 2929,
+      "char_end": 2977,
+      "quote_original": "1. 1) iskustva i dosadašnjih referentnih radova,",
+      "matches": {
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00069",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 69,
+      "line_end": 69,
+      "char_start": 2978,
+      "char_end": 3046,
+      "quote_original": "2. 2) tehničke osposobljenosti i kvalifikacije osoblja dobavljača,  ",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "osposob"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00070",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 70,
+      "line_end": 71,
+      "char_start": 3047,
+      "char_end": 3160,
+      "quote_original": "   razvijenosti sustava kvalitete, sustava zaštite okoliša te sustava zaštite zdravlja i sigurnosti  \n   pri radu",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00071",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 72,
+      "line_end": 72,
+      "char_start": 3161,
+      "char_end": 3212,
+      "quote_original": "3. 3) kvalitete dotad isporučenih usluga/elemenata,",
+      "matches": {
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00072",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 73,
+      "line_end": 73,
+      "char_start": 3213,
+      "char_end": 3226,
+      "quote_original": "4. 4) cijene.",
+      "matches": {
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00074",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 75,
+      "line_end": 75,
+      "char_start": 3228,
+      "char_end": 3293,
+      "quote_original": "Evaluacija i izbor dobavljača provodi se prema postupku PQ.8.4-3.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00076",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 77,
+      "line_end": 77,
+      "char_start": 3295,
+      "char_end": 3708,
+      "quote_original": "Za nabavu u EKONERG-u se u pravilu koriste dobavljači s liste dobavljača, i to prvenstveno oni svrstani u grupu I (potpuno zadovoljava). U slučaju korištenja dobavljača svrstanih u grupu II (djelomično zadovoljava) treba u pravilu u nabavnoj dokumentaciji specificirati dodatne zahtjeve kako bi se izbjeglo ili umanjilo negativno djelovanje elementa zbog kojeg je dobavljač ocijenjen kao \"djelomično zadovoljava\".",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00078",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 79,
+      "line_end": 79,
+      "char_start": 3710,
+      "char_end": 3901,
+      "quote_original": "Izuzetno, uz posebno odobrenje Direktora EKONERG-a, može se koristiti dobavljač koji nije na listi. Takav se dobavljač u pravilu provjerava, ocjenjuje i naknadno uvrštava na listu dobavljača.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00080",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 81,
+      "line_end": 81,
+      "char_start": 3903,
+      "char_end": 4089,
+      "quote_original": "Utvrđivanje kompetencija osoba koje nisu zaposlene u EKONERG-u, a obavljaju aktivnosti koje mogu imati značajan utjecaj na okoliš, za ili u ime EKONERG-a, opisano je u postupku PQ.7.1-1.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "kompeten"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00082",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 83,
+      "line_end": 83,
+      "char_start": 4091,
+      "char_end": 4410,
+      "quote_original": "Osnovni zahtjevi prema osobama koje obavljaju aktivnosti za ili u ime EKONERG-a, povezane sa značajnim aspektima okoliša, sadržani su u Izjavi o pravilima ponašanja koju svaki izvođač potpisuje prije započinjanja aktivnosti (prilog A). Eventualni posebni zahtjevi ugrađuju se na primjeren način u nabavnu dokumentaciju.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00084",
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "line_start": 85,
+      "line_end": 85,
+      "char_start": 4412,
+      "char_end": 4742,
+      "quote_original": "Zahtjevi prema osobama koje obavljaju aktivnosti za ili u ime EKONERG-a, povezane sa opasnostima i rizicima po zdravlje i sigurnost, sadržani su u Izjavi o pravilima ponašanja koju svaki izvođač potpisuje prije započinjanja aktivnosti (prilog B). Eventualni posebni zahtjevi ugrađuju se na primjeren način u nabavnu dokumentaciju.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00088",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 89,
+      "line_end": 89,
+      "char_start": 4777,
+      "char_end": 4868,
+      "quote_original": "Zahtjevi koje EKONERG uključuje u nabavnu dokumentaciju sastoje se od (ako je primjenjivo):",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00090",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 91,
+      "line_end": 91,
+      "char_start": 4870,
+      "char_end": 4952,
+      "quote_original": "1. 1) opsega usluga ili proizvoda koje treba dobavljač obaviti odnosno isporučiti,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00091",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 92,
+      "line_end": 92,
+      "char_start": 4953,
+      "char_end": 5101,
+      "quote_original": "2. 2) tehničkih zahtjeva, referirajući se na standarde, propise, regulativu, postupke, specifikacije, upute, koji opisuju usluge koje treba obaviti,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "specifikacij"
+          ],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup",
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dokument"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00092",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 93,
+      "line_end": 93,
+      "char_start": 5102,
+      "char_end": 5181,
+      "quote_original": "3. 3) zahtjeva za pregledima i odredbe o načinu prihvaćanja proizvoda i usluga,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "prihvac"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00093",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 94,
+      "line_end": 94,
+      "char_start": 5182,
+      "char_end": 5289,
+      "quote_original": "4. 4) zahtjeva za mogućnost pristupa u prostorije i k dokumentaciji dobavljača u svrhu pregleda i provjera,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00094",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 95,
+      "line_end": 95,
+      "char_start": 5290,
+      "char_end": 5372,
+      "quote_original": "5. 5) identifikacije zahtjeva kvalitete i elemenata programa osiguranja kvalitete,",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "osiguranj.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "identif"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00098",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 99,
+      "line_end": 99,
+      "char_start": 5431,
+      "char_end": 5551,
+      "quote_original": "1. 6) identifikacije zahtjeva sustava zaštite okoliša naročito onih koji se odnose na utvrđene značajne aspekte okoliša,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "identif"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00099",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 100,
+      "line_end": 100,
+      "char_start": 5552,
+      "char_end": 5705,
+      "quote_original": "2. 7) identifikacije zahtjeva sustava zaštite zdravlja i sigurnosti naročito onih koji su izdvojeni u postupku prepoznavanja opasnosti i procjene rizika,",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "rizik"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "identif"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00100",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 101,
+      "line_end": 101,
+      "char_start": 5706,
+      "char_end": 5915,
+      "quote_original": "3. 8) identifikacije potrebne dokumentacije kao što su postupci, upute, specifikacije, izvještaji o pregledima, zapisi kvalitete i zaštite okoliša koje treba pripremiti i dati na pregled i odobrenje EKONERG-u,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "specifikacij"
+          ],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup",
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument",
+            "odobren"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00101",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 102,
+      "line_end": 102,
+      "char_start": 5916,
+      "char_end": 6045,
+      "quote_original": "4. 9) zahtjeva za osiguranjem kontrolirane distribucije, čuvanja, održavanja i raspolaganja zapisima kvalitete i zaštite okoliša,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "distribuc"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "cuvanj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00102",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 103,
+      "line_end": 103,
+      "char_start": 6046,
+      "char_end": 6108,
+      "quote_original": "5. 10) zahtjeva za izvještavanjem i odobrenjem neusklađenosti,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "neusklad",
+            "neuskla"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00103",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 104,
+      "line_end": 104,
+      "char_start": 6109,
+      "char_end": 6186,
+      "quote_original": "6. 11) zahtjeva o prenošenju nabavnih zahtjeva na dobavljačeve poddobavljače,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav",
+            "zahtjev.{0,30}dobavlj"
+          ],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00104",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 105,
+      "line_end": 105,
+      "char_start": 6187,
+      "char_end": 6305,
+      "quote_original": "7. 12) zahtjeva za mogućnost pristupa Naručitelja u prostore te k dokumentaciji i zapisima dobavljača / poddobavljača,",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00105",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 106,
+      "line_end": 106,
+      "char_start": 6306,
+      "char_end": 6373,
+      "quote_original": "8. 13) specificiranja vremena za predaju dokumentacije o kvaliteti.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00107",
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "line_start": 108,
+      "line_end": 108,
+      "char_start": 6375,
+      "char_end": 6665,
+      "quote_original": "Nabavnu dokumentaciju priprema zaduženi suradnik u EKONERG-u, pregledava Direktor odjela i QA inženjer ukoliko je imenovan za taj RN a odobrava je potpisom Direktor EKONERG-a, uz sudjelovanje Voditelja Q/EP/HS službe i Nositelja ugovaranja, na način i kako je to opisano postupkom PQ.8.2-2.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": [
+            "nabav"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument",
+            "odobrav"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00111",
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "line_start": 112,
+      "line_end": 112,
+      "char_start": 6721,
+      "char_end": 6929,
+      "quote_original": "Da bi se utvrdila usklađenost sa zahtjevima iz nabavne dokumentacije, naručene usluge ili proizvodi podliježu po potrebi kontroli tijekom obavljanja usluga ili proizvodnje proizvoda koja se može sastojati od:",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00113",
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "line_start": 114,
+      "line_end": 114,
+      "char_start": 6931,
+      "char_end": 6978,
+      "quote_original": "1. 1) planskog nadzora tijekom obavljanja rada,",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00114",
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "line_start": 115,
+      "line_end": 115,
+      "char_start": 6979,
+      "char_end": 7078,
+      "quote_original": "2. 2) provjere sustava kvalitete, sustava zaštite okoliša ili sustava zaštite zdravlja i sigurnosti",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00115",
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "line_start": 116,
+      "line_end": 116,
+      "char_start": 7079,
+      "char_end": 7216,
+      "quote_original": "3. 3) pregleda dokumentacije kojom se dokazuje kvaliteta, ispunjenje zahtjeva u području zaštite okoliša i zaštite zdravlja i sigurnosti.",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00117",
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "line_start": 118,
+      "line_end": 118,
+      "char_start": 7218,
+      "char_end": 7411,
+      "quote_original": "Vrsta i opseg kontrole specificira se planom kvalitete ili planom kontrole. Za studijske/projektne radove koji su prepušteni dobavljačima, vrsta i opseg kontrole opisana je u postupku PQ.8.4-1.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "plan.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00121",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 122,
+      "line_end": 122,
+      "char_start": 7456,
+      "char_end": 7545,
+      "quote_original": "EKONERG preuzima usluge ili proizvode od svojih dobavljača na jedan od slijedećih načina:",
+      "matches": {
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00123",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 124,
+      "line_end": 124,
+      "char_start": 7547,
+      "char_end": 7810,
+      "quote_original": "1. 1) Proizvod ili usluga koji su vezani uz realizaciju radnog naloga, a isporučuju se prema narudžbi, preuzimaju se (verificiraju) potpisom Direktora odjela / Voditelja tima nositelja radnog naloga ili njegova zamjenika, odnosno Tehničkog voditelja Laboratorija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "narudz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00124",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 125,
+      "line_end": 125,
+      "char_start": 7811,
+      "char_end": 7946,
+      "quote_original": "2. 2) Usluge obavljene prema ugovoru o djelu s vanjskim suradnicima, a vezane uz radni nalog, preuzimaju se na način opisan u t. 3.4.1.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00125",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 126,
+      "line_end": 126,
+      "char_start": 7947,
+      "char_end": 8101,
+      "quote_original": "3. 3) Usluge ili proizvodi isporučeni prema autorskim ugovorima pregledavaju se komisijski, te ih nakon nalaza komisije potpisom prihvaća odgovorna osoba.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "prihvac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "nalaz"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00129",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 130,
+      "line_end": 130,
+      "char_start": 8160,
+      "char_end": 8534,
+      "quote_original": "Proizvodi ili usluge prema ugovoru s drugim poduzećima preuzimaju se na osnovi provjere sustava kvalitete i, ako je primjenljivo, sustava zaštite okoliša i zaštite zdravlja i sigurnosti kod dobavljača, nadzora tijekom obavljanja aktivnosti, provjere dokumenata, pregleda ili ispitivanja po isporuci potpisom odgovorne osobe, osnosno u skladu s predviđenim u planu kvalitete.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)",
+            "plan.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "ispitiv"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00131",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 132,
+      "line_end": 132,
+      "char_start": 8536,
+      "char_end": 8627,
+      "quote_original": "4) Studijski/projektni radovi dobavljača preuzimaju se na način opisan u postupku PQ.8.4-1.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00133",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 134,
+      "line_end": 134,
+      "char_start": 8629,
+      "char_end": 8748,
+      "quote_original": "Način preuzimanja proizvoda ili usluga navodi se u ugovornoj dokumentaciji odnosno planu kvalitete, ako je primjenjivo.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "plan.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "preuzimanj"
+          ],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00135",
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "line_start": 136,
+      "line_end": 136,
+      "char_start": 8750,
+      "char_end": 8903,
+      "quote_original": "Kompletnost i kvaliteta naručene usluge/proizvoda potvrđuje se potpisom Direktora odjela / Voditelja tima nositelja radnog naloga na okončanoj situaciji.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preuzimanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00139",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 140,
+      "line_end": 140,
+      "char_start": 8919,
+      "char_end": 9039,
+      "quote_original": "Nabavna (ugovorna) dokumentacija čuva se kao zapis osiguranja kvalitete u skladu s postupkom PQ.7.5-7 \"Kontrola zapisa\".",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "osiguranj.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "nabav",
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00141",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 142,
+      "line_end": 142,
+      "char_start": 9041,
+      "char_end": 9174,
+      "quote_original": "Sva dokumentacija koju dobavljač predaje naručitelju kao dokaz o kvaliteti obavljenog posla tretira se u skladu s postupkom PQ.7.5-7.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00143",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 144,
+      "line_end": 144,
+      "char_start": 9176,
+      "char_end": 9357,
+      "quote_original": "Izvještaji s provjera i nadzora i završne verifikacije (recenzije), odnosno primopredaje i ulazne kontrole također predstavljaju zapise i tretiraju se u skladu s postupkom PQ.7.5-7.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "ulazn",
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "ulazn.{0,20}kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "nadzor",
+            "zavrsn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00145",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 146,
+      "line_end": 146,
+      "char_start": 9359,
+      "char_end": 9520,
+      "quote_original": "Izjave o pravilima ponašanja dobavljača u domeni zaštite okoliša te domeni zaštite zdravlja i sigurnosti (prilozi A i B) čuvaju se u skladu s postupkom PQ.7.5-7.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00156",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 157,
+      "line_end": 157,
+      "char_start": 9881,
+      "char_end": 9943,
+      "quote_original": "- ▪ upoznati smo sa zabranom ispuštanja opasnih tvari u okoliš",
+      "matches": {
+        "APP_B_XIV": {
+          "quote_terms": [
+            "zabran"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00159",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 160,
+      "line_end": 160,
+      "char_start": 10145,
+      "char_end": 10297,
+      "quote_original": "- ▪ naši zaposlenici su upoznati s pravilima rukovanja i mjerama zaštite kod korištenja i manipulacije tvarima i sredstvima opasnim za okoliš i zdravlje",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [
+            "rukovan"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00162",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 163,
+      "line_end": 163,
+      "char_start": 10377,
+      "char_end": 10470,
+      "quote_original": "Izjavljujemo da prihvaćamo navedene zahtjeve i da smo svjesni posljedica odstupanja od istih.",
+      "matches": {
+        "APP_B_XIV": {
+          "quote_terms": [
+            "prihvac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00168",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 169,
+      "line_end": 169,
+      "char_start": 10489,
+      "char_end": 10518,
+      "quote_original": "Žig i potpis ovlaštene osobe:",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "ovlast",
+            "ovlasten"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00172",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 173,
+      "line_end": 173,
+      "char_start": 10540,
+      "char_end": 10551,
+      "quote_original": "Revizija: 0",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00184",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 185,
+      "line_end": 185,
+      "char_start": 11064,
+      "char_end": 11154,
+      "quote_original": "- ▪ upoznati smo s radnim/kontrolnim postupcima/uputama koje opisuju obavljanje aktivnosti",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup",
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00185",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 186,
+      "line_end": 186,
+      "char_start": 11155,
+      "char_end": 11215,
+      "quote_original": "- ▪ naši zaposlenici su osposobljeni za rad na siguran način",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "osposob"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00186",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 187,
+      "line_end": 187,
+      "char_start": 11216,
+      "char_end": 11278,
+      "quote_original": "- ▪ naši zaposlenici su osposobljeni za početno gašenje požara",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "osposob"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00189",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 190,
+      "line_end": 190,
+      "char_start": 11422,
+      "char_end": 11547,
+      "quote_original": "- ▪ za strojeve i uređaje s povećanim opasnostima ishođena su potrebna uvjerenja i zaposlenici su obučeni za rukovanje istima",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [
+            "rukovan"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00191",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 192,
+      "line_end": 192,
+      "char_start": 11549,
+      "char_end": 11642,
+      "quote_original": "Izjavljujemo da prihvaćamo navedene zahtjeve i da smo svjesni posljedica odstupanja od istih.",
+      "matches": {
+        "APP_B_XIV": {
+          "quote_terms": [
+            "prihvac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00197",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 198,
+      "line_end": 198,
+      "char_start": 11661,
+      "char_end": 11690,
+      "quote_original": "Žig i potpis ovlaštene osobe:",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "ovlast",
+            "ovlasten"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00201",
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "line_start": 202,
+      "line_end": 202,
+      "char_start": 11710,
+      "char_end": 11720,
+      "quote_original": "Revizija 0",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 57,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "image_reference_only",
+      "block_id": "B00001",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 57,
+      "char_end": 58,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 58,
+      "char_end": 88,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 88,
+      "char_end": 89,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 89,
+      "char_end": 106,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 106,
+      "char_end": 107,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00006",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 107,
+      "char_end": 126,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "heading",
+      "block_id": "B00007",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 126,
+      "char_end": 127,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 127,
+      "char_end": 139,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 139,
+      "char_end": 140,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 140,
+      "char_end": 177,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 177,
+      "char_end": 178,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 178,
+      "char_end": 185,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 185,
+      "char_end": 186,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00014",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 186,
+      "char_end": 198,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 198,
+      "char_end": 199,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 199,
+      "char_end": 237,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00017",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 237,
+      "char_end": 238,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 238,
+      "char_end": 245,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 245,
+      "char_end": 246,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00020",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 246,
+      "char_end": 258,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00021",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 258,
+      "char_end": 259,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00022",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 259,
+      "char_end": 306,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00023",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 306,
+      "char_end": 307,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00024",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 307,
+      "char_end": 314,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00025",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 314,
+      "char_end": 315,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00026",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 315,
+      "char_end": 327,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 327,
+      "char_end": 328,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "KONTROLA NABAVE",
+      "nearest_heading": "KONTROLA NABAVE",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 328,
+      "char_end": 339,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "heading",
+      "block_id": "B00029",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 339,
+      "char_end": 340,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 340,
+      "char_end": 355,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "heading",
+      "block_id": "B00031",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 355,
+      "char_end": 356,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 356,
+      "char_end": 442,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "content",
+      "block_id": "B00033",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 442,
+      "char_end": 443,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 443,
+      "char_end": 458,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "heading",
+      "block_id": "B00035",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 458,
+      "char_end": 459,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 459,
+      "char_end": 886,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00037",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 886,
+      "char_end": 887,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 887,
+      "char_end": 906,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "heading",
+      "block_id": "B00039",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 906,
+      "char_end": 907,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00040",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 907,
+      "char_end": 938,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00041",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 938,
+      "char_end": 939,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00042",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 939,
+      "char_end": 971,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 971,
+      "char_end": 972,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00044",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 972,
+      "char_end": 1004,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00045",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1004,
+      "char_end": 1005,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1005,
+      "char_end": 1037,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00047",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1037,
+      "char_end": 1038,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00048",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1038,
+      "char_end": 1070,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00049",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1070,
+      "char_end": 1071,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00050",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1071,
+      "char_end": 1089,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00051",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1089,
+      "char_end": 1090,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00052",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1090,
+      "char_end": 1108,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00053",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1108,
+      "char_end": 1109,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00054",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1109,
+      "char_end": 1127,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "heading",
+      "block_id": "B00055",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1127,
+      "char_end": 1128,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00056",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1128,
+      "char_end": 1650,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00057",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1650,
+      "char_end": 1903,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00058",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1903,
+      "char_end": 2211,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00059",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2211,
+      "char_end": 2692,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00060",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2692,
+      "char_end": 2693,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00061",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2693,
+      "char_end": 2709,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "heading",
+      "block_id": "B00062",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2709,
+      "char_end": 2710,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00063",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2710,
+      "char_end": 2750,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "heading",
+      "block_id": "B00064",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2750,
+      "char_end": 2751,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00065",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2751,
+      "char_end": 2928,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00066",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2928,
+      "char_end": 2929,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00067",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2929,
+      "char_end": 2978,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00068",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2978,
+      "char_end": 3047,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00069",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3047,
+      "char_end": 3161,
+      "line_start": 70,
+      "line_end": 71,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00070",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3161,
+      "char_end": 3213,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00071",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3213,
+      "char_end": 3227,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00072",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3227,
+      "char_end": 3228,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00073",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3228,
+      "char_end": 3294,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00074",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3294,
+      "char_end": 3295,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00075",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3295,
+      "char_end": 3709,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00076",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3709,
+      "char_end": 3710,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00077",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3710,
+      "char_end": 3902,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00078",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3902,
+      "char_end": 3903,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00079",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3903,
+      "char_end": 4090,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00080",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4090,
+      "char_end": 4091,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00081",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4091,
+      "char_end": 4411,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00082",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4411,
+      "char_end": 4412,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00083",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4412,
+      "char_end": 4743,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "content",
+      "block_id": "B00084",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4743,
+      "char_end": 4744,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "3. POSTUPAK / 3.1. Evaluacija i izbor dobavljača",
+      "nearest_heading": "3.1. Evaluacija i izbor dobavljača",
+      "kind": "blank",
+      "block_id": "B00085",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4744,
+      "char_end": 4776,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "heading",
+      "block_id": "B00086",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4776,
+      "char_end": 4777,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "blank",
+      "block_id": "B00087",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4777,
+      "char_end": 4869,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00088",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4869,
+      "char_end": 4870,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "blank",
+      "block_id": "B00089",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4870,
+      "char_end": 4953,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00090",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4953,
+      "char_end": 5102,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00091",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5102,
+      "char_end": 5182,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00092",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5182,
+      "char_end": 5290,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00093",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5290,
+      "char_end": 5373,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00094",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5373,
+      "char_end": 5374,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "blank",
+      "block_id": "B00095",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5374,
+      "char_end": 5430,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "image_reference_only",
+      "block_id": "B00096",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 5430,
+      "char_end": 5431,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "blank",
+      "block_id": "B00097",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5431,
+      "char_end": 5552,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00098",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5552,
+      "char_end": 5706,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00099",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5706,
+      "char_end": 5916,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00100",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5916,
+      "char_end": 6046,
+      "line_start": 102,
+      "line_end": 102,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00101",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6046,
+      "char_end": 6109,
+      "line_start": 103,
+      "line_end": 103,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00102",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6109,
+      "char_end": 6187,
+      "line_start": 104,
+      "line_end": 104,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00103",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6187,
+      "char_end": 6306,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00104",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6306,
+      "char_end": 6374,
+      "line_start": 106,
+      "line_end": 106,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00105",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6374,
+      "char_end": 6375,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "blank",
+      "block_id": "B00106",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6375,
+      "char_end": 6666,
+      "line_start": 108,
+      "line_end": 108,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "content",
+      "block_id": "B00107",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6666,
+      "char_end": 6667,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "3. POSTUPAK / 3.2. Nabavna dokumentacija",
+      "nearest_heading": "3.2. Nabavna dokumentacija",
+      "kind": "blank",
+      "block_id": "B00108",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6667,
+      "char_end": 6720,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "heading",
+      "block_id": "B00109",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6720,
+      "char_end": 6721,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "blank",
+      "block_id": "B00110",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6721,
+      "char_end": 6930,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "content",
+      "block_id": "B00111",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6930,
+      "char_end": 6931,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "blank",
+      "block_id": "B00112",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6931,
+      "char_end": 6979,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "content",
+      "block_id": "B00113",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6979,
+      "char_end": 7079,
+      "line_start": 115,
+      "line_end": 115,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "content",
+      "block_id": "B00114",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7079,
+      "char_end": 7217,
+      "line_start": 116,
+      "line_end": 116,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "content",
+      "block_id": "B00115",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7217,
+      "char_end": 7218,
+      "line_start": 117,
+      "line_end": 117,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "blank",
+      "block_id": "B00116",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7218,
+      "char_end": 7412,
+      "line_start": 118,
+      "line_end": 118,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "content",
+      "block_id": "B00117",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7412,
+      "char_end": 7413,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "3. POSTUPAK / 3.3. Kontrola naručenih usluga ili proizvoda",
+      "nearest_heading": "3.3. Kontrola naručenih usluga ili proizvoda",
+      "kind": "blank",
+      "block_id": "B00118",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7413,
+      "char_end": 7455,
+      "line_start": 120,
+      "line_end": 120,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "heading",
+      "block_id": "B00119",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7455,
+      "char_end": 7456,
+      "line_start": 121,
+      "line_end": 121,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00120",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7456,
+      "char_end": 7546,
+      "line_start": 122,
+      "line_end": 122,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00121",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7546,
+      "char_end": 7547,
+      "line_start": 123,
+      "line_end": 123,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00122",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7547,
+      "char_end": 7811,
+      "line_start": 124,
+      "line_end": 124,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00123",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7811,
+      "char_end": 7947,
+      "line_start": 125,
+      "line_end": 125,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00124",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7947,
+      "char_end": 8102,
+      "line_start": 126,
+      "line_end": 126,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00125",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8102,
+      "char_end": 8103,
+      "line_start": 127,
+      "line_end": 127,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00126",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8103,
+      "char_end": 8159,
+      "line_start": 128,
+      "line_end": 128,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "image_reference_only",
+      "block_id": "B00127",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 8159,
+      "char_end": 8160,
+      "line_start": 129,
+      "line_end": 129,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00128",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8160,
+      "char_end": 8535,
+      "line_start": 130,
+      "line_end": 130,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00129",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8535,
+      "char_end": 8536,
+      "line_start": 131,
+      "line_end": 131,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00130",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8536,
+      "char_end": 8628,
+      "line_start": 132,
+      "line_end": 132,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00131",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8628,
+      "char_end": 8629,
+      "line_start": 133,
+      "line_end": 133,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00132",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8629,
+      "char_end": 8749,
+      "line_start": 134,
+      "line_end": 134,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00133",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8749,
+      "char_end": 8750,
+      "line_start": 135,
+      "line_end": 135,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00134",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8750,
+      "char_end": 8904,
+      "line_start": 136,
+      "line_end": 136,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "content",
+      "block_id": "B00135",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8904,
+      "char_end": 8905,
+      "line_start": 137,
+      "line_end": 137,
+      "chapter_path": "3. POSTUPAK / 3.4. Preuzimanje usluge/proizvoda",
+      "nearest_heading": "3.4. Preuzimanje usluge/proizvoda",
+      "kind": "blank",
+      "block_id": "B00136",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8905,
+      "char_end": 8918,
+      "line_start": 138,
+      "line_end": 138,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "heading",
+      "block_id": "B00137",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8918,
+      "char_end": 8919,
+      "line_start": 139,
+      "line_end": 139,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00138",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8919,
+      "char_end": 9040,
+      "line_start": 140,
+      "line_end": 140,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00139",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9040,
+      "char_end": 9041,
+      "line_start": 141,
+      "line_end": 141,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00140",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9041,
+      "char_end": 9175,
+      "line_start": 142,
+      "line_end": 142,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00141",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9175,
+      "char_end": 9176,
+      "line_start": 143,
+      "line_end": 143,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00142",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9176,
+      "char_end": 9358,
+      "line_start": 144,
+      "line_end": 144,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00143",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9358,
+      "char_end": 9359,
+      "line_start": 145,
+      "line_end": 145,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00144",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9359,
+      "char_end": 9521,
+      "line_start": 146,
+      "line_end": 146,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00145",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9521,
+      "char_end": 9522,
+      "line_start": 147,
+      "line_end": 147,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00146",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9522,
+      "char_end": 9532,
+      "line_start": 148,
+      "line_end": 148,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "heading",
+      "block_id": "B00147",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 9532,
+      "char_end": 9533,
+      "line_start": 149,
+      "line_end": 149,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00148",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9533,
+      "char_end": 9671,
+      "line_start": 150,
+      "line_end": 150,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00149",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9671,
+      "char_end": 9672,
+      "line_start": 151,
+      "line_end": 151,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00150",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9672,
+      "char_end": 9803,
+      "line_start": 152,
+      "line_end": 152,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00151",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9803,
+      "char_end": 9804,
+      "line_start": 153,
+      "line_end": 153,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00152",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9804,
+      "char_end": 9823,
+      "line_start": 154,
+      "line_end": 154,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00153",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9823,
+      "char_end": 9824,
+      "line_start": 155,
+      "line_end": 155,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00154",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9824,
+      "char_end": 9881,
+      "line_start": 156,
+      "line_end": 156,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00155",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9881,
+      "char_end": 9944,
+      "line_start": 157,
+      "line_end": 157,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00156",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9944,
+      "char_end": 10074,
+      "line_start": 158,
+      "line_end": 158,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00157",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10074,
+      "char_end": 10145,
+      "line_start": 159,
+      "line_end": 159,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00158",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10145,
+      "char_end": 10298,
+      "line_start": 160,
+      "line_end": 160,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00159",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10298,
+      "char_end": 10376,
+      "line_start": 161,
+      "line_end": 161,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00160",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10376,
+      "char_end": 10377,
+      "line_start": 162,
+      "line_end": 162,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00161",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10377,
+      "char_end": 10471,
+      "line_start": 163,
+      "line_end": 163,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00162",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10471,
+      "char_end": 10472,
+      "line_start": 164,
+      "line_end": 164,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00163",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10472,
+      "char_end": 10479,
+      "line_start": 165,
+      "line_end": 165,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00164",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10479,
+      "char_end": 10480,
+      "line_start": 166,
+      "line_end": 166,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00165",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10480,
+      "char_end": 10488,
+      "line_start": 167,
+      "line_end": 167,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00166",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10488,
+      "char_end": 10489,
+      "line_start": 168,
+      "line_end": 168,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00167",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10489,
+      "char_end": 10519,
+      "line_start": 169,
+      "line_end": 169,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00168",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10519,
+      "char_end": 10520,
+      "line_start": 170,
+      "line_end": 170,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00169",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10520,
+      "char_end": 10539,
+      "line_start": 171,
+      "line_end": 171,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00170",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10539,
+      "char_end": 10540,
+      "line_start": 172,
+      "line_end": 172,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00171",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10540,
+      "char_end": 10552,
+      "line_start": 173,
+      "line_end": 173,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00172",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10552,
+      "char_end": 10553,
+      "line_start": 174,
+      "line_end": 174,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00173",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10553,
+      "char_end": 10566,
+      "line_start": 175,
+      "line_end": 175,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00174",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10566,
+      "char_end": 10567,
+      "line_start": 176,
+      "line_end": 176,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00175",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10567,
+      "char_end": 10736,
+      "line_start": 177,
+      "line_end": 177,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00176",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10736,
+      "char_end": 10737,
+      "line_start": 178,
+      "line_end": 178,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00177",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10737,
+      "char_end": 10886,
+      "line_start": 179,
+      "line_end": 179,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00178",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10886,
+      "char_end": 10887,
+      "line_start": 180,
+      "line_end": 180,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00179",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10887,
+      "char_end": 10906,
+      "line_start": 181,
+      "line_end": 181,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00180",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10906,
+      "char_end": 10907,
+      "line_start": 182,
+      "line_end": 182,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00181",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10907,
+      "char_end": 10975,
+      "line_start": 183,
+      "line_end": 183,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00182",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10975,
+      "char_end": 11064,
+      "line_start": 184,
+      "line_end": 184,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00183",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11064,
+      "char_end": 11155,
+      "line_start": 185,
+      "line_end": 185,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00184",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11155,
+      "char_end": 11216,
+      "line_start": 186,
+      "line_end": 186,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00185",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11216,
+      "char_end": 11279,
+      "line_start": 187,
+      "line_end": 187,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00186",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11279,
+      "char_end": 11361,
+      "line_start": 188,
+      "line_end": 188,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00187",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11361,
+      "char_end": 11422,
+      "line_start": 189,
+      "line_end": 189,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00188",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11422,
+      "char_end": 11548,
+      "line_start": 190,
+      "line_end": 190,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00189",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11548,
+      "char_end": 11549,
+      "line_start": 191,
+      "line_end": 191,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00190",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11549,
+      "char_end": 11643,
+      "line_start": 192,
+      "line_end": 192,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00191",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11643,
+      "char_end": 11644,
+      "line_start": 193,
+      "line_end": 193,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00192",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11644,
+      "char_end": 11651,
+      "line_start": 194,
+      "line_end": 194,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00193",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11651,
+      "char_end": 11652,
+      "line_start": 195,
+      "line_end": 195,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00194",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11652,
+      "char_end": 11660,
+      "line_start": 196,
+      "line_end": 196,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00195",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11660,
+      "char_end": 11661,
+      "line_start": 197,
+      "line_end": 197,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00196",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11661,
+      "char_end": 11691,
+      "line_start": 198,
+      "line_end": 198,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00197",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11691,
+      "char_end": 11692,
+      "line_start": 199,
+      "line_end": 199,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00198",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11692,
+      "char_end": 11709,
+      "line_start": 200,
+      "line_end": 200,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00199",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11709,
+      "char_end": 11710,
+      "line_start": 201,
+      "line_end": 201,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00200",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11710,
+      "char_end": 11721,
+      "line_start": 202,
+      "line_end": 202,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00201",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11721,
+      "char_end": 11722,
+      "line_start": 203,
+      "line_end": 203,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "blank",
+      "block_id": "B00202",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11722,
+      "char_end": 11730,
+      "line_start": 204,
+      "line_end": 204,
+      "chapter_path": "4. ZAPISI / IZJAVA",
+      "nearest_heading": "IZJAVA",
+      "kind": "content",
+      "block_id": "B00203",
+      "disposition": "no_keyword_match"
+    }
+  ]
+}

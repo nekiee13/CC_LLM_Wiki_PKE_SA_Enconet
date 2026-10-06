@@ -9,3 +9,8 @@ schemas/*.yml text eol=lf
 manifests/*.csv text eol=lf
 wiki/**/.gitkeep text eol=lf
 .bootstrap/**/*.jsonl text eol=lf
+
+# These hash-bound review bundles must survive checkout byte-for-byte.
+# They are candidate evidence, not replacements for registered raw sources.
+out/2026-10-06/full-keyword-sweep-verified/** -text whitespace=-blank-at-eol,-blank-at-eof
+sieving/candidates/manual-full-20261006/** -text whitespace=-blank-at-eol,-blank-at-eof

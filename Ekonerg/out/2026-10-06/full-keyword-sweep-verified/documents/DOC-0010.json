@@ -1,0 +1,1778 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0010",
+  "filename": "PQ07.1-2_r5_Kontrola_opreme_za_mjerenje,_inspekcij.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "9fc2077bf90ad74fec3be053ba762954d7c0141088ce29c90525e53c14d17fb8",
+  "registered_source_sha256": "9fc2077bf90ad74fec3be053ba762954d7c0141088ce29c90525e53c14d17fb8",
+  "source_changed": false,
+  "source_bytes": 3589,
+  "source_characters": 3531,
+  "source_lines": 73,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 89,
+      "char_end": 106,
+      "quote_original": "Oznaka: PQ. 7.1-2",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 166,
+      "char_end": 177,
+      "quote_original": "Revizija: 5",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 11,
+      "line_end": 11,
+      "char_start": 179,
+      "char_end": 215,
+      "quote_original": "Pripremio: Tomislav Hršak, dipl.ing.",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00013",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 13,
+      "line_end": 13,
+      "char_start": 217,
+      "char_end": 223,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 225,
+      "char_end": 236,
+      "quote_original": "29.01.2019.",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00017",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 17,
+      "line_end": 17,
+      "char_start": 238,
+      "char_end": 275,
+      "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00019",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 19,
+      "line_end": 19,
+      "char_start": 277,
+      "char_end": 283,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00021",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 21,
+      "line_end": 21,
+      "char_start": 285,
+      "char_end": 296,
+      "quote_original": "29.01.2019.",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00023",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 23,
+      "line_end": 23,
+      "char_start": 298,
+      "char_end": 344,
+      "quote_original": "Odobrio: Mr.sc. Zdravko Mužek, dipl.ing.stroj.",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00025",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 25,
+      "line_end": 25,
+      "char_start": 346,
+      "char_end": 352,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00027",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 27,
+      "line_end": 27,
+      "char_start": 354,
+      "char_end": 365,
+      "quote_original": "30.01.2019.",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "mjeren"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00033",
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "line_start": 33,
+      "line_end": 33,
+      "char_start": 395,
+      "char_end": 641,
+      "quote_original": "Ovaj se postupak primjenjuje na svu opremu/instrumente koji se u EKONERG-u koriste za provođenje kontrole, inspekcije, testiranja i mjerenja, osim opreme/instrumenata koji se koriste u Laboratoriju, što je definirano u dokumentaciji Laboratorija.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc",
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren",
+            "instrument"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00037",
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "line_start": 37,
+      "line_end": 37,
+      "char_start": 659,
+      "char_end": 906,
+      "quote_original": "Svrha je ovog postupka da uspostavi kontrolni sustav koji osigurava da se za mjerenje, testiranje, inspekciju i kontrolu koristi samo ispravna i podešena oprema, te da o tome postoji pisani dokaz, ako se to u propisima ili na drugi način zahtjeva.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc",
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00051",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 51,
+      "line_end": 51,
+      "char_start": 1078,
+      "char_end": 1242,
+      "quote_original": "1. 2.1. Direktor odjela/voditelj tima odgovoran je da u aktivnostima svoga odjela/tima koristi samo ispravnu i podešenu opremu za mjerenje, inspekciju i testiranje.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00052",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 52,
+      "line_end": 52,
+      "char_start": 1243,
+      "char_end": 1365,
+      "quote_original": "2. 2.2. Osoba koja provodi kontrole, inspekcije, testiranja i mjerenja dužna je provjeriti da li radi s ispravnom opremom.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc",
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00053",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 53,
+      "line_end": 53,
+      "char_start": 1366,
+      "char_end": 1635,
+      "quote_original": "3. 2.3. Direktor odjela koji je zadužen za pojedinu opremu/instrumente odgovoran je da se ona periodički provjerava i podešava, te da o tome vodi evidenciju kako se to propisima ili postupcima zahtjeva. On je odgovoran za pripremu postupaka koji definiraju podešavanje.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "instrument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00054",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 54,
+      "line_end": 54,
+      "char_start": 1636,
+      "char_end": 1847,
+      "quote_original": "4. 2.4. Voditelj Q/EP/HS službe zadužen je za povremenu provjeru da je oprema za mjerenje, inspekcije, testiranja i kontrole, podešena, te da o tome postoji pisani dokaz i/ili oznaka na opremi, ako se zahtijeva.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc",
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00055",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 55,
+      "line_end": 55,
+      "char_start": 1848,
+      "char_end": 1973,
+      "quote_original": "5. 2.5. Direktor EKONERG-a odgovoran je za uspostavu i primjenu sustava kontrole opreme za inspekciju, mjerenje i testiranja.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc",
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00059",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 59,
+      "line_end": 59,
+      "char_start": 1991,
+      "char_end": 2246,
+      "quote_original": "1. 3.1. Direktori odjela, koji koriste i zaduženi su za opremu/instrumente za mjerenje, ispitivanje i testiranje, dužni su osigurati da se ona periodički provjerava i podešava, te da se o tome vodi evidencija kako se to propisima ili postupcima zahtijeva.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "ispitiv",
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren",
+            "instrument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 67,
+      "line_end": 67,
+      "char_start": 2377,
+      "char_end": 2758,
+      "quote_original": "1. 3.2. Ako se oni provjeravaju i podešavaju u EKONERG-u, potrebno je razviti postupke za podešavanje te opreme/instrumenata u skladu sa zahtjevima propisa/standarda, te uputa proizvođača opreme/instrumenata. Postupci trebaju opisati odgovornosti, način podešenja, intervale podešavanja za pojedinu opremu/instrumente, te način vođenja evidencije i označavanja statusa podešenosti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup",
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "instrument"
+          ],
+          "heading_terms": [
+            "mjeren"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status",
+            "oznac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00068",
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 68,
+      "line_end": 68,
+      "char_start": 2759,
+      "char_end": 3018,
+      "quote_original": "2. 3.3. Voditelj Q/EP/HS službe ili od njega određeni Q/EP/HS inženjer periodički provjerava da li se koristi ispravna i podešena oprema/instrumenti za mjerenje, inspekciju, testiranje, te da li je ona ispravno označena statusom kalibracije, ako se zahtijeva.",
+      "matches": {
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc"
+          ],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren",
+            "kalibr",
+            "instrument"
+          ],
+          "heading_terms": [
+            "mjeren"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status",
+            "oznac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00069",
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "line_start": 69,
+      "line_end": 69,
+      "char_start": 3019,
+      "char_end": 3305,
+      "quote_original": "3. 3.4. Q/EP/HS služba periodički provjerava kod Direktora odjela u EKONERG-u da li se oprema/instrumenti za mjerenje, inspekciju, testiranje i kontrolu, za koju su zaduženi odjeli, periodički, odnosno u skladu sa zahtjevima propisa/postupaka podešava, te o tome vodi ažurna evidencija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspekc",
+            "kontrol"
+          ],
+          "heading_terms": [
+            "inspekc",
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren",
+            "instrument"
+          ],
+          "heading_terms": [
+            "mjeren"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00073",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 73,
+      "line_end": 73,
+      "char_start": 3323,
+      "char_end": 3531,
+      "quote_original": "Liste opreme/instrumenata sa statusom podešenja čuvaju se u arhivi Direktora odjela koji je zadužen za dotičnu opremu. Zapisi o kontroli podešenosti opreme čuvaju se u arhivi odjela koji je zadužen za opremu.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis",
+            "arhiv"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 57,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "image_reference_only",
+      "block_id": "B00001",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 57,
+      "char_end": 58,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 58,
+      "char_end": 88,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 88,
+      "char_end": 89,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 89,
+      "char_end": 107,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 107,
+      "char_end": 108,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00006",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 108,
+      "char_end": 165,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "heading",
+      "block_id": "B00007",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 165,
+      "char_end": 166,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 166,
+      "char_end": 178,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 178,
+      "char_end": 179,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 179,
+      "char_end": 216,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 216,
+      "char_end": 217,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 217,
+      "char_end": 224,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 224,
+      "char_end": 225,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00014",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 225,
+      "char_end": 237,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 237,
+      "char_end": 238,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 238,
+      "char_end": 276,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00017",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 276,
+      "char_end": 277,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 277,
+      "char_end": 284,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 284,
+      "char_end": 285,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00020",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 285,
+      "char_end": 297,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00021",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 297,
+      "char_end": 298,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00022",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 298,
+      "char_end": 345,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00023",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 345,
+      "char_end": 346,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00024",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 346,
+      "char_end": 353,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00025",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 353,
+      "char_end": 354,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00026",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 354,
+      "char_end": 366,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 366,
+      "char_end": 367,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 367,
+      "char_end": 378,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "heading",
+      "block_id": "B00029",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 378,
+      "char_end": 379,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 379,
+      "char_end": 394,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "heading",
+      "block_id": "B00031",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 394,
+      "char_end": 395,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 395,
+      "char_end": 642,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "content",
+      "block_id": "B00033",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 642,
+      "char_end": 643,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 643,
+      "char_end": 658,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "heading",
+      "block_id": "B00035",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 658,
+      "char_end": 659,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 659,
+      "char_end": 907,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00037",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 907,
+      "char_end": 908,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 908,
+      "char_end": 927,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "heading",
+      "block_id": "B00039",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 927,
+      "char_end": 928,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00040",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 928,
+      "char_end": 959,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00041",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 959,
+      "char_end": 960,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00042",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 960,
+      "char_end": 992,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 992,
+      "char_end": 993,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00044",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 993,
+      "char_end": 1025,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00045",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1025,
+      "char_end": 1026,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1026,
+      "char_end": 1058,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00047",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1058,
+      "char_end": 1059,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00048",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1059,
+      "char_end": 1077,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "heading",
+      "block_id": "B00049",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1077,
+      "char_end": 1078,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00050",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1078,
+      "char_end": 1243,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00051",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1243,
+      "char_end": 1366,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00052",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1366,
+      "char_end": 1636,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00053",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1636,
+      "char_end": 1848,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00054",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1848,
+      "char_end": 1974,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00055",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1974,
+      "char_end": 1975,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00056",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1975,
+      "char_end": 1990,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "heading",
+      "block_id": "B00057",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1990,
+      "char_end": 1991,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00058",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1991,
+      "char_end": 2247,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00059",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2247,
+      "char_end": 2248,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00060",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2248,
+      "char_end": 2305,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "image_reference_only",
+      "block_id": "B00061",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 2305,
+      "char_end": 2306,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00062",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2306,
+      "char_end": 2318,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2",
+      "nearest_heading": "PQ.7.1-2",
+      "kind": "heading",
+      "block_id": "B00063",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2318,
+      "char_end": 2319,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2",
+      "nearest_heading": "PQ.7.1-2",
+      "kind": "blank",
+      "block_id": "B00064",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2319,
+      "char_end": 2376,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "heading",
+      "block_id": "B00065",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2376,
+      "char_end": 2377,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00066",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2377,
+      "char_end": 2759,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2759,
+      "char_end": 3019,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00068",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3019,
+      "char_end": 3306,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "content",
+      "block_id": "B00069",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3306,
+      "char_end": 3307,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "3. POSTUPAK / PQ.7.1-2 / KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "nearest_heading": "KONTROLA OPREME ZA MJERENJE, INSPEKCIJU I TESTIRANJE",
+      "kind": "blank",
+      "block_id": "B00070",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3307,
+      "char_end": 3322,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "heading",
+      "block_id": "B00071",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3322,
+      "char_end": 3323,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00072",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3323,
+      "char_end": 3531,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00073",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

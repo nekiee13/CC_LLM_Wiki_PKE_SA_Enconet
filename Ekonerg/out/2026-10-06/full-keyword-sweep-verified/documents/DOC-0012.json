@@ -1,0 +1,3966 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0012",
+  "filename": "PQ07.5-3_r3_Kontrolni_postupci.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "0f264be9ea5b8d630567040174a359845cf44e9354f29232387b6b72f08fb1ea",
+  "registered_source_sha256": "0f264be9ea5b8d630567040174a359845cf44e9354f29232387b6b72f08fb1ea",
+  "source_changed": false,
+  "source_bytes": 6274,
+  "source_characters": 6225,
+  "source_lines": 167,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 89,
+      "char_end": 105,
+      "quote_original": "Oznaka: PQ.7.5-3",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 130,
+      "char_end": 141,
+      "quote_original": "Revizija: 3",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 11,
+      "line_end": 11,
+      "char_start": 143,
+      "char_end": 179,
+      "quote_original": "Pripremio: Tomislav Hršak, dipl.ing.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00013",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 13,
+      "line_end": 13,
+      "char_start": 181,
+      "char_end": 187,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 189,
+      "char_end": 200,
+      "quote_original": "03.03.2016.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00017",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 17,
+      "line_end": 17,
+      "char_start": 202,
+      "char_end": 239,
+      "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00019",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 19,
+      "line_end": 19,
+      "char_start": 241,
+      "char_end": 247,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00021",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 21,
+      "line_end": 21,
+      "char_start": 249,
+      "char_end": 260,
+      "quote_original": "05.03.2016.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00023",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 23,
+      "line_end": 23,
+      "char_start": 262,
+      "char_end": 308,
+      "quote_original": "Odobrio: Mr.sc. Zdravko Mužek, dipl.ing.stroj.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00025",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 25,
+      "line_end": 25,
+      "char_start": 310,
+      "char_end": 316,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00027",
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "line_start": 27,
+      "line_end": 27,
+      "char_start": 318,
+      "char_end": 329,
+      "quote_original": "06.03.2016.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00035",
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "line_start": 35,
+      "line_end": 35,
+      "char_start": 417,
+      "char_end": 627,
+      "quote_original": "Postupak se odnosi na kontrolne postupke tj. radne postupke za provedbu nadzora nad primjenom sustava kvalitete i aktivnosti drugih organizacija, koje suradnici EKONERG-a koriste u kontroli provedbe aktivnosti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "nadzor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00039",
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "line_start": 39,
+      "line_end": 39,
+      "char_start": 645,
+      "char_end": 788,
+      "quote_original": "Svrha je ovog postupka definirati odgovornost za pripremu, pregled, revizije i promjene, te standardni format za pripremu kontrolnih postupaka.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00047",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 47,
+      "line_end": 47,
+      "char_start": 861,
+      "char_end": 1044,
+      "quote_original": "1. 1.1. Suradnik u EKONERG-u zadužen od strane Voditelja Q/EP/HS službe ili Direktora odjela odgovoran je za pripremu kontrolnog postupka po kojem se kontrola neke aktivnosti obavlja.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00048",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 48,
+      "line_end": 48,
+      "char_start": 1045,
+      "char_end": 1200,
+      "quote_original": "2. 1.2. Voditelj Q/EP/HS službe ili osoba koju odredi Voditelj Q/EP/HS službe odgovoran je za pregled kontrolnog postupka, te njegovih promjena i revizija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00049",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 49,
+      "line_end": 49,
+      "char_start": 1201,
+      "char_end": 1307,
+      "quote_original": "3. 1.3. Direktor EKONERG-a odgovoran je za odobrenje kontrolnog postupka, te njegovih promjena i revizija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij",
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00055",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 55,
+      "line_end": 55,
+      "char_start": 1374,
+      "char_end": 1442,
+      "quote_original": "Kontrolni postupak sastoji se od 5 točaka s podtočkama kako slijedi:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00057",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 57,
+      "line_end": 57,
+      "char_start": 1444,
+      "char_end": 1557,
+      "quote_original": "1. 1. SVRHA I OPSEG - treba ukratko obrazložiti svrhu pripreme postupka i opseg aktivnosti na koji se primjenjuje",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00058",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 58,
+      "line_end": 58,
+      "char_start": 1558,
+      "char_end": 1682,
+      "quote_original": "2. 2. REFERENTNI PROPISI I ZAHTJEVI - treba navesti propise ili zahtjeve iz propisa koji se odnose na kontroliranu aktivnost",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00059",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 59,
+      "line_end": 59,
+      "char_start": 1683,
+      "char_end": 1781,
+      "quote_original": "3. 3. POSTUPAK KONTROLE a) Preduvjeti - ukratko treba opisati preduvjete za pristupanje aktivnosti",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00063",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 63,
+      "line_end": 63,
+      "char_start": 1841,
+      "char_end": 2011,
+      "quote_original": "| b) Provedba kontrole                                       | - ukratko opisati što se sve u toku aktivnosti kontrolira i na koji način                                 |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00065",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 65,
+      "line_end": 65,
+      "char_start": 2183,
+      "char_end": 2353,
+      "quote_original": "| c) Dokumentacija kojom se registrira obavljanje aktivnosti | - ukratko navesti koju sve dokumentaciju treba generirati izvoditelj aktivnosti i što ona mora sadržavati |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "regist"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00066",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 66,
+      "line_end": 66,
+      "char_start": 2354,
+      "char_end": 2524,
+      "quote_original": "| 4. DOKUMENTACIJA                                           | - navesti kako se dokumentira kontrola aktivnosti                                                         |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "line_start": 67,
+      "line_end": 67,
+      "char_start": 2525,
+      "char_end": 2695,
+      "quote_original": "| 5. PRILOZI                                                 | - navesti priloge koji se koriste u postupku kontrole (npr. kontrolne liste, izvodi iz propisa i sl.)     |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup",
+            "kontroln.{0,15}list"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00071",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 71,
+      "line_end": 71,
+      "char_start": 2739,
+      "char_end": 2888,
+      "quote_original": "3.2.1. Kontrolni postupci pripremaju se na obrascu PQ.4-3.1 u prilogu A (naslovna stranica) i PQ.4-3.2 u prilogu B (slijedna stranica) ovog postupka.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00073",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 73,
+      "line_end": 73,
+      "char_start": 2890,
+      "char_end": 2961,
+      "quote_original": "3.2.2. Kontrolni postupci imaju naslove koji definiraju njihov sadržaj.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00075",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 75,
+      "line_end": 75,
+      "char_start": 2963,
+      "char_end": 3043,
+      "quote_original": "3.2.3. Oznaka kontrolnog postupka sastoji se od alfabetskog i numeričkog dijela:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00077",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 77,
+      "line_end": 77,
+      "char_start": 3045,
+      "char_end": 3130,
+      "quote_original": "- – alfabetski dio označava kojem području aktivnosti pripada postupak, kako slijedi:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00079",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 79,
+      "line_end": 79,
+      "char_start": 3132,
+      "char_end": 3205,
+      "quote_original": "| KSPR | - kontrola specijalnih procesa (zavarivanje, toplinska obrada) |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_IX": {
+          "quote_terms": [
+            "specijaln",
+            "zavar",
+            "toplinsk.{0,15}obrad"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00081",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 81,
+      "line_end": 81,
+      "char_start": 3280,
+      "char_end": 3353,
+      "quote_original": "| KFIS | - kontrola funkcionalnih ispitivanja                           |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "ispitiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00082",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 82,
+      "line_end": 82,
+      "char_start": 3354,
+      "char_end": 3427,
+      "quote_original": "| KBIS | - kontrola bezrazornih ispitivanja                             |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "ispitiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00083",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 83,
+      "line_end": 83,
+      "char_start": 3428,
+      "char_end": 3501,
+      "quote_original": "| KSMA | - kontrola svojstava materijala                                |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00084",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 84,
+      "line_end": 84,
+      "char_start": 3502,
+      "char_end": 3575,
+      "quote_original": "| KTPN | - kontrola tlačne probe i probe nepropusnosti                  |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00085",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 85,
+      "line_end": 85,
+      "char_start": 3576,
+      "char_end": 3649,
+      "quote_original": "| KDOP | - kontrola dimenzija, oblika i obrade površina                 |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00086",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 86,
+      "line_end": 86,
+      "char_start": 3650,
+      "char_end": 3723,
+      "quote_original": "| KAKZ | - kontrola antikorozivne zaštite                               |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_IX": {
+          "quote_terms": [
+            "antikoroz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00087",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 87,
+      "line_end": 87,
+      "char_start": 3724,
+      "char_end": 3797,
+      "quote_original": "| KVBB | - kontrola vibracija, balansiranja i buke                      |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00088",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 88,
+      "line_end": 88,
+      "char_start": 3798,
+      "char_end": 3871,
+      "quote_original": "| KPAK | - kontrola proizvodnih aktivnosti                              |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00089",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 89,
+      "line_end": 89,
+      "char_start": 3872,
+      "char_end": 3945,
+      "quote_original": "| KRAK | - kontrola remontnih aktivnosti                                |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00090",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 90,
+      "line_end": 90,
+      "char_start": 3946,
+      "char_end": 4019,
+      "quote_original": "| KMAK | - kontrola montažnih aktivnosti                                |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00091",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 91,
+      "line_end": 91,
+      "char_start": 4020,
+      "char_end": 4093,
+      "quote_original": "| KSPA | - kontrola studijskih/projektnih aktivnosti                    |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00092",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 92,
+      "line_end": 92,
+      "char_start": 4094,
+      "char_end": 4167,
+      "quote_original": "| KUSL | - kontrola izvođenja raznih usluga                             |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00093",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 93,
+      "line_end": 93,
+      "char_start": 4168,
+      "char_end": 4241,
+      "quote_original": "| KDOK | - kontrola dokumentacije                                       |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00094",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 94,
+      "line_end": 94,
+      "char_start": 4242,
+      "char_end": 4315,
+      "quote_original": "| KOST | - kontrola ostalih aktivnosti                                  |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00096",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 96,
+      "line_end": 96,
+      "char_start": 4317,
+      "char_end": 4395,
+      "quote_original": "- – numerički dio se sastoji od arapskog broja, koji predstavlja broj postupka",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00098",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 98,
+      "line_end": 98,
+      "char_start": 4397,
+      "char_end": 4468,
+      "quote_original": "Npr. KSPR-2 predstavlja postupak br. 2 iz područja specijalnih procesa.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_IX": {
+          "quote_terms": [
+            "specijaln"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00102",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 102,
+      "line_end": 102,
+      "char_start": 4528,
+      "char_end": 4732,
+      "quote_original": "- 3.3.1 Kontrolni postupak te njegove revizije i promjene priprema suradnik u EKONERG-u ili druga osoba koju na temelju njenog specijalističkog znanja određuje Direktor odjela ili Voditelj Q/EP/HS službe.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00103",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 103,
+      "line_end": 103,
+      "char_start": 4733,
+      "char_end": 4955,
+      "quote_original": "- 3.3.2 Kontrolni postupak te njegove revizije i promjene pregledava suradnik u EKONERG-u ili druga osoba, određena od Voditelja Q/EP/HS službe, koja posjeduje specijalističko znanje i nije sudjelovala u pripremi postupka.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00104",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 104,
+      "line_end": 104,
+      "char_start": 4956,
+      "char_end": 5042,
+      "quote_original": "- 3.3.3 Kontrolni postupak te njegove revizije i promjene odobrava Direktor EKONERG-a.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij",
+            "odobrav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00105",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 105,
+      "line_end": 105,
+      "char_start": 5043,
+      "char_end": 5125,
+      "quote_original": "- 3.3.4 Pregled i odobrenje postupka, te revizija i promjena označava se potpisom.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij",
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznac",
+            "odobren"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00106",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 106,
+      "line_end": 106,
+      "char_start": 5126,
+      "char_end": 5213,
+      "quote_original": "- 3.3.5 Broj revizije označava se na prvoj strani, te svim slijednim stranama postupka.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznac"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00107",
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "line_start": 107,
+      "line_end": 107,
+      "char_start": 5214,
+      "char_end": 5281,
+      "quote_original": "- 3.3.6 Ako se dodaje stranica, imat će uz broj alfabetski dodatak.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00111",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 111,
+      "line_end": 111,
+      "char_start": 5312,
+      "char_end": 5498,
+      "quote_original": "Kopije kontrolnih postupaka dostavljaju se svim suradnicima EKONERG-a, koji prema njima provode kontrolne aktivnosti, u skladu s distribucijskom listom koju vodi Voditelj Q/EP/HS službe.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "distribuc"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00113",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 113,
+      "line_end": 113,
+      "char_start": 5500,
+      "char_end": 5575,
+      "quote_original": "Originali kontrolnih postupaka čuvaju se u arhivi Q/EP/HS službe EKONERG-a.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "arhiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00115",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 115,
+      "line_end": 115,
+      "char_start": 5577,
+      "char_end": 5720,
+      "quote_original": "Važeći popis kontrolnih postupaka, kao i važeća revizija svih novorazvijenih kontrolnih postupaka objavljeni su na intranet stranici EKONERG-a.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00119",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 119,
+      "line_end": 119,
+      "char_start": 5780,
+      "char_end": 5788,
+      "quote_original": "PRILOG A",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00121",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 121,
+      "line_end": 121,
+      "char_start": 5790,
+      "char_end": 5797,
+      "quote_original": "EKONERG",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00125",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 125,
+      "line_end": 125,
+      "char_start": 5856,
+      "char_end": 5878,
+      "quote_original": "**KONTROLNI POSTUPAK**",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00127",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 127,
+      "line_end": 127,
+      "char_start": 5880,
+      "char_end": 5891,
+      "quote_original": "**Oznaka:**",
+      "matches": {
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00129",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 129,
+      "line_end": 129,
+      "char_start": 5893,
+      "char_end": 5905,
+      "quote_original": "**(NASLOV)**",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00131",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 131,
+      "line_end": 131,
+      "char_start": 5907,
+      "char_end": 5920,
+      "quote_original": "**Revizija:**",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00133",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 133,
+      "line_end": 133,
+      "char_start": 5922,
+      "char_end": 5932,
+      "quote_original": "Pripremio:",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00135",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 135,
+      "line_end": 135,
+      "char_start": 5934,
+      "char_end": 5940,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00137",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 137,
+      "line_end": 137,
+      "char_start": 5942,
+      "char_end": 5952,
+      "quote_original": "Pregledao:",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00141",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 141,
+      "line_end": 141,
+      "char_start": 5961,
+      "char_end": 5967,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00143",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 143,
+      "line_end": 143,
+      "char_start": 5969,
+      "char_end": 5977,
+      "quote_original": "Odobrio:",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00147",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 147,
+      "line_end": 147,
+      "char_start": 5986,
+      "char_end": 5992,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00153",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 153,
+      "line_end": 153,
+      "char_start": 6058,
+      "char_end": 6070,
+      "quote_original": "**PRILOG B**",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00155",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 155,
+      "line_end": 155,
+      "char_start": 6072,
+      "char_end": 6083,
+      "quote_original": "**EKONERG**",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00157",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 157,
+      "line_end": 157,
+      "char_start": 6085,
+      "char_end": 6093,
+      "quote_original": "(OZNAKA)",
+      "matches": {
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00159",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 159,
+      "line_end": 160,
+      "char_start": 6095,
+      "char_end": 6124,
+      "quote_original": "KONTROLNI POSTUPAK  \n(NASLOV)",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00163",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 164,
+      "line_end": 164,
+      "char_start": 6183,
+      "char_end": 6201,
+      "quote_original": "(Obrazac PQ.4-3.2)",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00165",
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "line_start": 166,
+      "line_end": 167,
+      "char_start": 6203,
+      "char_end": 6225,
+      "quote_original": "Revizija:  \nStranica /",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "spremanj",
+            "cuvanj"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 57,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "image_reference_only",
+      "block_id": "B00001",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 57,
+      "char_end": 58,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 58,
+      "char_end": 88,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 88,
+      "char_end": 89,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 89,
+      "char_end": 106,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 106,
+      "char_end": 107,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00006",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 107,
+      "char_end": 129,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "heading",
+      "block_id": "B00007",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 129,
+      "char_end": 130,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 130,
+      "char_end": 142,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 142,
+      "char_end": 143,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 143,
+      "char_end": 180,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 180,
+      "char_end": 181,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 181,
+      "char_end": 188,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 188,
+      "char_end": 189,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00014",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 189,
+      "char_end": 201,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 201,
+      "char_end": 202,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 202,
+      "char_end": 240,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00017",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 240,
+      "char_end": 241,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 241,
+      "char_end": 248,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 248,
+      "char_end": 249,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00020",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 249,
+      "char_end": 261,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00021",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 261,
+      "char_end": 262,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00022",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 262,
+      "char_end": 309,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00023",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 309,
+      "char_end": 310,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00024",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 310,
+      "char_end": 317,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00025",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 317,
+      "char_end": 318,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00026",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 318,
+      "char_end": 330,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 330,
+      "char_end": 331,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 331,
+      "char_end": 388,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "image_reference_only",
+      "block_id": "B00029",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 388,
+      "char_end": 389,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "KONTROLNI POSTUPCI",
+      "nearest_heading": "KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 389,
+      "char_end": 400,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "heading",
+      "block_id": "B00031",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 400,
+      "char_end": 401,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 401,
+      "char_end": 416,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "heading",
+      "block_id": "B00033",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 416,
+      "char_end": 417,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 417,
+      "char_end": 628,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "content",
+      "block_id": "B00035",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 628,
+      "char_end": 629,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 629,
+      "char_end": 644,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "heading",
+      "block_id": "B00037",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 644,
+      "char_end": 645,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 645,
+      "char_end": 789,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00039",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 789,
+      "char_end": 790,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00040",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 790,
+      "char_end": 809,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "heading",
+      "block_id": "B00041",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 809,
+      "char_end": 810,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00042",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 810,
+      "char_end": 841,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 841,
+      "char_end": 842,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00044",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 842,
+      "char_end": 860,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "heading",
+      "block_id": "B00045",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 860,
+      "char_end": 861,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 861,
+      "char_end": 1045,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00047",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1045,
+      "char_end": 1201,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00048",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1201,
+      "char_end": 1308,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00049",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1308,
+      "char_end": 1309,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00050",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1309,
+      "char_end": 1334,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "3. KONTROLNI POSTUPCI",
+      "nearest_heading": "3. KONTROLNI POSTUPCI",
+      "kind": "heading",
+      "block_id": "B00051",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1334,
+      "char_end": 1335,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "3. KONTROLNI POSTUPCI",
+      "nearest_heading": "3. KONTROLNI POSTUPCI",
+      "kind": "blank",
+      "block_id": "B00052",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1335,
+      "char_end": 1373,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "heading",
+      "block_id": "B00053",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1373,
+      "char_end": 1374,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00054",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1374,
+      "char_end": 1443,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00055",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1443,
+      "char_end": 1444,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00056",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1444,
+      "char_end": 1558,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00057",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1558,
+      "char_end": 1683,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00058",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1683,
+      "char_end": 1782,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00059",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1782,
+      "char_end": 1783,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00060",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1783,
+      "char_end": 1840,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "image_reference_only",
+      "block_id": "B00061",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 1840,
+      "char_end": 1841,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00062",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1841,
+      "char_end": 2012,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00063",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2012,
+      "char_end": 2183,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00064",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 2183,
+      "char_end": 2354,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00065",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2354,
+      "char_end": 2525,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00066",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2525,
+      "char_end": 2696,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2696,
+      "char_end": 2697,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.1. Sadržaj kontrolnih postupaka",
+      "nearest_heading": "3.1. Sadržaj kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00068",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2697,
+      "char_end": 2738,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "heading",
+      "block_id": "B00069",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2738,
+      "char_end": 2739,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00070",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2739,
+      "char_end": 2889,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00071",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2889,
+      "char_end": 2890,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00072",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2890,
+      "char_end": 2962,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00073",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2962,
+      "char_end": 2963,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00074",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2963,
+      "char_end": 3044,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00075",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3044,
+      "char_end": 3045,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00076",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3045,
+      "char_end": 3131,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00077",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3131,
+      "char_end": 3132,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00078",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3132,
+      "char_end": 3206,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00079",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3206,
+      "char_end": 3280,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00080",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 3280,
+      "char_end": 3354,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00081",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3354,
+      "char_end": 3428,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00082",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3428,
+      "char_end": 3502,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00083",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3502,
+      "char_end": 3576,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00084",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3576,
+      "char_end": 3650,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00085",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3650,
+      "char_end": 3724,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00086",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3724,
+      "char_end": 3798,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00087",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3798,
+      "char_end": 3872,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00088",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3872,
+      "char_end": 3946,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00089",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3946,
+      "char_end": 4020,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00090",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4020,
+      "char_end": 4094,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00091",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4094,
+      "char_end": 4168,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00092",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4168,
+      "char_end": 4242,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00093",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4242,
+      "char_end": 4316,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00094",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4316,
+      "char_end": 4317,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00095",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4317,
+      "char_end": 4396,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00096",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4396,
+      "char_end": 4397,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00097",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4397,
+      "char_end": 4469,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00098",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4469,
+      "char_end": 4470,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00099",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4470,
+      "char_end": 4527,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "image_reference_only",
+      "block_id": "B00100",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 4527,
+      "char_end": 4528,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00101",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4528,
+      "char_end": 4733,
+      "line_start": 102,
+      "line_end": 102,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00102",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4733,
+      "char_end": 4956,
+      "line_start": 103,
+      "line_end": 103,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00103",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4956,
+      "char_end": 5043,
+      "line_start": 104,
+      "line_end": 104,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00104",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5043,
+      "char_end": 5126,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00105",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5126,
+      "char_end": 5214,
+      "line_start": 106,
+      "line_end": 106,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00106",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5214,
+      "char_end": 5282,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "content",
+      "block_id": "B00107",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5282,
+      "char_end": 5283,
+      "line_start": 108,
+      "line_end": 108,
+      "chapter_path": "3. KONTROLNI POSTUPCI / 3.2. Format kontrolnih postupaka",
+      "nearest_heading": "3.2. Format kontrolnih postupaka",
+      "kind": "blank",
+      "block_id": "B00108",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5283,
+      "char_end": 5311,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "heading",
+      "block_id": "B00109",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5311,
+      "char_end": 5312,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00110",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5312,
+      "char_end": 5499,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00111",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5499,
+      "char_end": 5500,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00112",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5500,
+      "char_end": 5576,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00113",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5576,
+      "char_end": 5577,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00114",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5577,
+      "char_end": 5721,
+      "line_start": 115,
+      "line_end": 115,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00115",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5721,
+      "char_end": 5722,
+      "line_start": 116,
+      "line_end": 116,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00116",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5722,
+      "char_end": 5779,
+      "line_start": 117,
+      "line_end": 117,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "image_reference_only",
+      "block_id": "B00117",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 5779,
+      "char_end": 5780,
+      "line_start": 118,
+      "line_end": 118,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00118",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5780,
+      "char_end": 5789,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00119",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5789,
+      "char_end": 5790,
+      "line_start": 120,
+      "line_end": 120,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00120",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5790,
+      "char_end": 5798,
+      "line_start": 121,
+      "line_end": 121,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00121",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5798,
+      "char_end": 5799,
+      "line_start": 122,
+      "line_end": 122,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00122",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5799,
+      "char_end": 5855,
+      "line_start": 123,
+      "line_end": 123,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "image_reference_only",
+      "block_id": "B00123",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 5855,
+      "char_end": 5856,
+      "line_start": 124,
+      "line_end": 124,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00124",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5856,
+      "char_end": 5879,
+      "line_start": 125,
+      "line_end": 125,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00125",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5879,
+      "char_end": 5880,
+      "line_start": 126,
+      "line_end": 126,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00126",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5880,
+      "char_end": 5892,
+      "line_start": 127,
+      "line_end": 127,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00127",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5892,
+      "char_end": 5893,
+      "line_start": 128,
+      "line_end": 128,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00128",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5893,
+      "char_end": 5906,
+      "line_start": 129,
+      "line_end": 129,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00129",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5906,
+      "char_end": 5907,
+      "line_start": 130,
+      "line_end": 130,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00130",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5907,
+      "char_end": 5921,
+      "line_start": 131,
+      "line_end": 131,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00131",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5921,
+      "char_end": 5922,
+      "line_start": 132,
+      "line_end": 132,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00132",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5922,
+      "char_end": 5933,
+      "line_start": 133,
+      "line_end": 133,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00133",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5933,
+      "char_end": 5934,
+      "line_start": 134,
+      "line_end": 134,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00134",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5934,
+      "char_end": 5941,
+      "line_start": 135,
+      "line_end": 135,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00135",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5941,
+      "char_end": 5942,
+      "line_start": 136,
+      "line_end": 136,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00136",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5942,
+      "char_end": 5953,
+      "line_start": 137,
+      "line_end": 137,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00137",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5953,
+      "char_end": 5954,
+      "line_start": 138,
+      "line_end": 138,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00138",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5954,
+      "char_end": 5960,
+      "line_start": 139,
+      "line_end": 139,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00139",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 5960,
+      "char_end": 5961,
+      "line_start": 140,
+      "line_end": 140,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00140",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5961,
+      "char_end": 5968,
+      "line_start": 141,
+      "line_end": 141,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00141",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5968,
+      "char_end": 5969,
+      "line_start": 142,
+      "line_end": 142,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00142",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5969,
+      "char_end": 5978,
+      "line_start": 143,
+      "line_end": 143,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00143",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5978,
+      "char_end": 5979,
+      "line_start": 144,
+      "line_end": 144,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00144",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5979,
+      "char_end": 5985,
+      "line_start": 145,
+      "line_end": 145,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00145",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 5985,
+      "char_end": 5986,
+      "line_start": 146,
+      "line_end": 146,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00146",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5986,
+      "char_end": 5993,
+      "line_start": 147,
+      "line_end": 147,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00147",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5993,
+      "char_end": 5994,
+      "line_start": 148,
+      "line_end": 148,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00148",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5994,
+      "char_end": 6000,
+      "line_start": 149,
+      "line_end": 149,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00149",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 6000,
+      "char_end": 6001,
+      "line_start": 150,
+      "line_end": 150,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00150",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6001,
+      "char_end": 6057,
+      "line_start": 151,
+      "line_end": 151,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "image_reference_only",
+      "block_id": "B00151",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 6057,
+      "char_end": 6058,
+      "line_start": 152,
+      "line_end": 152,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00152",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6058,
+      "char_end": 6071,
+      "line_start": 153,
+      "line_end": 153,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00153",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6071,
+      "char_end": 6072,
+      "line_start": 154,
+      "line_end": 154,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00154",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6072,
+      "char_end": 6084,
+      "line_start": 155,
+      "line_end": 155,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00155",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6084,
+      "char_end": 6085,
+      "line_start": 156,
+      "line_end": 156,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00156",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6085,
+      "char_end": 6094,
+      "line_start": 157,
+      "line_end": 157,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00157",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6094,
+      "char_end": 6095,
+      "line_start": 158,
+      "line_end": 158,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00158",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6095,
+      "char_end": 6125,
+      "line_start": 159,
+      "line_end": 160,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00159",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6125,
+      "char_end": 6126,
+      "line_start": 161,
+      "line_end": 161,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00160",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6126,
+      "char_end": 6182,
+      "line_start": 162,
+      "line_end": 162,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "image_reference_only",
+      "block_id": "B00161",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 6182,
+      "char_end": 6183,
+      "line_start": 163,
+      "line_end": 163,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00162",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6183,
+      "char_end": 6202,
+      "line_start": 164,
+      "line_end": 164,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00163",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6202,
+      "char_end": 6203,
+      "line_start": 165,
+      "line_end": 165,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "blank",
+      "block_id": "B00164",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6203,
+      "char_end": 6225,
+      "line_start": 166,
+      "line_end": 167,
+      "chapter_path": "4. SPREMANJE I ČUVANJE",
+      "nearest_heading": "4. SPREMANJE I ČUVANJE",
+      "kind": "content",
+      "block_id": "B00165",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

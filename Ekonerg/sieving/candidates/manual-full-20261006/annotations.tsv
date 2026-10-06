@@ -1,0 +1,280 @@
+start	end	criterion	strength	pass	type	statement
+5	7	II	candidate_lead	2	reference	The cover states an integrated system including ISO 9001 and Appendix B; this is declared alignment, not demonstrated compliance.
+125	127	I	supporting_control	2	role_responsibility	Quality responsibility extends across staff with a Q/EP/HS service and seven technical departments.
+129	133	XI	candidate_lead	2	reference	The organization identifies a testing laboratory; its test methods and results must be examined separately.
+129	133	XII	candidate_lead	2	reference	The organization identifies a calibration laboratory; this does not itself establish calibration traceability.
+135	135	I	candidate_lead	2	control	An independent emissions-verification unit is described; candidate; verify criterion mapping because independence is specific to emissions work.
+137	137	I	objective_control	1	role_responsibility	If management does not appoint a quality/environment representative, the Q/EP/HS head takes that role and its authority.
+155	157	II	supporting_control	2	control	The common manual describes the quality system and points to lower-level procedures; addenda hold system-specific requirements.
+175	175	VI	objective_control	1	role_responsibility	The Q/EP/HS head owns issue, application, distribution, changes and review of the manual.
+177	177	VI	objective_control	1	control	The director approves the manual and each revision by signature.
+179	179	VI	objective_control	1	control	Controlled manual copies are tracked on a distribution list, with numbered external paper copies and acknowledged receipt.
+179	179	VI	objective_control	1	control	Revisions go to controlled-copy holders and obsolete copies are destroyed; uncontrolled copies require director consent.
+179	179	XVII	objective_control	2	control	The Q/EP/HS archive retains originals of both current and superseded manual revisions.
+181	181	VI	objective_control	1	control	Staff access the current manual as a read-only intranet copy.
+202	208	II	candidate_lead	2	reference	The reference list includes laboratory standards, Appendix B and NQA-1 but does not identify an NQA-1 edition or prove application.
+224	228	I	supporting_control	2	definition	The definitions assign company leadership to the director and department coordination to directors appointed by that director.
+232	232	VII	supporting_control	2	definition	The supplier definition includes organizations or individuals providing studies, parts of studies, other items or services.
+256	256	X	supporting_control	2	definition	Control procedures are defined as written, approved methods for inspecting another party's activities.
+260	260	XVI	supporting_control	2	definition	Corrective action is defined as removing a nonconformance cause and preventing recurrence.
+264	264	IX	supporting_control	2	definition	Qualified procedures are defined as proven fit for purpose under applicable regulations, standards and technical specifications; no qualification record is included.
+280	280	IV	supporting_control	2	definition	Procurement documentation defines the requirements for acceptable goods/services and includes contracts, orders and specifications.
+292	292	XV	supporting_control	2	definition	Nonconformance includes inadequate documentation and departures from requirements or procedures, not only faulty hardware.
+296	296	XVII	supporting_control	2	definition	Objective evidence is defined as verifiable information, records or facts from observation or testing.
+300	300	I	supporting_control	2	role_responsibility	The Q/EP/HS head appoints an engineer accountable for applying the systems to a designated activity.
+320	320	II	supporting_control	2	definition	QA is defined as planned, systematic action to establish confidence that specified quality requirements will be met.
+338	338	XV	supporting_control	2	definition	Repair is distinguished from full restoration to the original specification; reliable and safe function can remain despite a specification departure.
+342	354	V	supporting_control	2	definition	General and task-specific quality procedures are written and approved, with task-specific documents supplementing common procedures.
+362	362	III	supporting_control	2	definition	Review is defined as a critical assessment against stated or expected requirements; the definition supports the design-review concept but not execution.
+366	366	XV	supporting_control	2	definition	Rework is defined as processing nonconforming work so it meets specified requirements.
+376	376	XVIII	supporting_control	2	definition	An audit is a documented assessment of adherence, adequacy and effective application of requirements and procedures.
+380	384	V	supporting_control	2	definition	Work instructions and procedures prescribe approved steps consistent with applicable rules, specifications and technical practice.
+400	400	V	supporting_control	2	definition	A specification includes requirements and the methods used to determine whether they are met.
+404	404	IX	supporting_control	2	definition	Special processes are defined as needing control during work in addition to final control.
+434	434	II	supporting_control	2	definition	The manual treats design, analysis, consulting, testing and supervision as services within the product concept.
+446	446	VII	supporting_control	2	definition	Verification explicitly includes checking supplier services against specified quality requirements.
+458	458	XVIII	supporting_control	2	role_responsibility	The lead auditor definition requires experience/training to organize audits, report findings and assess corrective actions.
+466	466	XVII	supporting_control	2	definition	A record is defined as stating achieved results or evidencing performed actions.
+565	567	II	objective_control	1	control	Management, supported by Q/EP/HS, documents context assessment and feeds significant circumstances into risk consideration and possible action.
+575	575	III	candidate_lead	2	control	Contractor expectations include interdisciplinary consistency, reliability, safety and usable design outputs; candidate; verify criterion mapping.
+577	577	IV	candidate_lead	2	control	Supplier expectations include guidance on quality-system requirements; candidate; verify criterion mapping to actual purchase flow-down.
+595	610	II	supporting_control	2	control	The declared scope covers technical services including design, engineering, testing and measurements, incorporates nuclear QA and Part21 notification, and excludes accounting/legal/security functions rather than Appendix B criteria.
+602	604	XI	candidate_lead	2	reference	The manual names accredited testing/calibration laboratories and eLAB-PK with dedicated procedures; accreditation and test evidence are not demonstrated by this reference alone.
+608	610	XVI	candidate_lead	2	reference	Nuclear work is stated to incorporate Appendix B/NQA-1 and Part21 reporting of nonconformances; detailed reportability and timing need their own evidence.
+632	634	V	objective_control	1	control	Important processes must be documented with their sequence, responsible roles, inputs/outputs, criteria and methods for execution and oversight.
+635	637	II	objective_control	1	control	The program requires resources, information, process monitoring and management evaluation of planned results.
+640	640	VII	objective_control	1	control	Outsourced quality-affecting work remains subject to Ekonerg controls; oversight uses the design-supplier procedure or activity-specific plans/instructions.
+642	642	I	candidate_lead	2	reference	The process table identifies responsibilities and interfaces; the table is examined separately rather than assumed from this reference.
+650	656	II	supporting_control	2	control	Management commits to quality policy, implementation, oversight and resources.
+665	669	II	objective_control	1	control	Management periodically reviews quality policy and communicates it through the intranet/manual and other channels.
+673	675	II	objective_control	1	control	Quality objectives must be set at relevant functions and levels and be measurable where possible.
+681	681	II	objective_control	1	control	Important projects require quality plans; departmental plans are aligned and approved by management.
+683	683	II	objective_control	1	control	Management must preserve quality-system integrity during planned changes.
+687	691	I	objective_control	1	control	Management defines responsibilities and authority and publishes a director-signed organization chart to staff.
+693	702	I	objective_control	1	role_responsibility	The designated representative or Q/EP/HS head manages system processes, reports improvement needs and coordinates internal/external quality communication.
+708	710	II	objective_control	1	control	Q/EP/HS works with process owners to identify risks; medium/high risks require treatment.
+710	710	XVI	supporting_control	2	control	Planned risk treatments are followed by an effectiveness check, a supporting corrective-action principle rather than a completed CA record.
+716	720	II	objective_control	1	control	Plans for quality goals must state resources, responsible persons, deadlines and how achievement will be assessed.
+722	722	I	objective_control	2	control	Quality-system changes must account for their effect on existing authority and responsibilities and retain necessary resources.
+724	724	VI	objective_control	1	control	Authors review unrevised quality-system documents for suitability at least every two years.
+734	734	II	objective_control	1	role_responsibility	Management plans and provides resources for quality-system implementation and service requirements.
+738	738	II	objective_control	1	control	Personnel affecting product/service conformity must be competent through education, training, skills and experience, including applicable codes and QA duties.
+742	745	II	objective_control	1	control	The organization identifies competence needs, supplies training, develops awareness and assesses the effectiveness of those measures.
+746	746	XVII	objective_control	2	control	The program requires records of education, training, skills and experience; this is a retention obligation, not an employee training record.
+748	748	II	candidate_lead	2	reference	PQ7.1-1 and project quality plans are identified as the routes for detailed competence/training requirements.
+752	758	II	objective_control	1	control	Management maintains infrastructure and plans necessary equipment, software and supporting services.
+762	762	II	supporting_control	2	control	The work environment is to support effective work and conformity; no special storage conditions are proved by this general statement.
+768	768	XII	objective_control	1	control	Measuring/test equipment must be identified, functional and checked/calibrated at stated intervals or before infrequent use; the stated commercial-equipment exemption must also be evaluated.
+768	768	XII	objective_control	1	control	The manual exempts commercial equipment from calibration when it has the required precision; the basis and limits of that exemption need examination, not automatic acceptance.
+768	768	XVII	objective_control	2	control	Calibration results and equipment capability must be recorded; PQ7.5-6 is cited for control of calibration standards/documentation.
+770	770	XII	objective_control	1	control	Equipment past calibration validity is specially marked and removed from use until recalibration; repeatedly out-of-calibration equipment is replaced or repaired.
+770	770	XIV	objective_control	2	control	Expired-calibration marking and exclusion provide a status control preventing unauthorized measurement use.
+772	774	XII	candidate_lead	2	reference	PQ7.1-2 and separate laboratory procedures govern uncalibrated, defective or damaged equipment; their detailed controls must be checked separately.
+778	780	II	objective_control	1	control	Departments/services maintain and periodically update knowledge lists using experience, errors, standards and training, including plans to close knowledge gaps.
+784	786	II	objective_control	1	control	Competence requirements are defined in procedures/plans, with departmental records of achieved competence.
+790	792	II	objective_control	1	control	Managers and Q/EP/HS provide awareness of quality goals, staff contribution and consequences of departures from requirements.
+796	803	I	objective_control	1	control	Internal quality communication uses director/department meetings, intranet information and direct management channels.
+809	812	I	supporting_control	2	control	External communication includes required written reports and authorized contact with oversight bodies.
+830	832	V	objective_control	1	control	Quality procedures must give sufficient purpose, scope, responsibilities, application and documentation detail for consistent use and checking.
+834	838	II	objective_control	1	control	The hierarchy distinguishes common, project-specific, laboratory and verification-system procedures; project-specific procedures address personnel, equipment, methods, software and documentation when needed.
+850	852	V	objective_control	1	control	Work procedures must describe unambiguous steps and applicable prerequisites, resources, personnel, responsibilities, acceptance criteria and reporting forms.
+854	854	X	objective_control	2	control	Control procedures govern personnel overseeing work performed by other persons, departments or organizations.
+856	856	VI	candidate_lead	2	reference	PQ7.5-3 and PQ7.5-4 are identified for preparation, review, revision and format of control/work procedures.
+860	862	V	objective_control	1	control	Departmental work instructions require enough detail, acceptance criteria and team competence conditions for quality execution and checking.
+862	862	VII	objective_control	2	control	Suppliers must demonstrate their work/products follow documented descriptions of quality-affecting activities.
+866	866	XVII	candidate_lead	2	reference	PQ7.5-7 is named for identification, collection, storage, retention, disposition and maintenance of quality records.
+874	876	II	supporting_control	2	control	The manual maintains procedure registers and a table of process sequence, interfaces and responsibility.
+890	890	VI	objective_control	1	control	Document changes must be reviewed and approved by the same persons who reviewed and approved the preceding revision/original under PQ7.5-5.
+892	894	VI	candidate_lead	2	reference	External codes, standards, customer/supplier instructions and other necessary documents are subject to PQ7.5-6.
+896	898	VI	objective_control	1	control	Document-control procedures assign preparation, review, approval and distribution responsibilities before use.
+896	900	VI	objective_control	1	control	Review/update and reapproval precede use, with changes and the current issue status recorded.
+901	902	VI	objective_control	1	control	Distribution is controlled and the current document version must be available where used.
+903	905	VI	objective_control	1	control	Documents must be identifiable/readable, external copies controlled and obsolete documents withdrawn or distinctly marked.
+909	911	XVII	objective_control	1	control	Records provide proof of quality activities and must be classified, linked to product/process/service, readable, recognizable and accessible.
+911	911	VIII	supporting_control	2	control	Linking records to the relevant product, service or process supports evidence traceability beyond mere document storage.
+911	913	X	objective_control	2	control	Inspection/test records must meet specific content needs and show acceptance criteria or requirements were satisfied; actual completed results are not supplied here.
+915	915	XVII	candidate_lead	2	reference	PQ7.5-7 is referenced for protection, retention, accessibility, retrieval and lending of records.
+925	925	I	objective_control	1	role_responsibility	Each work order/project has a team leader appointed by the responsible department director.
+925	927	II	objective_control	1	control	The leader plans project delivery, with documented quality planning for important projects and required work/schedule/inspection planning where applicable.
+928	929	II	objective_control	1	control	Project plans state staff numbers/qualifications and specific process, equipment, procedure and software needs.
+930	931	X	objective_control	2	control	The quality plan identifies verification stages, inspection and acceptance criteria together with relevant codes/standards.
+930	931	XI	objective_control	2	control	The plan must identify applicable testing/validation needs and acceptance criteria; it is not itself a completed test report.
+932	932	I	objective_control	2	control	Quality plans define cooperation/communication interfaces with other groups, suppliers, customers and authorities.
+933	933	XVII	objective_control	2	control	Quality plans must identify the need and method for documenting quality records.
+935	935	II	candidate_lead	2	reference	PQ8.1-2 and PQ8.1-1 link quality-plan preparation to graded activity complexity.
+943	947	II	objective_control	1	control	Customer communication covers requirements, contracting, requested verification access, post-delivery feedback and complaint resolution.
+949	949	I	objective_control	1	role_responsibility	Department directors own customer communication and may delegate to project leaders; the director joins complex/strategic matters.
+955	960	III	objective_control	2	control	Product/service requirements include customer needs, unstated intended-use needs, legal/regulatory requirements and additional company requirements.
+966	974	III	objective_control	1	control	Before commitment, responsible project/contract/QA roles check completeness, resolve differences, confirm capability and document oral customer enquiries.
+978	978	III	objective_control	1	control	The project leader documents requirement changes and informs all affected parties.
+986	986	III	supporting_control	2	control	Study/design work and supporting software are controlled from planning to verification; validation may occur when the customer uses the results.
+990	997	III	objective_control	1	control	Design planning defines stages, review/verification/validation, authority and group interfaces and is updated as work progresses.
+999	999	III	candidate_lead	2	reference	PQ8.3-1 and PQ8.1-3 govern translation of customer requirements into design-planning documents.
+1001	1001	III	objective_control	1	control	Persons/services not directly involved in plan preparation independently verify its suitability under PQ8.1-2.
+1007	1012	III	objective_control	1	control	Design input records cover functions/performance, applicable rules, previous similar work and consequences of possible errors where applicable.
+1014	1014	III	objective_control	1	control	The design team documents detailed inputs and checks them for completeness, clarity and consistency sufficient for decisions and verification.
+1018	1018	III	objective_control	1	control	Quality/control plans define periodic checks of customer requirements and appropriate standards through completion of the study/design.
+1022	1027	III	objective_control	1	control	Design outputs must be verifiable against inputs, approved before issue, support downstream work, state/reference acceptance criteria and define safe-use characteristics.
+1029	1029	XVII	objective_control	2	control	Design records retain calculations/drawings/specifications/revisions plus key process steps and input sources supporting the final design.
+1033	1038	III	objective_control	1	control	Planned interstage reviews assess requirements and problems, include responsible designers and retain decisions/actions.
+1042	1048	III	objective_control	1	control	Completion requires planned internal analysis and verification by persons/groups not directly involved in producing the work.
+1050	1052	III	objective_control	1	control	Customer-requested external review includes the design team and produces retained verification records.
+1056	1058	III	objective_control	1	control	Later in-use validation is recognized; participating staff retain validation records and records received from the customer.
+1060	1060	III	objective_control	1	control	Before nuclear operation/use, physical and functional characteristics must be checked and documented against approved design requirements and the facility licence.
+1064	1066	III	objective_control	1	control	Design changes are identified, evaluated, verified and approved with original-work controls; competent approvers know the original purpose and requirements, and records are retained.
+1074	1074	VII	objective_control	1	control	Purchased work/items must meet clearly defined requirements, with supplier oversight graded to their importance for Ekonerg delivery.
+1076	1076	IV	objective_control	1	control	Procurement documents define work scope, technical requirements, tests, inspections and acceptance criteria with appropriate review and approval.
+1076	1076	IV	objective_control	1	control	Procurement documents must state supplier-control methods, reporting, QA responsibility, access rights and nonconformance notification.
+1078	1078	I	objective_control	2	role_responsibility	Department directors/project leaders own technical purchase requirements, supplier selection and verification of purchased work for their projects.
+1084	1090	VII	objective_control	1	control	Supplier evaluation/selection and reassessment consider references, previous deliveries, other users, on-site nuclear audits and stated nuclear authorizations.
+1092	1092	VII	objective_control	1	control	Supplier assessment occurs during tendering and identified shortcomings must be addressed before contracting; assessment/verification records are kept.
+1096	1103	IV	objective_control	1	control	Purchase specifications include item/service details, approval needs, personnel qualifications, supplier QA, verification participation and required quality evidence.
+1105	1105	IV	objective_control	1	control	Purchase specifications form part of supplier contracts/orders and other contractual instruments.
+1109	1109	VII	objective_control	1	control	Purchased products/services are verified by testing or another suitable method; supplier-site methods and invitation duties are specified in purchase documents.
+1109	1109	VII	objective_control	1	control	Supplier-site verification assesses QA evidence including incoming checks, work records, supplier evaluation and inspection/test documentation against acceptance criteria.
+1111	1111	XVII	objective_control	2	control	The verifier's written report accompanies completion/delivery documents as evidence of conformity before/after installation.
+1117	1117	IV	candidate_lead	2	reference	PQ8.2-2 is identified for issue, control and changes of procurement documents when Ekonerg buys work.
+1123	1130	V	objective_control	1	control	Controlled work requires product information, work instructions, suitable equipment, measuring/monitoring resources and delivery controls.
+1136	1136	X	objective_control	1	control	For normal services/products, quality plans and intermediate/final checks address defects that can be detected before use.
+1138	1138	IX	objective_control	1	control	If processes whose defects are only detectable after use are employed, Ekonerg will validate and supervise them as special processes; this is a conditional commitment, not proof of execution.
+1142	1142	VIII	objective_control	1	control	Projects/studies and associated reports remain traceable through project work-order numbers and document-specific identifiers shown on the documents.
+1142	1142	XVII	objective_control	2	control	Records and documents associated with service delivery are maintained with work-order and document identifiers.
+1146	1146	VIII	objective_control	2	control	If customer property is used, it is to be identified and verified; retain the stated conditional scope.
+1146	1146	XIII	objective_control	1	control	If customer property is used, Ekonerg commits to careful handling, protection and security.
+1148	1148	XV	objective_control	2	control	Damage/loss/unusable customer property triggers immediate customer notification and retained records.
+1154	1156	VIII	objective_control	2	control	Product preservation includes identification to the extent applicable to Ekonerg activities.
+1154	1162	XIII	objective_control	1	control	Applicable preservation measures cover identification, handling, storage, cleaning, packaging, protection and delivery/transport.
+1164	1164	XIII	objective_control	1	control	Preservation prevents damage, loss or quality degradation and must follow specific instructions/specifications or other developed documents.
+1166	1166	XIII	objective_control	1	control	Products with specified cleanliness, packaging, pressure, temperature or humidity conditions are specially marked and periodically checked.
+1166	1166	XIII	objective_control	1	control	Special handling tools/equipment and project-specific protection requirements include the handler's experience and training.
+1170	1170	XVII	supporting_control	2	control	Post-delivery support includes stated document-retention obligations and customer feedback; actual retention periods require the detailed record controls.
+1174	1176	III	objective_control	1	control	Changes across studies, design and other services receive original-work review, competent authorization and retained change/action records.
+1182	1184	X	objective_control	1	control	Before delivery, authorized reviewers (or customers where applicable) document acceptance against requirements under quality/control plans.
+1184	1184	XIV	objective_control	2	control	Delivery review records must confirm acceptance criteria and endorsement by the persons responsible for release.
+1190	1190	XV	objective_control	1	control	Nonconforming services/products are identified, marked, evaluated, dispositioned and controlled to prevent unintended use or delivery.
+1194	1195	XV	objective_control	1	control	Nonconformities receive non-damaging marks and practical segregation; when separation is impractical, other misuse-prevention measures are required.
+1196	1201	XV	objective_control	1	control	Disposition includes repair, authorized use-as-is with required customer agreement, repurposing, prevention of use, and inspection of reworked/repaired products.
+1203	1203	XVII	objective_control	2	control	Records retain the nonconformance, actions, approvals and customer agreements.
+1205	1205	X	objective_control	2	control	Repaired nonconforming work must be verified again to demonstrate compliance with requirements.
+1207	1207	XV	objective_control	1	control	Post-delivery nonconformities require correction or action suited to their actual or potential effects.
+1209	1209	XVI	objective_control	1	control	Significant or repeated/similar nonconformities trigger corrective action including cause investigation.
+1221	1227	II	supporting_control	2	control	The system plans monitoring, measurement and improvement with defined methods to check service conformity and program effectiveness.
+1231	1233	XVI	supporting_control	2	control	Customer feedback and complaints are monitored/analysed under PQ8.2-1, supporting identification of adverse conditions.
+1237	1239	X	supporting_control	2	control	Process monitoring defines steps, references, reporting, presence and performers; failure to achieve requirements triggers nonconformance and corrective-action processes.
+1243	1245	X	objective_control	1	control	Product/service checks follow procedures/plans and retained conformity evidence identifies the release approver.
+1247	1247	XIV	objective_control	1	control	Delivery requires completion and conformity; exceptions need director authorization and customer consent where applicable.
+1249	1249	X	objective_control	1	control	PQ8.6 is stated to define intermediate/final checks and independence of monitoring/measurement personnel.
+1253	1253	X	objective_control	1	control	The referenced control-plan process establishes witness and hold points (W and H).
+1255	1255	X	objective_control	1	control	When direct inspection is impossible or unsuitable, indirect control through the process, equipment and personnel is required.
+1257	1257	XI	objective_control	1	control	The manual says Ekonerg does not test its own services/products; customer testing requires a program/procedures with test requirements, acceptance criteria and conditions.
+1257	1257	XI	objective_control	1	control	For customer testing, procedures must define documentation and evaluation of results; the no-own-product-testing qualification remains part of the quote.
+1259	1259	XI	candidate_lead	2	reference	Laboratory service monitoring/measurement is assigned to dedicated laboratory procedures; their methods/results are not reproduced here.
+1263	1270	XVI	objective_control	1	control	Q/EP/HS and department directors analyse conformity, trends, supplier information and preventive opportunities and report to management in writing.
+1274	1276	XVIII	objective_control	1	control	An annual internal audit program considers process importance/status and defines methods, scope, frequency and criteria with objective independent execution.
+1278	1278	XVIII	objective_control	1	control	The manual requires qualified internal auditors who are independent of the area audited; no individual qualification certificate is shown.
+1282	1282	XVI	objective_control	2	control	Department/service heads address audit nonconformities and causes without unjustified delay; the lead auditor or QA head verifies action and reports to management.
+1284	1286	XVIII	objective_control	1	control	PQ9.2 governs audit planning/reporting/records/follow-up; the same principles apply to nuclear supplier audits with trained auditors.
+1294	1296	II	objective_control	1	control	Management assesses system adequacy/effectiveness at least annually and records the assessment in writing.
+1300	1310	XVIII	supporting_control	2	control	Management review receives written audit, training, complaint, supplier, conformity, corrective-action, prior-follow-up and change information.
+1314	1320	II	objective_control	1	control	Written management decisions address process/product improvement, supplier issues, resources and personnel training.
+1334	1343	XVI	objective_control	1	control	Corrective action addresses causes and recurrence, evaluates proportionality, implements actions and checks success, with records and risk review.
+1334	1343	XVI	objective_control	1	control	The corrective-action sequence explicitly includes notifying the customer in nuclear work.
+1353	1353	XVI	objective_control	1	control	Significant quality actions are identified, documented, cause-investigated, tracked and verified for execution/effectiveness with status reports to appropriate management.
+1371	1379	II	supporting_control	2	control	Quality policy requires staff application graded to activity importance and uses additional applicable nuclear standards where nuclear safety is affected.
+1420	1426	I	objective_control	1	role_responsibility	Department/service heads and project leaders are appointed through defined authority; Q/EP/HS engineers are assigned as needed to activities.
+1434	1434	I	objective_control	1	control	Ekonerg retains responsibility for management-system work even when it delegates its development or implementation.
+1440	1440	I	objective_control	1	control	System personnel must have enough authority and organizational freedom to identify issues, secure solutions and confirm implementation, reporting to empowered management.
+1455	1467	I	objective_control	1	role_responsibility	The director owns system establishment/application, manual approval, appointments, personnel qualification, resources, risk and management review.
+1477	1488	I	objective_control	1	role_responsibility	Department heads own work and system application, plans/resources, competence and leader appointments; delegation does not remove accountability.
+1492	1497	I	objective_control	1	role_responsibility	Project leaders own coordination, applicable system requirements and work/quality plans and retain accountability for delegated tasks.
+1501	1502	I	objective_control	1	role_responsibility	The management representative reports system status directly to the director through reports and personal briefings.
+1506	1507	XVIII	objective_control	2	role_responsibility	The Q/EP/HS head is specifically responsible for periodic internal and supplier audits.
+1508	1509	IV	objective_control	2	role_responsibility	The Q/EP/HS head owns inclusion of system requirements in contractual and procurement documentation.
+1510	1510	VI	objective_control	1	role_responsibility	The Q/EP/HS head tracks regulatory changes and aligns system documentation.
+1511	1511	XVII	objective_control	1	role_responsibility	The Q/EP/HS head owns generation, identification, collection, storage, maintenance and disposition of system records.
+1515	1518	II	objective_control	1	role_responsibility	The Q/EP/HS head owns QA personnel training/certification, activity engineer assignments, process risks and reporting to the director.
+1522	1524	I	objective_control	1	role_responsibility	The designated Q/EP/HS engineer works with the project leader but reports activity status/problems to the Q/EP/HS head.
+1528	1528	I	objective_control	1	role_responsibility	Deputies have the same authority and duties as the role-holders they replace.
+1532	1535	XVI	objective_control	2	role_responsibility	Employees are responsible for work quality, report nonconformities to superiors and propose corrections/improvements.
+1566	1579	I	supporting_control	2	control	The process table assigns owners and interfaces for design, studies, tests, procurement, training and independent QA/control functions.
+1613	1616	II	candidate_lead	2	reference	The QMS register identifies organization, risk, training and measurement-control procedures with revision entries.
+1617	1622	VI	candidate_lead	2	reference	The register lists document preparation/control procedures and their revisions; references are not proof of current controlled distribution.
+1623	1626	XVII	candidate_lead	2	reference	The register identifies records control and project quality/planning procedures.
+1629	1632	VII	candidate_lead	2	reference	The register identifies supplier design control, procurement and supplier evaluation procedures; examine their supplied bodies separately.
+1633	1637	XVIII	candidate_lead	2	reference	The register identifies verification, audit, management-review and corrective-action procedures as the detailed system layer.
+1637	1637	VI	candidate_lead	2	finding	The manual register lists PQ10.2-2 revision 9; compare with the supplied procedure revision before asserting register currency.
+1643	1643	XI	candidate_lead	2	reference	The register names a turbine-testing control/verification procedure for NE Krsko; it does not include the test method or completed results.
+1644	1644	III	candidate_lead	2	reference	A specific design-activity control procedure is listed for the national energy strategy work; this is a method reference, not a project result.
+1656	1661	IX	candidate_lead	2	reference	Prilog5 lists RVT visual-examination procedures for equipment, supports, welds and related items with revision/date entries; qualification and full procedures are not shown.
+1663	1665	IX	candidate_lead	2	reference	Prilog5 lists liquid-penetrant examination procedures including bearings; no process qualification evidence is contained in the list.
+1667	1669	IX	candidate_lead	2	reference	Prilog5 lists magnetic-particle examination procedures for bolts, pins and nuts; the list is not a completed examination record.
+1671	1677	IX	candidate_lead	2	reference	Prilog5 lists ultrasonic procedures for welds, fasteners, bearings, thickness and a specified instrument; full methods/qualification remain external references.
+1674	1676	XII	candidate_lead	2	reference	Thickness-measurement procedures name ultrasonic measuring equipment; calibration status is not established by a procedure list.
+1682	1684	XII	candidate_lead	2	reference	Coating-thickness, hardness and temperature measurement procedures list named instruments but no calibration results.
+1686	1687	XI	candidate_lead	2	reference	ROS02 covers use of the information system and ROS03 control of computer-program use according to the register; reconcile with software-check references elsewhere.
+1688	1688	XVII	candidate_lead	2	reference	ROS04 is listed for backups and archiving network-server data; no backup execution record is supplied.
+1689	1689	VIII	candidate_lead	2	reference	A system for equipment coding is listed, providing an identity-control lead without the coding procedure's full content.
+1691	1696	III	candidate_lead	2	reference	The register lists study work, design-document production, QA in design, customer documents and design verification procedures; it is not a completed design-verification record.
+1691	1696	VI	candidate_lead	2	finding	RSP codes/titles in the register need comparison with nuclear-addendum references; preserve the differing source statements rather than correcting them silently.
+1700	1701	XI	candidate_lead	2	reference	Procedures for equipment testing/condition assessment and bearing assessment are listed; test acceptance details are not reproduced.
+1702	1702	XV	candidate_lead	2	reference	A water-turbine damage-repair method is listed; candidate; verify criterion mapping to controlled nonconforming work.
+1703	1708	X	candidate_lead	2	reference	Quality supervision, incoming inspection and dimensional-inspection methods appear in the procedure register.
+1714	1714	X	candidate_lead	2	reference	Control procedures are listed for NEK overhaul work on diesels, pumps, compressors, valves and HVAC; procedure titles are not completed inspection results.
+1715	1715	XI	candidate_lead	2	reference	Pressure-test control procedures are listed for pressure equipment and main pipelines; the methods and test records need separate support.
+1753	1753	I	candidate_lead	2	reference	The nuclear addendum locates authority and independent-verifier requirements in the main manual and PQ5.3; details are not inferred from the reference alone.
+1755	1755	II	objective_control	1	control	Internal reviewers, project leaders and designers are selected from competency lists maintained by the design department director under RSP02 criteria.
+1761	1761	II	objective_control	1	control	NS, AQ and Large nuclear modifications must be graded at highest complexity level I; NNS work may be I or II depending on complexity.
+1763	1763	III	candidate_lead	2	reference	NS design verification is assigned to RSP06 while other verification uses RSP02; full procedures are not supplied by this sentence.
+1767	1769	II	candidate_lead	2	reference	The addendum points to internal design certification and nuclear lead-auditor competence provisions, not actual personnel certificates.
+1775	1777	III	candidate_lead	2	reference	Nuclear design-input/customer-document control is assigned to RSP04/RSP05, with QA document control assigned to RSP03; compare the procedure register for code consistency.
+1779	1779	VII	objective_control	1	control	For commercial products intended for nuclear safety-related use, dedication is documented starting with safety significance, critical characteristics and choice of verification method.
+1779	1779	III	objective_control	2	control	Design specification of commercial products for nuclear safety service includes identifying safety effects and critical characteristics before acceptance-method selection.
+1783	1785	III	objective_control	1	control	Nuclear design changes and departures must be identified, analysed, documented and approved by the original approver and customer where needed using original-document controls.
+1795	1795	VI	objective_control	1	control	Minor commercial designation/condition changes are exempted from the original level of review/approval; applicability and safe limits of this exemption need evaluation.
+1799	1799	IV	candidate_lead	2	reference	The nuclear addendum explicitly maps procurement-document control to main chapter8.4; the body's specific controls are collected separately.
+1805	1805	VI	objective_control	1	control	Q/EP/HS controls work/control procedure distribution, while the issuing department controls its work-instruction distribution.
+1807	1807	V	candidate_lead	2	reference	RU02.1 is identified for drawings, specifications and other design-document parts under RSP02; its actual contents are not included.
+1811	1811	VI	candidate_lead	2	reference	Nuclear document control is mapped to main chapter7.5, whose substantive controls are extracted separately.
+1815	1817	VII	candidate_lead	2	reference	The nuclear addendum maps supplier assessment, offer evaluation, supplier documents, acceptance and nonconformities to chapters8.4/8.7 and PQ10.2-1.
+1825	1825	VIII	objective_control	1	control	Nuclear identification/status marking is to be addressed when needed in a specific document defining traceability method, special requirements and marking authority; such a project document is not shown here.
+1829	1829	IX	candidate_lead	2	reference	Nuclear special-process control points directly to main8.5.2, which contains the conditional validation/supervision commitment.
+1833	1833	X	objective_control	1	control	The nuclear addendum calls for a control plan at the stated quality level and names activity-specific/PQ8.6/RUK01/RDK01 inspection methods.
+1837	1837	XI	candidate_lead	2	reference	The nuclear testing clause points to main9.1.4 and software supervision to ROS02; the actual internal test-program text is collected separately.
+1841	1841	XII	candidate_lead	2	reference	The nuclear addendum explicitly applies main7.1.5 equipment controls; preserve the commercial-calibration exception for later assessment.
+1845	1845	XIII	candidate_lead	2	reference	The nuclear addendum maps handling, storage, packaging and dispatch to substantive preservation controls in main8.5.5.
+1849	1849	XIV	objective_control	1	control	Nuclear inspection/test/operating status marking is to be defined as needed in a specific document covering method, traceability requirements and marking authority; current implementation is not established by this conditional commitment.
+1857	1857	XV	objective_control	1	control	Nuclear nonconformance handling under Part21 includes identification, separation, removal, evaluation, disposition, resolution and documentation under PQ10.2-1.
+1857	1857	XVI	objective_control	2	control	Both Ekonerg and its suppliers are required to notify the customer of nuclear nonconformances; detailed reporting thresholds/timelines are not stated here.
+1861	1861	XVI	candidate_lead	2	reference	Nuclear corrective-action initiation is mapped to main10.2; its cause/effectiveness controls are extracted separately.
+1865	1865	XVII	objective_control	1	control	Projects/studies are stored in a central archive and on a server, with a separate-location parallel server and hard-disk copies for protection.
+1865	1865	VI	candidate_lead	2	finding	The nuclear records clause cites RSP03 for data protection, while Prilog5 lists ROS04 for backups; the reference mismatch requires verification.
+1869	1869	XVIII	candidate_lead	2	reference	Nuclear audits are mapped to main9.2 and PQ9.2/PQ8.4-3, not to a claim of completed audits.
+1883	1883	XVIII	objective_control	1	control	Nuclear level-I suppliers (NS/AQ/L) require a pre-engagement audit, except already nuclear-qualified listed suppliers receiving periodic audits at least every three years.
+1883	1883	VII	objective_control	2	control	The exemption from a project-specific supplier audit depends on existing nuclear qualification and a continuing periodic-audit basis; it is not a blanket supplier exemption.
+1887	1897	XI	objective_control	1	control	Level-I work requires verification of program results during use; other levels require pre-use verification on installation, upgrades/patches, OS/hardware changes, new users, two-year non-use or other verifier-defined conditions.
+1887	1897	III	objective_control	2	control	Software verification is tied to configuration and use changes, including programs, operating systems, hardware and personnel, supporting controlled design tools.
+1899	1899	III	candidate_lead	2	reference	The QA-flow notes repeat NS verification via RSP06 versus other review via RSP02; this corroborates routing but supplies no completed verification.
+1919	1919	VI	candidate_lead	2	finding	The AppendixB crosswalk points Test Control to8.1.4 whereas the substantive nuclear clause points to9.1.4; retain this possible cross-reference error.
+2017	2017	II	supporting_control	2	control	The environmental system explicitly reuses modified common quality procedures, supporting integrated-system reach without proving nuclear application of every environmental rule.
+2035	2035	VII	supporting_control	2	control	Environmental outsourcing uses PQ8.4-1 or activity-specific oversight; this corroborates a shared supplier-control mechanism, scoped to environmental work.
+2115	2119	III	supporting_control	2	control	Design work incorporates environmental-study, elaborat or permit measures as applicable; this is a concrete example of external design-input flow, not nuclear design qualification.
+2145	2147	VI	supporting_control	2	control	Environmental regulatory updates are supplied daily and assigned personnel track them, with compliance checked during internal audits; nuclear rule monitoring is not proved by this scoped example.
+2178	2180	II	supporting_control	2	control	Environmental competence evidence uses shared PQ7.1-1 for persons working for/on behalf of Ekonerg; supports the reach of common training controls.
+2268	2275	VI	supporting_control	2	control	Environmental document control includes current copies at use and a method for checking documents are used as intended; retain the stated environmental scope.
+2292	2292	VII	supporting_control	2	control	Environmental suppliers are informed/trained and supervised, and sign acknowledgement of system requirements and consequences under PQ8.4-2.
+2298	2300	VI	supporting_control	2	control	Environmental emergency procedures are reviewed at least annually and after incidents; this supports document feedback practice, not nuclear emergency preparedness compliance.
+2315	2315	XII	candidate_lead	2	reference	Environmental monitoring equipment is tied to shared PQ7.1-2 equipment control; calibration evidence is not included.
+2353	2364	XVI	supporting_control	2	control	The environmental addendum applies cause-removal, recurrence prevention and effectiveness checks through the same PQ10.2 controls; this corroborates integrated use, not a completed action.
+2703	2703	I	candidate_lead	2	control	The occupational-safety section protects workers reporting incidents/hazards; candidate; verify criterion mapping because it does not expressly define nuclear QA concern protection.
+2766	2766	III	candidate_lead	2	control	Occupational-safety risk assessment precedes organization/process changes; candidate; verify criterion mapping to quality-affecting design changes.
+2788	2790	VI	supporting_control	2	control	The safety system maintains a separately updated applicable-rule list on the intranet and assigns daily regulatory-change monitoring; retain safety-system scope.
+2802	2806	XVI	candidate_lead	2	control	Safety programs assign action owners/deadlines and QA assesses effectiveness in annual reporting; candidate; verify criterion mapping to nuclear quality actions.
+2838	2838	II	supporting_control	2	control	Safety competence documentation uses common PQ7.1-1, corroborating organization-wide use of the training process.
+2842	2844	I	candidate_lead	2	control	Staff are encouraged to report incidents and avoid serious life/health hazards without fear of consequences; this is not an explicit nuclear quality stop-work authorization.
+2947	2955	V	supporting_control	2	control	The safety addendum specifies documented work responsibility, current instructions, evidence records, suitable equipment and competent personnel; retain its safety-risk context.
+2963	2963	I	supporting_control	2	control	Joint-delivery arrangements define interfaces among contractors in a project manual, plan/program or other applicable document.
+2967	2967	VI	supporting_control	2	control	Changes in location, organization, equipment, regulation or technology require revised/new safety plans; supports a scoped change-control mechanism.
+2969	2971	IV	supporting_control	2	control	Health/safety requirements flow into procurement under PQ8.4-2, with PQ8.4-3 supplier evaluation and signed acknowledgements after information/training.
+2998	2998	XII	candidate_lead	2	reference	Safety monitoring equipment also uses PQ7.1-2, corroborating a shared procedure without demonstrating calibration results.
+3022	3032	XVI	supporting_control	2	control	Safety management review considers prior actions, audit results, incident causes and corrective-action status before issuing written improvement decisions.
+3107	3107	VI	candidate_lead	2	finding	The safety-addendum register lists PQ5.3 revision7 while the main register lists revision8; this is a specific document-currency lead.

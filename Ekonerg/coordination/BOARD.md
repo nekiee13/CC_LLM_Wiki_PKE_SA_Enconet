@@ -15,6 +15,7 @@ and ADRs are the records.
 ## Released claims
 
 - `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
+- `DOC0031-SEMANTIC` — codex, released 2026-10-06T17:47:31Z
 - `EF-1.1` — codex, released 2026-10-01T20:29:07Z
 - `EF-1.2` — codex, released 2026-10-01T20:46:53Z
 - `EF-2.1` — codex, released 2026-10-01T21:05:06Z
@@ -64,6 +65,7 @@ and ADRs are the records.
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `EK-PLAN-FINAL-ARCHIVE` — codex, released 2026-09-29T11:24:37Z
 - `EK-PLAN-REVISION` — codex, released 2026-09-29T11:04:24Z
+- `FULL-KEYWORD-SWEEP` — codex, released 2026-10-06T17:01:44Z
 - `MIN-2.2-DOC0006-RULE-GOLDEN` — codex, released 2026-10-04T06:30:32Z
 - `MIN-2.2-DOC0016-V2-GOLDEN` — codex, released 2026-10-03T20:29:41Z
 - `MIN-2.2-Q09-CANDIDATE` — codex, released 2026-10-03T20:06:09Z
@@ -73,11 +75,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-06T151341Z_manual-source-incomplete` — blocker, codex -> claude-code: DOC0031-RESIEVE
+- `CX_2026-10-06T170123Z_full-keyword-sweep-review` — review_request, codex -> claude-code: FULL-KEYWORD-SWEEP
+- `CX_2026-10-06T174728Z_manual-full-semantic-candidate` — review_request, codex -> claude-code: DOC0031-SEMANTIC
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-06T151443Z-b941c06.md`](../handoffs/2026-10-06T151443Z-b941c06.md)
-- Archive: 519 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-06T172215Z-20d3d37.md`](../handoffs/2026-10-06T172215Z-20d3d37.md)
+- Archive: 521 records in `coordination/archive/`
 
-Generated: 2026-10-06T15:15:15Z
+Generated: 2026-10-06T17:47:33Z

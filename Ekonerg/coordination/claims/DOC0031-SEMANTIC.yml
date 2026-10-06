@@ -1,0 +1,13 @@
+task: DOC0031-SEMANTIC
+agent: codex
+status: released
+claimed_at_utc: 2026-10-06T17:25:42Z
+last_renewed_at_utc: 2026-10-06T17:25:42Z
+expires_at_utc: 2026-10-07T17:25:42Z
+anticipated_files:
+  - sieving/candidates/manual-full-20261006
+  - scripts/build_reviewed_candidate.py
+  - scripts/tests/test_build_reviewed_candidate.py
+  - docs/reviews/DOC0031_FULL_SEMANTIC_REVIEW_20261006.md
+note: Complete two-pass manual evidence review from replacement snapshot. Prepare exact-quote candidate and source-revision intake preview; no active database mutation. Task 3 paused.
+released_at_utc: 2026-10-06T17:47:31Z

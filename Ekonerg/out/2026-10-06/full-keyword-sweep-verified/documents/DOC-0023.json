@@ -1,0 +1,1895 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0023",
+  "filename": "PQ08.4-1_r3_Kontrola_studijskih_projektnih_radova_.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "3bb5bd31e187169c0f8fe1ee742bde3c5f9719eda230ddbecbb2d9de3ddbaa24",
+  "registered_source_sha256": "3bb5bd31e187169c0f8fe1ee742bde3c5f9719eda230ddbecbb2d9de3ddbaa24",
+  "source_changed": false,
+  "source_bytes": 4490,
+  "source_characters": 4397,
+  "source_lines": 79,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 85,
+      "char_end": 102,
+      "quote_original": "Oznaka: PQ. 8.4-1",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 157,
+      "char_end": 168,
+      "quote_original": "Revizija: 3",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 11,
+      "line_end": 11,
+      "char_start": 170,
+      "char_end": 206,
+      "quote_original": "Pripremio: Tomislav Hršak, dipl.ing.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00013",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 13,
+      "line_end": 13,
+      "char_start": 208,
+      "char_end": 214,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 216,
+      "char_end": 227,
+      "quote_original": "03.03.2016.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00017",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 17,
+      "line_end": 17,
+      "char_start": 229,
+      "char_end": 266,
+      "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00019",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 19,
+      "line_end": 19,
+      "char_start": 268,
+      "char_end": 274,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00021",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 21,
+      "line_end": 21,
+      "char_start": 276,
+      "char_end": 287,
+      "quote_original": "05.03.2016.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00023",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 23,
+      "line_end": 23,
+      "char_start": 289,
+      "char_end": 335,
+      "quote_original": "Odobrio: Mr.sc. Zdravko Mužek, dipl.ing.stroj.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00025",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 25,
+      "line_end": 25,
+      "char_start": 337,
+      "char_end": 343,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00027",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "line_start": 27,
+      "line_end": 27,
+      "char_start": 345,
+      "char_end": 356,
+      "quote_original": "06.03.2016.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "dobavlj"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00033",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.1. Opseg",
+      "line_start": 33,
+      "line_end": 33,
+      "char_start": 428,
+      "char_end": 654,
+      "quote_original": "Postupak se primjenjuje na sve studijske/projektne radove koje za EKONERG izvodi neka druga organizacija (dobavljač), a na koje se primjenjuje sustav kvalitete, zaštite okoliša te sustav zaštite zdravlja i sigurnosti pri radu.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00037",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.2. Svrha",
+      "line_start": 37,
+      "line_end": 37,
+      "char_start": 672,
+      "char_end": 997,
+      "quote_original": "Svrha ovog postupka je da uspostavi mjere za kontrolu studijskih/projektnih radova koje za EKONERG izvodi dobavljač, u svrhu utvrđivanja ispunjenja postavljenih zahtjeva kvalitete i zaštite okoliša, naročito onih koji se odnose na utvrđene značajne aspekte okoliša, te zahtjeva sustava zaštite zdravlja i sigurnosti pri radu.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00049",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 49,
+      "line_end": 49,
+      "char_start": 1134,
+      "char_end": 1311,
+      "quote_original": "1. 2.1. Direktor odjela odgovoran je za uspostavljanje i provedbu sustava kontrole izrade te međufazne i završne verifikacije studijskih/projektnih radova koje izvodi dobavljač.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "medufaz",
+            "zavrsn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00050",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 50,
+      "line_end": 50,
+      "char_start": 1312,
+      "char_end": 1584,
+      "quote_original": "2. 2.2. Suradnik u EKONERG-u, kojeg imenuje Direktor odjela nositelja ugovora, odgovoran je za planiranje i provedbu mjera kontrole, kao i organizaciju i provedbu međufaznih verifikacija i završne verifikacije (recenzije) studijskog/projektnog rada kojeg izvodi dobavljač.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz",
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "medufaz",
+            "zavrsn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00051",
+      "chapter_path": "2. ODGOVORNOST",
+      "line_start": 51,
+      "line_end": 51,
+      "char_start": 1585,
+      "char_end": 1967,
+      "quote_original": "3. 2.3. Voditelj Q/EP/HS službe ili imenovani Q/EP/HS inženjer odgovoran je za unošenje zahtjeva kvalitete, zaštite okoliša, te zaštite zdravlja i sigurnosti u ugovor s dobavljačima, pregled Q/EP/HS programa dobavljača, provjeru sustava kvalitete, zaštite okoliša, te sustava zaštite zdravlja i sigurnosti dobavljača, te sudjelovanje u završnoj recenziji studijskog/projektnog rada.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "zavrsn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00057",
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "line_start": 57,
+      "line_end": 57,
+      "char_start": 2042,
+      "char_end": 2440,
+      "quote_original": "1. 3.1.1. Kontrola studijskih/projektnih radova dobavljača provodi se prema planu za povremenu kontrolu u tijeku izrade, koji se po potrebi uključuje u ugovor s dobavljačem. Suradnik u EKONERG-u zadužen od Direktora odjela nositelja ugovora za kontrolu nad naručenim studijskim/projektnim radom, provodi kontrolu i međufazne verifikacije, pri čemu može uključiti i drugu stručnu osobu iz EKONERG-a.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "medufaz"
+          ],
+          "heading_terms": [
+            "kontrol",
+            "nadzor"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00059",
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "line_start": 59,
+      "line_end": 59,
+      "char_start": 2442,
+      "char_end": 2839,
+      "quote_original": "3.1.2. Za aktivnosti nivoa složenosti I, ili ako je tako definirano planom kvalitete, imenuje se odgovorni Q/EP/HS inženjer, koji provjerava, po potrebi, funkcioniranje sustava kvalitete, zaštite okoliša, te sustava zaštite zdravlja i sigurnosti dobavljača, te provjerava poštivanje svih zahtjeva kvalitete, zaštite okoliša, te zaštite zdravlja i sigurnosti, pri izradi studijskog/projektnog rada.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)",
+            "plan.{0,20}kvalitet",
+            "slozenost"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [],
+          "heading_terms": [
+            "kontrol",
+            "nadzor"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00061",
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "line_start": 61,
+      "line_end": 61,
+      "char_start": 2841,
+      "char_end": 2937,
+      "quote_original": "3.1.3. Rezultati kontrole (nadzora) izrade studijskog/projektnog rada moraju biti dokumentirani.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": [
+            "projekt",
+            "studij"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "nadzor"
+          ],
+          "heading_terms": [
+            "kontrol",
+            "nadzor"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00065",
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "line_start": 65,
+      "line_end": 65,
+      "char_start": 3008,
+      "char_end": 3178,
+      "quote_original": "3.2.1. Evaluaciju i verifikaciju studijskog/projektnog rada (završnu recenziju) provodi po završenom radu komisija za recenziju, koju po potrebi određuje Direktor odjela.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "zavrsn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "line_start": 67,
+      "line_end": 67,
+      "char_start": 3180,
+      "char_end": 3368,
+      "quote_original": "3.2.2. Suradnik u EKONERG-u zadužen za nadzor nad izradom studijskog/projektnog rada obavezno je član komisije za završnu recenziju, i zadužen je da organizira i provodi završnu recenziju.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor",
+            "zavrsn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00069",
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "line_start": 69,
+      "line_end": 69,
+      "char_start": 3370,
+      "char_end": 3576,
+      "quote_original": "3.2.3. Odgovorni Q/EP/HS inženjer obvezan je sudjelovati u završnoj recenziji, za nivoe složenosti I, u svrhu utvrđivanja jesu li poštivani svi zahtjevi kvalitete, zaštite okoliša, te zdravlja i sigurnosti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "slozenost"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "zavrsn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00071",
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "line_start": 71,
+      "line_end": 71,
+      "char_start": 3578,
+      "char_end": 3818,
+      "quote_original": "3.2.4. Završna recenzija temelji se na iskustvenoj ocjeni recenzenata, kontroli korištenih metoda i proračuna, korištenju alternativnih proračuna i sl. Način završne verifikacije određuje se u planu kvalitete, odnosno ugovoru s dobavljačem.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "plan.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "proracun",
+            "verifikacij"
+          ],
+          "heading_terms": [
+            "projekt",
+            "studij",
+            "verifikacij"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol",
+            "zavrsn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00075",
+      "chapter_path": "3. POSTUPAK / 3.3. Promjene u tijeku izrade studijskog rada",
+      "line_start": 75,
+      "line_end": 75,
+      "char_start": 3875,
+      "char_end": 4132,
+      "quote_original": "3.3.1. Promjene u tijeku izrade studijskih/projektnih radova te odstupanja od zahtjeva u referentnoj dokumentaciji i ugovoru moraju biti dokumentirane i odobrene od iste osobe koja je odobrila originalni dokument, te po potrebi od odgovorne osobe EKONERG-a.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": [
+            "studij"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument",
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00079",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 79,
+      "line_end": 79,
+      "char_start": 4152,
+      "char_end": 4397,
+      "quote_original": "Izvještaj o nadzoru izvođenja studijskih/projektnih radova te izvještaj o završnoj recenziji, kao i izvještaji o promjenama i odstupanjima u tijeku izrade studijskog/projektnog rada predstavljaju zapise i čuvaju se u skladu s postupkom PQ.7.5-7.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt",
+            "studij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor",
+            "zavrsn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 54,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "image_reference_only",
+      "block_id": "B00001",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 54,
+      "char_end": 55,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 55,
+      "char_end": 84,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 84,
+      "char_end": 85,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 85,
+      "char_end": 103,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 103,
+      "char_end": 104,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00006",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 104,
+      "char_end": 156,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "heading",
+      "block_id": "B00007",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 156,
+      "char_end": 157,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 157,
+      "char_end": 169,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 169,
+      "char_end": 170,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 170,
+      "char_end": 207,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 207,
+      "char_end": 208,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 208,
+      "char_end": 215,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 215,
+      "char_end": 216,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00014",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 216,
+      "char_end": 228,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 228,
+      "char_end": 229,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 229,
+      "char_end": 267,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00017",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 267,
+      "char_end": 268,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 268,
+      "char_end": 275,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 275,
+      "char_end": 276,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00020",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 276,
+      "char_end": 288,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00021",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 288,
+      "char_end": 289,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00022",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 289,
+      "char_end": 336,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00023",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 336,
+      "char_end": 337,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00024",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 337,
+      "char_end": 344,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00025",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 344,
+      "char_end": 345,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00026",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 345,
+      "char_end": 357,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 357,
+      "char_end": 358,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 358,
+      "char_end": 411,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "heading",
+      "block_id": "B00029",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 411,
+      "char_end": 412,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA / KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "nearest_heading": "KONTROLA STUDIJSKIH/PROJEKTNIH RADOVA DOBAVLJAČA",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 412,
+      "char_end": 427,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "heading",
+      "block_id": "B00031",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 427,
+      "char_end": 428,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 428,
+      "char_end": 655,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "content",
+      "block_id": "B00033",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 655,
+      "char_end": 656,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 656,
+      "char_end": 671,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "heading",
+      "block_id": "B00035",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 671,
+      "char_end": 672,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 672,
+      "char_end": 998,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00037",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 998,
+      "char_end": 999,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 999,
+      "char_end": 1018,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "heading",
+      "block_id": "B00039",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1018,
+      "char_end": 1019,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00040",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1019,
+      "char_end": 1050,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00041",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1050,
+      "char_end": 1051,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00042",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1051,
+      "char_end": 1083,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1083,
+      "char_end": 1084,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00044",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1084,
+      "char_end": 1114,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00045",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1114,
+      "char_end": 1115,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1115,
+      "char_end": 1133,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "heading",
+      "block_id": "B00047",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1133,
+      "char_end": 1134,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00048",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1134,
+      "char_end": 1312,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00049",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1312,
+      "char_end": 1585,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00050",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1585,
+      "char_end": 1968,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "content",
+      "block_id": "B00051",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1968,
+      "char_end": 1969,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "2. ODGOVORNOST",
+      "nearest_heading": "2. ODGOVORNOST",
+      "kind": "blank",
+      "block_id": "B00052",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1969,
+      "char_end": 1984,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "heading",
+      "block_id": "B00053",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1984,
+      "char_end": 1985,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00054",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1985,
+      "char_end": 2041,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "heading",
+      "block_id": "B00055",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2041,
+      "char_end": 2042,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00056",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2042,
+      "char_end": 2441,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "content",
+      "block_id": "B00057",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2441,
+      "char_end": 2442,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00058",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2442,
+      "char_end": 2840,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "content",
+      "block_id": "B00059",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2840,
+      "char_end": 2841,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00060",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2841,
+      "char_end": 2938,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "content",
+      "block_id": "B00061",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2938,
+      "char_end": 2939,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "3. POSTUPAK / 3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "nearest_heading": "3.1. Kontrola (nadzor) studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00062",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2939,
+      "char_end": 3007,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "heading",
+      "block_id": "B00063",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3007,
+      "char_end": 3008,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00064",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3008,
+      "char_end": 3179,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "content",
+      "block_id": "B00065",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3179,
+      "char_end": 3180,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00066",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3180,
+      "char_end": 3369,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3369,
+      "char_end": 3370,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00068",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3370,
+      "char_end": 3577,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "content",
+      "block_id": "B00069",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3577,
+      "char_end": 3578,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00070",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3578,
+      "char_end": 3819,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "content",
+      "block_id": "B00071",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3819,
+      "char_end": 3820,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "3. POSTUPAK / 3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "nearest_heading": "3.2. Evaluacija i verifikacija studijskih/projektnih radova",
+      "kind": "blank",
+      "block_id": "B00072",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3820,
+      "char_end": 3874,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "3. POSTUPAK / 3.3. Promjene u tijeku izrade studijskog rada",
+      "nearest_heading": "3.3. Promjene u tijeku izrade studijskog rada",
+      "kind": "heading",
+      "block_id": "B00073",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3874,
+      "char_end": 3875,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "3. POSTUPAK / 3.3. Promjene u tijeku izrade studijskog rada",
+      "nearest_heading": "3.3. Promjene u tijeku izrade studijskog rada",
+      "kind": "blank",
+      "block_id": "B00074",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3875,
+      "char_end": 4133,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "3. POSTUPAK / 3.3. Promjene u tijeku izrade studijskog rada",
+      "nearest_heading": "3.3. Promjene u tijeku izrade studijskog rada",
+      "kind": "content",
+      "block_id": "B00075",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4133,
+      "char_end": 4134,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "3. POSTUPAK / 3.3. Promjene u tijeku izrade studijskog rada",
+      "nearest_heading": "3.3. Promjene u tijeku izrade studijskog rada",
+      "kind": "blank",
+      "block_id": "B00076",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4134,
+      "char_end": 4151,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "heading",
+      "block_id": "B00077",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4151,
+      "char_end": 4152,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00078",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4152,
+      "char_end": 4397,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00079",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

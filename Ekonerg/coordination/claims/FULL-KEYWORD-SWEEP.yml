@@ -1,0 +1,13 @@
+task: FULL-KEYWORD-SWEEP
+agent: codex
+status: released
+claimed_at_utc: 2026-10-06T16:44:36Z
+last_renewed_at_utc: 2026-10-06T16:44:36Z
+expires_at_utc: 2026-10-07T16:44:36Z
+anticipated_files:
+  - scripts/full_keyword_sweep.py
+  - scripts/tests/test_full_keyword_sweep.py
+  - sieving/prompts/full_keyword_sweep_v1.json
+  - docs/reviews/FULL_KEYWORD_SWEEP_20261006.md
+note: Owner replaced manual and requested all-files full keyword sweep; no caps; preserve source revisions and old generations. Task 3 paused.
+released_at_utc: 2026-10-06T17:01:44Z

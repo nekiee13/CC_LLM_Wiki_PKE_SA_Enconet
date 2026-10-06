@@ -1,0 +1,2353 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0002",
+  "filename": "10CFR_Part 50_-_Appendix_B.md",
+  "document_side": "RULE",
+  "source_sha256": "b06bf6d7fbc8d92e122bbb3dd7efc5088842141127f2717e3ea6de976612c396",
+  "registered_source_sha256": "b06bf6d7fbc8d92e122bbb3dd7efc5088842141127f2717e3ea6de976612c396",
+  "source_changed": false,
+  "source_bytes": 20932,
+  "source_characters": 20924,
+  "source_lines": 105,
+  "passages": [
+    {
+      "passage_id": "B00002",
+      "chapter_path": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "line_start": 2,
+      "line_end": 2,
+      "char_start": 105,
+      "char_end": 297,
+      "quote_original": "[Appendix B To Part 50—Quality Assurance Criteria For Nuclear Power Plants And Fuel Reprocessing Plants | NRC.gov](https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-appb.html)",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": [
+            "quality (assurance|program|plan|policy)"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00004",
+      "chapter_path": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "line_start": 4,
+      "line_end": 4,
+      "char_start": 299,
+      "char_end": 885,
+      "quote_original": "While the term \"applicant\" is used in these criteria, the requirements are, of course, applicable after such a person has received a license to construct and operate a nuclear power plant or a fuel  reprocessing plant or has received an early site permit, design approval, design certification, or manufacturing license, as applicable. These criteria will also be used for guidance in evaluating the adequacy of quality assurance programs in use by holders of construction permits, operating licenses, early site permits, design approvals, combined licenses, and manufacturing licenses.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": [
+            "quality (assurance|program|plan|policy)"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "approval"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "hold"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00007",
+      "chapter_path": "Introduction.",
+      "line_start": 7,
+      "line_end": 7,
+      "char_start": 904,
+      "char_end": 3758,
+      "quote_original": "Every applicant for a construction permit is required by the provisions of § 50.34 to include in its preliminary safety analysis report a description of the quality assurance program to be applied to the design, fabrication, construction, and testing of the structures, systems, and components of the facility. Every applicant for an operating license is required to include, in its final safety analysis report, information pertaining to the managerial and administrative controls to be used to assure safe operation. Every applicant for a combined license under part 52 of this chapter is required by the provisions of § 52.79 of this chapter to include in its final safety analysis report a description of the quality assurance applied to the design, and to be applied to the fabrication, construction, and testing of the structures, systems, and components of the facility and to the managerial and administrative controls to be used to assure safe operation. For applications submitted after September 27, 2007, every applicant for an early site permit under part 52 of this chapter is required by the provisions of § 52.17 of this chapter to include in its site safety analysis report a description of the quality assurance program applied to site activities related to the design, fabrication, construction, and testing of the structures, systems, and components of a facility or facilities that may be constructed on the site. Every applicant for a design approval or design certification under part 52 of this chapter is required by the provisions of 10 CFR 52.137 and 52.47, respectively, to include in its final safety analysis report a description of the quality assurance program applied to the design of the structures, systems, and components of the facility. Every applicant for a manufacturing license under part 52 of this chapter is required by the provisions of 10 CFR 52.157 to include in its final safety analysis report a description of the quality assurance program applied to the design, and to be applied to the manufacture of, the structures, systems, and components of the reactor. Nuclear power plants and fuel reprocessing plants include structures, systems, and components that prevent or mitigate the consequences of postulated accidents that could cause undue risk to the health and safety of the public. This appendix establishes quality assurance requirements for the design, manufacture, construction, and operation of those structures, systems, and components. The pertinent requirements of this appendix apply to all activities affecting the safety-related functions of those structures, systems, and components; these activities include designing, purchasing, fabricating, handling, shipping, storing, cleaning, erecting, installing, inspecting, testing, operating, maintaining, repairing, refueling, and modifying.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)",
+            "risk"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "approval"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling",
+            "shipping",
+            "clean"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "repair"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "Introduction.",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 3760,
+      "char_end": 3976,
+      "quote_original": "As used in this appendix, \"quality assurance\" comprises all those planned and systematic actions necessary to provide adequate confidence that a structure, system, or component will perform satisfactorily in service.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "Introduction.",
+      "line_start": 11,
+      "line_end": 11,
+      "char_start": 3978,
+      "char_end": 4281,
+      "quote_original": "Quality assurance includes quality control, which comprises those quality assurance actions related to the physical characteristics of a material, structure, component, or system which provide a means to control the quality of the material, structure, component, or system to predetermined requirements.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00016",
+      "chapter_path": "I. Organization",
+      "line_start": 16,
+      "line_end": 20,
+      "char_start": 4303,
+      "char_end": 5288,
+      "quote_original": "The applicant shall be responsible for the establishment and execution of the quality assurance  \nprogram. The applicant may delegate to others, such as contractors, agents, or consultants, the work of establishing and executing the quality assurance program, or any part thereof, but shall retain responsibility for the quality assurance program. The authority and duties of persons and organizations performing activities affecting the safety-related functions of structures, systems, and components shall be clearly established and delineated in writing. These activities include both the performing functions of attaining quality objectives and the quality assurance functions. The quality assurance functions are those of:  \n(1) assuring that an appropriate quality assurance program is established and effectively executed; and  \n(2) verifying, such as by checking, auditing, and inspecting, that activities affecting the safety-related  \nfunctions have been correctly performed.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz",
+            "responsib",
+            "authorit"
+          ],
+          "heading_terms": [
+            "organiz"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "contract"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "audit"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00018",
+      "chapter_path": "I. Organization",
+      "line_start": 22,
+      "line_end": 24,
+      "char_start": 5290,
+      "char_end": 6565,
+      "quote_original": "The persons and organizations performing quality assurance functions shall have sufficient authority and organizational freedom to identify quality problems; to initiate, recommend, or provide solutions; and to verify implementation of solutions. The persons and organizations performing quality assurance functions shall report to a management level so that the required authority and  \norganizational freedom, including sufficient independence from cost and schedule when opposed to safety considerations, are provided. Because of the many variables involved, such as the number of personnel, the type of activity being performed, and the location or locations where activities are performed, the organizational structure for executing the quality assurance program may take various forms, provided that the persons and organizations assigned the quality assurance functions have the required authority and organizational freedom. Irrespective of the organizational structure, the individual(s) assigned the responsibility for assuring effective execution of any portion of the quality assurance program at any location where activities subject to this appendix are being performed, shall  \nhave direct access to the levels of management necessary to perform this function.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz",
+            "responsib",
+            "authorit",
+            "independen"
+          ],
+          "heading_terms": [
+            "organiz"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00022",
+      "chapter_path": "II. Quality Assurance Program",
+      "line_start": 28,
+      "line_end": 28,
+      "char_start": 6600,
+      "char_end": 8467,
+      "quote_original": "The applicant shall establish at the earliest practicable time, consistent with the schedule for accomplishing the activities, a quality assurance program which complies with the  requirements of this appendix. This program shall be documented by written policies, procedures, or  instructions and shall be carried out throughout plant life in accordance with those policies, procedures, or instructions. The applicant shall identify the structures, systems, and components to be covered by the quality assurance program and the major organizations participating in the program, together with the designated functions of these organizations. The quality assurance program shall provide control over activities affecting the quality of the identified structures, systems, and components, to an extent consistent with their importance to safety. Activities affecting quality shall be accomplished under suitably controlled conditions. Controlled conditions include the use of appropriate equipment; suitable environmental conditions for accomplishing the activity, such as adequate cleanness; and assurance that all prerequisites for the given activity have been satisfied. The program shall take into account the need for ==special controls==, processes, test equipment, tools, and skills to attain the required quality, and the need for verification of quality by inspection and test. The program shall provide for indoctrination and training of personnel performing activities affecting quality as necessary to assure that suitable proficiency is achieved and maintained. The applicant shall regularly review the status and adequacy of the quality assurance program. Management of other organizations participating in the quality assurance program shall regularly review the status and adequacy of that part of the quality assurance program which they are executing.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)",
+            "train"
+          ],
+          "heading_terms": [
+            "quality (assurance|program|plan|policy)"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design",
+            "verification"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "instruction"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspection"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "test equipment"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "clean"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00026",
+      "chapter_path": "III. Design Control",
+      "line_start": 32,
+      "line_end": 32,
+      "char_start": 8492,
+      "char_end": 9010,
+      "quote_original": "Measures shall be established to assure that applicable regulatory requirements and the design basis, as defined in § 50.2 and as specified in the license application, for those structures, systems, and components to which this appendix applies are correctly translated into specifications, drawings, procedures, and instructions. These measures shall include provisions to assure that appropriate quality standards are specified and included in design documents and that deviations from such standards are controlled.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "specification"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "instruction",
+            "drawing"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "deviat"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00028",
+      "chapter_path": "III. Design Control",
+      "line_start": 34,
+      "line_end": 34,
+      "char_start": 9012,
+      "char_end": 9246,
+      "quote_original": "Measures shall also be established for the selection and review for suitability of application of materials, parts, equipment, and processes that are essential to the safety-related functions of the structures, systems and components.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00030",
+      "chapter_path": "III. Design Control",
+      "line_start": 36,
+      "line_end": 36,
+      "char_start": 9248,
+      "char_end": 9602,
+      "quote_original": "Measures shall be established for the identification and control of design interfaces and for coordination among participating design organizations. These measures shall include the establishment of procedures among participating design organizations for the review, approval, release, distribution, and revision of documents involving design interfaces.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document",
+            "revision",
+            "distribut",
+            "approval"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "release"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00032",
+      "chapter_path": "III. Design Control",
+      "line_start": 38,
+      "line_end": 38,
+      "char_start": 9604,
+      "char_end": 10571,
+      "quote_original": "The design control measures shall provide for verifying or checking the adequacy of design, such as by the performance of design reviews, by the use of alternate or simplified calculational methods, or by the performance of a suitable testing program. The verifying or checking process shall be performed by individuals or groups other than those who performed the original design, but who may be from the same organization. Where a test program is used to verify the adequacy of a specific design feature in lieu of other verifying or checking processes, it shall include suitable qualifications testing of a prototype unit under the most adverse design conditions. Design control measures shall be applied to items such as the following: reactor physics, stress, thermal, hydraulic, and accident analyses; compatibility of materials; accessibility for inservice inspection, maintenance, and repair; and delineation of  acceptance criteria for inspections and tests.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "qualif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design",
+            "calculation"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "acceptance criter",
+            "method"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspection"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test",
+            "acceptance"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "repair"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00034",
+      "chapter_path": "III. Design Control",
+      "line_start": 40,
+      "line_end": 40,
+      "char_start": 10573,
+      "char_end": 10849,
+      "quote_original": "Design changes, including field changes, shall be subject to design control measures commensurate with those applied to the original design and be approved by the organization that performed the original design unless the applicant designates another responsible organization.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz",
+            "responsib"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00038",
+      "chapter_path": "IV. Procurement Document Control",
+      "line_start": 44,
+      "line_end": 45,
+      "char_start": 10887,
+      "char_end": 11425,
+      "quote_original": "Measures shall be established to assure that applicable regulatory  \nrequirements, design bases, and other requirements which are necessary to assure adequate quality are suitably included or referenced in the documents for procurement of material, equipment, and services, whether purchased by the applicant or by its contractors or subcontractors. To the extent necessary, procurement documents shall require contractors or subcontractors to provide a quality assurance program consistent with the pertinent provisions of this appendix.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "procurement",
+            "purchase",
+            "contract"
+          ],
+          "heading_terms": [
+            "procurement"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "subcontract",
+            "purchased"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00042",
+      "chapter_path": "V. Instructions, Procedures, and Drawings",
+      "line_start": 49,
+      "line_end": 49,
+      "char_start": 11472,
+      "char_end": 11899,
+      "quote_original": "Activities affecting quality shall be prescribed by documented instructions, procedures, or drawings, of a type appropriate to the circumstances and shall be accomplished in accordance with these instructions, procedures, or drawings. Instructions, procedures, or drawings shall include appropriate quantitative or qualitative acceptance criteria for determining that important activities have been satisfactorily accomplished.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "instruction",
+            "drawing",
+            "acceptance criter"
+          ],
+          "heading_terms": [
+            "procedure",
+            "instruction",
+            "drawing"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "acceptance"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00046",
+      "chapter_path": "VI. Document Control",
+      "line_start": 53,
+      "line_end": 53,
+      "char_start": 11925,
+      "char_end": 12539,
+      "quote_original": "Measures shall be established to control the issuance of documents, such as instructions, procedures, and drawings, including changes thereto, which prescribe all activities affecting quality. These measures shall assure that documents, including changes, are reviewed for adequacy and approved for release by authorized personnel and are distributed to and used at the location where the prescribed activity is performed. Changes to documents shall be reviewed and approved by the same organizations that performed the original review and approval unless the applicant designates another responsible organization.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz",
+            "responsib"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "instruction",
+            "drawing"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document",
+            "issuance",
+            "distribut",
+            "approval"
+          ],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "release"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00050",
+      "chapter_path": "VII. Control of Purchased Material, Equipment, and Services",
+      "line_start": 57,
+      "line_end": 57,
+      "char_start": 12604,
+      "char_end": 13773,
+      "quote_original": "Measures shall be established to assure that purchased material, equipment, and services, whether purchased directly or through contractors and subcontractors, conform to the procurement documents. These measures shall include provisions, as appropriate, for source evaluation and selection, objective evidence of quality furnished by the contractor or subcontractor, inspection at the contractor or subcontractor source, and examination of products upon delivery. Documentary evidence that material and equipment conform to the procurement requirements shall be available at the nuclear powerplant or fuel reprocessing plant site prior to installation or use of such material and equipment. This documentary evidence shall be retained at the nuclear powerplant or fuel reprocessing plant site and shall be sufficient to identify the specific requirements, such as codes, standards, or specifications, met by the purchased material and equipment. The effectiveness of the control of quality by contractors and subcontractors shall be assessed by the applicant or designee at intervals consistent with the importance, complexity, and quantity of the product or services.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "procurement",
+            "purchase",
+            "contract",
+            "specification"
+          ],
+          "heading_terms": [
+            "purchase"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "subcontract",
+            "purchased"
+          ],
+          "heading_terms": [
+            "purchased"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspection"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "effectiven"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00054",
+      "chapter_path": "VIII. Identification and Control of Materials, Parts, and Components",
+      "line_start": 61,
+      "line_end": 61,
+      "char_start": 13847,
+      "char_end": 14412,
+      "quote_original": "Measures shall be established for the identification and control of materials, parts, and components, including partially fabricated assemblies. These measures shall assure that identification of the item is maintained by heat number, part number, serial number, or other appropriate means, either on the item or on records traceable to the item, as required throughout fabrication, erection, installation, and use of the item. These identification and control measures shall be designed to prevent the use of incorrect or defective material, parts, and components.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "traceab",
+            "identif",
+            "serial",
+            "heat number"
+          ],
+          "heading_terms": [
+            "identif"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "defect"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "record"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00058",
+      "chapter_path": "IX. Control of Special Processes",
+      "line_start": 65,
+      "line_end": 65,
+      "char_start": 14450,
+      "char_end": 14763,
+      "quote_original": "Measures shall be established to assure that special processes, including welding, heat treating, and nondestructive testing, are controlled and accomplished by qualified personnel using qualified procedures in accordance with applicable codes, standards, specifications, criteria, and other special requirements.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "qualif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "specification"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IX": {
+          "quote_terms": [
+            "special process",
+            "weld",
+            "heat treat",
+            "nondestruct"
+          ],
+          "heading_terms": [
+            "special process"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00062",
+      "chapter_path": "X. Inspection",
+      "line_start": 69,
+      "line_end": 69,
+      "char_start": 14782,
+      "char_end": 15871,
+      "quote_original": "A program for inspection of activities affecting quality shall be established and executed by or for the organization performing the activity to verify conformance with the documented instructions, procedures, and drawings for accomplishing the activity. Such inspection shall be performed by individuals other than those who performed the activity being inspected. Examinations, measurements, or tests of material or products processed shall be performed for each work operation where necessary to  assure quality. If inspection of processed material or products is impossible or disadvantageous,  indirect control by monitoring processing methods, equipment, and personnel shall be provided. Both inspection and process monitoring shall be provided when control is inadequate without both. If mandatory inspection hold points, which require witnessing or inspecting by the applicant's designated representative and beyond which work shall not proceed without the consent of its designated representative are required, the specific hold points shall be indicated in appropriate documents.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "instruction",
+            "drawing",
+            "method"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspection",
+            "hold point",
+            "witness"
+          ],
+          "heading_terms": [
+            "inspection"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "measurement"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "hold"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00066",
+      "chapter_path": "XI. Test Control",
+      "line_start": 73,
+      "line_end": 73,
+      "char_start": 15893,
+      "char_end": 16805,
+      "quote_original": "A test program shall be established to assure that all testing required to demonstrate that structures, systems, and components will perform satisfactorily in service is identified and performed in accordance with written test procedures which incorporate the requirements and acceptance limits contained in applicable design documents. The test program shall include, as appropriate, proof tests prior to installation, preoperational tests, and operational tests during nuclear power plant or fuel reprocessing plant operation, of structures, systems, and components. Test procedures shall include provisions for  assuring that all prerequisites for the given test have been met, that adequate test instrumentation is  available and used, and that the test is performed under suitable environmental conditions. Test results shall be documented and evaluated to assure that test requirements have been satisfied.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test",
+            "acceptance",
+            "test result",
+            "preoperational"
+          ],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "instrument"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00070",
+      "chapter_path": "XII. Control of Measuring and Test Equipment",
+      "line_start": 77,
+      "line_end": 77,
+      "char_start": 16855,
+      "char_end": 17120,
+      "quote_original": "Measures shall be established to assure that tools, gages, instruments, and other measuring and testing devices used in activities affecting quality are properly controlled, calibrated, and adjusted at specified periods to maintain accuracy within necessary limits.",
+      "matches": {
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "instrument",
+            "measuring",
+            "calibrat",
+            "gage"
+          ],
+          "heading_terms": [
+            "measuring",
+            "test equipment"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00074",
+      "chapter_path": "XIII. Handling, Storage and Shipping",
+      "line_start": 81,
+      "line_end": 81,
+      "char_start": 17162,
+      "char_end": 17569,
+      "quote_original": "Measures shall be established to control the handling, storage, shipping, cleaning and preservation of material and equipment in accordance with work and inspection instructions to prevent damage or deterioration. When necessary for particular products, special protective environments, such as inert gas atmosphere, specific moisture content levels, and temperature levels, shall be specified and provided.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "instruction"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspection"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "temperatur",
+            "handling",
+            "storage",
+            "shipping",
+            "preserv",
+            "clean",
+            "damage",
+            "deteriorat"
+          ],
+          "heading_terms": [
+            "handling",
+            "storage",
+            "shipping"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00078",
+      "chapter_path": "XIV. Inspection, Test, and Operating Status",
+      "line_start": 85,
+      "line_end": 85,
+      "char_start": 17618,
+      "char_end": 18322,
+      "quote_original": "Measures shall be established to indicate, by the use of markings such as stamps, tags, labels, routing cards, or other suitable means, the status of inspections and tests performed upon individual items of the nuclear power plant or fuel reprocessing plant. These measures shall provide for the identification of items which have satisfactorily passed required inspections and tests, where necessary to preclude inadvertent bypassing of such inspections and tests. Measures shall also be established for indicating the operating status of structures, systems, and components of the nuclear power plant or fuel reprocessing plant, such as by tagging valves and switches, to prevent inadvertent operation.",
+      "matches": {
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif",
+            "marking",
+            "tag"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspection"
+          ],
+          "heading_terms": [
+            "inspection"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status",
+            "bypass",
+            "tag",
+            "operating status"
+          ],
+          "heading_terms": [
+            "status",
+            "operating status"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00082",
+      "chapter_path": "XV. Nonconforming Materials, Parts, or Components",
+      "line_start": 89,
+      "line_end": 89,
+      "char_start": 18377,
+      "char_end": 18833,
+      "quote_original": "Measures shall be established to control materials, parts, or components which do not conform to  requirements in order to prevent their inadvertent use or installation. These measures shall include, as appropriate, procedures for identification, documentation, segregation, disposition, and notification to affected organizations. Nonconforming items shall be reviewed and accepted, rejected, repaired or reworked in accordance with documented procedures.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "accepted",
+            "rejected"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "segreg",
+            "nonconform",
+            "disposition",
+            "rework",
+            "repair"
+          ],
+          "heading_terms": [
+            "nonconform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00086",
+      "chapter_path": "XVI. Corrective Action",
+      "line_start": 93,
+      "line_end": 93,
+      "char_start": 18861,
+      "char_end": 19466,
+      "quote_original": "Measures shall be established to assure that conditions adverse to quality, such as failures, alfunctions, deficiencies, deviations, defective material and equipment, and nonconformances are promptly identified and corrected. In the case of significant conditions adverse to quality, the measures shall assure that the cause of the condition is determined and corrective action taken to preclude repetition. The identification of the significant condition adverse to quality, the cause of the condition, and the corrective action taken shall be documented and reported to appropriate levels of management.",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nonconform",
+            "defect",
+            "deviat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "corrective"
+          ],
+          "heading_terms": [
+            "corrective"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00090",
+      "chapter_path": "XVII. Quality Assurance Records",
+      "line_start": 97,
+      "line_end": 98,
+      "char_start": 19503,
+      "char_end": 20328,
+      "quote_original": "Sufficient records shall be maintained to furnish evidence of activities affecting quality. The records shall include at least the following: Operating logs and the results of reviews, inspections, tests, audits, monitoring of work performance, and materials analyses. The records shall also include closely-related data such as qualifications of personnel, procedures, and equipment. Inspection and test records shall, as a minimum, identify the inspector or data recorder, the type of observation, the results, the acceptability, and the action taken in connection with any deficiencies noted. Records shall be  \nidentifiable and retrievable. Consistent with applicable regulatory requirements, the applicant shall establish requirements concerning record retention, such as duration, location, and assigned responsibility.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "responsib"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "qualif"
+          ],
+          "heading_terms": [
+            "quality (assurance|program|plan|policy)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "inspection"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc",
+            "record",
+            "retention",
+            "retriev"
+          ],
+          "heading_terms": [
+            "record"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "audit"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00094",
+      "chapter_path": "XVIII. Audits",
+      "line_start": 102,
+      "line_end": 103,
+      "char_start": 20347,
+      "char_end": 20921,
+      "quote_original": "A comprehensive system of planned and periodic audits shall be carried out to verify compliance with all aspects of the quality assurance program and to determine the effectiveness of the program. The audits shall be performed in accordance with the written procedures or check lists by appropriately trained personnel not having direct responsibilities in the areas being audited. Audit results shall be documented and reviewed by management having responsibility in the area audited. Followup action,  \nincluding reaudit of deficient areas, shall be taken where indicated.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "responsib"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)",
+            "train"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "effectiven"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "audit"
+          ],
+          "heading_terms": [
+            "audit"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 105,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "nearest_heading": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "kind": "heading",
+      "block_id": "B00001",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 105,
+      "char_end": 298,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "nearest_heading": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "kind": "content",
+      "block_id": "B00002",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 298,
+      "char_end": 299,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "nearest_heading": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "kind": "blank",
+      "block_id": "B00003",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 299,
+      "char_end": 886,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "nearest_heading": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "kind": "content",
+      "block_id": "B00004",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 886,
+      "char_end": 887,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "nearest_heading": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+      "kind": "blank",
+      "block_id": "B00005",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 887,
+      "char_end": 904,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "heading",
+      "block_id": "B00006",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 904,
+      "char_end": 3759,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "content",
+      "block_id": "B00007",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3759,
+      "char_end": 3760,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3760,
+      "char_end": 3977,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3977,
+      "char_end": 3978,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3978,
+      "char_end": 4282,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4282,
+      "char_end": 4283,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4283,
+      "char_end": 4284,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "Introduction.",
+      "nearest_heading": "Introduction.",
+      "kind": "blank",
+      "block_id": "B00013",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4284,
+      "char_end": 4302,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "I. Organization",
+      "nearest_heading": "I. Organization",
+      "kind": "heading",
+      "block_id": "B00014",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4302,
+      "char_end": 4303,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "I. Organization",
+      "nearest_heading": "I. Organization",
+      "kind": "blank",
+      "block_id": "B00015",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4303,
+      "char_end": 5289,
+      "line_start": 16,
+      "line_end": 20,
+      "chapter_path": "I. Organization",
+      "nearest_heading": "I. Organization",
+      "kind": "content",
+      "block_id": "B00016",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5289,
+      "char_end": 5290,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "I. Organization",
+      "nearest_heading": "I. Organization",
+      "kind": "blank",
+      "block_id": "B00017",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5290,
+      "char_end": 6566,
+      "line_start": 22,
+      "line_end": 24,
+      "chapter_path": "I. Organization",
+      "nearest_heading": "I. Organization",
+      "kind": "content",
+      "block_id": "B00018",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6566,
+      "char_end": 6567,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "I. Organization",
+      "nearest_heading": "I. Organization",
+      "kind": "blank",
+      "block_id": "B00019",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6567,
+      "char_end": 6599,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "II. Quality Assurance Program",
+      "nearest_heading": "II. Quality Assurance Program",
+      "kind": "heading",
+      "block_id": "B00020",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6599,
+      "char_end": 6600,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "II. Quality Assurance Program",
+      "nearest_heading": "II. Quality Assurance Program",
+      "kind": "blank",
+      "block_id": "B00021",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6600,
+      "char_end": 8468,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "II. Quality Assurance Program",
+      "nearest_heading": "II. Quality Assurance Program",
+      "kind": "content",
+      "block_id": "B00022",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8468,
+      "char_end": 8469,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "II. Quality Assurance Program",
+      "nearest_heading": "II. Quality Assurance Program",
+      "kind": "blank",
+      "block_id": "B00023",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8469,
+      "char_end": 8491,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "heading",
+      "block_id": "B00024",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8491,
+      "char_end": 8492,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "blank",
+      "block_id": "B00025",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8492,
+      "char_end": 9011,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "content",
+      "block_id": "B00026",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9011,
+      "char_end": 9012,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "blank",
+      "block_id": "B00027",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9012,
+      "char_end": 9247,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "content",
+      "block_id": "B00028",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9247,
+      "char_end": 9248,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "blank",
+      "block_id": "B00029",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9248,
+      "char_end": 9603,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "content",
+      "block_id": "B00030",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9603,
+      "char_end": 9604,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "blank",
+      "block_id": "B00031",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9604,
+      "char_end": 10572,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "content",
+      "block_id": "B00032",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10572,
+      "char_end": 10573,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "blank",
+      "block_id": "B00033",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10573,
+      "char_end": 10850,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "content",
+      "block_id": "B00034",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10850,
+      "char_end": 10851,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "III. Design Control",
+      "nearest_heading": "III. Design Control",
+      "kind": "blank",
+      "block_id": "B00035",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10851,
+      "char_end": 10886,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "IV. Procurement Document Control",
+      "nearest_heading": "IV. Procurement Document Control",
+      "kind": "heading",
+      "block_id": "B00036",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 10886,
+      "char_end": 10887,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "IV. Procurement Document Control",
+      "nearest_heading": "IV. Procurement Document Control",
+      "kind": "blank",
+      "block_id": "B00037",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10887,
+      "char_end": 11426,
+      "line_start": 44,
+      "line_end": 45,
+      "chapter_path": "IV. Procurement Document Control",
+      "nearest_heading": "IV. Procurement Document Control",
+      "kind": "content",
+      "block_id": "B00038",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11426,
+      "char_end": 11427,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "IV. Procurement Document Control",
+      "nearest_heading": "IV. Procurement Document Control",
+      "kind": "blank",
+      "block_id": "B00039",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11427,
+      "char_end": 11471,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "V. Instructions, Procedures, and Drawings",
+      "nearest_heading": "V. Instructions, Procedures, and Drawings",
+      "kind": "heading",
+      "block_id": "B00040",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11471,
+      "char_end": 11472,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "V. Instructions, Procedures, and Drawings",
+      "nearest_heading": "V. Instructions, Procedures, and Drawings",
+      "kind": "blank",
+      "block_id": "B00041",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11472,
+      "char_end": 11900,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "V. Instructions, Procedures, and Drawings",
+      "nearest_heading": "V. Instructions, Procedures, and Drawings",
+      "kind": "content",
+      "block_id": "B00042",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11900,
+      "char_end": 11901,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "V. Instructions, Procedures, and Drawings",
+      "nearest_heading": "V. Instructions, Procedures, and Drawings",
+      "kind": "blank",
+      "block_id": "B00043",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11901,
+      "char_end": 11924,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "VI. Document Control",
+      "nearest_heading": "VI. Document Control",
+      "kind": "heading",
+      "block_id": "B00044",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11924,
+      "char_end": 11925,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "VI. Document Control",
+      "nearest_heading": "VI. Document Control",
+      "kind": "blank",
+      "block_id": "B00045",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11925,
+      "char_end": 12540,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "VI. Document Control",
+      "nearest_heading": "VI. Document Control",
+      "kind": "content",
+      "block_id": "B00046",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12540,
+      "char_end": 12541,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "VI. Document Control",
+      "nearest_heading": "VI. Document Control",
+      "kind": "blank",
+      "block_id": "B00047",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12541,
+      "char_end": 12603,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "VII. Control of Purchased Material, Equipment, and Services",
+      "nearest_heading": "VII. Control of Purchased Material, Equipment, and Services",
+      "kind": "heading",
+      "block_id": "B00048",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 12603,
+      "char_end": 12604,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "VII. Control of Purchased Material, Equipment, and Services",
+      "nearest_heading": "VII. Control of Purchased Material, Equipment, and Services",
+      "kind": "blank",
+      "block_id": "B00049",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12604,
+      "char_end": 13774,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "VII. Control of Purchased Material, Equipment, and Services",
+      "nearest_heading": "VII. Control of Purchased Material, Equipment, and Services",
+      "kind": "content",
+      "block_id": "B00050",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13774,
+      "char_end": 13775,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "VII. Control of Purchased Material, Equipment, and Services",
+      "nearest_heading": "VII. Control of Purchased Material, Equipment, and Services",
+      "kind": "blank",
+      "block_id": "B00051",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13775,
+      "char_end": 13846,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "VIII. Identification and Control of Materials, Parts, and Components",
+      "nearest_heading": "VIII. Identification and Control of Materials, Parts, and Components",
+      "kind": "heading",
+      "block_id": "B00052",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13846,
+      "char_end": 13847,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "VIII. Identification and Control of Materials, Parts, and Components",
+      "nearest_heading": "VIII. Identification and Control of Materials, Parts, and Components",
+      "kind": "blank",
+      "block_id": "B00053",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13847,
+      "char_end": 14413,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "VIII. Identification and Control of Materials, Parts, and Components",
+      "nearest_heading": "VIII. Identification and Control of Materials, Parts, and Components",
+      "kind": "content",
+      "block_id": "B00054",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14413,
+      "char_end": 14414,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "VIII. Identification and Control of Materials, Parts, and Components",
+      "nearest_heading": "VIII. Identification and Control of Materials, Parts, and Components",
+      "kind": "blank",
+      "block_id": "B00055",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14414,
+      "char_end": 14449,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "IX. Control of Special Processes",
+      "nearest_heading": "IX. Control of Special Processes",
+      "kind": "heading",
+      "block_id": "B00056",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 14449,
+      "char_end": 14450,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "IX. Control of Special Processes",
+      "nearest_heading": "IX. Control of Special Processes",
+      "kind": "blank",
+      "block_id": "B00057",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14450,
+      "char_end": 14764,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "IX. Control of Special Processes",
+      "nearest_heading": "IX. Control of Special Processes",
+      "kind": "content",
+      "block_id": "B00058",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14764,
+      "char_end": 14765,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "IX. Control of Special Processes",
+      "nearest_heading": "IX. Control of Special Processes",
+      "kind": "blank",
+      "block_id": "B00059",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14765,
+      "char_end": 14781,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "X. Inspection",
+      "nearest_heading": "X. Inspection",
+      "kind": "heading",
+      "block_id": "B00060",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 14781,
+      "char_end": 14782,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "X. Inspection",
+      "nearest_heading": "X. Inspection",
+      "kind": "blank",
+      "block_id": "B00061",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14782,
+      "char_end": 15872,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "X. Inspection",
+      "nearest_heading": "X. Inspection",
+      "kind": "content",
+      "block_id": "B00062",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 15872,
+      "char_end": 15873,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "X. Inspection",
+      "nearest_heading": "X. Inspection",
+      "kind": "blank",
+      "block_id": "B00063",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15873,
+      "char_end": 15892,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "XI. Test Control",
+      "nearest_heading": "XI. Test Control",
+      "kind": "heading",
+      "block_id": "B00064",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 15892,
+      "char_end": 15893,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "XI. Test Control",
+      "nearest_heading": "XI. Test Control",
+      "kind": "blank",
+      "block_id": "B00065",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15893,
+      "char_end": 16806,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "XI. Test Control",
+      "nearest_heading": "XI. Test Control",
+      "kind": "content",
+      "block_id": "B00066",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 16806,
+      "char_end": 16807,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "XI. Test Control",
+      "nearest_heading": "XI. Test Control",
+      "kind": "blank",
+      "block_id": "B00067",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 16807,
+      "char_end": 16854,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "XII. Control of Measuring and Test Equipment",
+      "nearest_heading": "XII. Control of Measuring and Test Equipment",
+      "kind": "heading",
+      "block_id": "B00068",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 16854,
+      "char_end": 16855,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "XII. Control of Measuring and Test Equipment",
+      "nearest_heading": "XII. Control of Measuring and Test Equipment",
+      "kind": "blank",
+      "block_id": "B00069",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 16855,
+      "char_end": 17121,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "XII. Control of Measuring and Test Equipment",
+      "nearest_heading": "XII. Control of Measuring and Test Equipment",
+      "kind": "content",
+      "block_id": "B00070",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 17121,
+      "char_end": 17122,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "XII. Control of Measuring and Test Equipment",
+      "nearest_heading": "XII. Control of Measuring and Test Equipment",
+      "kind": "blank",
+      "block_id": "B00071",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 17122,
+      "char_end": 17161,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "XIII. Handling, Storage and Shipping",
+      "nearest_heading": "XIII. Handling, Storage and Shipping",
+      "kind": "heading",
+      "block_id": "B00072",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 17161,
+      "char_end": 17162,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "XIII. Handling, Storage and Shipping",
+      "nearest_heading": "XIII. Handling, Storage and Shipping",
+      "kind": "blank",
+      "block_id": "B00073",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 17162,
+      "char_end": 17570,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "XIII. Handling, Storage and Shipping",
+      "nearest_heading": "XIII. Handling, Storage and Shipping",
+      "kind": "content",
+      "block_id": "B00074",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 17570,
+      "char_end": 17571,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "XIII. Handling, Storage and Shipping",
+      "nearest_heading": "XIII. Handling, Storage and Shipping",
+      "kind": "blank",
+      "block_id": "B00075",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 17571,
+      "char_end": 17617,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "XIV. Inspection, Test, and Operating Status",
+      "nearest_heading": "XIV. Inspection, Test, and Operating Status",
+      "kind": "heading",
+      "block_id": "B00076",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 17617,
+      "char_end": 17618,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "XIV. Inspection, Test, and Operating Status",
+      "nearest_heading": "XIV. Inspection, Test, and Operating Status",
+      "kind": "blank",
+      "block_id": "B00077",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 17618,
+      "char_end": 18323,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "XIV. Inspection, Test, and Operating Status",
+      "nearest_heading": "XIV. Inspection, Test, and Operating Status",
+      "kind": "content",
+      "block_id": "B00078",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 18323,
+      "char_end": 18324,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "XIV. Inspection, Test, and Operating Status",
+      "nearest_heading": "XIV. Inspection, Test, and Operating Status",
+      "kind": "blank",
+      "block_id": "B00079",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 18324,
+      "char_end": 18376,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "XV. Nonconforming Materials, Parts, or Components",
+      "nearest_heading": "XV. Nonconforming Materials, Parts, or Components",
+      "kind": "heading",
+      "block_id": "B00080",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 18376,
+      "char_end": 18377,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "XV. Nonconforming Materials, Parts, or Components",
+      "nearest_heading": "XV. Nonconforming Materials, Parts, or Components",
+      "kind": "blank",
+      "block_id": "B00081",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 18377,
+      "char_end": 18834,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "XV. Nonconforming Materials, Parts, or Components",
+      "nearest_heading": "XV. Nonconforming Materials, Parts, or Components",
+      "kind": "content",
+      "block_id": "B00082",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 18834,
+      "char_end": 18835,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "XV. Nonconforming Materials, Parts, or Components",
+      "nearest_heading": "XV. Nonconforming Materials, Parts, or Components",
+      "kind": "blank",
+      "block_id": "B00083",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 18835,
+      "char_end": 18860,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "XVI. Corrective Action",
+      "nearest_heading": "XVI. Corrective Action",
+      "kind": "heading",
+      "block_id": "B00084",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 18860,
+      "char_end": 18861,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "XVI. Corrective Action",
+      "nearest_heading": "XVI. Corrective Action",
+      "kind": "blank",
+      "block_id": "B00085",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 18861,
+      "char_end": 19467,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "XVI. Corrective Action",
+      "nearest_heading": "XVI. Corrective Action",
+      "kind": "content",
+      "block_id": "B00086",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 19467,
+      "char_end": 19468,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "XVI. Corrective Action",
+      "nearest_heading": "XVI. Corrective Action",
+      "kind": "blank",
+      "block_id": "B00087",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 19468,
+      "char_end": 19502,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "XVII. Quality Assurance Records",
+      "nearest_heading": "XVII. Quality Assurance Records",
+      "kind": "heading",
+      "block_id": "B00088",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 19502,
+      "char_end": 19503,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "XVII. Quality Assurance Records",
+      "nearest_heading": "XVII. Quality Assurance Records",
+      "kind": "blank",
+      "block_id": "B00089",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 19503,
+      "char_end": 20329,
+      "line_start": 97,
+      "line_end": 98,
+      "chapter_path": "XVII. Quality Assurance Records",
+      "nearest_heading": "XVII. Quality Assurance Records",
+      "kind": "content",
+      "block_id": "B00090",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 20329,
+      "char_end": 20330,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "XVII. Quality Assurance Records",
+      "nearest_heading": "XVII. Quality Assurance Records",
+      "kind": "blank",
+      "block_id": "B00091",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 20330,
+      "char_end": 20346,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "XVIII. Audits",
+      "nearest_heading": "XVIII. Audits",
+      "kind": "heading",
+      "block_id": "B00092",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 20346,
+      "char_end": 20347,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "XVIII. Audits",
+      "nearest_heading": "XVIII. Audits",
+      "kind": "blank",
+      "block_id": "B00093",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 20347,
+      "char_end": 20922,
+      "line_start": 102,
+      "line_end": 103,
+      "chapter_path": "XVIII. Audits",
+      "nearest_heading": "XVIII. Audits",
+      "kind": "content",
+      "block_id": "B00094",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 20922,
+      "char_end": 20923,
+      "line_start": 104,
+      "line_end": 104,
+      "chapter_path": "XVIII. Audits",
+      "nearest_heading": "XVIII. Audits",
+      "kind": "blank",
+      "block_id": "B00095",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 20923,
+      "char_end": 20924,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "XVIII. Audits",
+      "nearest_heading": "XVIII. Audits",
+      "kind": "blank",
+      "block_id": "B00096",
+      "disposition": "blank"
+    }
+  ]
+}

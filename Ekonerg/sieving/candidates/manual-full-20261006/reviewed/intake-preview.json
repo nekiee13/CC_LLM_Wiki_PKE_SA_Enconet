@@ -1,0 +1,181 @@
+{
+  "mode": "preview_only",
+  "live_writes": 0,
+  "database_sha256": "2aba6d844bb609da85eef77aac2b5155d2bc5ccee02a5059af70c50f5e5b231f",
+  "logical_document": "DOC-0031",
+  "registered_filename": "Priručnik_sustava_upravljanja_rev.5.md",
+  "old_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0",
+  "replacement_sha256": "9492b447c386d174ca6fd7a473999a4999899523ae21570a81626ffadfdeae87",
+  "replacement_kind": "Owner-supplied corrected extraction of the same declared revision5; not a new vendor-issued revision6.",
+  "source_context": {
+    "source_revision": "Revizija: 5"
+  },
+  "old_active_runs": [
+    "RUN-20261003-39"
+  ],
+  "existing_runs": [
+    {
+      "run_id": "RUN-20261003-39",
+      "status": "active",
+      "is_active": 1,
+      "prompt_version": "appb_document_v2_concept_recall",
+      "generation": 1
+    },
+    {
+      "run_id": "RUN-20261005-76",
+      "status": "candidate",
+      "is_active": 0,
+      "prompt_version": "appb_document_v3_context_anchors",
+      "generation": 2
+    }
+  ],
+  "existing_chunks": [
+    {
+      "chunk_id": "CHUNK-DOC-0031-0001",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 3]",
+      "char_start": 0,
+      "char_end": 285,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0002",
+      "heading_path": "Hurapsh [line 13]",
+      "char_start": 285,
+      "char_end": 550,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0003",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35]",
+      "char_start": 550,
+      "char_end": 583,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0004",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 1. UVOD [line 37]",
+      "char_start": 583,
+      "char_end": 732,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0005",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 2. NORMATIVNE REFERENCE [line 42]",
+      "char_start": 732,
+      "char_end": 760,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0006",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 3. POJMOVI I DEFINICIJE, KRATICE [line 44]",
+      "char_start": 760,
+      "char_end": 797,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0007",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 4. KONTEKST ORGANIZACIJE [line 46]",
+      "char_start": 797,
+      "char_end": 1023,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0008",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 5. VODSTVO [line 53]",
+      "char_start": 1023,
+      "char_end": 1130,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0009",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 6. PLANIRANJE [line 59]",
+      "char_start": 1130,
+      "char_end": 1276,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0010",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 7. PODRŠKA [line 65]",
+      "char_start": 1276,
+      "char_end": 1395,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0011",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 8. REALIZACIJA [line 73]",
+      "char_start": 1395,
+      "char_end": 1676,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0012",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 9. VREDNOVANJE [line 83]",
+      "char_start": 1676,
+      "char_end": 1789,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0013",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 10. POBOLJŠANJA [line 89]",
+      "char_start": 1789,
+      "char_end": 1910,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0014",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > PRILOZI [line 95]",
+      "char_start": 1910,
+      "char_end": 2160,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0015",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > DODACI PRIRUČNIKU [line 107]",
+      "char_start": 2160,
+      "char_end": 2382,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0016",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 1. UVOD [line 117]",
+      "char_start": 2382,
+      "char_end": 8232,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    },
+    {
+      "chunk_id": "CHUNK-DOC-0031-0017",
+      "heading_path": "PRIRUČNIK SUSTAVA UPRAVLJANJA [line 35] > 2. NORMATIVNE REFERENCE [line 183]",
+      "char_start": 8232,
+      "char_end": 14259,
+      "source_sha256": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0"
+    }
+  ],
+  "old_active_crumbs": 18,
+  "prepared_items": 279,
+  "old_quote_rows_still_verbatim_in_replacement": 22,
+  "old_quote_rows": 24,
+  "old_criterion_counts": {
+    "APP_B_XVI": 2,
+    "APP_B_II": 6,
+    "APP_B_VI": 2,
+    "APP_B_VII": 1,
+    "APP_B_XVII": 2,
+    "APP_B_XVIII": 1,
+    "APP_B_I": 3,
+    "APP_B_III": 1
+  },
+  "next_unreserved_document_id": "DOC-0032",
+  "blockers_to_live_import": [
+    "Replacement hash differs from documents/raw registry; source identity needs tested revision-aware intake.",
+    "Existing candidate generations require recorded disposition before the normal re-sieve importer can create another.",
+    "Do not link new quotes to predecessor chapters, rewrite old crumbs, or count old/new manual evidence twice."
+  ],
+  "proposed_write_strategy_for_review": [
+    "Retain the old registered source, document identity, chunks, runs and evidence links unchanged.",
+    "Register the complete extraction under a fresh source identity with an explicit predecessor relation; the next ID above is NOT reserved.",
+    "Create chapter records for the new source and import this reviewed candidate against that identity, not the old DOC identity.",
+    "Use one tested current-source selection for active auditing so the old and new manual are not both counted.",
+    "Switch active evidence only through recorded generation/source decisions and refresh evaluation links/scores; retain historical generations."
+  ],
+  "recovery_strategy_for_review": "Owner retains original backups and waived local-original backups. Preserve old raw/chunks/runs in place; any future intake requires transactional writes and a before/after journal. This preview performs no live mutation or deletion."
+}

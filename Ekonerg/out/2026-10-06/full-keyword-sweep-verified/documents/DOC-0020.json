@@ -1,0 +1,2958 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0020",
+  "filename": "PQ08.2-1_r6_Odnosi_s_Naručiteljima.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "e1545b39c208ffdab933b6ac5d453437031da518825dc61e630d51879eb9d2cb",
+  "registered_source_sha256": "e1545b39c208ffdab933b6ac5d453437031da518825dc61e630d51879eb9d2cb",
+  "source_changed": false,
+  "source_bytes": 12469,
+  "source_characters": 12229,
+  "source_lines": 185,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 88,
+      "char_end": 104,
+      "quote_original": "Oznaka: PQ.8.2-1",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 133,
+      "char_end": 144,
+      "quote_original": "Revizija: 6",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00035",
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "line_start": 35,
+      "line_end": 35,
+      "char_start": 419,
+      "char_end": 498,
+      "quote_original": "Ovaj postupak opisuje odnose EKONERG-a s Naručiteljima svojih usluga/proizvoda.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00039",
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "line_start": 39,
+      "line_end": 39,
+      "char_start": 516,
+      "char_end": 1103,
+      "quote_original": "Svrha ovog postupka je da definira odgovornosti i opiše postupke za kontakte s Naručiteljem u cilju prepoznavanja njegovih želja i potreba, razjašnjavanje eventualnih problema tijekom pružanja usluge/izrade proizvoda, te rješavanje primjedbi ili reklamacija Naručitelja tijekom izvođenja aktivnosti ili nakon isporuke usluge/proizvoda. Postupanje u slučaju žalbi Naručitelja i prigovora Naručitelja i ostalih zainteresiranih strana, u sustavu kvalitete verifikacijske djelatnosti, na području verifikacije izvješća o emisijama stakleničkih plinova, opisano je postupcima PQV-04 i PQV-05.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "isporuk"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00055",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 55,
+      "line_end": 55,
+      "char_start": 1286,
+      "char_end": 1702,
+      "quote_original": "1. 2.1. Direktor EKONERG-a odgovoran je za odnose s Naručiteljima u smislu opredjeljenja za ispunjenje Naručiteljevih i ostalih zahtjeva u svrhu postizanja zadovoljstva Naručitelja, te za identifikaciju i upravljanje rizicima i mogućnostima u odnosima s Naručiteljima. Odgovoran je za nadzor komunikacije s Naručiteljima, te za uspostavu i usmjeravanje takve komunikacije na, za EKONERG, strateški važne Naručitelje.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00056",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 56,
+      "line_end": 56,
+      "char_start": 1703,
+      "char_end": 1981,
+      "quote_original": "2. 2.2. Direktor odjela odgovoran je za komunikaciju s Naručiteljem, te za evidenciju i rješavanje primjedbi i reklamacija Naručitelja vezano uz djelatnosti svoga odjela, te osigurava prepoznavanje i upravljanje rizicima i mogućnostima za procese koji su u njegovoj nadležnosti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00057",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 57,
+      "line_end": 57,
+      "char_start": 1982,
+      "char_end": 2220,
+      "quote_original": "3. 2.3. Voditelj tima odgovoran je komunikaciju s Naručiteljem vezano uz obavljanje svoga radnog naloga, te je o tome dužan izvještavati Direktora svoga odjela. On je također odgovoran za rješavanje primjedbi/reklamacija na radnom nalogu.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00058",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 58,
+      "line_end": 58,
+      "char_start": 2221,
+      "char_end": 2493,
+      "quote_original": "4. 2.4. Direktor odjela za mjerenje i analitiku u suradnji s Tehničkim voditeljem Laboratorija odgovoran je komunikaciju s Naručiteljem vezano uz obavljanje aktivnosti Laboratorija. Oni su također odgovorni za rješavanje primjedbi/reklamacija na aktivnostima Laboratorija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn",
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00059",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 59,
+      "line_end": 59,
+      "char_start": 2494,
+      "char_end": 2773,
+      "quote_original": "5. 2.5. Voditelj Q/EP/HS službe odgovoran je evidentirati i analizirati primjedbe/reklamacije Naručitelja, o tome periodički izvještavati Direktora EKONERG-a, te po potrebi pokretati preventivne/korektivne akcije za sprječavanje nastajanja odnosno ponavljanja takvih reklamacija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "ponavlj",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "2. ODGOVORNOSTI / ODNOSI S NARUČITELJEM",
+      "line_start": 67,
+      "line_end": 67,
+      "char_start": 2873,
+      "char_end": 3185,
+      "quote_original": "2.6. QA voditelj Laboratorija odgovoran je evidentirati i analizirati primjedbe/reklamacije Naručitelja, o tome periodički izvještavati Direktora odjela za mjerenje i analitiku, te po potrebi predlagati pokretanje preventivnih/korektivnih akcija za sprječavanje nastajanja odnosno ponavljanja takvih reklamacija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "ponavlj",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00073",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 73,
+      "line_end": 73,
+      "char_start": 3259,
+      "char_end": 3612,
+      "quote_original": "1. 3.1.1. Direktor odjela kontinuirano prati potrebe za aktivnostima koje provodi njegov odjel, te u tom smislu komunicira sa stalnim Naručiteljima, kao i potencijalnim Naručiteljima. Cilj mu je pri tome prepoznati želje i potrebe Naručitelja, te osmisliti takvu uslugu/proizvod koji će zadovoljiti, te eventualno čak i nadmašiti očekivanja Naručitelja.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00074",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 74,
+      "line_end": 74,
+      "char_start": 3613,
+      "char_end": 3788,
+      "quote_original": "2. 3.1.2. Direktor odjela u svojim kontaktima s Naručiteljem nastoji poboljšati međusobne odnose i povjerenje te graditi \"partnerske\" i dugoročne odnose gdje god je to moguće.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00075",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 75,
+      "line_end": 75,
+      "char_start": 3789,
+      "char_end": 3949,
+      "quote_original": "3. 3.1.3. Za aktivnosti na pojedinom radnom nalogu (projektu) za odnose s predstavnicima Naručitelja odgovoran je Voditelj tima ili od njega zaduženi član tima.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "projekt"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00077",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 77,
+      "line_end": 77,
+      "char_start": 4116,
+      "char_end": 4362,
+      "quote_original": "5. 3.1.5. Po pitanju kvalitete, zaštite okoliša ili zdravlja i sigurnosti, za odnose s Naručiteljem po potrebi se angažira Voditelj Q/EP/HS službe ili osoba koja je određena za navedena područja na pojedinom radnom nalogu (prema planu kvalitete).",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "plan.{0,20}kvalitet"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00078",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 78,
+      "line_end": 78,
+      "char_start": 4363,
+      "char_end": 4611,
+      "quote_original": "6. 3.1.6. Direktor odjela za mjerenje i analitiku odmah po dovršenju radnog naloga iz djelokruga Laboratorija, šalje Naručitelju Upitnik za ocjenu aktivnosti, koji je prikazan u prilogu A ovog postupka. Upitnik se obvezno šalje za sve radne naloge.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XII": {
+          "quote_terms": [
+            "mjeren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "dovrs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00079",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 79,
+      "line_end": 79,
+      "char_start": 4612,
+      "char_end": 4965,
+      "quote_original": "7. 3.1.7. Osim povremenih kontakata s Naručiteljem Direktor odjela je dužan, odmah po dovršenju radnog naloga, poslati Naručitelju Upitnik za ocjenu aktivnosti, koji je prikazan u prilogu A ovog postupka. Upitnik se obvezno šalje za sve aktivnosti nivoa I i II definiranim u postupku PQ.7-1, odnosno za radne naloge čija vrijednost prelazi 50.000,00 kn.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "dovrs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00080",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 80,
+      "line_end": 80,
+      "char_start": 4966,
+      "char_end": 5115,
+      "quote_original": "8. 3.1.8. Slanje upitnika, evidentiranje poslanih upitnika, kao i postupanje s odgovorom Naručitelja detaljnije je definirano radnom uputom RU.5-2.1.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup",
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00081",
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "line_start": 81,
+      "line_end": 81,
+      "char_start": 5116,
+      "char_end": 5402,
+      "quote_original": "9. 3.1.9. Odgovor Naručitelja – popunjeni Upitnik za ocjenu aktivnosti dostavlja se po primitku u EKONERG-u Voditelju Q/EP/HS službe, koji ih vodi u listi, analizira i o tome periodički izvještava Upravu. Kopija popunjenog Upitnika dostavlja se Direktoru odjela nositelja radnog naloga.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00085",
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "line_start": 85,
+      "line_end": 85,
+      "char_start": 5462,
+      "char_end": 5604,
+      "quote_original": "1. 3.2.1. Komunikaciju s Naručiteljem na nivou EKONERG-a obavlja Direktor EKONERG-a uz asistenciju, prema potrebi, Direktora pojedinih odjela.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00095",
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "line_start": 95,
+      "line_end": 95,
+      "char_start": 5799,
+      "char_end": 6048,
+      "quote_original": "1. 3.2.2. Direktor EKONERG-a komunicira s Naručiteljem u cilju stvaranja dugoročnih \"partnerskih\" odnosa na relaciji Naručitelj - EKONERG - (Dobavljač) i trajnog ostvarenja/podizanja kvalitete isporučenih usluga/proizvoda i zadovoljstva Naručitelja.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00096",
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "line_start": 96,
+      "line_end": 96,
+      "char_start": 6049,
+      "char_end": 6200,
+      "quote_original": "2. 3.2.3. Direktor EKONERG-a se uključuje i kod rješavanja velikih pritužbi/reklamacija Naručitelja, koje bi mogle ugroziti poziciju i ugled EKONERG-a.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00097",
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "line_start": 97,
+      "line_end": 97,
+      "char_start": 6201,
+      "char_end": 6458,
+      "quote_original": "3. 3.2.4. Pritužbe/reklamacije Naručitelja koje stižu na EKONERG Direktor usmjerava na Voditelja Q/EP/HS službe te, ako je vezano uz radni nalog, na Direktora odjela nositelja radnog naloga, odnosno ako je vezano na Laboratorij na QA voditelja Laboratorija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00101",
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "line_start": 101,
+      "line_end": 101,
+      "char_start": 6525,
+      "char_end": 6869,
+      "quote_original": "1. 3.3.1. U slučaju usmene primjedbe/reklamacije predstavnika Naručitelja koja se odnosi na pojedini radni nalog Direktor odjela ili Voditelj tima na radnom nalogu dužan je, ako se radi o ozbiljnijoj primjedbi/reklamaciji, zabilježiti je na obrascu u Prilogu B ovog postupka. U pravilu treba od Naručitelja tražiti pisanu primjedbu/reklamaciju.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor",
+            "predstavnik"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00103",
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "line_start": 103,
+      "line_end": 103,
+      "char_start": 6871,
+      "char_end": 7012,
+      "quote_original": "Kopiju zapisa o primjedbi/reklamaciji dužan je Direktor odjela/Voditelj tima dostaviti Voditelju Q/EP/HS službe, koji vodi Listu reklamacija.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00105",
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "line_start": 105,
+      "line_end": 105,
+      "char_start": 7014,
+      "char_end": 7193,
+      "quote_original": "1. 3.3.2. Pisane primjedbe/reklamacije Naručitelja dostavljaju se Voditelju Q/EP/HS službe, koji ih uvodi Listu reklamacija, a kopija se dostavlja Voditelju tima/Direktoru odjela.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00106",
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "line_start": 106,
+      "line_end": 106,
+      "char_start": 7194,
+      "char_end": 7366,
+      "quote_original": "2. 3.3.3. Voditelj Q/EP/HS službe po potrebi otvara Izvještaj o neusklađenosti (IN) prema postupku PQ.8-1 ili Zahtjev za korektivnu akciju (ZK) u skladu s postupkom PQ.8-4.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "neusklad",
+            "neuskla"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00107",
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "line_start": 107,
+      "line_end": 107,
+      "char_start": 7367,
+      "char_end": 7514,
+      "quote_original": "3. 3.3.4. QA voditelj Laboratorija, po potrebi, otvara Izvještaj o neusklađenosti Laboratorija (INL) prema postupku sustava kvalitete Laboratorija.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "neusklad",
+            "neuskla"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00108",
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "line_start": 108,
+      "line_end": 108,
+      "char_start": 7515,
+      "char_end": 7970,
+      "quote_original": "4. 3.3.5. Za rješavanje primjedbi/reklamacija na pojedinom radnom nalogu zadužen je Voditelj tima, uz po potrebi, pomoć Voditelja Q/EP/HS službe i/ili Direktora odjela. O rješenju svake primjedbe/reklamacije koja je ubilježena u Listu reklamacija Voditelj tima je dužan pisano izvijestiti Voditelja Q/EP/HS službe i Direktora odjela. Voditelj Q/EP/HS službe bilježi rješenje u Listi reklamacija, a također zatvara IN ili ZK, ako su za to ostvareni uvjeti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00109",
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "line_start": 109,
+      "line_end": 109,
+      "char_start": 7971,
+      "char_end": 8257,
+      "quote_original": "5. 3.3.6. Za rješavanje primjedbi/reklamacija na aktivnostima Laboratorija, unutar sustava kvalitete Laboratorija, zadužen je Tehnički voditelj Laboratorija ili od njega zaduženi član tima Laboratorija, uz po potrebi, pomoć Direktora odjela za energetiku i/ili Voditelja Q/EP/HS službe.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00113",
+      "chapter_path": "3. POSTUPAK / 3.4. Analiza i izvještavanje o reklamacijama",
+      "line_start": 113,
+      "line_end": 113,
+      "char_start": 8309,
+      "char_end": 8418,
+      "quote_original": "1. 3.4.1. Voditelj Q/EP/HS službe periodički radi analizu reklamacija i o tome izvještava Direktora EKONERG-a",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00119",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 119,
+      "line_end": 119,
+      "char_start": 8491,
+      "char_end": 8620,
+      "quote_original": "1. 4.1. Evidencija primjedbi/reklamacija vodi se u Listi reklamacija, na računalu uz ograničeni pristup (Voditelj Q/EP/HS službe)",
+      "matches": {
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00120",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 120,
+      "line_end": 120,
+      "char_start": 8621,
+      "char_end": 8753,
+      "quote_original": "2. 4.2. Pisane primjedbe/reklamacije ili zapis o usmenim primjedbama/reklamacijama čuvaju se kao zapisi u skladu s postupkom PQ.4-7.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00121",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 121,
+      "line_end": 121,
+      "char_start": 8754,
+      "char_end": 8868,
+      "quote_original": "3. 4.2. Izvještaji/zapisi o rješenju primjedbe/reklamacije Naručitelja čuvaju se u arhivi odjela i Q/EP/HS službe.",
+      "matches": {
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis",
+            "arhiv"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00122",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 122,
+      "line_end": 122,
+      "char_start": 8869,
+      "char_end": 9050,
+      "quote_original": "4. 4.3. Svi izvještaji o neusklađenosti (IN) ili zahtjevi za korektivnim akcijama (ZK) vezani uz primjedbe/reklamacije Naručitelja, čuvaju se kao zapisi u skladu s postupkom PQ.4-7.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "neusklad",
+            "neuskla"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00134",
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "line_start": 134,
+      "line_end": 134,
+      "char_start": 9234,
+      "char_end": 9417,
+      "quote_original": "EKONERG-ova je dugogodišnja politika da svoje aktivnosti obavlja uz nastojanje da postigne što višu kvalitetu i što bolje ispuni želje i zadovolji potrebe svojih Kupaca – Naručitelja.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "politika"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00144",
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "line_start": 144,
+      "line_end": 144,
+      "char_start": 10329,
+      "char_end": 10359,
+      "quote_original": "Ugovor ( broj i naziv) : .....",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00151",
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "line_start": 151,
+      "line_end": 151,
+      "char_start": 11146,
+      "char_end": 11302,
+      "quote_original": "| Kako ocjenjujete naše napore za proširenje i poboljšanje suradnje s Vama?    |                     |                        |                |           |",
+      "matches": {
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00171",
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "line_start": 175,
+      "line_end": 179,
+      "char_start": 11772,
+      "char_end": 11910,
+      "quote_original": "**Naziv Naručitelja:** .....  \n**Broj RN:** .....  \n**Broj i naziv ugovora:** .....  \n**Datum prijema**  \n**primjedbe/reklamacije:** .....",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00173",
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "line_start": 181,
+      "line_end": 181,
+      "char_start": 11912,
+      "char_end": 12003,
+      "quote_original": "| Red. broj | Primjedba/reklamacija Naručitelja | Ime predstavnika Naručitelja | Napomena |",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "predstavnik"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00177",
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "line_start": 185,
+      "line_end": 185,
+      "char_start": 12189,
+      "char_end": 12229,
+      "quote_original": "Potpis Voditelja tima:(Obrazac PQ.5-2.2)",
+      "matches": {
+        "APP_B_XVII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 56,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "image_reference_only",
+      "block_id": "B00001",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 56,
+      "char_end": 57,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 57,
+      "char_end": 87,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 87,
+      "char_end": 88,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 88,
+      "char_end": 105,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 105,
+      "char_end": 106,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00006",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 106,
+      "char_end": 132,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "heading",
+      "block_id": "B00007",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 132,
+      "char_end": 133,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 133,
+      "char_end": 145,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 145,
+      "char_end": 146,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 146,
+      "char_end": 183,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 183,
+      "char_end": 184,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 184,
+      "char_end": 191,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 191,
+      "char_end": 192,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00014",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 192,
+      "char_end": 204,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 204,
+      "char_end": 205,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 205,
+      "char_end": 243,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00017",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 243,
+      "char_end": 244,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 244,
+      "char_end": 251,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 251,
+      "char_end": 252,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00020",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 252,
+      "char_end": 264,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00021",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 264,
+      "char_end": 265,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00022",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 265,
+      "char_end": 312,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00023",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 312,
+      "char_end": 313,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00024",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 313,
+      "char_end": 320,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00025",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 320,
+      "char_end": 321,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00026",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 321,
+      "char_end": 333,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 333,
+      "char_end": 334,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 334,
+      "char_end": 390,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "image_reference_only",
+      "block_id": "B00029",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 390,
+      "char_end": 391,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "ODNOSI S NARUČITELJIMA",
+      "nearest_heading": "ODNOSI S NARUČITELJIMA",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 391,
+      "char_end": 402,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "heading",
+      "block_id": "B00031",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 402,
+      "char_end": 403,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 403,
+      "char_end": 418,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "heading",
+      "block_id": "B00033",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 418,
+      "char_end": 419,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 419,
+      "char_end": 499,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "content",
+      "block_id": "B00035",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 499,
+      "char_end": 500,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 500,
+      "char_end": 515,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "heading",
+      "block_id": "B00037",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 515,
+      "char_end": 516,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 516,
+      "char_end": 1104,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00039",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1104,
+      "char_end": 1105,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00040",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1105,
+      "char_end": 1124,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "heading",
+      "block_id": "B00041",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1124,
+      "char_end": 1125,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00042",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1125,
+      "char_end": 1156,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1156,
+      "char_end": 1157,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00044",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1157,
+      "char_end": 1189,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00045",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1189,
+      "char_end": 1190,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1190,
+      "char_end": 1222,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00047",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1222,
+      "char_end": 1223,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00048",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1223,
+      "char_end": 1255,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00049",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1255,
+      "char_end": 1256,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00050",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1256,
+      "char_end": 1265,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "content",
+      "block_id": "B00051",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1265,
+      "char_end": 1266,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "1. UVOD / 1.3. Reference",
+      "nearest_heading": "1.3. Reference",
+      "kind": "blank",
+      "block_id": "B00052",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1266,
+      "char_end": 1285,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "heading",
+      "block_id": "B00053",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1285,
+      "char_end": 1286,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00054",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1286,
+      "char_end": 1703,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00055",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1703,
+      "char_end": 1982,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00056",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1982,
+      "char_end": 2221,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00057",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2221,
+      "char_end": 2494,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00058",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2494,
+      "char_end": 2774,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00059",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2774,
+      "char_end": 2775,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00060",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2775,
+      "char_end": 2831,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "image_reference_only",
+      "block_id": "B00061",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 2831,
+      "char_end": 2832,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00062",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2832,
+      "char_end": 2845,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "2. ODGOVORNOSTI / PQ.8-2.1",
+      "nearest_heading": "PQ.8-2.1",
+      "kind": "heading",
+      "block_id": "B00063",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2845,
+      "char_end": 2846,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "2. ODGOVORNOSTI / PQ.8-2.1",
+      "nearest_heading": "PQ.8-2.1",
+      "kind": "blank",
+      "block_id": "B00064",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2846,
+      "char_end": 2872,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "2. ODGOVORNOSTI / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "heading",
+      "block_id": "B00065",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2872,
+      "char_end": 2873,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "2. ODGOVORNOSTI / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "blank",
+      "block_id": "B00066",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2873,
+      "char_end": 3186,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "2. ODGOVORNOSTI / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3186,
+      "char_end": 3187,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "2. ODGOVORNOSTI / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "blank",
+      "block_id": "B00068",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3187,
+      "char_end": 3203,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "heading",
+      "block_id": "B00069",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3203,
+      "char_end": 3204,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00070",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3204,
+      "char_end": 3258,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "heading",
+      "block_id": "B00071",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3258,
+      "char_end": 3259,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "blank",
+      "block_id": "B00072",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3259,
+      "char_end": 3613,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00073",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3613,
+      "char_end": 3789,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00074",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3789,
+      "char_end": 3950,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00075",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3950,
+      "char_end": 4116,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00076",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4116,
+      "char_end": 4363,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00077",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4363,
+      "char_end": 4612,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00078",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4612,
+      "char_end": 4966,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00079",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4966,
+      "char_end": 5116,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00080",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5116,
+      "char_end": 5403,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "content",
+      "block_id": "B00081",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5403,
+      "char_end": 5404,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "3. POSTUPAK / 3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "nearest_heading": "3.1. Komunikacija s Naručiteljem na nivou odjela",
+      "kind": "blank",
+      "block_id": "B00082",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5404,
+      "char_end": 5461,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "nearest_heading": "3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "kind": "heading",
+      "block_id": "B00083",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5461,
+      "char_end": 5462,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "nearest_heading": "3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "kind": "blank",
+      "block_id": "B00084",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5462,
+      "char_end": 5605,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "nearest_heading": "3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "kind": "content",
+      "block_id": "B00085",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5605,
+      "char_end": 5606,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "nearest_heading": "3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "kind": "blank",
+      "block_id": "B00086",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5606,
+      "char_end": 5662,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "nearest_heading": "3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "kind": "image_reference_only",
+      "block_id": "B00087",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 5662,
+      "char_end": 5663,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "nearest_heading": "3.2. Komunikacija s Naručiteljem na nivou EKONERG-a",
+      "kind": "blank",
+      "block_id": "B00088",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5663,
+      "char_end": 5676,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / PQ.8-2.1",
+      "nearest_heading": "PQ.8-2.1",
+      "kind": "heading",
+      "block_id": "B00089",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5676,
+      "char_end": 5677,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / PQ.8-2.1",
+      "nearest_heading": "PQ.8-2.1",
+      "kind": "blank",
+      "block_id": "B00090",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5677,
+      "char_end": 5703,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "heading",
+      "block_id": "B00091",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5703,
+      "char_end": 5704,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "blank",
+      "block_id": "B00092",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5704,
+      "char_end": 5798,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "content",
+      "block_id": "B00093",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 5798,
+      "char_end": 5799,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "blank",
+      "block_id": "B00094",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5799,
+      "char_end": 6049,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "content",
+      "block_id": "B00095",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6049,
+      "char_end": 6201,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "content",
+      "block_id": "B00096",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6201,
+      "char_end": 6459,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "content",
+      "block_id": "B00097",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6459,
+      "char_end": 6460,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "3. POSTUPAK / 3.2. Komunikacija s Naručiteljem na nivou EKONERG-a / ODNOSI S NARUČITELJEM",
+      "nearest_heading": "ODNOSI S NARUČITELJEM",
+      "kind": "blank",
+      "block_id": "B00098",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6460,
+      "char_end": 6524,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "heading",
+      "block_id": "B00099",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6524,
+      "char_end": 6525,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "blank",
+      "block_id": "B00100",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6525,
+      "char_end": 6870,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "content",
+      "block_id": "B00101",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6870,
+      "char_end": 6871,
+      "line_start": 102,
+      "line_end": 102,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "blank",
+      "block_id": "B00102",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6871,
+      "char_end": 7013,
+      "line_start": 103,
+      "line_end": 103,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "content",
+      "block_id": "B00103",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7013,
+      "char_end": 7014,
+      "line_start": 104,
+      "line_end": 104,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "blank",
+      "block_id": "B00104",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7014,
+      "char_end": 7194,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "content",
+      "block_id": "B00105",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7194,
+      "char_end": 7367,
+      "line_start": 106,
+      "line_end": 106,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "content",
+      "block_id": "B00106",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7367,
+      "char_end": 7515,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "content",
+      "block_id": "B00107",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7515,
+      "char_end": 7971,
+      "line_start": 108,
+      "line_end": 108,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "content",
+      "block_id": "B00108",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7971,
+      "char_end": 8258,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "content",
+      "block_id": "B00109",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8258,
+      "char_end": 8259,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "3. POSTUPAK / 3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "nearest_heading": "3.3. Rješavanje primjedbi/reklamacija od strane Naručitelja",
+      "kind": "blank",
+      "block_id": "B00110",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8259,
+      "char_end": 8308,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "3. POSTUPAK / 3.4. Analiza i izvještavanje o reklamacijama",
+      "nearest_heading": "3.4. Analiza i izvještavanje o reklamacijama",
+      "kind": "heading",
+      "block_id": "B00111",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8308,
+      "char_end": 8309,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "3. POSTUPAK / 3.4. Analiza i izvještavanje o reklamacijama",
+      "nearest_heading": "3.4. Analiza i izvještavanje o reklamacijama",
+      "kind": "blank",
+      "block_id": "B00112",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8309,
+      "char_end": 8419,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "3. POSTUPAK / 3.4. Analiza i izvještavanje o reklamacijama",
+      "nearest_heading": "3.4. Analiza i izvještavanje o reklamacijama",
+      "kind": "content",
+      "block_id": "B00113",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8419,
+      "char_end": 8420,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "3. POSTUPAK / 3.4. Analiza i izvještavanje o reklamacijama",
+      "nearest_heading": "3.4. Analiza i izvještavanje o reklamacijama",
+      "kind": "blank",
+      "block_id": "B00114",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8420,
+      "char_end": 8476,
+      "line_start": 115,
+      "line_end": 115,
+      "chapter_path": "3. POSTUPAK / 3.4. Analiza i izvještavanje o reklamacijama",
+      "nearest_heading": "3.4. Analiza i izvještavanje o reklamacijama",
+      "kind": "image_reference_only",
+      "block_id": "B00115",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 8476,
+      "char_end": 8477,
+      "line_start": 116,
+      "line_end": 116,
+      "chapter_path": "3. POSTUPAK / 3.4. Analiza i izvještavanje o reklamacijama",
+      "nearest_heading": "3.4. Analiza i izvještavanje o reklamacijama",
+      "kind": "blank",
+      "block_id": "B00116",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8477,
+      "char_end": 8490,
+      "line_start": 117,
+      "line_end": 117,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "heading",
+      "block_id": "B00117",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8490,
+      "char_end": 8491,
+      "line_start": 118,
+      "line_end": 118,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00118",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8491,
+      "char_end": 8621,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00119",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8621,
+      "char_end": 8754,
+      "line_start": 120,
+      "line_end": 120,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00120",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8754,
+      "char_end": 8869,
+      "line_start": 121,
+      "line_end": 121,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00121",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8869,
+      "char_end": 9051,
+      "line_start": 122,
+      "line_end": 122,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00122",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9051,
+      "char_end": 9052,
+      "line_start": 123,
+      "line_end": 123,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00123",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9052,
+      "char_end": 9108,
+      "line_start": 124,
+      "line_end": 124,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "image_reference_only",
+      "block_id": "B00124",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 9108,
+      "char_end": 9109,
+      "line_start": 125,
+      "line_end": 125,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00125",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9109,
+      "char_end": 9122,
+      "line_start": 126,
+      "line_end": 126,
+      "chapter_path": "4. ZAPISI / Prilog A",
+      "nearest_heading": "Prilog A",
+      "kind": "heading",
+      "block_id": "B00126",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 9122,
+      "char_end": 9123,
+      "line_start": 127,
+      "line_end": 127,
+      "chapter_path": "4. ZAPISI / Prilog A",
+      "nearest_heading": "Prilog A",
+      "kind": "blank",
+      "block_id": "B00127",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9123,
+      "char_end": 9135,
+      "line_start": 128,
+      "line_end": 128,
+      "chapter_path": "4. ZAPISI / EKONERG",
+      "nearest_heading": "EKONERG",
+      "kind": "heading",
+      "block_id": "B00128",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 9135,
+      "char_end": 9136,
+      "line_start": 129,
+      "line_end": 129,
+      "chapter_path": "4. ZAPISI / EKONERG",
+      "nearest_heading": "EKONERG",
+      "kind": "blank",
+      "block_id": "B00129",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9136,
+      "char_end": 9190,
+      "line_start": 130,
+      "line_end": 130,
+      "chapter_path": "4. ZAPISI / EKONERG",
+      "nearest_heading": "EKONERG",
+      "kind": "image_reference_only",
+      "block_id": "B00130",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 9190,
+      "char_end": 9191,
+      "line_start": 131,
+      "line_end": 131,
+      "chapter_path": "4. ZAPISI / EKONERG",
+      "nearest_heading": "EKONERG",
+      "kind": "blank",
+      "block_id": "B00131",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9191,
+      "char_end": 9233,
+      "line_start": 132,
+      "line_end": 132,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "heading",
+      "block_id": "B00132",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 9233,
+      "char_end": 9234,
+      "line_start": 133,
+      "line_end": 133,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00133",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9234,
+      "char_end": 9418,
+      "line_start": 134,
+      "line_end": 134,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00134",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9418,
+      "char_end": 9419,
+      "line_start": 135,
+      "line_end": 135,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00135",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9419,
+      "char_end": 9621,
+      "line_start": 136,
+      "line_end": 136,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00136",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9621,
+      "char_end": 9622,
+      "line_start": 137,
+      "line_end": 137,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00137",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9622,
+      "char_end": 9854,
+      "line_start": 138,
+      "line_end": 138,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00138",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9854,
+      "char_end": 9855,
+      "line_start": 139,
+      "line_end": 139,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00139",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9855,
+      "char_end": 10075,
+      "line_start": 140,
+      "line_end": 140,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00140",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10075,
+      "char_end": 10076,
+      "line_start": 141,
+      "line_end": 141,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00141",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10076,
+      "char_end": 10328,
+      "line_start": 142,
+      "line_end": 142,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00142",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10328,
+      "char_end": 10329,
+      "line_start": 143,
+      "line_end": 143,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00143",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10329,
+      "char_end": 10360,
+      "line_start": 144,
+      "line_end": 144,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00144",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10360,
+      "char_end": 10361,
+      "line_start": 145,
+      "line_end": 145,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00145",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10361,
+      "char_end": 10518,
+      "line_start": 146,
+      "line_end": 146,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00146",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10518,
+      "char_end": 10675,
+      "line_start": 147,
+      "line_end": 147,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00147",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 10675,
+      "char_end": 10832,
+      "line_start": 148,
+      "line_end": 148,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00148",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10832,
+      "char_end": 10989,
+      "line_start": 149,
+      "line_end": 149,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00149",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10989,
+      "char_end": 11146,
+      "line_start": 150,
+      "line_end": 150,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00150",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11146,
+      "char_end": 11303,
+      "line_start": 151,
+      "line_end": 151,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00151",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11303,
+      "char_end": 11304,
+      "line_start": 152,
+      "line_end": 152,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00152",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11304,
+      "char_end": 11397,
+      "line_start": 153,
+      "line_end": 153,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00153",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11397,
+      "char_end": 11398,
+      "line_start": 154,
+      "line_end": 154,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00154",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11398,
+      "char_end": 11555,
+      "line_start": 155,
+      "line_end": 155,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00155",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11555,
+      "char_end": 11556,
+      "line_start": 156,
+      "line_end": 156,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00156",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11556,
+      "char_end": 11594,
+      "line_start": 157,
+      "line_end": 161,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00157",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11594,
+      "char_end": 11595,
+      "line_start": 162,
+      "line_end": 162,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00158",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11595,
+      "char_end": 11611,
+      "line_start": 163,
+      "line_end": 163,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00159",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11611,
+      "char_end": 11612,
+      "line_start": 164,
+      "line_end": 164,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00160",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11612,
+      "char_end": 11631,
+      "line_start": 165,
+      "line_end": 165,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00161",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11631,
+      "char_end": 11632,
+      "line_start": 166,
+      "line_end": 166,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00162",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11632,
+      "char_end": 11651,
+      "line_start": 167,
+      "line_end": 167,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00163",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11651,
+      "char_end": 11652,
+      "line_start": 168,
+      "line_end": 168,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00164",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11652,
+      "char_end": 11706,
+      "line_start": 169,
+      "line_end": 169,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "image_reference_only",
+      "block_id": "B00165",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 11706,
+      "char_end": 11707,
+      "line_start": 170,
+      "line_end": 170,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00166",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11707,
+      "char_end": 11716,
+      "line_start": 171,
+      "line_end": 171,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "content",
+      "block_id": "B00167",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11716,
+      "char_end": 11717,
+      "line_start": 172,
+      "line_end": 172,
+      "chapter_path": "4. ZAPISI / UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "nearest_heading": "UPITNIK ZA OCJENU PRUĐENIH USLUGA",
+      "kind": "blank",
+      "block_id": "B00168",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11717,
+      "char_end": 11771,
+      "line_start": 173,
+      "line_end": 173,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "heading",
+      "block_id": "B00169",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11771,
+      "char_end": 11772,
+      "line_start": 174,
+      "line_end": 174,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "blank",
+      "block_id": "B00170",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11772,
+      "char_end": 11911,
+      "line_start": 175,
+      "line_end": 179,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "content",
+      "block_id": "B00171",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11911,
+      "char_end": 11912,
+      "line_start": 180,
+      "line_end": 180,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "blank",
+      "block_id": "B00172",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11912,
+      "char_end": 12004,
+      "line_start": 181,
+      "line_end": 181,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "content",
+      "block_id": "B00173",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12004,
+      "char_end": 12096,
+      "line_start": 182,
+      "line_end": 182,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00174",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 12096,
+      "char_end": 12188,
+      "line_start": 183,
+      "line_end": 183,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "empty_table_row",
+      "block_id": "B00175",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 12188,
+      "char_end": 12189,
+      "line_start": 184,
+      "line_end": 184,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "blank",
+      "block_id": "B00176",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12189,
+      "char_end": 12229,
+      "line_start": 185,
+      "line_end": 185,
+      "chapter_path": "4. ZAPISI / ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "nearest_heading": "ZAPIS **O PRIMJEDBI/REKLAMACIJI NARUČITELJA",
+      "kind": "content",
+      "block_id": "B00177",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

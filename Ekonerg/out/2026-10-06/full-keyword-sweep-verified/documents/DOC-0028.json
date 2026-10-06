@@ -1,0 +1,3106 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0028",
+  "filename": "PQ09.3_r6_Pregled_i_ocjena_sustava_kvalitete,_zašt.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "cf62287d78756915eaa14885e5c3cf87241795e3fdd1f173df3f71a7f22a2879",
+  "registered_source_sha256": "cf62287d78756915eaa14885e5c3cf87241795e3fdd1f173df3f71a7f22a2879",
+  "source_changed": false,
+  "source_bytes": 7859,
+  "source_characters": 7649,
+  "source_lines": 126,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 89,
+      "char_end": 103,
+      "quote_original": "Oznaka: PQ.9.3",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 211,
+      "char_end": 222,
+      "quote_original": "Revizija: 6",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 11,
+      "line_end": 11,
+      "char_start": 224,
+      "char_end": 260,
+      "quote_original": "Pripremio: Tomislav Hršak, dipl.ing.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00013",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 13,
+      "line_end": 13,
+      "char_start": 262,
+      "char_end": 268,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 270,
+      "char_end": 281,
+      "quote_original": "29.01.2019.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00017",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 17,
+      "line_end": 17,
+      "char_start": 283,
+      "char_end": 320,
+      "quote_original": "Pregledao: Krešimir Brckan, dipl.ing.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00019",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 19,
+      "line_end": 19,
+      "char_start": 322,
+      "char_end": 328,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00021",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 21,
+      "line_end": 21,
+      "char_start": 330,
+      "char_end": 341,
+      "quote_original": "29.01.2019.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00023",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 23,
+      "line_end": 23,
+      "char_start": 343,
+      "char_end": 389,
+      "quote_original": "Odobrio: Mr.sc. Zdravko Mužek, dipl.ing.stroj.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00025",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 25,
+      "line_end": 25,
+      "char_start": 391,
+      "char_end": 397,
+      "quote_original": "Datum:",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00027",
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "line_start": 27,
+      "line_end": 27,
+      "char_start": 399,
+      "char_end": 410,
+      "quote_original": "30.01.2019.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [],
+          "heading_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "pregled.{0,20}ocjen"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00035",
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "line_start": 35,
+      "line_end": 35,
+      "char_start": 497,
+      "char_end": 1074,
+      "quote_original": "Ovaj se postupak primjenjuje na obvezne aktivnosti Uprave, u cilju praćenja uspješnosti i prikladnosti sustava kvalitete (uključujući i sustav kvalitete verifikacijske djelatnosti), sustava zaštite okoliša, sustava zaštite zdravlja i sigurnosti, sustava upravljanja energijom te zadovoljavanja zahtjeva primjenjivih standarda te provedbu utvrđene politike kvalitete, zaštite okoliša, zaštite zdravlja i sigurnosti i upravljanja energijom, te postizanja ciljeva u sustavu kvalitete, sustavu zaštite okoliša, sustavu zaštite zdravlja i sigurnosti i sustavu upravljanja energijom.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)",
+            "ciljev"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00039",
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "line_start": 39,
+      "line_end": 39,
+      "char_start": 1092,
+      "char_end": 1394,
+      "quote_original": "Ovim se postupkom definiraju nadležnosti i odgovornosti za pregled od strane Uprave, sadržaj i opseg informacija o djelotvornosti sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti, sustava upravljanja energijom i okolnostima djelovanja, te opseg aktivnosti sudionika u postupku.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00047",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 51,
+      "line_end": 51,
+      "char_start": 1604,
+      "char_end": 1885,
+      "quote_original": "1. 2.1. Predstavnik Uprave odgovoran je za pripremu svih podloga i njihovo prezentiranje Upravi (Direktoru EKONERG-a) u cilju obavljanja pregleda i donošenja ocjene sustava od strane Uprave. Ukoliko Predstavnik uprave nije imenovan, njegovu nulogu preuzima Voditelj Q/EP/HS službe.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor",
+            "predstavnik"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "pregled.{0,20}ocjen"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00048",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 52,
+      "line_end": 52,
+      "char_start": 1886,
+      "char_end": 2535,
+      "quote_original": "2. 2.2. Voditelj Q/EP/HS službe odgovoran je za pripremu periodičkih analiza i informacija o uvjetima za primjenu sustava kvalitete, zaštite okoliša i zaštite zdravlja i sigurnosti, o uspješnosti primjene svih navedenih sustava, o zapažanjima o odstupanjima, primjedbama i reklamacijama Naručitelja, te eventualnim prijedlozima za poboljšanja sustava kvalitete, zaštite okoliša i sustava zaštite zdravlja i sigurnosti; dokument s analizama i informacijama Voditelj Q/EP/HS službe dužan je podnijeti na razmatranje direktoru EKONERG-a, te inicirati pregled sustava kvalitete, zaštite okoliša te sustava zaštite zdravlja i sigurnosti od strane Uprave.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00049",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 53,
+      "line_end": 53,
+      "char_start": 2536,
+      "char_end": 2700,
+      "quote_original": "3. 2.3. Vodeći verifikator, vezano za sustav kvalitete verifikacijske djelatnosti, odgovoran je za pripremu periodičkih analiza i ostalih podloga za ocjenu sustava.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00050",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 54,
+      "line_end": 54,
+      "char_start": 2701,
+      "char_end": 2820,
+      "quote_original": "4. 2.4. Direktori odjela dužni su pratiti ostvarenje planova unutar svog odjela i o tome periodički izvještavati Upravu",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00054",
+      "chapter_path": "2. ODGOVORNOSTI",
+      "line_start": 58,
+      "line_end": 58,
+      "char_start": 2879,
+      "char_end": 3186,
+      "quote_original": "2.5. Direktor EKONERG-a nadležan je za razmatranje navedenih analiza, informacija i prijedloga, donošenje ocjene sustava i zaključaka o aktivnostima za poboljšanje sustava kvalitete, zaštite okoliša i sustava zaštite zdravlja i sigurnosti, te određivanje odgovornih osoba i sredstava za provedbu aktivnosti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn",
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00058",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 62,
+      "line_end": 62,
+      "char_start": 3205,
+      "char_end": 3336,
+      "quote_original": "3.1. Pregled i ocjena sustava kvalitete, uključujući i sustav kvalitete verifikacijske djelatnosti, od strane Uprave zasniva se na:",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verifikacij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "pregled.{0,20}ocjen"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00060",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 64,
+      "line_end": 64,
+      "char_start": 3338,
+      "char_end": 3517,
+      "quote_original": "- ▪ nalazima iz analize uspješnosti proizvoda i usluga (uspješnost i djelotvornost radnih postupaka na postizanje zahtijevane kvalitete, zadovoljstvo naručitelja/korisnika usluga)",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "nalaz"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00061",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 65,
+      "line_end": 65,
+      "char_start": 3518,
+      "char_end": 3550,
+      "quote_original": "- ▪ izvještaju o radu dobavljača",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "dobavlj"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00062",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 66,
+      "line_end": 66,
+      "char_start": 3551,
+      "char_end": 3709,
+      "quote_original": "- ▪ nalazima iz internih provjera (audita) primjene i uspješnosti elemenata sustava kvalitete za postizanje utvrđenih ciljeva u kvaliteti proizvoda ili usluge",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)",
+            "ciljev"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer",
+            "audit",
+            "nalaz"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00063",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 67,
+      "line_end": 67,
+      "char_start": 3710,
+      "char_end": 3766,
+      "quote_original": "- ▪ izvještaju o statusu korektivnih/preventivnih akcija",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00064",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 68,
+      "line_end": 68,
+      "char_start": 3767,
+      "char_end": 3822,
+      "quote_original": "- ▪ izvještajima o reklamacijama, prigovorima i žalbama",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00065",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 69,
+      "line_end": 69,
+      "char_start": 3823,
+      "char_end": 4023,
+      "quote_original": "- ▪ informacijama o promjenama uvjeta koji utječu na sustav kvalitete (nove tehnologije, novi koncepti za postizanje kvalitete, promjena tržišne strategije, promjena društvenih uvjeta, uvjeti okoliša)",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00066",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 70,
+      "line_end": 70,
+      "char_start": 4024,
+      "char_end": 4086,
+      "quote_original": "- ▪ obrazloženim prijedlozima za poboljšanje sustava kvalitete",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 71,
+      "line_end": 71,
+      "char_start": 4087,
+      "char_end": 4131,
+      "quote_original": "- ▪ aktivnostima s prethodne upravine ocjene",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00068",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 72,
+      "line_end": 72,
+      "char_start": 4132,
+      "char_end": 4184,
+      "quote_original": "- ▪ izvještaju o školovanju i treningu osoblja i dr.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "skolov",
+            "trening"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00070",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 74,
+      "line_end": 74,
+      "char_start": 4186,
+      "char_end": 4227,
+      "quote_original": "Dokumenti se pripremaju u pisanom obliku.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00072",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 76,
+      "line_end": 76,
+      "char_start": 4229,
+      "char_end": 4306,
+      "quote_original": "3.2. Pregled i ocjena sustava zaštite okoliša od strane Uprave zasniva se na:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "pregled.{0,20}ocjen"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00074",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 78,
+      "line_end": 78,
+      "char_start": 4308,
+      "char_end": 4449,
+      "quote_original": "- ▪ rezultatima internih provjera i procjene sukladnosti sa zakonskim zahtjevima i ostalim zahtjevima koje se organizacija obvezala poštovati",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00075",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 79,
+      "line_end": 79,
+      "char_start": 4450,
+      "char_end": 4529,
+      "quote_original": "- ▪ komunikaciji sa vanjskim zainteresiranim stranama uključujući i reklamacije",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00076",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 80,
+      "line_end": 80,
+      "char_start": 4530,
+      "char_end": 4579,
+      "quote_original": "- ▪ informacijama o učinku organizacije na okoliš",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00077",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 81,
+      "line_end": 81,
+      "char_start": 4580,
+      "char_end": 4631,
+      "quote_original": "- ▪ stupnju ispunjenja općih i pojedinačnih ciljeva",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "ciljev"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00078",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 82,
+      "line_end": 82,
+      "char_start": 4632,
+      "char_end": 4677,
+      "quote_original": "- ▪ statusu korektivnih i preventivnih akcija",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00079",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 83,
+      "line_end": 83,
+      "char_start": 4678,
+      "char_end": 4722,
+      "quote_original": "- ▪ aktivnostima s prethodne upravine ocjene",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00080",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 84,
+      "line_end": 84,
+      "char_start": 4723,
+      "char_end": 4836,
+      "quote_original": "- ▪ promijenjenim okolnostima uključujući promjene zakonskih i ostalih zahtjeva koji se odnose na aspekte okoliša",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00081",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 85,
+      "line_end": 85,
+      "char_start": 4837,
+      "char_end": 4916,
+      "quote_original": "- ▪ preporukama za poboljšanja dobivenih od direktora odjela i voditelja službi",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00085",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 89,
+      "line_end": 89,
+      "char_start": 4975,
+      "char_end": 5058,
+      "quote_original": "3.3. Pregled i ocjena sustava upravljanja energijom od strane Uprave zasniva se na:",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "pregled.{0,20}ocjen"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00087",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 91,
+      "line_end": 91,
+      "char_start": 5060,
+      "char_end": 5105,
+      "quote_original": "- ▪ poduzetim aktivnostima s prethodne ocjene",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00088",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 92,
+      "line_end": 92,
+      "char_start": 5106,
+      "char_end": 5134,
+      "quote_original": "- ▪ ocjeni politike energije",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00089",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 93,
+      "line_end": 93,
+      "char_start": 5135,
+      "char_end": 5186,
+      "quote_original": "- ▪ ocjeni indikatora u praćenju potrošnje energije",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00090",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 94,
+      "line_end": 94,
+      "char_start": 5187,
+      "char_end": 5243,
+      "quote_original": "- ▪ ocjeni usklađenosti sa zakonskim i drugim zahtjevima",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00091",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 95,
+      "line_end": 95,
+      "char_start": 5244,
+      "char_end": 5289,
+      "quote_original": "- ▪ statusu korektivnih i preventivnih akcija",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00092",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 96,
+      "line_end": 96,
+      "char_start": 5290,
+      "char_end": 5341,
+      "quote_original": "- ▪ stupnju ispunjenja općih i pojedinačnih ciljeva",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "ciljev"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00093",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 97,
+      "line_end": 97,
+      "char_start": 5342,
+      "char_end": 5373,
+      "quote_original": "- ▪ planovima za naredni period",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00094",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 98,
+      "line_end": 98,
+      "char_start": 5374,
+      "char_end": 5453,
+      "quote_original": "- ▪ preporukama za poboljšanja dobivenih od direktora odjela i voditelja službi",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00096",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 100,
+      "line_end": 100,
+      "char_start": 5455,
+      "char_end": 5496,
+      "quote_original": "Dokumenti se pripremaju u pisanom obliku.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00098",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 102,
+      "line_end": 102,
+      "char_start": 5498,
+      "char_end": 5589,
+      "quote_original": "3.4. Pregled i ocjena sustava zaštite zdravlja i sigurnosti od strane Uprave zasniva se na:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "pregled.{0,20}ocjen"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00100",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 104,
+      "line_end": 104,
+      "char_start": 5591,
+      "char_end": 5646,
+      "quote_original": "- ▪ procjeni ispunjenja preporuka s prethodnog pregleda",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00101",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 105,
+      "line_end": 105,
+      "char_start": 5647,
+      "char_end": 5834,
+      "quote_original": "- ▪ rezultatima internih provjera i procjene sukladnosti sa zakonskim zahtjevima, prepoznavanju opasnosti i procjeni rizika te i ostalim zahtjevima koje se organizacija obvezala poštovati",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "rizik"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00102",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 106,
+      "line_end": 106,
+      "char_start": 5835,
+      "char_end": 5882,
+      "quote_original": "- ▪ zapisima vezano uz sudjelovanje zaposlenika",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00103",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 107,
+      "line_end": 107,
+      "char_start": 5883,
+      "char_end": 5962,
+      "quote_original": "- ▪ komunikaciji sa vanjskim zainteresiranim stranama uključujući i reklamacije",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00104",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 108,
+      "line_end": 108,
+      "char_start": 5963,
+      "char_end": 6004,
+      "quote_original": "- ▪ informacijama o učinkovitosti sustava",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "ucinkovit"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00105",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 109,
+      "line_end": 109,
+      "char_start": 6005,
+      "char_end": 6115,
+      "quote_original": "- ▪ pregledu Politike sustava zaštite zdravlja i sigurnosti te stupnju ispunjenja općih i pojedinačnih ciljeva",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "ciljev"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00106",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 110,
+      "line_end": 110,
+      "char_start": 6116,
+      "char_end": 6192,
+      "quote_original": "- ▪ statusu istraživanja uzroka nezgoda te korektivnih i preventivnih akcija",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "uzrok",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00107",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 111,
+      "line_end": 111,
+      "char_start": 6193,
+      "char_end": 6327,
+      "quote_original": "- ▪ promijenjenim okolnostima uključujući promjene zakonskih i ostalih zahtjeva koji se odnose na sustav zaštite zdravlja i sigurnosti",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00108",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 112,
+      "line_end": 112,
+      "char_start": 6328,
+      "char_end": 6407,
+      "quote_original": "- ▪ preporukama za poboljšanja dobivenih od direktora odjela i voditelja službi",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00110",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 114,
+      "line_end": 114,
+      "char_start": 6409,
+      "char_end": 6647,
+      "quote_original": "3.5. Pregled sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom od strane Uprave obavlja Direktor uz sudjelovanje drugih stručnih suradnika EKONERG-a prema potrebi i nalogu Direktora.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00112",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 116,
+      "line_end": 116,
+      "char_start": 6649,
+      "char_end": 7050,
+      "quote_original": "Rezultati pregleda i zaključci, kao i odluke o daljnjim aktivnostima za poboljšanje sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom te odgovornim osobama i sredstvima za provedbu aktivnosti, daju se u pisanom obliku, u formi ocjene te preporuka za poboljšanje. Prema potrebi određuje se rok za provedbu i osoba za provjeru provedbe aktivnosti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "poboljs",
+            "rok"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00116",
+      "chapter_path": "3. POSTUPAK",
+      "line_start": 120,
+      "line_end": 120,
+      "char_start": 7109,
+      "char_end": 7441,
+      "quote_original": "3.6. Pregled i ocjena sustava kvalitete, zaštite okoliša, sustava zaštite zdravlja i sigurnosti i sustava upravljanja energijom od strane uprave obavlja se prema potrebi, na osnovi dokumenata s analizama, informacijama i prijedlozima, te uz inicijativu Predstavnika Uprave ili Voditelja Q/EP/HS službe, ali najmanje jednom godišnje.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "predstavnik"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "pregled.{0,20}ocjen"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00120",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 124,
+      "line_end": 124,
+      "char_start": 7458,
+      "char_end": 7575,
+      "quote_original": "4.1. Dokumenti iz t.3.1, 3.2, 3.3 i 3.4 ovog postupka čuvaju se u arhivi Q/EP/HS službe i arhivi Direktora EKONERG-a.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "arhiv"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00122",
+      "chapter_path": "4. ZAPISI",
+      "line_start": 126,
+      "line_end": 126,
+      "char_start": 7577,
+      "char_end": 7649,
+      "quote_original": "Rok za obvezno čuvanje dokumenta je najmanje 2 godina od dana izdavanja.",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument",
+            "izdavan"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "cuvanj"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "rok"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "rok.{0,15}cuv"
+          ],
+          "heading_terms": [
+            "zapis"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 57,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "image_reference_only",
+      "block_id": "B00001",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 57,
+      "char_end": 58,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 58,
+      "char_end": 88,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 88,
+      "char_end": 89,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 89,
+      "char_end": 104,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 104,
+      "char_end": 105,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE",
+      "nearest_heading": "POSTUPAK SUSTAVA KVALITETE",
+      "kind": "blank",
+      "block_id": "B00006",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 105,
+      "char_end": 210,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "heading",
+      "block_id": "B00007",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 210,
+      "char_end": 211,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00008",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 211,
+      "char_end": 223,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 223,
+      "char_end": 224,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 224,
+      "char_end": 261,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 261,
+      "char_end": 262,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00012",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 262,
+      "char_end": 269,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 269,
+      "char_end": 270,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00014",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 270,
+      "char_end": 282,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 282,
+      "char_end": 283,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 283,
+      "char_end": 321,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00017",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 321,
+      "char_end": 322,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 322,
+      "char_end": 329,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 329,
+      "char_end": 330,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00020",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 330,
+      "char_end": 342,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00021",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 342,
+      "char_end": 343,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00022",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 343,
+      "char_end": 390,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00023",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 390,
+      "char_end": 391,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00024",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 391,
+      "char_end": 398,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00025",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 398,
+      "char_end": 399,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00026",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 399,
+      "char_end": 411,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 411,
+      "char_end": 412,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 412,
+      "char_end": 468,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "image_reference_only",
+      "block_id": "B00029",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 468,
+      "char_end": 469,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "POSTUPAK SUSTAVA KVALITETE / PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "nearest_heading": "PREGLED I OCJENA SUSTAVA KVALITETE, ZAŠTITE OKOLIŠA I ZAŠTITE ZDRAVLJA I SIGURNOSTI OD STRANE UPRAVE",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 469,
+      "char_end": 480,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "heading",
+      "block_id": "B00031",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 480,
+      "char_end": 481,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "1. UVOD",
+      "nearest_heading": "1. UVOD",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 481,
+      "char_end": 496,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "heading",
+      "block_id": "B00033",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 496,
+      "char_end": 497,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 497,
+      "char_end": 1075,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "content",
+      "block_id": "B00035",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1075,
+      "char_end": 1076,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "1. UVOD / 1.1. Opseg",
+      "nearest_heading": "1.1. Opseg",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1076,
+      "char_end": 1091,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "heading",
+      "block_id": "B00037",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1091,
+      "char_end": 1092,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1092,
+      "char_end": 1395,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "content",
+      "block_id": "B00039",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1395,
+      "char_end": 1396,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "1. UVOD / 1.2. Svrha",
+      "nearest_heading": "1.2. Svrha",
+      "kind": "blank",
+      "block_id": "B00040",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1396,
+      "char_end": 1415,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "1. UVOD / 1.1. Reference",
+      "nearest_heading": "1.1. Reference",
+      "kind": "heading",
+      "block_id": "B00041",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1415,
+      "char_end": 1416,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "1. UVOD / 1.1. Reference",
+      "nearest_heading": "1.1. Reference",
+      "kind": "blank",
+      "block_id": "B00042",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1416,
+      "char_end": 1583,
+      "line_start": 43,
+      "line_end": 47,
+      "chapter_path": "1. UVOD / 1.1. Reference",
+      "nearest_heading": "1.1. Reference",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1583,
+      "char_end": 1584,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "1. UVOD / 1.1. Reference",
+      "nearest_heading": "1.1. Reference",
+      "kind": "blank",
+      "block_id": "B00044",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1584,
+      "char_end": 1603,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "heading",
+      "block_id": "B00045",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1603,
+      "char_end": 1604,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1604,
+      "char_end": 1886,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00047",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1886,
+      "char_end": 2536,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00048",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2536,
+      "char_end": 2701,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00049",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2701,
+      "char_end": 2821,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00050",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2821,
+      "char_end": 2822,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00051",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2822,
+      "char_end": 2878,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "image_reference_only",
+      "block_id": "B00052",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 2878,
+      "char_end": 2879,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00053",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2879,
+      "char_end": 3187,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00054",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3187,
+      "char_end": 3188,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "2. ODGOVORNOSTI",
+      "nearest_heading": "2. ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00055",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3188,
+      "char_end": 3204,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "heading",
+      "block_id": "B00056",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3204,
+      "char_end": 3205,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00057",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3205,
+      "char_end": 3337,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00058",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3337,
+      "char_end": 3338,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00059",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3338,
+      "char_end": 3518,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00060",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3518,
+      "char_end": 3551,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00061",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3551,
+      "char_end": 3710,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00062",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3710,
+      "char_end": 3767,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00063",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3767,
+      "char_end": 3823,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00064",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3823,
+      "char_end": 4024,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00065",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4024,
+      "char_end": 4087,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00066",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4087,
+      "char_end": 4132,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4132,
+      "char_end": 4185,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00068",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4185,
+      "char_end": 4186,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00069",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4186,
+      "char_end": 4228,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00070",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4228,
+      "char_end": 4229,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00071",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4229,
+      "char_end": 4307,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00072",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4307,
+      "char_end": 4308,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00073",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4308,
+      "char_end": 4450,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00074",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4450,
+      "char_end": 4530,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00075",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4530,
+      "char_end": 4580,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00076",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4580,
+      "char_end": 4632,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00077",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4632,
+      "char_end": 4678,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00078",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4678,
+      "char_end": 4723,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00079",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4723,
+      "char_end": 4837,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00080",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4837,
+      "char_end": 4917,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00081",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4917,
+      "char_end": 4918,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00082",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4918,
+      "char_end": 4974,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "image_reference_only",
+      "block_id": "B00083",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 4974,
+      "char_end": 4975,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00084",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4975,
+      "char_end": 5059,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00085",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5059,
+      "char_end": 5060,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00086",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5060,
+      "char_end": 5106,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00087",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5106,
+      "char_end": 5135,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00088",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5135,
+      "char_end": 5187,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00089",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5187,
+      "char_end": 5244,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00090",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5244,
+      "char_end": 5290,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00091",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5290,
+      "char_end": 5342,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00092",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5342,
+      "char_end": 5374,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00093",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5374,
+      "char_end": 5454,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00094",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5454,
+      "char_end": 5455,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00095",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5455,
+      "char_end": 5497,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00096",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5497,
+      "char_end": 5498,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00097",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5498,
+      "char_end": 5590,
+      "line_start": 102,
+      "line_end": 102,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00098",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5590,
+      "char_end": 5591,
+      "line_start": 103,
+      "line_end": 103,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00099",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5591,
+      "char_end": 5647,
+      "line_start": 104,
+      "line_end": 104,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00100",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5647,
+      "char_end": 5835,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00101",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5835,
+      "char_end": 5883,
+      "line_start": 106,
+      "line_end": 106,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00102",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5883,
+      "char_end": 5963,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00103",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5963,
+      "char_end": 6005,
+      "line_start": 108,
+      "line_end": 108,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00104",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6005,
+      "char_end": 6116,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00105",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6116,
+      "char_end": 6193,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00106",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6193,
+      "char_end": 6328,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00107",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6328,
+      "char_end": 6408,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00108",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6408,
+      "char_end": 6409,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00109",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6409,
+      "char_end": 6648,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00110",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6648,
+      "char_end": 6649,
+      "line_start": 115,
+      "line_end": 115,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00111",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6649,
+      "char_end": 7051,
+      "line_start": 116,
+      "line_end": 116,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00112",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7051,
+      "char_end": 7052,
+      "line_start": 117,
+      "line_end": 117,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00113",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7052,
+      "char_end": 7108,
+      "line_start": 118,
+      "line_end": 118,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "image_reference_only",
+      "block_id": "B00114",
+      "disposition": "image_reference_only"
+    },
+    {
+      "char_start": 7108,
+      "char_end": 7109,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00115",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7109,
+      "char_end": 7442,
+      "line_start": 120,
+      "line_end": 120,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "content",
+      "block_id": "B00116",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7442,
+      "char_end": 7443,
+      "line_start": 121,
+      "line_end": 121,
+      "chapter_path": "3. POSTUPAK",
+      "nearest_heading": "3. POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00117",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7443,
+      "char_end": 7457,
+      "line_start": 122,
+      "line_end": 122,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "heading",
+      "block_id": "B00118",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7457,
+      "char_end": 7458,
+      "line_start": 123,
+      "line_end": 123,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00119",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7458,
+      "char_end": 7576,
+      "line_start": 124,
+      "line_end": 124,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00120",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7576,
+      "char_end": 7577,
+      "line_start": 125,
+      "line_end": 125,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "blank",
+      "block_id": "B00121",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7577,
+      "char_end": 7649,
+      "line_start": 126,
+      "line_end": 126,
+      "chapter_path": "4. ZAPISI",
+      "nearest_heading": "4. ZAPISI",
+      "kind": "content",
+      "block_id": "B00122",
+      "disposition": "candidate_lead"
+    }
+  ]
+}
