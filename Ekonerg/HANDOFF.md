@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-05T222009Z-d0e47ed.md`](handoffs/2026-10-05T222009Z-d0e47ed.md)
+**Authoritative record:** [`handoffs/2026-10-06T151443Z-b941c06.md`](handoffs/2026-10-06T151443Z-b941c06.md)
 
-**Status:** partial · **Git:** `d0e47ed` · **Agent:** codex · **Created:** 2026-10-05T22:20:09Z
+**Status:** blocked · **Git:** `b941c06` · **Agent:** codex · **Created:** 2026-10-06T15:14:43Z
 
-**Exact next action:** Review Claude response to the chapter-link request; then decide whether to restore the separate judgment form and resolve scoring provenance.
+**Exact next action:** Obtain complete manual path from owner, verify source/provenance, then perform full chapter-by-chapter re-sieve. Preserve previous generations; prepare exact-quote candidate and diff.

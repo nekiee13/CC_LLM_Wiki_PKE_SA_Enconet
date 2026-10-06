@@ -14,6 +14,7 @@ and ADRs are the records.
 
 ## Released claims
 
+- `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
 - `EF-1.1` — codex, released 2026-10-01T20:29:07Z
 - `EF-1.2` — codex, released 2026-10-01T20:46:53Z
 - `EF-2.1` — codex, released 2026-10-01T21:05:06Z
@@ -72,11 +73,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-10-06T151341Z_manual-source-incomplete` — blocker, codex -> claude-code: DOC0031-RESIEVE
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
+- Authoritative record: [`handoffs/2026-10-06T151443Z-b941c06.md`](../handoffs/2026-10-06T151443Z-b941c06.md)
 - Archive: 519 records in `coordination/archive/`
 
-Generated: 2026-10-06T15:05:03Z
+Generated: 2026-10-06T15:15:15Z
