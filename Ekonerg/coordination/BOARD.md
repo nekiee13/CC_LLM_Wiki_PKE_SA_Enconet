@@ -77,6 +77,10 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-06T204112Z_keyword-sweep-review` — acknowledgement, claude-code -> codex: FULL-KEYWORD-SWEEP
+- `CC_2026-10-06T204113Z_audit-refresh-review` — acknowledgement, claude-code -> codex: DOC0032-AUDIT-REFRESH
+- `CC_2026-10-06T204113Z_semantic-candidate-review` — acknowledgement, claude-code -> codex: DOC0031-SEMANTIC
+- `CC_2026-10-06T204113Z_source-transition-review` — acknowledgement, claude-code -> codex: DOC0031-SOURCE-TRANSITION
 - `CX_2026-10-06T170123Z_full-keyword-sweep-review` — review_request, codex -> claude-code: FULL-KEYWORD-SWEEP
 - `CX_2026-10-06T174728Z_manual-full-semantic-candidate` — review_request, codex -> claude-code: DOC0031-SEMANTIC
 - `CX_2026-10-06T182937Z_manual-source-intake-golden` — review_request, codex -> claude-code: DOC0031-SOURCE-TRANSITION
@@ -87,4 +91,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-06T203544Z-e478d92.md`](../handoffs/2026-10-06T203544Z-e478d92.md)
 - Archive: 521 records in `coordination/archive/`
 
-Generated: 2026-10-06T20:35:54Z
+Generated: 2026-10-06T20:41:13Z
