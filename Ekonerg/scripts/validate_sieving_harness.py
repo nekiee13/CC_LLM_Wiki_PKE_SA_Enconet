@@ -14,6 +14,7 @@ import yaml
 
 import db_util
 from source_revision_intake import pending_revision_documents
+from source_revision_promote import retired_documents
 from project_paths import local_path
 from validate_sieving_skill_drift import validate as validate_skill_drift
 
@@ -68,8 +69,11 @@ def validate(db: Path, *, active: Path = ACTIVE, changelog: Path = CHANGELOG,
                 "SELECT doc_id FROM sieve_runs GROUP BY doc_id HAVING sum(is_active)<>1"
             ).fetchall()
             pending_revisions = pending_revision_documents(conn)
-            if any(row['doc_id'] not in pending_revisions for row in no_active):
+            retired = retired_documents(conn)
+            if any(row['doc_id'] not in pending_revisions | retired for row in no_active):
                 errors.append("document with sieve history lacks exactly one active generation")
+            if retired:
+                notes.append('retained historical source identities: '+', '.join(sorted(retired)))
             if pending_revisions:
                 notes.append('inactive source-revision candidates (predecessors remain active): '+', '.join(sorted(pending_revisions)))
             view = conn.execute(

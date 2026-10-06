@@ -1,0 +1,16 @@
+task: DOC0032-AUDIT-REFRESH
+agent: codex
+status: released
+claimed_at_utc: 2026-10-06T20:11:28Z
+last_renewed_at_utc: 2026-10-06T20:11:28Z
+expires_at_utc: 2026-10-07T00:11:28Z
+anticipated_files:
+  - scripts/source_revision_promote.py
+  - scripts/tests/test_source_revision_promote.py
+  - scripts/validate_sieving_harness.py
+  - scripts/evaluation_engine.py
+  - scripts/build_umbra_conformance_dashboard.py
+  - docs/reviews
+  - out/2026-10-06/manual-refresh
+note: Approved manual source switch, atomic evaluation refresh and results dashboard
+released_at_utc: 2026-10-06T20:34:06Z

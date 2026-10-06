@@ -13,6 +13,7 @@ import re
 import sqlite3
 from pathlib import Path
 from typing import Any
+from evaluation_engine import metrics as evaluation_metrics, model as scoring_model
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,7 +41,7 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
         ).fetchall()
         evaluations = {
             row["criterion_id"]: row for row in conn.execute(
-                "SELECT criterion_id, rating, score, judge_ruling, rationale "
+                "SELECT criterion_id, rating, score, judge_ruling, rationale, affirmative_summary, contrary_summary "
                 "FROM criterion_evaluations WHERE evaluation_run_id=? ORDER BY criterion_id", (run_id,)
             )
         }
@@ -90,10 +91,7 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
         evidence = by_criterion.get(criterion_id, [])
         vendor_count = int(row.get("document_evidence_count", 0))
         rule_count = int(row.get("rule_evidence_count", 0))
-        status = "No direct vendor crumb" if vendor_count == 0 else (
-            "Draft coverage + context" if row.get("anchored_document_evidence_count", 0)
-            else "Draft coverage"
-        )
+        status = "No direct vendor crumb" if vendor_count == 0 else "Document controls assessed"
         first = next((r for r in evidence if r["quote_original"]), None)
         quote = (first["quote_original"] if first else
                  "No linked Ekonerg vendor quote is present in the active snapshot.")
@@ -107,6 +105,7 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
                + ("The evidence statements include: " + " ".join(statements)
                   if statements else "No vendor-side statement is mapped."))
         evaluation = evaluations.get(criterion_id)
+        aff = str(evaluation["affirmative_summary"]) or aff
         rating = str(evaluation["rating"])
         score = float(evaluation["score"])
         con = ("No direct Ekonerg vendor crumb is mapped in the active snapshot; "
@@ -116,6 +115,8 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
                "Implementation records and objective samples remain required.")
         verify = (f"Review Ekonerg source documents and objective records for {row['criterion_name']}; "
                   "confirm scope, responsibility, implementation, and retained evidence.")
+        con = str(evaluation["contrary_summary"]) or con
+        verify = "Resolve or verify these specific points: " + con
         out.append({
             "n": criterion_id.removeprefix("APP_B_"), "order": order,
             "title": row["criterion_name"], "rating": rating, "score": score,
@@ -129,7 +130,7 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
             "aff": aff, "con": con,
             "judge": str(evaluation["judge_ruling"]), "rationale": str(evaluation["rationale"]),
             "summary": str(evaluation["rationale"]),
-            "score_trace": (f"{len(crumb_ids)} linked vendor crumb(s) -> {rating} "
+            "score_trace": (f"{len(crumb_ids)} linked controls; content-based judgment: {rating} "
                             f"({RATING_POINTS[rating]}/5, {score:.0f} points)"),
             "verify": verify,
             "judge": str(evaluation["judge_ruling"]), "rationale": str(evaluation["rationale"]),
@@ -138,6 +139,9 @@ def _criterion_data(matrix_path: Path, db_path: Path, run_id: str) -> tuple[list
     counts = {key: sum(item["rating"] == key for item in out) for key in RATING_LABELS}
     metrics = {"run_id": run_id, "criteria": len(out), "applicable": len(out),
                "score": round(sum(item["score"] for item in out) / len(out), 1), "counts": counts}
+    approved = evaluation_metrics(out, scoring_model=scoring_model())
+    metrics["score"] = approved["consolidated_score"]
+    metrics["classification"] = RATING_LABELS[approved["classification"]]
     return out, metrics
 
 
@@ -157,6 +161,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = TEMPLATE.read_text(encoding="utf-8")
     data, metrics = _criterion_data(matrix_path, db_path, run_id)
     score = metrics["score"]
+    classification = metrics["classification"]
     counts = metrics["counts"]
     vendor_total = sum(item["vendor_count"] for item in data)
     covered = sum(item["vendor_count"] > 0 for item in data)
@@ -219,7 +224,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
   <div><h2>Executive Summary</h2>
     <p>Ekonerg documents were evaluated against all 18 Appendix B criteria. The evidence-based result is <strong>{score:.1f}% — Partially Matched</strong>, using the approved five-level Enconet scale. This closes the owner-operated pre-flight tool run.</p>
     <p>The score is the average of the criterion ratings: fully = 5/5 (100), substantially = 4/5 (75), partially = 3/5 (50), minimally = 2/5 (25), and unmet = 1/5 (0).</p>
-    <div class="note"><strong>Primary evidence gap:</strong> {no_direct} criteria have no direct Ekonerg vendor crumb and are therefore rated unmet: VIII, IX, XI, XIII, and XIV.</div>
+    <div class="note"><strong>Review priorities:</strong> {', '.join(d['n'] for d in data if d['score'] <= 50) or 'No criterion rated below substantial'}. Read the specific gaps below. A high crumb count does not itself raise a score.</div>
     <div class="note ok"><strong>Source boundary:</strong> Ekonerg is the only supplier shown. Regulatory documents are the comparison baseline; no other supplier data is used.</div>
   </div>
   <div><h2>Classification Distribution</h2>
@@ -246,15 +251,18 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
     text = text.replace("Column headers sort the matrix. Verdicts remain evidence-bounded and downgrade unsupported interpretations.", "Column headers sort the matrix. Ratings use the approved five-level Enconet scale.")
     gaps_start = text.index('<section class="section">\n  <h2>Top Gaps Requiring Remediation</h2>')
     actions_start = text.index('<section class="section">\n  <h2>Priority Auditor Verification Actions</h2>', gaps_start)
-    gap_items = "".join(f'<li><strong>{html.escape(d["n"])} — {html.escape(d["title"])}:</strong> {html.escape(d["con"])}</li>' for d in data if d["vendor_count"] == 0 or d["vendor_count"] < 5)
+    gap_items = "".join(f'<li><strong>{html.escape(d["n"])} — {html.escape(d["title"])}:</strong> {html.escape(d["con"])}</li>' for d in sorted(data, key=lambda d: (d['score'], d['order'])) if d['score'] < 100)
     gaps = '<section class="section">\n  <h2>Top Evidence Gaps Requiring Follow-up</h2>\n  <ul class="riskList">' + (gap_items or '<li>No low-coverage criteria identified.</li>') + '</ul>\n</section>\n'
     text = text[:gaps_start] + gaps + text[actions_start:]
     actions_end = text.index('</section>', text.index('<h2>Priority Auditor Verification Actions</h2>')) + len('</section>')
-    action_items = "".join(f'<li>{html.escape(d["verify"])}</li>' for d in data[:10])
+    action_items = "".join(f'<li><strong>{d["n"]}:</strong> {html.escape(d["verify"])}</li>' for d in sorted(data, key=lambda d: (d['score'], d['order'])))
     actions = '<section class="section">\n  <h2>Priority Auditor Verification Actions</h2>\n  <ol class="riskList" style="columns:2;column-gap:24px;margin-left:18px">' + action_items + '</ol>\n</section>'
     text = text[:text.index('<section class="section">\n  <h2>Priority Auditor Verification Actions</h2>')] + actions + text[actions_end:]
     text = re.sub(r'<div class="radarBox".*?</div>\s*</div>', '</div>', text, flags=re.S)
     text = re.sub(r'function renderRadar\(\)\{.*?\n\}', '', text, flags=re.S)
+    # Remove only the radar call before removing radar-only lines. The source
+    # puts all three startup calls on one line; deleting that line blanks the UI.
+    text = text.replace('renderRadar();', '')
     text = re.sub(r'[^\n]*radar[^\n]*\n', '', text, flags=re.I)
     text = re.sub(
         r'const data = \[.*?\];\nconst labels=',
@@ -307,6 +315,9 @@ renderCards(); renderMatrix();''')
   }).join('')||'<li>No linked vendor crumb; score is unmet because vendor evidence is absent.</li>';
   return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.score}% · ${d.scale_points}/5</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
 }''', text, count=1, flags=re.S)
+    text = text.replace(f'{score:.1f}% — Partially Matched', f'{score:.1f}% — {classification}')
+    text = text.replace('Standalone Ekonerg UMBRA dashboard', 'Ekonerg documentation-audit dashboard')
+    text = text.replace('Run '+run_id+'; score', 'Snapshot '+html.escape(generated_date)+'; run '+run_id+'; score')
     return text
 
 

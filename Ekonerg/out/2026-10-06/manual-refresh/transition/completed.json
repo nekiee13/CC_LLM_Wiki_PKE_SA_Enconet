@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "new_run_id": "RUN-20261006-77",
+  "active_vendor": 475,
+  "plan_sha256": "e899b0ade202b25ae47156439b6bfeb34e557abd3961b4e570059f2d8d6a6b6d",
+  "database_before_sha256": "22851271caa3c80658caa9dc24ed80cf3a8bc772a1258e2354403783be8c759b",
+  "database_after_sha256": "e5892a0f99faeed99a4af54de672f2910f2a918374c6c1f896422228e43c2073",
+  "metrics": {
+    "consolidated_score": 66.7,
+    "classification": "partially",
+    "applicable_count": 18,
+    "classification_counts": {
+      "fully": 0,
+      "minimally": 0,
+      "na": 0,
+      "partially": 6,
+      "substantially": 12,
+      "undetermined": 0,
+      "unmet": 0
+    }
+  },
+  "journal_hashes": {
+    "intent.json": "e899b0ade202b25ae47156439b6bfeb34e557abd3961b4e570059f2d8d6a6b6d",
+    "before.json": "7815ebd00a6148fcbd051eaf7aebeb9dd5a751e96d627c5d37cf3ad067e6dba6"
+  }
+}

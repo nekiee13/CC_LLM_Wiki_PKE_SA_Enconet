@@ -19,3 +19,9 @@ roll back only within the allowed local workflow and record the reason.
 Do not delete a generation or rewrite prompt history. Record the decision
 and score in the local prompt CHANGELOG, then deposit a reusable lesson in
 `$sieving-run`, `$crumb-quality`, or this skill. Never invent an approval.
+
+When replacement source bytes get a new document identity, switch the active
+source and its downstream assessments together. Keep the old source, crumbs,
+and assessment links as immutable history. Check the candidate against the
+approved golden fixture before the switch; a fuller source is not permission
+to reuse stale scores or to count both source copies.

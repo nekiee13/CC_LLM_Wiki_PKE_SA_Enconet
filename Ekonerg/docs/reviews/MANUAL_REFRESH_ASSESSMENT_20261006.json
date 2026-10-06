@@ -1,0 +1,135 @@
+{
+  "run_id": "RUN-20261003-32",
+  "new_run_id": "RUN-20261006-77",
+  "decision_ref": "PROMOTE-MANUAL-FULL-20261006-OWNER",
+  "golden": "benchmarks/sieving_golden/manual_full_20261006.yml",
+  "method": "Codex documentation assessment under the owner's official-results instruction. Appendix B and supplied NQA-1 Part I are the baseline; no blanket Part II obligation is added. The five-level approved model is unchanged. Dimension fields repeat the normalized ordinal rating for compatibility, not independent measurements. Links retain reviewed non-manual evidence and add the new manual's policy/supporting controls. Candidate leads remain in the evidence pool but do not support scores. Missing execution records are future audit checks, not an automatic documentation failure. Only the manual has had the new full semantic pass; the other 23 vendor documents retain their previous reviewed generations.",
+  "evaluations": [
+    {
+      "criterion_id": "APP_B_I", "rating": "substantially",
+      "affirmative_summary": "Manual 5.3 and Prilog 2 assign management, QA, department and project duties. QA can identify problems, seek solutions, verify action and report directly to empowered management. Ekonerg retains responsibility for delegated work.",
+      "contrary_summary": "The text gives organizational freedom and direct reporting, but independence from cost and schedule pressure when safety is at stake is less explicit. Do not treat worker safety-reporting clauses as a nuclear QA stop-work rule.",
+      "judge_ruling": "Substantially matched, 4/5. Written QA authority and interfaces are present; one important independence safeguard needs clearer wording.",
+      "rationale": "Appendix B I / NQA-1 Part I Requirement 1: Manual 5.3 and Prilog 2 sections 1.2-1.3 provide substantive controls, not just a standard reference. Retain 75 points. Verify QA escalation when safety conflicts with cost or schedule."
+    },
+    {
+      "criterion_id": "APP_B_II", "rating": "substantially",
+      "affirmative_summary": "Manual 4.3 defines technical services and nuclear QA scope. Sections 7.1-7.2, 8.1 and 9.3 require competence, resources, graded project quality plans and annual documented management review. Dodatak 1 adds nuclear requirements.",
+      "contrary_summary": "The program refers to NQA-1 without an edition in its reference list. Nuclear project scope, quality levels and lower-level procedure applicability must be made clear in the project plan; the general manual alone does not settle each contract's scope.",
+      "judge_ruling": "Substantially matched, 4/5. The program has a usable documented structure, with project-specific scope and baseline details still to resolve.",
+      "rationale": "Appendix B II / NQA-1 Part I Requirement 2: concrete planning, training and review duties support 75 points. A cover statement of alignment is only a lead, not proof of complete alignment."
+    },
+    {
+      "criterion_id": "APP_B_III", "rating": "substantially",
+      "affirmative_summary": "Manual 8.3 covers design inputs, outputs, review, independent verification and changes. The nuclear addendum requires pre-use software checks, verification of level-I results and control of changes by the original responsible organization.",
+      "contrary_summary": "The nuclear addendum and Prilog 5 use inconsistent RSP/ROS procedure references. The complete software verification procedure is not supplied. Confirm the controlling method and its required acceptance, configuration and verification records.",
+      "judge_ruling": "Substantially matched, 4/5. Design control is documented, but its software/procedure reference chain needs clarification.",
+      "rationale": "Appendix B III / NQA-1 Part I Requirement 3: Manual 8.3 and Dodatak 1 point 3 support design control beyond generic intent. Retain 75 points; do not infer a complete software QA program from a procedure title."
+    },
+    {
+      "criterion_id": "APP_B_IV", "rating": "substantially",
+      "affirmative_summary": "Manual 8.4 requires procurement scope, technical requirements, tests, inspections, acceptance criteria, review and approval. It also requires QA responsibilities, supplier access, nonconformance reporting, qualification needs and delivered quality evidence. Prilog 2 assigns QA flow-down responsibility.",
+      "contrary_summary": "The supplied policy does not fully spell out all lower-tier flow-down and record retention/submittal obligations for each nuclear purchase. Check those requirements in the controlled procurement procedure and contract template.",
+      "judge_ruling": "Substantially matched, 4/5. The full manual supplies procurement content that was missing from the earlier extraction.",
+      "rationale": "Appendix B IV / NQA-1 Part I Requirement 4: Manual 8.4.1-8.4.2 explicitly defines purchase-document content and contractual inclusion. Raise 50 to 75 points. This is based on the content of the new controls, not ten new crumbs."
+    },
+    {
+      "criterion_id": "APP_B_V", "rating": "substantially",
+      "affirmative_summary": "Manual 7.5 and 8.1 establish procedure levels, project work plans, needed equipment and staff, technical standards, verification stages and acceptance criteria. Existing reviewed procedures supply work sequence and responsibilities.",
+      "contrary_summary": "Prilog 5 is a procedure register, not the work instructions themselves. Some referenced nuclear and special-process instructions are absent, so their quantitative or qualitative acceptance criteria cannot be confirmed from their titles.",
+      "judge_ruling": "Substantially matched, 4/5. The written instruction system is present; detailed acceptance instructions are not complete in the supplied set.",
+      "rationale": "Appendix B V / NQA-1 Part I Requirement 5: Manual 7.5 and 8.1 plus the retained procedure evidence support 75 points. Keep referenced instructions as leads until their actual text is reviewed."
+    },
+    {
+      "criterion_id": "APP_B_VI", "rating": "substantially",
+      "affirmative_summary": "Manual 1.2 and 7.5.3 describe preparation, review, approval, revision, controlled distribution and withdrawal of obsolete documents. The nuclear addendum addresses approval of changes and distribution responsibility.",
+      "contrary_summary": "The full manual contains inconsistent live cross-references: Dodatak 1 points to ROS-02 for program controls, while Prilog 5 lists ROS-03; its record-backup clause names RSP-03 while the register lists ROS-04 for backups. The test crosswalk also points to 8.1.4 rather than 9.1.4. Resolve these before relying on the reference chain.",
+      "judge_ruling": "Substantially matched, 4/5. Document-control rules are strong, but the new full source reveals cross-reference defects that rule out a full match.",
+      "rationale": "Appendix B VI / NQA-1 Part I Requirement 6: lower 100 to 75 points for observed document clarity/control defects, not because execution records are absent. Compare Prilog 5, Dodatak 1 points 11 and 17, and its comparison table. A later procedure revision alone is not proof of a defect in an older manual."
+    },
+    {
+      "criterion_id": "APP_B_VII", "rating": "substantially",
+      "affirmative_summary": "Manual 8.4 requires supplier evaluation, purchase verification and a written verifier report. The nuclear addendum includes dedication using safety functions and critical characteristics. Its flow notes require pre-engagement and periodic audits of level-I suppliers, subject to the stated qualified-list exception.",
+      "contrary_summary": "The full supplier/dedication method and acceptance evidence are not supplied for each purchase route. Confirm how critical characteristics, verification methods and acceptance before use are controlled; do not treat a dedication commitment as a completed dedication.",
+      "judge_ruling": "Substantially matched, 4/5. Selection, verification and follow-up controls exist, with some detailed acceptance routes still referenced elsewhere.",
+      "rationale": "Appendix B VII / NQA-1 Part I Requirement 7: retain 75 points using Manual 8.4 and Dodatak 1. This checks Ekonerg's control of supplier work; other companies do not become separate audit targets."
+    },
+    {
+      "criterion_id": "APP_B_VIII", "rating": "partially",
+      "affirmative_summary": "Manual 8.5.3 maintains work-order and document identity throughout engineering delivery. Sections 7.5.4 and 8.5.5 link records and preservation to the item/service. Dodatak 1 point 8 commits to a nuclear identity/status document with traceability methods and marking authority where needed.",
+      "contrary_summary": "The nuclear item-identification method is deferred to a project document not supplied here. Controls for marking transfer, limited-life items and maintaining identity in storage are not developed in this manual. Apply these hardware duties only where the contract involves such items.",
+      "judge_ruling": "Partially matched, 3/5. There is real service/document traceability and a nuclear control commitment, but the detailed item-control layer remains incomplete.",
+      "rationale": "Appendix B VIII / NQA-1 Part I Requirement 8 paragraphs 200-303: raise 0 to 50 points. The former no-evidence conclusion was an extraction failure. Manual 8.5.3, 8.5.5 and Dodatak 1 point 8 support this bounded assessment."
+    },
+    {
+      "criterion_id": "APP_B_IX", "rating": "partially",
+      "affirmative_summary": "Manual chapter 3 defines qualified procedures and special processes. Section 8.5.2 requires validation and supervision when special processes are used. Dodatak 1 point 9 adopts that clause for nuclear work. Prilog 5 identifies RVT, RPT, RMT and RUT procedures as follow-up leads.",
+      "contrary_summary": "The register does not show the procedures' personnel/equipment qualification rules, process parameters, acceptance standards or qualification-record controls. Scope remains vague for coatings, concrete, epoxy/cement mixtures, non-metal visual testing and carbon laminates; do not assume these activities are performed.",
+      "judge_ruling": "Partially matched, 3/5. Control is recognized and conditionally required; the technical qualification layer is not available for full assessment.",
+      "rationale": "Appendix B IX / NQA-1 Part I Requirement 9 paragraphs 200-400: raise 0 to 50 points. Credit the written validation/supervision duty, not the existence of NDT procedure names as if they were qualification proof."
+    },
+    {
+      "criterion_id": "APP_B_X", "rating": "substantially",
+      "affirmative_summary": "Manual 9.1.4 requires independent verification, acceptance checks and planned witness/hold points. Sections 8.4.3 and 8.6 link verification reports, conformity and authorized release. Existing procedure evidence supports inspection responsibilities.",
+      "contrary_summary": "Confirm that inspection independence excludes both the performer and direct supervisor, and that any hold-point waiver is recorded before work continues. The supplied text does not fully establish those NQA-1 details for every inspection route.",
+      "judge_ruling": "Substantially matched, 4/5. Inspection and release controls are documented; independence and waiver details need clarification.",
+      "rationale": "Appendix B X / NQA-1 Part I Requirement 10 paragraphs 100, 300 and 600: retain 75 points. A future field audit should sample records, but their absence is not the sole reason for this documentation rating."
+    },
+    {
+      "criterion_id": "APP_B_XI", "rating": "partially",
+      "affirmative_summary": "Manual 9.1.4 requires customer test programs and procedures with requirements, acceptance criteria, test conditions, documented results and evaluation. Section 8.1 requires planned testing needs. The nuclear flow notes state software result/pre-use verification triggers.",
+      "contrary_summary": "The manual says Ekonerg does not test its own services/products and develops programs for customer testing. Detailed test prerequisites, instrument suitability, configuration and minimum record fields are not fully shown. ROS-02 is referenced but not supplied, and Prilog 5 lists ROS-03 as program-use control.",
+      "judge_ruling": "Partially matched, 3/5. A test-control policy exists; complete test and software-verification methods remain incomplete in the supplied set.",
+      "rationale": "Appendix B XI / NQA-1 Part I Requirement 11 paragraphs 100-300, 500-601: raise 0 to 50 points. Preserve the source's customer-testing qualification. Do not add blanket Part II requirements through this assessment."
+    },
+    {
+      "criterion_id": "APP_B_XII", "rating": "partially",
+      "affirmative_summary": "Manual 7.1.5 and retained procedures require calibration intervals, checks before infrequent use, records, status marking and exclusion of overdue equipment. Repeatedly inaccurate equipment is repaired or replaced.",
+      "contrary_summary": "The reviewed text does not fully establish evaluation of past results back to the last acceptable calibration after loss/damage or out-of-calibration findings, nor the complete use/application traceability chain. The commercial ruler/tape/level exception is allowed by NQA-1 when required accuracy is met; it is not itself a defect.",
+      "judge_ruling": "Partially matched, 3/5. Core calibration controls exist, but retrospective impact and use-traceability requirements need clearer support.",
+      "rationale": "Appendix B XII / NQA-1 Part I Requirement 12 paragraphs 303.1-303.2 and 304: retain 50 points with a corrected technical reason. Missing calibration certificates alone do not decide the documentation score."
+    },
+    {
+      "criterion_id": "APP_B_XIII", "rating": "substantially",
+      "affirmative_summary": "Manual 8.5.5 requires identification, handling, storage, cleaning, packaging, preservation and transport controls. It requires specific instructions, special-environment marking and periodic checks, suitable equipment and trained/experienced handlers. Dodatak 1 point 13 applies these controls to nuclear work.",
+      "contrary_summary": "The manual does not clearly require inspection/testing of special handling tools at specified intervals or before use. Confirm that requirement in the relevant project instruction, where special tools are used.",
+      "judge_ruling": "Substantially matched, 4/5. Most preservation duties are explicit; a specific special-tool assurance duty remains unclear.",
+      "rationale": "Appendix B XIII / NQA-1 Part I Requirement 13 paragraphs 100-600: raise 0 to 75 points. This is substantive coverage in Manual 8.5.5, not just the addendum's cross-reference."
+    },
+    {
+      "criterion_id": "APP_B_XIV", "rating": "partially",
+      "affirmative_summary": "Manual 7.1.5 excludes overdue equipment. Sections 8.6 and 9.1.4 require acceptance/release endorsement. Dodatak 1 point 14 requires a specific nuclear status-marking document where needed, including methods, traceability and marking authority.",
+      "contrary_summary": "The specific status document is not supplied. The exact rules for applying/removing status marks, preventing bypass of tests and preventing unintended operation of affected equipment are not demonstrated by release approval alone.",
+      "judge_ruling": "Partially matched, 3/5. Release and calibration status controls exist, but the broader nuclear item/operating-status scheme is still a deferred detail.",
+      "rationale": "Appendix B XIV / NQA-1 Part I Requirement 14: raise 0 to 50 points using Manual 8.6, 9.1.4 and Dodatak 1 point 14. Operating-status checks are bounded to equipment affected by Ekonerg work."
+    },
+    {
+      "criterion_id": "APP_B_XV", "rating": "partially",
+      "affirmative_summary": "Manual 8.7 requires identification, marking, segregation or other misuse prevention, evaluation, authorized disposition and reinspection. It records customer agreement and approvals. Dodatak 1 point 15 adds nuclear nonconformance and Part 21 duties through PQ10.2-1.",
+      "contrary_summary": "The reviewed control set does not fully show technical justification and design-control treatment for repair/use-as-is, required as-built updates and the competence/access criteria for disposition evaluators. Part 21 customer notification is not by itself proof of all statutory reporting duties.",
+      "judge_ruling": "Partially matched, 3/5. Basic nonconformance control is substantive, but important nuclear disposition details remain insufficiently supported.",
+      "rationale": "Appendix B XV / NQA-1 Part I Requirement 15 paragraphs 403-405: retain 50 points on specific documentation gaps, not merely a lack of completed NCRs. Manual 8.7 and Dodatak 1 point 15 replace the earlier overly narrow evidence explanation."
+    },
+    {
+      "criterion_id": "APP_B_XVI", "rating": "substantially",
+      "affirmative_summary": "Manual 8.7, 9.2 and 10.2-10.3 require cause analysis, prompt action, recurrence prevention, recorded follow-up, effectiveness checks and management reporting. Nuclear work requires customer notification; supplier nonconformance notification is also stated.",
+      "contrary_summary": "Confirm the complete Part 21 path for reportability, responsible decision makers, timing and required notifications. The manual's customer-notification statement alone does not demonstrate all of those duties.",
+      "judge_ruling": "Substantially matched, 4/5. The cause/action/verification loop is well documented. The applicable Part 21 escalation path needs a clearer complete evidence chain.",
+      "rationale": "Appendix B XVI / NQA-1 Part I Requirement 16: retain 75 points; use the approved Part 21 baseline for the separate notification check. The document-based result is official for this tool, not a claim of field-verified action effectiveness."
+    },
+    {
+      "criterion_id": "APP_B_XVII", "rating": "substantially",
+      "affirmative_summary": "Manual 7.5.4 and retained record procedures cover identification, readable/retrievable records, retention and responsibility. Design, calibration, release and nonconformance records are specified. Dodatak 1 point 17 requires central archives, server storage and copies at a separate location.",
+      "contrary_summary": "The nuclear backup clause cites RSP-03, while Prilog 5 lists ROS-04 for server backup and RSP-03 for design documentation. Resolve the actual controlling storage/backup instruction and confirm the preservation method meets the applicable records requirements.",
+      "judge_ruling": "Substantially matched, 4/5. Record-control coverage is strong, but a concrete backup-control reference defect prevents a full match.",
+      "rationale": "Appendix B XVII / NQA-1 Part I Requirement 17: lower 100 to 75 points because the full manual exposes an unresolved preservation-control reference. This is not a downgrade simply for missing sample records; verify the correct instruction and its storage/retention controls."
+    },
+    {
+      "criterion_id": "APP_B_XVIII", "rating": "substantially",
+      "affirmative_summary": "Manual 9.2 requires planned annual audits with defined criteria, scope and methods; trained independent auditors; reports and records; and verified corrective follow-up. Management review uses audit results. Nuclear supplier audits are addressed in the addendum and flow notes.",
+      "contrary_summary": "Confirm the detailed lead-auditor qualification and maintenance requirements and how deficient areas trigger follow-up or reaudit. A title in a register is not sufficient to establish all qualification rules.",
+      "judge_ruling": "Substantially matched, 4/5. The audit cycle is documented, while the detailed auditor qualification and follow-up method needs fuller support.",
+      "rationale": "Appendix B XVIII / NQA-1 Part I Requirements 18 and 2: retain 75 points using Manual 9.2, Prilog 2 and Dodatak 1 point 18. Completed audit files are a later verification sample, not a prerequisite for issuing this documentation score."
+    }
+  ]
+}
