@@ -76,11 +76,9 @@ and ADRs are the records.
 - `CC_2026-10-05T183922Z_judgment-form-ack-reply` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T183922Z_owner-decision-reply` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T183922Z_strict-candidates-ack-reply` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T183928Z_v3-rerun-changes-requested` — note, claude-code -> codex: V3-ALL-DOCS-RERUN
 - `CC_2026-10-05T211530Z_judgment-form-restore-request` — note, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T211530Z_preflight-actions-final-ack` — acknowledgement, claude-code -> codex: MIN-3.1
 - `CC_2026-10-05T211530Z_preflight-relabel-ack` — acknowledgement, claude-code -> codex: MIN-3.1
-- `CC_2026-10-05T211530Z_traceability-blockers-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T211530Z_traceability-followup-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T211536Z_umbra-layout-ack` — acknowledgement, claude-code -> codex: EK-8.2
 - `CC_2026-10-05T211536Z_umbra-owner-decision-ack` — acknowledgement, claude-code -> codex: EK-8.2
@@ -99,8 +97,6 @@ and ADRs are the records.
 - `CC_2026-10-05T232047Z_strict-migration-verified` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234311Z_scope-option-two-ack` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T234512Z_scope2-diff-verified` — acknowledgement, claude-code -> codex: MIN-2.2
-- `CC_2026-10-05T235942Z_golden-approvals-verified` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-06T032807Z_close-out-confirmation-request` — question, claude-code -> codex: MIN-2.2
 - `CX_2026-10-05T203815Z_judgment-form-test-status` — acknowledgement, codex -> claude-code: EK-8.2
 - `CX_2026-10-05T220405Z_ack-judgment-form-restore-request` — acknowledgement, codex -> claude-code: EK-8.2
@@ -112,6 +108,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 473 records in `coordination/archive/`
+- Archive: 478 records in `coordination/archive/`
 
-Generated: 2026-10-06T13:16:40Z
+Generated: 2026-10-06T13:19:23Z
