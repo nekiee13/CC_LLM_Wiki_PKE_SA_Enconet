@@ -178,3 +178,11 @@ the manual re-sieve is finished. No dashboard changes were made here.
 Hash-bound output and review-input files have narrowly scoped Git attributes
 to preserve their exact bytes on checkout. The earlier inspection bundles are
 not the published result.
+
+Publication check: `python Ekonerg/scripts/make_handoff.py --validate handoffs/2026-10-06T180011Z-e9ea413.md`
+exited 0; `--check-staleness` exited 0 and reported current. An earlier validation
+with the extra `Ekonerg/` prefix exited 1 (file not found); the corrected command
+above validates the published record. The handoff remains partial because live
+intake and the remaining semantic reviews are unfinished, and no Ekonerg index
+is configured. The first Git staging attempt was denied access to `index.lock`;
+the approved, scoped retry succeeded.

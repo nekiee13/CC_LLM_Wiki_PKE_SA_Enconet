@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-06T151443Z-b941c06.md`](handoffs/2026-10-06T151443Z-b941c06.md)
+**Authoritative record:** [`handoffs/2026-10-06T180011Z-e9ea413.md`](handoffs/2026-10-06T180011Z-e9ea413.md)
 
-**Status:** blocked · **Git:** `b941c06` · **Agent:** codex · **Created:** 2026-10-06T15:14:43Z
+**Status:** partial · **Git:** `e9ea413` · **Agent:** codex · **Created:** 2026-10-06T18:00:11Z
 
-**Exact next action:** Obtain complete manual path from owner, verify source/provenance, then perform full chapter-by-chapter re-sieve. Preserve previous generations; prepare exact-quote candidate and diff.
+**Exact next action:** Read manual review note and reviewed/intake-preview.json. Check Claude reply if present. Implement and test source-specific intake/current-source selection as one coherent transition, retaining historical evidence and preventing double counting; review target-root,dry-run,recovery before any live apply. Do not run old capped rerun_document_v3_candidates.py. Then complete23 vendor semantic reviews and existing generation controls.
