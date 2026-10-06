@@ -72,11 +72,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-06T140248Z_final-backlog-closeout` — acknowledgement, codex -> claude-code: EK-UMBRA-20261005
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 517 records in `coordination/archive/`
+- Archive: 519 records in `coordination/archive/`
 
-Generated: 2026-10-06T15:03:56Z
+Generated: 2026-10-06T15:05:03Z
