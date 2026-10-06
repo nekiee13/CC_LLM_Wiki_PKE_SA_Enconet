@@ -84,8 +84,17 @@ def compare(db: Path, old_run: str, new_run: str) -> dict[str, object]:
         new_meta = db_util.lookup(conn, "sieve_runs", "run_id", new_run)
         if old_meta is None or new_meta is None:
             raise ValueError("both sieve runs must exist")
+        source_revision = None
         if old_meta["doc_id"] != new_meta["doc_id"]:
-            raise ValueError("sieve diff requires generations of the same document")
+            exists = conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='source_revision_intakes'").fetchone()
+            relation = conn.execute(
+                'SELECT i.*,d.sha256 AS registered_sha FROM source_revision_intakes i '
+                'JOIN documents d ON d.doc_id=i.new_doc_id '
+                'WHERE old_run_id=? AND new_run_id=? AND old_doc_id=? AND new_doc_id=?',
+                (old_run,new_run,old_meta['doc_id'],new_meta['doc_id'])).fetchone() if exists else None
+            if relation is None or relation['source_sha256'] != relation['registered_sha']:
+                raise ValueError("sieve diff requires the same document or a verified source-revision relation")
+            source_revision = {k:relation[k] for k in ('old_doc_id','new_doc_id','source_sha256','decision_ref')}
         old, new = _crumbs(conn, old_run), _crumbs(conn, new_run)
     criteria = sorted({str(row["criterion_id"]) for row in old + new})
     result = {
@@ -94,12 +103,19 @@ def compare(db: Path, old_run: str, new_run: str) -> dict[str, object]:
             [row for row in new if row["criterion_id"] == criterion],
         ) for criterion in criteria
     }
-    return {"schema_version": "1.0", "doc_id": old_meta["doc_id"],
+    data = {"schema_version": "1.0", "doc_id": old_meta["doc_id"],
             "old_run_id": old_run, "new_run_id": new_run, "criteria": result}
+    if source_revision:
+        data['source_revision'] = source_revision
+    return data
 
 
 def render_markdown(data: dict[str, object]) -> str:
     lines = [f"# Sieve diff — {data['old_run_id']} → {data['new_run_id']}", ""]
+    if data.get('source_revision'):
+        relation=data['source_revision']
+        lines += [f"Source replacement: `{relation['old_doc_id']}` to `{relation['new_doc_id']}`.", "",
+                  "Added/removed describe the candidate comparison only. No historical crumbs were deleted. Quote-overlap pairings are review aids, not automatic score-evidence replacements.", ""]
     for criterion, changes in data["criteria"].items():
         lines.extend([f"## {criterion}", "",
                       f"Added: {len(changes['added'])}; removed: {len(changes['removed'])}; "

@@ -16,6 +16,7 @@ and ADRs are the records.
 
 - `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
 - `DOC0031-SEMANTIC` — codex, released 2026-10-06T17:47:31Z
+- `DOC0031-SOURCE-TRANSITION` — codex, released 2026-10-06T18:29:40Z
 - `EF-1.1` — codex, released 2026-10-01T20:29:07Z
 - `EF-1.2` — codex, released 2026-10-01T20:46:53Z
 - `EF-2.1` — codex, released 2026-10-01T21:05:06Z
@@ -77,10 +78,11 @@ and ADRs are the records.
 
 - `CX_2026-10-06T170123Z_full-keyword-sweep-review` — review_request, codex -> claude-code: FULL-KEYWORD-SWEEP
 - `CX_2026-10-06T174728Z_manual-full-semantic-candidate` — review_request, codex -> claude-code: DOC0031-SEMANTIC
+- `CX_2026-10-06T182937Z_manual-source-intake-golden` — review_request, codex -> claude-code: DOC0031-SOURCE-TRANSITION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-06T180011Z-e9ea413.md`](../handoffs/2026-10-06T180011Z-e9ea413.md)
 - Archive: 521 records in `coordination/archive/`
 
-Generated: 2026-10-06T18:00:27Z
+Generated: 2026-10-06T18:29:42Z

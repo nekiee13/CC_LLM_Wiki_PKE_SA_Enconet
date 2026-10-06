@@ -11,6 +11,7 @@ from collections import Counter
 import csv
 import hashlib
 import json
+import sqlite3
 from pathlib import Path
 import re
 import unicodedata
@@ -165,6 +166,42 @@ def prepare(root, rules):
     names = [row["filename"] for row in rows]
     if len(set(names)) != len(names) or len({r["doc_id"] for r in rows}) != len(rows):
         raise ValueError("Duplicate registry filename or ID")
+    # A fuller owner extraction is registered separately so historical raw
+    # evidence stays intact. Scan its original incoming filename exactly once.
+    database = root / 'db/nqa_audit.sqlite'
+    incoming_names = {r['doc_id']:r['filename'] for r in rows}
+    retired = set()
+    if database.is_file():
+        with database.open('rb') as stream:
+            is_sqlite = stream.read(16) == b'SQLite format 3\x00'
+        if is_sqlite:
+            conn = sqlite3.connect(database.resolve().as_uri()+'?mode=ro',uri=True)
+            try:
+                exists = conn.execute("SELECT 1 FROM sqlite_master WHERE name='source_revision_intakes' AND type='table'").fetchone()
+                revisions = conn.execute('SELECT old_doc_id,new_doc_id,source_sha256 FROM source_revision_intakes').fetchall() if exists else []
+            finally:
+                conn.close()
+            by_id = {r['doc_id']:r for r in rows}
+            if len({r[0] for r in revisions}) != len(revisions):
+                raise ValueError('Ambiguous replacement sources; select one intake before sweeping')
+            pending = list(revisions)
+            while pending:
+                progressed = False
+                for old_id,new_id,digest_value in list(pending):
+                    if old_id not in by_id or new_id not in by_id or by_id[new_id]['sha256'] != digest_value:
+                        raise ValueError('Source-revision registry mismatch')
+                    if any(r[1] == old_id for r in pending):
+                        continue
+                    incoming_names[new_id] = incoming_names[old_id]
+                    retired.add(old_id)
+                    pending.remove((old_id,new_id,digest_value))
+                    progressed = True
+                if not progressed:
+                    raise ValueError('Cyclic source-revision history')
+    rows = [r for r in rows if r['doc_id'] not in retired]
+    names = [incoming_names[r['doc_id']] for r in rows]
+    if len(set(names)) != len(names):
+        raise ValueError('Ambiguous incoming source mapping')
     incoming = sorted(p for p in (root / "incoming").rglob("*") if p.is_file())
     actual = {p.relative_to(root / "incoming").as_posix() for p in incoming}
     if actual != set(names):
@@ -174,7 +211,8 @@ def prepare(root, rules):
         name, doc_id, side = row["filename"], row["doc_id"], row["side_hint"]
         if not re.fullmatch(r"DOC-\d+", doc_id) or side not in ("DOCUMENT", "RULE"):
             raise ValueError("Invalid registered ID or side")
-        path, old_path = root / "incoming" / name, root / "raw" / name
+        incoming_name = incoming_names[doc_id]
+        path, old_path = root / "incoming" / incoming_name, root / "raw" / name
         safe_file(path, root)
         safe_file(old_path, root)
         if path.suffix.lower() != ".md":
@@ -187,7 +225,7 @@ def prepare(root, rules):
         result = scan(source, rules)
         verify_scan(source, result, rules)
         prepared.append((raw, {"schema": "full_keyword_sweep_leads/1", "method": rules["version"],
-            "doc_id": doc_id, "filename": name, "document_side": side,
+            "doc_id": doc_id, "filename": incoming_name, "document_side": side,
             "source_sha256": digest(raw), "registered_source_sha256": row["sha256"],
             "source_changed": digest(raw) != row["sha256"].lower(),
             "source_bytes": len(raw), "source_characters": len(source),

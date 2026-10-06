@@ -1,0 +1,17 @@
+task: DOC0031-SOURCE-TRANSITION
+agent: codex
+status: released
+claimed_at_utc: 2026-10-06T18:14:45Z
+last_renewed_at_utc: 2026-10-06T18:28:34Z
+expires_at_utc: 2026-10-07T18:28:34Z
+anticipated_files:
+  - scripts/source_revision_intake.py
+  - scripts/tests/test_source_revision_intake.py
+  - scripts/validate_sieving_harness.py
+  - scripts/sieve_diff.py
+  - scripts/full_keyword_sweep.py
+  - manifests/approvals.csv
+  - manifests/raw_sources.csv
+  - docs/reviews/DOC0031_SOURCE_TRANSITION_20261006.md
+note: Completed source-specific inactive intake DOC0032 RUN77; golden279/279 and exactlinks. Next owner-approved source switch must accompany evaluation refresh; no additional owner gate.
+released_at_utc: 2026-10-06T18:29:40Z
