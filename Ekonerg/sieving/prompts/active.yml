@@ -1,12 +1,8 @@
 # Prompts activated by explicit owner instruction on 2026-10-03.
-# DOCUMENT v3 was promoted after owner-approved Option A calibration on 2026-10-04.
-# RULE and DOCUMENT golden calibrations are owner-approved; Claude review remains
-# recorded separately in coordination/messages/.
+# DOCUMENT v3 was promoted after owner-approved scope-two calibration and
+# generation promotion on 2026-10-06; the immutable decision records are in
+# manifests/approvals.csv and coordination messages.
 schema_version: "1.0"
-# Owner-approved v3 DOCUMENT prompt is active for the full Ekonerg rerun.
-# Owner/reviewer candidates for evaluation:
-#   RULE: appb_rule_v1.md
-#   DOCUMENT: appb_document_v1.md
 candidates:
   RULE: appb_rule_v1
   DOCUMENT: appb_document_v1
