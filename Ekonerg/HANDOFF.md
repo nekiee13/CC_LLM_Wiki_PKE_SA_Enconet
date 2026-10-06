@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-06T180011Z-e9ea413.md`](handoffs/2026-10-06T180011Z-e9ea413.md)
+**Authoritative record:** [`handoffs/2026-10-06T200158Z-0cea203.md`](handoffs/2026-10-06T200158Z-0cea203.md)
 
-**Status:** partial · **Git:** `e9ea413` · **Agent:** codex · **Created:** 2026-10-06T18:00:11Z
+**Status:** partial · **Git:** `0cea203` · **Agent:** codex · **Created:** 2026-10-06T20:01:58Z
 
-**Exact next action:** Read manual review note and reviewed/intake-preview.json. Check Claude reply if present. Implement and test source-specific intake/current-source selection as one coherent transition, retaining historical evidence and preventing double counting; review target-root,dry-run,recovery before any live apply. Do not run old capped rerun_document_v3_candidates.py. Then complete23 vendor semantic reviews and existing generation controls.
+**Exact next action:** Read source-transition review note and RUN20261006-77 metrics/diff/golden. Prepare evidence-based reassessment of18 criteria against current plus279 manual crumbs, retaining leads and conditional limits. Test atomic source switch and snapshot-backed evaluation refresh, then apply already-recorded owner approval and regenerate evidence matrix with chapter links. No additional owner decision needed; no new slicing plan.
