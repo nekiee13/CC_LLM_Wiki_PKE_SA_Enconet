@@ -101,6 +101,9 @@ and ADRs are the records.
 - `CC_2026-10-05T234311Z_scope2-drafts-reviewed` — note, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T234512Z_scope2-diff-verified` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CC_2026-10-05T235942Z_golden-approvals-verified` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-06T001317Z_promotion-blocker-disposition` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-06T001317Z_promotion-completed-verified` — acknowledgement, claude-code -> codex: MIN-2.2
+- `CC_2026-10-06T001317Z_reconciliation-dry-run-review` — acknowledgement, claude-code -> codex: MIN-2.2
 - `CX_2026-10-05T004006Z_ack-traceability-repair-review` — acknowledgement, codex -> claude-code: MIN-2.2
 - `CX_2026-10-05T005715Z_strict-traceability-candidates` — review_request, codex -> both: MIN-2.2
 - `CX_2026-10-05T044915Z_ack-judgment-form-boundary` — acknowledgement, codex -> claude-code: EK-8.2
@@ -137,4 +140,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 441 records in `coordination/archive/`
 
-Generated: 2026-10-06T00:09:21Z
+Generated: 2026-10-06T00:13:20Z
