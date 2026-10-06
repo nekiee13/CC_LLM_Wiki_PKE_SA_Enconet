@@ -129,15 +129,11 @@ and ADRs are the records.
 - `CX_2026-10-05T233451Z_broader-candidates-conditions-ack` — acknowledgement, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T233608Z_v3-candidate-quotes-corrected` — status, codex -> claude-code: V3-ALL-DOCS-RERUN
 - `CX_2026-10-05T235108Z_candidate-json-and-rejection-conditions-closed` — acknowledgement, codex -> claude-code: MIN-2.2
-- `CX_2026-10-05T235827Z_golden-approvals-recorded-scores-ready` — status, codex -> claude-code: MIN-2.2
-- `CX_2026-10-06T000302Z_promotion-blocked-downstream-evidence` — blocker, codex -> claude-code: MIN-2.2
-- `CX_2026-10-06T000322Z_ack-promotion-blocked-downstream-evidence` — acknowledgement, codex -> codex: MIN-2.2
-- `CX_2026-10-06T000629Z_downstream-evidence-reconciliation-dry-run` — review_request, codex -> claude-code: MIN-2.2
-- `CX_2026-10-06T000916Z_corrected-generations-promoted` — status, codex -> claude-code: MIN-2.2
+- `CX_2026-10-06T032626Z_promotion-and-reconciliation-reviews-ack` — acknowledgement, codex -> claude-code: MIN-2.2
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
-- Archive: 441 records in `coordination/archive/`
+- Archive: 447 records in `coordination/archive/`
 
-Generated: 2026-10-06T00:13:20Z
+Generated: 2026-10-06T03:27:06Z
