@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-06T204618Z-9e26e68.md`](handoffs/2026-10-06T204618Z-9e26e68.md)
+**Authoritative record:** [`handoffs/2026-10-06T205620Z-8ff84fc.md`](handoffs/2026-10-06T205620Z-8ff84fc.md)
 
-**Status:** partial · **Git:** `9e26e68` · **Agent:** codex · **Created:** 2026-10-06T20:46:18Z
+**Status:** partial · **Git:** `8ff84fc` · **Agent:** codex · **Created:** 2026-10-06T20:56:20Z
 
-**Exact next action:** Continue authorized full semantic review starting with DOC-0010 and DOC-0029, using the completed sweep and existing candidate/golden controls. When Claude replies, close the rating correction and review the explicitly pending code/semantic/UI items; do not create new framework slices.
+**Exact next action:** Continue approved semantic review of DOC-0010 and DOC-0029 using the completed all-file sweep and existing candidate/golden controls; process pending deeper Claude reviews when available. No new framework slices or GUI redesign.
