@@ -106,4 +106,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-05T222009Z-d0e47ed.md`](../handoffs/2026-10-05T222009Z-d0e47ed.md)
 - Archive: 489 records in `coordination/archive/`
 
-Generated: 2026-10-06T14:16:47Z
+Generated: 2026-10-06T15:02:54Z
