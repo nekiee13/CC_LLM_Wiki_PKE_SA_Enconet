@@ -117,6 +117,7 @@ and ADRs are the records.
 - `EPIC9-ARCHIVE` — codex, released 2026-07-13T00:45:50Z
 - `EPIC9-LIVE` — codex, released 2026-07-13T00:42:34Z
 - `EVIDENCE-ACCESS-TDD-PLAN` — codex, released 2026-09-03T15:39:42Z
+- `FRAMEWORK-REUSE-20261007` — codex, released 2026-10-07T10:14:16Z
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
@@ -313,4 +314,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-09-04T222413Z-2911321.md`](../handoffs/2026-09-04T222413Z-2911321.md)
 - Archive: 758 records in `coordination/archive/`
 
-Generated: 2026-10-04T17:32:36Z
+Generated: 2026-10-07T10:14:16Z

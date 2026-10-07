@@ -1,0 +1,97 @@
+{
+  "version": "full_keyword_sweep_v1",
+  "purpose": "Uncapped bilingual recall pass. Matches are evidence leads, not approved crumbs or compliance findings. Read all unmatched blocks during semantic review. Does not replace appb_document_v3_context_anchors.",
+  "matching": "Unicode-normalized, case-insensitive regex word stems; match each passage and its nearest heading. No quota, minimum length, maximum length, or prior-crumb suppression.",
+  "criteria": {
+    "APP_B_I": {
+      "name": "Organization",
+      "terms": ["organiz", "odgovorn", "ovlast", "ovlasten", "neovis", "nezavis", "rukovod", "direktor", "predstavnik", "responsib", "authorit", "independen", "escalat", "reporting line"],
+      "examples": ["Odgovornosti i ovlasti direktora", "Organizational independence and authority"]
+    },
+    "APP_B_II": {
+      "name": "Quality Assurance Program",
+      "terms": ["sustav.{0,30}(kvalitet|upravljanj)", "osiguranj.{0,20}kvalitet", "plan.{0,20}kvalitet", "osposob", "skolov", "trening", "kompeten", "obuk", "slozenost", "rizik", "resurs", "politika", "ciljev", "quality (assurance|program|plan|policy)", "train", "qualif", "graded approach", "competenc", "resource", "risk"],
+      "examples": ["Plan kvalitete i osposobljenost osoblja", "Quality assurance program and training"]
+    },
+    "APP_B_III": {
+      "name": "Design Control",
+      "terms": ["projekt", "studij", "proracun", "elaborat", "ulazn", "izlazn", "projektir", "validacij", "verifikacij", "racunaln", "softver", "konfiguracij", "instalacij", "nadogradnj", "zakrp", "kompjuter", "operativn.{0,10}sistem", "operacijsk.{0,10}sustav", "design", "verification", "validation", "calculation", "software", "configuration", "technical review"],
+      "examples": ["Verifikacija projektnih ulaza i proračuna", "Design inputs and verification"]
+    },
+    "APP_B_IV": {
+      "name": "Procurement Document Control",
+      "terms": ["nabav", "narudz", "ugovor", "specifikacij", "ponud", "zahtjev.{0,30}dobavlj", "procurement", "purchase", "contract", "specification", "flow.?down", "requisition"],
+      "examples": ["Ugovorna dokumentacija i zahtjevi nabave", "Procurement specifications in the contract"]
+    },
+    "APP_B_V": {
+      "name": "Instructions, Procedures, and Drawings",
+      "terms": ["postup", "uput", "instrukc", "crtez", "nacrt", "kriterij.{0,20}prihvat", "kontroln.{0,15}list", "procedure", "instruction", "drawing", "checklist", "acceptance criter", "method"],
+      "examples": ["Radni postupci i kriteriji prihvatljivosti", "Instructions, procedures, and drawings"]
+    },
+    "APP_B_VI": {
+      "name": "Document Control",
+      "terms": ["dokument", "revizij", "odobrav", "odobren", "izdavan", "raspodjel", "distribuc", "nevazec", "zastarjel", "izmjen", "document", "revision", "issuance", "distribut", "obsolete", "change control", "approval"],
+      "examples": ["Revizija i distribucija dokumenata", "Document revision and obsolete copies"]
+    },
+    "APP_B_VII": {
+      "name": "Control of Purchased Material, Equipment, and Services",
+      "terms": ["dobavlj", "podugov", "podizvod", "kooper", "prijemn", "ulazn.{0,20}kontrol", "preuzimanj", "supplier", "subcontract", "vendor", "receipt", "receiving", "purchased", "source surveillance"],
+      "examples": ["Evaluacija dobavljača i prijemna kontrola", "Supplier evaluation and receiving inspection"]
+    },
+    "APP_B_VIII": {
+      "name": "Identification and Control of Materials, Parts, and Components",
+      "terms": ["identifik", "sljediv", "oznac", "oznaka", "serijsk", "broj.{0,15}nalog", "sifr", "traceab", "identif", "serial", "marking", "tag", "heat number", "batch number", "lot number"],
+      "examples": ["Identifikacija i sljedivost proizvoda", "Identification and traceability of material"]
+    },
+    "APP_B_IX": {
+      "name": "Control of Special Processes",
+      "terms": ["specijaln", "posebn.{0,15}proces", "zavar", "toplinsk.{0,15}obrad", "nerazorn", "bez razaranj", "ultrazv", "penetr", "magnet", "radiograf", "vizualn", "antikoroz", "beton", "epoks", "epoxy", "cement", "karbonsk", "lamel", "rvt", "rpt", "rmt", "rut", "special process", "weld", "heat treat", "nde\\b", "ndt\\b", "nondestruct", "non-destruct", "ultrasonic", "penetrant", "magnetic particle", "coating", "concrete"],
+      "examples": ["Specijalni procesi i ultrazvučno ispitivanje", "Special processes and nondestructive examination"]
+    },
+    "APP_B_X": {
+      "name": "Inspection",
+      "terms": ["inspekc", "kontrol", "nadzor", "neovisn", "nezavisn", "medufaz", "zavrsn", "tock.{0,12}(cek|zadrz|svjedoc)", "inspection", "independent", "hold point", "witness", "surveill", "in-process", "in process", "final check"],
+      "examples": ["Međufazna kontrola i neovisni nadzor", "Independent inspection and hold points"]
+    },
+    "APP_B_XI": {
+      "name": "Test Control",
+      "terms": ["ispitiv", "test", "prihvatljiv", "rezultat", "racunaln.{0,20}program", "ros.?02", "pokus", "instalacij", "nadogradnj", "zakrp", "kompjuter", "operativn.{0,10}sistem", "operacijsk.{0,10}sustav", "acceptance", "test result", "retest", "software valid", "preoperational"],
+      "examples": ["Program ispitivanja i kriteriji prihvatljivosti", "Test procedures and acceptance limits"]
+    },
+    "APP_B_XII": {
+      "name": "Control of Measuring and Test Equipment",
+      "terms": ["mjeren", "mjern", "mjerit", "mjerac", "umjer", "kalibr", "etalon", "instrument", "bazdar", "toleranc", "measurement", "measuring", "calibrat", "gauge", "gage", "out.of.tolerance", "test equipment"],
+      "examples": ["Umjeravanje opreme za mjerenje", "Calibration of measuring instruments"]
+    },
+    "APP_B_XIII": {
+      "name": "Handling, Storage, and Shipping",
+      "terms": ["rukovan", "skladist", "spremanj", "pakiran", "transport", "isporuk", "ocuvanj", "ciscen", "cistoc", "vlaz", "vlaga", "temperatur", "ostecen", "cuvanj", "handling", "storage", "shipping", "packag", "preserv", "clean", "humidity", "damage", "deteriorat"],
+      "examples": ["Rukovanje, skladištenje i očuvanje proizvoda", "Handling, storage, shipping, and preservation"]
+    },
+    "APP_B_XIV": {
+      "name": "Inspection, Test, and Operating Status",
+      "terms": ["status", "oznac", "oznaka", "pustanj", "otpust", "odobren", "prihvac", "odbijen", "zadrz", "zabran", "dovrs", "release", "accepted", "rejected", "hold", "bypass", "tag", "operating status"],
+      "examples": ["Označavanje statusa nakon kontrole i ispitivanja", "Inspection status and release tags"]
+    },
+    "APP_B_XV": {
+      "name": "Nonconforming Materials, Parts, or Components",
+      "terms": ["neusklad", "nesuklad", "neuskla", "nedostat", "odstupan", "neispravn", "segreg", "izdvajan", "poprav", "dorad", "odbac", "nonconform", "non-conform", "defect", "deviat", "disposition", "rework", "repair", "concession", "ncr\\b", "part.?21"],
+      "examples": ["Kontrola neusklađenosti i izdvajanje proizvoda", "Nonconformance disposition and segregation"]
+    },
+    "APP_B_XVI": {
+      "name": "Corrective Action",
+      "terms": ["korektiv", "popravn", "uzrok", "ponavlj", "ucinkovit", "poboljs", "preventiv", "rok", "korekc", "corrective", "root cause", "cause analys", "recurren", "effectiven", "action owner", "due date", "part.?21", "10.?cfr.?21"],
+      "examples": ["Korektivne akcije i analiza uzroka", "Corrective action and recurrence prevention"]
+    },
+    "APP_B_XVII": {
+      "name": "Quality Assurance Records",
+      "terms": ["zapis", "evidenc", "arhiv", "pohran", "regist", "sigurnosn.{0,15}kopij", "rok.{0,15}cuv", "dosje", "dostup", "record", "retention", "retriev", "archive", "backup", "back-up", "project file"],
+      "examples": ["Čuvanje zapisa i arhiviranje evidencije", "Records retention, retrieval, and archive"]
+    },
+    "APP_B_XVIII": {
+      "name": "Audits",
+      "terms": ["provjer", "prosudb", "audit", "pregled.{0,20}ocjen", "nalaz", "vodec.{0,12}provjer", "management review", "follow.up", "assessment"],
+      "examples": ["Program provjera i praćenje nalaza", "Independent audit and management review"]
+    }
+  }
+}

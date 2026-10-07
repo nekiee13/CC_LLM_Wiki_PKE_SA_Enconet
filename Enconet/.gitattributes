@@ -1,0 +1,18 @@
+# Byte-stable additive framework-v2 files; do not normalize prior audit evidence.
+.gitattributes text eol=lf
+docs/FRAMEWORK_METHOD_V2.md text eol=lf
+schemas/evidence_context.yml text eol=lf
+scripts/build_dark_dashboard.py text eol=lf
+scripts/build_vendor_dashboard.py text eol=lf
+scripts/dashboard_dark.css text eol=lf
+scripts/dashboard_reference_groups.js text eol=lf
+scripts/dashboard_spotlight.js text eol=lf
+scripts/full_keyword_sweep.py text eol=lf
+scripts/project_paths.py text eol=lf
+scripts/reset_audit.py text eol=lf
+sieving/prompts/appb_concepts.yml text eol=lf
+sieving/prompts/appb_document_v3_context_anchors.md text eol=lf
+sieving/prompts/full_keyword_sweep_v1.json text eol=lf
+templates/vendor-dashboard.html text eol=lf
+out/2026-10-07/framework-v2/** text eol=lf
+.bootstrap/framework-v2/** text eol=lf

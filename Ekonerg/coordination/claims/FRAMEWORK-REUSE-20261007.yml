@@ -1,0 +1,14 @@
+task: FRAMEWORK-REUSE-20261007
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T08:21:46Z
+last_renewed_at_utc: 2026-10-07T08:21:46Z
+expires_at_utc: 2026-10-08T08:21:46Z
+anticipated_files:
+  - audit_template
+  - doc/framework-reuse
+  - Ekonerg/docs/EKONERG_IMPROVEMENTS_SUMMARY_20261007.md
+  - Enconet/scripts/full_keyword_sweep.py
+  - Enconet/sieving/prompts/full_keyword_sweep_v1.json
+note: Owner requested detailed summary, Enconet backport and reusable vendor transition; no source, DB, approved-result or Claude-owned edits
+released_at_utc: 2026-10-07T10:14:15Z

@@ -21,3 +21,6 @@ evidence_links/v1/** text eol=lf
 evidence_matrix/v1/** text eol=lf
 gap_workflow/v1/** text eol=lf
 evaluation/v1/** text eol=lf
+
+# The coherent release also hashes exact LF payload bytes.
+framework/** text eol=lf

@@ -1,0 +1,27 @@
+# Framework scoring candidate; numeric values are NOT approved for an audit.
+# A local G3 approval must name the version before real scoring is accepted.
+schema_version: "1.0"
+model_version: "0.1-placeholder"
+calibration_status: "pending human calibration approval"
+rating_weights:
+  fully: 1.00
+  substantially: 0.75
+  partially: 0.50
+  minimally: 0.25
+  unmet: 0.00
+  undetermined: 0.00
+  na: null
+consolidated_score:
+  formula: "100 * sum(rating_weights[classification] for applicable criteria) / count(applicable criteria)"
+  denominator: "applicable-criteria count (18 minus approved not-applicable rulings)"
+  rounding: "half-up to 1 decimal place"
+  range: [0.0, 100.0]
+classification_thresholds:
+  - {min_score: 90.0, class: fully}
+  - {min_score: 70.0, class: substantially}
+  - {min_score: 40.0, class: partially}
+  - {min_score: 10.0, class: minimally}
+  - {min_score: 0.0, class: unmet}
+change_log:
+  - version: "0.1-placeholder"
+    note: "Framework candidate only; each audit needs local calibration approval."

@@ -13,6 +13,11 @@ lives in [`../../doc/`](../../doc/README.md).
 
 ## Active delivery plans
 
+- [Framework upgrade, 7 October 2026](FRAMEWORK_UPGRADE_20261007.md): additive
+  reuse tools and separate dashboard candidates; closed audit preserved.
+- [Reusable method v2](FRAMEWORK_METHOD_V2.md): recall, traceability, presentation,
+  reset and fresh-company boundaries; prompt activation remains company-local.
+
 | File | Status |
 |---|---|
 | [EVIDENCE_ACCESS_TDD_PLAN.md](EVIDENCE_ACCESS_TDD_PLAN.md) | **Reviewed** GitHub-issues-style TDD plan for clickable report-to-source evidence access; Claude approved with no residual findings and implementation waits for the owner architecture gate |

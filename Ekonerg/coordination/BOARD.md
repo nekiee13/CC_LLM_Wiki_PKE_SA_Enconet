@@ -81,6 +81,7 @@ and ADRs are the records.
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `EK-PLAN-FINAL-ARCHIVE` — codex, released 2026-09-29T11:24:37Z
 - `EK-PLAN-REVISION` — codex, released 2026-09-29T11:04:24Z
+- `FRAMEWORK-REUSE-20261007` — codex, released 2026-10-07T10:14:15Z
 - `FULL-KEYWORD-SWEEP` — codex, released 2026-10-06T17:01:44Z
 - `MIN-2.2-DOC0006-RULE-GOLDEN` — codex, released 2026-10-04T06:30:32Z
 - `MIN-2.2-DOC0016-V2-GOLDEN` — codex, released 2026-10-03T20:29:41Z
@@ -98,10 +99,12 @@ and ADRs are the records.
 - `CX_2026-10-07T073637Z_cursor-spotlight-ready` — status, codex -> claude-code: DARK-CURSOR-SPOTLIGHT
 - `CX_2026-10-07T074304Z_score-bar-glow-refinement` — status, codex -> claude-code: DARK-LIGHTING
 - `CX_2026-10-07T075732Z_faint-grid-added` — status, codex -> claude-code: DARK-LIGHTING
+- `CX_2026-10-07T101247Z_framework-guidance-sync-pending` — note, codex -> claude-code: FRAMEWORK-REUSE-20261007
+- `CX_2026-10-07T101247Z_framework-v2-summary-and-backport` — review_request, codex -> claude-code: FRAMEWORK-REUSE-20261007
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T075750Z-00a0459.md`](../handoffs/2026-10-07T075750Z-00a0459.md)
 - Archive: 563 records in `coordination/archive/`
 
-Generated: 2026-10-07T07:58:36Z
+Generated: 2026-10-07T10:14:16Z

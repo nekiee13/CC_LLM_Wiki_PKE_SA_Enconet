@@ -1,0 +1,20 @@
+task: FRAMEWORK-REUSE-20261007
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T08:23:32Z
+last_renewed_at_utc: 2026-10-07T08:23:32Z
+expires_at_utc: 2026-10-08T08:23:32Z
+anticipated_files:
+  - Enconet/scripts/full_keyword_sweep.py
+  - Enconet/scripts/project_paths.py
+  - Enconet/scripts/reset_audit.py
+  - Enconet/scripts/build_vendor_dashboard.py
+  - Enconet/scripts/build_dark_dashboard.py
+  - Enconet/scripts/dashboard_dark.css
+  - Enconet/scripts/dashboard_reference_groups.js
+  - Enconet/scripts/dashboard_spotlight.js
+  - Enconet/templates/vendor-dashboard.html
+  - Enconet/docs/FRAMEWORK_UPGRADE_20261007.md
+  - Enconet/sieving/prompts/full_keyword_sweep_v1.json
+note: Additive owner-authorized backport. Preserve closed audit, protected deliverables, source DB and Claude infrastructure.
+released_at_utc: 2026-10-07T10:14:16Z
