@@ -240,5 +240,17 @@ body{
   50%{opacity:.65;filter:brightness(.88);box-shadow:0 0 3px rgba(111,211,154,.08)}
 }
 @media(prefers-reduced-motion:reduce),(forced-colors:active){
-  .scoreBar>div{animation:none!important;opacity:1;filter:none;box-shadow:none}
+.scoreBar>div{animation:none!important;opacity:1;filter:none;box-shadow:none}
 }
+/* Barely visible 54px geometric grid, fading into the dark canvas. */
+body{isolation:isolate}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(24,194,200,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(24,194,200,.055) 1px,transparent 1px);
+  background-size:54px 54px;
+  mask-image:linear-gradient(to bottom,#000,transparent 1100px);
+  -webkit-mask-image:linear-gradient(to bottom,#000,transparent 1100px);
+}
+@media(forced-colors:active){body::before{display:none}}

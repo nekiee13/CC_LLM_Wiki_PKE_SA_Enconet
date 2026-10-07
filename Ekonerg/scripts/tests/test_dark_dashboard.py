@@ -61,3 +61,13 @@ def test_cursor_light_is_decorative_and_opt_out_safe():
     assert "setAttribute('aria-hidden', 'true')" in js
     assert '(prefers-reduced-motion:reduce)' in js
     assert 'event.pointerType' in js
+
+
+def test_grid_is_faint_noninteractive_and_screen_only():
+    from build_dark_dashboard import STYLE
+    css = STYLE.read_text(encoding='utf-8')
+    assert 'background-size:54px 54px' in css
+    assert 'rgba(24,194,200,.055)' in css
+    assert 'mask-image:linear-gradient(to bottom,#000,transparent 1100px)' in css
+    assert 'body::before{' in css
+    assert 'media="screen"' in dark_copy(LIGHT.read_text(encoding='utf-8'))

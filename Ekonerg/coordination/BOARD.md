@@ -97,10 +97,11 @@ and ADRs are the records.
 - `CX_2026-10-07T073208Z_decorative-lighting-ready` — status, codex -> claude-code: DARK-LIGHTING
 - `CX_2026-10-07T073637Z_cursor-spotlight-ready` — status, codex -> claude-code: DARK-CURSOR-SPOTLIGHT
 - `CX_2026-10-07T074304Z_score-bar-glow-refinement` — status, codex -> claude-code: DARK-LIGHTING
+- `CX_2026-10-07T075732Z_faint-grid-added` — status, codex -> claude-code: DARK-LIGHTING
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T074320Z-1ab3b94.md`](../handoffs/2026-10-07T074320Z-1ab3b94.md)
+- Authoritative record: [`handoffs/2026-10-07T075750Z-00a0459.md`](../handoffs/2026-10-07T075750Z-00a0459.md)
 - Archive: 563 records in `coordination/archive/`
 
-Generated: 2026-10-07T07:43:42Z
+Generated: 2026-10-07T07:58:36Z
