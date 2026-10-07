@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T035940Z-95cb053.md`](handoffs/2026-10-07T035940Z-95cb053.md)
+**Authoritative record:** [`handoffs/2026-10-07T040656Z-c6cf76a.md`](handoffs/2026-10-07T040656Z-c6cf76a.md)
 
-**Status:** partial · **Git:** `95cb053` · **Agent:** codex · **Created:** 2026-10-07T03:59:40Z
+**Status:** partial · **Git:** `c6cf76a` · **Agent:** codex · **Created:** 2026-10-07T04:06:56Z
 
-**Exact next action:** Use the compact-cards dashboard for owner presentation. Continue existing DOC-0010/DOC-0029 evidence-led audit work and handle pending Claude replies; no new framework slices or score inflation.
+**Exact next action:** Await and independently process Claude's count correction and bounded code/rubric/older review dispositions. Archive only resolved confirmed CX records with manifests. Do not start darkGUI while queue remains unresolved.
