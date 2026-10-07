@@ -1,0 +1,1942 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "PP-42-02,R5 Upravljanje zapisima kvalitete.pdf.md",
+    "title": "UPRAVLJANJE ZAPISIMA KVALITETE - PP-42-02, rev. 5",
+    "date": "2024-11-25",
+    "doc_id": "DOC-0005",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Postupak zapisa identificira oznaku, reviziju 5 i datum izdavanja.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]",
+          "source_heading_path": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv dokumenta: | Programski postupak PP-42-02 |",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        },
+        {
+          "quote_original": "| Revizija broj:   | 5                            |",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        },
+        {
+          "quote_original": "| Datum objavljivanja: | 25.11.2024.               |",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "candidate_lead: Broj kontrolirane kopije je predložak, ne popunjena potvrda.",
+      "item_type": "status_statement",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]",
+          "source_heading_path": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontrolirana kopija broj: ........",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "candidate_lead: Datum pripreme prikazan je u nejasnom obliku 15.112024.; zadržati za provjeru.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]",
+          "source_heading_path": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pripremio: | Adem Beširevič, voditelj QA | [Potpis] | 15.112024. |",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Naveden je pregled dokumenta s imenovanom osobom i datumom.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]",
+          "source_heading_path": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | mr.sc. Ilijana Iveković, predstavnik direktora | [Potpis] | 16.11.2024. |",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Odobrenje prikazuje direktora, datum i digitalni potpisni tekst; kriptografska valjanost nije ovdje provjerena.",
+      "item_type": "record",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]",
+          "source_heading_path": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Odobrio: | Josip Vuković, direktor | JOSIP VUKOVIĆ<br>2024.11.25<br>10:36:06 +01'00' | 25.11.2024. |",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Predložak periodičnog pregleda nema uneseni rezultat.",
+      "item_type": "status_statement",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]",
+          "source_heading_path": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "ENCONET [line 1] > UPRAVLJANJE ZAPISIMA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Postupak uređuje prikupljanje, oznake, odlaganje, čuvanje i rukovanje zapisima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1. SVRHA [line 55]",
+          "source_heading_path": "1. SVRHA [line 55]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupkom se utvrđuju aktivnosti i odgovornosti za prikupljanje, označivanje,\nodlaganje, čuvanje te rukovanje zapisima.",
+          "quote_language": "hr",
+          "source_locator": "1. SVRHA [line 55]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Primjena obuhvaća sve klasificirane zapise sustava.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2. PODRUČJE PRIMJENE [line 60]",
+          "source_heading_path": "2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na sve dokumente/zapise sustava kvalitete koji su ovim\npostupkom klasificirani kao zapisi određene klase (ZK1, ZK2, ZK3).",
+          "quote_language": "hr",
+          "source_locator": "2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "candidate_lead: Regulatorni popis referencira Document Control VI/Requirement6 iako je predmet evidencija zapisa; provjeriti citacije, ne koristiti popis kao dokaz.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3. REFERENCE [line 65]",
+          "source_heading_path": "3. REFERENCE [line 65]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. HRN EN ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "   Sustavi upravljanja kvalitetom – Zahtjevi\n   Upravljanje zapisima",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "2. IAEA Leadership and Management for Safety, IAEA Safety Standards Series,",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "   No. GSR Part 2, IAEA Vienna, 2016.",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "3. American Code of Federal Regulation, 10CFR50 App. B, Criteria 6, Document",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "   Control",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "4. NQA-1, Requirement 6, Document Control",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "5. Enconet - Priručnik kvalitete PK",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "   Sustavi upravljanja kvalitetom – Zahtjevi\n   Upravljanje zapisima",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "6. Enconet - Programski postupak PP-42-01",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "   «Upravljanje dokumentima»",
+          "quote_language": "hr",
+          "source_locator": "3. REFERENCE [line 65]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor osigurava resurse za sustav zapisa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta odgovoran je za osiguravanje resursa potrebnih za uspostavu sustava upravljanja zapisima.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Voditelji projekata prikupljaju i rukuju svojim projektnim zapisima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelji projekata odgovorni su za prikupljanje, odlaganje i rukovanje zapisima koji se odnose na projekte iz njihovog područja rada.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: QA odgovara za identifikaciju, prikupljanje, pohranu, zaštitu i uništavanje zapisa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova odgovoran je za uspostavu i održavanje sustava upravljanja zapisima kvalitete, odnosno njihovu identifikaciju, prikupljanje, evidenciju, pohranu, zaštitu i uništavanje.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Administrator urudžbira i rukuje zapisima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Administrator je odgovoran za urudžbiranje i rukovanje zapisima.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 5. ODGOVORNOSTI [line 107]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Zapisi čuvaju dokaz sukladnosti i uspješnosti QA sustava.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi o kvaliteti su rezultat provedenih radnji, postupaka i uputa. i prateći su dokumenti uz proizvod odnosno uslugu. Moraju se čuvati radi dokazivanja sukladnosti s propisanim zahtjevima i uspješnosti djelovanja sustava kvalitete. Važni zapisi kvalitete podugovarača moraju biti sastavni dio tih podataka. Zapisi mogu biti u bilo kojoj formi i na bilo kojoj vrsti medija (papir, elektronski medij). Svi zapisi su potpisani, datirani, čitljivi, kompletni i prepoznatljivi glede proizvoda ili usluge. Postupanje sa zapisima kvalitete u pogledu njihove primjerenosti, dostupnosti, sljedivosti i čuvanja značajan je dio posla u uspostavi sustava kvalitete, te je važan čimbenik u certifikacijskoj prosudbi SUK.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Važni zapisi podugovarača moraju biti dio evidencije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi o kvaliteti su rezultat provedenih radnji, postupaka i uputa. i prateći su dokumenti uz proizvod odnosno uslugu. Moraju se čuvati radi dokazivanja sukladnosti s propisanim zahtjevima i uspješnosti djelovanja sustava kvalitete. Važni zapisi kvalitete podugovarača moraju biti sastavni dio tih podataka. Zapisi mogu biti u bilo kojoj formi i na bilo kojoj vrsti medija (papir, elektronski medij). Svi zapisi su potpisani, datirani, čitljivi, kompletni i prepoznatljivi glede proizvoda ili usluge. Postupanje sa zapisima kvalitete u pogledu njihove primjerenosti, dostupnosti, sljedivosti i čuvanja značajan je dio posla u uspostavi sustava kvalitete, te je važan čimbenik u certifikacijskoj prosudbi SUK.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Zapisi moraju biti potpisani, datirani, čitljivi, potpuni i povezani s proizvodom ili uslugom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi o kvaliteti su rezultat provedenih radnji, postupaka i uputa. i prateći su dokumenti uz proizvod odnosno uslugu. Moraju se čuvati radi dokazivanja sukladnosti s propisanim zahtjevima i uspješnosti djelovanja sustava kvalitete. Važni zapisi kvalitete podugovarača moraju biti sastavni dio tih podataka. Zapisi mogu biti u bilo kojoj formi i na bilo kojoj vrsti medija (papir, elektronski medij). Svi zapisi su potpisani, datirani, čitljivi, kompletni i prepoznatljivi glede proizvoda ili usluge. Postupanje sa zapisima kvalitete u pogledu njihove primjerenosti, dostupnosti, sljedivosti i čuvanja značajan je dio posla u uspostavi sustava kvalitete, te je važan čimbenik u certifikacijskoj prosudbi SUK.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Klasifikacija obuhvaća interne zapise i zapise kupca, dobavljača i trećih.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svi zapisi, neovisno jesu li nastali u Enconetu ili dolaze od kupca, dobavljača odnosno trećih osoba, klasificiraju se s obzirom na vremensko razdoblje čuvanja:",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: ZK1 određuje trajno čuvanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Trajno čuvanje dokumenta | ZK1 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: ZK2 određuje pet godina čuvanja kao opću klasu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Čuvanje dokumenta 5 godina | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: ZK3 određuje čuvanje do sljedeće revizije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Čuvanje dokumenta do slijedeće revizije | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Razdoblje čuvanja uzima u obzir ugovorne, regulatorne i tehnološke potrebe.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Klasificirani zapisi čuvaju se s obzirom na njihovo značenje za kvalitetu, ali i radi ugovornih i/ili regulatornih obveza, te očuvanja stečenih znanja i posebnih tehnologija.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Vlasnik zapisa ili projektni voditelj određuje klasu, po potrebi uz QA.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U točki 7. ovog postupka priložena je tablica «Klasifikacija i vremensko razdoblje čuvanja zapisa», koja predstavlja smjernicu s obzirom na pojedinu vrstu zapisa. Za svaki pojedinačni zapis odluku donosi vlasnik zapisa odnosno voditelj projekta prema navedenoj klasifikaciji ili, prema potrebi, u suglasnosti s voditeljem QA poslova.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Jedinstveni IOD osigurava identitet i sljedivost zapisa kroz sve faze.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svi dokumenti sa statusom zapisa kvalitete moraju biti jedinstveno označeni IOD\nbrojem prema točki 6.4 postupka PP-42-01 «Upravljanje dokumentima» (Ref. 6)\nkako bi se osigurala njihova prepoznatljivost i sljedivost u svim fazama upravljanja\nzapisima kvalitete.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Zapisi su potpuni, reproducibilni i prepoznatljivi po svrsi i mjestu nastanka.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svi zapisi trebaju biti čitljivi i pogodni za umnožavanje, te potpuni i prepoznatljivi u\nodnosu na svrhu i mjesto nastajanja (realizacija projekta, dokumentacija sustava\nkvalitete, popravna radnja, ocjena uprav i sl.)",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Objavljivanje zapisa traži IOD, ovjeru žigom i urudžbiranje u GPD.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi se objavljuju kada dobiju IOD broj, te kada se ovjere žigom i urudžbiraju u\nGPD, prema točki 6.6 postupka PP-42-01 (Ref. 6)",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "candidate_lead: Zapisni postupak traži GPD, dok document-control sekcija GPD kaže obsolete; provjeriti važeći način evidencije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi se objavljuju kada dobiju IOD broj, te kada se ovjere žigom i urudžbiraju u\nGPD, prema točki 6.6 postupka PP-42-01 (Ref. 6)",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.2     Označivanje i objavljivanje zapisa [line 140]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Zapisi se prikupljaju kontinuirano po završetku radnih faza i QA aktivnosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi kvalitete prikupljaju se kontinuirano kako nastaju t.j. nakon završetka\npojedinih faza radnog procesa i određenih QA aktivnosti.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Projektni voditelji prikupljaju projektne zapise, a QA zapise cjelokupnog sustava.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelji projekata odgovorni su da prikupljaju zapise vezane za pojedine faze\nrealizacije njima pripadajućih projekata, a voditelj QA poslova za cjelokupni SUK.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Vlasnici određuju ZK1/ZK2/ZK3 ili NZK status prema prilogu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Vlasnici zapisa (voditelji projekata, voditelj QA) utvrđuju status zapisa u klasi ZK1,\nZK2 ili ZK3 odnosno NZK prema klasifikaciji zapisa navedenoj u Prilogu (točka 7)\novog postupka. Periodi čuvanja zapisa s obzirom na određenu klasu dokumenta\n(ZK1, ZK2 ili ZK3) određeni su u točki 6.1 ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Označeni registratori i elektronički mediji omogućuju evidenciju i pronalaženje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Radi evidencije, održavanja te pretraživanja/pronalaženja i korištenja, zapisi se\nulažu u označene registratore (papirnati zapisi) odnosno upisuju na elektronski\nmedij (elektronski zapisi).",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Projektni zapisi čuvaju se u registratoru odgovarajućeg projekta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi, za čije je prikupljanje odgovoran voditelj projekta, odlažu se i čuvaju u\nregistratoru odgovarajućeg projekta.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: QA zapisi raspoređuju se prema vrstama, uključujući korektivne mjere.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi, za čije je prikupljanje odgovoran voditelj QA odlažu se i čuvaju u\nregistratorima označenim po vrstama zapisa (popravne radnje, preventivne radnje,\nocjene direktora, itd.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Administrator urudžbirane zapise dostavlja QA arhivi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dokumente sa statusom zapisa kvalitete administrator nakon urudžbiranja i\nobjavljivanja dostavlja u arhivu QA radi daljnjeg postupanja.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: GPD za svaki zapis vodi klasu dokumenta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ukupna evidencija zapisa kvalitete u Enconetu vodi se u GPD, gdje za svaki\nzapis/dokument postoji podatak o klasi zapisa/dokumenta. Određen prema\nklasifikaciji zapisa datoj u Prilogu 7 ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Suhi prostor, ormari i posebne mjere štite od gubitka i propadanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi se čuvaju u odgovarajućim datotekama, kutijama, policama, kabinetima i/ili protupožarnim ormarima u suhom prostoru i s posebnim mjerama zaštite, tako da se izbjegne propadanje i uništavanje i spriječi njihov gubitak, sukladno specificiranim uredbama i standardima, ugovornim zahtjevima i internim uputama Enconeta u skladu s postupkom PP-42-01.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Po isteku primjenjivog roka predviđeno je uništavanje rezanjem papira.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi (dokumenti) čuvaju se na period određen klasom zapisa (vidi točku 6.1 i Prilog 7 u ovom postupku). Zapisi, kojima istekne rok, uništavaju se u Enconetu putem uređaja za rezanje papira. Za uništavanje je odgovoran vlasnik odgovarajućeg zapisa, na pr:",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Za uništavanje po isteku roka odgovara vlasnik vrste zapisa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zapisi (dokumenti) čuvaju se na period određen klasom zapisa (vidi točku 6.1 i Prilog 7 u ovom postupku). Zapisi, kojima istekne rok, uništavaju se u Enconetu putem uređaja za rezanje papira. Za uništavanje je odgovoran vlasnik odgovarajućeg zapisa, na pr:",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "quote_original": "- Zapisi vezani uz proizvod/projekt –voditelj projekta",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "quote_original": "- financijsko/računovodstveni zapisi – voditelj računovodstva",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "quote_original": "- zapisi SUK-a – voditelj QA",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "quote_original": "- ostali zapisi – vlasnik zapisa",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Certifikati, ovlaštenja i dugoročni ugovori pripadaju trajnoj klasi ZK1.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Certifikati, Rješenja, Ovlaštenja, Dugoročni ugovori s pravnim osobama                               ZK1",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "quote_original": "| Trajno čuvanje dokumenta | ZK1 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Zapisi o školovanju, izobrazbi i iskustvu čuvaju se trajno.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Školovanje, izobrazba, uvježbanost i iskustvo osoblja (6.2.2)                                        ZK1",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        },
+        {
+          "quote_original": "| Trajno čuvanje dokumenta | ZK1 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6. POSTUPAK [line 117]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Ugovor i narudžba klasificirani su kao ZK1.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Ugovor/Narudžba                                                                                      ZK1",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0041",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Projektni proizvodi, analize i software klasificirani su kao ZK1.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Projekt (projekt, studija, elaborat, analiza, računalni program, usluga i sl.)                       ZK1",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0042",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Trajne korporativne podloge i podaci svrstani su u ZK1.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Podloge i podaci tvrtke koji su za dogoročnu (trajnu) upotrebu                                       ZK1",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0043",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Upravina ocjena klasificirana je kao ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Ocjena sustava od strane uprave (5.6.1)                                                              ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0044",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Dokazi ispunjenja procesnih i proizvodnih zahtjeva imaju određenu klasu čuvanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Dokaz da procesi i proizvodi zadovoljavaju zahtjeve (7.1)                                            ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0045",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Predviđeno je čuvanje projektnih ulaza.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Ulazni podaci za projektiranje i razvoj (7.3.2)                                                      ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0046",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Predviđeno je čuvanje projektnih ocjena.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Rezultati ocjene projektiranja i razvoja (7.3.4)                                                     ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0047",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Rezultati projektne verifikacije čuvaju se kao ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Rezultati ovjere/verifikacije projektiranja i razvoja (7.3.5)                                        ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0048",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Predviđeno je čuvanje projektne validacije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Potvrda prihvatljivosti/validacija projektiranja i razvoja (7.3.6)                                   ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0049",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Projektne promjene imaju klasificirane zapise ocjene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Rezultati ocjene promjena u projektiranju i razvoju (7.4.1)                                          ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0050",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Ocjena dobavljača ima predviđene zapise i rok čuvanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Rezultati vrednovanja dobavljača (7.4.1)                                                             ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0051",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "supporting_control: Predviđeni su zapisi validacije procesa koji se ne mogu naknadno verificirati.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Potvrđivanje procesa kad nije moguća naknadna verifikacija proizvoda (7.5.2)                         ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0052",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "supporting_control: Tablica određuje čuvanje zapisa identiteta proizvoda za sljedivost.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Jedinstveno označivanje proizvoda kada se zahtijeva sljedivost (7.5.3)                               Zk2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0053",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "supporting_control: Predviđen je zapis gubitka, oštećenja ili neprikladnosti kupčeve imovine.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Vlasništvo kupca kada se ono izgubi, ošteti ili je neodgovarajuće (7.5.4)                            ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0054",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "supporting_control: Predviđeno je čuvanje podatka o etalonu kad nacionalni ili međunarodni ne postoje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Podaci o primijenjenom etalonu umjeravanja/ovjeravanja mjerne opreme kada\n ne postoje međunarodni ili nacionalni etaloni (7.6-1)                                                ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0055",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "supporting_control: Kalibracijski i verifikacijski rezultati imaju klasu ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Rezultati umjeravanja i verifikacije mjerne opreme (7.6-3)                                           ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0056",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "supporting_control: Interni audit i povezane radnje imaju klasificirane zapise.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Unutrašnja neovisna ocjena/interni audit i potrebne radnje (8.2.2)                                   ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0057",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "supporting_control: Isporuka i osoba koja ju je odobrila dokumentiraju se u zapisu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": " Zapis o isporuci proizvoda i osobi koja ju je odobrila (8.2.4)                                       ZK2",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > 6.3     Prikupljanje, evidencija i pronalaženje zapisa [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0058",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "supporting_control: Zapisi nesukladnosti uključuju uzrok, postupanje i odobrenja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Opis uzroka i stanja nesukladnog proizvoda, naknadnih radnji i potvrda o dobivenim odobrenjima (8.3) | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0059",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Rezultati korektivnih radnji svrstani su u ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Rezultati popravnih radnji (8.5.2) | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0060",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Rezultati preventivnih radnji svrstani su u ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Rezultati preventivnih radnji (8.5.3) | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0061",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Zahtjev za ponudu i pripadajuće podloge imaju klasu ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Zahtjev za ponudu/Upit i pripadajuća dokumentacija | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0062",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "supporting_control: Ponuda i njezina dokumentacija imaju klasu ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Ponuda i pripadajuća dokumentacija | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0063",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Nabava, prijemna kontrola i reklamacije imaju klasificirane zapise.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Nabava (dokumenti za nabavu, prijemna kontrola, reklamacije i sl.) | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0064",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Dobavljačevi dokumenti čuvaju se kao ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Dokumenti od dobavljača | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0065",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "supporting_control: Zapisi isporuke i prihvaćanja imaju klasu ZK2.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Zapisi o isporuci/prihvaćanju proizvoda | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0066",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Za Part21 evaluaciju odstupanja i grešaka naveden je najmanje petogodišnji rok.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 10CFR21 (21.51), Evaluacija odstupanja i grešaka, min. 5 godina | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0067",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Za Part21 obavijesti navodi se pet godina, a za kupnju baznih komponenata najmanje deset godina.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 10CFR21 (21.51), Obavijesti kupcima baznih komponenata i vlasnicima licenci, min. 5 godina, dokumentacija kupnje baznih komponenata, min. 10 godina | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0068",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "candidate_lead: Red navodi deset godina unutar opće ZK2 klase pet godina; primijeniti specifični zahtjev i provjeriti način razvrstavanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 10CFR21 (21.51), Obavijesti kupcima baznih komponenata i vlasnicima licenci, min. 5 godina, dokumentacija kupnje baznih komponenata, min. 10 godina | ZK2 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0069",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Priručnik, QA plan, postupci i upute klasificirani su u ZK3.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Priručnik kvalitete | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        },
+        {
+          "quote_original": "| Nuklearni QA Plan | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        },
+        {
+          "quote_original": "| Programski postupak | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        },
+        {
+          "quote_original": "| Radna uputa | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0070",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Odluke o QA imenovanjima i organizaciji svrstane su u ZK3.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Odluke o imenovanju djelatnika za QA zadatke | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        },
+        {
+          "quote_original": "| Odluke (organizacija, upravljanje, SUK, politika i ciljevi kvalitete | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0071",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Radni nacrti i informacije za tekuće stanje imaju klasu ZK3.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Radna dokumentacija u izradi dokumenta | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        },
+        {
+          "quote_original": "| Popisi, podaci, informacije potrebni samo za tekuće stanje | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        },
+        {
+          "quote_original": "| Smjernice, upute, obrasci | ZK3 |",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    },
+    {
+      "item_id": "ITEM-0072",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Ugovor, garancija i propisi mogu odrediti drukčiji rok čuvanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]",
+          "source_heading_path": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Napomena:\nVremensko razdoblje čuvanja dokumenata i podataka može biti i drugačije definirano\ns obzirom na ugovorne zahtjeve, garantne rokove, regulatorne zahtjeve i neke druge\nspecifičnosti.",
+          "quote_language": "hr",
+          "source_locator": "4. DEFINICIJE I KRATICE [line 86] > KLASIFIKACIJA ZAPISA [line 257]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "5"
+      }
+    }
+  ]
+}

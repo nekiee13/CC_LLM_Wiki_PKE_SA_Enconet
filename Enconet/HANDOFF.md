@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T173214Z-7200601.md`](handoffs/2026-10-07T173214Z-7200601.md)
+**Authoritative record:** [`handoffs/2026-10-07T182130Z-139c859.md`](handoffs/2026-10-07T182130Z-139c859.md)
 
-**Status:** partial · **Git:** `7200601` · **Agent:** codex · **Created:** 2026-10-07T17:32:14Z
+**Status:** partial · **Git:** `139c859` · **Agent:** codex · **Created:** 2026-10-07T18:21:30Z
 
-**Exact next action:** Continue document-control DOC0004, records DOC0005 and training DOC0006 as next bounded source batch under approvedv3 with freshRUN IDs; preservepriorruns and exactlinks.24vendor documents remain; no newpromptapproval needed.
+**Exact next action:** Continue contract/marketing DOC0007, design DOC0008 and audit DOC0009 in next bounded batch with freshRUN IDs under approvedv3; retainallpriorlinks.21vendor docs remain.

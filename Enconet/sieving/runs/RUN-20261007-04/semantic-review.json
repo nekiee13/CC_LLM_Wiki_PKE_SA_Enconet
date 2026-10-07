@@ -1,0 +1,1428 @@
+{
+  "method": "Codex direct-control and quality-intent full-source review; no automatic keyword acceptance",
+  "source_sha256": "c0c50bdf1b4d5f974e7fbddbcd024680fc89e79c2588aa5a536c5c7d8b860f42",
+  "content_blocks_reviewed": 94,
+  "counts": {
+    "items": 72,
+    "quotes": 96,
+    "direct": 41,
+    "supporting": 25,
+    "leads": 6
+  },
+  "decisions": [
+    {
+      "blocks": [
+        "B00005",
+        "B00007",
+        "B00008"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Postupak zapisa identificira oznaku, reviziju 5 i datum izdavanja.",
+      "item_type": "record"
+    },
+    {
+      "blocks": [
+        "B00010"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Broj kontrolirane kopije je predložak, ne popunjena potvrda.",
+      "item_type": "status_statement"
+    },
+    {
+      "blocks": [
+        "B00014"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Datum pripreme prikazan je u nejasnom obliku 15.112024.; zadržati za provjeru.",
+      "item_type": "record"
+    },
+    {
+      "blocks": [
+        "B00015"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Naveden je pregled dokumenta s imenovanom osobom i datumom.",
+      "item_type": "record"
+    },
+    {
+      "blocks": [
+        "B00016"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Odobrenje prikazuje direktora, datum i digitalni potpisni tekst; kriptografska valjanost nije ovdje provjerena.",
+      "item_type": "record"
+    },
+    {
+      "blocks": [
+        "B00020"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Predložak periodičnog pregleda nema uneseni rezultat.",
+      "item_type": "status_statement"
+    },
+    {
+      "blocks": [
+        "B00050"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Postupak uređuje prikupljanje, oznake, odlaganje, čuvanje i rukovanje zapisima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00054"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Primjena obuhvaća sve klasificirane zapise sustava.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00058",
+        "B00059",
+        "B00061",
+        "B00062",
+        "B00064",
+        "B00065",
+        "B00067",
+        "B00069",
+        "B00070",
+        "B00072",
+        "B00073"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "candidate_lead: Regulatorni popis referencira Document Control VI/Requirement6 iako je predmet evidencija zapisa; provjeriti citacije, ne koristiti popis kao dokaz.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00083"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor osigurava resurse za sustav zapisa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00085"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Voditelji projekata prikupljaju i rukuju svojim projektnim zapisima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00087"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA odgovara za identifikaciju, prikupljanje, pohranu, zaštitu i uništavanje zapisa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00089"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Administrator urudžbira i rukuje zapisima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00093"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zapisi čuvaju dokaz sukladnosti i uspješnosti QA sustava.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00093"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Važni zapisi podugovarača moraju biti dio evidencije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00093"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zapisi moraju biti potpisani, datirani, čitljivi, potpuni i povezani s proizvodom ili uslugom.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00097"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Klasifikacija obuhvaća interne zapise i zapise kupca, dobavljača i trećih.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00101"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: ZK1 određuje trajno čuvanje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00102"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: ZK2 određuje pet godina čuvanja kao opću klasu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00103"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: ZK3 određuje čuvanje do sljedeće revizije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00105"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Razdoblje čuvanja uzima u obzir ugovorne, regulatorne i tehnološke potrebe.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00107"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Vlasnik zapisa ili projektni voditelj određuje klasu, po potrebi uz QA.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00113"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Jedinstveni IOD osigurava identitet i sljedivost zapisa kroz sve faze.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00115"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zapisi su potpuni, reproducibilni i prepoznatljivi po svrsi i mjestu nastanka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00117"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Objavljivanje zapisa traži IOD, ovjeru žigom i urudžbiranje u GPD.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00117"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Zapisni postupak traži GPD, dok document-control sekcija GPD kaže obsolete; provjeriti važeći način evidencije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00121"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zapisi se prikupljaju kontinuirano po završetku radnih faza i QA aktivnosti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00123"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Projektni voditelji prikupljaju projektne zapise, a QA zapise cjelokupnog sustava.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00125"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Vlasnici određuju ZK1/ZK2/ZK3 ili NZK status prema prilogu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00127"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Označeni registratori i elektronički mediji omogućuju evidenciju i pronalaženje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00129"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Projektni zapisi čuvaju se u registratoru odgovarajućeg projekta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00131"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA zapisi raspoređuju se prema vrstama, uključujući korektivne mjere.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00133"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Administrator urudžbirane zapise dostavlja QA arhivi.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00135"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: GPD za svaki zapis vodi klasu dokumenta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00141"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Suhi prostor, ormari i posebne mjere štite od gubitka i propadanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Po isteku primjenjivog roka predviđeno je uništavanje rezanjem papira.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143",
+        "B00145",
+        "B00146",
+        "B00147",
+        "B00148"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Za uništavanje po isteku roka odgovara vlasnik vrste zapisa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00101"
+      ],
+      "fragments": {
+        "B00166": " Certifikati, Rješenja, Ovlaštenja, Dugoročni ugovori s pravnim osobama                               ZK1"
+      },
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Certifikati, ovlaštenja i dugoročni ugovori pripadaju trajnoj klasi ZK1.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00101"
+      ],
+      "fragments": {
+        "B00166": " Školovanje, izobrazba, uvježbanost i iskustvo osoblja (6.2.2)                                        ZK1"
+      },
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zapisi o školovanju, izobrazbi i iskustvu čuvaju se trajno.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166"
+      ],
+      "fragments": {
+        "B00166": " Ugovor/Narudžba                                                                                      ZK1"
+      },
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Ugovor i narudžba klasificirani su kao ZK1.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166"
+      ],
+      "fragments": {
+        "B00166": " Projekt (projekt, studija, elaborat, analiza, računalni program, usluga i sl.)                       ZK1"
+      },
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Projektni proizvodi, analize i software klasificirani su kao ZK1.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166"
+      ],
+      "fragments": {
+        "B00166": " Podloge i podaci tvrtke koji su za dogoročnu (trajnu) upotrebu                                       ZK1"
+      },
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Trajne korporativne podloge i podaci svrstani su u ZK1.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Ocjena sustava od strane uprave (5.6.1)                                                              ZK2"
+      },
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Upravina ocjena klasificirana je kao ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Dokaz da procesi i proizvodi zadovoljavaju zahtjeve (7.1)                                            ZK2"
+      },
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Dokazi ispunjenja procesnih i proizvodnih zahtjeva imaju određenu klasu čuvanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Ulazni podaci za projektiranje i razvoj (7.3.2)                                                      ZK2"
+      },
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Predviđeno je čuvanje projektnih ulaza.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Rezultati ocjene projektiranja i razvoja (7.3.4)                                                     ZK2"
+      },
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Predviđeno je čuvanje projektnih ocjena.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Rezultati ovjere/verifikacije projektiranja i razvoja (7.3.5)                                        ZK2"
+      },
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Rezultati projektne verifikacije čuvaju se kao ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Potvrda prihvatljivosti/validacija projektiranja i razvoja (7.3.6)                                   ZK2"
+      },
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Predviđeno je čuvanje projektne validacije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Rezultati ocjene promjena u projektiranju i razvoju (7.4.1)                                          ZK2"
+      },
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Projektne promjene imaju klasificirane zapise ocjene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Rezultati vrednovanja dobavljača (7.4.1)                                                             ZK2"
+      },
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Ocjena dobavljača ima predviđene zapise i rok čuvanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Potvrđivanje procesa kad nije moguća naknadna verifikacija proizvoda (7.5.2)                         ZK2"
+      },
+      "criterion_id": "APP_B_IX",
+      "statement": "supporting_control: Predviđeni su zapisi validacije procesa koji se ne mogu naknadno verificirati.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Jedinstveno označivanje proizvoda kada se zahtijeva sljedivost (7.5.3)                               Zk2"
+      },
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Tablica određuje čuvanje zapisa identiteta proizvoda za sljedivost.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Vlasništvo kupca kada se ono izgubi, ošteti ili je neodgovarajuće (7.5.4)                            ZK2"
+      },
+      "criterion_id": "APP_B_XV",
+      "statement": "supporting_control: Predviđen je zapis gubitka, oštećenja ili neprikladnosti kupčeve imovine.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Podaci o primijenjenom etalonu umjeravanja/ovjeravanja mjerne opreme kada\n ne postoje međunarodni ili nacionalni etaloni (7.6-1)                                                ZK2"
+      },
+      "criterion_id": "APP_B_XII",
+      "statement": "supporting_control: Predviđeno je čuvanje podatka o etalonu kad nacionalni ili međunarodni ne postoje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Rezultati umjeravanja i verifikacije mjerne opreme (7.6-3)                                           ZK2"
+      },
+      "criterion_id": "APP_B_XII",
+      "statement": "supporting_control: Kalibracijski i verifikacijski rezultati imaju klasu ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Unutrašnja neovisna ocjena/interni audit i potrebne radnje (8.2.2)                                   ZK2"
+      },
+      "criterion_id": "APP_B_XVIII",
+      "statement": "supporting_control: Interni audit i povezane radnje imaju klasificirane zapise.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170"
+      ],
+      "fragments": {
+        "B00170": " Zapis o isporuci proizvoda i osobi koja ju je odobrila (8.2.4)                                       ZK2"
+      },
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Isporuka i osoba koja ju je odobrila dokumentiraju se u zapisu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00180"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "supporting_control: Zapisi nesukladnosti uključuju uzrok, postupanje i odobrenja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00181"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Rezultati korektivnih radnji svrstani su u ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00182"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Rezultati preventivnih radnji svrstani su u ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00183"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Zahtjev za ponudu i pripadajuće podloge imaju klasu ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00184"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "supporting_control: Ponuda i njezina dokumentacija imaju klasu ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00185"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Nabava, prijemna kontrola i reklamacije imaju klasificirane zapise.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00186"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Dobavljačevi dokumenti čuvaju se kao ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00187"
+      ],
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Zapisi isporuke i prihvaćanja imaju klasu ZK2.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00188"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Za Part21 evaluaciju odstupanja i grešaka naveden je najmanje petogodišnji rok.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00189"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Za Part21 obavijesti navodi se pet godina, a za kupnju baznih komponenata najmanje deset godina.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00189"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "candidate_lead: Red navodi deset godina unutar opće ZK2 klase pet godina; primijeniti specifični zahtjev i provjeriti način razvrstavanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00190",
+        "B00191",
+        "B00192",
+        "B00193"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Priručnik, QA plan, postupci i upute klasificirani su u ZK3.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00194",
+        "B00195"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Odluke o QA imenovanjima i organizaciji svrstane su u ZK3.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00196",
+        "B00197",
+        "B00198"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Radni nacrti i informacije za tekuće stanje imaju klasu ZK3.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00200"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Ugovor, garancija i propisi mogu odrediti drukčiji rok čuvanja.",
+      "item_type": "control"
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00005",
+      "start": 46,
+      "end": 98,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00007",
+      "start": 150,
+      "end": 202,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00008",
+      "start": 202,
+      "end": 255,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00010",
+      "start": 256,
+      "end": 291,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00012",
+      "start": 292,
+      "end": 335,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00014",
+      "start": 378,
+      "end": 447,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00015",
+      "start": 447,
+      "end": 536,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00016",
+      "start": 536,
+      "end": 639,
+      "heading_navigation": "UPRAVLJANJE ZAPISIMA KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00020",
+      "start": 664,
+      "end": 709,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00026",
+      "start": 897,
+      "end": 1046,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00030",
+      "start": 1058,
+      "end": 1170,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00032",
+      "start": 1171,
+      "end": 1269,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00034",
+      "start": 1270,
+      "end": 1377,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00036",
+      "start": 1378,
+      "end": 1480,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00038",
+      "start": 1481,
+      "end": 1583,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00040",
+      "start": 1584,
+      "end": 1692,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00041",
+      "start": 1692,
+      "end": 2070,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00043",
+      "start": 2071,
+      "end": 2184,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00044",
+      "start": 2184,
+      "end": 2273,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00046",
+      "start": 2274,
+      "end": 2510,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00050",
+      "start": 2523,
+      "end": 2643,
+      "heading_navigation": "1. SVRHA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00054",
+      "start": 2668,
+      "end": 2814,
+      "heading_navigation": "2. PODRUČJE PRIMJENE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00058",
+      "start": 2831,
+      "end": 2855,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00059",
+      "start": 2855,
+      "end": 2924,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00061",
+      "start": 2925,
+      "end": 3001,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00062",
+      "start": 3001,
+      "end": 3039,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00064",
+      "start": 3040,
+      "end": 3117,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00065",
+      "start": 3117,
+      "end": 3128,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00067",
+      "start": 3129,
+      "end": 3171,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00069",
+      "start": 3172,
+      "end": 3208,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00070",
+      "start": 3208,
+      "end": 3277,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00072",
+      "start": 3278,
+      "end": 3320,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00073",
+      "start": 3320,
+      "end": 3349,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00077",
+      "start": 3377,
+      "end": 3793,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00079",
+      "start": 3794,
+      "end": 4039,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00083",
+      "start": 4060,
+      "end": 4168,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00085",
+      "start": 4169,
+      "end": 4304,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00087",
+      "start": 4305,
+      "end": 4494,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00089",
+      "start": 4495,
+      "end": 4560,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00093",
+      "start": 4577,
+      "end": 5287,
+      "heading_navigation": "6. POSTUPAK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00097",
+      "start": 5336,
+      "end": 5497,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00099",
+      "start": 5498,
+      "end": 5550,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00101",
+      "start": 5603,
+      "end": 5638,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00102",
+      "start": 5638,
+      "end": 5675,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00103",
+      "start": 5675,
+      "end": 5725,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00105",
+      "start": 5726,
+      "end": 5901,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00107",
+      "start": 5902,
+      "end": 6236,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00109",
+      "start": 6237,
+      "end": 6482,
+      "heading_navigation": "6.1 Klasifikacija i vrijeme čuvanja zapisa",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00113",
+      "start": 6530,
+      "end": 6791,
+      "heading_navigation": "6.2     Označivanje i objavljivanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00115",
+      "start": 6792,
+      "end": 7010,
+      "heading_navigation": "6.2     Označivanje i objavljivanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00117",
+      "start": 7011,
+      "end": 7142,
+      "heading_navigation": "6.2     Označivanje i objavljivanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00121",
+      "start": 7202,
+      "end": 7338,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00123",
+      "start": 7339,
+      "end": 7501,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00125",
+      "start": 7502,
+      "end": 7804,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00127",
+      "start": 7805,
+      "end": 7995,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00129",
+      "start": 7996,
+      "end": 8115,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00131",
+      "start": 8116,
+      "end": 8295,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00133",
+      "start": 8296,
+      "end": 8432,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00135",
+      "start": 8433,
+      "end": 8633,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00137",
+      "start": 8634,
+      "end": 8876,
+      "heading_navigation": "6.3     Prikupljanje, evidencija i pronalaženje zapisa",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00141",
+      "start": 8924,
+      "end": 9276,
+      "heading_navigation": "6.4 Pohrana, zaštita i uništavanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00143",
+      "start": 9277,
+      "end": 9534,
+      "heading_navigation": "6.4 Pohrana, zaštita i uništavanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00145",
+      "start": 9535,
+      "end": 9590,
+      "heading_navigation": "6.4 Pohrana, zaštita i uništavanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00146",
+      "start": 9590,
+      "end": 9652,
+      "heading_navigation": "6.4 Pohrana, zaštita i uništavanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00147",
+      "start": 9652,
+      "end": 9681,
+      "heading_navigation": "6.4 Pohrana, zaštita i uništavanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00148",
+      "start": 9681,
+      "end": 9714,
+      "heading_navigation": "6.4 Pohrana, zaštita i uništavanje zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00154",
+      "start": 9791,
+      "end": 10021,
+      "heading_navigation": "7.1 Klasifikacija i vremensko razdoblje čuvanja zapisa",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00158",
+      "start": 10024,
+      "end": 10079,
+      "heading_navigation": "7.1 Klasifikacija i vremensko razdoblje čuvanja zapisa",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00162",
+      "start": 10082,
+      "end": 10201,
+      "heading_navigation": "7.1 Klasifikacija i vremensko razdoblje čuvanja zapisa",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00166",
+      "start": 10204,
+      "end": 10948,
+      "heading_navigation": "7.1 Klasifikacija i vremensko razdoblje čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00170",
+      "start": 10951,
+      "end": 12797,
+      "heading_navigation": "7.1 Klasifikacija i vremensko razdoblje čuvanja zapisa",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00174",
+      "start": 12800,
+      "end": 13077,
+      "heading_navigation": "7.1 Klasifikacija i vremensko razdoblje čuvanja zapisa",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00178",
+      "start": 13103,
+      "end": 13141,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    },
+    {
+      "block_id": "B00180",
+      "start": 13180,
+      "end": 13291,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00181",
+      "start": 13291,
+      "end": 13336,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00182",
+      "start": 13336,
+      "end": 13384,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00183",
+      "start": 13384,
+      "end": 13445,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00184",
+      "start": 13445,
+      "end": 13490,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00185",
+      "start": 13490,
+      "end": 13567,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00186",
+      "start": 13567,
+      "end": 13601,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00187",
+      "start": 13601,
+      "end": 13651,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00188",
+      "start": 13651,
+      "end": 13725,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00189",
+      "start": 13725,
+      "end": 13883,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00190",
+      "start": 13883,
+      "end": 13913,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00191",
+      "start": 13913,
+      "end": 13941,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00192",
+      "start": 13941,
+      "end": 13971,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00193",
+      "start": 13971,
+      "end": 13993,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00194",
+      "start": 13993,
+      "end": 14048,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00195",
+      "start": 14048,
+      "end": 14127,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00196",
+      "start": 14127,
+      "end": 14176,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00197",
+      "start": 14176,
+      "end": 14245,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00198",
+      "start": 14245,
+      "end": 14281,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00200",
+      "start": 14282,
+      "end": 14473,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Reviewed control, supporting clue or explicit lead"
+    },
+    {
+      "block_id": "B00202",
+      "start": 14474,
+      "end": 14496,
+      "heading_navigation": "KLASIFIKACIJA ZAPISA",
+      "disposition": "reviewed_context_only",
+      "reason": "Read; terminology, headings, repeated context, empty form fields or administrative layout without a separate additional control claim"
+    }
+  ]
+}
