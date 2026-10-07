@@ -1,13 +1,13 @@
 ---
 id: G1-ENCONET-20261007-SOURCES
 type: gate-decision
-status: draft
+status: approved
 content_origin: mixed
 source: project-state.yml; manifests/approvals.csv
 gate: G1
-decision: pending
-decision_date: n-a
-reviewer: n-a
+decision: approved
+decision_date: '2026-10-07'
+reviewer: project-owner
 supplier: enconet
 scope_id: project
 ---
@@ -44,6 +44,11 @@ ELI5: this packet is a stop sign. A human chooses an option and signs
 ## Decision record
 
 <!-- DECISION_RECORD_START -->
-Pending human decision. Add one signed row to `manifests/approvals.csv` with
-`object_id=G1-ENCONET-20261007-SOURCES`, then run `gate_packet.py record`.
+Decision: **approved**
+
+Date: 2026-10-07
+
+Reviewer: project-owner
+
+Approval reference: `G1-ENCONET-20261007-SOURCES`
 <!-- DECISION_RECORD_END -->

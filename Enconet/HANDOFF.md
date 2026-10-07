@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T142132Z-c4e44ef.md`](handoffs/2026-10-07T142132Z-c4e44ef.md)
+**Authoritative record:** [`handoffs/2026-10-07T150519Z-a8331d8.md`](handoffs/2026-10-07T150519Z-a8331d8.md)
 
-**Status:** partial · **Git:** `c4e44ef` · **Agent:** codex · **Created:** 2026-10-07T14:21:32Z
+**Status:** partial · **Git:** `a8331d8` · **Agent:** codex · **Created:** 2026-10-07T15:05:19Z
 
-**Exact next action:** Owner reviews docs/SOURCE_SET_G1_REVIEW_20261007.md and confirms33source set,2015interpretive basis versus vendor olderreferences, Enconetonlyscope, andCroatianoutput. Then recordG1andadvance registered, ingestchapters andcalibratev3.
+**Exact next action:** Prepare full keyword/concept sweep with explicit recorded non-source exclusions; review vendor chapters and build Enconet local v3 golden calibration. Preserve exact quotes and do not activate v3 without its approval.

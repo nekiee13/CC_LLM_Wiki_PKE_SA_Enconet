@@ -276,3 +276,11 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-10-07T13:49:09Z | handoffs/2026-10-07T134909Z-0a3ad71.md | partial | 0a3ad71c670f4ac22bba0f185fb3448d954a82a7
 
 - handoff-created | 2026-10-07T14:21:32Z | handoffs/2026-10-07T142132Z-c4e44ef.md | partial | c4e44ef3ded727d97c421d7e8bfebf2924aeffb6
+
+- 2026-10-07T14:58:26Z | `gate-decision` | G1 approved as `G1-ENCONET-20261007-SOURCES` by project-owner
+
+- 2026-10-07T14:58:26Z | `state-transition` | setup -> registered; reason: Owner approved fresh source set and audit basis under G1-ENCONET-20261007-SOURCES
+
+- 2026-10-07T15:03:45Z | `state-transition` | registered -> chunked; reason: G1-approved 33 sources extracted and stored by chapter; full reconstruction, offsets and source hashes verified; supporting long-section warnings retained
+
+- handoff-created | 2026-10-07T15:05:19Z | handoffs/2026-10-07T150519Z-a8331d8.md | partial | a8331d8fd1b7e83483fb9070438b317887b54af8

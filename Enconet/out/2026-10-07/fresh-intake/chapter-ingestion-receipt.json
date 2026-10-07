@@ -1,0 +1,271 @@
+{
+  "g1_ref": "G1-ENCONET-20261007-SOURCES",
+  "method": "Registered-source UTF-8 extraction and level-1/2 chapter parsing; full text retained",
+  "size_policy": "50,000 chars normally; supporting ASME Parts2-4 allowed250,000 to preserve long converted sections without arbitrary splits; retained structure/size warnings need review before use",
+  "stages": [
+    {
+      "doc_id": "DOC-0001",
+      "source_batch": "SRC-20261007-001",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/audit_command.py audit-chunk -- DOC-0001 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "chunk_document: PASS - chunks created=57; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0001 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0002",
+      "source_batch": "SRC-20261007-002",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0002\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0002 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0002.txt\r\nchunk_document: PASS - chunks created=138; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0002 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0003",
+      "source_batch": "SRC-20261007-003",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0003\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0003 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0003.txt\r\nchunk_document: PASS - chunks created=62; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0003 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0004",
+      "source_batch": "SRC-20261007-004",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0004\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0004 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0004.txt\r\nchunk_document: PASS - chunks created=26; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0004 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0005",
+      "source_batch": "SRC-20261007-004",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0005\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0005 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0005.txt\r\nchunk_document: PASS - chunks created=12; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0005 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0006",
+      "source_batch": "SRC-20261007-004",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0006\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0006 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0006.txt\r\nchunk_document: PASS - chunks created=17; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0006 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0007",
+      "source_batch": "SRC-20261007-005",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0007\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0007 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0007.txt\r\nchunk_document: PASS - chunks created=15; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0007 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0008",
+      "source_batch": "SRC-20261007-005",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0008\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0008 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0008.txt\r\nchunk_document: PASS - chunks created=19; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0008 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0009",
+      "source_batch": "SRC-20261007-005",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0009\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0009 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0009.txt\r\nchunk_document: PASS - chunks created=20; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0009 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0010",
+      "source_batch": "SRC-20261007-006",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0010\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0010 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0010.txt\r\nchunk_document: PASS - chunks created=17; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0010 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0011",
+      "source_batch": "SRC-20261007-006",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0011\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0011 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0011.txt\r\nchunk_document: PASS - chunks created=11; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0011 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0012",
+      "source_batch": "SRC-20261007-006",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0012\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0012 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0012.txt\r\nchunk_document: PASS - chunks created=19; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0012 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0013",
+      "source_batch": "SRC-20261007-007",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0013\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0013 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0013.txt\r\nchunk_document: PASS - chunks created=14; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0013 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0014",
+      "source_batch": "SRC-20261007-007",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0014\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0014 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0014.txt\r\nchunk_document: PASS - chunks created=9; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0014 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0015",
+      "source_batch": "SRC-20261007-007",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0015\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0015 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0015.txt\r\nchunk_document: PASS - chunks created=12; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0015 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0016",
+      "source_batch": "SRC-20261007-008",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0016\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0016 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0016.txt\r\nchunk_document: PASS - chunks created=26; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0016 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0017",
+      "source_batch": "SRC-20261007-008",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0017\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0017 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0017.txt\r\nchunk_document: PASS - chunks created=23; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0017 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0018",
+      "source_batch": "SRC-20261007-008",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0018\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0018 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0018.txt\r\nchunk_document: PASS - chunks created=18; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0018 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0019",
+      "source_batch": "SRC-20261007-009",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0019\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0019 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0019.txt\r\nchunk_document: PASS - chunks created=48; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0019 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0020",
+      "source_batch": "SRC-20261007-010",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0020\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0020 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0020.txt\r\nchunk_document: PASS - chunks created=33; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0020 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0021",
+      "source_batch": "SRC-20261007-010",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0021\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0021 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0021.txt\r\nchunk_document: PASS - chunks created=15; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0021 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0022",
+      "source_batch": "SRC-20261007-010",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0022\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0022 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0022.txt\r\nchunk_document: PASS - chunks created=12; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0022 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0023",
+      "source_batch": "SRC-20261007-011",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0023\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0023 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0023.txt\r\nchunk_document: PASS - chunks created=10; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0023 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0024",
+      "source_batch": "SRC-20261007-011",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0024\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0024 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0024.txt\r\nchunk_document: PASS - chunks created=10; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0024 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0025",
+      "source_batch": "SRC-20261007-011",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0025\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0025 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0025.txt\r\nchunk_document: PASS - chunks created=10; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0025 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0026",
+      "source_batch": "SRC-20261007-012",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0026\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0026 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0026.txt\r\nchunk_document: PASS - chunks created=16; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0026 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0027",
+      "source_batch": "SRC-20261007-013",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0027\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0027 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0027.txt\r\nchunk_document: PASS - chunks created=16; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0027 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0028",
+      "source_batch": "SRC-20261007-013",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0028\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0028 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0028.txt\r\nchunk_document: PASS - chunks created=20; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0028 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0029",
+      "source_batch": "SRC-20261007-014",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0029\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0029 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0029.txt\r\nchunk_document: PASS - chunks created=20; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0029 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0030",
+      "source_batch": "SRC-20261007-015",
+      "max_chars": 50000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0030\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0030 --max-chars 50000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0030.txt\r\nchunk_document: PASS - chunks created=37; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0030 --max-chars 50000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0031",
+      "source_batch": "SRC-20261007-016",
+      "max_chars": 250000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0031\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0031 --max-chars 250000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0031.txt\r\nchunk_document: PASS - chunks created=41; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0031 --max-chars 250000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0032",
+      "source_batch": "SRC-20261007-017",
+      "max_chars": 250000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0032\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0032 --max-chars 250000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0032.txt\r\nchunk_document: PASS - chunks created=100; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0032 --max-chars 250000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    },
+    {
+      "doc_id": "DOC-0033",
+      "source_batch": "SRC-20261007-018",
+      "max_chars": 250000,
+      "command": "$env:PYTHONUTF8='1'\npython scripts/extract_text.py DOC-0033\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/audit_command.py audit-chunk -- DOC-0033 --max-chars 250000\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }\npython scripts/validate_chunks.py --no-record",
+      "exit_code": 0,
+      "output": "extract_text: PASS - C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\derived\\DOC-0033.txt\r\nchunk_document: PASS - chunks created=19; warnings=0; rejections=0\r\ninvoke: C:\\xAppz\\miniconda\\python.exe C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\scripts\\chunk_document.py DOC-0033 --max-chars 250000\r\nvalidate_chunks: PASS - all chunks verified\r\n"
+    }
+  ]
+}
