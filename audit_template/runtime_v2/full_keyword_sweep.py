@@ -25,7 +25,7 @@ def digest(data):
 
 
 def normalize(text):
-    return "".join(c for c in unicodedata.normalize("NFKD", text.casefold().replace("đ", "d"))
+    return "".join(c for c in unicodedata.normalize("NFKD", text.casefold().replace("Ä‘", "d"))
                    if not unicodedata.combining(c))
 
 
@@ -258,15 +258,15 @@ def prepare(root, rules, exclusions=None):
 
 
 def render_document(doc, rules):
-    output = [f"# {doc['doc_id']} — {doc['filename']}", "",
+    output = [f"# {doc['doc_id']} â€” {doc['filename']}", "",
         "These are exact source passages found by a broad keyword sweep. They are NOT approved findings.", "",
         "Each passage is printed once, even when it has links to more than one criterion.", "",
         f"Side: {doc['document_side']}. Source SHA-256: `{doc['source_sha256']}`.", "",
         "[Full source snapshot](../sources/" + doc["doc_id"] + ".md)", ""]
     for p in doc["passages"]:
         output += [f"## {doc['doc_id']}-{p['passage_id']}", "",
-            f"Chapter: {p['chapter_path']} · lines {p['line_start']}–{p['line_end']}", "",
-            "Criteria: " + "; ".join(cid + " — " + rules["criteria"][cid]["name"] for cid in p["matches"]), "",
+            f"Chapter: {p['chapter_path']} Â· lines {p['line_start']}â€“{p['line_end']}", "",
+            "Criteria: " + "; ".join(cid + " â€” " + rules["criteria"][cid]["name"] for cid in p["matches"]), "",
             *["> " + line for line in p["quote_original"].splitlines()], ""]
     return "\n".join(output)
 
@@ -306,7 +306,7 @@ def build(root, output, rules_path, exclusions_path=None):
     totals = {side: {key: sum(row[key] for row in summaries if row["document_side"] == side)
                       for key in ("passages", "unique_quote_texts", "criterion_links", "unmatched_content_blocks")}
               | {"documents": sum(row["document_side"] == side for row in summaries)} for side in ("DOCUMENT", "RULE")}
-    report = ["# Full keyword sweep — results", "", "This is a recall pass, not a new audit score.", "",
+    report = ["# Full keyword sweep â€” results", "", "This is a recall pass, not a new audit score.", "",
               "No old crumbs were carried forward. No count or quote-length limits were used. All 18 criteria were searched.", "",
               "Keyword/heading matches are unreviewed leads. Read unmatched blocks too: absence of a keyword is not absence of evidence.", "",
               "Regulatory/reference passages are separate from vendor evidence. This scan does not change applicability or make optional NQA-1 parts mandatory.", "",

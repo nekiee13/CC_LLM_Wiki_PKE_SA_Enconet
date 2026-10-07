@@ -1,0 +1,4945 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0011",
+  "filename": "PP-85-01,R4 POPRAVNE I PREVENTIVNE RADNJE.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "bb69e2d82f822726e90caf59dba51271ea3a50259f96505656791b659583bbdf",
+  "registered_source_sha256": "bb69e2d82f822726e90caf59dba51271ea3a50259f96505656791b659583bbdf",
+  "source_changed": false,
+  "source_bytes": 13287,
+  "source_characters": 13129,
+  "source_lines": 274,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 54,
+      "char_end": 105,
+      "quote_original": "| Naziv dokumenta: | Programski postupak PP-85-01 |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00007",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 7,
+      "line_end": 7,
+      "char_start": 158,
+      "char_end": 209,
+      "quote_original": "| Revizija broj:   | 4                            |",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00008",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 8,
+      "line_end": 8,
+      "char_start": 210,
+      "char_end": 262,
+      "quote_original": "| Datum objavljivanja: | 17.11.2017.               |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00010",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 10,
+      "line_end": 10,
+      "char_start": 264,
+      "char_end": 297,
+      "quote_original": "Kontrolirana kopija broj: .......",
+      "matches": {
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00012",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 12,
+      "line_end": 12,
+      "char_start": 299,
+      "char_end": 331,
+      "quote_original": "| Uloga | Ime i potpis | Datum |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00014",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 14,
+      "line_end": 14,
+      "char_start": 365,
+      "char_end": 423,
+      "quote_original": "| Pripremio: | Vladimir Križe, voditelj QA | 13.11.2017. |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 424,
+      "char_end": 502,
+      "quote_original": "| Pregledao: | mr.sc. Ilijana Iveković, predstavnica direktora | 14.11.2017. |",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00016",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 16,
+      "line_end": 16,
+      "char_start": 503,
+      "char_end": 563,
+      "quote_original": "| Odobrio: | dr.sc. Nenad Debrecin, direktor | 15.11.2017. |",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00018",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 18,
+      "line_end": 18,
+      "char_start": 565,
+      "char_end": 583,
+      "quote_original": "Periodični pregled",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00020",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 20,
+      "line_end": 20,
+      "char_start": 585,
+      "char_end": 629,
+      "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00026",
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "line_start": 26,
+      "line_end": 27,
+      "char_start": 818,
+      "char_end": 910,
+      "quote_original": "Programski postupak | Oznaka dok:PP-85-01\nPOPRAVNE I PREVENTIVNE RADNJE | Rev: 4    Str: 2/7",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00038",
+      "chapter_path": "SADRŽAJ",
+      "line_start": 39,
+      "line_end": 39,
+      "char_start": 1346,
+      "char_end": 1447,
+      "quote_original": "5. ODGOVORNOSTI.....................................................................................4",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00040",
+      "chapter_path": "SADRŽAJ",
+      "line_start": 41,
+      "line_end": 41,
+      "char_start": 1449,
+      "char_end": 1556,
+      "quote_original": "6. POSTUPAK...............................................................................................4",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00042",
+      "chapter_path": "SADRŽAJ",
+      "line_start": 43,
+      "line_end": 45,
+      "char_start": 1558,
+      "char_end": 1881,
+      "quote_original": "6.1 Popravne radnje.......................................................................................5\n6.2 Preventivne radnje...................................................................................5\n6.3 Dokumentacija .........................................................................................6",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00048",
+      "chapter_path": "SADRŽAJ",
+      "line_start": 51,
+      "line_end": 54,
+      "char_start": 2100,
+      "char_end": 2331,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nProgramski postupak                                                           Oznaka dok: PP-85-01\nPOPRAVNE I PREVENTIVNE RADNJE                                                 Rev: 4            Str:  3/7",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00052",
+      "chapter_path": "1. SVRHA",
+      "line_start": 58,
+      "line_end": 58,
+      "char_start": 2346,
+      "char_end": 2517,
+      "quote_original": "Postupkom se utvrđuju odgovornosti i uspostavljaju aktivnosti koje se poduzimaju radi otklanjanja moguće ili stvarne nesukladnosti, kao i uzroka koji do njih mogu dovesti.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "uzrok"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00056",
+      "chapter_path": "2. PODRUČJE PRIMJENE",
+      "line_start": 62,
+      "line_end": 62,
+      "char_start": 2544,
+      "char_end": 2720,
+      "quote_original": "Postupak se primjenjuje na sve djelatnosti u okviru poslovnog sustava Enconet, bilo kroz poduzimanje manjih i jednostavnih popravnih radnji, bilo kroz stalno unapređenje SUK-a.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00061",
+      "chapter_path": "3. REFERENCE",
+      "line_start": 67,
+      "line_end": 69,
+      "char_start": 2763,
+      "char_end": 2846,
+      "quote_original": "   Sustavi upravljanja kvalitetom-Zahtjevi\n   Popravne radnje\n   Preventivne radnje",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00065",
+      "chapter_path": "3. REFERENCE",
+      "line_start": 73,
+      "line_end": 74,
+      "char_start": 2997,
+      "char_end": 3037,
+      "quote_original": "   Popravne radnje\n   Preventivne radnje",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00066",
+      "chapter_path": "3. REFERENCE",
+      "line_start": 75,
+      "line_end": 75,
+      "char_start": 3038,
+      "char_end": 3079,
+      "quote_original": "4. Enconet - Programski postupak PP-83-01",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "3. REFERENCE",
+      "line_start": 76,
+      "line_end": 76,
+      "char_start": 3080,
+      "char_end": 3119,
+      "quote_original": "   \"Upravljanje nesukladnim proizvodom\"",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00068",
+      "chapter_path": "3. REFERENCE",
+      "line_start": 77,
+      "line_end": 77,
+      "char_start": 3120,
+      "char_end": 3161,
+      "quote_original": "5. Enconet - Programski postupak PP-42-02",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00069",
+      "chapter_path": "3. REFERENCE",
+      "line_start": 78,
+      "line_end": 78,
+      "char_start": 3162,
+      "char_end": 3197,
+      "quote_original": "   \"Upravljanje zapisima kvalitete\"",
+      "matches": {
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00073",
+      "chapter_path": "3. REFERENCE",
+      "line_start": 82,
+      "line_end": 82,
+      "char_start": 3269,
+      "char_end": 3319,
+      "quote_original": "8. 10 CFR21,Reporting of Defects and Noncompliance",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "defect"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "10.?cfr.?21"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00081",
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "line_start": 90,
+      "line_end": 90,
+      "char_start": 3479,
+      "char_end": 3526,
+      "quote_original": "| IOD     | Identifikacijska oznaka dokumenta |",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "oznaka",
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00082",
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "line_start": 91,
+      "line_end": 91,
+      "char_start": 3527,
+      "char_end": 3580,
+      "quote_original": "| ISO     | Međunarodna organizacija za normizaciju |",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00083",
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "line_start": 92,
+      "line_end": 92,
+      "char_start": 3581,
+      "char_end": 3644,
+      "quote_original": "| NCR     | Izvješće o nesukladnosti (Non Conformance Report) |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "ncr\\b"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00086",
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "line_start": 95,
+      "line_end": 95,
+      "char_start": 3701,
+      "char_end": 3734,
+      "quote_original": "| PP      | Programski postupak |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00088",
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "line_start": 97,
+      "line_end": 97,
+      "char_start": 3772,
+      "char_end": 3824,
+      "quote_original": "| SUK     | Sustav upravljanja kvalitetom Enconeta |",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00090",
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "line_start": 99,
+      "line_end": 104,
+      "char_start": 3826,
+      "char_end": 4196,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nProgramski postupak                                                              Oznaka dok: PP-85-01\nPOPRAVNE I PREVENTIVNE RADNJE                                                     Rev: 4           Str:    4/7\n         ZK1, ZK2          Zapisi kvalitete klase 1 i klase 2\n         ZPR               Zahtjev za popravnom/preventivnom radnjom",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00094",
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "line_start": 108,
+      "line_end": 109,
+      "char_start": 4224,
+      "char_end": 4322,
+      "quote_original": "Direktor Enconeta odgovoran je za uspostavu sustava i odobravanje popravnih i\npreventivnih radnji.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "odobrav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00096",
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "line_start": 111,
+      "line_end": 113,
+      "char_start": 4324,
+      "char_end": 4499,
+      "quote_original": "Voditelji projekata odgovorni su za identifikaciju nesukladnosti, te iniciranje i\nprovođenje popravne ili preventivne radnje. Sudjeluju u analizi uzroka i\nrješavanju problema.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "uzrok",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00098",
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "line_start": 115,
+      "line_end": 118,
+      "char_start": 4501,
+      "char_end": 4771,
+      "quote_original": "Voditelj QA poslova odgovoran je za pregled nesukladnosti, analize uzroka i\nprijedloga popravne i/ili preventivne radnje, te za potvrđivanje završetka\nprovedenih radnji. Odgovoran je za identifikaciju nesukladnosti i pokretanje\npopravnih radnji kod podizvođača Enconeta.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "podizvod"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identifik",
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "uzrok",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00100",
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "line_start": 120,
+      "line_end": 124,
+      "char_start": 4773,
+      "char_end": 5111,
+      "quote_original": "Voditelj QA poslova odgovoran je za nadzor provođenja mjera i djelovanje\nsustava za popravne i preventivne radnje, te za izvješćivanje svih pojedinaca,\ngrupa i odjela na koje se te mjere odnose. Izvješćuje o svim nesukladnostima\nkoje su utvrđene u aktivnostima, procesima ili uslugama koje daje ili izvodi\nEnconet ili njegovi podizvođači.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "podizvod"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00102",
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "line_start": 126,
+      "line_end": 127,
+      "char_start": 5113,
+      "char_end": 5237,
+      "quote_original": "Voditelj QA poslova vodi evidenciju i izvješćuje direktora Enconeta o statusu\nsvih uvedenih popravnih i preventivnih radnji.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "evidenc"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00104",
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "line_start": 129,
+      "line_end": 130,
+      "char_start": 5239,
+      "char_end": 5363,
+      "quote_original": "Svaki djelatnik u Enconetu odgovoran je za provođenje popravne i/ili\npreventivne radnje za djelatnosti u svom području rada.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "odgovorn"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00108",
+      "chapter_path": "6.       POSTUPAK",
+      "line_start": 134,
+      "line_end": 136,
+      "char_start": 5387,
+      "char_end": 5562,
+      "quote_original": "Sve uočene nesukladnosti, nedostaci i odstupanja koja loše utječu na kvalitetu\nposlova i usluga koje daje ili izvodi Enconet moraju se kontrolirati, analizirati i\nispravljati.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "odstupan"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00110",
+      "chapter_path": "6.       POSTUPAK",
+      "line_start": 138,
+      "line_end": 141,
+      "char_start": 5564,
+      "char_end": 5845,
+      "quote_original": "Provođenje popravne i/ili preventivne radnje kao posljedice uočene nesukladnosti\nu aktivnostima, procesima i sustavu, kroz rješavanje prijavljenog problema,\nevidentiraju se u obrascu OB-NCR-016 priloženom u postupku PP-83-01 (Ref. 5)\na provode se sukladno zahtjevima ovog postupka.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "poprav",
+            "ncr\\b"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00112",
+      "chapter_path": "6.       POSTUPAK",
+      "line_start": 143,
+      "line_end": 146,
+      "char_start": 5847,
+      "char_end": 6122,
+      "quote_original": "Popravne i/ili preventivne radnje kao posljedica nalaza kvalitete bilo koje\nodgovorne osobe, ili kao rezultat nezavisnog ocjenjivanja kvalitete ili kao\nposljedica reklamacije kupca, iniciraju se i provode ispunjavanjem obrasca OB-\nZPR-015 priloženog u točki 7. ovog postupka.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "odgovorn",
+            "nezavis"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nezavisn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "nalaz"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00114",
+      "chapter_path": "6.       POSTUPAK",
+      "line_start": 148,
+      "line_end": 151,
+      "char_start": 6124,
+      "char_end": 6364,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nProgramski postupak                                                               Oznaka dok: PP-85-01\nPOPRAVNE I PREVENTIVNE RADNJE                                                     Rev: 4            Str:   5/7",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": [
+            "postup"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00118",
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "line_start": 155,
+      "line_end": 158,
+      "char_start": 6395,
+      "char_end": 6646,
+      "quote_original": "Popravne radnje predstavljaju mjere koje se poduzimaju za uklanjanje već\nnastalih odstupanja, grešaka, nedostataka, nedosljednosti i neslaganja sa\nzakonodavnim i ugovornim zahtjevima te zahtjevima Priručnika kvalitete i\nprogramskih postupaka Enconeta.",
+      "matches": {
+        "APP_B_IV": {
+          "quote_terms": [
+            "ugovor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nedostat",
+            "odstupan",
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn"
+          ],
+          "heading_terms": [
+            "popravn"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00120",
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "line_start": 160,
+      "line_end": 165,
+      "char_start": 6648,
+      "char_end": 7081,
+      "quote_original": "Jednostavne i jednokratne popravne radnje poduzimaju se kada je njihova\nprovedba laka i brza, a odstupanja su manja ili nemaju značajnog utjecaja na\nkvalitetu. Takve radnje iniciraju i koordiniraju voditelji projekata u čijem se\npodručju rada provodi predložena aktivnost. Odluku o provođenju popravne\nradnje i nositelja aktivnosti odobrava direktor Enconeta, a završetak provedbe i\nzatvaranje postupka potvrđuje voditelj QA poslova.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "odobrav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan",
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn"
+          ],
+          "heading_terms": [
+            "popravn"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00122",
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "line_start": 167,
+      "line_end": 170,
+      "char_start": 7083,
+      "char_end": 7381,
+      "quote_original": "Jednokratne popravne radnje uglavnom ne zahtijevaju promjene dokumentacije\nSUK-a. Voditelj QA poslova periodično, a najmanje jednom godišnje, provodi\nanalizu jednokratnih popravnih radnji radi izvješćivanja direktora i donošenja\nodluke o poduzimanju odgovarajuće popravne/preventivne radnje u SUK-u",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "popravn"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00124",
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "line_start": 172,
+      "line_end": 183,
+      "char_start": 7383,
+      "char_end": 8270,
+      "quote_original": "Popravne radnje u SUK-u predstavljaju mjere i aktivnosti čija je priprema,\nprovedba i nadzor planirana, s dugoročnim aktivnostima i definiranim očekivanim\nrezultatima. Uzroci popravnih radnji u sustavu kvalitete mogu biti rezultati analize\nuočenih i evidentiranih nesukladnosti tijekom provođenja nezavisnog ocjenjivanja\nkvalitete (unutrašnjeg i vanjskog), iz reklamacija kupaca, radi višekratnog\nponavljanja istih nesukladnosti, poduzimanje mjera unapređenja SUK-a i svi\nostali čimbenici kojima se ostvaruje poboljšanje i spriječava pojava\nnesukladnosti. Ukoliko se popravne radnje odnose na veća i kritična odstupanja\nu smislu sigurnosti, potrebno je učiniti screening i analizu odstupanja, inicirati\npotrebna izvještavanja i korektivne akcije te pratiti izvršenje i uspješnost\nprovođenja korektivnih mjera. Korektivne akcije moraju spriječiti ponavljanje\ntakovih grešaka i odstupanja.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "nezavis"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nadzor",
+            "nezavisn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "odstupan",
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "popravn",
+            "ponavlj",
+            "poboljs"
+          ],
+          "heading_terms": [
+            "popravn"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00126",
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "line_start": 185,
+      "line_end": 198,
+      "char_start": 8272,
+      "char_end": 9322,
+      "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "predstavnik"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "sustav.{0,30}(kvalitet|upravljanj)",
+            "slozenost",
+            "resurs"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument",
+            "revizij",
+            "odobrav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "nedostat",
+            "odstupan",
+            "poprav",
+            "ncr\\b",
+            "part.?21"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "ucinkovit",
+            "rok",
+            "part.?21"
+          ],
+          "heading_terms": [
+            "popravn"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00130",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 202,
+      "line_end": 205,
+      "char_start": 9356,
+      "char_end": 9595,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nProgramski postupak                                                              Oznaka dok: PP-85-01\nPOPRAVNE I PREVENTIVNE RADNJE                                                     Rev: 4           Str:    6/7",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00132",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 207,
+      "line_end": 207,
+      "char_start": 9597,
+      "char_end": 9873,
+      "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+      "matches": {
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "uzrok",
+            "poboljs",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00134",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 209,
+      "line_end": 209,
+      "char_start": 9875,
+      "char_end": 9904,
+      "quote_original": "- Promjene u politici tvrtke;",
+      "matches": {
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00135",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 210,
+      "line_end": 210,
+      "char_start": 9905,
+      "char_end": 9956,
+      "quote_original": "- Promjene u organizacijskoj strukturi i resursima;",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "resurs"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00136",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 211,
+      "line_end": 211,
+      "char_start": 9957,
+      "char_end": 10003,
+      "quote_original": "- Nepostojanje ili manjkavost postupaka SUK-a;",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00137",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 212,
+      "line_end": 212,
+      "char_start": 10004,
+      "char_end": 10062,
+      "quote_original": "- Izvješća o provedenom nezavisnom ocjenjivanju kvalitete;",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "nezavis"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "nezavisn"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00138",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 213,
+      "line_end": 213,
+      "char_start": 10063,
+      "char_end": 10098,
+      "quote_original": "- Izvješća o nesukladnostima (NCR);",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad",
+            "ncr\\b"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00139",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 214,
+      "line_end": 214,
+      "char_start": 10099,
+      "char_end": 10118,
+      "quote_original": "- Zapise kvalitete;",
+      "matches": {
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00140",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 215,
+      "line_end": 215,
+      "char_start": 10119,
+      "char_end": 10151,
+      "quote_original": "- Ocjene SUK-a od strane uprave;",
+      "matches": {
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00141",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 216,
+      "line_end": 216,
+      "char_start": 10152,
+      "char_end": 10184,
+      "quote_original": "- Izvješća voditelja QA poslova;",
+      "matches": {
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00142",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 217,
+      "line_end": 217,
+      "char_start": 10185,
+      "char_end": 10216,
+      "quote_original": "- Reklamacije kupaca/korisnika;",
+      "matches": {
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00143",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 218,
+      "line_end": 218,
+      "char_start": 10217,
+      "char_end": 10265,
+      "quote_original": "- Ostale izvore koji mogu inicirati unapređenja.",
+      "matches": {
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00145",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 220,
+      "line_end": 220,
+      "char_start": 10267,
+      "char_end": 10376,
+      "quote_original": "Preventivnim radnjama otkrivaju se i uklanjaju uzroci mogućih nesukladnosti, te se unapređuje cjelokupni SUK.",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "nesuklad"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "preventiv"
+          ],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00147",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 222,
+      "line_end": 222,
+      "char_start": 10378,
+      "char_end": 10943,
+      "quote_original": "Uobičajeno se preventivne radnje iniciraju preko obrasca OB-ZPR-015, ali poticaj za usvajanje mjera za poboljšanje i unapređenje SUK-a može doći kako od članova uprave tako i od pojedinih stručnjaka u raznim područjima djelovanja Enconeta. Voditelji projekata moraju barem jednom godišnje provesti analizu djelovanja i učinkovitosti SUK-a u svom području rada kako bi mogli procijeniti potrebu i mogućnosti iniciranja i provedbe preventivnih radnji. Izvješća se dostavljaju direktoru Enconeta i voditelju QA poslova, a analiziraju se na sastancima o praćenju SUK-a.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "ucinkovit",
+            "poboljs",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00149",
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "line_start": 224,
+      "line_end": 224,
+      "char_start": 10945,
+      "char_end": 11594,
+      "quote_original": "Odluku o pokretanju preventivne radnje donosi direktor Enconeta u suradnji s predstavnikom direktora za praćenje QA poslova i voditeljem QA poslova, kao i voditeljem projekata u čijem se području rada provodi preventivna radnja odnosno koji se određuje za nositelja aktivnosti. Okuplja se radna grupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija koja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti provedene preventivne radnje. Utvrđuje se i vremensko razdoblje u kojem će se pratiti rezultati provedbe preventivne radnje o čemu će se izvještavati direktor Enconeta i voditelj QA poslova.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor",
+            "predstavnik"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_II": {
+          "quote_terms": [
+            "resurs"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument",
+            "odobrav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "rezultat"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "ucinkovit",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00153",
+      "chapter_path": "6.       POSTUPAK / 6.3 Dokumentacija",
+      "line_start": 228,
+      "line_end": 228,
+      "char_start": 11619,
+      "char_end": 11874,
+      "quote_original": "Dokumentacija koja je nastala tijekom iniciranja, provođenja i praćenja učinkovitosti popravne/preventivne radnje predstavlja zapise kvalitete i razvrstana je u dokumente klase ZK1 i ZK2, te se za nju primjenjuju zahtjevi prema postupku PP-42-02 (Ref. 6).",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": [
+            "dokument"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "ucinkovit",
+            "preventiv"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00159",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 234,
+      "line_end": 237,
+      "char_start": 11962,
+      "char_end": 12185,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nProgramski postupak                                                        Oznaka dok:PP-85-01\nPOPRAVNE I PREVENTIVNE RADNJE                                              Rev: 4           Str:  7/7",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "postup"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "oznaka"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00161",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 239,
+      "line_end": 239,
+      "char_start": 12187,
+      "char_end": 12217,
+      "quote_original": "7.1 Obrazac: OB-ZPR-015 Rev. 4",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00163",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 241,
+      "line_end": 241,
+      "char_start": 12219,
+      "char_end": 12233,
+      "quote_original": "| ZAHTJEV ZA |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00164",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 242,
+      "line_end": 242,
+      "char_start": 12234,
+      "char_end": 12262,
+      "quote_original": "| POPRAVNOM / PREVENTIVNOM |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00165",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 243,
+      "line_end": 243,
+      "char_start": 12263,
+      "char_end": 12284,
+      "quote_original": "| RADNJOM ZH-POR-XX |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00167",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 245,
+      "line_end": 245,
+      "char_start": 12286,
+      "char_end": 12330,
+      "quote_original": "| popravna radnja □ | preventivna radnja □ |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00169",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 247,
+      "line_end": 247,
+      "char_start": 12378,
+      "char_end": 12383,
+      "quote_original": "| I |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00170",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 248,
+      "line_end": 248,
+      "char_start": 12384,
+      "char_end": 12445,
+      "quote_original": "| Opis odstupanja i predlagana popravna/preventivna radnja: |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan",
+            "poprav"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "popravn",
+            "preventiv"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00172",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 250,
+      "line_end": 250,
+      "char_start": 12450,
+      "char_end": 12486,
+      "quote_original": "| Predlagatelj: | Potpis: | Datum: |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00173",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 251,
+      "line_end": 251,
+      "char_start": 12487,
+      "char_end": 12493,
+      "quote_original": "| II |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00174",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 252,
+      "line_end": 252,
+      "char_start": 12494,
+      "char_end": 12554,
+      "quote_original": "| Određivanje potencijalnog ili stvarnog uzroka odstupanja |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "uzrok"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00176",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 254,
+      "line_end": 254,
+      "char_start": 12559,
+      "char_end": 12617,
+      "quote_original": "| Evaluacija potrebnih akcija da se odstupanja ne ponove |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "odstupan"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00178",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 256,
+      "line_end": 256,
+      "char_start": 12622,
+      "char_end": 12676,
+      "quote_original": "| Potrebna evaluacija po 10CFR Part 21 | DA □ | NE □ |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [
+            "part.?21"
+          ],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "part.?21"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00180",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 258,
+      "line_end": 258,
+      "char_start": 12681,
+      "char_end": 12716,
+      "quote_original": "| QA voditelj: | Potpis: | Datum: |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00181",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 259,
+      "line_end": 259,
+      "char_start": 12717,
+      "char_end": 12724,
+      "quote_original": "| III |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00182",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 260,
+      "line_end": 260,
+      "char_start": 12725,
+      "char_end": 12780,
+      "quote_original": "| Odobrenje primjene predloženih akcija | DA □ | NE □ |",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "odobren"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00183",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 261,
+      "line_end": 261,
+      "char_start": 12781,
+      "char_end": 12844,
+      "quote_original": "| Imenovan nositelj aktivnosti:______________________________ |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00185",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 263,
+      "line_end": 263,
+      "char_start": 12849,
+      "char_end": 12890,
+      "quote_original": "| Direktor Enconeta: | Potpis: | Datum: |",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "direktor"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00186",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 264,
+      "line_end": 264,
+      "char_start": 12891,
+      "char_end": 12909,
+      "quote_original": "| Rok izvršenja: |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "rok"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00187",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 265,
+      "line_end": 265,
+      "char_start": 12910,
+      "char_end": 12916,
+      "quote_original": "| IV |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00188",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 266,
+      "line_end": 266,
+      "char_start": 12917,
+      "char_end": 12948,
+      "quote_original": "| Zapisi o poduzetim akcijama |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "zapis"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00190",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 268,
+      "line_end": 268,
+      "char_start": 12953,
+      "char_end": 12996,
+      "quote_original": "| Nositelj aktivnosti: | Potpis: | Datum: |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00191",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 269,
+      "line_end": 269,
+      "char_start": 12997,
+      "char_end": 13002,
+      "quote_original": "| V |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00192",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 270,
+      "line_end": 270,
+      "char_start": 13003,
+      "char_end": 13058,
+      "quote_original": "| Provjera učinkovitosti poduzetih korektivnih akcija |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "korektiv",
+            "ucinkovit"
+          ],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "provjer"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00194",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 272,
+      "line_end": 272,
+      "char_start": 13063,
+      "char_end": 13105,
+      "quote_original": "| Voditelj QA poslova: | Potpis | Datum: |",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00196",
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "line_start": 274,
+      "line_end": 274,
+      "char_start": 13107,
+      "char_end": 13129,
+      "quote_original": "ENCONET d.o.o., Zagreb",
+      "matches": {
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "poprav"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "popravn",
+            "preventiv"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 20,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "content",
+      "block_id": "B00001",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 20,
+      "char_end": 21,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 21,
+      "char_end": 53,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 53,
+      "char_end": 54,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 54,
+      "char_end": 106,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 106,
+      "char_end": 158,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00006",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 158,
+      "char_end": 210,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00007",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 210,
+      "char_end": 263,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00008",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 263,
+      "char_end": 264,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "blank",
+      "block_id": "B00009",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 264,
+      "char_end": 298,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00010",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 298,
+      "char_end": 299,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "blank",
+      "block_id": "B00011",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 299,
+      "char_end": 332,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00012",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 332,
+      "char_end": 365,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00013",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 365,
+      "char_end": 424,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00014",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 424,
+      "char_end": 503,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 503,
+      "char_end": 564,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00016",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 564,
+      "char_end": 565,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "blank",
+      "block_id": "B00017",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 565,
+      "char_end": 584,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00018",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 584,
+      "char_end": 585,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "blank",
+      "block_id": "B00019",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 585,
+      "char_end": 630,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00020",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 630,
+      "char_end": 676,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00021",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 676,
+      "char_end": 722,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "empty_table_row",
+      "block_id": "B00022",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 722,
+      "char_end": 768,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "empty_table_row",
+      "block_id": "B00023",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 768,
+      "char_end": 814,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "empty_table_row",
+      "block_id": "B00024",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 814,
+      "char_end": 818,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00025",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 818,
+      "char_end": 911,
+      "line_start": 26,
+      "line_end": 27,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "content",
+      "block_id": "B00026",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 911,
+      "char_end": 912,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "POPRAVNE I PREVENTIVNE RADNJE",
+      "nearest_heading": "POPRAVNE I PREVENTIVNE RADNJE",
+      "kind": "blank",
+      "block_id": "B00027",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 912,
+      "char_end": 922,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "heading",
+      "block_id": "B00028",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 922,
+      "char_end": 923,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00029",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 923,
+      "char_end": 1035,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00030",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1035,
+      "char_end": 1036,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00031",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1036,
+      "char_end": 1134,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00032",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1134,
+      "char_end": 1135,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00033",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1135,
+      "char_end": 1242,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00034",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1242,
+      "char_end": 1243,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00035",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1243,
+      "char_end": 1345,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00036",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1345,
+      "char_end": 1346,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00037",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1346,
+      "char_end": 1448,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00038",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1448,
+      "char_end": 1449,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00039",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1449,
+      "char_end": 1557,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00040",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1557,
+      "char_end": 1558,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00041",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1558,
+      "char_end": 1882,
+      "line_start": 43,
+      "line_end": 45,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00042",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1882,
+      "char_end": 1883,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00043",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1883,
+      "char_end": 1996,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00044",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1996,
+      "char_end": 1997,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00045",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1997,
+      "char_end": 2099,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00046",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 2099,
+      "char_end": 2100,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00047",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2100,
+      "char_end": 2332,
+      "line_start": 51,
+      "line_end": 54,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "content",
+      "block_id": "B00048",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2332,
+      "char_end": 2333,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "SADRŽAJ",
+      "nearest_heading": "SADRŽAJ",
+      "kind": "blank",
+      "block_id": "B00049",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2333,
+      "char_end": 2345,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "1. SVRHA",
+      "nearest_heading": "1. SVRHA",
+      "kind": "heading",
+      "block_id": "B00050",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2345,
+      "char_end": 2346,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "1. SVRHA",
+      "nearest_heading": "1. SVRHA",
+      "kind": "blank",
+      "block_id": "B00051",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2346,
+      "char_end": 2518,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "1. SVRHA",
+      "nearest_heading": "1. SVRHA",
+      "kind": "content",
+      "block_id": "B00052",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2518,
+      "char_end": 2519,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "1. SVRHA",
+      "nearest_heading": "1. SVRHA",
+      "kind": "blank",
+      "block_id": "B00053",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2519,
+      "char_end": 2543,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "2. PODRUČJE PRIMJENE",
+      "nearest_heading": "2. PODRUČJE PRIMJENE",
+      "kind": "heading",
+      "block_id": "B00054",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2543,
+      "char_end": 2544,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "2. PODRUČJE PRIMJENE",
+      "nearest_heading": "2. PODRUČJE PRIMJENE",
+      "kind": "blank",
+      "block_id": "B00055",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2544,
+      "char_end": 2721,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "2. PODRUČJE PRIMJENE",
+      "nearest_heading": "2. PODRUČJE PRIMJENE",
+      "kind": "content",
+      "block_id": "B00056",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2721,
+      "char_end": 2722,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "2. PODRUČJE PRIMJENE",
+      "nearest_heading": "2. PODRUČJE PRIMJENE",
+      "kind": "blank",
+      "block_id": "B00057",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2722,
+      "char_end": 2738,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "heading",
+      "block_id": "B00058",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2738,
+      "char_end": 2739,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "blank",
+      "block_id": "B00059",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2739,
+      "char_end": 2763,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00060",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 2763,
+      "char_end": 2847,
+      "line_start": 67,
+      "line_end": 69,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00061",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2847,
+      "char_end": 2923,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00062",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 2923,
+      "char_end": 2961,
+      "line_start": 71,
+      "line_end": 71,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00063",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 2961,
+      "char_end": 2997,
+      "line_start": 72,
+      "line_end": 72,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00064",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 2997,
+      "char_end": 3038,
+      "line_start": 73,
+      "line_end": 74,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00065",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3038,
+      "char_end": 3080,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00066",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3080,
+      "char_end": 3120,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3120,
+      "char_end": 3162,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00068",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3162,
+      "char_end": 3198,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00069",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3198,
+      "char_end": 3217,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00070",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3217,
+      "char_end": 3238,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00071",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3238,
+      "char_end": 3269,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00072",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3269,
+      "char_end": 3320,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "content",
+      "block_id": "B00073",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3320,
+      "char_end": 3321,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "3. REFERENCE",
+      "nearest_heading": "3. REFERENCE",
+      "kind": "blank",
+      "block_id": "B00074",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3321,
+      "char_end": 3348,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "heading",
+      "block_id": "B00075",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3348,
+      "char_end": 3349,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "blank",
+      "block_id": "B00076",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3349,
+      "char_end": 3372,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00077",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3372,
+      "char_end": 3395,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00078",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 3395,
+      "char_end": 3424,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00079",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3424,
+      "char_end": 3479,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00080",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3479,
+      "char_end": 3527,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00081",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3527,
+      "char_end": 3581,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00082",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3581,
+      "char_end": 3645,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00083",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3645,
+      "char_end": 3667,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00084",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3667,
+      "char_end": 3701,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00085",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3701,
+      "char_end": 3735,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00086",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3735,
+      "char_end": 3772,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00087",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3772,
+      "char_end": 3825,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00088",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3825,
+      "char_end": 3826,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "blank",
+      "block_id": "B00089",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3826,
+      "char_end": 4197,
+      "line_start": 99,
+      "line_end": 104,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "content",
+      "block_id": "B00090",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4197,
+      "char_end": 4198,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "4. DEFINICIJE I KRATICE",
+      "nearest_heading": "4. DEFINICIJE I KRATICE",
+      "kind": "blank",
+      "block_id": "B00091",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4198,
+      "char_end": 4223,
+      "line_start": 106,
+      "line_end": 106,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "heading",
+      "block_id": "B00092",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4223,
+      "char_end": 4224,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00093",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4224,
+      "char_end": 4323,
+      "line_start": 108,
+      "line_end": 109,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00094",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4323,
+      "char_end": 4324,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00095",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4324,
+      "char_end": 4500,
+      "line_start": 111,
+      "line_end": 113,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00096",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4500,
+      "char_end": 4501,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00097",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4501,
+      "char_end": 4772,
+      "line_start": 115,
+      "line_end": 118,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00098",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4772,
+      "char_end": 4773,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00099",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4773,
+      "char_end": 5112,
+      "line_start": 120,
+      "line_end": 124,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00100",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5112,
+      "char_end": 5113,
+      "line_start": 125,
+      "line_end": 125,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00101",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5113,
+      "char_end": 5238,
+      "line_start": 126,
+      "line_end": 127,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00102",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5238,
+      "char_end": 5239,
+      "line_start": 128,
+      "line_end": 128,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00103",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5239,
+      "char_end": 5364,
+      "line_start": 129,
+      "line_end": 130,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "content",
+      "block_id": "B00104",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5364,
+      "char_end": 5365,
+      "line_start": 131,
+      "line_end": 131,
+      "chapter_path": "5.       ODGOVORNOSTI",
+      "nearest_heading": "5.       ODGOVORNOSTI",
+      "kind": "blank",
+      "block_id": "B00105",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5365,
+      "char_end": 5386,
+      "line_start": 132,
+      "line_end": 132,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "heading",
+      "block_id": "B00106",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5386,
+      "char_end": 5387,
+      "line_start": 133,
+      "line_end": 133,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00107",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5387,
+      "char_end": 5563,
+      "line_start": 134,
+      "line_end": 136,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "content",
+      "block_id": "B00108",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5563,
+      "char_end": 5564,
+      "line_start": 137,
+      "line_end": 137,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00109",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5564,
+      "char_end": 5846,
+      "line_start": 138,
+      "line_end": 141,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "content",
+      "block_id": "B00110",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5846,
+      "char_end": 5847,
+      "line_start": 142,
+      "line_end": 142,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00111",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5847,
+      "char_end": 6123,
+      "line_start": 143,
+      "line_end": 146,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "content",
+      "block_id": "B00112",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6123,
+      "char_end": 6124,
+      "line_start": 147,
+      "line_end": 147,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00113",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6124,
+      "char_end": 6365,
+      "line_start": 148,
+      "line_end": 151,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "content",
+      "block_id": "B00114",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6365,
+      "char_end": 6366,
+      "line_start": 152,
+      "line_end": 152,
+      "chapter_path": "6.       POSTUPAK",
+      "nearest_heading": "6.       POSTUPAK",
+      "kind": "blank",
+      "block_id": "B00115",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6366,
+      "char_end": 6394,
+      "line_start": 153,
+      "line_end": 153,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "heading",
+      "block_id": "B00116",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6394,
+      "char_end": 6395,
+      "line_start": 154,
+      "line_end": 154,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "blank",
+      "block_id": "B00117",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6395,
+      "char_end": 6647,
+      "line_start": 155,
+      "line_end": 158,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "content",
+      "block_id": "B00118",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6647,
+      "char_end": 6648,
+      "line_start": 159,
+      "line_end": 159,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "blank",
+      "block_id": "B00119",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6648,
+      "char_end": 7082,
+      "line_start": 160,
+      "line_end": 165,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "content",
+      "block_id": "B00120",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7082,
+      "char_end": 7083,
+      "line_start": 166,
+      "line_end": 166,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "blank",
+      "block_id": "B00121",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7083,
+      "char_end": 7382,
+      "line_start": 167,
+      "line_end": 170,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "content",
+      "block_id": "B00122",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7382,
+      "char_end": 7383,
+      "line_start": 171,
+      "line_end": 171,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "blank",
+      "block_id": "B00123",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7383,
+      "char_end": 8271,
+      "line_start": 172,
+      "line_end": 183,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "content",
+      "block_id": "B00124",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8271,
+      "char_end": 8272,
+      "line_start": 184,
+      "line_end": 184,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "blank",
+      "block_id": "B00125",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8272,
+      "char_end": 9323,
+      "line_start": 185,
+      "line_end": 198,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "content",
+      "block_id": "B00126",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9323,
+      "char_end": 9324,
+      "line_start": 199,
+      "line_end": 199,
+      "chapter_path": "6.       POSTUPAK / 6.1      Popravne radnje",
+      "nearest_heading": "6.1      Popravne radnje",
+      "kind": "blank",
+      "block_id": "B00127",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9324,
+      "char_end": 9355,
+      "line_start": 200,
+      "line_end": 200,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "heading",
+      "block_id": "B00128",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 9355,
+      "char_end": 9356,
+      "line_start": 201,
+      "line_end": 201,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "blank",
+      "block_id": "B00129",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9356,
+      "char_end": 9596,
+      "line_start": 202,
+      "line_end": 205,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00130",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9596,
+      "char_end": 9597,
+      "line_start": 206,
+      "line_end": 206,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "blank",
+      "block_id": "B00131",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9597,
+      "char_end": 9874,
+      "line_start": 207,
+      "line_end": 207,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00132",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9874,
+      "char_end": 9875,
+      "line_start": 208,
+      "line_end": 208,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "blank",
+      "block_id": "B00133",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9875,
+      "char_end": 9905,
+      "line_start": 209,
+      "line_end": 209,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00134",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9905,
+      "char_end": 9957,
+      "line_start": 210,
+      "line_end": 210,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00135",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9957,
+      "char_end": 10004,
+      "line_start": 211,
+      "line_end": 211,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00136",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10004,
+      "char_end": 10063,
+      "line_start": 212,
+      "line_end": 212,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00137",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10063,
+      "char_end": 10099,
+      "line_start": 213,
+      "line_end": 213,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00138",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10099,
+      "char_end": 10119,
+      "line_start": 214,
+      "line_end": 214,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00139",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10119,
+      "char_end": 10152,
+      "line_start": 215,
+      "line_end": 215,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00140",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10152,
+      "char_end": 10185,
+      "line_start": 216,
+      "line_end": 216,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00141",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10185,
+      "char_end": 10217,
+      "line_start": 217,
+      "line_end": 217,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00142",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10217,
+      "char_end": 10266,
+      "line_start": 218,
+      "line_end": 218,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00143",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10266,
+      "char_end": 10267,
+      "line_start": 219,
+      "line_end": 219,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "blank",
+      "block_id": "B00144",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10267,
+      "char_end": 10377,
+      "line_start": 220,
+      "line_end": 220,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00145",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10377,
+      "char_end": 10378,
+      "line_start": 221,
+      "line_end": 221,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "blank",
+      "block_id": "B00146",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10378,
+      "char_end": 10944,
+      "line_start": 222,
+      "line_end": 222,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00147",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10944,
+      "char_end": 10945,
+      "line_start": 223,
+      "line_end": 223,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "blank",
+      "block_id": "B00148",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10945,
+      "char_end": 11595,
+      "line_start": 224,
+      "line_end": 224,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "content",
+      "block_id": "B00149",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11595,
+      "char_end": 11596,
+      "line_start": 225,
+      "line_end": 225,
+      "chapter_path": "6.       POSTUPAK / 6.2      Preventivne radnje",
+      "nearest_heading": "6.2      Preventivne radnje",
+      "kind": "blank",
+      "block_id": "B00150",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11596,
+      "char_end": 11618,
+      "line_start": 226,
+      "line_end": 226,
+      "chapter_path": "6.       POSTUPAK / 6.3 Dokumentacija",
+      "nearest_heading": "6.3 Dokumentacija",
+      "kind": "heading",
+      "block_id": "B00151",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11618,
+      "char_end": 11619,
+      "line_start": 227,
+      "line_end": 227,
+      "chapter_path": "6.       POSTUPAK / 6.3 Dokumentacija",
+      "nearest_heading": "6.3 Dokumentacija",
+      "kind": "blank",
+      "block_id": "B00152",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11619,
+      "char_end": 11875,
+      "line_start": 228,
+      "line_end": 228,
+      "chapter_path": "6.       POSTUPAK / 6.3 Dokumentacija",
+      "nearest_heading": "6.3 Dokumentacija",
+      "kind": "content",
+      "block_id": "B00153",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11875,
+      "char_end": 11876,
+      "line_start": 229,
+      "line_end": 229,
+      "chapter_path": "6.       POSTUPAK / 6.3 Dokumentacija",
+      "nearest_heading": "6.3 Dokumentacija",
+      "kind": "blank",
+      "block_id": "B00154",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11876,
+      "char_end": 11890,
+      "line_start": 230,
+      "line_end": 230,
+      "chapter_path": "7. PRILOZI",
+      "nearest_heading": "7. PRILOZI",
+      "kind": "heading",
+      "block_id": "B00155",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11890,
+      "char_end": 11891,
+      "line_start": 231,
+      "line_end": 231,
+      "chapter_path": "7. PRILOZI",
+      "nearest_heading": "7. PRILOZI",
+      "kind": "blank",
+      "block_id": "B00156",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11891,
+      "char_end": 11961,
+      "line_start": 232,
+      "line_end": 232,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "heading",
+      "block_id": "B00157",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11961,
+      "char_end": 11962,
+      "line_start": 233,
+      "line_end": 233,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "blank",
+      "block_id": "B00158",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11962,
+      "char_end": 12186,
+      "line_start": 234,
+      "line_end": 237,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00159",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12186,
+      "char_end": 12187,
+      "line_start": 238,
+      "line_end": 238,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "blank",
+      "block_id": "B00160",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12187,
+      "char_end": 12218,
+      "line_start": 239,
+      "line_end": 239,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00161",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12218,
+      "char_end": 12219,
+      "line_start": 240,
+      "line_end": 240,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "blank",
+      "block_id": "B00162",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12219,
+      "char_end": 12234,
+      "line_start": 241,
+      "line_end": 241,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00163",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12234,
+      "char_end": 12263,
+      "line_start": 242,
+      "line_end": 242,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00164",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12263,
+      "char_end": 12285,
+      "line_start": 243,
+      "line_end": 243,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00165",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12285,
+      "char_end": 12286,
+      "line_start": 244,
+      "line_end": 244,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "blank",
+      "block_id": "B00166",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12286,
+      "char_end": 12331,
+      "line_start": 245,
+      "line_end": 245,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00167",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12331,
+      "char_end": 12378,
+      "line_start": 246,
+      "line_end": 246,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00168",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 12378,
+      "char_end": 12384,
+      "line_start": 247,
+      "line_end": 247,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00169",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12384,
+      "char_end": 12446,
+      "line_start": 248,
+      "line_end": 248,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00170",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12446,
+      "char_end": 12450,
+      "line_start": 249,
+      "line_end": 249,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "empty_table_row",
+      "block_id": "B00171",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 12450,
+      "char_end": 12487,
+      "line_start": 250,
+      "line_end": 250,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00172",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12487,
+      "char_end": 12494,
+      "line_start": 251,
+      "line_end": 251,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00173",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12494,
+      "char_end": 12555,
+      "line_start": 252,
+      "line_end": 252,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00174",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12555,
+      "char_end": 12559,
+      "line_start": 253,
+      "line_end": 253,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "empty_table_row",
+      "block_id": "B00175",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 12559,
+      "char_end": 12618,
+      "line_start": 254,
+      "line_end": 254,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00176",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12618,
+      "char_end": 12622,
+      "line_start": 255,
+      "line_end": 255,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "empty_table_row",
+      "block_id": "B00177",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 12622,
+      "char_end": 12677,
+      "line_start": 256,
+      "line_end": 256,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00178",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12677,
+      "char_end": 12681,
+      "line_start": 257,
+      "line_end": 257,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "empty_table_row",
+      "block_id": "B00179",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 12681,
+      "char_end": 12717,
+      "line_start": 258,
+      "line_end": 258,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00180",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12717,
+      "char_end": 12725,
+      "line_start": 259,
+      "line_end": 259,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00181",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12725,
+      "char_end": 12781,
+      "line_start": 260,
+      "line_end": 260,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00182",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12781,
+      "char_end": 12845,
+      "line_start": 261,
+      "line_end": 261,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00183",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12845,
+      "char_end": 12849,
+      "line_start": 262,
+      "line_end": 262,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "empty_table_row",
+      "block_id": "B00184",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 12849,
+      "char_end": 12891,
+      "line_start": 263,
+      "line_end": 263,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00185",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12891,
+      "char_end": 12910,
+      "line_start": 264,
+      "line_end": 264,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00186",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12910,
+      "char_end": 12917,
+      "line_start": 265,
+      "line_end": 265,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00187",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12917,
+      "char_end": 12949,
+      "line_start": 266,
+      "line_end": 266,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00188",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12949,
+      "char_end": 12953,
+      "line_start": 267,
+      "line_end": 267,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "empty_table_row",
+      "block_id": "B00189",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 12953,
+      "char_end": 12997,
+      "line_start": 268,
+      "line_end": 268,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00190",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12997,
+      "char_end": 13003,
+      "line_start": 269,
+      "line_end": 269,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00191",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13003,
+      "char_end": 13059,
+      "line_start": 270,
+      "line_end": 270,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00192",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13059,
+      "char_end": 13063,
+      "line_start": 271,
+      "line_end": 271,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "empty_table_row",
+      "block_id": "B00193",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 13063,
+      "char_end": 13106,
+      "line_start": 272,
+      "line_end": 272,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00194",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13106,
+      "char_end": 13107,
+      "line_start": 273,
+      "line_end": 273,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "blank",
+      "block_id": "B00195",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13107,
+      "char_end": 13129,
+      "line_start": 274,
+      "line_end": 274,
+      "chapter_path": "7. PRILOZI / 7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "nearest_heading": "7.1 Obrazac: OB-ZPR-015 Zahtjev za popravnom/preventivnom radnjom",
+      "kind": "content",
+      "block_id": "B00196",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

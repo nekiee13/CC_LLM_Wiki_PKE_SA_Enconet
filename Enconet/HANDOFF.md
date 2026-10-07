@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T150519Z-a8331d8.md`](handoffs/2026-10-07T150519Z-a8331d8.md)
+**Authoritative record:** [`handoffs/2026-10-07T154841Z-d718840.md`](handoffs/2026-10-07T154841Z-d718840.md)
 
-**Status:** partial · **Git:** `a8331d8` · **Agent:** codex · **Created:** 2026-10-07T15:05:19Z
+**Status:** partial · **Git:** `d718840` · **Agent:** codex · **Created:** 2026-10-07T15:48:41Z
 
-**Exact next action:** Prepare full keyword/concept sweep with explicit recorded non-source exclusions; review vendor chapters and build Enconet local v3 golden calibration. Preserve exact quotes and do not activate v3 without its approval.
+**Exact next action:** Owner reviews benchmarks/sieving_golden/20261007-v3-nuclear-plan/OWNER_REVIEW.md. Codex verifies a minimal lossless context storage path on synthetic DB, then measures candidate and activates only under recorded prompt decision. Read unmatched vendor blocks too.

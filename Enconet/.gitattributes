@@ -16,3 +16,9 @@ sieving/prompts/full_keyword_sweep_v1.json text eol=lf
 templates/vendor-dashboard.html text eol=lf
 out/2026-10-07/framework-v2/** text eol=lf
 .bootstrap/framework-v2/** text eol=lf
+
+# Evidence and hash-pinned snapshots retain exact bytes across checkout.
+incoming/** -text
+raw/** -text
+derived/** -text
+out/** -text

@@ -29,7 +29,14 @@ and calibration before activation. No sieving has run.
 
 Owner approved the [G1 source basis](../docs/SOURCE_BASIS_APPROVED_20261007.md),
 including NQA-1:2015, the Enconet-only boundary and Croatian reports.
-Next: full keyword/concept recall and local v3 golden calibration. Supporting
+Full keyword recall is complete: 4,183 vendor passage leads (not accepted crumbs)
+and 2,992 regulatory/supporting leads across all 33 sources. Semantic review
+remains pending. A 20-example local golden candidate is ready for owner review.
+The v3 importer context-storage gap must be resolved before activation/import.
+See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md).
+
+Next: owner reviews the golden examples while Codex verifies lossless context
+storage and a measured candidate test. Supporting
 ASME Parts 2-4 retain flagged long converted sections for review before use.
 See [chapter ingestion record](../docs/CHAPTER_INGESTION_20261007.md).
 

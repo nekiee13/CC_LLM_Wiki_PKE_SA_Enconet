@@ -1,0 +1,5341 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0018",
+  "filename": "RU-73-03,R3 SOFTWARE INSTALLATION, KEEPING, HANDLI.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "b79e085d8f64ac73472a29bcffa8457ff6d1bed3526587236d9fdc6fbc15dbbc",
+  "registered_source_sha256": "b79e085d8f64ac73472a29bcffa8457ff6d1bed3526587236d9fdc6fbc15dbbc",
+  "source_changed": false,
+  "source_bytes": 17453,
+  "source_characters": 17432,
+  "source_lines": 352,
+  "passages": [
+    {
+      "passage_id": "B00006",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 6,
+      "line_end": 6,
+      "char_start": 86,
+      "char_end": 134,
+      "quote_original": "| Title:                | Radna uputa RU-73-03 |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00008",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 8,
+      "line_end": 8,
+      "char_start": 184,
+      "char_end": 232,
+      "quote_original": "| Revision No.:         | 3                    |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revision"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 233,
+      "char_end": 281,
+      "quote_original": "| Date Released:        | 17.11.2017.          |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "release"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00010",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 10,
+      "line_end": 10,
+      "char_start": 282,
+      "char_end": 330,
+      "quote_original": "| Controlled Copy No.:  |                      |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00012",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 12,
+      "line_end": 12,
+      "char_start": 332,
+      "char_end": 405,
+      "quote_original": "| Role      | Name and Title                               | Date       |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00014",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 14,
+      "line_end": 14,
+      "char_start": 481,
+      "char_end": 555,
+      "quote_original": "| Prepared: | mr.sc. Ilijana Iveković, Project Engineer     | 13.11.2017.|",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 556,
+      "char_end": 630,
+      "quote_original": "| Reviewed: | Vladimir Križe, dipl.ing., QA Leader          | 14.11.2017.|",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00016",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "line_start": 16,
+      "line_end": 16,
+      "char_start": 631,
+      "char_end": 705,
+      "quote_original": "| Approved: | dr.sc. Nenad Debrecin, Director               | 17.15.2017.|",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "handling"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00027",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "line_start": 27,
+      "line_end": 27,
+      "char_start": 960,
+      "char_end": 997,
+      "quote_original": "| Radna uputa | Naziv dok: RU-73-03 |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00029",
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "line_start": 29,
+      "line_end": 29,
+      "char_start": 1036,
+      "char_end": 1086,
+      "quote_original": "| SOFTWARE INSTALLATION, KEEPING, HANDLING AND | |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00034",
+      "chapter_path": "Summary",
+      "line_start": 34,
+      "line_end": 34,
+      "char_start": 1147,
+      "char_end": 1240,
+      "quote_original": "This document describes methods for software installation, keeping, handling and maintenance.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00036",
+      "chapter_path": "Summary",
+      "line_start": 36,
+      "line_end": 40,
+      "char_start": 1242,
+      "char_end": 1585,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                                                      Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                                                            Rev.3          Page 3 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00050",
+      "chapter_path": "3 RESPONSIBILITIES ................................................................................................7",
+      "line_start": 56,
+      "line_end": 58,
+      "char_start": 2476,
+      "char_end": 2853,
+      "quote_original": "3.1 DIRECTOR ...................................................................................................................7\n3.2 SOFTWARE ENGINEER .................................................................................................7\n3.3 QA ENGINEER .............................................................................................................7",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [],
+          "heading_terms": [
+            "responsib"
+          ]
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00054",
+      "chapter_path": "4 INSTRUCTIONS .......................................................................................................8",
+      "line_start": 62,
+      "line_end": 64,
+      "char_start": 2980,
+      "char_end": 3319,
+      "quote_original": "4.1 INSTALLATION.............................................................................................................8\n4.2 STORAGE CONTROL AND CONTROL OF PHYSICAL MEDIA .............................................9\n4.3 SOFTWARE MAINTENANCE ........................................................................................10",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "instruction"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "storage"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00060",
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "line_start": 70,
+      "line_end": 72,
+      "char_start": 3571,
+      "char_end": 3859,
+      "quote_original": "6.1 OB-CSL-051 COMPUTER SOFTWARE LIST, REV.3....................................................13\n6.2 OB-CSA-052 LIST OF COMPUTER SOFTWARE IN ARCHIVE AND BACKUP\n    COPIES, REV.3...........................................................................................................14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "archive",
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00062",
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "line_start": 74,
+      "line_end": 78,
+      "char_start": 3861,
+      "char_end": 4089,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                               Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                      Rev.3    Page 4 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00072",
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF FIGURES",
+      "line_start": 88,
+      "line_end": 92,
+      "char_start": 4140,
+      "char_end": 4414,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                      Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                            Rev.3     Page 5 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00078",
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "line_start": 98,
+      "line_end": 98,
+      "char_start": 4450,
+      "char_end": 4788,
+      "quote_original": "The purpose of this procedure is to describe methods for software installation, keeping, handling and maintenance. This procedure applies to all software used for performing activities described in ENCONET Quality Assurance Program. This procedure affects personnel involved in the software installation keeping, handling and maintenance.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "method"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00082",
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "line_start": 102,
+      "line_end": 102,
+      "char_start": 4804,
+      "char_end": 5005,
+      "quote_original": "This procedure gives instructions for software installation, storage control and control of physical media, and software maintenance dependable upon the form of the software available in ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "instruction"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "storage"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00084",
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "line_start": 104,
+      "line_end": 108,
+      "char_start": 5007,
+      "char_end": 5280,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                      Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                           Rev.3     Page 6 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00093",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "line_start": 117,
+      "line_end": 117,
+      "char_start": 5458,
+      "char_end": 5496,
+      "quote_original": "| QA           | Quality Assurance   |",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00097",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 121,
+      "line_end": 121,
+      "char_start": 5519,
+      "char_end": 5682,
+      "quote_original": "1. Software Installation – The process of restoring software from external media to a local file system and preparation of conditions to be used on PC/workstation.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00099",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 123,
+      "line_end": 123,
+      "char_start": 5684,
+      "char_end": 5950,
+      "quote_original": "2. Control of the physical media and associated services – all functions, which are carried out to ensure that the data or software stored, are physically retrievable and cannot be lost or compromised due to any day to day operations or possible catastrophic events.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "retriev"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00101",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 125,
+      "line_end": 125,
+      "char_start": 5952,
+      "char_end": 6168,
+      "quote_original": "3. Software Maintenance – the process of modifying a software system or component, after delivery, to correct faults, improve performance or other attributes, adapt to a changed environment, or add new functionality.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00103",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 127,
+      "line_end": 127,
+      "char_start": 6170,
+      "char_end": 6290,
+      "quote_original": "4. Software Maintenance Documentation – provides information on how to support the software during its operational life.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00105",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 129,
+      "line_end": 129,
+      "char_start": 6292,
+      "char_end": 6396,
+      "quote_original": "5. Test Case – a specific set of test data and associated procedures developed for particular objective.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00107",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 131,
+      "line_end": 135,
+      "char_start": 6398,
+      "char_end": 6671,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                      Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                           Rev.3     Page 7 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00113",
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "line_start": 141,
+      "line_end": 141,
+      "char_start": 6714,
+      "char_end": 6791,
+      "quote_original": "1. To establish appropriate measures and resources for software installation,",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "resource"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00114",
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "line_start": 142,
+      "line_end": 142,
+      "char_start": 6792,
+      "char_end": 6838,
+      "quote_original": "   keeping, handling, storing and maintenance.",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00118",
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Software Engineer",
+      "line_start": 146,
+      "line_end": 146,
+      "char_start": 6867,
+      "char_end": 6936,
+      "quote_original": "1. Software installation, keeping, handling, storing and maintenance.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00119",
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Software Engineer",
+      "line_start": 147,
+      "line_end": 147,
+      "char_start": 6937,
+      "char_end": 6978,
+      "quote_original": "2. Backup of original distribution media.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "distribut"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00123",
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "line_start": 151,
+      "line_end": 151,
+      "char_start": 7001,
+      "char_end": 7080,
+      "quote_original": "1. The responsibility of QA engineer is that all activities related to software",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "responsib"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00124",
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "line_start": 152,
+      "line_end": 154,
+      "char_start": 7081,
+      "char_end": 7245,
+      "quote_original": "   installation, keeping, handling, storing and maintenance be planned and\n   performed in accordance with approved Quality Assurance Program and\n   this Procedure.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00126",
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "line_start": 156,
+      "line_end": 160,
+      "char_start": 7247,
+      "char_end": 7527,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                         Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                              Rev.3      Page 8 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00136",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "line_start": 170,
+      "line_end": 170,
+      "char_start": 7704,
+      "char_end": 7732,
+      "quote_original": "1. Installation instructions",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "instruction"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00137",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "line_start": 171,
+      "line_end": 171,
+      "char_start": 7733,
+      "char_end": 7797,
+      "quote_original": "2. Existence of all files specified in installation instructions",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "instruction"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00138",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "line_start": 172,
+      "line_end": 172,
+      "char_start": 7798,
+      "char_end": 7811,
+      "quote_original": "3. Test Cases",
+      "matches": {
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00139",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "line_start": 173,
+      "line_end": 173,
+      "char_start": 7812,
+      "char_end": 7848,
+      "quote_original": "4. Output produced by the test cases",
+      "matches": {
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00149",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "line_start": 183,
+      "line_end": 187,
+      "char_start": 8366,
+      "char_end": 8642,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                        Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                            Rev.3     Page 9 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "test"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00153",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 191,
+      "line_end": 192,
+      "char_start": 8698,
+      "char_end": 8790,
+      "quote_original": "4.2.1 The original of the maintained software package is kept in central\n      archive room.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "packag"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "archive"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00155",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 194,
+      "line_end": 194,
+      "char_start": 8792,
+      "char_end": 8845,
+      "quote_original": "4.2.2 Backup recording of original distribution media",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "distribut"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "record",
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00156",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 195,
+      "line_end": 195,
+      "char_start": 8846,
+      "char_end": 8910,
+      "quote_original": "      1. External software – immediately after software purchase",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "purchase"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00157",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 196,
+      "line_end": 196,
+      "char_start": 8911,
+      "char_end": 8991,
+      "quote_original": "      2. Internally generated software – after successful termination of testing",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00158",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 197,
+      "line_end": 197,
+      "char_start": 8992,
+      "char_end": 9052,
+      "quote_original": "         phase and after recording of original software copy",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "record"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00160",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 199,
+      "line_end": 199,
+      "char_start": 9054,
+      "char_end": 9120,
+      "quote_original": "4.2.3 Installation of the software is performed using backup copy.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00162",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 201,
+      "line_end": 203,
+      "char_start": 9122,
+      "char_end": 9304,
+      "quote_original": "4.2.4 Backup shall be made with the disk copy utility on local HD drive,\n      separately on the CD/DVD media and on the ENCONET d.o.o. server in\n      the Software Backup directory.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00164",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 205,
+      "line_end": 207,
+      "char_start": 9306,
+      "char_end": 9468,
+      "quote_original": "4.2.5 The list of the stored original software packages is written in Computer\n      Software List OB-CSL-051 (Appendix Error! Reference source not\n      found.).",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "packag"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00166",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 209,
+      "line_end": 210,
+      "char_start": 9470,
+      "char_end": 9567,
+      "quote_original": "4.2.6 List of the backup copies of original software is written in OB-CSA-052\n      (Appendix 0).",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00168",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 212,
+      "line_end": 213,
+      "char_start": 9569,
+      "char_end": 9660,
+      "quote_original": "4.2.7 The original software packages have unlimited storage time (permanent\n      storage).",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "storage",
+            "packag"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00170",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 215,
+      "line_end": 216,
+      "char_start": 9662,
+      "char_end": 9805,
+      "quote_original": "4.2.8 It is responsibility of software engineer to distribute adequate version of\n      software according to the request from project manager.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "responsib"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "distribut"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00172",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 218,
+      "line_end": 219,
+      "char_start": 9807,
+      "char_end": 9833,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00174",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 221,
+      "line_end": 223,
+      "char_start": 9835,
+      "char_end": 10086,
+      "quote_original": "Radna uputa                                                                        Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                             Rev.3     Page 10 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00176",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 225,
+      "line_end": 225,
+      "char_start": 10088,
+      "char_end": 10129,
+      "quote_original": "4.2.9 Backup files are temporary storage.",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [
+            "storage"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00178",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 227,
+      "line_end": 230,
+      "char_start": 10131,
+      "char_end": 10371,
+      "quote_original": "    4.2.9.1 All kinds of data contained in backups are finally stored inside\n            other categories of records when they are finished (project\n            documentation and archives, software packages, data records,\n            etc.).",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "packag"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "record",
+            "archive",
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00180",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 232,
+      "line_end": 233,
+      "char_start": 10373,
+      "char_end": 10488,
+      "quote_original": "    4.2.9.2 The files in this category are kept for period of time requested for\n            project documentation.",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00182",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 235,
+      "line_end": 235,
+      "char_start": 10490,
+      "char_end": 10565,
+      "quote_original": "4.2.10 Following kinds of computer media can be stored in software archive:",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "archive"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00184",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 237,
+      "line_end": 237,
+      "char_start": 10567,
+      "char_end": 10587,
+      "quote_original": "    1. CD/DVD media.",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00185",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 238,
+      "line_end": 238,
+      "char_start": 10588,
+      "char_end": 10633,
+      "quote_original": "    2. For some old packages source listings.",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [
+            "packag"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00187",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 240,
+      "line_end": 240,
+      "char_start": 10635,
+      "char_end": 10709,
+      "quote_original": "4.2.11 Every two year content of above mentioned media has to be verified.",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00189",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 242,
+      "line_end": 242,
+      "char_start": 10711,
+      "char_end": 10735,
+      "quote_original": "4.3 Software maintenance",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00191",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 244,
+      "line_end": 245,
+      "char_start": 10737,
+      "char_end": 10853,
+      "quote_original": "4.3.1 The software maintenance process is dependable upon the form of the\n      software available in ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00193",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 247,
+      "line_end": 249,
+      "char_start": 10855,
+      "char_end": 11072,
+      "quote_original": "    4.3.1.1 Software available only in the form of executable shall be\n            maintained to assure that the version is compatible with the\n            verified environment (operating system version and hardware).",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00195",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 251,
+      "line_end": 254,
+      "char_start": 11074,
+      "char_end": 11360,
+      "quote_original": "    4.3.1.2 Software available in the form of the source code or precompiled\n            routines and libraries shall be maintained for the same conditions\n            as 4.3.1.1 with addition of checking of compatibility with compiler\n            or other supporting programming tools.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00197",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 256,
+      "line_end": 256,
+      "char_start": 11362,
+      "char_end": 11384,
+      "quote_original": "ENCONET d.o.o., Zagreb",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00200",
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "line_start": 259,
+      "line_end": 261,
+      "char_start": 11390,
+      "char_end": 11633,
+      "quote_original": "Radna uputa                                                                    Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                         Rev.3     Page 11 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": [
+            "storage"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00210",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 273,
+      "line_end": 273,
+      "char_start": 11924,
+      "char_end": 11971,
+      "quote_original": "[4.]     10CFR50, Appendix B, Quality Assurance",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00212",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 275,
+      "line_end": 276,
+      "char_start": 11973,
+      "char_end": 12079,
+      "quote_original": "[5.]     ANSI/ASME NQA-1-1994, \"Quality Assurance Requirements for\n         Nuclear Facility Applications\"",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00214",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 278,
+      "line_end": 280,
+      "char_start": 12081,
+      "char_end": 12263,
+      "quote_original": "[6.]     Handbook of Software Quality Assurance Techniques Applicable to\n         Nuclear Industry, Battelle Pacific Northwest Labs, Richland, WA,\n         NUREG-CR-4640, August 1987",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00216",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 282,
+      "line_end": 284,
+      "char_start": 12265,
+      "char_end": 12433,
+      "quote_original": "[7.]     Manual on Quality Assurance for Computer Software Related to the\n         Safety of Nuclear Power Plants, Technical Reports Series No. 282,\n         IAEA, 1988",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00218",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 286,
+      "line_end": 287,
+      "char_start": 12435,
+      "char_end": 12543,
+      "quote_original": "[8.]     NE Krško Quality Specification QS600, Quality Assurance Program\n         Specification for Software",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "specification"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00220",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 289,
+      "line_end": 289,
+      "char_start": 12545,
+      "char_end": 12604,
+      "quote_original": "[9.]     IEEE Software Engineering Standards, Third Edition",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00226",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 296,
+      "line_end": 300,
+      "char_start": 12764,
+      "char_end": 13027,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                 Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                      Rev.3    Page 12 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00230",
+      "chapter_path": "6    APPENDICES",
+      "line_start": 304,
+      "line_end": 304,
+      "char_start": 13049,
+      "char_end": 13094,
+      "quote_original": "6.1. OB-CSL-051 Computer Software List, Rev.3",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00232",
+      "chapter_path": "6    APPENDICES",
+      "line_start": 306,
+      "line_end": 307,
+      "char_start": 13096,
+      "char_end": 13178,
+      "quote_original": "6.2. OB-CSA-052 List of Computer Software in Archive and Backup Copies,\n     Rev.3",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "archive",
+            "backup"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00234",
+      "chapter_path": "6    APPENDICES",
+      "line_start": 309,
+      "line_end": 313,
+      "char_start": 13180,
+      "char_end": 13539,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                                                                Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                                                                      Rev.3     Page 13 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00238",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 317,
+      "line_end": 317,
+      "char_start": 13590,
+      "char_end": 13616,
+      "quote_original": "| Computer Software List |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00241",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 320,
+      "line_end": 320,
+      "char_start": 13645,
+      "char_end": 13798,
+      "quote_original": "| SOFTWARE NAME | VERSION | SOFTWARE DEVELOPER | DATE OF ACQUISITION | SOFTWARE ENGINEER | COMPUTER WITH INSTALLED SOFTWARE (USER NAME) | AUTHORISED BY |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00243",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 322,
+      "line_end": 322,
+      "char_start": 13955,
+      "char_end": 14130,
+      "quote_original": "|                |         |                     |                     |                    |                                            | Software Engineer _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00244",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 323,
+      "line_end": 323,
+      "char_start": 14131,
+      "char_end": 14298,
+      "quote_original": "|                |         |                     |                     |                    |                                            | QA Leader _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00245",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 324,
+      "line_end": 324,
+      "char_start": 14299,
+      "char_end": 14474,
+      "quote_original": "|                |         |                     |                     |                    |                                            | Software Engineer _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00246",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 325,
+      "line_end": 325,
+      "char_start": 14475,
+      "char_end": 14642,
+      "quote_original": "|                |         |                     |                     |                    |                                            | QA Leader _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00247",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 326,
+      "line_end": 326,
+      "char_start": 14643,
+      "char_end": 14818,
+      "quote_original": "|                |         |                     |                     |                    |                                            | Software Engineer _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00248",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 327,
+      "line_end": 327,
+      "char_start": 14819,
+      "char_end": 14986,
+      "quote_original": "|                |         |                     |                     |                    |                                            | QA Leader _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00249",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 328,
+      "line_end": 328,
+      "char_start": 14987,
+      "char_end": 15162,
+      "quote_original": "|                |         |                     |                     |                    |                                            | Software Engineer _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00250",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 329,
+      "line_end": 329,
+      "char_start": 15163,
+      "char_end": 15330,
+      "quote_original": "|                |         |                     |                     |                    |                                            | QA Leader _____ Date _____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00252",
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "line_start": 331,
+      "line_end": 335,
+      "char_start": 15332,
+      "char_end": 15718,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                                                                              Naziv dok: RU-73-03\nSOFTWARE INSTALLATION, KEEPING, HANDLING AND\nMAINTENANCE CONTROL                                                                                                                   Rev.3     Page 14 of 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "handling"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00256",
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "line_start": 339,
+      "line_end": 339,
+      "char_start": 15803,
+      "char_end": 15861,
+      "quote_original": "| LIST OF COMPUTER SOFTWARE IN ARCHIVE AND BACKUP COPIES |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "archive",
+            "backup"
+          ],
+          "heading_terms": [
+            "archive",
+            "backup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00259",
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "line_start": 342,
+      "line_end": 342,
+      "char_start": 15922,
+      "char_end": 16051,
+      "quote_original": "| ORIGINAL SOFTWARE / CONTENT OF BACKUP | ARCHIVED BY DATE | COPIED BY DATE | VERIFICATION OF CONTENT OF ARCHIVE AND BACKUP |||||",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [
+            "archive",
+            "backup"
+          ],
+          "heading_terms": [
+            "archive",
+            "backup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00261",
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "line_start": 344,
+      "line_end": 344,
+      "char_start": 16221,
+      "char_end": 16394,
+      "quote_original": "|                                       |                  |                 | VERIFIED BY DATE | VERIFIED BY DATE | VERIFIED BY DATE | VERIFIED BY DATE | VERIFIED BY DATE |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "archive",
+            "backup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00269",
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "line_start": 352,
+      "line_end": 352,
+      "char_start": 17410,
+      "char_end": 17432,
+      "quote_original": "ENCONET d.o.o., Zagreb",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XVII": {
+          "quote_terms": [],
+          "heading_terms": [
+            "archive",
+            "backup"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 1,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00001",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1,
+      "char_end": 17,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "content",
+      "block_id": "B00002",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 17,
+      "char_end": 18,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00003",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 18,
+      "char_end": 85,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "heading",
+      "block_id": "B00004",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 85,
+      "char_end": 86,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "blank",
+      "block_id": "B00005",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 86,
+      "char_end": 135,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00006",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 135,
+      "char_end": 184,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00007",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 184,
+      "char_end": 233,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00008",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 233,
+      "char_end": 282,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 282,
+      "char_end": 331,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00010",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 331,
+      "char_end": 332,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "blank",
+      "block_id": "B00011",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 332,
+      "char_end": 406,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00012",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 406,
+      "char_end": 481,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00013",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 481,
+      "char_end": 556,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00014",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 556,
+      "char_end": 631,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 631,
+      "char_end": 706,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "content",
+      "block_id": "B00016",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 706,
+      "char_end": 707,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "nearest_heading": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+      "kind": "blank",
+      "block_id": "B00017",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 707,
+      "char_end": 729,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "heading",
+      "block_id": "B00018",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 729,
+      "char_end": 730,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "blank",
+      "block_id": "B00019",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 730,
+      "char_end": 775,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00020",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 775,
+      "char_end": 820,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00021",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 820,
+      "char_end": 865,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00022",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 865,
+      "char_end": 910,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00023",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 910,
+      "char_end": 955,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00024",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 955,
+      "char_end": 956,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "blank",
+      "block_id": "B00025",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 956,
+      "char_end": 960,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00026",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 960,
+      "char_end": 998,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 998,
+      "char_end": 1036,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00028",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 1036,
+      "char_end": 1087,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00029",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1087,
+      "char_end": 1135,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00030",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1135,
+      "char_end": 1136,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "blank",
+      "block_id": "B00031",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1136,
+      "char_end": 1146,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "heading",
+      "block_id": "B00032",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1146,
+      "char_end": 1147,
+      "line_start": 33,
+      "line_end": 33,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "blank",
+      "block_id": "B00033",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1147,
+      "char_end": 1241,
+      "line_start": 34,
+      "line_end": 34,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "content",
+      "block_id": "B00034",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1241,
+      "char_end": 1242,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "blank",
+      "block_id": "B00035",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1242,
+      "char_end": 1586,
+      "line_start": 36,
+      "line_end": 40,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "content",
+      "block_id": "B00036",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1586,
+      "char_end": 1587,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "blank",
+      "block_id": "B00037",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1587,
+      "char_end": 1608,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "Summary / TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "heading",
+      "block_id": "B00038",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1608,
+      "char_end": 1609,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "Summary / TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00039",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1609,
+      "char_end": 1731,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "1 INTRODUCTION......................................................................................................5",
+      "nearest_heading": "1 INTRODUCTION......................................................................................................5",
+      "kind": "heading",
+      "block_id": "B00040",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1731,
+      "char_end": 1732,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "1 INTRODUCTION......................................................................................................5",
+      "nearest_heading": "1 INTRODUCTION......................................................................................................5",
+      "kind": "blank",
+      "block_id": "B00041",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1732,
+      "char_end": 1996,
+      "line_start": 46,
+      "line_end": 47,
+      "chapter_path": "1 INTRODUCTION......................................................................................................5",
+      "nearest_heading": "1 INTRODUCTION......................................................................................................5",
+      "kind": "content",
+      "block_id": "B00042",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1996,
+      "char_end": 1997,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "1 INTRODUCTION......................................................................................................5",
+      "nearest_heading": "1 INTRODUCTION......................................................................................................5",
+      "kind": "blank",
+      "block_id": "B00043",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1997,
+      "char_end": 2098,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "kind": "heading",
+      "block_id": "B00044",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2098,
+      "char_end": 2099,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "kind": "blank",
+      "block_id": "B00045",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2099,
+      "char_end": 2353,
+      "line_start": 51,
+      "line_end": 52,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "kind": "content",
+      "block_id": "B00046",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 2353,
+      "char_end": 2354,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS................................................................6",
+      "kind": "blank",
+      "block_id": "B00047",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2354,
+      "char_end": 2475,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "3 RESPONSIBILITIES ................................................................................................7",
+      "nearest_heading": "3 RESPONSIBILITIES ................................................................................................7",
+      "kind": "heading",
+      "block_id": "B00048",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2475,
+      "char_end": 2476,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "3 RESPONSIBILITIES ................................................................................................7",
+      "nearest_heading": "3 RESPONSIBILITIES ................................................................................................7",
+      "kind": "blank",
+      "block_id": "B00049",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2476,
+      "char_end": 2854,
+      "line_start": 56,
+      "line_end": 58,
+      "chapter_path": "3 RESPONSIBILITIES ................................................................................................7",
+      "nearest_heading": "3 RESPONSIBILITIES ................................................................................................7",
+      "kind": "content",
+      "block_id": "B00050",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2854,
+      "char_end": 2855,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "3 RESPONSIBILITIES ................................................................................................7",
+      "nearest_heading": "3 RESPONSIBILITIES ................................................................................................7",
+      "kind": "blank",
+      "block_id": "B00051",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2855,
+      "char_end": 2979,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "4 INSTRUCTIONS .......................................................................................................8",
+      "nearest_heading": "4 INSTRUCTIONS .......................................................................................................8",
+      "kind": "heading",
+      "block_id": "B00052",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2979,
+      "char_end": 2980,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "4 INSTRUCTIONS .......................................................................................................8",
+      "nearest_heading": "4 INSTRUCTIONS .......................................................................................................8",
+      "kind": "blank",
+      "block_id": "B00053",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2980,
+      "char_end": 3320,
+      "line_start": 62,
+      "line_end": 64,
+      "chapter_path": "4 INSTRUCTIONS .......................................................................................................8",
+      "nearest_heading": "4 INSTRUCTIONS .......................................................................................................8",
+      "kind": "content",
+      "block_id": "B00054",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3320,
+      "char_end": 3321,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "4 INSTRUCTIONS .......................................................................................................8",
+      "nearest_heading": "4 INSTRUCTIONS .......................................................................................................8",
+      "kind": "blank",
+      "block_id": "B00055",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3321,
+      "char_end": 3444,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "5 REFERENCES........................................................................................................11",
+      "nearest_heading": "5 REFERENCES........................................................................................................11",
+      "kind": "heading",
+      "block_id": "B00056",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3444,
+      "char_end": 3445,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "5 REFERENCES........................................................................................................11",
+      "nearest_heading": "5 REFERENCES........................................................................................................11",
+      "kind": "blank",
+      "block_id": "B00057",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3445,
+      "char_end": 3570,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "nearest_heading": "6 APPENDICES .........................................................................................................12",
+      "kind": "heading",
+      "block_id": "B00058",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3570,
+      "char_end": 3571,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "nearest_heading": "6 APPENDICES .........................................................................................................12",
+      "kind": "blank",
+      "block_id": "B00059",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3571,
+      "char_end": 3860,
+      "line_start": 70,
+      "line_end": 72,
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "nearest_heading": "6 APPENDICES .........................................................................................................12",
+      "kind": "content",
+      "block_id": "B00060",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3860,
+      "char_end": 3861,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "nearest_heading": "6 APPENDICES .........................................................................................................12",
+      "kind": "blank",
+      "block_id": "B00061",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3861,
+      "char_end": 4090,
+      "line_start": 74,
+      "line_end": 78,
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "nearest_heading": "6 APPENDICES .........................................................................................................12",
+      "kind": "content",
+      "block_id": "B00062",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4090,
+      "char_end": 4091,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "6 APPENDICES .........................................................................................................12",
+      "nearest_heading": "6 APPENDICES .........................................................................................................12",
+      "kind": "blank",
+      "block_id": "B00063",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4091,
+      "char_end": 4109,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "heading",
+      "block_id": "B00064",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4109,
+      "char_end": 4110,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "blank",
+      "block_id": "B00065",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4110,
+      "char_end": 4114,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "content",
+      "block_id": "B00066",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4114,
+      "char_end": 4115,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "blank",
+      "block_id": "B00067",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4115,
+      "char_end": 4134,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "heading",
+      "block_id": "B00068",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4134,
+      "char_end": 4135,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "blank",
+      "block_id": "B00069",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4135,
+      "char_end": 4139,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "content",
+      "block_id": "B00070",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4139,
+      "char_end": 4140,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "blank",
+      "block_id": "B00071",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4140,
+      "char_end": 4415,
+      "line_start": 88,
+      "line_end": 92,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "content",
+      "block_id": "B00072",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4415,
+      "char_end": 4416,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "6 APPENDICES .........................................................................................................12 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "blank",
+      "block_id": "B00073",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4416,
+      "char_end": 4433,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "1 INTRODUCTION",
+      "nearest_heading": "1 INTRODUCTION",
+      "kind": "heading",
+      "block_id": "B00074",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4433,
+      "char_end": 4434,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "1 INTRODUCTION",
+      "nearest_heading": "1 INTRODUCTION",
+      "kind": "blank",
+      "block_id": "B00075",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4434,
+      "char_end": 4449,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "heading",
+      "block_id": "B00076",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4449,
+      "char_end": 4450,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "blank",
+      "block_id": "B00077",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4450,
+      "char_end": 4789,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "content",
+      "block_id": "B00078",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4789,
+      "char_end": 4790,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "blank",
+      "block_id": "B00079",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4790,
+      "char_end": 4803,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "heading",
+      "block_id": "B00080",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4803,
+      "char_end": 4804,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "blank",
+      "block_id": "B00081",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4804,
+      "char_end": 5006,
+      "line_start": 102,
+      "line_end": 102,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "content",
+      "block_id": "B00082",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5006,
+      "char_end": 5007,
+      "line_start": 103,
+      "line_end": 103,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "blank",
+      "block_id": "B00083",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5007,
+      "char_end": 5281,
+      "line_start": 104,
+      "line_end": 108,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "content",
+      "block_id": "B00084",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5281,
+      "char_end": 5282,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "blank",
+      "block_id": "B00085",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5282,
+      "char_end": 5317,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS",
+      "kind": "heading",
+      "block_id": "B00086",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5317,
+      "char_end": 5318,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS",
+      "kind": "blank",
+      "block_id": "B00087",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5318,
+      "char_end": 5340,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "heading",
+      "block_id": "B00088",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5340,
+      "char_end": 5341,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "blank",
+      "block_id": "B00089",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5341,
+      "char_end": 5380,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "content",
+      "block_id": "B00090",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 5380,
+      "char_end": 5419,
+      "line_start": 115,
+      "line_end": 115,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00091",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 5419,
+      "char_end": 5458,
+      "line_start": 116,
+      "line_end": 116,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "content",
+      "block_id": "B00092",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 5458,
+      "char_end": 5497,
+      "line_start": 117,
+      "line_end": 117,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "content",
+      "block_id": "B00093",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5497,
+      "char_end": 5498,
+      "line_start": 118,
+      "line_end": 118,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "blank",
+      "block_id": "B00094",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5498,
+      "char_end": 5518,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "heading",
+      "block_id": "B00095",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5518,
+      "char_end": 5519,
+      "line_start": 120,
+      "line_end": 120,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00096",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5519,
+      "char_end": 5683,
+      "line_start": 121,
+      "line_end": 121,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00097",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5683,
+      "char_end": 5684,
+      "line_start": 122,
+      "line_end": 122,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00098",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5684,
+      "char_end": 5951,
+      "line_start": 123,
+      "line_end": 123,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00099",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5951,
+      "char_end": 5952,
+      "line_start": 124,
+      "line_end": 124,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00100",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5952,
+      "char_end": 6169,
+      "line_start": 125,
+      "line_end": 125,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00101",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6169,
+      "char_end": 6170,
+      "line_start": 126,
+      "line_end": 126,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00102",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6170,
+      "char_end": 6291,
+      "line_start": 127,
+      "line_end": 127,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00103",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6291,
+      "char_end": 6292,
+      "line_start": 128,
+      "line_end": 128,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00104",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6292,
+      "char_end": 6397,
+      "line_start": 129,
+      "line_end": 129,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00105",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6397,
+      "char_end": 6398,
+      "line_start": 130,
+      "line_end": 130,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00106",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6398,
+      "char_end": 6672,
+      "line_start": 131,
+      "line_end": 135,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00107",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6672,
+      "char_end": 6673,
+      "line_start": 136,
+      "line_end": 136,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00108",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6673,
+      "char_end": 6695,
+      "line_start": 137,
+      "line_end": 137,
+      "chapter_path": "3 RESPONSIBILITIES",
+      "nearest_heading": "3 RESPONSIBILITIES",
+      "kind": "heading",
+      "block_id": "B00109",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6695,
+      "char_end": 6696,
+      "line_start": 138,
+      "line_end": 138,
+      "chapter_path": "3 RESPONSIBILITIES",
+      "nearest_heading": "3 RESPONSIBILITIES",
+      "kind": "blank",
+      "block_id": "B00110",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6696,
+      "char_end": 6713,
+      "line_start": 139,
+      "line_end": 139,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "heading",
+      "block_id": "B00111",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6713,
+      "char_end": 6714,
+      "line_start": 140,
+      "line_end": 140,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "blank",
+      "block_id": "B00112",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6714,
+      "char_end": 6792,
+      "line_start": 141,
+      "line_end": 141,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "content",
+      "block_id": "B00113",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6792,
+      "char_end": 6839,
+      "line_start": 142,
+      "line_end": 142,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "content",
+      "block_id": "B00114",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6839,
+      "char_end": 6840,
+      "line_start": 143,
+      "line_end": 143,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "blank",
+      "block_id": "B00115",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6840,
+      "char_end": 6866,
+      "line_start": 144,
+      "line_end": 144,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Software Engineer",
+      "nearest_heading": "3.2 Software Engineer",
+      "kind": "heading",
+      "block_id": "B00116",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6866,
+      "char_end": 6867,
+      "line_start": 145,
+      "line_end": 145,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Software Engineer",
+      "nearest_heading": "3.2 Software Engineer",
+      "kind": "blank",
+      "block_id": "B00117",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6867,
+      "char_end": 6937,
+      "line_start": 146,
+      "line_end": 146,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Software Engineer",
+      "nearest_heading": "3.2 Software Engineer",
+      "kind": "content",
+      "block_id": "B00118",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6937,
+      "char_end": 6979,
+      "line_start": 147,
+      "line_end": 147,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Software Engineer",
+      "nearest_heading": "3.2 Software Engineer",
+      "kind": "content",
+      "block_id": "B00119",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6979,
+      "char_end": 6980,
+      "line_start": 148,
+      "line_end": 148,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Software Engineer",
+      "nearest_heading": "3.2 Software Engineer",
+      "kind": "blank",
+      "block_id": "B00120",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6980,
+      "char_end": 7000,
+      "line_start": 149,
+      "line_end": 149,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "nearest_heading": "3.3 QA Engineer",
+      "kind": "heading",
+      "block_id": "B00121",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7000,
+      "char_end": 7001,
+      "line_start": 150,
+      "line_end": 150,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "nearest_heading": "3.3 QA Engineer",
+      "kind": "blank",
+      "block_id": "B00122",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7001,
+      "char_end": 7081,
+      "line_start": 151,
+      "line_end": 151,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "nearest_heading": "3.3 QA Engineer",
+      "kind": "content",
+      "block_id": "B00123",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7081,
+      "char_end": 7246,
+      "line_start": 152,
+      "line_end": 154,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "nearest_heading": "3.3 QA Engineer",
+      "kind": "content",
+      "block_id": "B00124",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7246,
+      "char_end": 7247,
+      "line_start": 155,
+      "line_end": 155,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "nearest_heading": "3.3 QA Engineer",
+      "kind": "blank",
+      "block_id": "B00125",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7247,
+      "char_end": 7528,
+      "line_start": 156,
+      "line_end": 160,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "nearest_heading": "3.3 QA Engineer",
+      "kind": "content",
+      "block_id": "B00126",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7528,
+      "char_end": 7529,
+      "line_start": 161,
+      "line_end": 161,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 QA Engineer",
+      "nearest_heading": "3.3 QA Engineer",
+      "kind": "blank",
+      "block_id": "B00127",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7529,
+      "char_end": 7546,
+      "line_start": 162,
+      "line_end": 162,
+      "chapter_path": "4 INSTRUCTIONS",
+      "nearest_heading": "4 INSTRUCTIONS",
+      "kind": "heading",
+      "block_id": "B00128",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7546,
+      "char_end": 7547,
+      "line_start": 163,
+      "line_end": 163,
+      "chapter_path": "4 INSTRUCTIONS",
+      "nearest_heading": "4 INSTRUCTIONS",
+      "kind": "blank",
+      "block_id": "B00129",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7547,
+      "char_end": 7567,
+      "line_start": 164,
+      "line_end": 164,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation",
+      "nearest_heading": "4.1 Installation",
+      "kind": "heading",
+      "block_id": "B00130",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7567,
+      "char_end": 7568,
+      "line_start": 165,
+      "line_end": 165,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation",
+      "nearest_heading": "4.1 Installation",
+      "kind": "blank",
+      "block_id": "B00131",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7568,
+      "char_end": 7615,
+      "line_start": 166,
+      "line_end": 166,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package",
+      "nearest_heading": "4.1.1 Verification of Installation Package",
+      "kind": "heading",
+      "block_id": "B00132",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7615,
+      "char_end": 7616,
+      "line_start": 167,
+      "line_end": 167,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package",
+      "nearest_heading": "4.1.1 Verification of Installation Package",
+      "kind": "blank",
+      "block_id": "B00133",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7616,
+      "char_end": 7703,
+      "line_start": 168,
+      "line_end": 168,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "nearest_heading": "4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "kind": "heading",
+      "block_id": "B00134",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7703,
+      "char_end": 7704,
+      "line_start": 169,
+      "line_end": 169,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "nearest_heading": "4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "kind": "blank",
+      "block_id": "B00135",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7704,
+      "char_end": 7733,
+      "line_start": 170,
+      "line_end": 170,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "nearest_heading": "4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "kind": "content",
+      "block_id": "B00136",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7733,
+      "char_end": 7798,
+      "line_start": 171,
+      "line_end": 171,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "nearest_heading": "4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "kind": "content",
+      "block_id": "B00137",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7798,
+      "char_end": 7812,
+      "line_start": 172,
+      "line_end": 172,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "nearest_heading": "4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "kind": "content",
+      "block_id": "B00138",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7812,
+      "char_end": 7849,
+      "line_start": 173,
+      "line_end": 173,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "nearest_heading": "4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "kind": "content",
+      "block_id": "B00139",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7849,
+      "char_end": 7850,
+      "line_start": 174,
+      "line_end": 174,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "nearest_heading": "4.1.1.1 Check the availability of the necessary elements from the following list.",
+      "kind": "blank",
+      "block_id": "B00140",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7850,
+      "char_end": 7966,
+      "line_start": 175,
+      "line_end": 175,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.2 Check that the format and content of the media are properly identified in the installation procedures.",
+      "nearest_heading": "4.1.1.2 Check that the format and content of the media are properly identified in the installation procedures.",
+      "kind": "heading",
+      "block_id": "B00141",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7966,
+      "char_end": 7967,
+      "line_start": 176,
+      "line_end": 176,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.1 Verification of Installation Package / 4.1.1.2 Check that the format and content of the media are properly identified in the installation procedures.",
+      "nearest_heading": "4.1.1.2 Check that the format and content of the media are properly identified in the installation procedures.",
+      "kind": "blank",
+      "block_id": "B00142",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7967,
+      "char_end": 8162,
+      "line_start": 177,
+      "line_end": 177,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.2 Installation shall be performed according to installation procedure provided within software documentation or using automatic installation procedure if provided with original software.",
+      "nearest_heading": "4.1.2 Installation shall be performed according to installation procedure provided within software documentation or using automatic installation procedure if provided with original software.",
+      "kind": "heading",
+      "block_id": "B00143",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8162,
+      "char_end": 8163,
+      "line_start": 178,
+      "line_end": 178,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.2 Installation shall be performed according to installation procedure provided within software documentation or using automatic installation procedure if provided with original software.",
+      "nearest_heading": "4.1.2 Installation shall be performed according to installation procedure provided within software documentation or using automatic installation procedure if provided with original software.",
+      "kind": "blank",
+      "block_id": "B00144",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8163,
+      "char_end": 8261,
+      "line_start": 179,
+      "line_end": 179,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.3 The installation date and hardware platform shall be recorded in installation log list.",
+      "nearest_heading": "4.1.3 The installation date and hardware platform shall be recorded in installation log list.",
+      "kind": "heading",
+      "block_id": "B00145",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8261,
+      "char_end": 8262,
+      "line_start": 180,
+      "line_end": 180,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.3 The installation date and hardware platform shall be recorded in installation log list.",
+      "nearest_heading": "4.1.3 The installation date and hardware platform shall be recorded in installation log list.",
+      "kind": "blank",
+      "block_id": "B00146",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8262,
+      "char_end": 8365,
+      "line_start": 181,
+      "line_end": 181,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "nearest_heading": "4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "kind": "heading",
+      "block_id": "B00147",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8365,
+      "char_end": 8366,
+      "line_start": 182,
+      "line_end": 182,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "nearest_heading": "4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "kind": "blank",
+      "block_id": "B00148",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8366,
+      "char_end": 8643,
+      "line_start": 183,
+      "line_end": 187,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "nearest_heading": "4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "kind": "content",
+      "block_id": "B00149",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8643,
+      "char_end": 8644,
+      "line_start": 188,
+      "line_end": 188,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 Installation / 4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "nearest_heading": "4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "kind": "blank",
+      "block_id": "B00150",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8644,
+      "char_end": 8697,
+      "line_start": 189,
+      "line_end": 189,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "heading",
+      "block_id": "B00151",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8697,
+      "char_end": 8698,
+      "line_start": 190,
+      "line_end": 190,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00152",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8698,
+      "char_end": 8791,
+      "line_start": 191,
+      "line_end": 192,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00153",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8791,
+      "char_end": 8792,
+      "line_start": 193,
+      "line_end": 193,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00154",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8792,
+      "char_end": 8846,
+      "line_start": 194,
+      "line_end": 194,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00155",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8846,
+      "char_end": 8911,
+      "line_start": 195,
+      "line_end": 195,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00156",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8911,
+      "char_end": 8992,
+      "line_start": 196,
+      "line_end": 196,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00157",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8992,
+      "char_end": 9053,
+      "line_start": 197,
+      "line_end": 197,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00158",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9053,
+      "char_end": 9054,
+      "line_start": 198,
+      "line_end": 198,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00159",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9054,
+      "char_end": 9121,
+      "line_start": 199,
+      "line_end": 199,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00160",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9121,
+      "char_end": 9122,
+      "line_start": 200,
+      "line_end": 200,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00161",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9122,
+      "char_end": 9305,
+      "line_start": 201,
+      "line_end": 203,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00162",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9305,
+      "char_end": 9306,
+      "line_start": 204,
+      "line_end": 204,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00163",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9306,
+      "char_end": 9469,
+      "line_start": 205,
+      "line_end": 207,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00164",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9469,
+      "char_end": 9470,
+      "line_start": 208,
+      "line_end": 208,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00165",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9470,
+      "char_end": 9568,
+      "line_start": 209,
+      "line_end": 210,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00166",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9568,
+      "char_end": 9569,
+      "line_start": 211,
+      "line_end": 211,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00167",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9569,
+      "char_end": 9661,
+      "line_start": 212,
+      "line_end": 213,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00168",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9661,
+      "char_end": 9662,
+      "line_start": 214,
+      "line_end": 214,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00169",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9662,
+      "char_end": 9806,
+      "line_start": 215,
+      "line_end": 216,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00170",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9806,
+      "char_end": 9807,
+      "line_start": 217,
+      "line_end": 217,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00171",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9807,
+      "char_end": 9834,
+      "line_start": 218,
+      "line_end": 219,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00172",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9834,
+      "char_end": 9835,
+      "line_start": 220,
+      "line_end": 220,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00173",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9835,
+      "char_end": 10087,
+      "line_start": 221,
+      "line_end": 223,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00174",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10087,
+      "char_end": 10088,
+      "line_start": 224,
+      "line_end": 224,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00175",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10088,
+      "char_end": 10130,
+      "line_start": 225,
+      "line_end": 225,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00176",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10130,
+      "char_end": 10131,
+      "line_start": 226,
+      "line_end": 226,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00177",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10131,
+      "char_end": 10372,
+      "line_start": 227,
+      "line_end": 230,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00178",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10372,
+      "char_end": 10373,
+      "line_start": 231,
+      "line_end": 231,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00179",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10373,
+      "char_end": 10489,
+      "line_start": 232,
+      "line_end": 233,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00180",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10489,
+      "char_end": 10490,
+      "line_start": 234,
+      "line_end": 234,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00181",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10490,
+      "char_end": 10566,
+      "line_start": 235,
+      "line_end": 235,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00182",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10566,
+      "char_end": 10567,
+      "line_start": 236,
+      "line_end": 236,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00183",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10567,
+      "char_end": 10588,
+      "line_start": 237,
+      "line_end": 237,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00184",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10588,
+      "char_end": 10634,
+      "line_start": 238,
+      "line_end": 238,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00185",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10634,
+      "char_end": 10635,
+      "line_start": 239,
+      "line_end": 239,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00186",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10635,
+      "char_end": 10710,
+      "line_start": 240,
+      "line_end": 240,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00187",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10710,
+      "char_end": 10711,
+      "line_start": 241,
+      "line_end": 241,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00188",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10711,
+      "char_end": 10736,
+      "line_start": 242,
+      "line_end": 242,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00189",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10736,
+      "char_end": 10737,
+      "line_start": 243,
+      "line_end": 243,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00190",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10737,
+      "char_end": 10854,
+      "line_start": 244,
+      "line_end": 245,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00191",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10854,
+      "char_end": 10855,
+      "line_start": 246,
+      "line_end": 246,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00192",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10855,
+      "char_end": 11073,
+      "line_start": 247,
+      "line_end": 249,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00193",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11073,
+      "char_end": 11074,
+      "line_start": 250,
+      "line_end": 250,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00194",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11074,
+      "char_end": 11361,
+      "line_start": 251,
+      "line_end": 254,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00195",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11361,
+      "char_end": 11362,
+      "line_start": 255,
+      "line_end": 255,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00196",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11362,
+      "char_end": 11385,
+      "line_start": 256,
+      "line_end": 256,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00197",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11385,
+      "char_end": 11386,
+      "line_start": 257,
+      "line_end": 257,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00198",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11386,
+      "char_end": 11390,
+      "line_start": 258,
+      "line_end": 258,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00199",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 11390,
+      "char_end": 11634,
+      "line_start": 259,
+      "line_end": 261,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "content",
+      "block_id": "B00200",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11634,
+      "char_end": 11635,
+      "line_start": 262,
+      "line_end": 262,
+      "chapter_path": "4 INSTRUCTIONS / 4.2 Storage control and control of physical media",
+      "nearest_heading": "4.2 Storage control and control of physical media",
+      "kind": "blank",
+      "block_id": "B00201",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11635,
+      "char_end": 11653,
+      "line_start": 263,
+      "line_end": 263,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "heading",
+      "block_id": "B00202",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11653,
+      "char_end": 11654,
+      "line_start": 264,
+      "line_end": 264,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00203",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11654,
+      "char_end": 11701,
+      "line_start": 265,
+      "line_end": 265,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00204",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11701,
+      "char_end": 11702,
+      "line_start": 266,
+      "line_end": 266,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00205",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11702,
+      "char_end": 11784,
+      "line_start": 267,
+      "line_end": 268,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00206",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11784,
+      "char_end": 11785,
+      "line_start": 269,
+      "line_end": 269,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00207",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11785,
+      "char_end": 11923,
+      "line_start": 270,
+      "line_end": 271,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00208",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11923,
+      "char_end": 11924,
+      "line_start": 272,
+      "line_end": 272,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00209",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11924,
+      "char_end": 11972,
+      "line_start": 273,
+      "line_end": 273,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00210",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11972,
+      "char_end": 11973,
+      "line_start": 274,
+      "line_end": 274,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00211",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11973,
+      "char_end": 12080,
+      "line_start": 275,
+      "line_end": 276,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00212",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12080,
+      "char_end": 12081,
+      "line_start": 277,
+      "line_end": 277,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00213",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12081,
+      "char_end": 12264,
+      "line_start": 278,
+      "line_end": 280,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00214",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12264,
+      "char_end": 12265,
+      "line_start": 281,
+      "line_end": 281,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00215",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12265,
+      "char_end": 12434,
+      "line_start": 282,
+      "line_end": 284,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00216",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12434,
+      "char_end": 12435,
+      "line_start": 285,
+      "line_end": 285,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00217",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12435,
+      "char_end": 12544,
+      "line_start": 286,
+      "line_end": 287,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00218",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12544,
+      "char_end": 12545,
+      "line_start": 288,
+      "line_end": 288,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00219",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12545,
+      "char_end": 12605,
+      "line_start": 289,
+      "line_end": 289,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00220",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12605,
+      "char_end": 12606,
+      "line_start": 290,
+      "line_end": 290,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00221",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12606,
+      "char_end": 12636,
+      "line_start": 291,
+      "line_end": 291,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00222",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12636,
+      "char_end": 12637,
+      "line_start": 292,
+      "line_end": 292,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00223",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12637,
+      "char_end": 12763,
+      "line_start": 293,
+      "line_end": 294,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00224",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12763,
+      "char_end": 12764,
+      "line_start": 295,
+      "line_end": 295,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00225",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12764,
+      "char_end": 13028,
+      "line_start": 296,
+      "line_end": 300,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00226",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13028,
+      "char_end": 13029,
+      "line_start": 301,
+      "line_end": 301,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00227",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13029,
+      "char_end": 13048,
+      "line_start": 302,
+      "line_end": 302,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "heading",
+      "block_id": "B00228",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13048,
+      "char_end": 13049,
+      "line_start": 303,
+      "line_end": 303,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "blank",
+      "block_id": "B00229",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13049,
+      "char_end": 13095,
+      "line_start": 304,
+      "line_end": 304,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "content",
+      "block_id": "B00230",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13095,
+      "char_end": 13096,
+      "line_start": 305,
+      "line_end": 305,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "blank",
+      "block_id": "B00231",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13096,
+      "char_end": 13179,
+      "line_start": 306,
+      "line_end": 307,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "content",
+      "block_id": "B00232",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13179,
+      "char_end": 13180,
+      "line_start": 308,
+      "line_end": 308,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "blank",
+      "block_id": "B00233",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13180,
+      "char_end": 13540,
+      "line_start": 309,
+      "line_end": 313,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "content",
+      "block_id": "B00234",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13540,
+      "char_end": 13541,
+      "line_start": 314,
+      "line_end": 314,
+      "chapter_path": "6    APPENDICES",
+      "nearest_heading": "6    APPENDICES",
+      "kind": "blank",
+      "block_id": "B00235",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13541,
+      "char_end": 13589,
+      "line_start": 315,
+      "line_end": 315,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "heading",
+      "block_id": "B00236",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13589,
+      "char_end": 13590,
+      "line_start": 316,
+      "line_end": 316,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "blank",
+      "block_id": "B00237",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13590,
+      "char_end": 13617,
+      "line_start": 317,
+      "line_end": 317,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00238",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13617,
+      "char_end": 13644,
+      "line_start": 318,
+      "line_end": 318,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00239",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 13644,
+      "char_end": 13645,
+      "line_start": 319,
+      "line_end": 319,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "blank",
+      "block_id": "B00240",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13645,
+      "char_end": 13799,
+      "line_start": 320,
+      "line_end": 320,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00241",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13799,
+      "char_end": 13955,
+      "line_start": 321,
+      "line_end": 321,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00242",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 13955,
+      "char_end": 14131,
+      "line_start": 322,
+      "line_end": 322,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00243",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14131,
+      "char_end": 14299,
+      "line_start": 323,
+      "line_end": 323,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00244",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14299,
+      "char_end": 14475,
+      "line_start": 324,
+      "line_end": 324,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00245",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14475,
+      "char_end": 14643,
+      "line_start": 325,
+      "line_end": 325,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00246",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14643,
+      "char_end": 14819,
+      "line_start": 326,
+      "line_end": 326,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00247",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14819,
+      "char_end": 14987,
+      "line_start": 327,
+      "line_end": 327,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00248",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14987,
+      "char_end": 15163,
+      "line_start": 328,
+      "line_end": 328,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00249",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 15163,
+      "char_end": 15331,
+      "line_start": 329,
+      "line_end": 329,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00250",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 15331,
+      "char_end": 15332,
+      "line_start": 330,
+      "line_end": 330,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "blank",
+      "block_id": "B00251",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15332,
+      "char_end": 15719,
+      "line_start": 331,
+      "line_end": 335,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "content",
+      "block_id": "B00252",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 15719,
+      "char_end": 15720,
+      "line_start": 336,
+      "line_end": 336,
+      "chapter_path": "6    APPENDICES / 6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "nearest_heading": "6.1 OB-CSL-051 Computer Software List, Rev.3",
+      "kind": "blank",
+      "block_id": "B00253",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15720,
+      "char_end": 15802,
+      "line_start": 337,
+      "line_end": 337,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "heading",
+      "block_id": "B00254",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 15802,
+      "char_end": 15803,
+      "line_start": 338,
+      "line_end": 338,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "blank",
+      "block_id": "B00255",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15803,
+      "char_end": 15862,
+      "line_start": 339,
+      "line_end": 339,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "content",
+      "block_id": "B00256",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 15862,
+      "char_end": 15921,
+      "line_start": 340,
+      "line_end": 340,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00257",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 15921,
+      "char_end": 15922,
+      "line_start": 341,
+      "line_end": 341,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "blank",
+      "block_id": "B00258",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15922,
+      "char_end": 16052,
+      "line_start": 342,
+      "line_end": 342,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "content",
+      "block_id": "B00259",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 16052,
+      "char_end": 16221,
+      "line_start": 343,
+      "line_end": 343,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00260",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 16221,
+      "char_end": 16395,
+      "line_start": 344,
+      "line_end": 344,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "content",
+      "block_id": "B00261",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 16395,
+      "char_end": 16564,
+      "line_start": 345,
+      "line_end": 345,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "empty_table_row",
+      "block_id": "B00262",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 16564,
+      "char_end": 16733,
+      "line_start": 346,
+      "line_end": 346,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "empty_table_row",
+      "block_id": "B00263",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 16733,
+      "char_end": 16902,
+      "line_start": 347,
+      "line_end": 347,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "empty_table_row",
+      "block_id": "B00264",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 16902,
+      "char_end": 17071,
+      "line_start": 348,
+      "line_end": 348,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "empty_table_row",
+      "block_id": "B00265",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 17071,
+      "char_end": 17240,
+      "line_start": 349,
+      "line_end": 349,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "empty_table_row",
+      "block_id": "B00266",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 17240,
+      "char_end": 17409,
+      "line_start": 350,
+      "line_end": 350,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "empty_table_row",
+      "block_id": "B00267",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 17409,
+      "char_end": 17410,
+      "line_start": 351,
+      "line_end": 351,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "blank",
+      "block_id": "B00268",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 17410,
+      "char_end": 17432,
+      "line_start": 352,
+      "line_end": 352,
+      "chapter_path": "6    APPENDICES / 6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "nearest_heading": "6.2   OB-CSA-052 List of Computer Software in Archive and Backup Copies, Rev.3",
+      "kind": "content",
+      "block_id": "B00269",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

@@ -1,0 +1,6083 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0017",
+  "filename": "RU-73-02,R2 SOFTWARE VERIFICATION AND VALIDATION C.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "f6b570f1d622dc8ab6d3ca2c0d39a88c37135a3528699c48c86b0add9e2dd649",
+  "registered_source_sha256": "f6b570f1d622dc8ab6d3ca2c0d39a88c37135a3528699c48c86b0add9e2dd649",
+  "source_changed": false,
+  "source_bytes": 13575,
+  "source_characters": 13563,
+  "source_lines": 350,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 62,
+      "char_end": 110,
+      "quote_original": "| Title:                | Radna uputa RU-73-02 |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00007",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 7,
+      "line_end": 7,
+      "char_start": 160,
+      "char_end": 208,
+      "quote_original": "| Revision No.:         | 2                    |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revision"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00008",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 8,
+      "line_end": 8,
+      "char_start": 209,
+      "char_end": 257,
+      "quote_original": "| Date Released:        | 17.11.2017.          |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "release"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 258,
+      "char_end": 306,
+      "quote_original": "| Controlled Copy No.:  |                      |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00011",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 11,
+      "line_end": 11,
+      "char_start": 308,
+      "char_end": 386,
+      "quote_original": "| Role      | Name and Title                                    | Date       |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00013",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 13,
+      "line_end": 13,
+      "char_start": 466,
+      "char_end": 548,
+      "quote_original": "| Prepared: | mr.sc. Ilijana Iveković, dipl.ing., Project Engineer | 13.11.2017. |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00014",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 14,
+      "line_end": 14,
+      "char_start": 549,
+      "char_end": 628,
+      "quote_original": "| Reviewed: | Vladimir Križe, dipl.ing., QA Leader              | 14.11.2017. |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 629,
+      "char_end": 708,
+      "quote_original": "| Approved: | dr.sc. Nenad Debrecin, Director                   | 15.11.2017. |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "verification",
+            "validation",
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00025",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "line_start": 25,
+      "line_end": 25,
+      "char_start": 966,
+      "char_end": 1003,
+      "quote_original": "| Radna uputa | Naziv dok: RU-73-02 |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00027",
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "line_start": 27,
+      "line_end": 27,
+      "char_start": 1042,
+      "char_end": 1114,
+      "quote_original": "| SOFTWARE VERIFICATION<br>AND VALIDATION CONTROL | Rev.2 Page 2 of 13 |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00031",
+      "chapter_path": "Summary",
+      "line_start": 31,
+      "line_end": 31,
+      "char_start": 1127,
+      "char_end": 1214,
+      "quote_original": "This document describes methods for control of verification and validation of software.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00033",
+      "chapter_path": "Summary",
+      "line_start": 33,
+      "line_end": 37,
+      "char_start": 1216,
+      "char_end": 1511,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                                            Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                                                   Rev.2 Page 3 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00065",
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "line_start": 69,
+      "line_end": 69,
+      "char_start": 3502,
+      "char_end": 3620,
+      "quote_original": "    Rev.2.......................................................................................................... 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00067",
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "line_start": 71,
+      "line_end": 75,
+      "char_start": 3622,
+      "char_end": 3806,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                     Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                           Rev.2 Page 4 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00078",
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "line_start": 87,
+      "line_end": 87,
+      "char_start": 3884,
+      "char_end": 3921,
+      "quote_original": "| Radna uputa | Naziv dok: RU-73-02 |",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00080",
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "line_start": 89,
+      "line_end": 89,
+      "char_start": 3961,
+      "char_end": 3988,
+      "quote_original": "| SOFTWARE VERIFICATION | |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00081",
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "line_start": 90,
+      "line_end": 90,
+      "char_start": 3989,
+      "char_end": 4036,
+      "quote_original": "| AND VALIDATION CONTROL | Rev.2 Page 5 of 13 |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "validation"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00087",
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "line_start": 96,
+      "line_end": 96,
+      "char_start": 4072,
+      "char_end": 4432,
+      "quote_original": "The purpose of this procedure is to describe methods for control of verification and validation of software. This procedure applies to all developed software used for performing activities described in ENCONET d.o.o. Quality Assurance Program. This procedure affects personnel involved in the control and implementation of software verification and validation.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "method"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00091",
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "line_start": 100,
+      "line_end": 100,
+      "char_start": 4448,
+      "char_end": 4828,
+      "quote_original": "This procedure gives instructions for verification and validation of software developed by ENCONET d.o.o. V&V activities shall be planed and performed for each software developed. Individuals and organizations developing software for ENCONET d.o.o. under contract shall be required to have procedures that meet the requirements of this document and project specified requirements.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "contract"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure",
+            "instruction"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00093",
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "line_start": 102,
+      "line_end": 106,
+      "char_start": 4830,
+      "char_end": 5068,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                      Rev.2 Page 6 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00102",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "line_start": 115,
+      "line_end": 115,
+      "char_start": 5226,
+      "char_end": 5262,
+      "quote_original": "| QA           | Quality Assurance |",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00103",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "line_start": 116,
+      "line_end": 116,
+      "char_start": 5263,
+      "char_end": 5309,
+      "quote_original": "| V&V          | Verification and Validation |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00107",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 120,
+      "line_end": 120,
+      "char_start": 5332,
+      "char_end": 5534,
+      "quote_original": "1. Software Validation – The process of testing and evaluation of the integrated computer system (hardware and software) to ensure compliance with the functional, performance and interface requirements.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test",
+            "software valid"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00109",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 122,
+      "line_end": 122,
+      "char_start": 5536,
+      "char_end": 5723,
+      "quote_original": "2. Software Verification – the process of determining whether or not the product of a given phase of the software development cycle fulfils the requirements imposed by the previous phase.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00111",
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "line_start": 124,
+      "line_end": 128,
+      "char_start": 5725,
+      "char_end": 5971,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                    Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                          Rev.2 Page 7 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00117",
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "line_start": 134,
+      "line_end": 134,
+      "char_start": 6014,
+      "char_end": 6090,
+      "quote_original": "1. To establish appropriate measures and resources for software verification",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "resource"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00118",
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "line_start": 135,
+      "line_end": 135,
+      "char_start": 6091,
+      "char_end": 6109,
+      "quote_original": "   and validation.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "validation"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00122",
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "line_start": 139,
+      "line_end": 139,
+      "char_start": 6143,
+      "char_end": 6217,
+      "quote_original": "1. Planning and organization of verification and validation activities for",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00123",
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "line_start": 140,
+      "line_end": 140,
+      "char_start": 6218,
+      "char_end": 6238,
+      "quote_original": "   software package.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "packag"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00124",
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "line_start": 141,
+      "line_end": 141,
+      "char_start": 6239,
+      "char_end": 6297,
+      "quote_original": "2. Implementation of software verification and validation.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00128",
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 Software Engineer",
+      "line_start": 145,
+      "line_end": 145,
+      "char_start": 6326,
+      "char_end": 6371,
+      "quote_original": "1. Conduction of verification and validation.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00132",
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "line_start": 149,
+      "line_end": 149,
+      "char_start": 6394,
+      "char_end": 6477,
+      "quote_original": "1. The responsibility of QA engineer is that all activities related to verification",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "responsib"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verification"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00133",
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "line_start": 150,
+      "line_end": 151,
+      "char_start": 6478,
+      "char_end": 6604,
+      "quote_original": "   and validation should be planned and performed in accordance with\n   approved Quality Assurance Program and this Procedure.",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "validation"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00135",
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "line_start": 153,
+      "line_end": 157,
+      "char_start": 6606,
+      "char_end": 6846,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                 Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                       Rev.2 Page 8 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00144",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "line_start": 166,
+      "line_end": 166,
+      "char_start": 7047,
+      "char_end": 7085,
+      "quote_original": "1. Software Requirements Specification",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "specification"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00145",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "line_start": 167,
+      "line_end": 167,
+      "char_start": 7086,
+      "char_end": 7118,
+      "quote_original": "2. Software Design Specification",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "specification"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00146",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "line_start": 168,
+      "line_end": 168,
+      "char_start": 7119,
+      "char_end": 7153,
+      "quote_original": "3. Software Verification Test Plan",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00147",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "line_start": 169,
+      "line_end": 169,
+      "char_start": 7154,
+      "char_end": 7186,
+      "quote_original": "4. Software Validation Test Plan",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test",
+            "software valid"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00155",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 177,
+      "line_end": 181,
+      "char_start": 7539,
+      "char_end": 7783,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                                   Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                         Rev.2 Page 9 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00157",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 183,
+      "line_end": 183,
+      "char_start": 7785,
+      "char_end": 7827,
+      "quote_original": "4.1.6 The V&V Documentation shall include:",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00159",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 185,
+      "line_end": 186,
+      "char_start": 7829,
+      "char_end": 7929,
+      "quote_original": "4.1.6.1 Tasks and criteria for accomplishing the verification of the\n        software in each phase.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00161",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 188,
+      "line_end": 189,
+      "char_start": 7931,
+      "char_end": 8051,
+      "quote_original": "4.1.6.2 Tasks and criteria for accomplishing the validation of the software\n        at the end of the development cycle.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00163",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 191,
+      "line_end": 192,
+      "char_start": 8053,
+      "char_end": 8181,
+      "quote_original": "4.1.6.3 Specification of the hardware and software configurations\n        pertinent to the software verification and validation.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software",
+            "configuration"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "specification"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00165",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 194,
+      "line_end": 195,
+      "char_start": 8183,
+      "char_end": 8279,
+      "quote_original": "4.1.6.4 Results of the execution of the software verification and validation\n        activities.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00167",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 197,
+      "line_end": 197,
+      "char_start": 8281,
+      "char_end": 8318,
+      "quote_original": "4.1.6.5 Results of reviews and tests.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00169",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 199,
+      "line_end": 199,
+      "char_start": 8320,
+      "char_end": 8366,
+      "quote_original": "4.1.6.6 Summary of the status of the software.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_XIV": {
+          "quote_terms": [
+            "status"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00171",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 201,
+      "line_end": 202,
+      "char_start": 8368,
+      "char_end": 8514,
+      "quote_original": "4.1.7 Verification Reviews shall be established to ensure that planning\n      process of software development and testing is adequately performed.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_XI": {
+          "quote_terms": [
+            "test"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00173",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 204,
+      "line_end": 204,
+      "char_start": 8516,
+      "char_end": 8585,
+      "quote_original": "4.1.7.1 Verification reviews are organized by lead software engineer.",
+      "matches": {
+        "APP_B_I": {
+          "quote_terms": [
+            "organiz"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00175",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 206,
+      "line_end": 206,
+      "char_start": 8587,
+      "char_end": 8633,
+      "quote_original": "4.1.7.2 Verification reviews shall consist of:",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00177",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 208,
+      "line_end": 208,
+      "char_start": 8635,
+      "char_end": 8677,
+      "quote_original": "        1. Review of Software Requirements",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00178",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 209,
+      "line_end": 209,
+      "char_start": 8678,
+      "char_end": 8714,
+      "quote_original": "        2. Review of Software Design",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00179",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 210,
+      "line_end": 210,
+      "char_start": 8715,
+      "char_end": 8758,
+      "quote_original": "        3. Development Documentation Review",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00181",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 212,
+      "line_end": 214,
+      "char_start": 8760,
+      "char_end": 8972,
+      "quote_original": "4.1.8 Nonconformance identified during the V&V verification reviews shall be\n      documented by the Software Non-Conformance Report (Annex 6.1) and\n      the Software Non-Conformance Report Log Form (Annex 6.2).",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "nonconform",
+            "non-conform"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00183",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 216,
+      "line_end": 216,
+      "char_start": 8974,
+      "char_end": 9003,
+      "quote_original": "4.2 V&V of Purchased Software",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "purchase"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "purchased"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00185",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 218,
+      "line_end": 219,
+      "char_start": 9005,
+      "char_end": 9106,
+      "quote_original": "4.2.1 All purchased engineering software should have Verification and\n      Validation documentation.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "purchase"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": [
+            "document"
+          ]
+        },
+        "APP_B_VII": {
+          "quote_terms": [
+            "purchased"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00187",
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "line_start": 221,
+      "line_end": 225,
+      "char_start": 9108,
+      "char_end": 9346,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                               Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                      Rev.2 Page 10 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [],
+          "heading_terms": [
+            "document"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00195",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 234,
+      "line_end": 236,
+      "char_start": 9501,
+      "char_end": 9689,
+      "quote_original": "[3.]      IAEA, Quality Assurance for Safety in Nuclear Power Plants and other\n          Nuclear Installations, Code and Safety Guides Q1–Q14, Safety Series\n          No. 50-C/SG-Q (1996).",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00197",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 238,
+      "line_end": 238,
+      "char_start": 9691,
+      "char_end": 9739,
+      "quote_original": "[4.]      10CFR50, Appendix B, Quality Assurance",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00199",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 240,
+      "line_end": 241,
+      "char_start": 9741,
+      "char_end": 9849,
+      "quote_original": "[5.]      ANSI/ASME NQA-1-1994, \"Quality Assurance Requirements for\n          Nuclear Facility Applications\"",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00201",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 243,
+      "line_end": 245,
+      "char_start": 9851,
+      "char_end": 10036,
+      "quote_original": "[6.]      Handbook of Software Quality Assurance Techniques Applicable to\n          Nuclear Industry, Battelle Pacific Northwest Labs, Richland, WA,\n          NUREG-CR-4640, August 1987",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00203",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 247,
+      "line_end": 249,
+      "char_start": 10038,
+      "char_end": 10209,
+      "quote_original": "[7.]      Manual on Quality Assurance for Computer Software Related to the\n          Safety of Nuclear Power Plants, Technical Reports Series No. 282,\n          IAEA, 1988",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00205",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 251,
+      "line_end": 252,
+      "char_start": 10211,
+      "char_end": 10321,
+      "quote_original": "[8.]      NE Krško Quality Specification QS600, Quality Assurance Program\n          Specification for Software",
+      "matches": {
+        "APP_B_II": {
+          "quote_terms": [
+            "quality (assurance|program|plan|policy)"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_IV": {
+          "quote_terms": [
+            "specification"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00207",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 254,
+      "line_end": 254,
+      "char_start": 10323,
+      "char_end": 10383,
+      "quote_original": "[9.]      IEEE Software Engineering Standards, Third Edition",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00216",
+      "chapter_path": "5   REFERENCES",
+      "line_start": 264,
+      "line_end": 268,
+      "char_start": 10581,
+      "char_end": 10802,
+      "quote_original": "ENCONET d.o.o., Zagreb\n---\nRadna uputa                                                       Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                             Rev.2 Page 11 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00220",
+      "chapter_path": "6   APPENDICES",
+      "line_start": 272,
+      "line_end": 272,
+      "char_start": 10823,
+      "char_end": 10879,
+      "quote_original": "6.1. OB-SNCR-049 Software Non-Conformance Report , Rev.2",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "non-conform"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00222",
+      "chapter_path": "6   APPENDICES",
+      "line_start": 274,
+      "line_end": 274,
+      "char_start": 10881,
+      "char_end": 10945,
+      "quote_original": "6.2. OB-SNCL-050 Software Non-Conformance Report Log Form, Rev.2",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "non-conform"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00226",
+      "chapter_path": "6   APPENDICES",
+      "line_start": 279,
+      "line_end": 281,
+      "char_start": 10975,
+      "char_end": 11205,
+      "quote_original": "Radna uputa                                                                          Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                              Rev.2 Page 12 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00232",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 287,
+      "line_end": 287,
+      "char_start": 11302,
+      "char_end": 11319,
+      "quote_original": "| Field | Value |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00234",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 289,
+      "line_end": 289,
+      "char_start": 11338,
+      "char_end": 11388,
+      "quote_original": "| Non-Conformance Report No.: | ________________ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "non-conform"
+          ],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00235",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 290,
+      "line_end": 290,
+      "char_start": 11389,
+      "char_end": 11455,
+      "quote_original": "| Audit No.: | ________________ (if applicable) | Date: __/__/__ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "audit"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00237",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 292,
+      "line_end": 292,
+      "char_start": 11457,
+      "char_end": 11492,
+      "quote_original": "**DESCRIPTION OF NON-CONFORMANCE:**",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "non-conform"
+          ],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00239",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 294,
+      "line_end": 295,
+      "char_start": 11494,
+      "char_end": 11599,
+      "quote_original": "Raised due to: V&V: ___            Internal Audit: ___        Customer Complaint: ___\nNormal Working: ___",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "audit"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00241",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 297,
+      "line_end": 297,
+      "char_start": 11601,
+      "char_end": 11618,
+      "quote_original": "| Field | Value |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00243",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 299,
+      "line_end": 299,
+      "char_start": 11637,
+      "char_end": 11677,
+      "quote_original": "| Software: | ________________________ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00244",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 300,
+      "line_end": 300,
+      "char_start": 11678,
+      "char_end": 11717,
+      "quote_original": "| Version Number: | _________________ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00245",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 301,
+      "line_end": 301,
+      "char_start": 11718,
+      "char_end": 11762,
+      "quote_original": "| Procedure Reference: | _________________ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "procedure"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00246",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 302,
+      "line_end": 302,
+      "char_start": 11763,
+      "char_end": 11831,
+      "quote_original": "| Reported by: | __________________________________ Date: __/__/__ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00248",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 304,
+      "line_end": 304,
+      "char_start": 11833,
+      "char_end": 11877,
+      "quote_original": "**CORRECTIVE / PREVENTIVE ACTION PROPOSED:**",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "preventiv",
+            "corrective"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00250",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 306,
+      "line_end": 306,
+      "char_start": 11879,
+      "char_end": 11925,
+      "quote_original": "**Approval of Corrective / Preventive Action**",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "approval"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "preventiv",
+            "corrective"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00252",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 308,
+      "line_end": 308,
+      "char_start": 11927,
+      "char_end": 11944,
+      "quote_original": "| Field | Value |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00254",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 310,
+      "line_end": 310,
+      "char_start": 11963,
+      "char_end": 12040,
+      "quote_original": "| Lead Software Engineer: | _____________________ Signature _______________ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00255",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 311,
+      "line_end": 311,
+      "char_start": 12041,
+      "char_end": 12086,
+      "quote_original": "| Estimated Completion Date: | ___/___/____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00257",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 313,
+      "line_end": 313,
+      "char_start": 12088,
+      "char_end": 12120,
+      "quote_original": "**CORRECTIVE ACTION FINALISED:**",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "corrective"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00259",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 315,
+      "line_end": 315,
+      "char_start": 12122,
+      "char_end": 12139,
+      "quote_original": "| Field | Value |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00261",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 317,
+      "line_end": 317,
+      "char_start": 12158,
+      "char_end": 12247,
+      "quote_original": "| Software Engineer: | ____________________ Signature ______________ Date: ___/___/____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00262",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 318,
+      "line_end": 318,
+      "char_start": 12248,
+      "char_end": 12344,
+      "quote_original": "| Lead Software Engineer: | _______________________ Signature _____________ Date: ___/___/____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00263",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 319,
+      "line_end": 319,
+      "char_start": 12345,
+      "char_end": 12433,
+      "quote_original": "| QA Engineer: | __________________________ Signature ______________Date: ___/___/____ |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00265",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 321,
+      "line_end": 321,
+      "char_start": 12435,
+      "char_end": 12457,
+      "quote_original": "ENCONET d.o.o., Zagreb",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00268",
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "line_start": 324,
+      "line_end": 326,
+      "char_start": 12463,
+      "char_end": 12755,
+      "quote_original": "Radna uputa                                                                                                         Naziv dok: RU-73-02\nSOFTWARE VERIFICATION\nAND VALIDATION CONTROL                                                                                             Rev.2 Page 13 of 13",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "verification",
+            "validation",
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00272",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 330,
+      "line_end": 330,
+      "char_start": 12826,
+      "char_end": 12874,
+      "quote_original": "| Software Non-Conformance Report Log Form | | |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "software"
+          ],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "non-conform"
+          ],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00274",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 332,
+      "line_end": 332,
+      "char_start": 12926,
+      "char_end": 12940,
+      "quote_original": "| | Issue: | |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00275",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 333,
+      "line_end": 333,
+      "char_start": 12941,
+      "char_end": 12954,
+      "quote_original": "| | Date: | |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00277",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 335,
+      "line_end": 335,
+      "char_start": 12956,
+      "char_end": 13100,
+      "quote_original": "| Non-Conformance Report No. | Date | Reported by | Estimated Completion Date | Corrective Action Finalized by | Completion Date | QA Engineer |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [
+            "non-conform"
+          ],
+          "heading_terms": [
+            "non-conform"
+          ]
+        },
+        "APP_B_XVI": {
+          "quote_terms": [
+            "corrective"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00279",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 337,
+      "line_end": 337,
+      "char_start": 13246,
+      "char_end": 13267,
+      "quote_original": "| | | | | | | Name: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00280",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 338,
+      "line_end": 338,
+      "char_start": 13268,
+      "char_end": 13294,
+      "quote_original": "| | | | | | | Signature: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00281",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 339,
+      "line_end": 339,
+      "char_start": 13295,
+      "char_end": 13316,
+      "quote_original": "| | | | | | | Name: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00282",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 340,
+      "line_end": 340,
+      "char_start": 13317,
+      "char_end": 13343,
+      "quote_original": "| | | | | | | Signature: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00283",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 341,
+      "line_end": 341,
+      "char_start": 13344,
+      "char_end": 13365,
+      "quote_original": "| | | | | | | Name: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00284",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 342,
+      "line_end": 342,
+      "char_start": 13366,
+      "char_end": 13392,
+      "quote_original": "| | | | | | | Signature: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00285",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 343,
+      "line_end": 343,
+      "char_start": 13393,
+      "char_end": 13414,
+      "quote_original": "| | | | | | | Name: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00286",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 344,
+      "line_end": 344,
+      "char_start": 13415,
+      "char_end": 13441,
+      "quote_original": "| | | | | | | Signature: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00287",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 345,
+      "line_end": 345,
+      "char_start": 13442,
+      "char_end": 13463,
+      "quote_original": "| | | | | | | Name: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00288",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 346,
+      "line_end": 346,
+      "char_start": 13464,
+      "char_end": 13490,
+      "quote_original": "| | | | | | | Signature: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00289",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 347,
+      "line_end": 347,
+      "char_start": 13491,
+      "char_end": 13512,
+      "quote_original": "| | | | | | | Name: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00290",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 348,
+      "line_end": 348,
+      "char_start": 13513,
+      "char_end": 13539,
+      "quote_original": "| | | | | | | Signature: |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00292",
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "line_start": 350,
+      "line_end": 350,
+      "char_start": 13541,
+      "char_end": 13563,
+      "quote_original": "ENCONET d.o.o., Zagreb",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "software"
+          ]
+        },
+        "APP_B_XV": {
+          "quote_terms": [],
+          "heading_terms": [
+            "non-conform"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 13,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "content",
+      "block_id": "B00001",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13,
+      "char_end": 14,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14,
+      "char_end": 61,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 61,
+      "char_end": 62,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 62,
+      "char_end": 111,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 111,
+      "char_end": 160,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00006",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 160,
+      "char_end": 209,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00007",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 209,
+      "char_end": 258,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00008",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 258,
+      "char_end": 307,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 307,
+      "char_end": 308,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "blank",
+      "block_id": "B00010",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 308,
+      "char_end": 387,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00011",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 387,
+      "char_end": 466,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00012",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 466,
+      "char_end": 549,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00013",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 549,
+      "char_end": 629,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00014",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 629,
+      "char_end": 709,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 709,
+      "char_end": 710,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "nearest_heading": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+      "kind": "blank",
+      "block_id": "B00016",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 710,
+      "char_end": 732,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "heading",
+      "block_id": "B00017",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 732,
+      "char_end": 733,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "blank",
+      "block_id": "B00018",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 733,
+      "char_end": 778,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00019",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 778,
+      "char_end": 824,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00020",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 824,
+      "char_end": 870,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00021",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 870,
+      "char_end": 916,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00022",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 916,
+      "char_end": 962,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00023",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 962,
+      "char_end": 966,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00024",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 966,
+      "char_end": 1004,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00025",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1004,
+      "char_end": 1042,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00026",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 1042,
+      "char_end": 1115,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00027",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1115,
+      "char_end": 1116,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "blank",
+      "block_id": "B00028",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1116,
+      "char_end": 1126,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "heading",
+      "block_id": "B00029",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1126,
+      "char_end": 1127,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "blank",
+      "block_id": "B00030",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1127,
+      "char_end": 1215,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "content",
+      "block_id": "B00031",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1215,
+      "char_end": 1216,
+      "line_start": 32,
+      "line_end": 32,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "blank",
+      "block_id": "B00032",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1216,
+      "char_end": 1512,
+      "line_start": 33,
+      "line_end": 37,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "content",
+      "block_id": "B00033",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1512,
+      "char_end": 1513,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "Summary",
+      "nearest_heading": "Summary",
+      "kind": "blank",
+      "block_id": "B00034",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1513,
+      "char_end": 1533,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "heading",
+      "block_id": "B00035",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1533,
+      "char_end": 1534,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00036",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1534,
+      "char_end": 1647,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "1 INTRODUCTION ............................................................................................ 5",
+      "nearest_heading": "1 INTRODUCTION ............................................................................................ 5",
+      "kind": "heading",
+      "block_id": "B00037",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1647,
+      "char_end": 1648,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "1 INTRODUCTION ............................................................................................ 5",
+      "nearest_heading": "1 INTRODUCTION ............................................................................................ 5",
+      "kind": "blank",
+      "block_id": "B00038",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1648,
+      "char_end": 1771,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "1 INTRODUCTION ............................................................................................ 5 / 1.1 Purpose ........................................................................................................ 5",
+      "nearest_heading": "1.1 Purpose ........................................................................................................ 5",
+      "kind": "heading",
+      "block_id": "B00039",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1771,
+      "char_end": 1896,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "1 INTRODUCTION ............................................................................................ 5 / 1.2 Scope............................................................................................................. 5",
+      "nearest_heading": "1.2 Scope............................................................................................................. 5",
+      "kind": "heading",
+      "block_id": "B00040",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1896,
+      "char_end": 1897,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "1 INTRODUCTION ............................................................................................ 5 / 1.2 Scope............................................................................................................. 5",
+      "nearest_heading": "1.2 Scope............................................................................................................. 5",
+      "kind": "blank",
+      "block_id": "B00041",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1897,
+      "char_end": 1992,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS.......................................................... 6",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS.......................................................... 6",
+      "kind": "heading",
+      "block_id": "B00042",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1992,
+      "char_end": 1993,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS.......................................................... 6",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS.......................................................... 6",
+      "kind": "blank",
+      "block_id": "B00043",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1993,
+      "char_end": 2112,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS.......................................................... 6 / 2.1 Abbreviations .............................................................................................. 6",
+      "nearest_heading": "2.1 Abbreviations .............................................................................................. 6",
+      "kind": "heading",
+      "block_id": "B00044",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2112,
+      "char_end": 2234,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS.......................................................... 6 / 2.2 Definitions.................................................................................................... 6",
+      "nearest_heading": "2.2 Definitions.................................................................................................... 6",
+      "kind": "heading",
+      "block_id": "B00045",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2234,
+      "char_end": 2235,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS.......................................................... 6 / 2.2 Definitions.................................................................................................... 6",
+      "nearest_heading": "2.2 Definitions.................................................................................................... 6",
+      "kind": "blank",
+      "block_id": "B00046",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2235,
+      "char_end": 2346,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "3 RESPONSIBILITIES ...................................................................................... 7",
+      "nearest_heading": "3 RESPONSIBILITIES ...................................................................................... 7",
+      "kind": "heading",
+      "block_id": "B00047",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2346,
+      "char_end": 2347,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "3 RESPONSIBILITIES ...................................................................................... 7",
+      "nearest_heading": "3 RESPONSIBILITIES ...................................................................................... 7",
+      "kind": "blank",
+      "block_id": "B00048",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2347,
+      "char_end": 2471,
+      "line_start": 53,
+      "line_end": 53,
+      "chapter_path": "3 RESPONSIBILITIES ...................................................................................... 7 / 3.1 Director......................................................................................................... 7",
+      "nearest_heading": "3.1 Director......................................................................................................... 7",
+      "kind": "heading",
+      "block_id": "B00049",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2471,
+      "char_end": 2582,
+      "line_start": 54,
+      "line_end": 54,
+      "chapter_path": "3 RESPONSIBILITIES ...................................................................................... 7 / 3.2 Lead Software Engineer.............................................................................. 7",
+      "nearest_heading": "3.2 Lead Software Engineer.............................................................................. 7",
+      "kind": "heading",
+      "block_id": "B00050",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2582,
+      "char_end": 2697,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "3 RESPONSIBILITIES ...................................................................................... 7 / 3.3 Software Engineer....................................................................................... 7",
+      "nearest_heading": "3.3 Software Engineer....................................................................................... 7",
+      "kind": "heading",
+      "block_id": "B00051",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2697,
+      "char_end": 2816,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "3 RESPONSIBILITIES ...................................................................................... 7 / 3.4 QA Engineer................................................................................................. 7",
+      "nearest_heading": "3.4 QA Engineer................................................................................................. 7",
+      "kind": "heading",
+      "block_id": "B00052",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2816,
+      "char_end": 2817,
+      "line_start": 57,
+      "line_end": 57,
+      "chapter_path": "3 RESPONSIBILITIES ...................................................................................... 7 / 3.4 QA Engineer................................................................................................. 7",
+      "nearest_heading": "3.4 QA Engineer................................................................................................. 7",
+      "kind": "blank",
+      "block_id": "B00053",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2817,
+      "char_end": 2930,
+      "line_start": 58,
+      "line_end": 58,
+      "chapter_path": "4 INSTRUCTIONS............................................................................................. 8",
+      "nearest_heading": "4 INSTRUCTIONS............................................................................................. 8",
+      "kind": "heading",
+      "block_id": "B00054",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 2930,
+      "char_end": 2931,
+      "line_start": 59,
+      "line_end": 59,
+      "chapter_path": "4 INSTRUCTIONS............................................................................................. 8",
+      "nearest_heading": "4 INSTRUCTIONS............................................................................................. 8",
+      "kind": "blank",
+      "block_id": "B00055",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2931,
+      "char_end": 3022,
+      "line_start": 60,
+      "line_end": 60,
+      "chapter_path": "4 INSTRUCTIONS............................................................................................. 8 / 4.1 V&V of Software Developed by ENCONET d.o.o. .................................... 8",
+      "nearest_heading": "4.1 V&V of Software Developed by ENCONET d.o.o. .................................... 8",
+      "kind": "heading",
+      "block_id": "B00056",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3022,
+      "char_end": 3129,
+      "line_start": 61,
+      "line_end": 61,
+      "chapter_path": "4 INSTRUCTIONS............................................................................................. 8 / 4.2 V&V of Purchased Software ...................................................................... 9",
+      "nearest_heading": "4.2 V&V of Purchased Software ...................................................................... 9",
+      "kind": "heading",
+      "block_id": "B00057",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3129,
+      "char_end": 3130,
+      "line_start": 62,
+      "line_end": 62,
+      "chapter_path": "4 INSTRUCTIONS............................................................................................. 8 / 4.2 V&V of Purchased Software ...................................................................... 9",
+      "nearest_heading": "4.2 V&V of Purchased Software ...................................................................... 9",
+      "kind": "blank",
+      "block_id": "B00058",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3130,
+      "char_end": 3243,
+      "line_start": 63,
+      "line_end": 63,
+      "chapter_path": "5 REFERENCES ............................................................................................. 10",
+      "nearest_heading": "5 REFERENCES ............................................................................................. 10",
+      "kind": "heading",
+      "block_id": "B00059",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3243,
+      "char_end": 3244,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "5 REFERENCES ............................................................................................. 10",
+      "nearest_heading": "5 REFERENCES ............................................................................................. 10",
+      "kind": "blank",
+      "block_id": "B00060",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3244,
+      "char_end": 3358,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11",
+      "nearest_heading": "6 APPENDICES .............................................................................................. 11",
+      "kind": "heading",
+      "block_id": "B00061",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3358,
+      "char_end": 3359,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11",
+      "nearest_heading": "6 APPENDICES .............................................................................................. 11",
+      "kind": "blank",
+      "block_id": "B00062",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3359,
+      "char_end": 3441,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 .................... 12",
+      "nearest_heading": "6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 .................... 12",
+      "kind": "heading",
+      "block_id": "B00063",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3441,
+      "char_end": 3502,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "nearest_heading": "6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "kind": "heading",
+      "block_id": "B00064",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3502,
+      "char_end": 3621,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "nearest_heading": "6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "kind": "content",
+      "block_id": "B00065",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3621,
+      "char_end": 3622,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "nearest_heading": "6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "kind": "blank",
+      "block_id": "B00066",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3622,
+      "char_end": 3807,
+      "line_start": 71,
+      "line_end": 75,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "nearest_heading": "6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "kind": "content",
+      "block_id": "B00067",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3807,
+      "char_end": 3808,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / 6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "nearest_heading": "6.2 OB-SNCL-050 Software Non-Conformance Report Log Form",
+      "kind": "blank",
+      "block_id": "B00068",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3808,
+      "char_end": 3826,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "heading",
+      "block_id": "B00069",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3826,
+      "char_end": 3827,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "blank",
+      "block_id": "B00070",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3827,
+      "char_end": 3831,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "content",
+      "block_id": "B00071",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3831,
+      "char_end": 3832,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF TABLES",
+      "nearest_heading": "LIST OF TABLES",
+      "kind": "blank",
+      "block_id": "B00072",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3832,
+      "char_end": 3851,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "heading",
+      "block_id": "B00073",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3851,
+      "char_end": 3852,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "blank",
+      "block_id": "B00074",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3852,
+      "char_end": 3856,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "content",
+      "block_id": "B00075",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3856,
+      "char_end": 3857,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "blank",
+      "block_id": "B00076",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3857,
+      "char_end": 3884,
+      "line_start": 85,
+      "line_end": 86,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "content",
+      "block_id": "B00077",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3884,
+      "char_end": 3922,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "content",
+      "block_id": "B00078",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3922,
+      "char_end": 3961,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00079",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 3961,
+      "char_end": 3989,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "content",
+      "block_id": "B00080",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3989,
+      "char_end": 4037,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "content",
+      "block_id": "B00081",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4037,
+      "char_end": 4038,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "6 APPENDICES .............................................................................................. 11 / LIST OF FIGURES",
+      "nearest_heading": "LIST OF FIGURES",
+      "kind": "blank",
+      "block_id": "B00082",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4038,
+      "char_end": 4055,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "1 INTRODUCTION",
+      "nearest_heading": "1 INTRODUCTION",
+      "kind": "heading",
+      "block_id": "B00083",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4055,
+      "char_end": 4056,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "1 INTRODUCTION",
+      "nearest_heading": "1 INTRODUCTION",
+      "kind": "blank",
+      "block_id": "B00084",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4056,
+      "char_end": 4071,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "heading",
+      "block_id": "B00085",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4071,
+      "char_end": 4072,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "blank",
+      "block_id": "B00086",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4072,
+      "char_end": 4433,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "content",
+      "block_id": "B00087",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4433,
+      "char_end": 4434,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "1 INTRODUCTION / 1.1 Purpose",
+      "nearest_heading": "1.1 Purpose",
+      "kind": "blank",
+      "block_id": "B00088",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4434,
+      "char_end": 4447,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "heading",
+      "block_id": "B00089",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4447,
+      "char_end": 4448,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "blank",
+      "block_id": "B00090",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4448,
+      "char_end": 4829,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "content",
+      "block_id": "B00091",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4829,
+      "char_end": 4830,
+      "line_start": 101,
+      "line_end": 101,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "blank",
+      "block_id": "B00092",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4830,
+      "char_end": 5069,
+      "line_start": 102,
+      "line_end": 106,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "content",
+      "block_id": "B00093",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5069,
+      "char_end": 5070,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "1 INTRODUCTION / 1.2 Scope",
+      "nearest_heading": "1.2 Scope",
+      "kind": "blank",
+      "block_id": "B00094",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5070,
+      "char_end": 5105,
+      "line_start": 108,
+      "line_end": 108,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS",
+      "kind": "heading",
+      "block_id": "B00095",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5105,
+      "char_end": 5106,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS",
+      "nearest_heading": "2 ABBREVIATIONS AND DEFINITIONS",
+      "kind": "blank",
+      "block_id": "B00096",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5106,
+      "char_end": 5128,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "heading",
+      "block_id": "B00097",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5128,
+      "char_end": 5129,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "blank",
+      "block_id": "B00098",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5129,
+      "char_end": 5159,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "content",
+      "block_id": "B00099",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 5159,
+      "char_end": 5189,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00100",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 5189,
+      "char_end": 5226,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "content",
+      "block_id": "B00101",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 5226,
+      "char_end": 5263,
+      "line_start": 115,
+      "line_end": 115,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "content",
+      "block_id": "B00102",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5263,
+      "char_end": 5310,
+      "line_start": 116,
+      "line_end": 116,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "content",
+      "block_id": "B00103",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5310,
+      "char_end": 5311,
+      "line_start": 117,
+      "line_end": 117,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.1 Abbreviations",
+      "nearest_heading": "2.1 Abbreviations",
+      "kind": "blank",
+      "block_id": "B00104",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5311,
+      "char_end": 5331,
+      "line_start": 118,
+      "line_end": 118,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "heading",
+      "block_id": "B00105",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5331,
+      "char_end": 5332,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00106",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5332,
+      "char_end": 5535,
+      "line_start": 120,
+      "line_end": 120,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00107",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5535,
+      "char_end": 5536,
+      "line_start": 121,
+      "line_end": 121,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00108",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5536,
+      "char_end": 5724,
+      "line_start": 122,
+      "line_end": 122,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00109",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5724,
+      "char_end": 5725,
+      "line_start": 123,
+      "line_end": 123,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00110",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5725,
+      "char_end": 5972,
+      "line_start": 124,
+      "line_end": 128,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "content",
+      "block_id": "B00111",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5972,
+      "char_end": 5973,
+      "line_start": 129,
+      "line_end": 129,
+      "chapter_path": "2 ABBREVIATIONS AND DEFINITIONS / 2.2 Definitions",
+      "nearest_heading": "2.2 Definitions",
+      "kind": "blank",
+      "block_id": "B00112",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5973,
+      "char_end": 5995,
+      "line_start": 130,
+      "line_end": 130,
+      "chapter_path": "3 RESPONSIBILITIES",
+      "nearest_heading": "3 RESPONSIBILITIES",
+      "kind": "heading",
+      "block_id": "B00113",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5995,
+      "char_end": 5996,
+      "line_start": 131,
+      "line_end": 131,
+      "chapter_path": "3 RESPONSIBILITIES",
+      "nearest_heading": "3 RESPONSIBILITIES",
+      "kind": "blank",
+      "block_id": "B00114",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5996,
+      "char_end": 6013,
+      "line_start": 132,
+      "line_end": 132,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "heading",
+      "block_id": "B00115",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6013,
+      "char_end": 6014,
+      "line_start": 133,
+      "line_end": 133,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "blank",
+      "block_id": "B00116",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6014,
+      "char_end": 6091,
+      "line_start": 134,
+      "line_end": 134,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "content",
+      "block_id": "B00117",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6091,
+      "char_end": 6110,
+      "line_start": 135,
+      "line_end": 135,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "content",
+      "block_id": "B00118",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6110,
+      "char_end": 6111,
+      "line_start": 136,
+      "line_end": 136,
+      "chapter_path": "3 RESPONSIBILITIES / 3.1 Director",
+      "nearest_heading": "3.1 Director",
+      "kind": "blank",
+      "block_id": "B00119",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6111,
+      "char_end": 6142,
+      "line_start": 137,
+      "line_end": 137,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "nearest_heading": "3.2 Lead Software Engineer",
+      "kind": "heading",
+      "block_id": "B00120",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6142,
+      "char_end": 6143,
+      "line_start": 138,
+      "line_end": 138,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "nearest_heading": "3.2 Lead Software Engineer",
+      "kind": "blank",
+      "block_id": "B00121",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6143,
+      "char_end": 6218,
+      "line_start": 139,
+      "line_end": 139,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "nearest_heading": "3.2 Lead Software Engineer",
+      "kind": "content",
+      "block_id": "B00122",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6218,
+      "char_end": 6239,
+      "line_start": 140,
+      "line_end": 140,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "nearest_heading": "3.2 Lead Software Engineer",
+      "kind": "content",
+      "block_id": "B00123",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6239,
+      "char_end": 6298,
+      "line_start": 141,
+      "line_end": 141,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "nearest_heading": "3.2 Lead Software Engineer",
+      "kind": "content",
+      "block_id": "B00124",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6298,
+      "char_end": 6299,
+      "line_start": 142,
+      "line_end": 142,
+      "chapter_path": "3 RESPONSIBILITIES / 3.2 Lead Software Engineer",
+      "nearest_heading": "3.2 Lead Software Engineer",
+      "kind": "blank",
+      "block_id": "B00125",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6299,
+      "char_end": 6325,
+      "line_start": 143,
+      "line_end": 143,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 Software Engineer",
+      "nearest_heading": "3.3 Software Engineer",
+      "kind": "heading",
+      "block_id": "B00126",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6325,
+      "char_end": 6326,
+      "line_start": 144,
+      "line_end": 144,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 Software Engineer",
+      "nearest_heading": "3.3 Software Engineer",
+      "kind": "blank",
+      "block_id": "B00127",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6326,
+      "char_end": 6372,
+      "line_start": 145,
+      "line_end": 145,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 Software Engineer",
+      "nearest_heading": "3.3 Software Engineer",
+      "kind": "content",
+      "block_id": "B00128",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6372,
+      "char_end": 6373,
+      "line_start": 146,
+      "line_end": 146,
+      "chapter_path": "3 RESPONSIBILITIES / 3.3 Software Engineer",
+      "nearest_heading": "3.3 Software Engineer",
+      "kind": "blank",
+      "block_id": "B00129",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6373,
+      "char_end": 6393,
+      "line_start": 147,
+      "line_end": 147,
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "nearest_heading": "3.4 QA Engineer",
+      "kind": "heading",
+      "block_id": "B00130",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6393,
+      "char_end": 6394,
+      "line_start": 148,
+      "line_end": 148,
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "nearest_heading": "3.4 QA Engineer",
+      "kind": "blank",
+      "block_id": "B00131",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6394,
+      "char_end": 6478,
+      "line_start": 149,
+      "line_end": 149,
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "nearest_heading": "3.4 QA Engineer",
+      "kind": "content",
+      "block_id": "B00132",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6478,
+      "char_end": 6605,
+      "line_start": 150,
+      "line_end": 151,
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "nearest_heading": "3.4 QA Engineer",
+      "kind": "content",
+      "block_id": "B00133",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6605,
+      "char_end": 6606,
+      "line_start": 152,
+      "line_end": 152,
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "nearest_heading": "3.4 QA Engineer",
+      "kind": "blank",
+      "block_id": "B00134",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6606,
+      "char_end": 6847,
+      "line_start": 153,
+      "line_end": 157,
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "nearest_heading": "3.4 QA Engineer",
+      "kind": "content",
+      "block_id": "B00135",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6847,
+      "char_end": 6848,
+      "line_start": 158,
+      "line_end": 158,
+      "chapter_path": "3 RESPONSIBILITIES / 3.4 QA Engineer",
+      "nearest_heading": "3.4 QA Engineer",
+      "kind": "blank",
+      "block_id": "B00136",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6848,
+      "char_end": 6865,
+      "line_start": 159,
+      "line_end": 159,
+      "chapter_path": "4 INSTRUCTIONS",
+      "nearest_heading": "4 INSTRUCTIONS",
+      "kind": "heading",
+      "block_id": "B00137",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6865,
+      "char_end": 6866,
+      "line_start": 160,
+      "line_end": 160,
+      "chapter_path": "4 INSTRUCTIONS",
+      "nearest_heading": "4 INSTRUCTIONS",
+      "kind": "blank",
+      "block_id": "B00138",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6866,
+      "char_end": 6917,
+      "line_start": 161,
+      "line_end": 161,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o.",
+      "nearest_heading": "4.1 V&V of Software Developed by ENCONET d.o.o.",
+      "kind": "heading",
+      "block_id": "B00139",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6917,
+      "char_end": 6918,
+      "line_start": 162,
+      "line_end": 162,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o.",
+      "nearest_heading": "4.1 V&V of Software Developed by ENCONET d.o.o.",
+      "kind": "blank",
+      "block_id": "B00140",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6918,
+      "char_end": 6999,
+      "line_start": 163,
+      "line_end": 163,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.1 Each software developed shall contain specifically developed V&V plan.",
+      "nearest_heading": "4.1.1 Each software developed shall contain specifically developed V&V plan.",
+      "kind": "heading",
+      "block_id": "B00141",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 6999,
+      "char_end": 7000,
+      "line_start": 164,
+      "line_end": 164,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.1 Each software developed shall contain specifically developed V&V plan.",
+      "nearest_heading": "4.1.1 Each software developed shall contain specifically developed V&V plan.",
+      "kind": "blank",
+      "block_id": "B00142",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7000,
+      "char_end": 7047,
+      "line_start": 165,
+      "line_end": 165,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "nearest_heading": "4.1.2 Preparation of the V&V Plan includes",
+      "kind": "heading",
+      "block_id": "B00143",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7047,
+      "char_end": 7086,
+      "line_start": 166,
+      "line_end": 166,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "nearest_heading": "4.1.2 Preparation of the V&V Plan includes",
+      "kind": "content",
+      "block_id": "B00144",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7086,
+      "char_end": 7119,
+      "line_start": 167,
+      "line_end": 167,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "nearest_heading": "4.1.2 Preparation of the V&V Plan includes",
+      "kind": "content",
+      "block_id": "B00145",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7119,
+      "char_end": 7154,
+      "line_start": 168,
+      "line_end": 168,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "nearest_heading": "4.1.2 Preparation of the V&V Plan includes",
+      "kind": "content",
+      "block_id": "B00146",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7154,
+      "char_end": 7187,
+      "line_start": 169,
+      "line_end": 169,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "nearest_heading": "4.1.2 Preparation of the V&V Plan includes",
+      "kind": "content",
+      "block_id": "B00147",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7187,
+      "char_end": 7188,
+      "line_start": 170,
+      "line_end": 170,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.2 Preparation of the V&V Plan includes",
+      "nearest_heading": "4.1.2 Preparation of the V&V Plan includes",
+      "kind": "blank",
+      "block_id": "B00148",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7188,
+      "char_end": 7332,
+      "line_start": 171,
+      "line_end": 171,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.3 Software Verification shall be performed during the software development for each determined phase of the software development cycle.",
+      "nearest_heading": "4.1.3 Software Verification shall be performed during the software development for each determined phase of the software development cycle.",
+      "kind": "heading",
+      "block_id": "B00149",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7332,
+      "char_end": 7333,
+      "line_start": 172,
+      "line_end": 172,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.3 Software Verification shall be performed during the software development for each determined phase of the software development cycle.",
+      "nearest_heading": "4.1.3 Software Verification shall be performed during the software development for each determined phase of the software development cycle.",
+      "kind": "blank",
+      "block_id": "B00150",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7333,
+      "char_end": 7467,
+      "line_start": 173,
+      "line_end": 173,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.4 Software validation is performed at the end of the implementation phase to ensure that the code satisfies the requirements.",
+      "nearest_heading": "4.1.4 Software validation is performed at the end of the implementation phase to ensure that the code satisfies the requirements.",
+      "kind": "heading",
+      "block_id": "B00151",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7467,
+      "char_end": 7468,
+      "line_start": 174,
+      "line_end": 174,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.4 Software validation is performed at the end of the implementation phase to ensure that the code satisfies the requirements.",
+      "nearest_heading": "4.1.4 Software validation is performed at the end of the implementation phase to ensure that the code satisfies the requirements.",
+      "kind": "blank",
+      "block_id": "B00152",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7468,
+      "char_end": 7538,
+      "line_start": 175,
+      "line_end": 175,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "heading",
+      "block_id": "B00153",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7538,
+      "char_end": 7539,
+      "line_start": 176,
+      "line_end": 176,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00154",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7539,
+      "char_end": 7784,
+      "line_start": 177,
+      "line_end": 181,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00155",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7784,
+      "char_end": 7785,
+      "line_start": 182,
+      "line_end": 182,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00156",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7785,
+      "char_end": 7828,
+      "line_start": 183,
+      "line_end": 183,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00157",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7828,
+      "char_end": 7829,
+      "line_start": 184,
+      "line_end": 184,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00158",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7829,
+      "char_end": 7930,
+      "line_start": 185,
+      "line_end": 186,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00159",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7930,
+      "char_end": 7931,
+      "line_start": 187,
+      "line_end": 187,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00160",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7931,
+      "char_end": 8052,
+      "line_start": 188,
+      "line_end": 189,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00161",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8052,
+      "char_end": 8053,
+      "line_start": 190,
+      "line_end": 190,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00162",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8053,
+      "char_end": 8182,
+      "line_start": 191,
+      "line_end": 192,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00163",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8182,
+      "char_end": 8183,
+      "line_start": 193,
+      "line_end": 193,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00164",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8183,
+      "char_end": 8280,
+      "line_start": 194,
+      "line_end": 195,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00165",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8280,
+      "char_end": 8281,
+      "line_start": 196,
+      "line_end": 196,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00166",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8281,
+      "char_end": 8319,
+      "line_start": 197,
+      "line_end": 197,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00167",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8319,
+      "char_end": 8320,
+      "line_start": 198,
+      "line_end": 198,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00168",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8320,
+      "char_end": 8367,
+      "line_start": 199,
+      "line_end": 199,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00169",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8367,
+      "char_end": 8368,
+      "line_start": 200,
+      "line_end": 200,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00170",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8368,
+      "char_end": 8515,
+      "line_start": 201,
+      "line_end": 202,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00171",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8515,
+      "char_end": 8516,
+      "line_start": 203,
+      "line_end": 203,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00172",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8516,
+      "char_end": 8586,
+      "line_start": 204,
+      "line_end": 204,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00173",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8586,
+      "char_end": 8587,
+      "line_start": 205,
+      "line_end": 205,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00174",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8587,
+      "char_end": 8634,
+      "line_start": 206,
+      "line_end": 206,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00175",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8634,
+      "char_end": 8635,
+      "line_start": 207,
+      "line_end": 207,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00176",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8635,
+      "char_end": 8678,
+      "line_start": 208,
+      "line_end": 208,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00177",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8678,
+      "char_end": 8715,
+      "line_start": 209,
+      "line_end": 209,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00178",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8715,
+      "char_end": 8759,
+      "line_start": 210,
+      "line_end": 210,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00179",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8759,
+      "char_end": 8760,
+      "line_start": 211,
+      "line_end": 211,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00180",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8760,
+      "char_end": 8973,
+      "line_start": 212,
+      "line_end": 214,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00181",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8973,
+      "char_end": 8974,
+      "line_start": 215,
+      "line_end": 215,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00182",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8974,
+      "char_end": 9004,
+      "line_start": 216,
+      "line_end": 216,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00183",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9004,
+      "char_end": 9005,
+      "line_start": 217,
+      "line_end": 217,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00184",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9005,
+      "char_end": 9107,
+      "line_start": 218,
+      "line_end": 219,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00185",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9107,
+      "char_end": 9108,
+      "line_start": 220,
+      "line_end": 220,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00186",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9108,
+      "char_end": 9347,
+      "line_start": 221,
+      "line_end": 225,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "content",
+      "block_id": "B00187",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9347,
+      "char_end": 9348,
+      "line_start": 226,
+      "line_end": 226,
+      "chapter_path": "4 INSTRUCTIONS / 4.1 V&V of Software Developed by ENCONET d.o.o. / 4.1.5 The results of software V&V activities shall be documented.",
+      "nearest_heading": "4.1.5 The results of software V&V activities shall be documented.",
+      "kind": "blank",
+      "block_id": "B00188",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9348,
+      "char_end": 9366,
+      "line_start": 227,
+      "line_end": 227,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "heading",
+      "block_id": "B00189",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 9366,
+      "char_end": 9367,
+      "line_start": 228,
+      "line_end": 228,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00190",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9367,
+      "char_end": 9415,
+      "line_start": 229,
+      "line_end": 229,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00191",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9415,
+      "char_end": 9416,
+      "line_start": 230,
+      "line_end": 230,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00192",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9416,
+      "char_end": 9500,
+      "line_start": 231,
+      "line_end": 232,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00193",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9500,
+      "char_end": 9501,
+      "line_start": 233,
+      "line_end": 233,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00194",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9501,
+      "char_end": 9690,
+      "line_start": 234,
+      "line_end": 236,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00195",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9690,
+      "char_end": 9691,
+      "line_start": 237,
+      "line_end": 237,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00196",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9691,
+      "char_end": 9740,
+      "line_start": 238,
+      "line_end": 238,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00197",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9740,
+      "char_end": 9741,
+      "line_start": 239,
+      "line_end": 239,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00198",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9741,
+      "char_end": 9850,
+      "line_start": 240,
+      "line_end": 241,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00199",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9850,
+      "char_end": 9851,
+      "line_start": 242,
+      "line_end": 242,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00200",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9851,
+      "char_end": 10037,
+      "line_start": 243,
+      "line_end": 245,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00201",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10037,
+      "char_end": 10038,
+      "line_start": 246,
+      "line_end": 246,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00202",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10038,
+      "char_end": 10210,
+      "line_start": 247,
+      "line_end": 249,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00203",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10210,
+      "char_end": 10211,
+      "line_start": 250,
+      "line_end": 250,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00204",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10211,
+      "char_end": 10322,
+      "line_start": 251,
+      "line_end": 252,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00205",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10322,
+      "char_end": 10323,
+      "line_start": 253,
+      "line_end": 253,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00206",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10323,
+      "char_end": 10384,
+      "line_start": 254,
+      "line_end": 254,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00207",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10384,
+      "char_end": 10385,
+      "line_start": 255,
+      "line_end": 255,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00208",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10385,
+      "char_end": 10418,
+      "line_start": 256,
+      "line_end": 256,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00209",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10418,
+      "char_end": 10419,
+      "line_start": 257,
+      "line_end": 257,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00210",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10419,
+      "char_end": 10450,
+      "line_start": 258,
+      "line_end": 258,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00211",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10450,
+      "char_end": 10451,
+      "line_start": 259,
+      "line_end": 259,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00212",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10451,
+      "char_end": 10579,
+      "line_start": 260,
+      "line_end": 261,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00213",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10579,
+      "char_end": 10580,
+      "line_start": 262,
+      "line_end": 262,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00214",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10580,
+      "char_end": 10581,
+      "line_start": 263,
+      "line_end": 263,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00215",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10581,
+      "char_end": 10803,
+      "line_start": 264,
+      "line_end": 268,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "content",
+      "block_id": "B00216",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10803,
+      "char_end": 10804,
+      "line_start": 269,
+      "line_end": 269,
+      "chapter_path": "5   REFERENCES",
+      "nearest_heading": "5   REFERENCES",
+      "kind": "blank",
+      "block_id": "B00217",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10804,
+      "char_end": 10822,
+      "line_start": 270,
+      "line_end": 270,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "heading",
+      "block_id": "B00218",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 10822,
+      "char_end": 10823,
+      "line_start": 271,
+      "line_end": 271,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "blank",
+      "block_id": "B00219",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10823,
+      "char_end": 10880,
+      "line_start": 272,
+      "line_end": 272,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "content",
+      "block_id": "B00220",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10880,
+      "char_end": 10881,
+      "line_start": 273,
+      "line_end": 273,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "blank",
+      "block_id": "B00221",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10881,
+      "char_end": 10946,
+      "line_start": 274,
+      "line_end": 274,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "content",
+      "block_id": "B00222",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10946,
+      "char_end": 10947,
+      "line_start": 275,
+      "line_end": 275,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "blank",
+      "block_id": "B00223",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10947,
+      "char_end": 10974,
+      "line_start": 276,
+      "line_end": 277,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "content",
+      "block_id": "B00224",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10974,
+      "char_end": 10975,
+      "line_start": 278,
+      "line_end": 278,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "blank",
+      "block_id": "B00225",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10975,
+      "char_end": 11206,
+      "line_start": 279,
+      "line_end": 281,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "content",
+      "block_id": "B00226",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11206,
+      "char_end": 11207,
+      "line_start": 282,
+      "line_end": 282,
+      "chapter_path": "6   APPENDICES",
+      "nearest_heading": "6   APPENDICES",
+      "kind": "blank",
+      "block_id": "B00227",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11207,
+      "char_end": 11264,
+      "line_start": 283,
+      "line_end": 283,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2",
+      "nearest_heading": "6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2",
+      "kind": "heading",
+      "block_id": "B00228",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11264,
+      "char_end": 11265,
+      "line_start": 284,
+      "line_end": 284,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2",
+      "nearest_heading": "6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2",
+      "kind": "blank",
+      "block_id": "B00229",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11265,
+      "char_end": 11301,
+      "line_start": 285,
+      "line_end": 285,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "heading",
+      "block_id": "B00230",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11301,
+      "char_end": 11302,
+      "line_start": 286,
+      "line_end": 286,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00231",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11302,
+      "char_end": 11320,
+      "line_start": 287,
+      "line_end": 287,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00232",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11320,
+      "char_end": 11338,
+      "line_start": 288,
+      "line_end": 288,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00233",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 11338,
+      "char_end": 11389,
+      "line_start": 289,
+      "line_end": 289,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00234",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11389,
+      "char_end": 11456,
+      "line_start": 290,
+      "line_end": 290,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00235",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11456,
+      "char_end": 11457,
+      "line_start": 291,
+      "line_end": 291,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00236",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11457,
+      "char_end": 11493,
+      "line_start": 292,
+      "line_end": 292,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00237",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11493,
+      "char_end": 11494,
+      "line_start": 293,
+      "line_end": 293,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00238",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11494,
+      "char_end": 11600,
+      "line_start": 294,
+      "line_end": 295,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00239",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11600,
+      "char_end": 11601,
+      "line_start": 296,
+      "line_end": 296,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00240",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11601,
+      "char_end": 11619,
+      "line_start": 297,
+      "line_end": 297,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00241",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11619,
+      "char_end": 11637,
+      "line_start": 298,
+      "line_end": 298,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00242",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 11637,
+      "char_end": 11678,
+      "line_start": 299,
+      "line_end": 299,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00243",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11678,
+      "char_end": 11718,
+      "line_start": 300,
+      "line_end": 300,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00244",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11718,
+      "char_end": 11763,
+      "line_start": 301,
+      "line_end": 301,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00245",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11763,
+      "char_end": 11832,
+      "line_start": 302,
+      "line_end": 302,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00246",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11832,
+      "char_end": 11833,
+      "line_start": 303,
+      "line_end": 303,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00247",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11833,
+      "char_end": 11878,
+      "line_start": 304,
+      "line_end": 304,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00248",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11878,
+      "char_end": 11879,
+      "line_start": 305,
+      "line_end": 305,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00249",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11879,
+      "char_end": 11926,
+      "line_start": 306,
+      "line_end": 306,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00250",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11926,
+      "char_end": 11927,
+      "line_start": 307,
+      "line_end": 307,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00251",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11927,
+      "char_end": 11945,
+      "line_start": 308,
+      "line_end": 308,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00252",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11945,
+      "char_end": 11963,
+      "line_start": 309,
+      "line_end": 309,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00253",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 11963,
+      "char_end": 12041,
+      "line_start": 310,
+      "line_end": 310,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00254",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12041,
+      "char_end": 12087,
+      "line_start": 311,
+      "line_end": 311,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00255",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12087,
+      "char_end": 12088,
+      "line_start": 312,
+      "line_end": 312,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00256",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12088,
+      "char_end": 12121,
+      "line_start": 313,
+      "line_end": 313,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00257",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12121,
+      "char_end": 12122,
+      "line_start": 314,
+      "line_end": 314,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00258",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12122,
+      "char_end": 12140,
+      "line_start": 315,
+      "line_end": 315,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00259",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12140,
+      "char_end": 12158,
+      "line_start": 316,
+      "line_end": 316,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00260",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 12158,
+      "char_end": 12248,
+      "line_start": 317,
+      "line_end": 317,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00261",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12248,
+      "char_end": 12345,
+      "line_start": 318,
+      "line_end": 318,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00262",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12345,
+      "char_end": 12434,
+      "line_start": 319,
+      "line_end": 319,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00263",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12434,
+      "char_end": 12435,
+      "line_start": 320,
+      "line_end": 320,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00264",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12435,
+      "char_end": 12458,
+      "line_start": 321,
+      "line_end": 321,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00265",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12458,
+      "char_end": 12459,
+      "line_start": 322,
+      "line_end": 322,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00266",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12459,
+      "char_end": 12463,
+      "line_start": 323,
+      "line_end": 323,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00267",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 12463,
+      "char_end": 12756,
+      "line_start": 324,
+      "line_end": 326,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "content",
+      "block_id": "B00268",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12756,
+      "char_end": 12757,
+      "line_start": 327,
+      "line_end": 327,
+      "chapter_path": "6   APPENDICES / 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 / Software Non-Conformance Report",
+      "nearest_heading": "Software Non-Conformance Report",
+      "kind": "blank",
+      "block_id": "B00269",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12757,
+      "char_end": 12825,
+      "line_start": 328,
+      "line_end": 328,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "heading",
+      "block_id": "B00270",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 12825,
+      "char_end": 12826,
+      "line_start": 329,
+      "line_end": 329,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "blank",
+      "block_id": "B00271",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12826,
+      "char_end": 12875,
+      "line_start": 330,
+      "line_end": 330,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00272",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12875,
+      "char_end": 12926,
+      "line_start": 331,
+      "line_end": 331,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00273",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 12926,
+      "char_end": 12941,
+      "line_start": 332,
+      "line_end": 332,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00274",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12941,
+      "char_end": 12955,
+      "line_start": 333,
+      "line_end": 333,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00275",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12955,
+      "char_end": 12956,
+      "line_start": 334,
+      "line_end": 334,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "blank",
+      "block_id": "B00276",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12956,
+      "char_end": 13101,
+      "line_start": 335,
+      "line_end": 335,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00277",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13101,
+      "char_end": 13246,
+      "line_start": 336,
+      "line_end": 336,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00278",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 13246,
+      "char_end": 13268,
+      "line_start": 337,
+      "line_end": 337,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00279",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13268,
+      "char_end": 13295,
+      "line_start": 338,
+      "line_end": 338,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00280",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13295,
+      "char_end": 13317,
+      "line_start": 339,
+      "line_end": 339,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00281",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13317,
+      "char_end": 13344,
+      "line_start": 340,
+      "line_end": 340,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00282",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13344,
+      "char_end": 13366,
+      "line_start": 341,
+      "line_end": 341,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00283",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13366,
+      "char_end": 13393,
+      "line_start": 342,
+      "line_end": 342,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00284",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13393,
+      "char_end": 13415,
+      "line_start": 343,
+      "line_end": 343,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00285",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13415,
+      "char_end": 13442,
+      "line_start": 344,
+      "line_end": 344,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00286",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13442,
+      "char_end": 13464,
+      "line_start": 345,
+      "line_end": 345,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00287",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13464,
+      "char_end": 13491,
+      "line_start": 346,
+      "line_end": 346,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00288",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13491,
+      "char_end": 13513,
+      "line_start": 347,
+      "line_end": 347,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00289",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13513,
+      "char_end": 13540,
+      "line_start": 348,
+      "line_end": 348,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00290",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13540,
+      "char_end": 13541,
+      "line_start": 349,
+      "line_end": 349,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "blank",
+      "block_id": "B00291",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13541,
+      "char_end": 13563,
+      "line_start": 350,
+      "line_end": 350,
+      "chapter_path": "6   APPENDICES / 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "nearest_heading": "6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2",
+      "kind": "content",
+      "block_id": "B00292",
+      "disposition": "candidate_lead"
+    }
+  ]
+}

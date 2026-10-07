@@ -1,0 +1,5012 @@
+{
+  "schema": "full_keyword_sweep_leads/1",
+  "method": "full_keyword_sweep_v1",
+  "doc_id": "DOC-0021",
+  "filename": "RU-74-02,R2 DESIGN BASIS REVIEW  PROCEDURE.md",
+  "document_side": "DOCUMENT",
+  "source_sha256": "a3fecbe3fdee077fed9b8dace8f916e374a54cce7032abf87f49ac243a1aacc9",
+  "registered_source_sha256": "a3fecbe3fdee077fed9b8dace8f916e374a54cce7032abf87f49ac243a1aacc9",
+  "source_changed": false,
+  "source_bytes": 16243,
+  "source_characters": 16153,
+  "source_lines": 419,
+  "passages": [
+    {
+      "passage_id": "B00005",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 5,
+      "line_end": 5,
+      "char_start": 50,
+      "char_end": 67,
+      "quote_original": "| Field | Value |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00007",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 7,
+      "line_end": 7,
+      "char_start": 86,
+      "char_end": 129,
+      "quote_original": "| Naziv Dokumenta: | Radna Uputa RU-74-02 |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "uput"
+          ],
+          "heading_terms": [
+            "procedure"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "dokument"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00008",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 8,
+      "line_end": 8,
+      "char_start": 130,
+      "char_end": 147,
+      "quote_original": "| Revizija: | 2 |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "revizij"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00009",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 9,
+      "line_end": 9,
+      "char_start": 148,
+      "char_end": 181,
+      "quote_original": "| Stupa na snagu: | 17.11.2017. |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00010",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 10,
+      "line_end": 10,
+      "char_start": 182,
+      "char_end": 213,
+      "quote_original": "| Kontrolirana kopija broj: | |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        },
+        "APP_B_X": {
+          "quote_terms": [
+            "kontrol"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00012",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 12,
+      "line_end": 12,
+      "char_start": 215,
+      "char_end": 237,
+      "quote_original": "| Role | Name | Date |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00014",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 14,
+      "line_end": 14,
+      "char_start": 261,
+      "char_end": 323,
+      "quote_original": "| Prepared by: | Boško Lukić, mag. ing. stroj. | 13.11.2017. |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00015",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 15,
+      "line_end": 15,
+      "char_start": 324,
+      "char_end": 389,
+      "quote_original": "| Reviewed by: | Vladimir Križe, mag. ing. stroj. | 14.11.2017. |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00016",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "line_start": 16,
+      "line_end": 16,
+      "char_start": 390,
+      "char_end": 457,
+      "quote_original": "| Approved by: | dr. sc. Nenad Debrecin, dipl. ing. | 15.11.2017. |",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "procedure"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00026",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "line_start": 26,
+      "line_end": 26,
+      "char_start": 715,
+      "char_end": 809,
+      "quote_original": "DESIGN BASIS REVIEW                                                             ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00030",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "line_start": 30,
+      "line_end": 30,
+      "char_start": 823,
+      "char_end": 1189,
+      "quote_original": "Proper engineering evaluation and setup of air-operated valves (AOV) is critical to the safe operation of a nuclear power plant. This document provides a methodology of AOVs engineering evaluation (Design Basis Review) which encompasses design basis system condition, required thrust and/or torque, air actuator output thrust/torque capability and operating margins.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00032",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "line_start": 32,
+      "line_end": 34,
+      "char_start": 1191,
+      "char_end": 1477,
+      "quote_original": "The method presented incorporate lessons learned and tools developed as part of the EPRI Motor Operated Valve Performance Prediction Research Program and during EPRI pilot AOV programs implemented at several nuclear power plants.\n---\nDESIGN BASIS REVIEW                   ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00040",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "line_start": 42,
+      "line_end": 42,
+      "char_start": 1541,
+      "char_end": 1555,
+      "quote_original": "- Design Basis",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00046",
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "line_start": 48,
+      "line_end": 48,
+      "char_start": 1607,
+      "char_end": 1728,
+      "quote_original": "DESIGN BASIS REVIEW                                                                                        ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00053",
+      "chapter_path": "TABLE OF CONTENTS",
+      "line_start": 56,
+      "line_end": 56,
+      "char_start": 2108,
+      "char_end": 2218,
+      "quote_original": "2. DESIGN BASIS REVIEW...................................................................................... 6",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00054",
+      "chapter_path": "TABLE OF CONTENTS",
+      "line_start": 57,
+      "line_end": 63,
+      "char_start": 2219,
+      "char_end": 2938,
+      "quote_original": "   2.1    DESIGN BASIS METHODOLOGY................................................................ 6\n   2.2    ENGINEERING EVALUATION...................................................................... 8\n   2.3    CALCULATION OF REQUIRED THRUST AND TORQUE ........................... 9\n      2.3.1    Minimum Required Thrust for Globe Valves ........................................... 9\n      2.3.2    Minimum Required Thrust for Gate Valves ........................................... 12\n      2.3.3    Total Required Torque for Ball Valves .................................................. 13\n      2.3.4    Butterfly valves...................................................................................... 14",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design",
+            "calculation"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00069",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "line_start": 79,
+      "line_end": 79,
+      "char_start": 3378,
+      "char_end": 3437,
+      "quote_original": "The purpose of this document is to present methodology for:",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00071",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "line_start": 81,
+      "line_end": 81,
+      "char_start": 3439,
+      "char_end": 3614,
+      "quote_original": "- Defining the functional and design requirements for an air-operated valve (AOV) and its accessories including code requirements and design basis/normal operating conditions.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00073",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "line_start": 83,
+      "line_end": 83,
+      "char_start": 3616,
+      "char_end": 3730,
+      "quote_original": "- Evaluating valve design features that can affect AOV operation and calculating valve thrust/torque requirements.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00075",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "line_start": 85,
+      "line_end": 85,
+      "char_start": 3732,
+      "char_end": 3915,
+      "quote_original": "- Evaluating air actuator design features that can affect AOV operation, calculating the actuator output thrust/torque, and evaluating the compatibility of the actuator and the valve.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00081",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "line_start": 91,
+      "line_end": 91,
+      "char_start": 4131,
+      "char_end": 4190,
+      "quote_original": "This document is applicable to the following valve designs:",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00091",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "line_start": 101,
+      "line_end": 103,
+      "char_start": 4463,
+      "char_end": 4566,
+      "quote_original": "Page 4\n---\nDESIGN BASIS REVIEW                                                           ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00093",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "line_start": 105,
+      "line_end": 105,
+      "char_start": 4568,
+      "char_end": 4639,
+      "quote_original": "This document is, also, applicable to the following air actuator types:",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00103",
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "line_start": 115,
+      "line_end": 117,
+      "char_start": 4698,
+      "char_end": 4883,
+      "quote_original": "These actuators encompass the majority of air actuators found in the nuclear industry.\n---\nDESIGN BASIS REVIEW                                                             ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00107",
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "line_start": 121,
+      "line_end": 121,
+      "char_start": 4912,
+      "char_end": 5258,
+      "quote_original": "The Design Basis Review consists of both a system level and component level review. The system design basis review identifies the worst case operating conditions for which AOV must operate and maintain position to perform its safety significant function. Elements of system design basis review are functional review and calculation of parameters.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design",
+            "calculation"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00109",
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "line_start": 123,
+      "line_end": 123,
+      "char_start": 5260,
+      "char_end": 5465,
+      "quote_original": "Functional review includes: general valve information, description of valve function(s) within its system and detailed discussion of each operational evolution in which the valve is required to reposition.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00111",
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "line_start": 125,
+      "line_end": 125,
+      "char_start": 5467,
+      "char_end": 5687,
+      "quote_original": "Calculation of parameters is based on one or more of the scenarios established in functional review and identifies: upstream and downstream pressure, process fluid, flow direction, maximum expected differential pressure.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "calculation"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_VIII": {
+          "quote_terms": [
+            "identif"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00113",
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "line_start": 127,
+      "line_end": 127,
+      "char_start": 5689,
+      "char_end": 5875,
+      "quote_original": "Component level review includes determination of minimum required thrust/torque to open/close the valve under worst case operating conditions and assessment of actuator output capability",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_XVIII": {
+          "quote_terms": [
+            "assessment"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00117",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "line_start": 131,
+      "line_end": 131,
+      "char_start": 5911,
+      "char_end": 6009,
+      "quote_original": "The methodology of the evaluation is conducted in accordance with the flowchart shown in Fig. 1.1.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": [
+            "method"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00119",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "line_start": 133,
+      "line_end": 135,
+      "char_start": 6011,
+      "char_end": 6235,
+      "quote_original": "This methodology is fully compliant with the suggestions and recommendations of EPRI listed in the document EPRI Air-Operated Valves Evaluation Guide [1].\n---\nDESIGN BASIS REVIEW                                ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": [
+            "method"
+          ]
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00121",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "line_start": 137,
+      "line_end": 156,
+      "char_start": 6237,
+      "char_end": 7572,
+      "quote_original": "```mermaid\ngraph TD\n    A[START] --> B[Define AOV design/functional requirements and AOV characteristics]\n    B --> C{Are the AOV Characteristics compatible with design/ functional requirements?}\n    C -->|NO| D[Obtain a match between the AOV functional/design requirements and AOV characteristics by: Developing an engineering justification for changing the design/ functional requirements or modifying the AOV]\n    D --> C\n    C -->|YES| E[Determine worst case system requirements for the valve's operation based on the functional review]\n    E --> F[For the valve determine: - required stem thrus/Torque - valve thrust/torque limits]\n    F --> G[For the actuator determine: - actuator output capability - actuator thrust/torque limits]\n    G --> H[For the Accessories determine: - pressure ratings - temperature ratings]\n    H --> I{Are the AOV Characteristics compatible with design/ functional requirements?}\n    I -->|NO| J[Make adjustments or modifications to valve and / or actuator.]\n    J --> I\n    I -->|YES| K{Are the AOV Characteristics compatible with design/ functional requirements?}\n    J --> L{Will the adjustment give adequate componenet and actuator margin?}\n    L -->|NO| J\n    L -->|YES| K\n    K -->|NO| J\n    K -->|YES| M[For the Accessories determine: - pressure ratings - temperature ratings]\n    M --> N[STOP]",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "method"
+          ]
+        },
+        "APP_B_XIII": {
+          "quote_terms": [
+            "temperatur"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00123",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "line_start": 158,
+      "line_end": 159,
+      "char_start": 7578,
+      "char_end": 7715,
+      "quote_original": "    O[Evaluate conservative assumptions in system conditions and actuator/valve inputs to increase Actuator and Valve margins.] --> G\n```",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [],
+          "heading_terms": [
+            "method"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00125",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "line_start": 161,
+      "line_end": 163,
+      "char_start": 7717,
+      "char_end": 7846,
+      "quote_original": "Figure 1.1   DBR Methodology\n---\nDESIGN BASIS REVIEW                                                               ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": [
+            "design"
+          ]
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": [
+            "method"
+          ]
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00143",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "line_start": 181,
+      "line_end": 181,
+      "char_start": 8292,
+      "char_end": 8401,
+      "quote_original": "- determination of upstream and downstream pressure and calculation of maximum expected differential pressure",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "calculation"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00147",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "line_start": 185,
+      "line_end": 187,
+      "char_start": 8497,
+      "char_end": 8658,
+      "quote_original": "Evaluation of AOVs will be performed according to EPRI AOV Evaluation Guide.\n---\nDESIGN BASIS REVIEW                                               ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00185",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "line_start": 225,
+      "line_end": 227,
+      "char_start": 9652,
+      "char_end": 9760,
+      "quote_original": "Page 9\n---\nDESIGN BASIS REVIEW                                                                ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00195",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "line_start": 238,
+      "line_end": 238,
+      "char_start": 10148,
+      "char_end": 10236,
+      "quote_original": "Following calculation is performed in accordance with Valve Handbook Section 10.1.5. [2]",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "calculation"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00201",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "line_start": 244,
+      "line_end": 244,
+      "char_start": 10657,
+      "char_end": 10794,
+      "quote_original": "V1 = free-air volume (standard cubic feet), volume rate at standard atmospheric temperature 21°C and pressure 14.7 psia (1.01325 bar abs)",
+      "matches": {
+        "APP_B_XIII": {
+          "quote_terms": [
+            "temperatur"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00215",
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "line_start": 258,
+      "line_end": 260,
+      "char_start": 11001,
+      "char_end": 11112,
+      "quote_original": "Page 10\n---\nDESIGN BASIS REVIEW                                                                  ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00237",
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "line_start": 288,
+      "line_end": 290,
+      "char_start": 11873,
+      "char_end": 12122,
+      "quote_original": "In order to fulfill valve intended function, diaphragm actuator force (FA) must overcome all other forces (FO or FC) acting on valve under given conditions.\n---\nDESIGN BASIS REVIEW                                                       ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00241",
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "line_start": 294,
+      "line_end": 294,
+      "char_start": 12175,
+      "char_end": 12278,
+      "quote_original": "Required thrust for gate valves can be evaluated using the EPRI MOV Performance Prediction Methodology.",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00267",
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "line_start": 320,
+      "line_end": 322,
+      "char_start": 12830,
+      "char_end": 12935,
+      "quote_original": "Page 12\n---\nDESIGN BASIS REVIEW                                                            ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00303",
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "line_start": 359,
+      "line_end": 361,
+      "char_start": 13621,
+      "char_end": 13728,
+      "quote_original": "Page 13\n---\nDESIGN BASIS REVIEW                                                              ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00317",
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.4 Butterfly valves",
+      "line_start": 375,
+      "line_end": 378,
+      "char_start": 13970,
+      "char_end": 14190,
+      "quote_original": "The torque required to actuate butterfly valves can be predicted using the\nEPRI MOV Performance Prediction Methodology\n---\nDESIGN BASIS REVIEW                                                                ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00321",
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "line_start": 382,
+      "line_end": 382,
+      "char_start": 14221,
+      "char_end": 14362,
+      "quote_original": "Results of engineering evaluation of selected AOVs will be presented in hard copy form of Work Report with the corresponding document number.",
+      "matches": {
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00333",
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "line_start": 394,
+      "line_end": 396,
+      "char_start": 15417,
+      "char_end": 15613,
+      "quote_original": "All relevant information have been found in NEK MECL Database and ING.MOD hard copy documentation.\n---\nDESIGN BASIS REVIEW                                                            ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        },
+        "APP_B_VI": {
+          "quote_terms": [
+            "document"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00341",
+      "chapter_path": "4. REFERENCES",
+      "line_start": 404,
+      "line_end": 404,
+      "char_start": 15769,
+      "char_end": 15820,
+      "quote_original": "[3]     EPRI MOV Performance Prediction Methodology",
+      "matches": {
+        "APP_B_V": {
+          "quote_terms": [
+            "method"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    },
+    {
+      "passage_id": "B00349",
+      "chapter_path": "4. REFERENCES",
+      "line_start": 413,
+      "line_end": 415,
+      "char_start": 16039,
+      "char_end": 16132,
+      "quote_original": "Page 16\n---\nDESIGN BASIS REVIEW                                                ENCONET d.o.o.",
+      "matches": {
+        "APP_B_III": {
+          "quote_terms": [
+            "design"
+          ],
+          "heading_terms": []
+        }
+      },
+      "evidence_type": "candidate_lead",
+      "semantic_review": "pending"
+    }
+  ],
+  "coverage": [
+    {
+      "char_start": 0,
+      "char_end": 15,
+      "line_start": 1,
+      "line_end": 1,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "content",
+      "block_id": "B00001",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 15,
+      "char_end": 16,
+      "line_start": 2,
+      "line_end": 2,
+      "chapter_path": "Front matter",
+      "nearest_heading": "",
+      "kind": "blank",
+      "block_id": "B00002",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 16,
+      "char_end": 49,
+      "line_start": 3,
+      "line_end": 3,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "heading",
+      "block_id": "B00003",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 49,
+      "char_end": 50,
+      "line_start": 4,
+      "line_end": 4,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "blank",
+      "block_id": "B00004",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 50,
+      "char_end": 68,
+      "line_start": 5,
+      "line_end": 5,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00005",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 68,
+      "char_end": 86,
+      "line_start": 6,
+      "line_end": 6,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00006",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 86,
+      "char_end": 130,
+      "line_start": 7,
+      "line_end": 7,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00007",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 130,
+      "char_end": 148,
+      "line_start": 8,
+      "line_end": 8,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00008",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 148,
+      "char_end": 182,
+      "line_start": 9,
+      "line_end": 9,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00009",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 182,
+      "char_end": 214,
+      "line_start": 10,
+      "line_end": 10,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00010",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 214,
+      "char_end": 215,
+      "line_start": 11,
+      "line_end": 11,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "blank",
+      "block_id": "B00011",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 215,
+      "char_end": 238,
+      "line_start": 12,
+      "line_end": 12,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00012",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 238,
+      "char_end": 261,
+      "line_start": 13,
+      "line_end": 13,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00013",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 261,
+      "char_end": 324,
+      "line_start": 14,
+      "line_end": 14,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00014",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 324,
+      "char_end": 390,
+      "line_start": 15,
+      "line_end": 15,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00015",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 390,
+      "char_end": 458,
+      "line_start": 16,
+      "line_end": 16,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "content",
+      "block_id": "B00016",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 458,
+      "char_end": 459,
+      "line_start": 17,
+      "line_end": 17,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE",
+      "nearest_heading": "DESIGN BASIS REVIEW  PROCEDURE",
+      "kind": "blank",
+      "block_id": "B00017",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 459,
+      "char_end": 481,
+      "line_start": 18,
+      "line_end": 18,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "heading",
+      "block_id": "B00018",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 481,
+      "char_end": 482,
+      "line_start": 19,
+      "line_end": 19,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "blank",
+      "block_id": "B00019",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 482,
+      "char_end": 527,
+      "line_start": 20,
+      "line_end": 20,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00020",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 527,
+      "char_end": 573,
+      "line_start": 21,
+      "line_end": 21,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00021",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 573,
+      "char_end": 619,
+      "line_start": 22,
+      "line_end": 22,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00022",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 619,
+      "char_end": 665,
+      "line_start": 23,
+      "line_end": 23,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00023",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 665,
+      "char_end": 711,
+      "line_start": 24,
+      "line_end": 24,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "empty_table_row",
+      "block_id": "B00024",
+      "disposition": "empty_table_row"
+    },
+    {
+      "char_start": 711,
+      "char_end": 715,
+      "line_start": 25,
+      "line_end": 25,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00025",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 715,
+      "char_end": 810,
+      "line_start": 26,
+      "line_end": 26,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "content",
+      "block_id": "B00026",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 810,
+      "char_end": 811,
+      "line_start": 27,
+      "line_end": 27,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / Periodični pregled",
+      "nearest_heading": "Periodični pregled",
+      "kind": "blank",
+      "block_id": "B00027",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 811,
+      "char_end": 822,
+      "line_start": 28,
+      "line_end": 28,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "nearest_heading": "SUMMARY",
+      "kind": "heading",
+      "block_id": "B00028",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 822,
+      "char_end": 823,
+      "line_start": 29,
+      "line_end": 29,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "nearest_heading": "SUMMARY",
+      "kind": "blank",
+      "block_id": "B00029",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 823,
+      "char_end": 1190,
+      "line_start": 30,
+      "line_end": 30,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "nearest_heading": "SUMMARY",
+      "kind": "content",
+      "block_id": "B00030",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1190,
+      "char_end": 1191,
+      "line_start": 31,
+      "line_end": 31,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "nearest_heading": "SUMMARY",
+      "kind": "blank",
+      "block_id": "B00031",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1191,
+      "char_end": 1478,
+      "line_start": 32,
+      "line_end": 34,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "nearest_heading": "SUMMARY",
+      "kind": "content",
+      "block_id": "B00032",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1478,
+      "char_end": 1479,
+      "line_start": 35,
+      "line_end": 35,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / SUMMARY",
+      "nearest_heading": "SUMMARY",
+      "kind": "blank",
+      "block_id": "B00033",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1479,
+      "char_end": 1492,
+      "line_start": 36,
+      "line_end": 36,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "heading",
+      "block_id": "B00034",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1492,
+      "char_end": 1493,
+      "line_start": 37,
+      "line_end": 37,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "blank",
+      "block_id": "B00035",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1493,
+      "char_end": 1504,
+      "line_start": 38,
+      "line_end": 38,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00036",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1504,
+      "char_end": 1510,
+      "line_start": 39,
+      "line_end": 39,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00037",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1510,
+      "char_end": 1523,
+      "line_start": 40,
+      "line_end": 40,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00038",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1523,
+      "char_end": 1541,
+      "line_start": 41,
+      "line_end": 41,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00039",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1541,
+      "char_end": 1556,
+      "line_start": 42,
+      "line_end": 42,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00040",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1556,
+      "char_end": 1570,
+      "line_start": 43,
+      "line_end": 43,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00041",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1570,
+      "char_end": 1583,
+      "line_start": 44,
+      "line_end": 44,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00042",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1583,
+      "char_end": 1594,
+      "line_start": 45,
+      "line_end": 45,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00043",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1594,
+      "char_end": 1603,
+      "line_start": 46,
+      "line_end": 46,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00044",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1603,
+      "char_end": 1607,
+      "line_start": 47,
+      "line_end": 47,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "table_separator_or_rule",
+      "block_id": "B00045",
+      "disposition": "table_separator_or_rule"
+    },
+    {
+      "char_start": 1607,
+      "char_end": 1729,
+      "line_start": 48,
+      "line_end": 48,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "content",
+      "block_id": "B00046",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 1729,
+      "char_end": 1730,
+      "line_start": 49,
+      "line_end": 49,
+      "chapter_path": "DESIGN BASIS REVIEW  PROCEDURE / KEY WORDS",
+      "nearest_heading": "KEY WORDS",
+      "kind": "blank",
+      "block_id": "B00047",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1730,
+      "char_end": 1750,
+      "line_start": 50,
+      "line_end": 50,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "heading",
+      "block_id": "B00048",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 1750,
+      "char_end": 1751,
+      "line_start": 51,
+      "line_end": 51,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00049",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 1751,
+      "char_end": 1861,
+      "line_start": 52,
+      "line_end": 52,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00050",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 1861,
+      "char_end": 2107,
+      "line_start": 53,
+      "line_end": 54,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00051",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 2107,
+      "char_end": 2108,
+      "line_start": 55,
+      "line_end": 55,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00052",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2108,
+      "char_end": 2219,
+      "line_start": 56,
+      "line_end": 56,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00053",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2219,
+      "char_end": 2939,
+      "line_start": 57,
+      "line_end": 63,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00054",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 2939,
+      "char_end": 2940,
+      "line_start": 64,
+      "line_end": 64,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00055",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 2940,
+      "char_end": 3046,
+      "line_start": 65,
+      "line_end": 65,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00056",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3046,
+      "char_end": 3047,
+      "line_start": 66,
+      "line_end": 66,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00057",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3047,
+      "char_end": 3164,
+      "line_start": 67,
+      "line_end": 67,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00058",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3164,
+      "char_end": 3165,
+      "line_start": 68,
+      "line_end": 68,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00059",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3165,
+      "char_end": 3286,
+      "line_start": 69,
+      "line_end": 69,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00060",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3286,
+      "char_end": 3287,
+      "line_start": 70,
+      "line_end": 70,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "blank",
+      "block_id": "B00061",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3287,
+      "char_end": 3298,
+      "line_start": 71,
+      "line_end": 72,
+      "chapter_path": "TABLE OF CONTENTS",
+      "nearest_heading": "TABLE OF CONTENTS",
+      "kind": "content",
+      "block_id": "B00062",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 3298,
+      "char_end": 3335,
+      "line_start": 73,
+      "line_end": 73,
+      "chapter_path": "DESIGN BASIS REVIEW ENCONET d.o.o.",
+      "nearest_heading": "DESIGN BASIS REVIEW ENCONET d.o.o.",
+      "kind": "heading",
+      "block_id": "B00063",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3335,
+      "char_end": 3336,
+      "line_start": 74,
+      "line_end": 74,
+      "chapter_path": "DESIGN BASIS REVIEW ENCONET d.o.o.",
+      "nearest_heading": "DESIGN BASIS REVIEW ENCONET d.o.o.",
+      "kind": "blank",
+      "block_id": "B00064",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3336,
+      "char_end": 3360,
+      "line_start": 75,
+      "line_end": 75,
+      "chapter_path": "1. PURPOSE AND SCOPE",
+      "nearest_heading": "1. PURPOSE AND SCOPE",
+      "kind": "heading",
+      "block_id": "B00065",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3360,
+      "char_end": 3361,
+      "line_start": 76,
+      "line_end": 76,
+      "chapter_path": "1. PURPOSE AND SCOPE",
+      "nearest_heading": "1. PURPOSE AND SCOPE",
+      "kind": "blank",
+      "block_id": "B00066",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3361,
+      "char_end": 3377,
+      "line_start": 77,
+      "line_end": 77,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "heading",
+      "block_id": "B00067",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 3377,
+      "char_end": 3378,
+      "line_start": 78,
+      "line_end": 78,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "blank",
+      "block_id": "B00068",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3378,
+      "char_end": 3438,
+      "line_start": 79,
+      "line_end": 79,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "content",
+      "block_id": "B00069",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3438,
+      "char_end": 3439,
+      "line_start": 80,
+      "line_end": 80,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "blank",
+      "block_id": "B00070",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3439,
+      "char_end": 3615,
+      "line_start": 81,
+      "line_end": 81,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "content",
+      "block_id": "B00071",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3615,
+      "char_end": 3616,
+      "line_start": 82,
+      "line_end": 82,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "blank",
+      "block_id": "B00072",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3616,
+      "char_end": 3731,
+      "line_start": 83,
+      "line_end": 83,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "content",
+      "block_id": "B00073",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3731,
+      "char_end": 3732,
+      "line_start": 84,
+      "line_end": 84,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "blank",
+      "block_id": "B00074",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3732,
+      "char_end": 3916,
+      "line_start": 85,
+      "line_end": 85,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "content",
+      "block_id": "B00075",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 3916,
+      "char_end": 3917,
+      "line_start": 86,
+      "line_end": 86,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "blank",
+      "block_id": "B00076",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 3917,
+      "char_end": 4115,
+      "line_start": 87,
+      "line_end": 87,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "content",
+      "block_id": "B00077",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4115,
+      "char_end": 4116,
+      "line_start": 88,
+      "line_end": 88,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.1 PURPOSE",
+      "nearest_heading": "1.1 PURPOSE",
+      "kind": "blank",
+      "block_id": "B00078",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4116,
+      "char_end": 4130,
+      "line_start": 89,
+      "line_end": 89,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "heading",
+      "block_id": "B00079",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4130,
+      "char_end": 4131,
+      "line_start": 90,
+      "line_end": 90,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00080",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4131,
+      "char_end": 4191,
+      "line_start": 91,
+      "line_end": 91,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00081",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4191,
+      "char_end": 4192,
+      "line_start": 92,
+      "line_end": 92,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00082",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4192,
+      "char_end": 4270,
+      "line_start": 93,
+      "line_end": 93,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00083",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4270,
+      "char_end": 4271,
+      "line_start": 94,
+      "line_end": 94,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00084",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4271,
+      "char_end": 4363,
+      "line_start": 95,
+      "line_end": 95,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00085",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4363,
+      "char_end": 4364,
+      "line_start": 96,
+      "line_end": 96,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00086",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4364,
+      "char_end": 4418,
+      "line_start": 97,
+      "line_end": 97,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00087",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4418,
+      "char_end": 4419,
+      "line_start": 98,
+      "line_end": 98,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00088",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4419,
+      "char_end": 4462,
+      "line_start": 99,
+      "line_end": 99,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00089",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4462,
+      "char_end": 4463,
+      "line_start": 100,
+      "line_end": 100,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00090",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4463,
+      "char_end": 4567,
+      "line_start": 101,
+      "line_end": 103,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00091",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4567,
+      "char_end": 4568,
+      "line_start": 104,
+      "line_end": 104,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00092",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4568,
+      "char_end": 4640,
+      "line_start": 105,
+      "line_end": 105,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00093",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4640,
+      "char_end": 4641,
+      "line_start": 106,
+      "line_end": 106,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00094",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4641,
+      "char_end": 4653,
+      "line_start": 107,
+      "line_end": 107,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00095",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4653,
+      "char_end": 4654,
+      "line_start": 108,
+      "line_end": 108,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00096",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4654,
+      "char_end": 4663,
+      "line_start": 109,
+      "line_end": 109,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00097",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4663,
+      "char_end": 4664,
+      "line_start": 110,
+      "line_end": 110,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00098",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4664,
+      "char_end": 4682,
+      "line_start": 111,
+      "line_end": 111,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00099",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4682,
+      "char_end": 4683,
+      "line_start": 112,
+      "line_end": 112,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00100",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4683,
+      "char_end": 4697,
+      "line_start": 113,
+      "line_end": 113,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00101",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 4697,
+      "char_end": 4698,
+      "line_start": 114,
+      "line_end": 114,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00102",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4698,
+      "char_end": 4884,
+      "line_start": 115,
+      "line_end": 117,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "content",
+      "block_id": "B00103",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 4884,
+      "char_end": 4885,
+      "line_start": 118,
+      "line_end": 118,
+      "chapter_path": "1. PURPOSE AND SCOPE / 1.2 SCOPE",
+      "nearest_heading": "1.2 SCOPE",
+      "kind": "blank",
+      "block_id": "B00104",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4885,
+      "char_end": 4911,
+      "line_start": 119,
+      "line_end": 119,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "heading",
+      "block_id": "B00105",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 4911,
+      "char_end": 4912,
+      "line_start": 120,
+      "line_end": 120,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "blank",
+      "block_id": "B00106",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 4912,
+      "char_end": 5259,
+      "line_start": 121,
+      "line_end": 121,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "content",
+      "block_id": "B00107",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5259,
+      "char_end": 5260,
+      "line_start": 122,
+      "line_end": 122,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "blank",
+      "block_id": "B00108",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5260,
+      "char_end": 5466,
+      "line_start": 123,
+      "line_end": 123,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "content",
+      "block_id": "B00109",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5466,
+      "char_end": 5467,
+      "line_start": 124,
+      "line_end": 124,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "blank",
+      "block_id": "B00110",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5467,
+      "char_end": 5688,
+      "line_start": 125,
+      "line_end": 125,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "content",
+      "block_id": "B00111",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5688,
+      "char_end": 5689,
+      "line_start": 126,
+      "line_end": 126,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "blank",
+      "block_id": "B00112",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5689,
+      "char_end": 5876,
+      "line_start": 127,
+      "line_end": 127,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "content",
+      "block_id": "B00113",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 5876,
+      "char_end": 5877,
+      "line_start": 128,
+      "line_end": 128,
+      "chapter_path": "2. DESIGN BASIS REVIEW",
+      "nearest_heading": "2. DESIGN BASIS REVIEW",
+      "kind": "blank",
+      "block_id": "B00114",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5877,
+      "char_end": 5910,
+      "line_start": 129,
+      "line_end": 129,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "heading",
+      "block_id": "B00115",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 5910,
+      "char_end": 5911,
+      "line_start": 130,
+      "line_end": 130,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "blank",
+      "block_id": "B00116",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 5911,
+      "char_end": 6010,
+      "line_start": 131,
+      "line_end": 131,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "content",
+      "block_id": "B00117",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6010,
+      "char_end": 6011,
+      "line_start": 132,
+      "line_end": 132,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "blank",
+      "block_id": "B00118",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6011,
+      "char_end": 6236,
+      "line_start": 133,
+      "line_end": 135,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "content",
+      "block_id": "B00119",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 6236,
+      "char_end": 6237,
+      "line_start": 136,
+      "line_end": 136,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "blank",
+      "block_id": "B00120",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 6237,
+      "char_end": 7573,
+      "line_start": 137,
+      "line_end": 156,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "content",
+      "block_id": "B00121",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7573,
+      "char_end": 7578,
+      "line_start": 157,
+      "line_end": 157,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "blank",
+      "block_id": "B00122",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7578,
+      "char_end": 7716,
+      "line_start": 158,
+      "line_end": 159,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "content",
+      "block_id": "B00123",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7716,
+      "char_end": 7717,
+      "line_start": 160,
+      "line_end": 160,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "blank",
+      "block_id": "B00124",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7717,
+      "char_end": 7847,
+      "line_start": 161,
+      "line_end": 163,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "content",
+      "block_id": "B00125",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 7847,
+      "char_end": 7848,
+      "line_start": 164,
+      "line_end": 164,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.1 DESIGN BASIS METHODOLOGY",
+      "nearest_heading": "2.1 DESIGN BASIS METHODOLOGY",
+      "kind": "blank",
+      "block_id": "B00126",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7848,
+      "char_end": 7878,
+      "line_start": 165,
+      "line_end": 165,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "heading",
+      "block_id": "B00127",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 7878,
+      "char_end": 7879,
+      "line_start": 166,
+      "line_end": 166,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "blank",
+      "block_id": "B00128",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7879,
+      "char_end": 7964,
+      "line_start": 167,
+      "line_end": 167,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00129",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 7964,
+      "char_end": 7965,
+      "line_start": 168,
+      "line_end": 168,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "blank",
+      "block_id": "B00130",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7965,
+      "char_end": 7988,
+      "line_start": 169,
+      "line_end": 169,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00131",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 7988,
+      "char_end": 7989,
+      "line_start": 170,
+      "line_end": 170,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "blank",
+      "block_id": "B00132",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 7989,
+      "char_end": 8018,
+      "line_start": 171,
+      "line_end": 171,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00133",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8018,
+      "char_end": 8034,
+      "line_start": 172,
+      "line_end": 172,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00134",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8034,
+      "char_end": 8069,
+      "line_start": 173,
+      "line_end": 173,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00135",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8069,
+      "char_end": 8093,
+      "line_start": 174,
+      "line_end": 174,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00136",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8093,
+      "char_end": 8135,
+      "line_start": 175,
+      "line_end": 175,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00137",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8135,
+      "char_end": 8136,
+      "line_start": 176,
+      "line_end": 176,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "blank",
+      "block_id": "B00138",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8136,
+      "char_end": 8162,
+      "line_start": 177,
+      "line_end": 177,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00139",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8162,
+      "char_end": 8163,
+      "line_start": 178,
+      "line_end": 178,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "blank",
+      "block_id": "B00140",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8163,
+      "char_end": 8195,
+      "line_start": 179,
+      "line_end": 179,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00141",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8195,
+      "char_end": 8292,
+      "line_start": 180,
+      "line_end": 180,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00142",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8292,
+      "char_end": 8402,
+      "line_start": 181,
+      "line_end": 181,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00143",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8402,
+      "char_end": 8452,
+      "line_start": 182,
+      "line_end": 182,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00144",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8452,
+      "char_end": 8496,
+      "line_start": 183,
+      "line_end": 183,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00145",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8496,
+      "char_end": 8497,
+      "line_start": 184,
+      "line_end": 184,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "blank",
+      "block_id": "B00146",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8497,
+      "char_end": 8659,
+      "line_start": 185,
+      "line_end": 187,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "content",
+      "block_id": "B00147",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 8659,
+      "char_end": 8660,
+      "line_start": 188,
+      "line_end": 188,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.2 ENGINEERING EVALUATION",
+      "nearest_heading": "2.2 ENGINEERING EVALUATION",
+      "kind": "blank",
+      "block_id": "B00148",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8660,
+      "char_end": 8709,
+      "line_start": 189,
+      "line_end": 189,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE",
+      "nearest_heading": "2.3 CALCULATION OF REQUIRED THRUST AND TORQUE",
+      "kind": "heading",
+      "block_id": "B00149",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8709,
+      "char_end": 8710,
+      "line_start": 190,
+      "line_end": 190,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE",
+      "nearest_heading": "2.3 CALCULATION OF REQUIRED THRUST AND TORQUE",
+      "kind": "blank",
+      "block_id": "B00150",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8710,
+      "char_end": 8761,
+      "line_start": 191,
+      "line_end": 191,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "heading",
+      "block_id": "B00151",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 8761,
+      "char_end": 8762,
+      "line_start": 192,
+      "line_end": 192,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00152",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8762,
+      "char_end": 8897,
+      "line_start": 193,
+      "line_end": 193,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00153",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8897,
+      "char_end": 8898,
+      "line_start": 194,
+      "line_end": 194,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00154",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8898,
+      "char_end": 8936,
+      "line_start": 195,
+      "line_end": 195,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00155",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8936,
+      "char_end": 8937,
+      "line_start": 196,
+      "line_end": 196,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00156",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8937,
+      "char_end": 8970,
+      "line_start": 197,
+      "line_end": 197,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00157",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 8970,
+      "char_end": 8971,
+      "line_start": 198,
+      "line_end": 198,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00158",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 8971,
+      "char_end": 9011,
+      "line_start": 199,
+      "line_end": 199,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00159",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9011,
+      "char_end": 9012,
+      "line_start": 200,
+      "line_end": 200,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00160",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9012,
+      "char_end": 9044,
+      "line_start": 201,
+      "line_end": 201,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00161",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9044,
+      "char_end": 9045,
+      "line_start": 202,
+      "line_end": 202,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00162",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9045,
+      "char_end": 9084,
+      "line_start": 203,
+      "line_end": 203,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00163",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9084,
+      "char_end": 9085,
+      "line_start": 204,
+      "line_end": 204,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00164",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9085,
+      "char_end": 9124,
+      "line_start": 205,
+      "line_end": 205,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00165",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9124,
+      "char_end": 9125,
+      "line_start": 206,
+      "line_end": 206,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00166",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9125,
+      "char_end": 9149,
+      "line_start": 207,
+      "line_end": 207,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00167",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9149,
+      "char_end": 9150,
+      "line_start": 208,
+      "line_end": 208,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00168",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9150,
+      "char_end": 9217,
+      "line_start": 209,
+      "line_end": 209,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00169",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9217,
+      "char_end": 9218,
+      "line_start": 210,
+      "line_end": 210,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00170",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9218,
+      "char_end": 9250,
+      "line_start": 211,
+      "line_end": 211,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00171",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9250,
+      "char_end": 9251,
+      "line_start": 212,
+      "line_end": 212,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00172",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9251,
+      "char_end": 9281,
+      "line_start": 213,
+      "line_end": 213,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00173",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9281,
+      "char_end": 9282,
+      "line_start": 214,
+      "line_end": 214,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00174",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9282,
+      "char_end": 9309,
+      "line_start": 215,
+      "line_end": 215,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00175",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9309,
+      "char_end": 9310,
+      "line_start": 216,
+      "line_end": 216,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00176",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9310,
+      "char_end": 9364,
+      "line_start": 217,
+      "line_end": 217,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00177",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9364,
+      "char_end": 9365,
+      "line_start": 218,
+      "line_end": 218,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00178",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9365,
+      "char_end": 9517,
+      "line_start": 219,
+      "line_end": 219,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00179",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9517,
+      "char_end": 9518,
+      "line_start": 220,
+      "line_end": 220,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00180",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9518,
+      "char_end": 9563,
+      "line_start": 221,
+      "line_end": 221,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00181",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9563,
+      "char_end": 9564,
+      "line_start": 222,
+      "line_end": 222,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00182",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9564,
+      "char_end": 9651,
+      "line_start": 223,
+      "line_end": 223,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00183",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9651,
+      "char_end": 9652,
+      "line_start": 224,
+      "line_end": 224,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00184",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9652,
+      "char_end": 9761,
+      "line_start": 225,
+      "line_end": 227,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00185",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 9761,
+      "char_end": 9762,
+      "line_start": 228,
+      "line_end": 228,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00186",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9762,
+      "char_end": 9944,
+      "line_start": 229,
+      "line_end": 230,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "content",
+      "block_id": "B00187",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 9944,
+      "char_end": 9945,
+      "line_start": 231,
+      "line_end": 231,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / 2.3.1 Minimum Required Thrust for Globe Valves",
+      "nearest_heading": "2.3.1 Minimum Required Thrust for Globe Valves",
+      "kind": "blank",
+      "block_id": "B00188",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9945,
+      "char_end": 9979,
+      "line_start": 232,
+      "line_end": 232,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Diaphragm Actuator Force (FA)",
+      "nearest_heading": "Diaphragm Actuator Force (FA)",
+      "kind": "heading",
+      "block_id": "B00189",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 9979,
+      "char_end": 9980,
+      "line_start": 233,
+      "line_end": 233,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Diaphragm Actuator Force (FA)",
+      "nearest_heading": "Diaphragm Actuator Force (FA)",
+      "kind": "blank",
+      "block_id": "B00190",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 9980,
+      "char_end": 10132,
+      "line_start": 234,
+      "line_end": 234,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Diaphragm Actuator Force (FA)",
+      "nearest_heading": "Diaphragm Actuator Force (FA)",
+      "kind": "content",
+      "block_id": "B00191",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10132,
+      "char_end": 10133,
+      "line_start": 235,
+      "line_end": 235,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Diaphragm Actuator Force (FA)",
+      "nearest_heading": "Diaphragm Actuator Force (FA)",
+      "kind": "blank",
+      "block_id": "B00192",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10133,
+      "char_end": 10147,
+      "line_start": 236,
+      "line_end": 236,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "heading",
+      "block_id": "B00193",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 10147,
+      "char_end": 10148,
+      "line_start": 237,
+      "line_end": 237,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00194",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10148,
+      "char_end": 10237,
+      "line_start": 238,
+      "line_end": 238,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00195",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10237,
+      "char_end": 10238,
+      "line_start": 239,
+      "line_end": 239,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00196",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10238,
+      "char_end": 10625,
+      "line_start": 240,
+      "line_end": 240,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00197",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10625,
+      "char_end": 10626,
+      "line_start": 241,
+      "line_end": 241,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00198",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10626,
+      "char_end": 10656,
+      "line_start": 242,
+      "line_end": 242,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00199",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10656,
+      "char_end": 10657,
+      "line_start": 243,
+      "line_end": 243,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00200",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10657,
+      "char_end": 10795,
+      "line_start": 244,
+      "line_end": 244,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00201",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 10795,
+      "char_end": 10796,
+      "line_start": 245,
+      "line_end": 245,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00202",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10796,
+      "char_end": 10842,
+      "line_start": 246,
+      "line_end": 246,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00203",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10842,
+      "char_end": 10843,
+      "line_start": 247,
+      "line_end": 247,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00204",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10843,
+      "char_end": 10881,
+      "line_start": 248,
+      "line_end": 248,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00205",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10881,
+      "char_end": 10882,
+      "line_start": 249,
+      "line_end": 249,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00206",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10882,
+      "char_end": 10919,
+      "line_start": 250,
+      "line_end": 250,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00207",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10919,
+      "char_end": 10920,
+      "line_start": 251,
+      "line_end": 251,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00208",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10920,
+      "char_end": 10934,
+      "line_start": 252,
+      "line_end": 252,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00209",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10934,
+      "char_end": 10935,
+      "line_start": 253,
+      "line_end": 253,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00210",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10935,
+      "char_end": 10974,
+      "line_start": 254,
+      "line_end": 254,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00211",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 10974,
+      "char_end": 10975,
+      "line_start": 255,
+      "line_end": 255,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00212",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 10975,
+      "char_end": 11000,
+      "line_start": 256,
+      "line_end": 256,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00213",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11000,
+      "char_end": 11001,
+      "line_start": 257,
+      "line_end": 257,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00214",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11001,
+      "char_end": 11113,
+      "line_start": 258,
+      "line_end": 260,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "content",
+      "block_id": "B00215",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 11113,
+      "char_end": 11114,
+      "line_start": 261,
+      "line_end": 261,
+      "chapter_path": "2. DESIGN BASIS REVIEW / 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE / Air usage",
+      "nearest_heading": "Air usage",
+      "kind": "blank",
+      "block_id": "B00216",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11114,
+      "char_end": 11144,
+      "line_start": 262,
+      "line_end": 262,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Maximum Spring Force (FMS)",
+      "nearest_heading": "Maximum Spring Force (FMS)",
+      "kind": "heading",
+      "block_id": "B00217",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11144,
+      "char_end": 11145,
+      "line_start": 263,
+      "line_end": 263,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Maximum Spring Force (FMS)",
+      "nearest_heading": "Maximum Spring Force (FMS)",
+      "kind": "blank",
+      "block_id": "B00218",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11145,
+      "char_end": 11193,
+      "line_start": 264,
+      "line_end": 264,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Maximum Spring Force (FMS)",
+      "nearest_heading": "Maximum Spring Force (FMS)",
+      "kind": "content",
+      "block_id": "B00219",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11193,
+      "char_end": 11194,
+      "line_start": 265,
+      "line_end": 265,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Maximum Spring Force (FMS)",
+      "nearest_heading": "Maximum Spring Force (FMS)",
+      "kind": "blank",
+      "block_id": "B00220",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11194,
+      "char_end": 11314,
+      "line_start": 266,
+      "line_end": 269,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Maximum Spring Force (FMS)",
+      "nearest_heading": "Maximum Spring Force (FMS)",
+      "kind": "content",
+      "block_id": "B00221",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11314,
+      "char_end": 11315,
+      "line_start": 270,
+      "line_end": 270,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Maximum Spring Force (FMS)",
+      "nearest_heading": "Maximum Spring Force (FMS)",
+      "kind": "blank",
+      "block_id": "B00222",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11315,
+      "char_end": 11341,
+      "line_start": 271,
+      "line_end": 271,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "heading",
+      "block_id": "B00223",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 11341,
+      "char_end": 11342,
+      "line_start": 272,
+      "line_end": 272,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00224",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11342,
+      "char_end": 11377,
+      "line_start": 273,
+      "line_end": 273,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "content",
+      "block_id": "B00225",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11377,
+      "char_end": 11378,
+      "line_start": 274,
+      "line_end": 274,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00226",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11378,
+      "char_end": 11547,
+      "line_start": 275,
+      "line_end": 277,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "content",
+      "block_id": "B00227",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11547,
+      "char_end": 11548,
+      "line_start": 278,
+      "line_end": 278,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00228",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11548,
+      "char_end": 11611,
+      "line_start": 279,
+      "line_end": 279,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "content",
+      "block_id": "B00229",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11611,
+      "char_end": 11612,
+      "line_start": 280,
+      "line_end": 280,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00230",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11612,
+      "char_end": 11683,
+      "line_start": 281,
+      "line_end": 281,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "content",
+      "block_id": "B00231",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11683,
+      "char_end": 11684,
+      "line_start": 282,
+      "line_end": 282,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00232",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11684,
+      "char_end": 11769,
+      "line_start": 283,
+      "line_end": 283,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "content",
+      "block_id": "B00233",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11769,
+      "char_end": 11770,
+      "line_start": 284,
+      "line_end": 284,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00234",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11770,
+      "char_end": 11872,
+      "line_start": 285,
+      "line_end": 286,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "content",
+      "block_id": "B00235",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 11872,
+      "char_end": 11873,
+      "line_start": 287,
+      "line_end": 287,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00236",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 11873,
+      "char_end": 12123,
+      "line_start": 288,
+      "line_end": 290,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "content",
+      "block_id": "B00237",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12123,
+      "char_end": 12124,
+      "line_start": 291,
+      "line_end": 291,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force",
+      "nearest_heading": "Packing Friction Force",
+      "kind": "blank",
+      "block_id": "B00238",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12124,
+      "char_end": 12174,
+      "line_start": 292,
+      "line_end": 292,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "heading",
+      "block_id": "B00239",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 12174,
+      "char_end": 12175,
+      "line_start": 293,
+      "line_end": 293,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00240",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12175,
+      "char_end": 12279,
+      "line_start": 294,
+      "line_end": 294,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00241",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12279,
+      "char_end": 12280,
+      "line_start": 295,
+      "line_end": 295,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00242",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12280,
+      "char_end": 12308,
+      "line_start": 296,
+      "line_end": 296,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00243",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12308,
+      "char_end": 12309,
+      "line_start": 297,
+      "line_end": 297,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00244",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12309,
+      "char_end": 12399,
+      "line_start": 298,
+      "line_end": 298,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00245",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12399,
+      "char_end": 12400,
+      "line_start": 299,
+      "line_end": 299,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00246",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12400,
+      "char_end": 12424,
+      "line_start": 300,
+      "line_end": 300,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00247",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12424,
+      "char_end": 12425,
+      "line_start": 301,
+      "line_end": 301,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00248",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12425,
+      "char_end": 12506,
+      "line_start": 302,
+      "line_end": 302,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00249",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12506,
+      "char_end": 12507,
+      "line_start": 303,
+      "line_end": 303,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00250",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12507,
+      "char_end": 12531,
+      "line_start": 304,
+      "line_end": 304,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00251",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12531,
+      "char_end": 12532,
+      "line_start": 305,
+      "line_end": 305,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00252",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12532,
+      "char_end": 12613,
+      "line_start": 306,
+      "line_end": 306,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00253",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12613,
+      "char_end": 12614,
+      "line_start": 307,
+      "line_end": 307,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00254",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12614,
+      "char_end": 12640,
+      "line_start": 308,
+      "line_end": 308,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00255",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12640,
+      "char_end": 12641,
+      "line_start": 309,
+      "line_end": 309,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00256",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12641,
+      "char_end": 12670,
+      "line_start": 310,
+      "line_end": 310,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00257",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12670,
+      "char_end": 12671,
+      "line_start": 311,
+      "line_end": 311,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00258",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12671,
+      "char_end": 12707,
+      "line_start": 312,
+      "line_end": 312,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00259",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12707,
+      "char_end": 12708,
+      "line_start": 313,
+      "line_end": 313,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00260",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12708,
+      "char_end": 12759,
+      "line_start": 314,
+      "line_end": 314,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00261",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12759,
+      "char_end": 12760,
+      "line_start": 315,
+      "line_end": 315,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00262",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12760,
+      "char_end": 12794,
+      "line_start": 316,
+      "line_end": 316,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00263",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12794,
+      "char_end": 12795,
+      "line_start": 317,
+      "line_end": 317,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00264",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12795,
+      "char_end": 12829,
+      "line_start": 318,
+      "line_end": 318,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00265",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 12829,
+      "char_end": 12830,
+      "line_start": 319,
+      "line_end": 319,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00266",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12830,
+      "char_end": 12936,
+      "line_start": 320,
+      "line_end": 322,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "content",
+      "block_id": "B00267",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 12936,
+      "char_end": 12937,
+      "line_start": 323,
+      "line_end": 323,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.2 Minimum Required Thrust for Gate Valves",
+      "nearest_heading": "2.3.2 Minimum Required Thrust for Gate Valves",
+      "kind": "blank",
+      "block_id": "B00268",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12937,
+      "char_end": 12954,
+      "line_start": 324,
+      "line_end": 324,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "heading",
+      "block_id": "B00269",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 12954,
+      "char_end": 12955,
+      "line_start": 325,
+      "line_end": 325,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "blank",
+      "block_id": "B00270",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 12955,
+      "char_end": 13031,
+      "line_start": 326,
+      "line_end": 327,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "content",
+      "block_id": "B00271",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13031,
+      "char_end": 13032,
+      "line_start": 328,
+      "line_end": 328,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "blank",
+      "block_id": "B00272",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13032,
+      "char_end": 13071,
+      "line_start": 329,
+      "line_end": 329,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "content",
+      "block_id": "B00273",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13071,
+      "char_end": 13072,
+      "line_start": 330,
+      "line_end": 330,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "blank",
+      "block_id": "B00274",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13072,
+      "char_end": 13097,
+      "line_start": 331,
+      "line_end": 331,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "content",
+      "block_id": "B00275",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13097,
+      "char_end": 13098,
+      "line_start": 332,
+      "line_end": 332,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Valve factor",
+      "nearest_heading": "Valve factor",
+      "kind": "blank",
+      "block_id": "B00276",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13098,
+      "char_end": 13136,
+      "line_start": 333,
+      "line_end": 333,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "heading",
+      "block_id": "B00277",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13136,
+      "char_end": 13137,
+      "line_start": 334,
+      "line_end": 334,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "blank",
+      "block_id": "B00278",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13137,
+      "char_end": 13192,
+      "line_start": 335,
+      "line_end": 335,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "content",
+      "block_id": "B00279",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13192,
+      "char_end": 13193,
+      "line_start": 336,
+      "line_end": 336,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "blank",
+      "block_id": "B00280",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13193,
+      "char_end": 13240,
+      "line_start": 337,
+      "line_end": 337,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "content",
+      "block_id": "B00281",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13240,
+      "char_end": 13241,
+      "line_start": 338,
+      "line_end": 338,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "blank",
+      "block_id": "B00282",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13241,
+      "char_end": 13285,
+      "line_start": 339,
+      "line_end": 339,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "content",
+      "block_id": "B00283",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13285,
+      "char_end": 13286,
+      "line_start": 340,
+      "line_end": 340,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / Unwedging load (only for opening)",
+      "nearest_heading": "Unwedging load (only for opening)",
+      "kind": "blank",
+      "block_id": "B00284",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13286,
+      "char_end": 13334,
+      "line_start": 341,
+      "line_end": 341,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves",
+      "nearest_heading": "2.3.3 Total Required Torque for Ball Valves",
+      "kind": "heading",
+      "block_id": "B00285",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13334,
+      "char_end": 13335,
+      "line_start": 342,
+      "line_end": 342,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves",
+      "nearest_heading": "2.3.3 Total Required Torque for Ball Valves",
+      "kind": "blank",
+      "block_id": "B00286",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13335,
+      "char_end": 13348,
+      "line_start": 343,
+      "line_end": 343,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Opening",
+      "nearest_heading": "Opening",
+      "kind": "heading",
+      "block_id": "B00287",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13348,
+      "char_end": 13349,
+      "line_start": 344,
+      "line_end": 344,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Opening",
+      "nearest_heading": "Opening",
+      "kind": "blank",
+      "block_id": "B00288",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13349,
+      "char_end": 13390,
+      "line_start": 345,
+      "line_end": 345,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Opening",
+      "nearest_heading": "Opening",
+      "kind": "content",
+      "block_id": "B00289",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13390,
+      "char_end": 13391,
+      "line_start": 346,
+      "line_end": 346,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Opening",
+      "nearest_heading": "Opening",
+      "kind": "blank",
+      "block_id": "B00290",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13391,
+      "char_end": 13433,
+      "line_start": 347,
+      "line_end": 347,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Opening",
+      "nearest_heading": "Opening",
+      "kind": "content",
+      "block_id": "B00291",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13433,
+      "char_end": 13434,
+      "line_start": 348,
+      "line_end": 348,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Opening",
+      "nearest_heading": "Opening",
+      "kind": "blank",
+      "block_id": "B00292",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13434,
+      "char_end": 13447,
+      "line_start": 349,
+      "line_end": 349,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "heading",
+      "block_id": "B00293",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13447,
+      "char_end": 13448,
+      "line_start": 350,
+      "line_end": 350,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00294",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13448,
+      "char_end": 13486,
+      "line_start": 351,
+      "line_end": 351,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00295",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13486,
+      "char_end": 13487,
+      "line_start": 352,
+      "line_end": 352,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00296",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13487,
+      "char_end": 13525,
+      "line_start": 353,
+      "line_end": 353,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00297",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13525,
+      "char_end": 13526,
+      "line_start": 354,
+      "line_end": 354,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00298",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13526,
+      "char_end": 13599,
+      "line_start": 355,
+      "line_end": 355,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00299",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13599,
+      "char_end": 13600,
+      "line_start": 356,
+      "line_end": 356,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00300",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13600,
+      "char_end": 13620,
+      "line_start": 357,
+      "line_end": 357,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00301",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13620,
+      "char_end": 13621,
+      "line_start": 358,
+      "line_end": 358,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00302",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13621,
+      "char_end": 13729,
+      "line_start": 359,
+      "line_end": 361,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00303",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 13729,
+      "char_end": 13730,
+      "line_start": 362,
+      "line_end": 362,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00304",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13730,
+      "char_end": 13792,
+      "line_start": 363,
+      "line_end": 363,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00305",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13792,
+      "char_end": 13793,
+      "line_start": 364,
+      "line_end": 364,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00306",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13793,
+      "char_end": 13836,
+      "line_start": 365,
+      "line_end": 365,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00307",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13836,
+      "char_end": 13837,
+      "line_start": 366,
+      "line_end": 366,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00308",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13837,
+      "char_end": 13872,
+      "line_start": 367,
+      "line_end": 367,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00309",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13872,
+      "char_end": 13873,
+      "line_start": 368,
+      "line_end": 368,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00310",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13873,
+      "char_end": 13907,
+      "line_start": 369,
+      "line_end": 369,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00311",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13907,
+      "char_end": 13908,
+      "line_start": 370,
+      "line_end": 370,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00312",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13908,
+      "char_end": 13941,
+      "line_start": 371,
+      "line_end": 371,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "content",
+      "block_id": "B00313",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 13941,
+      "char_end": 13942,
+      "line_start": 372,
+      "line_end": 372,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.3 Total Required Torque for Ball Valves / Closing",
+      "nearest_heading": "Closing",
+      "kind": "blank",
+      "block_id": "B00314",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13942,
+      "char_end": 13969,
+      "line_start": 373,
+      "line_end": 373,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.4 Butterfly valves",
+      "nearest_heading": "2.3.4 Butterfly valves",
+      "kind": "heading",
+      "block_id": "B00315",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 13969,
+      "char_end": 13970,
+      "line_start": 374,
+      "line_end": 374,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.4 Butterfly valves",
+      "nearest_heading": "2.3.4 Butterfly valves",
+      "kind": "blank",
+      "block_id": "B00316",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 13970,
+      "char_end": 14191,
+      "line_start": 375,
+      "line_end": 378,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.4 Butterfly valves",
+      "nearest_heading": "2.3.4 Butterfly valves",
+      "kind": "content",
+      "block_id": "B00317",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14191,
+      "char_end": 14192,
+      "line_start": 379,
+      "line_end": 379,
+      "chapter_path": "2. DESIGN BASIS REVIEW / Packing Friction Force / 2.3.4 Butterfly valves",
+      "nearest_heading": "2.3.4 Butterfly valves",
+      "kind": "blank",
+      "block_id": "B00318",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14192,
+      "char_end": 14220,
+      "line_start": 380,
+      "line_end": 380,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "heading",
+      "block_id": "B00319",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 14220,
+      "char_end": 14221,
+      "line_start": 381,
+      "line_end": 381,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00320",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14221,
+      "char_end": 14363,
+      "line_start": 382,
+      "line_end": 382,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "content",
+      "block_id": "B00321",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 14363,
+      "char_end": 14364,
+      "line_start": 383,
+      "line_end": 383,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00322",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14364,
+      "char_end": 14610,
+      "line_start": 384,
+      "line_end": 384,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "content",
+      "block_id": "B00323",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 14610,
+      "char_end": 14611,
+      "line_start": 385,
+      "line_end": 385,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00324",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14611,
+      "char_end": 14744,
+      "line_start": 386,
+      "line_end": 386,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "content",
+      "block_id": "B00325",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 14744,
+      "char_end": 14745,
+      "line_start": 387,
+      "line_end": 387,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00326",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14745,
+      "char_end": 14993,
+      "line_start": 388,
+      "line_end": 388,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "content",
+      "block_id": "B00327",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 14993,
+      "char_end": 14994,
+      "line_start": 389,
+      "line_end": 389,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00328",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 14994,
+      "char_end": 15180,
+      "line_start": 390,
+      "line_end": 390,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "content",
+      "block_id": "B00329",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 15180,
+      "char_end": 15181,
+      "line_start": 391,
+      "line_end": 391,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00330",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15181,
+      "char_end": 15416,
+      "line_start": 392,
+      "line_end": 392,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "content",
+      "block_id": "B00331",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 15416,
+      "char_end": 15417,
+      "line_start": 393,
+      "line_end": 393,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00332",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15417,
+      "char_end": 15614,
+      "line_start": 394,
+      "line_end": 396,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "content",
+      "block_id": "B00333",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 15614,
+      "char_end": 15615,
+      "line_start": 397,
+      "line_end": 397,
+      "chapter_path": "3. RESULTS OF EVALUATION",
+      "nearest_heading": "3. RESULTS OF EVALUATION",
+      "kind": "blank",
+      "block_id": "B00334",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15615,
+      "char_end": 15632,
+      "line_start": 398,
+      "line_end": 398,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "heading",
+      "block_id": "B00335",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 15632,
+      "char_end": 15633,
+      "line_start": 399,
+      "line_end": 399,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00336",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15633,
+      "char_end": 15705,
+      "line_start": 400,
+      "line_end": 400,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "content",
+      "block_id": "B00337",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 15705,
+      "char_end": 15706,
+      "line_start": 401,
+      "line_end": 401,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00338",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15706,
+      "char_end": 15768,
+      "line_start": 402,
+      "line_end": 402,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "content",
+      "block_id": "B00339",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 15768,
+      "char_end": 15769,
+      "line_start": 403,
+      "line_end": 403,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00340",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15769,
+      "char_end": 15821,
+      "line_start": 404,
+      "line_end": 404,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "content",
+      "block_id": "B00341",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 15821,
+      "char_end": 15822,
+      "line_start": 405,
+      "line_end": 405,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00342",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15822,
+      "char_end": 15851,
+      "line_start": 406,
+      "line_end": 406,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "content",
+      "block_id": "B00343",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 15851,
+      "char_end": 15852,
+      "line_start": 407,
+      "line_end": 407,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00344",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15852,
+      "char_end": 15913,
+      "line_start": 408,
+      "line_end": 408,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "content",
+      "block_id": "B00345",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 15913,
+      "char_end": 15914,
+      "line_start": 409,
+      "line_end": 409,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00346",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 15914,
+      "char_end": 16038,
+      "line_start": 410,
+      "line_end": 411,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "content",
+      "block_id": "B00347",
+      "disposition": "no_keyword_match"
+    },
+    {
+      "char_start": 16038,
+      "char_end": 16039,
+      "line_start": 412,
+      "line_end": 412,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00348",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 16039,
+      "char_end": 16133,
+      "line_start": 413,
+      "line_end": 415,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "content",
+      "block_id": "B00349",
+      "disposition": "candidate_lead"
+    },
+    {
+      "char_start": 16133,
+      "char_end": 16134,
+      "line_start": 416,
+      "line_end": 416,
+      "chapter_path": "4. REFERENCES",
+      "nearest_heading": "4. REFERENCES",
+      "kind": "blank",
+      "block_id": "B00350",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 16134,
+      "char_end": 16149,
+      "line_start": 417,
+      "line_end": 417,
+      "chapter_path": "5. APPENDIX",
+      "nearest_heading": "5. APPENDIX",
+      "kind": "heading",
+      "block_id": "B00351",
+      "disposition": "heading"
+    },
+    {
+      "char_start": 16149,
+      "char_end": 16150,
+      "line_start": 418,
+      "line_end": 418,
+      "chapter_path": "5. APPENDIX",
+      "nearest_heading": "5. APPENDIX",
+      "kind": "blank",
+      "block_id": "B00352",
+      "disposition": "blank"
+    },
+    {
+      "char_start": 16150,
+      "char_end": 16153,
+      "line_start": 419,
+      "line_end": 419,
+      "chapter_path": "5. APPENDIX",
+      "nearest_heading": "5. APPENDIX",
+      "kind": "content",
+      "block_id": "B00353",
+      "disposition": "no_keyword_match"
+    }
+  ]
+}

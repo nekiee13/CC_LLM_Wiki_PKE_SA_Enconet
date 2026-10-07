@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "fixture_version": "ENCONET-NP-V3-20261007-DRAFT",
+  "status": "pending_human_approval",
+  "approval_ref": null,
+  "prompt_version": "appb_document_v3_context_anchors",
+  "independent_prompt_evaluation": false,
+  "document": {
+    "doc_id": "DOC-0001",
+    "filename": "NP-SUK-001R8(Nuklearni QA plan).pdf.md",
+    "side": "DOCUMENT",
+    "purpose": "Local 20-example semantic/exact-quote calibration; neither full-document sieving nor audit results"
+  },
+  "expected_crumbs": [
+    {
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Voditelj QA prijavljuje neriješene probleme kvalitete direktoru i može inicirati obustavu radova sigurnosne klase.",
+      "quotes": [
+        "Odgovornost voditelja QA poslova je izvještavanje direktora o bilo kojem neriješenom problemu kvalitete ili bilo kojem nesukladnom entitetu, ukoliko na razini voditelja projekata nema rješenja ili rješenje nije zadovoljavajuće. Ukoliko je entitet ili usluga nuklearne sigurnosne klase, ovlašten je da inicira proces obustave radova sve dok se ne postigne zadovoljavajuće rješenje."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Direktor je odgovoran za izobrazbu, godišnji plan i čuvanje dokaza o osposobljenosti.",
+      "quotes": [
+        "Direktor Enconeta snosi odgovornost za primjenu programa izobrazbe cjelokupnog osoblja koje izvodi aktivnosti značajne za kvalitetu. Priprema se godišnji plan izobrazbe, a dokazi o sudjelovanju učesnika i njihovoj osposobljenosti smatraju se QA dokumentacijom."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Stručnjaci koji verificiraju projekt ne smiju sudjelovati u njegovoj izradi.",
+      "quotes": [
+        "Voditelj projekta odgovoran je za određivanje stručnjaka koji će sudjelovati u stručnom timu za verifikaciju projekta, a koji nisu učestvovali u izradi projekta."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Voditelji prenose regulatorne, projektne i kvalitativne zahtjeve u nabavne dokumente.",
+      "quotes": [
+        "Voditelji projekata odgovorni su da se odgovarajući zahtjevi prenesu iz regulatornih zahtjeva, temeljnih projektnih podataka, standarda, specifikacija i zahtjeva kvalitete u nabavne dokumente proizvoda ili usluga."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Pisani postupci propisuju rad i kriterije prihvaćanja te se odobravaju i kontrolirano dijele.",
+      "quotes": [
+        "Aktivnosti koje utječu na kvalitetu moraju se izvoditi prema pisanim postupcima,\nuputama ili nacrtima. U svakom postupku utvrditi će se kvantitativno i/ili\nkvalitativno kriterij prihvaćanja. Ovi postupci moraju biti odobreni, objavljeni i\nrazdijeljeni u kontroliranim uvjetima."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Promjene dokumenata prolaze pregled i odobrenje kao izvornik, uz pristup izvornim podlogama.",
+      "quotes": [
+        "Promjene u dokumentima i podacima moraju biti podvrgnute istom postupku kao i izvorno izdanje. Pregled i odobrenje mora izvršiti ista organizacijska jedinica koja je izvršila pregled i odobrenje izvornika ili neka druga posebno određena organizacija koja ima pristup relevantnim podlogama na temelju kojih je odobren izvornik."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Prije uporabe nabavljenog proizvoda ili usluge mora se dokumentirano dokazati sukladnost.",
+      "quotes": [
+        "Prije ugradnje ili korištenja proizvoda ili usluge pod nadzorom Enconeta, mora se\ndokumentirano dokazati sukladnost s nabavnim dokumentima."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Kad fizička oznaka nije praktična, identifikacija se održava proceduralnom kontrolom.",
+      "quotes": [
+        "Fizička identifikacija provodit će se koliko je to maksimalno moguće ostvariti. Ukoliko je to nepraktično, usvojit će se proceduralna kontrola."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Za vizualnu QC kontrolu navedeni su trening i zdravstvene kontrole vida u ugovorenom opsegu.",
+      "quotes": [
+        "Enconet je do sada uključen u kategoriju specijalnih procesa na području vizualne kontrole QC aktivnosti. Trening i zdravstveni uvjeti osiguravaju se u sklopu zahtjeva NE Krško. Direktni izvršioci imaju odgovarajući trening i zdravstvene kontrole vida. Specijalni procesi provode se u skladu sa zahtjevima ugovorenih poslova."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Pregled obavlja osoblje koje nije izvodilo provjeravani rad, prema dokumentiranim kriterijima.",
+      "quotes": [
+        "Ispitivanje dijelova, proizvoda ili usluga u opsegu isporuke Enconeta ili pod njegovim nadzorom mora provoditi osoblje koje nije sudjelovalo u izvođenju aktivnosti koje se pregledavaju. Kriteriji prihvatljivosti i verifikacije sukladnosti moraju se utvrditi u dokumentiranim uputama, postupcima i nacrtima. Ukoliko nije moguće ispitivanje obrađenog dijela, proizvoda ili usluge, provodit će se praćenje procesa na način naveden u poglavlju 8. ovog NQAP."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Postupci testiranja propisuju okolišne uvjete, kvalifikacije osoblja i kalibraciju instrumenata.",
+      "quotes": [
+        "Testiranje pod nadzorom Enconeta mora se izvoditi prema pisanim postupcima testiranja. Takvi postupci moraju utvrditi odgovarajuće okolišne uvjete, te zahtjeve za kvalifikacijom osoblja i kalibracijom instrumenata."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Odstupanje mjernih vrijednosti traži vrednovanje ranijih mjerenja od posljednje kalibracije.",
+      "quotes": [
+        "Oprema se mora kontrolirati s obzirom na rukovanje, skladištenje i kalibraciju. Ukoliko se utvrdi odstupanje izmjerenih vrijednosti preko dopuštenih ograničenja, mora se izvršiti vrednovanje vjerodostojnosti prije obavljenih mjerenja, a rezultati ispitivanja moraju se ponovno procijeniti za cjelokupno razdoblje od zadnje kalibracije."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XIII",
+      "statement": "supporting_control: Kada odgovara za rukovanje, prijevoz i skladištenje, Enconet propisuje zaštitne mjere protiv oštećenja.",
+      "quotes": [
+        "Enconet mora kontrolirati aktivnosti rukovanja, otpreme i skladištenja u svrhu sprječavanja oštećenja, propadanja ili gubitka proizvoda. Ukoliko je potrebno, moraju se utvrditi, propisati, održavati i verificirati posebne mjere o rukovanju i zaštitnim okolišnim uvjetima prilikom transporta i skladištenja onda kad je Enconet odgovoran za navedene aktivnosti."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Oznake i kartice povezuju ispitane entitete sa stanjem pregleda i sprječavaju nenamjernu uporabu.",
+      "quotes": [
+        "Oprema za mjerenje i ispitivanje mora biti jednoznačno obilježena, tako da se u slučaju korištenja te opreme njena oznaka prenosi na pojedinačne entitete koji su pregledani i ispitani. Trebaju se koristiti tipske kartice ili zapisnici pregleda radi utvrđivanja stanja pregleda i ispitivanja, kao i sljedivost testiranih entiteta kroz izvješća. Kod testiranih sustava, komponenti i dijelova koristit će se fizičko označivanje karticama kako bi se spriječila nepažljiva uporaba."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Postupanje s nesukladnim proizvodom ili uslugom prolazi inženjersku ocjenu i odobrenje prije prihvaćanja.",
+      "quotes": [
+        "Nesukladni proizvodi ili usluge moraju biti podvrgnuti inženjerskoj ocjeni i vrednovanju. Postupanje mora biti verificirano i odobreno od voditelja projekta prije prihvaćanja proizvoda s bilo kojim stanjem (koristi kao što je, popravak-dorada, prenamjena, odbijen ili odbačen)."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Značajna nesukladnost traži analizu uzroka radi sprječavanja ponavljanja.",
+      "quotes": [
+        "Enconet mora provesti analizu uzroka nastajanja nesukladnosti, sa svrhom sprječavanja ponavljanja u slučaju pojave uvjeta koji značajno ugrožavaju kvalitetu."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Postupak mora propisati razdoblje čuvanja i raspolaganje zapisima kvalitete.",
+      "quotes": [
+        "Vremensko razdoblje čuvanja i raspolaganja zapisima kvalitete mora biti propisano u dokumentiranom postupku. Kao minimalno, prihvatljivo je razvrstavanje zapisa i period čuvanja kako je određeno u ANSI N.45.2.9."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Audit provodi kvalificirano osoblje bez izravne odgovornosti za ocjenjivani rad, uz naknadnu provjeru popravnih radnji.",
+      "quotes": [
+        "Unutarnje, kao i vanjsko nezavisno ocjenjivanje kvalitete, mora provoditi izabrani tim kvalificiranog osoblja koje nema izravnu odgovornost za izvedbu poslova čija se uspješnost ocjenjuje. Izvješća s primjedbama i nalazima moraju se dostaviti rukovodećem osoblju organizacije i direktoru Enconeta. Naknadno nezavisno ocjenjivanje mora verificirati i zabilježiti primjenu i uspješnost provedenih popravnih radnji."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: NQAP navodi usklađenost s regulativom i standardima; objective evidence not shown.",
+      "quotes": [
+        "QA Program opisan u ovom NQAP sukladan je zahtjevima propisa IAEA General Safety Requirements, No. GSR Part 2, Vienna 2016, Leadership and Management for Safety, zahtjevima Saveznog državnog zakona SAD 10CFR50, App. B, QA Criteria for Nuclear Power Plants and Fuel Reprocessing Plants, ASME NQA-1-1994 (95 addenda) and 2008 editions, QA Requirements for Nuclear Facility Aplications, 10CFR Part 21, Reporting of Defects and Noncompliance, kao i odgovarajućih propisanih preporuka, zakona i standarda ukoliko se primjenjuju za poslove kod ili za korisnika usluga Enconeta."
+      ]
+    },
+    {
+      "criterion_id": "APP_B_XIII",
+      "statement": "candidate_lead: Dobavljač tvrdi da dosadašnji opseg ne traži kriterij XIII; candidate; verify criterion mapping.",
+      "quotes": [
+        "Izuzetak:\nPriručnik kvalitete ne uključuje kriterij XIII Appendix-a B, 10CFR50. Dosadašnje aktivnosti Enconeta po svojoj naravi i opsegu ne zahtijevaju primjenu navedenog kriterija XIII - Handling, Storage and Shipping.\nPrilikom pružanja usluga u NEK-u, Enconetovi djelatnici u radu primjenjuju QA program NEK-a.\nUkoliko Enconet u budućnosti bude pružao usluge NE Krško, koje bi zahtijevale primjenu kriterija XIII, Dodatka B, 10CFR50, poštivati će se zahtjevi odgovarajućih postupaka NE Krško, što nije u suprotnosti s kodom i biti će specificirano u ponudi Enconeta. U slučaju opsežnih i dugotrajnih radova na području koje bi zahtijevalo striktnu primjenu tog kriterija Enconet će razviti svoje postupke."
+      ]
+    }
+  ]
+}

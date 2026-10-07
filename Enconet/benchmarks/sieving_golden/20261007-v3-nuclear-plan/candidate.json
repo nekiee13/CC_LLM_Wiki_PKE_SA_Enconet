@@ -1,0 +1,515 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "calibration_status": "manual-review-candidate-not-prompt-execution",
+  "document": {
+    "name": "NP-SUK-001R8(Nuklearni QA plan).pdf.md",
+    "title": "NUKLEARNI QA PLAN",
+    "date": "2023-04-14",
+    "doc_id": "DOC-0001",
+    "document_side": "DOCUMENT",
+    "authority_references": [],
+    "source_rules": null
+  },
+  "items": [
+    {
+      "item_id": "CAL-001",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Voditelj QA prijavljuje neriješene probleme kvalitete direktoru i može inicirati obustavu radova sigurnosne klase.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "3 ORGANIZACIJA [line 226] > 3.1 Odgovornosti, ovlaštenja i komunikacije [line 230]",
+          "source_heading_path": "3 ORGANIZACIJA [line 226] > 3.1 Odgovornosti, ovlaštenja i komunikacije [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odgovornost voditelja QA poslova je izvještavanje direktora o bilo kojem neriješenom problemu kvalitete ili bilo kojem nesukladnom entitetu, ukoliko na razini voditelja projekata nema rješenja ili rješenje nije zadovoljavajuće. Ukoliko je entitet ili usluga nuklearne sigurnosne klase, ovlašten je da inicira proces obustave radova sve dok se ne postigne zadovoljavajuće rješenje.",
+          "quote_language": "hr",
+          "source_locator": "3 ORGANIZACIJA [line 226] > 3.1 Odgovornosti, ovlaštenja i komunikacije [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-002",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Direktor je odgovoran za izobrazbu, godišnji plan i čuvanje dokaza o osposobljenosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 UVOD [line 123] > 2 PROGRAM OSIGURAVANJE KVALITETE [line 154]",
+          "source_heading_path": "1 UVOD [line 123] > 2 PROGRAM OSIGURAVANJE KVALITETE [line 154]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta snosi odgovornost za primjenu programa izobrazbe cjelokupnog osoblja koje izvodi aktivnosti značajne za kvalitetu. Priprema se godišnji plan izobrazbe, a dokazi o sudjelovanju učesnika i njihovoj osposobljenosti smatraju se QA dokumentacijom.",
+          "quote_language": "hr",
+          "source_locator": "1 UVOD [line 123] > 2 PROGRAM OSIGURAVANJE KVALITETE [line 154]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-003",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Stručnjaci koji verificiraju projekt ne smiju sudjelovati u njegovoj izradi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "5 UPRAVLJANJE PROJEKTOM [line 306] > 5.3 Verifikacija projekta [line 334]",
+          "source_heading_path": "5 UPRAVLJANJE PROJEKTOM [line 306] > 5.3 Verifikacija projekta [line 334]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za određivanje stručnjaka koji će sudjelovati u stručnom timu za verifikaciju projekta, a koji nisu učestvovali u izradi projekta.",
+          "quote_language": "hr",
+          "source_locator": "5 UPRAVLJANJE PROJEKTOM [line 306] > 5.3 Verifikacija projekta [line 334]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-004",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "objective_control: Voditelji prenose regulatorne, projektne i kvalitativne zahtjeve u nabavne dokumente.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "6 KONTROLA NABAVE [line 359] > 6.1 Općenito [line 364]",
+          "source_heading_path": "6 KONTROLA NABAVE [line 359] > 6.1 Općenito [line 364]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelji projekata odgovorni su da se odgovarajući zahtjevi prenesu iz regulatornih zahtjeva, temeljnih projektnih podataka, standarda, specifikacija i zahtjeva kvalitete u nabavne dokumente proizvoda ili usluga.",
+          "quote_language": "hr",
+          "source_locator": "6 KONTROLA NABAVE [line 359] > 6.1 Općenito [line 364]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-005",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: Pisani postupci propisuju rad i kriterije prihvaćanja te se odobravaju i kontrolirano dijele.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "2 PROGRAM OSIGURAVANJE KVALITETE [line 184] > 2.2 Postupci, upute i nacrti [line 193]",
+          "source_heading_path": "2 PROGRAM OSIGURAVANJE KVALITETE [line 184] > 2.2 Postupci, upute i nacrti [line 193]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Aktivnosti koje utječu na kvalitetu moraju se izvoditi prema pisanim postupcima,\nuputama ili nacrtima. U svakom postupku utvrditi će se kvantitativno i/ili\nkvalitativno kriterij prihvaćanja. Ovi postupci moraju biti odobreni, objavljeni i\nrazdijeljeni u kontroliranim uvjetima.",
+          "quote_language": "hr",
+          "source_locator": "2 PROGRAM OSIGURAVANJE KVALITETE [line 184] > 2.2 Postupci, upute i nacrti [line 193]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-006",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Promjene dokumenata prolaze pregled i odobrenje kao izvornik, uz pristup izvornim podlogama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 UPRAVLJANJE DOKUMENTIMA [line 272] > 4.3 Kontrola promjene dokumenta [line 298]",
+          "source_heading_path": "4 UPRAVLJANJE DOKUMENTIMA [line 272] > 4.3 Kontrola promjene dokumenta [line 298]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Promjene u dokumentima i podacima moraju biti podvrgnute istom postupku kao i izvorno izdanje. Pregled i odobrenje mora izvršiti ista organizacijska jedinica koja je izvršila pregled i odobrenje izvornika ili neka druga posebno određena organizacija koja ima pristup relevantnim podlogama na temelju kojih je odobren izvornik.",
+          "quote_language": "hr",
+          "source_locator": "4 UPRAVLJANJE DOKUMENTIMA [line 272] > 4.3 Kontrola promjene dokumenta [line 298]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-007",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: Prije uporabe nabavljenog proizvoda ili usluge mora se dokumentirano dokazati sukladnost.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "6 KONTROLA NABAVE [line 392] > 6.3 Kontrola naručenih proizvoda i usluga [line 423]",
+          "source_heading_path": "6 KONTROLA NABAVE [line 392] > 6.3 Kontrola naručenih proizvoda i usluga [line 423]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Prije ugradnje ili korištenja proizvoda ili usluge pod nadzorom Enconeta, mora se\ndokumentirano dokazati sukladnost s nabavnim dokumentima.",
+          "quote_language": "hr",
+          "source_locator": "6 KONTROLA NABAVE [line 392] > 6.3 Kontrola naručenih proizvoda i usluga [line 423]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-008",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "supporting_control: Kad fizička oznaka nije praktična, identifikacija se održava proceduralnom kontrolom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI [line 436] > 7.1 Identifikacija i kontrola materijala, dijelova i komponenti [line 441]",
+          "source_heading_path": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI [line 436] > 7.1 Identifikacija i kontrola materijala, dijelova i komponenti [line 441]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Fizička identifikacija provodit će se koliko je to maksimalno moguće ostvariti. Ukoliko je to nepraktično, usvojit će se proceduralna kontrola.",
+          "quote_language": "hr",
+          "source_locator": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI [line 436] > 7.1 Identifikacija i kontrola materijala, dijelova i komponenti [line 441]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-009",
+      "criterion_id": "APP_B_IX",
+      "criterion_name": "Control of Special Processes",
+      "statement": "objective_control: Za vizualnu QC kontrolu navedeni su trening i zdravstvene kontrole vida u ugovorenom opsegu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "8 UPRAVLJANJE PROCESOM [line 461] > 8.2 Specijalni procesi [line 472]",
+          "source_heading_path": "8 UPRAVLJANJE PROCESOM [line 461] > 8.2 Specijalni procesi [line 472]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Enconet je do sada uključen u kategoriju specijalnih procesa na području vizualne kontrole QC aktivnosti. Trening i zdravstveni uvjeti osiguravaju se u sklopu zahtjeva NE Krško. Direktni izvršioci imaju odgovarajući trening i zdravstvene kontrole vida. Specijalni procesi provode se u skladu sa zahtjevima ugovorenih poslova.",
+          "quote_language": "hr",
+          "source_locator": "8 UPRAVLJANJE PROCESOM [line 461] > 8.2 Specijalni procesi [line 472]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-010",
+      "criterion_id": "APP_B_X",
+      "criterion_name": "Inspection",
+      "statement": "objective_control: Pregled obavlja osoblje koje nije izvodilo provjeravani rad, prema dokumentiranim kriterijima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.1 Program inspekcije [line 491]",
+          "source_heading_path": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.1 Program inspekcije [line 491]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ispitivanje dijelova, proizvoda ili usluga u opsegu isporuke Enconeta ili pod njegovim nadzorom mora provoditi osoblje koje nije sudjelovalo u izvođenju aktivnosti koje se pregledavaju. Kriteriji prihvatljivosti i verifikacije sukladnosti moraju se utvrditi u dokumentiranim uputama, postupcima i nacrtima. Ukoliko nije moguće ispitivanje obrađenog dijela, proizvoda ili usluge, provodit će se praćenje procesa na način naveden u poglavlju 8. ovog NQAP.",
+          "quote_language": "hr",
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.1 Program inspekcije [line 491]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-011",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "objective_control: Postupci testiranja propisuju okolišne uvjete, kvalifikacije osoblja i kalibraciju instrumenata.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.2 Program testiranja [line 501]",
+          "source_heading_path": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.2 Program testiranja [line 501]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Testiranje pod nadzorom Enconeta mora se izvoditi prema pisanim postupcima testiranja. Takvi postupci moraju utvrditi odgovarajuće okolišne uvjete, te zahtjeve za kvalifikacijom osoblja i kalibracijom instrumenata.",
+          "quote_language": "hr",
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.2 Program testiranja [line 501]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-012",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "objective_control: Odstupanje mjernih vrijednosti traži vrednovanje ranijih mjerenja od posljednje kalibracije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.3 Kalibracija i kontrola opreme za mjerenje i testiranje [line 507]",
+          "source_heading_path": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.3 Kalibracija i kontrola opreme za mjerenje i testiranje [line 507]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Oprema se mora kontrolirati s obzirom na rukovanje, skladištenje i kalibraciju. Ukoliko se utvrdi odstupanje izmjerenih vrijednosti preko dopuštenih ograničenja, mora se izvršiti vrednovanje vjerodostojnosti prije obavljenih mjerenja, a rezultati ispitivanja moraju se ponovno procijeniti za cjelokupno razdoblje od zadnje kalibracije.",
+          "quote_language": "hr",
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.3 Kalibracija i kontrola opreme za mjerenje i testiranje [line 507]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-013",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "supporting_control: Kada odgovara za rukovanje, prijevoz i skladištenje, Enconet propisuje zaštitne mjere protiv oštećenja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI [line 436] > 7.2 Rukovanje, skladištenje i otprema [line 451]",
+          "source_heading_path": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI [line 436] > 7.2 Rukovanje, skladištenje i otprema [line 451]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Enconet mora kontrolirati aktivnosti rukovanja, otpreme i skladištenja u svrhu sprječavanja oštećenja, propadanja ili gubitka proizvoda. Ukoliko je potrebno, moraju se utvrditi, propisati, održavati i verificirati posebne mjere o rukovanju i zaštitnim okolišnim uvjetima prilikom transporta i skladištenja onda kad je Enconet odgovoran za navedene aktivnosti.",
+          "quote_language": "hr",
+          "source_locator": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI [line 436] > 7.2 Rukovanje, skladištenje i otprema [line 451]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-014",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "objective_control: Oznake i kartice povezuju ispitane entitete sa stanjem pregleda i sprječavaju nenamjernu uporabu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.4 Identifikacija stanja inspekcije, testa i rada [line 517]",
+          "source_heading_path": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.4 Identifikacija stanja inspekcije, testa i rada [line 517]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Oprema za mjerenje i ispitivanje mora biti jednoznačno obilježena, tako da se u slučaju korištenja te opreme njena oznaka prenosi na pojedinačne entitete koji su pregledani i ispitani. Trebaju se koristiti tipske kartice ili zapisnici pregleda radi utvrđivanja stanja pregleda i ispitivanja, kao i sljedivost testiranih entiteta kroz izvješća. Kod testiranih sustava, komponenti i dijelova koristit će se fizičko označivanje karticama kako bi se spriječila nepažljiva uporaba.",
+          "quote_language": "hr",
+          "source_locator": "9 INSPEKCIJA I TESTIRANJE [line 486] > 9.4 Identifikacija stanja inspekcije, testa i rada [line 517]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-015",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "objective_control: Postupanje s nesukladnim proizvodom ili uslugom prolazi inženjersku ocjenu i odobrenje prije prihvaćanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "10 KONTROLA NESUKLADNOSTI [line 523] > 10.2 Ocjena i rješavanje nesukladnosti [line 532]",
+          "source_heading_path": "10 KONTROLA NESUKLADNOSTI [line 523] > 10.2 Ocjena i rješavanje nesukladnosti [line 532]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nesukladni proizvodi ili usluge moraju biti podvrgnuti inženjerskoj ocjeni i vrednovanju. Postupanje mora biti verificirano i odobreno od voditelja projekta prije prihvaćanja proizvoda s bilo kojim stanjem (koristi kao što je, popravak-dorada, prenamjena, odbijen ili odbačen).",
+          "quote_language": "hr",
+          "source_locator": "10 KONTROLA NESUKLADNOSTI [line 523] > 10.2 Ocjena i rješavanje nesukladnosti [line 532]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-016",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Značajna nesukladnost traži analizu uzroka radi sprječavanja ponavljanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "11 POPRAVNE RADNJE [line 542] > 11.1 Popravne radnje [line 547]",
+          "source_heading_path": "11 POPRAVNE RADNJE [line 542] > 11.1 Popravne radnje [line 547]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Enconet mora provesti analizu uzroka nastajanja nesukladnosti, sa svrhom sprječavanja ponavljanja u slučaju pojave uvjeta koji značajno ugrožavaju kvalitetu.",
+          "quote_language": "hr",
+          "source_locator": "11 POPRAVNE RADNJE [line 542] > 11.1 Popravne radnje [line 547]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-017",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Postupak mora propisati razdoblje čuvanja i raspolaganje zapisima kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "12 QA ZAPISI [line 557] > 12.2 Prikupljanje, arhiviranje i čuvanje QA zapisa [line 568]",
+          "source_heading_path": "12 QA ZAPISI [line 557] > 12.2 Prikupljanje, arhiviranje i čuvanje QA zapisa [line 568]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Vremensko razdoblje čuvanja i raspolaganja zapisima kvalitete mora biti propisano u dokumentiranom postupku. Kao minimalno, prihvatljivo je razvrstavanje zapisa i period čuvanja kako je određeno u ANSI N.45.2.9.",
+          "quote_language": "hr",
+          "source_locator": "12 QA ZAPISI [line 557] > 12.2 Prikupljanje, arhiviranje i čuvanje QA zapisa [line 568]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-018",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "objective_control: Audit provodi kvalificirano osoblje bez izravne odgovornosti za ocjenjivani rad, uz naknadnu provjeru popravnih radnji.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "13 NEZAVISNO OCJENJIVANJE KVALITETE [line 578] > 13.1 Općenito [line 583]",
+          "source_heading_path": "13 NEZAVISNO OCJENJIVANJE KVALITETE [line 578] > 13.1 Općenito [line 583]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Unutarnje, kao i vanjsko nezavisno ocjenjivanje kvalitete, mora provoditi izabrani tim kvalificiranog osoblja koje nema izravnu odgovornost za izvedbu poslova čija se uspješnost ocjenjuje. Izvješća s primjedbama i nalazima moraju se dostaviti rukovodećem osoblju organizacije i direktoru Enconeta. Naknadno nezavisno ocjenjivanje mora verificirati i zabilježiti primjenu i uspješnost provedenih popravnih radnji.",
+          "quote_language": "hr",
+          "source_locator": "13 NEZAVISNO OCJENJIVANJE KVALITETE [line 578] > 13.1 Općenito [line 583]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-019",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: NQAP navodi usklađenost s regulativom i standardima; objective evidence not shown.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 UVOD [line 92] > 1.1 Općenito [line 94]",
+          "source_heading_path": "1 UVOD [line 92] > 1.1 Općenito [line 94]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "QA Program opisan u ovom NQAP sukladan je zahtjevima propisa IAEA General Safety Requirements, No. GSR Part 2, Vienna 2016, Leadership and Management for Safety, zahtjevima Saveznog državnog zakona SAD 10CFR50, App. B, QA Criteria for Nuclear Power Plants and Fuel Reprocessing Plants, ASME NQA-1-1994 (95 addenda) and 2008 editions, QA Requirements for Nuclear Facility Aplications, 10CFR Part 21, Reporting of Defects and Noncompliance, kao i odgovarajućih propisanih preporuka, zakona i standarda ukoliko se primjenjuju za poslove kod ili za korisnika usluga Enconeta.",
+          "quote_language": "hr",
+          "source_locator": "1 UVOD [line 92] > 1.1 Općenito [line 94]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "8"
+      }
+    },
+    {
+      "item_id": "CAL-020",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "candidate_lead: Dobavljač tvrdi da dosadašnji opseg ne traži kriterij XIII; candidate; verify criterion mapping.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "13 NEZAVISNO OCJENJIVANJE KVALITETE [line 578] > 14 PRILOZI [line 593]",
+          "source_heading_path": "13 NEZAVISNO OCJENJIVANJE KVALITETE [line 578] > 14 PRILOZI [line 593]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izuzetak:\nPriručnik kvalitete ne uključuje kriterij XIII Appendix-a B, 10CFR50. Dosadašnje aktivnosti Enconeta po svojoj naravi i opsegu ne zahtijevaju primjenu navedenog kriterija XIII - Handling, Storage and Shipping.\nPrilikom pružanja usluga u NEK-u, Enconetovi djelatnici u radu primjenjuju QA program NEK-a.\nUkoliko Enconet u budućnosti bude pružao usluge NE Krško, koje bi zahtijevale primjenu kriterija XIII, Dodatka B, 10CFR50, poštivati će se zahtjevi odgovarajućih postupaka NE Krško, što nije u suprotnosti s kodom i biti će specificirano u ponudi Enconeta. U slučaju opsežnih i dugotrajnih radova na području koje bi zahtijevalo striktnu primjenu tog kriterija Enconet će razviti svoje postupke.",
+          "quote_language": "hr",
+          "source_locator": "13 NEZAVISNO OCJENJIVANJE KVALITETE [line 578] > 14 PRILOZI [line 593]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "8"
+      }
+    }
+  ]
+}
