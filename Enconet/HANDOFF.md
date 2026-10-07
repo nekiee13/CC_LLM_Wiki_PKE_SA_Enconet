@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-09-04T222413Z-2911321.md`](handoffs/2026-09-04T222413Z-2911321.md)
+**Authoritative record:** [`handoffs/2026-10-07T103200Z-9810b5a.md`](handoffs/2026-10-07T103200Z-9810b5a.md)
 
-**Status:** complete · **Git:** `2911321` · **Agent:** codex · **Created:** 2026-09-04T22:24:13Z
+**Status:** partial · **Git:** `9810b5a` · **Agent:** codex · **Created:** 2026-10-07T10:32:00Z
 
-**Exact next action:** No required Evidence Access release action remains. Owner may separately decide whether to evaluate optional EA7 live-service need; otherwise continue the nine approved supplier follow-up actions.
+**Exact next action:** Owner selects vendor deployment and source editions; Claude reviews the release and synchronizes its own guidance. Use doc/framework-reuse/ROLLOUT_20261007.md; do not re-audit Enconet or activate its candidate prompt without approval.
