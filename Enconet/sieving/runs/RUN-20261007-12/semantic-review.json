@@ -1,0 +1,2377 @@
+{
+  "method": "Codex direct-control and quality-intent full-source review; no automatic keyword acceptance",
+  "source_sha256": "c7ee232ec48cabf0b66d8104801111dc99728d968991ac745e2bda2610009126",
+  "content_blocks_reviewed": 224,
+  "counts": {
+    "items": 61,
+    "quotes": 142,
+    "direct": 35,
+    "supporting": 21,
+    "leads": 5
+  },
+  "decisions": [
+    {
+      "blocks": [
+        "B00005",
+        "B00007",
+        "B00008"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: RU-42-03 identificirana je oznakom, revizijom 2 i datumom objave.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00012",
+        "B00014",
+        "B00015"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Priprema, QA pregled i direktorovo odobrenje navedeni su s imenima i datumima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00019"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Predviđen je periodični pregled; prazna tablica nije dokaz izvršenog pregleda.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00052"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Uputa opisuje čuvanje korisničkih dokumenata i baze GPD-a pričuvnim kopijama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00054",
+        "B00056",
+        "B00058",
+        "B00060"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: RU-42-03 zamjenjuje tri stare upute koje prestaju važiti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00064",
+        "B00065"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Područje primjene obuhvaća pričuvne kopije podataka svih radnih stanica.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00064",
+        "B00066"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Područje primjene obuhvaća pričuvne kopije GPD baze i drugih poslužiteljskih podataka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00070"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Svi korisnici odgovaraju za vlastite podatke, opremu i praćenje pričuvnih kopija.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00072"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Administrator odgovara za poslužitelje, mrežu i računalni sustav.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00081",
+        "B00082",
+        "B00084",
+        "B00085"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Reference povezuju uputu s Priručnikom i PP-42-01; objective evidence not shown u samom popisu.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00093",
+        "B00099"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Shema mreže prikazuje besprekidno napajanje poslužitelja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00101"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Router/firewall opisuje zaštitu unutarnje mreže, uključujući DoS zaštitu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00103"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Bežični uređaji izolirani su od unutarnjih uređaja pomoću VLAN grupa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00105"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Detaljne konfiguracijske postavke vode se u Enconet-InfoConfig.xls.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00107",
+        "B00111",
+        "B00113"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Srv01b naveden je kao središte pričuvnih kopija svih radnih stanica i dijeljenja datoteka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00118"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Svakodnevni rad odvija se u user profilu, odvojeno od administratorskog, radi zaštite sustava.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00118"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Popis profila i zaporki prema uputi posjeduju administrator i direktor; sam popis nije dostavljen.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00124",
+        "B00126",
+        "B00127"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Središnji poslužitelj predviđa svakodnevne automatske kopije u privatni prostor svakog korisnika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00124",
+        "B00129",
+        "B00130"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Dijeljene mape služe brzoj razmjeni dokumenata.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00124",
+        "B00132",
+        "B00133"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "supporting_control: Zajednički resursi uključuju publikacije, literaturu i standarde dostupne osoblju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00135"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Privatne podmape korisnika odvojene su u WG_private.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00137"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Javni prostor razdvaja ograničeno pisanje, neograničeno brisanje i read-only pristup.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00139"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: SUK dokumente čitaju svi, ali ih mijenjaju samo određeni korisnici.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00139"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Administracija i Arhiva imaju izdvojene skupine korisnika prema svojim odgovornostima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00141"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Administrator kreira profile i definira način korištenja poslužitelja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00141"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Profili i grupe određuju prava, način i razinu pristupa resursima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00147"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Privatnoj mapi korisnika pristupa samo taj korisnik.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00149",
+        "B00151",
+        "B00152"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Podmapa sync namijenjena je pričuvnim kopijama korisničkog računala.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00149",
+        "B00153"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Podmapa home predviđena je kao dodatni mrežni diskovni prostor.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00155",
+        "B00157",
+        "B00158",
+        "B00159"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Korisnik u svom privatnom prostoru može čitati, stvarati, mijenjati i brisati dokumente.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00161",
+        "B00163",
+        "B00164"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Iz privatnog mrežnog prostora zabranjeno je izvršavanje programa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00161",
+        "B00165",
+        "B00166"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zaštićene su mape sync i home, ali njihov sadržaj korisnik može brisati.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00170",
+        "B00174",
+        "B00176",
+        "B00177",
+        "B00178",
+        "B00179"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: U prvoj javnoj mapi sadržaje mijenjaju i brišu samo njihovi vlasnici.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00183"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Iz prve javne mape zabranjeno je pokretanje programa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00187",
+        "B00189",
+        "B00190",
+        "B00191"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: U drugoj javnoj mapi svi korisnici smiju mijenjati i brisati sadržaj.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00193"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Iz javne mape s neograničenim brisanjem zabranjeno je pokretanje programa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00197",
+        "B00199"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "supporting_control: Read-only resursi dostupni su za čitanje i kopiranje svim članovima radne grupe.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00201"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Samo WGadmin stvara, mijenja i briše sadržaj read-only resursa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00203"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: U read-only prostoru izvršavanje je dopušteno samo iz određenih instalacijskih mapa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00212"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Korisnik i administrator određuju koje podatke čuvati, uključujući dokumente i e-poštu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00212"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Podaci za kopiranje organiziraju se u smislene mape radi izbjegavanja nepotrebnih sadržaja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00214"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Administrator kreira korisnički backup profil i bilježi postavke.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00214"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Uputa za zapis profila sadrži Error! Reference source not found.; candidate; verify criterion mapping i dostupnost stvarne tablice.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00216"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Novi podaci svakodnevno se kopiraju na srv01b; program se treba pokretati svakodnevno.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00220"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Uputa određuje Group Policy skriptu za automatsko pozivanje backup profila.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00222",
+        "B00223",
+        "B00224",
+        "B00225",
+        "B00226",
+        "B00227",
+        "B00228",
+        "B00229"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Propisani su koraci podešavanja Logoff skripte s SyncToyCmd i parametrom R.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00273"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Opisano je automatsko spremanje na srv01b prije gašenja računala.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00281"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Korisnik provjerava postojanje kopiranih mapa i datume izmijenjenih datoteka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00281"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: O uočenim nedostacima programa, računala ili kopiranja izvješćuje se administrator.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00285"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Oprema se konfigurira i održava za pouzdane aplikacije i razmjenu podataka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00285"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Pohranjeni podaci i informacije štite se lozinkama i ograničenjem pristupa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00285"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Administrator vodi evidenciju rada poslužitelja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00287"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Administrator povremeno prati korisničku pohranu pričuvnih kopija.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00293",
+        "B00295",
+        "B00297",
+        "B00298"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Prazna administratorska evidencija predviđa poslužitelj, kopije, UPS primjedbe, potpis i datum.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00302",
+        "B00304",
+        "B00309"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Popunjeni pregled mreže identificira backup poslužitelj i njegovo mrežno mjesto; povijesni inventar nije današnja potvrda.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00304",
+        "B00319",
+        "B00321",
+        "B00322",
+        "B00324",
+        "B00326"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Popunjeni inventar povezuje korisnike i radne stanice s mrežnim priključcima; treba provjeriti aktualnost.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00354",
+        "B00356",
+        "B00358",
+        "B00359",
+        "B00360",
+        "B00361",
+        "B00362",
+        "B00363",
+        "B00364",
+        "B00365",
+        "B00366",
+        "B00367",
+        "B00368"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Popunjeni pregled opreme povezuje korisnika i hardversku konfiguraciju; nije test funkcionalnosti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00372",
+        "B00376",
+        "B00377",
+        "B00378"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Popis backup poslužitelja uključuje diskove i UPS kao povijesnu potporu čuvanju podataka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00052",
+        "B00064",
+        "B00066"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Uputa još traži GPD backup; candidate; verify criterion mapping prema važećem postupku upravljanja dokumentima.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00216",
+        "B00220",
+        "B00224",
+        "B00225",
+        "B00273"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "candidate_lead: Svakodnevni backup vezan je uz Logoff ili gašenje; candidate; verify criterion mapping i kopiranje računala koja se ne odjavljuju.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00113",
+        "B00118",
+        "B00376",
+        "B00377"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Dokument navodi Windows XP i Server 2003; candidate; verify criterion mapping i aktualnu konfiguraciju bez zaključka iz starosti popisa.",
+      "item_type": "reference"
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00001",
+      "start": 0,
+      "end": 20,
+      "heading_navigation": "",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00005",
+      "start": 60,
+      "end": 113,
+      "heading_navigation": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00007",
+      "start": 166,
+      "end": 219,
+      "heading_navigation": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00008",
+      "start": 219,
+      "end": 272,
+      "heading_navigation": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00010",
+      "start": 273,
+      "end": 304,
+      "heading_navigation": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00012",
+      "start": 305,
+      "end": 377,
+      "heading_navigation": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00014",
+      "start": 450,
+      "end": 523,
+      "heading_navigation": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00015",
+      "start": 523,
+      "end": 596,
+      "heading_navigation": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00019",
+      "start": 620,
+      "end": 665,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00025",
+      "start": 853,
+      "end": 1162,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00029",
+      "start": 1175,
+      "end": 1328,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00030",
+      "start": 1328,
+      "end": 1473,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00031",
+      "start": 1473,
+      "end": 1621,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00032",
+      "start": 1621,
+      "end": 1771,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00033",
+      "start": 1771,
+      "end": 1914,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00034",
+      "start": 1914,
+      "end": 2061,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00035",
+      "start": 2061,
+      "end": 2739,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00036",
+      "start": 2739,
+      "end": 2859,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00037",
+      "start": 2859,
+      "end": 2956,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00038",
+      "start": 2956,
+      "end": 3068,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00039",
+      "start": 3068,
+      "end": 3309,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00040",
+      "start": 3309,
+      "end": 3462,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00042",
+      "start": 3463,
+      "end": 3784,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00044",
+      "start": 3785,
+      "end": 4325,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00046",
+      "start": 4326,
+      "end": 4596,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00048",
+      "start": 4597,
+      "end": 4858,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00052",
+      "start": 4871,
+      "end": 5291,
+      "heading_navigation": "1. Svrha",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00054",
+      "start": 5292,
+      "end": 5518,
+      "heading_navigation": "1. Svrha",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00056",
+      "start": 5519,
+      "end": 5568,
+      "heading_navigation": "1. Svrha",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00058",
+      "start": 5569,
+      "end": 5625,
+      "heading_navigation": "1. Svrha",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00060",
+      "start": 5626,
+      "end": 5691,
+      "heading_navigation": "1. Svrha",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00064",
+      "start": 5716,
+      "end": 5782,
+      "heading_navigation": "2. Područje primjene",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00065",
+      "start": 5782,
+      "end": 5842,
+      "heading_navigation": "2. Područje primjene",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00066",
+      "start": 5842,
+      "end": 5928,
+      "heading_navigation": "2. Područje primjene",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00070",
+      "start": 5948,
+      "end": 6149,
+      "heading_navigation": "3. Odgovornosti",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00072",
+      "start": 6150,
+      "end": 6285,
+      "heading_navigation": "3. Odgovornosti",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00074",
+      "start": 6286,
+      "end": 6312,
+      "heading_navigation": "3. Odgovornosti",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00075",
+      "start": 6312,
+      "end": 6350,
+      "heading_navigation": "3. Odgovornosti",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00077",
+      "start": 6391,
+      "end": 6453,
+      "heading_navigation": "3. Odgovornosti",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00081",
+      "start": 6471,
+      "end": 6507,
+      "heading_navigation": "4. Reference",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00082",
+      "start": 6507,
+      "end": 6551,
+      "heading_navigation": "4. Reference",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00084",
+      "start": 6552,
+      "end": 6598,
+      "heading_navigation": "4. Reference",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00085",
+      "start": 6598,
+      "end": 6625,
+      "heading_navigation": "4. Reference",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00087",
+      "start": 6626,
+      "end": 6897,
+      "heading_navigation": "4. Reference",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00091",
+      "start": 6926,
+      "end": 7051,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00093",
+      "start": 7052,
+      "end": 7462,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00095",
+      "start": 7463,
+      "end": 7515,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00097",
+      "start": 7516,
+      "end": 7783,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00099",
+      "start": 7784,
+      "end": 8328,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00101",
+      "start": 8329,
+      "end": 8975,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00103",
+      "start": 8976,
+      "end": 9640,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00105",
+      "start": 9641,
+      "end": 9766,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00107",
+      "start": 9767,
+      "end": 9900,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00109",
+      "start": 9901,
+      "end": 9933,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00111",
+      "start": 9934,
+      "end": 9989,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00113",
+      "start": 10043,
+      "end": 10217,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00114",
+      "start": 10217,
+      "end": 10325,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00116",
+      "start": 10326,
+      "end": 10590,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00118",
+      "start": 10591,
+      "end": 11630,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00120",
+      "start": 11631,
+      "end": 11896,
+      "heading_navigation": "5. Opis računalne mreže",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00124",
+      "start": 11923,
+      "end": 12170,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00126",
+      "start": 12171,
+      "end": 12252,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00127",
+      "start": 12252,
+      "end": 12489,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00129",
+      "start": 12490,
+      "end": 12565,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00130",
+      "start": 12565,
+      "end": 12715,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00132",
+      "start": 12716,
+      "end": 12770,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00133",
+      "start": 12770,
+      "end": 12920,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00135",
+      "start": 12921,
+      "end": 13094,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00137",
+      "start": 13095,
+      "end": 13468,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00139",
+      "start": 13469,
+      "end": 14113,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00141",
+      "start": 14114,
+      "end": 14599,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00143",
+      "start": 14600,
+      "end": 14864,
+      "heading_navigation": "6. Poslužitelj srv01b",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00147",
+      "start": 14936,
+      "end": 15063,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00149",
+      "start": 15064,
+      "end": 15132,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00151",
+      "start": 15133,
+      "end": 15222,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00152",
+      "start": 15222,
+      "end": 15230,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00153",
+      "start": 15230,
+      "end": 15322,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00155",
+      "start": 15323,
+      "end": 15348,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00157",
+      "start": 15349,
+      "end": 15435,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00158",
+      "start": 15435,
+      "end": 15523,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00159",
+      "start": 15523,
+      "end": 15623,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00161",
+      "start": 15624,
+      "end": 15640,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00163",
+      "start": 15641,
+      "end": 15734,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00164",
+      "start": 15734,
+      "end": 15827,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00165",
+      "start": 15827,
+      "end": 15920,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00166",
+      "start": 15920,
+      "end": 15996,
+      "heading_navigation": "6.1 Organiziranje prostora za privatne podatke ( mapa WG_private )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00170",
+      "start": 16120,
+      "end": 16258,
+      "heading_navigation": "6.2 Prostor za pojednostavljenu razmjenu dokumenata (mape WG_public-read_write i WG_public\\read_write_unrestrict.del!)",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00174",
+      "start": 16296,
+      "end": 16444,
+      "heading_navigation": "6.2.1 Mapa WG_public-read_write",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00176",
+      "start": 16445,
+      "end": 16531,
+      "heading_navigation": "6.2.1 Mapa WG_public-read_write",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00177",
+      "start": 16531,
+      "end": 16606,
+      "heading_navigation": "6.2.1 Mapa WG_public-read_write",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00178",
+      "start": 16606,
+      "end": 16700,
+      "heading_navigation": "6.2.1 Mapa WG_public-read_write",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00179",
+      "start": 16700,
+      "end": 16751,
+      "heading_navigation": "6.2.1 Mapa WG_public-read_write",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00181",
+      "start": 16752,
+      "end": 17016,
+      "heading_navigation": "6.2.1 Mapa WG_public-read_write",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00183",
+      "start": 17017,
+      "end": 17165,
+      "heading_navigation": "6.2.1 Mapa WG_public-read_write",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00187",
+      "start": 17219,
+      "end": 17367,
+      "heading_navigation": "6.2.2 Mapa WG_public-read_write_unrestrict.del!",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00189",
+      "start": 17368,
+      "end": 17454,
+      "heading_navigation": "6.2.2 Mapa WG_public-read_write_unrestrict.del!",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00190",
+      "start": 17454,
+      "end": 17529,
+      "heading_navigation": "6.2.2 Mapa WG_public-read_write_unrestrict.del!",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00191",
+      "start": 17529,
+      "end": 17594,
+      "heading_navigation": "6.2.2 Mapa WG_public-read_write_unrestrict.del!",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00193",
+      "start": 17595,
+      "end": 17743,
+      "heading_navigation": "6.2.2 Mapa WG_public-read_write_unrestrict.del!",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00197",
+      "start": 17823,
+      "end": 17963,
+      "heading_navigation": "6.3 Pristup resursima od zajedničkog interesa (mapa WG_public-read_only )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00199",
+      "start": 17964,
+      "end": 18055,
+      "heading_navigation": "6.3 Pristup resursima od zajedničkog interesa (mapa WG_public-read_only )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00201",
+      "start": 18056,
+      "end": 18171,
+      "heading_navigation": "6.3 Pristup resursima od zajedničkog interesa (mapa WG_public-read_only )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00203",
+      "start": 18172,
+      "end": 18290,
+      "heading_navigation": "6.3 Pristup resursima od zajedničkog interesa (mapa WG_public-read_only )",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00205",
+      "start": 18291,
+      "end": 18317,
+      "heading_navigation": "6.3 Pristup resursima od zajedničkog interesa (mapa WG_public-read_only )",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00206",
+      "start": 18317,
+      "end": 18355,
+      "heading_navigation": "6.3 Pristup resursima od zajedničkog interesa (mapa WG_public-read_only )",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00208",
+      "start": 18398,
+      "end": 18458,
+      "heading_navigation": "6.3 Pristup resursima od zajedničkog interesa (mapa WG_public-read_only )",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00212",
+      "start": 18524,
+      "end": 19004,
+      "heading_navigation": "7. Sustav za čuvanje pričuvnih kopija (korisničkih) podataka",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00214",
+      "start": 19005,
+      "end": 19318,
+      "heading_navigation": "7. Sustav za čuvanje pričuvnih kopija (korisničkih) podataka",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00216",
+      "start": 19319,
+      "end": 19586,
+      "heading_navigation": "7. Sustav za čuvanje pričuvnih kopija (korisničkih) podataka",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00220",
+      "start": 19675,
+      "end": 19938,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00222",
+      "start": 19939,
+      "end": 19991,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00223",
+      "start": 19991,
+      "end": 20040,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00224",
+      "start": 20040,
+      "end": 20133,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00225",
+      "start": 20133,
+      "end": 20163,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00226",
+      "start": 20163,
+      "end": 20239,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00227",
+      "start": 20239,
+      "end": 20338,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00228",
+      "start": 20338,
+      "end": 20380,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00229",
+      "start": 20380,
+      "end": 20457,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00231",
+      "start": 20458,
+      "end": 20660,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00233",
+      "start": 20661,
+      "end": 20757,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00235",
+      "start": 20852,
+      "end": 20948,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00236",
+      "start": 20948,
+      "end": 21044,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00237",
+      "start": 21044,
+      "end": 21140,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00238",
+      "start": 21140,
+      "end": 21236,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00239",
+      "start": 21236,
+      "end": 21332,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00240",
+      "start": 21332,
+      "end": 21428,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00241",
+      "start": 21428,
+      "end": 21524,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00242",
+      "start": 21524,
+      "end": 21620,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00243",
+      "start": 21620,
+      "end": 21716,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00244",
+      "start": 21716,
+      "end": 21812,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00245",
+      "start": 21812,
+      "end": 21908,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00246",
+      "start": 21908,
+      "end": 22004,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00247",
+      "start": 22004,
+      "end": 22100,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00248",
+      "start": 22100,
+      "end": 22196,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00249",
+      "start": 22196,
+      "end": 22292,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00251",
+      "start": 22388,
+      "end": 22484,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00252",
+      "start": 22484,
+      "end": 22580,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00253",
+      "start": 22580,
+      "end": 22676,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00254",
+      "start": 22676,
+      "end": 22772,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00255",
+      "start": 22772,
+      "end": 22868,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00256",
+      "start": 22868,
+      "end": 22964,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00257",
+      "start": 22964,
+      "end": 23060,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00258",
+      "start": 23060,
+      "end": 23156,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00259",
+      "start": 23156,
+      "end": 23252,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00260",
+      "start": 23252,
+      "end": 23348,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00261",
+      "start": 23348,
+      "end": 23444,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00262",
+      "start": 23444,
+      "end": 23540,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00264",
+      "start": 23636,
+      "end": 23732,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00265",
+      "start": 23732,
+      "end": 23828,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00266",
+      "start": 23828,
+      "end": 23924,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00267",
+      "start": 23924,
+      "end": 24020,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00268",
+      "start": 24020,
+      "end": 24116,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00269",
+      "start": 24116,
+      "end": 24212,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00271",
+      "start": 24213,
+      "end": 24264,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00273",
+      "start": 24265,
+      "end": 24450,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00275",
+      "start": 24451,
+      "end": 24709,
+      "heading_navigation": "7.1 Podešavanje automatskog pokretanja programa SyncToy prilikom gašenja računala.",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00281",
+      "start": 24844,
+      "end": 25325,
+      "heading_navigation": "8.1 Praćenje rada od strane korisnika radnih stanica",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00285",
+      "start": 25397,
+      "end": 25943,
+      "heading_navigation": "8.2 Praćenje rada računalnog sustava i stanja poslužitelja srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00287",
+      "start": 25944,
+      "end": 26089,
+      "heading_navigation": "8.2 Praćenje rada računalnog sustava i stanja poslužitelja srv01b",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00289",
+      "start": 26090,
+      "end": 26315,
+      "heading_navigation": "8.2 Praćenje rada računalnog sustava i stanja poslužitelja srv01b",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00293",
+      "start": 26331,
+      "end": 26407,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00295",
+      "start": 26408,
+      "end": 26443,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00297",
+      "start": 26478,
+      "end": 26542,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00298",
+      "start": 26542,
+      "end": 26669,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00300",
+      "start": 26670,
+      "end": 26876,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00302",
+      "start": 26877,
+      "end": 26924,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00304",
+      "start": 26925,
+      "end": 27091,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00306",
+      "start": 27257,
+      "end": 27365,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00307",
+      "start": 27365,
+      "end": 27482,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00308",
+      "start": 27482,
+      "end": 27569,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00309",
+      "start": 27569,
+      "end": 27673,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00310",
+      "start": 27673,
+      "end": 27760,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00311",
+      "start": 27760,
+      "end": 27867,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00312",
+      "start": 27867,
+      "end": 27938,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00313",
+      "start": 27938,
+      "end": 28013,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00315",
+      "start": 28014,
+      "end": 28213,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00317",
+      "start": 28214,
+      "end": 28380,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00319",
+      "start": 28546,
+      "end": 28619,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00320",
+      "start": 28619,
+      "end": 28683,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00321",
+      "start": 28683,
+      "end": 28768,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00322",
+      "start": 28768,
+      "end": 28852,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00323",
+      "start": 28852,
+      "end": 28899,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00324",
+      "start": 28899,
+      "end": 28971,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00325",
+      "start": 28971,
+      "end": 29037,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00326",
+      "start": 29037,
+      "end": 29105,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00327",
+      "start": 29105,
+      "end": 29168,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00329",
+      "start": 29169,
+      "end": 29371,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00331",
+      "start": 29372,
+      "end": 29538,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00333",
+      "start": 29700,
+      "end": 29823,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00334",
+      "start": 29823,
+      "end": 29901,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00335",
+      "start": 29901,
+      "end": 29992,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00336",
+      "start": 29992,
+      "end": 30098,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00337",
+      "start": 30098,
+      "end": 30192,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00338",
+      "start": 30192,
+      "end": 30290,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00339",
+      "start": 30290,
+      "end": 30360,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00340",
+      "start": 30360,
+      "end": 30445,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00341",
+      "start": 30445,
+      "end": 30526,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00343",
+      "start": 30527,
+      "end": 30726,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00345",
+      "start": 30727,
+      "end": 30893,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00352",
+      "start": 31724,
+      "end": 31975,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00354",
+      "start": 31976,
+      "end": 32012,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00356",
+      "start": 32013,
+      "end": 32140,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00358",
+      "start": 32266,
+      "end": 32419,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00359",
+      "start": 32419,
+      "end": 32559,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00360",
+      "start": 32559,
+      "end": 32695,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00361",
+      "start": 32695,
+      "end": 32824,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00362",
+      "start": 32824,
+      "end": 32932,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00363",
+      "start": 32932,
+      "end": 33019,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00364",
+      "start": 33019,
+      "end": 33156,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00365",
+      "start": 33156,
+      "end": 33299,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00366",
+      "start": 33299,
+      "end": 33460,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00367",
+      "start": 33460,
+      "end": 33693,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00368",
+      "start": 33693,
+      "end": 33880,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00370",
+      "start": 33881,
+      "end": 34077,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00372",
+      "start": 34078,
+      "end": 34201,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00374",
+      "start": 34323,
+      "end": 34446,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00375",
+      "start": 34446,
+      "end": 34568,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00376",
+      "start": 34568,
+      "end": 34691,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00377",
+      "start": 34691,
+      "end": 34813,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00378",
+      "start": 34813,
+      "end": 34935,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00379",
+      "start": 34935,
+      "end": 35058,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00380",
+      "start": 35058,
+      "end": 35180,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00381",
+      "start": 35180,
+      "end": 35302,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00383",
+      "start": 35303,
+      "end": 35324,
+      "heading_navigation": "9. Prilozi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration/template/inventory or unused empty field; no separate QA claim accepted."
+    }
+  ]
+}

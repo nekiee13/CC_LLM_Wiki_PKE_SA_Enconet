@@ -1,0 +1,1269 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "RU-54-01,R3 PLANIRANJE I OSTVARIVANJE CILJEVA KVAL.md",
+    "title": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE",
+    "date": "2017-11-17",
+    "doc_id": "DOC-0014",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: RU-54-01 identificirana je oznakom, revizijom 3 i datumom objave.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]",
+          "source_heading_path": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv dokumenta: | Radna uputa RU-54-01 |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        },
+        {
+          "quote_original": "| Revizija broj:   | 3                    |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        },
+        {
+          "quote_original": "| Datum objavljivanja: | 17.11.2017.       |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, pregledi i odobrenje navedeni su s imenima i datumima; oznaka Potpis nije dokaz stvarnog potpisa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]",
+          "source_heading_path": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pripremio: | Vladimir Križe, voditelj QA | [Potpis] | 13.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | Dubravka Dončević, voditelj KFP | [Potpis] | 14.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | mr.sc. Ilijana Iveković, predstavnik direktora | [Potpis] | 14.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        },
+        {
+          "quote_original": "| Odobrio: | dr.sc. Nenad Debrecin, direktor | [Potpis] | 15.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Predviđen je periodični pregled; tablica je prazna.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3] > Periodični pregled [line 19]",
+          "source_heading_path": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3] > Periodični pregled [line 19]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE [line 3] > Periodični pregled [line 19]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Uputa definira planiranje i praćenje ostvarivanja ciljeva kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 1. SVRHA [line 56]",
+          "source_heading_path": "SADRŽAJ [line 31] > 1. SVRHA [line 56]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ove radne upute je da definira postupak za planiranje i praćenje\nostvarivanja ciljeva kvalitete (ISO 9001:2015).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 1. SVRHA [line 56]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Primjena obuhvaća sve djelatnosti Enconeta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 2. PODRUČJE PRIMJENE [line 61]",
+          "source_heading_path": "SADRŽAJ [line 31] > 2. PODRUČJE PRIMJENE [line 61]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Primjenjuje se na sve djelatnosti Enconeta.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 2. PODRUČJE PRIMJENE [line 61]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Reference upućuju na Priručnik, ISO i IAEA; objective evidence not shown u samom popisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 3. REFERENCE [line 65]",
+          "source_heading_path": "SADRŽAJ [line 31] > 3. REFERENCE [line 65]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. Enconet - Priručnik kvalitete",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "   Ciljevi kvalitete",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "2. HRN EN ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "3. IAEA Leadership and Management for Safety, IAEA Safety Standards",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 3. REFERENCE [line 65]"
+        },
+        {
+          "quote_original": "   Series, No. GSR Part 2, IAEA Vienna, 2016.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 3. REFERENCE [line 65]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor osigurava ciljeve kvalitete i imenuje osobe za praćenje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]",
+          "source_heading_path": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta odgovoran je da se odgovarajući ciljevi kvalitete utvrde i\nodrede osobe za praćenje njihovog ostvarivanja.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Voditelj projekta i KFP poduzimaju radnje i prate određene ciljeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]",
+          "source_heading_path": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta i voditelj KFP odgovorni su da poduzimaju potrebne radnje i\nprate ostvarivanje određenih ciljeva kvalitete.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: QA prati planiranje i ostvarivanje ciljeva sa stanovišta sustava kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]",
+          "source_heading_path": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA odgovoran je da, sa stanovišta sustava kvalitete, prati planiranje i\nostvarivanje ciljeva kvalitete.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 5. ODGOVORNOSTI [line 87]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Zahtjevi kupca, norme i unutarnje potrebe ulaze u ciljeve kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ciljevi kvalitete Enconeta proizlaze iz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- zahtjeva kupaca,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- zahtjeva norme,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- internih potreba.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Dugoročni ciljevi definirani su u politici kvalitete Priručnika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dugoročni, strateški ciljevi kvalitete Enconeta definirani su u «Izjavi o politici i ciljevima kvalitete» (Priručnik kvalitete).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Godišnji, kvartalni i mjesečni ciljevi određuju se po ovoj uputi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Srednjoročni (jedna godina) i kratkoročni (kvartal, mjesec) ciljevi kvalitete utvrđuju se prema ovoj Radnoj uputi.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Ciljevi trebaju biti jasni i u najvećoj mogućoj mjeri mjerljivi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Da bi ciljevi kvalitete ispunili svoju svrhu, trebaju biti:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- jasni i u najvećoj mogućoj mjeri mjerljivi,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Ciljevi moraju biti u skladu s politikom kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Da bi ciljevi kvalitete ispunili svoju svrhu, trebaju biti:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- u skladu s politikom kvalitete,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Ciljevi trebaju biti primjenjivi i dosegljivi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Da bi ciljevi kvalitete ispunili svoju svrhu, trebaju biti:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- primjenjivi i dosegljivi,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Ciljevi trebaju biti kontrolirani.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Da bi ciljevi kvalitete ispunili svoju svrhu, trebaju biti:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- kontrolirani.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Predviđen je cilj trajnog poboljšavanja kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "1. Ciljevi koji se odnose na organizaciju (Enconet):",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - kontinuirano poboljšavanje kvalitete,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Predviđeni su ciljevi brige o resursima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "1. Ciljevi koji se odnose na organizaciju (Enconet):",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - briga o resursima,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Predviđen je cilj uspješne primjene QA sustava.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "1. Ciljevi koji se odnose na organizaciju (Enconet):",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - uspješna primjena sustava osiguranja kvalitete",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "candidate_lead: Predviđeno je poboljšanje odnosa s dobavljačima; candidate; verify criterion mapping jer kvalifikacijski detalji ovdje nisu prikazani.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "1. Ciljevi koji se odnose na organizaciju (Enconet):",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - poboljšanje odnosa s kupcima i dobavljačima i slično.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Smanjenje prigovora kupaca predviđeno je kao cilj.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "2. Ciljevi koji se odnose na proizvod:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - smanjenje prigovora kupaca,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Smanjenje broja popravnih radnji predviđeno je kao cilj; ne znači dopuštenje neprijavljivanja problema.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "2. Ciljevi koji se odnose na proizvod:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - smanjenje broja popravnih radnji,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Praćenje zadovoljstva kupca predviđeno je kao cilj.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "3. Ciljevi koji se odnose na kupca:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - praćenje zadovoljstva kupca,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predviđeno je rješavanje reklamacija u primjerenom roku.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "3. Ciljevi koji se odnose na kupca:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - rješavanje prigovora i reklamacija u primjerenom roku,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Ispunjenje očekivanja kupca služi kao cilj; candidate; verify criterion mapping bez detalja tehničke verifikacije.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "3. Ciljevi koji se odnose na kupca:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - ispunjenje svih očekivanja kupca i slično.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Poboljšanje procesa uključeno je u nadređene ciljeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "4. Nadređeni ciljevi:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - Poboljšanje procesa,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "supporting_control: Provedba internih audita uključena je u nadređene ciljeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "4. Nadređeni ciljevi:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - Provedba internih audita,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Praćenje provedbe popravnih i korektivnih radnji uključeno je u ciljeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po sadržaju mogu se, između ostalih, pojaviti slijedeće vrste ciljeva:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "4. Nadređeni ciljevi:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "   - Praćenje provedbe popravnih i korektivnih radnji i slično.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Planiranje i praćenje vodi se na OB-CIK-040.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Planiranje i praćenje ostvarivanja ciljeva kvalitete radi se pomoću obrasca «Ciljevi kvalitete» (obrazac: OB-CIK-040).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor s direktorima odjela definira ciljeve kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta u suradnji s direktorima odjela definira ciljeve kvalitete. Uz svaki cilj treba definirati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Za svaki cilj definira se naziv i mjera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta u suradnji s direktorima odjela definira ciljeve kvalitete. Uz svaki cilj treba definirati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- naziv cilja i mjere,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Za cilj se definira razdoblje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta u suradnji s direktorima odjela definira ciljeve kvalitete. Uz svaki cilj treba definirati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- terminsku jedinicu za koju se cilj donosi,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Za cilj se određuje odgovorna osoba praćenja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta u suradnji s direktorima odjela definira ciljeve kvalitete. Uz svaki cilj treba definirati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- odgovornu osobu za praćenje ostvarivanja cilja,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Za cilj se bilježe podaci prethodnog razdoblja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta u suradnji s direktorima odjela definira ciljeve kvalitete. Uz svaki cilj treba definirati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- podatke za protekli period,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Za cilj se određuje planirani iznos i termin.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta u suradnji s direktorima odjela definira ciljeve kvalitete. Uz svaki cilj treba definirati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "- planirani iznos cilja za planirani termin.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Odgovorna osoba na kraju razdoblja upisuje i potpisuje realizaciju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Na kraju planiranog termina odgovorna osoba upisuje i potpisuje realizaciju odgovarajućeg cilja.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Direktor u ocjeni SUK-a analizira ostvarivanje ciljeva.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor (ocjena sustava upravljanja kvalitetom od strane direktora) analizira ostvarivanje ciljeva. Za neostvarene ciljeve, prema potrebi, definira popravne radnje s odgovornim nositeljima i rokovima realizacije.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Za neostvarene ciljeve prema potrebi određuje radnju s nositeljem i rokom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor (ocjena sustava upravljanja kvalitetom od strane direktora) analizira ostvarivanje ciljeva. Za neostvarene ciljeve, prema potrebi, definira popravne radnje s odgovornim nositeljima i rokovima realizacije.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Prazan obrazac ciljeva predviđa pripremu, odobrenje, oznaku, godinu, reviziju i datum.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "7.1 Obrazac: OB-CIK-040, R3",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "| Pripremio: V. Križe, voditelj QA                                                    IZ-CIK-BB |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "| Odobrio: dr.sc. N. Debrecin, direktor | CILJEVI KVALITETE                                     |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "| Potpis:                               | ZA GGGG GODINU                 | Rev:                 |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "|                                       |                                | Datum:               |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Predložak povezuje cilj, mjeru, očekivani datum, odgovornu osobu i izvršenje; nije dokaz postignutog cilja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]",
+          "source_heading_path": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| NAZIV CILJA I MJERE | OČEKIVANA REALIZACIJA DATUM | ODGOVORNA OSOBA | CILJEVI U GGGG. GODINI | IZVRŠENJE U GGGG. GODINI |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "1. Područje-naziv cilja",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        },
+        {
+          "quote_original": "Definiranje cilja i odgovarajuće mjere za postizanje cilja",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 31] > 6. POSTUPAK [line 103]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    }
+  ]
+}
