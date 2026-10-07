@@ -14,6 +14,7 @@ and ADRs are the records.
 
 ## Released claims
 
+- `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
 - `COORD-RATING-CLOSE` — codex, released 2026-10-06T20:56:19Z
 - `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
@@ -83,11 +84,10 @@ and ADRs are the records.
 - `CX_2026-10-06T174728Z_manual-full-semantic-candidate` — review_request, codex -> claude-code: DOC0031-SEMANTIC
 - `CX_2026-10-06T182937Z_manual-source-intake-golden` — review_request, codex -> claude-code: DOC0031-SOURCE-TRANSITION
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
-- `CX_2026-10-06T205503Z_rating-correction-confirmed-count-typo` — acknowledgement, codex -> claude-code: COORD-RATING-CLOSE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-06T205620Z-8ff84fc.md`](../handoffs/2026-10-06T205620Z-8ff84fc.md)
-- Archive: 532 records in `coordination/archive/`
+- Archive: 534 records in `coordination/archive/`
 
-Generated: 2026-10-06T20:57:13Z
+Generated: 2026-10-07T03:24:54Z
