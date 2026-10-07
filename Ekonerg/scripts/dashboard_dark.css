@@ -225,3 +225,20 @@ body{
 }
 .cursorSpotlight.visible{opacity:1}
 @media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse),(forced-colors:active){.cursorSpotlight{display:none}}
+/* Owner refinement: the actual score bar carries light, not a second line.
+   Width and transform never animate: 75% always stays 75%. */
+.card::after{display:none;animation:none}
+.scoreBar{overflow:visible}
+.scoreBar>div{
+  animation:ekonerg-score-light 2.7s ease-in-out infinite!important;
+  transform:none!important;
+}
+.card:nth-child(3n+2) .scoreBar>div{animation-delay:-.9s!important}
+.card:nth-child(3n) .scoreBar>div{animation-delay:-1.8s!important}
+@keyframes ekonerg-score-light{
+  0%,100%{opacity:1;filter:brightness(1.12);box-shadow:0 0 12px rgba(111,211,154,.3)}
+  50%{opacity:.65;filter:brightness(.88);box-shadow:0 0 3px rgba(111,211,154,.08)}
+}
+@media(prefers-reduced-motion:reduce),(forced-colors:active){
+  .scoreBar>div{animation:none!important;opacity:1;filter:none;box-shadow:none}
+}

@@ -42,12 +42,14 @@ def test_refuses_second_overlay():
         dark_copy(dark_copy(LIGHT.read_text(encoding='utf-8')))
 
 
-def test_only_decorative_signal_breathes():
+def test_score_glow_never_changes_score_length():
     from build_dark_dashboard import STYLE
     css = STYLE.read_text(encoding='utf-8')
-    assert 'animation:ekonerg-signal-breathe 2.7s' in css
-    assert '.scoreBar>div,.progress>.seg{animation:none!important;transform:none!important}' in css
-    assert '@media(prefers-reduced-motion:reduce){.card::after{animation:none' in css
+    assert '.card::after{display:none;animation:none}' in css
+    frames = css.split('@keyframes ekonerg-score-light{',1)[1].split('@media',1)[0]
+    assert 'opacity:' in frames
+    assert 'width:' not in frames and 'transform:' not in frames
+    assert '.scoreBar>div{animation:none!important;opacity:1' in css
 
 
 def test_cursor_light_is_decorative_and_opt_out_safe():
