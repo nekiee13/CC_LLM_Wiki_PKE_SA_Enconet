@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T103200Z-9810b5a.md`](handoffs/2026-10-07T103200Z-9810b5a.md)
+**Authoritative record:** [`handoffs/2026-10-07T132209Z-a591e30.md`](handoffs/2026-10-07T132209Z-a591e30.md)
 
-**Status:** partial · **Git:** `9810b5a` · **Agent:** codex · **Created:** 2026-10-07T10:32:00Z
+**Status:** partial · **Git:** `a591e30` · **Agent:** codex · **Created:** 2026-10-07T13:22:09Z
 
-**Exact next action:** Owner selects vendor deployment and source editions; Claude reviews the release and synchronizes its own guidance. Use doc/framework-reuse/ROLLOUT_20261007.md; do not re-audit Enconet or activate its candidate prompt without approval.
+**Exact next action:** Review 26 vendor and seven regulatory Markdown sources, excluding desktop.ini, gitkeep and conversion note. Confirm regulatory editions/scope/language; prepare preserving intake and v3 local calibration. Do not reuse old evidence or approvals.

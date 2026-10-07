@@ -308,10 +308,11 @@ and ADRs are the records.
 - `CX_2026-10-04T171149Z_ingest-chunk-sprint-complete` — review_request, codex -> claude-code: MIN-2.1
 - `CX_2026-10-04T171420Z_real-sieving-sprint-blocked` — blocker, codex -> both: MIN-2.2
 - `CX_2026-10-04T171444Z_ack-real-sieving-sprint-blocked` — acknowledgement, codex -> codex: MIN-2.2
+- `CX_2026-10-07T132244Z_enconet-archived-reset` — review_request, codex -> claude-code: ENCONET-ARCHIVED-RESET
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T103200Z-9810b5a.md`](../handoffs/2026-10-07T103200Z-9810b5a.md)
+- Authoritative record: [`handoffs/2026-10-07T132209Z-a591e30.md`](../handoffs/2026-10-07T132209Z-a591e30.md)
 - Archive: 758 records in `coordination/archive/`
 
-Generated: 2026-10-07T10:32:46Z
+Generated: 2026-10-07T13:22:44Z
