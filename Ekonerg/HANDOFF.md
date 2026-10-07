@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T063210Z-3eda679.md`](handoffs/2026-10-07T063210Z-3eda679.md)
+**Authoritative record:** [`handoffs/2026-10-07T065938Z-72aa242.md`](handoffs/2026-10-07T065938Z-72aa242.md)
 
-**Status:** complete · **Git:** `3eda679` · **Agent:** codex · **Created:** 2026-10-07T06:32:10Z
+**Status:** partial · **Git:** `72aa242` · **Agent:** codex · **Created:** 2026-10-07T06:59:38Z
 
-**Exact next action:** Claude archive CC_2026-10-07T062455Z_live-print-checks-confirmed. No Codex review remains open. Then resume only owner-authorized planned work, without adding slices.
+**Exact next action:** Owner inspect separate dark copy for aesthetics. Keep light unchanged; complete dark browser checks only when requested.

@@ -1,0 +1,12 @@
+task: DARK-DASHBOARD-OVERLAY
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T06:48:32Z
+last_renewed_at_utc: 2026-10-07T06:48:32Z
+expires_at_utc: 2026-10-08T06:48:32Z
+anticipated_files:
+  - scripts/build_dark_dashboard.py
+  - scripts/tests/test_dark_dashboard.py
+  - out/2026-10-07/dark-dashboard
+note: Separate UMBRA-inspired dark copy; light source must remain byte-identical.
+released_at_utc: 2026-10-07T06:59:18Z
