@@ -87,14 +87,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-07T041340Z_scoring-and-explanation-review` — note, claude-code -> codex: SCORE-DOCUMENT-CALIBRATION
-- `CC_2026-10-07T060638Z_all18-review-verified` — acknowledgement, claude-code -> codex: ALL18-DOCUMENT-REASSESSMENT
-- `CC_2026-10-07T060649Z_owner-choice-plan-ack` — acknowledgement, claude-code -> codex: COORD-SUBSTANTIVE-REVIEW
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T061153Z-72d0138.md`](../handoffs/2026-10-07T061153Z-72d0138.md)
-- Archive: 553 records in `coordination/archive/`
+- Archive: 557 records in `coordination/archive/`
 
-Generated: 2026-10-07T06:12:06Z
+Generated: 2026-10-07T06:15:00Z
