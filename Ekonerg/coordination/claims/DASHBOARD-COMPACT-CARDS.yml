@@ -1,0 +1,13 @@
+task: DASHBOARD-COMPACT-CARDS
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T03:56:25Z
+last_renewed_at_utc: 2026-10-07T03:56:25Z
+expires_at_utc: 2026-10-07T05:56:25Z
+anticipated_files:
+  - scripts/build_umbra_conformance_dashboard.py
+  - scripts/tests/test_umbra_conformance_dashboard.py
+  - out/2026-10-07/compact-cards
+  - coordination
+note: Presentation-only: hide crumb-ID/source list in collapsed cards, preserve all details on expansion and all audit data.
+released_at_utc: 2026-10-07T03:59:02Z

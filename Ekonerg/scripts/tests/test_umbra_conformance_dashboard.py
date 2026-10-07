@@ -23,6 +23,27 @@ def _data(page: str) -> list[dict]:
     return json.loads(payload.group(1))
 
 
+def test_collapsed_card_keeps_summary_but_hides_crumb_references() -> None:
+    page = render(DEFAULT_MATRIX, DEFAULT_DB, "2026-10-07", "RUN-20261003-32")
+    # The last definition is the one used by renderCards at page startup.
+    card = page.rsplit('function cardHtml(d){', 1)[1].split('renderCards();', 1)[0]
+    compact, expanded = card.split('<div class="cardBody">', 1)
+    visible = compact.split('return `<article', 1)[1]
+    assert '${d.summary}' in visible
+    assert '${d.score_trace}' in visible
+    assert '${d.refs}' not in visible
+    assert '${esc(d.refs)}' not in visible
+    assert '<div class="block criterionRefs">' in expanded
+    assert '${esc(d.refs)}' in expanded
+    assert '<details class="crumbTrace">' in expanded
+    assert '${crumbs}' in expanded
+    assert all(token in expanded for token in ('${d.aff}', '${d.con}', '${d.judge}', '${d.verify}', '${d.quote}'))
+    assert '.cardBody{display:none' in page
+    assert '.card.open .cardBody{display:block}' in page
+    assert '.scoreTrace{flex-basis:100%}' in page
+    assert '.cardBody{display:block!important}' in page  # Print still shows all details.
+
+
 def test_cards_show_summary_and_crumbs_that_feed_score() -> None:
     page = render(DEFAULT_MATRIX, DEFAULT_DB, "2026-10-05", "RUN-20261003-32")
     data = _data(page)

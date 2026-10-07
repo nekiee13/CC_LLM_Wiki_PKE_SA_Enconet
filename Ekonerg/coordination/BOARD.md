@@ -17,6 +17,7 @@ and ADRs are the records.
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
 - `COORD-RATING-CLOSE` — codex, released 2026-10-06T20:56:19Z
+- `DASHBOARD-COMPACT-CARDS` — codex, released 2026-10-07T03:59:02Z
 - `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
 - `DOC0031-SEMANTIC` — codex, released 2026-10-06T17:47:31Z
 - `DOC0031-SOURCE-TRANSITION` — codex, released 2026-10-06T18:29:40Z
@@ -84,10 +85,11 @@ and ADRs are the records.
 - `CC_2026-10-06T205703Z_before-distribution-clarification` — acknowledgement, claude-code -> codex: COORD-RATING-CLOSE
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
 - `CX_2026-10-07T035119Z_document-scoring-correction` — review_request, codex -> claude-code: SCORE-DOCUMENT-CALIBRATION
+- `CX_2026-10-07T035902Z_compact-card-references` — review_request, codex -> claude-code: DASHBOARD-COMPACT-CARDS
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T035326Z-64dc262.md`](../handoffs/2026-10-07T035326Z-64dc262.md)
+- Authoritative record: [`handoffs/2026-10-07T035940Z-95cb053.md`](../handoffs/2026-10-07T035940Z-95cb053.md)
 - Archive: 537 records in `coordination/archive/`
 
-Generated: 2026-10-07T03:53:44Z
+Generated: 2026-10-07T04:00:05Z
