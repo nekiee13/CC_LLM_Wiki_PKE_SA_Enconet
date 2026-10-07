@@ -217,3 +217,11 @@ body{
   body,.header,.section,.card{background:Canvas}
   .header::before,.card::after{display:none}
 }
+.cursorSpotlight{
+  position:fixed;top:0;left:0;width:600px;height:600px;z-index:20;
+  pointer-events:none;border-radius:50%;opacity:0;
+  background:radial-gradient(circle,rgba(111,255,226,.14) 0%,rgba(66,235,204,.075) 28%,rgba(101,183,255,.025) 48%,transparent 68%);
+  transition:opacity .2s ease;will-change:transform;
+}
+.cursorSpotlight.visible{opacity:1}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse),(forced-colors:active){.cursorSpotlight{display:none}}

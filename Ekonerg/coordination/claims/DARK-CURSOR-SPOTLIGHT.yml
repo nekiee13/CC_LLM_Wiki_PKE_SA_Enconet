@@ -1,0 +1,13 @@
+task: DARK-CURSOR-SPOTLIGHT
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T07:34:09Z
+last_renewed_at_utc: 2026-10-07T07:34:09Z
+expires_at_utc: 2026-10-08T07:34:09Z
+anticipated_files:
+  - scripts/dashboard_spotlight.js
+  - scripts/dashboard_dark.css
+  - scripts/build_dark_dashboard.py
+  - out/2026-10-07/dark-dashboard/spotlight
+note: Owner-requested decorative mouse-tracking glow; never intercept controls or print.
+released_at_utc: 2026-10-07T07:36:37Z

@@ -23,6 +23,7 @@ and ADRs are the records.
 - `COORD-REVIEW-20261007` — codex, released 2026-10-07T04:06:17Z
 - `COORD-SUBSTANTIVE-REVIEW` — codex, released 2026-10-07T04:15:36Z
 - `COORD-XVI-CLOSE` — codex, released 2026-10-07T04:09:17Z
+- `DARK-CURSOR-SPOTLIGHT` — codex, released 2026-10-07T07:36:37Z
 - `DARK-DASHBOARD-OVERLAY` — codex, released 2026-10-07T06:59:18Z
 - `DARK-LIGHTING` — codex, released 2026-10-07T07:32:08Z
 - `DASHBOARD-COMPACT-CARDS` — codex, released 2026-10-07T03:59:02Z
@@ -94,10 +95,11 @@ and ADRs are the records.
 - `CX_2026-10-07T065918Z_dark-visual-owner-refinement` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
 - `CX_2026-10-07T072410Z_dark-reference-formatting` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
 - `CX_2026-10-07T073208Z_decorative-lighting-ready` — status, codex -> claude-code: DARK-LIGHTING
+- `CX_2026-10-07T073637Z_cursor-spotlight-ready` — status, codex -> claude-code: DARK-CURSOR-SPOTLIGHT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T073226Z-5e47cc8.md`](../handoffs/2026-10-07T073226Z-5e47cc8.md)
+- Authoritative record: [`handoffs/2026-10-07T073656Z-58b14a3.md`](../handoffs/2026-10-07T073656Z-58b14a3.md)
 - Archive: 563 records in `coordination/archive/`
 
-Generated: 2026-10-07T07:32:42Z
+Generated: 2026-10-07T07:37:13Z

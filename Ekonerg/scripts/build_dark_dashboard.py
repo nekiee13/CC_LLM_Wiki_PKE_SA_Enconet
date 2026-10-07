@@ -14,6 +14,7 @@ from pathlib import Path
 
 STYLE = Path(__file__).with_name('dashboard_dark.css')
 REFERENCE_GROUPS = Path(__file__).with_name('dashboard_reference_groups.js')
+SPOTLIGHT = Path(__file__).with_name('dashboard_spotlight.js')
 
 
 def dark_copy(source: str) -> str:
@@ -23,9 +24,12 @@ def dark_copy(source: str) -> str:
         raise ValueError('Expected one head in the source dashboard')
     css = STYLE.read_text(encoding='utf-8')
     result = source.replace('</head>', '<style id="ekonerg-dark-skin" media="screen">\n'
-                            + css + '\n</style>\n</head>', 1)
+                            + css + '\n</style>\n'
+                            + '<style media="print">.cursorSpotlight{display:none!important}</style>\n</head>', 1)
     return result.replace('</body>', '<script id="ekonerg-reference-groups">\n'
-                          + REFERENCE_GROUPS.read_text(encoding='utf-8') + '\n</script>\n</body>', 1)
+                          + REFERENCE_GROUPS.read_text(encoding='utf-8') + '\n</script>\n'
+                          + '<script id="ekonerg-cursor-spotlight">\n'
+                          + SPOTLIGHT.read_text(encoding='utf-8') + '\n</script>\n</body>', 1)
 
 
 def build(source: Path, output: Path) -> dict:
@@ -43,7 +47,7 @@ def build(source: Path, output: Path) -> dict:
     return {'source': str(source), 'source_sha256': hashlib.sha256(before).hexdigest(),
             'output': str(output), 'dark_sha256': hashlib.sha256(result).hexdigest(),
             'stylesheet_sha256': hashlib.sha256(STYLE.read_bytes()).hexdigest(),
-            'scope': 'Dark CSS plus reference-list presentation; original audit script and data unchanged.'}
+            'scope': 'Dark CSS, reference grouping and decorative cursor light; original audit script/data unchanged.'}
 
 
 def main():

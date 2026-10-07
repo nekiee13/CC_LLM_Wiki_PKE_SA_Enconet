@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T073226Z-5e47cc8.md`](handoffs/2026-10-07T073226Z-5e47cc8.md)
+**Authoritative record:** [`handoffs/2026-10-07T073656Z-58b14a3.md`](handoffs/2026-10-07T073656Z-58b14a3.md)
 
-**Status:** partial · **Git:** `5e47cc8` · **Agent:** codex · **Created:** 2026-10-07T07:32:26Z
+**Status:** partial · **Git:** `58b14a3` · **Agent:** codex · **Created:** 2026-10-07T07:36:56Z
 
-**Exact next action:** Owner review lighting/EKONERG_DASHBOARD_DARK.html. Keep light unchanged; do not add framework tasks.
+**Exact next action:** Owner inspect spotlight-final/EKONERG_DASHBOARD_DARK.html. Originallight untouched. Full darkacceptance still pending.

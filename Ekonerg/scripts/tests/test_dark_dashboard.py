@@ -48,3 +48,14 @@ def test_only_decorative_signal_breathes():
     assert 'animation:ekonerg-signal-breathe 2.7s' in css
     assert '.scoreBar>div,.progress>.seg{animation:none!important;transform:none!important}' in css
     assert '@media(prefers-reduced-motion:reduce){.card::after{animation:none' in css
+
+
+def test_cursor_light_is_decorative_and_opt_out_safe():
+    from build_dark_dashboard import STYLE, SPOTLIGHT
+    css = STYLE.read_text(encoding='utf-8')
+    js = SPOTLIGHT.read_text(encoding='utf-8')
+    assert 'pointer-events:none' in css.split('.cursorSpotlight{',1)[1]
+    assert 'requestAnimationFrame' in js
+    assert "setAttribute('aria-hidden', 'true')" in js
+    assert '(prefers-reduced-motion:reduce)' in js
+    assert 'event.pointerType' in js
