@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T040656Z-c6cf76a.md`](handoffs/2026-10-07T040656Z-c6cf76a.md)
+**Authoritative record:** [`handoffs/2026-10-07T041605Z-7df9cdb.md`](handoffs/2026-10-07T041605Z-7df9cdb.md)
 
-**Status:** partial · **Git:** `c6cf76a` · **Agent:** codex · **Created:** 2026-10-07T04:06:56Z
+**Status:** partial · **Git:** `7df9cdb` · **Agent:** codex · **Created:** 2026-10-07T04:16:05Z
 
-**Exact next action:** Await and independently process Claude's count correction and bounded code/rubric/older review dispositions. Archive only resolved confirmed CX records with manifests. Do not start darkGUI while queue remains unresolved.
+**Exact next action:** Ask owner to confirm Part21 remains applicable but separate from XVIAppB100score, and choose explanation-only at current ratings versus rechecking all18ratings. Recommend full18consistent rubric recheck plus present-tense explanations in one bounded task; no new categories,weights or framework slices.

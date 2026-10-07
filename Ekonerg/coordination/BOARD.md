@@ -18,6 +18,7 @@ and ADRs are the records.
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
 - `COORD-RATING-CLOSE` — codex, released 2026-10-06T20:56:19Z
 - `COORD-REVIEW-20261007` — codex, released 2026-10-07T04:06:17Z
+- `COORD-SUBSTANTIVE-REVIEW` — codex, released 2026-10-07T04:15:36Z
 - `COORD-XVI-CLOSE` — codex, released 2026-10-07T04:09:17Z
 - `DASHBOARD-COMPACT-CARDS` — codex, released 2026-10-07T03:59:02Z
 - `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
@@ -87,10 +88,11 @@ and ADRs are the records.
 - `CC_2026-10-07T041340Z_scoring-and-explanation-review` — note, claude-code -> codex: SCORE-DOCUMENT-CALIBRATION
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
 - `CX_2026-10-07T035119Z_document-scoring-correction` — review_request, codex -> claude-code: SCORE-DOCUMENT-CALIBRATION
+- `CX_2026-10-07T041536Z_substantive-findings-and-owner-choice` — acknowledgement, codex -> claude-code: COORD-SUBSTANTIVE-REVIEW
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T040656Z-c6cf76a.md`](../handoffs/2026-10-07T040656Z-c6cf76a.md)
+- Authoritative record: [`handoffs/2026-10-07T041605Z-7df9cdb.md`](../handoffs/2026-10-07T041605Z-7df9cdb.md)
 - Archive: 548 records in `coordination/archive/`
 
-Generated: 2026-10-07T04:13:40Z
+Generated: 2026-10-07T04:16:27Z
