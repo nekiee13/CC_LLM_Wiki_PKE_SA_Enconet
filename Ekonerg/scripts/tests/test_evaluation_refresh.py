@@ -93,6 +93,55 @@ def test_rollback_and_block_uninspected_retry(current):
         refresh.apply(root, plan, 'out/review')
 
 
+def test_all18_present_tense_reassessment_preserves_evidence(current):
+    root = current
+    cfg = json.loads((root / 'refresh.json').read_text())
+    baseline = json.loads((root / 'assessment.json').read_text())
+    with sqlite3.connect(root / 'db/nqa_audit.sqlite') as c:
+        c.row_factory = sqlite3.Row
+        template = dict(c.execute('SELECT * FROM active_crumbs').fetchone())
+        quote = dict(c.execute('SELECT * FROM crumb_quotes WHERE item_id=?', (template['item_id'],)).fetchone())
+        link = dict(c.execute('SELECT * FROM crumb_chunk_links WHERE item_id=?', (template['item_id'],)).fetchone())
+        cfg['changes'] = []
+        for row in baseline['evaluations']:
+            change = {k: row[k] for k in ('criterion_id', 'rating', *refresh.SUMMARIES)}
+            change['rationale'] = 'The written controls cover the stated duty, with the described limits.'
+            change['basis_crumb_ids'] = [r[0] for r in c.execute(
+                'SELECT item_id FROM evaluation_evidence WHERE evaluation_id=?',
+                ('EVAL-' + row['criterion_id'],))]
+            if not change['basis_crumb_ids']:
+                # Synthetic controls give every fixture criterion an exact linked quote.
+                item = 'TEST-' + row['criterion_id']
+                crumb = {k: template[k] for k in ('doc_id', 'sieve_run_id', 'document_side', 'statement', 'item_type', 'quote_language')}
+                refresh.insert(c, 'crumbs', {**crumb, 'item_id': item, 'criterion_id': row['criterion_id']})
+                refresh.insert(c, 'crumb_quotes', {**quote, 'quote_id': item + '-Q', 'item_id': item})
+                refresh.insert(c, 'crumb_chunk_links', {**link, 'quote_id': item + '-Q', 'item_id': item})
+                refresh.insert(c, 'evaluation_evidence', {'evaluation_id': 'EVAL-' + row['criterion_id'], 'item_id': item})
+                change['basis_crumb_ids'] = [item]
+            cfg['changes'].append(change)
+    (root / 'refresh.json').write_text(json.dumps(cfg))
+    plan = refresh.prepare(root, 'refresh.json')
+    assert len(plan['after']['evaluations']) == 18
+    assert plan['after']['evidence'] == plan['before']['evidence']
+    result = refresh.apply(root, plan, 'out/all18')
+    assert result['metrics'] == plan['metrics']
+    assert refresh.apply(root, plan, 'out/all18')['status'] == 'already_applied'
+
+
+def test_published_all18_review_explains_current_controls_not_change_history():
+    from pathlib import Path
+    path = Path(__file__).resolve().parents[2] / 'docs/reviews/ALL18_ASSESSMENT_20261007.json'
+    cfg = json.loads(path.read_text(encoding='utf-8'))
+    assert len(cfg['changes']) == 18
+    assert len({r['criterion_id'] for r in cfg['changes']}) == 18
+    for row in cfg['changes']:
+        assert row['basis_crumb_ids']
+        for field in refresh.SUMMARIES:
+            value = row[field].lower()
+            assert value.strip()
+            assert not any(word in value for word in ('raise ', 'retain ', 'previous deduction', 'earlier score', 'lower ', 'old score'))
+
+
 @pytest.mark.parametrize('name', ['New Company', 'Čista tvrtka'])
 @pytest.mark.parametrize('sibling', [True, False])
 def test_neutral_root(current, name, sibling):

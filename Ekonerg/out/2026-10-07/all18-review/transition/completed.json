@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "revision_id": "ALL18-REVIEW-20261007-01",
+  "active_vendor": 475,
+  "plan_sha256": "b8cf0378df600ccc9ffb8255ca4ffad08f92f43dffb056622b21156e9601f7cb",
+  "database_before_sha256": "43096c594b47fc9ab8593292b0d0ced66447b3052f8c5d8e005f01dc2df74977",
+  "database_after_sha256": "161c56ff5d457348ec6809c5e6dcc41e2dd09854d4e71cde11d12a2064d387c0",
+  "metrics": {
+    "consolidated_score": 77.8,
+    "classification": "substantially",
+    "applicable_count": 18,
+    "classification_counts": {
+      "fully": 3,
+      "minimally": 0,
+      "na": 0,
+      "partially": 1,
+      "substantially": 14,
+      "undetermined": 0,
+      "unmet": 0
+    }
+  },
+  "journal_hashes": {
+    "intent.json": "b8cf0378df600ccc9ffb8255ca4ffad08f92f43dffb056622b21156e9601f7cb",
+    "before.json": "c9cfa9f688a28f8d91faa597b9bfb2c8436fa54f0e4179a9bb82ed05ee64012f"
+  }
+}

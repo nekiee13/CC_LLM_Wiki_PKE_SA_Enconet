@@ -17,6 +17,38 @@ def test_radar_removal_keeps_page_startup():
     assert 'renderRadar();' not in page
 
 
+def test_part21_boundary_is_visible_without_a_second_score():
+    page = render(DEFAULT_MATRIX, DEFAULT_DB, "2026-10-07", "RUN-20261003-32")
+    assert "Part 21 remains applicable" in page
+    assert "not included in Criterion XVI or the overall Appendix B score" in page
+    assert "reporting path remains unresolved" in page
+    assert len(_data(page)) == 18
+
+
+def test_published_all18_snapshot_matches_its_assessment():
+    root = Path(__file__).resolve().parents[2]
+    cfg = json.loads((root / 'docs/reviews/ALL18_ASSESSMENT_20261007.json').read_text(encoding='utf-8'))
+    page = (root / 'out/2026-10-07/all18-review/EKONERG_DASHBOARD.html').read_text(encoding='utf-8')
+    data = _data(page)
+    assert len(data) == 18
+    assert '77.8% — Substantially Matched' in page
+    assert 'TEKOL' not in page
+    assert 'Part 21 remains applicable' in page
+    weights = {'fully': 100, 'substantially': 75, 'partially': 50, 'minimally': 25, 'unmet': 0}
+    for row in cfg['changes']:
+        card = next(d for d in data if 'APP_B_' + d['n'] == row['criterion_id'])
+        assert card['rating'] == row['rating']
+        assert card['score'] == weights[row['rating']]
+        assert card['rationale'] == card['summary'] == row['rationale']
+        assert card['aff'] == row['affirmative_summary']
+        assert card['con'] == row['contrary_summary']
+        assert card['judge'] == row['judge_ruling']
+        assert set(row['basis_crumb_ids']) <= set(card['score_crumb_ids'])
+        assert all(c['quotes'] and c['chapters'] for c in card['score_crumbs'])
+    assert sum(d['score'] for d in data) == 1400
+    assert sum(d['score_crumb_count'] for d in data) == 379
+
+
 def _data(page: str) -> list[dict]:
     payload = re.search(r"const data = (\[.*?\]);\nconst labels=", page, re.S)
     assert payload is not None

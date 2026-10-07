@@ -1,0 +1,15 @@
+task: ALL18-DOCUMENT-REASSESSMENT
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T04:17:55Z
+last_renewed_at_utc: 2026-10-07T04:17:55Z
+expires_at_utc: 2026-10-07T08:17:55Z
+anticipated_files:
+  - docs/reviews
+  - manifests/approvals.csv
+  - scripts/build_umbra_conformance_dashboard.py
+  - scripts/tests/test_umbra_conformance_dashboard.py
+  - out/2026-10-07
+  - coordination
+note: Owner-approved single bounded all18rating recheck and present-tense explanations; Part21 applicable outside XVIAppBscore, no new weights/categories or darkGUI.
+released_at_utc: 2026-10-07T04:31:40Z
