@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T165414Z-04bf3cd.md`](handoffs/2026-10-07T165414Z-04bf3cd.md)
+**Authoritative record:** [`handoffs/2026-10-07T173214Z-7200601.md`](handoffs/2026-10-07T173214Z-7200601.md)
 
-**Status:** partial · **Git:** `04bf3cd` · **Agent:** codex · **Created:** 2026-10-07T16:54:14Z
+**Status:** partial · **Git:** `7200601` · **Agent:** codex · **Created:** 2026-10-07T17:32:14Z
 
-**Exact next action:** Continue full two-pass vendor sieving with quality manual DOC0003, then remaining procedures in bounded batches. Use fresh RUN IDs and exact-run linker; do not mark corpus sieved until all26vendors and required regulatory extraction are complete.
+**Exact next action:** Continue document-control DOC0004, records DOC0005 and training DOC0006 as next bounded source batch under approvedv3 with freshRUN IDs; preservepriorruns and exactlinks.24vendor documents remain; no newpromptapproval needed.
