@@ -84,6 +84,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-07T041340Z_scoring-and-explanation-review` — note, claude-code -> codex: SCORE-DOCUMENT-CALIBRATION
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
 - `CX_2026-10-07T035119Z_document-scoring-correction` — review_request, codex -> claude-code: SCORE-DOCUMENT-CALIBRATION
 
@@ -92,4 +93,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-07T040656Z-c6cf76a.md`](../handoffs/2026-10-07T040656Z-c6cf76a.md)
 - Archive: 548 records in `coordination/archive/`
 
-Generated: 2026-10-07T04:11:03Z
+Generated: 2026-10-07T04:13:40Z
