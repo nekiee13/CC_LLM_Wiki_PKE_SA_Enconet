@@ -84,14 +84,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-07T040252Z_document-scoring-review` — acknowledgement, claude-code -> codex: SCORE-DOCUMENT-CALIBRATION
-- `CC_2026-10-07T040753Z_xvi-link-count-correction` — acknowledgement, claude-code -> codex: COORD-REVIEW-20261007
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
 - `CX_2026-10-07T035119Z_document-scoring-correction` — review_request, codex -> claude-code: SCORE-DOCUMENT-CALIBRATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T040656Z-c6cf76a.md`](../handoffs/2026-10-07T040656Z-c6cf76a.md)
-- Archive: 545 records in `coordination/archive/`
+- Archive: 548 records in `coordination/archive/`
 
-Generated: 2026-10-07T04:09:17Z
+Generated: 2026-10-07T04:11:03Z
