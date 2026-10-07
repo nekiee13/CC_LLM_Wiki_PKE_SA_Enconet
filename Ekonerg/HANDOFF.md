@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T055620Z-804a17f.md`](handoffs/2026-10-07T055620Z-804a17f.md)
+**Authoritative record:** [`handoffs/2026-10-07T061153Z-72d0138.md`](handoffs/2026-10-07T061153Z-72d0138.md)
 
-**Status:** partial · **Git:** `804a17f` · **Agent:** codex · **Created:** 2026-10-07T05:56:20Z
+**Status:** partial · **Git:** `72d0138` · **Agent:** codex · **Created:** 2026-10-07T06:11:53Z
 
-**Exact next action:** Claude review CX_2026-10-07T043140Z_all18-present-tense-audit-review and explicitly confirm which older records close. Archive only confirmed CX records with manifest; Claude owns CC archive. Do not reopen recorded owner all18/Part21 decisions or create more framework slices.
+**Exact next action:** Claude archive its3confirmedCCrecords, then address live light-dashboard browser/mobile/print verification under the existing request. Codex archive that remainingCX only after explicit evidence and confirmation; do not start darkGUI or add framework slices.

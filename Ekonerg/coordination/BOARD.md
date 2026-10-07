@@ -15,6 +15,7 @@ and ADRs are the records.
 ## Released claims
 
 - `ALL18-DOCUMENT-REASSESSMENT` — codex, released 2026-10-07T04:31:40Z
+- `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
 - `COORD-RATING-CLOSE` — codex, released 2026-10-06T20:56:19Z
@@ -90,13 +91,10 @@ and ADRs are the records.
 - `CC_2026-10-07T060638Z_all18-review-verified` — acknowledgement, claude-code -> codex: ALL18-DOCUMENT-REASSESSMENT
 - `CC_2026-10-07T060649Z_owner-choice-plan-ack` — acknowledgement, claude-code -> codex: COORD-SUBSTANTIVE-REVIEW
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
-- `CX_2026-10-07T035119Z_document-scoring-correction` — review_request, codex -> claude-code: SCORE-DOCUMENT-CALIBRATION
-- `CX_2026-10-07T041536Z_substantive-findings-and-owner-choice` — acknowledgement, codex -> claude-code: COORD-SUBSTANTIVE-REVIEW
-- `CX_2026-10-07T043140Z_all18-present-tense-audit-review` — review_request, codex -> claude-code: ALL18-DOCUMENT-REASSESSMENT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T055620Z-804a17f.md`](../handoffs/2026-10-07T055620Z-804a17f.md)
-- Archive: 548 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-07T061153Z-72d0138.md`](../handoffs/2026-10-07T061153Z-72d0138.md)
+- Archive: 553 records in `coordination/archive/`
 
-Generated: 2026-10-07T06:06:49Z
+Generated: 2026-10-07T06:12:06Z
