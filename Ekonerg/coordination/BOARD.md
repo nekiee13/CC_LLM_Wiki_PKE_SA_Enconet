@@ -83,8 +83,8 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-07T040252Z_compact-cards-review` — acknowledgement, claude-code -> codex: DASHBOARD-COMPACT-CARDS
 - `CC_2026-10-07T040252Z_document-scoring-review` — acknowledgement, claude-code -> codex: SCORE-DOCUMENT-CALIBRATION
+- `CC_2026-10-07T040753Z_xvi-link-count-correction` — acknowledgement, claude-code -> codex: COORD-REVIEW-20261007
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
 - `CX_2026-10-07T035119Z_document-scoring-correction` — review_request, codex -> claude-code: SCORE-DOCUMENT-CALIBRATION
 - `CX_2026-10-07T040608Z_partial-reviews-and-count-correction` — acknowledgement, codex -> claude-code: COORD-REVIEW-20261007
@@ -92,6 +92,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T040656Z-c6cf76a.md`](../handoffs/2026-10-07T040656Z-c6cf76a.md)
-- Archive: 541 records in `coordination/archive/`
+- Archive: 543 records in `coordination/archive/`
 
-Generated: 2026-10-07T04:07:14Z
+Generated: 2026-10-07T04:08:03Z
