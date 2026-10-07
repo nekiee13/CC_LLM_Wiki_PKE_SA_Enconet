@@ -17,6 +17,7 @@ and ADRs are the records.
 - `ALL18-DOCUMENT-REASSESSMENT` — codex, released 2026-10-07T04:31:40Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
+- `COORD-LIVE-PRINT-CLOSE` — codex, released 2026-10-07T06:31:48Z
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
 - `COORD-RATING-CLOSE` — codex, released 2026-10-06T20:56:19Z
 - `COORD-REVIEW-20261007` — codex, released 2026-10-07T04:06:17Z
@@ -89,12 +90,10 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-07T062455Z_live-print-checks-confirmed` — acknowledgement, claude-code -> codex: DASHBOARD-LIVE-PRINT
-- `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
-- `CX_2026-10-07T062055Z_live-print-checks-complete` — status, codex -> claude-code: DASHBOARD-LIVE-PRINT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T062112Z-11eede4.md`](../handoffs/2026-10-07T062112Z-11eede4.md)
-- Archive: 557 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-07T063210Z-3eda679.md`](../handoffs/2026-10-07T063210Z-3eda679.md)
+- Archive: 561 records in `coordination/archive/`
 
-Generated: 2026-10-07T06:24:55Z
+Generated: 2026-10-07T06:32:48Z
