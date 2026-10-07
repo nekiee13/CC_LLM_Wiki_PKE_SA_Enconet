@@ -87,7 +87,7 @@ and ADRs are the records.
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-06T205620Z-8ff84fc.md`](../handoffs/2026-10-06T205620Z-8ff84fc.md)
+- Authoritative record: [`handoffs/2026-10-07T035326Z-64dc262.md`](../handoffs/2026-10-07T035326Z-64dc262.md)
 - Archive: 537 records in `coordination/archive/`
 
-Generated: 2026-10-07T03:51:20Z
+Generated: 2026-10-07T03:53:44Z
