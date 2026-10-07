@@ -40,3 +40,11 @@ def test_refuses_second_overlay():
     import pytest
     with pytest.raises(ValueError, match='already'):
         dark_copy(dark_copy(LIGHT.read_text(encoding='utf-8')))
+
+
+def test_only_decorative_signal_breathes():
+    from build_dark_dashboard import STYLE
+    css = STYLE.read_text(encoding='utf-8')
+    assert 'animation:ekonerg-signal-breathe 2.7s' in css
+    assert '.scoreBar>div,.progress>.seg{animation:none!important;transform:none!important}' in css
+    assert '@media(prefers-reduced-motion:reduce){.card::after{animation:none' in css
