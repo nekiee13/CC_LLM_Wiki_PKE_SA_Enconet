@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T134909Z-0a3ad71.md`](handoffs/2026-10-07T134909Z-0a3ad71.md)
+**Authoritative record:** [`handoffs/2026-10-07T142132Z-c4e44ef.md`](handoffs/2026-10-07T142132Z-c4e44ef.md)
 
-**Status:** partial · **Git:** `0a3ad71` · **Agent:** codex · **Created:** 2026-10-07T13:49:09Z
+**Status:** partial · **Git:** `c4e44ef` · **Agent:** codex · **Created:** 2026-10-07T14:21:32Z
 
-**Exact next action:** Continue bounded source registration of remaining 25 vendor and seven regulatory files using preserve-incoming; complete source review and G1 before chapter database writes and then calibrate v3.
+**Exact next action:** Owner reviews docs/SOURCE_SET_G1_REVIEW_20261007.md and confirms33source set,2015interpretive basis versus vendor olderreferences, Enconetonlyscope, andCroatianoutput. Then recordG1andadvance registered, ingestchapters andcalibratev3.

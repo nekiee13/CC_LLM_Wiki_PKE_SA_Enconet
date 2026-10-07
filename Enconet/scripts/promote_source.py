@@ -8,7 +8,8 @@ import sys
 from pathlib import Path
 
 import db_util
-from source_registry import ENCONET, RAW, register, write_lock
+from project_paths import ROOT as ENCONET
+from source_registry import RAW, register, write_lock
 
 
 def promote(source: Path, *, preserve_incoming: bool = False, preview: bool = False, **metadata) -> str:

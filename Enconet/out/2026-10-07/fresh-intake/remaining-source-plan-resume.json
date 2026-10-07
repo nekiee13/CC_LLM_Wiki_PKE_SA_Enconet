@@ -1,0 +1,462 @@
+{
+  "project": "C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet",
+  "intake_only": true,
+  "regulatory_approval": "pending",
+  "metadata_basis": "Reviewed source headings and release labels; unknown date n-a; no previous approval inherited",
+  "batches": [
+    {
+      "batch_id": "SRC-20261007-003",
+      "size_class": "large",
+      "size_reason": "Long or complex source; standalone",
+      "documents": [
+        {
+          "filename": "PK-SUK-001,R9(Priručnik kvalitete norma ISO 9001-2.md",
+          "sha256": "6c86f765247d36078ad85c8bc20d3ab341bf122c85a60331a5c53f66e0eab27a",
+          "title": "PRIRUČNIK KVALITETE",
+          "supplier": "enconet",
+          "doc_date": "2023-04-14",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": true,
+          "bytes": 83891
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-004",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "PP-42-01,R6 UPRAVLJANJE DOKUMENTIMA.md",
+          "sha256": "1b53fc1416b34cf36dfde3a226c482c046010f5f4ae0c65dbc63b3384bf20483",
+          "title": "UPRAVLJANJE DOKUMENTIMA",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 43101
+        },
+        {
+          "filename": "PP-42-02,R5 Upravljanje zapisima kvalitete.pdf.md",
+          "sha256": "c0c50bdf1b4d5f974e7fbddbcd024680fc89e79c2588aa5a536c5c7d8b860f42",
+          "title": "UPRAVLJANJE ZAPISIMA KVALITETE - PP-42-02, rev. 5",
+          "supplier": "enconet",
+          "doc_date": "2024-11-25",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 14660
+        },
+        {
+          "filename": "PP-62-01,R4 IZOBRAZBA I UVJEŽBAVANJE OSOBLJA.md",
+          "sha256": "d4582f7c508e1fb213e24f02c9b408a4dd0dc176d46012e2365e9b8871e13723",
+          "title": "IZOBRAZBA I UVJEŽBAVANJE OSOBLJA",
+          "supplier": "enconet",
+          "doc_date": "2023-05-05",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 20592
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-005",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "PP-72-01,R5 PROCES MARKETINGA, UGOVARANJA I PRODAJ.md",
+          "sha256": "a19254901191846c57623c71c7a961925e2667d9f37ccc83dd4ad13ceb0f1d5d",
+          "title": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 29299
+        },
+        {
+          "filename": "PP-73-01,R6 PROCES PROJEKTIRANJA I RAZVOJA.md",
+          "sha256": "77d7a95b134c6c6f59b564f866efc5a0324f08218af14f8bdd81968a3aa6fafe",
+          "title": "PROCES PROJEKTIRANJA I RAZVOJA",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 36815
+        },
+        {
+          "filename": "PP-82-01,R6 AUDITI.md",
+          "sha256": "a8f111bb893d0f04794ad01fb22434c1614752700467833acfa0db2d63a9fe2c",
+          "title": "AUDITI",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 25112
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-006",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "PP-83-01,R5 UPRAVLJANJE NESUKLADNIM PROIZVODOM.md",
+          "sha256": "9c8b0f352b59bf121a6bff17635753324161eb81187fcb47b21f4b6d626f87f7",
+          "title": "UPRAVLJANJE NESUKLADNIM PROIZVODOM",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 21592
+        },
+        {
+          "filename": "PP-85-01,R4 POPRAVNE I PREVENTIVNE RADNJE.md",
+          "sha256": "bb69e2d82f822726e90caf59dba51271ea3a50259f96505656791b659583bbdf",
+          "title": "POPRAVNE I PREVENTIVNE RADNJE",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 13287
+        },
+        {
+          "filename": "PP-85-02,R2 UPRAVLJANJE RIZICIMA.md",
+          "sha256": "a5779eb3e9eb73102301bf98c26c925d83615cbfead21ee2523a9ac9a7471add",
+          "title": "UPRAVLJANJE RIZICIMA",
+          "supplier": "enconet",
+          "doc_date": "2018-10-19",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 22673
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-007",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "RU-42-03,R2 ODRŽAVANJE RAČUNALNE INFRASTRUKTURE.md",
+          "sha256": "c7ee232ec48cabf0b66d8104801111dc99728d968991ac745e2bda2610009126",
+          "title": "ODRŽAVANJE RAČUNALNE INFRASTRUKTURE",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 35816
+        },
+        {
+          "filename": "RU-54-01,R3 PLANIRANJE I OSTVARIVANJE CILJEVA KVAL.md",
+          "sha256": "1a82bfb05575867cbcac1357537e9991c460cb20cfa1a33de742df6928aa8f11",
+          "title": "PLANIRANJE I OSTVARIVANJE CILJEVA KVALITETE",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 8095
+        },
+        {
+          "filename": "RU-63-02,R3 UVOĐENJE PRIPRAVNIKA U POSAO.md",
+          "sha256": "82c7445e59d8752808f61ade86d3d8351fb726a38ba9654131ffa55474309a4d",
+          "title": "UVOĐENJE PRIPRAVNIKA U POSAO",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 10798
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-008",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "RU-73-01,R2 SOFTWARE CONFIGURATION MANAGEMENT CONT.md",
+          "sha256": "2af205059f89f8e2562849a5f42981ba45b15749d038ec289dbb9ccfe4deb88e",
+          "title": "SOFTWARE CONFIGURATION MANAGEMENT CONTROL",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "en",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 21099
+        },
+        {
+          "filename": "RU-73-02,R2 SOFTWARE VERIFICATION AND VALIDATION C.md",
+          "sha256": "f6b570f1d622dc8ab6d3ca2c0d39a88c37135a3528699c48c86b0add9e2dd649",
+          "title": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "en",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 13575
+        },
+        {
+          "filename": "RU-73-03,R3 SOFTWARE INSTALLATION, KEEPING, HANDLI.md",
+          "sha256": "b79e085d8f64ac73472a29bcffa8457ff6d1bed3526587236d9fdc6fbc15dbbc",
+          "title": "SOFTWARE INSTALLATION, KEEPING, HANDLING AND MAINTENANCE CONTROL",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "en",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 17453
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-009",
+      "size_class": "large",
+      "size_reason": "Long or complex source; standalone",
+      "documents": [
+        {
+          "filename": "RU-73-04,R2 PROCEDURE FOR THE RELAP5 TRANSIENT ANA.md",
+          "sha256": "ba7ed665376b86890bd4c7355cda65c4cd183ae45a721c1ed887293fb9bb1851",
+          "title": "PROCEDURE FOR THE RELAP5 TRANSIENT ANALYSES",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "en",
+          "side": "DOCUMENT",
+          "large": true,
+          "bytes": 79526
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-010",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "RU-74-01,R2 GENERIC PROCEDURE FOR AOV DIAGNOSTIC T.md",
+          "sha256": "b12e97e4f426ea923ffcf1e06416309e32b3afef75bc75253be98aa83160115c",
+          "title": "GENERIC PROCEDURE FOR AOV DIAGNOSTIC TESTING",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "en",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 37371
+        },
+        {
+          "filename": "RU-74-02,R2 DESIGN BASIS REVIEW  PROCEDURE.md",
+          "sha256": "a3fecbe3fdee077fed9b8dace8f916e374a54cce7032abf87f49ac243a1aacc9",
+          "title": "DESIGN BASIS REVIEW  PROCEDURE",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "en",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 16243
+        },
+        {
+          "filename": "RU-82-01,R3 PRAĆENJE I MJERENJE ZADOVOLJSTVA KUPAC.md",
+          "sha256": "ec159923f536267b4fc0b72a50250475eae11015bf5c5b2b318cfb34b81658af",
+          "title": "PRAĆENJE I MJERENJE ZADOVOLJSTVA KUPACA",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 13613
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-011",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "RU-82-03,R3 PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PR.md",
+          "sha256": "80db5bd78e5691d76c070a687715e51c48e1cf38755d489d7ef8f4a93a285392",
+          "title": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 9066
+        },
+        {
+          "filename": "RU-82-04,R3 PRAĆENJE I MJERENJE USPJEŠNOSTI PROJEK.md",
+          "sha256": "3482b0f658fd5814b3343f773bd2bb5726861b0d77e8d189bb91ebf17dbf35c9",
+          "title": "PRAĆENJE I MJERENJE USPJEŠNOSTI PROJEKATA",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 8630
+        },
+        {
+          "filename": "RU-82-05,R2 PROGRAM NADZORA MJERNE I TESTNE OPREME.md",
+          "sha256": "30ecac5384173d0ba92cdb6d617fec2caef8d573d0b34229631f09e695ba4a78",
+          "title": "PROGRAM NADZORA MJERNE I TESTNE OPREME",
+          "supplier": "enconet",
+          "doc_date": "2017-11-17",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 11712
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-012",
+      "size_class": "large",
+      "size_reason": "Uncertain effort; conservative standalone batch",
+      "documents": [
+        {
+          "filename": "RU-82-06,R0 EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKU.md",
+          "sha256": "5f7afec178dcf3e4d8416fb7149537f1a1889977121da0cc0053ff12a0b5174f",
+          "title": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU",
+          "supplier": "enconet",
+          "doc_date": "2020-08-03",
+          "language": "hr",
+          "side": "DOCUMENT",
+          "large": false,
+          "bytes": 17951
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-013",
+      "size_class": "small",
+      "size_reason": "Shorter text documents; at most three sources",
+      "documents": [
+        {
+          "filename": "10CFR_Part 21.md",
+          "sha256": "74e8cf5d62f05a87879f602cb1abdaee745af875fc6eeab5420df70dc3e84248",
+          "title": "PART 21—REPORTING OF DEFECTS AND NONCOMPLIANCE",
+          "supplier": "nrc",
+          "doc_date": "n-a",
+          "language": "en",
+          "side": "RULE",
+          "large": false,
+          "bytes": 34085
+        },
+        {
+          "filename": "10CFR_Part 50_-_Appendix_B.md",
+          "sha256": "b06bf6d7fbc8d92e122bbb3dd7efc5088842141127f2717e3ea6de976612c396",
+          "title": "Appendix B to Part 50—Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants",
+          "supplier": "nrc",
+          "doc_date": "n-a",
+          "language": "en",
+          "side": "RULE",
+          "large": false,
+          "bytes": 20932
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-014",
+      "size_class": "large",
+      "size_reason": "Long or complex source; standalone",
+      "documents": [
+        {
+          "filename": "ASME_NQA-1_000-013_Preface.md",
+          "sha256": "7df1e41b51d5618c1afe404ee89c2396e0c907e5efd768a09a480d593c0aa6be",
+          "title": "ASME NQA-1:2015 - Preface",
+          "supplier": "asme",
+          "doc_date": "n-a",
+          "language": "en",
+          "side": "RULE",
+          "large": true,
+          "bytes": 40750
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-015",
+      "size_class": "large",
+      "size_reason": "Long or complex source; standalone",
+      "documents": [
+        {
+          "filename": "ASME_NQA-1_014-046_Part_1.md",
+          "sha256": "8e26ceadaf42cdedbee5505268b3610b2a33951c4b7d01626df7d0522a32d41b",
+          "title": "ASME NQA-1:2015 - Part 1",
+          "supplier": "asme",
+          "doc_date": "n-a",
+          "language": "en",
+          "side": "RULE",
+          "large": true,
+          "bytes": 110025
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-016",
+      "size_class": "large",
+      "size_reason": "Long or complex source; standalone",
+      "documents": [
+        {
+          "filename": "ASME_NQA-1_047-128_Part_2.md",
+          "sha256": "50bb4b0291e185f2d949556c6e03d507c31922d7818988b22747ad66c6764322",
+          "title": "ASME NQA-1:2015 - Part 2",
+          "supplier": "asme",
+          "doc_date": "n-a",
+          "language": "en",
+          "side": "RULE",
+          "large": true,
+          "bytes": 373066
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-017",
+      "size_class": "large",
+      "size_reason": "Long or complex source; standalone",
+      "documents": [
+        {
+          "filename": "ASME_NQA-1_129-206_Part_3.md",
+          "sha256": "a2cc79330bef84bd1323c102f06142ef1207b7db6092bad602ff09979d604f83",
+          "title": "ASME NQA-1:2015 - Part 3",
+          "supplier": "asme",
+          "doc_date": "n-a",
+          "language": "en",
+          "side": "RULE",
+          "large": true,
+          "bytes": 318221
+        }
+      ]
+    },
+    {
+      "batch_id": "SRC-20261007-018",
+      "size_class": "large",
+      "size_reason": "Long or complex source; standalone",
+      "documents": [
+        {
+          "filename": "ASME_NQA-1_207-315_Part_4.md",
+          "sha256": "0124984ff49898c6487b267fc298af5ca0e1757db36a08e03f8a6ecb070016e9",
+          "title": "ASME NQA-1:2015 - Part 4",
+          "supplier": "asme",
+          "doc_date": "n-a",
+          "language": "en",
+          "side": "RULE",
+          "large": true,
+          "bytes": 698868
+        }
+      ]
+    }
+  ],
+  "resume_basis": "SRC-20261007-002 registered and validated; SRC-003 failed before its first source copy due to Windows console encoding; prior receipt retained"
+}
