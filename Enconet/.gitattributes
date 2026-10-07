@@ -22,3 +22,6 @@ incoming/** -text
 raw/** -text
 derived/** -text
 out/** -text
+# Source snapshots and rendered quote reviews retain supplied whitespace.
+out/2026-10-07/full-keyword-sweep/sources/** -whitespace
+out/2026-10-07/full-keyword-sweep/review/** -whitespace
