@@ -89,11 +89,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-07T062455Z_live-print-checks-confirmed` — acknowledgement, claude-code -> codex: DASHBOARD-LIVE-PRINT
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T063210Z-3eda679.md`](../handoffs/2026-10-07T063210Z-3eda679.md)
-- Archive: 561 records in `coordination/archive/`
+- Archive: 563 records in `coordination/archive/`
 
-Generated: 2026-10-07T06:32:48Z
+Generated: 2026-10-07T06:34:45Z
