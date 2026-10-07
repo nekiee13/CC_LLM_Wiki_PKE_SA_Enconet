@@ -23,6 +23,7 @@ and ADRs are the records.
 - `COORD-SUBSTANTIVE-REVIEW` — codex, released 2026-10-07T04:15:36Z
 - `COORD-XVI-CLOSE` — codex, released 2026-10-07T04:09:17Z
 - `DASHBOARD-COMPACT-CARDS` — codex, released 2026-10-07T03:59:02Z
+- `DASHBOARD-LIVE-PRINT` — codex, released 2026-10-07T06:20:55Z
 - `DOC0031-RESIEVE` — codex, released 2026-10-06T15:14:14Z
 - `DOC0031-SEMANTIC` — codex, released 2026-10-06T17:47:31Z
 - `DOC0031-SOURCE-TRANSITION` — codex, released 2026-10-06T18:29:40Z
@@ -88,10 +89,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
+- `CX_2026-10-07T062055Z_live-print-checks-complete` — status, codex -> claude-code: DASHBOARD-LIVE-PRINT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T061153Z-72d0138.md`](../handoffs/2026-10-07T061153Z-72d0138.md)
+- Authoritative record: [`handoffs/2026-10-07T062112Z-11eede4.md`](../handoffs/2026-10-07T062112Z-11eede4.md)
 - Archive: 557 records in `coordination/archive/`
 
-Generated: 2026-10-07T06:15:00Z
+Generated: 2026-10-07T06:22:14Z

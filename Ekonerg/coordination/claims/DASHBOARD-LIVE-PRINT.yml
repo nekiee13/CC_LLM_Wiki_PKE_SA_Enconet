@@ -1,0 +1,11 @@
+task: DASHBOARD-LIVE-PRINT
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T06:17:43Z
+last_renewed_at_utc: 2026-10-07T06:17:43Z
+expires_at_utc: 2026-10-08T06:17:43Z
+anticipated_files:
+  - scripts/verify_dashboard_browser.py
+  - out/2026-10-07/browser-checks
+note: Owner requests resolution of final live dashboard/print checks.
+released_at_utc: 2026-10-07T06:20:55Z
