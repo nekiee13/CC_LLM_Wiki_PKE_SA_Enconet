@@ -1,0 +1,1881 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "PP-85-02,R2 UPRAVLJANJE RIZICIMA.md",
+    "title": "UPRAVLJANJE RIZICIMA",
+    "date": "2018-10-19",
+    "doc_id": "DOC-0012",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: PP-85-02 identificiran je oznakom, revizijom 2 i datumom objave.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]",
+          "source_heading_path": "UPRAVLJANJE RIZICIMA [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv dokumenta:         | Programski postupak PP-85-02 |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]"
+        },
+        {
+          "quote_original": "| Revizija broj:           | 2                            |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]"
+        },
+        {
+          "quote_original": "| Datum objavljivanja:     | 19.10.2018.                  |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, stručni i upravljački pregled te odobrenje navedeni su s imenima i datumima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]",
+          "source_heading_path": "UPRAVLJANJE RIZICIMA [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pripremio | Vladimir Križe, voditelj QA                   | 09.10.2018. |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao | dr. sc. Davor Šinka, stručni suradnik         | 16.10.2018. |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao | mr. sc. Ilijana Iveković, predstavnik direktora | 16.10.2018. |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]"
+        },
+        {
+          "quote_original": "| Odobrio   | dr. sc. Nenad Debrecin, direktor              | 18.10.2018. |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Predviđen je periodični pregled; prazna tablica ne potvrđuje njegovu provedbu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3] > Periodični pregled [line 18]",
+          "source_heading_path": "UPRAVLJANJE RIZICIMA [line 3] > Periodični pregled [line 18]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao | Datum | Sljedeći pregled |",
+          "quote_language": "hr",
+          "source_locator": "UPRAVLJANJE RIZICIMA [line 3] > Periodični pregled [line 18]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Postupak određuje aktivnosti upravljanja rizicima u poslovnim procesima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 1. SVRHA [line 56]",
+          "source_heading_path": "SADRŽAJ [line 29] > 1. SVRHA [line 56]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak je napisan sa svrhom da se odrede sve aktivnosti u procesu upravljanja rizicima koji se mogu pojaviti u poslovnim procesima Enconeta.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 1. SVRHA [line 56]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Primjena obuhvaća projekte, studije, analize, programe i usluge s utvrđenim odstupanjem; opseg nije neograničen.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]",
+          "source_heading_path": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na sve proizvode i usluge firme Enconet (projekte, studije, elaborate, stručne analize, računalne programe, te konzalting usluge projektnog, razvojnog ili uslužnog tipa) koje se rade za kupca ili za vlastite potrebe, kod kojih se utvrdi odstupanje od zahtjeva definiranih u provođenju sustava upravljanja, uključivši i popratnu dokumentaciju.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Reference navode ISO 9001, Priručnik i ISO 31000; objective evidence not shown za Appendix B u samom popisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]",
+          "source_heading_path": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. HRN EN ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   Sustavi upravljanja kvalitetom-Zahtjevi",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "2. PK-SUK-001",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   Priručnik kvalitete norma-ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "3. Upravljanje rizicima ISO 31000:2009",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Poglavlje Direktor Enconeta dodjeljuje odgovornost za cjelokupno upravljanje rizicima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odgovoran je za cjelokupni proces upravljanja rizicima.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Voditelj projekta procjenjuje rizik i rezultate predaje predstavniku direktora.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za projekte za koji su zaduženi, voditelji projekta dužni su izvesti ocjenu (procjenu, assessment) rizika i rezultate predstaviti predstavniku direktora za nadzor SUK-a, da bi se rezultati ocjene (procjene, assessment) obradili i provele akcije u smislu ublažavanja posljedica rizika ili potpunog uklanjanja uzroka rizika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Rezultati se koriste za ublažavanje posljedica ili uklanjanje uzroka rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za projekte za koji su zaduženi, voditelji projekta dužni su izvesti ocjenu (procjenu, assessment) rizika i rezultate predstaviti predstavniku direktora za nadzor SUK-a, da bi se rezultati ocjene (procjene, assessment) obradili i provele akcije u smislu ublažavanja posljedica rizika ili potpunog uklanjanja uzroka rizika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Svaki voditelj procjenjuje rizike svojeg projekta i predlaže potrebne mjere.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svaki voditelj projekta dužan je učiniti ocjenu (procjenu, assessment) rizika za projekt za koji je zadužen kao i predložiti akcije potrebne da se negativne posljedice rizika maksimalno umanje ili kompletno uklone. Tijekom postupka potrebno je uzeti u obzir i koristiti sve elemente koji omogućuju efikasnost i vjerodostojnost rezultata, kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Procjena rizika uključuje uspostavu konteksta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svaki voditelj projekta dužan je učiniti ocjenu (procjenu, assessment) rizika za projekt za koji je zadužen kao i predložiti akcije potrebne da se negativne posljedice rizika maksimalno umanje ili kompletno uklone. Tijekom postupka potrebno je uzeti u obzir i koristiti sve elemente koji omogućuju efikasnost i vjerodostojnost rezultata, kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "- Uspostava konteksta",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Procjena uključuje komunikaciju i konzultacije radi vjerodostojnosti rezultata.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svaki voditelj projekta dužan je učiniti ocjenu (procjenu, assessment) rizika za projekt za koji je zadužen kao i predložiti akcije potrebne da se negativne posljedice rizika maksimalno umanje ili kompletno uklone. Tijekom postupka potrebno je uzeti u obzir i koristiti sve elemente koji omogućuju efikasnost i vjerodostojnost rezultata, kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "- Komunikacija i konzultacije",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Procjena uključuje praćenje i preispitivanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svaki voditelj projekta dužan je učiniti ocjenu (procjenu, assessment) rizika za projekt za koji je zadužen kao i predložiti akcije potrebne da se negativne posljedice rizika maksimalno umanje ili kompletno uklone. Tijekom postupka potrebno je uzeti u obzir i koristiti sve elemente koji omogućuju efikasnost i vjerodostojnost rezultata, kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "- Praćenje i preispitivanje",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Procjena prolazi identifikaciju, analizu vjerojatnosti i posljedica te ocjenu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak ocjene (procjene, assessment) se izvodi po slijedećim fazama:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "- Identifikacija rizika",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "- Analiza rizika (procjena vjerojatnosti i posljedica)",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "- Ocjena (evaluation) rizika",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Predstavnik direktora vlasnik je procesa te nadzire provedbu i održava postupak.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati ocjene (procjene, assessment) rizika proslijeđuju se predstavniku direktora za nadzor SUK-a koji u suradnji s voditeljem projekta provodi obradu (treatment) rizika u smislu ublažavanja posljedica rizika ili potpunog uklanjanja uzroka rizika.\nUkoliko su rizici neprihvatljivi, određuju se korektivne mjere i postupak se ponavlja dok se rizici ne smanje do razumnog i prihvatljivog nivoa.\nPredstavnik direktora za nadzor SUK-a je vlasnik procesa i odgovoran je za nadzor provedbe opisanog procesa te održavanje dokumentiranog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Neprihvatljivi rizik traži korektivne mjere i ponavljanje procjene do razumno prihvatljive razine.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati ocjene (procjene, assessment) rizika proslijeđuju se predstavniku direktora za nadzor SUK-a koji u suradnji s voditeljem projekta provodi obradu (treatment) rizika u smislu ublažavanja posljedica rizika ili potpunog uklanjanja uzroka rizika.\nUkoliko su rizici neprihvatljivi, određuju se korektivne mjere i postupak se ponavlja dok se rizici ne smanje do razumnog i prihvatljivog nivoa.\nPredstavnik direktora za nadzor SUK-a je vlasnik procesa i odgovoran je za nadzor provedbe opisanog procesa te održavanje dokumentiranog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Predstavnik direktora s voditeljem projekta obrađuje posljedice i uzroke rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati ocjene (procjene, assessment) rizika proslijeđuju se predstavniku direktora za nadzor SUK-a koji u suradnji s voditeljem projekta provodi obradu (treatment) rizika u smislu ublažavanja posljedica rizika ili potpunog uklanjanja uzroka rizika.\nUkoliko su rizici neprihvatljivi, određuju se korektivne mjere i postupak se ponavlja dok se rizici ne smanje do razumnog i prihvatljivog nivoa.\nPredstavnik direktora za nadzor SUK-a je vlasnik procesa i odgovoran je za nadzor provedbe opisanog procesa te održavanje dokumentiranog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: QA prati proces i prema potrebi sudjeluje u procjeni i obradi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj osiguranja kvalitete",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "Prati izvođenje procesa, po potrebi sudjeluje u fazi procjene (assessment) i obrade (treatment). Arhivira rezultate kao zapise kvalitete.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: QA arhivira rezultate rizika kao zapise kvalitete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj osiguranja kvalitete",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        },
+        {
+          "quote_original": "Prati izvođenje procesa, po potrebi sudjeluje u fazi procjene (assessment) i obrade (treatment). Arhivira rezultate kao zapise kvalitete.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. ODGOVORNOSTI [line 85]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Dijagram povezuje kontekst, procjenu i obradu sa stalnom komunikacijom i preispitivanjem.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "```mermaid\ngraph TD\n    A[Establishing the context]\n    B[Risk assessment]\n    C[Risk identification]\n    D[Risk analysis]\n    E[Risk evaluation]\n    F[Risk treatment]\n    G[Communication and consultation]\n    H[Monitoring and review]",
+          "quote_language": "en",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "    A --> B\n    B --> C\n    C --> D\n    D --> E\n    E --> F\n    G <--> A\n    G <--> C\n    G <--> D\n    G <--> E\n    G <--> F\n    H <--> A\n    H <--> C\n    H <--> D\n    H <--> E\n    H <--> F\n```",
+          "quote_language": "en",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Za svaki projekt bira se koje kategorije rizika treba detaljno analizirati.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Za identificirani rizik i njegov kritični element procjenjuje se vjerojatnost.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za identificiranu kategoriju potencijalnog rizika i element koji bi tu kategoriju mogao svrstati u kritičnu zonu, potrebno je procijeniti vjerojatnost takve pretpostavke.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Propisano je pet kvalitativnih razina vjerojatnosti za ocjenu rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U tablici 2. Procjena vjerojatnosti navedene su kvalitativne mjere u pet kategorija koji određuju procjenu vjerojatnosti da se dogode neželjeni događaji koji mogu ugroziti izvedbu projekta. Kvalitativne mjere (1, 2, 3, 4 ,5) se koriste u tablici 4. Ocjena (evaluation) rizika, gdje se određuju moguće posljedice rizičnog događaja, ukoliko se ne primjene korektivne mjere da se rizici umanje ili uklone.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Propisano je pet kvalitativnih razina posljedica.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.4 Procjena posljedica [line 175]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.4 Procjena posljedica [line 175]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Posljedice neželjenog događaja procjenjuju se na temelju tablice 3. Procjena posljedica, koja također određuje pet stupnjeva kvalitativnih mjera. Kvalitativne mjere (1, 2, 3, 4 ,5) se koriste u tablici 4. Ocjena (evaluation) rizika, za konačnu ocjenu nivoa posljedica rizika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.4 Procjena posljedica [line 175]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Ocjena kombinira vjerojatnost i posljedice ako se izvor rizika ne ukloni.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.5 Ocjena (evaluation) rizika [line 179]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.5 Ocjena (evaluation) rizika [line 179]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Posljedice procijenjenog rizika određuju se u tablici 4. Ocjena (evaluation) rizika. Na temelju nivoa kvalitativnih mjera iz tablica 2. Procjena vjerojatnosti i 3. Procjena posljedica, određuju se moguće posljedice ukoliko se izvor rizika ne smanji ili ukloni.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.5 Ocjena (evaluation) rizika [line 179]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Visoka, srednja i niska razina određuju način obrade rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.6 Obrada (treatment) rizika [line 183]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.6 Obrada (treatment) rizika [line 183]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Obzirom na nivo i ozbiljnost posljedica rizika, tablica 5. Obrada (treatment) rizika određuje akcije u smislu ublažavanja ili, ukoliko je to moguće, otklanjanja rizika, koji može biti visoki, srednji ili niski.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.6 Obrada (treatment) rizika [line 183]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "supporting_control: Podrška menadžmenta, projektni sastanci i rješavanje neslaganja uključeni su u procjenu rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 1 | Podrška menadžmenta | Podrška menadžmenta je ključni element za uspješnost projekta. Menadžment ne smije zanemarivati projektne sastanke i komunikaciju. Eventualna neslaganja oko ključnih pitanja na projektu moraju se minimizirati. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Precizan opseg i kontrola puzajućih promjena uključeni su u procjenu rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 2 | Opseg | Opseg projekta mora biti precizno definiran. Opseg mora biti izvršen u cijelosti. Posebna je opasnost od kontinuiranih (puzajućih) promjena opsega koje napuhavaju projekt. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Tablica traži sustavan pristup projektnim promjenama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 4 | Upravljanje promjenama | Za vrijeme provedbe projekta javljaju se zahtjevi za promjenama. Ti zahtjevi utječu na opseg i potom na troškove projekta. S time u svezi potrebno je izgraditi sistematičan pristup upravljanju promjenama. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Nejasna očekivanja, izostavljeni dionici i slaba komunikacija prepoznati su kao projektni rizici.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 5 | Dionici | Negativan stav dionika spram projekta je jedan od najznačajnijih rizika projekta. Nejasna očekivanja, izostavljanje (nepozivanje) važnih dionika, nerazumijevanja i potencijalni sukobi među dionicima glavni su izvori ove kategorije rizika. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        },
+        {
+          "quote_original": "| 6 | Komunikacija | Kvaliteta komunikacije na provedbi projekta iznimno je važan izvor rizika projekta. Komunikacija ne smije biti podcijenjena, niti precijenjena. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Neadekvatne vještine, iskustvo i nedostatak edukacije prepoznati su kao rizici.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 7 | Ljudski resursi i projektni tim | Nedostatak ljudskih resursa, neadekvatne vještine, neiskustvo, nesklonost projektu, niska motivacija, nedostatak edukacijskih programa i slično, izvori su uzroci su ove kategorije rizika. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Oblik i sadržaj konačnog proizvoda ili studije moraju biti jasno definirani.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 8 | Arhitektura proizvoda | Oblik i sadržaj (arhitektura) proizvoda koji predstavlja rezultat projekta moraju biti jasno definirani. Proizvod koji predstavlja rezultat projekta mora biti jasno definiran. Ako je proizvod studija, onda se radi o obliku i sadržaju studije. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "supporting_control: Dizajn studije povezan je s odgovarajućim QA postupkom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 9 | Dizajn proizvoda | Dizajn proizvoda mora biti jasno određen. Ako je proizvod studija, onda je njen dizajn određen odgovarajućom QA procedurom. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Kvaliteta podizvođačevih separata uključena je u procjenu rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 10 | Tehnologija | Odnosi se na kvalitetu komponenti koje čine proizvod. Ako je proizvod studija, onda su to separati koje izrađuju podizvođači. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Integracija podizvođačkih dijelova u konačni proizvod zahtijeva razmatranje mogućih problema.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 11 | Integracija | Potrebno je razmotriti probleme koji se mogu pojaviti u postupku integracije komponenti u krajnji proizvod. Ako je proizvod studija, onda se radi o integraciji separata u okviru studije. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Zahtjevi trebaju biti jasni i usklađeni s pravilima struke i propisima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 12 | Zahtjevi | Zahtjevi na projektu moraju biti u skladu sa strategijom tvrtke. Zahtjevi moraju biti u skladu s pravilima struke (propisima). Zahtjevi ne smiju biti nejasni i tako otvoriti mogućnost različitim interpretacijama. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Kašnjenje odluka i nekvalitetno rješavanje problema prepoznati su kao rizici.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 13 | Odlučivanje i rješavanje problema | Kašnjenje u donošenju odluka vezanih za projekt kao i nepravovremeno (nekvalitetno) rješavanje problema na projektu glavni su izvori ove kategorije rizika. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "supporting_control: Nejasan opseg i neprihvatljivi uvjeti nabave prepoznati su kao rizici.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 14 | Nabava | Skup rizika vezanih za nabavu podrazumijevaju: nejasan opseg nabave, konflikti s dobavljačima, konflikti među dobavljačima, kašnjenja s isporukama, nekvalitetne isporuke, neprihvatljivi uvjeti nabave i slično. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Konflikti dobavljača, zakašnjele i nekvalitetne isporuke prepoznati su kao rizici.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 14 | Nabava | Skup rizika vezanih za nabavu podrazumijevaju: nejasan opseg nabave, konflikti s dobavljačima, konflikti među dobavljačima, kašnjenja s isporukama, nekvalitetne isporuke, neprihvatljivi uvjeti nabave i slično. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "supporting_control: Nadležnosti svakog sudionika projekta moraju biti jasno određene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 15 | Nadležnosti | Nadležnosti svakog sudionika na projektu moraju biti jasno definirane. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0041",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Kašnjenje projektnih odobrenja uključeno je u procjenu rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 16 | Odobrenja | Odgode različitih odobrenja koje se odnose na projekt (odgode rokova) glavni su izvori ove kategorije rizika. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0042",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "supporting_control: Organizacija provedbe projekta mora biti jasno određena.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 17 | Organizacija | Organizacija na provedbi projekta treba biti jasno definirana. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0043",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Promjene regulative, tehnologije i poslovne politike uključene su u vanjske rizike.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 18 | Vanjski uzroci | Promjene regulative, viša sila, tržište, tehnološki razvoj i promjena poslovne politike tvrtke čine vanjske rizike projekta. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0044",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "supporting_control: Traži se pridržavanje metodologije rada i zadržavanje kontrole nad projektom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 19 | Upravljanje projektom | Osnovni zahtjev je da se treba pridržavati zacrtane metodologije rada. Ne smije se gubiti kontrola nad projektom. Potrebno je izgraditi sustav upravljanja projektom. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0045",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Prebacivanje projektnog rizika na nabavu prepoznato je kao mogući sekundarni rizik.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 20 | Sekundarni uzroci | Prebacivanje rizika provedbe projekta na nabavu predstavlja sekundarni uzrok koji može ugroziti projekt. Ovaj rizik se vrlo često previđa. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0046",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Traži se prepoznavanje razloga zbog kojih kupac ne bi prihvatio proizvod.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        },
+        {
+          "quote_original": "| 21 | Prihvaćanje proizvoda od strane kupaca | Potrebno je detektirati uzroke koji mogu dovesti do toga da kupci ne prihvate proizvod koji predstavlja rezultat projekta. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 187]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0047",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Skala razlikuje gotovo siguran događaj od rijetkog događaja u posebnim uvjetima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Vezano za procjenu vjerojatnosti neželjenih događaja koji mogu ugroziti provedbu projekta primjenjuje se sljedeća kvalitativna tablica.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| Kvalitativna mjera | Opis mjere | Objašnjenje |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 5 | Gotovo sigurno | Neželjeni događaj se vrlo često pojavljuje |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 4 | Vrlo vjerojatno | Neželjeni događaj se često pojavljuje |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 3 | Moguće | Pojava neželjenog događaja se očekuje |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 2 | Malo vjerojatno | Neželjeni događaj se može pojaviti, ali rijetko |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 1 | Gotovo nikada | Neželjeni događaj se može pojaviti, ali samo u rijetkim (specifičnim) uvjetima |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0048",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Skala posljedica obuhvaća financije, reputaciju i nesukladnosti; nema zaseban stupac nuklearne sigurnosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Posljedice neželjenog događaja procjenjuju se na temelju sljedeće kvalitativne tablice.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| Kvalitativna mjera | Opis mjere | Financijski gubitak | Gubitak reputacije | Stupanj nesuglasnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 1 | Zanemarivo | Zanemariv gubitak | Zanemariv gubitak | Zanemarive nesukladnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 2 | Manje značajno | Manji gubitak | Manji gubitak | Manje nesukladnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 3 | Značajno | Značajan gubitak | Značajan gubitak | Značajne nesukladnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 4 | Vrlo značajno | Veliki gubitak | Veliki gubitak | Velike nesukladnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 5 | Kritično | Kritični gubitak | Kritični gubitak | Kritične nesuglasnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0049",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Matrica 5×5 kombinira razine vjerojatnosti i posljedica.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rizik se ocjenjuje (evaluira) temeljem sljedeće matrice dimenzije 5×5.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| Vjerojatnost | Zanemarivo | Manje značajno | Značajno | Vrlo značajno | Kritično |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "|              | 1          | 2              | 3        | 4             | 5        |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 5            | 5          | 10             | 15       | 20            | 25       |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 4            | 4          | 8              | 12       | 16            | 20       |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 3            | 3          | 6              | 9        | 12            | 15       |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 2            | 2          | 4              | 6        | 8             | 10       |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 1            | 1          | 2              | 3        | 4             | 5        |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0050",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Visoki rizik je najmanje 15, srednji 5–12, a niski najviše 4.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Vrijednost | Razina rizika |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| ≥15        | Visoki rizik  |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 5-12       | Srednji rizik |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| ≤4         | Niski rizik   |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0051",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Visoki rizik zahtijeva hitno djelovanje i voditeljev plan uz aktivan menadžment.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Gore ocijenjeni (evaluirani) rizici obrađuju se prema donjoj tablici.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        },
+        {
+          "quote_original": "| Razina rizika | Opis postupanja |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        },
+        {
+          "quote_original": "| Visoki rizik  | Zahtijeva se hitno djelovanje. Voditelj projekta mora izraditi plan za upravljanje rizicima na projektu. Zahtijeva se aktivno uključenje menadžmenta. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0052",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Srednji rizik traži posebnu pažnju i obavještavanje menadžmenta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Gore ocijenjeni (evaluirani) rizici obrađuju se prema donjoj tablici.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        },
+        {
+          "quote_original": "| Razina rizika | Opis postupanja |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        },
+        {
+          "quote_original": "| Srednji rizik | Voditelj projekta mora posvetiti posebnu pozornost rizicima na projektu. Zahtijeva se da menadžment bude informiran. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0053",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Niski rizik vodi se rutinski.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Gore ocijenjeni (evaluirani) rizici obrađuju se prema donjoj tablici.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        },
+        {
+          "quote_original": "| Razina rizika | Opis postupanja |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        },
+        {
+          "quote_original": "| Niski rizik   | Voditelj projekta upravlja rizicima na rutinski način. |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.5    Obrada (treatment) rizika [line 301]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0054",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Prazan projektni zapis povezuje projekt, obvezu, ugovor i tim s identifikacijom, procjenom i obradom rizika.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.6    Ocjena projekta – ZAPIS KVALITETE [line 318]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.6    Ocjena projekta – ZAPIS KVALITETE [line 318]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 4. Ocjena rizika [line 377]",
+          "source_heading_path": "SADRŽAJ [line 29] > 4. Ocjena rizika [line 377]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5. Postupanje s rizicima [line 413]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5. Postupanje s rizicima [line 413]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Naziv projekta:\nObveza Enconeta:\nUgovor br.:\nProjektni tim Enconeta:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.6    Ocjena projekta – ZAPIS KVALITETE [line 318]"
+        },
+        {
+          "quote_original": "| Br. | Kategorija rizika | Identifikacija |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.6    Ocjena projekta – ZAPIS KVALITETE [line 318]"
+        },
+        {
+          "quote_original": "| Kvalitativna mjera | Opis mjere | Procjena uzroka |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.6    Ocjena projekta – ZAPIS KVALITETE [line 318]"
+        },
+        {
+          "quote_original": "| Kvalitativna mjera | Opis mjere | Financijski gubitak | Gubitak reputacije | Stupanj nesuglasnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.6    Ocjena projekta – ZAPIS KVALITETE [line 318]"
+        },
+        {
+          "quote_original": "| Br. | Kategorija rizika | Ocjena |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 4. Ocjena rizika [line 377]"
+        },
+        {
+          "quote_original": "| Vjerojatnost | Zanemarivo | Manje značajno | Značajno | Vrlo značajno | Kritično |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 4. Ocjena rizika [line 377]"
+        },
+        {
+          "quote_original": "| Razina rizika | Postupanje |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5. Postupanje s rizicima [line 413]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0055",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Primjena se vezuje uz utvrđeno odstupanje, a analiza se traži za svaki projekt; candidate; verify criterion mapping i preventivni opseg u praksi.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]",
+          "source_heading_path": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na sve proizvode i usluge firme Enconet (projekte, studije, elaborate, stručne analize, računalne programe, te konzalting usluge projektnog, razvojnog ili uslužnog tipa) koje se rade za kupca ili za vlastite potrebe, kod kojih se utvrdi odstupanje od zahtjeva definiranih u provođenju sustava upravljanja, uključivši i popratnu dokumentaciju.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]"
+        },
+        {
+          "quote_original": "Za svaki projekt potrebno je procijeniti koje kategorije rizika su primjerene i stoga ih je potrebno detaljno analizirati i evaluirati.\nU tablici 1. Identifikacija rizika navedene sve moguće (generičke) kategorije rizika uz dodatno objašnjenje koji su to elementi koji bi mogli određenu kategoriju postaviti u kritičnu zonu i zahtijevati primjenu kompletnog postupka procjene prilika.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6. POSTUPAK UPRAVLJANJA RIZICIMA [line 127]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0056",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Za safety-related projekte treba provjeriti kako se nuklearna sigurnost vrednuje u skali financija, reputacije i nesukladnosti; candidate; verify criterion mapping.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Kvalitativna mjera | Opis mjere | Financijski gubitak | Gubitak reputacije | Stupanj nesuglasnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        },
+        {
+          "quote_original": "| 5 | Kritično | Kritični gubitak | Kritični gubitak | Kritične nesuglasnosti |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7.2    Procjena vjerojatnosti rizika [line 238]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    }
+  ]
+}

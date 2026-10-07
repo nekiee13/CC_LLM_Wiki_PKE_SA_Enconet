@@ -1,0 +1,2115 @@
+{
+  "method": "Codex direct-control and quality-intent full-source review; no automatic keyword acceptance",
+  "source_sha256": "a5779eb3e9eb73102301bf98c26c925d83615cbfead21ee2523a9ac9a7471add",
+  "content_blocks_reviewed": 197,
+  "counts": {
+    "items": 56,
+    "quotes": 131,
+    "direct": 20,
+    "supporting": 33,
+    "leads": 3
+  },
+  "decisions": [
+    {
+      "blocks": [
+        "B00005",
+        "B00007",
+        "B00008"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: PP-85-02 identificiran je oznakom, revizijom 2 i datumom objave.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00013",
+        "B00014",
+        "B00015",
+        "B00016"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Priprema, stručni i upravljački pregled te odobrenje navedeni su s imenima i datumima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00020"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Predviđen je periodični pregled; prazna tablica ne potvrđuje njegovu provedbu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00049"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Postupak određuje aktivnosti upravljanja rizicima u poslovnim procesima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00053"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Primjena obuhvaća projekte, studije, analize, programe i usluge s utvrđenim odstupanjem; opseg nije neograničen.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00057",
+        "B00058",
+        "B00060",
+        "B00061",
+        "B00063"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Reference navode ISO 9001, Priručnik i ISO 31000; objective evidence not shown za Appendix B u samom popisu.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00080"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Poglavlje Direktor Enconeta dodjeljuje odgovornost za cjelokupno upravljanje rizicima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00084"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Voditelj projekta procjenjuje rizik i rezultate predaje predstavniku direktora.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00084"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Rezultati se koriste za ublažavanje posljedica ili uklanjanje uzroka rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00088"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Svaki voditelj procjenjuje rizike svojeg projekta i predlaže potrebne mjere.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00088",
+        "B00090"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Procjena rizika uključuje uspostavu konteksta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00088",
+        "B00091"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Procjena uključuje komunikaciju i konzultacije radi vjerodostojnosti rezultata.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00088",
+        "B00092"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Procjena uključuje praćenje i preispitivanje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00094",
+        "B00096",
+        "B00097",
+        "B00098"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Procjena prolazi identifikaciju, analizu vjerojatnosti i posljedica te ocjenu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00102"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Predstavnik direktora vlasnik je procesa te nadzire provedbu i održava postupak.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00102"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Neprihvatljivi rizik traži korektivne mjere i ponavljanje procjene do razumno prihvatljive razine.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00102"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Predstavnik direktora s voditeljem projekta obrađuje posljedice i uzroke rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00104",
+        "B00106"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA prati proces i prema potrebi sudjeluje u procjeni i obradi.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00104",
+        "B00106"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA arhivira rezultate rizika kao zapise kvalitete.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00114",
+        "B00116"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Dijagram povezuje kontekst, procjenu i obradu sa stalnom komunikacijom i preispitivanjem.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Za svaki projekt bira se koje kategorije rizika treba detaljno analizirati.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00124"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Za identificirani rizik i njegov kritični element procjenjuje se vjerojatnost.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Propisano je pet kvalitativnih razina vjerojatnosti za ocjenu rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00132"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Propisano je pet kvalitativnih razina posljedica.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00136"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Ocjena kombinira vjerojatnost i posljedice ako se izvor rizika ne ukloni.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00140"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Visoka, srednja i niska razina određuju način obrade rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00156"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Podrška menadžmenta, projektni sastanci i rješavanje neslaganja uključeni su u procjenu rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00157"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Precizan opseg i kontrola puzajućih promjena uključeni su u procjenu rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00159"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Tablica traži sustavan pristup projektnim promjenama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00160",
+        "B00161"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Nejasna očekivanja, izostavljeni dionici i slaba komunikacija prepoznati su kao projektni rizici.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00162"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Neadekvatne vještine, iskustvo i nedostatak edukacije prepoznati su kao rizici.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00163"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Oblik i sadržaj konačnog proizvoda ili studije moraju biti jasno definirani.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00164"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "supporting_control: Dizajn studije povezan je s odgovarajućim QA postupkom.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00165"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Kvaliteta podizvođačevih separata uključena je u procjenu rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00166"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Integracija podizvođačkih dijelova u konačni proizvod zahtijeva razmatranje mogućih problema.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00167"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Zahtjevi trebaju biti jasni i usklađeni s pravilima struke i propisima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00168"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Kašnjenje odluka i nekvalitetno rješavanje problema prepoznati su kao rizici.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00169"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "supporting_control: Nejasan opseg i neprihvatljivi uvjeti nabave prepoznati su kao rizici.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00169"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Konflikti dobavljača, zakašnjele i nekvalitetne isporuke prepoznati su kao rizici.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00170"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Nadležnosti svakog sudionika projekta moraju biti jasno određene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00171"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Kašnjenje projektnih odobrenja uključeno je u procjenu rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00172"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Organizacija provedbe projekta mora biti jasno određena.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00173"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Promjene regulative, tehnologije i poslovne politike uključene su u vanjske rizike.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00174"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "supporting_control: Traži se pridržavanje metodologije rada i zadržavanje kontrole nad projektom.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00175"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Prebacivanje projektnog rizika na nabavu prepoznato je kao mogući sekundarni rizik.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00176"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Traži se prepoznavanje razloga zbog kojih kupac ne bi prihvatio proizvod.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00185",
+        "B00187",
+        "B00189",
+        "B00190",
+        "B00191",
+        "B00192",
+        "B00193"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Skala razlikuje gotovo siguran događaj od rijetkog događaja u posebnim uvjetima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00201",
+        "B00203",
+        "B00205",
+        "B00206",
+        "B00207",
+        "B00208",
+        "B00209"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Skala posljedica obuhvaća financije, reputaciju i nesukladnosti; nema zaseban stupac nuklearne sigurnosti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00216",
+        "B00218",
+        "B00220",
+        "B00221",
+        "B00222",
+        "B00223",
+        "B00224",
+        "B00225"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Matrica 5×5 kombinira razine vjerojatnosti i posljedica.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00227",
+        "B00229",
+        "B00230",
+        "B00231"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Visoki rizik je najmanje 15, srednji 5–12, a niski najviše 4.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00239",
+        "B00241",
+        "B00243"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Visoki rizik zahtijeva hitno djelovanje i voditeljev plan uz aktivan menadžment.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00239",
+        "B00241",
+        "B00244"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Srednji rizik traži posebnu pažnju i obavještavanje menadžmenta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00239",
+        "B00241",
+        "B00245"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Niski rizik vodi se rutinski.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00251",
+        "B00255",
+        "B00282",
+        "B00292",
+        "B00304",
+        "B00329",
+        "B00340"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Prazan projektni zapis povezuje projekt, obvezu, ugovor i tim s identifikacijom, procjenom i obradom rizika.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00053",
+        "B00120"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Primjena se vezuje uz utvrđeno odstupanje, a analiza se traži za svaki projekt; candidate; verify criterion mapping i preventivni opseg u praksi.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00203",
+        "B00209"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Za safety-related projekte treba provjeriti kako se nuklearna sigurnost vrednuje u skali financija, reputacije i nesukladnosti; candidate; verify criterion mapping.",
+      "item_type": "reference"
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00001",
+      "start": 0,
+      "end": 15,
+      "heading_navigation": "",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00005",
+      "start": 40,
+      "end": 100,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00007",
+      "start": 160,
+      "end": 220,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00008",
+      "start": 220,
+      "end": 280,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00009",
+      "start": 280,
+      "end": 341,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00011",
+      "start": 342,
+      "end": 417,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00013",
+      "start": 492,
+      "end": 568,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00014",
+      "start": 568,
+      "end": 644,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00015",
+      "start": 644,
+      "end": 722,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00016",
+      "start": 722,
+      "end": 798,
+      "heading_navigation": "UPRAVLJANJE RIZICIMA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00020",
+      "start": 822,
+      "end": 863,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00026",
+      "start": 1031,
+      "end": 1116,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00030",
+      "start": 1128,
+      "end": 1240,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00032",
+      "start": 1241,
+      "end": 1339,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00034",
+      "start": 1340,
+      "end": 1447,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00036",
+      "start": 1448,
+      "end": 1550,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00038",
+      "start": 1551,
+      "end": 1653,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00040",
+      "start": 1654,
+      "end": 1739,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00041",
+      "start": 1739,
+      "end": 2366,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00043",
+      "start": 2367,
+      "end": 2480,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00045",
+      "start": 2481,
+      "end": 2662,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00049",
+      "start": 2676,
+      "end": 2819,
+      "heading_navigation": "1. SVRHA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00053",
+      "start": 2845,
+      "end": 3212,
+      "heading_navigation": "2. PODRUČJE PRIMJENE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00057",
+      "start": 3230,
+      "end": 3254,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00058",
+      "start": 3254,
+      "end": 3297,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00060",
+      "start": 3298,
+      "end": 3312,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00061",
+      "start": 3312,
+      "end": 3355,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00063",
+      "start": 3356,
+      "end": 3395,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00067",
+      "start": 3424,
+      "end": 3470,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00069",
+      "start": 3517,
+      "end": 3564,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00070",
+      "start": 3564,
+      "end": 3611,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00071",
+      "start": 3611,
+      "end": 3658,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00072",
+      "start": 3658,
+      "end": 3705,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00073",
+      "start": 3705,
+      "end": 3752,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00074",
+      "start": 3752,
+      "end": 3799,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00080",
+      "start": 3843,
+      "end": 3899,
+      "heading_navigation": "Direktor Enconeta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00084",
+      "start": 3923,
+      "end": 4246,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00086",
+      "start": 4247,
+      "end": 4479,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00088",
+      "start": 4480,
+      "end": 4830,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00090",
+      "start": 4831,
+      "end": 4853,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00091",
+      "start": 4853,
+      "end": 4883,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00092",
+      "start": 4883,
+      "end": 4911,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00094",
+      "start": 4912,
+      "end": 4983,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00096",
+      "start": 4984,
+      "end": 5008,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00097",
+      "start": 5008,
+      "end": 5063,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00098",
+      "start": 5063,
+      "end": 5092,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00100",
+      "start": 5093,
+      "end": 5131,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00102",
+      "start": 5132,
+      "end": 5676,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00104",
+      "start": 5677,
+      "end": 5707,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00106",
+      "start": 5708,
+      "end": 5846,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00108",
+      "start": 5847,
+      "end": 6078,
+      "heading_navigation": "Voditelj projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00114",
+      "start": 6153,
+      "end": 6388,
+      "heading_navigation": "6.1 Proces upravljanja rizicima",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00116",
+      "start": 6389,
+      "end": 6583,
+      "heading_navigation": "6.1 Proces upravljanja rizicima",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00120",
+      "start": 6615,
+      "end": 7000,
+      "heading_navigation": "6.2 Identifikacija rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00124",
+      "start": 7033,
+      "end": 7204,
+      "heading_navigation": "6.3 Procjena vjerojatnosti",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00126",
+      "start": 7205,
+      "end": 7436,
+      "heading_navigation": "6.3 Procjena vjerojatnosti",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00128",
+      "start": 7437,
+      "end": 7840,
+      "heading_navigation": "6.3 Procjena vjerojatnosti",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00132",
+      "start": 7869,
+      "end": 8145,
+      "heading_navigation": "6.4 Procjena posljedica",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00136",
+      "start": 8181,
+      "end": 8442,
+      "heading_navigation": "6.5 Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00140",
+      "start": 8477,
+      "end": 8688,
+      "heading_navigation": "6.6 Obrada (treatment) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00144",
+      "start": 8704,
+      "end": 8894,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00146",
+      "start": 8895,
+      "end": 9107,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00148",
+      "start": 9108,
+      "end": 9137,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00150",
+      "start": 9138,
+      "end": 9163,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00152",
+      "start": 9164,
+      "end": 9327,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00154",
+      "start": 9328,
+      "end": 9370,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00156",
+      "start": 9412,
+      "end": 9652,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00157",
+      "start": 9652,
+      "end": 9840,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00158",
+      "start": 9840,
+      "end": 10095,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00159",
+      "start": 10095,
+      "end": 10333,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00160",
+      "start": 10333,
+      "end": 10590,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00161",
+      "start": 10590,
+      "end": 10757,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00162",
+      "start": 10757,
+      "end": 10987,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00163",
+      "start": 10987,
+      "end": 11262,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00164",
+      "start": 11262,
+      "end": 11413,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00165",
+      "start": 11413,
+      "end": 11562,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00166",
+      "start": 11562,
+      "end": 11772,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00167",
+      "start": 11772,
+      "end": 12005,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00168",
+      "start": 12005,
+      "end": 12206,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00169",
+      "start": 12206,
+      "end": 12434,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00170",
+      "start": 12434,
+      "end": 12528,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00171",
+      "start": 12528,
+      "end": 12659,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00172",
+      "start": 12659,
+      "end": 12746,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00173",
+      "start": 12746,
+      "end": 12897,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00174",
+      "start": 12897,
+      "end": 13096,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00175",
+      "start": 13096,
+      "end": 13264,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00176",
+      "start": 13264,
+      "end": 13437,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00177",
+      "start": 13437,
+      "end": 13590,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00179",
+      "start": 13591,
+      "end": 13802,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00185",
+      "start": 13882,
+      "end": 14018,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00187",
+      "start": 14019,
+      "end": 14069,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00189",
+      "start": 14118,
+      "end": 14186,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00190",
+      "start": 14186,
+      "end": 14250,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00191",
+      "start": 14250,
+      "end": 14305,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00192",
+      "start": 14305,
+      "end": 14379,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00193",
+      "start": 14379,
+      "end": 14482,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00195",
+      "start": 14483,
+      "end": 14668,
+      "heading_navigation": "2. Procjena vjerojatnosti rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00201",
+      "start": 14741,
+      "end": 14829,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00203",
+      "start": 14830,
+      "end": 14933,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00205",
+      "start": 15036,
+      "end": 15122,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00206",
+      "start": 15122,
+      "end": 15199,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00207",
+      "start": 15199,
+      "end": 15279,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00208",
+      "start": 15279,
+      "end": 15358,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00209",
+      "start": 15358,
+      "end": 15438,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00211",
+      "start": 15439,
+      "end": 15662,
+      "heading_navigation": "3. Procjena posljedica rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00216",
+      "start": 15738,
+      "end": 15809,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00218",
+      "start": 15810,
+      "end": 15895,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00220",
+      "start": 15980,
+      "end": 16065,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00221",
+      "start": 16065,
+      "end": 16150,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00222",
+      "start": 16150,
+      "end": 16235,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00223",
+      "start": 16235,
+      "end": 16320,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00224",
+      "start": 16320,
+      "end": 16405,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00225",
+      "start": 16405,
+      "end": 16490,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00227",
+      "start": 16491,
+      "end": 16522,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00229",
+      "start": 16553,
+      "end": 16584,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00230",
+      "start": 16584,
+      "end": 16615,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00231",
+      "start": 16615,
+      "end": 16646,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00233",
+      "start": 16647,
+      "end": 16830,
+      "heading_navigation": "4. Ocjena (evaluation) rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00239",
+      "start": 16902,
+      "end": 16972,
+      "heading_navigation": "5. Obrada (treatment) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00241",
+      "start": 16973,
+      "end": 17009,
+      "heading_navigation": "5. Obrada (treatment) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00243",
+      "start": 17045,
+      "end": 17215,
+      "heading_navigation": "5. Obrada (treatment) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00244",
+      "start": 17215,
+      "end": 17352,
+      "heading_navigation": "5. Obrada (treatment) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00245",
+      "start": 17352,
+      "end": 17427,
+      "heading_navigation": "5. Obrada (treatment) rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00247",
+      "start": 17428,
+      "end": 17640,
+      "heading_navigation": "5. Obrada (treatment) rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00251",
+      "start": 17686,
+      "end": 17755,
+      "heading_navigation": "7.6    Ocjena projekta – ZAPIS KVALITETE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00255",
+      "start": 17786,
+      "end": 17831,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00257",
+      "start": 17876,
+      "end": 17922,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00258",
+      "start": 17922,
+      "end": 17954,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00259",
+      "start": 17954,
+      "end": 18003,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00260",
+      "start": 18003,
+      "end": 18052,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00261",
+      "start": 18052,
+      "end": 18086,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00262",
+      "start": 18086,
+      "end": 18125,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00263",
+      "start": 18125,
+      "end": 18183,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00264",
+      "start": 18183,
+      "end": 18231,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00265",
+      "start": 18231,
+      "end": 18274,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00266",
+      "start": 18274,
+      "end": 18312,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00267",
+      "start": 18312,
+      "end": 18350,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00268",
+      "start": 18350,
+      "end": 18385,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00269",
+      "start": 18385,
+      "end": 18445,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00270",
+      "start": 18445,
+      "end": 18478,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00271",
+      "start": 18478,
+      "end": 18516,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00272",
+      "start": 18516,
+      "end": 18552,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00273",
+      "start": 18552,
+      "end": 18591,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00274",
+      "start": 18591,
+      "end": 18632,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00275",
+      "start": 18632,
+      "end": 18680,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00276",
+      "start": 18680,
+      "end": 18724,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00277",
+      "start": 18724,
+      "end": 18789,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00278",
+      "start": 18789,
+      "end": 18835,
+      "heading_navigation": "1. Identifikacija rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00282",
+      "start": 18874,
+      "end": 18928,
+      "heading_navigation": "2. Procjena vjerojatnosti uzroka",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00284",
+      "start": 18982,
+      "end": 19023,
+      "heading_navigation": "2. Procjena vjerojatnosti uzroka",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00285",
+      "start": 19023,
+      "end": 19065,
+      "heading_navigation": "2. Procjena vjerojatnosti uzroka",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00286",
+      "start": 19065,
+      "end": 19098,
+      "heading_navigation": "2. Procjena vjerojatnosti uzroka",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00287",
+      "start": 19098,
+      "end": 19140,
+      "heading_navigation": "2. Procjena vjerojatnosti uzroka",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00288",
+      "start": 19140,
+      "end": 19180,
+      "heading_navigation": "2. Procjena vjerojatnosti uzroka",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00292",
+      "start": 19209,
+      "end": 19312,
+      "heading_navigation": "3. Procjena posljedica",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00294",
+      "start": 19415,
+      "end": 19501,
+      "heading_navigation": "3. Procjena posljedica",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00295",
+      "start": 19501,
+      "end": 19591,
+      "heading_navigation": "3. Procjena posljedica",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00296",
+      "start": 19591,
+      "end": 19675,
+      "heading_navigation": "3. Procjena posljedica",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00297",
+      "start": 19675,
+      "end": 19764,
+      "heading_navigation": "3. Procjena posljedica",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00298",
+      "start": 19764,
+      "end": 19848,
+      "heading_navigation": "3. Procjena posljedica",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00300",
+      "start": 19849,
+      "end": 20062,
+      "heading_navigation": "3. Procjena posljedica",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00304",
+      "start": 20084,
+      "end": 20121,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00306",
+      "start": 20158,
+      "end": 20197,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00307",
+      "start": 20197,
+      "end": 20222,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00308",
+      "start": 20222,
+      "end": 20264,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00309",
+      "start": 20264,
+      "end": 20306,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00310",
+      "start": 20306,
+      "end": 20333,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00311",
+      "start": 20333,
+      "end": 20365,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00312",
+      "start": 20365,
+      "end": 20416,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00313",
+      "start": 20416,
+      "end": 20457,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00314",
+      "start": 20457,
+      "end": 20493,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00315",
+      "start": 20493,
+      "end": 20524,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00316",
+      "start": 20524,
+      "end": 20555,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00317",
+      "start": 20555,
+      "end": 20583,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00318",
+      "start": 20583,
+      "end": 20636,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00319",
+      "start": 20636,
+      "end": 20662,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00320",
+      "start": 20662,
+      "end": 20693,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00321",
+      "start": 20693,
+      "end": 20722,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00322",
+      "start": 20722,
+      "end": 20754,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00323",
+      "start": 20754,
+      "end": 20788,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00324",
+      "start": 20788,
+      "end": 20829,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00325",
+      "start": 20829,
+      "end": 20866,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00326",
+      "start": 20866,
+      "end": 20924,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00327",
+      "start": 20924,
+      "end": 20963,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00329",
+      "start": 20964,
+      "end": 21049,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00331",
+      "start": 21134,
+      "end": 21219,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00332",
+      "start": 21219,
+      "end": 21304,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00333",
+      "start": 21304,
+      "end": 21389,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00334",
+      "start": 21389,
+      "end": 21474,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00335",
+      "start": 21474,
+      "end": 21559,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00336",
+      "start": 21559,
+      "end": 21644,
+      "heading_navigation": "4. Ocjena rizika",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00340",
+      "start": 21674,
+      "end": 21705,
+      "heading_navigation": "5. Postupanje s rizicima",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports a recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00342",
+      "start": 21736,
+      "end": 21906,
+      "heading_navigation": "5. Postupanje s rizicima",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00343",
+      "start": 21906,
+      "end": 22043,
+      "heading_navigation": "5. Postupanje s rizicima",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00344",
+      "start": 22043,
+      "end": 22118,
+      "heading_navigation": "5. Postupanje s rizicima",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00348",
+      "start": 22142,
+      "end": 22370,
+      "heading_navigation": "6. Poduzete akcije",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00350",
+      "start": 22371,
+      "end": 22469,
+      "heading_navigation": "6. Poduzete akcije",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicated template or unused empty field; no separate QA claim accepted."
+    }
+  ]
+}

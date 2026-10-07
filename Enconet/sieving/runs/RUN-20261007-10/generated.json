@@ -1,0 +1,1737 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "PP-85-01,R4 POPRAVNE I PREVENTIVNE RADNJE.md",
+    "title": "POPRAVNE I PREVENTIVNE RADNJE",
+    "date": "2017-11-17",
+    "doc_id": "DOC-0011",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: PP-85-01 identificiran je oznakom, revizijom 4 i datumom objave.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]",
+          "source_heading_path": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv dokumenta: | Programski postupak PP-85-01 |",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        },
+        {
+          "quote_original": "| Revizija broj:   | 4                            |",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        },
+        {
+          "quote_original": "| Datum objavljivanja: | 17.11.2017.               |",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, pregled i odobrenje navedeni su s odgovornim osobama i datumima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]",
+          "source_heading_path": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pripremio: | Vladimir Križe, voditelj QA | 13.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | mr.sc. Ilijana Iveković, predstavnica direktora | 14.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        },
+        {
+          "quote_original": "| Odobrio: | dr.sc. Nenad Debrecin, direktor | 15.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Predviđen je periodični pregled; prazna tablica nije dokaz provedenog pregleda.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]",
+          "source_heading_path": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Periodični pregled",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "POPRAVNE I PREVENTIVNE RADNJE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Postupak utvrđuje odgovornosti i aktivnosti otklanjanja stvarnih ili mogućih problema i njihovih uzroka.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 1. SVRHA [line 56]",
+          "source_heading_path": "SADRŽAJ [line 29] > 1. SVRHA [line 56]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupkom se utvrđuju odgovornosti i uspostavljaju aktivnosti koje se poduzimaju radi otklanjanja moguće ili stvarne nesukladnosti, kao i uzroka koji do njih mogu dovesti.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 1. SVRHA [line 56]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Primjena obuhvaća sve djelatnosti, od jednostavnih radnji do trajnog poboljšanja SUK-a.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]",
+          "source_heading_path": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na sve djelatnosti u okviru poslovnog sustava Enconet, bilo kroz poduzimanje manjih i jednostavnih popravnih radnji, bilo kroz stalno unapređenje SUK-a.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "candidate_lead: Reference povezuju radnje s nesukladnostima, zapisima i Appendix B; objective evidence not shown u samom popisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]",
+          "source_heading_path": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. HRN EN ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   Sustavi upravljanja kvalitetom-Zahtjevi\n   Popravne radnje\n   Preventivne radnje",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "2. IAEA Leadership and Management for Safety, IAEA Safety Standards Series,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   No. GSR Part 2, IAEA Vienna, 2016.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "3. Enconet - Priručnik kvalitete PK",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   Popravne radnje\n   Preventivne radnje",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "4. Enconet - Programski postupak PP-83-01",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   \"Upravljanje nesukladnim proizvodom\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "5. Enconet - Programski postupak PP-42-02",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   \"Upravljanje zapisima kvalitete\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "6. 10 CFR50 App. B",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "candidate_lead: Naveden je NQA-1:2008 neobvezni Appendix 16A-1; candidate; verify criterion mapping prema odobrenoj bazi 2015.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]",
+          "source_heading_path": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "7. ASME NQA-1, 2008.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   Nonmandatory Appendix 16A-1",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "candidate_lead: Part 21 naveden je kao zasebna referenca prijavljivanja; objective evidence not shown u samom citatu norme.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]",
+          "source_heading_path": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "8. 10 CFR21,Reporting of Defects and Noncompliance",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor uspostavlja sustav i odobrava popravne i preventivne radnje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta odgovoran je za uspostavu sustava i odobravanje popravnih i\npreventivnih radnji.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Voditelji identificiraju probleme, pokreću i provode radnje te sudjeluju u analizi uzroka.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelji projekata odgovorni su za identifikaciju nesukladnosti, te iniciranje i\nprovođenje popravne ili preventivne radnje. Sudjeluju u analizi uzroka i\nrješavanju problema.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA pregledava problem, uzrok i prijedlog radnje te potvrđuje završetak.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova odgovoran je za pregled nesukladnosti, analize uzroka i\nprijedloga popravne i/ili preventivne radnje, te za potvrđivanje završetka\nprovedenih radnji. Odgovoran je za identifikaciju nesukladnosti i pokretanje\npopravnih radnji kod podizvođača Enconeta.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: QA identificira probleme i pokreće radnje kod podizvođača.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova odgovoran je za pregled nesukladnosti, analize uzroka i\nprijedloga popravne i/ili preventivne radnje, te za potvrđivanje završetka\nprovedenih radnji. Odgovoran je za identifikaciju nesukladnosti i pokretanje\npopravnih radnji kod podizvođača Enconeta.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA nadzire provedbu i djelovanje sustava popravnih i preventivnih mjera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova odgovoran je za nadzor provođenja mjera i djelovanje\nsustava za popravne i preventivne radnje, te za izvješćivanje svih pojedinaca,\ngrupa i odjela na koje se te mjere odnose. Izvješćuje o svim nesukladnostima\nkoje su utvrđene u aktivnostima, procesima ili uslugama koje daje ili izvodi\nEnconet ili njegovi podizvođači.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA izvješćuje pogođene osobe, grupe i odjele o nesukladnostima Enconeta i podizvođača.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova odgovoran je za nadzor provođenja mjera i djelovanje\nsustava za popravne i preventivne radnje, te za izvješćivanje svih pojedinaca,\ngrupa i odjela na koje se te mjere odnose. Izvješćuje o svim nesukladnostima\nkoje su utvrđene u aktivnostima, procesima ili uslugama koje daje ili izvodi\nEnconet ili njegovi podizvođači.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA vodi evidenciju i izvješćuje direktora o statusu svih radnji.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova vodi evidenciju i izvješćuje direktora Enconeta o statusu\nsvih uvedenih popravnih i preventivnih radnji.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Svaki djelatnik provodi radnje u svom području.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svaki djelatnik u Enconetu odgovoran je za provođenje popravne i/ili\npreventivne radnje za djelatnosti u svom području rada.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5.       ODGOVORNOSTI [line 106]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Sve uočene nesukladnosti, nedostaci i odstupanja štetna kvaliteti kontroliraju se, analiziraju i ispravljaju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Sve uočene nesukladnosti, nedostaci i odstupanja koja loše utječu na kvalitetu\nposlova i usluga koje daje ili izvodi Enconet moraju se kontrolirati, analizirati i\nispravljati.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Radnje povezane s nesukladnošću evidentiraju se na OB-NCR-016.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Provođenje popravne i/ili preventivne radnje kao posljedice uočene nesukladnosti\nu aktivnostima, procesima i sustavu, kroz rješavanje prijavljenog problema,\nevidentiraju se u obrascu OB-NCR-016 priloženom u postupku PP-83-01 (Ref. 5)\na provode se sukladno zahtjevima ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Nalazi odgovorne osobe, neovisna ocjena i reklamacije mogu pokrenuti radnje na OB-ZPR-015.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Popravne i/ili preventivne radnje kao posljedica nalaza kvalitete bilo koje\nodgovorne osobe, ili kao rezultat nezavisnog ocjenjivanja kvalitete ili kao\nposljedica reklamacije kupca, iniciraju se i provode ispunjavanjem obrasca OB-\nZPR-015 priloženog u točki 7. ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Popravne radnje uklanjaju odstupanja od zakonodavnih, ugovornih i internih zahtjeva.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Popravne radnje predstavljaju mjere koje se poduzimaju za uklanjanje već\nnastalih odstupanja, grešaka, nedostataka, nedosljednosti i neslaganja sa\nzakonodavnim i ugovornim zahtjevima te zahtjevima Priručnika kvalitete i\nprogramskih postupaka Enconeta.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Jednostavne radnje primjenjuju se na laka, brza i manje značajna odstupanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Jednostavne i jednokratne popravne radnje poduzimaju se kada je njihova\nprovedba laka i brza, a odstupanja su manja ili nemaju značajnog utjecaja na\nkvalitetu. Takve radnje iniciraju i koordiniraju voditelji projekata u čijem se\npodručju rada provodi predložena aktivnost. Odluku o provođenju popravne\nradnje i nositelja aktivnosti odobrava direktor Enconeta, a završetak provedbe i\nzatvaranje postupka potvrđuje voditelj QA poslova.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Voditelj inicira i koordinira jednostavnu radnju, direktor odobrava nositelja, a QA potvrđuje završetak.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Jednostavne i jednokratne popravne radnje poduzimaju se kada je njihova\nprovedba laka i brza, a odstupanja su manja ili nemaju značajnog utjecaja na\nkvalitetu. Takve radnje iniciraju i koordiniraju voditelji projekata u čijem se\npodručju rada provodi predložena aktivnost. Odluku o provođenju popravne\nradnje i nositelja aktivnosti odobrava direktor Enconeta, a završetak provedbe i\nzatvaranje postupka potvrđuje voditelj QA poslova.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA najmanje godišnje analizira jednokratne radnje za izvješće direktoru i odluke o sustavnim mjerama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Jednokratne popravne radnje uglavnom ne zahtijevaju promjene dokumentacije\nSUK-a. Voditelj QA poslova periodično, a najmanje jednom godišnje, provodi\nanalizu jednokratnih popravnih radnji radi izvješćivanja direktora i donošenja\nodluke o poduzimanju odgovarajuće popravne/preventivne radnje u SUK-u",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Jednokratne radnje uglavnom ne mijenjaju dokumentaciju SUK-a.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Jednokratne popravne radnje uglavnom ne zahtijevaju promjene dokumentacije\nSUK-a. Voditelj QA poslova periodično, a najmanje jednom godišnje, provodi\nanalizu jednokratnih popravnih radnji radi izvješćivanja direktora i donošenja\nodluke o poduzimanju odgovarajuće popravne/preventivne radnje u SUK-u",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Sustavne popravne radnje planiraju pripremu, provedbu, nadzor i očekivane rezultate.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Popravne radnje u SUK-u predstavljaju mjere i aktivnosti čija je priprema,\nprovedba i nadzor planirana, s dugoročnim aktivnostima i definiranim očekivanim\nrezultatima. Uzroci popravnih radnji u sustavu kvalitete mogu biti rezultati analize\nuočenih i evidentiranih nesukladnosti tijekom provođenja nezavisnog ocjenjivanja\nkvalitete (unutrašnjeg i vanjskog), iz reklamacija kupaca, radi višekratnog\nponavljanja istih nesukladnosti, poduzimanje mjera unapređenja SUK-a i svi\nostali čimbenici kojima se ostvaruje poboljšanje i spriječava pojava\nnesukladnosti. Ukoliko se popravne radnje odnose na veća i kritična odstupanja\nu smislu sigurnosti, potrebno je učiniti screening i analizu odstupanja, inicirati\npotrebna izvještavanja i korektivne akcije te pratiti izvršenje i uspješnost\nprovođenja korektivnih mjera. Korektivne akcije moraju spriječiti ponavljanje\ntakovih grešaka i odstupanja.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Analize audita, reklamacija i ponavljanih problema mogu pokrenuti sustavnu radnju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Popravne radnje u SUK-u predstavljaju mjere i aktivnosti čija je priprema,\nprovedba i nadzor planirana, s dugoročnim aktivnostima i definiranim očekivanim\nrezultatima. Uzroci popravnih radnji u sustavu kvalitete mogu biti rezultati analize\nuočenih i evidentiranih nesukladnosti tijekom provođenja nezavisnog ocjenjivanja\nkvalitete (unutrašnjeg i vanjskog), iz reklamacija kupaca, radi višekratnog\nponavljanja istih nesukladnosti, poduzimanje mjera unapređenja SUK-a i svi\nostali čimbenici kojima se ostvaruje poboljšanje i spriječava pojava\nnesukladnosti. Ukoliko se popravne radnje odnose na veća i kritična odstupanja\nu smislu sigurnosti, potrebno je učiniti screening i analizu odstupanja, inicirati\npotrebna izvještavanja i korektivne akcije te pratiti izvršenje i uspješnost\nprovođenja korektivnih mjera. Korektivne akcije moraju spriječiti ponavljanje\ntakovih grešaka i odstupanja.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Sigurnosno veća ili kritična odstupanja traže screening, analizu i potrebno izvještavanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Popravne radnje u SUK-u predstavljaju mjere i aktivnosti čija je priprema,\nprovedba i nadzor planirana, s dugoročnim aktivnostima i definiranim očekivanim\nrezultatima. Uzroci popravnih radnji u sustavu kvalitete mogu biti rezultati analize\nuočenih i evidentiranih nesukladnosti tijekom provođenja nezavisnog ocjenjivanja\nkvalitete (unutrašnjeg i vanjskog), iz reklamacija kupaca, radi višekratnog\nponavljanja istih nesukladnosti, poduzimanje mjera unapređenja SUK-a i svi\nostali čimbenici kojima se ostvaruje poboljšanje i spriječava pojava\nnesukladnosti. Ukoliko se popravne radnje odnose na veća i kritična odstupanja\nu smislu sigurnosti, potrebno je učiniti screening i analizu odstupanja, inicirati\npotrebna izvještavanja i korektivne akcije te pratiti izvršenje i uspješnost\nprovođenja korektivnih mjera. Korektivne akcije moraju spriječiti ponavljanje\ntakovih grešaka i odstupanja.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Izvršenje i uspješnost korektivnih mjera prate se radi sprečavanja ponavljanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Popravne radnje u SUK-u predstavljaju mjere i aktivnosti čija je priprema,\nprovedba i nadzor planirana, s dugoročnim aktivnostima i definiranim očekivanim\nrezultatima. Uzroci popravnih radnji u sustavu kvalitete mogu biti rezultati analize\nuočenih i evidentiranih nesukladnosti tijekom provođenja nezavisnog ocjenjivanja\nkvalitete (unutrašnjeg i vanjskog), iz reklamacija kupaca, radi višekratnog\nponavljanja istih nesukladnosti, poduzimanje mjera unapređenja SUK-a i svi\nostali čimbenici kojima se ostvaruje poboljšanje i spriječava pojava\nnesukladnosti. Ukoliko se popravne radnje odnose na veća i kritična odstupanja\nu smislu sigurnosti, potrebno je učiniti screening i analizu odstupanja, inicirati\npotrebna izvještavanja i korektivne akcije te pratiti izvršenje i uspješnost\nprovođenja korektivnih mjera. Korektivne akcije moraju spriječiti ponavljanje\ntakovih grešaka i odstupanja.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor prema potrebi okuplja QA i stručne osobe za donošenje odluke.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Odobrena radnja dobiva nositelja i rokove.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Part 21 i kvalitetni problemi rješavaju se na najvišoj razini, uključujući odbor za kvalitetu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Prema složenosti određuju se radna grupa i potrebni resursi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Za radnju se određuju dokumentacija, kontrolne aktivnosti i mjerila učinkovitosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Sustavna popravna radnja vodi do nove ili revidirane dokumentacije SUK-a.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Sve aktivnosti dokumentiraju se kao sastavni dio NCR-a.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1      Popravne radnje [line 153]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Preventivne radnje temelje se na analizama i podacima, a ne samo na već utvrđenim nesukladnostima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Promjene politike, organizacije i resursa ulaze u procjenu preventivnih mjera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Promjene u politici tvrtke;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Promjene u organizacijskoj strukturi i resursima;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "supporting_control: Nepostojanje ili manjkavost postupaka može pokrenuti preventivnu radnju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Nepostojanje ili manjkavost postupaka SUK-a;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "supporting_control: Izvještaji neovisnih ocjena ulaz su u preventivne mjere.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Izvješća o provedenom nezavisnom ocjenjivanju kvalitete;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "supporting_control: NCR zapisi koriste se kao ulaz u preventivne mjere.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Izvješća o nesukladnostima (NCR);",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0041",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Zapisi kvalitete koriste se u analizi preventivnih mjera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Zapise kvalitete;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0042",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Ocjene uprave i QA izvješća služe odabiru preventivnih mjera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Ocjene SUK-a od strane uprave;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Izvješća voditelja QA poslova;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0043",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Reklamacije i ostali izvori poboljšanja mogu pokrenuti preventivne mjere.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivne radnje predstavljaju planirane i poduzete aktivnosti radi poboljšanja postojećeg SUK-a, kako bi se izbjegle možebitne nesukladnosti. One nisu uzrokovane utvrđenim nesukladnostima već se temelje na analizama, rezultatima, informacijama i podacima prikupljenim kroz:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Reklamacije kupaca/korisnika;",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        },
+        {
+          "quote_original": "- Ostale izvore koji mogu inicirati unapređenja.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0044",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Preventivne radnje otkrivaju i uklanjaju uzroke mogućih nesukladnosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Preventivnim radnjama otkrivaju se i uklanjaju uzroci mogućih nesukladnosti, te se unapređuje cjelokupni SUK.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0045",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Predlagatelji mogu biti uprava ili stručnjaci; uobičajeno se koristi OB-ZPR-015.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Uobičajeno se preventivne radnje iniciraju preko obrasca OB-ZPR-015, ali poticaj za usvajanje mjera za poboljšanje i unapređenje SUK-a može doći kako od članova uprave tako i od pojedinih stručnjaka u raznim područjima djelovanja Enconeta. Voditelji projekata moraju barem jednom godišnje provesti analizu djelovanja i učinkovitosti SUK-a u svom području rada kako bi mogli procijeniti potrebu i mogućnosti iniciranja i provedbe preventivnih radnji. Izvješća se dostavljaju direktoru Enconeta i voditelju QA poslova, a analiziraju se na sastancima o praćenju SUK-a.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0046",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Voditelj najmanje godišnje analizira djelovanje i učinkovitost SUK-a u svom području.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Uobičajeno se preventivne radnje iniciraju preko obrasca OB-ZPR-015, ali poticaj za usvajanje mjera za poboljšanje i unapređenje SUK-a može doći kako od članova uprave tako i od pojedinih stručnjaka u raznim područjima djelovanja Enconeta. Voditelji projekata moraju barem jednom godišnje provesti analizu djelovanja i učinkovitosti SUK-a u svom području rada kako bi mogli procijeniti potrebu i mogućnosti iniciranja i provedbe preventivnih radnji. Izvješća se dostavljaju direktoru Enconeta i voditelju QA poslova, a analiziraju se na sastancima o praćenju SUK-a.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0047",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Izvješća analize predaju se direktoru i QA te razmatraju na sastancima praćenja SUK-a.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Uobičajeno se preventivne radnje iniciraju preko obrasca OB-ZPR-015, ali poticaj za usvajanje mjera za poboljšanje i unapređenje SUK-a može doći kako od članova uprave tako i od pojedinih stručnjaka u raznim područjima djelovanja Enconeta. Voditelji projekata moraju barem jednom godišnje provesti analizu djelovanja i učinkovitosti SUK-a u svom području rada kako bi mogli procijeniti potrebu i mogućnosti iniciranja i provedbe preventivnih radnji. Izvješća se dostavljaju direktoru Enconeta i voditelju QA poslova, a analiziraju se na sastancima o praćenju SUK-a.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0048",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor s predstavnikom uprave, QA i voditeljem odlučuje o preventivnoj radnji.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odluku o pokretanju preventivne radnje donosi direktor Enconeta u suradnji s predstavnikom direktora za praćenje QA poslova i voditeljem QA poslova, kao i voditeljem projekata u čijem se području rada provodi preventivna radnja odnosno koji se određuje za nositelja aktivnosti. Okuplja se radna grupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija koja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti provedene preventivne radnje. Utvrđuje se i vremensko razdoblje u kojem će se pratiti rezultati provedbe preventivne radnje o čemu će se izvještavati direktor Enconeta i voditelj QA poslova.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0049",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Preventivna radnja dobiva radnu grupu i odobrene resurse.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odluku o pokretanju preventivne radnje donosi direktor Enconeta u suradnji s predstavnikom direktora za praćenje QA poslova i voditeljem QA poslova, kao i voditeljem projekata u čijem se području rada provodi preventivna radnja odnosno koji se određuje za nositelja aktivnosti. Okuplja se radna grupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija koja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti provedene preventivne radnje. Utvrđuje se i vremensko razdoblje u kojem će se pratiti rezultati provedbe preventivne radnje o čemu će se izvještavati direktor Enconeta i voditelj QA poslova.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0050",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Preventivna radnja dobiva dokumentaciju, kontrolne aktivnosti i mjerila učinkovitosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odluku o pokretanju preventivne radnje donosi direktor Enconeta u suradnji s predstavnikom direktora za praćenje QA poslova i voditeljem QA poslova, kao i voditeljem projekata u čijem se području rada provodi preventivna radnja odnosno koji se određuje za nositelja aktivnosti. Okuplja se radna grupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija koja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti provedene preventivne radnje. Utvrđuje se i vremensko razdoblje u kojem će se pratiti rezultati provedbe preventivne radnje o čemu će se izvještavati direktor Enconeta i voditelj QA poslova.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0051",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Određuje se razdoblje praćenja rezultata i izvješćivanje direktora i QA.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Odluku o pokretanju preventivne radnje donosi direktor Enconeta u suradnji s predstavnikom direktora za praćenje QA poslova i voditeljem QA poslova, kao i voditeljem projekata u čijem se području rada provodi preventivna radnja odnosno koji se određuje za nositelja aktivnosti. Okuplja se radna grupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija koja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti provedene preventivne radnje. Utvrđuje se i vremensko razdoblje u kojem će se pratiti rezultati provedbe preventivne radnje o čemu će se izvještavati direktor Enconeta i voditelj QA poslova.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0052",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Dokumentacija iniciranja, provedbe i praćenja učinkovitosti vodi se kao ZK1 ili ZK2 prema PP-42-02.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Dokumentacija koja je nastala tijekom iniciranja, provođenja i praćenja učinkovitosti popravne/preventivne radnje predstavlja zapise kvalitete i razvrstana je u dokumente klase ZK1 i ZK2, te se za nju primjenjuju zahtjevi prema postupku PP-42-02 (Ref. 6).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0053",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Predložak zahtjeva identificira reviziju obrasca, oznaku i vrstu radnje; nije ispunjeni zapis.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "7.1 Obrazac: OB-ZPR-015 Rev. 4",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| ZAHTJEV ZA |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| POPRAVNOM / PREVENTIVNOM |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| RADNJOM ZH-POR-XX |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| popravna radnja □ | preventivna radnja □ |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0054",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak predviđa opis odstupanja i radnje te predlagatelja s potpisom i datumom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Opis odstupanja i predlagana popravna/preventivna radnja: |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| Predlagatelj: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0055",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak traži uzrok, mjere sprečavanja ponavljanja i QA potvrdu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Određivanje potencijalnog ili stvarnog uzroka odstupanja |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| Evaluacija potrebnih akcija da se odstupanja ne ponove |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| QA voditelj: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0056",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak traži odluku DA ili NE za potrebu Part 21 evaluacije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Potrebna evaluacija po 10CFR Part 21 | DA □ | NE □ |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0057",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak predviđa odluku, imenovanog nositelja, direktorov potpis i rok.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Odobrenje primjene predloženih akcija | DA □ | NE □ |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| Imenovan nositelj aktivnosti:______________________________ |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| Direktor Enconeta: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| Rok izvršenja: |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0058",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Predložak predviđa zapise poduzetih akcija i potpis nositelja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Zapisi o poduzetim akcijama |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| Nositelj aktivnosti: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0059",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak završetka traži provjeru učinkovitosti i QA potpis.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]",
+          "source_heading_path": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Provjera učinkovitosti poduzetih korektivnih akcija |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        },
+        {
+          "quote_original": "| Voditelj QA poslova: | Potpis | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 7. PRILOZI [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "4"
+      }
+    },
+    {
+      "item_id": "ITEM-0060",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "candidate_lead: U tekstu su PP-83-01 i PP-42-02 označeni kao Ref.5 i Ref.6, dok popis navodi 4 i 5; candidate; verify criterion mapping i ispravnost međuvezâ.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]",
+          "source_heading_path": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. Enconet - Programski postupak PP-83-01",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   \"Upravljanje nesukladnim proizvodom\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "5. Enconet - Programski postupak PP-42-02",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "   \"Upravljanje zapisima kvalitete\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3. REFERENCE [line 64]"
+        },
+        {
+          "quote_original": "Provođenje popravne i/ili preventivne radnje kao posljedice uočene nesukladnosti\nu aktivnostima, procesima i sustavu, kroz rješavanje prijavljenog problema,\nevidentiraju se u obrascu OB-NCR-016 priloženom u postupku PP-83-01 (Ref. 5)\na provode se sukladno zahtjevima ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.       POSTUPAK [line 132]"
+        },
+        {
+          "quote_original": "Dokumentacija koja je nastala tijekom iniciranja, provođenja i praćenja učinkovitosti popravne/preventivne radnje predstavlja zapise kvalitete i razvrstana je u dokumente klase ZK1 i ZK2, te se za nju primjenjuju zahtjevi prema postupku PP-42-02 (Ref. 6).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2      Preventivne radnje [line 200]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "4"
+      }
+    }
+  ]
+}

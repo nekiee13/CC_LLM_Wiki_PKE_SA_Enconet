@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T190734Z-d99bca6.md`](handoffs/2026-10-07T190734Z-d99bca6.md)
+**Authoritative record:** [`handoffs/2026-10-07T202341Z-3e61568.md`](handoffs/2026-10-07T202341Z-3e61568.md)
 
-**Status:** partial · **Git:** `d99bca6` · **Agent:** codex · **Created:** 2026-10-07T19:07:34Z
+**Status:** partial · **Git:** `3e61568` · **Agent:** codex · **Created:** 2026-10-07T20:23:41Z
 
-**Exact next action:** Continue full vendor sieving of DOC-0010 nonconforming product, DOC-0011 corrective/preventive actions and DOC-0012 risks under approved v3. Eighteen vendor documents remain; preserve earlier runs and all incoming.
+**Exact next action:** Continue full vendor sieving of DOC-0013 IT infrastructure, DOC-0014 quality objectives and DOC-0015 trainee introduction under approved v3. Fifteen vendor documents remain; preserve earlier runs and incoming.
