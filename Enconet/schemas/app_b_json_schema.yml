@@ -12,7 +12,7 @@
 # Language policy per ADR-0009: verbatim quotes only, no translation machinery.
 
 schema_version: "1.1"
-targets_prompt_versions: ["appb_rule_v1", "appb_document_v1"]
+targets_prompt_versions: ["appb_rule_v1", "appb_document_v1", "appb_document_v3_context_anchors"]
 
 document_block:
   required_fields:
@@ -36,6 +36,8 @@ item_block:
   optional_fields:
     item_type: {tier: warning, enum_from: sieving_contract.enums.item_type}
     entities: {tier: warning}
+    evidence_type: {tier: strict_when_present, enum_from: evidence_context.evidence_types}
+    context: {tier: strict_when_present, fields_from: evidence_context.context_fields, meaning: "Optional source-stated anchors only; missing values stay missing"}
 
 evidence_quote:
   required_fields:

@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T154841Z-d718840.md`](handoffs/2026-10-07T154841Z-d718840.md)
+**Authoritative record:** [`handoffs/2026-10-07T162637Z-053a288.md`](handoffs/2026-10-07T162637Z-053a288.md)
 
-**Status:** partial · **Git:** `d718840` · **Agent:** codex · **Created:** 2026-10-07T15:48:41Z
+**Status:** partial · **Git:** `053a288` · **Agent:** codex · **Created:** 2026-10-07T16:26:37Z
 
-**Exact next action:** Owner reviews benchmarks/sieving_golden/20261007-v3-nuclear-plan/OWNER_REVIEW.md. Codex verifies a minimal lossless context storage path on synthetic DB, then measures candidate and activates only under recorded prompt decision. Read unmatched vendor blocks too.
+**Exact next action:** Owner approves or amends docs/V3_PROMPT_ACTIVATION_REVIEW_20261007.md activation choice. Then record selector/CHANGELOG/skilllesson and begin actual full-vendor sieving with newrunIDs, direct+concept passes and unmatchedblockreview.

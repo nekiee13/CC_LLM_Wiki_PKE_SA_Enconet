@@ -98,6 +98,23 @@ CREATE TABLE IF NOT EXISTS crumb_sources (
     UNIQUE (item_id, source_locator)
 ) STRICT;
 
+-- Optional v3 source anchors. No inferred anchors and no added audit ratings.
+CREATE TABLE IF NOT EXISTS crumb_context (
+    item_id TEXT PRIMARY KEY REFERENCES crumbs(item_id) ON DELETE CASCADE,
+    evidence_type TEXT,
+    project_ref TEXT,
+    contract_ref TEXT,
+    supplier_ref TEXT,
+    source_revision TEXT,
+    evidence_date TEXT,
+    CHECK (evidence_type IS NULL OR length(trim(evidence_type)) > 0),
+    CHECK (project_ref IS NULL OR length(trim(project_ref)) > 0),
+    CHECK (contract_ref IS NULL OR length(trim(contract_ref)) > 0),
+    CHECK (supplier_ref IS NULL OR length(trim(supplier_ref)) > 0),
+    CHECK (source_revision IS NULL OR length(trim(source_revision)) > 0),
+    CHECK (evidence_date IS NULL OR length(trim(evidence_date)) > 0)
+) STRICT;
+
 CREATE TABLE IF NOT EXISTS crumb_quotes (
     quote_id TEXT PRIMARY KEY,
     item_id TEXT NOT NULL REFERENCES crumbs(item_id) ON DELETE CASCADE,

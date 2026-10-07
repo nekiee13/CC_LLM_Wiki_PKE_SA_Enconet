@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from contextlib import closing
 import sys
 from pathlib import Path
 
@@ -16,7 +17,7 @@ def import_file(db: Path, json_path: Path, *, run_id: str, strict: bool = False)
     if not result.passed:
         raise ValueError("validation failed: " + "; ".join(result.errors))
     document, items = payload["document"], payload["items"]
-    with db_util.connect(db) as conn:
+    with closing(db_util.connect(db)) as conn, conn:
         run = db_util.lookup(conn, "sieve_runs", "run_id", run_id)
         if run is None:
             raise ValueError(f"unknown sieve run: {run_id}")
@@ -28,6 +29,9 @@ def import_file(db: Path, json_path: Path, *, run_id: str, strict: bool = False)
             "SELECT 1 FROM crumbs WHERE sieve_run_id=?", (run_id,)
         ).fetchone():
             raise ValueError("sieve run is already completed; generations are immutable")
+        has_context=any('context' in item or 'evidence_type' in item for item in items)
+        if has_context and not conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='crumb_context'").fetchone():
+            raise ValueError('Context storage schema missing; run reviewed migrate_db.py before import')
         criterion_ordinals: dict[str, int] = {}
         for row in conn.execute(
             "SELECT criterion_id,item_id FROM crumbs WHERE doc_id=?", (run["doc_id"],)
@@ -69,6 +73,10 @@ def import_file(db: Path, json_path: Path, *, run_id: str, strict: bool = False)
                     "source_locator": ref["source_locator"],
                     "applicability": ref.get("applicability", "APPLICABLE"),
                     "applicability_basis": ref.get("applicability_basis")})
+            if 'context' in item or 'evidence_type' in item:
+                context=item.get('context',{})
+                db_util.insert(conn,'crumb_context',{'item_id':crumb_id,'evidence_type':item.get('evidence_type'),
+                    **{field:context.get(field) for field in ('project_ref','contract_ref','supplier_ref','source_revision','evidence_date')}})
         conn.execute("UPDATE sieve_runs SET completed_at=CURRENT_TIMESTAMP WHERE run_id=?", (run_id,))
         return len(items)
 

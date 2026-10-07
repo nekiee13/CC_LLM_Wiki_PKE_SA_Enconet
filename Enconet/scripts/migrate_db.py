@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from contextlib import closing
 import shutil
 import sqlite3
 import sys
@@ -10,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import db_util
+from project_paths import local_path
 
 SCHEMA = Path(__file__).resolve().parents[1] / "db" / "schema.sql"
 
@@ -18,14 +20,14 @@ def plan(db_path: Path) -> list[str]:
     path = db_path.resolve()
     if not path.is_file():
         raise ValueError(f"database does not exist: {path}")
-    with sqlite3.connect(path) as conn:
+    with closing(sqlite3.connect(path)) as conn:
         if conn.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
             raise ValueError("database integrity_check failed")
         tables = {r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
         if not {"documents", "sieve_runs", "crumbs", "crumb_quotes", "crumb_chunk_links"} <= tables:
             raise ValueError("target is not a recognized Enconet database")
         actions = []
-        for table in ("sieve_run_authorities", "crumb_authority_refs"):
+        for table in ("sieve_run_authorities", "crumb_authority_refs", "crumb_context"):
             if table not in tables:
                 actions.append(f"create {table}")
         columns = {r[1] for r in conn.execute("PRAGMA table_info(crumb_chunk_links)")}
@@ -79,11 +81,11 @@ def migrate(db_path: Path, *, apply: bool, backup_dir: Path | None = None) -> tu
     backup = target_dir / f"{path.stem}-{stamp}.sqlite.bak"
     if backup.exists():
         raise ValueError(f"backup already exists: {backup}")
-    with sqlite3.connect(path) as source, sqlite3.connect(backup) as destination:
+    with closing(sqlite3.connect(path)) as source, closing(sqlite3.connect(backup)) as destination:
         source.backup(destination)
     schema = SCHEMA.read_text(encoding="utf-8")
     try:
-        with sqlite3.connect(path) as conn:
+        with closing(sqlite3.connect(path)) as conn, conn:
             conn.execute("PRAGMA foreign_keys = ON")
             if "recreate empty crumb_chunk_links with quote_id" in actions:
                 conn.execute("DROP TABLE crumb_chunk_links")
@@ -131,7 +133,7 @@ def main() -> int:
     parser.add_argument("--backup-dir", type=Path)
     args = parser.parse_args()
     try:
-        actions, backup = migrate(args.db, apply=args.apply, backup_dir=args.backup_dir)
+        actions, backup = migrate(local_path(args.db), apply=args.apply, backup_dir=args.backup_dir)
         mode = "APPLIED" if args.apply else "DRY-RUN"
         print(f"migrate_db: {mode} - actions={actions or ['none']}; backup={backup or 'not-created'}")
         return 0

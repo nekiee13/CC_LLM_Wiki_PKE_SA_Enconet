@@ -313,10 +313,11 @@ and ADRs are the records.
 - `CX_2026-10-07T142211Z_enconet-full-source-registration` — review_request, codex -> claude-code: ENCONET-SOURCE-SET-G1
 - `CX_2026-10-07T150522Z_enconet-g1-chapter-ingestion` — review_request, codex -> claude-code: ENCONET-G1-CHAPTERS
 - `CX_2026-10-07T154843Z_enconet-recall-golden-draft` — review_request, codex -> claude-code: ENCONET-RECALL-CALIBRATION
+- `CX_2026-10-07T162640Z_golden-approved-context-fixed` — review_request, codex -> claude-code: ENCONET-V3-CONTEXT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T154841Z-d718840.md`](../handoffs/2026-10-07T154841Z-d718840.md)
+- Authoritative record: [`handoffs/2026-10-07T162637Z-053a288.md`](../handoffs/2026-10-07T162637Z-053a288.md)
 - Archive: 758 records in `coordination/archive/`
 
-Generated: 2026-10-07T15:48:43Z
+Generated: 2026-10-07T16:26:40Z

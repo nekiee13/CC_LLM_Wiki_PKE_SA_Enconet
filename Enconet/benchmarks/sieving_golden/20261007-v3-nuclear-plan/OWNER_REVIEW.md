@@ -1,10 +1,17 @@
 # Enconet v3 - golden calibration candidate
 
-Status: **pending owner review**. These 20 manually selected examples are vendor evidence from DOC-0001, not regulatory requirements, active crumbs, or a compliance score.
+Status: **owner-approved expected examples**, 7 October 2026. Reference:
+`GOLDEN-ENCONET-NP-V3-20261007` in `manifests/approvals.csv`.
+These 20 manually selected examples are vendor evidence from DOC-0001, not
+regulatory requirements, active crumbs, or a compliance score.
 
 The sample covers all 18 criterion intents. It is not a fixed quota or full sieving of this manual. `objective_control` means a concrete written control, not proof that someone executed it. `supporting_control` keeps indirect evidence; `candidate_lead` does not prove compliance. Original Croatian quotes stay exact.
 
-Approving this sample would approve the expected evidence and mappings for calibration. It would not approve applicability, a generation or an audit score, and would not itself activate the prompt. The supplied v3 optional context fields still need a lossless storage check: Enconet's current import writes core fields but does not persist `evidence_type` or `context`. No live import was attempted.
+The owner approved the expected evidence and mappings for calibration. This
+does not approve applicability, a generation or an audit score, and does not
+itself activate the prompt. The optional-context storage gap has now been
+fixed and tested on synthetic databases: evidence type and source anchors
+survive import and retrieval. No live crumb import was attempted.
 
 The XIII conditional policy and claimed exception must both remain visible, without automatically deciding N/A. These are meaning-based matches, not keyword-count scoring.
 
@@ -257,6 +264,9 @@ The XIII conditional policy and claimed exception must both remain visible, with
 
 ## Owner decision
 
-Approve or amend the 20 expected examples above. No approval is implied by their presence here. Negative/scope clues and vague references must remain visible; they are not positive proof or automatic exemptions.
+The 20 expected examples above are approved under the recorded owner reference.
+Negative/scope clues and vague references must remain visible; they are not
+positive proof or automatic exemptions. Prompt activation remains a separate
+decision after the measured candidate check.
 
 Machine files: `candidate.json`, `manifest.yml`, and `draft-self-check.json` in this folder. The score is a same-author draft consistency check, not an independent prompt run or proof of recall across all documents.

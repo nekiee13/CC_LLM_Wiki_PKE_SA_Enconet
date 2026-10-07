@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
+from .evidence_context import validate_context
 
 ENCONET = Path(__file__).resolve().parents[3]
 TAXONOMY = ENCONET / "schemas" / "app_b_taxonomy.yml"
@@ -91,6 +92,7 @@ def validate_payload(payload: object, *, strict: bool = False) -> ValidationResu
         if not isinstance(item, dict):
             result.errors.append(f"{where}: must be an object")
             continue
+        result.errors.extend(f'{where}.{error}' for error in validate_context(item))
         item_id = item.get("item_id")
         if not _nonempty(item_id) or item_id in seen:
             result.errors.append(f"{where}.item_id: required and unique")

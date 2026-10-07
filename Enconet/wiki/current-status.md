@@ -32,11 +32,14 @@ including NQA-1:2015, the Enconet-only boundary and Croatian reports.
 Full keyword recall is complete: 4,183 vendor passage leads (not accepted crumbs)
 and 2,992 regulatory/supporting leads across all 33 sources. Semantic review
 remains pending. A 20-example local golden candidate is ready for owner review.
-The v3 importer context-storage gap must be resolved before activation/import.
+The owner approved the 20 expected golden examples. The v3 context-storage
+gap is fixed: 23 regression tests passed and all 20 examples round-tripped on
+an isolated database copy with exact chapter links. No live crumbs imported.
 See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md).
 
-Next: owner reviews the golden examples while Codex verifies lossless context
-storage and a measured candidate test. Supporting
+Next: owner decides [v3 activation](../docs/V3_PROMPT_ACTIVATION_REVIEW_20261007.md),
+then Codex begins full vendor sieving. This engineering check is not an
+independent full-corpus semantic recall test. Supporting
 ASME Parts 2-4 retain flagged long converted sections for review before use.
 See [chapter ingestion record](../docs/CHAPTER_INGESTION_20261007.md).
 
