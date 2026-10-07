@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T103157Z-9810b5a.md`](handoffs/2026-10-07T103157Z-9810b5a.md)
+**Authoritative record:** [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](handoffs/2026-10-07T113149Z-6d9eb9c.md)
 
-**Status:** partial · **Git:** `9810b5a` · **Agent:** codex · **Created:** 2026-10-07T10:31:57Z
+**Status:** partial · **Git:** `6d9eb9c` · **Agent:** codex · **Created:** 2026-10-07T11:31:49Z
 
-**Exact next action:** Owner selects vendor deployment and source editions; Claude reviews the release and synchronizes its own guidance. Use doc/framework-reuse/ROLLOUT_20261007.md; do not re-audit Enconet or activate its candidate prompt without approval.
+**Exact next action:** Owner places current documents in selected vendor incoming folder and confirms scope and editions; then initialize its database and begin controlled intake per Transition_template_Plan.md.

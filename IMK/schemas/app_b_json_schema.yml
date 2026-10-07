@@ -1,0 +1,51 @@
+# Company-neutral Appendix B crumb JSON format from the pinned framework.
+# Template only: source editions and applicability are not approved.
+# This describes crumb shape, not whether a quote matches an approved source.
+# Criterion pairs are in app_b_taxonomy.yml. Enums are in vocabularies.yml.
+# The item_type enum is in sieving_contract.yml. No translation is stored.
+
+schema_version: "1.1"
+targets_prompt_versions: ["appb_rule_v1", "appb_document_v1"]
+
+document_block:
+  required_fields:
+    name: {tier: strict, meaning: "registered source name or filename"}
+    date: {tier: strict, meaning: "source date (ISO YYYY-MM-DD) or n-a"}
+    document_side: {tier: strict, enum: document_sides, meaning: "RULE or DOCUMENT"}
+    authority_references: {tier: strict, meaning: "role-tagged references; empty for DOCUMENT"}
+  optional_fields:
+    title: {tier: warning}
+    revision: {tier: warning}
+    doc_id: {tier: warning, pattern: doc_id, meaning: "local registry ID after source intake"}
+
+item_block:
+  required_fields:
+    item_id: {tier: strict, meaning: "unique within the JSON file"}
+    criterion_id: {tier: strict, from: app_b_taxonomy.criteria, meaning: "one of 18 template IDs"}
+    criterion_name: {tier: strict, from: app_b_taxonomy.criteria, meaning: "must match the ID"}
+    statement: {tier: strict, meaning: "non-empty extracted statement"}
+    evidence_quotes: {tier: strict, meaning: "non-empty list checked by evidence_quote rules"}
+    source: {tier: strict, meaning: "non-empty page, heading, or section locator"}
+  optional_fields:
+    item_type: {tier: warning, enum_from: sieving_contract.enums.item_type}
+    entities: {tier: warning}
+
+evidence_quote:
+  required_fields:
+    quote_original: {tier: strict, meaning: "verbatim text from the approved raw source"}
+    quote_language: {tier: strict, enum: languages, meaning: "configured local source language"}
+  forbidden_fields:
+    - statement_en
+    - translation_status
+    - meaning_flag
+  rules:
+    - "Do not store translated or normalized variants of a quote."
+
+side_rules:
+  RULE:
+    authority_references: {tier: strict, rule: "non-empty, with role and source locator"}
+    rule_objects: {tier: strict, rule: "RULE-only fields may be present"}
+  DOCUMENT:
+    authority_references: {tier: strict, rule: "empty; normative authority belongs to RULE"}
+    rule_objects: {tier: strict, rule: "RULE-only fields are forbidden"}
+    rule_references: {tier: warning, rule: "links to RULE crumbs need later registry checks"}

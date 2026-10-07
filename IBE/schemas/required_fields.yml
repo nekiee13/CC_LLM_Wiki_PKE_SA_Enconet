@@ -1,0 +1,38 @@
+# Required frontmatter fields. Field presence alone grants no approval.
+schema_version: "1.0"
+common_required:
+  id: "stable page ID"
+  type: "one of the local page types"
+  status: "draft, approved, closed, generated, or superseded"
+  content_origin: "generated, human, or mixed"
+  source: "citation to local audit records or a justified n-a"
+per_type_required:
+  criterion-evaluation:
+    criterion_id: "Appendix B criterion ID"
+    applicability: "applicable or not-applicable"
+    classification: "local rating value"
+    evaluation_run: "local evaluation run ID"
+  evidence:
+    criterion_id: "Appendix B criterion ID or n-a for a matrix"
+    generated_by: "script that created the page"
+  finding:
+    evaluation_run: "local evaluation run ID"
+    criterion_id: "Appendix B criterion ID"
+    severity: "local finding severity"
+    confidence: "local finding confidence"
+    evidence_refs: "local evidence or gap IDs"
+    basis: "reason for the finding"
+    verification_status: "pending, verified, or rejected"
+    approval_ref: "approval row ID or n-a while draft"
+  action:
+    evaluation_run: "local evaluation run ID"
+    action_type: "local action type"
+    linked_to: "local finding or gap ID"
+    state: "open or closed"
+    priority: "true or false"
+    approval_ref: "approval row ID or n-a while draft"
+  gate-decision:
+    gate: "G1 through G7"
+    decision: "pending, approved, rejected, or deferred"
+    decision_date: "ISO date or n-a while pending"
+    reviewer: "human reviewer or n-a while pending"

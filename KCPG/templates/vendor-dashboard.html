@@ -1,0 +1,171 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>__TITLE__</title>
+<style>
+:root{
+  --bg:#edf3f8; --panel:#ffffff; --ink:#16212b; --muted:#617181; --line:#d7e1ea;
+  --navy:#0d3158; --navy2:#184b80; --accent:#0f7b8a; --soft:#f6f9fc;
+  --shadow:0 12px 28px rgba(20,40,70,.10); --shadow-sm:0 4px 12px rgba(20,40,70,.06);
+  --fully:#1f7a3b; --sub:#5c8f23; --partial:#d08a00; --minimal:#d85b00; --unmet:#b72424; --und:#697386;
+  --fullyBg:#e8f6ec; --subBg:#eef7e8; --partialBg:#fff4d8; --minimalBg:#fff0e5; --unmetBg:#fde8e8; --undBg:#eef0f3;
+  --fullyBdr:#bfe2c8; --subBdr:#cfe2b3; --partialBdr:#f3d997; --minimalBdr:#f4c7a4; --unmetBdr:#f0bcbc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Arial,system-ui,sans-serif;font-size:14px;line-height:1.5}
+.header{background:linear-gradient(135deg,#071f38 0%,#0d3158 45%,#1b5387 100%);color:#fff;padding:30px 36px 24px;border-bottom:1px solid rgba(255,255,255,.18);position:relative;overflow:hidden}
+.header::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;background:radial-gradient(circle,rgba(255,255,255,.10) 0%,transparent 70%);pointer-events:none}
+.header h1{margin:0;font-size:27px;letter-spacing:-.3px;font-weight:850}
+.header .sub{margin:7px 0 0;color:rgba(255,255,255,.84);font-size:13px;max-width:1050px}
+.pillRow{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border:1px solid rgba(255,255,255,.28);border-radius:99px;background:rgba(255,255,255,.10);font-size:12px;font-weight:750}
+.pill.ok{background:rgba(120,200,140,.18);border-color:rgba(160,220,180,.5)}
+.dot{width:7px;height:7px;border-radius:99px;background:#9be4a8}
+.topbar{background:#fff;border-bottom:1px solid var(--line);padding:18px 36px;display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:12px}
+.metric{border:1px solid var(--line);border-radius:14px;background:#fbfdff;padding:14px;min-height:88px;transition:transform .15s ease,box-shadow .15s ease}
+.metric:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+.metric.main{background:linear-gradient(135deg,#0d3158,#1b5387);color:#fff;border-color:#0d3158}
+.metric .num{font-size:30px;font-weight:850;line-height:1}
+.metric .label{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-top:8px;font-weight:750}
+.metric.main .label{color:rgba(255,255,255,.82)}
+.metric .small{font-size:12px;color:var(--muted);margin-top:5px}
+.metric.main .small{color:rgba(255,255,255,.78)}
+.wrap{max-width:1500px;margin:0 auto;padding:22px 26px 50px}
+.section{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px;margin-bottom:18px}
+.section h2{font-size:18px;margin:0 0 12px;color:var(--navy);display:flex;align-items:center;gap:10px}
+.section h2::before{content:"";width:4px;height:18px;border-radius:2px;background:linear-gradient(180deg,var(--navy),var(--accent))}
+.section p{margin:6px 0;color:#344451}
+.summaryGrid{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+.progress{height:25px;background:#dfe7ef;border-radius:99px;display:flex;overflow:hidden;border:1px solid #cbd6e1}
+.seg{height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:850;text-shadow:0 1px 0 rgba(0,0,0,.18)}
+.legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:#344451}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-2px}
+.note{padding:11px 13px;border-left:4px solid var(--partial);background:#fff8e8;border-radius:8px;color:#3d2b00;margin-top:12px;font-size:13px}
+.note.ok{border-left-color:var(--fully);background:var(--fullyBg);color:#1d4628}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:99px;padding:8px 14px;font-size:12px;font-weight:750;cursor:pointer;transition:all .12s}
+.btn:hover{background:#f6f9fc;border-color:#bccada}
+.btn.active{background:var(--navy);color:white;border-color:var(--navy)}
+.btn .count{display:inline-block;margin-left:5px;background:rgba(255,255,255,.18);color:inherit;border-radius:99px;padding:1px 8px;font-size:11px;font-weight:850}
+.btn:not(.active) .count{background:#e8eef5;color:var(--muted)}
+.search{flex:1;min-width:240px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:13px;background:#fff;padding-right:32px}
+.search:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(15,51,88,.10)}
+.select{border:1px solid var(--line);border-radius:10px;padding:9px 11px;background:white;font-size:13px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(390px,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .15s,box-shadow .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,40,70,.10);border-color:#bccada}
+.card.fully{border-left:4px solid var(--fully)} .card.substantially{border-left:4px solid var(--sub)} .card.partially{border-left:4px solid var(--partial)} .card.minimally{border-left:4px solid var(--minimal)} .card.unmet{border-left:4px solid var(--unmet)}
+.cardHead{padding:14px 15px 10px;display:flex;justify-content:space-between;gap:10px;align-items:flex-start;cursor:pointer;user-select:none}
+.cardHead:hover{background:#fafcff}
+.cardLeft{display:flex;align-items:flex-start;gap:10px;flex:1;min-width:0}
+.id{font-weight:900;color:var(--navy);background:#e7eef6;border-radius:8px;padding:5px 11px;min-width:46px;text-align:center;font-size:13px;letter-spacing:.4px;flex-shrink:0}
+.title{font-weight:850;font-size:15px;margin-top:4px}
+.badge{white-space:nowrap;font-size:11px;font-weight:850;text-transform:uppercase;border-radius:99px;padding:5px 11px;letter-spacing:.3px;border:1px solid transparent}
+.badge.fully{color:var(--fully);background:var(--fullyBg);border-color:var(--fullyBdr)} .badge.substantially{color:var(--sub);background:var(--subBg);border-color:var(--subBdr)} .badge.partially{color:var(--partial);background:var(--partialBg);border-color:var(--partialBdr)} .badge.minimally{color:var(--minimal);background:var(--minimalBg);border-color:var(--minimalBdr)} .badge.unmet{color:var(--unmet);background:var(--unmetBg);border-color:var(--unmetBdr)}
+.scoreLine{padding:0 15px 12px;color:var(--muted);font-size:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.scoreBar{flex:1;min-width:120px;height:7px;border-radius:99px;background:#e6ecf2;overflow:hidden}
+.scoreBar > div{height:100%;border-radius:99px}
+.scorePct{font-weight:850;color:var(--ink);font-size:13px;min-width:42px;text-align:right}
+.crumbTag{display:inline-flex;align-items:center;gap:4px;background:#eef4fa;color:var(--navy);border-radius:99px;padding:2px 8px;font-size:11px;font-weight:750}
+.cardBody{display:none;border-top:1px solid var(--line);padding:14px 15px 16px;background:#fbfdff}
+.card.open .cardBody{display:block}
+.block{margin:0 0 14px} .block:last-child{margin-bottom:0}
+.block h4{margin:0 0 4px;font-size:12px;letter-spacing:.25px;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.aff{color:var(--fully)} .con{color:var(--unmet)} .judge{color:var(--navy)} .verify{color:#6b4f00}
+.block p{margin:0;color:#344451;font-size:13px}
+.evidence{font-size:12px;color:var(--muted);padding:8px 11px;background:#f0f4f8;border-radius:10px;margin-top:10px;border-left:3px solid var(--navy2)}
+.evidence strong{color:var(--ink);font-weight:750}
+.matrixWrap{overflow:auto;border-radius:10px;border:1px solid var(--line)}
+.matrix{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+.matrix th,.matrix td{border-bottom:1px solid var(--line);padding:11px 10px;text-align:left;vertical-align:top}
+.matrix th{background:#f3f7fb;color:var(--navy);font-size:11px;text-transform:uppercase;letter-spacing:.4px;font-weight:850;position:sticky;top:0;cursor:pointer;user-select:none}
+.matrix tr:hover td{background:#fbfdff}
+.matrix td.center,.matrix th.center{text-align:center;font-weight:850}
+.riskList{margin:10px 0 0 18px;color:#344451} .riskList li{margin:6px 0}
+.footer{font-size:12px;color:var(--muted);text-align:center;margin-top:20px;padding:10px}
+.footer strong{color:var(--ink)}
+@media(max-width:1100px){.topbar{grid-template-columns:repeat(3,1fr)}.summaryGrid{grid-template-columns:1fr}}
+@media(max-width:640px){.header,.topbar{padding-left:18px;padding-right:18px}.topbar{grid-template-columns:1fr 1fr}.wrap{padding:14px}.grid{grid-template-columns:1fr}.cardHead{flex-direction:column}.controls{align-items:stretch}.search,.select{width:100%;flex:auto}}
+@media print{body{background:#fff}.controls,.footer,.btn.utility{display:none!important}.section,.card{box-shadow:none;break-inside:avoid;page-break-inside:avoid}.cardBody{display:block!important}.grid{grid-template-columns:1fr}.topbar{grid-template-columns:repeat(3,1fr)}.header{background:#0f3358!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.criterionSummary{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.35}.scoreTrace{font-weight:750;color:var(--navy)}.crumbTrace{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--soft);font-size:12px}.crumbTrace summary{cursor:pointer;color:var(--navy);font-weight:750}.crumbTrace ul{margin:7px 0 0 0;max-height:420px;overflow:auto;padding-left:18px}.crumbTrace li{margin:4px 0;word-break:break-word}.crumbItem{border:1px solid var(--line);border-radius:6px;padding:5px 8px;background:var(--panel)}.crumbItem summary{font-weight:700}.crumbBody{padding:8px 4px 2px}.crumbLink{color:var(--navy)}.chapterView{margin-top:7px;border-left:3px solid var(--accent);padding-left:9px}.chapterMeta{color:var(--muted);font-size:11px;margin-bottom:4px}.chapterText{white-space:pre-wrap;max-height:260px;overflow:auto;margin:0;padding:8px;background:var(--panel-raised);color:var(--ink);font:12px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace}.scoreTrace{flex-basis:100%}.criterionRefs{overflow-wrap:anywhere}</style></head><body>
+<header class="header"><h1>__TITLE__</h1><p class="sub">Recorded documentation audit of __SUPPLIER__. Read each rating with its source evidence and written gaps. Objective implementation checks belong to the real audit.</p><div class="pillRow"><span class="pill">Local vendor evidence</span><span class="pill">Overall: __SCORE__</span><span class="pill">18 criteria visible</span></div></header>
+<section class="topbar">__METRICS__</section><main class="wrap">
+<section class="section summaryGrid"><div><h2>Executive Summary</h2><p>The recorded result is <strong>__SCORE__</strong>. Ratings come from this vendor's selected run, not from crumb counts. The five levels are fully (5/5, 100), substantially (4/5, 75), partially (3/5, 50), minimally (2/5, 25), and unmet (1/5, 0). Approved not-applicable criteria stay visible and are excluded from the score.</p><div class="note">Written controls and operational proof are different. A full documentation rating does not prove implementation. This ordinal score is not a percentage of every regulatory clause.</div><div class="note">__NOTE__</div></div><div><h2>Classification Distribution</h2><div class="legend">__DISTRIBUTION__</div></div></section>
+<section class="section"><h2>Criterion Cards — Evidence Review</h2><div class="controls">
+<button class="btn active" data-filter="all">All <span class="count">18</span></button>__FILTERS__
+<input class="search" id="search" aria-label="Search criteria" placeholder="Search criteria or evidence (/)">
+<select class="select" id="sort" aria-label="Sort criteria"><option value="order">Criterion order</option><option value="risk">Lowest rating first</option><option value="score">Highest score first</option><option value="evidence">Most linked evidence first</option></select>
+<button class="btn utility" id="expandAll">Expand all</button><button class="btn utility" id="collapseAll">Collapse all</button><button class="btn utility" id="printBtn">Print / PDF</button></div><div class="grid" id="cards"></div></section>
+<section class="section"><h2>__SUPPLIER__ Evidence Matrix</h2><p>Click a column heading to sort.</p><div class="matrixWrap"><table class="matrix" id="matrix"></table></div></section>
+<section class="section"><h2>Top Gaps Requiring Follow-up</h2><ul class="riskList">__GAPS__</ul></section>
+<section class="section"><h2>Priority Auditor Verification Actions</h2><ol class="riskList">__ACTIONS__</ol></section>
+<footer class="footer">Snapshot __DATE__; run __RUN__; model __MODEL__. Separate presentation candidate; no audit data changed.</footer></main>
+<script>
+const data = __DATA__;
+const labels={fully:'Fully Matched',substantially:'Substantially Matched',partially:'Partially Matched',minimally:'Minimally Matched',unmet:'Unmet',na:'Not applicable'};
+const ratingClr={fully:'var(--fully)',substantially:'var(--sub)',partially:'var(--partial)',minimally:'var(--minimal)',unmet:'var(--unmet)',na:'var(--und)'};
+const ratingHex={fully:'#1f7a3b',substantially:'#5c8f23',partially:'#d08a00',minimally:'#d85b00',unmet:'#b72424'};
+const riskRank={unmet:5,minimally:4,partially:3,substantially:2,fully:1,na:0};
+const evidenceRank={};
+let filter='all', matrixSort={key:'order',asc:true};
+function clean(s){return (s||'').toString().toLowerCase()}
+function getFiltered(){
+  const q=clean(document.getElementById('search').value);
+  let arr=data.filter(d=>filter==='all'||d.rating===filter).filter(d=>!q||clean(Object.values(d).join(' ')).includes(q));
+  const sort=document.getElementById('sort').value;
+  if(sort==='risk') arr=[...arr].sort((a,b)=>riskRank[b.rating]-riskRank[a.rating]||a.order-b.order);
+  else if(sort==='score') arr=[...arr].sort((a,b)=>b.score-a.score||a.order-b.order);
+  else if(sort==='evidence') arr=[...arr].sort((a,b)=>(b.score_crumb_count||0)-(a.score_crumb_count||0)||a.order-b.order);
+  else arr=[...arr].sort((a,b)=>a.order-b.order);
+  return arr;
+}
+function cardHtml(d){
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  })[character]);
+  const crumbs=(d.score_crumbs||[]).map(c=>{
+    const quotes=(c.quotes||[]).map(q=>`<div class="chapterMeta">Linked quote (${esc(q.quote_id)}; locator: ${esc(q.locator)}):</div><blockquote>${esc(q.text)}</blockquote>`).join('');
+    const chapters=(c.chapters||[]).map(ch=>`<div class="chapterView"><div class="chapterMeta">Source chapter: ${esc(ch.heading_path)} (${esc(ch.chunk_id)})</div><pre class="chapterText">${esc(ch.text)}</pre></div>`).join('');
+    return `<li><details class="crumbItem"><summary><span class="crumbLink">${esc(c.id)}</span> — ${esc(c.filename)}</summary><div class="crumbBody">${quotes}${chapters||'<div class="chapterMeta">No linked chapter was found in the source snapshot.</div>'}</div></details></li>`;
+  }).join('')||'<li>No linked vendor crumb in this recorded evaluation.</li>';
+  return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.applicable ? d.score+'% · '+d.scale_points+'/5' : 'Not applicable'}</span><span class="scoreTrace">${d.score_trace}</span><span>${d.refs}</span></div><div class="cardBody"><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
+}
+function renderCards(){
+  const arr=getFiltered();
+  document.getElementById('cards').innerHTML=arr.map(cardHtml).join('')||'<p style="color:var(--muted);padding:18px">No criteria match the current filter.</p>';
+}
+function renderMatrix(){
+  const arr=[...data], k=matrixSort.key, asc=matrixSort.asc?1:-1;
+  arr.sort((a,b)=>{
+    if(k==='order') return (a.order-b.order)*asc;
+    if(k==='rating') return (riskRank[a.rating]-riskRank[b.rating])*asc;
+    if(k==='score') return (a.score-b.score)*asc;
+    if(k==='crumbs') return (a.score_crumb_count-b.score_crumb_count)*asc;
+    return clean(a[k]).localeCompare(clean(b[k]))*asc;
+  });
+  const arrow=(col)=>matrixSort.key===col?(matrixSort.asc?'▲':'▼'):'';
+  document.getElementById('matrix').innerHTML=`<thead><tr>
+    <th data-col="order" class="center">No. ${arrow('order')}</th><th data-col="title">Title ${arrow('title')}</th><th data-col="rating">Status ${arrow('rating')}</th><th data-col="score" class="center">Score ${arrow('score')}</th><th data-col="crumbs" class="center">Evidence ${arrow('crumbs')}</th><th data-col="verify">Primary verification action</th>
+  </tr></thead><tbody>`+arr.map(d=>`<tr><td class="center"><strong>${d.n}</strong></td><td><strong>${d.title}</strong></td><td><span class="badge ${d.rating}">${labels[d.rating]}</span></td><td class="center">${d.applicable ? d.score+'% · '+d.scale_points+'/5' : 'Not applicable'}</td><td class="center">${d.score_crumb_count} linked crumbs</td><td>${d.verify}</td></tr>`).join('')+'</tbody>';
+  document.querySelectorAll('#matrix th').forEach(th=>th.addEventListener('click',()=>{const key=th.dataset.col;if(matrixSort.key===key) matrixSort.asc=!matrixSort.asc; else {matrixSort.key=key;matrixSort.asc=true;} renderMatrix();}));
+}
+
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); filter=b.dataset.filter; renderCards();}));
+document.getElementById('search').addEventListener('input',renderCards);
+document.getElementById('sort').addEventListener('change',renderCards);
+document.getElementById('expandAll').addEventListener('click',()=>document.querySelectorAll('.card').forEach(c=>c.classList.add('open')));
+document.getElementById('collapseAll').addEventListener('click',()=>document.querySelectorAll('.card').forEach(c=>c.classList.remove('open')));
+document.getElementById('printBtn').addEventListener('click',()=>{document.querySelectorAll('.card').forEach(c=>c.classList.add('open'));setTimeout(()=>window.print(),100);});
+document.addEventListener('keydown',e=>{if(e.key==='/' && document.activeElement.tagName!=='INPUT'){e.preventDefault();document.getElementById('search').focus();} if(e.key==='Escape'){document.getElementById('search').value='';renderCards();}});
+function cardHtml(d){
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  })[character]);
+  const crumbs=(d.score_crumbs||[]).map(c=>{
+    const quotes=(c.quotes||[]).map(q=>`<div class="chapterMeta">Linked quote (${esc(q.quote_id)}; locator: ${esc(q.locator)}):</div><blockquote>${esc(q.text)}</blockquote>`).join('');
+    const chapters=(c.chapters||[]).map(ch=>`<div class="chapterView"><div class="chapterMeta">Source chapter: ${esc(ch.heading_path)} (${esc(ch.chunk_id)})</div><pre class="chapterText">${esc(ch.text)}</pre></div>`).join('');
+    return `<li><details class="crumbItem"><summary><span class="crumbLink">${esc(c.id)}</span> — ${esc(c.filename)}</summary><div class="crumbBody">${quotes}${chapters||'<div class="chapterMeta">No linked chapter was found in the source snapshot.</div>'}</div></details></li>`;
+  }).join('')||'<li>No linked vendor crumb in this recorded evaluation.</li>';
+  return `<article class="card ${d.rating}" data-rating="${d.rating}"><div class="cardHead" onclick="this.parentElement.classList.toggle('open')"><div class="cardLeft"><span class="id">${d.n}</span><div><div class="title">${d.title}</div><div class="criterionSummary">${d.summary}</div></div></div><span class="badge ${d.rating}">${labels[d.rating]}</span></div><div class="scoreLine"><div class="scoreBar"><div style="width:${d.score}%;background:${ratingClr[d.rating]}"></div></div><span class="scorePct">${d.applicable ? d.score+'% · '+d.scale_points+'/5' : 'Not applicable'}</span><span class="scoreTrace">${d.score_trace}</span></div><div class="cardBody"><div class="block criterionRefs"><h4 class="judge">Source references</h4><p>${esc(d.refs)}</p></div><div class="block"><h4 class="aff">▸ Criterion summary</h4><p>${d.summary}</p></div><div class="block"><h4 class="aff">▸ Affirmative argument</h4><p>${d.aff}</p></div><div class="block"><h4 class="con">▸ Contrary argument</h4><p>${d.con}</p></div><div class="block"><h4 class="judge">⚖ Judge ruling</h4><p>${d.judge}</p></div><details class="crumbTrace"><summary>Crumbs linked to this score (${d.score_crumb_count})</summary><ul>${crumbs}</ul></details><div class="block"><h4 class="verify">✓ Auditor verification action</h4><p>${d.verify}</p></div><div class="evidence"><strong>Anchor evidence:</strong> ${d.quote}</div></div></article>`;
+}
+renderCards(); renderMatrix();
+</script></body></html>

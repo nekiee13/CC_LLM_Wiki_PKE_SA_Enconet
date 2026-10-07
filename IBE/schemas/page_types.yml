@@ -1,0 +1,28 @@
+# Local controlled wiki page types. These are page shapes, not audit evidence.
+schema_version: "1.0"
+page_types:
+  criterion-evaluation:
+    location: "wiki/criteria/"
+    filename_pattern: "EVAL-APP_B_*.md"
+    id_pattern: evaluation_id
+    meaning: "One page per Appendix B criterion; the database row remains authoritative."
+  evidence:
+    location: "wiki/evidence/"
+    filename_pattern: "*.md"
+    id_pattern: null
+    meaning: "Generated evidence matrix and summaries with database citations."
+  finding:
+    location: "wiki/findings/"
+    filename_pattern: "FIND-*.md"
+    id_pattern: finding_id
+    meaning: "One page per finding; draft until a recorded human approval."
+  action:
+    location: "wiki/actions/"
+    filename_pattern: "ACT-*.md"
+    id_pattern: action_id
+    meaning: "One page per auditor action, linked to a finding or gap."
+  gate-decision:
+    location: "wiki/gates/"
+    filename_pattern: "G*.md"
+    id_pattern: null
+    meaning: "One packet per human gate decision."

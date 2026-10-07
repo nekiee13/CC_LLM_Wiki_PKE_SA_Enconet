@@ -1,0 +1,39 @@
+# Optional context contract for objective-evidence crumbs.
+# These fields are anchors, not extra audit requirements. Missing context stays
+# missing until a source record supports it; no value is inferred from a path.
+schema_version: "1.0"
+context_fields:
+  project_ref:
+    type: string
+    meaning: "Project, modification, or work-package identifier."
+  contract_ref:
+    type: string
+    meaning: "Contract, purchase order, or work-order identifier."
+  supplier_ref:
+    type: string
+    meaning: "Supplier or subcontractor identifier mentioned by the source."
+  source_revision:
+    type: string
+    meaning: "Revision or issue of the source record supporting the crumb."
+  evidence_date:
+    type: string
+    format: ISO-8601-date-or-n-a
+    meaning: "Date of the event or record, when stated by the source."
+evidence_types:
+  - policy_or_procedure
+  - objective_record
+  - approval
+  - design_input
+  - design_output
+  - design_verification
+  - procurement_requirement
+  - supplier_evaluation
+  - inspection_result
+  - test_result
+  - calibration_record
+  - training_record
+  - nonconformance
+  - corrective_action
+  - audit_record
+  - management_review
+  - candidate_lead

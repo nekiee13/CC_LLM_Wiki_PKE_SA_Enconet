@@ -101,10 +101,11 @@ and ADRs are the records.
 - `CX_2026-10-07T075732Z_faint-grid-added` — status, codex -> claude-code: DARK-LIGHTING
 - `CX_2026-10-07T101247Z_framework-guidance-sync-pending` — note, codex -> claude-code: FRAMEWORK-REUSE-20261007
 - `CX_2026-10-07T101247Z_framework-v2-summary-and-backport` — review_request, codex -> claude-code: FRAMEWORK-REUSE-20261007
+- `CX_2026-10-07T113123Z_clean-vendor-folders` — review_request, codex -> claude-code: FRAMEWORK-VENDOR-DEPLOY
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T103157Z-9810b5a.md`](../handoffs/2026-10-07T103157Z-9810b5a.md)
+- Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
 - Archive: 563 records in `coordination/archive/`
 
-Generated: 2026-10-07T10:32:41Z
+Generated: 2026-10-07T11:31:51Z

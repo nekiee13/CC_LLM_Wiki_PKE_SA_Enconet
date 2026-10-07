@@ -1,0 +1,18 @@
+# Neutral folder and filename structure only. No source or criterion is approved.
+schema_version: "1.0"
+page_types:
+  criterion-evaluation:
+    location: "wiki/criteria/"
+    filename_pattern: "EVAL-*.md"
+  evidence:
+    location: "wiki/evidence/"
+    filename_pattern: "*.md"
+  finding:
+    location: "wiki/findings/"
+    filename_pattern: "FIND-*.md"
+  action:
+    location: "wiki/actions/"
+    filename_pattern: "ACT-*.md"
+  gate-decision:
+    location: "wiki/gates/"
+    filename_pattern: "G*.md"

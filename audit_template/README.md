@@ -1,3 +1,69 @@
+# Reusable audit release - usage
+
+The clean v2 release supports both known and future vendors. There is no vendor
+allowlist. Each deployed project gets local script copies from the same hashed
+package; runtime does not depend on Ekonerg or Enconet folders.
+
+## Known vendors
+
+Clean framework folders have been installed for IBE, TEKOL, IGH, IMK, KCPG and
+MOR on 7 October 2026. Their `incoming/` folders are ready for documents.
+No database, company documents, crumbs, scores or inherited approvals were
+created. Source editions, scope and calibration remain pending local decisions.
+Copy journals are in each project's `.bootstrap/framework-v2/` directory.
+
+## Any future vendor
+
+Run these commands from the workspace root. Replace both example names with
+the new project folder and actual supplier name. Spaces and non-ASCII names
+are supported; quote names with spaces.
+
+```powershell
+# Read-only preview; the target must be a direct child of the workspace.
+python audit_template/prepare_vendor.py --target "New Vendor" --supplier "New Vendor"
+
+# After owner authorizes deployment; choose a unique run ID.
+python audit_template/prepare_vendor.py --target "New Vendor" --supplier "New Vendor" --apply --run-id new-vendor-setup-001
+
+# Separately create a fresh local database when starting intake.
+python "New Vendor/scripts/init_db.py"
+```
+
+The preview does not create the company folder. Apply refuses differing files
+and existing audit databases. Never delete an existing project to force setup.
+Do not run reset as part of deployment. See the project's `AGENTS.md`,
+`docs/FRAMEWORK_METHOD_V2.md` and `sieving/SIEVING_PLAYBOOK.md` before intake.
+
+Place company and approved regulatory sources in `incoming/`. Confirm local
+scope, source editions, applicability and required gates. Calibrate and activate
+the prompt on local documents before sieving. Framework installation is not
+audit approval, nor proof that ingestion or evaluation has been completed.
+
+## Release contents and maintenance
+
+- `framework/v2/`: immutable clean framework payload and hash manifest.
+- `framework/upgrade-v2/`: additive tools for an existing project.
+- `prepare_vendor.py`: preview-first company scaffold and installer.
+- `framework_release.py`: verified payload copying with run journals.
+- `tests/test_framework_release_v2.py`: isolation, retry, intake and safety tests.
+
+Keep the installer, bootstrap dependencies and payload together in this
+versioned repository. This is a workspace release, not a stand-alone ZIP for
+arbitrary external folders. Future code changes require a new release version;
+do not patch the committed v2 payload or each company copy separately.
+
+Claude-owned guidance is not copied or edited by Codex. Claude setup and release
+review remain separate coordination work. Regulatory editions and another
+company's no-backup waiver never transfer by default.
+
+See [Transition Template Plan](../Transition_template_Plan.md) for the full
+task plan and audit acceptance criteria.
+
+## Historical v1 component instructions
+
+These records describe the earlier component-by-component release. For a new
+vendor use the complete v2 installer above, not these historical steps.
+
 # Candidate audit bootstrap components (v1)
 
 The sieving runtime reads a project-local taxonomy named by its contract. The

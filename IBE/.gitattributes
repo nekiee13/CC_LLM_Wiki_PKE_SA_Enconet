@@ -1,0 +1,29 @@
+# Keep copied framework text and its journals byte-stable on every checkout.
+# This does not touch source documents in incoming/ or controlled evidence.
+.gitattributes text eol=lf
+scripts/*.py text eol=lf
+sieving/cli.py text eol=lf
+sieving/src/**/*.py text eol=lf
+sieving/prompts/active.yml text eol=lf
+schemas/*.yml text eol=lf
+manifests/*.csv text eol=lf
+wiki/**/.gitkeep text eol=lf
+.bootstrap/**/*.jsonl text eol=lf
+
+# Version-2 portable presentation and method assets
+scripts/*.css text eol=lf
+scripts/*.js text eol=lf
+templates/** text eol=lf
+docs/FRAMEWORK_METHOD_V2.md text eol=lf
+Sieving_method_specification_Guide.md text eol=lf
+db/schema.sql text eol=lf
+sieving/SIEVING_PLAYBOOK.md text eol=lf
+benchmarks/sieving_golden/manifest.yml text eol=lf
+handoff_schema.yml text eol=lf
+
+# Preserve evidence exactly across Git checkouts
+incoming/** -text
+raw/** -text
+derived/** -text
+sieving/DATA/** -text
+db/*.sqlite binary

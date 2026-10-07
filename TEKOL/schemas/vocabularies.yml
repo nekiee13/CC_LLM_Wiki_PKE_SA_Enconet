@@ -1,0 +1,67 @@
+# Project-local controlled vocabulary template, adapted from the pinned framework.
+# Regulatory source values are not approved. They remain empty until owner
+# intake settles applicability and source editions.
+# document_sides and authority codes mirror the local sieving_contract.yml.
+
+schema_version: "1.0"
+
+vocabularies:
+  ratings:
+    usage: "Criterion classification values for later evaluations and deliverables."
+    values: [fully, substantially, partially, minimally, unmet, undetermined, na]
+
+  gap_statuses:
+    usage: "Coverage classification for later gap rows."
+    values: [covered, mostly-covered, partially-covered, minimally-covered, not-covered, not-applicable, undetermined, missing-evidence]
+
+  action_types:
+    usage: "Types of later auditor actions."
+    values: [verification, document_request, sample_test, interview]
+
+  finding_severities:
+    usage: "Severity values for draft or approved findings."
+    values: [low, medium, high, critical]
+
+  finding_confidences:
+    usage: "Confidence values for the evidence basis of a finding."
+    values: [low, medium, high]
+
+  verification_statuses:
+    usage: "Auditor verification decision on a finding."
+    values: [pending, verified, rejected]
+
+  finding_statuses:
+    usage: "Finding lifecycle; only a recorded approval may move draft to approved."
+    values: [draft, approved, closed]
+
+  action_states:
+    usage: "Operational state of an auditor action."
+    values: [open, closed]
+
+  approval_statuses:
+    usage: "Recorded approval lifecycle for reportable findings and actions."
+    values: [draft, approved]
+
+  languages:
+    usage: "Original quote and deliverable language; never a translation flag."
+    values: [sl, en, hr]
+
+  document_sides:
+    usage: "RULE source or company DOCUMENT side."
+    values: [RULE, DOCUMENT]
+
+  source_rules:
+    usage: "No active source code until this project's source intake is reviewed."
+    values: []
+
+  authority_sources:
+    usage: "No active authority source until editions and applicability are approved."
+    values: []
+
+  authority_roles:
+    usage: "Governing or interpretive role of a source."
+    values: [GOVERNING, INTERPRETIVE]
+
+  audit_states:
+    usage: "Local audit workflow states; setup is before first company source intake."
+    values: [setup, registered, chunked, sieved, evidence_reviewed, evaluated, findings_drafted, findings_approved, report_ready, dashboard_ready, closed, failed]
