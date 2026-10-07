@@ -25,3 +25,5 @@ out/** -text
 # Source snapshots and rendered quote reviews retain supplied whitespace.
 out/2026-10-07/full-keyword-sweep/sources/** -whitespace
 out/2026-10-07/full-keyword-sweep/review/** -whitespace
+# Per-generation evidence includes exact quotes and hash-sensitive artifacts.
+sieving/runs/** -text -whitespace

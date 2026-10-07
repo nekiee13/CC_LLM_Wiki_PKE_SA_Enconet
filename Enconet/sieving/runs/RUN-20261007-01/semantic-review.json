@@ -1,0 +1,3955 @@
+{
+  "method": "Codex two-pass semantic review, not automatic keyword acceptance",
+  "source_sha256": "67321365b04bd3ed9af497b798eb995cc50aa25dc26b6034cbb997b0989e43ed",
+  "all_source_content_blocks_reviewed": 269,
+  "counts": {
+    "items": 193,
+    "quotes": 223,
+    "per_criterion": {
+      "APP_B_I": 18,
+      "APP_B_II": 39,
+      "APP_B_III": 19,
+      "APP_B_IV": 17,
+      "APP_B_V": 4,
+      "APP_B_VI": 24,
+      "APP_B_VII": 12,
+      "APP_B_VIII": 6,
+      "APP_B_IX": 7,
+      "APP_B_X": 7,
+      "APP_B_XI": 3,
+      "APP_B_XII": 6,
+      "APP_B_XIII": 3,
+      "APP_B_XIV": 2,
+      "APP_B_XV": 5,
+      "APP_B_XVI": 3,
+      "APP_B_XVII": 10,
+      "APP_B_XVIII": 8
+    },
+    "direct_controls": 115,
+    "supporting_controls": 44,
+    "candidate_leads": 34
+  },
+  "decisions": [
+    {
+      "item_id": "NP-0001",
+      "source_blocks": [
+        "B00003"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: NQAP nosi identifikacijsku oznaku NP-SUK-001.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0002",
+      "source_blocks": [
+        "B00005"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Dokument navodi reviziju 8.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0003",
+      "source_blocks": [
+        "B00006"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Dokument navodi datum objavljivanja 14.04.2023.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0004",
+      "source_blocks": [
+        "B00007"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Broj kontrolirane kopije je ostavljen kao predložak; provjeriti način kontrole dostave.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0005",
+      "source_blocks": [
+        "B00009"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: U tablici su navedeni autor, njegova QA uloga i datum pripreme dokumenta.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0006",
+      "source_blocks": [
+        "B00011"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: U tablici je imenovana osoba koja je pregledala dokument i datum pregleda.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0007",
+      "source_blocks": [
+        "B00012"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: U tablici je imenovan direktor kao odobravatelj dokumenta i datum odobrenja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0008",
+      "source_blocks": [
+        "B00016"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Predložak periodičnog pregleda postoji, ali ova tablica ne prikazuje popunjen pregled.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0009",
+      "source_blocks": [
+        "B00085"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: NQAP sadrži vremenski slijed izdanih revizija do revizije 8.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0010",
+      "source_blocks": [
+        "B00093"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: NQAP određuje politiku kvalitete i opisuje upravljanje radom koji utječe na kvalitetu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0011",
+      "source_blocks": [
+        "B00093"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: NQAP određuje odgovornosti u organizaciji.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0012",
+      "source_blocks": [
+        "B00095"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: NQAP navodi sukladnost s regulativom i standardima, uključujući starije NQA-1 reference; objective evidence not shown.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0013",
+      "source_blocks": [
+        "B00097"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Novi i revidirani ugovori, narudžbenice i tehničke specifikacije pregledavaju se glede primjenjivih zahtjeva.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0014",
+      "source_blocks": [
+        "B00097"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "supporting_control: Pregled narudžbenica uključuje primjenjive standarde i regulatorne zahtjeve.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0015",
+      "source_blocks": [
+        "B00113"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: QA program obvezan je za zaposlenike i podugovarače na odgovarajućim nuklearnim poslovima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0016",
+      "source_blocks": [
+        "B00113"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Odgovornost za kvalitetu ostaje kod izvršitelja i konačno kod Enconeta kao nositelja ugovora.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0017",
+      "source_blocks": [
+        "B00115"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Enconet prihvaća odgovornost za primjenu odgovarajućih propisa i standarda u konzultantskom radu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0018",
+      "source_blocks": [
+        "B00117"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Ugovori s zanemarenim ili ublaženim zahtjevima kvalitete ne potpisuju se prije razmatranja učinka na QA ciljeve.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0019",
+      "source_blocks": [
+        "B00124"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Dokument određuje nuklearne konzultantske usluge kao područje QA programa.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0020",
+      "source_blocks": [
+        "B00126"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Opis djelatnosti uključuje programe održavanja i praćenja stanja opreme; tražiti detaljne kontrole.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0021",
+      "source_blocks": [
+        "B00127"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Opis djelatnosti uključuje trening i kvalifikaciju; to nije dokaz provedenog osposobljavanja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0022",
+      "source_blocks": [
+        "B00128"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "candidate_lead: Opis djelatnosti uključuje periodičke sigurnosne preglede; provjeriti vezu s neovisnim auditom.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0023",
+      "source_blocks": [
+        "B00129"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: Nuklearne sigurnosne analize navedene su u opsegu usluga.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0024",
+      "source_blocks": [
+        "B00130"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: Priprema i dokumentiranje modifikacija navedeni su u opsegu usluga.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0025",
+      "source_blocks": [
+        "B00131"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: QA/QC usluge navedene su u opsegu programa.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0026",
+      "source_blocks": [
+        "B00132"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Opseg uključuje neovisni pregled i verifikaciju tehničke dokumentacije.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0027",
+      "source_blocks": [
+        "B00133"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Opseg uključuje pripravnost za nuklearnu nesreću; detaljne kontrole nisu dane u ovoj stavci.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0028",
+      "source_blocks": [
+        "B00134"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Program obuhvaća gospodarenje radioaktivnim otpadom i dekomisiju.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0029",
+      "source_blocks": [
+        "B00135"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: Opseg uključuje evaluaciju projekata važnih za nuklearnu sigurnost.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0030",
+      "source_blocks": [
+        "B00136"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: EQ kvalifikacija opreme navedena je u opsegu; provjeriti način projektne verifikacije.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0031",
+      "source_blocks": [
+        "B00137"
+      ],
+      "criterion_id": "APP_B_VIII",
+      "statement": "candidate_lead: Kontrola i održavanje MECL baze mogu podržati identitet i sljedivost opreme; candidate; verify criterion mapping.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0032",
+      "source_blocks": [
+        "B00139"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: QA opseg navodi cijeli životni ciklus postrojenja, od projektiranja do razgradnje.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0033",
+      "source_blocks": [
+        "B00143"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Dokument navodi obvezu primjene hrvatskih zakona i normi; objective evidence not shown.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0034",
+      "source_blocks": [
+        "B00146"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Kod poslova u drugim državama primjenjuju se zahtjevi konkretnog ugovorenog slučaja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0035",
+      "source_blocks": [
+        "B00148"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Enconet ostaje odgovoran za kvalitetu i kada rad prenese podugovaraču.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0036",
+      "source_blocks": [
+        "B00157"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: NQAP je krovni dokument kvalitete koji se uključuje u svaki nuklearni projekt.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0037",
+      "source_blocks": [
+        "B00159"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Voditelji projekata provode QA program u svim fazama prema vremenskom planu i ugovornim ili upravnim obvezama.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0038",
+      "source_blocks": [
+        "B00161"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktorovi nalozi u programu i postupcima utvrđuju odgovornost za primjenu zahtjeva.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0039",
+      "source_blocks": [
+        "B00165"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor odgovara za QA program u djelatnostima Enconeta i podizvođača.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0040",
+      "source_blocks": [
+        "B00166"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Voditelji projekata odgovaraju za kvalitetu usluga i primjenu specifikacija, propisa i standarda.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0041",
+      "source_blocks": [
+        "B00167"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Voditelj QA izvješćuje o sukladnosti rada sa zahtjevima sustava.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0042",
+      "source_blocks": [
+        "B00168"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Svaki izvršitelj odgovara za kvalitetu dodijeljenog rada.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0043",
+      "source_blocks": [
+        "B00170"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Politika traži stručnjake s iskustvom i naobrazbom te kompetentnu primjenu preporuka.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0044",
+      "source_blocks": [
+        "B00172"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Primjena QA programa povezuje se s proizvodima i uslugama te sigurnosnom klasom određenom projektom.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0045",
+      "source_blocks": [
+        "B00174"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Rad značajan za kvalitetu obavlja osposobljeno osoblje odgovarajućom opremom i u kontroliranim uvjetima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0046",
+      "source_blocks": [
+        "B00176"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Direktor odgovara za izobrazbu i godišnji plan osposobljavanja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0047",
+      "source_blocks": [
+        "B00176"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Dokazi sudjelovanja i osposobljenosti smatraju se QA dokumentacijom.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0048",
+      "source_blocks": [
+        "B00184"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Program ima uobičajeni trogodišnji ciklus revizije, uz ovlast direktora da ga pokrene ranije.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0049",
+      "source_blocks": [
+        "B00186"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Engleska i hrvatska verzija QA plana deklarirane su jednako važećima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0050",
+      "source_blocks": [
+        "B00190"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Rad značajan za kvalitetu mora slijediti pisane postupke, upute ili nacrte.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0051",
+      "source_blocks": [
+        "B00190"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Postupci moraju utvrditi kvantitativne ili kvalitativne kriterije prihvaćanja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0052",
+      "source_blocks": [
+        "B00190"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Postupci se odobravaju, objavljuju i dijele pod kontroliranim uvjetima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0053",
+      "source_blocks": [
+        "B00192"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Voditelji projekata i QA odgovorni su za periodični pregled i obnavljanje postupaka.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0054",
+      "source_blocks": [
+        "B00194"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: NQAP upućuje na PP-42-01 za upravljanje dokumentima; sam navod ne dokazuje provedbu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0055",
+      "source_blocks": [
+        "B00198"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Direktor periodično izvješćuje o stanju i primjerenosti QA programa.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0056",
+      "source_blocks": [
+        "B00198"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "supporting_control: Neovisno ocjenjivanje provodi se prema poglavlju 13, a izvješća idu direktoru i vodećem osoblju.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0057",
+      "source_blocks": [
+        "B00200"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: QA program i njegova primjena u projektima ocjenjuju se najmanje jednom godišnje.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0058",
+      "source_blocks": [
+        "B00200"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Ocjena uključuje prikladnost, učinkovitost te potrebne izmjene programa.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0059",
+      "source_blocks": [
+        "B00202"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Odgovorno rukovodstvo redovito procjenjuje dio sustava koji vodi i osigurava njegovu primjenu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0060",
+      "source_blocks": [
+        "B00212"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Organizacijska i komunikacijska pravila iz priručnika vrijede za sve djelatnosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0061",
+      "source_blocks": [
+        "B00214"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Opisano je postavljanje direktora i delegiranje tehničkih, komercijalnih i QA odgovornosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0062",
+      "source_blocks": [
+        "B00216"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA ima put eskalacije neriješenog problema direktoru.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0063",
+      "source_blocks": [
+        "B00216"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA može inicirati obustavu sigurnosno značajnog rada do zadovoljavajućeg rješenja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0064",
+      "source_blocks": [
+        "B00218"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: U suradnji s drugim organizacijama utvrđuju se međuveze, komunikacija i odgovornosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0065",
+      "source_blocks": [
+        "B00220"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Podizvođači slijede NQAP i nadziru se glede uspješnosti i učinkovitosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0066",
+      "source_blocks": [
+        "B00220"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Prenošenje posla na podizvođača ne prenosi Enconetovu odgovornost za verifikaciju sukladnosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0067",
+      "source_blocks": [
+        "B00222"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Za dodatne zahtjeve kupca koriste se odobreni kupčevi postupci ili vlastiti postupci koje kupac odobrava.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0068",
+      "source_blocks": [
+        "B00226"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Novi stručnjaci imaju odgovarajuće iskustvo, upoznaju QA program i po potrebi prolaze dodatnu izobrazbu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0069",
+      "source_blocks": [
+        "B00228"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Za izobrazbu postoji referenca na PP-62-01; tražiti detalje i zapise.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0070",
+      "source_blocks": [
+        "B00235"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Voditelji projekata i poslova planiraju izobrazbu prema planiranim aktivnostima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0071",
+      "source_blocks": [
+        "B00237"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Voditelj QA verificira kvalifikaciju osoblja prema odobrenim planovima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0072",
+      "source_blocks": [
+        "B00239"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Osoblje za kvalitetu mora biti kvalificirano za dodijeljene posebne poslove.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0073",
+      "source_blocks": [
+        "B00241"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Izobrazba uključuje sustav kvalitete.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0074",
+      "source_blocks": [
+        "B00242"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Plan izobrazbe uključuje neprekidno uvježbavanje QA aktivnosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0075",
+      "source_blocks": [
+        "B00243"
+      ],
+      "criterion_id": "APP_B_X",
+      "statement": "supporting_control: Program uključuje kvalificiranje QC kontrolora.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0076",
+      "source_blocks": [
+        "B00244"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "supporting_control: Program uključuje kvalificiranje nezavisnih auditora.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0077",
+      "source_blocks": [
+        "B00246"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Postupci kvalifikacije određuju potrebe i razdoblja obnavljanja kvalifikacija.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0078",
+      "source_blocks": [
+        "B00248"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zapisi o kvalifikacijama čuvaju se prema poglavlju o QA zapisima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0079",
+      "source_blocks": [
+        "B00259"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Kontrola obuhvaća dokumente vlastite izrade i dokumente dobivene od kupca ili trećih.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0080",
+      "source_blocks": [
+        "B00261"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Izdanja dokumenata koja propisuju kvalitetno značajan rad moraju biti kontrolirana.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0081",
+      "source_blocks": [
+        "B00262"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Ovlašteno osoblje ocjenjuje prikladnost i odobrava dokumente za objavljivanje.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0082",
+      "source_blocks": [
+        "B00263"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Važeći dokumenti moraju biti dostupni na mjestu izvođenja aktivnosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0083",
+      "source_blocks": [
+        "B00264"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Promjene odobravaju organizacijske jedinice koje su odobrile izvornik.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0084",
+      "source_blocks": [
+        "B00266"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Voditelj projekta verificira kontrolu dokumenata i traži ispravljanje uočenih nedostataka.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0085",
+      "source_blocks": [
+        "B00268"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Za kontrolu dokumenata naveden je PP-42-01; ne zamijeniti referencu dokazom provedbe.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0086",
+      "source_blocks": [
+        "B00272"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Popis kontroliranih dokumenata sadrži naziv, oznaku, reviziju te osobe i mjesta korištenja i pohrane.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0087",
+      "source_blocks": [
+        "B00274"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Voditelj projekta imenuje osobu odgovornu za kontrolu i dostavu dokumenata.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0088",
+      "source_blocks": [
+        "B00276"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Primatelj nove revizije vraća, uništava ili označuje staru nevažećom i bilježi odabranu radnju.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0089",
+      "source_blocks": [
+        "B00280"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Promjene dokumenata prolaze kontrolu kao izvornik, uz pregled iste ili posebno određene organizacije.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0090",
+      "source_blocks": [
+        "B00282"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Objava i dostava izmjena prati isti postupak kao za izvorni dokument.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0091",
+      "source_blocks": [
+        "B00295"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Opseg uključuje razvijanje postupaka upravljanja kvalitetno značajnim projektima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0092",
+      "source_blocks": [
+        "B00296"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Opseg uključuje izvođenje ili upravljanje QA pregledom projektnih dokumenata.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0093",
+      "source_blocks": [
+        "B00297"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Predviđeno je neovisno ocjenjivanje projekta kod odgovorne organizacije.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0094",
+      "source_blocks": [
+        "B00298"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: Upravljanje projektom sigurnosne klase navedeno je u opsegu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0095",
+      "source_blocks": [
+        "B00300"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj projekta osigurava prijenos zahtjeva kupca, propisa i projektnih podataka u specifikacije, nacrte i upute.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0096",
+      "source_blocks": [
+        "B00302"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Kriteriji prihvatljivosti za inspekcije i testove jasno se utvrđuju u projektnoj dokumentaciji.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0097",
+      "source_blocks": [
+        "B00304"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Projektne aktivnosti dokumentiraju se dovoljno detaljno za vrednovanje stručnjaka izvan izvornog tima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0098",
+      "source_blocks": [
+        "B00306"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: PP-73-01 je referenciran za projektiranje; provjeriti njegove konkretne kontrole.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0099",
+      "source_blocks": [
+        "B00310"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor prenosi vanjske projektne međuveze, komunikacijske veze i odgovornosti u ugovor.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0100",
+      "source_blocks": [
+        "B00312"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj projekta odgovara za unutarnje organizacijske i tehničke projektne veze.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0101",
+      "source_blocks": [
+        "B00316"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Verifikacija projekta koristi ocjenu, alternativne proračune ili odgovarajući program testiranja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0102",
+      "source_blocks": [
+        "B00318"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Stručnjaci za verifikaciju ne smiju biti autori projekta.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0103",
+      "source_blocks": [
+        "B00320"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj tima za verifikaciju dokumentira metode i rezultate provjere.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0104",
+      "source_blocks": [
+        "B00322"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "supporting_control: Program testiranja prototipa razvija se prema slučaju i odobrava prije primjene.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0105",
+      "source_blocks": [
+        "B00333"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Promjena projekta prolazi kontrolu izvornika, uz pristup relevantnim podlogama.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0106",
+      "source_blocks": [
+        "B00335"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Dostava projektnih izmjena provodi se kao dostava izvornog projekta.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0107",
+      "source_blocks": [
+        "B00348"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "supporting_control: Nabavni opseg uključuje razvijanje i obnavljanje postupaka za korisnika.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0108",
+      "source_blocks": [
+        "B00349"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti izrađuju se ili procjenjuju glede zahtjeva kvalitete.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0109",
+      "source_blocks": [
+        "B00350"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Predviđeno je neovisno ocjenjivanje kvalitete nabavnih dokumenata.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0110",
+      "source_blocks": [
+        "B00351"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "supporting_control: Enconet može djelovati kao ovlaštenik korisnika u nabavnim QA aktivnostima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0111",
+      "source_blocks": [
+        "B00353"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Regulatorni, projektni i kvalitativni zahtjevi prenose se u nabavne dokumente.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0112",
+      "source_blocks": [
+        "B00357"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti moraju biti sukladni odgovarajućim standardima i zahtjevima kvalitete.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0113",
+      "source_blocks": [
+        "B00358"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Ugovorom ili referencom određuju se tehnički zahtjevi, projektni podaci i svojstva naručenog entiteta.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0114",
+      "source_blocks": [
+        "B00359"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Nabavne mjere osiguravaju isporuku sukladnu dokumentima i specifikaciji.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0115",
+      "source_blocks": [
+        "B00363"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti određuju opseg posla isporučitelja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0116",
+      "source_blocks": [
+        "B00364"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Reference u nabavi određuju primjenjive revizije tehničkih zahtjeva.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0117",
+      "source_blocks": [
+        "B00365"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti određuju testove, inspekcije i kriterije prihvaćanja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0118",
+      "source_blocks": [
+        "B00366"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Enconet ima pravo pristupa pogonima i zapisima isporučitelja radi inspekcije i audita.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0119",
+      "source_blocks": [
+        "B00367"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: QA zahtjevi dobavljaču prilagođavaju se naručenom radu, a proširenje programa zahtijeva se nabavnim dokumentima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0120",
+      "source_blocks": [
+        "B00368"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavom se određuje dokumentacija i zapisi koje dobavljač dostavlja na pregled i odobrenje.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0121",
+      "source_blocks": [
+        "B00377",
+        "B00378"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni zahtjevi obuhvaćaju kontroliranu dostavu i raspolaganje zapisima kvalitete.",
+      "quote_count": 2
+    },
+    {
+      "item_id": "NP-0122",
+      "source_blocks": [
+        "B00379",
+        "B00380"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti zahtijevaju izvješćivanje o nesukladnostima i odobrenje njihovog otklanjanja.",
+      "quote_count": 2
+    },
+    {
+      "item_id": "NP-0123",
+      "source_blocks": [
+        "B00381",
+        "B00382"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Primjereni zahtjevi prenose se na podizvođače i podisporučitelje uz pravo pristupa njihovim pogonima i zapisima.",
+      "quote_count": 2
+    },
+    {
+      "item_id": "NP-0124",
+      "source_blocks": [
+        "B00383"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti utvrđuju rokove dostave dokumenata.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0125",
+      "source_blocks": [
+        "B00385"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "candidate_lead: NQAP upućuje na PP-74-01 za nabavu i ocjenjivanje dobavljača; provjeriti dostupnost postupka.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0126",
+      "source_blocks": [
+        "B00389"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Dobavljači se biraju prema vrednovanju sposobnosti, a QA održava odobrenu listu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0127",
+      "source_blocks": [
+        "B00393",
+        "B00394"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Odabir dobavljača može koristiti dosadašnje iskustvo sa zadovoljavajućim proizvodima ili uslugama.",
+      "quote_count": 2
+    },
+    {
+      "item_id": "NP-0128",
+      "source_blocks": [
+        "B00395",
+        "B00396"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Vrednovanje dobavljača koristi postojeće zapise kvalitete i objektivno vrednovane informacije.",
+      "quote_count": 2
+    },
+    {
+      "item_id": "NP-0129",
+      "source_blocks": [
+        "B00397"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Vrednovanje dobavljača uključuje njegov sustav kvalitete.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0130",
+      "source_blocks": [
+        "B00398"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Vrednovanje dobavljača uključuje izabrane uzorke proizvoda.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0131",
+      "source_blocks": [
+        "B00402"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Inspekcije kod dobavljača i testovi nakon isporuke provjeravaju sukladnost s nabavnim zahtjevima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0132",
+      "source_blocks": [
+        "B00404"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Uzorci se po potrebi zadržavaju za dodatno ispitivanje.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0133",
+      "source_blocks": [
+        "B00406"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Sukladnost s nabavnim dokumentima dokumentirano se dokazuje prije ugradnje ili uporabe.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0134",
+      "source_blocks": [
+        "B00417"
+      ],
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Materijali i komponente pod nadzorom Enconeta identificiraju se oznakama ili zapisima o sljedivosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0135",
+      "source_blocks": [
+        "B00419"
+      ],
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Kad fizička identifikacija nije praktična, koristi se proceduralna kontrola.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0136",
+      "source_blocks": [
+        "B00421"
+      ],
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Primjena oznake ne smije narušiti radna svojstva dijela.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0137",
+      "source_blocks": [
+        "B00423"
+      ],
+      "criterion_id": "APP_B_VIII",
+      "statement": "candidate_lead: Za identifikacijske kontrole postoji referenca na postupak nabave PP-74-01.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0138",
+      "source_blocks": [
+        "B00427"
+      ],
+      "criterion_id": "APP_B_XIII",
+      "statement": "supporting_control: Kada je odgovoran za ove aktivnosti, Enconet kontrolira rukovanje, otpremu i skladištenje radi zaštite proizvoda.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0139",
+      "source_blocks": [
+        "B00427"
+      ],
+      "criterion_id": "APP_B_XIII",
+      "statement": "supporting_control: Po potrebi se propisuju i verificiraju posebne mjere rukovanja i zaštitni okolišni uvjeti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0140",
+      "source_blocks": [
+        "B00431"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Održavanje u Enconetovu opsegu mora očuvati izvorno zahtijevanu kvalitetu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0141",
+      "source_blocks": [
+        "B00442"
+      ],
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Proces čiji se rezultat ne može kasnije potpuno verificirati izvodi se kvalificiranim postupkom, opremom i osobljem.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0142",
+      "source_blocks": [
+        "B00444"
+      ],
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Voditelj projekta određuje točke svjedočenja i zaustavljanja procesa.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0143",
+      "source_blocks": [
+        "B00444"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Objektivni dokazi inspekcija koriste se za verifikaciju kriterija prihvatljivosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0144",
+      "source_blocks": [
+        "B00448"
+      ],
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Za specijalne procese traže se trening, postupci, odgovarajući uvjeti i oprema.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0145",
+      "source_blocks": [
+        "B00448"
+      ],
+      "criterion_id": "APP_B_XII",
+      "statement": "supporting_control: Oprema za specijalne procese mora biti ispravna i kalibrirana.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0146",
+      "source_blocks": [
+        "B00450"
+      ],
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Dokument navodi trening i kontrolu vida za izvršitelje vizualne QC kontrole.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0147",
+      "source_blocks": [
+        "B00452"
+      ],
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Prije preuzimanja novih specijalnih procesa moraju se osigurati edukacija, postupci, oprema i prostor.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0148",
+      "source_blocks": [
+        "B00454"
+      ],
+      "criterion_id": "APP_B_IX",
+      "statement": "candidate_lead: Specijalni procesi povezani su s ugovornim postupkom PP-72-01.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0149",
+      "source_blocks": [
+        "B00455"
+      ],
+      "criterion_id": "APP_B_IX",
+      "statement": "candidate_lead: Specijalni procesi upućuju na postupak projektiranja PP-73-01.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0150",
+      "source_blocks": [
+        "B00456"
+      ],
+      "criterion_id": "APP_B_IX",
+      "statement": "candidate_lead: Specijalni procesi upućuju na nabavni postupak PP-74-01, čiju dostupnost treba provjeriti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0151",
+      "source_blocks": [
+        "B00467"
+      ],
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Inspekciju obavlja osoblje koje nije izvodilo pregledavani rad.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0152",
+      "source_blocks": [
+        "B00467"
+      ],
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Inspekcijski kriteriji i verifikacija sukladnosti moraju biti dokumentirani.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0153",
+      "source_blocks": [
+        "B00467"
+      ],
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Kad konačni pregled nije moguć, provodi se praćenje procesa.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0154",
+      "source_blocks": [
+        "B00471"
+      ],
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Dokazi na točkama svjedočenja i zaustavljanja potvrđuju prihvatljivost prije nastavka rada.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0155",
+      "source_blocks": [
+        "B00473"
+      ],
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Inspekcija tijekom rada postrojenja mora slijediti pisane i odobrene postupke.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0156",
+      "source_blocks": [
+        "B00477"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Za ugovorno ili regulatorno tražene testove izrađuje se program i bilježe rezultati.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0157",
+      "source_blocks": [
+        "B00479"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Postupci testiranja propisuju okolišne uvjete, kvalifikaciju osoblja i kalibraciju instrumenata.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0158",
+      "source_blocks": [
+        "B00483"
+      ],
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Mjerna oprema odabire se prema mjernom području, vrsti, točnosti i preciznosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0159",
+      "source_blocks": [
+        "B00485"
+      ],
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Kontrola opreme obuhvaća rukovanje, skladištenje i kalibraciju.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0160",
+      "source_blocks": [
+        "B00485"
+      ],
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Odstupanje opreme traži ponovnu procjenu prijašnjih mjerenja od posljednje kalibracije.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0161",
+      "source_blocks": [
+        "B00487"
+      ],
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Voditelj projekta odgovara za sljedivost rezultata kalibracije prema priznatim standardima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0162",
+      "source_blocks": [
+        "B00489"
+      ],
+      "criterion_id": "APP_B_XII",
+      "statement": "candidate_lead: Program kontrole opreme poziva se na RU-82-05; provjeriti njegove zapise.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0163",
+      "source_blocks": [
+        "B00493"
+      ],
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Oznaka mjerne i ispitne opreme povezuje se s pregledanim entitetom.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0164",
+      "source_blocks": [
+        "B00493"
+      ],
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Kartice i zapisnici prikazuju stanje pregleda i ispitivanja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0165",
+      "source_blocks": [
+        "B00493"
+      ],
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Fizičke kartice ispitivanih sustava i dijelova sprječavaju nepažljivu uporabu.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0166",
+      "source_blocks": [
+        "B00504"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Izvršitelji prepoznaju nesukladnosti i dostavljaju izvješća voditelju projekta ili QA.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0167",
+      "source_blocks": [
+        "B00504"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Nesukladni entiteti identificiraju se, označavaju i izdvajaju do odluke o postupanju.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0168",
+      "source_blocks": [
+        "B00508"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Nesukladnost prolazi inženjersku ocjenu i odobrenje dispozicije prije prihvaćanja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0169",
+      "source_blocks": [
+        "B00510"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: QA analizira nesukladnosti i obavještava direktora glede zahtjeva Part 21; direktor izvješćuje kupca po potrebi.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0170",
+      "source_blocks": [
+        "B00512"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "candidate_lead: Za nesukladnosti se referencira PP-83-01; sama referenca ne potvrđuje izvršenje.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0171",
+      "source_blocks": [
+        "B00523"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Uvjeti koji ugrožavaju kvalitetu popravljaju se, bilježe i rješavaju kroz kontrolu nesukladnosti.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0172",
+      "source_blocks": [
+        "B00525"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Za značajne probleme traži se analiza uzroka radi sprječavanja ponavljanja.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0173",
+      "source_blocks": [
+        "B00527"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "candidate_lead: Popravne i preventivne radnje povezane su s PP-85-01.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0174",
+      "source_blocks": [
+        "B00538"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA zapisi pružaju objektivni dokaz postignute kvalitete.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0175",
+      "source_blocks": [
+        "B00540"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA zapis mora biti potpisan, datiran, čitljiv, potpun i prepoznatljiv prema proizvodu ili usluzi.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0176",
+      "source_blocks": [
+        "B00544"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA zapisi kontrolirano se prikupljaju, identificiraju i arhiviraju.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0177",
+      "source_blocks": [
+        "B00544"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA voditelj uspostavlja sustav i pohranu, a voditelji projekata osiguravaju točnost i obnavljanje podataka.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0178",
+      "source_blocks": [
+        "B00544"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Arhiviranje omogućava pronalaženje i štiti zapise od oštećenja, propadanja i gubitka.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0179",
+      "source_blocks": [
+        "B00546"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Dokumentirani postupak određuje vrijeme čuvanja i raspolaganje zapisima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0180",
+      "source_blocks": [
+        "B00548"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "candidate_lead: Za upravljanje zapisima referencira se PP-42-02.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0181",
+      "source_blocks": [
+        "B00559"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Uspješnost QA programa provjerava se neovisnim auditom prema pisanim postupcima i upitnicima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0182",
+      "source_blocks": [
+        "B00561"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Audit provodi kvalificiran tim bez izravne odgovornosti za ocjenjivani posao.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0183",
+      "source_blocks": [
+        "B00561"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Nalazi audita dostavljaju se rukovodstvu i direktoru.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0184",
+      "source_blocks": [
+        "B00561"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Naknadni audit provjerava i bilježi primjenu i učinkovitost popravnih radnji.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0185",
+      "source_blocks": [
+        "B00563"
+      ],
+      "criterion_id": "APP_B_XVIII",
+      "statement": "candidate_lead: NQAP referencira PP-82-01 za audite.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0186",
+      "source_blocks": [
+        "B00590"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Usporedna tablica standarda deklarirana je informativnom i ne dokazuje izravnu sukladnost.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0187",
+      "source_blocks": [
+        "B00592"
+      ],
+      "criterion_id": "APP_B_XIII",
+      "statement": "candidate_lead: Dokument tvrdi da kriterij XIII nije u dotadašnjem opsegu; candidate; verify criterion mapping.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0188",
+      "source_blocks": [
+        "B00592"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "supporting_control: Za eventualno rukovanje u NEK-u navodi se uporaba njegovih postupaka i razvoj vlastitih postupaka za opsežan dugotrajan rad.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0189",
+      "source_blocks": [
+        "B00603"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Organizacijska shema identificira upravu, QA i područja inženjerskih usluga.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0190",
+      "source_blocks": [
+        "B00605"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Shema prikazuje veze uprave s administracijom, QA i stručnim djelatnostima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0191",
+      "source_blocks": [
+        "B00616"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Funkcionalna shema povezuje QA voditelja s projektnim QA inženjerima i projektnim timovima.",
+      "quote_count": 1
+    },
+    {
+      "item_id": "NP-0192",
+      "source_blocks": [
+        "B00097",
+        "B00099",
+        "B00100",
+        "B00101",
+        "B00102",
+        "B00103",
+        "B00104",
+        "B00105",
+        "B00106",
+        "B00107",
+        "B00108",
+        "B00109",
+        "B00110",
+        "B00111"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Ugovorni pregled navodi moguće regulatorne i stručne izvore; lista sama ne dokazuje primjenu svih obveza.",
+      "quote_count": 14
+    },
+    {
+      "item_id": "NP-0193",
+      "source_blocks": [
+        "B00575",
+        "B00576",
+        "B00577",
+        "B00578",
+        "B00579",
+        "B00580",
+        "B00581",
+        "B00582",
+        "B00583",
+        "B00584",
+        "B00585",
+        "B00586",
+        "B00590"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Informativna tablica povezuje poglavlja programa s kriterijima i standardima; provjeriti stvarne kontrole, ne ocjenjivati sukladnost po tablici.",
+      "quote_count": 13
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00003",
+      "chapter": "NUKLEARNI QA PLAN",
+      "char_start": 21,
+      "char_end": 73,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00005",
+      "chapter": "NUKLEARNI QA PLAN",
+      "char_start": 124,
+      "char_end": 175,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00006",
+      "chapter": "NUKLEARNI QA PLAN",
+      "char_start": 175,
+      "char_end": 226,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00007",
+      "chapter": "NUKLEARNI QA PLAN",
+      "char_start": 226,
+      "char_end": 277,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00009",
+      "chapter": "NUKLEARNI QA PLAN",
+      "char_start": 278,
+      "char_end": 337,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00011",
+      "chapter": "NUKLEARNI QA PLAN",
+      "char_start": 395,
+      "char_end": 474,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00012",
+      "chapter": "NUKLEARNI QA PLAN",
+      "char_start": 474,
+      "char_end": 529,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00016",
+      "chapter": "NUKLEARNI QA PLAN / Periodični pregled",
+      "char_start": 553,
+      "char_end": 598,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00026",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 820,
+      "char_end": 836,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00029",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 838,
+      "char_end": 981,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00031",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1057,
+      "char_end": 1169,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00032",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1169,
+      "char_end": 1234,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00033",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1234,
+      "char_end": 1291,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00034",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1291,
+      "char_end": 1326,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00035",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1326,
+      "char_end": 1351,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00036",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1351,
+      "char_end": 1385,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00037",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1385,
+      "char_end": 1413,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00038",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1413,
+      "char_end": 1474,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00039",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1474,
+      "char_end": 1499,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00040",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1499,
+      "char_end": 1540,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00041",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1540,
+      "char_end": 1570,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00042",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1570,
+      "char_end": 1613,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00043",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1613,
+      "char_end": 1669,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00044",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1669,
+      "char_end": 1705,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00045",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1705,
+      "char_end": 1759,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00046",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1759,
+      "char_end": 1818,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00047",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1818,
+      "char_end": 1872,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00048",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1872,
+      "char_end": 1917,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00049",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1917,
+      "char_end": 1969,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00050",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1969,
+      "char_end": 1994,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00051",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 1994,
+      "char_end": 2039,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00052",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2039,
+      "char_end": 2077,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00053",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2077,
+      "char_end": 2113,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00054",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2113,
+      "char_end": 2159,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00055",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2159,
+      "char_end": 2184,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00056",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2184,
+      "char_end": 2234,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00057",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2234,
+      "char_end": 2288,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00058",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2288,
+      "char_end": 2361,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00059",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2361,
+      "char_end": 2430,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00060",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2430,
+      "char_end": 2480,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00061",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2480,
+      "char_end": 2507,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00062",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2507,
+      "char_end": 2558,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00063",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2558,
+      "char_end": 2595,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00064",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2595,
+      "char_end": 2630,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00065",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2630,
+      "char_end": 2684,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00066",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2684,
+      "char_end": 2719,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00067",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2719,
+      "char_end": 2754,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00068",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2754,
+      "char_end": 2817,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00069",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2817,
+      "char_end": 2880,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00070",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2880,
+      "char_end": 2934,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00071",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2934,
+      "char_end": 2960,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00072",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 2960,
+      "char_end": 3011,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00073",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3011,
+      "char_end": 3058,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00074",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3058,
+      "char_end": 3097,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00075",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3097,
+      "char_end": 3138,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00076",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3138,
+      "char_end": 3180,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00077",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3180,
+      "char_end": 3249,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00078",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3249,
+      "char_end": 3313,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00079",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3313,
+      "char_end": 3345,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00080",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3345,
+      "char_end": 3374,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00081",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3374,
+      "char_end": 3423,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00082",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3423,
+      "char_end": 3467,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00083",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3467,
+      "char_end": 3509,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00085",
+      "chapter": "0    SADRŽAJ I PREGLED REVIZIJA",
+      "char_start": 3510,
+      "char_end": 3714,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00093",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 3747,
+      "char_end": 3956,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00095",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 3957,
+      "char_end": 4529,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00097",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4530,
+      "char_end": 4738,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00099",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4739,
+      "char_end": 4775,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00100",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4775,
+      "char_end": 4793,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00101",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4793,
+      "char_end": 4803,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00102",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4803,
+      "char_end": 4810,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00103",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4810,
+      "char_end": 4817,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00104",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4817,
+      "char_end": 4824,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00105",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4824,
+      "char_end": 4831,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00106",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4831,
+      "char_end": 4837,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00107",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4837,
+      "char_end": 4844,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00108",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4844,
+      "char_end": 4850,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00109",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4850,
+      "char_end": 4857,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00110",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4857,
+      "char_end": 4864,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00111",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4864,
+      "char_end": 4870,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00113",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 4871,
+      "char_end": 5284,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00115",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 5285,
+      "char_end": 5498,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00117",
+      "chapter": "1 UVOD / 1.1 Općenito",
+      "char_start": 5499,
+      "char_end": 5721,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00124",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 5759,
+      "char_end": 5957,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00126",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 5958,
+      "char_end": 6032,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00127",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6032,
+      "char_end": 6059,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00128",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6059,
+      "char_end": 6093,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00129",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6093,
+      "char_end": 6135,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00130",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6135,
+      "char_end": 6177,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00131",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6177,
+      "char_end": 6226,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00132",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6226,
+      "char_end": 6285,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00133",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6285,
+      "char_end": 6328,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00134",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6328,
+      "char_end": 6379,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00135",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6379,
+      "char_end": 6447,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00136",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6447,
+      "char_end": 6474,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00137",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6474,
+      "char_end": 6517,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00139",
+      "chapter": "1 UVOD / 1.2 Područje primjene",
+      "char_start": 6518,
+      "char_end": 6767,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00143",
+      "chapter": "1 UVOD / 1.3 Odgovornost",
+      "char_start": 6788,
+      "char_end": 7090,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00146",
+      "chapter": "1 UVOD / 1.3 Odgovornost",
+      "char_start": 7092,
+      "char_end": 7301,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00148",
+      "chapter": "1 UVOD / 1.3 Odgovornost",
+      "char_start": 7302,
+      "char_end": 7459,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00153",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE",
+      "char_start": 7498,
+      "char_end": 7532,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00157",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 7551,
+      "char_end": 8067,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00159",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 8068,
+      "char_end": 8242,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00161",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 8243,
+      "char_end": 8455,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00163",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 8456,
+      "char_end": 8524,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00165",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 8525,
+      "char_end": 8666,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00166",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 8666,
+      "char_end": 8841,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00167",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 8841,
+      "char_end": 8984,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00168",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 8984,
+      "char_end": 9077,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00170",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 9078,
+      "char_end": 9480,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00172",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 9481,
+      "char_end": 9816,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00174",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 9817,
+      "char_end": 9953,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00176",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.1 Općenito",
+      "char_start": 9954,
+      "char_end": 10215,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00184",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE",
+      "char_start": 10259,
+      "char_end": 10410,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00186",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE",
+      "char_start": 10411,
+      "char_end": 10625,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00190",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.2 Postupci, upute i nacrti",
+      "char_start": 10659,
+      "char_end": 10937,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00192",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.2 Postupci, upute i nacrti",
+      "char_start": 10938,
+      "char_end": 11040,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00194",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.2 Postupci, upute i nacrti",
+      "char_start": 11041,
+      "char_end": 11092,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00198",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.3 Ocjena uprave",
+      "char_start": 11115,
+      "char_end": 11439,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00200",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.3 Ocjena uprave",
+      "char_start": 11440,
+      "char_end": 11701,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00202",
+      "chapter": "2 PROGRAM OSIGURAVANJE KVALITETE / 2.3 Ocjena uprave",
+      "char_start": 11702,
+      "char_end": 12049,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00212",
+      "chapter": "3 ORGANIZACIJA / 3.1 Odgovornosti, ovlaštenja i komunikacije",
+      "char_start": 12123,
+      "char_end": 12308,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00214",
+      "chapter": "3 ORGANIZACIJA / 3.1 Odgovornosti, ovlaštenja i komunikacije",
+      "char_start": 12309,
+      "char_end": 12800,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00216",
+      "chapter": "3 ORGANIZACIJA / 3.1 Odgovornosti, ovlaštenja i komunikacije",
+      "char_start": 12801,
+      "char_end": 13182,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00218",
+      "chapter": "3 ORGANIZACIJA / 3.1 Odgovornosti, ovlaštenja i komunikacije",
+      "char_start": 13183,
+      "char_end": 13427,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00220",
+      "chapter": "3 ORGANIZACIJA / 3.1 Odgovornosti, ovlaštenja i komunikacije",
+      "char_start": 13428,
+      "char_end": 13783,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00222",
+      "chapter": "3 ORGANIZACIJA / 3.1 Odgovornosti, ovlaštenja i komunikacije",
+      "char_start": 13784,
+      "char_end": 14132,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00226",
+      "chapter": "3 ORGANIZACIJA / 3.2 Osoblje i izobrazba",
+      "char_start": 14161,
+      "char_end": 14617,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00228",
+      "chapter": "3 ORGANIZACIJA / 3.2 Osoblje i izobrazba",
+      "char_start": 14618,
+      "char_end": 14676,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00235",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 14701,
+      "char_end": 14803,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00237",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 14804,
+      "char_end": 14921,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00239",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 14922,
+      "char_end": 15146,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00241",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 15147,
+      "char_end": 15179,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00242",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 15179,
+      "char_end": 15219,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00243",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 15219,
+      "char_end": 15250,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00244",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 15250,
+      "char_end": 15311,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00246",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 15312,
+      "char_end": 15415,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00248",
+      "chapter": "3 ORGANIZACIJA",
+      "char_start": 15416,
+      "char_end": 15504,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00259",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.1 Priprema, pregled i odobravanje dokumenata",
+      "char_start": 15593,
+      "char_end": 15818,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00261",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.1 Priprema, pregled i odobravanje dokumenata",
+      "char_start": 15819,
+      "char_end": 15908,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00262",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.1 Priprema, pregled i odobravanje dokumenata",
+      "char_start": 15908,
+      "char_end": 16011,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00263",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.1 Priprema, pregled i odobravanje dokumenata",
+      "char_start": 16011,
+      "char_end": 16123,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00264",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.1 Priprema, pregled i odobravanje dokumenata",
+      "char_start": 16123,
+      "char_end": 16241,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00266",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.1 Priprema, pregled i odobravanje dokumenata",
+      "char_start": 16242,
+      "char_end": 16681,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00268",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.1 Priprema, pregled i odobravanje dokumenata",
+      "char_start": 16682,
+      "char_end": 16732,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00272",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.2 Objava i dostava dokumenata",
+      "char_start": 16769,
+      "char_end": 17046,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00274",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.2 Objava i dostava dokumenata",
+      "char_start": 17047,
+      "char_end": 17168,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00276",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.2 Objava i dostava dokumenata",
+      "char_start": 17169,
+      "char_end": 17370,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00280",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.3 Kontrola promjene dokumenta",
+      "char_start": 17407,
+      "char_end": 17734,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00282",
+      "chapter": "4 UPRAVLJANJE DOKUMENTIMA / 4.3 Kontrola promjene dokumenta",
+      "char_start": 17735,
+      "char_end": 17881,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00293",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 17934,
+      "char_end": 18019,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00295",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 18020,
+      "char_end": 18154,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00296",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 18154,
+      "char_end": 18228,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00297",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 18228,
+      "char_end": 18382,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00298",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 18382,
+      "char_end": 18437,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00300",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 18438,
+      "char_end": 18821,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00302",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 18822,
+      "char_end": 18926,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00304",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 18927,
+      "char_end": 19104,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00306",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.1 Općenito",
+      "char_start": 19105,
+      "char_end": 19163,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00310",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.2 Kontrola projektnih međuveza",
+      "char_start": 19201,
+      "char_end": 19487,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00312",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.2 Kontrola projektnih međuveza",
+      "char_start": 19488,
+      "char_end": 19599,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00316",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.3 Verifikacija projekta",
+      "char_start": 19630,
+      "char_end": 19817,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00318",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.3 Verifikacija projekta",
+      "char_start": 19818,
+      "char_end": 19980,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00320",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.3 Verifikacija projekta",
+      "char_start": 19981,
+      "char_end": 20137,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00322",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.3 Verifikacija projekta",
+      "char_start": 20138,
+      "char_end": 20299,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00333",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.4 Promjene u projektu",
+      "char_start": 20363,
+      "char_end": 20659,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00335",
+      "chapter": "5 UPRAVLJANJE PROJEKTOM / 5.4 Promjene u projektu",
+      "char_start": 20660,
+      "char_end": 20780,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00346",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 20827,
+      "char_end": 20908,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00348",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 20909,
+      "char_end": 20979,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00349",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 20979,
+      "char_end": 21061,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00350",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 21061,
+      "char_end": 21183,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00351",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 21183,
+      "char_end": 21268,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00353",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 21269,
+      "char_end": 21483,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00355",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 21484,
+      "char_end": 21586,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00357",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 21587,
+      "char_end": 21666,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00358",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 21666,
+      "char_end": 21923,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00359",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 21923,
+      "char_end": 22039,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00361",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 22040,
+      "char_end": 22064,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00363",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 22065,
+      "char_end": 22104,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00364",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 22104,
+      "char_end": 22316,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00365",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 22316,
+      "char_end": 22409,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00366",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 22409,
+      "char_end": 22562,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00367",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 22562,
+      "char_end": 22963,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00368",
+      "chapter": "6 KONTROLA NABAVE / 6.1 Općenito",
+      "char_start": 22963,
+      "char_end": 23176,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00377",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23206,
+      "char_end": 23281,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00378",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23281,
+      "char_end": 23316,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00379",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23316,
+      "char_end": 23387,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00380",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23387,
+      "char_end": 23404,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00381",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23404,
+      "char_end": 23475,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00382",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23475,
+      "char_end": 23579,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00383",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23579,
+      "char_end": 23635,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00385",
+      "chapter": "6 KONTROLA NABAVE",
+      "char_start": 23636,
+      "char_end": 23703,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00389",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 23746,
+      "char_end": 23958,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00391",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 23959,
+      "char_end": 24019,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00393",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 24020,
+      "char_end": 24098,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00394",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 24098,
+      "char_end": 24169,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00395",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 24169,
+      "char_end": 24241,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00396",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 24241,
+      "char_end": 24271,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00397",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 24271,
+      "char_end": 24318,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00398",
+      "chapter": "6 KONTROLA NABAVE / 6.2 Vrednovanje i izbor isporučitelja",
+      "char_start": 24318,
+      "char_end": 24361,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00402",
+      "chapter": "6 KONTROLA NABAVE / 6.3 Kontrola naručenih proizvoda i usluga",
+      "char_start": 24408,
+      "char_end": 24612,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00404",
+      "chapter": "6 KONTROLA NABAVE / 6.3 Kontrola naručenih proizvoda i usluga",
+      "char_start": 24613,
+      "char_end": 24687,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00406",
+      "chapter": "6 KONTROLA NABAVE / 6.3 Kontrola naručenih proizvoda i usluga",
+      "char_start": 24688,
+      "char_end": 24828,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00417",
+      "chapter": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI / 7.1 Identifikacija i kontrola materijala, dijelova i komponenti",
+      "char_start": 24953,
+      "char_end": 25259,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00419",
+      "chapter": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI / 7.1 Identifikacija i kontrola materijala, dijelova i komponenti",
+      "char_start": 25260,
+      "char_end": 25404,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00421",
+      "chapter": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI / 7.1 Identifikacija i kontrola materijala, dijelova i komponenti",
+      "char_start": 25405,
+      "char_end": 25502,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00423",
+      "chapter": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI / 7.1 Identifikacija i kontrola materijala, dijelova i komponenti",
+      "char_start": 25503,
+      "char_end": 25569,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00427",
+      "chapter": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI / 7.2 Rukovanje, skladištenje i otprema",
+      "char_start": 25612,
+      "char_end": 25972,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00431",
+      "chapter": "7 KONTROLA MATERIJALA, DIJELOVA I KOMPONENTI / 7.3 Održavanje",
+      "char_start": 25992,
+      "char_end": 26180,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00442",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.1 Upravljanje procesom",
+      "char_start": 26244,
+      "char_end": 26493,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00444",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.1 Upravljanje procesom",
+      "char_start": 26494,
+      "char_end": 26776,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00448",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.2 Specijalni procesi",
+      "char_start": 26804,
+      "char_end": 27059,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00450",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.2 Specijalni procesi",
+      "char_start": 27060,
+      "char_end": 27386,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00452",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.2 Specijalni procesi",
+      "char_start": 27387,
+      "char_end": 27644,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00454",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.2 Specijalni procesi",
+      "char_start": 27645,
+      "char_end": 27714,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00455",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.2 Specijalni procesi",
+      "char_start": 27714,
+      "char_end": 27774,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00456",
+      "chapter": "8 UPRAVLJANJE PROCESOM / 8.2 Specijalni procesi",
+      "char_start": 27774,
+      "char_end": 27842,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00467",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.1 Program inspekcije",
+      "char_start": 27907,
+      "char_end": 28361,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00469",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.1 Program inspekcije",
+      "char_start": 28362,
+      "char_end": 28385,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00471",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.1 Program inspekcije",
+      "char_start": 28386,
+      "char_end": 28710,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00473",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.1 Program inspekcije",
+      "char_start": 28711,
+      "char_end": 28852,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00477",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.2 Program testiranja",
+      "char_start": 28880,
+      "char_end": 29006,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00479",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.2 Program testiranja",
+      "char_start": 29007,
+      "char_end": 29222,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00483",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.3 Kalibracija i kontrola opreme za mjerenje i testiranje",
+      "char_start": 29286,
+      "char_end": 29438,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00485",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.3 Kalibracija i kontrola opreme za mjerenje i testiranje",
+      "char_start": 29439,
+      "char_end": 29775,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00487",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.3 Kalibracija i kontrola opreme za mjerenje i testiranje",
+      "char_start": 29776,
+      "char_end": 29927,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00489",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.3 Kalibracija i kontrola opreme za mjerenje i testiranje",
+      "char_start": 29928,
+      "char_end": 29997,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00493",
+      "chapter": "9 INSPEKCIJA I TESTIRANJE / 9.4 Identifikacija stanja inspekcije, testa i rada",
+      "char_start": 30053,
+      "char_end": 30530,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00504",
+      "chapter": "10 KONTROLA NESUKLADNOSTI / 10.1 Općenito",
+      "char_start": 30586,
+      "char_end": 30960,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00508",
+      "chapter": "10 KONTROLA NESUKLADNOSTI / 10.2 Ocjena i rješavanje nesukladnosti",
+      "char_start": 31004,
+      "char_end": 31282,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00510",
+      "chapter": "10 KONTROLA NESUKLADNOSTI / 10.2 Ocjena i rješavanje nesukladnosti",
+      "char_start": 31283,
+      "char_end": 31478,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00512",
+      "chapter": "10 KONTROLA NESUKLADNOSTI / 10.2 Ocjena i rješavanje nesukladnosti",
+      "char_start": 31479,
+      "char_end": 31540,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00523",
+      "chapter": "11 POPRAVNE RADNJE / 11.1 Popravne radnje",
+      "char_start": 31596,
+      "char_end": 31737,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00525",
+      "chapter": "11 POPRAVNE RADNJE / 11.1 Popravne radnje",
+      "char_start": 31738,
+      "char_end": 31896,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00527",
+      "chapter": "11 POPRAVNE RADNJE / 11.1 Popravne radnje",
+      "char_start": 31897,
+      "char_end": 31953,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00538",
+      "chapter": "12 QA ZAPISI / 12.1 Priprema QA zapisa",
+      "char_start": 32006,
+      "char_end": 32094,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00540",
+      "chapter": "12 QA ZAPISI / 12.1 Priprema QA zapisa",
+      "char_start": 32095,
+      "char_end": 32284,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00544",
+      "chapter": "12 QA ZAPISI / 12.2 Prikupljanje, arhiviranje i čuvanje QA zapisa",
+      "char_start": 32340,
+      "char_end": 32801,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00546",
+      "chapter": "12 QA ZAPISI / 12.2 Prikupljanje, arhiviranje i čuvanje QA zapisa",
+      "char_start": 32802,
+      "char_end": 33014,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00548",
+      "chapter": "12 QA ZAPISI / 12.2 Prikupljanje, arhiviranje i čuvanje QA zapisa",
+      "char_start": 33015,
+      "char_end": 33062,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00559",
+      "chapter": "13 NEZAVISNO OCJENJIVANJE KVALITETE / 13.1 Općenito",
+      "char_start": 33128,
+      "char_end": 33318,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00561",
+      "chapter": "13 NEZAVISNO OCJENJIVANJE KVALITETE / 13.1 Općenito",
+      "char_start": 33319,
+      "char_end": 33732,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00563",
+      "chapter": "13 NEZAVISNO OCJENJIVANJE KVALITETE / 13.1 Općenito",
+      "char_start": 33733,
+      "char_end": 33766,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00572",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 33839,
+      "char_end": 33935,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00574",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34033,
+      "char_end": 34078,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00575",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34078,
+      "char_end": 34148,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00576",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34148,
+      "char_end": 34214,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00577",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34214,
+      "char_end": 34281,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00578",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34281,
+      "char_end": 34338,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00579",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34338,
+      "char_end": 34386,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00580",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34386,
+      "char_end": 34472,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00581",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34472,
+      "char_end": 34527,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00582",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34527,
+      "char_end": 34600,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00583",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34600,
+      "char_end": 34669,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00584",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34669,
+      "char_end": 34721,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00585",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34721,
+      "char_end": 34772,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00586",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34772,
+      "char_end": 34849,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00588",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 34850,
+      "char_end": 35064,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00590",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 35065,
+      "char_end": 35465,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00592",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 35466,
+      "char_end": 36174,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00596",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 36180,
+      "char_end": 36217,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00598",
+      "chapter": "14 PRILOZI / 14.1 Usporedba normi",
+      "char_start": 36218,
+      "char_end": 36237,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00603",
+      "chapter": "14 PRILOZI / 14.2 Organizacijska shema",
+      "char_start": 36269,
+      "char_end": 36645,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00605",
+      "chapter": "14 PRILOZI / 14.2 Organizacijska shema",
+      "char_start": 36646,
+      "char_end": 36734,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00616",
+      "chapter": "14 PRILOZI / 14.3 Funkcionalna shema",
+      "char_start": 36812,
+      "char_end": 37535,
+      "disposition": "extracted_control_or_lead",
+      "reason": "Semantically mapped; exact quotes in generated JSON"
+    },
+    {
+      "block_id": "B00618",
+      "chapter": "14 PRILOZI / 14.3 Funkcionalna shema",
+      "char_start": 37540,
+      "char_end": 37699,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00620",
+      "chapter": "14 PRILOZI / 14.3 Funkcionalna shema",
+      "char_start": 37700,
+      "char_end": 37708,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00621",
+      "chapter": "14 PRILOZI / 14.3 Funkcionalna shema",
+      "char_start": 37708,
+      "char_end": 37730,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    },
+    {
+      "block_id": "B00622",
+      "chapter": "14 PRILOZI / 14.3 Funkcionalna shema",
+      "char_start": 37730,
+      "char_end": 37794,
+      "disposition": "reviewed_context_only",
+      "reason": "Read in both passes; navigation, metadata, formatting or contextual introduction without a separate additional control claim"
+    }
+  ]
+}

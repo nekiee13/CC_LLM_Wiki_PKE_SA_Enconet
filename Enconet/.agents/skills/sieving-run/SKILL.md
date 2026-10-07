@@ -19,3 +19,15 @@ description: Operate controlled RULE or DOCUMENT sieving generations, including 
 On failure, preserve run and source evidence, report failed/not-run checks, and do not fall back
 to unfiltered output. Deposit new operating lessons here when prompt decisions expose reusable
 run-discipline rules.
+
+## V3 operating lesson - 7 October 2026
+
+Optional evidence context must survive validation, import and retrieval. Check
+the context table and use the tested importer before a v3 run. Missing source
+anchors stay missing; never invent a project or contract to pass validation.
+Separate keyword leads, approved calibration examples and real source crumbs.
+An isolated engineering round-trip is not an independent semantic recall test.
+For full vendor sieving, read every source chapter for direct controls and
+quality intent, including blocks with no keyword hit. Keep source-supported
+indirect clues, exact quotations and same-document chapter links. Do not use
+the size of a golden sample as a crumb quota.
