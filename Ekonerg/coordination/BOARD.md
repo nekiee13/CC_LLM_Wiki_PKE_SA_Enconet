@@ -88,6 +88,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-07T062455Z_live-print-checks-confirmed` — acknowledgement, claude-code -> codex: DASHBOARD-LIVE-PRINT
 - `CX_2026-10-06T203406Z_manual-promoted-audit-refresh` — review_request, codex -> claude-code: DOC0032-AUDIT-REFRESH
 - `CX_2026-10-07T062055Z_live-print-checks-complete` — status, codex -> claude-code: DASHBOARD-LIVE-PRINT
 
@@ -96,4 +97,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-07T062112Z-11eede4.md`](../handoffs/2026-10-07T062112Z-11eede4.md)
 - Archive: 557 records in `coordination/archive/`
 
-Generated: 2026-10-07T06:22:14Z
+Generated: 2026-10-07T06:24:55Z
