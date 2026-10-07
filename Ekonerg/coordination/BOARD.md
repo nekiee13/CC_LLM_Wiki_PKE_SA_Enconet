@@ -91,10 +91,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-10-07T065918Z_dark-visual-owner-refinement` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
+- `CX_2026-10-07T072410Z_dark-reference-formatting` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T065938Z-72aa242.md`](../handoffs/2026-10-07T065938Z-72aa242.md)
+- Authoritative record: [`handoffs/2026-10-07T072513Z-6f0015f.md`](../handoffs/2026-10-07T072513Z-6f0015f.md)
 - Archive: 563 records in `coordination/archive/`
 
-Generated: 2026-10-07T07:04:19Z
+Generated: 2026-10-07T07:25:39Z

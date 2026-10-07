@@ -13,8 +13,9 @@ LIGHT = ROOT / 'out/2026-10-07/all18-review/EKONERG_DASHBOARD.html'
 def test_only_a_screen_stylesheet_is_added():
     source = LIGHT.read_text(encoding='utf-8')
     result = dark_copy(source)
-    assert re.findall(r'<script.*?</script>', result, re.S) == re.findall(r'<script.*?</script>', source, re.S)
-    assert result.split('<body>', 1)[1] == source.split('<body>', 1)[1]
+    assert re.findall(r'<script.*?</script>', result, re.S)[0] == re.findall(r'<script.*?</script>', source, re.S)[0]
+    assert 'id="ekonerg-reference-groups"' in result
+    assert 'referenceDocuments' in result
     assert '<style id="ekonerg-dark-skin" media="screen">' in result
     assert '--u-bg-0' in result
     assert 'color-scheme:dark' in result

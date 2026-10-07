@@ -1,7 +1,8 @@
 """Create a separate, standalone dark presentation of a verified light snapshot.
 
-Only a screen stylesheet is added. Body, JavaScript, audit data and print styles
-are preserved verbatim; the source is never written. UMBRA-inspired, not a claim
+Adds screen CSS and reference-list presentation grouping. The original audit
+JavaScript, data and print CSS are preserved; the source is never written.
+UMBRA-inspired, not a claim
 of strict draft-system conformance (offline fonts and audit-specific components).
 """
 from __future__ import annotations
@@ -12,6 +13,7 @@ import json
 from pathlib import Path
 
 STYLE = Path(__file__).with_name('dashboard_dark.css')
+REFERENCE_GROUPS = Path(__file__).with_name('dashboard_reference_groups.js')
 
 
 def dark_copy(source: str) -> str:
@@ -20,8 +22,10 @@ def dark_copy(source: str) -> str:
     if source.count('</head>') != 1:
         raise ValueError('Expected one head in the source dashboard')
     css = STYLE.read_text(encoding='utf-8')
-    return source.replace('</head>', '<style id="ekonerg-dark-skin" media="screen">\n'
-                          + css + '\n</style>\n</head>', 1)
+    result = source.replace('</head>', '<style id="ekonerg-dark-skin" media="screen">\n'
+                            + css + '\n</style>\n</head>', 1)
+    return result.replace('</body>', '<script id="ekonerg-reference-groups">\n'
+                          + REFERENCE_GROUPS.read_text(encoding='utf-8') + '\n</script>\n</body>', 1)
 
 
 def build(source: Path, output: Path) -> dict:
@@ -39,7 +43,7 @@ def build(source: Path, output: Path) -> dict:
     return {'source': str(source), 'source_sha256': hashlib.sha256(before).hexdigest(),
             'output': str(output), 'dark_sha256': hashlib.sha256(result).hexdigest(),
             'stylesheet_sha256': hashlib.sha256(STYLE.read_bytes()).hexdigest(),
-            'scope': 'Screen-only CSS overlay; original body, script and print CSS unchanged.'}
+            'scope': 'Dark CSS plus reference-list presentation; original audit script and data unchanged.'}
 
 
 def main():
