@@ -317,10 +317,11 @@ and ADRs are the records.
 - `CX_2026-10-07T165416Z_v3-active-first-real-vendor-run` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 - `CX_2026-10-07T173216Z_quality-manual-full-run` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 - `CX_2026-10-07T182133Z_document-record-training-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
+- `CX_2026-10-07T190737Z_contract-design-audit-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T182130Z-139c859.md`](../handoffs/2026-10-07T182130Z-139c859.md)
+- Authoritative record: [`handoffs/2026-10-07T190734Z-d99bca6.md`](../handoffs/2026-10-07T190734Z-d99bca6.md)
 - Archive: 758 records in `coordination/archive/`
 
-Generated: 2026-10-07T18:21:33Z
+Generated: 2026-10-07T19:07:37Z

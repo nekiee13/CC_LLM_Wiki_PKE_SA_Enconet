@@ -3,9 +3,9 @@
 On 7 October 2026 the owner authorized archiving and resetting the previous
 audit while preserving incoming documents. Archive and reset are complete.
 
-- Phase: chunked. G1 approved; G2-G7 pending.
+- phase: **chunked**. G1 approved; G2-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
-  no old evidence or scores inherited; 886 new live vendor crumbs, no ratings yet.
+  no old evidence or scores inherited; 1,170 new live vendor crumbs, no ratings yet.
 - Incoming: 26 vendor Markdown documents and 7 regulatory Markdown documents.
 - Three other files are preserved but excluded from intake: `.gitkeep`,
   `desktop.ini`, and the owner's conversion-instruction note.
@@ -31,16 +31,20 @@ Owner approved the [G1 source basis](../docs/SOURCE_BASIS_APPROVED_20261007.md),
 including NQA-1:2015, the Enconet-only boundary and Croatian reports.
 Full keyword recall is complete: 4,183 vendor passage leads (not automatically accepted crumbs)
 and 2,992 regulatory/supporting leads across all 33 sources. Semantic review
-is complete for the QA plan, quality manual and three procedures; 21 vendor
+is complete for the QA plan, quality manual and six procedures; 18 vendor
 documents remain.
 The owner approved the 20 expected golden examples. The v3 context-storage
 gap is fixed: 23 regression tests passed and all 20 examples round-tripped on
 an isolated database copy with exact chapter links. That check was diagnostic;
-the five real runs now contain 886 vendor crumbs with 1,372 exact quote links.
+the eight real runs now contain 1,170 vendor crumbs with 1,907 exact quote links.
 See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md).
 
-Next: continue full vendor sieving with contract/marketing, design and audit
-procedures. Five of 26 vendor documents are complete; 21 remain.
+## Next action
+
+Continue full vendor sieving with nonconforming-product DOC-0010,
+corrective/preventive-action DOC-0011 and risk DOC-0012 procedures.
+Eight of 26 vendor documents are complete; 18 remain. The owner's proceed
+authorizes resuming chunked; no rollback or automatic phase advance.
 No further prompt approval is needed
 to continue the confirmed scope. Supporting
 ASME Parts 2-4 retain flagged long converted sections for review before use.
@@ -48,5 +52,6 @@ See [chapter ingestion record](../docs/CHAPTER_INGESTION_20261007.md).
 See [real sieving status and collected crumbs](../docs/FULL_VENDOR_SIEVING_STATUS_20261007.md).
 See [quality-manual run and current total](../docs/QUALITY_MANUAL_SIEVING_20261007.md).
 See [three-procedure batch and latest total](../docs/PROCEDURES_BATCH_20261007.md).
+See [contract, design and audit batch and current total](../docs/CONTRACT_DESIGN_AUDIT_BATCH_20261007.md).
 
 See [reset record](../docs/ENCONET_RESET_20261007.md).

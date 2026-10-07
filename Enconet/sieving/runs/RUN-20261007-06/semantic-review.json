@@ -1,0 +1,2159 @@
+{
+  "method": "Codex direct-control and quality-intent full-source review; no automatic keyword acceptance",
+  "source_sha256": "a19254901191846c57623c71c7a961925e2667d9f37ccc83dd4ad13ceb0f1d5d",
+  "content_blocks_reviewed": 178,
+  "counts": {
+    "items": 84,
+    "quotes": 131,
+    "direct": 58,
+    "supporting": 24,
+    "leads": 2
+  },
+  "decisions": [
+    {
+      "blocks": [
+        "B00005",
+        "B00007",
+        "B00008"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Postupak je identificiran oznakom PP-72-01, revizijom 5 i datumom objave.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00011",
+        "B00013",
+        "B00014",
+        "B00015"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Navedeni su priprema, dva pregleda i odobrenje postupka s imenima, ulogama i datumima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00019"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Predviđena je evidencija periodičnog pregleda; prazna tablica ne potvrđuje provedeni pregled.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00051"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Postupak uređuje odgovornosti kroz upit, ponudu, ugovor, promjene i reklamacije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00055"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Primjena obuhvaća sve zahtjeve kojima se pokreće ugovorni odnos.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00059",
+        "B00060",
+        "B00062",
+        "B00063",
+        "B00065",
+        "B00066",
+        "B00068"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Reference upućuju na ISO, Priručnik, IAEA i Appendix B; sam popis nije dokaz ispunjenja.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00078"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor odobrava ponude, ugovore i njihove promjene te odluke o reklamacijama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00078"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Direktor odgovara za ugovorno definiranje zahtjeva kvalitete i primjene SUK-a.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00078"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Direktor odobrava rješavanje reklamacija i potrebne popravne i preventivne radnje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00080"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj projekta prenosi sve zahtjeve za proizvod jednoznačno u ugovor ili narudžbu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00080"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj projekta pregledava ugovor, ocjenjuje zahtjeve i provodi odobrene promjene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00080"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Voditelj projekta održava zapise o ocjeni zahtjeva i provedbi ugovornih promjena.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00080"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Voditelj projekta odgovara za reklamacije i povezane popravne i preventivne radnje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00082"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Komercijalno-financijski voditelj ima definiranu ulogu u pregledu ponude i ugovora.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00082"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Komercijalno-financijski voditelj vodi Knjigu reklamacija.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00084"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Pravna služba provjerava sukladnost ponude i ugovora sa zakonima i propisima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00086"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: QA sudjeluje u utvrđivanju ugovornih zahtjeva kvalitete.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00086"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: QA koordinira i nadzire reklamacije te potvrđuje provedene popravne i preventivne radnje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00088"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Administrator urudžbira, upisuje i dostavlja dokumente prema važećim postupcima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00094",
+        "B00096"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Proces obuhvaća komunikaciju, definiranje zahtjeva, ugovaranje, promjene i reklamacije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00104",
+        "B00108"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Predviđeno je prikupljanje povratnih informacija anketom OB-OZK-037.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00110",
+        "B00112"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Neizravno praćenje uključuje analizu broja, učestalosti, uzroka i troškova reklamacija.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Informacije o zadovoljstvu kupaca koriste se za poboljšanje procesa i proizvoda.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00122",
+        "B00124",
+        "B00126"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Određen je tok informacija od voditelja projekata preko KFP-a do odluka direktora.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Analize zadovoljstva ulaz su u direktorov pregled SUK-a i odluke o poboljšanju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00130"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Detalji praćenja zadovoljstva upućuju na RU-82-01 za daljnju provjeru.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00136",
+        "B00138",
+        "B00141"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Komunikacija s kupcem obuhvaća usuglašavanje ponude, ugovora i dodataka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00138",
+        "B00142"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Komunikacija obuhvaća povratne informacije, reklamacije i prijedloge poboljšanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00144"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Ugovor definira ovlaštene osobe za komunikaciju s kupcem.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00148"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor pregledava početne zahtjeve i imenuje voditelja projekta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00148"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Dokumentacija i informacije kupca predaju se voditelju za utvrđivanje zahtjeva i ponudu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00150"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Usmene zahtjeve voditelj mora evidentirati i dobiti potvrdu kupca prije prihvaćanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00152"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj izrađuje tehničku ponudu i s kupcem razjašnjava nedostatne zahtjeve.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00156"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Pravni pregled ponude uključuje poštivanje zakona i propisa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00158"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: QA pregledava i parafira ponudu sa stanovišta zahtjeva kvalitete.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00162"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Nakon pregleda voditelj dopunjava ponudu i dodjeljuje joj IOD.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00164"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ponuda propisuje opis i opseg posla te standarde, specifikacije i ostale uvjete.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00164"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Ponuda uključuje identitet kupca, broj povezan s upitom, datum i rok važenja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Nemogućnost potpune izvedbe tehničkog ili QA zahtjeva mora biti izričito navedena u ponudi.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00168",
+        "B00169"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor potpisom potvrđuje zahtjeve kupca, uključujući radnje nakon isporuke.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00168",
+        "B00170"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Odobrenje ponude obuhvaća zahtjeve nužne za namjenu i kada ih kupac nije naveo.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00168",
+        "B00171"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor potvrđuje sukladnost ponude sa zakonima i propisima za proizvod.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00173"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Dostavlja se odobrena potpisana ponuda; primjerak se urudžbira u GPD i predaje nositelju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00173"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Primjerak ponude čuva se kao kontrolirani dokument-zapis.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00175"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Novi zahtjevi i promjene ponude obrađuju se aneksom po postupku početne ponude.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00179",
+        "B00180"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Prije ugovorne obveze provjerava se jesu li svi zahtjevi jasno preneseni u ugovor.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00179",
+        "B00181"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Prije prihvaćanja ugovora moraju se razriješiti razlike prema ponudi.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00179",
+        "B00182"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Prije obveze isporuke mora se potvrditi sposobnost Enconeta da ispuni zahtjeve.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00186"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj pregledava cijelu ugovornu dokumentaciju i bilježi tehničku ocjenu u OB-OZP-034.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00188"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Pregled uvjeta isporuke, cijene i plaćanja bilježi KFP u rubrici II.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00190"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Pravna ocjena zakonskih i regulatornih zahtjeva bilježi se u rubrici III.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00192"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: QA ocjenjuje ugovorne zahtjeve kvalitete u rubrici IV obrasca.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00194"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Promjena zahtjeva traži izmjenu dokumentacije i obavještavanje odgovarajućeg osoblja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00196"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ocjena se potpisuje i uz ponudu i uz ugovor radi ponovne provjere mogućih promjena.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00196"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Obrazac povezuje upit, ponudu, oznaku projekta GIP i ugovor za identifikaciju dokumenata.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00198"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj po pregledima dorađuje ugovor, prema potrebi u dogovoru s kupcem.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00198"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Voditelj dodjeljuje konačnom ugovornom dokumentu IOD.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00200"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor pregledava zapise i konačni ugovor te potpisom potvrđuje završeno usuglašavanje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00202"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Potpisani ugovor dostavlja se kupcu, upisuje u GPD i predaje voditelju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00204"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Rezultati ocjene zahtjeva i nastale radnje vode se kao zapisi kvalitete na OB-OZP-034.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00208"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Promjene ugovora traže pisanu suglasnost svih strana i upoznavanje s posljedicama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00212"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Voditelj projekta odgovara za provedbu usuglašenih i odobrenih promjena.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00214"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Aneks ili novi ugovor obrađuje se kao svaki drugi ugovor.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00216"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Dokumentacija usuglašavanja i aneks ili novi ugovor čuvaju se kao zapisi kvalitete.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00220"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "supporting_control: Reklamacija opisuje odstupanje; primatelj prikuplja podatke o problemu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00222"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Reklamacija se zapisuje u OB-REK-014 i direktor određuje nositelja rješavanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00224"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Nositelj dodjeljuje IOD, pregledava reklamaciju i utvrđuje popravnu radnju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00224",
+        "B00227"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Pri rješavanju reklamacije traži se sprečavanje mogućih šteta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00230"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Daljnje aktivnosti slijede definirani način rješavanja popravne radnje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00232"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Nositelj može predložiti preventivnu radnju s rokom radi sprečavanja ponavljanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00234"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Direktor odobrava preventivnu radnju nakon usuglašavanja s QA i stručnim osobama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00236"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: QA potvrđuje provedbu traženih radnji i zaključuje reklamaciju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00238"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: QA prati status reklamacija i izvješćuje direktora o analizi i rezultatima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00240"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: KFP vodi Knjigu reklamacija na OB-KRE-029.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00242"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Reklamacije ulaze u direktorovu ocjenu QA sustava i odluke o unapređenju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00244"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Reklamacije i pripadajuća dokumentacija čuvaju se kao zapisi kvalitete.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00259"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Dijagram propisuje povrat na doradu ako pregled ponude ili ocjena ugovora nije prihvaćen.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00278",
+        "B00279",
+        "B00280",
+        "B00282",
+        "B00284",
+        "B00286",
+        "B00288",
+        "B00290"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Prazan obrazac ocjene povezuje projekt, upit, ponudu, GIP i ugovor; nije provedeni zapis.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00292",
+        "B00293",
+        "B00294",
+        "B00295"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Obrazac zahtijeva potvrdu definiranih zahtjeva, razriješenih razlika i sposobnosti izvedbe.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00310"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Obrazac predviđa zaseban potpis i datum za ponudu i ugovor.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00319"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Obrazac predviđa QA potpise i datume uz ponudu i ugovor.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00325",
+        "B00327",
+        "B00328",
+        "B00336"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Obrazac reklamacije predviđa IOD, reviziju, datum i poveznicu na ugovor.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00346",
+        "B00348",
+        "B00352",
+        "B00354",
+        "B00356",
+        "B00360"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Predložak reklamacije predviđa nositelja, popravne i preventivne uloge, rok, odobrenje i QA zaključak.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00366",
+        "B00368",
+        "B00369",
+        "B00371"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Knjiga reklamacija predviđa identitet dokumenta, datum, status, pripremu i odobrenje.",
+      "item_type": "control"
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00001",
+      "start": 0,
+      "end": 15,
+      "heading_navigation": "",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00005",
+      "start": 59,
+      "end": 118,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00007",
+      "start": 177,
+      "end": 236,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00008",
+      "start": 236,
+      "end": 295,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00009",
+      "start": 295,
+      "end": 355,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00011",
+      "start": 356,
+      "end": 431,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00013",
+      "start": 507,
+      "end": 585,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00014",
+      "start": 585,
+      "end": 678,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00015",
+      "start": 678,
+      "end": 756,
+      "heading_navigation": "PROCES MARKETINGA, UGOVARANJA I PRODAJE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00019",
+      "start": 780,
+      "end": 825,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00025",
+      "start": 1013,
+      "end": 1061,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00027",
+      "start": 1113,
+      "end": 1176,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00031",
+      "start": 1188,
+      "end": 1300,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00033",
+      "start": 1301,
+      "end": 1398,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00035",
+      "start": 1399,
+      "end": 1505,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00037",
+      "start": 1506,
+      "end": 1607,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00039",
+      "start": 1608,
+      "end": 1709,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00041",
+      "start": 1710,
+      "end": 1817,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00042",
+      "start": 1817,
+      "end": 2476,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00044",
+      "start": 2477,
+      "end": 2588,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00045",
+      "start": 2588,
+      "end": 2931,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00047",
+      "start": 2932,
+      "end": 3165,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00051",
+      "start": 3179,
+      "end": 3447,
+      "heading_navigation": "1. SVRHA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00055",
+      "start": 3473,
+      "end": 3547,
+      "heading_navigation": "2. PODRUČJE PRIMJENE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00059",
+      "start": 3565,
+      "end": 3589,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00060",
+      "start": 3589,
+      "end": 3662,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00062",
+      "start": 3663,
+      "end": 3699,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00063",
+      "start": 3699,
+      "end": 3729,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00065",
+      "start": 3730,
+      "end": 3806,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00066",
+      "start": 3806,
+      "end": 3844,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00068",
+      "start": 3845,
+      "end": 3900,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00072",
+      "start": 3929,
+      "end": 4461,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00074",
+      "start": 4462,
+      "end": 4697,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00078",
+      "start": 4718,
+      "end": 5163,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00080",
+      "start": 5164,
+      "end": 5751,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00082",
+      "start": 5752,
+      "end": 6165,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00084",
+      "start": 6166,
+      "end": 6322,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00086",
+      "start": 6323,
+      "end": 6538,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00088",
+      "start": 6539,
+      "end": 6638,
+      "heading_navigation": "5. ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00094",
+      "start": 6704,
+      "end": 6816,
+      "heading_navigation": "6.1 Proces marketinga, ugovaranja i prodaje",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00096",
+      "start": 6817,
+      "end": 7038,
+      "heading_navigation": "6.1 Proces marketinga, ugovaranja i prodaje",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00098",
+      "start": 7039,
+      "end": 7280,
+      "heading_navigation": "6.1 Proces marketinga, ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00102",
+      "start": 7333,
+      "end": 7593,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00104",
+      "start": 7594,
+      "end": 7738,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00106",
+      "start": 7739,
+      "end": 7763,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00108",
+      "start": 7764,
+      "end": 7994,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00110",
+      "start": 7995,
+      "end": 8287,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00112",
+      "start": 8288,
+      "end": 8355,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00113",
+      "start": 8355,
+      "end": 8383,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00114",
+      "start": 8383,
+      "end": 8411,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00115",
+      "start": 8411,
+      "end": 8452,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00116",
+      "start": 8452,
+      "end": 8501,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00118",
+      "start": 8502,
+      "end": 8699,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00120",
+      "start": 8700,
+      "end": 8909,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00122",
+      "start": 8910,
+      "end": 9044,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00124",
+      "start": 9045,
+      "end": 9163,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00126",
+      "start": 9164,
+      "end": 9267,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00128",
+      "start": 9268,
+      "end": 9529,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00130",
+      "start": 9530,
+      "end": 9702,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00132",
+      "start": 9703,
+      "end": 9942,
+      "heading_navigation": "6.2      Praćenje tržišta i zadovoljstva kupaca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00136",
+      "start": 9974,
+      "end": 10225,
+      "heading_navigation": "6.3 Komunikacija s kupcem",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00138",
+      "start": 10226,
+      "end": 10554,
+      "heading_navigation": "6.3 Komunikacija s kupcem",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00140",
+      "start": 10555,
+      "end": 10593,
+      "heading_navigation": "6.3 Komunikacija s kupcem",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00141",
+      "start": 10593,
+      "end": 10697,
+      "heading_navigation": "6.3 Komunikacija s kupcem",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00142",
+      "start": 10697,
+      "end": 10820,
+      "heading_navigation": "6.3 Komunikacija s kupcem",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00144",
+      "start": 10821,
+      "end": 11139,
+      "heading_navigation": "6.3 Komunikacija s kupcem",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00148",
+      "start": 11198,
+      "end": 11662,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00150",
+      "start": 11663,
+      "end": 11851,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00152",
+      "start": 11852,
+      "end": 12118,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00154",
+      "start": 12119,
+      "end": 12230,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00156",
+      "start": 12231,
+      "end": 12417,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00158",
+      "start": 12418,
+      "end": 12542,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00160",
+      "start": 12543,
+      "end": 12782,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00162",
+      "start": 12783,
+      "end": 12902,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00164",
+      "start": 12903,
+      "end": 13243,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00166",
+      "start": 13244,
+      "end": 13544,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00168",
+      "start": 13545,
+      "end": 13639,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00169",
+      "start": 13639,
+      "end": 13725,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00170",
+      "start": 13725,
+      "end": 13807,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00171",
+      "start": 13807,
+      "end": 13879,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00173",
+      "start": 13880,
+      "end": 14143,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00175",
+      "start": 14144,
+      "end": 14434,
+      "heading_navigation": "6.4 Utvrđivanje zahtjeva za proizvod i izrada ponude",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00179",
+      "start": 14500,
+      "end": 14782,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00180",
+      "start": 14782,
+      "end": 14853,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00181",
+      "start": 14853,
+      "end": 14954,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00182",
+      "start": 14954,
+      "end": 15003,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00184",
+      "start": 15004,
+      "end": 15240,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00186",
+      "start": 15241,
+      "end": 15510,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00188",
+      "start": 15511,
+      "end": 15700,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00190",
+      "start": 15701,
+      "end": 15919,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00192",
+      "start": 15920,
+      "end": 16050,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00194",
+      "start": 16051,
+      "end": 16227,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00196",
+      "start": 16228,
+      "end": 16765,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00198",
+      "start": 16766,
+      "end": 16955,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00200",
+      "start": 16956,
+      "end": 17162,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00202",
+      "start": 17163,
+      "end": 17382,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00204",
+      "start": 17383,
+      "end": 17525,
+      "heading_navigation": "6.5 Ocjena zahtjeva za proizvod i sklapanje ugovora/narudžbe",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00208",
+      "start": 17560,
+      "end": 17840,
+      "heading_navigation": "6.6 Promjene i dopune ugovora",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00210",
+      "start": 17841,
+      "end": 18082,
+      "heading_navigation": "6.6 Promjene i dopune ugovora",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00212",
+      "start": 18083,
+      "end": 18219,
+      "heading_navigation": "6.6 Promjene i dopune ugovora",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00214",
+      "start": 18220,
+      "end": 18360,
+      "heading_navigation": "6.6 Promjene i dopune ugovora",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00216",
+      "start": 18361,
+      "end": 18550,
+      "heading_navigation": "6.6 Promjene i dopune ugovora",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00220",
+      "start": 18589,
+      "end": 18997,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00222",
+      "start": 18998,
+      "end": 19253,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00224",
+      "start": 19254,
+      "end": 19469,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00226",
+      "start": 19470,
+      "end": 19543,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00227",
+      "start": 19543,
+      "end": 19580,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00228",
+      "start": 19580,
+      "end": 19655,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00230",
+      "start": 19656,
+      "end": 19753,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00232",
+      "start": 19754,
+      "end": 19957,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00234",
+      "start": 19958,
+      "end": 20069,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00236",
+      "start": 20070,
+      "end": 20203,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00238",
+      "start": 20204,
+      "end": 20360,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00240",
+      "start": 20361,
+      "end": 20421,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00242",
+      "start": 20422,
+      "end": 20573,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00244",
+      "start": 20574,
+      "end": 20662,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00246",
+      "start": 20663,
+      "end": 20690,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00247",
+      "start": 20690,
+      "end": 20738,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00249",
+      "start": 20790,
+      "end": 20853,
+      "heading_navigation": "6.7 Reklamacije i prigovori kupca",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00253",
+      "start": 20869,
+      "end": 21056,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00255",
+      "start": 21057,
+      "end": 21239,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00259",
+      "start": 21291,
+      "end": 21963,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00261",
+      "start": 21964,
+      "end": 21987,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00263",
+      "start": 22010,
+      "end": 22033,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00264",
+      "start": 22033,
+      "end": 22056,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00265",
+      "start": 22056,
+      "end": 22079,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00266",
+      "start": 22079,
+      "end": 22106,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00267",
+      "start": 22106,
+      "end": 22129,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00268",
+      "start": 22129,
+      "end": 22152,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00269",
+      "start": 22152,
+      "end": 22175,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00270",
+      "start": 22175,
+      "end": 22201,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00271",
+      "start": 22201,
+      "end": 22224,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00272",
+      "start": 22224,
+      "end": 22247,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00274",
+      "start": 22248,
+      "end": 22530,
+      "heading_navigation": "7.1 Dijagram toka procesa ugovaranja i prodaje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00278",
+      "start": 22601,
+      "end": 22633,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00279",
+      "start": 22633,
+      "end": 22665,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00280",
+      "start": 22665,
+      "end": 22679,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00282",
+      "start": 22680,
+      "end": 22841,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00284",
+      "start": 22842,
+      "end": 22909,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00286",
+      "start": 22910,
+      "end": 22967,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00288",
+      "start": 22968,
+      "end": 23041,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00290",
+      "start": 23042,
+      "end": 23100,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00292",
+      "start": 23101,
+      "end": 23131,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00293",
+      "start": 23131,
+      "end": 23210,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00294",
+      "start": 23210,
+      "end": 23288,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00295",
+      "start": 23288,
+      "end": 23342,
+      "heading_navigation": "7.2        Obrazac: OB-OZP-034, R5 - Ocjena zahtjeva za proizvod",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00299",
+      "start": 23362,
+      "end": 23420,
+      "heading_navigation": "0 Imenovanje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00301",
+      "start": 23421,
+      "end": 23511,
+      "heading_navigation": "0 Imenovanje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00303",
+      "start": 23512,
+      "end": 23602,
+      "heading_navigation": "0 Imenovanje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00305",
+      "start": 23603,
+      "end": 23693,
+      "heading_navigation": "0 Imenovanje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00307",
+      "start": 23694,
+      "end": 23783,
+      "heading_navigation": "0 Imenovanje",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00310",
+      "start": 23809,
+      "end": 24090,
+      "heading_navigation": "I Tehnički zahtjevi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00313",
+      "start": 24133,
+      "end": 24414,
+      "heading_navigation": "II Komercijalno financijski zahtjevi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00316",
+      "start": 24440,
+      "end": 24721,
+      "heading_navigation": "III Pravni zahtjevi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00319",
+      "start": 24742,
+      "end": 25036,
+      "heading_navigation": "IV QA zahtjevi",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00321",
+      "start": 25037,
+      "end": 25238,
+      "heading_navigation": "IV QA zahtjevi",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00325",
+      "start": 25292,
+      "end": 25326,
+      "heading_navigation": "7.3 Obrazac: OB-REK-014, R5 - Reklamacija kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00327",
+      "start": 25360,
+      "end": 25394,
+      "heading_navigation": "7.3 Obrazac: OB-REK-014, R5 - Reklamacija kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00328",
+      "start": 25394,
+      "end": 25428,
+      "heading_navigation": "7.3 Obrazac: OB-REK-014, R5 - Reklamacija kupca",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00332",
+      "start": 25452,
+      "end": 25619,
+      "heading_navigation": "I Podaci o kupcu",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00334",
+      "start": 25620,
+      "end": 25765,
+      "heading_navigation": "I Podaci o kupcu",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00336",
+      "start": 25766,
+      "end": 25922,
+      "heading_navigation": "I Podaci o kupcu",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00338",
+      "start": 25923,
+      "end": 26090,
+      "heading_navigation": "I Podaci o kupcu",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00342",
+      "start": 26117,
+      "end": 26272,
+      "heading_navigation": "II Opis reklamacije",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00346",
+      "start": 26308,
+      "end": 26458,
+      "heading_navigation": "III Poduzeta popravna radnja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00348",
+      "start": 26459,
+      "end": 26604,
+      "heading_navigation": "III Poduzeta popravna radnja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00352",
+      "start": 26642,
+      "end": 26784,
+      "heading_navigation": "IV Potrebna preventivna radnja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00354",
+      "start": 26785,
+      "end": 26931,
+      "heading_navigation": "IV Potrebna preventivna radnja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00356",
+      "start": 26932,
+      "end": 27080,
+      "heading_navigation": "IV Potrebna preventivna radnja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00360",
+      "start": 27129,
+      "end": 27276,
+      "heading_navigation": "V Popravna / preventivna radnja provedena",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00362",
+      "start": 27277,
+      "end": 27493,
+      "heading_navigation": "V Popravna / preventivna radnja provedena",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00366",
+      "start": 27552,
+      "end": 27627,
+      "heading_navigation": "7.4     Obrazac: OB-KRE-029, R5 – Knjiga reklamacija",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00368",
+      "start": 27702,
+      "end": 27777,
+      "heading_navigation": "7.4     Obrazac: OB-KRE-029, R5 – Knjiga reklamacija",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00369",
+      "start": 27777,
+      "end": 27852,
+      "heading_navigation": "7.4     Obrazac: OB-KRE-029, R5 – Knjiga reklamacija",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00371",
+      "start": 27853,
+      "end": 27895,
+      "heading_navigation": "7.4     Obrazac: OB-KRE-029, R5 – Knjiga reklamacija",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00391",
+      "start": 28652,
+      "end": 28662,
+      "heading_navigation": "7.4     Obrazac: OB-KRE-029, R5 – Knjiga reklamacija",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00393",
+      "start": 28663,
+      "end": 28671,
+      "heading_navigation": "7.4     Obrazac: OB-KRE-029, R5 – Knjiga reklamacija",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00395",
+      "start": 28672,
+      "end": 28694,
+      "heading_navigation": "7.4     Obrazac: OB-KRE-029, R5 – Knjiga reklamacija",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    }
+  ]
+}

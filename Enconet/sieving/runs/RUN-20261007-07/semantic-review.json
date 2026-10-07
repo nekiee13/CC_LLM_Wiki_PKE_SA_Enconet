@@ -1,0 +1,2885 @@
+{
+  "method": "Codex direct-control and quality-intent full-source review; no automatic keyword acceptance",
+  "source_sha256": "77d7a95b134c6c6f59b564f866efc5a0324f08218af14f8bdd81968a3aa6fafe",
+  "content_blocks_reviewed": 239,
+  "counts": {
+    "items": 107,
+    "quotes": 208,
+    "direct": 81,
+    "supporting": 24,
+    "leads": 2
+  },
+  "decisions": [
+    {
+      "blocks": [
+        "B00005",
+        "B00007",
+        "B00008"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Postupak PP-73-01 označen je revizijom 6 i datumom objave.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00013",
+        "B00017",
+        "B00021",
+        "B00025"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Priprema, stručni i upravljački pregled te odobrenje navedeni su s imenima i datumima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00029"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Prazna tablica predviđa periodični pregled, bez dokaza izvršenog pregleda.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00061"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Postupak uređuje aktivnosti i odgovornosti za projektiranje, razvoj i njihove izmjene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00065"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Primjena obuhvaća studije, elaborate, analize, računalne programe i konzalting za kupca ili vlastite potrebe.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00069",
+        "B00070",
+        "B00072",
+        "B00073",
+        "B00075",
+        "B00076",
+        "B00093",
+        "B00094",
+        "B00096"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: Reference na norme i Appendix B usmjeravaju daljnju provjeru; popis nije potpuni dokaz ispunjenja.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00078",
+        "B00079",
+        "B00081",
+        "B00082",
+        "B00084",
+        "B00085",
+        "B00087",
+        "B00088",
+        "B00090",
+        "B00091"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: Povezani postupci pokrivaju dokumente, ugovaranje, nabavu, nesukladnosti i popravne radnje.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00106"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor imenuje voditelja i zamjenu te odobrava projekt i promjene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00108"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj izrađuje plan, formira tim i koordinira izvedbu prema planu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00108"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj primjenjuje zakone, propise, standarde, ugovorne i kvalitetne zahtjeve.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00108"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj pokreće pregled, verifikaciju, validaciju i primopredaju projekta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00108"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Zapisi obuhvaćaju cijeli projekt od upita do pregleda i primopredaje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00110"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: QA provjerava da su sve popravne radnje i nesukladnosti provedene i zaključene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00110"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: QA odgovara za interne provjere projektiranja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00116"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Dokument opisuje projekt, studiju, program i inženjersku uslugu kao osnovni proizvod.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00118"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Projektni zadatak i ugovor pripremaju se prema PP-72-01.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00122"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Proces uključuje planiranje, ulaze, izlaze, ocjenu, verifikaciju, validaciju i promjene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00122"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Traži se identifikacija kritičnih materijalnih, terminskih i ljudskih točaka te njihovih učinaka i vjerojatnosti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00124"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Naslovna i unutarnja strana projekta određene su obrascima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00130"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Plan realizacije predviđa raspored faza kada je svrsishodan.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Plan propisuje ulazne i izlazne podatke svake faze.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Plan propisuje kontrolne točke provjere, verifikacije, validacije, završnog pregleda i isporuke.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Plan uključuje potrebnu mjernu opremu i zahtjeve kalibracije i rekalibracije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "supporting_control: Plan određuje tko, što, gdje i kada mjeri, postupak i kriterije prihvatljivosti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "supporting_control: Plan uključuje specifikaciju i narudžbu potrebne opreme sa zahtjevima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Plan imenuje interne i vanjske učesnike, ovlasti i odgovornosti, uključujući predstavnika QA.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Plan utvrđuje veze s kupcem i između unutarnjih i vanjskih timova.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00128",
+        "B00134"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Plan predviđa ažuriranje izlaznih podataka.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00136"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj dokumentira plan prema karakteru, opsegu i složenosti projekta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00136"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Plan se oslanja na politiku i ciljeve kvalitete te zahtjeve konkretnog projekta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00138"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj osigurava komunikaciju i prijem ili predaju podataka među uključenim grupama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00140"
+      ],
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Voditelj vodi i ažurira popis i status projekata.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00144"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Projektni ulazi povezani su s ugovornim zahtjevima; specifikacija se izrađuje kada je svrsishodna.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00146"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Nejasni i sporni zahtjevi rješavaju se s kupcem radi potpunih i neproturječnih ulaza.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00148",
+        "B00150"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ulazi moraju obuhvatiti funkciju i karakteristike proizvoda.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00148",
+        "B00151"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ulazi moraju obuhvatiti odgovarajuće zakonske i pravne zahtjeve.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00148",
+        "B00152"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Primjenjivi podaci prethodnih sličnih projekata ulaze u projektiranje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00160"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ulazi se prije primjene pregledavaju i ocjenjuju za potpunost, jasnoću i dosljednost.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00162"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj razrješava nejasnoće i zapisuje tehničku ocjenu ulaza na OB-OZP-034.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00162"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Održavaju se zapisi o usuglašavanju, utvrđivanju i ocjeni ulaza.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00168"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Izlazi moraju biti u obliku koji omogućuje verifikaciju prema ulaznim podacima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00169"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Projektni izlazi odobravaju se prije objavljivanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00170"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Izlazni podaci moraju zadovoljiti ulazne zahtjeve.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00171"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "supporting_control: Izlazi daju potrebne informacije za nabavu i realizaciju proizvoda.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00172"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Izlazi definiraju kriterije prihvatljivosti ili na njih upućuju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00166",
+        "B00173"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Izlazi određuju karakteristike bitne za sigurnu i ispravnu uporabu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00175"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Voditelj odgovara za ispunjenje propisanih zahtjeva projektnih izlaza.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00179"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Izvršitelj svake faze kontinuirano provjerava stanje i rezultate svoje faze.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00181",
+        "B00183"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Sustavne provjere u primjerenim fazama ocjenjuju sposobnost ispunjenja projektnih zahtjeva.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00181",
+        "B00184"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Fazne provjere identificiraju probleme i predlažu njihovo uklanjanje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00186"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Voditelj održava zapise o ocjenama i poduzetim radnjama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00190",
+        "B00192",
+        "B00196"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor osigurava provjeru napretka i zadovoljenja ulaza izlaznim rezultatima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00198"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Predviđene su neovisne unutarnje ili vanjske verifikacije faza i završnog projekta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00198"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Nalazi pregleda vode do popravnih radnji i dorade prije konačnog prihvaćanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00200",
+        "B00202",
+        "B00203",
+        "B00204",
+        "B00205"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Preliminarna revizija dostavlja se na pregled određenom neovisnom stručnjaku, QA, kupcu i njegovu recenzentu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00207"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Učesnici pregleda rezultate dostavljaju voditelju pisano.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00209"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Voditelj analizira sve primjedbe i dokumentira prihvat ili odbijanje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00209"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Očitovanje o pregledima čuva sljedivu vezu stare i nove revizije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00211",
+        "B00213"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Utvrđene nesukladnosti identificiraju se i dokumentiraju prema PP-83-01.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00211",
+        "B00213"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Potrebne popravne i preventivne radnje uklanjaju nesukladnosti i sprečavaju ponavljanje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00215"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Ako ocijeni potrebnim, voditelj opisuje promjene u novoj reviziji; označavanje nije bezuvjetno.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00217"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Kada je potrebno, interni stručni pregled provodi ovlaštena osoba koja nije izvodila pregledani dio.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00217"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA i stručni interni nalazi zapisuju se na OB-INP-021.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00219"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Završnu safety-related dokumentaciju mora pregledati imenovana, neovisna i kvalificirana osoba.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00219"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Obveze, nadležnost i kvalifikacije neovisnog pregledavatelja moraju biti specificirane.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00223"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Vanjski recenzent ne smije sudjelovati u izradi pregledanog dijela i određuje ga kupac.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00225"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Vanjska verifikacija daje pisane nalaze povezane s kriterijima prihvatljivosti i pregledanim dokumentom.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00225"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Pisani vanjski nalaz identificira mjesto primjedbe i oznaku pregledanog radnog dokumenta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00227"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Voditelj nadzire i preuzima podprojekt dobavljača prema zahtjevima glavnog ugovora.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00227"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Podugovoreni projekt traži kontrolu međuvezâ, verifikaciju i validaciju prema zahtjevima kupca.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00231"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Validacija potvrđuje namijenjenu uporabu prije isporuke; ako nije moguća potpuna, provodi se mogući dio.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00233"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: QA prije završnog pregleda provjerava da su sve prijavljene radnje i nesukladnosti zaključene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00235"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor ili ovlaštena osoba završnim pregledom i potpisom potvrđuje prihvatljivost projekta.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00237"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Projekt dobiva IOD i kupcu se predaje traženi broj primjeraka uz kontrolirani zapis.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00237"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Održavaju se zapisi unutarnjih i vanjskih provjera, verifikacije, validacije i primopredaje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00237"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Administrator urudžbira projekt kao kontrolirani dokument ZK1.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00243"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Izmjene se identificiraju, dokumentiraju i odobravaju po istom postupku kao osnovni projekt.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00245"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ocjena, verifikacija i validacija promjene provode se kada je svrsishodno.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00247"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ocjena promjene uključuje posljedice na prethodno isporučene slične projekte i dijelove.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00249"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor odobrava promjene prije primjene.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00251"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Izmjene se unose u dokumente i sve pogođene osobe i organizacije odmah obavještavaju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00251"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Voditelj održava zapise ocjene promjena i potrebnih radnji.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00255"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Zaustavljanje rada predviđeno je za stvarnu ili moguću nesukladnost s ozbiljnim posljedicama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00257"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Neprovedene ili neučinkovite radnje i analiza uzroka mogu pokrenuti zaštitnu mjeru zaustavljanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00259"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA izdaje nalog za zaustavljanje rada ili zabranu korištenja proizvoda i dokumentacije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00259"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Nalog se zapisuje na OB-NCR-016; proizvod se označava i izolira radi sprečavanja nehotične uporabe.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00259"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Dokumentacija se označava žigom QA zaustavljeni radovi i povlači iz uporabe.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00259"
+      ],
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Žig ili naljepnica prikazuju status zabrane korištenja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00261"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: QA zaključuje NCR i ukida zabranu nakon provedenih radnji i prikupljenih zapisa potvrde rješenja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00267",
+        "B00269",
+        "B00270",
+        "B00271"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Softver se može kupiti gotov, doraditi ili nabaviti od odobrenog dobavljača.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00273"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Enconet zadržava odgovornost za softverske zahtjeve i primjenjuje ISO/IEC 90003.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00275"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Dobavljači softvera moraju zadovoljiti zahtjeve i biti ocijenjeni prema PP-74-01.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00277",
+        "B00278",
+        "B00279"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Voditelj planira i dokumentira verifikaciju softvera, najmanje korisnički test prema kriterijima prihvatljivosti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00277",
+        "B00280",
+        "B00281"
+      ],
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Verzije softvera jednoznačno se identificiraju i dokumentiraju radi upravljanja konfiguracijom.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00277",
+        "B00282",
+        "B00283"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Definiraju se upute uporabe i održavanja softvera do povlačenja verzije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00287"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Završni izvještaj potpisuju autor, suradnici, QA i direktor; format se prilagođava ugovoru.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00287"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Za NE Krško statusni i završni izvještaji usklađuju se s područjem rada i zahtjevima kupca.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00311",
+        "B00313",
+        "B00315"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "supporting_control: Dijagram povezuje dobavljačev interni pregled i recenziju s Enconetovim završnim preuzimanjem.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00323",
+        "B00325",
+        "B00327",
+        "B00329"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Dijagram zadržava fazni pregled, recenziju, validaciju, doradu i primopredaju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00349",
+        "B00350",
+        "B00351",
+        "B00352",
+        "B00353",
+        "B00354",
+        "B00355"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Prazna naslovnica predviđa naručitelja, ugovor, vrstu, reviziju, kopiju, IOD i datum.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00359",
+        "B00360",
+        "B00364",
+        "B00365"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Predložak naslovnice razdvaja autora, suradnike, QA i direktorovo odobrenje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00393",
+        "B00395",
+        "B00397",
+        "B00401",
+        "B00405",
+        "B00409",
+        "B00415",
+        "B00421",
+        "B00427"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Predložak internog pregleda predviđa identifikaciju, reference, odgovorne osobe, potpise i datume.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00452",
+        "B00453",
+        "B00455",
+        "B00456",
+        "B00458",
+        "B00459",
+        "B00465",
+        "B00469"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Prazan zapisnik primopredaje traži potvrdu ugovornih kriterija i potpise obiju strana.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00480",
+        "B00482",
+        "B00484",
+        "B00486",
+        "B00488",
+        "B00496"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Predložak plana uključuje identitet, zahtjeve, faze, rokove i kontrolne točke s kriterijima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00501",
+        "B00502"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Predložak razdvaja stručni nadzor voditelja i QA nadzor.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00504",
+        "B00505",
+        "B00506"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Plan predviđa odgovorne osobe za komunikaciju Enconeta i kupca.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00508",
+        "B00509",
+        "B00510",
+        "B00511"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Predložak plana povezuje ugovor i SUK s navedenim normama, bez dokaza stvarne provedbe.",
+      "item_type": "control"
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00001",
+      "start": 0,
+      "end": 15,
+      "heading_navigation": "",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00005",
+      "start": 50,
+      "end": 111,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00007",
+      "start": 172,
+      "end": 233,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00008",
+      "start": 233,
+      "end": 294,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00009",
+      "start": 294,
+      "end": 355,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00011",
+      "start": 356,
+      "end": 416,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00013",
+      "start": 476,
+      "end": 539,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00015",
+      "start": 540,
+      "end": 600,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00017",
+      "start": 660,
+      "end": 723,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00019",
+      "start": 724,
+      "end": 784,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00021",
+      "start": 844,
+      "end": 911,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00023",
+      "start": 912,
+      "end": 972,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00025",
+      "start": 1032,
+      "end": 1095,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00029",
+      "start": 1119,
+      "end": 1164,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00035",
+      "start": 1352,
+      "end": 1401,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00037",
+      "start": 1455,
+      "end": 1511,
+      "heading_navigation": "Periodični pregled",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00041",
+      "start": 1523,
+      "end": 1635,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00043",
+      "start": 1636,
+      "end": 1733,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00045",
+      "start": 1734,
+      "end": 1840,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00047",
+      "start": 1841,
+      "end": 1942,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00049",
+      "start": 1943,
+      "end": 2045,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00051",
+      "start": 2046,
+      "end": 2153,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00052",
+      "start": 2153,
+      "end": 3155,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00054",
+      "start": 3156,
+      "end": 3267,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00055",
+      "start": 3267,
+      "end": 3774,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00057",
+      "start": 3775,
+      "end": 3997,
+      "heading_navigation": "SADRŽAJ",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00061",
+      "start": 4011,
+      "end": 4134,
+      "heading_navigation": "1. SVRHA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00065",
+      "start": 4160,
+      "end": 4372,
+      "heading_navigation": "2. PODRUČJE PRIMJENE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00069",
+      "start": 4390,
+      "end": 4414,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00070",
+      "start": 4414,
+      "end": 4483,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00072",
+      "start": 4484,
+      "end": 4520,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00073",
+      "start": 4520,
+      "end": 4546,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00075",
+      "start": 4547,
+      "end": 4623,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00076",
+      "start": 4623,
+      "end": 4661,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00078",
+      "start": 4662,
+      "end": 4704,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00079",
+      "start": 4704,
+      "end": 4733,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00081",
+      "start": 4734,
+      "end": 4776,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00082",
+      "start": 4776,
+      "end": 4821,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00084",
+      "start": 4822,
+      "end": 4864,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00085",
+      "start": 4864,
+      "end": 4909,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00087",
+      "start": 4910,
+      "end": 4952,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00088",
+      "start": 4952,
+      "end": 4992,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00090",
+      "start": 4993,
+      "end": 5035,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00091",
+      "start": 5035,
+      "end": 5070,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00093",
+      "start": 5071,
+      "end": 5150,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00094",
+      "start": 5150,
+      "end": 5188,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00096",
+      "start": 5189,
+      "end": 5222,
+      "heading_navigation": "3. REFERENCE",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00100",
+      "start": 5251,
+      "end": 5608,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00102",
+      "start": 5609,
+      "end": 5846,
+      "heading_navigation": "4. DEFINICIJE I KRATICE",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00106",
+      "start": 5872,
+      "end": 6032,
+      "heading_navigation": "5.      ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00108",
+      "start": 6033,
+      "end": 6707,
+      "heading_navigation": "5.      ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00110",
+      "start": 6708,
+      "end": 6885,
+      "heading_navigation": "5.      ODGOVORNOSTI",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00116",
+      "start": 6951,
+      "end": 7185,
+      "heading_navigation": "6.1     Proces projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00118",
+      "start": 7186,
+      "end": 7410,
+      "heading_navigation": "6.1     Proces projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00120",
+      "start": 7411,
+      "end": 7473,
+      "heading_navigation": "6.1     Proces projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00122",
+      "start": 7474,
+      "end": 8014,
+      "heading_navigation": "6.1     Proces projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00124",
+      "start": 8015,
+      "end": 8164,
+      "heading_navigation": "6.1     Proces projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00128",
+      "start": 8227,
+      "end": 8377,
+      "heading_navigation": "6.2     Izrada plana realizacije projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00130",
+      "start": 8378,
+      "end": 8436,
+      "heading_navigation": "6.2     Izrada plana realizacije projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00132",
+      "start": 8437,
+      "end": 8673,
+      "heading_navigation": "6.2     Izrada plana realizacije projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00134",
+      "start": 8674,
+      "end": 9594,
+      "heading_navigation": "6.2     Izrada plana realizacije projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00136",
+      "start": 9595,
+      "end": 10142,
+      "heading_navigation": "6.2     Izrada plana realizacije projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00138",
+      "start": 10143,
+      "end": 10667,
+      "heading_navigation": "6.2     Izrada plana realizacije projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00140",
+      "start": 10668,
+      "end": 10739,
+      "heading_navigation": "6.2     Izrada plana realizacije projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00144",
+      "start": 10803,
+      "end": 11048,
+      "heading_navigation": "6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00146",
+      "start": 11049,
+      "end": 11328,
+      "heading_navigation": "6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00148",
+      "start": 11329,
+      "end": 11403,
+      "heading_navigation": "6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00150",
+      "start": 11404,
+      "end": 11454,
+      "heading_navigation": "6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00151",
+      "start": 11454,
+      "end": 11496,
+      "heading_navigation": "6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00152",
+      "start": 11496,
+      "end": 11559,
+      "heading_navigation": "6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00154",
+      "start": 11560,
+      "end": 11587,
+      "heading_navigation": "6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00158",
+      "start": 11644,
+      "end": 11687,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00160",
+      "start": 11688,
+      "end": 11844,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00162",
+      "start": 11845,
+      "end": 12302,
+      "heading_navigation": "PROCES PROJEKTIRANJA I RAZVOJA",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00166",
+      "start": 12363,
+      "end": 12647,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00168",
+      "start": 12648,
+      "end": 12762,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00169",
+      "start": 12762,
+      "end": 12798,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00170",
+      "start": 12798,
+      "end": 12861,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00171",
+      "start": 12861,
+      "end": 12923,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00172",
+      "start": 12923,
+      "end": 12984,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00173",
+      "start": 12984,
+      "end": 13072,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00175",
+      "start": 13073,
+      "end": 13189,
+      "heading_navigation": "6.4 Rezultati (izlazni podaci) projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00179",
+      "start": 13230,
+      "end": 13484,
+      "heading_navigation": "6.5 Ocjena projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00181",
+      "start": 13485,
+      "end": 13661,
+      "heading_navigation": "6.5 Ocjena projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00183",
+      "start": 13662,
+      "end": 13724,
+      "heading_navigation": "6.5 Ocjena projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00184",
+      "start": 13724,
+      "end": 13792,
+      "heading_navigation": "6.5 Ocjena projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00186",
+      "start": 13793,
+      "end": 13945,
+      "heading_navigation": "6.5 Ocjena projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00190",
+      "start": 13999,
+      "end": 14132,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00192",
+      "start": 14133,
+      "end": 14172,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00194",
+      "start": 14173,
+      "end": 14405,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00196",
+      "start": 14406,
+      "end": 14512,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00198",
+      "start": 14513,
+      "end": 14842,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00200",
+      "start": 14843,
+      "end": 14983,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00202",
+      "start": 14984,
+      "end": 15045,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00203",
+      "start": 15045,
+      "end": 15072,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00204",
+      "start": 15072,
+      "end": 15081,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00205",
+      "start": 15081,
+      "end": 15126,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00207",
+      "start": 15127,
+      "end": 15207,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00209",
+      "start": 15208,
+      "end": 15713,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00211",
+      "start": 15714,
+      "end": 16119,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00213",
+      "start": 16120,
+      "end": 16263,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00215",
+      "start": 16264,
+      "end": 16518,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00217",
+      "start": 16519,
+      "end": 16895,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00219",
+      "start": 16896,
+      "end": 17236,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00221",
+      "start": 17237,
+      "end": 17471,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00223",
+      "start": 17472,
+      "end": 17789,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00225",
+      "start": 17790,
+      "end": 18467,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00227",
+      "start": 18468,
+      "end": 19008,
+      "heading_navigation": "6.6 Ovjera/verifikacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00231",
+      "start": 19081,
+      "end": 19538,
+      "heading_navigation": "6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00233",
+      "start": 19539,
+      "end": 19853,
+      "heading_navigation": "6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00235",
+      "start": 19854,
+      "end": 20053,
+      "heading_navigation": "6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00237",
+      "start": 20054,
+      "end": 20613,
+      "heading_navigation": "6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00239",
+      "start": 20614,
+      "end": 20846,
+      "heading_navigation": "6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00243",
+      "start": 20904,
+      "end": 21055,
+      "heading_navigation": "6.8 Upravljanje promjenama u projektiranju i razvoju",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00245",
+      "start": 21056,
+      "end": 21197,
+      "heading_navigation": "6.8 Upravljanje promjenama u projektiranju i razvoju",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00247",
+      "start": 21198,
+      "end": 21325,
+      "heading_navigation": "6.8 Upravljanje promjenama u projektiranju i razvoju",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00249",
+      "start": 21326,
+      "end": 21387,
+      "heading_navigation": "6.8 Upravljanje promjenama u projektiranju i razvoju",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00251",
+      "start": 21388,
+      "end": 21635,
+      "heading_navigation": "6.8 Upravljanje promjenama u projektiranju i razvoju",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00255",
+      "start": 21684,
+      "end": 22143,
+      "heading_navigation": "6.9 Zaustavljanje procesa i daljnjih radova",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00257",
+      "start": 22144,
+      "end": 22555,
+      "heading_navigation": "6.9 Zaustavljanje procesa i daljnjih radova",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00259",
+      "start": 22556,
+      "end": 23098,
+      "heading_navigation": "6.9 Zaustavljanje procesa i daljnjih radova",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00261",
+      "start": 23099,
+      "end": 23321,
+      "heading_navigation": "6.9 Zaustavljanje procesa i daljnjih radova",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00263",
+      "start": 23322,
+      "end": 23555,
+      "heading_navigation": "6.9 Zaustavljanje procesa i daljnjih radova",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00267",
+      "start": 23605,
+      "end": 23818,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00269",
+      "start": 23819,
+      "end": 23861,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00270",
+      "start": 23861,
+      "end": 23917,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00271",
+      "start": 23917,
+      "end": 23953,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00273",
+      "start": 23954,
+      "end": 24368,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00275",
+      "start": 24369,
+      "end": 24579,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00277",
+      "start": 24580,
+      "end": 25004,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00278",
+      "start": 25004,
+      "end": 25078,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00279",
+      "start": 25078,
+      "end": 25230,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00280",
+      "start": 25230,
+      "end": 25306,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00281",
+      "start": 25306,
+      "end": 25351,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00282",
+      "start": 25351,
+      "end": 25420,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00283",
+      "start": 25420,
+      "end": 25485,
+      "heading_navigation": "6.10 Proces projektiranja i razvoja softvera",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00287",
+      "start": 25546,
+      "end": 26064,
+      "heading_navigation": "6.11 Izdavanje izvještaja Enconeta o izvršenim radovima",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00289",
+      "start": 26065,
+      "end": 26287,
+      "heading_navigation": "6.11 Izdavanje izvještaja Enconeta o izvršenim radovima",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00293",
+      "start": 26303,
+      "end": 26698,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00295",
+      "start": 26699,
+      "end": 26994,
+      "heading_navigation": "7. PRILOZI",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00299",
+      "start": 27042,
+      "end": 27452,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00301",
+      "start": 27457,
+      "end": 27486,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00303",
+      "start": 27491,
+      "end": 27637,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00305",
+      "start": 27642,
+      "end": 27666,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00307",
+      "start": 27667,
+      "end": 27790,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00309",
+      "start": 27791,
+      "end": 27865,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00311",
+      "start": 27866,
+      "end": 28328,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00313",
+      "start": 28329,
+      "end": 28677,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00315",
+      "start": 28678,
+      "end": 28920,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00317",
+      "start": 28921,
+      "end": 28973,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00319",
+      "start": 28974,
+      "end": 29168,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00321",
+      "start": 29169,
+      "end": 29395,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00323",
+      "start": 29400,
+      "end": 29685,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00325",
+      "start": 29690,
+      "end": 29920,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00327",
+      "start": 29925,
+      "end": 30206,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00329",
+      "start": 30211,
+      "end": 30289,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00331",
+      "start": 30290,
+      "end": 30341,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00333",
+      "start": 30342,
+      "end": 30381,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00335",
+      "start": 30382,
+      "end": 30429,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00337",
+      "start": 30430,
+      "end": 30568,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00339",
+      "start": 30569,
+      "end": 30795,
+      "heading_navigation": "7.1 Dijagram toka projektiranja i razvoja",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00343",
+      "start": 30854,
+      "end": 30869,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00345",
+      "start": 30870,
+      "end": 30893,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00347",
+      "start": 30894,
+      "end": 30917,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00349",
+      "start": 30940,
+      "end": 30973,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00350",
+      "start": 30973,
+      "end": 31007,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00351",
+      "start": 31007,
+      "end": 31070,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00352",
+      "start": 31070,
+      "end": 31098,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00353",
+      "start": 31098,
+      "end": 31137,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00354",
+      "start": 31137,
+      "end": 31169,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00355",
+      "start": 31169,
+      "end": 31204,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00357",
+      "start": 31205,
+      "end": 31231,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00359",
+      "start": 31257,
+      "end": 31297,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00360",
+      "start": 31297,
+      "end": 31367,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00362",
+      "start": 31368,
+      "end": 31387,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00364",
+      "start": 31406,
+      "end": 31494,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00365",
+      "start": 31494,
+      "end": 31579,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00367",
+      "start": 31580,
+      "end": 31605,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00371",
+      "start": 31612,
+      "end": 31639,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00372",
+      "start": 31639,
+      "end": 31688,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00374",
+      "start": 31742,
+      "end": 31799,
+      "heading_navigation": "7.2 Obrazac: OB-NSP-022, R6 Naslovna strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00378",
+      "start": 31860,
+      "end": 31882,
+      "heading_navigation": "7.3 Obrazac: OB-USP-023, R6 Unutrašnja strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00380",
+      "start": 31883,
+      "end": 31909,
+      "heading_navigation": "7.3 Obrazac: OB-USP-023, R6 Unutrašnja strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00382",
+      "start": 31910,
+      "end": 31928,
+      "heading_navigation": "7.3 Obrazac: OB-USP-023, R6 Unutrašnja strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00386",
+      "start": 31935,
+      "end": 31962,
+      "heading_navigation": "7.3 Obrazac: OB-USP-023, R6 Unutrašnja strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00387",
+      "start": 31962,
+      "end": 32011,
+      "heading_navigation": "7.3 Obrazac: OB-USP-023, R6 Unutrašnja strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00389",
+      "start": 32066,
+      "end": 32123,
+      "heading_navigation": "7.3 Obrazac: OB-USP-023, R6 Unutrašnja strana projekta",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00393",
+      "start": 32186,
+      "end": 32195,
+      "heading_navigation": "7.4 Obrazac: OB-INP-021, R6 Izvješće o internom pregledu",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00395",
+      "start": 32204,
+      "end": 32237,
+      "heading_navigation": "7.4 Obrazac: OB-INP-021, R6 Izvješće o internom pregledu",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00397",
+      "start": 32238,
+      "end": 32245,
+      "heading_navigation": "7.4 Obrazac: OB-INP-021, R6 Izvješće o internom pregledu",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00401",
+      "start": 32289,
+      "end": 32311,
+      "heading_navigation": "I. Provjeravano područje / aktivnost",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00405",
+      "start": 32338,
+      "end": 32372,
+      "heading_navigation": "II. Utvrđeno stanje",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00409",
+      "start": 32441,
+      "end": 32481,
+      "heading_navigation": "II. Utvrđeno stanje",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00415",
+      "start": 32616,
+      "end": 32650,
+      "heading_navigation": "III. Predložena popravna / preventivna radnja",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00421",
+      "start": 32738,
+      "end": 32772,
+      "heading_navigation": "IV. Napomena",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00427",
+      "start": 32860,
+      "end": 32904,
+      "heading_navigation": "V. Zaključak",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00433",
+      "start": 32999,
+      "end": 33026,
+      "heading_navigation": "V. Zaključak",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00435",
+      "start": 33027,
+      "end": 33304,
+      "heading_navigation": "V. Zaključak",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00438",
+      "start": 33316,
+      "end": 33350,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00440",
+      "start": 33351,
+      "end": 33361,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00442",
+      "start": 33362,
+      "end": 33422,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00444",
+      "start": 33423,
+      "end": 33494,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00446",
+      "start": 33495,
+      "end": 33552,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00448",
+      "start": 33553,
+      "end": 33610,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00450",
+      "start": 33611,
+      "end": 33652,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00452",
+      "start": 33653,
+      "end": 33741,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00453",
+      "start": 33741,
+      "end": 33761,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00455",
+      "start": 33762,
+      "end": 33843,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00456",
+      "start": 33843,
+      "end": 33859,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00458",
+      "start": 33860,
+      "end": 33950,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00459",
+      "start": 33950,
+      "end": 34023,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00461",
+      "start": 34024,
+      "end": 34041,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00463",
+      "start": 34042,
+      "end": 34068,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00465",
+      "start": 34069,
+      "end": 34164,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00467",
+      "start": 34165,
+      "end": 34186,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00469",
+      "start": 34187,
+      "end": 34282,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00471",
+      "start": 34283,
+      "end": 34299,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00473",
+      "start": 34300,
+      "end": 34430,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00476",
+      "start": 34435,
+      "end": 34645,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00478",
+      "start": 34646,
+      "end": 34696,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00480",
+      "start": 34697,
+      "end": 34775,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00482",
+      "start": 34776,
+      "end": 34802,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00484",
+      "start": 34803,
+      "end": 34827,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00486",
+      "start": 34828,
+      "end": 34873,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00488",
+      "start": 34874,
+      "end": 34974,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00490",
+      "start": 35074,
+      "end": 35168,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00496",
+      "start": 35545,
+      "end": 35593,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00501",
+      "start": 35613,
+      "end": 35652,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00502",
+      "start": 35652,
+      "end": 35747,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00504",
+      "start": 35748,
+      "end": 35783,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00505",
+      "start": 35783,
+      "end": 35797,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00506",
+      "start": 35797,
+      "end": 35809,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00508",
+      "start": 35810,
+      "end": 35839,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00509",
+      "start": 35839,
+      "end": 35864,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00510",
+      "start": 35864,
+      "end": 35914,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00511",
+      "start": 35914,
+      "end": 36002,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports the recorded control, contextual qualification, form field or candidate lead."
+    },
+    {
+      "block_id": "B00514",
+      "start": 36008,
+      "end": 36092,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00516",
+      "start": 36093,
+      "end": 36270,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00518",
+      "start": 36271,
+      "end": 36402,
+      "heading_navigation": "ZAPISNIK",
+      "disposition": "reviewed_context_only",
+      "reason": "Reviewed metadata, layout, commercial background, abbreviation, duplicate illustration or unused empty field; no separate QA claim accepted."
+    }
+  ]
+}

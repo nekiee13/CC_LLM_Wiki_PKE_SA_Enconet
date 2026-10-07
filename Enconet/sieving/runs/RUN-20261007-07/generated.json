@@ -1,0 +1,3194 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "PP-73-01,R6 PROCES PROJEKTIRANJA I RAZVOJA.md",
+    "title": "PROCES PROJEKTIRANJA I RAZVOJA",
+    "date": "2017-11-17",
+    "doc_id": "DOC-0008",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Postupak PP-73-01 označen je revizijom 6 i datumom objave.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]",
+          "source_heading_path": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv dokumenta:          | Programski postupak PP-73-01 |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        },
+        {
+          "quote_original": "| Revizija broj:            | 6                            |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        },
+        {
+          "quote_original": "| Datum objavljivanja:      | 17.11.2017.                  |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, stručni i upravljački pregled te odobrenje navedeni su s imenima i datumima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]",
+          "source_heading_path": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Vladimir Križe, voditelj QA                | 13. 11. 2017. |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        },
+        {
+          "quote_original": "| mr.sc. Davor Šinka, stručni suradnik       | 14. 11. 2017. |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        },
+        {
+          "quote_original": "| mr.sc. Ilijana Ivekovic, predstavnik direktora | 14. 11. 2017. |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        },
+        {
+          "quote_original": "| dr.sc. Nenad Debrecin, direktor            | 15. 11. 2017. |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Prazna tablica predviđa periodični pregled, bez dokaza izvršenog pregleda.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3] > Periodični pregled [line 27]",
+          "source_heading_path": "PROCES PROJEKTIRANJA I RAZVOJA [line 3] > Periodični pregled [line 27]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "PROCES PROJEKTIRANJA I RAZVOJA [line 3] > Periodični pregled [line 27]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Postupak uređuje aktivnosti i odgovornosti za projektiranje, razvoj i njihove izmjene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 1. SVRHA [line 77]",
+          "source_heading_path": "SADRŽAJ [line 39] > 1. SVRHA [line 77]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupkom se utvrđuju aktivnosti i odgovornosti u procesu projektiranja i razvoja kao i njegovih izmjena ili modifikacija.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 1. SVRHA [line 77]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Primjena obuhvaća studije, elaborate, analize, računalne programe i konzalting za kupca ili vlastite potrebe.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 2. PODRUČJE PRIMJENE [line 81]",
+          "source_heading_path": "SADRŽAJ [line 39] > 2. PODRUČJE PRIMJENE [line 81]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak se primjenjuje na sve projekte (studije, elaborate, stručne analize, računalne programe, te konzalting usluge projektnog, razvojnog ili uslužnog tipa) koje Enconet radi za kupca ili za vlastite potrebe.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 2. PODRUČJE PRIMJENE [line 81]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Reference na norme i Appendix B usmjeravaju daljnju provjeru; popis nije potpuni dokaz ispunjenja.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]",
+          "source_heading_path": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. HRN EN ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   Sustavi upravljanja kvalitetom-Zahtjevi\n   Projektiranje i razvoj",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "2. Enconet - Priručnik kvalitete PK",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   Projektiranje i razvoj",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "3. IAEA Leadership and Management for Safety, IAEA Safety Standards Series,",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   No. GSR Part 2, IAEA Vienna, 2016.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "9. ISO/IEC 90003:2004 – Software engineering Guidelines for the application of",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   ISO 9001:2000 to computer software",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "10. USA standard, 10CFR50 App. B",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Povezani postupci pokrivaju dokumente, ugovaranje, nabavu, nesukladnosti i popravne radnje.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]",
+          "source_heading_path": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4. Enconet – Programski postupak PP-42-01",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   \"Upravljanje dokumentima\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "5. Enconet – Programski postupak PP-72-01",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   \"Proces marketinga, ugovaranja i prodaje\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "6. Enconet – Programski postupak PP-74-01",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   \"Proces nabave i ocjenjivanja dobavljača\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "7. Enconet – Programski postupak PP-83-01",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   \"Upravljanje nesukladnim proizvodom\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "8. Enconet – Programski postupak PP-85-01",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        },
+        {
+          "quote_original": "   \"Popravne i preventivne radnje\"",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 3. REFERENCE [line 85]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor imenuje voditelja i zamjenu te odobrava projekt i promjene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]",
+          "source_heading_path": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta odgovoran je za imenovanje voditelja projekta, njegove zamjene te za odobravanje i potvrđivanje projekta i izmjena ili modifikacija projekta.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Voditelj izrađuje plan, formira tim i koordinira izvedbu prema planu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]",
+          "source_heading_path": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za izradu Plana realizacije projekta; formiranje projektnog tima i koordinaciju njegovoga rada; provođenje projektnih aktivnosti sukladno utvrđenom Planu realizacije projekta; primjenu odgovarajućih zakona, propisa, standarda, te ispunjavanje ugovornih obveza i zahtjeva kvalitete u izvedbi projekta; iniciranje aktivnosti pregleda, ovjere i potvrđivanja projekta te primopredaje projekta kupcu. Posebno je odgovoran da održava sve zapise za svaki projekt od zahtjeva za ponudu/upita, ponude i ugovora/narudžbe preko plana i realizacije projekta sa svim pregledima, ovjerama i potvrdama do korespondencije s kupcem i zapisnika o primopredaji.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Voditelj primjenjuje zakone, propise, standarde, ugovorne i kvalitetne zahtjeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]",
+          "source_heading_path": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za izradu Plana realizacije projekta; formiranje projektnog tima i koordinaciju njegovoga rada; provođenje projektnih aktivnosti sukladno utvrđenom Planu realizacije projekta; primjenu odgovarajućih zakona, propisa, standarda, te ispunjavanje ugovornih obveza i zahtjeva kvalitete u izvedbi projekta; iniciranje aktivnosti pregleda, ovjere i potvrđivanja projekta te primopredaje projekta kupcu. Posebno je odgovoran da održava sve zapise za svaki projekt od zahtjeva za ponudu/upita, ponude i ugovora/narudžbe preko plana i realizacije projekta sa svim pregledima, ovjerama i potvrdama do korespondencije s kupcem i zapisnika o primopredaji.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Voditelj pokreće pregled, verifikaciju, validaciju i primopredaju projekta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]",
+          "source_heading_path": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za izradu Plana realizacije projekta; formiranje projektnog tima i koordinaciju njegovoga rada; provođenje projektnih aktivnosti sukladno utvrđenom Planu realizacije projekta; primjenu odgovarajućih zakona, propisa, standarda, te ispunjavanje ugovornih obveza i zahtjeva kvalitete u izvedbi projekta; iniciranje aktivnosti pregleda, ovjere i potvrđivanja projekta te primopredaje projekta kupcu. Posebno je odgovoran da održava sve zapise za svaki projekt od zahtjeva za ponudu/upita, ponude i ugovora/narudžbe preko plana i realizacije projekta sa svim pregledima, ovjerama i potvrdama do korespondencije s kupcem i zapisnika o primopredaji.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Zapisi obuhvaćaju cijeli projekt od upita do pregleda i primopredaje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]",
+          "source_heading_path": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za izradu Plana realizacije projekta; formiranje projektnog tima i koordinaciju njegovoga rada; provođenje projektnih aktivnosti sukladno utvrđenom Planu realizacije projekta; primjenu odgovarajućih zakona, propisa, standarda, te ispunjavanje ugovornih obveza i zahtjeva kvalitete u izvedbi projekta; iniciranje aktivnosti pregleda, ovjere i potvrđivanja projekta te primopredaje projekta kupcu. Posebno je odgovoran da održava sve zapise za svaki projekt od zahtjeva za ponudu/upita, ponude i ugovora/narudžbe preko plana i realizacije projekta sa svim pregledima, ovjerama i potvrdama do korespondencije s kupcem i zapisnika o primopredaji.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA provjerava da su sve popravne radnje i nesukladnosti provedene i zaključene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]",
+          "source_heading_path": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova odgovoran je za interne provjere u procesu projektiranja i razvoja te provjeru da su sve popravne radnje i nesukladnosti na projektu provedene i zaključene.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: QA odgovara za interne provjere projektiranja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]",
+          "source_heading_path": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova odgovoran je za interne provjere u procesu projektiranja i razvoja te provjeru da su sve popravne radnje i nesukladnosti na projektu provedene i zaključene.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 5.      ODGOVORNOSTI [line 136]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Dokument opisuje projekt, studiju, program i inženjersku uslugu kao osnovni proizvod.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osnovni proizvod Enconeta je «projekt» (projekt, studija, elaborat, stručna analiza, računalni program, konzalting i druge inženjerske usluge). Zato postupak realizacije projektiranja i razvoja znači i postupak realizacije proizvoda.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Projektni zadatak i ugovor pripremaju se prema PP-72-01.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Priprema projekta počinje definiranjem projektnog zadatka, a završava potpisivanjem ugovora s kupcem. Sve aktivnosti izrade, pregleda, usuglašavanja i dokumentiranja obavljaju se prema zahtjevima postupka PP-72-01 (Ref. 5).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Proces uključuje planiranje, ulaze, izlaze, ocjenu, verifikaciju, validaciju i promjene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Proces projektiranja i razvoja obuhvaća slijedeće aktivnosti:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "a) izradu plana realizacije projektiranja i razvoja\nb) utvrđivanje ulaznih podataka za projektiranje i razvoj\nc) izradu rezultata (izlaznih podataka) projektiranja i razvoja\nd) ocjenu projektiranja i razvoja\ne) provjera i ovjera/verifikacija projektiranja i razvoja\nf) potvrđivanje prihvatljivosti/validacija projektiranja i razvoja\ng) upravljanje promjenama u projektiranju i razvoju\nh) identificiranje kritičnih točaka projekta (materijalni, terminski, ljudski), i određivanje utjecaja na projekt svake od njih, kao i vjerojatnost pojave",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Traži se identifikacija kritičnih materijalnih, terminskih i ljudskih točaka te njihovih učinaka i vjerojatnosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Proces projektiranja i razvoja obuhvaća slijedeće aktivnosti:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "a) izradu plana realizacije projektiranja i razvoja\nb) utvrđivanje ulaznih podataka za projektiranje i razvoj\nc) izradu rezultata (izlaznih podataka) projektiranja i razvoja\nd) ocjenu projektiranja i razvoja\ne) provjera i ovjera/verifikacija projektiranja i razvoja\nf) potvrđivanje prihvatljivosti/validacija projektiranja i razvoja\ng) upravljanje promjenama u projektiranju i razvoju\nh) identificiranje kritičnih točaka projekta (materijalni, terminski, ljudski), i određivanje utjecaja na projekt svake od njih, kao i vjerojatnost pojave",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Naslovna i unutarnja strana projekta određene su obrascima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Format naslovne strane projekta definiran je obrascem OB-NSP-022, a unutarnje strane obrascem OB-USP-023 koji su priloženi u točki 7. ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Plan realizacije predviđa raspored faza kada je svrsishodan.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "a) terminski plan projekta po fazama (ako je svrsishodno)",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Plan propisuje ulazne i izlazne podatke svake faze.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Plan propisuje kontrolne točke provjere, verifikacije, validacije, završnog pregleda i isporuke.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_XII",
+      "criterion_name": "Control of Measuring and Test Equipment",
+      "statement": "objective_control: Plan uključuje potrebnu mjernu opremu i zahtjeve kalibracije i rekalibracije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "supporting_control: Plan određuje tko, što, gdje i kada mjeri, postupak i kriterije prihvatljivosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "supporting_control: Plan uključuje specifikaciju i narudžbu potrebne opreme sa zahtjevima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Plan imenuje interne i vanjske učesnike, ovlasti i odgovornosti, uključujući predstavnika QA.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Plan utvrđuje veze s kupcem i između unutarnjih i vanjskih timova.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Plan predviđa ažuriranje izlaznih podataka.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Djelotvorna izvedba projekta zahtijeva izradu Plana realizacije projekta kako bi se pravovremeno predvidjeli i utvrdili potrebni elementi kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        },
+        {
+          "quote_original": "b) kratki opis te ulazni i izlazni podaci za svaku fazu (dio procesa)\nc) kontrolne točke za provjere, ovjeru, potvrđivanje prihvatljivosti, završni\n   pregled i isporuku projekta\nd) specifikacija i narudžba potrebne mjerne i druge opreme sa svim zahtjevima\n   uključujući kalibraciju i rekalibraciju\ne) definiranje tko, što, gdje i kada, s kojom mjernom opremom i po kojem\n   postupku mjeri, koji su kriteriji prihvatljivosti te tko ih je definirao (kupac,\n   zakon, standard/norma, Enconet i sl.)\nf) imenovanje internih i vanjskih učesnika projektnog tima (po fazama), te\n   njihove odgovornosti i ovlasti. Jedan od učesnika projektnog tima treba biti\n   predstavnik QA službe\ng) utvrđivanje i osiguranje veza i komunikacija s kupcem (vidi PP-72-01 točka\n   6.3) i između internih i vanjskih grupa (timova) koji su uključeni u aktivnosti\nh) predviđanje ažuriranja izlaznih podataka\ni) planiranje i utvrđivanje troškova",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Voditelj dokumentira plan prema karakteru, opsegu i složenosti projekta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kod izrade Plana realizacije svakog projekta, voditelj projekta će polaziti od\npolitike i ciljeva kvalitete utvrđenih u Priručniku kvalitete (PK5.3 i PK5.4) i drugim\ndokumentima, a posebno će voditi računa o zahtjevima za konkretan projekt.\nPlan realizacije projekta izraditi će u dokumentiranoj formi a sadržaj Plana, točka\n6.2 a) do 6.2 i) ovisi o karakteru, obimu i složenosti projekta. Za male i\njednostavne projekte Plan projekta se može izraditi pomoću obrasca: OB-PIP-\n043 «Plan izvedbe projekta», koji je priložen u Prilogu ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Plan se oslanja na politiku i ciljeve kvalitete te zahtjeve konkretnog projekta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kod izrade Plana realizacije svakog projekta, voditelj projekta će polaziti od\npolitike i ciljeva kvalitete utvrđenih u Priručniku kvalitete (PK5.3 i PK5.4) i drugim\ndokumentima, a posebno će voditi računa o zahtjevima za konkretan projekt.\nPlan realizacije projekta izraditi će u dokumentiranoj formi a sadržaj Plana, točka\n6.2 a) do 6.2 i) ovisi o karakteru, obimu i složenosti projekta. Za male i\njednostavne projekte Plan projekta se može izraditi pomoću obrasca: OB-PIP-\n043 «Plan izvedbe projekta», koji je priložen u Prilogu ovog postupka.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Voditelj osigurava komunikaciju i prijem ili predaju podataka među uključenim grupama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ovisno o veličini i složenosti projekta, te broju unutrašnjih i vanjskih suradnika,\nvoditelj projekta utvrđuje i osigurava djelovanje veza i komunikacija tijekom\nrealizacije projekta. Razni postupci za veze i komunikacije služe za međusobno\ninformiranje o podacima i rješenjima, raščišćavanje nejasnih pitanja,\nprijem/predaju ulaznih/izlaznih podataka, izvješćivanje i t.d. Metode veza i\nkomuniciranja mogu biti: izravni razgovori (sastanci), pismeni dopisi, telefonski\nrazgovori, e-mail pošta, razne prezentacije i slično.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "supporting_control: Voditelj vodi i ažurira popis i status projekata.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta voditi će i ažurirati Popis i status svih projekata.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.      POSTUPAK [line 144]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Projektni ulazi povezani su s ugovornim zahtjevima; specifikacija se izrađuje kada je svrsishodna.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ulazni podaci za projektiranje i razvoj povezani su sa zahtjevima kupca za\nproizvod koji su definirani u Ugovoru. U prvoj fazi utvrđivanja ulaznih podataka za\nprojektiranje i razvoj treba, ako je svrsishodno, izraditi specifikaciju za proizvod.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Nejasni i sporni zahtjevi rješavaju se s kupcem radi potpunih i neproturječnih ulaza.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kako bi ulazni podaci bili potpuni, nedvosmisleni i međusobno neproturječni, sve\nnejasne i sporne zahtjeve treba rješavati u komunikaciji s kupcem. Jedino tako\nutvrđeni ulazni zahtjevi osiguravaju efikasnu realizaciju proizvoda u cilju\nzadovoljenja zahtjeva i očekivanja kupaca.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ulazi moraju obuhvatiti funkciju i karakteristike proizvoda.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ulazni podaci za projektiranje i razvoj, osim ostalog, moraju sadržavati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        },
+        {
+          "quote_original": "- zahtjeve na funkciju i karakteristike proizvoda",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ulazi moraju obuhvatiti odgovarajuće zakonske i pravne zahtjeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ulazni podaci za projektiranje i razvoj, osim ostalog, moraju sadržavati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        },
+        {
+          "quote_original": "- odgovarajuće zakonske i pravne zahtjeve",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Primjenjivi podaci prethodnih sličnih projekata ulaze u projektiranje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]",
+          "source_heading_path": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ulazni podaci za projektiranje i razvoj, osim ostalog, moraju sadržavati:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        },
+        {
+          "quote_original": "- podatke od prijašnjih sličnih projekata, kada su primjenjivi",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 39] > 6.3 Utvrđivanje ulaznih podataka za projektiranje i razvoj [line 210]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ulazi se prije primjene pregledavaju i ocjenjuju za potpunost, jasnoću i dosljednost.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Prije same primjene u procesu projektiranja i razvoja, ulazne podatke treba pregledati, ocijeniti i potvrditi da su potpuni, nedvosmisleni i neproturječni.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Voditelj razrješava nejasnoće i zapisuje tehničku ocjenu ulaza na OB-OZP-034.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za postupak rješavanja nejasnoća i utvrđivanje ulaznih podataka za projektiranje i razvoj. Dužan je dati ocjenu ulaznih podataka i zahtjeva za projektiranje i razvoj/proizvod u rubrici I «Tehnički zahtjevi» obrasca OB-OZP-034 «Ocjena zahtjeva za proizvod», priloženog u postupku PP-72-01 «Proces marketinga, ugovaranja i prodaje». Odgovoran je za održavanje svih zapisa o usuglašavanju, utvrđivanju i ocjeni ulaznih podataka.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Održavaju se zapisi o usuglašavanju, utvrđivanju i ocjeni ulaza.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za postupak rješavanja nejasnoća i utvrđivanje ulaznih podataka za projektiranje i razvoj. Dužan je dati ocjenu ulaznih podataka i zahtjeva za projektiranje i razvoj/proizvod u rubrici I «Tehnički zahtjevi» obrasca OB-OZP-034 «Ocjena zahtjeva za proizvod», priloženog u postupku PP-72-01 «Proces marketinga, ugovaranja i prodaje». Odgovoran je za održavanje svih zapisa o usuglašavanju, utvrđivanju i ocjeni ulaznih podataka.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0041",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Izlazi moraju biti u obliku koji omogućuje verifikaciju prema ulaznim podacima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati (izlazni podaci) projektiranja i razvoja, koji su sadržani u projektno-tehničkoj dokumentaciji za određeni proizvod, moraju jasno i nedvosmisleno definirati proizvod sa svim potrebnim karakteristikama. Njihov obim i oblik ovisi o karakteru i složenosti projekta ali moraju:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- biti u obliku koji omogućava verifikaciju projektiranja i razvoja u skladu s podacima za projektiranje i razvoj",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0042",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Projektni izlazi odobravaju se prije objavljivanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati (izlazni podaci) projektiranja i razvoja, koji su sadržani u projektno-tehničkoj dokumentaciji za određeni proizvod, moraju jasno i nedvosmisleno definirati proizvod sa svim potrebnim karakteristikama. Njihov obim i oblik ovisi o karakteru i složenosti projekta ali moraju:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- biti odobreni prije objavljivanja",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0043",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Izlazni podaci moraju zadovoljiti ulazne zahtjeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati (izlazni podaci) projektiranja i razvoja, koji su sadržani u projektno-tehničkoj dokumentaciji za određeni proizvod, moraju jasno i nedvosmisleno definirati proizvod sa svim potrebnim karakteristikama. Njihov obim i oblik ovisi o karakteru i složenosti projekta ali moraju:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- ispuniti zahtjeve ulaznih podataka za projektiranje i razvoj",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0044",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "supporting_control: Izlazi daju potrebne informacije za nabavu i realizaciju proizvoda.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati (izlazni podaci) projektiranja i razvoja, koji su sadržani u projektno-tehničkoj dokumentaciji za određeni proizvod, moraju jasno i nedvosmisleno definirati proizvod sa svim potrebnim karakteristikama. Njihov obim i oblik ovisi o karakteru i složenosti projekta ali moraju:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- dati potrebne informacije za nabavu i realizaciju proizvoda",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0045",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: Izlazi definiraju kriterije prihvatljivosti ili na njih upućuju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati (izlazni podaci) projektiranja i razvoja, koji su sadržani u projektno-tehničkoj dokumentaciji za određeni proizvod, moraju jasno i nedvosmisleno definirati proizvod sa svim potrebnim karakteristikama. Njihov obim i oblik ovisi o karakteru i složenosti projekta ali moraju:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- definirati kriterije prihvatljivosti ili na njih upućivati",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0046",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Izlazi određuju karakteristike bitne za sigurnu i ispravnu uporabu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultati (izlazni podaci) projektiranja i razvoja, koji su sadržani u projektno-tehničkoj dokumentaciji za određeni proizvod, moraju jasno i nedvosmisleno definirati proizvod sa svim potrebnim karakteristikama. Njihov obim i oblik ovisi o karakteru i složenosti projekta ali moraju:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- utvrditi karakteristike proizvoda koje su bitne za njegovu sigurnu i ispravnu uporabu",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0047",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Voditelj odgovara za ispunjenje propisanih zahtjeva projektnih izlaza.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je da rezultati projektiranja i razvoja (izlazni podaci) ispunjavaju navedene zahtjeve.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0048",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Izvršitelj svake faze kontinuirano provjerava stanje i rezultate svoje faze.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Kontinuirana provjera stanja i rezultata projektiranja i razvoja obavlja se tijekom realizacije pojedinih faza procesa projektiranja i razvoja. Za takvu provjeru odgovoran je izvršitelj svake pojedine faze odnosno dijela procesa projektiranja i razvoja.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0049",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Sustavne provjere u primjerenim fazama ocjenjuju sposobnost ispunjenja projektnih zahtjeva.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Sustavne provjere i, ako je potrebno, ocjene projektiranja i razvoja provode se u primjerenim fazama. U skladu s utvrđenim Planom realizacije projekta (točka 6.2) potrebno je:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- ocijeniti mogućnosti za ispunjavanje zahtjeva projektiranja",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0050",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Fazne provjere identificiraju probleme i predlažu njihovo uklanjanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Sustavne provjere i, ako je potrebno, ocjene projektiranja i razvoja provode se u primjerenim fazama. U skladu s utvrđenim Planom realizacije projekta (točka 6.2) potrebno je:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- identificirati probleme i predložiti radnje za njihovo uklanjanje",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0051",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Voditelj održava zapise o ocjenama i poduzetim radnjama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je za donošenje ocjene projektiranja i razvoja, poduzimanje potrebnih radnji i održavanje zapisa o tim ocjenama i radnjama.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0052",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Direktor osigurava provjeru napretka i zadovoljenja ulaza izlaznim rezultatima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Tijekom odvijanja procesa, Direktor Enconeta osigurava provjeru, i ovjeru odnosno verifikaciju projektiranja i razvoja da se utvrdi:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "a) kako napreduje realizacija projekta",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "b) da li rezultati projektiranja i razvoja (izlazni podaci) udovoljavaju ulaznim\n   podacima i zahtjevima",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0053",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Predviđene su neovisne unutarnje ili vanjske verifikacije faza i završnog projekta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U tu svrhu, provode se interne i/ili vanjske neovisne provjere, i ovjere/verifikacije\nprojekta, po određenim fazama i/ili na kraju procesa projektiranja i razvoja. Na\nosnovu rezultata ovih aktivnosti provode se potrebne popravne radnje i dorade\nprojekta. Tada se može obaviti završni pregled i potvrditi prihvatljivost projekta.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0054",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Nalazi pregleda vode do popravnih radnji i dorade prije konačnog prihvaćanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U tu svrhu, provode se interne i/ili vanjske neovisne provjere, i ovjere/verifikacije\nprojekta, po određenim fazama i/ili na kraju procesa projektiranja i razvoja. Na\nosnovu rezultata ovih aktivnosti provode se potrebne popravne radnje i dorade\nprojekta. Tada se može obaviti završni pregled i potvrditi prihvatljivost projekta.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0055",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Preliminarna revizija dostavlja se na pregled određenom neovisnom stručnjaku, QA, kupcu i njegovu recenzentu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Radi pregleda i verifikacije voditelj projekta je dužan da nultu (preliminarnu)\nreviziju projekta, odnosno pojedine faze projekta, dostavi:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- stručnoj neovisnoj osobi unutar Enconeta, ako je određena,",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- voditelju QA u Enconetu,",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- kupcu,",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "- recenzentu, ako je određen od strane kupca",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0056",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Učesnici pregleda rezultate dostavljaju voditelju pisano.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultate pregleda, učesnici dostavljaju voditelju projekta, u pismenom obliku.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0057",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Voditelj analizira sve primjedbe i dokumentira prihvat ili odbijanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta je odgovoran da rezultate svih pregleda (nalaza) analizira te\nputem odgovarajućeg zapisa dokumentira svoje očitovanje o svim primjedbama i\nprijedlozima s naznakom koje su od njih prihvatljive a koje nisu. Takav zapis\nmora se održavati jer predstavlja sljedivu vezu između stare i nove revizije\nprojekta odnosno faze projekta. Ako neki učesnik pregleda svoje mišljenje\ndade usmeno, voditelj projekta će, ako je to svrsishodno, obraditi i dokumentirati\nprihvatljivost i takvog prijedloga.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0058",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Očitovanje o pregledima čuva sljedivu vezu stare i nove revizije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta je odgovoran da rezultate svih pregleda (nalaza) analizira te\nputem odgovarajućeg zapisa dokumentira svoje očitovanje o svim primjedbama i\nprijedlozima s naznakom koje su od njih prihvatljive a koje nisu. Takav zapis\nmora se održavati jer predstavlja sljedivu vezu između stare i nove revizije\nprojekta odnosno faze projekta. Ako neki učesnik pregleda svoje mišljenje\ndade usmeno, voditelj projekta će, ako je to svrsishodno, obraditi i dokumentirati\nprihvatljivost i takvog prijedloga.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0059",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "objective_control: Utvrđene nesukladnosti identificiraju se i dokumentiraju prema PP-83-01.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Na osnovu rezultata internih i vanjskih pregleda (nalaza) i svojih zapisa voditelj\nprojekta, prema postupku PP-83-01 \"Upravljanje nesukladnim proizvodom\",\nidentificira i dokumentira sve nađene nesukladnosti. U daljnjem procesu\nrješavanja nesukladnosti, a prema potrebi, inicira i provodi potrebne popravne\nodnosno preventivne radnje prema postupku PP-85-01 \"Popravne i preventivne\nradnje\" s ciljem da se:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "a) riješe nađene nesukladnosti i izradi nova revizija projekta\nb) osigura da se iste ili slične nesukladnosti ne ponove na budućim projektima.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0060",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Potrebne popravne i preventivne radnje uklanjaju nesukladnosti i sprečavaju ponavljanje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Na osnovu rezultata internih i vanjskih pregleda (nalaza) i svojih zapisa voditelj\nprojekta, prema postupku PP-83-01 \"Upravljanje nesukladnim proizvodom\",\nidentificira i dokumentira sve nađene nesukladnosti. U daljnjem procesu\nrješavanja nesukladnosti, a prema potrebi, inicira i provodi potrebne popravne\nodnosno preventivne radnje prema postupku PP-85-01 \"Popravne i preventivne\nradnje\" s ciljem da se:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        },
+        {
+          "quote_original": "a) riješe nađene nesukladnosti i izradi nova revizija projekta\nb) osigura da se iste ili slične nesukladnosti ne ponove na budućim projektima.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0061",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Ako ocijeni potrebnim, voditelj opisuje promjene u novoj reviziji; označavanje nije bezuvjetno.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U novoj reviziji projekta voditelj će, ako ocijeni za potrebno, na svrsishodan\nnačin, naznačiti promjene u odnosu na prethodnu reviziju. Praktično\nrješenje je, da se prije Sadržaja, doda sekcija \"Informacija o reviziji\", s\nodgovarajućim opisom promjena.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0062",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Kada je potrebno, interni stručni pregled provodi ovlaštena osoba koja nije izvodila pregledani dio.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Interne neovisne preglede stručnog dijela projektiranja i razvoja, ako je\npotrebno, provodi ovlaštena osoba koja nije sudjelovala u izvedbi onog dijela\nprojekta za kojeg se obavlja provjera. QA inženjer provodi interni pregled projekta\nsa stanovišta zadovoljenja zahtjeva kvalitete. Rezultati internih provjera upisuju\nse u Izvješće o internom pregledu na obrascu OB-INP-021.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0063",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: QA i stručni interni nalazi zapisuju se na OB-INP-021.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Interne neovisne preglede stručnog dijela projektiranja i razvoja, ako je\npotrebno, provodi ovlaštena osoba koja nije sudjelovala u izvedbi onog dijela\nprojekta za kojeg se obavlja provjera. QA inženjer provodi interni pregled projekta\nsa stanovišta zadovoljenja zahtjeva kvalitete. Rezultati internih provjera upisuju\nse u Izvješće o internom pregledu na obrascu OB-INP-021.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0064",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Završnu safety-related dokumentaciju mora pregledati imenovana, neovisna i kvalificirana osoba.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregled završne dokumentacije koja se odnosi na „safety related\" funkcije\nstruktura, sistema i komponenti mora izvoditi nominirana, nezavisna i kvalificirana\nosoba koja nije uključena u izvedbu projekta i dokumentacije. Nadležnost,\nobaveze i kvalificiranost nezavisne osobe zadužene za pregled moraju biti jasno\ndefinirani i specificirani.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0065",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Obveze, nadležnost i kvalifikacije neovisnog pregledavatelja moraju biti specificirane.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pregled završne dokumentacije koja se odnosi na „safety related\" funkcije\nstruktura, sistema i komponenti mora izvoditi nominirana, nezavisna i kvalificirana\nosoba koja nije uključena u izvedbu projekta i dokumentacije. Nadležnost,\nobaveze i kvalificiranost nezavisne osobe zadužene za pregled moraju biti jasno\ndefinirani i specificirani.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0066",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Vanjski recenzent ne smije sudjelovati u izradi pregledanog dijela i određuje ga kupac.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Vanjsku neovisnu ovjeru/verifikaciju projektiranja i razvoja provodi kupac i/ili recenzent. Recenzent je neovisna ovlaštena osoba/institucija, koja nije sudjelovala u izvedbi onog dijela projekta za koji se obavlja ovjera/verifikacija projektiranja i razvoja. Osobu/instituciju koja obavlja recenziju određuje kupac.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0067",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Vanjska verifikacija daje pisane nalaze povezane s kriterijima prihvatljivosti i pregledanim dokumentom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultate vanjske ovjere/verifikacije kupac odnosno recenzent daje u pismenom obliku. U pismenom izvješću o obavljenom pregledu odnosno ovjeri/verifikaciji projektiranja i razvoja, navodi se stranica, poglavlje, točka i stavak na koji se odnosi primjedba, zahtjev za doradom ili odstupanje od zakonskih, ugovornih ili zahtjeva kvalitete. Također, izvješće se mora referirati na one kriterije prihvatljivosti prema kojima se uspoređuju projektni rezultati i podaci, te treba navesti i identifikacijsku oznaku radnog dokumenta koji je pregledavan. Ovjera/verifikacija projektiranja i razvoja može biti provedena korištenjem raznih metoda što ovisi o obimu i složenosti projekta.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0068",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Pisani vanjski nalaz identificira mjesto primjedbe i oznaku pregledanog radnog dokumenta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Rezultate vanjske ovjere/verifikacije kupac odnosno recenzent daje u pismenom obliku. U pismenom izvješću o obavljenom pregledu odnosno ovjeri/verifikaciji projektiranja i razvoja, navodi se stranica, poglavlje, točka i stavak na koji se odnosi primjedba, zahtjev za doradom ili odstupanje od zakonskih, ugovornih ili zahtjeva kvalitete. Također, izvješće se mora referirati na one kriterije prihvatljivosti prema kojima se uspoređuju projektni rezultati i podaci, te treba navesti i identifikacijsku oznaku radnog dokumenta koji je pregledavan. Ovjera/verifikacija projektiranja i razvoja može biti provedena korištenjem raznih metoda što ovisi o obimu i složenosti projekta.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0069",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: Voditelj nadzire i preuzima podprojekt dobavljača prema zahtjevima glavnog ugovora.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Posebne projektne aktivnosti predstavljaju izvedba, nadzor, pregled i preuzimanje dijela projekta/podprojekta ugovorenog s vanjskom institucijom odnosno dobavljačem, a za potrebe izvedbe glavnog projekta ugovorenog s kupcem. U takvom slučaju voditelj projekta mora posebnu pozornost posvetiti projektnim međuvezama, ispunjavanju zahtjeva kvalitete prema glavnom ugovoru, te provođenju provjere, ovjere i potvrđivanja podprojekta kod podugovarača sukladno zahtjevima kupca. Aktivnosti se provode prema zahtjevima postupka PP-74-01 (Ref. 6).",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0070",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Podugovoreni projekt traži kontrolu međuvezâ, verifikaciju i validaciju prema zahtjevima kupca.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]",
+          "source_heading_path": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Posebne projektne aktivnosti predstavljaju izvedba, nadzor, pregled i preuzimanje dijela projekta/podprojekta ugovorenog s vanjskom institucijom odnosno dobavljačem, a za potrebe izvedbe glavnog projekta ugovorenog s kupcem. U takvom slučaju voditelj projekta mora posebnu pozornost posvetiti projektnim međuvezama, ispunjavanju zahtjeva kvalitete prema glavnom ugovoru, te provođenju provjere, ovjere i potvrđivanja podprojekta kod podugovarača sukladno zahtjevima kupca. Aktivnosti se provode prema zahtjevima postupka PP-74-01 (Ref. 6).",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > PROCES PROJEKTIRANJA I RAZVOJA [line 230]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0071",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Validacija potvrđuje namijenjenu uporabu prije isporuke; ako nije moguća potpuna, provodi se mogući dio.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]",
+          "source_heading_path": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Postupak potvrđivanja prihvatljivosti ili validacija projektiranja i razvoja, Enconet provodi kako bi se osiguralo i potvrdilo da proizvod/projekt može ispuniti zahtjeve za namijenjenu ili predviđenu uporabu. Postupak potvrđivanja prihvatljivosti projekta obavlja se u cijelosti prije isporuke, a kada postoje razlozi da to nije moguće napraviti, onda validaciju treba provesti za onaj dio proizvoda/projekta za kojega je to moguće (djelomična validacija).",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0072",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA prije završnog pregleda provjerava da su sve prijavljene radnje i nesukladnosti zaključene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]",
+          "source_heading_path": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U svrhu potvrđivanja projekta, a prije završnog pregleda i isporuke kupcu, voditelj QA mora od voditelja projekta dobiti sve rezultate internih faznih pregleda, mišljenja kupca i vanjske recenzije te provjeriti i utvrditi da su sve prijavljene popravne i preventivne radnje i nesukladnosti na projektu zaključene.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0073",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Direktor ili ovlaštena osoba završnim pregledom i potpisom potvrđuje prihvatljivost projekta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]",
+          "source_heading_path": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Završni pregled obavlja i projekt potpisuje direktor Enconeta, ili druga ovlaštena osoba čime potvrđuje prihvatljivost projekta da može ispuniti zahtjeve za određenu primjenu ili predviđenu uporabu.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0074",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Projekt dobiva IOD i kupcu se predaje traženi broj primjeraka uz kontrolirani zapis.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]",
+          "source_heading_path": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta dodjeljuje IOD broj projekta. Odgovoran je da, uz «Zapisnik o primopredaji prizvoda/usluge» (obrazac: OB-ZPP-035), odnosno «Dostavnu listu kontroliranih kopija dokumenta» (obrazac OB-DLK-010) preda kupcu traženi broj primjeraka projekta. Odgovoran je da, uz ostale zapise na projektu, održava i zapise o svim unutrašnjim i vanjskim provjerama, ovjeri/verifikaciji, potvrđivanju prihvatljivosti/validaciji, zapis o primopredaji i izvršenim radnjama, koje su iz toga proizašle. Administrator urudžbira projekt kao kontrolirani dokument (ZK1).",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0075",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Održavaju se zapisi unutarnjih i vanjskih provjera, verifikacije, validacije i primopredaje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]",
+          "source_heading_path": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta dodjeljuje IOD broj projekta. Odgovoran je da, uz «Zapisnik o primopredaji prizvoda/usluge» (obrazac: OB-ZPP-035), odnosno «Dostavnu listu kontroliranih kopija dokumenta» (obrazac OB-DLK-010) preda kupcu traženi broj primjeraka projekta. Odgovoran je da, uz ostale zapise na projektu, održava i zapise o svim unutrašnjim i vanjskim provjerama, ovjeri/verifikaciji, potvrđivanju prihvatljivosti/validaciji, zapis o primopredaji i izvršenim radnjama, koje su iz toga proizašle. Administrator urudžbira projekt kao kontrolirani dokument (ZK1).",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0076",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Administrator urudžbira projekt kao kontrolirani dokument ZK1.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]",
+          "source_heading_path": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta dodjeljuje IOD broj projekta. Odgovoran je da, uz «Zapisnik o primopredaji prizvoda/usluge» (obrazac: OB-ZPP-035), odnosno «Dostavnu listu kontroliranih kopija dokumenta» (obrazac OB-DLK-010) preda kupcu traženi broj primjeraka projekta. Odgovoran je da, uz ostale zapise na projektu, održava i zapise o svim unutrašnjim i vanjskim provjerama, ovjeri/verifikaciji, potvrđivanju prihvatljivosti/validaciji, zapis o primopredaji i izvršenim radnjama, koje su iz toga proizašle. Administrator urudžbira projekt kao kontrolirani dokument (ZK1).",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.7 Potvrđivanje prihvatljivosti/validacija projektiranja i razvoja [line 338]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0077",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Izmjene se identificiraju, dokumentiraju i odobravaju po istom postupku kao osnovni projekt.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]",
+          "source_heading_path": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izmjene ili modifikacije projektnih zadataka identificiraju se, dokumentiraju i odobravaju od ovlaštene osobe po istom postupku kao i osnovni projekt.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0078",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ocjena, verifikacija i validacija promjene provode se kada je svrsishodno.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]",
+          "source_heading_path": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta, kada je to svrsishodno, provodi ili organizira provođenje postupka ocjene, ovjere i utvrđivanja prihvatljivosti promjene.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0079",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ocjena promjene uključuje posljedice na prethodno isporučene slične projekte i dijelove.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]",
+          "source_heading_path": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ocjena promjene sadrži i ocjenu posljedica promjene na ranije isporučene iste ili slične projekte i njihove pojedine dijelove.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0080",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Direktor odobrava promjene prije primjene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]",
+          "source_heading_path": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta odobrava promjene projekta prije primjene.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0081",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Izmjene se unose u dokumente i sve pogođene osobe i organizacije odmah obavještavaju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]",
+          "source_heading_path": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je da se promjene projekta unesu u odgovarajuće dokumente i da se sve osobe i organizacije, na koje se odnosi promjena, odmah obavijeste o promjeni te da održava zapise o rezultatima ocjene promjena i potrebnih radnji.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0082",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Voditelj održava zapise ocjene promjena i potrebnih radnji.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]",
+          "source_heading_path": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta odgovoran je da se promjene projekta unesu u odgovarajuće dokumente i da se sve osobe i organizacije, na koje se odnosi promjena, odmah obavijeste o promjeni te da održava zapise o rezultatima ocjene promjena i potrebnih radnji.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.8 Upravljanje promjenama u projektiranju i razvoju [line 353]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0083",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "objective_control: Zaustavljanje rada predviđeno je za stvarnu ili moguću nesukladnost s ozbiljnim posljedicama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]",
+          "source_heading_path": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izdavanje naloga i provođenje zaštitne mjere zaustavljanja procesa i daljnjih radova primjenjuje se samo u slučajevima stvarne ili potencijalne nesukladnosti koja može izazvati znatne materijalne štete i gubitke radi nekvalitete, te ugroziti sigurnost ljudi i izazvati trajne posljedice u okolišu. Takav slijed događanja neminovno bi doveo do značajnog gubitka ugleda tvrtke, a posljedice bi dugoročno utjecale na neostvarivanje politike i ciljeva kvalitete.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0084",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Neprovedene ili neučinkovite radnje i analiza uzroka mogu pokrenuti zaštitnu mjeru zaustavljanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]",
+          "source_heading_path": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pokretanje takve zaštitne mjere može biti inicirano nizom prethodnih aktivnosti kojima se utvrdilo određeno stanje štetno za kvalitetu, a popravne i/ili preventivne radnje nisu provedene ili su bile neučinkovite. Također, može biti izazvano analizom provedenom radi pronalaženja uzroka nesukladnosti ili reklamacija kupaca, a da se kroz duže vrijeme nije donijelo ili nije moglo donijeti odgovarajuće rješenje.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0085",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: QA izdaje nalog za zaustavljanje rada ili zabranu korištenja proizvoda i dokumentacije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]",
+          "source_heading_path": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova izdaje nalog o zaustavljanju procesa i daljnjih radova odnosno zabranu korištenja određenog proizvoda i/ili dokumentacije. Nalog se upisuje u obrascu OB-NCR-016 i rješava prema postupku PP-83-01 (Ref. 7), a na dokumentaciju se utiskuje žig \"QA zaustavljeni radovi\" određenog oblika i načina korištenja prema postupku PP-42-01 (Ref. 4) odnosno naljepnica istog sadržaja na nesukladni proizvod. Dokumentacija odnosno proizvod povlači se iz korištenja i čuva na izoliranom mjestu kako bi se onemogućilo nehotično korištenje.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0086",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "objective_control: Nalog se zapisuje na OB-NCR-016; proizvod se označava i izolira radi sprečavanja nehotične uporabe.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]",
+          "source_heading_path": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova izdaje nalog o zaustavljanju procesa i daljnjih radova odnosno zabranu korištenja određenog proizvoda i/ili dokumentacije. Nalog se upisuje u obrascu OB-NCR-016 i rješava prema postupku PP-83-01 (Ref. 7), a na dokumentaciju se utiskuje žig \"QA zaustavljeni radovi\" određenog oblika i načina korištenja prema postupku PP-42-01 (Ref. 4) odnosno naljepnica istog sadržaja na nesukladni proizvod. Dokumentacija odnosno proizvod povlači se iz korištenja i čuva na izoliranom mjestu kako bi se onemogućilo nehotično korištenje.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0087",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Dokumentacija se označava žigom QA zaustavljeni radovi i povlači iz uporabe.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]",
+          "source_heading_path": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova izdaje nalog o zaustavljanju procesa i daljnjih radova odnosno zabranu korištenja određenog proizvoda i/ili dokumentacije. Nalog se upisuje u obrascu OB-NCR-016 i rješava prema postupku PP-83-01 (Ref. 7), a na dokumentaciju se utiskuje žig \"QA zaustavljeni radovi\" određenog oblika i načina korištenja prema postupku PP-42-01 (Ref. 4) odnosno naljepnica istog sadržaja na nesukladni proizvod. Dokumentacija odnosno proizvod povlači se iz korištenja i čuva na izoliranom mjestu kako bi se onemogućilo nehotično korištenje.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0088",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "supporting_control: Žig ili naljepnica prikazuju status zabrane korištenja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]",
+          "source_heading_path": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA poslova izdaje nalog o zaustavljanju procesa i daljnjih radova odnosno zabranu korištenja određenog proizvoda i/ili dokumentacije. Nalog se upisuje u obrascu OB-NCR-016 i rješava prema postupku PP-83-01 (Ref. 7), a na dokumentaciju se utiskuje žig \"QA zaustavljeni radovi\" određenog oblika i načina korištenja prema postupku PP-42-01 (Ref. 4) odnosno naljepnica istog sadržaja na nesukladni proizvod. Dokumentacija odnosno proizvod povlači se iz korištenja i čuva na izoliranom mjestu kako bi se onemogućilo nehotično korištenje.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0089",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: QA zaključuje NCR i ukida zabranu nakon provedenih radnji i prikupljenih zapisa potvrde rješenja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]",
+          "source_heading_path": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon što su provedene popravne i/ili preventivne radnje, prikupljeni zapisi kvalitete za potvrđivanje rješenja nesukladnosti, voditelj QA poslova zaključuje obrazac OB-NCR-016 i ukida zaštitnu mjeru zaustavljanja radova.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.9 Zaustavljanje procesa i daljnjih radova [line 365]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0090",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Softver se može kupiti gotov, doraditi ili nabaviti od odobrenog dobavljača.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]",
+          "source_heading_path": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Izrada softvera nije osnovna djelatnost Enconeta. Međutim, isporuka softvera\nodređene namjene, može se pojaviti kao dio ugovorne obveze Enconeta prema\nkupcu. U tom slučaju, takav softverski proizvod Enconet može:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "- nabaviti na tržištu kao gotov proizvod,",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "- nabaviti na tržištu te doraditi za potrebe korisnika,",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "- nabaviti od odobrenog dobavljača.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0091",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Enconet zadržava odgovornost za softverske zahtjeve i primjenjuje ISO/IEC 90003.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]",
+          "source_heading_path": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U svakom slučaju Enconet je odgovoran za zadovoljenje propisanih zahtjeva.\nOsim zahtjeva, propisanih u standardima i postupcima iz točke 3 ovog postupka\n(vrijede za cjelokupni asortiman), Enconet će se pridržavati i specifičnih zahtjeva\nkoje, za projektiranje i razvoj softvera, propisuje međunarodna norma ISO/IEC\n90003 «Software engineering – Gudeline for the application of ISO\n9001:2000 to computer software».",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0092",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: Dobavljači softvera moraju zadovoljiti zahtjeve i biti ocijenjeni prema PP-74-01.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]",
+          "source_heading_path": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Enconet će osigurati da se njegovi dobavljači softvera pridržavaju navedenih\nzahtjeva te da se, kao i ostali dobavljači, vrednuju i ocjenjuju prema postupku\nPP-74-01, «Proces nabave i ocjenjivanja dobavljača».",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0093",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "objective_control: Voditelj planira i dokumentira verifikaciju softvera, najmanje korisnički test prema kriterijima prihvatljivosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]",
+          "source_heading_path": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zavisno od namjene i složenosti te od toga da li je softver nabavljen na tržištu (sa\nili bez dorade) ili je nabavljen od odobrenog dobavljača, voditelj projekta je\nodgovoran da planira i provodi potrebne aktivnosti (komunikacija, izbor, nabava,\npregled i preuzimanje, dorada, nadzor, instalacija i testiranje te izrada uputa za\nkorištenje i održavanje), u skladu s navedenim zahtjevima kako bi se osiguralo i\ndokumentiralo:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "- da je, na svrsishodan način, proveden postupak verifikacije softvera, a",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "  minimalno test prihvatljivosti u uvjetima korisnika, kojim se verificira i\n  potvrđuje prihvatljivost softvera u odnosu na kriterije prihvatljivosti,",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0094",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "supporting_control: Verzije softvera jednoznačno se identificiraju i dokumentiraju radi upravljanja konfiguracijom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]",
+          "source_heading_path": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zavisno od namjene i složenosti te od toga da li je softver nabavljen na tržištu (sa\nili bez dorade) ili je nabavljen od odobrenog dobavljača, voditelj projekta je\nodgovoran da planira i provodi potrebne aktivnosti (komunikacija, izbor, nabava,\npregled i preuzimanje, dorada, nadzor, instalacija i testiranje te izrada uputa za\nkorištenje i održavanje), u skladu s navedenim zahtjevima kako bi se osiguralo i\ndokumentiralo:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "- da se razne verzije softvera jednoznačno identificiraju i dokumentiraju i",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "  tako osigurava upravljanje konfiguracijom,",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0095",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: Definiraju se upute uporabe i održavanja softvera do povlačenja verzije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]",
+          "source_heading_path": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Zavisno od namjene i složenosti te od toga da li je softver nabavljen na tržištu (sa\nili bez dorade) ili je nabavljen od odobrenog dobavljača, voditelj projekta je\nodgovoran da planira i provodi potrebne aktivnosti (komunikacija, izbor, nabava,\npregled i preuzimanje, dorada, nadzor, instalacija i testiranje te izrada uputa za\nkorištenje i održavanje), u skladu s navedenim zahtjevima kako bi se osiguralo i\ndokumentiralo:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "- da je definiran postupak odnosno upute (Priručnik) za korištenje i",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        },
+        {
+          "quote_original": "  održavanje softvera do trenutka povlačenja verzije iz uporabe.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.10 Proces projektiranja i razvoja softvera [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0096",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Završni izvještaj potpisuju autor, suradnici, QA i direktor; format se prilagođava ugovoru.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.11 Izdavanje izvještaja Enconeta o izvršenim radovima [line 415]",
+          "source_heading_path": "Programski postupak [line 229] > 6.11 Izdavanje izvještaja Enconeta o izvršenim radovima [line 415]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po završetku ugovorenih radova (projekta), Enconet u dogovoru s naručiteljem\n(kupcem) izrađuje završni konačni izvještaj. Format naslovne strane izvještaja\nprikazan je na obrascu OB-NSP-022, Naslovna strana projekta. Potpisnici su\nvoditelj (autor), suradnici, QA inženjer (voditelj) i direktor Enconeta. Za NE Krško\nizrađuju se dvije vrste izvještaja i to „Status Report\" i „Outage Report\". Format i\nsadržaj izvještaja usklađuju se sa specifikom područja radova (projekta) i\nposebnim zahtjevima predstavnika NE Krško.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.11 Izdavanje izvještaja Enconeta o izvršenim radovima [line 415]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0097",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Za NE Krško statusni i završni izvještaji usklađuju se s područjem rada i zahtjevima kupca.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 6.11 Izdavanje izvještaja Enconeta o izvršenim radovima [line 415]",
+          "source_heading_path": "Programski postupak [line 229] > 6.11 Izdavanje izvještaja Enconeta o izvršenim radovima [line 415]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Po završetku ugovorenih radova (projekta), Enconet u dogovoru s naručiteljem\n(kupcem) izrađuje završni konačni izvještaj. Format naslovne strane izvještaja\nprikazan je na obrascu OB-NSP-022, Naslovna strana projekta. Potpisnici su\nvoditelj (autor), suradnici, QA inženjer (voditelj) i direktor Enconeta. Za NE Krško\nizrađuju se dvije vrste izvještaja i to „Status Report\" i „Outage Report\". Format i\nsadržaj izvještaja usklađuju se sa specifikom područja radova (projekta) i\nposebnim zahtjevima predstavnika NE Krško.",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 6.11 Izdavanje izvještaja Enconeta o izvršenim radovima [line 415]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0098",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Dijagram povezuje dobavljačev interni pregled i recenziju s Enconetovim završnim preuzimanjem.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]",
+          "source_heading_path": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "    subgraph GLAVNI PROCESNI TOK ENCONETA\n        A((A)) --> UGOVOR[UGOVOR S DOBAVLJAČEM]\n        UGOVOR --> PROJEKTNE[PROJEKTNE AKTIVNOSTI]\n        PROJEKTNE --> OCJENA{OCJENA STATUSA PROJEKTA}\n        OCJENA -->|DA| PROJEKTNE2[PROJEKTNE AKTIVNOSTI]\n        PROJEKTNE2 --> ZAVRSNI{ZAVRŠNI PREGLED PODPROJEKTA}\n        ZAVRSNI -->|DA| PREUZIMANJE[PREUZIMANJE PODPROJEKTA]\n        PREUZIMANJE --> PROJEKTNE3[PROJEKTNE AKTIVNOSTI]\n        PROJEKTNE3 --> A\n    end",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "    subgraph PROCESNI TOK DOBAVLJAČA\n        C((C))\n        UGOVOR --> AKTIVNOSTI[AKTIVNOSTI DOBAVLJAČA]\n        AKTIVNOSTI --> INTERNI{INTERNI PREGLED}\n        INTERNI -->|DA| AKTIVNOSTI2[AKTIVNOSTI DOBAVLJAČA]\n        AKTIVNOSTI2 --> RECENZIJA{RECENZIJA}\n        RECENZIJA -->|DA| PREDAJA[PREDAJA PODPROJEKTA]\n        PREDAJA --> ZAVRSNI\n    end",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "    DA{DA} -->|NE| IZMJENE[IZMJENE UGOVORA]\n    IZMJENE --> PROJEKTNE\n    OCJENA -->|NE| IZMJENE2[IZMJENE I DOPUNE]\n    IZMJENE2 --> B\n    INTERNI -->|NE| IZMJENE3[IZMJENE I DOPUNE]\n    RECENZIJA -->|NE| IZMJENE3\n    ZAVRSNI -->|NE| IZMJENE3",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0099",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Dijagram zadržava fazni pregled, recenziju, validaciju, doradu i primopredaju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]",
+          "source_heading_path": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "    ProjectActivities --> InternalReview{INTERNI PREGLED - OCJENA STATUSA}\n    InternalReview -->|NE| ChangesAndAdditions[IZMJENE I DOPUNE]\n    ChangesAndAdditions --> ContractChanges\n    InternalReview -->|DA| Customer[KUPAC]\n    Customer --> ProjectActivities2[PROJEKTNE AKTIVNOSTI]",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "    ProjectActivities2 --> Review{RECENZIJA}\n    Review -->|NE| ContractTermination[RASKID UGOVORA IZMJENA PROJEKTA NOVA RECENZIJA]\n    ContractTermination --> ContractChanges\n    Review -->|DA| ProjectRefinement[DORADA PROJEKTA]",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "    ProjectRefinement --> ProjectValidation[VALIDACIJA PROJEKTA]\n    ProjectValidation --> FinalReview{ZAVRŠNI PREGLED}\n    FinalReview -->|NE| ProjectRefinement2[DORADA PROJEKTA]\n    ProjectRefinement2 --> FinalReview\n    FinalReview -->|DA| ProjectCompletion[ZAVRŠETAK PROJEKTA]",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "    ProjectCompletion --> ProjectHandover[PREDAJA I PREUZIMANJE PROJEKTA]\n```",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0100",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Prazna naslovnica predviđa naručitelja, ugovor, vrstu, reviziju, kopiju, IOD i datum.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]",
+          "source_heading_path": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naručitelj: | (naziv tvrtke) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Ugovor broj: | (broj ugovora) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Vrsta dokumenta: | (studija, projektna dokumentacija itd.) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Revizija broj: | (broj) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Kontrolirana kopija broj: | (broj) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| IOD: | (IOD broj dokumenta) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Datum: | (datum objavljivanja) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0101",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "supporting_control: Predložak naslovnice razdvaja autora, suradnike, QA i direktorovo odobrenje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]",
+          "source_heading_path": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Voditelj: | (ime i prezime, titula) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Suradnici: | (ime i prezime, titula) <br> (ime i prezime, titula) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Voditelj QA: | (Potpis) <br> _________________________ <br> (ime i prezime, titula) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Direktor: | (Potpis) <br> _________________________ <br> (ime i prezime, titula) |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0102",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Predložak internog pregleda predviđa identifikaciju, reference, odgovorne osobe, potpise i datume.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]",
+          "source_heading_path": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| IOD: |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| IZVJEŠĆE O INTERNOM PREGLEDU |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "Datum:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "Referentni dokumenti:",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Provjerio: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Odgovorna osoba: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Predložio: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Izvjestio: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        },
+        {
+          "quote_original": "| Voditelj QA poslova: | Potpis: | Datum: |",
+          "quote_language": "hr",
+          "source_locator": "Programski postupak [line 229] > 7. PRILOZI [line 430]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0103",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Prazan zapisnik primopredaje traži potvrdu ugovornih kriterija i potpise obiju strana.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ZAPISNIK [line 665]",
+          "source_heading_path": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "6. Proizvod/usluga je izvršena sukladno s kriterijima prihvaćanja odnosno zahtjevima iz",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   Ugovora/Narudžbe",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "7. Datum ovog Zapisnika smatra se datumom preuzimanja proizvoda/usluge od strane",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   Naručitelja.",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "8. Zapisnik je sastavljen u 2 (dva) istovjetna primjerka, koji svojim potpisom ovjeravaju",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   obje strane kao dokaz o izvršenom odnosno preuzetom proizvodu/usluzi.",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   Primio:               (Ime i prezime, funkcija)                 Potpis ____________________",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   Predao:               (Ime i prezime, funkcija)                 Potpis ____________________",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0104",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Predložak plana uključuje identitet, zahtjeve, faze, rokove i kontrolne točke s kriterijima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ZAPISNIK [line 665]",
+          "source_heading_path": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "PLAN IZVEDBE PROJEKTA                                                IOD: PL-",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "1. Oznaka/naziv projekta:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "2. Zahtjevi za projekt:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "3. Faze, rokovi (terminski plan) i učesnici:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "| Rbr faze | Naziv/kratki opis faze (točke sadržaja) projekta | Rok izvršenja | Učešće u projektu |",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "4. Kontrolne točke i kriteriji prihvatljivosti:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0105",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "supporting_control: Predložak razdvaja stručni nadzor voditelja i QA nadzor.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ZAPISNIK [line 665]",
+          "source_heading_path": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "5. Praćenje i nadzor izvedbe projekta:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   a) Stručno praćenje i nadzor: (voditelj projekta)\n   b) QA nadzor: QA inženjer, voditelj QA",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0106",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Plan predviđa odgovorne osobe za komunikaciju Enconeta i kupca.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ZAPISNIK [line 665]",
+          "source_heading_path": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "6. Komunikacija (odgovorne osobe):",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   - Enconet:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   - Kupac:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    },
+    {
+      "item_id": "ITEM-0107",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Predložak plana povezuje ugovor i SUK s navedenim normama, bez dokaza stvarne provedbe.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "ZAPISNIK [line 665]",
+          "source_heading_path": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "7. Referentna dokumentacija:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   - Ugovor/narudžba br:",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "   - Sustav upravljanja kvalitetom Enconeta - SUK",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        },
+        {
+          "quote_original": "     (ISO 9001:2015; 10CFR50, App B;\n     IAEA Safety Standards Series, No. GSR Part 2)",
+          "quote_language": "hr",
+          "source_locator": "ZAPISNIK [line 665]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "6"
+      }
+    }
+  ]
+}
