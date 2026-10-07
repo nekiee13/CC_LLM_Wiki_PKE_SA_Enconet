@@ -224,6 +224,7 @@ def render(matrix_path: Path, db_path: Path, generated_date: str, run_id: str = 
   <div><h2>Executive Summary</h2>
     <p>Ekonerg documents were evaluated against all 18 Appendix B criteria. The evidence-based result is <strong>{score:.1f}% — Partially Matched</strong>, using the approved five-level Enconet scale. This closes the owner-operated pre-flight tool run.</p>
     <p>The score is the average of the criterion ratings: fully = 5/5 (100), substantially = 4/5 (75), partially = 3/5 (50), minimally = 2/5 (25), and unmet = 1/5 (0).</p>
+    <div class="note"><strong>What full means:</strong> the written controls cover the applicable duties. Work records still need a real-audit check. Missing work samples alone do not lower a documentation rating; real written gaps still do. The score is an ordinal summary, not a measured share of every regulatory clause.</div>
     <div class="note"><strong>Review priorities:</strong> {', '.join(d['n'] for d in data if d['score'] <= 50) or 'No criterion rated below substantial'}. Read the specific gaps below. A high crumb count does not itself raise a score.</div>
     <div class="note ok"><strong>Source boundary:</strong> Ekonerg is the only supplier shown. Regulatory documents are the comparison baseline; no other supplier data is used.</div>
   </div>

@@ -1,0 +1,23 @@
+{
+  "run_id": "RUN-20261003-32",
+  "revision_id": "DOC-SCORING-20261007-01",
+  "decision_ref": "DOCUMENT-SCORING-20261007-OWNER",
+  "baseline": "docs/reviews/MANUAL_REFRESH_ASSESSMENT_20261006.json",
+  "methodology": "docs/reviews/DOCUMENT_SCORING_RUBRIC_20261007.md",
+  "changes": [
+    {
+      "criterion_id": "APP_B_XVI",
+      "rating": "fully",
+      "basis_crumb_ids": [
+        "CRUMB-DOC-0032-APP_B_XVI-0004",
+        "CRUMB-DOC-0032-APP_B_XVI-0007",
+        "CRUMB-DOC-0032-APP_B_XVI-0008",
+        "CRUMB-DOC-0032-APP_B_XVI-0010"
+      ],
+      "affirmative_summary": "Manual 8.7, 9.2, 10.2 and Prilog 2 require prompt identification and action, cause analysis for significant or repeated problems, recurrence prevention, recorded results, management reports and verified completion/effectiveness. PQ10.2-2 revision 10 sections 2.2, 2.5, 2.7 and 3.1-3.8 assign the cause, approval, follow-up, reopening and reporting duties. These are written controls, not only standard references.",
+      "contrary_summary": "The real audit still needs samples showing timely closure and effective recurrence prevention. Separately, confirm the applicable Part 21 reporting path beyond customer notification in PQ10.2-1 section 3.11. Neither an unchecked work sample nor that separate reporting question is a missing Appendix B XVI corrective-action policy.",
+      "judge_ruling": "Fully matched for documentation, 5/5. The supplied written controls cover Appendix B XVI and NQA-1 Part I Requirement 16 paragraph 100. This is not a claim of verified field performance or full Part 21 compliance.",
+      "rationale": "Raise 75 to 100 points: the previous deduction was based on a separate Part 21 reporting check rather than a missing corrective-action duty. Linked manual crumbs APP_B_XVI-0004, 0007, 0008 and 0010 show significant/repeated cause review, prompt action, prevention of recurrence, records, verification and management reports; PQ10.2-2 revision 10 provides assigned implementation/follow-up duties. Keep Part 21 and completed-action sampling as explicit audit follow-up. Apply the document-scoring rubric of 2026-10-07 without changing the approved five-level weights."
+    }
+  ]
+}

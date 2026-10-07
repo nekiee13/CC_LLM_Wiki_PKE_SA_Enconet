@@ -1,0 +1,3923 @@
+{
+  "schema": "evaluation_refresh/1",
+  "root": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Ekonerg",
+  "assessment": "docs/reviews/DOCUMENT_SCORING_ASSESSMENT_20261007.json",
+  "database_sha256": "e5892a0f99faeed99a4af54de672f2910f2a918374c6c1f896422228e43c2073",
+  "inputs": {
+    "docs/reviews/DOCUMENT_SCORING_ASSESSMENT_20261007.json": "cd8d613e4a279e7a53ad91a560cacdcb4baabd3c7e2bf4301b0909afdb2a193d",
+    "manifests/approvals.csv": "ffe2aa39ee35e2bbee777dd542558a040b95eeff3d8a6f4b875469399517dfcc",
+    "docs/reviews/DOCUMENT_SCORING_RUBRIC_20261007.md": "eb2d10bbdd874c8bdca25c68a94876b242a0062befc1da90dfb7bd3639fc8e16",
+    "schemas/scoring_model.yml": "c71a2fdfb360436e3a0b4ddfdd52b27b1721ea0978ea843eb2b668377941d1d1",
+    "docs/reviews/MANUAL_REFRESH_ASSESSMENT_20261006.json": "3cc1e1e6dff21041673b40403c70db6d971fd63a8d4b374d6f426c9ce1479299",
+    "raw/10CFR_Part 21.md": "74e8cf5d62f05a87879f602cb1abdaee745af875fc6eeab5420df70dc3e84248",
+    "raw/10CFR_Part 50_-_Appendix_B.md": "b06bf6d7fbc8d92e122bbb3dd7efc5088842141127f2717e3ea6de976612c396",
+    "raw/ASME_NQA-1_000-013_Preface.md": "7df1e41b51d5618c1afe404ee89c2396e0c907e5efd768a09a480d593c0aa6be",
+    "raw/ASME_NQA-1_014-046_Part_1.md": "8e26ceadaf42cdedbee5505268b3610b2a33951c4b7d01626df7d0522a32d41b",
+    "raw/ASME_NQA-1_047-128_Part_2.md": "50bb4b0291e185f2d949556c6e03d507c31922d7818988b22747ad66c6764322",
+    "raw/ASME_NQA-1_129-206_Part_3.md": "a2cc79330bef84bd1323c102f06142ef1207b7db6092bad602ff09979d604f83",
+    "raw/ASME_NQA-1_207-315_Part_4.md": "0124984ff49898c6487b267fc298af5ca0e1757db36a08e03f8a6ecb070016e9",
+    "raw/PQ06.1_Upravljanje_rizicima.md": "fbed57cf7b11737b240a0c2dc007843adec8f16142ce808bbcedee1caa5cee17",
+    "raw/PQ07.1-1_r8_Kontrola_školovanja_i_treninga_osoblja.md": "ca61c4d6099782f92a6cbb58296b25e893add080271c51b32f962db7b7aed7cc",
+    "raw/PQ07.1-2_r5_Kontrola_opreme_za_mjerenje,_inspekcij.md": "9fc2077bf90ad74fec3be053ba762954d7c0141088ce29c90525e53c14d17fb8",
+    "raw/PQ07.5-2_r8_Postupci_sustava_kvalitete,_sustava_za.md": "29d17b1fd74c3fb44d0627dbe432ec1ba88b912f24b5abd83b17b53f39c6a9dd",
+    "raw/PQ07.5-3_r3_Kontrolni_postupci.md": "0f264be9ea5b8d630567040174a359845cf44e9354f29232387b6b72f08fb1ea",
+    "raw/PQ07.5-4_r6_Radni_postupci.md": "e3ef52eac90fccee4168beab423b1157238aa9217f2df839157a280516d4abe8",
+    "raw/PQ07.5-5_r10_Kontrola_dokumenata_koji_nastaju_u_Ek.md": "a4d252d8e4821d2ee46b4d1c0db99133559a95fdf75fa43a23c993aec27e53ea",
+    "raw/PQ07.5-6_r5_Kontrola_dokumentacije_koju_prima_Ekon.md": "0b8addf66a9933be4d5a332e2a92fcd3cc3da693a34550c562fab266594c8564",
+    "raw/PQ07.5-7_r10_Kontrola_zapisa.md": "7af8c6a51bf34d7db3f71f7e8659a1948fa0fda5407accc1c2dce02a4f641c34",
+    "raw/PQ08.1-1_r5_Svrstavanja_aktivnosti_u_nivoe_složeno.md": "bc7e70915c9a9cdc45a377a4745170bf57677bdfa912c6198ac6fec3f75d0a06",
+    "raw/PQ08.1-2_r4_Plan_kvalitete.md": "1ae5bd3c5b37e085b778e292f70741186664524a9c02953a95cec8fb7ca1869f",
+    "raw/PQ08.1-3_r2_Plan_vođenja_projekta.md": "1399a9374c4bd77fbd2539838cafbd9248eca7827cf9d681d31db2ed639ffd0d",
+    "raw/PQ08.2-1_r6_Odnosi_s_Naručiteljima.md": "e1545b39c208ffdab933b6ac5d453437031da518825dc61e630d51879eb9d2cb",
+    "raw/PQ08.2-2_r5_Priprema_i_postupanje_s_ugovornom_doku.md": "fb6fda1f17c55e31d7e0db95271ab61982506acdd7284ee9cc3d0c26be034f73",
+    "raw/PQ08.3-1_r4_Kontrola_studijskih_projektnih_radova_.md": "ee1b6a020af2457977d50443a8197217246a227419a5c72373e3117dfd7b1fdd",
+    "raw/PQ08.4-1_r3_Kontrola_studijskih_projektnih_radova_.md": "3bb5bd31e187169c0f8fe1ee742bde3c5f9719eda230ddbecbb2d9de3ddbaa24",
+    "raw/PQ08.4-2_r9_Kontrola_nabave.md": "b3ad579958daaaf2271e3913fe72512f529a6b0ffbd08bff83afc0efaf763e83",
+    "raw/PQ08.4-3_r11_Evaluacija_i_izbor_dobavljača.md": "1166d5dd59ffec79bf1cc45ecbb08cd2387d1923806512408c469a8f90e588d0",
+    "raw/PQ08.6_r3_Kontrola_i_verifikacija_aktivnosti.md": "8ac8cbf7f5ff0df7c959f370f85c66e84c16120049cb461786f1844dfcd11d34",
+    "raw/PQ09.2_r9_Provjere.md": "602fced6251414fdb4c3ca6c6e78b7930181017f50de821e8da22462429135f3",
+    "raw/PQ09.3_r6_Pregled_i_ocjena_sustava_kvalitete,_zašt.md": "cf62287d78756915eaa14885e5c3cf87241795e3fdd1f173df3f71a7f22a2879",
+    "raw/PQ10.2-1_r10_Kontrola_neusklađenosti.md": "23e2d5d94b58fe2b0f41ee9260fd768e93a0dcc8917f3b2403ff325bbf0c7c60",
+    "raw/PQ10.2-2_r10_Kontrola_korektivnih_akcija.md": "c9106e670874f1ab8d7e4307cc264511938c9cd5ba19b848ba1c08736c92b4b7",
+    "raw/Priručnik_sustava_upravljanja_rev.5.md": "cd2e60b5b67229ac02dbd92d6637780d1e12b0491b11a54d37bc78fdd6d635a0",
+    "raw/Priručnik_sustava_upravljanja_rev.5__9492b447c386.md": "9492b447c386d174ca6fd7a473999a4999899523ae21570a81626ffadfdeae87"
+  },
+  "run_id": "RUN-20261003-32",
+  "revision_id": "DOC-SCORING-20261007-01",
+  "decision_ref": "DOCUMENT-SCORING-20261007-OWNER",
+  "before": {
+    "run": {
+      "run_id": "RUN-20261003-32",
+      "supplier": "Ekonerg",
+      "deliverable_language": "en",
+      "scoring_model_version": "1.0-ekonerg-20261004",
+      "started_at": "2026-10-03 17:12:58",
+      "completed_at": null
+    },
+    "evaluations": [
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_I",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 5.3 and Prilog 2 assign management, QA, department and project duties. QA can identify problems, seek solutions, verify action and report directly to empowered management. Ekonerg retains responsibility for delegated work.",
+        "contrary_summary": "The text gives organizational freedom and direct reporting, but independence from cost and schedule pressure when safety is at stake is less explicit. Do not treat worker safety-reporting clauses as a nuclear QA stop-work rule.",
+        "judge_ruling": "Substantially matched, 4/5. Written QA authority and interfaces are present; one important independence safeguard needs clearer wording.",
+        "rationale": "Appendix B I / NQA-1 Part I Requirement 1: Manual 5.3 and Prilog 2 sections 1.2-1.3 provide substantive controls, not just a standard reference. Retain 75 points. Verify QA escalation when safety conflicts with cost or schedule."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_II",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 4.3 defines technical services and nuclear QA scope. Sections 7.1-7.2, 8.1 and 9.3 require competence, resources, graded project quality plans and annual documented management review. Dodatak 1 adds nuclear requirements.",
+        "contrary_summary": "The program refers to NQA-1 without an edition in its reference list. Nuclear project scope, quality levels and lower-level procedure applicability must be made clear in the project plan; the general manual alone does not settle each contract's scope.",
+        "judge_ruling": "Substantially matched, 4/5. The program has a usable documented structure, with project-specific scope and baseline details still to resolve.",
+        "rationale": "Appendix B II / NQA-1 Part I Requirement 2: concrete planning, training and review duties support 75 points. A cover statement of alignment is only a lead, not proof of complete alignment."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_III",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.3 covers design inputs, outputs, review, independent verification and changes. The nuclear addendum requires pre-use software checks, verification of level-I results and control of changes by the original responsible organization.",
+        "contrary_summary": "The nuclear addendum and Prilog 5 use inconsistent RSP/ROS procedure references. The complete software verification procedure is not supplied. Confirm the controlling method and its required acceptance, configuration and verification records.",
+        "judge_ruling": "Substantially matched, 4/5. Design control is documented, but its software/procedure reference chain needs clarification.",
+        "rationale": "Appendix B III / NQA-1 Part I Requirement 3: Manual 8.3 and Dodatak 1 point 3 support design control beyond generic intent. Retain 75 points; do not infer a complete software QA program from a procedure title."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_IV",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.4 requires procurement scope, technical requirements, tests, inspections, acceptance criteria, review and approval. It also requires QA responsibilities, supplier access, nonconformance reporting, qualification needs and delivered quality evidence. Prilog 2 assigns QA flow-down responsibility.",
+        "contrary_summary": "The supplied policy does not fully spell out all lower-tier flow-down and record retention/submittal obligations for each nuclear purchase. Check those requirements in the controlled procurement procedure and contract template.",
+        "judge_ruling": "Substantially matched, 4/5. The full manual supplies procurement content that was missing from the earlier extraction.",
+        "rationale": "Appendix B IV / NQA-1 Part I Requirement 4: Manual 8.4.1-8.4.2 explicitly defines purchase-document content and contractual inclusion. Raise 50 to 75 points. This is based on the content of the new controls, not ten new crumbs."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_IX",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual chapter 3 defines qualified procedures and special processes. Section 8.5.2 requires validation and supervision when special processes are used. Dodatak 1 point 9 adopts that clause for nuclear work. Prilog 5 identifies RVT, RPT, RMT and RUT procedures as follow-up leads.",
+        "contrary_summary": "The register does not show the procedures' personnel/equipment qualification rules, process parameters, acceptance standards or qualification-record controls. Scope remains vague for coatings, concrete, epoxy/cement mixtures, non-metal visual testing and carbon laminates; do not assume these activities are performed.",
+        "judge_ruling": "Partially matched, 3/5. Control is recognized and conditionally required; the technical qualification layer is not available for full assessment.",
+        "rationale": "Appendix B IX / NQA-1 Part I Requirement 9 paragraphs 200-400: raise 0 to 50 points. Credit the written validation/supervision duty, not the existence of NDT procedure names as if they were qualification proof."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_V",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.5 and 8.1 establish procedure levels, project work plans, needed equipment and staff, technical standards, verification stages and acceptance criteria. Existing reviewed procedures supply work sequence and responsibilities.",
+        "contrary_summary": "Prilog 5 is a procedure register, not the work instructions themselves. Some referenced nuclear and special-process instructions are absent, so their quantitative or qualitative acceptance criteria cannot be confirmed from their titles.",
+        "judge_ruling": "Substantially matched, 4/5. The written instruction system is present; detailed acceptance instructions are not complete in the supplied set.",
+        "rationale": "Appendix B V / NQA-1 Part I Requirement 5: Manual 7.5 and 8.1 plus the retained procedure evidence support 75 points. Keep referenced instructions as leads until their actual text is reviewed."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_VI",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 1.2 and 7.5.3 describe preparation, review, approval, revision, controlled distribution and withdrawal of obsolete documents. The nuclear addendum addresses approval of changes and distribution responsibility.",
+        "contrary_summary": "The full manual contains inconsistent live cross-references: Dodatak 1 points to ROS-02 for program controls, while Prilog 5 lists ROS-03; its record-backup clause names RSP-03 while the register lists ROS-04 for backups. The test crosswalk also points to 8.1.4 rather than 9.1.4. Resolve these before relying on the reference chain.",
+        "judge_ruling": "Substantially matched, 4/5. Document-control rules are strong, but the new full source reveals cross-reference defects that rule out a full match.",
+        "rationale": "Appendix B VI / NQA-1 Part I Requirement 6: lower 100 to 75 points for observed document clarity/control defects, not because execution records are absent. Compare Prilog 5, Dodatak 1 points 11 and 17, and its comparison table. A later procedure revision alone is not proof of a defect in an older manual."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_VII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.4 requires supplier evaluation, purchase verification and a written verifier report. The nuclear addendum includes dedication using safety functions and critical characteristics. Its flow notes require pre-engagement and periodic audits of level-I suppliers, subject to the stated qualified-list exception.",
+        "contrary_summary": "The full supplier/dedication method and acceptance evidence are not supplied for each purchase route. Confirm how critical characteristics, verification methods and acceptance before use are controlled; do not treat a dedication commitment as a completed dedication.",
+        "judge_ruling": "Substantially matched, 4/5. Selection, verification and follow-up controls exist, with some detailed acceptance routes still referenced elsewhere.",
+        "rationale": "Appendix B VII / NQA-1 Part I Requirement 7: retain 75 points using Manual 8.4 and Dodatak 1. This checks Ekonerg's control of supplier work; other companies do not become separate audit targets."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_VIII",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.5.3 maintains work-order and document identity throughout engineering delivery. Sections 7.5.4 and 8.5.5 link records and preservation to the item/service. Dodatak 1 point 8 commits to a nuclear identity/status document with traceability methods and marking authority where needed.",
+        "contrary_summary": "The nuclear item-identification method is deferred to a project document not supplied here. Controls for marking transfer, limited-life items and maintaining identity in storage are not developed in this manual. Apply these hardware duties only where the contract involves such items.",
+        "judge_ruling": "Partially matched, 3/5. There is real service/document traceability and a nuclear control commitment, but the detailed item-control layer remains incomplete.",
+        "rationale": "Appendix B VIII / NQA-1 Part I Requirement 8 paragraphs 200-303: raise 0 to 50 points. The former no-evidence conclusion was an extraction failure. Manual 8.5.3, 8.5.5 and Dodatak 1 point 8 support this bounded assessment."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_X",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 9.1.4 requires independent verification, acceptance checks and planned witness/hold points. Sections 8.4.3 and 8.6 link verification reports, conformity and authorized release. Existing procedure evidence supports inspection responsibilities.",
+        "contrary_summary": "Confirm that inspection independence excludes both the performer and direct supervisor, and that any hold-point waiver is recorded before work continues. The supplied text does not fully establish those NQA-1 details for every inspection route.",
+        "judge_ruling": "Substantially matched, 4/5. Inspection and release controls are documented; independence and waiver details need clarification.",
+        "rationale": "Appendix B X / NQA-1 Part I Requirement 10 paragraphs 100, 300 and 600: retain 75 points. A future field audit should sample records, but their absence is not the sole reason for this documentation rating."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XI",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 9.1.4 requires customer test programs and procedures with requirements, acceptance criteria, test conditions, documented results and evaluation. Section 8.1 requires planned testing needs. The nuclear flow notes state software result/pre-use verification triggers.",
+        "contrary_summary": "The manual says Ekonerg does not test its own services/products and develops programs for customer testing. Detailed test prerequisites, instrument suitability, configuration and minimum record fields are not fully shown. ROS-02 is referenced but not supplied, and Prilog 5 lists ROS-03 as program-use control.",
+        "judge_ruling": "Partially matched, 3/5. A test-control policy exists; complete test and software-verification methods remain incomplete in the supplied set.",
+        "rationale": "Appendix B XI / NQA-1 Part I Requirement 11 paragraphs 100-300, 500-601: raise 0 to 50 points. Preserve the source's customer-testing qualification. Do not add blanket Part II requirements through this assessment."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XII",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.1.5 and retained procedures require calibration intervals, checks before infrequent use, records, status marking and exclusion of overdue equipment. Repeatedly inaccurate equipment is repaired or replaced.",
+        "contrary_summary": "The reviewed text does not fully establish evaluation of past results back to the last acceptable calibration after loss/damage or out-of-calibration findings, nor the complete use/application traceability chain. The commercial ruler/tape/level exception is allowed by NQA-1 when required accuracy is met; it is not itself a defect.",
+        "judge_ruling": "Partially matched, 3/5. Core calibration controls exist, but retrospective impact and use-traceability requirements need clearer support.",
+        "rationale": "Appendix B XII / NQA-1 Part I Requirement 12 paragraphs 303.1-303.2 and 304: retain 50 points with a corrected technical reason. Missing calibration certificates alone do not decide the documentation score."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XIII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.5.5 requires identification, handling, storage, cleaning, packaging, preservation and transport controls. It requires specific instructions, special-environment marking and periodic checks, suitable equipment and trained/experienced handlers. Dodatak 1 point 13 applies these controls to nuclear work.",
+        "contrary_summary": "The manual does not clearly require inspection/testing of special handling tools at specified intervals or before use. Confirm that requirement in the relevant project instruction, where special tools are used.",
+        "judge_ruling": "Substantially matched, 4/5. Most preservation duties are explicit; a specific special-tool assurance duty remains unclear.",
+        "rationale": "Appendix B XIII / NQA-1 Part I Requirement 13 paragraphs 100-600: raise 0 to 75 points. This is substantive coverage in Manual 8.5.5, not just the addendum's cross-reference."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XIV",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.1.5 excludes overdue equipment. Sections 8.6 and 9.1.4 require acceptance/release endorsement. Dodatak 1 point 14 requires a specific nuclear status-marking document where needed, including methods, traceability and marking authority.",
+        "contrary_summary": "The specific status document is not supplied. The exact rules for applying/removing status marks, preventing bypass of tests and preventing unintended operation of affected equipment are not demonstrated by release approval alone.",
+        "judge_ruling": "Partially matched, 3/5. Release and calibration status controls exist, but the broader nuclear item/operating-status scheme is still a deferred detail.",
+        "rationale": "Appendix B XIV / NQA-1 Part I Requirement 14: raise 0 to 50 points using Manual 8.6, 9.1.4 and Dodatak 1 point 14. Operating-status checks are bounded to equipment affected by Ekonerg work."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XV",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.7 requires identification, marking, segregation or other misuse prevention, evaluation, authorized disposition and reinspection. It records customer agreement and approvals. Dodatak 1 point 15 adds nuclear nonconformance and Part 21 duties through PQ10.2-1.",
+        "contrary_summary": "The reviewed control set does not fully show technical justification and design-control treatment for repair/use-as-is, required as-built updates and the competence/access criteria for disposition evaluators. Part 21 customer notification is not by itself proof of all statutory reporting duties.",
+        "judge_ruling": "Partially matched, 3/5. Basic nonconformance control is substantive, but important nuclear disposition details remain insufficiently supported.",
+        "rationale": "Appendix B XV / NQA-1 Part I Requirement 15 paragraphs 403-405: retain 50 points on specific documentation gaps, not merely a lack of completed NCRs. Manual 8.7 and Dodatak 1 point 15 replace the earlier overly narrow evidence explanation."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XVI",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.7, 9.2 and 10.2-10.3 require cause analysis, prompt action, recurrence prevention, recorded follow-up, effectiveness checks and management reporting. Nuclear work requires customer notification; supplier nonconformance notification is also stated.",
+        "contrary_summary": "Confirm the complete Part 21 path for reportability, responsible decision makers, timing and required notifications. The manual's customer-notification statement alone does not demonstrate all of those duties.",
+        "judge_ruling": "Substantially matched, 4/5. The cause/action/verification loop is well documented. The applicable Part 21 escalation path needs a clearer complete evidence chain.",
+        "rationale": "Appendix B XVI / NQA-1 Part I Requirement 16: retain 75 points; use the approved Part 21 baseline for the separate notification check. The document-based result is official for this tool, not a claim of field-verified action effectiveness."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XVII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.5.4 and retained record procedures cover identification, readable/retrievable records, retention and responsibility. Design, calibration, release and nonconformance records are specified. Dodatak 1 point 17 requires central archives, server storage and copies at a separate location.",
+        "contrary_summary": "The nuclear backup clause cites RSP-03, while Prilog 5 lists ROS-04 for server backup and RSP-03 for design documentation. Resolve the actual controlling storage/backup instruction and confirm the preservation method meets the applicable records requirements.",
+        "judge_ruling": "Substantially matched, 4/5. Record-control coverage is strong, but a concrete backup-control reference defect prevents a full match.",
+        "rationale": "Appendix B XVII / NQA-1 Part I Requirement 17: lower 100 to 75 points because the full manual exposes an unresolved preservation-control reference. This is not a downgrade simply for missing sample records; verify the correct instruction and its storage/retention controls."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XVIII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 9.2 requires planned annual audits with defined criteria, scope and methods; trained independent auditors; reports and records; and verified corrective follow-up. Management review uses audit results. Nuclear supplier audits are addressed in the addendum and flow notes.",
+        "contrary_summary": "Confirm the detailed lead-auditor qualification and maintenance requirements and how deficient areas trigger follow-up or reaudit. A title in a register is not sufficient to establish all qualification rules.",
+        "judge_ruling": "Substantially matched, 4/5. The audit cycle is documented, while the detailed auditor qualification and follow-up method needs fuller support.",
+        "rationale": "Appendix B XVIII / NQA-1 Part I Requirements 18 and 2: retain 75 points using Manual 9.2, Prilog 2 and Dodatak 1 point 18. Completed audit files are a later verification sample, not a prerequisite for issuing this documentation score."
+      }
+    ],
+    "evidence": [
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0008-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0008-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0009-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0010-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0015-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0016-APP_B_I-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0016-APP_B_I-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0017-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0017-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0018-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0019-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0020-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0020-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0020-APP_B_I-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0021-APP_B_I-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0021-APP_B_I-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0022-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0022-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0023-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0024-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0025-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0026-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0028-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0030-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0017"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0019"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0020"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0021"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0022"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0023"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0024"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0029"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0008-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0009-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0009-APP_B_II-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0011-APP_B_II-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0017-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0018-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0018-APP_B_II-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0020-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0021-APP_B_II-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0022-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0028-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0017"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0020"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0021"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0022"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0023"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0024"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0026"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0027"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0028"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0030"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0031"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0032"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0033"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0034"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0035"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0037"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0038"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0040"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0041"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0042"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0017-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0017-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0019-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0019-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0019-APP_B_III-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0023-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0023-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0017"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0019"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0020"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0026"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0027"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0029"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0021-APP_B_IV-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0021-APP_B_IV-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0021-APP_B_IV-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0024-APP_B_IV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "item_id": "CRUMB-DOC-0032-APP_B_IX-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "item_id": "CRUMB-DOC-0032-APP_B_IX-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "item_id": "CRUMB-DOC-0032-APP_B_IX-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0008-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0011-APP_B_V-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0011-APP_B_V-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0011-APP_B_V-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0012-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0012-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0013-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0013-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0017-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0018-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0020-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0020-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0026-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0011-APP_B_VI-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0011-APP_B_VI-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0011-APP_B_VI-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0012-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0012-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0012-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0013-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0013-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0015-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0015-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0015-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0016-APP_B_VI-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0018-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0021-APP_B_VI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0022-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0022-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0023-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0019"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0023"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0024"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0026"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0027"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0021-APP_B_VII-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0021-APP_B_VII-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0021-APP_B_VII-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0024-APP_B_VII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0024-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0024-APP_B_VII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0030-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0015-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0016-APP_B_X-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0022-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0022-APP_B_X-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0023-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0024-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0026-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0026-APP_B_X-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0027-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0028-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0020-APP_B_XV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0029-APP_B_XV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0029-APP_B_XV-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0028-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVI-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0008-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0009-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0009-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0011-APP_B_XVII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0012-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0013-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0014-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0015-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0037"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0038"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0039"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0040"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0041"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0042"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0018-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0019-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0021-APP_B_XVII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0021-APP_B_XVII-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0022-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0023-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0024-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0025-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0026-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0028-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0008-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0014-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0025-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0028-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0010"
+      }
+    ]
+  },
+  "after": {
+    "run": {
+      "run_id": "RUN-20261003-32",
+      "supplier": "Ekonerg",
+      "deliverable_language": "en",
+      "scoring_model_version": "1.0-ekonerg-20261004",
+      "started_at": "2026-10-03 17:12:58",
+      "completed_at": null
+    },
+    "evaluations": [
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_I",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 5.3 and Prilog 2 assign management, QA, department and project duties. QA can identify problems, seek solutions, verify action and report directly to empowered management. Ekonerg retains responsibility for delegated work.",
+        "contrary_summary": "The text gives organizational freedom and direct reporting, but independence from cost and schedule pressure when safety is at stake is less explicit. Do not treat worker safety-reporting clauses as a nuclear QA stop-work rule.",
+        "judge_ruling": "Substantially matched, 4/5. Written QA authority and interfaces are present; one important independence safeguard needs clearer wording.",
+        "rationale": "Appendix B I / NQA-1 Part I Requirement 1: Manual 5.3 and Prilog 2 sections 1.2-1.3 provide substantive controls, not just a standard reference. Retain 75 points. Verify QA escalation when safety conflicts with cost or schedule."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_II",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 4.3 defines technical services and nuclear QA scope. Sections 7.1-7.2, 8.1 and 9.3 require competence, resources, graded project quality plans and annual documented management review. Dodatak 1 adds nuclear requirements.",
+        "contrary_summary": "The program refers to NQA-1 without an edition in its reference list. Nuclear project scope, quality levels and lower-level procedure applicability must be made clear in the project plan; the general manual alone does not settle each contract's scope.",
+        "judge_ruling": "Substantially matched, 4/5. The program has a usable documented structure, with project-specific scope and baseline details still to resolve.",
+        "rationale": "Appendix B II / NQA-1 Part I Requirement 2: concrete planning, training and review duties support 75 points. A cover statement of alignment is only a lead, not proof of complete alignment."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_III",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.3 covers design inputs, outputs, review, independent verification and changes. The nuclear addendum requires pre-use software checks, verification of level-I results and control of changes by the original responsible organization.",
+        "contrary_summary": "The nuclear addendum and Prilog 5 use inconsistent RSP/ROS procedure references. The complete software verification procedure is not supplied. Confirm the controlling method and its required acceptance, configuration and verification records.",
+        "judge_ruling": "Substantially matched, 4/5. Design control is documented, but its software/procedure reference chain needs clarification.",
+        "rationale": "Appendix B III / NQA-1 Part I Requirement 3: Manual 8.3 and Dodatak 1 point 3 support design control beyond generic intent. Retain 75 points; do not infer a complete software QA program from a procedure title."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_IV",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.4 requires procurement scope, technical requirements, tests, inspections, acceptance criteria, review and approval. It also requires QA responsibilities, supplier access, nonconformance reporting, qualification needs and delivered quality evidence. Prilog 2 assigns QA flow-down responsibility.",
+        "contrary_summary": "The supplied policy does not fully spell out all lower-tier flow-down and record retention/submittal obligations for each nuclear purchase. Check those requirements in the controlled procurement procedure and contract template.",
+        "judge_ruling": "Substantially matched, 4/5. The full manual supplies procurement content that was missing from the earlier extraction.",
+        "rationale": "Appendix B IV / NQA-1 Part I Requirement 4: Manual 8.4.1-8.4.2 explicitly defines purchase-document content and contractual inclusion. Raise 50 to 75 points. This is based on the content of the new controls, not ten new crumbs."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_IX",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual chapter 3 defines qualified procedures and special processes. Section 8.5.2 requires validation and supervision when special processes are used. Dodatak 1 point 9 adopts that clause for nuclear work. Prilog 5 identifies RVT, RPT, RMT and RUT procedures as follow-up leads.",
+        "contrary_summary": "The register does not show the procedures' personnel/equipment qualification rules, process parameters, acceptance standards or qualification-record controls. Scope remains vague for coatings, concrete, epoxy/cement mixtures, non-metal visual testing and carbon laminates; do not assume these activities are performed.",
+        "judge_ruling": "Partially matched, 3/5. Control is recognized and conditionally required; the technical qualification layer is not available for full assessment.",
+        "rationale": "Appendix B IX / NQA-1 Part I Requirement 9 paragraphs 200-400: raise 0 to 50 points. Credit the written validation/supervision duty, not the existence of NDT procedure names as if they were qualification proof."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_V",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.5 and 8.1 establish procedure levels, project work plans, needed equipment and staff, technical standards, verification stages and acceptance criteria. Existing reviewed procedures supply work sequence and responsibilities.",
+        "contrary_summary": "Prilog 5 is a procedure register, not the work instructions themselves. Some referenced nuclear and special-process instructions are absent, so their quantitative or qualitative acceptance criteria cannot be confirmed from their titles.",
+        "judge_ruling": "Substantially matched, 4/5. The written instruction system is present; detailed acceptance instructions are not complete in the supplied set.",
+        "rationale": "Appendix B V / NQA-1 Part I Requirement 5: Manual 7.5 and 8.1 plus the retained procedure evidence support 75 points. Keep referenced instructions as leads until their actual text is reviewed."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_VI",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 1.2 and 7.5.3 describe preparation, review, approval, revision, controlled distribution and withdrawal of obsolete documents. The nuclear addendum addresses approval of changes and distribution responsibility.",
+        "contrary_summary": "The full manual contains inconsistent live cross-references: Dodatak 1 points to ROS-02 for program controls, while Prilog 5 lists ROS-03; its record-backup clause names RSP-03 while the register lists ROS-04 for backups. The test crosswalk also points to 8.1.4 rather than 9.1.4. Resolve these before relying on the reference chain.",
+        "judge_ruling": "Substantially matched, 4/5. Document-control rules are strong, but the new full source reveals cross-reference defects that rule out a full match.",
+        "rationale": "Appendix B VI / NQA-1 Part I Requirement 6: lower 100 to 75 points for observed document clarity/control defects, not because execution records are absent. Compare Prilog 5, Dodatak 1 points 11 and 17, and its comparison table. A later procedure revision alone is not proof of a defect in an older manual."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_VII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.4 requires supplier evaluation, purchase verification and a written verifier report. The nuclear addendum includes dedication using safety functions and critical characteristics. Its flow notes require pre-engagement and periodic audits of level-I suppliers, subject to the stated qualified-list exception.",
+        "contrary_summary": "The full supplier/dedication method and acceptance evidence are not supplied for each purchase route. Confirm how critical characteristics, verification methods and acceptance before use are controlled; do not treat a dedication commitment as a completed dedication.",
+        "judge_ruling": "Substantially matched, 4/5. Selection, verification and follow-up controls exist, with some detailed acceptance routes still referenced elsewhere.",
+        "rationale": "Appendix B VII / NQA-1 Part I Requirement 7: retain 75 points using Manual 8.4 and Dodatak 1. This checks Ekonerg's control of supplier work; other companies do not become separate audit targets."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_VIII",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.5.3 maintains work-order and document identity throughout engineering delivery. Sections 7.5.4 and 8.5.5 link records and preservation to the item/service. Dodatak 1 point 8 commits to a nuclear identity/status document with traceability methods and marking authority where needed.",
+        "contrary_summary": "The nuclear item-identification method is deferred to a project document not supplied here. Controls for marking transfer, limited-life items and maintaining identity in storage are not developed in this manual. Apply these hardware duties only where the contract involves such items.",
+        "judge_ruling": "Partially matched, 3/5. There is real service/document traceability and a nuclear control commitment, but the detailed item-control layer remains incomplete.",
+        "rationale": "Appendix B VIII / NQA-1 Part I Requirement 8 paragraphs 200-303: raise 0 to 50 points. The former no-evidence conclusion was an extraction failure. Manual 8.5.3, 8.5.5 and Dodatak 1 point 8 support this bounded assessment."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_X",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 9.1.4 requires independent verification, acceptance checks and planned witness/hold points. Sections 8.4.3 and 8.6 link verification reports, conformity and authorized release. Existing procedure evidence supports inspection responsibilities.",
+        "contrary_summary": "Confirm that inspection independence excludes both the performer and direct supervisor, and that any hold-point waiver is recorded before work continues. The supplied text does not fully establish those NQA-1 details for every inspection route.",
+        "judge_ruling": "Substantially matched, 4/5. Inspection and release controls are documented; independence and waiver details need clarification.",
+        "rationale": "Appendix B X / NQA-1 Part I Requirement 10 paragraphs 100, 300 and 600: retain 75 points. A future field audit should sample records, but their absence is not the sole reason for this documentation rating."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XI",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 9.1.4 requires customer test programs and procedures with requirements, acceptance criteria, test conditions, documented results and evaluation. Section 8.1 requires planned testing needs. The nuclear flow notes state software result/pre-use verification triggers.",
+        "contrary_summary": "The manual says Ekonerg does not test its own services/products and develops programs for customer testing. Detailed test prerequisites, instrument suitability, configuration and minimum record fields are not fully shown. ROS-02 is referenced but not supplied, and Prilog 5 lists ROS-03 as program-use control.",
+        "judge_ruling": "Partially matched, 3/5. A test-control policy exists; complete test and software-verification methods remain incomplete in the supplied set.",
+        "rationale": "Appendix B XI / NQA-1 Part I Requirement 11 paragraphs 100-300, 500-601: raise 0 to 50 points. Preserve the source's customer-testing qualification. Do not add blanket Part II requirements through this assessment."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XII",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.1.5 and retained procedures require calibration intervals, checks before infrequent use, records, status marking and exclusion of overdue equipment. Repeatedly inaccurate equipment is repaired or replaced.",
+        "contrary_summary": "The reviewed text does not fully establish evaluation of past results back to the last acceptable calibration after loss/damage or out-of-calibration findings, nor the complete use/application traceability chain. The commercial ruler/tape/level exception is allowed by NQA-1 when required accuracy is met; it is not itself a defect.",
+        "judge_ruling": "Partially matched, 3/5. Core calibration controls exist, but retrospective impact and use-traceability requirements need clearer support.",
+        "rationale": "Appendix B XII / NQA-1 Part I Requirement 12 paragraphs 303.1-303.2 and 304: retain 50 points with a corrected technical reason. Missing calibration certificates alone do not decide the documentation score."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XIII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.5.5 requires identification, handling, storage, cleaning, packaging, preservation and transport controls. It requires specific instructions, special-environment marking and periodic checks, suitable equipment and trained/experienced handlers. Dodatak 1 point 13 applies these controls to nuclear work.",
+        "contrary_summary": "The manual does not clearly require inspection/testing of special handling tools at specified intervals or before use. Confirm that requirement in the relevant project instruction, where special tools are used.",
+        "judge_ruling": "Substantially matched, 4/5. Most preservation duties are explicit; a specific special-tool assurance duty remains unclear.",
+        "rationale": "Appendix B XIII / NQA-1 Part I Requirement 13 paragraphs 100-600: raise 0 to 75 points. This is substantive coverage in Manual 8.5.5, not just the addendum's cross-reference."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XIV",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.1.5 excludes overdue equipment. Sections 8.6 and 9.1.4 require acceptance/release endorsement. Dodatak 1 point 14 requires a specific nuclear status-marking document where needed, including methods, traceability and marking authority.",
+        "contrary_summary": "The specific status document is not supplied. The exact rules for applying/removing status marks, preventing bypass of tests and preventing unintended operation of affected equipment are not demonstrated by release approval alone.",
+        "judge_ruling": "Partially matched, 3/5. Release and calibration status controls exist, but the broader nuclear item/operating-status scheme is still a deferred detail.",
+        "rationale": "Appendix B XIV / NQA-1 Part I Requirement 14: raise 0 to 50 points using Manual 8.6, 9.1.4 and Dodatak 1 point 14. Operating-status checks are bounded to equipment affected by Ekonerg work."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XV",
+        "rating": "partially",
+        "score": 50.0,
+        "coverage": 0.5,
+        "completeness": 0.5,
+        "accuracy": 0.5,
+        "clarity": 0.5,
+        "alignment": 0.5,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.7 requires identification, marking, segregation or other misuse prevention, evaluation, authorized disposition and reinspection. It records customer agreement and approvals. Dodatak 1 point 15 adds nuclear nonconformance and Part 21 duties through PQ10.2-1.",
+        "contrary_summary": "The reviewed control set does not fully show technical justification and design-control treatment for repair/use-as-is, required as-built updates and the competence/access criteria for disposition evaluators. Part 21 customer notification is not by itself proof of all statutory reporting duties.",
+        "judge_ruling": "Partially matched, 3/5. Basic nonconformance control is substantive, but important nuclear disposition details remain insufficiently supported.",
+        "rationale": "Appendix B XV / NQA-1 Part I Requirement 15 paragraphs 403-405: retain 50 points on specific documentation gaps, not merely a lack of completed NCRs. Manual 8.7 and Dodatak 1 point 15 replace the earlier overly narrow evidence explanation."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XVI",
+        "rating": "fully",
+        "score": 100.0,
+        "coverage": 1.0,
+        "completeness": 1.0,
+        "accuracy": 1.0,
+        "clarity": 1.0,
+        "alignment": 1.0,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 8.7, 9.2, 10.2 and Prilog 2 require prompt identification and action, cause analysis for significant or repeated problems, recurrence prevention, recorded results, management reports and verified completion/effectiveness. PQ10.2-2 revision 10 sections 2.2, 2.5, 2.7 and 3.1-3.8 assign the cause, approval, follow-up, reopening and reporting duties. These are written controls, not only standard references.",
+        "contrary_summary": "The real audit still needs samples showing timely closure and effective recurrence prevention. Separately, confirm the applicable Part 21 reporting path beyond customer notification in PQ10.2-1 section 3.11. Neither an unchecked work sample nor that separate reporting question is a missing Appendix B XVI corrective-action policy.",
+        "judge_ruling": "Fully matched for documentation, 5/5. The supplied written controls cover Appendix B XVI and NQA-1 Part I Requirement 16 paragraph 100. This is not a claim of verified field performance or full Part 21 compliance.",
+        "rationale": "Raise 75 to 100 points: the previous deduction was based on a separate Part 21 reporting check rather than a missing corrective-action duty. Linked manual crumbs APP_B_XVI-0004, 0007, 0008 and 0010 show significant/repeated cause review, prompt action, prevention of recurrence, records, verification and management reports; PQ10.2-2 revision 10 provides assigned implementation/follow-up duties. Keep Part 21 and completed-action sampling as explicit audit follow-up. Apply the document-scoring rubric of 2026-10-07 without changing the approved five-level weights."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XVII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 7.5.4 and retained record procedures cover identification, readable/retrievable records, retention and responsibility. Design, calibration, release and nonconformance records are specified. Dodatak 1 point 17 requires central archives, server storage and copies at a separate location.",
+        "contrary_summary": "The nuclear backup clause cites RSP-03, while Prilog 5 lists ROS-04 for server backup and RSP-03 for design documentation. Resolve the actual controlling storage/backup instruction and confirm the preservation method meets the applicable records requirements.",
+        "judge_ruling": "Substantially matched, 4/5. Record-control coverage is strong, but a concrete backup-control reference defect prevents a full match.",
+        "rationale": "Appendix B XVII / NQA-1 Part I Requirement 17: lower 100 to 75 points because the full manual exposes an unresolved preservation-control reference. This is not a downgrade simply for missing sample records; verify the correct instruction and its storage/retention controls."
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "evaluation_run_id": "RUN-20261003-32",
+        "criterion_id": "APP_B_XVIII",
+        "rating": "substantially",
+        "score": 75.0,
+        "coverage": 0.75,
+        "completeness": 0.75,
+        "accuracy": 0.75,
+        "clarity": 0.75,
+        "alignment": 0.75,
+        "evidence_supported": 1,
+        "affirmative_summary": "Manual 9.2 requires planned annual audits with defined criteria, scope and methods; trained independent auditors; reports and records; and verified corrective follow-up. Management review uses audit results. Nuclear supplier audits are addressed in the addendum and flow notes.",
+        "contrary_summary": "Confirm the detailed lead-auditor qualification and maintenance requirements and how deficient areas trigger follow-up or reaudit. A title in a register is not sufficient to establish all qualification rules.",
+        "judge_ruling": "Substantially matched, 4/5. The audit cycle is documented, while the detailed auditor qualification and follow-up method needs fuller support.",
+        "rationale": "Appendix B XVIII / NQA-1 Part I Requirements 18 and 2: retain 75 points using Manual 9.2, Prilog 2 and Dodatak 1 point 18. Completed audit files are a later verification sample, not a prerequisite for issuing this documentation score."
+      }
+    ],
+    "evidence": [
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0008-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0008-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0009-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0010-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0011-APP_B_I-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0015-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0016-APP_B_I-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0016-APP_B_I-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0017-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0017-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0018-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0019-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0020-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0020-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0020-APP_B_I-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0021-APP_B_I-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0021-APP_B_I-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0022-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0022-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0023-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0024-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0025-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0026-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0028-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0030-APP_B_I-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0017"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0019"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0020"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0021"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0022"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0023"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0024"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_I",
+        "item_id": "CRUMB-DOC-0032-APP_B_I-0029"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0008-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0009-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0009-APP_B_II-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0011-APP_B_II-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0017-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0018-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0018-APP_B_II-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0020-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0021-APP_B_II-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0022-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0028-APP_B_II-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0017"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0020"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0021"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0022"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0023"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0024"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0026"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0027"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0028"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0030"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0031"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0032"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0033"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0034"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0035"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0037"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0038"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0040"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0041"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_II",
+        "item_id": "CRUMB-DOC-0032-APP_B_II-0042"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0017-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0017-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0019-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0019-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0019-APP_B_III-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0022-APP_B_III-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0023-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0023-APP_B_III-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0017"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0019"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0020"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0026"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0027"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_III",
+        "item_id": "CRUMB-DOC-0032-APP_B_III-0029"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0021-APP_B_IV-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0021-APP_B_IV-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0021-APP_B_IV-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0024-APP_B_IV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IV",
+        "item_id": "CRUMB-DOC-0032-APP_B_IV-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "item_id": "CRUMB-DOC-0032-APP_B_IX-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "item_id": "CRUMB-DOC-0032-APP_B_IX-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_IX",
+        "item_id": "CRUMB-DOC-0032-APP_B_IX-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0008-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0011-APP_B_V-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0011-APP_B_V-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0011-APP_B_V-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0012-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0012-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0013-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0013-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0017-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0018-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0020-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0020-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0026-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_V",
+        "item_id": "CRUMB-DOC-0032-APP_B_V-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0011-APP_B_VI-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0011-APP_B_VI-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0011-APP_B_VI-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0012-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0012-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0012-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0013-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0013-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0014-APP_B_VI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0015-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0015-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0015-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0016-APP_B_VI-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0018-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0021-APP_B_VI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0022-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0022-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0023-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0019"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0023"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0024"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0025"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0026"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VI",
+        "item_id": "CRUMB-DOC-0032-APP_B_VI-0027"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0021-APP_B_VII-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0021-APP_B_VII-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0021-APP_B_VII-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0024-APP_B_VII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0024-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0024-APP_B_VII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0025-APP_B_VII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0030-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VII-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_VIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_VIII-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0015-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0016-APP_B_X-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0022-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0022-APP_B_X-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0023-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0024-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0026-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0026-APP_B_X-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0027-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0028-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_X",
+        "item_id": "CRUMB-DOC-0032-APP_B_X-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XI-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XIV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XIV-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0020-APP_B_XV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0029-APP_B_XV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0029-APP_B_XV-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XV",
+        "item_id": "CRUMB-DOC-0032-APP_B_XV-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0028-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVI-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVI",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVI-0016"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0008-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0009-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0009-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0010-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0011-APP_B_XVII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0012-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0013-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0014-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0015-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0037"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0038"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0039"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0040"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0041"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0016-APP_B_XVII-0042"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0018-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0019-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0020-APP_B_XVII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0021-APP_B_XVII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0021-APP_B_XVII-0008"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0022-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0023-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0024-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0025-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0026-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0028-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0029-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0030-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0009"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0010"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0011"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0012"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0013"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0014"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0015"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVII-0018"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0008-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0014-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0025-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0027-APP_B_XVIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0028-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0001"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0002"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0003"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0004"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0005"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0006"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0007"
+      },
+      {
+        "evaluation_id": "EVAL-APP_B_XVIII",
+        "item_id": "CRUMB-DOC-0032-APP_B_XVIII-0010"
+      }
+    ]
+  },
+  "active_generations": [
+    {
+      "run_id": "RUN-20261003-01",
+      "doc_id": "DOC-0002",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-02",
+      "doc_id": "DOC-0027",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-03",
+      "doc_id": "DOC-0014",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-04",
+      "doc_id": "DOC-0029",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-06",
+      "doc_id": "DOC-0030",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-07",
+      "doc_id": "DOC-0008",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-09",
+      "doc_id": "DOC-0028",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-10",
+      "doc_id": "DOC-0012",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-11",
+      "doc_id": "DOC-0013",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-12",
+      "doc_id": "DOC-0026",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-13",
+      "doc_id": "DOC-0018",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-14",
+      "doc_id": "DOC-0019",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-15",
+      "doc_id": "DOC-0017",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-17",
+      "doc_id": "DOC-0024",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-18",
+      "doc_id": "DOC-0025",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-19",
+      "doc_id": "DOC-0023",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-20",
+      "doc_id": "DOC-0009",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-21",
+      "doc_id": "DOC-0010",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-22",
+      "doc_id": "DOC-0015",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-24",
+      "doc_id": "DOC-0001",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-26",
+      "doc_id": "DOC-0003",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-27",
+      "doc_id": "DOC-0004",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-28",
+      "doc_id": "DOC-0005",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-31",
+      "doc_id": "DOC-0007",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-36",
+      "doc_id": "DOC-0020",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-38",
+      "doc_id": "DOC-0022",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261003-41",
+      "doc_id": "DOC-0006",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261005-51",
+      "doc_id": "DOC-0011",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261006-67",
+      "doc_id": "DOC-0016",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261006-68",
+      "doc_id": "DOC-0021",
+      "status": "active",
+      "is_active": 1
+    },
+    {
+      "run_id": "RUN-20261006-77",
+      "doc_id": "DOC-0032",
+      "status": "active",
+      "is_active": 1
+    }
+  ],
+  "active_vendor": 475,
+  "metrics": {
+    "consolidated_score": 68.1,
+    "classification": "partially",
+    "applicable_count": 18,
+    "classification_counts": {
+      "fully": 1,
+      "minimally": 0,
+      "na": 0,
+      "partially": 6,
+      "substantially": 11,
+      "undetermined": 0,
+      "unmet": 0
+    }
+  }
+}

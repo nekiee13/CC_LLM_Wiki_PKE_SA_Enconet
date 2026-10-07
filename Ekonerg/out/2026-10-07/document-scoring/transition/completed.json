@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "revision_id": "DOC-SCORING-20261007-01",
+  "active_vendor": 475,
+  "plan_sha256": "c97654f2ad4e56bdeeced99be98282e8d9b611253fa366e18157de60831de950",
+  "database_before_sha256": "e5892a0f99faeed99a4af54de672f2910f2a918374c6c1f896422228e43c2073",
+  "database_after_sha256": "43096c594b47fc9ab8593292b0d0ced66447b3052f8c5d8e005f01dc2df74977",
+  "metrics": {
+    "consolidated_score": 68.1,
+    "classification": "partially",
+    "applicable_count": 18,
+    "classification_counts": {
+      "fully": 1,
+      "minimally": 0,
+      "na": 0,
+      "partially": 6,
+      "substantially": 11,
+      "undetermined": 0,
+      "unmet": 0
+    }
+  },
+  "journal_hashes": {
+    "intent.json": "c97654f2ad4e56bdeeced99be98282e8d9b611253fa366e18157de60831de950",
+    "before.json": "663883ebc5fd4fa75a3cfcd816dede3e1f04331d96bf8c5dad4912d9cb18a8ba"
+  }
+}

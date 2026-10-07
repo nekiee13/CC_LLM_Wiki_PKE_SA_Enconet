@@ -28,6 +28,8 @@ def test_cards_show_summary_and_crumbs_that_feed_score() -> None:
     data = _data(page)
     assert len(data) == 18
     assert "Criterion summary" in page
+    assert "What full means:" in page
+    assert "Missing work samples alone do not lower a documentation rating" in page
     assert "Crumbs linked to this score" in page
     assert "Source chapter:" in page
     assert "chapterText" in page

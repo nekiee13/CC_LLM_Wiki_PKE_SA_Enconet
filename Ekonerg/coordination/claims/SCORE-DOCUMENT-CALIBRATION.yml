@@ -1,0 +1,18 @@
+task: SCORE-DOCUMENT-CALIBRATION
+agent: codex
+status: released
+claimed_at_utc: 2026-10-07T03:41:25Z
+last_renewed_at_utc: 2026-10-07T03:47:26Z
+expires_at_utc: 2026-10-07T07:47:26Z
+anticipated_files:
+  - scripts/evaluation_refresh.py
+  - scripts/tests/test_evaluation_refresh.py
+  - scripts/build_umbra_conformance_dashboard.py
+  - scripts/tests/test_umbra_conformance_dashboard.py
+  - docs/reviews
+  - manifests/approvals.csv
+  - .gitattributes
+  - out/2026-10-07
+  - coordination
+note: One coherent document-scoring correction with preserved five-level model and history; owner accepted mapping and source-transition review items.
+released_at_utc: 2026-10-07T03:51:20Z
