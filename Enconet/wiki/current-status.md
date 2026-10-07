@@ -11,13 +11,19 @@ audit while preserving incoming documents. Archive and reset are complete.
 - Framework, prompts, schemas, documents, coordination and handoffs preserved.
 - Previous results are historical only, not active results for this cycle.
 
+Fresh intake inventory is complete. First source batch SRC-20261007-001
+registered DOC-0001 (NP-SUK-001 rev. 8) and extracted its text, keeping incoming
+unchanged. A read-only parser preview found 57 sections with no warnings.
+Twenty-five vendor and seven regulatory sources remain unregistered.
+No chapter DB rows, crumbs, evaluations or new scores have been created.
+See [fresh intake record](../docs/FRESH_INTAKE_20261007.md).
+
 The old prompt selector is preserved as framework history. It does not grant
 approval for this new cycle. The v3 candidate needs local compatibility checks
-and calibration before activation. No source registration or sieving has run.
+and calibration before activation. No sieving has run.
 
-Next: prepare a fresh source intake inventory and confirm regulatory editions,
-their roles, supplier scope and output language. Use chapter-preserving intake
-and keep originals in incoming. The legacy promotion command moves originals;
-do not use that behavior without a reviewed preservation-safe path.
+Next: continue bounded intake and confirm regulatory editions, their roles,
+supplier scope and output language before G1. Use --preserve-incoming through
+the canonical registration command; the default legacy path still moves files.
 
 See [reset record](../docs/ENCONET_RESET_20261007.md).

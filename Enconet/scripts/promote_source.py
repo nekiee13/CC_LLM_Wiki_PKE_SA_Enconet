@@ -11,7 +11,12 @@ import db_util
 from source_registry import ENCONET, RAW, register, write_lock
 
 
-def promote(source: Path, **metadata) -> str:
+def promote(source: Path, *, preserve_incoming: bool = False, preview: bool = False, **metadata) -> str:
+    if preserve_incoming:
+        from copy_incoming_source import promote as copy_source
+        return copy_source(source.name, apply=not preview, **metadata)
+    if preview:
+        raise ValueError('--preview requires --preserve-incoming')
     source = source.resolve()
     incoming = (ENCONET / "incoming").resolve()
     if source.parent != incoming or not source.is_file():
@@ -33,6 +38,8 @@ def promote(source: Path, **metadata) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("filename")
+    parser.add_argument('--preserve-incoming', action='store_true', help='Copy instead of move; keep owner originals intact')
+    parser.add_argument('--preview', action='store_true', help='Read-only copy preview; requires --preserve-incoming')
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--title", required=True)
     parser.add_argument("--supplier", required=True)
@@ -43,7 +50,8 @@ def main() -> int:
     parser.add_argument("--notes", default="")
     args = parser.parse_args()
     try:
-        doc_id = promote(ENCONET / "incoming" / args.filename, db_path=args.db,
+        doc_id = promote(ENCONET / "incoming" / args.filename,
+                         preserve_incoming=args.preserve_incoming, preview=args.preview, db_path=args.db,
                          title=args.title, supplier=args.supplier,
                          doc_date=args.doc_date, language=args.language,
                          side_hint=args.side, source_url=args.source_url, notes=args.notes)

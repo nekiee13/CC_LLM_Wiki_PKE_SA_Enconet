@@ -1,5 +1,17 @@
 # Controlled raw-source intake
 
+## Incoming preservation for the new audit cycle (7 October 2026)
+
+The owner requires incoming originals to remain intact after the reset.
+Use `scripts/audit_command.py audit-register -- <metadata arguments>
+--preserve-incoming --preview` first, then omit only `--preview` to apply.
+This selects the exclusive-copy helper `scripts/copy_incoming_source.py`.
+The legacy command without `--preserve-incoming` still moves files and must
+not be used for this cycle. Registration does not approve regulatory editions
+or advance G1. Batch and immutable raw-source controls below still apply.
+
+## Original intake contract
+
 This is the operating procedure for `MASTER_DEVELOPMENT_PLAN.md` EPIC 3. A source is
 not accepted merely because it exists in the workspace: it must pass human review,
 promotion, registration, extraction, and validation.

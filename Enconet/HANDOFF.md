@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T132209Z-a591e30.md`](handoffs/2026-10-07T132209Z-a591e30.md)
+**Authoritative record:** [`handoffs/2026-10-07T134909Z-0a3ad71.md`](handoffs/2026-10-07T134909Z-0a3ad71.md)
 
-**Status:** partial · **Git:** `a591e30` · **Agent:** codex · **Created:** 2026-10-07T13:22:09Z
+**Status:** partial · **Git:** `0a3ad71` · **Agent:** codex · **Created:** 2026-10-07T13:49:09Z
 
-**Exact next action:** Review 26 vendor and seven regulatory Markdown sources, excluding desktop.ini, gitkeep and conversion note. Confirm regulatory editions/scope/language; prepare preserving intake and v3 local calibration. Do not reuse old evidence or approvals.
+**Exact next action:** Continue bounded source registration of remaining 25 vendor and seven regulatory files using preserve-incoming; complete source review and G1 before chapter database writes and then calibrate v3.
