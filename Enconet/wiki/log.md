@@ -308,3 +308,5 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-10-08T05:06:17Z | handoffs/2026-10-08T050617Z-bf6c405.md | partial | bf6c40570d3a3b0921727255fcd48bcf56e4c55c
 
 - handoff-created | 2026-10-08T05:22:14Z | handoffs/2026-10-08T052214Z-579acb6.md | partial | 579acb64a1a9a333206532c790c35acc278927b3
+
+- handoff-created | 2026-10-08T05:30:34Z | handoffs/2026-10-08T053034Z-3065b72.md | partial | 3065b72f51b27ad876f79a7eb356943a0906bca0

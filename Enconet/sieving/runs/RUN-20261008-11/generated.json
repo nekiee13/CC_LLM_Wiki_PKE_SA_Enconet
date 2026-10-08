@@ -1,0 +1,1721 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "RU-82-06,R0 EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKU.md",
+    "title": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU",
+    "date": "2020-08-03",
+    "doc_id": "DOC-0026",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: RU-82-06 identificirana je revizijom 0 i datumom objave 03.08.2020.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv dokumenta: | Radna uputa RU-82-06 |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        },
+        {
+          "quote_original": "| Revizija broj: | 0 |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        },
+        {
+          "quote_original": "| Datum objavljivanja: | 03.08.2020. |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, dva pregleda i odobrenje imaju navedene osobe i datume.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pripremila: | mr. sc. Ilijana Iveković, predstavnica direktora | 01.07.2020. |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | Igor Domančić, stručni suradnik | 02.07.2020. |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | Vladimir Križe, voditelj QA | 02.07.2020. |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        },
+        {
+          "quote_original": "| Odobrio: | dr. sc. Nenad Debrecin, direktor | 03.07.2020. |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Prazna tablica predviđa periodični pregled.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3] > Periodični pregled [line 18]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3] > Periodični pregled [line 18]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Datum: | Sljedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 3] > Periodični pregled [line 18]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Uputa određuje evaluaciju primjenjivosti vanjskog pogonskog iskustva na NE Krško.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 1 SVRHA [line 58]",
+          "source_heading_path": "SADRŽAJ [line 29] > 1 SVRHA [line 58]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha radne upute je definiranje postupka za evaluaciju primjenjivosti izvještaja o pogonskim iskustvima iz drugih nuklearnih elektrana i industrije na NE Krško.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 1 SVRHA [line 58]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Opseg uključuje izvještaje NRC, IAEA, Westinghouse, INPO, WANO i drugih relevantnih institucija.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]",
+          "source_heading_path": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Radna uputa se primjenjuje na analizu izvještaja o pogonskim iskustvima iz drugih nuklearnih elektrana i industrije objavljenih od strane Regulatorne komisije Sjedinjenih Američkih Država (US NRC), Međunarodne agencije za atomsku energiju (IAEA), Westinghousea, INPO, WANO i drugih relevantnih institucija, te evaluaciju primjenjivosti navedenih izvještaja na NE Krško.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Part 21 izvještaji ulaz su OE evaluacije, ne dokaz izvršenja Enconetove Part 21 reporting obveze.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]",
+          "source_heading_path": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Neki od relevantnih izvještaja (u daljnjem tekstu OE izvještaji) koji se odnose na praćenje pogonskog iskustva, a na čiju evaluaciju se primjenjuje ova radna uputa su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        },
+        {
+          "quote_original": "- US NRC 10 CFR part 21 reports",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Ulazi uključuju safety letters, technical bulletins i IRS izvještaje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]",
+          "source_heading_path": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Neki od relevantnih izvještaja (u daljnjem tekstu OE izvještaji) koji se odnose na praćenje pogonskog iskustva, a na čiju evaluaciju se primjenjuje ova radna uputa su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        },
+        {
+          "quote_original": "- NSAL Nuclear Safety Advisory Letter (US NRC)",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        },
+        {
+          "quote_original": "- Westinghouse Technical Bulletin",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        },
+        {
+          "quote_original": "- IAEA International Reporting System for Operating Experience (IRS).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Reference povezuju QA plan, Priručnik, kontrolu dokumenata i IAEA guide; objective evidence not shown u samom popisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 3 REFERENCE [line 73]",
+          "source_heading_path": "SADRŽAJ [line 29] > 3 REFERENCE [line 73]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. NP-SUK-001, Nuklearni QA plan",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3 REFERENCE [line 73]"
+        },
+        {
+          "quote_original": "2. PK-SUK-001,Priručnik kvalitete norma ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3 REFERENCE [line 73]"
+        },
+        {
+          "quote_original": "3. PP-42-01, Upravljanje dokumentima",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3 REFERENCE [line 73]"
+        },
+        {
+          "quote_original": "4. IAEA, Operating Experience Feedback for Nuclear Installations, Specific Safety Guide, No. SSG-50, 2018",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 3 REFERENCE [line 73]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: Voditelj osigurava uporabu ove upute u evaluaciji.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Voditelj projekta",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        },
+        {
+          "quote_original": "- mora osigurati da se pri evaluaciji primjenjivosti izvještaja o pogonskom iskustvu drugih nuklearnih elektrana i industrije na NE Krško koristi ova radna uputa",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: OE zaduženja dodjeljuju se prema kvalifikacijama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Voditelj projekta",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        },
+        {
+          "quote_original": "- je odgovoran za raspodjelu OE izvještaja djelatnicima koji rade na projektu i određuje njihova zaduženja prema kvalifikacijama",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Voditelj pregledava sve evaluacije i izrađuje konačni izvještaj.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Voditelj projekta",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        },
+        {
+          "quote_original": "- pregledava sve evaluacije i izrađuje konačan izvještaj",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Projekt slijedi Enconetov QA plan, Priručnik i kontrolu dokumenata.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Voditelj projekta",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        },
+        {
+          "quote_original": "- odgovoran je za provedbu projekta u skladu s Enconetovim Nuklearnim QA planom NP-SUK-001, Priručnikom kvalitete PK-SUK-001 i Programskim postupkom PP-42-01 Upravljanje dokumentima",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: Djelatnici evaluiraju prema propisanoj radnoj uputi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Djelatnici koji rade na projektu",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        },
+        {
+          "quote_original": "- dužni su provoditi evaluacije u skladu s ovom radnom putom",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: QA pregledava konačni izvještaj za usklađenost s QA zahtjevima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]",
+          "source_heading_path": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Voditelj osiguranja kvalitete",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        },
+        {
+          "quote_original": "- odgovoran je da, sa stanovišta sustava kvalitete, pregleda konačni izvještaj i utvrdi usklađenost sa zahtjevima Nuklearnog QA plana NP-SUK-001, Priručnika kvalitete PK-SUK-001 i Programskog postupka PP-42-01 Upravljanje dokumentima.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 5 ODGOVORNOSTI [line 114]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: STR zahtjev kupca definira opseg i dokumente za evaluaciju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon zaprimljenog Zahtjeva za potporom pri manjim radovima (STR) od naručitelja u kojem je definiran opseg poslova, voditelj projekta preuzima od naručitelja i dokumente koje je potrebno evaluirati. Nakon pregleda dokumenata voditelj projekta raspodijeli pojedine OE izvještaje na evaluaciju Enconetovim djelatnicima koji su navedeni u Ugovoru, a u skladu s njihovim kvalifikacijama.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Dokumenti se raspodjeljuju ugovorno navedenim djelatnicima prema kvalifikacijama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon zaprimljenog Zahtjeva za potporom pri manjim radovima (STR) od naručitelja u kojem je definiran opseg poslova, voditelj projekta preuzima od naručitelja i dokumente koje je potrebno evaluirati. Nakon pregleda dokumenata voditelj projekta raspodijeli pojedine OE izvještaje na evaluaciju Enconetovim djelatnicima koji su navedeni u Ugovoru, a u skladu s njihovim kvalifikacijama.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Tablica raspodjele svakog OE izvještaja obvezni je prilog konačnom izvještaju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta evidentira u tablici za sve OE izvještaje kojem djelatniku su dodijeljeni (Tablica u prilogu 7.1). Navedena tablica mora biti prilog konačnom izvještaju.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: Svaki zadani OE izvještaj evaluira se prema ovoj uputi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Nakon preuzimanja zadataka djelatnici trebaju provesti evaluaciju primjenjivosti pojedinog OE izvještaja na NE Krško slijedeći ovu radnu uputu.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Evaluacija strukturira sadržaj, status NEK-a, reference, aktivnosti i CAP prijedlog.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluacija se sastoji od sljedećih dijelova:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        },
+        {
+          "quote_original": "- kratak sadržaj",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        },
+        {
+          "quote_original": "- evaluacija statusa NEK-a",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        },
+        {
+          "quote_original": "- reference",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        },
+        {
+          "quote_original": "- preporučene aktivnosti",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        },
+        {
+          "quote_original": "- prijedlog za unos u ZKP.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: Evaluacija se piše engleski, a ZKP prijedlog hrvatski; to nije promjena jezika ovoga audita.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluacija se piše na engleskom jeziku, osim prijedloga unosa u ZKP koji treba biti na hrvatskom jeziku. U tekstu koji slijedi objašnjeni su pojedini dijelovi evaluacije, a predložak za izradu evaluacije se nalazi u prilogu 7.2.\nNakon što su napravljene sve evaluacije, voditelj projekta ih pregleda te izradi konačan izvještaj u skladu sa zahtjevima Programskog postupka PP-42-01 Upravljanje dokumentima.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Konačni izvještaj nakon pregleda slijedi PP-42-01.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluacija se piše na engleskom jeziku, osim prijedloga unosa u ZKP koji treba biti na hrvatskom jeziku. U tekstu koji slijedi objašnjeni su pojedini dijelovi evaluacije, a predložak za izradu evaluacije se nalazi u prilogu 7.2.\nNakon što su napravljene sve evaluacije, voditelj projekta ih pregleda te izradi konačan izvještaj u skladu sa zahtjevima Programskog postupka PP-42-01 Upravljanje dokumentima.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6 POSTUPAK [line 131]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "supporting_control: Naslov evaluacije uključuje broj i naziv OE izvještaja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1 Kratak opis izvještaja [line 157]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1 Kratak opis izvještaja [line 157]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Naslov mora sadržavati identifikacijsku oznaku (broj) OE izvještaja i naziv.\nZatim se ukratko opiše sadržaj izvještaja i navedu se svi ključni podaci kako bi se čitanjem kratkog sadržaja dobila što potpunija informacija o problematici.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1 Kratak opis izvještaja [line 157]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Sažetak zadržava ključne podatke problema.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.1 Kratak opis izvještaja [line 157]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.1 Kratak opis izvještaja [line 157]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Naslov mora sadržavati identifikacijsku oznaku (broj) OE izvještaja i naziv.\nZatim se ukratko opiše sadržaj izvještaja i navedu se svi ključni podaci kako bi se čitanjem kratkog sadržaja dobila što potpunija informacija o problematici.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.1 Kratak opis izvještaja [line 157]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Evaluacija se prilagođava konkretnom izvještaju, uz zajedničke korake.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "S obzirom na to da je tematika koja se obrađuje u OE izvještajima vrlo različita i može se odnositi na SSC, postupke, događaje, itd. način provedbe evaluacije ne može se jednoznačno definirati, već se mora prilagoditi pojedinom OE izvještaju. Međutim, određeni koraci evaluacije su zajednički svim ili većini izvještaja. Koraci koji se mogu primijeniti za većinu izvještaja navedeni su u tekstu koji slijedi.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Za svaki OE pretražuje se CAP za postojeći isti ili slični problem.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki OE izvještaj potrebno je pretražiti Korektivni program kako bi se ustanovilo je li već otvoren Zahtjev korektivnog programa (ZKP) koji se odnosi na problematiku koja se evaluira ili na sličnu problematiku. Ako postoji već otvoreni ZKP potrebno je provjeriti barem sljedeće:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Postojeći ZKP provjerava se po statusu i zaključku.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki OE izvještaj potrebno je pretražiti Korektivni program kako bi se ustanovilo je li već otvoren Zahtjev korektivnog programa (ZKP) koji se odnosi na problematiku koja se evaluira ili na sličnu problematiku. Ako postoji već otvoreni ZKP potrebno je provjeriti barem sljedeće:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "- status / zaključak ZKP-a",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Provjerava se obuhvaća li ZKP cijeli problem.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki OE izvještaj potrebno je pretražiti Korektivni program kako bi se ustanovilo je li već otvoren Zahtjev korektivnog programa (ZKP) koji se odnosi na problematiku koja se evaluira ili na sličnu problematiku. Ako postoji već otvoreni ZKP potrebno je provjeriti barem sljedeće:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "- obuhvaća li cjelokupnu problematiku",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Ako OE referenca nedostaje, preporučuje se dodavanje postojećem ZKP-u.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za svaki OE izvještaj potrebno je pretražiti Korektivni program kako bi se ustanovilo je li već otvoren Zahtjev korektivnog programa (ZKP) koji se odnosi na problematiku koja se evaluira ili na sličnu problematiku. Ako postoji već otvoreni ZKP potrebno je provjeriti barem sljedeće:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "- je li referenciran i OE izvještaj koji se evaluira (ako nije potrebno je u preporukama za daljnje aktivnosti preporučiti da se već otvorenom ZKP-u doda i OE izvještaj koji se evaluira).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Evaluacija navodi postojeći ZKP i po potrebi proširenje aktivnosti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ako već postoji otvoreni ZKP u evaluaciji je potrebno to navesti zajedno s njegovim statusom i zaključcima i prema potrebi preporukama za proširenje ili nadopunu aktivnosti definiranih u ZKP-u.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "supporting_control: Provjerava se je li pogođena oprema nabavljena, ugrađena ili u skladištu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju da se problematika OE izvještaja odnosi na određenu opremu, potrebno je provjeriti posjeduje li NEK navedenu opremu. Pod tim se podrazumijeva provjera je li ta oprema nabavljena za NEK, je li instalirana ili se nalazi u skladištu.",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "supporting_control: MECL baza koristi se za pronalaženje pogođene opreme.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Potrebno je provjeriti NEK-ove baze podataka kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "- NEK EBS MECL Database (baza opreme)",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "supporting_control: Warehouse baza provjerava stanje uskladištene opreme.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Potrebno je provjeriti NEK-ove baze podataka kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "- NEK EBS Warehouse Inventory database (baza za inventar skladišta)",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Radni nalozi služe kao dokaz ugradnje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Potrebno je provjeriti NEK-ove baze podataka kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "- NEK EBS WO Database (baza radnih naloga)",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: DCM služi dohvaćanju crteža, postupaka, programa i izvještaja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Potrebno je provjeriti NEK-ove baze podataka kao što su:",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "- NEK DCM Database (baza za dokumentaciju, procedure, programe, uputstva, nacrte, izvještaje, itd.).",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "objective_control: Pretraga koristi proizvođača, model i part number, uz joker izraze i dodatne razumne kriterije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]",
+          "source_heading_path": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Baze podataka je potrebno pretražiti na način da se pretražuje prema navedenom proizvođaču i modelu, i/ili PN (eng. part number) ovisno što je definirano u OE izvještaju. Kako bi se pretraga uopćila traženi izraz se formira",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 6.2 Evaluacija statusa NEK-a [line 162]"
+        },
+        {
+          "quote_original": "koristeći joker karakter \"%\" (% - znači bilo koliko, bilo kojih karaktera), npr. %model%. Pretraga se može definirati i da zadovoljava više kriterija istovremeno (npr. i po proizvođaču i po PN). Ako oprema nije nađena prema navedenim podacima potrebno je provesti daljnju pretragu prema brojevima serije, vremenu nabavke i na sve razumne načine kako bi se utvrdilo da oprema stvarno nije nabavljena za NEK. Ponekad je u OE izvještaju oprema definirana i vremenski s datumom isporuke ili proizvodnje pa je tada potrebno u rezultatima pretrage MECL-a za tip opreme provjeriti polje datum instalacije - \"Instalation Date\". Kada je oprema definirana sa skupinom serijskih brojeva (SN) tada je potrebno provjeriti polje SN u MECL-u u rezultatima pretrage za tip opreme.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_VIII",
+      "criterion_name": "Identification and Control of Materials, Parts, and Components",
+      "statement": "objective_control: Vremenski ili serijski ograničena oprema provjerava se datumom instalacije ili SN.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "koristeći joker karakter \"%\" (% - znači bilo koliko, bilo kojih karaktera), npr. %model%. Pretraga se može definirati i da zadovoljava više kriterija istovremeno (npr. i po proizvođaču i po PN). Ako oprema nije nađena prema navedenim podacima potrebno je provesti daljnju pretragu prema brojevima serije, vremenu nabavke i na sve razumne načine kako bi se utvrdilo da oprema stvarno nije nabavljena za NEK. Ponekad je u OE izvještaju oprema definirana i vremenski s datumom isporuke ili proizvodnje pa je tada potrebno u rezultatima pretrage MECL-a za tip opreme provjeriti polje datum instalacije - \"Instalation Date\". Kada je oprema definirana sa skupinom serijskih brojeva (SN) tada je potrebno provjeriti polje SN u MECL-u u rezultatima pretrage za tip opreme.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_XIII",
+      "criterion_name": "Handling, Storage, and Shipping",
+      "statement": "supporting_control: Provjerava se warehouse inventar za pogođenu opremu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Također je potrebno provjeriti nalazi li se oprema u skladištu putem NEK EBS Warehouse Inventory baze podataka.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: WO dokumentacija potvrđuje je li i kada oprema ugrađena.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Pomoću NEK EBS WO baze podataka potrebno je provjeriti iz dokumentacije za radne naloge je li oprema ugrađena i kada je ugrađena.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: Pregled koristi DCM i po potrebi dodatne mrežne crteže i dokumentaciju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U NEK DCM bazi podataka moguće je pretražiti vezane nacrte, procedure i ostalu dokumentaciju koja može pomoći pri evaluaciji OE izvještaja. Ponekad je detaljne nacrte i dokumentaciju moguće naći u mrežnim diskovima pojedine organizacijske jedinice, jer se tamo nalazi dokumentacije koja nije zavedena u DCM-u.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Nalaz opreme potkrepljuje se tablicama; negativna pretraga zapisuje kriterije, izraze i prikladne dokaze.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Za pronađenu opremu potrebno je priložiti tablice s podacima o opremi, a ako oprema nije pronađena to je potrebno dokumentirati tako da se navedu svi načini na koje je napravljena pretraga i navedu svi korišteni traženi izrazi te se također prilože excel tablice ili drugi prikladni dokumenti (npr. slika zaslona – print screen ili drugi tekstualni zapis) na kojima se vidi da se navedena oprema ne nalazi u pretraženim bazama podataka.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0041",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Provjerava se postoji li pogođeni SSC i koje kontrole sprečavaju isti događaj.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "## Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "S obzirom na veliku različitost mogućih događaja i nesukladnosti o kojima se izvještava nije moguće definirati postupak provjere, već samo navesti određene smjernice za provedbu pregleda.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "Ako je događaj ili nesukladnost vezana za određeni sustav, strukturu ili komponentu (SSC) potrebno je provjeriti postoji li u NEK-u taj određeni SSC. Zatim postoje li procedure, sustav nadzora i kontrole koji bi spriječili pojavu događaja ili nesukladnosti.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0042",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Prema tematici provjeravaju se USAR, Technical Specifications i RETS.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U svrhu provjere primjenjivosti, a ovisno o tematici OE izvještaja bit će potrebno provjeriti i druge dokumente kao što su:",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- USAR",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- Technical Specifications",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- RETS",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0043",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Primjenjivost se provjerava programima, crtežima, izvještajima i analizama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U svrhu provjere primjenjivosti, a ovisno o tematici OE izvještaja bit će potrebno provjeriti i druge dokumente kao što su:",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- NEK-ove programe i postupke",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- Nacrte",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- Tehničke izvještaje",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- Analize",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "- NEK DCM Database DCM",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0044",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Dokumentacijski pregled dopunjuje se razgovorima s nadležnim NEK djelatnicima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Osim pregleda dokumenata potrebno je provesti razgovore s NEK-ovim djelatnicima koji su nadležni za definiranu problematiku.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0045",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Evaluacija se ne smije ograničiti na popis smjernica već obuhvaća sve primjenjive načine.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluaciju je potrebno provesti koliko je to primjenjivo prema navedenim uputama, ali se ne smije ograničiti samo na njih već ju je potrebno proširiti u skladu s problematikom koja se evaluira na sve primjenjive referentne načine.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0046",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Zaključak jasno određuje primjenjivost; nedostatni podaci traže daljnje preporuke.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Na kraju teksta potrebno je nedvosmisleno napisati je li navedena problematika primjenjiva ili nije primjenjiva za NEK. U slučaju da zbog nedovoljno podataka nije moguće jasno definirati primjenjivost, tada je potrebno definirati daljnje preporuke u dijelu Preporučene aktivnosti (Reccommended Actions).",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0047",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Evaluacija popisuje korištene baze, postupke, sigurnosne analize i druge reference.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Potrebno je popisati reference koje su korištene u provedenoj evaluaciji kao što su: baze podataka, procedure, izvještaji, sigurnosne analize, DMP-ovi, nacrti i druga relevantna literatura.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0048",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Primjenjiv problem traži preporuku korektivnih akcija.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ako je evaluacija pokazala primjenjivost izvještaja na NEK onda je potrebno napisati preporuku za korektivne akcije.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0049",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: I neizravno primjenjivo iskustvo može voditi preventivnim akcijama ili informiranju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju da izvještaj nije direktno primjenjiv za NEK, ali se prilikom evaluacije pokazalo da bi trebalo provesti korektivne akcije kako bi se spriječila pojava sličnih događaja ili smanjila vjerojatnost njihove pojave također je potrebno napisati preporuku za korektivne akcije ili preporuku za informiranje određenih djelatnika NEK-a.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0050",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Za neprimjenjiv problem dio aktivnosti označuje se Not applicable.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ako se evaluacijom pokazalo da problematika opisana u OE izvještaju nije primjenjiva za NEK onda je u ovom dijelu potrebno upisati samo: Not applicable.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0051",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Primjenjiv OE dobiva CAP prijedlog s opisom problema i preporukom radnji.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Prijedlog za unos u CAP se piše ako je evaluacija pokazala da je izvještaj primjenjiv za NEK. Prijedlog se treba sastojati od opisa problema definiranog u izvještaju i preporuke za daljnje aktivnosti i korektivne akcije.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0052",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Neprimjenjiv OE u CAP prijedlogu označuje se Not applicable.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Ako se evaluacijom pokazalo da problematika opisana u OE izvještaju nije primjenjiva za NEK onda je u ovom dijelu potrebno upisati samo: Not applicable.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0053",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Prazna raspodjelna tablica povezuje OE broj, naslov, ugovor/STR i reviewera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.1 Tablica raspodjele OE izvještaja inženjerima [line 268]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.1 Tablica raspodjele OE izvještaja inženjerima [line 268]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Type of OE Report | Contract No. STR No. | Enconet | NEK |",
+          "quote_language": "en",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.1 Tablica raspodjele OE izvještaja inženjerima [line 268]"
+        },
+        {
+          "quote_original": "| Report No.        | Reviewed by          | Report Title |  |",
+          "quote_language": "en",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.1 Tablica raspodjele OE izvještaja inženjerima [line 268]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0054",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Prazan evaluacijski predložak predviđa identitet, sažetak, status i reference.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "**Broj OE Izvještaja : Naslov**",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        },
+        {
+          "quote_original": "Kratak sadržaj OE izvještaja (na engleskom jeziku).",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        },
+        {
+          "quote_original": "**Evaluation of NEK Status**\nEvaluacija primjenjivosti OE izvještaja na NEK (na engleskom jeziku).",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        },
+        {
+          "quote_original": "**References**\nPopis korištenih referenci kao što su: baze podataka, procedure, izvještaji, sigurnosne\nanalize, DMP-ovi, nacrti i druga relevantna literatura.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0055",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak povezuje primjenjivost s preporučenim aktivnostima i CAP prijedlogom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "**Recommended Actions**\nAko je evaluacija pokazala primjenjivost izvještaja na NEK onda je potrebno napisati\npreporuku za korektivne akcije (na engleskom jeziku).",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        },
+        {
+          "quote_original": "**CAP Input Proposal**\nPrijedlog za unos u CAP se piše ako je evaluacija pokazala da je izvještaj primjenjiv za\nNEK, ako nije primjenjiv onda se piše samo: Nije primjenjivo (na hrvatskom jeziku).",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > 7.2 Sadržaj evaluacije [line 296]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0056",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "candidate_lead: Popis i definicija različito pripisuju NSAL izvještaj; candidate; verify criterion mapping i identitet izdavatelja.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]",
+          "source_heading_path": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        },
+        {
+          "source_locator": "SADRŽAJ [line 29] > 4 DEFINICIJE I KRATICE [line 80]",
+          "source_heading_path": "SADRŽAJ [line 29] > 4 DEFINICIJE I KRATICE [line 80]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "- NSAL Nuclear Safety Advisory Letter (US NRC)",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 2 PODRUČJE PRIMJENE [line 62]"
+        },
+        {
+          "quote_original": "| NSAL | Westinghouse Nuclear Safety Advisory Letters (Westinghouseova Savjetodavna pisma o nuklearnoj sigurnosti) |",
+          "quote_language": "hr",
+          "source_locator": "SADRŽAJ [line 29] > 4 DEFINICIJE I KRATICE [line 80]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0057",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "candidate_lead: Dio mrežne dokumentacije nije zaveden u DCM; candidate; verify criterion mapping i važeće revizije korištenih ulaza.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        },
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U NEK DCM bazi podataka moguće je pretražiti vezane nacrte, procedure i ostalu dokumentaciju koja može pomoći pri evaluaciji OE izvještaja. Ponekad je detaljne nacrte i dokumentaciju moguće naći u mrežnim diskovima pojedine organizacijske jedinice, jer se tamo nalazi dokumentacije koja nije zavedena u DCM-u.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192]"
+        },
+        {
+          "quote_original": "Potrebno je popisati reference koje su korištene u provedenoj evaluaciji kao što su: baze podataka, procedure, izvještaji, sigurnosne analize, DMP-ovi, nacrti i druga relevantna literatura.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "0"
+      }
+    },
+    {
+      "item_id": "ITEM-0058",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "candidate_lead: Neizravne preventivne preporuke i oznaka Not applicable traže dosljedno razlikovanje; candidate; verify criterion mapping pri konkretnoj evaluaciji.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]",
+          "source_heading_path": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "U slučaju da izvještaj nije direktno primjenjiv za NEK, ali se prilikom evaluacije pokazalo da bi trebalo provesti korektivne akcije kako bi se spriječila pojava sličnih događaja ili smanjila vjerojatnost njihove pojave također je potrebno napisati preporuku za korektivne akcije ili preporuku za informiranje određenih djelatnika NEK-a.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        },
+        {
+          "quote_original": "Ako se evaluacijom pokazalo da problematika opisana u OE izvještaju nije primjenjiva za NEK onda je u ovom dijelu potrebno upisati samo: Not applicable.",
+          "quote_language": "hr",
+          "source_locator": "EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKUSTVU [line 192] > Provjera može li se u NEK-u dogoditi prijavljeni događaj ili neskuladnost [line 208]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "0"
+      }
+    }
+  ]
+}
