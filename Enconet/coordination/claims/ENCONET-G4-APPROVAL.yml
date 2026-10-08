@@ -1,0 +1,18 @@
+task: ENCONET-G4-APPROVAL
+agent: codex
+status: released
+claimed_at_utc: 2026-10-08T21:50:40Z
+last_renewed_at_utc: 2026-10-08T21:50:40Z
+expires_at_utc: 2026-10-09T21:50:40Z
+anticipated_files:
+  - Enconet/manifests/approvals.csv
+  - Enconet/db/nqa_audit.sqlite
+  - Enconet/wiki/findings
+  - Enconet/wiki/actions
+  - Enconet/wiki/gates/G4-RUN-20261008-17-enconet.md
+  - Enconet/project-state.yml
+  - Enconet/wiki/current-status.md
+  - Enconet/docs/G4_APPROVAL_20261008.md
+  - Enconet/out/2026-10-08/g4-approved-run17
+note: Explicit owner G4 approval: record gate and30object approvals; do not close verification/actions or infer scoring fixture permission.
+released_at_utc: 2026-10-08T21:53:37Z

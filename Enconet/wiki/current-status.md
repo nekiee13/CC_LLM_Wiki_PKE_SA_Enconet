@@ -3,7 +3,8 @@
 On 7 October 2026 the owner authorized archiving and resetting the previous
 audit while preserving incoming documents. Archive and reset are complete.
 
-- phase: **findings_drafted**. G1-G3 approved; G4-G7 pending.
+- phase: **findings_drafted**, held for mandatory benchmark reconciliation.
+  G1-G4 approved; G5-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
   no old evidence or scores inherited; 2,700 new live vendor crumbs; 18 fresh
   documentation-based ratings give owner-approved 80.6% (1450/1800).
@@ -70,14 +71,16 @@ aggregate passes10 phase checks. Scope/source/earlier rows are unchanged.
 See [G3 approval and current benchmark-policy permission](../docs/G3_APPROVAL_20261008.md).
 Scoring benchmark metadata remains on0.1 and fails version/hash comparison;
 separate owner permission requested to refresh only fixture metadata.
-Draft batch complete:12 findings and18 open draft auditor actions;7 priorities.
+G4-RUN-20261008-17 approved:12 approved findings and18 approved open auditor
+actions;7 priorities. All finding verification remains pending; no field closure.
 The18 coverage rows include6 covered routine-check anchors, not18 deficiencies.
 All original evidence/applicability/ratings/run metadata tables are unchanged.
 Read [the complete G4 draft and all action links](../docs/FINDINGS_DRAFT_20261008.md)
 and [one G4 review packet](gates/G4-RUN-20261008-17-enconet.md).
-Next:owner G4 decision for FIND-0001-0012 and ACT-0001-0018, plus the separately
-requested metadata-only scoring fixture permission before findings_approved
-mandatory benchmarks. No report/dashboard release or field verification inferred.
+Read [G4 approval and the remaining benchmark hold](../docs/G4_APPROVAL_20261008.md).
+Next:only the separately requested metadata-only scoring fixture permission,
+then required benchmarks/fullsuite before findings_approved. G4 does not need
+re-approval. No report/dashboard release or field verification inferred.
 No new categories or owner-entered judgments are needed.
 See [G2 approval and verified application](../docs/G2_APPLICABILITY_APPLIED_20261008.md).
 The owner question about

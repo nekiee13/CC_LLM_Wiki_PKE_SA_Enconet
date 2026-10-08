@@ -4,6 +4,7 @@
 - [G4 findings and complete audit-action plan](../docs/FINDINGS_DRAFT_20261008.md)
 - [Evidence matrix](evidence/matrix.md)
 - [G4 owner decision packet](gates/G4-RUN-20261008-17-enconet.md)
+- [G4 approval and remaining benchmark hold](../docs/G4_APPROVAL_20261008.md)
 - [Archived reset record](../docs/ENCONET_RESET_20261007.md)
 - [Reusable method](../docs/FRAMEWORK_METHOD_V2.md)
 - [Sieving playbook](../sieving/SIEVING_PLAYBOOK.md)

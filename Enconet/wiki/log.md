@@ -348,3 +348,7 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - 2026-10-08T21:31:00Z | `state-transition` | evaluated -> findings_drafted; reason: Owner proceed resumed evaluated run;18 coverage rows,12 draft findings and18 linked open actions verified; no G4 approval inferred.
 
 - handoff-created | 2026-10-08T21:35:29Z | handoffs/2026-10-08T213529Z-f6e1415.md | partial | f6e1415f7fc19c5c70608e89c2aa2c8ce4ea8a8b
+
+- 2026-10-08T21:51:14Z | `gate-decision` | G4 approved as `G4-RUN-20261008-17` by project-owner
+
+- handoff-created | 2026-10-08T21:54:28Z | handoffs/2026-10-08T215428Z-419a1fe.md | partial | 419a1fec62e08b26aac60934f5e85a3b65561080
