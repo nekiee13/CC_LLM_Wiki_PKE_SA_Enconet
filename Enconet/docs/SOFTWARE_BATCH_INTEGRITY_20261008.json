@@ -1,0 +1,96 @@
+{
+  "scope": [
+    "RUN-20261007-01",
+    "RUN-20261007-02",
+    "RUN-20261007-03",
+    "RUN-20261007-04",
+    "RUN-20261007-05",
+    "RUN-20261007-06",
+    "RUN-20261007-07",
+    "RUN-20261007-08",
+    "RUN-20261007-09",
+    "RUN-20261007-10",
+    "RUN-20261007-11",
+    "RUN-20261007-12",
+    "RUN-20261007-13",
+    "RUN-20261007-14"
+  ],
+  "before": {
+    "crumbs": "17a061e304db59189aea26135b318add636e68119d1afa70bb33e24e128fb875",
+    "quotes": "8e68db53ae7ad0cae2906db7a50d72d450e804c4b9eda0ae8645e89032e1fba9",
+    "links": "e3c89bee1fd56c9feafa8ce5af2fc39027d8d97cb0fcce05d2be8a9745017e79",
+    "context": "968c76084328a9c494b33f9840e30e5a20eaa4ee68c5bca9aa6f75200f3ae6b3"
+  },
+  "after": {
+    "crumbs": "17a061e304db59189aea26135b318add636e68119d1afa70bb33e24e128fb875",
+    "quotes": "8e68db53ae7ad0cae2906db7a50d72d450e804c4b9eda0ae8645e89032e1fba9",
+    "links": "e3c89bee1fd56c9feafa8ce5af2fc39027d8d97cb0fcce05d2be8a9745017e79",
+    "context": "968c76084328a9c494b33f9840e30e5a20eaa4ee68c5bca9aa6f75200f3ae6b3"
+  },
+  "unchanged": true,
+  "hash_method": "SHA-256 of Python json.dumps of ordered full row tuples, UTF-8",
+  "snapshot_command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); ids=['RUN-20261007-'+str(n).zfill(2) for n in range(1,15)]; ph=','.join('?' for _ in ids); queries={'crumbs':'SELECT * FROM crumbs WHERE sieve_run_id IN ('+ph+') ORDER BY item_id','quotes':'SELECT q.* FROM crumb_quotes q JOIN crumbs c ON c.item_id=q.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY q.quote_id','links':'SELECT l.* FROM crumb_chunk_links l JOIN crumbs c ON c.item_id=l.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY l.quote_id,l.chunk_id','context':'SELECT x.* FROM crumb_context x JOIN crumbs c ON c.item_id=x.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY x.item_id'}; print(json.dumps({k:hashlib.sha256(json.dumps(c.execute(v,ids).fetchall()).encode()).hexdigest() for k,v in queries.items()}))\"",
+  "incoming": {
+    "files": 36,
+    "hash_mismatches": [],
+    "unexpected_files": [],
+    "missing_files": []
+  },
+  "incoming_command": "python -c \"import json,hashlib; from pathlib import Path; p=Path('Enconet'); plan=json.loads(Path('reset-plans/enconet-reset-20261007-reviewed.json').read_text(encoding='utf-8')); rows=plan['incoming_files']; bad=[r['relative_path'] for r in rows if not (p/r['relative_path']).is_file() or hashlib.sha256((p/r['relative_path']).read_bytes()).hexdigest()!=r['sha256']]; actual={x.relative_to(p).as_posix() for x in (p/'incoming').rglob('*') if x.is_file()}; expected={r['relative_path'] for r in rows}; print(json.dumps({'files':len(rows),'hash_mismatches':bad,'unexpected_files':sorted(actual-expected),'missing_files':sorted(expected-actual)})); assert not bad and actual==expected\"",
+  "link_check_command": "python -c \"import json,sqlite3; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); c.row_factory=sqlite3.Row; rows=c.execute('SELECT l.link_method,q.quote_original,k.chunk_text,c.doc_id AS crumb_doc,k.doc_id AS chunk_doc FROM crumb_chunk_links l JOIN crumb_quotes q ON q.quote_id=l.quote_id JOIN crumbs c ON c.item_id=q.item_id JOIN document_chunks k ON k.chunk_id=l.chunk_id').fetchall(); bad=[r for r in rows if r['link_method']!='EXACT' or r['crumb_doc']!=r['chunk_doc'] or r['quote_original'] not in r['chunk_text']]; print(json.dumps({'links':len(rows),'bad_links':len(bad),'crumbs':c.execute('SELECT count(*) FROM active_crumbs').fetchone()[0],'runs':[dict(r) for r in c.execute('SELECT * FROM sieve_runs ORDER BY run_id')]})); assert not bad\"",
+  "active_vendor_crumbs": 1668,
+  "exact_same_document_literal_links": 2939,
+  "bad_links": 0,
+  "new_runs": [
+    {
+      "run_id": "RUN-20261008-01",
+      "doc_id": "DOC-0016",
+      "prompt_version": "appb_document_v3_context_anchors",
+      "document_side": "DOCUMENT",
+      "source_rule": null,
+      "generation": 1,
+      "status": "active",
+      "is_active": 1,
+      "supersedes_run_id": null,
+      "completed_at": "2026-10-08 01:10:44",
+      "decision_ref": null,
+      "rejected_item_count": 0,
+      "failed_item_count": 0,
+      "started_at": "2026-10-08 01:10:43"
+    },
+    {
+      "run_id": "RUN-20261008-02",
+      "doc_id": "DOC-0017",
+      "prompt_version": "appb_document_v3_context_anchors",
+      "document_side": "DOCUMENT",
+      "source_rule": null,
+      "generation": 1,
+      "status": "active",
+      "is_active": 1,
+      "supersedes_run_id": null,
+      "completed_at": "2026-10-08 01:10:50",
+      "decision_ref": null,
+      "rejected_item_count": 0,
+      "failed_item_count": 0,
+      "started_at": "2026-10-08 01:10:49"
+    },
+    {
+      "run_id": "RUN-20261008-03",
+      "doc_id": "DOC-0018",
+      "prompt_version": "appb_document_v3_context_anchors",
+      "document_side": "DOCUMENT",
+      "source_rule": null,
+      "generation": 1,
+      "status": "active",
+      "is_active": 1,
+      "supersedes_run_id": null,
+      "completed_at": "2026-10-08 01:10:56",
+      "decision_ref": null,
+      "rejected_item_count": 0,
+      "failed_item_count": 0,
+      "started_at": "2026-10-08 01:10:55"
+    }
+  ],
+  "phase": "chunked",
+  "owner_resume": "Owner proceed authorizes continuation from chunked; no rollback."
+}

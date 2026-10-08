@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T210036Z-3bda1df.md`](handoffs/2026-10-07T210036Z-3bda1df.md)
+**Authoritative record:** [`handoffs/2026-10-08T011242Z-6171ef0.md`](handoffs/2026-10-08T011242Z-6171ef0.md)
 
-**Status:** partial · **Git:** `3bda1df` · **Agent:** codex · **Created:** 2026-10-07T21:00:36Z
+**Status:** partial · **Git:** `6171ef0` · **Agent:** codex · **Created:** 2026-10-08T01:12:42Z
 
-**Exact next action:** Continue software procedures DOC-0016 configuration, DOC-0017 verification/validation and DOC-0018 installation/handling under approved v3; size batches to actual source length. Twelve vendor documents remain. Preserve incoming and prior runs.
+**Exact next action:** Continue DOC-0019 RELAP5, then DOC-0020 AOV diagnostics and DOC-0021 design-basis review under approved v3. Size batches to actual source length. Nine vendor documents remain; preserve previous runs and incoming.

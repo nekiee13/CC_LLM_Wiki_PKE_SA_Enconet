@@ -1,0 +1,1390 @@
+{
+  "method": "Full two-pass Codex review, including operative sentences styled as headings; no automatic keyword acceptance",
+  "source_sha256": "f6b570f1d622dc8ab6d3ca2c0d39a88c37135a3528699c48c86b0add9e2dd649",
+  "nonblank_blocks_reviewed": 166,
+  "counts": {
+    "items": 41,
+    "quotes": 91,
+    "direct": 29,
+    "supporting": 9,
+    "leads": 3
+  },
+  "decisions": [
+    {
+      "blocks": [
+        "B00005",
+        "B00007",
+        "B00008"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: RU-73-02 identificirana je revizijom 2 i datumom objave.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00013",
+        "B00014",
+        "B00015"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Priprema, QA pregled i odobrenje imaju navedena imena i datume.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00019"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Prazna tablica predviđa periodični pregled.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00087"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Uputa obuhvaća razvijeni softver za aktivnosti QA programa.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00091"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: V&V se planira i provodi za svaki razvijeni softver.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00091"
+      ],
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Ugovorni razvijatelji moraju imati postupke koji zadovoljavaju ovu uputu i projektne zahtjeve.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00107"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Validacija uključuje testiranje integriranog hardvera i softvera prema funkciji, performansi i međuvezama.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00109"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Verifikacija provjerava izlaz svake razvojne faze prema zahtjevima prethodne faze.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00115",
+        "B00117",
+        "B00118"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor osigurava mjere i resurse V&V.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00120",
+        "B00122",
+        "B00123",
+        "B00124"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Vodeći inženjer planira, organizira i provodi V&V.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00126",
+        "B00128"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Softverski inženjer izvodi verifikaciju i validaciju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00130",
+        "B00132",
+        "B00133"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: QA osigurava planiranje i izvedbu V&V prema odobrenom QA programu i uputi.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00141"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Svaki razvijeni softver mora imati vlastiti V&V plan.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143",
+        "B00144"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: V&V plan uključuje specifikaciju zahtjeva.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143",
+        "B00145"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: V&V plan uključuje specifikaciju dizajna.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143",
+        "B00146"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Plan uključuje verifikacijski test plan.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143",
+        "B00147"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Plan uključuje validacijski test plan.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00149"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Verifikacija se provodi za svaku određenu razvojnu fazu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00151"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Validacija na završetku implementacije potvrđuje zadovoljenje zahtjeva.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00153"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Rezultati V&V aktivnosti moraju biti dokumentirani.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00157",
+        "B00159"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Dokumentacija propisuje zadatke i kriterije verifikacije svake faze.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00157",
+        "B00161"
+      ],
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Dokumentacija propisuje zadatke i kriterije završne validacije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00157",
+        "B00163"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Dokumentacija specificira hardversku i softversku konfiguraciju primjenjivu testu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00157",
+        "B00165"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Dokumentiraju se rezultati izvršenja V&V.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00157",
+        "B00167"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Dokumentiraju se rezultati pregleda i testova.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00157",
+        "B00169"
+      ],
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Dokumentacija uključuje sažetak statusa softvera.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00171"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Verifikacijski pregledi provjeravaju primjerenost planiranja razvoja i testiranja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00173"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Vodeći inženjer organizira verifikacijske preglede.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00175",
+        "B00177"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Pregledi uključuju zahtjeve softvera.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00175",
+        "B00178"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Pregledi uključuju dizajn softvera.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00175",
+        "B00179"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Pregledi uključuju razvojnu dokumentaciju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00181"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Problemi iz V&V pregleda dokumentiraju se na softverskom NCR-u i njegovu registru.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00185"
+      ],
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Sav kupljeni inženjerski softver treba imati V&V dokumentaciju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00191",
+        "B00193",
+        "B00195",
+        "B00197",
+        "B00201",
+        "B00203",
+        "B00205",
+        "B00207",
+        "B00209",
+        "B00211",
+        "B00213"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Reference upućuju na QA dokumente, norme i QS600; objective evidence not shown u samom popisu.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00199"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Citiran je NQA-1:1994 nasuprot odobrenoj bazi 2015; candidate; verify criterion mapping.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00234",
+        "B00235",
+        "B00243",
+        "B00244",
+        "B00245",
+        "B00246"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Prazan NCR identificira problem, audit, datum, softver, verziju, postupak i prijavitelja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00239"
+      ],
+      "criterion_id": "APP_B_XV",
+      "statement": "supporting_control: Predložak razlikuje probleme iz V&V, audita, reklamacije i redovnog rada.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00248",
+        "B00250",
+        "B00254",
+        "B00255"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Predložak povezuje prijedlog radnje s odobrenjem vodećeg inženjera i planiranim završetkom.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00257",
+        "B00261",
+        "B00262",
+        "B00263"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Predložak završetka radnje razdvaja potpise softverskog inženjera, vodećeg inženjera i QA.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00272",
+        "B00274",
+        "B00275",
+        "B00277"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: NCR registar predviđa prijavu, rok, nositelja, završetak i QA potvrdu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00173",
+        "B00181"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "candidate_lead: Uputa imenuje organizatora pregleda, ali ti odlomci ne određuju neovisnost pregledavatelja; candidate; verify criterion mapping prema drugim pravilima.",
+      "item_type": "reference"
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00001",
+      "start": 0,
+      "end": 13,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00003",
+      "start": 14,
+      "end": 61,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00005",
+      "start": 62,
+      "end": 111,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00007",
+      "start": 160,
+      "end": 209,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00008",
+      "start": 209,
+      "end": 258,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00009",
+      "start": 258,
+      "end": 307,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00011",
+      "start": 308,
+      "end": 387,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00013",
+      "start": 466,
+      "end": 549,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00014",
+      "start": 549,
+      "end": 629,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00015",
+      "start": 629,
+      "end": 709,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00017",
+      "start": 710,
+      "end": 732,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00019",
+      "start": 733,
+      "end": 778,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00025",
+      "start": 966,
+      "end": 1004,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00027",
+      "start": 1042,
+      "end": 1115,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00029",
+      "start": 1116,
+      "end": 1126,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00031",
+      "start": 1127,
+      "end": 1215,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00033",
+      "start": 1216,
+      "end": 1512,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00035",
+      "start": 1513,
+      "end": 1533,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00037",
+      "start": 1534,
+      "end": 1647,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00039",
+      "start": 1648,
+      "end": 1771,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00040",
+      "start": 1771,
+      "end": 1896,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00042",
+      "start": 1897,
+      "end": 1992,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00044",
+      "start": 1993,
+      "end": 2112,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00045",
+      "start": 2112,
+      "end": 2234,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00047",
+      "start": 2235,
+      "end": 2346,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00049",
+      "start": 2347,
+      "end": 2471,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00050",
+      "start": 2471,
+      "end": 2582,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00051",
+      "start": 2582,
+      "end": 2697,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00052",
+      "start": 2697,
+      "end": 2816,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00054",
+      "start": 2817,
+      "end": 2930,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00056",
+      "start": 2931,
+      "end": 3022,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00057",
+      "start": 3022,
+      "end": 3129,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00059",
+      "start": 3130,
+      "end": 3243,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00061",
+      "start": 3244,
+      "end": 3358,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00063",
+      "start": 3359,
+      "end": 3441,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00064",
+      "start": 3441,
+      "end": 3502,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00065",
+      "start": 3502,
+      "end": 3621,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00067",
+      "start": 3622,
+      "end": 3807,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00069",
+      "start": 3808,
+      "end": 3826,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00071",
+      "start": 3827,
+      "end": 3831,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00073",
+      "start": 3832,
+      "end": 3851,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00075",
+      "start": 3852,
+      "end": 3856,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00077",
+      "start": 3857,
+      "end": 3884,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00078",
+      "start": 3884,
+      "end": 3922,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00080",
+      "start": 3961,
+      "end": 3989,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00081",
+      "start": 3989,
+      "end": 4037,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00083",
+      "start": 4038,
+      "end": 4055,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00085",
+      "start": 4056,
+      "end": 4071,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00087",
+      "start": 4072,
+      "end": 4433,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00089",
+      "start": 4434,
+      "end": 4447,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00091",
+      "start": 4448,
+      "end": 4829,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00093",
+      "start": 4830,
+      "end": 5069,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00095",
+      "start": 5070,
+      "end": 5105,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00097",
+      "start": 5106,
+      "end": 5128,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00099",
+      "start": 5129,
+      "end": 5159,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00101",
+      "start": 5189,
+      "end": 5226,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00102",
+      "start": 5226,
+      "end": 5263,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00103",
+      "start": 5263,
+      "end": 5310,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00105",
+      "start": 5311,
+      "end": 5331,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00107",
+      "start": 5332,
+      "end": 5535,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00109",
+      "start": 5536,
+      "end": 5724,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00111",
+      "start": 5725,
+      "end": 5972,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00113",
+      "start": 5973,
+      "end": 5995,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00115",
+      "start": 5996,
+      "end": 6013,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00117",
+      "start": 6014,
+      "end": 6091,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00118",
+      "start": 6091,
+      "end": 6110,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00120",
+      "start": 6111,
+      "end": 6142,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00122",
+      "start": 6143,
+      "end": 6218,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00123",
+      "start": 6218,
+      "end": 6239,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00124",
+      "start": 6239,
+      "end": 6298,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00126",
+      "start": 6299,
+      "end": 6325,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00128",
+      "start": 6326,
+      "end": 6372,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00130",
+      "start": 6373,
+      "end": 6393,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00132",
+      "start": 6394,
+      "end": 6478,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00133",
+      "start": 6478,
+      "end": 6605,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00135",
+      "start": 6606,
+      "end": 6847,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00137",
+      "start": 6848,
+      "end": 6865,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00139",
+      "start": 6866,
+      "end": 6917,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00141",
+      "start": 6918,
+      "end": 6999,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00143",
+      "start": 7000,
+      "end": 7047,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00144",
+      "start": 7047,
+      "end": 7086,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00145",
+      "start": 7086,
+      "end": 7119,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00146",
+      "start": 7119,
+      "end": 7154,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00147",
+      "start": 7154,
+      "end": 7187,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00149",
+      "start": 7188,
+      "end": 7332,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00151",
+      "start": 7333,
+      "end": 7467,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00153",
+      "start": 7468,
+      "end": 7538,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00155",
+      "start": 7539,
+      "end": 7784,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00157",
+      "start": 7785,
+      "end": 7828,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00159",
+      "start": 7829,
+      "end": 7930,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00161",
+      "start": 7931,
+      "end": 8052,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00163",
+      "start": 8053,
+      "end": 8182,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00165",
+      "start": 8183,
+      "end": 8280,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00167",
+      "start": 8281,
+      "end": 8319,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00169",
+      "start": 8320,
+      "end": 8367,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00171",
+      "start": 8368,
+      "end": 8515,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00173",
+      "start": 8516,
+      "end": 8586,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00175",
+      "start": 8587,
+      "end": 8634,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00177",
+      "start": 8635,
+      "end": 8678,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00178",
+      "start": 8678,
+      "end": 8715,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00179",
+      "start": 8715,
+      "end": 8759,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00181",
+      "start": 8760,
+      "end": 8973,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00183",
+      "start": 8974,
+      "end": 9004,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00185",
+      "start": 9005,
+      "end": 9107,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00187",
+      "start": 9108,
+      "end": 9347,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00189",
+      "start": 9348,
+      "end": 9366,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00191",
+      "start": 9367,
+      "end": 9415,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00193",
+      "start": 9416,
+      "end": 9500,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00195",
+      "start": 9501,
+      "end": 9690,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00197",
+      "start": 9691,
+      "end": 9740,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00199",
+      "start": 9741,
+      "end": 9850,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00201",
+      "start": 9851,
+      "end": 10037,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00203",
+      "start": 10038,
+      "end": 10210,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00205",
+      "start": 10211,
+      "end": 10322,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00207",
+      "start": 10323,
+      "end": 10384,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00209",
+      "start": 10385,
+      "end": 10418,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00211",
+      "start": 10419,
+      "end": 10450,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00213",
+      "start": 10451,
+      "end": 10579,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00216",
+      "start": 10581,
+      "end": 10803,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00218",
+      "start": 10804,
+      "end": 10822,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00220",
+      "start": 10823,
+      "end": 10880,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00222",
+      "start": 10881,
+      "end": 10946,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00224",
+      "start": 10947,
+      "end": 10974,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00226",
+      "start": 10975,
+      "end": 11206,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00228",
+      "start": 11207,
+      "end": 11264,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00230",
+      "start": 11265,
+      "end": 11301,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00232",
+      "start": 11302,
+      "end": 11320,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00234",
+      "start": 11338,
+      "end": 11389,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00235",
+      "start": 11389,
+      "end": 11456,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00237",
+      "start": 11457,
+      "end": 11493,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00239",
+      "start": 11494,
+      "end": 11600,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00241",
+      "start": 11601,
+      "end": 11619,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00243",
+      "start": 11637,
+      "end": 11678,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00244",
+      "start": 11678,
+      "end": 11718,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00245",
+      "start": 11718,
+      "end": 11763,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00246",
+      "start": 11763,
+      "end": 11832,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00248",
+      "start": 11833,
+      "end": 11878,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00250",
+      "start": 11879,
+      "end": 11926,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00252",
+      "start": 11927,
+      "end": 11945,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00254",
+      "start": 11963,
+      "end": 12041,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00255",
+      "start": 12041,
+      "end": 12087,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00257",
+      "start": 12088,
+      "end": 12121,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00259",
+      "start": 12122,
+      "end": 12140,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00261",
+      "start": 12158,
+      "end": 12248,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00262",
+      "start": 12248,
+      "end": 12345,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00263",
+      "start": 12345,
+      "end": 12434,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00265",
+      "start": 12435,
+      "end": 12458,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00268",
+      "start": 12463,
+      "end": 12756,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00270",
+      "start": 12757,
+      "end": 12825,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00272",
+      "start": 12826,
+      "end": 12875,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00274",
+      "start": 12926,
+      "end": 12941,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00275",
+      "start": 12941,
+      "end": 12955,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00277",
+      "start": 12956,
+      "end": 13101,
+      "disposition": "extracted_or_quoted_context"
+    },
+    {
+      "block_id": "B00279",
+      "start": 13246,
+      "end": 13268,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00280",
+      "start": 13268,
+      "end": 13295,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00281",
+      "start": 13295,
+      "end": 13317,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00282",
+      "start": 13317,
+      "end": 13344,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00283",
+      "start": 13344,
+      "end": 13366,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00284",
+      "start": 13366,
+      "end": 13393,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00285",
+      "start": 13393,
+      "end": 13415,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00286",
+      "start": 13415,
+      "end": 13442,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00287",
+      "start": 13442,
+      "end": 13464,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00288",
+      "start": 13464,
+      "end": 13491,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00289",
+      "start": 13491,
+      "end": 13513,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00290",
+      "start": 13513,
+      "end": 13540,
+      "disposition": "reviewed_context_only"
+    },
+    {
+      "block_id": "B00292",
+      "start": 13541,
+      "end": 13563,
+      "disposition": "reviewed_context_only"
+    }
+  ]
+}

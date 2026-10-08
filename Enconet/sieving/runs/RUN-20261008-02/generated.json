@@ -1,0 +1,1289 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "RU-73-02,R2 SOFTWARE VERIFICATION AND VALIDATION C.md",
+    "title": "SOFTWARE VERIFICATION AND VALIDATION CONTROL",
+    "date": "2017-11-17",
+    "doc_id": "DOC-0017",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: RU-73-02 identificirana je revizijom 2 i datumom objave.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]",
+          "source_heading_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Title:                | Radna uputa RU-73-02 |",
+          "quote_language": "en",
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        },
+        {
+          "quote_original": "| Revision No.:         | 2                    |",
+          "quote_language": "en",
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        },
+        {
+          "quote_original": "| Date Released:        | 17.11.2017.          |",
+          "quote_language": "en",
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, QA pregled i odobrenje imaju navedena imena i datume.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]",
+          "source_heading_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Prepared: | mr.sc. Ilijana Iveković, dipl.ing., Project Engineer | 13.11.2017. |",
+          "quote_language": "en",
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        },
+        {
+          "quote_original": "| Reviewed: | Vladimir Križe, dipl.ing., QA Leader              | 14.11.2017. |",
+          "quote_language": "en",
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        },
+        {
+          "quote_original": "| Approved: | dr.sc. Nenad Debrecin, Director                   | 15.11.2017. |",
+          "quote_language": "en",
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Prazna tablica predviđa periodični pregled.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3] > Periodični pregled [line 17]",
+          "source_heading_path": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3] > Periodični pregled [line 17]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "SOFTWARE VERIFICATION AND VALIDATION CONTROL [line 3] > Periodični pregled [line 17]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Uputa obuhvaća razvijeni softver za aktivnosti QA programa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 1.1 Purpose [line 94]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 1.1 Purpose [line 94]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The purpose of this procedure is to describe methods for control of verification and validation of software. This procedure applies to all developed software used for performing activities described in ENCONET d.o.o. Quality Assurance Program. This procedure affects personnel involved in the control and implementation of software verification and validation.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 1.1 Purpose [line 94]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: V&V se planira i provodi za svaki razvijeni softver.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 1.2 Scope [line 98]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 1.2 Scope [line 98]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This procedure gives instructions for verification and validation of software developed by ENCONET d.o.o. V&V activities shall be planed and performed for each software developed. Individuals and organizations developing software for ENCONET d.o.o. under contract shall be required to have procedures that meet the requirements of this document and project specified requirements.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 1.2 Scope [line 98]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_IV",
+      "criterion_name": "Procurement Document Control",
+      "statement": "objective_control: Ugovorni razvijatelji moraju imati postupke koji zadovoljavaju ovu uputu i projektne zahtjeve.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 1.2 Scope [line 98]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 1.2 Scope [line 98]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This procedure gives instructions for verification and validation of software developed by ENCONET d.o.o. V&V activities shall be planed and performed for each software developed. Individuals and organizations developing software for ENCONET d.o.o. under contract shall be required to have procedures that meet the requirements of this document and project specified requirements.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 1.2 Scope [line 98]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "objective_control: Validacija uključuje testiranje integriranog hardvera i softvera prema funkciji, performansi i međuvezama.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 2 ABBREVIATIONS AND DEFINITIONS [line 108]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 2 ABBREVIATIONS AND DEFINITIONS [line 108]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. Software Validation – The process of testing and evaluation of the integrated computer system (hardware and software) to ensure compliance with the functional, performance and interface requirements.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 2 ABBREVIATIONS AND DEFINITIONS [line 108]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Verifikacija provjerava izlaz svake razvojne faze prema zahtjevima prethodne faze.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 2 ABBREVIATIONS AND DEFINITIONS [line 108]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 2 ABBREVIATIONS AND DEFINITIONS [line 108]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "2. Software Verification – the process of determining whether or not the product of a given phase of the software development cycle fulfils the requirements imposed by the previous phase.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 2 ABBREVIATIONS AND DEFINITIONS [line 108]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor osigurava mjere i resurse V&V.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 3.1 Director",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "1. To establish appropriate measures and resources for software verification",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "   and validation.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Vodeći inženjer planira, organizira i provodi V&V.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 3.2 Lead Software Engineer",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "1. Planning and organization of verification and validation activities for",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "   software package.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "2. Implementation of software verification and validation.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Softverski inženjer izvodi verifikaciju i validaciju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 3.3 Software Engineer",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "1. Conduction of verification and validation.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: QA osigurava planiranje i izvedbu V&V prema odobrenom QA programu i uputi.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]",
+          "source_heading_path": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 3.4 QA Engineer",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "1. The responsibility of QA engineer is that all activities related to verification",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        },
+        {
+          "quote_original": "   and validation should be planned and performed in accordance with\n   approved Quality Assurance Program and this Procedure.",
+          "quote_language": "en",
+          "source_locator": "1 INTRODUCTION [line 92] > 3 RESPONSIBILITIES [line 130]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Svaki razvijeni softver mora imati vlastiti V&V plan.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.1 Each software developed shall contain specifically developed V&V plan.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: V&V plan uključuje specifikaciju zahtjeva.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.2 Preparation of the V&V Plan includes",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "1. Software Requirements Specification",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: V&V plan uključuje specifikaciju dizajna.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.2 Preparation of the V&V Plan includes",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "2. Software Design Specification",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "objective_control: Plan uključuje verifikacijski test plan.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.2 Preparation of the V&V Plan includes",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "3. Software Verification Test Plan",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "objective_control: Plan uključuje validacijski test plan.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.2 Preparation of the V&V Plan includes",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4. Software Validation Test Plan",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Verifikacija se provodi za svaku određenu razvojnu fazu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.3 Software Verification shall be performed during the software development for each determined phase of the software development cycle.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "objective_control: Validacija na završetku implementacije potvrđuje zadovoljenje zahtjeva.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.4 Software validation is performed at the end of the implementation phase to ensure that the code satisfies the requirements.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Rezultati V&V aktivnosti moraju biti dokumentirani.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 4.1.5 The results of software V&V activities shall be documented.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Dokumentacija propisuje zadatke i kriterije verifikacije svake faze.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.6 The V&V Documentation shall include:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4.1.6.1 Tasks and criteria for accomplishing the verification of the\n        software in each phase.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_XI",
+      "criterion_name": "Test Control",
+      "statement": "objective_control: Dokumentacija propisuje zadatke i kriterije završne validacije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.6 The V&V Documentation shall include:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4.1.6.2 Tasks and criteria for accomplishing the validation of the software\n        at the end of the development cycle.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Dokumentacija specificira hardversku i softversku konfiguraciju primjenjivu testu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.6 The V&V Documentation shall include:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4.1.6.3 Specification of the hardware and software configurations\n        pertinent to the software verification and validation.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Dokumentiraju se rezultati izvršenja V&V.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.6 The V&V Documentation shall include:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4.1.6.4 Results of the execution of the software verification and validation\n        activities.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Dokumentiraju se rezultati pregleda i testova.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.6 The V&V Documentation shall include:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4.1.6.5 Results of reviews and tests.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_XIV",
+      "criterion_name": "Inspection, Test, and Operating Status",
+      "statement": "supporting_control: Dokumentacija uključuje sažetak statusa softvera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.6 The V&V Documentation shall include:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4.1.6.6 Summary of the status of the software.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Verifikacijski pregledi provjeravaju primjerenost planiranja razvoja i testiranja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.7 Verification Reviews shall be established to ensure that planning\n      process of software development and testing is adequately performed.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Vodeći inženjer organizira verifikacijske preglede.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.7.1 Verification reviews are organized by lead software engineer.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Pregledi uključuju zahtjeve softvera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.7.2 Verification reviews shall consist of:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "        1. Review of Software Requirements",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Pregledi uključuju dizajn softvera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.7.2 Verification reviews shall consist of:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "        2. Review of Software Design",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Pregledi uključuju razvojnu dokumentaciju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.7.2 Verification reviews shall consist of:",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "        3. Development Documentation Review",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "objective_control: Problemi iz V&V pregleda dokumentiraju se na softverskom NCR-u i njegovu registru.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.8 Nonconformance identified during the V&V verification reviews shall be\n      documented by the Software Non-Conformance Report (Annex 6.1) and\n      the Software Non-Conformance Report Log Form (Annex 6.2).",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "objective_control: Sav kupljeni inženjerski softver treba imati V&V dokumentaciju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.2.1 All purchased engineering software should have Verification and\n      Validation documentation.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Reference upućuju na QA dokumente, norme i QS600; objective evidence not shown u samom popisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "[1.]      ENCONET Nuklearni QA Plan, NP-SUK-001",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[2.]      ENCONET, PRIRUČNIK KVALITETE NORMA - ISO 9001:2015, PK-\n          SUK-001",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[3.]      IAEA, Quality Assurance for Safety in Nuclear Power Plants and other\n          Nuclear Installations, Code and Safety Guides Q1–Q14, Safety Series\n          No. 50-C/SG-Q (1996).",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[4.]      10CFR50, Appendix B, Quality Assurance",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[6.]      Handbook of Software Quality Assurance Techniques Applicable to\n          Nuclear Industry, Battelle Pacific Northwest Labs, Richland, WA,\n          NUREG-CR-4640, August 1987",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[7.]      Manual on Quality Assurance for Computer Software Related to the\n          Safety of Nuclear Power Plants, Technical Reports Series No. 282,\n          IAEA, 1988",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[8.]      NE Krško Quality Specification QS600, Quality Assurance Program\n          Specification for Software",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[9.]      IEEE Software Engineering Standards, Third Edition",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[10.]     ANSI/IEEE Std 828-1990",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[11.]     HRN EN ISO 9001:2015",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        },
+        {
+          "quote_original": "[12.]     IAEA Leadership and Management for Safety, IAEA Safety Standards\n          Series, No. GSR Part 2, IAEA Vienna, 2016.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Citiran je NQA-1:1994 nasuprot odobrenoj bazi 2015; candidate; verify criterion mapping.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "[5.]      ANSI/ASME NQA-1-1994, \"Quality Assurance Requirements for\n          Nuclear Facility Applications\"",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 5   REFERENCES [line 227]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Prazan NCR identificira problem, audit, datum, softver, verziju, postupak i prijavitelja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Non-Conformance Report No.: | ________________ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Audit No.: | ________________ (if applicable) | Date: __/__/__ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Software: | ________________________ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Version Number: | _________________ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Procedure Reference: | _________________ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Reported by: | __________________________________ Date: __/__/__ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_XV",
+      "criterion_name": "Nonconforming Materials, Parts, or Components",
+      "statement": "supporting_control: Predložak razlikuje probleme iz V&V, audita, reklamacije i redovnog rada.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Raised due to: V&V: ___            Internal Audit: ___        Customer Complaint: ___\nNormal Working: ___",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak povezuje prijedlog radnje s odobrenjem vodećeg inženjera i planiranim završetkom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "**CORRECTIVE / PREVENTIVE ACTION PROPOSED:**",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "**Approval of Corrective / Preventive Action**",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Lead Software Engineer: | _____________________ Signature _______________ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Estimated Completion Date: | ___/___/____ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "supporting_control: Predložak završetka radnje razdvaja potpise softverskog inženjera, vodećeg inženjera i QA.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "**CORRECTIVE ACTION FINALISED:**",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Software Engineer: | ____________________ Signature ______________ Date: ___/___/____ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| Lead Software Engineer: | _______________________ Signature _____________ Date: ___/___/____ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        },
+        {
+          "quote_original": "| QA Engineer: | __________________________ Signature ______________Date: ___/___/____ |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.1 OB-SNCR-049 Software Non-Conformance Report Rev.2 [line 283]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: NCR registar predviđa prijavu, rok, nositelja, završetak i QA potvrdu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2 [line 328]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2 [line 328]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Software Non-Conformance Report Log Form | | |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2 [line 328]"
+        },
+        {
+          "quote_original": "| | Issue: | |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2 [line 328]"
+        },
+        {
+          "quote_original": "| | Date: | |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2 [line 328]"
+        },
+        {
+          "quote_original": "| Non-Conformance Report No. | Date | Reported by | Estimated Completion Date | Corrective Action Finalized by | Completion Date | QA Engineer |",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 6.2   OB-SNCL-050 Software Non-Conformance Report Log Form Rev.2 [line 328]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0041",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Uputa imenuje organizatora pregleda, ali ti odlomci ne određuju neovisnost pregledavatelja; candidate; verify criterion mapping prema drugim pravilima.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]",
+          "source_heading_path": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "4.1.7.1 Verification reviews are organized by lead software engineer.",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        },
+        {
+          "quote_original": "4.1.8 Nonconformance identified during the V&V verification reviews shall be\n      documented by the Software Non-Conformance Report (Annex 6.1) and\n      the Software Non-Conformance Report Log Form (Annex 6.2).",
+          "quote_language": "en",
+          "source_locator": "4 INSTRUCTIONS [line 159] > 4.1 V&V of Software Developed by ENCONET d.o.o. [line 161]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    }
+  ]
+}
