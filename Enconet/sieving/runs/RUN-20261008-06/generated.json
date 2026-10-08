@@ -1,0 +1,2393 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "RU-74-02,R2 DESIGN BASIS REVIEW  PROCEDURE.md",
+    "title": "DESIGN BASIS REVIEW  PROCEDURE",
+    "date": "2017-11-17",
+    "doc_id": "DOC-0021",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: RU-74-02 identificirana je revizijom 2 i datumom stupanja na snagu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]",
+          "source_heading_path": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv Dokumenta: | Radna Uputa RU-74-02 |",
+          "quote_language": "hr",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        },
+        {
+          "quote_original": "| Revizija: | 2 |",
+          "quote_language": "hr",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        },
+        {
+          "quote_original": "| Stupa na snagu: | 17.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, pregled i odobrenje imaju navedene osobe i datume.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]",
+          "source_heading_path": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Prepared by: | Boško Lukić, mag. ing. stroj. | 13.11.2017. |",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        },
+        {
+          "quote_original": "| Reviewed by: | Vladimir Križe, mag. ing. stroj. | 14.11.2017. |",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        },
+        {
+          "quote_original": "| Approved by: | dr. sc. Nenad Debrecin, dipl. ing. | 15.11.2017. |",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Prazna tablica predviđa periodični pregled.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > Periodični pregled [line 18]",
+          "source_heading_path": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > Periodični pregled [line 18]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > Periodični pregled [line 18]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Metoda obuhvaća design basis uvjete, potreban thrust/torque, actuator sposobnost i margine.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > SUMMARY [line 28]",
+          "source_heading_path": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > SUMMARY [line 28]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Proper engineering evaluation and setup of air-operated valves (AOV) is critical to the safe operation of a nuclear power plant. This document provides a methodology of AOVs engineering evaluation (Design Basis Review) which encompasses design basis system condition, required thrust and/or torque, air actuator output thrust/torque capability and operating margins.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > SUMMARY [line 28]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Metoda navodi uporabu EPRI lessons learned i alata; objective evidence not shown za stvarnu validaciju u samom opisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > SUMMARY [line 28]",
+          "source_heading_path": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > SUMMARY [line 28]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The method presented incorporate lessons learned and tools developed as part of the EPRI Motor Operated Valve Performance Prediction Research Program and during EPRI pilot AOV programs implemented at several nuclear power plants.\n---\nDESIGN BASIS REVIEW                   ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW  PROCEDURE [line 3] > SUMMARY [line 28]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Metoda definira funkcionalne i projektne zahtjeve, kodeks i normalne ili design basis uvjete.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The purpose of this document is to present methodology for:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Defining the functional and design requirements for an air-operated valve (AOV) and its accessories including code requirements and design basis/normal operating conditions.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ocjenjuju se valve karakteristike i potrebni thrust/torque.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The purpose of this document is to present methodology for:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Evaluating valve design features that can affect AOV operation and calculating valve thrust/torque requirements.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ocjenjuju se actuator output i kompatibilnost ventila i aktuatora.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The purpose of this document is to present methodology for:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Evaluating air actuator design features that can affect AOV operation, calculating the actuator output thrust/torque, and evaluating the compatibility of the actuator and the valve.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Ocjenjuju se capability margin i dopuštene izdržljive sile i momenti.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The purpose of this document is to present methodology for:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Evaluating the available margin between the actuator output thrust/torque and the required stem thrust/torque (i.e. capability margin), and evaluating valve/actuator survivable thrust and torque.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Opseg metode uključuje navedene globe izvedbe.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This document is applicable to the following valve designs:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Globe Valves (Balanced and Unbalanced, 2-way,3-way, Piloted, Double seated)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Opseg uključuje navedene gate izvedbe.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This document is applicable to the following valve designs:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Gate Valves (Solid wedge, Flexible wedge, Anchor/Darling double disk, Aloyco split wedge)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Opseg uključuje symmetric i single-offset butterfly ventile.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This document is applicable to the following valve designs:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Butterfly Valves (Symmetric disk and single offset)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Opseg uključuje floating i trunnion ball ventile.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This document is applicable to the following valve designs:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "- Ball Valves (Floating ball and Trunnion)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Opseg uključuje diaphragm, piston, rack-and-pinion i Scotch Yoke aktuatore.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This document is, also, applicable to the following air actuator types:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "➤ Diaphragm",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "➤ Piston",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "➤ Rack and Pinion",
+          "quote_language": "hr",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        },
+        {
+          "quote_original": "➤ Scotch Yoke",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 1. PURPOSE AND SCOPE [line 75]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Sistemski pregled određuje najnepovoljnije uvjete za sigurnosnu funkciju i zadržavanje položaja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The Design Basis Review consists of both a system level and component level review. The system design basis review identifies the worst case operating conditions for which AOV must operate and maintain position to perform its safety significant function. Elements of system design basis review are functional review and calculation of parameters.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Funkcionalni pregled uključuje identitet, sistemsku funkciju i svaku evoluciju pomicanja ventila.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Functional review includes: general valve information, description of valve function(s) within its system and detailed discussion of each operational evolution in which the valve is required to reposition.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Parametri scenarija obuhvaćaju tlakove, fluid, smjer toka i maksimalni DP.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Calculation of parameters is based on one or more of the scenarios established in functional review and identifies: upstream and downstream pressure, process fluid, flow direction, maximum expected differential pressure.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Komponentni pregled uspoređuje minimum thrust/torque s actuator sposobnošću pod worst-case uvjetima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Component level review includes determination of minimum required thrust/torque to open/close the valve under worst case operating conditions and assessment of actuator output capability",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Dijagram prvo provjerava kompatibilnost karakteristika s funkcionalnim zahtjevima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The methodology of the evaluation is conducted in accordance with the flowchart shown in Fig. 1.1.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        },
+        {
+          "quote_original": "```mermaid\ngraph TD\n    A[START] --> B[Define AOV design/functional requirements and AOV characteristics]\n    B --> C{Are the AOV Characteristics compatible with design/ functional requirements?}\n    C -->|NO| D[Obtain a match between the AOV functional/design requirements and AOV characteristics by: Developing an engineering justification for changing the design/ functional requirements or modifying the AOV]\n    D --> C\n    C -->|YES| E[Determine worst case system requirements for the valve's operation based on the functional review]\n    E --> F[For the valve determine: - required stem thrus/Torque - valve thrust/torque limits]\n    F --> G[For the actuator determine: - actuator output capability - actuator thrust/torque limits]\n    G --> H[For the Accessories determine: - pressure ratings - temperature ratings]\n    H --> I{Are the AOV Characteristics compatible with design/ functional requirements?}\n    I -->|NO| J[Make adjustments or modifications to valve and / or actuator.]\n    J --> I\n    I -->|YES| K{Are the AOV Characteristics compatible with design/ functional requirements?}\n    J --> L{Will the adjustment give adequate componenet and actuator margin?}\n    L -->|NO| J\n    L -->|YES| K\n    K -->|NO| J\n    K -->|YES| M[For the Accessories determine: - pressure ratings - temperature ratings]\n    M --> N[STOP]",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Neusklađenost rješava se engineering opravdanjem promjene zahtjeva ili modifikacijom AOV-a.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "```mermaid\ngraph TD\n    A[START] --> B[Define AOV design/functional requirements and AOV characteristics]\n    B --> C{Are the AOV Characteristics compatible with design/ functional requirements?}\n    C -->|NO| D[Obtain a match between the AOV functional/design requirements and AOV characteristics by: Developing an engineering justification for changing the design/ functional requirements or modifying the AOV]\n    D --> C\n    C -->|YES| E[Determine worst case system requirements for the valve's operation based on the functional review]\n    E --> F[For the valve determine: - required stem thrus/Torque - valve thrust/torque limits]\n    F --> G[For the actuator determine: - actuator output capability - actuator thrust/torque limits]\n    G --> H[For the Accessories determine: - pressure ratings - temperature ratings]\n    H --> I{Are the AOV Characteristics compatible with design/ functional requirements?}\n    I -->|NO| J[Make adjustments or modifications to valve and / or actuator.]\n    J --> I\n    I -->|YES| K{Are the AOV Characteristics compatible with design/ functional requirements?}\n    J --> L{Will the adjustment give adequate componenet and actuator margin?}\n    L -->|NO| J\n    L -->|YES| K\n    K -->|NO| J\n    K -->|YES| M[For the Accessories determine: - pressure ratings - temperature ratings]\n    M --> N[STOP]",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Dijagram određuje zasebne valve i actuator sposobnosti i granične sile ili momente.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "```mermaid\ngraph TD\n    A[START] --> B[Define AOV design/functional requirements and AOV characteristics]\n    B --> C{Are the AOV Characteristics compatible with design/ functional requirements?}\n    C -->|NO| D[Obtain a match between the AOV functional/design requirements and AOV characteristics by: Developing an engineering justification for changing the design/ functional requirements or modifying the AOV]\n    D --> C\n    C -->|YES| E[Determine worst case system requirements for the valve's operation based on the functional review]\n    E --> F[For the valve determine: - required stem thrus/Torque - valve thrust/torque limits]\n    F --> G[For the actuator determine: - actuator output capability - actuator thrust/torque limits]\n    G --> H[For the Accessories determine: - pressure ratings - temperature ratings]\n    H --> I{Are the AOV Characteristics compatible with design/ functional requirements?}\n    I -->|NO| J[Make adjustments or modifications to valve and / or actuator.]\n    J --> I\n    I -->|YES| K{Are the AOV Characteristics compatible with design/ functional requirements?}\n    J --> L{Will the adjustment give adequate componenet and actuator margin?}\n    L -->|NO| J\n    L -->|YES| K\n    K -->|NO| J\n    K -->|YES| M[For the Accessories determine: - pressure ratings - temperature ratings]\n    M --> N[STOP]",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Dijagram provjerava pressure i temperature ratings dodataka.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "```mermaid\ngraph TD\n    A[START] --> B[Define AOV design/functional requirements and AOV characteristics]\n    B --> C{Are the AOV Characteristics compatible with design/ functional requirements?}\n    C -->|NO| D[Obtain a match between the AOV functional/design requirements and AOV characteristics by: Developing an engineering justification for changing the design/ functional requirements or modifying the AOV]\n    D --> C\n    C -->|YES| E[Determine worst case system requirements for the valve's operation based on the functional review]\n    E --> F[For the valve determine: - required stem thrus/Torque - valve thrust/torque limits]\n    F --> G[For the actuator determine: - actuator output capability - actuator thrust/torque limits]\n    G --> H[For the Accessories determine: - pressure ratings - temperature ratings]\n    H --> I{Are the AOV Characteristics compatible with design/ functional requirements?}\n    I -->|NO| J[Make adjustments or modifications to valve and / or actuator.]\n    J --> I\n    I -->|YES| K{Are the AOV Characteristics compatible with design/ functional requirements?}\n    J --> L{Will the adjustment give adequate componenet and actuator margin?}\n    L -->|NO| J\n    L -->|YES| K\n    K -->|NO| J\n    K -->|YES| M[For the Accessories determine: - pressure ratings - temperature ratings]\n    M --> N[STOP]",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Prilagodba ili modifikacija mora dovesti do dovoljne komponente i actuator margine.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "```mermaid\ngraph TD\n    A[START] --> B[Define AOV design/functional requirements and AOV characteristics]\n    B --> C{Are the AOV Characteristics compatible with design/ functional requirements?}\n    C -->|NO| D[Obtain a match between the AOV functional/design requirements and AOV characteristics by: Developing an engineering justification for changing the design/ functional requirements or modifying the AOV]\n    D --> C\n    C -->|YES| E[Determine worst case system requirements for the valve's operation based on the functional review]\n    E --> F[For the valve determine: - required stem thrus/Torque - valve thrust/torque limits]\n    F --> G[For the actuator determine: - actuator output capability - actuator thrust/torque limits]\n    G --> H[For the Accessories determine: - pressure ratings - temperature ratings]\n    H --> I{Are the AOV Characteristics compatible with design/ functional requirements?}\n    I -->|NO| J[Make adjustments or modifications to valve and / or actuator.]\n    J --> I\n    I -->|YES| K{Are the AOV Characteristics compatible with design/ functional requirements?}\n    J --> L{Will the adjustment give adequate componenet and actuator margin?}\n    L -->|NO| J\n    L -->|YES| K\n    K -->|NO| J\n    K -->|YES| M[For the Accessories determine: - pressure ratings - temperature ratings]\n    M --> N[STOP]",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Procjenjuju se konzervativne pretpostavke ulaza i sistemskih uvjeta radi margina.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "    O[Evaluate conservative assumptions in system conditions and actuator/valve inputs to increase Actuator and Valve margins.] --> G\n```",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Dokument tvrdi usklađenost s EPRI preporukama; objective evidence not shown za neovisnu verifikaciju samom tvrdnjom.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "This methodology is fully compliant with the suggestions and recommendations of EPRI listed in the document EPRI Air-Operated Valves Evaluation Guide [1].\n---\nDESIGN BASIS REVIEW                                ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2. DESIGN BASIS REVIEW [line 119]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: System level pregled uključuje relevantne komponente sustava.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> System level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- relevant system components",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: System level pregled uključuje tip fluida.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> System level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- type of fluid",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: System level pregled uključuje upstream i downstream tlak.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> System level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- upstream and downstream pressure",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: System level pregled uključuje differential pressure.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> System level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- differential pressure",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: System level pregled uključuje maksimalni očekivani DP.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> System level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- maximum expected differential pressure.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0031",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Component level pregled uključuje funkciju ventila.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> Component level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- description of valve function",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0032",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Component level pregled uključuje svaku operativnu evoluciju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> Component level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- detailed discussion of each operational evolution in which the valve is required to reposition",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0033",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Component level pregled uključuje tlakove i maksimalni DP.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> Component level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- determination of upstream and downstream pressure and calculation of maximum expected differential pressure",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0034",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Component level pregled uključuje minimum potreban thrust/torque.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> Component level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- determination of minimum required thrust/torque",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0035",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Component level pregled uključuje actuator output capability.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "For each of valves, selected for evaluation, following activities will be performed:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "> Component level review:",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        },
+        {
+          "quote_original": "- evaluation of actuator output capability.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0036",
+      "criterion_id": "APP_B_V",
+      "criterion_name": "Instructions, Procedures, and Drawings",
+      "statement": "objective_control: AOV ocjena slijedi EPRI Evaluation Guide.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Evaluation of AOVs will be performed according to EPRI AOV Evaluation Guide.\n---\nDESIGN BASIS REVIEW                                               ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.2 ENGINEERING EVALUATION [line 165]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0037",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Globe opening formula uključuje težinu, trenja, stem rejection i DP; ovo je propisana metoda, ne provjeren projektni rezultat.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.1 Minimum Required Thrust for Globe Valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "**Opening stroke**: F<sub>O</sub> = F<sub>DS</sub> + F<sub>P</sub> + F<sub>US</sub> + F<sub>SR</sub> + F<sub>DF</sub> + F<sub>DP</sub>",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>DS</sub> – disc and stem weight",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>P</sub> – packing friction",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>US</sub> – friction at upper seal",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>SR</sub> – stem rejection",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>DF</sub> – disc to body friction",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>DP</sub> – stem thrust due to DP",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0038",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Globe closing formula dodatno uključuje sealing load.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.1 Minimum Required Thrust for Globe Valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "**Closing stroke**: F<sub>C</sub> = F<sub>DS</sub> + F<sub>P</sub> + F<sub>US</sub> + F<sub>SR</sub> + F<sub>DF</sub> + F<sub>DP</sub> + F<sub>SL</sub>",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>SL</sub> – sealing load (closing only)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0039",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Stem rejection račun koristi bonnet tlak i stem promjer.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "**Stem rejection load**",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>SR</sub> = P<sub>B</sub> x (d<sub>S</sub><sup>2</sup> x π)/4",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "P<sub>B</sub> – bonnet pressure",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "d<sub>S</sub> – stem diameter",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0040",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: DP thrust metoda povezuje differential pressure i efektivni promjer.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "**Differential Pressure:**",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>DP</sub> = ΔP (π/4)(d<sub>DP</sub>)<sup>2</sup>",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0041",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Sealing load formula koristi seating stress, kontaktnu površinu, kut i trenje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "F<sub>SL</sub> – sealing load (closing only)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "F<sub>SL</sub> = (S<sub>SEAT</sub> x A<sub>SEAT</sub>) x (sin θ + μ<sub>s</sub> cos θ)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "SSEAT – required seating stress                     ASEAT – seat interface contact area\nθ – disc half wage angle                            μs – disc-to-seat coefficient of friction",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0042",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Diaphragm force računa se iz tlaka i efektivne površine.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Diaphragm Actuator Force (FA)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "The diaphragm actuator force is calculated by multiplying the required air pressure in diaphragm chamber (psig) by effective diaphragm area (EDA, in2).",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0043",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Air usage metoda referencira Valve Handbook.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Air usage",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "Following calculation is performed in accordance with Valve Handbook Section 10.1.5. [2]",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0044",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Air usage račun definira volumene i apsolutne tlakove s referentnim uvjetima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "The term air usage refers to the amount of air used by pneumatic actuator to stroke the valve after the valve is stroked, the air usage stops until the valve is stroked again. For spring-return (single-acting) diaphragm, no air is used on the side of the diaphragm. When the actuator is fully stroked, the air usage is the amount of the actuator's free-air volume at the pressure given.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "$$V_1 = V_2 \\frac{P_2}{P_1}$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "V1 = free-air volume (standard cubic feet), volume rate at standard atmospheric temperature 21°C and pressure 14.7 psia (1.01325 bar abs)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "V2 = vessel volume (diaphragm chamber volume)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "P1 = atmospheric pressure (14.7 psia)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "P2 = absolute vessel pressure (psia)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0045",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Volumen diaphragm komore računa se iz efektivne površine i travel-a.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "V2 = EDA × VT",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "EDA - effective diaphragm area (inch2)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        },
+        {
+          "quote_original": "VT - valve travel (inch)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 2.3 CALCULATION OF REQUIRED THRUST AND TORQUE [line 189]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0046",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Spring force račun uključuje lower bench-set, površinu, spring rate i travel.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Maximum Spring Force (FMS) [line 262]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Maximum Spring Force (FMS) [line 262]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "## Maximum Spring Force (FMS)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Maximum Spring Force (FMS) [line 262]"
+        },
+        {
+          "quote_original": "$$F_{MS} = (BS_1 \\times EDA) + (SR \\times VT)$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Maximum Spring Force (FMS) [line 262]"
+        },
+        {
+          "quote_original": "BS1 - lower bench set (psig)\nEDA - effective diaphragm area (inch²)\nSR - spring rate (lb/inch)\nVT - valve travel (inch)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Maximum Spring Force (FMS) [line 262]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0047",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Packing friction formula specificira stress, geometriju i koeficijent trenja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "## Packing Friction Force",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$$F_P = G_{stress}υπd_sH_pμ_{up}$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "ds - stem diameter at the packing;    Gstress - gland stress (psi)\nυ – packing stress ratio;             Hp – height of the packing (inch)\nμup - coefficient of friction",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0048",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Packing stress i površina izvedeni su iz gland bolt podataka, lubrikacije i packing geometrije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "$$G_{stress} = (T_{bolt} N_{bolt}) / (D_{bolt} K_{lube} A_p)$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tbolt – gland bolt torque value, lb-in; Nbolt – number of glands bolts",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Dbolt – gland bolt diameter; Klube – lubrication factor between a gland bolt and nut",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Ap = [(ds + 2Wp)² – ds²] π/4 - cross sectional area of the packing, in²\nWp – width of the packing, in",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0049",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Diaphragm actuator force mora svladati sve opposing sile u zadanim uvjetima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "In order to fulfill valve intended function, diaphragm actuator force (FA) must overcome all other forces (FO or FC) acting on valve under given conditions.\n---\nDESIGN BASIS REVIEW                                                       ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0050",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Gate thrust metoda upućuje na EPRI MOV Performance Prediction.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.2 Minimum Required Thrust for Gate Valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Required thrust for gate valves can be evaluated using the EPRI MOV Performance Prediction Methodology.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0051",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Gate closing uključuje propisani sealing-load izraz.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Sealing Load (closing only)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$$F_{SL} = 2[S_{seat} \\times A_{seat} - DP(d_{MS}^2\\pi)/4][(sin\\theta + \\mu cos\\theta)]$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0052",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Gate opening thrust računa se iz packing load, geometrije, upstream tlaka, DP i valve faktora.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Required opening thrust",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$$F_o = F_p + (d_s^2\\pi)/4 \\times P_{up} + (d_{MS}^2\\pi)/4 \\times VF \\times DP$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$F_p$ - packing load (lb)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$d_s$ - stem diameter (inch)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$P_{up}$ - upstream pressure (psig)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$d_{MS}$ - mean seat diameter of valve seat (inch)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "DP - differential pressure (psig)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "VF - valve factor - dimensionless",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0053",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Gate closing thrust koristi propisani izraz i definirane ulazne veličine.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Required closing thrust",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$$F_c = F_p - (d_s^2\\pi)/4 \\times P_{up} + (d_{MS}^2\\pi)/4 \\times VF \\times DP$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$F_p$ - packing load (lb)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$d_s$ - stem diameter (inch)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$P_{up}$ - upstream pressure (psig)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$d_{MS}$ - mean seat diameter of valve seat (inch)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "DP - differential pressure (psig)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "VF - valve factor - dimensionless",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0054",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Opening i closing valve faktori razlikuju se prema kutu i trenju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Valve factor",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "VF = μs/(cosϕ + μssinϕ) - for opening\nVF = μs/(cosϕ - μssinϕ) - for closing",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "μs - disc to seat friction coefficient",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "ϕ - wedge half angle (°)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0055",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Unwedging račun koristi closure thrust i konstante koje ovise o half wedge kutu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### Unwedging load (only for opening)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Fuw = Fct x B + Fp(1 - B) + (DP)(π/4)( dMS² x C - dS²)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "B,C - constants depend on the half wedge angle",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Fct - maximum allowable closure thrust (lb)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0056",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Floating-ball opening torque uključuje packing, static i dynamic seat te hydrodynamic torque.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.3 Total Required Torque for Ball Valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "#### Opening",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "To = Tp + Tss + Tds + Th - floating ball",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tp - packing torque; Tss - static seat torque; Tds - dynamic seat torque",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0057",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Trunnion-ball opening torque uključuje bearing umjesto dynamic seat torqua.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.3 Total Required Torque for Ball Valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "#### Opening",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "To = Tp + Tss + Tb + Th   - trunnion ball",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tp - packing torque; Tss - static seat torque; Tds - dynamic seat torque",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tb - bearing torque",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0058",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Floating-ball closing torque ima propisane packing i seat članove.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.3 Total Required Torque for Ball Valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "#### Closing",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tc = Tp + Tss + Tds   - floating ball",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tp - packing torque; Tss - static seat torque; Tds - dynamic seat torque",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0059",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Trunnion-ball closing torque uključuje packing, static seat i bearing torque.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.3 Total Required Torque for Ball Valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "#### Closing",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tc = Tp + Tss + Tb    - trunnion ball",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tp - packing torque; Tss - static seat torque; Tds - dynamic seat torque",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "Tb - bearing torque",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0060",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Dynamic seat torque naveden je posebnim geometrijskim i DP izrazom.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Page 13\n---\nDESIGN BASIS REVIEW                                                              ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$$T_{ds} = [DP(\\pi/4)(d_{MS}^2)d_b]/\\sqrt{(db2 - d_{MS}^2)}$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0061",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Bearing torque naveden je izrazom koji uključuje DP, geometriju i trenje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Page 13\n---\nDESIGN BASIS REVIEW                                                              ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$$T_b = DP(\\pi/4)(d_{MS}^2)\\mu_b(d_s/24)$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0062",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Hydrodynamic torque opening računa se iz DP, HTF i promjera.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Hydrodinamic Torque (opening only)",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "$$T_H = (DP/12)(HTF/100)(d_p)^3$$",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "HTF - hydrodynamic torque factor",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0063",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Butterfly actuation torque predviđa EPRI MOV metodologiju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "### 2.3.4 Butterfly valves",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        },
+        {
+          "quote_original": "The torque required to actuate butterfly valves can be predicted using the\nEPRI MOV Performance Prediction Methodology\n---\nDESIGN BASIS REVIEW                                                                ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > Packing Friction Force [line 271]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0064",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Rezultati engineering ocjene prikazuju se u hard-copy Work Reportu s oznakom dokumenta.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Results of engineering evaluation of selected AOVs will be presented in hard copy form of Work Report with the corresponding document number.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0065",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Izvještaj identificira sistemsku i prostornu poziciju, fluid, uvjete i worst-case scenarije.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Results of engineering evaluation will contain all relevant information of each of selected AOVs such as position in related system, building, room, elevation, fluid type, description of operating conditions and one or more worst case scenarios.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0066",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Izvještaj sadrži bench set, spring rate, travel, diaphragm pressure i druge valve parametre.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Results will also contain detailed information of valves parameters such as bench set, spring rate, travel, diaphragm pressure, etc.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0067",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Za ispravnu ocjenu prikupljaju se valve i actuator tip i smjer djelovanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Other relevant information, such as type of valve (balanced or unbalanced, flow-under or over-the-seat) and actuator type (direct or reverse acting) will also be obtained in order to perform correct engineering evaluation of each of selected AOVs.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0068",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "objective_control: Završni thrust/torque zaključci određuju stanje, funkciju i actuator sposobnost.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Final results (thrust and torque) with conclusions of performed evaluation will be given in order to determine the actual valves condition, functionality and actuator output capability.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0069",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Ako ventil ne može izvršiti funkciju, preporučuje se maintenance za punu operativnu sposobnost.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "If engineering evaluation shows the impossibility of valves to fulfill their intended function, recommendation of required maintenance activities will be given with the aim of achieving full operating capability of valve and actuator.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0070",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Dokument navodi MECL bazu i ING.MOD dokumentaciju kao izvor podataka; sama izjava nije dostavljeni projektni zapis.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "All relevant information have been found in NEK MECL Database and ING.MOD hard copy documentation.\n---\nDESIGN BASIS REVIEW                                                            ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0071",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Reference povezuju EPRI, Valve Handbook i QA dokumente; objective evidence not shown u samom popisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "[1]     EPRI Air-operated Valves Evaluation Guide; TR-107322, May 1999.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]"
+        },
+        {
+          "quote_original": "[2]     Skousen, P. L.: Valve Handbook; Second Edition, 2004.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]"
+        },
+        {
+          "quote_original": "[3]     EPRI MOV Performance Prediction Methodology",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]"
+        },
+        {
+          "quote_original": "[4]     HRN EN ISO 9001:2015",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]"
+        },
+        {
+          "quote_original": "[5]     Enconet - Priručnik kvalitete PK-SUK-001, NP-SUK-001",
+          "quote_language": "hr",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]"
+        },
+        {
+          "quote_original": "[6]     IAEA Leadership and Management for Safety, IAEA Safety Standards Series,\n        No. GSR Part 2, IAEA Vienna, 2016.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 4. REFERENCES [line 398]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    },
+    {
+      "item_id": "ITEM-0072",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "candidate_lead: Za stvarnu ocjenu tražiti konkretne MECL i ING.MOD podatke i potpisani Work Report; candidate; verify criterion mapping.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        },
+        {
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 5. APPENDIX [line 417]",
+          "source_heading_path": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 5. APPENDIX [line 417]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "All relevant information have been found in NEK MECL Database and ING.MOD hard copy documentation.\n---\nDESIGN BASIS REVIEW                                                            ENCONET d.o.o.",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 3. RESULTS OF EVALUATION [line 380]"
+        },
+        {
+          "quote_original": "N/A",
+          "quote_language": "en",
+          "source_locator": "DESIGN BASIS REVIEW ENCONET d.o.o. [line 73] > 5. APPENDIX [line 417]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "2"
+      }
+    }
+  ]
+}
