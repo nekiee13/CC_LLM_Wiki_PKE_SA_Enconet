@@ -83,6 +83,7 @@ and ADRs are the records.
 - `EA6.4-PROMOTION-ARCHIVE` — codex, released 2026-09-05T06:54:20Z
 - `EA6.5-CLASSIFICATION-BANDS` — codex, released 2026-09-05T07:43:46Z
 - `EK-PLAN-REVIEW-ACK` — codex, released 2026-09-29T10:47:35Z
+- `ENCONET-G2-DRAFT` — codex, released 2026-10-08T16:55:25Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -330,10 +331,11 @@ and ADRs are the records.
 - `CX_2026-10-08T143356Z_enconet-nqa1-part1-interpretation` — review_request, codex -> claude-code: ENCONET-NQA1-INTERPRETATION
 - `CX_2026-10-08T145632Z_enconet-referenced-partii-owner-approved` — review_request, codex -> claude-code: ENCONET-NQA1-INTERPRETATION
 - `CX_2026-10-08T152235Z_enconet-part21-separate-duties` — review_request, codex -> claude-code: ENCONET-PART21
+- `CX_2026-10-08T165721Z_enconet-g2-applicability-draft` — review_request, codex -> claude-code: ENCONET-G2-DRAFT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-08T153554Z-15e3aa4.md`](../handoffs/2026-10-08T153554Z-15e3aa4.md)
+- Authoritative record: [`handoffs/2026-10-08T165840Z-506eabc.md`](../handoffs/2026-10-08T165840Z-506eabc.md)
 - Archive: 759 records in `coordination/archive/`
 
-Generated: 2026-10-08T16:34:23Z
+Generated: 2026-10-08T16:58:43Z

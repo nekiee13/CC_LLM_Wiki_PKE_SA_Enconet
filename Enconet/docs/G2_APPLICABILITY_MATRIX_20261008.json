@@ -1,0 +1,110 @@
+[
+  {
+    "criterion_id": "APP_B_I",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Ustrojstvo, ovlasti i QA odgovornosti vrijede za Enconet i posao podugovarača. Ocjenjuje se njegov sustav, ne druge tvrtke kao zasebni dobavljači. Ograničenje: Ugovorni i organizacijski odnosi; NEK nije drugi auditirani dobavljač. Izvor: NP3.1; CRUMB-DOC-0001-APP_B_I-0009.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_II",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. NQAP pokriva nuklearne projekte, kontrolirane uvjete, kvalifikaciju i ocjenu uprave. Primjenjivost ne znači da je tvrdnja o sukladnosti dokazana. Ograničenje: Razina kontrole prati važnost posla, uz odobrenu audit osnovu. Izvor: NP2.1-2.3; CRUMB-DOC-0001-APP_B_II-0017.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_III",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Sigurnosne analize, projekti, modifikacije i verifikacija dokumentirani su dio usluga. Projektiranje i provjera softvera također su uključeni. Ograničenje: Samo preuzete projektne odgovornosti. PartII2.7 vrijedi za primjenjivi softver; rezultat može imati dopušten put neovisne provjere svake primjene. Izvor: NP1.2 i5.1-5.4; CRUMB-DOC-0001-APP_B_III-0006.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_IV",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Enconet izrađuje ili procjenjuje nabavne dokumente i prenosi tehničke i QA zahtjeve. Ograničenje: Nabava i uloga ovlaštenika kupca u okviru ugovora, ne automatski cijela nabava NEK-a. Izvor: NP6.1; CRUMB-DOC-0001-APP_B_IV-0003.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_V",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Rad koji utječe na kvalitetu vodi se prema pisanim postupcima, uputama ili nacrtima s mjerilima prihvata. Ograničenje: Upute za Enconetov kvalitetno značajan rad. Izvor: NP2.2; CRUMB-DOC-0001-APP_B_V-0001.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_VI",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Kontroliraju se vlastiti, korisnički i vanjski dokumenti te njihova izdanja i promjene. Ograničenje: Kontrola propisujućih dokumenata, ne zamjena za čuvanje gotovih zapisa iz XVII. Izvor: NP4.1-4.3; CRUMB-DOC-0001-APP_B_VI-0013.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_VII",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Program propisuje izbor dobavljača i dokaz prihvata proizvoda ili usluge. To uključuje kvalitetno značajne podugovarače i softver. Ograničenje: Samo dobave za koje Enconet odgovara. PartII2.14 kad se obavlja primjenjivi dedication, ne za svaku uredsku kupnju. Izvor: NP6.2-6.3; CRUMB-DOC-0001-APP_B_VII-0005.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_VIII",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Za predmete pod nadzorom Enconeta traži se identifikacija i sljedivost. Relevantni su i instrumenti te kontrolirani softverski konfiguracijski predmeti. Ograničenje: Predmeti i zapisi u preuzetoj ulozi; ne pretpostavlja se vlastita proizvodnja dijelova. Izvor: NP7.1; CRUMB-DOC-0001-APP_B_VIII-0002.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_IX",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. NQAP izričito navodi vizualne QC aktivnosti kao specijalne procese. Zato kriterij nije izuzet samo zbog konzultantske djelatnosti. Ograničenje: Vizualne QC aktivnosti i kvalifikacije u odobrenom opsegu. Zavarivanje, toplinska obrada i drugi procesi ne pretpostavljaju se bez ugovora. Izvor: NP8.1-8.2; CRUMB-DOC-0001-APP_B_IX-0003.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_X",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Inspekcija proizvoda, usluga ili rada pod Enconetovim nadzorom ima kriterije i neovisne izvršitelje. Ograničenje: Samo preuzeti pregled i svjedočenje; ne sva inspekcija u elektrani. Izvor: NP9.1; CRUMB-DOC-0001-APP_B_X-0003.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_XI",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Dokumenti uređuju ugovorene ili regulatorne testove, a programski testovi i dijagnostika dio su razmotrenih usluga. Ograničenje: Primjenjivi software/diagnostic testovi i ugovoreni programi. Ne izmišlja se laboratorijska djelatnost. Izvor: NP9.2 i softverske upute; CRUMB-DOC-0001-APP_B_XI-0002.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_XII",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Odabir, umjeravanje i kontrola mjerne/testne opreme uređeni su dokumentima. Ograničenje: Prijenosna MTE kad je potrebna za posao; ne sva trajno ugrađena oprema NEK-a ili svako računalo. Izvor: NP9.3 i RU-82-05; CRUMB-DOC-0001-APP_B_XII-0002.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_XIII",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Predlaže se ograničena primjenjivost za zaštitu, rukovanje i skladištenje MTE te relevantnih fizičkih softverskih medija. Dokumentirani procesi daju razlog za pregled, unatoč općem izuzeću u NP14.1. Ograničenje: IZRIČITA ODLUKA VLASNIKA: ograničeni pregled dokumentiranih odgovornosti, ne opća logistika isporučenih komponenti. Trenutna stvarna MTE zaduženja i ugovor treba potvrditi; obrazac nije dokaz korištenja. Izvor: RU-82-05§6.2; NP7.2 i14.1; RU-73-03§1.2/4.2; CRUMB-DOC-0025-APP_B_XIII-0003.",
+    "scope_source_doc_id": "DOC-0025"
+  },
+  {
+    "criterion_id": "APP_B_XIV",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Oznake i zapisnici prikazuju stanje pregleda/testa i sprečavaju uporabu neprihvaćenog predmeta. Ograničenje: Status u Enconetovoj ulozi pregleda/testa, uključujući relevantne instrumente i odobrenu verziju softvera. Izvor: NP9.4; CRUMB-DOC-0001-APP_B_XIV-0001.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_XV",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Nesukladan proizvod ili usluga prepoznaje se, ocjenjuje i kontrolira do odobrene odluke. Ograničenje: QA nesukladnosti nisu automatski reportable defects prema Part21; Part21 provjera ostaje zasebna. Izvor: NP10.1-10.2; CRUMB-DOC-0001-APP_B_XV-0001.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_XVI",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Korektivne radnje i analiza uzroka za značajan problem dio su programa. Ograničenje: Opseg prati značaj problema; izvještavanje prema Part21 razmatra se zasebno. Izvor: NP11.1; CRUMB-DOC-0001-APP_B_XVI-0001.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_XVII",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Zapisi dokazuju kvalitetu usluga i moraju biti identificirani, sačuvani i dohvatljivi. Ograničenje: Gotovi QA zapisi; dopuštene metode čuvanja ostaju vidljive. Prazni obrasci nisu dokazi provedbe. Izvor: NP12.1-12.2; CRUMB-DOC-0001-APP_B_XVII-0004.",
+    "scope_source_doc_id": "DOC-0001"
+  },
+  {
+    "criterion_id": "APP_B_XVIII",
+    "applicable": true,
+    "justification": "Prijedlog G2, ne ocjena sukladnosti. Program propisuje neovisne interne i vanjske audite s praćenjem popravnih radnji. Ograničenje: Auditi Enconetova sustava i njegovih kvalitetno značajnih dobavljača; ne audit svih poduzeća NEK-a. Izvor: NP13.1; CRUMB-DOC-0001-APP_B_XVIII-0004.",
+    "scope_source_doc_id": "DOC-0001"
+  }
+]

@@ -57,8 +57,13 @@ now validates with zero errors and warnings; Part II and Part 21 review notes
 are ready for publication. The exception manifest records unchanged message
 body and audit-database hashes. Claude substantive review remains pending.
 
-Prepare reasoned applicability of the 18 criteria and separate Part 21 scope
-for owner G2 review, keeping governing identities stable. The owner question about
+Owner review draft G2-RUN-20261008-17 is now ready: 18 proposed included criteria,
+with role/activity limits and an explicit XIII exclusion conflict. No G2 decision,
+evaluation run, applicability rows or ratings have been written. Part 21 QA-program
+readiness is separate; direct NRC jurisdiction and dedication role are not presumed.
+Review [the single applicability package](../docs/G2_APPLICABILITY_OWNER_REVIEW_20261008.md)
+and approve or correct the proposed scope before formal gate recording and import.
+The owner question about
 referenced Part II sections is resolved by ASME-ENCONET-PARTII-REFS-20261008.
 Only 2.7/2.14 are included conditionally. Verify the source fragment in 2.7 section
 201 before claiming complete interpretation of that clause; other Parts 2-4 text

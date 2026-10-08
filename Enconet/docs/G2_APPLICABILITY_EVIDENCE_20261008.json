@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "proposal_status": "draft_not_applied",
+  "gate": "G2",
+  "prospective_evaluation_run_id": "RUN-20261008-17",
+  "proposed_decision_ref": "G2-RUN-20261008-17",
+  "db_before_sha256": "258479e38273b2a6184e71ddaad6f668af6f0d2f416f7d3cee947ac4750d1076",
+  "state_before_sha256": "8323d2cf1e79cbdb78b747e527396be7dcbf05e463df916c0fe513457529388d",
+  "proposal": {
+    "criteria_included": 18,
+    "criteria_excluded": 0,
+    "criterion_XIII": "Proposed included only for document-supported MTE and relevant physical-media handling/storage; owner must resolve explicit NP14.1 exclusion. No fabrication/general shipping role presumed."
+  },
+  "guard": "No approval row written; no G2 recording or applicability import; phase remains chunked. This is a pre-gate owner-review proposal, not a phase-routed gate packet.",
+  "primary_evidence": [
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_I-0009",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Organizacijska i komunikacijska pravila iz priručnika vrijede za sve djelatnosti.",
+      "quote_id": "QUOTE-DOC-0001-0060-01",
+      "quote_original": "Principi organizacije, komuniciranja i obavješćivanja u Enconetu koji su razrađeni i predstavljeni u Priručniku kvalitete prema normi ISO 9001:2015 vrijede za sve djelatnosti Enconeta.",
+      "chunk_id": "CHUNK-DOC-0001-0014"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_II-0017",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: NQAP je krovni dokument kvalitete koji se uključuje u svaki nuklearni projekt.",
+      "quote_id": "QUOTE-DOC-0001-0036-01",
+      "quote_original": "Enconet NQAP predstavlja dokument kvalitete najviše razine (razine 1 – krovni dokument). Organiziran je tako da postavlja QA Program koji odgovara na sve zahtjeve sigurnosnog propisa IAEA General Safety Requirements, No. GSR Part 2, Vienna 2016, Leadership and Management for Safety, 10CFR50, App. B, 10CFR21, Reporting of Defects and Noncompliance, ASME NQA-1, QA Requirements for Nuclear Facility Aplications i dodatnih sigurnosnih uputa. NQAP će biti uključen u svaki nuklearni projekt u kojem Enconet sudjeluje.",
+      "chunk_id": "CHUNK-DOC-0001-0009"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_III-0006",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Opseg uključuje razvijanje postupaka upravljanja kvalitetno značajnim projektima.",
+      "quote_id": "QUOTE-DOC-0001-0091-01",
+      "quote_original": "- Razvijanje, obnavljanje ili pojednostavljenje postupaka upravljanja projektom značajnih za kvalitetu sukladno zahtjevima korisnika;",
+      "chunk_id": "CHUNK-DOC-0001-0022"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti izrađuju se ili procjenjuju glede zahtjeva kvalitete.",
+      "quote_id": "QUOTE-DOC-0001-0108-01",
+      "quote_original": "- Izrada ili procjena nabavnih dokumenata glede primjerenosti zahtjeva kvalitete;",
+      "chunk_id": "CHUNK-DOC-0001-0028"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_V-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Rad značajan za kvalitetu mora slijediti pisane postupke, upute ili nacrte.",
+      "quote_id": "QUOTE-DOC-0001-0050-01",
+      "quote_original": "Aktivnosti koje utječu na kvalitetu moraju se izvoditi prema pisanim postupcima,\nuputama ili nacrtima. U svakom postupku utvrditi će se kvantitativno i/ili\nkvalitativno kriterij prihvaćanja. Ovi postupci moraju biti odobreni, objavljeni i\nrazdijeljeni u kontroliranim uvjetima.",
+      "chunk_id": "CHUNK-DOC-0001-0011"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VI-0013",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Kontrola obuhvaća dokumente vlastite izrade i dokumente dobivene od kupca ili trećih.",
+      "quote_id": "QUOTE-DOC-0001-0079-01",
+      "quote_original": "Upute, postupci i nacrti koje koristi Enconet moraju se kontrolirati. Nadzor dokumenata mora zadovoljavati, neovisno o podrijetlu dokumenata (izrađeni u Enconetu, dobiveni od trećih ili od kupca) sljedeće minimalne zahtjeve:",
+      "chunk_id": "CHUNK-DOC-0001-0018"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VII-0005",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Dobavljači se biraju prema vrednovanju sposobnosti, a QA održava odobrenu listu.",
+      "quote_id": "QUOTE-DOC-0001-0126-01",
+      "quote_original": "Enconet mora vrednovati sposobnosti isporučitelja, te na temelju dobivenih\nrezultata izvršiti izbor isporučitelja. Voditelj QA poslova odgovoran je za\nuspostavljanjem i obnavljanjem odobrene liste isporučitelja.",
+      "chunk_id": "CHUNK-DOC-0001-0030"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VIII-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Materijali i komponente pod nadzorom Enconeta identificiraju se oznakama ili zapisima o sljedivosti.",
+      "quote_id": "QUOTE-DOC-0001-0134-01",
+      "quote_original": "Enconet mora obavljati identifikaciju i kontrolu materijala, dijelova i komponenti koji su pod nadzorom Enconeta prilikom isporuke, ugradnje i rada, pomoću oznaka šarže, broja dijela, serijskog broja ili nekim drugim odgovarajućim načinom, bilo oznakom na dijelu bilo pomoću zapisa o sljedivosti dijelova.",
+      "chunk_id": "CHUNK-DOC-0001-0033"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IX-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Dokument navodi trening i kontrolu vida za izvršitelje vizualne QC kontrole.",
+      "quote_id": "QUOTE-DOC-0001-0146-01",
+      "quote_original": "Enconet je do sada uključen u kategoriju specijalnih procesa na području vizualne kontrole QC aktivnosti. Trening i zdravstveni uvjeti osiguravaju se u sklopu zahtjeva NE Krško. Direktni izvršioci imaju odgovarajući trening i zdravstvene kontrole vida. Specijalni procesi provode se u skladu sa zahtjevima ugovorenih poslova.",
+      "chunk_id": "CHUNK-DOC-0001-0038"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_X-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Inspekciju obavlja osoblje koje nije izvodilo pregledavani rad.",
+      "quote_id": "QUOTE-DOC-0001-0151-01",
+      "quote_original": "Ispitivanje dijelova, proizvoda ili usluga u opsegu isporuke Enconeta ili pod njegovim nadzorom mora provoditi osoblje koje nije sudjelovalo u izvođenju aktivnosti koje se pregledavaju. Kriteriji prihvatljivosti i verifikacije sukladnosti moraju se utvrditi u dokumentiranim uputama, postupcima i nacrtima. Ukoliko nije moguće ispitivanje obrađenog dijela, proizvoda ili usluge, provodit će se praćenje procesa na način naveden u poglavlju 8. ovog NQAP.",
+      "chunk_id": "CHUNK-DOC-0001-0040"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XI-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Za ugovorno ili regulatorno tražene testove izrađuje se program i bilježe rezultati.",
+      "quote_id": "QUOTE-DOC-0001-0156-01",
+      "quote_original": "Ukoliko je testiranje ugovorna ili regulatorna obveza, mora se izraditi program testiranja i dokumentirati rezultate testova.",
+      "chunk_id": "CHUNK-DOC-0001-0041"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XII-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Mjerna oprema odabire se prema mjernom području, vrsti, točnosti i preciznosti.",
+      "quote_id": "QUOTE-DOC-0001-0158-01",
+      "quote_original": "Mora se izvršiti pravilan izbor opreme za pregled, mjerenje i ispitivanje kako bi se zadovoljilo mjerno područje, vrsta, točnost i preciznost mjerenja.",
+      "chunk_id": "CHUNK-DOC-0001-0042"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XIII-0003",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XIII",
+      "statement": "objective_control: Prostor čuvanja mora odgovarati propisanim uvjetima instrumenta.",
+      "quote_id": "QUOTE-DOC-0025-0041-01",
+      "quote_original": "MTE se čuva i skladišti u prostorijama koje moraju zadovoljavati kriterije koje su predpisane za pojedini instrument (temperature, vlaga, agresivnost atmosfere, pritisak, vibracije itd.)",
+      "chunk_id": "CHUNK-DOC-0025-0009"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XIV-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Kartice i zapisnici prikazuju stanje pregleda i ispitivanja.",
+      "quote_id": "QUOTE-DOC-0001-0164-01",
+      "quote_original": "Oprema za mjerenje i ispitivanje mora biti jednoznačno obilježena, tako da se u slučaju korištenja te opreme njena oznaka prenosi na pojedinačne entitete koji su pregledani i ispitani. Trebaju se koristiti tipske kartice ili zapisnici pregleda radi utvrđivanja stanja pregleda i ispitivanja, kao i sljedivost testiranih entiteta kroz izvješća. Kod testiranih sustava, komponenti i dijelova koristit će se fizičko označivanje karticama kako bi se spriječila nepažljiva uporaba.",
+      "chunk_id": "CHUNK-DOC-0001-0043"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XV-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Izvršitelji prepoznaju nesukladnosti i dostavljaju izvješća voditelju projekta ili QA.",
+      "quote_id": "QUOTE-DOC-0001-0166-01",
+      "quote_original": "Cjelokupno osoblje Enconeta koje izvodi aktivnosti značajne za kvalitetu, snosi odgovornost za prepoznavanje i izvješćivanje o nesukladnostima. Izvješća o takvim entitetima ili uslugama moraju se dostaviti voditelju projekta ili voditelju QA poslova. Nesukladni entiteti moraju se identificirati, označiti i izdvojiti sve dok voditelj projekta ne odredi daljnje postupanje.",
+      "chunk_id": "CHUNK-DOC-0001-0045"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XVI-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Uvjeti koji ugrožavaju kvalitetu popravljaju se, bilježe i rješavaju kroz kontrolu nesukladnosti.",
+      "quote_id": "QUOTE-DOC-0001-0171-01",
+      "quote_original": "Uvjeti koji ugrožavaju kvalitetu moraju se popravljati. Utvrđena nesukladnost mora se zabilježiti i rješavati prema poglavlju 10. ovog NQAP.",
+      "chunk_id": "CHUNK-DOC-0001-0048"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XVII-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA zapisi pružaju objektivni dokaz postignute kvalitete.",
+      "quote_id": "QUOTE-DOC-0001-0174-01",
+      "quote_original": "QA zapisi se moraju pripremati kako bi se pružio objektivni dokaz postignute kvalitete.",
+      "chunk_id": "CHUNK-DOC-0001-0050"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XVIII-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Uspješnost QA programa provjerava se neovisnim auditom prema pisanim postupcima i upitnicima.",
+      "quote_id": "QUOTE-DOC-0001-0181-01",
+      "quote_original": "Usvajanje i uspješnost QA Programa Enconeta mora se verificirati kroz nezavisno ocjenjivanje kvalitete. Takvo nezavisno ocjenjivanje mora se provoditi prema pisanim postupcima i upitnicima.",
+      "chunk_id": "CHUNK-DOC-0001-0053"
+    }
+  ],
+  "supplementary_evidence": [
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XIII-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XIII",
+      "statement": "supporting_control: Kada je odgovoran za ove aktivnosti, Enconet kontrolira rukovanje, otpremu i skladištenje radi zaštite proizvoda.",
+      "quote_id": "QUOTE-DOC-0001-0138-01",
+      "quote_original": "Enconet mora kontrolirati aktivnosti rukovanja, otpreme i skladištenja u svrhu sprječavanja oštećenja, propadanja ili gubitka proizvoda. Ukoliko je potrebno, moraju se utvrditi, propisati, održavati i verificirati posebne mjere o rukovanju i zaštitnim okolišnim uvjetima prilikom transporta i skladištenja onda kad je Enconet odgovoran za navedene aktivnosti.",
+      "chunk_id": "CHUNK-DOC-0001-0034"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XIII-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XIII",
+      "statement": "candidate_lead: Dokument tvrdi da kriterij XIII nije u dotadašnjem opsegu; candidate; verify criterion mapping.",
+      "quote_id": "QUOTE-DOC-0001-0187-01",
+      "quote_original": "Izuzetak:\nPriručnik kvalitete ne uključuje kriterij XIII Appendix-a B, 10CFR50. Dosadašnje aktivnosti Enconeta po svojoj naravi i opsegu ne zahtijevaju primjenu navedenog kriterija XIII - Handling, Storage and Shipping.\nPrilikom pružanja usluga u NEK-u, Enconetovi djelatnici u radu primjenjuju QA program NEK-a.\nUkoliko Enconet u budućnosti bude pružao usluge NE Krško, koje bi zahtijevale primjenu kriterija XIII, Dodatka B, 10CFR50, poštivati će se zahtjevi odgovarajućih postupaka NE Krško, što nije u suprotnosti s kodom i biti će specificirano u ponudi Enconeta. U slučaju opsežnih i dugotrajnih radova na području koje bi zahtijevalo striktnu primjenu tog kriterija Enconet će razviti svoje postupke.",
+      "chunk_id": "CHUNK-DOC-0001-0054"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XIII-0001",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XIII",
+      "statement": "objective_control: Voditelj osigurava odgovarajuće skladištenje MTE.",
+      "quote_id": "QUOTE-DOC-0025-0017-01",
+      "quote_original": "Voditelj projekta odgovoran je da u ugovornoj i pogodbenoj dokumentaciji specificira potrebnu mjerno testnu opremu. Ukoliko Enconet ne posjeduje potrebnu opremu, odgovoran je da pronađe dobavljača zahtijevane mjerno testne opreme, koji zadovoljava sve standarde zahtjevane u tehničkim specifikacijama zahtjeva za ponudu. Odgovoran je da zahtjevanu mjerno testnu opreme specificira u ponudi Enconeta.",
+      "chunk_id": "CHUNK-DOC-0025-0008"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XIII-0003",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XIII",
+      "statement": "objective_control: Prostor čuvanja mora odgovarati propisanim uvjetima instrumenta.",
+      "quote_id": "QUOTE-DOC-0025-0041-01",
+      "quote_original": "MTE se čuva i skladišti u prostorijama koje moraju zadovoljavati kriterije koje su predpisane za pojedini instrument (temperature, vlaga, agresivnost atmosfere, pritisak, vibracije itd.)",
+      "chunk_id": "CHUNK-DOC-0025-0009"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IX-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Prije preuzimanja novih specijalnih procesa moraju se osigurati edukacija, postupci, oprema i prostor.",
+      "quote_id": "QUOTE-DOC-0001-0147-01",
+      "quote_original": "U slučaju da Enconet novim ugovorom preuzme obavezu izvedbe specijalnih procesa koji do sada nisu izvođeni, osigurat će se zahtijevana edukacija, postupci, oprema, kalibracije, potreban prostor i svi ostali potrebni parametri za uspješno izvođenje procesa.",
+      "chunk_id": "CHUNK-DOC-0001-0038"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XV-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: QA analizira nesukladnosti i obavještava direktora glede zahtjeva Part 21; direktor izvješćuje kupca po potrebi.",
+      "quote_id": "QUOTE-DOC-0001-0169-01",
+      "quote_original": "Voditelj QA analizira sve nesukladnosti a posebno obzirom na zahtjeve 10CFR Part21, te o nalazima obavještava direktora, koji je odgovoran za izvještavanje kupca / naručitelja u slučaju potrebe.",
+      "chunk_id": "CHUNK-DOC-0001-0046"
+    }
+  ],
+  "scope_source_ids": [
+    "DOC-0001",
+    "DOC-0003",
+    "DOC-0018",
+    "DOC-0025"
+  ],
+  "part21": {
+    "score_excluded": true,
+    "qa_program_review_included": true,
+    "basis": "NP1.1/2.1 and NP10.2 adopt Part21 quality-problem review and customer escalation, supported by CRUMB-DOC-0001-APP_B_XV-0004.",
+    "direct_NRC_jurisdiction": "not established; do not presume",
+    "NRC_notifications": "event and legal/contract role conditional; no current reporting obligation or external submission asserted",
+    "dedicating_entity_role": "not established; do not presume",
+    "related_contracts": "not independently verified; contract-specific additional duties remain conditional"
+  },
+  "asme": {
+    "basis": "G1 supplied NQA-1:2015 PartI; owner-approved referenced PartII2.7/2.14 only. Others supporting.",
+    "source_gap": "PartII2.7/201 sentence fragment remains flagged. Do not invent missing clause text; PartI Requirement17 record controls remain in scope."
+  },
+  "observations": [
+    "Applicability is not conformance. Supplier high-level claims, blank forms and counts do not prove implementation.",
+    "NP14.1 exclusion conflicts with concrete storage responsibilities in RU-82-05 and physical-media control in RU-73-03; proposal preserves both sides.",
+    "PP-74-01 is referenced but no separate supplied file appears in the 26-source inventory. Verify or request it during evidence review; do not infer that procurement is not applicable."
+  ],
+  "indexes": {
+    "docs": "Enconet shared doc indexes at62a0251 (2026-07-28), stale against live506eabc; not used as authoritative evidence.",
+    "code": "Enconet-0a063bd7 at62a0251 (2026-07-28), stale; live relied-on functions verified."
+  },
+  "diagnostics": [
+    "jdocmunch CLI list-repos is unsupported in this installed CLI; used read-only MCP doc_list_repos instead.",
+    "Initial broad metadata/source output and full evidence-row query exceeded display/return budgets. Re-read required sources independently and switched to bounded, clause-specific exact evidence retrieval.",
+    "Missing-path exploratory lookups for optional applicability helper and separate transition YAML were diagnostic only; actual evaluation_engine and audit_state contracts read."
+  ],
+  "checks": [
+  {
+    "command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; root=Path('Enconet'); m=json.loads((root/'docs/G2_APPLICABILITY_MATRIX_20261008.json').read_text(encoding='utf-8')); e=json.loads((root/'docs/G2_APPLICABILITY_EVIDENCE_20261008.json').read_text(encoding='utf-8')); c=sqlite3.connect((root/'db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); criteria={r[0] for r in c.execute('SELECT criterion_id FROM criteria')}; assert len(m)==18 and {r['criterion_id'] for r in m}==criteria and len({r['criterion_id'] for r in m})==18; assert all(type(r['applicable']) is bool and r['justification'].strip() for r in m); assert all(c.execute('SELECT document_side FROM documents WHERE doc_id=?',(r['scope_source_doc_id'],)).fetchone()==('DOCUMENT',) for r in m); evidence=e['primary_evidence']+e['supplementary_evidence']; assert all(c.execute('SELECT c.doc_id,c.criterion_id,q.quote_original,d.chunk_text FROM active_crumbs c JOIN crumb_quotes q ON q.item_id=c.item_id JOIN crumb_chunk_links l ON l.quote_id=q.quote_id JOIN document_chunks d ON d.chunk_id=l.chunk_id WHERE c.item_id=? AND q.quote_id=? AND l.chunk_id=?',(r['item_id'],r['quote_id'],r['chunk_id'])).fetchone()[:3]==(r['doc_id'],r['criterion_id'],r['quote_original']) for r in evidence); assert all(r['quote_original'] in c.execute('SELECT chunk_text FROM document_chunks WHERE chunk_id=?',(r['chunk_id'],)).fetchone()[0] for r in evidence); assert hashlib.sha256((root/'db/nqa_audit.sqlite').read_bytes()).hexdigest()==e['db_before_sha256']; assert hashlib.sha256((root/'project-state.yml').read_bytes()).hexdigest()==e['state_before_sha256']; assert c.execute('SELECT count(*) FROM criterion_applicability').fetchone()[0]==0; assert c.execute('SELECT count(*) FROM evaluation_runs').fetchone()[0]==0; assert c.execute('SELECT count(*) FROM criterion_evaluations').fetchone()[0]==0; print(json.dumps({'draft_rows':18,'proposed_included':sum(r['applicable'] for r in m),'exact_existing_evidence':len(evidence),'database_and_gate_state_unchanged':True,'no_rulings_or_scores_written':True}))\"",
+    "exit_code": 0,
+    "result": "passed",
+    "summary": "18 unique canonical draft rows; all cited active vendor crumbs/quotes/chunks match; database and project-state byte-exact; zero applicability/evaluation/score rows."
+  },
+  {
+    "command": "python Enconet/scripts/validate_traceability.py --no-record",
+    "exit_code": 0,
+    "result": "passed"
+  },
+  {
+    "command": "python Enconet/scripts/validate_requirements.py --no-record",
+    "exit_code": 0,
+    "result": "passed"
+  },
+  {
+    "command": "python Enconet/scripts/run_all_validations.py --no-record",
+    "exit_code": 0,
+    "result": "passed",
+    "summary": "4 checks apply at chunked; downstream skipped. No state transition."
+  },
+  {
+    "command": "python -c \"import json,hashlib; from pathlib import Path; p=Path('Enconet'); plan=json.loads(Path('reset-plans/enconet-reset-20261007-reviewed.json').read_text(encoding='utf-8')); rows=plan['incoming_files']; bad=[r['relative_path'] for r in rows if not (p/r['relative_path']).is_file() or hashlib.sha256((p/r['relative_path']).read_bytes()).hexdigest()!=r['sha256']]; actual={x.relative_to(p).as_posix() for x in (p/'incoming').rglob('*') if x.is_file()}; expected={r['relative_path'] for r in rows}; print(json.dumps({'files':len(rows),'hash_mismatches':bad,'unexpected_files':sorted(actual-expected),'missing_files':sorted(expected-actual)})); assert not bad and actual==expected\"",
+    "exit_code": 0,
+    "result": "passed",
+    "summary": "36 incoming files preserved."
+  }
+]
+}
