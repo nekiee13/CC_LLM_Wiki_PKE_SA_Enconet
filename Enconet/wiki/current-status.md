@@ -5,7 +5,7 @@ audit while preserving incoming documents. Archive and reset are complete.
 
 - phase: **chunked**. G1 approved; G2-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
-  no old evidence or scores inherited; 2,129 new live vendor crumbs, no ratings yet.
+  no old evidence or scores inherited; 2,225 new live vendor crumbs, no ratings yet.
 - Incoming: 26 vendor Markdown documents and 7 regulatory Markdown documents.
 - Three other files are preserved but excluded from intake: `.gitkeep`,
   `desktop.ini`, and the owner's conversion-instruction note.
@@ -31,19 +31,20 @@ Owner approved the [G1 source basis](../docs/SOURCE_BASIS_APPROVED_20261007.md),
 including NQA-1:2015, the Enconet-only boundary and Croatian reports.
 Full keyword recall is complete: 4,183 vendor passage leads (not automatically accepted crumbs)
 and 2,992 regulatory/supporting leads across all 33 sources. Semantic review
-is complete for the QA plan, quality manual and eighteen procedures/instructions; 6 vendor
+is complete for the QA plan, quality manual and twenty-one procedures/instructions; 3 vendor
 documents remain.
 The owner approved the 20 expected golden examples. The v3 context-storage
 gap is fixed: 23 regression tests passed and all 20 examples round-tripped on
 an isolated database copy with exact chapter links. That check was diagnostic;
-the twenty real runs now contain 2,129 vendor crumbs with 3,978 exact quote links.
+the twenty-three real runs now contain 2,225 vendor crumbs with 4,176 exact quote links.
 See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md).
 
 ## Next action
 
-Continue full vendor sieving with customer satisfaction DOC-0022,
-process capability DOC-0023 and project performance DOC-0024.
-Twenty of 26 vendor documents are complete; 6 remain. The owner's proceed
+Finish vendor sieving with measuring/test equipment DOC-0025,
+operating experience DOC-0026 and work/organization rules DOC-0002,
+sized to actual source length. Twenty-three of 26 documents are complete;
+3 remain. The owner's proceed
 authorizes resuming chunked; no rollback or automatic phase advance.
 No further prompt approval is needed
 to continue the confirmed scope. Supporting
@@ -58,5 +59,6 @@ See [IT, objectives and trainee batch and current total](../docs/IT_OBJECTIVES_T
 See [software batch and current total](../docs/SOFTWARE_BATCH_20261008.md).
 See [full RELAP5 run and current total](../docs/RELAP5_SIEVING_20261008.md).
 See [AOV and DBR batch and current total](../docs/AOV_DBR_BATCH_20261008.md).
+See [feedback, process and project batch and current total](../docs/PERFORMANCE_BATCH_20261008.md).
 
 See [reset record](../docs/ENCONET_RESET_20261007.md).

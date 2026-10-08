@@ -1,0 +1,100 @@
+{
+  "scope": "Prior 20 runs: 14 from 20261007 and 6 from 20261008",
+  "before": {
+    "crumbs": "959bb998a3e4a0faf498eec4ad552771dd49b8b81fb1ffc25d3c7394df86b0c0",
+    "quotes": "d286300f4a82399a91072a4c6410238b867df49122cdf695590533a9a59a9f5c",
+    "links": "ff3e650c498a0085a0a94908c6c53dce429d44d773143a630e20a27708da2e74",
+    "context": "4ef298213db6a67f0d4a9a98a75d3711ed8968df74dd7612b89da2e8dcee39ed"
+  },
+  "after": {
+    "crumbs": "959bb998a3e4a0faf498eec4ad552771dd49b8b81fb1ffc25d3c7394df86b0c0",
+    "quotes": "d286300f4a82399a91072a4c6410238b867df49122cdf695590533a9a59a9f5c",
+    "links": "ff3e650c498a0085a0a94908c6c53dce429d44d773143a630e20a27708da2e74",
+    "context": "4ef298213db6a67f0d4a9a98a75d3711ed8968df74dd7612b89da2e8dcee39ed"
+  },
+  "unchanged": true,
+  "hash_method": "SHA-256 of Python json.dumps of ordered full row tuples, UTF-8",
+  "snapshot_command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); ids=['RUN-20261007-'+str(n).zfill(2) for n in range(1,15)]+['RUN-20261008-'+str(n).zfill(2) for n in range(1,7)]; ph=','.join('?' for _ in ids); queries={'crumbs':'SELECT * FROM crumbs WHERE sieve_run_id IN ('+ph+') ORDER BY item_id','quotes':'SELECT q.* FROM crumb_quotes q JOIN crumbs c ON c.item_id=q.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY q.quote_id','links':'SELECT l.* FROM crumb_chunk_links l JOIN crumbs c ON c.item_id=l.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY l.quote_id,l.chunk_id','context':'SELECT x.* FROM crumb_context x JOIN crumbs c ON c.item_id=x.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY x.item_id'}; print(json.dumps({k:hashlib.sha256(json.dumps(c.execute(v,ids).fetchall()).encode()).hexdigest() for k,v in queries.items()}))\"",
+  "incoming": {
+    "files": 36,
+    "hash_mismatches": [],
+    "unexpected_files": [],
+    "missing_files": []
+  },
+  "incoming_command": "python -c \"import json,hashlib; from pathlib import Path; p=Path('Enconet'); plan=json.loads(Path('reset-plans/enconet-reset-20261007-reviewed.json').read_text(encoding='utf-8')); rows=plan['incoming_files']; bad=[r['relative_path'] for r in rows if not (p/r['relative_path']).is_file() or hashlib.sha256((p/r['relative_path']).read_bytes()).hexdigest()!=r['sha256']]; actual={x.relative_to(p).as_posix() for x in (p/'incoming').rglob('*') if x.is_file()}; expected={r['relative_path'] for r in rows}; print(json.dumps({'files':len(rows),'hash_mismatches':bad,'unexpected_files':sorted(actual-expected),'missing_files':sorted(expected-actual)})); assert not bad and actual==expected\"",
+  "preimport_quote_check_commands": [
+    "python -c \"import json,sqlite3; from pathlib import Path; p=Path('Enconet'); d=json.loads((p/'sieving/runs/RUN-20261008-07/generated.json').read_text(encoding='utf-8')); c=sqlite3.connect((p/'db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); c.row_factory=sqlite3.Row; chunks=c.execute('SELECT heading_path,chunk_text FROM document_chunks WHERE doc_id=?',('DOC-0022',)).fetchall(); qs=[q for i in d['items'] for q in i['evidence_quotes']]; bad=[q for q in qs if sum(q['source_locator']==r['heading_path'] and q['quote_original'] in r['chunk_text'] for r in chunks)!=1]; print(json.dumps({'quotes':len(qs),'unique_exact_same_document':len(qs)-len(bad),'bad':len(bad)})); assert not bad\"",
+    "python -c \"import json,sqlite3; from pathlib import Path; p=Path('Enconet'); d=json.loads((p/'sieving/runs/RUN-20261008-08/generated.json').read_text(encoding='utf-8')); c=sqlite3.connect((p/'db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); c.row_factory=sqlite3.Row; chunks=c.execute('SELECT heading_path,chunk_text FROM document_chunks WHERE doc_id=?',('DOC-0023',)).fetchall(); qs=[q for i in d['items'] for q in i['evidence_quotes']]; bad=[q for q in qs if sum(q['source_locator']==r['heading_path'] and q['quote_original'] in r['chunk_text'] for r in chunks)!=1]; print(json.dumps({'quotes':len(qs),'unique_exact_same_document':len(qs)-len(bad),'bad':len(bad)})); assert not bad\"",
+    "python -c \"import json,sqlite3; from pathlib import Path; p=Path('Enconet'); d=json.loads((p/'sieving/runs/RUN-20261008-09/generated.json').read_text(encoding='utf-8')); c=sqlite3.connect((p/'db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); c.row_factory=sqlite3.Row; chunks=c.execute('SELECT heading_path,chunk_text FROM document_chunks WHERE doc_id=?',('DOC-0024',)).fetchall(); qs=[q for i in d['items'] for q in i['evidence_quotes']]; bad=[q for q in qs if sum(q['source_locator']==r['heading_path'] and q['quote_original'] in r['chunk_text'] for r in chunks)!=1]; print(json.dumps({'quotes':len(qs),'unique_exact_same_document':len(qs)-len(bad),'bad':len(bad)})); assert not bad\""
+  ],
+  "link_check_command": "python -c \"import json,sqlite3; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); c.row_factory=sqlite3.Row; rows=c.execute('SELECT l.link_method,q.quote_original,k.chunk_text,c.doc_id AS crumb_doc,k.doc_id AS chunk_doc FROM crumb_chunk_links l JOIN crumb_quotes q ON q.quote_id=l.quote_id JOIN crumbs c ON c.item_id=q.item_id JOIN document_chunks k ON k.chunk_id=l.chunk_id').fetchall(); bad=[r for r in rows if r['link_method']!='EXACT' or r['crumb_doc']!=r['chunk_doc'] or r['quote_original'] not in r['chunk_text']]; print(json.dumps({'links':len(rows),'bad_links':len(bad),'crumbs':c.execute('SELECT count(*) FROM active_crumbs').fetchone()[0],'runs':[dict(c.execute('SELECT * FROM sieve_runs WHERE run_id=?',(r,)).fetchone()) for r in ['RUN-20261008-07','RUN-20261008-08','RUN-20261008-09']],'unsieved':[dict(r) for r in c.execute('SELECT doc_id,filename FROM documents d WHERE document_side=? AND NOT EXISTS(SELECT 1 FROM sieve_runs s WHERE s.doc_id=d.doc_id AND s.is_active=1)',('DOCUMENT',))]})); assert not bad\"",
+  "links": 4176,
+  "bad_links": 0,
+  "crumbs": 2225,
+  "runs": [
+    {
+      "run_id": "RUN-20261008-07",
+      "doc_id": "DOC-0022",
+      "prompt_version": "appb_document_v3_context_anchors",
+      "document_side": "DOCUMENT",
+      "source_rule": null,
+      "generation": 1,
+      "status": "active",
+      "is_active": 1,
+      "supersedes_run_id": null,
+      "completed_at": "2026-10-08 05:19:16",
+      "decision_ref": null,
+      "rejected_item_count": 0,
+      "failed_item_count": 0,
+      "started_at": "2026-10-08 05:19:16"
+    },
+    {
+      "run_id": "RUN-20261008-08",
+      "doc_id": "DOC-0023",
+      "prompt_version": "appb_document_v3_context_anchors",
+      "document_side": "DOCUMENT",
+      "source_rule": null,
+      "generation": 1,
+      "status": "active",
+      "is_active": 1,
+      "supersedes_run_id": null,
+      "completed_at": "2026-10-08 05:19:23",
+      "decision_ref": null,
+      "rejected_item_count": 0,
+      "failed_item_count": 0,
+      "started_at": "2026-10-08 05:19:22"
+    },
+    {
+      "run_id": "RUN-20261008-09",
+      "doc_id": "DOC-0024",
+      "prompt_version": "appb_document_v3_context_anchors",
+      "document_side": "DOCUMENT",
+      "source_rule": null,
+      "generation": 1,
+      "status": "active",
+      "is_active": 1,
+      "supersedes_run_id": null,
+      "completed_at": "2026-10-08 05:19:29",
+      "decision_ref": null,
+      "rejected_item_count": 0,
+      "failed_item_count": 0,
+      "started_at": "2026-10-08 05:19:28"
+    }
+  ],
+  "unsieved": [
+    {
+      "doc_id": "DOC-0002",
+      "filename": "ENCONET_ PRAVILNIK O RADU+SISTEMATIZACIJA_I_ORGANI.md"
+    },
+    {
+      "doc_id": "DOC-0025",
+      "filename": "RU-82-05,R2 PROGRAM NADZORA MJERNE I TESTNE OPREME.md"
+    },
+    {
+      "doc_id": "DOC-0026",
+      "filename": "RU-82-06,R0 EVALUACIJA IZVJEŠTAJA O POGONSKOM ISKU.md"
+    }
+  ],
+  "phase": "chunked",
+  "owner_resume": "Owner proceed authorizes continuation; no rollback."
+}

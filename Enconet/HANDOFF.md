@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-08T050617Z-bf6c405.md`](handoffs/2026-10-08T050617Z-bf6c405.md)
+**Authoritative record:** [`handoffs/2026-10-08T052214Z-579acb6.md`](handoffs/2026-10-08T052214Z-579acb6.md)
 
-**Status:** partial · **Git:** `bf6c405` · **Agent:** codex · **Created:** 2026-10-08T05:06:17Z
+**Status:** partial · **Git:** `579acb6` · **Agent:** codex · **Created:** 2026-10-08T05:22:14Z
 
-**Exact next action:** Continue DOC-0022 customer satisfaction, DOC-0023 process capability and DOC-0024 project performance under approved v3. Six vendor documents remain including DOC-0002, DOC-0025 and DOC-0026. Preserve earlier runs and incoming.
+**Exact next action:** Finish DOC-0025 measuring/test equipment, DOC-0026 operating experience and DOC-0002 work/organization rules under approved v3, sized to actual source length. SQL confirms only these three vendor sources remain. Preserve previous runs and incoming.

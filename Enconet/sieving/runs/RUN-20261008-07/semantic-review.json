@@ -1,0 +1,1307 @@
+{
+  "method": "Full two-pass Codex source review including headings; vendor financial/process/project scales are not Appendix B audit scores; no automatic keyword acceptance",
+  "source_sha256": "ec159923f536267b4fc0b72a50250475eae11015bf5c5b2b318cfb34b81658af",
+  "nonblank_blocks_reviewed": 139,
+  "counts": {
+    "items": 36,
+    "quotes": 66,
+    "direct": 15,
+    "supporting": 18,
+    "leads": 3
+  },
+  "decisions": [
+    {
+      "blocks": [
+        "B00005",
+        "B00007",
+        "B00008"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: RU-82-01 identificirana je revizijom 3 i datumom objave.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00013",
+        "B00014",
+        "B00015",
+        "B00016"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Priprema, dva pregleda i odobrenje navedeni su s imenima i datumima.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00020"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Prazna tablica predviđa periodični pregled.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00047"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Uputa definira indikatore, mjerila i postupke prikupljanja mišljenja kupaca.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00051"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Uputa se primjenjuje na sve Enconetove kupce.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00055",
+        "B00056",
+        "B00058",
+        "B00059",
+        "B00061"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Reference povezuju Priručnik, ugovaranje i ISO; objective evidence not shown u samom popisu.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00069"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor prati povratne informacije i donosi odluke i mjere.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00071"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor ili voditelj projekta prikuplja i analizira informacije te ih dostavlja KFP-u.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00073"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: KFP sistematizira informacije i dostavlja ih direktoru.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00081",
+        "B00083",
+        "B00084",
+        "B00098",
+        "B00105",
+        "B00112"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Status kupca koristi financijske i poslovne indikatore do 100 bodova, ne auditni score.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00114"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Kupci se vrednuju početkom godine prema prethodnoj godini.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00116"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "supporting_control: Direktor KFP utvrđuje i boduje podatke uz informacije voditelja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00118",
+        "B00120",
+        "B00122"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Interna kategorizacija razlikuje strateške i ostale kupce; nije klasifikacija QA sukladnosti.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00126",
+        "B00128",
+        "B00129",
+        "B00130",
+        "B00131"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Lista kupaca OB-LIK-036 sadrži status, naziv, adresu i kontakt osobu.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00126"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "supporting_control: Lista se radi kada se procijeni potreba, u pravilu na neodređeno razdoblje.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00136"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Od kupaca se traže konkretna mišljenja i prijedlozi poboljšanja proizvoda i usluga.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00138"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Usmena komunikacija ima određene uloge, a KFP prikuplja rezultate za direktora.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00140"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Pisano zadovoljstvo prikuplja se upitnikom OB-OZK-037.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00140"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Interval ankete ovisi o statusu i suradnji; direktor odlučuje o slanju.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00140"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Direktor KFP sistematizira rezultate ankete i dostavlja ih upravi.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143",
+        "B00147"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Neizravno se analiziraju primjedbe, prijedlozi i očekivanja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00143",
+        "B00148"
+      ],
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Neizravna analiza obuhvaća broj, učestalost, uzroke i trošak reklamacija.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00150"
+      ],
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Svaki voditelj analizira svoje područje, a KFP objedinjuje podatke za direktora.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00154",
+        "B00156",
+        "B00158"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Prazna lista predviđa pripremu, odobrenje, reviziju, datum, kontakt i bodove.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00178",
+        "B00183",
+        "B00185",
+        "B00187",
+        "B00235"
+      ],
+      "criterion_id": "APP_B_XVII",
+      "statement": "supporting_control: Prazan upitnik identificira kupca, datum, kontakt i potpis.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00206"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Upitnik prikuplja ocjenu učestalosti komunikacije.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00207"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Upitnik provjerava razumiju li predstavnici stručne i poslovne zahtjeve kupca.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00208"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Upitnik provjerava spremnost odgovora na zahtjeve.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00210"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Upitnik provjerava odražava li ponuda zahtjeve kupca.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00212"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "supporting_control: Upitnik provjerava razumljivost ponude.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00218"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Upitnik provjerava izvršenje dogovorenih obveza.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00219"
+      ],
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Upitnik prikuplja mišljenje o postupanju s zahtjevima izmjena.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00220"
+      ],
+      "criterion_id": "APP_B_V",
+      "statement": "supporting_control: Upitnik provjerava razumljivost izvještaja.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00232"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "supporting_control: Upitnik traži konkretan prijedlog poboljšanja zadovoljstva.",
+      "item_type": "control"
+    },
+    {
+      "blocks": [
+        "B00016",
+        "B00154"
+      ],
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Predložak liste navodi drugo ime direktora od odobrenja upute; candidate; verify criterion mapping i aktualni predložak.",
+      "item_type": "reference"
+    },
+    {
+      "blocks": [
+        "B00081",
+        "B00140"
+      ],
+      "criterion_id": "APP_B_II",
+      "statement": "candidate_lead: Interval feedbacka ovisi o poslovnom statusu; candidate; verify criterion mapping i odvojeno praćenje kvalitetno važnih reklamacija.",
+      "item_type": "reference"
+    }
+  ],
+  "coverage": [
+    {
+      "block_id": "B00001",
+      "start": 0,
+      "end": 20,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00003",
+      "start": 21,
+      "end": 63,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00005",
+      "start": 64,
+      "end": 115,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00007",
+      "start": 166,
+      "end": 217,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00008",
+      "start": 217,
+      "end": 268,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00009",
+      "start": 268,
+      "end": 319,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00011",
+      "start": 320,
+      "end": 396,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00013",
+      "start": 472,
+      "end": 549,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00014",
+      "start": 549,
+      "end": 626,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00015",
+      "start": 626,
+      "end": 703,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00016",
+      "start": 703,
+      "end": 780,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00018",
+      "start": 781,
+      "end": 803,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00020",
+      "start": 804,
+      "end": 849,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00026",
+      "start": 1037,
+      "end": 1205,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00028",
+      "start": 1206,
+      "end": 1216,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00030",
+      "start": 1217,
+      "end": 1329,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00032",
+      "start": 1330,
+      "end": 1427,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00034",
+      "start": 1428,
+      "end": 1534,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00036",
+      "start": 1535,
+      "end": 1636,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00038",
+      "start": 1637,
+      "end": 1739,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00040",
+      "start": 1740,
+      "end": 1848,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00041",
+      "start": 1848,
+      "end": 2265,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00043",
+      "start": 2266,
+      "end": 2465,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00045",
+      "start": 2466,
+      "end": 2475,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00047",
+      "start": 2476,
+      "end": 2621,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00049",
+      "start": 2622,
+      "end": 2643,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00051",
+      "start": 2644,
+      "end": 2685,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00053",
+      "start": 2686,
+      "end": 2699,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00055",
+      "start": 2700,
+      "end": 2747,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00056",
+      "start": 2747,
+      "end": 2772,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00058",
+      "start": 2773,
+      "end": 2822,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00059",
+      "start": 2822,
+      "end": 2925,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00061",
+      "start": 2926,
+      "end": 2953,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00063",
+      "start": 2954,
+      "end": 2978,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00065",
+      "start": 2979,
+      "end": 3295,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00067",
+      "start": 3296,
+      "end": 3312,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00069",
+      "start": 3313,
+      "end": 3457,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00071",
+      "start": 3458,
+      "end": 3630,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00073",
+      "start": 3631,
+      "end": 3771,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00075",
+      "start": 3772,
+      "end": 3975,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00077",
+      "start": 3976,
+      "end": 3991,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00079",
+      "start": 3992,
+      "end": 4022,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00081",
+      "start": 4023,
+      "end": 4144,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00083",
+      "start": 4145,
+      "end": 4170,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00084",
+      "start": 4170,
+      "end": 4255,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00086",
+      "start": 4256,
+      "end": 4298,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00088",
+      "start": 4341,
+      "end": 4383,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00089",
+      "start": 4383,
+      "end": 4425,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00090",
+      "start": 4425,
+      "end": 4467,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00091",
+      "start": 4467,
+      "end": 4509,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00092",
+      "start": 4509,
+      "end": 4551,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00093",
+      "start": 4551,
+      "end": 4593,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00094",
+      "start": 4593,
+      "end": 4635,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00095",
+      "start": 4635,
+      "end": 4677,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00096",
+      "start": 4677,
+      "end": 4719,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00098",
+      "start": 4720,
+      "end": 4804,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00100",
+      "start": 4805,
+      "end": 4844,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00102",
+      "start": 4883,
+      "end": 4922,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00103",
+      "start": 4922,
+      "end": 4961,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00105",
+      "start": 4962,
+      "end": 5046,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00107",
+      "start": 5047,
+      "end": 5078,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00109",
+      "start": 5109,
+      "end": 5142,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00110",
+      "start": 5142,
+      "end": 5173,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00112",
+      "start": 5174,
+      "end": 5250,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00114",
+      "start": 5251,
+      "end": 5397,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00116",
+      "start": 5398,
+      "end": 5678,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00118",
+      "start": 5679,
+      "end": 5752,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00120",
+      "start": 5753,
+      "end": 5799,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00122",
+      "start": 5846,
+      "end": 5892,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00124",
+      "start": 5893,
+      "end": 6099,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00126",
+      "start": 6100,
+      "end": 6341,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00128",
+      "start": 6342,
+      "end": 6401,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00129",
+      "start": 6401,
+      "end": 6415,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00130",
+      "start": 6415,
+      "end": 6440,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00131",
+      "start": 6440,
+      "end": 6471,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00133",
+      "start": 6472,
+      "end": 6508,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00135",
+      "start": 6509,
+      "end": 6528,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00136",
+      "start": 6528,
+      "end": 6933,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00138",
+      "start": 6934,
+      "end": 7293,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00140",
+      "start": 7294,
+      "end": 7884,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00142",
+      "start": 7885,
+      "end": 7906,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00143",
+      "start": 7906,
+      "end": 8198,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00145",
+      "start": 8199,
+      "end": 8256,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00146",
+      "start": 8256,
+      "end": 8296,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00147",
+      "start": 8296,
+      "end": 8348,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00148",
+      "start": 8348,
+      "end": 8415,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00150",
+      "start": 8416,
+      "end": 8578,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00152",
+      "start": 8579,
+      "end": 8782,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00154",
+      "start": 8783,
+      "end": 9059,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00156",
+      "start": 9060,
+      "end": 9121,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00158",
+      "start": 9184,
+      "end": 9285,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00159",
+      "start": 9285,
+      "end": 9386,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00160",
+      "start": 9386,
+      "end": 9487,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00161",
+      "start": 9487,
+      "end": 9588,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00162",
+      "start": 9588,
+      "end": 9689,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00163",
+      "start": 9689,
+      "end": 9790,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00164",
+      "start": 9790,
+      "end": 9891,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00165",
+      "start": 9891,
+      "end": 9992,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00166",
+      "start": 9992,
+      "end": 10093,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00167",
+      "start": 10093,
+      "end": 10194,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00168",
+      "start": 10194,
+      "end": 10295,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00170",
+      "start": 10296,
+      "end": 10308,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00172",
+      "start": 10309,
+      "end": 10382,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00174",
+      "start": 10383,
+      "end": 10469,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00176",
+      "start": 10470,
+      "end": 10679,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00178",
+      "start": 10680,
+      "end": 10704,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00179",
+      "start": 10704,
+      "end": 10732,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00181",
+      "start": 10733,
+      "end": 10849,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00183",
+      "start": 10850,
+      "end": 10948,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00185",
+      "start": 10949,
+      "end": 11048,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00187",
+      "start": 11049,
+      "end": 11151,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00189",
+      "start": 11152,
+      "end": 11167,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00191",
+      "start": 11168,
+      "end": 11257,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00193",
+      "start": 11287,
+      "end": 11354,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00195",
+      "start": 11355,
+      "end": 11365,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00197",
+      "start": 11366,
+      "end": 11454,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00199",
+      "start": 11492,
+      "end": 11569,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00200",
+      "start": 11569,
+      "end": 11637,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00202",
+      "start": 11638,
+      "end": 11648,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00206",
+      "start": 11695,
+      "end": 11778,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00207",
+      "start": 11778,
+      "end": 11881,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00208",
+      "start": 11881,
+      "end": 11970,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00209",
+      "start": 11970,
+      "end": 12064,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00210",
+      "start": 12064,
+      "end": 12149,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00211",
+      "start": 12149,
+      "end": 12221,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00212",
+      "start": 12221,
+      "end": 12287,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00214",
+      "start": 12288,
+      "end": 12301,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00218",
+      "start": 12348,
+      "end": 12433,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00219",
+      "start": 12433,
+      "end": 12548,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00220",
+      "start": 12548,
+      "end": 12628,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00222",
+      "start": 12629,
+      "end": 12640,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00226",
+      "start": 12687,
+      "end": 12742,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00227",
+      "start": 12742,
+      "end": 12798,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00228",
+      "start": 12798,
+      "end": 12868,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00230",
+      "start": 12869,
+      "end": 12888,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00232",
+      "start": 12889,
+      "end": 12956,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00233",
+      "start": 12956,
+      "end": 13184,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    },
+    {
+      "block_id": "B00235",
+      "start": 13185,
+      "end": 13192,
+      "disposition": "extracted_or_quoted_context",
+      "reason": "Supports selected control or context."
+    },
+    {
+      "block_id": "B00237",
+      "start": 13193,
+      "end": 13215,
+      "disposition": "reviewed_context_only",
+      "reason": "Read metadata, TOC, commercial-only metric, duplicate form or unused context; no separate QA claim accepted."
+    }
+  ]
+}

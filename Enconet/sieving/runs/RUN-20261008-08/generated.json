@@ -1,0 +1,953 @@
+{
+  "prompt_version": "appb_document_v3_context_anchors",
+  "document": {
+    "name": "RU-82-03,R3 PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PR.md",
+    "title": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA",
+    "date": "2017-11-17",
+    "doc_id": "DOC-0023",
+    "document_side": "DOCUMENT",
+    "source_rules": null,
+    "authority_references": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-0001",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "objective_control: RU-82-03 identificirana je revizijom 3 i datumom objave.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Naziv dokumenta: | Radna uputa RU-82-03 |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        },
+        {
+          "quote_original": "| Revizija broj:   | 3                    |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        },
+        {
+          "quote_original": "| Datum objavljivanja: | 17.11.2017.      |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0002",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Priprema, pregledi i odobrenje imaju navedene osobe i datume; placeholder potpisa nije izvršen potpis.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pripremio: | Vladimir Križe, voditelj QA | [Potpis] | 13.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | Dubravka Dončević, voditelj KFP | [Potpis] | 14.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        },
+        {
+          "quote_original": "| Pregledao: | mr.sc. Ilijana Ivekovic, predstavnik direktora | [Potpis] | 14.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        },
+        {
+          "quote_original": "| Odobrio: | dr.sc. Nenad Debrecin, direktor | [Potpis] | 15.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0003",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "supporting_control: Predviđen je periodični pregled, bez popunjenog zapisa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > Periodični pregled [line 19]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > Periodični pregled [line 19]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Pregledao: | Datum: | Slijedeći pregled: |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > Periodični pregled [line 19]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0004",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Uputa definira praćenje sposobnosti procesa da ostvaruju planirane rezultate.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 1. SVRHA [line 54]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 1. SVRHA [line 54]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Svrha ove radne upute je da definira metode, indikatore i postupke za praćenje\nosposobljenosti osnovnih procesa kako bi se dokazala sposobnost svakog\nprocesa da može ostvariti planirane rezultate (ISO 9001:2015).",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 1. SVRHA [line 54]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0005",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Primjena uključuje marketing, ugovaranje i prodaju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Primjenjuje se na osnovne procese u Enconetu:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        },
+        {
+          "quote_original": "1. Proces marketinga, ugovaranja i prodaje",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0006",
+      "criterion_id": "APP_B_III",
+      "criterion_name": "Design Control",
+      "statement": "supporting_control: Primjena uključuje projektiranje i razvoj.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Primjenjuje se na osnovne procese u Enconetu:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        },
+        {
+          "quote_original": "2. Proces projektiranja i razvoja",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0007",
+      "criterion_id": "APP_B_VII",
+      "criterion_name": "Control of Purchased Material, Equipment, and Services",
+      "statement": "supporting_control: Primjena uključuje nabavu i ocjenjivanje dobavljača.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Primjenjuje se na osnovne procese u Enconetu:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        },
+        {
+          "quote_original": "3. Proces nabave i ocjenjivanja dobavljača",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 2. PODRUČJE PRIMJENE [line 60]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0008",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "candidate_lead: Reference povezuju Priručnik, ISO i IAEA; objective evidence not shown u samom popisu.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 3. REFERENCE [line 68]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 3. REFERENCE [line 68]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "1. Enconet - Priručnik kvalitete PK-SUK-001",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 3. REFERENCE [line 68]"
+        },
+        {
+          "quote_original": "   Nadzor nad procesom i mjerenje procesa",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 3. REFERENCE [line 68]"
+        },
+        {
+          "quote_original": "2. HRN EN ISO 9001:2015",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 3. REFERENCE [line 68]"
+        },
+        {
+          "quote_original": "3. IAEA Leadership and Management for Safety, IAEA Safety Standards",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 3. REFERENCE [line 68]"
+        },
+        {
+          "quote_original": "   Series, No. GSR Part 2, IAEA Vienna, 2016.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 3. REFERENCE [line 68]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0009",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Direktor prati stanje procesa i prema potrebi donosi mjere poboljšanja.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta odgovoran je da prati ocjene i stanje u procesima te prema\npotrebi donosi odgovarajuće odluke i mjere za poboljšavanje.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0010",
+      "criterion_id": "APP_B_I",
+      "criterion_name": "Organization",
+      "statement": "objective_control: Voditelj projekta i KFP prate, analiziraju i ocjenjuju odgovarajuće procese.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj projekta i voditelj KFP odgovorni su da prate i analiziraju stanje te\ndadu ocjenu za odgovarajuće procese.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0011",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "supporting_control: QA koristi interne provjere i audite za ocjenu svih osnovnih procesa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA odgovoran je da, na osnovu rezultata internih provjera i audita, dade\nocjenu za sve osnovne procese.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 5. ODGOVORNOSTI [line 89]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0012",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Za karakter osnovnih procesa odabire se indirektno praćenje indikatorima.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Obzirom na karakter osnovnih procesa, (proces marketinga, ugovaranja i prodaje; proces projektiranja i razvoja; proces nabave i ocjenjivanje dobavljača), u Enconetu nije moguće koristiti metode izravnih mjerenja tih procesa. Zato je primjereno koristiti metodu praćenja procesa pomoću ocjene osposobljenosti na osnovu odgovarajućih indikatora kao što su:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0013",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Ocjena uključuje broj i karakter nesukladnosti i popravnih radnji do 30 internih bodova.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Obzirom na karakter osnovnih procesa, (proces marketinga, ugovaranja i prodaje; proces projektiranja i razvoja; proces nabave i ocjenjivanje dobavljača), u Enconetu nije moguće koristiti metode izravnih mjerenja tih procesa. Zato je primjereno koristiti metodu praćenja procesa pomoću ocjene osposobljenosti na osnovu odgovarajućih indikatora kao što su:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        },
+        {
+          "quote_original": "1. Ocjena osposobljenosti procesa obzirom na broj i ",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        },
+        {
+          "quote_original": "   karakter utvrđenih nesukladnosti i popravnih radnji ........0 – 30 bodova",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0014",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Ocjena uključuje ljude, opremu, uvjete, organizaciju i metode do 20 internih bodova.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Obzirom na karakter osnovnih procesa, (proces marketinga, ugovaranja i prodaje; proces projektiranja i razvoja; proces nabave i ocjenjivanje dobavljača), u Enconetu nije moguće koristiti metode izravnih mjerenja tih procesa. Zato je primjereno koristiti metodu praćenja procesa pomoću ocjene osposobljenosti na osnovu odgovarajućih indikatora kao što su:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        },
+        {
+          "quote_original": "2. Ocjena osposobljenosti procesa obzirom na kadrove,",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        },
+        {
+          "quote_original": "   opremu, radne uvjete, organizaciju i metode rada i t.d......0 – 20 bodova",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0015",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Procesi se u pravilu ocjenjuju godišnje; direktor može promijeniti interval.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Procesi se ocjenjuju, u pravilu, svake godine. Direktor može donijeti odluku i o drugačijim intervalima ocjenjivanja.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0016",
+      "criterion_id": "APP_B_XVIII",
+      "criterion_name": "Audits",
+      "statement": "supporting_control: QA ocjena koristi interne audit nalaze, broj i karakter problema.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA ocjenjuje osposobljenost procesa na osnovu rezultata internih provjera i internih audita t.j. broja i karaktera nesukladnosti i popravnih radnji (indikatori u točki 6.1.1).",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0017",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Voditelj procesa ocjenjuje resurse i metode rada.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj procesa ocjenjuje osposobljenost procesa obzirom na stanje kadrova, opreme, radnih uvjeta, organizacije i metoda rada i sl.(indikatori u točki 6.1.2).",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0018",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: Odgovorne osobe upisuju zbroj do 50 bodova u OB-POP-038.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Maksimalni zbroj bodova po svim indikatorima može iznositi 50 bodova. Bodove upisuju odgovorne osobe na obrazac «Praćenje osposobljenosti procesa» OB-POP-038.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0019",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Internih 41–50 bodova označava sposobnost za planirane rezultate; to nije Appendix B score.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Status procesa proizlazi iz ukupnog zbroja bodova po slijedećem kriteriju:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        },
+        {
+          "quote_original": "41 - 50 bodova => Proces osposobljen da ostvaruje planirane rezultate\n11 - 40 bodova => Potrebne su mjere za stalno unapređenje procesa\n0 - 10 bodova => Potrebne su hitne popravne radnje",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0020",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Internih 11–40 bodova traži stalno unapređenje procesa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Status procesa proizlazi iz ukupnog zbroja bodova po slijedećem kriteriju:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        },
+        {
+          "quote_original": "41 - 50 bodova => Proces osposobljen da ostvaruje planirane rezultate\n11 - 40 bodova => Potrebne su mjere za stalno unapređenje procesa\n0 - 10 bodova => Potrebne su hitne popravne radnje",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0021",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Internih 0–10 bodova traži hitne popravne radnje.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Status procesa proizlazi iz ukupnog zbroja bodova po slijedećem kriteriju:",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        },
+        {
+          "quote_original": "41 - 50 bodova => Proces osposobljen da ostvaruje planirane rezultate\n11 - 40 bodova => Potrebne su mjere za stalno unapređenje procesa\n0 - 10 bodova => Potrebne su hitne popravne radnje",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0022",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "objective_control: QA održava zapise mjerenja osposobljenosti procesa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Voditelj QA održava zapise o provedenom postupku mjerenja osposobljenosti procesa.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0023",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "objective_control: Direktor obvezno analizira rezultate kroz upravinu ocjenu.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta, prema potrebi, a obvezno kroz upravinu ocjenu analizira rezultate mjerenja osposobljenosti procesa te na osnovu njih i drugih pokazatelja donosi odgovarajuće odluke i mjere u cilju poboljšanja efikasnosti i učinkovitosti svih procesa.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0024",
+      "criterion_id": "APP_B_XVI",
+      "criterion_name": "Corrective Action",
+      "statement": "objective_control: Direktor prema rezultatima i drugim indikatorima odlučuje o poboljšanju.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "Direktor Enconeta, prema potrebi, a obvezno kroz upravinu ocjenu analizira rezultate mjerenja osposobljenosti procesa te na osnovu njih i drugih pokazatelja donosi odgovarajuće odluke i mjere u cilju poboljšanja efikasnosti i učinkovitosti svih procesa.",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 6. POSTUPAK [line 105]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0025",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Prazan obrazac predviđa pripremu, odobrenje, reviziju i datum.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "7.1    Obrazac: OB-POP-038, R3",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| Pripremio: V. Križe, VQA |                                                                    |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| Odobrio: T. Bajs, DIR    | PRAĆENJE                                                           |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "|                          | OSPOSOBLJENOSTI                           Rev: .....               |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| Potpis:                  | PROCESA                                   Datum: ......................|",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0026",
+      "criterion_id": "APP_B_II",
+      "criterion_name": "Quality Assurance Program",
+      "statement": "supporting_control: Predložak razdvaja tri osnovna procesa.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| PROCESI     | PROCES              | PROCES              | PROCES               |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "|             | MARKETINGA,         | PROJEKTIRANJA       | NABAVE I             |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| INDIKATORI  | UGOVARANJA          | I                   | OCJENJIVANJA         |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "|             | I PRODAJE           | RAZVOJA             | DOBAVLJAČA           |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0027",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Predložak traži QA bodove i potpis za nalaze problema.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 1. Ocjena voditelja QA: Bodovi/Potpis - (max: 30 bodova)                       |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| Ocjena osposobljenosti | (Bodovi)           | (Bodovi)           | (Bodovi)            |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| procesa obzirom na broj i |                   |                   |                      |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| karakter utvrđenih |                   |                   |                      |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| nesukladnosti odnosno |                   |                   |                      |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| popravnih radnji | (Potpis voditelja QA)| (Potpis voditelja QA)| (Potpis voditelja QA) |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0028",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Predložak traži bodove i potpis voditelja procesa za resurse i metode.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| 2. Ocjena voditelja procesa: Bodovi/Potpis - (max: 20 bodova)                  |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| Ocjena osposobljenosti | (Bodovi)           | (Bodovi)           | (Bodovi)            |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| procesa obzirom na |                   |                   |                      |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| kadrove, opremu, radne |                   |                   |                      |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| uvjete, organizaciju, |                   |                   |                      |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        },
+        {
+          "quote_original": "| metode rada i drugo | (Potpis voditelja procesa) | (Potpis voditelja procesa) | (Potpis voditelja procesa) |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0029",
+      "criterion_id": "APP_B_XVII",
+      "criterion_name": "Quality Assurance Records",
+      "statement": "supporting_control: Predložak zbraja obje odvojene ocjene.",
+      "item_type": "control",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Ukupno bodova (1+2) | (Ukupni bodovi)    | (Ukupni bodovi)    | (Ukupni bodovi)     |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_type": "policy_or_procedure",
+      "context": {
+        "source_revision": "3"
+      }
+    },
+    {
+      "item_id": "ITEM-0030",
+      "criterion_id": "APP_B_VI",
+      "criterion_name": "Document Control",
+      "statement": "candidate_lead: Predložak navodi drugo ime direktora od odobrenja upute; candidate; verify criterion mapping.",
+      "item_type": "reference",
+      "entities": {},
+      "sources": [
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        },
+        {
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]",
+          "source_heading_path": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "quote_original": "| Odobrio: | dr.sc. Nenad Debrecin, direktor | [Potpis] | 15.11.2017. |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3]"
+        },
+        {
+          "quote_original": "| Odobrio: T. Bajs, DIR    | PRAĆENJE                                                           |",
+          "quote_language": "hr",
+          "source_locator": "PRAĆENJE I MJERENJE OSPOSOBLJENOSTI PROCESA [line 3] > 7. PRILOZI [line 137]"
+        }
+      ],
+      "evidence_type": "candidate_lead",
+      "context": {
+        "source_revision": "3"
+      }
+    }
+  ]
+}
