@@ -1,0 +1,28 @@
+{
+  "run_id": "RUN-20261008-17",
+  "scope": "Approved G2 documentary pre-flight; no field nonconformance or new applicability decision",
+  "criteria": [
+    {"criterion": "I", "title": "Organizacijske ovlasti", "type": "interview", "priority": false},
+    {"criterion": "II", "title": "Kvalifikacijski detalji i preuzeti programi", "type": "sample_test", "priority": false},
+    {"criterion": "III", "title": "Sljedivost softverskih zahtjeva zaštite", "type": "sample_test", "priority": false},
+    {"criterion": "IV", "title": "Detaljan pregled nabavne dokumentacije", "type": "document_request", "priority": true,
+     "action": "Pribaviti važeći PP-74-01 i jednu nuklearnu narudžbu. Provjeriti tehničke/QA zahtjeve, QA pregled prije ugovaranja, revizije i prijenos zahtjeva poddobavljaču. Nedostaje dokument u dostavljenom setu; nije dokaz da postupak ne postoji."},
+    {"criterion": "V", "title": "Primjena važeće upute", "type": "sample_test", "priority": false},
+    {"criterion": "VI", "title": "Nedosljedan status registra GPD", "type": "verification", "priority": true},
+    {"criterion": "VII", "title": "Detaljan tok prihvata dobavljačkih usluga", "type": "document_request", "priority": true,
+     "action": "Uz zajednički zahtjev ACT-0004 za PP-74-01, pokazati odobrenje jednog podugovarača ili kalibracijskog laboratorija, nadzor i dokaz prihvata prije uporabe. Certificate/dedication put provjeriti samo ako ga Enconet stvarno preuzima."},
+    {"criterion": "VIII", "title": "Identifikacija i sljedivost na uzorku", "type": "sample_test", "priority": false},
+    {"criterion": "IX", "title": "VT opseg i kontrola posebnog procesa", "type": "document_request", "priority": true,
+     "action": "Pribaviti kontroliranu VT uputu i ugovorni opseg te uskladiti izuzeće IX u priručniku s VT radom iz nuklearnog plana. Provjeriti odgovornost za kvalifikaciju postupka, VT II/CP-189 i aktualan vidni dosje izvršitelja. Ne proširivati zahtjev na zavarivanje koje Enconet nije preuzeo."},
+    {"criterion": "X", "title": "Projektna inspekcijska podloga i hold-point ovlasti", "type": "sample_test", "priority": false},
+    {"criterion": "XI", "title": "Testni paket i odobrenje rezultata", "type": "sample_test", "priority": false},
+    {"criterion": "XII", "title": "Tehnička osnova referentne kalibracije", "type": "sample_test", "priority": false},
+    {"criterion": "XIII", "title": "Granica zaštite opreme i fizičkih medija", "type": "verification", "priority": false},
+    {"criterion": "XIV", "title": "Nuklearna granica hitne isporuke", "type": "verification", "priority": true},
+    {"criterion": "XV", "title": "Dispozicija NCR-a i prihvat dorade", "type": "sample_test", "priority": false},
+    {"criterion": "XVI", "title": "Učinkovitost korektivne radnje", "type": "sample_test", "priority": false},
+    {"criterion": "XVII", "title": "Važeći registar i dokaz zaštite/obnove zapisa", "type": "sample_test", "priority": true},
+    {"criterion": "XVIII", "title": "Pokrivenost i interval audita", "type": "document_request", "priority": true,
+     "action": "Pribaviti godišnje matrice pokrivenosti nuklearnog QA programa i obrazloženje eventualnog produženja. Usporediti trogodišnji opis PP-82-01 s odabranim NQA-1:2015 Req18 §201.3: godišnji audit ili opravdano produženje najviše dvije godine. Potvrditi ugovorno izdanje i primjenjivu vanjsku učestalost; uzorkovati Lead Auditor requalifikaciju. Ne proglasiti prošlu povredu ili istekao certifikat bez zapisa."}
+  ]
+}

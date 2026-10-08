@@ -87,6 +87,7 @@ and ADRs are the records.
 - `ENCONET-G2-DRAFT` — codex, released 2026-10-08T16:55:25Z
 - `ENCONET-G3-APPROVAL` — codex, released 2026-10-08T20:23:44Z
 - `ENCONET-G3-ASSESSMENT` — codex, released 2026-10-08T18:31:24Z
+- `ENCONET-G4-DRAFT` — codex, released 2026-10-08T21:34:11Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
@@ -338,10 +339,11 @@ and ADRs are the records.
 - `CX_2026-10-08T170946Z_enconet-g2-approved-applicability-imported` — review_request, codex -> claude-code: ENCONET-G2-APPLY
 - `CX_2026-10-08T183124Z_enconet-conformance-18-criteria` — review_request, codex -> claude-code: ENCONET-G3-ASSESSMENT
 - `CX_2026-10-08T202604Z_enconet-g3-approved-model-provenance` — review_request, codex -> claude-code: ENCONET-G3-APPROVAL
+- `CX_2026-10-08T213411Z_enconet-g4-findings-actions` — review_request, codex -> claude-code: ENCONET-G4-DRAFT
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-08T202840Z-8ad5fee.md`](../handoffs/2026-10-08T202840Z-8ad5fee.md)
+- Authoritative record: [`handoffs/2026-10-08T213529Z-f6e1415.md`](../handoffs/2026-10-08T213529Z-f6e1415.md)
 - Archive: 759 records in `coordination/archive/`
 
-Generated: 2026-10-08T20:29:07Z
+Generated: 2026-10-08T21:36:03Z

@@ -1,0 +1,19 @@
+task: ENCONET-G4-DRAFT
+agent: codex
+status: released
+claimed_at_utc: 2026-10-08T20:48:36Z
+last_renewed_at_utc: 2026-10-08T20:48:36Z
+expires_at_utc: 2026-10-09T20:48:36Z
+anticipated_files:
+  - Enconet/out/2026-10-08/findings-run17
+  - Enconet/db/nqa_audit.sqlite
+  - Enconet/wiki/findings
+  - Enconet/wiki/actions
+  - Enconet/wiki/evidence
+  - Enconet/wiki/gates
+  - Enconet/docs/FINDINGS_DRAFT_20261008.md
+  - Enconet/project-state.yml
+  - Enconet/wiki/current-status.md
+  - Enconet/wiki/index.md
+note: Owner proceed: resume evaluated run; draft one findings/actions batch. G4 remains human-gated, benchmark fixture unchanged.
+released_at_utc: 2026-10-08T21:34:11Z

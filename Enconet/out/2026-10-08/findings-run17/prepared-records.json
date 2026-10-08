@@ -1,0 +1,458 @@
+[
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_I-01",
+      "evaluation_id": "EVAL-APP_B_I",
+      "status": "covered",
+      "description": "Dokumentacijski pokriveno; rutinska terenska provjera nije dokumentarni nedostatak. Današnja raspodjela uloga i neovisnost pod stvarnim pritiskom nisu terenski provjereni; to nije utvrđena dokumentacijska praznina u ovom ograničenom kriteriju.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_I-0002"
+    },
+    "finding": null,
+    "action": {
+      "action_id": "ACT-0001",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_I-01",
+      "action_type": "interview",
+      "description": "Potvrditi važeće QA imenovanje i jedan primjer eskalacije ili obustave. Rutinska provjera provedbe; nije dokumentarni nalaz.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_II-01",
+      "evaluation_id": "EVAL-APP_B_II",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Za sve inspekcijske/testne uloge treba razjasniti kvalifikacijske intervale i dostupnost preuzetih NEK programa; opći plan obuke nije cijela kvalifikacijska shema.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_II-0021"
+    },
+    "finding": {
+      "finding_id": "FIND-0001",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_II",
+      "gap_id": "GAP-APP_B_II-01",
+      "title": "Kvalifikacijski detalji i preuzeti programi",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B II; NQA-1:2015 Part I Requirement 2; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Program, kontrolirani uvjeti, godišnja ocjena uprave, obuka, promjene i uvođenje osoblja imaju konkretne postupke i odgovornosti.\n\nOgraničenje: Za sve inspekcijske/testne uloge treba razjasniti kvalifikacijske intervale i dostupnost preuzetih NEK programa; opći plan obuke nije cijela kvalifikacijska shema.\n\nZaključak: Sustav je dobro dokumentiran. Ograničeni kvalifikacijski detalji i veza na preuzete programe ostaju za dokaz, bez automatske kazne zbog praznih obrazaca.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_II-0021, CRUMB-DOC-0001-APP_B_II-0025, CRUMB-DOC-0001-APP_B_II-0035, CRUMB-DOC-0006-APP_B_II-0013, CRUMB-DOC-0006-APP_B_II-0020, CRUMB-DOC-0006-APP_B_II-0021, CRUMB-DOC-0006-APP_B_II-0028, CRUMB-DOC-0006-APP_B_II-0031\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0002",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_II-01",
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan kvalifikacijski dosje QC/test osobe i zadnju upravinu godišnju ocjenu. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_III-01",
+      "evaluation_id": "EVAL-APP_B_III",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Za NQA-1:2015 softversku osnovu treba povezati zahtjeve zaštite od neovlaštene uporabe s projektnim/V&V zapisom; opći IT opis nije taj trag.",
+      "evidence_item_id": "CRUMB-DOC-0008-APP_B_III-0022"
+    },
+    "finding": {
+      "finding_id": "FIND-0002",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_III",
+      "gap_id": "GAP-APP_B_III-01",
+      "title": "Sljedivost softverskih zahtjeva zaštite",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B III; NQA-1:2015 Part I Requirement 3; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Kontrolirani ulazi, neovisni stručni pregled, promjene prije primjene, konfiguracijski baseline i V&V podupiru stvarne inženjerske usluge.\n\nOgraničenje: Za NQA-1:2015 softversku osnovu treba povezati zahtjeve zaštite od neovlaštene uporabe s projektnim/V&V zapisom; opći IT opis nije taj trag.\n\nZaključak: Projektni životni ciklus i provjera su jaki. Specifični suvremeni softverski zahtjevi trebaju jasniji dokaz; nije pretpostavljena safety-control ili dedication uloga.\n\nDokazni crumbs: CRUMB-DOC-0008-APP_B_III-0022, CRUMB-DOC-0008-APP_B_III-0033, CRUMB-DOC-0008-APP_B_III-0034, CRUMB-DOC-0008-APP_B_III-0040, CRUMB-DOC-0008-APP_B_III-0043, CRUMB-DOC-0016-APP_B_III-0009, CRUMB-DOC-0017-APP_B_III-0003, CRUMB-DOC-0019-APP_B_III-0001\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0003",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_III-01",
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan projekt/softverski baseline: ulaz, neovisni pregled, promjenu, acceptance test i zahtjeve zaštite. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_IV-01",
+      "evaluation_id": "EVAL-APP_B_IV",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Detaljni PP-74-01 nije zasebno dostavljen; potrebno je potvrditi kontrolu pregleda/odobrenja narudžbe prije ugovaranja prema stvarnom nabavnom toku.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_IV-0006"
+    },
+    "finding": {
+      "finding_id": "FIND-0003",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_IV",
+      "gap_id": "GAP-APP_B_IV-01",
+      "title": "Detaljan pregled nabavne dokumentacije",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B IV; NQA-1:2015 Part I Requirement 4; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: NQAP određuje tehničke/QA zahtjeve, revizije, kriterije prihvata, prijavu nesukladnosti, dokumentaciju i prijenos zahtjeva poddobavljačima.\n\nOgraničenje: Detaljni PP-74-01 nije zasebno dostavljen; potrebno je potvrditi kontrolu pregleda/odobrenja narudžbe prije ugovaranja prema stvarnom nabavnom toku.\n\nZaključak: Većina potrebnih sadržaja nabave je konkretna, a manjkava detaljna procesna podloga ograničuje dokaz potpune usklađenosti.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_IV-0006, CRUMB-DOC-0001-APP_B_IV-0010, CRUMB-DOC-0001-APP_B_IV-0011, CRUMB-DOC-0001-APP_B_IV-0015, CRUMB-DOC-0001-APP_B_IV-0016, CRUMB-DOC-0002-APP_B_IV-0004, CRUMB-DOC-0003-APP_B_IV-0005\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0004",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_IV-01",
+      "action_type": "document_request",
+      "description": "Pribaviti važeći PP-74-01 i jednu nuklearnu narudžbu. Provjeriti tehničke/QA zahtjeve, QA pregled prije ugovaranja, revizije i prijenos zahtjeva poddobavljaču. Nedostaje dokument u dostavljenom setu; nije dokaz da postupak ne postoji. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": true
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_V-01",
+      "evaluation_id": "EVAL-APP_B_V",
+      "status": "covered",
+      "description": "Dokumentacijski pokriveno; rutinska terenska provjera nije dokumentarni nedostatak. Primjena točne revizije na radu treba se potvrditi uzorkom; ne traži se da svaki prazan predložak bude popunjen da bi postupak bio adekvatan.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_V-0001"
+    },
+    "finding": null,
+    "action": {
+      "action_id": "ACT-0005",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_V-01",
+      "action_type": "sample_test",
+      "description": "Na jednom zadatku usporediti odobrenu uputu, radni nalog i mjerila prihvata. Rutinska provjera provedbe; nije dokumentarni nalaz.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_VI-01",
+      "evaluation_id": "EVAL-APP_B_VI",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: GPD sekcija označena je obsolete/canceled, dok isti tok i noviji zapisni postupak i dalje zahtijevaju GPD; važeći način evidencije nije dovoljno jasan.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_VI-0016"
+    },
+    "finding": {
+      "finding_id": "FIND-0004",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_VI",
+      "gap_id": "GAP-APP_B_VI-01",
+      "title": "Nedosljedan status registra GPD",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B VI; NQA-1:2015 Part I Requirement 6; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Priprema, QA pregled, odobrenje, kontrolirana distribucija, povrat starih revizija i formalne promjene imaju definiran slijed.\n\nOgraničenje: GPD sekcija označena je obsolete/canceled, dok isti tok i noviji zapisni postupak i dalje zahtijevaju GPD; važeći način evidencije nije dovoljno jasan.\n\nZaključak: Osnovne kontrole su snažne, ali unutarnja nedosljednost registra zahtijeva razrješenje. Stara izdanja normi sama nisu automatska nesukladnost.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_VI-0016, CRUMB-DOC-0001-APP_B_VI-0021, CRUMB-DOC-0004-APP_B_VI-0019, CRUMB-DOC-0004-APP_B_VI-0026, CRUMB-DOC-0004-APP_B_VI-0046, CRUMB-DOC-0004-APP_B_VI-0049, CRUMB-DOC-0004-APP_B_VI-0055, CRUMB-DOC-0004-APP_B_VI-0067, CRUMB-DOC-0005-APP_B_VI-0006\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0006",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_VI-01",
+      "action_type": "verification",
+      "description": "Pokazati važeći master registar, jednu distribucijsku listu i povučenu prethodnu reviziju. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": true
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_VII-01",
+      "evaluation_id": "EVAL-APP_B_VII",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Bez PP-74-01 ne može se završiti pregled detaljnog nabavnog/acceptance toka. Specifične certificate/dedication puteve provjeravati samo ako se stvarno koriste.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_VII-0005"
+    },
+    "finding": {
+      "finding_id": "FIND-0005",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_VII",
+      "gap_id": "GAP-APP_B_VII-01",
+      "title": "Detaljan tok prihvata dobavljačkih usluga",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B VII; NQA-1:2015 Part I Requirement 7; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Izbor dobavljača, odobrene liste, godišnje ocjene, nadzor outsourcinga i dokaz prihvata prije uporabe su propisani.\n\nOgraničenje: Bez PP-74-01 ne može se završiti pregled detaljnog nabavnog/acceptance toka. Specifične certificate/dedication puteve provjeravati samo ako se stvarno koriste.\n\nZaključak: Dokumentirana dobavljačka kontrola prelazi visoku politiku, ali dio provedbenog toka ostaje izvan dostavljenog seta.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_VII-0005, CRUMB-DOC-0001-APP_B_VII-0007, CRUMB-DOC-0001-APP_B_VII-0012, CRUMB-DOC-0003-APP_B_VII-0014, CRUMB-DOC-0003-APP_B_VII-0019, CRUMB-DOC-0008-APP_B_VII-0003, CRUMB-DOC-0025-APP_B_VII-0003\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0007",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_VII-01",
+      "action_type": "document_request",
+      "description": "Uz zajednički zahtjev ACT-0004 za PP-74-01, pokazati odobrenje jednog podugovarača ili kalibracijskog laboratorija, nadzor i dokaz prihvata prije uporabe. Certificate/dedication put provjeriti samo ako ga Enconet stvarno preuzima. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": true
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_VIII-01",
+      "evaluation_id": "EVAL-APP_B_VIII",
+      "status": "covered",
+      "description": "Dokumentacijski pokriveno; rutinska terenska provjera nije dokumentarni nedostatak. Stvarna označenost i lanac zapisa provjeravaju se na radu; nije pretpostavljena proizvodnja niti potreba heat/lot praćenja kad je ugovor ne traži.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_VIII-0002"
+    },
+    "finding": null,
+    "action": {
+      "action_id": "ACT-0008",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_VIII-01",
+      "action_type": "sample_test",
+      "description": "Povezati jedan instrument/AOV ili softverski paket s radnim nalogom, verzijom i zapisom rezultata. Rutinska provjera provedbe; nije dokumentarni nalaz.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_IX-01",
+      "evaluation_id": "EVAL-APP_B_IX",
+      "status": "partially-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Generički priručnik izuzima IX, dok nuklearni plan opisuje aktivni VT. Kontrolirana VT radna uputa i kvalifikacija primijenjenog postupka nisu prikazane u ovom setu.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_IX-0001"
+    },
+    "finding": {
+      "finding_id": "FIND-0006",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_IX",
+      "gap_id": "GAP-APP_B_IX-01",
+      "title": "VT opseg i kontrola posebnog procesa",
+      "severity": "medium",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B IX; NQA-1:2015 Part I Requirement 9; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: NQAP priznaje vizualni QC kao poseban proces; kvalifikacija VT II/CP-189 i zdravstveni uvjeti su navedeni.\n\nOgraničenje: Generički priručnik izuzima IX, dok nuklearni plan opisuje aktivni VT. Kontrolirana VT radna uputa i kvalifikacija primijenjenog postupka nisu prikazane u ovom setu.\n\nZaključak: Postoje važne kontrole, ali dokumentarna granica i specifičan procesni dokaz ostaju materijalno nedovoljni. Ne traži se dokaz zavarivanja koje nije preuzeto.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_IX-0001, CRUMB-DOC-0001-APP_B_IX-0003, CRUMB-DOC-0001-APP_B_IX-0004, CRUMB-DOC-0002-APP_B_IX-0001, CRUMB-DOC-0003-APP_B_IX-0004, CRUMB-DOC-0003-APP_B_IX-0006\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0009",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_IX-01",
+      "action_type": "document_request",
+      "description": "Pribaviti kontroliranu VT uputu i ugovorni opseg te uskladiti izuzeće IX u priručniku s VT radom iz nuklearnog plana. Provjeriti odgovornost za kvalifikaciju postupka, VT II/CP-189 i aktualan vidni dosje izvršitelja. Ne proširivati zahtjev na zavarivanje koje Enconet nije preuzeo. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": true
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_X-01",
+      "evaluation_id": "EVAL-APP_B_X",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Za konkretne nuklearne preglede treba dovršiti kontroliranu projektnu/NEK podlogu, ovlasti izuzeća na hold pointu i granicu izravnog nadzora izvršitelja.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_X-0003"
+    },
+    "finding": {
+      "finding_id": "FIND-0007",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_X",
+      "gap_id": "GAP-APP_B_X-01",
+      "title": "Projektna inspekcijska podloga i hold-point ovlasti",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B X; NQA-1:2015 Part I Requirement 10; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Neovisni pregled, pisani kriteriji, hold/witness točke i provjera prije nastavka rada jasno su propisani.\n\nOgraničenje: Za konkretne nuklearne preglede treba dovršiti kontroliranu projektnu/NEK podlogu, ovlasti izuzeća na hold pointu i granicu izravnog nadzora izvršitelja.\n\nZaključak: Inspekcijska kontrola je sadržajno dobro pokrivena; pojedine specifične ovlasti i detaljna podloga ostaju za potvrdu, ne kao dokaz da pregled ne postoji.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_X-0003, CRUMB-DOC-0001-APP_B_X-0004, CRUMB-DOC-0001-APP_B_X-0006, CRUMB-DOC-0001-APP_B_X-0007, CRUMB-DOC-0003-APP_B_X-0006, CRUMB-DOC-0010-APP_B_X-0001\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0010",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_X-01",
+      "action_type": "sample_test",
+      "description": "Uzorkovati inspection plan, odobrenje hold-point odstupanja ako ga ima i neovisnost potpisanog inspektora. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XI-01",
+      "evaluation_id": "EVAL-APP_B_XI",
+      "status": "covered",
+      "description": "Dokumentacijski pokriveno; rutinska terenska provjera nije dokumentarni nedostatak. Nazivi/primjeri testnih deckova i nedostajući FDS prilozi traže provjeru aktualnog seta, ali ne brišu izričite zahtjeve za puni opseg, prihvat i dokumentiranje.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XI-0003"
+    },
+    "finding": null,
+    "action": {
+      "action_id": "ACT-0011",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XI-01",
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan RELAP5 acceptance/in-use test ili AOV As-Found/As-Left paket s kriterijima i odobrenjem. Rutinska provjera provedbe; nije dokumentarni nalaz.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XII-01",
+      "evaluation_id": "EVAL-APP_B_XII",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Tehnički odnos referentne točnosti ili njegovo dopušteno opravdanje te praktični certifikacijski trag trebaju jasniju podlogu; razredi opreme nisu potpuno razrađeni.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XII-0002"
+    },
+    "finding": {
+      "finding_id": "FIND-0008",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_XII",
+      "gap_id": "GAP-APP_B_XII-01",
+      "title": "Tehnička osnova referentne kalibracije",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B XII; NQA-1:2015 Part I Requirement 12; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Raspon/točnost, intervali, oznake kalibracije, provjera prije testa, sljedivost i retrospektivna ocjena od zadnje kalibracije imaju konkretne kontrole.\n\nOgraničenje: Tehnički odnos referentne točnosti ili njegovo dopušteno opravdanje te praktični certifikacijski trag trebaju jasniju podlogu; razredi opreme nisu potpuno razrađeni.\n\nZaključak: Kontrola MTE je dobra, ali dio kalibracijske tehničke osnove nije dovoljno razvidan za puni rang.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_XII-0002, CRUMB-DOC-0001-APP_B_XII-0004, CRUMB-DOC-0001-APP_B_XII-0005, CRUMB-DOC-0020-APP_B_XII-0002, CRUMB-DOC-0025-APP_B_XII-0014, CRUMB-DOC-0025-APP_B_XII-0015, CRUMB-DOC-0025-APP_B_XII-0025\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0012",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XII-01",
+      "action_type": "sample_test",
+      "description": "Na jednom certifikatu provjeriti etalon, točnost/opravdanje, as-found/as-left i pogođena ranija mjerenja. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XIII-01",
+      "evaluation_id": "EVAL-APP_B_XIII",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Vendor izuzeća treba uskladiti s konkretnim preuzetim kontrolama. Detaljan transportni put vrijedi samo ako ga Enconet preuzima.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XIII-0001"
+    },
+    "finding": {
+      "finding_id": "FIND-0009",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_XIII",
+      "gap_id": "GAP-APP_B_XIII-01",
+      "title": "Granica zaštite opreme i fizičkih medija",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B XIII; NQA-1:2015 Part I Requirement 13; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Uvjeti čuvanja MTE, proizvođačevi zahtjevi, zaštita opreme od kontaminacije i fizičke kopije medija podupiru odobreni ograničeni opseg.\n\nOgraničenje: Vendor izuzeća treba uskladiti s konkretnim preuzetim kontrolama. Detaljan transportni put vrijedi samo ako ga Enconet preuzima.\n\nZaključak: Zaštita i skladištenje su stvarno opisani. Ograničena primjenjivost nije opća logistika; papirna granica odgovornosti ostaje nedovoljno dosljedna.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_XIII-0001, CRUMB-DOC-0001-APP_B_XIII-0003, CRUMB-DOC-0018-APP_B_XVII-0001, CRUMB-DOC-0018-APP_B_XVII-0007, CRUMB-DOC-0020-APP_B_XIII-0001, CRUMB-DOC-0025-APP_B_XIII-0003, CRUMB-DOC-0025-APP_B_XIII-0005\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0013",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XIII-01",
+      "action_type": "verification",
+      "description": "Provjeriti mjesto/uvjete čuvanja jednog instrumenta i medija te odgovornost ako se predmet prenosi. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XIV-01",
+      "evaluation_id": "EVAL-APP_B_XIV",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: Opća mogućnost hitne isporuke bez provjera treba imati jasnu nuklearnu granicu; samo pisano poslovno odobrenje ne dokazuje dopuštenje za svaki safety-related slučaj.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XIV-0002"
+    },
+    "finding": {
+      "finding_id": "FIND-0010",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_XIV",
+      "gap_id": "GAP-APP_B_XIV-01",
+      "title": "Nuklearna granica hitne isporuke",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B XIV; NQA-1:2015 Part I Requirement 14; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Statusne oznake, NIJE PREGLEDANO/NESUKLADNOST, test tag/clearance i završno oslobađanje sprečavaju preranu uporabu.\n\nOgraničenje: Opća mogućnost hitne isporuke bez provjera treba imati jasnu nuklearnu granicu; samo pisano poslovno odobrenje ne dokazuje dopuštenje za svaki safety-related slučaj.\n\nZaključak: Statusne kontrole su konkretne, ali iznimku isporuke treba uskladiti s potrebnim provjerama i ovlastima prije punog ranga.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_XIV-0002, CRUMB-DOC-0003-APP_B_XIV-0004, CRUMB-DOC-0004-APP_B_XIV-0002, CRUMB-DOC-0008-APP_B_XIV-0002, CRUMB-DOC-0010-APP_B_XIV-0001, CRUMB-DOC-0020-APP_B_XIV-0001, CRUMB-DOC-0020-APP_B_XIV-0002\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0014",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XIV-01",
+      "action_type": "verification",
+      "description": "Uzorkovati release/test-tag i provjeriti da hitna isporuka ne omogućuje preranu safety-related uporabu. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": true
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XV-01",
+      "evaluation_id": "EVAL-APP_B_XV",
+      "status": "covered",
+      "description": "Dokumentacijski pokriveno; rutinska terenska provjera nije dokumentarni nedostatak. Za uporabu kakav jest ili doradu treba provjeriti stvarno tehničko obrazloženje i primjenjiva kupčeva odobrenja; Part21 procjena nije automatska za svaki NCR.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XV-0003"
+    },
+    "finding": null,
+    "action": {
+      "action_id": "ACT-0015",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XV-01",
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan NCR s dispozicijom, tehničkim razlogom, eventualnim customer consentom i provjerom dorade. Rutinska provjera provedbe; nije dokumentarni nalaz.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XVI-01",
+      "evaluation_id": "EVAL-APP_B_XVI",
+      "status": "covered",
+      "description": "Dokumentacijski pokriveno; rutinska terenska provjera nije dokumentarni nedostatak. Stvarni rezultat sprječavanja ponavljanja treba potvrditi uzorkom. Part21 razlike u rokovima razmatraju se odvojeno od ovog rezultata.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XVI-0002"
+    },
+    "finding": null,
+    "action": {
+      "action_id": "ACT-0016",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XVI-01",
+      "action_type": "sample_test",
+      "description": "Uzorkovati značajnu radnju: uzrok, odobrenje, završetak i dokaz praćenja učinkovitosti. Rutinska provjera provedbe; nije dokumentarni nalaz.",
+      "priority": false
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XVII-01",
+      "evaluation_id": "EVAL-APP_B_XVII",
+      "status": "mostly-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: GPD nedosljednost te za relevantnu odgovornost dokaz metode zaštite pohrane i obnove nakon katastrofe/promjene tehnologije ostaju otvoreni.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XVII-0005"
+    },
+    "finding": {
+      "finding_id": "FIND-0011",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_XVII",
+      "gap_id": "GAP-APP_B_XVII-01",
+      "title": "Važeći registar i dokaz zaštite/obnove zapisa",
+      "severity": "low",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B XVII; NQA-1:2015 Part I Requirement 17; approved G2/G3 scope",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Autentifikacija, IOD, ZK klase, trajni projektni zapisi, ugovorni rokovi, zaštita pristupa i kopije imaju jasne kontrole.\n\nOgraničenje: GPD nedosljednost te za relevantnu odgovornost dokaz metode zaštite pohrane i obnove nakon katastrofe/promjene tehnologije ostaju otvoreni.\n\nZaključak: Zapisi su dobro uređeni. Lokalni backup nije sam po sebi dokaz svake potrebne storage metode; ne nameće se operatorova arhiva bez pripadne uloge.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_XVII-0005, CRUMB-DOC-0005-APP_B_XVII-0007, CRUMB-DOC-0005-APP_B_XVII-0008, CRUMB-DOC-0005-APP_B_XVII-0010, CRUMB-DOC-0005-APP_B_XVII-0021, CRUMB-DOC-0005-APP_B_XVII-0026, CRUMB-DOC-0005-APP_B_XVII-0036, CRUMB-DOC-0013-APP_B_XVII-0024, CRUMB-DOC-0018-APP_B_XVII-0007, CRUMB-DOC-0018-APP_B_XVII-0015\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0017",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XVII-01",
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan trajni projektni zapis i restore te potvrditi važeći registar, rok i storage odgovornost. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": true
+    }
+  },
+  {
+    "gap": {
+      "gap_id": "GAP-APP_B_XVIII-01",
+      "evaluation_id": "EVAL-APP_B_XVIII",
+      "status": "partially-covered",
+      "description": "Dokumentarna praznina/ograničenje u odobrenoj procjeni: PP-82-01 traži punu kriterijsku pokrivenost u tri godine; supplied NQA-1:2015 Req18§201.3 za dobavljače traži godišnje ili izričito opravdano produženje najviše dvije godine. Ugovorna vanjska učestalost također traži dokaz.",
+      "evidence_item_id": "CRUMB-DOC-0001-APP_B_XVIII-0005"
+    },
+    "finding": {
+      "finding_id": "FIND-0012",
+      "evaluation_run_id": "RUN-20261008-17",
+      "criterion_id": "APP_B_XVIII",
+      "gap_id": "GAP-APP_B_XVIII-01",
+      "title": "Pokrivenost i interval audita",
+      "severity": "medium",
+      "confidence": "medium",
+      "verification_status": "pending",
+      "basis": "10 CFR 50 Appendix B XVIII; NQA-1:2015 Part I Requirement 18; approved G2/G3 scope; Req18 §201.3",
+      "body": "Dokumentacijski pre-flight nalaz; nije potvrđena terenska nesukladnost.\n\nU prilog: Postupak ima neovisnost, autoritet, plan, pet audita/tri godine i nuklearno iskustvo za Lead Auditor-a te strukturirane izvještaje.\n\nOgraničenje: PP-82-01 traži punu kriterijsku pokrivenost u tri godine; supplied NQA-1:2015 Req18§201.3 za dobavljače traži godišnje ili izričito opravdano produženje najviše dvije godine. Ugovorna vanjska učestalost također traži dokaz.\n\nZaključak: Program audita postoji i detaljan je, ali pokrivenost/interval nije dovoljno usklađen s odabranom 2015 osnovom. Povijesni certifikati nisu proglašeni isteklima bez provjere.\n\nDokazni crumbs: CRUMB-DOC-0001-APP_B_XVIII-0005, CRUMB-DOC-0009-APP_B_XVIII-0009, CRUMB-DOC-0009-APP_B_XVIII-0010, CRUMB-DOC-0009-APP_B_XVIII-0018, CRUMB-DOC-0009-APP_B_XVIII-0021, CRUMB-DOC-0009-APP_B_XVIII-0026, CRUMB-DOC-0009-APP_B_XVIII-0042, CRUMB-DOC-0009-APP_B_XVIII-0058\n\nIzvorni citati i poglavlja: out/2026-10-08/conformance-run17/evidence-trace.json. Ocjena i izvori ostaju nepromijenjeni."
+    },
+    "action": {
+      "action_id": "ACT-0018",
+      "evaluation_run_id": "RUN-20261008-17",
+      "gap_id": "GAP-APP_B_XVIII-01",
+      "action_type": "document_request",
+      "description": "Pribaviti godišnje matrice pokrivenosti nuklearnog QA programa i obrazloženje eventualnog produženja. Usporediti trogodišnji opis PP-82-01 s odabranim NQA-1:2015 Req18 §201.3: godišnji audit ili opravdano produženje najviše dvije godine. Potvrditi ugovorno izdanje i primjenjivu vanjsku učestalost; uzorkovati Lead Auditor requalifikaciju. Ne proglasiti prošlu povredu ili istekao certifikat bez zapisa. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": true
+    }
+  }
+]

@@ -344,3 +344,7 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - 2026-10-08T20:21:41Z | `state-transition` | evidence_reviewed -> evaluated; reason: Explicit ownerG3 result and unchanged numeric-model calibration approved;18 ratings and candidate evidence bundle validated. Original calculation model/run provenance retained; scoring fixture metadata refresh awaits separate policy permission.
 
 - handoff-created | 2026-10-08T20:28:40Z | handoffs/2026-10-08T202840Z-8ad5fee.md | partial | 8ad5fee32e039c409fced20c58de8edd1bfa9946
+
+- 2026-10-08T21:31:00Z | `state-transition` | evaluated -> findings_drafted; reason: Owner proceed resumed evaluated run;18 coverage rows,12 draft findings and18 linked open actions verified; no G4 approval inferred.
+
+- handoff-created | 2026-10-08T21:35:29Z | handoffs/2026-10-08T213529Z-f6e1415.md | partial | f6e1415f7fc19c5c70608e89c2aa2c8ce4ea8a8b
