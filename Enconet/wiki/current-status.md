@@ -40,7 +40,10 @@ are unchanged. Owner selected referenced Part II 2.7/2.14 only, when the activit
 applies: RUN-20261008-15 adds 71 interpretive items and 71 exact links.
 Other Part II sections and Parts III-IV remain supporting. Subpart 2.7 section
 201 begins with a source sentence fragment and is flagged, not reconstructed.
-Separate Part 21 processing remains pending.
+Separate Part 21 DOC-0027 processing is now complete: RUN-20261008-16 has
+41 source items (24 procedural duties) and 41 exact chapter links. They stay
+outside the 18-criterion score. Direct NRC jurisdiction is not presumed;
+role/event and US/licence or contract scope need an explicit applicability basis.
 The owner approved the 20 expected golden examples. The v3 context-storage
 gap is fixed: 23 regression tests passed and all 20 examples round-tripped on
 an isolated database copy with exact chapter links. That check was diagnostic;
@@ -49,8 +52,8 @@ See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md
 
 ## Next action
 
-Process Part 21 DOC-0027 separately under RULE v1 and approved G1 basis,
-keeping the 18 governing requirement identities stable. The owner question about
+Prepare reasoned applicability of the 18 criteria and separate Part 21 scope
+for owner G2 review, keeping governing identities stable. The owner question about
 referenced Part II sections is resolved by ASME-ENCONET-PARTII-REFS-20261008.
 Only 2.7/2.14 are included conditionally. Verify the source fragment in 2.7 section
 201 before claiming complete interpretation of that clause; other Parts 2-4 text
@@ -77,5 +80,6 @@ See [complete vendor inventory, final organization run and next stage](../docs/F
 See [governing Appendix B baseline and reusable seeding tool](../docs/APPENDIX_B_BASELINE_20261008.md).
 See [ASME Part 1 interpretation, exact evidence and scope question](../docs/NQA1_PART1_INTERPRETATION_20261008.md).
 See [approved referenced Part II interpretation and source limitation](../docs/ASME_REFERENCED_PARTII_INTERPRETATION_20261008.md).
+See [separate Part 21 duties, exact source evidence and scope limits](../docs/PART21_SOURCE_PROCESSING_20261008.md).
 
 See [reset record](../docs/ENCONET_RESET_20261007.md).

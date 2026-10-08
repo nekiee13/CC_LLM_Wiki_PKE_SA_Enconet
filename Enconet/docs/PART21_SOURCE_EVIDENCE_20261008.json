@@ -1,0 +1,215 @@
+{
+  "run_id": "RUN-20261008-16",
+  "source_doc_id": "DOC-0027",
+  "source_sha256": "74e8cf5d62f05a87879f602cb1abdaee745af875fc6eeab5420df70dc3e84248",
+  "score_excluded": true,
+  "before": {
+    "documents": {
+      "count": 33,
+      "sha256": "e1494da973b27b593dd04ab5e1323b7d5d177f885c6aa06548d9138835efa429"
+    },
+    "document_chunks": {
+      "count": 922,
+      "sha256": "16aa78ec947f233b36a6ff381626e5d9d74009e39d5c840862bb3fcfdbb04478"
+    },
+    "sieve_runs": {
+      "count": 29,
+      "sha256": "57a4c377dca7f17fd66676ef32c6e45ff208aee2e3f289e8576753dc030b8cc4"
+    },
+    "sieve_run_authorities": {
+      "count": 3,
+      "sha256": "c3b28745d4aece3482eba3b2bc0a9355c7054a00e387e344cf515c46ec579b48"
+    },
+    "crumbs": {
+      "count": 2957,
+      "sha256": "a6982c8a75e741a9d47f14970d43051701415d31ad8219e44df8a3a1b2cf243f"
+    },
+    "crumb_quotes": {
+      "count": 5636,
+      "sha256": "15b828f63d3d6a615bf50d2dac3b7e941e57bb594b3aaf11d6bf59a2be7399f8"
+    },
+    "crumb_sources": {
+      "count": 3032,
+      "sha256": "bb5659367297bc216b419d8e8e428a587d9051259e32b40af5aebfa0287e347b"
+    },
+    "crumb_chunk_links": {
+      "count": 5636,
+      "sha256": "26a4c42dd2cfaf3aa7feee0dbcd8b31539b0dd423b4344130ac03633dc528274"
+    },
+    "crumb_context": {
+      "count": 2700,
+      "sha256": "526bb8b0e158d393705c7fae4af5d73548d9402b1800d8fb71c1f3c7220ad63d"
+    },
+    "crumb_authority_refs": {
+      "count": 257,
+      "sha256": "aafd259fb8e74ffabadf21cd7f937ee4e050188d110ff0d3d371c41fbf15ebbc"
+    },
+    "requirements": {
+      "count": 18,
+      "sha256": "1dc2bc5c94cc6ebbd16c3692ec3c18dff132023b8fe1590b6eea82ee4fcf0db4"
+    },
+    "criterion_applicability": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "criterion_evaluations": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "evaluation_runs": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "evaluation_evidence": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "after": {
+    "after": {
+      "documents": {
+        "count": 33,
+        "preserved_prefix_sha256": "e1494da973b27b593dd04ab5e1323b7d5d177f885c6aa06548d9138835efa429"
+      },
+      "document_chunks": {
+        "count": 922,
+        "preserved_prefix_sha256": "16aa78ec947f233b36a6ff381626e5d9d74009e39d5c840862bb3fcfdbb04478"
+      },
+      "sieve_runs": {
+        "count": 30,
+        "preserved_prefix_sha256": "57a4c377dca7f17fd66676ef32c6e45ff208aee2e3f289e8576753dc030b8cc4"
+      },
+      "sieve_run_authorities": {
+        "count": 4,
+        "preserved_prefix_sha256": "c3b28745d4aece3482eba3b2bc0a9355c7054a00e387e344cf515c46ec579b48"
+      },
+      "crumbs": {
+        "count": 2998,
+        "preserved_prefix_sha256": "a6982c8a75e741a9d47f14970d43051701415d31ad8219e44df8a3a1b2cf243f"
+      },
+      "crumb_quotes": {
+        "count": 5677,
+        "preserved_prefix_sha256": "15b828f63d3d6a615bf50d2dac3b7e941e57bb594b3aaf11d6bf59a2be7399f8"
+      },
+      "crumb_sources": {
+        "count": 3073,
+        "preserved_prefix_sha256": "bb5659367297bc216b419d8e8e428a587d9051259e32b40af5aebfa0287e347b"
+      },
+      "crumb_chunk_links": {
+        "count": 5677,
+        "preserved_prefix_sha256": "26a4c42dd2cfaf3aa7feee0dbcd8b31539b0dd423b4344130ac03633dc528274"
+      },
+      "crumb_context": {
+        "count": 2700,
+        "preserved_prefix_sha256": "526bb8b0e158d393705c7fae4af5d73548d9402b1800d8fb71c1f3c7220ad63d"
+      },
+      "crumb_authority_refs": {
+        "count": 298,
+        "preserved_prefix_sha256": "aafd259fb8e74ffabadf21cd7f937ee4e050188d110ff0d3d371c41fbf15ebbc"
+      },
+      "requirements": {
+        "count": 18,
+        "preserved_prefix_sha256": "1dc2bc5c94cc6ebbd16c3692ec3c18dff132023b8fe1590b6eea82ee4fcf0db4"
+      },
+      "criterion_applicability": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "criterion_evaluations": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "evaluation_runs": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "evaluation_evidence": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "frozen_errors": [],
+    "exact_links": [
+      41,
+      41
+    ],
+    "run": [
+      "RUN-20261008-16",
+      "2026-10-08 15:18:13",
+      "2026-10-08 15:18:16"
+    ],
+    "crumb_counts": [
+      [
+        "DOCUMENT",
+        2700
+      ],
+      [
+        "RULE",
+        298
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; r=Path('Enconet/sieving/runs/RUN-20261008-16'); p=json.loads((r/'generated.json').read_text(encoding='utf-8')); m=json.loads((r/'part21-duty-map.json').read_text(encoding='utf-8')); f=Path('Enconet/out/2026-10-07/full-keyword-sweep/sources/DOC-0027.md'); s=f.read_text(encoding='utf-8'); assert hashlib.sha256(f.read_bytes()).hexdigest()==m['source_sha256']; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); chunks=dict(c.execute('SELECT chunk_id,chunk_text FROM document_chunks WHERE doc_id=?',('DOC-0027',))); assert all(s[a['char_start']:a['char_end']]==i['evidence_quotes'][0]['quote_original'] and i['evidence_quotes'][0]['quote_original'] in chunks[a['chunk_id']] for a,i in zip(m['items'],p['items'])); assert not c.execute('SELECT 1 FROM sieve_runs WHERE doc_id=?',('DOC-0027',)).fetchone(); print(json.dumps({'items':len(p['items']),'source_hash_exact':True,'offset_and_chapter_errors':0,'score_excluded':m['score_excluded']}))\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "Source hash and all41 exact source offsets/chapter matches verified before import."
+    },
+    {
+      "command": "python Enconet/scripts/validate_app_b_json.py Enconet/sieving/runs/RUN-20261008-16/generated.json --strict",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/link_exact_run.py --run-id RUN-20261008-16 --apply",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "41 exact links only in selected new run."
+    },
+    {
+      "command": "python Enconet/scripts/link_exact_run.py --run-id RUN-20261008-16",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "Retry adds0, preserves41 exact links."
+    },
+    {
+      "command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; r=Path('Enconet/sieving/runs/RUN-20261008-16'); b=json.loads((r/'frozen-before.json').read_text()); c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); after={t:{'count':c.execute('SELECT count(*) FROM '+t).fetchone()[0],'preserved_prefix_sha256':hashlib.sha256(json.dumps(c.execute('SELECT * FROM '+t+' ORDER BY rowid LIMIT ?',(v['count'],)).fetchall()).encode()).hexdigest()} for t,v in b.items()}; bad=[t for t,v in b.items() if after[t]['count']<v['count'] or after[t]['preserved_prefix_sha256']!=v['sha256']]; assert not bad; m=json.loads((r/'part21-duty-map.json').read_text(encoding='utf-8')); assert all(c.execute('SELECT criterion_id,statement FROM crumbs WHERE item_id=? AND sieve_run_id=?',(a['crumb_id'],m['run_id'])).fetchone()==(a['criterion_id'],a['statement']) for a in m['items']); links=c.execute('SELECT count(*),sum(CASE WHEN instr(d.chunk_text,q.quote_original)>0 THEN 1 ELSE 0 END) FROM crumb_chunk_links l JOIN crumbs a ON a.item_id=l.item_id JOIN crumb_quotes q ON q.quote_id=l.quote_id JOIN document_chunks d ON d.chunk_id=l.chunk_id WHERE a.sieve_run_id=?',(m['run_id'],)).fetchone(); assert links==(41,41); assert all(after[t]['count']==0 for t in ['criterion_applicability','criterion_evaluations','evaluation_runs','evaluation_evidence']); assert after['requirements']['count']==18; print(json.dumps({'after':after,'frozen_errors':bad,'exact_links':links,'run':c.execute('SELECT run_id,started_at,completed_at FROM sieve_runs WHERE run_id=?',(m['run_id'],)).fetchone(),'crumb_counts':c.execute('SELECT document_side,count(*) FROM crumbs GROUP BY document_side').fetchall()}))\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "All prior rows in15 tables preserved hash-exact;18 baseline requirements unchanged; no score/applicability/evaluation writes."
+    },
+    {
+      "command": "python -c \"import json,hashlib; from pathlib import Path; p=Path('Enconet'); plan=json.loads(Path('reset-plans/enconet-reset-20261007-reviewed.json').read_text(encoding='utf-8')); rows=plan['incoming_files']; bad=[r['relative_path'] for r in rows if not (p/r['relative_path']).is_file() or hashlib.sha256((p/r['relative_path']).read_bytes()).hexdigest()!=r['sha256']]; actual={x.relative_to(p).as_posix() for x in (p/'incoming').rglob('*') if x.is_file()}; expected={r['relative_path'] for r in rows}; print(json.dumps({'files':len(rows),'hash_mismatches':bad,'unexpected_files':sorted(actual-expected),'missing_files':sorted(expected-actual)})); assert not bad and actual==expected\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "36/36 incoming files unchanged."
+    },
+    {
+      "command": "python Enconet/scripts/validate_traceability.py --no-record",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/validate_requirements.py --no-record",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/run_all_validations.py --no-record",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "4 phase-appropriate checks pass; downstream skipped; direct strict JSON, requirements and traceability separately passed."
+    }
+  ],
+  "diagnostics": [
+    "Initial combined source output clipped part of the definitions section. The full definitions were retrieved and read separately; no omitted evidence accepted from a truncated section.",
+    "First draft quote helper spanned a section separator into the next stored chapter. It failed before any JSON/run/import. Corrected helper clips to actual registered chapter boundaries; pre-import and post-import exact checks passed."
+  ],
+  "pending": [
+    "G2 applicability and Part21 US/licence or contract scope ruling",
+    "ASME2.7/201 source-fragment verification",
+    "Claude substantive review deferred",
+    "Earlier unpublished Part II note has reply_to metadata typo; immutable correction awaits explicit permission; coordination not reported clean."
+  ]
+}

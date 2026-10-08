@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-08T145902Z-7b4c71f.md`](handoffs/2026-10-08T145902Z-7b4c71f.md)
+**Authoritative record:** [`handoffs/2026-10-08T152326Z-9e46b3d.md`](handoffs/2026-10-08T152326Z-9e46b3d.md)
 
-**Status:** partial · **Git:** `7b4c71f` · **Agent:** codex · **Created:** 2026-10-08T14:59:02Z
+**Status:** partial · **Git:** `9e46b3d` · **Agent:** codex · **Created:** 2026-10-08T15:23:26Z
 
-**Exact next action:** Correct only the new note reply_to if owner explicitly approves the requested exception, then regenerate/validate board and publish the note. Continue separate Part21 DOC-0027, then prepare G2 applicability. Verify source fragment2.7/201 before claiming full clause coverage.
+**Exact next action:** Prepare criterion-by-criterion applicability and separate Part21 role/US-licence-or-contract scope draft for owner G2 review, without ratings or gate advance. Correct earlier review-note reply_to only upon explicit owner permission, regenerate board and publish pending valid review notes. Verify ASME2.7/201 source fragment before claiming complete clause interpretation.
