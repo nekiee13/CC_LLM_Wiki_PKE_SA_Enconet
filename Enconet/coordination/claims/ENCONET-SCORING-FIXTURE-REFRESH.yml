@@ -1,0 +1,16 @@
+task: ENCONET-SCORING-FIXTURE-REFRESH
+agent: codex
+status: released
+claimed_at_utc: 2026-10-08T22:00:45Z
+last_renewed_at_utc: 2026-10-08T22:00:45Z
+expires_at_utc: 2026-10-09T22:00:45Z
+anticipated_files:
+  - Enconet/benchmarks/scoring/input.yml
+  - Enconet/benchmarks/scoring/expected.yml
+  - Enconet/manifests/approvals.csv
+  - Enconet/docs/SCORING_FIXTURE_REFRESH_20261009.md
+  - Enconet/project-state.yml
+  - Enconet/wiki/current-status.md
+  - Enconet/out/2026-10-09/scoring-fixture-refresh
+note: Owner yes explicitly authorizes metadata-only fixture refresh;retain every synthetic rating and number. Fullsuite/benchmarks before phase advance.
+released_at_utc: 2026-10-08T22:48:37Z

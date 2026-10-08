@@ -90,6 +90,7 @@ and ADRs are the records.
 - `ENCONET-G4-APPROVAL` — codex, released 2026-10-08T21:53:37Z
 - `ENCONET-G4-DRAFT` — codex, released 2026-10-08T21:34:11Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
+- `ENCONET-SCORING-FIXTURE-REFRESH` — codex, released 2026-10-08T22:48:37Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
 - `EPIC1` — codex, released 2026-07-12T07:57:07Z
 - `EPIC10` — codex, released 2026-07-13T22:39:14Z
@@ -342,10 +343,11 @@ and ADRs are the records.
 - `CX_2026-10-08T202604Z_enconet-g3-approved-model-provenance` — review_request, codex -> claude-code: ENCONET-G3-APPROVAL
 - `CX_2026-10-08T213411Z_enconet-g4-findings-actions` — review_request, codex -> claude-code: ENCONET-G4-DRAFT
 - `CX_2026-10-08T215337Z_enconet-g4-approved-benchmark-hold` — status, codex -> claude-code: ENCONET-G4-APPROVAL
+- `CX_2026-10-08T224837Z_enconet-fixture-refreshed-suite-held` — review_request, codex -> claude-code: ENCONET-SCORING-FIXTURE-REFRESH
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-08T215428Z-419a1fe.md`](../handoffs/2026-10-08T215428Z-419a1fe.md)
+- Authoritative record: [`handoffs/2026-10-08T225008Z-bfb208b.md`](../handoffs/2026-10-08T225008Z-bfb208b.md)
 - Archive: 759 records in `coordination/archive/`
 
-Generated: 2026-10-08T21:54:44Z
+Generated: 2026-10-08T22:50:22Z

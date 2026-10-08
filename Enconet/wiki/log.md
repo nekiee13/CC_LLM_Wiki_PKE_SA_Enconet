@@ -352,3 +352,5 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - 2026-10-08T21:51:14Z | `gate-decision` | G4 approved as `G4-RUN-20261008-17` by project-owner
 
 - handoff-created | 2026-10-08T21:54:28Z | handoffs/2026-10-08T215428Z-419a1fe.md | partial | 419a1fec62e08b26aac60934f5e85a3b65561080
+
+- handoff-created | 2026-10-08T22:50:08Z | handoffs/2026-10-08T225008Z-bfb208b.md | partial | bfb208bc61f973f0055a54fed15194c0384ea2f9

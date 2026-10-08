@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="71" failures="55" skipped="0" tests="440" time="79.212" timestamp="2026-10-09T00:37:37.188385+02:00" hostname="DESKTOP-KBIR7T5"><testcase classname="" name="test_large_continuation_batch_preserves_global_state" time="0.049" /><testcase classname="" name="test_batch_size_rules_fail_closed[large-2]" time="0.010" /><testcase classname="" name="test_batch_size_rules_fail_closed[small-1]" time="0.009" /><testcase classname="" name="test_batch_size_rules_fail_closed[small-4]" time="0.009" /><testcase classname="" name="test_continuation_requires_global_sieved_and_single_active_writer" time="0.030" /><testcase classname="" name="test_gate_packet_uniqueness_is_scoped_per_batch" time="0.015" /><testcase classname="" name="test_batch_scoped_gate_decision_does_not_overwrite_global_state" time="0.046" /><testcase classname="" name="test_harness_contract_pins_dependency_runtime_and_failure_policy" time="0.005" /><testcase classname="" name="test_preflight_passes_for_pinned_library_and_runtime" time="0.060" /><testcase classname="" name="test_missing_runtime_is_actionable_nonzero_failure" time="0.027" /><testcase classname="" name="test_smoke_opens_candidate_directly_through_file_url" time="0.029"><failure message="browser_harness.BrowserHarnessError: browser check requires an existing local HTML file: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\enconet_appendix_b_dashboard.html">Enconet\tests\test_browser_harness.py:56: in test_smoke_opens_candidate_directly_through_file_url
+    result = browser_harness.run_check(
+Enconet\scripts\browser_harness.py:133: in run_check
+    _path, file_url = _local_file_url(html_path)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\browser_harness.py:93: in _local_file_url
+    raise BrowserHarnessError(f"browser check requires an existing local HTML file: {path}")
+E   browser_harness.BrowserHarnessError: browser check requires an existing local HTML file: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\enconet_appendix_b_dashboard.html</failure></testcase><testcase classname="" name="test_failure_retains_screenshot_dom_and_console_log" time="3.176" /><testcase classname="" name="test_http_navigation_is_rejected_before_browser_launch" time="0.030" /><testcase classname="" name="test_candidate_has_interactive_crumb_control" time="0.029"><failure message="browser_harness.BrowserHarnessError: browser check requires an existing local HTML file: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\enconet_appendix_b_dashboard.html">Enconet\tests\test_browser_harness.py:99: in test_candidate_has_interactive_crumb_control
+    result = browser_harness.run_check(
+Enconet\scripts\browser_harness.py:133: in run_check
+    _path, file_url = _local_file_url(html_path)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\browser_harness.py:93: in _local_file_url
+    raise BrowserHarnessError(f"browser check requires an existing local HTML file: {path}")
+E   browser_harness.BrowserHarnessError: browser check requires an existing local HTML file: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\enconet_appendix_b_dashboard.html</failure></testcase><testcase classname="" name="test_parser_level_one_two_offsets_and_level_three_containment" time="0.001" /><testcase classname="" name="test_markdown_level_one_two_take_precedence_over_numbered_lists" time="0.001" /><testcase classname="" name="test_whole_document_fallback_size_warning_and_rejections" time="0.001" /><testcase classname="" name="test_writer_ids_offsets_and_atomic_replacement" time="0.235" /><testcase classname="" name="test_validator_detects_offset_checksum_and_orphan_and_logs" time="0.255" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[crumb-CRUMB-DOC-0021-APP_B_I-0003]" time="0.021" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[document-DOC-0021]" time="0.002" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[chunk-CHUNK-DOC-0021-0105]" time="0.001" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[quote-QUOTE-DOC-0021-0105-01]" time="0.001" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[evaluation-EVAL-APP_B_I]" time="0.001" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[gap-GAP-APP_B_I-01]" time="0.001" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[finding-FIND-0001]" time="0.001" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[action-ACT-0001]" time="0.001" /><testcase classname="" name="test_each_supported_entity_renders_one_typed_visible_link[source-package]" time="0.001" /><testcase classname="" name="test_label_is_markdown_escaped_and_relative_viewer_path_is_url_encoded" time="0.001" /><testcase classname="" name="test_invalid_type_id_and_nonportable_path_fail_closed[unsupported-DOC-0021-None]" time="0.001" /><testcase classname="" name="test_invalid_type_id_and_nonportable_path_fail_closed[document--None]" time="0.002" /><testcase classname="" name="test_invalid_type_id_and_nonportable_path_fail_closed[document-DOC-99999-None]" time="0.001" /><testcase classname="" name="test_invalid_type_id_and_nonportable_path_fail_closed[document-DOC-0021-../dashboard.html]" time="0.001" /><testcase classname="" name="test_invalid_type_id_and_nonportable_path_fail_closed[document-DOC-0021-C:/dashboard.html]" time="0.001" /><testcase classname="" name="test_invalid_type_id_and_nonportable_path_fail_closed[document-DOC-0021-https://example.test/dashboard.html]" time="0.001" /><testcase classname="" name="test_action_has_primary_action_link_and_separate_finding_lineage" time="0.030" /><testcase classname="" name="test_gap_primary_link_is_gap_context_not_recursive_affirmative_evidence" time="0.037" /><testcase classname="" name="test_all_report_sections_use_typed_links_without_bare_reference_tokens" time="0.032" /><testcase classname="" name="test_environment_spec_matches_controlled_dependency_pins" time="0.004" /><testcase classname="" name="test_target_environment_is_isolated_and_versions_are_exact" time="0.140" /><testcase classname="" name="test_initializer_creates_required_schema_and_seeds_taxonomy" time="0.221" /><testcase classname="" name="test_schema_declares_required_foreign_key_spine" time="0.198" /><testcase classname="" name="test_initializer_is_idempotent_and_reset_is_explicit" time="0.459" /><testcase classname="" name="test_initializer_refuses_nonempty_unknown_database" time="0.101" /><testcase classname="" name="test_db_util_validates_ids_and_names_duplicate" time="0.250" /><testcase classname="" name="test_foreign_keys_and_vocab_checks_fail_closed" time="0.252" /><testcase classname="" name="test_traceability_chain_and_action_exclusivity" time="0.214" /><testcase classname="" name="test_draft_write_approval_and_projection_validation" time="0.447" /><testcase classname="" name="test_input_gates_and_links_fail_closed" time="0.271" /><testcase classname="" name="test_validator_names_page_tamper" time="0.294" /><testcase classname="" name="test_approval_refuses_missing_draft_page" time="0.302" /><testcase classname="" name="test_approval_retry_repairs_projection_after_db_commit" time="0.334" /><testcase classname="" name="test_legacy_empty_epic10_tables_migrate_with_backup" time="0.265" /><testcase classname="" name="test_report_is_deterministic_localized_and_consistent" time="0.055" /><testcase classname="" name="test_report_reference_tokens_are_navigable_markdown_links" time="0.030" /><testcase classname="" name="test_action_identifier_is_primary_link_and_finding_citation_remains_linked" time="0.027" /><testcase classname="" name="test_report_refuses_missing_gate_and_unapproved_objects_are_excluded" time="0.051" /><testcase classname="" name="test_validator_rejects_score_section_and_citation_tamper" time="0.055" /><testcase classname="" name="test_package_source_verification_rejects_fabricated_approval" time="0.044" /><testcase classname="" name="test_builder_projects_exact_contract_and_na_justification" time="0.404" /><testcase classname="" name="test_builder_normalizes_package_lexical_order_to_regulation_order" time="0.324" /><testcase classname="" name="test_renderer_is_deterministic_localized_self_contained_and_valid[en-Executive summary]" time="0.599" /><testcase classname="" name="test_renderer_is_deterministic_localized_self_contained_and_valid[sl-Povzetek]" time="0.597" /><testcase classname="" name="test_renderer_is_deterministic_localized_self_contained_and_valid[hr-Sa\u017eetak]" time="0.605" /><testcase classname="" name="test_classification_scale_is_derived_from_canonical_scoring_model" time="0.022" /><testcase classname="" name="test_renderer_embeds_classification_scale_for_runtime_ordering" time="0.373" /><testcase classname="" name="test_dashboard_evidence_references_render_as_interactive_controls" time="0.374" /><testcase classname="" name="test_validator_rejects_package_mismatch_invalid_rating_forbidden_content_and_broken_js" time="1.068" /><testcase classname="" name="test_builder_fails_closed_on_incomplete_or_inconsistent_package_projection" time="0.554" /><testcase classname="" name="test_phase_matrix_is_monotonic_and_failed_runs_full_superset" time="0.001" /><testcase classname="" name="test_aggregate_continues_after_failures_and_phase_skips_are_not_passes" time="0.001" /><testcase classname="" name="test_evaluated_phase_enables_strict_app_b_and_missing_inputs_fail" time="0.003" /><testcase classname="" name="test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged" time="0.002"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'">Enconet\tests\test_epic13_validation.py:98: in test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged
+    output_bytes = {path: path.read_bytes() for path in controlled_outputs}
+                          ^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:625: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</failure></testcase><testcase classname="" name="test_structure_accepts_contract_tree_and_rejects_missing_misnamed_or_misplaced" time="0.033" /><testcase classname="" name="test_frontmatter_accepts_valid_page_and_rejects_missing_invalid_and_misplaced" time="0.250" /><testcase classname="" name="test_new_validators_and_aggregate_append_machine_readable_rows" time="0.008" /><testcase classname="" name="test_legal_successors_derive_from_canonical_vocabulary" time="0.021" /><testcase classname="" name="test_illegal_transition_names_current_and_legal_successors" time="0.033" /><testcase classname="" name="test_gate_must_be_recorded_then_approved_before_transition" time="0.081" /><testcase classname="" name="test_non_approval_never_advances[rejected]" time="0.044" /><testcase classname="" name="test_non_approval_never_advances[deferred]" time="0.044" /><testcase classname="" name="test_failed_is_reachable_but_requires_reason" time="0.066" /><testcase classname="" name="test_status_reports_state_pending_gate_and_open_exceptions" time="0.031" /><testcase classname="" name="test_gate_packet_is_standalone_unique_and_recording_does_not_advance" time="0.030" /><testcase classname="" name="test_session_start_reports_drift_in_progress_and_unfinished_run" time="0.037" /><testcase classname="" name="test_session_continuity_uses_canonical_production_database" time="0.001" /><testcase classname="" name="test_non_approved_packet_uses_valid_page_status[rejected-closed]" time="0.026" /><testcase classname="" name="test_non_approved_packet_uses_valid_page_status[deferred-draft]" time="0.026" /><testcase classname="" name="test_project_scripts_resolve_only_the_vendored_implementation" time="0.492" /><testcase classname="" name="test_dependencies_are_exactly_pinned_and_private_pandas_apis_are_absent" time="0.064" /><testcase classname="" name="test_private_pandas_guard_detects_historical_and_internal_api_patterns" time="0.001" /><testcase classname="" name="test_schema_drift_warns_by_default_and_strict_mode_blocks" time="0.021" /><testcase classname="" name="test_project_wrapper_strict_mode_returns_nonzero_on_drift" time="0.581" /><testcase classname="" name="test_csv_and_xlsx_exports_match_locked_fixtures" time="0.066" /><testcase classname="" name="test_scoring_fixture_is_complete_locked_and_hand_verified" time="0.261" /><testcase classname="" name="test_dashboard_fixture_is_complete_and_passes_epic12_stack" time="0.502" /><testcase classname="" name="test_benchmark_classes_are_deliberately_separate" time="0.017" /><testcase classname="" name="test_locked_expectations_detect_scoring_and_rendering_changes" time="0.721" /><testcase classname="" name="test_aggregate_benchmark_mode_and_release_phase_requirement" time="6.294" /><testcase classname="" name="test_registry_is_complete_and_documented" time="0.027" /><testcase classname="" name="test_wrong_phase_refuses_before_stage_process" time="0.043" /><testcase classname="" name="test_correct_phase_routes_exact_script_in_dry_run" time="0.046" /><testcase classname="" name="test_registry_is_the_single_owner_of_stage_script_routing" time="0.082" /><testcase classname="" name="test_misplaced_dispatcher_option_has_actionable_error" time="0.039" /><testcase classname="" name="test_status_reports_phase_gates_actions_and_last_validation" time="0.065" /><testcase classname="" name="test_status_counts_open_actions_from_live_state_column" time="0.020" /><testcase classname="" name="test_gate_matches_current_phase_and_stops_at_packet_creation" time="0.073" /><testcase classname="" name="test_resieve_routes_to_epic18_harness_after_activation" time="0.042" /><testcase classname="" name="test_close_validates_before_handoff" time="0.042" /><testcase classname="" name="test_cross_agent_validator_detects_and_accepts_canonical_adapters" time="0.103" /><testcase classname="" name="test_generations_are_immutable_unique_and_active_view_excludes_candidate" time="0.371" /><testcase classname="" name="test_unchanged_prompt_warns_and_resieve_writes_metrics_and_diff" time="0.400" /><testcase classname="" name="test_golden_score_requires_real_approval_and_controls_promote_rollback" time="0.410" /><testcase classname="" name="test_tampered_or_draft_golden_cannot_promote" time="0.337" /><testcase classname="" name="test_harness_validator_and_g2_packet_metrics_requirement" time="0.302" /><testcase classname="" name="test_migration_plans_generation_controls_without_mutating_and_refuses_ambiguity" time="0.176" /><testcase classname="" name="test_paired_skill_drift_validator_accepts_semantics_and_rejects_loss" time="0.025" /><testcase classname="" name="test_prompt_fixtures_pass_pass_fail" time="0.082" /><testcase classname="" name="test_validator_rejects_side_leakage_bad_pairs_and_bad_quotes" time="0.027" /><testcase classname="" name="test_validator_rejects_document_item_authority_override" time="0.030" /><testcase classname="" name="test_run_guard_and_authority_roles" time="0.238" /><testcase classname="" name="test_import_preserves_all_sources_quotes_and_authorities" time="0.311" /><testcase classname="" name="test_import_rolls_back_whole_file_on_database_failure" time="0.284" /><testcase classname="" name="test_migration_dry_run_backup_and_apply" time="0.304" /><testcase classname="" name="test_migration_failure_restores_backup_byte_for_byte" time="0.274" /><testcase classname="" name="test_normalized_link_and_traceability_pass" time="0.274" /><testcase classname="" name="test_unmatched_requires_complete_approved_exception" time="0.288" /><testcase classname="" name="test_ingestion_covers_all_criteria_and_traceability" time="0.275"><error message="failed on setup with &quot;ValueError: expected all 18 criteria in canonical order; found []&quot;">Enconet\tests\test_epic7_requirements.py:14: in registry
+    assert ingest_appendix_b.ingest(db,derived_root=derived)==18
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\ingest_appendix_b.py:39: in ingest
+    source=derived_root/f"{doc_id}.txt"; text=source.read_text(encoding="utf-8"); sections=parse(text)
+                                                                                           ^^^^^^^^^^^
+Enconet\scripts\ingest_appendix_b.py:35: in parse
+    raise ValueError(f"expected all 18 criteria in canonical order; found {[s.criterion_id for s in sections]}")
+E   ValueError: expected all 18 criteria in canonical order; found []</error></testcase><testcase classname="" name="test_requirement_validator_fails_missing_criterion_and_non_rule_link" time="0.280"><error message="failed on setup with &quot;ValueError: expected all 18 criteria in canonical order; found []&quot;">Enconet\tests\test_epic7_requirements.py:14: in registry
+    assert ingest_appendix_b.ingest(db,derived_root=derived)==18
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\ingest_appendix_b.py:39: in ingest
+    source=derived_root/f"{doc_id}.txt"; text=source.read_text(encoding="utf-8"); sections=parse(text)
+                                                                                           ^^^^^^^^^^^
+Enconet\scripts\ingest_appendix_b.py:35: in parse
+    raise ValueError(f"expected all 18 criteria in canonical order; found {[s.criterion_id for s in sections]}")
+E   ValueError: expected all 18 criteria in canonical order; found []</error></testcase><testcase classname="" name="test_gate_and_positive_evidence_refuse" time="0.218" /><testcase classname="" name="test_evaluation_validator_scores_and_stable_package" time="0.256"><error message="failed on setup with &quot;ValueError: scope citation is not a raw document: DOC-0019&quot;">Enconet\tests\test_epic8_evaluation.py:20: in evaluated
+    evaluation_engine.write_rulings(db,run_id="RUN-20260713-02",supplier="enconet",language="en",rulings=rulings,approvals=approvals)
+Enconet\scripts\evaluation_engine.py:23: in write_rulings
+    if doc is None or not (RAW/doc["filename"]).is_file(): raise ValueError(f"scope citation is not a raw document: {r['scope_source_doc_id']}")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ValueError: scope citation is not a raw document: DOC-0019</error></testcase><testcase classname="" name="test_positive_without_document_evidence_and_ruling_change_refused" time="0.572"><error message="failed on setup with &quot;ValueError: scope citation is not a raw document: DOC-0019&quot;">Enconet\tests\test_epic8_evaluation.py:20: in evaluated
+    evaluation_engine.write_rulings(db,run_id="RUN-20260713-02",supplier="enconet",language="en",rulings=rulings,approvals=approvals)
+Enconet\scripts\evaluation_engine.py:23: in write_rulings
+    if doc is None or not (RAW/doc["filename"]).is_file(): raise ValueError(f"scope citation is not a raw document: {r['scope_source_doc_id']}")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ValueError: scope citation is not a raw document: DOC-0019</error></testcase><testcase classname="" name="test_validator_rejects_tampered_na_on_applicable_criterion" time="0.279"><error message="failed on setup with &quot;ValueError: scope citation is not a raw document: DOC-0019&quot;">Enconet\tests\test_epic8_evaluation.py:20: in evaluated
+    evaluation_engine.write_rulings(db,run_id="RUN-20260713-02",supplier="enconet",language="en",rulings=rulings,approvals=approvals)
+Enconet\scripts\evaluation_engine.py:23: in write_rulings
+    if doc is None or not (RAW/doc["filename"]).is_file(): raise ValueError(f"scope citation is not a raw document: {r['scope_source_doc_id']}")
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ValueError: scope citation is not a raw document: DOC-0019</error></testcase><testcase classname="" name="test_matrix_has_18_rows_and_matching_renderers" time="0.226" /><testcase classname="" name="test_missing_evidence_gap_automatically_creates_action" time="0.245" /><testcase classname="" name="test_gap_requires_exactly_one_pointer" time="0.264" /><testcase classname="" name="test_action_id_uses_max_not_count" time="0.287" /><testcase classname="" name="test_budget_contract_is_explicit_versioned_and_owner_authorized" time="0.007" /><testcase classname="" name="test_budget_validator_is_a_dashboard_ready_release_check" time="0.002" /><testcase classname="" name="test_production_package_passes_static_budgets_with_exact_metrics" time="0.009"><failure message="assert ['missing pac...nifest.json'&quot;] == []&#10;  &#10;  Left contains 2 more items, first extra item: 'missing package manifest: package_manifest.json'&#10;  Use -v to get more diff">Enconet\tests\test_evidence_access_budgets.py:64: in test_production_package_passes_static_budgets_with_exact_metrics
+    assert errors == []
+E   assert ['missing pac...nifest.json'"] == []
+E     
+E     Left contains 2 more items, first extra item: 'missing package manifest: package_manifest.json'
+E     Use -v to get more diff</failure></testcase><testcase classname="" name="test_size_projection_and_utf8_fail_closed_with_precise_artifacts" time="0.010"><failure message="FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package'">Enconet\tests\test_evidence_access_budgets.py:77: in test_size_projection_and_utf8_fail_closed_with_precise_artifacts
+    shutil.copytree(PACKAGE_ROOT, oversized)
+C:\xPY\vEnv\WikiEnconet\Lib\shutil.py:591: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package'</failure></testcase><testcase classname="" name="test_renderer_blocks_over_budget_bundle_before_building_html" time="0.014"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_dashboard_data.json'">Enconet\tests\test_evidence_access_budgets.py:117: in test_renderer_blocks_over_budget_bundle_before_building_html
+    data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_dashboard_data.json'</failure></testcase><testcase classname="" name="test_hostile_source_is_text_only_and_multilingual_content_round_trips" time="0.004"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_dashboard_data.json'">Enconet\tests\test_evidence_access_budgets.py:124: in test_hostile_source_is_text_only_and_multilingual_content_round_trips
+    data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_dashboard_data.json'</failure></testcase><testcase classname="" name="test_production_browser_performance_and_network_budgets" time="0.030"><failure message="assert [&quot;browser bud...nifest.json'&quot;] == []&#10;  &#10;  Left contains one more item: &quot;browser budget artifact discovery failed: [Errno 2] No such file or directory: 'C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Enconet\\\\outputs\\\\candidates\\\\evidence_access\\\\portable_package\\\\package_manifest.json'&quot;&#10;  Use -v to get more diff">Enconet\tests\test_evidence_access_budgets.py:183: in test_production_browser_performance_and_network_budgets
+    assert errors == []
+E   assert ["browser bud...nifest.json'"] == []
+E     
+E     Left contains one more item: "browser budget artifact discovery failed: [Errno 2] No such file or directory: 'C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Enconet\\\\outputs\\\\candidates\\\\evidence_access\\\\portable_package\\\\package_manifest.json'"
+E     Use -v to get more diff</failure></testcase><testcase classname="" name="test_budget_cli_is_release_usable" time="0.034"><failure message="AssertionError: assert 1 == 0&#10; +  where 1 = &lt;function main at 0x000001840E3CAB60&gt;(['C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package', '--budget...ess_budgets.yml', '--browser-config', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\browser_harness.yml'])&#10; +    where &lt;function main at 0x000001840E3CAB60&gt; = budgets_validator.main">Enconet\tests\test_evidence_access_budgets.py:190: in test_budget_cli_is_release_usable
+    assert budgets_validator.main([
+E   AssertionError: assert 1 == 0
+E    +  where 1 = &lt;function main at 0x000001840E3CAB60&gt;(['C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package', '--budget...ess_budgets.yml', '--browser-config', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\browser_harness.yml'])
+E    +    where &lt;function main at 0x000001840E3CAB60&gt; = budgets_validator.main</failure></testcase><testcase classname="" name="test_contract_pins_candidate_lineage_counts_and_approved_baseline" time="0.007" /><testcase classname="" name="test_candidate_passes_without_mutating_candidate_or_approved_outputs" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_report.md'">Enconet\tests\test_evidence_access_candidate.py:40: in test_candidate_passes_without_mutating_candidate_or_approved_outputs
+    before = {path: path.read_bytes() for path in [*protected, *[p for p in package.rglob("*") if p.is_file()]]}
+                    ^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:625: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_report.md'</failure></testcase><testcase classname="" name="test_candidate_fails_closed_on_manifest_drift" time="0.005"><failure message="FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package'">Enconet\tests\test_evidence_access_candidate.py:50: in test_candidate_fails_closed_on_manifest_drift
+    shutil.copytree(source, root / "outputs" / "candidates" / "evidence_access" / "portable_package")
+C:\xPY\vEnv\WikiEnconet\Lib\shutil.py:591: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package'</failure></testcase><testcase classname="" name="test_cli_reports_exact_candidate" time="0.010"><failure message="AssertionError: assert 1 == 0&#10; +  where 1 = &lt;function main at 0x000001840E404180&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_release_candidate.yml', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])&#10; +    where &lt;function main at 0x000001840E404180&gt; = candidate.main">Enconet\tests\test_evidence_access_candidate.py:61: in test_cli_reports_exact_candidate
+    assert candidate.main(["--contract", str(CONTRACT), "--project-root", str(ENCONET)]) == 0
+E   AssertionError: assert 1 == 0
+E    +  where 1 = &lt;function main at 0x000001840E404180&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_release_candidate.yml', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])
+E    +    where &lt;function main at 0x000001840E404180&gt; = candidate.main</failure></testcase><testcase classname="" name="test_known_production_crumb_resolves_three_quotes_to_expected_chunk" time="0.003"><failure message="assert 0 == 3&#10; +  where 0 = len([])">Enconet\tests\test_evidence_access_characterization.py:28: in test_known_production_crumb_resolves_three_quotes_to_expected_chunk
+    assert len(rows) == 3
+E   assert 0 == 3
+E    +  where 0 = len([])</failure></testcase><testcase classname="" name="test_documentation_contract_covers_commands_and_clean_rehearsal" time="0.010" /><testcase classname="" name="test_all_documented_commands_and_required_topics_validate" time="0.036"><failure message="AssertionError: assert ['candidate c...port.md', ...] == []&#10;  &#10;  Left contains 8 more items, first extra item: 'candidate check: missing candidate manifest: package_manifest.json'&#10;  Use -v to get more diff">Enconet\tests\test_evidence_access_documentation.py:36: in test_all_documented_commands_and_required_topics_validate
+    assert errors == []
+E   AssertionError: assert ['candidate c...port.md', ...] == []
+E     
+E     Left contains 8 more items, first extra item: 'candidate check: missing candidate manifest: package_manifest.json'
+E     Use -v to get more diff</failure></testcase><testcase classname="" name="test_docs_distinguish_current_operation_from_future_upgrade" time="0.001" /><testcase classname="" name="test_missing_command_marker_fails_closed" time="0.049" /><testcase classname="" name="test_cli_reports_clean_rehearsal" time="0.037"><failure message="AssertionError: assert 1 == 0&#10; +  where 1 = &lt;function main at 0x000001840E4068E0&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_operations.yml', '--operati....md', '--architecture', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\docs\\EVIDENCE_ACCESS_ARCHITECTURE.md', ...])&#10; +    where &lt;function main at 0x000001840E4068E0&gt; = docs_validator.main">Enconet\tests\test_evidence_access_documentation.py:64: in test_cli_reports_clean_rehearsal
+    assert docs_validator.main([
+E   AssertionError: assert 1 == 0
+E    +  where 1 = &lt;function main at 0x000001840E4068E0&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_operations.yml', '--operati....md', '--architecture', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\docs\\EVIDENCE_ACCESS_ARCHITECTURE.md', ...])
+E    +    where &lt;function main at 0x000001840E4068E0&gt; = docs_validator.main</failure></testcase><testcase classname="" name="test_offline_policy_rejects_streamlit_and_app_server_entrypoints[streamlit run app.py]" time="0.001" /><testcase classname="" name="test_offline_policy_rejects_streamlit_and_app_server_entrypoints[uvicorn evidence_app:app]" time="0.001" /><testcase classname="" name="test_offline_policy_rejects_streamlit_and_app_server_entrypoints[python -m flask run]" time="0.001" /><testcase classname="" name="test_offline_policy_rejects_streamlit_and_app_server_entrypoints[python -m http.server]" time="0.001" /><testcase classname="" name="test_offline_policy_rejects_streamlit_and_app_server_entrypoints[gunicorn evidence_app:app]" time="0.001" /><testcase classname="" name="test_offline_policy_rejects_streamlit_and_app_server_entrypoints[hypercorn evidence_app:app]" time="0.001" /><testcase classname="" name="test_offline_policy_rejects_streamlit_and_app_server_entrypoints[python evidence_server.py]" time="0.002" /><testcase classname="" name="test_candidate_writes_are_allowed_but_published_overwrite_requires_all_gates" time="0.006" /><testcase classname="" name="test_approved_artifact_hashes_are_frozen_during_candidate_development" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_report.md'">Enconet\tests\test_evidence_access_governance.py:94: in test_approved_artifact_hashes_are_frozen_during_candidate_development
+    content = (ENCONET / relative_path).read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:625: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_report.md'</failure></testcase><testcase classname="" name="test_owner_adr_selects_offline_delivery_and_defers_any_live_service" time="0.005" /><testcase classname="" name="test_missing_owner_approval_fails_before_any_write" time="0.040" /><testcase classname="" name="test_failed_preflight_validator_leaves_baseline_unchanged" time="0.044" /><testcase classname="" name="test_hash_drift_or_stale_candidate_fails_closed[candidate]" time="0.036" /><testcase classname="" name="test_hash_drift_or_stale_candidate_fails_closed[baseline]" time="0.042" /><testcase classname="" name="test_partial_replace_is_rolled_back" time="0.066" /><testcase classname="" name="test_failed_post_validation_rolls_back_every_destination" time="0.073" /><testcase classname="" name="test_success_promotes_complete_set_and_records_hashes" time="0.077" /><testcase classname="" name="test_real_candidate_links_resolve_from_final_published_names" time="0.006"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'">Enconet\tests\test_evidence_access_promotion.py:210: in test_real_candidate_links_resolve_from_final_published_names
+    report.write_bytes((ENCONET / "outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_evaluation_report.md").read_bytes())
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:625: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</failure></testcase><testcase classname="" name="test_production_contract_records_completed_exact_five_file_promotion" time="0.025"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\evidence_access_release_manifest_RUN-20260728-01.json'">Enconet\tests\test_evidence_access_promotion.py:230: in test_production_contract_records_completed_exact_five_file_promotion
+    recorded = json.loads(result.read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\evidence_access_release_manifest_RUN-20260728-01.json'</failure></testcase><testcase classname="" name="test_protocol_pins_independent_reviewer_scope_and_approval" time="0.020" /><testcase classname="" name="test_packet_is_complete_and_records_independent_approval" time="0.120"><failure message="AssertionError: assert ['candidate m...rd.html', ...] == []&#10;  &#10;  Left contains 14 more items, first extra item: 'candidate manifest hash mismatch'&#10;  Use -v to get more diff">Enconet\tests\test_evidence_access_review_packet.py:38: in test_packet_is_complete_and_records_independent_approval
+    assert errors == []
+E   AssertionError: assert ['candidate m...rd.html', ...] == []
+E     
+E     Left contains 14 more items, first extra item: 'candidate manifest hash mismatch'
+E     Use -v to get more diff</failure></testcase><testcase classname="" name="test_packet_drift_and_incomplete_approval_fail_closed" time="0.255" /><testcase classname="" name="test_cli_reports_approved_independent_gate" time="0.115"><failure message="AssertionError: assert 1 == 0&#10; +  where 1 = &lt;function main at 0x000001840E404680&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_review_protocol.yml', '--pa...t\\docs\\reviews\\EA6.3_CLAUDE_REVIEW_PACKET.md', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])&#10; +    where &lt;function main at 0x000001840E404680&gt; = review.main">Enconet\tests\test_evidence_access_review_packet.py:66: in test_cli_reports_approved_independent_gate
+    assert review.main([
+E   AssertionError: assert 1 == 0
+E    +  where 1 = &lt;function main at 0x000001840E404680&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_review_protocol.yml', '--pa...t\\docs\\reviews\\EA6.3_CLAUDE_REVIEW_PACKET.md', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])
+E    +    where &lt;function main at 0x000001840E404680&gt; = review.main</failure></testcase><testcase classname="" name="test_corrected_uat_contract_has_exact_ten_step_owner_workflow" time="0.016" /><testcase classname="" name="test_packet_and_artifacts_validate_without_mutation" time="0.020"><failure message="AssertionError: assert ['missing UAT...package_root'] == []&#10;  &#10;  Left contains 5 more items, first extra item: 'missing UAT artifact: package_manifest.json'&#10;  Use -v to get more diff">Enconet\tests\test_evidence_access_uat.py:46: in test_packet_and_artifacts_validate_without_mutation
+    assert errors == []
+E   AssertionError: assert ['missing UAT...package_root'] == []
+E     
+E     Left contains 5 more items, first extra item: 'missing UAT artifact: package_manifest.json'
+E     Use -v to get more diff</failure></testcase><testcase classname="" name="test_packet_is_plain_language_and_records_human_decision" time="0.001" /><testcase classname="" name="test_validator_rejects_artifact_tamper_and_incomplete_approval" time="0.007"><failure message="FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package'">Enconet\tests\test_evidence_access_uat.py:64: in test_validator_rejects_artifact_tamper_and_incomplete_approval
+    shutil.copytree(PACKAGE_ROOT, root / "outputs" / "candidates" / "evidence_access" / "portable_package")
+C:\xPY\vEnv\WikiEnconet\Lib\shutil.py:591: in copytree
+    with os.scandir(src) as itr:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\portable_package'</failure></testcase><testcase classname="" name="test_cli_preflight_reports_human_gate" time="0.021"><failure message="AssertionError: assert 1 == 0&#10; +  where 1 = &lt;function main at 0x000001840E4067A0&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_uat.yml', '--packet', 'C:\\...\\Enconet\\docs\\acceptance\\EA5.4_OWNER_UAT.md', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])&#10; +    where &lt;function main at 0x000001840E4067A0&gt; = uat.main">Enconet\tests\test_evidence_access_uat.py:88: in test_cli_preflight_reports_human_gate
+    assert uat.main([
+E   AssertionError: assert 1 == 0
+E    +  where 1 = &lt;function main at 0x000001840E4067A0&gt;(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\evidence_access_uat.yml', '--packet', 'C:\\...\\Enconet\\docs\\acceptance\\EA5.4_OWNER_UAT.md', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])
+E    +    where &lt;function main at 0x000001840E4067A0&gt; = uat.main</failure></testcase><testcase classname="" name="test_middle_chunk_gets_one_previous_and_next_in_source_order" time="0.266" /><testcase classname="" name="test_context_edges_distinguish_truncation_from_document_edges" time="0.241" /><testcase classname="" name="test_first_and_last_linked_chunks_have_explicit_document_edges[CHUNK-DOC-0001-0001-expected_ids0-context_truncated_before]" time="0.265" /><testcase classname="" name="test_first_and_last_linked_chunks_have_explicit_document_edges[CHUNK-DOC-0001-0005-expected_ids1-context_truncated_after]" time="0.259" /><testcase classname="" name="test_radius_zero_is_bounded_and_explicitly_truncated" time="0.222" /><testcase classname="" name="test_maximum_radius_is_enforced_before_database_access" time="0.004" /><testcase classname="" name="test_adjacent_context_never_crosses_document_boundary" time="0.239" /><testcase classname="" name="test_hash_inconsistent_adjacent_context_fails_closed" time="0.263" /><testcase classname="" name="test_overlapping_production_windows_merge_to_reciprocal_links" time="0.002"><failure message="evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01">Enconet\tests\test_evidence_adjacent_context.py:194: in test_overlapping_production_windows_merge_to_reciprocal_links
+    registry = evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</failure></testcase><testcase classname="" name="test_evidence_checks_are_additive_ordered_and_phase_aware" time="0.001" /><testcase classname="" name="test_evidence_commands_name_exact_artifact_paths_and_browser_contract" time="0.004" /><testcase classname="" name="test_check_summary_preserves_exact_command_exit_count_and_paths" time="0.001" /><testcase classname="" name="test_broken_report_link_blocks_aggregate_while_evaluation_passes" time="0.004"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'">Enconet\tests\test_evidence_aggregate_validation.py:83: in test_broken_report_link_blocks_aggregate_while_evaluation_passes
+    shutil.copyfile(run_root / "enconet_appendix_b_evaluation_report.md", report)
+C:\xPY\vEnv\WikiEnconet\Lib\shutil.py:260: in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</failure></testcase><testcase classname="" name="test_production_bundle_matches_canonical_golden_bytes" time="0.002"><error message="failed on setup with &quot;generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json&quot;">Enconet\tests\test_evidence_bundle_cli.py:33: in production_bundle
+    return generator.build_bundle(
+Enconet\scripts\generate_evidence_bundle.py:172: in build_bundle
+    package_file = _require_file(package_path, "package")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_evidence_bundle.py:43: in _require_file
+    raise BundleGenerationError(f"{label} does not exist: {resolved}")
+E   generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json</error></testcase><testcase classname="" name="test_repeat_generation_is_byte_identical" time="0.001"><error message="failed on setup with &quot;generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json&quot;">Enconet\tests\test_evidence_bundle_cli.py:33: in production_bundle
+    return generator.build_bundle(
+Enconet\scripts\generate_evidence_bundle.py:172: in build_bundle
+    package_file = _require_file(package_path, "package")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_evidence_bundle.py:43: in _require_file
+    raise BundleGenerationError(f"{label} does not exist: {resolved}")
+E   generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json</error></testcase><testcase classname="" name="test_production_coverage_is_62_of_62" time="0.001"><error message="failed on setup with &quot;generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json&quot;">Enconet\tests\test_evidence_bundle_cli.py:33: in production_bundle
+    return generator.build_bundle(
+Enconet\scripts\generate_evidence_bundle.py:172: in build_bundle
+    package_file = _require_file(package_path, "package")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_evidence_bundle.py:43: in _require_file
+    raise BundleGenerationError(f"{label} does not exist: {resolved}")
+E   generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json</error></testcase><testcase classname="" name="test_bundle_contains_only_selected_run_evaluation_evidence" time="0.001"><error message="failed on setup with &quot;generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json&quot;">Enconet\tests\test_evidence_bundle_cli.py:33: in production_bundle
+    return generator.build_bundle(
+Enconet\scripts\generate_evidence_bundle.py:172: in build_bundle
+    package_file = _require_file(package_path, "package")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_evidence_bundle.py:43: in _require_file
+    raise BundleGenerationError(f"{label} does not exist: {resolved}")
+E   generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json</error></testcase><testcase classname="" name="test_missing_package_fails_before_publication" time="0.006" /><testcase classname="" name="test_package_database_mismatch_fails_before_publication" time="0.003"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'">Enconet\tests\test_evidence_bundle_cli.py:118: in test_package_database_mismatch_fails_before_publication
+    package = json.loads(PRODUCTION_PACKAGE.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</failure></testcase><testcase classname="" name="test_unresolved_evidence_fails_before_publication" time="0.279"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'missing chunk link'&#10;  Actual message: 'package does not exist: C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'">Enconet\tests\test_evidence_bundle_cli.py:144: in test_unresolved_evidence_fails_before_publication
+    with pytest.raises(generator.BundleGenerationError, match="missing chunk link"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'missing chunk link'
+E     Actual message: 'package does not exist: C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</failure></testcase><testcase classname="" name="test_invalid_output_path_is_rejected_before_publication" time="0.006" /><testcase classname="" name="test_approved_artifact_overwrite_is_rejected_without_gate_evidence" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_dashboard_data.json'">Enconet\tests\test_evidence_bundle_cli.py:172: in test_approved_artifact_overwrite_is_rejected_without_gate_evidence
+    original = protected.read_bytes()
+               ^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:625: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_dashboard_data.json'</failure></testcase><testcase classname="" name="test_validation_failure_preserves_existing_candidate" time="0.006"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'injected validation failure'&#10;  Actual message: 'package does not exist: C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'">Enconet\tests\test_evidence_bundle_cli.py:194: in test_validation_failure_preserves_existing_candidate
+    with pytest.raises(generator.BundleGenerationError, match="injected validation failure"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'injected validation failure'
+E     Actual message: 'package does not exist: C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</failure></testcase><testcase classname="" name="test_cli_writes_valid_candidate_atomically_and_reports_coverage" time="0.006"><failure message="generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json">Enconet\tests\test_evidence_bundle_cli.py:210: in test_cli_writes_valid_candidate_atomically_and_reports_coverage
+    result = generator.main([
+Enconet\scripts\generate_evidence_bundle.py:291: in main
+    bundle = generate(
+Enconet\scripts\generate_evidence_bundle.py:270: in generate
+    bundle = build_bundle(
+Enconet\scripts\generate_evidence_bundle.py:172: in build_bundle
+    package_file = _require_file(package_path, "package")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_evidence_bundle.py:43: in _require_file
+    raise BundleGenerationError(f"{label} does not exist: {resolved}")
+E   generate_evidence_bundle.BundleGenerationError: package does not exist: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\enconet_appendix_b_evaluation_package.json</failure></testcase><testcase classname="" name="test_invalid_generated_timestamp_fails_before_publication" time="0.005" /><testcase classname="" name="test_valid_bundle_and_machine_readable_schema_are_accepted" time="0.010" /><testcase classname="" name="test_missing_and_extra_top_level_fields_are_rejected[metadata]" time="0.010" /><testcase classname="" name="test_missing_and_extra_top_level_fields_are_rejected[lineage]" time="0.010" /><testcase classname="" name="test_missing_and_extra_top_level_fields_are_rejected[documents]" time="0.010" /><testcase classname="" name="test_missing_and_extra_top_level_fields_are_rejected[quotes]" time="0.010" /><testcase classname="" name="test_extra_nested_field_is_rejected" time="0.010" /><testcase classname="" name="test_invalid_ids_and_wrong_types_are_rejected[&lt;lambda&gt;-invalid document_id]" time="0.010" /><testcase classname="" name="test_invalid_ids_and_wrong_types_are_rejected[&lt;lambda&gt;-wrong type: quote.source_order]" time="0.011" /><testcase classname="" name="test_invalid_ids_and_wrong_types_are_rejected[&lt;lambda&gt;-invalid confidence]" time="0.011" /><testcase classname="" name="test_invalid_ids_and_wrong_types_are_rejected[&lt;lambda&gt;-invalid generated_at_utc]" time="0.010" /><testcase classname="" name="test_action_priority_matches_canonical_database_boolean_semantics" time="0.027" /><testcase classname="" name="test_chunk_context_boundary_flags_are_boolean_and_consistent" time="0.019" /><testcase classname="" name="test_duplicate_quote_ids_and_source_positions_are_rejected" time="0.030" /><testcase classname="" name="test_orphan_entity_references_are_rejected[&lt;lambda&gt;-orphan document reference]" time="0.011" /><testcase classname="" name="test_orphan_entity_references_are_rejected[&lt;lambda&gt;-orphan quote reference]" time="0.010" /><testcase classname="" name="test_orphan_entity_references_are_rejected[&lt;lambda&gt;-orphan chunk reference]" time="0.010" /><testcase classname="" name="test_orphan_entity_references_are_rejected[&lt;lambda&gt;-orphan evaluation reference]" time="0.010" /><testcase classname="" name="test_orphan_entity_references_are_rejected[&lt;lambda&gt;-orphan crumb reference]" time="0.010" /><testcase classname="" name="test_unsupported_schema_version_and_incomplete_lineage_are_rejected" time="0.019" /><testcase classname="" name="test_source_quote_order_unicode_and_canonical_bytes_are_preserved" time="0.020" /><testcase classname="" name="test_entity_indexes_must_match_their_referenced_records" time="0.019" /><testcase classname="" name="test_citation_is_deterministic_complete_and_visible" time="0.611"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_copy_print.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_copy_uses_clipboard_when_available" time="0.602"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_copy_print.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_denied_clipboard_keeps_visible_selected_fallback" time="0.632"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_copy_print.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_print_evidence_expands_selected_record_and_hides_controls" time="0.630"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_copy_print.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_resolves_complete_typed_projection_with_unicode_and_all_links" time="0.217" /><testcase classname="" name="test_connection_is_mode_ro_query_only_and_database_bytes_do_not_change" time="0.214" /><testcase classname="" name="test_single_quote_projection_remains_complete" time="0.230" /><testcase classname="" name="test_unknown_inactive_and_sql_injection_like_ids_return_no_match" time="0.396" /><testcase classname="" name="test_missing_database_is_not_created" time="0.006" /><testcase classname="" name="test_traceability_defects_fail_closed[DELETE FROM crumb_chunk_links-parameters0-missing chunk link]" time="0.268" /><testcase classname="" name="test_traceability_defects_fail_closed[DELETE FROM crumb_chunk_links; DELETE FROM crumb_quotes-parameters1-missing quote]" time="0.271" /><testcase classname="" name="test_traceability_defects_fail_closed[UPDATE crumb_chunk_links SET chunk_id='CHUNK-DOC-0001-9999' WHERE quote_id=?-parameters2-missing chunk]" time="0.236" /><testcase classname="" name="test_traceability_defects_fail_closed[UPDATE crumb_chunk_links SET chunk_id='CHUNK-DOC-0002-0001' WHERE quote_id=?-parameters3-cross-document]" time="0.267" /><testcase classname="" name="test_traceability_defects_fail_closed[UPDATE document_chunks SET source_sha256=? WHERE chunk_id=?-parameters4-source hash mismatch]" time="0.271" /><testcase classname="" name="test_one_quote_cannot_ambiguously_link_to_multiple_chunks" time="0.278" /><testcase classname="" name="test_complete_production_sample_resolves_all_three_quotes" time="0.003"><failure message="assert None is not None">Enconet\tests\test_evidence_crumb_resolver.py:267: in test_complete_production_sample_resolves_all_three_quotes
+    assert resolved is not None
+E   assert None is not None</failure></testcase><testcase classname="" name="test_renderer_embeds_one_validated_bundle_with_matching_hash" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_embedded_payload_escapes_script_html_controls_and_preserves_unicode" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_package_and_bundle_hashes_are_visible_in_artifact_metadata" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_validator_rejects_tampered_embedded_payload_or_hash" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_bundle_must_be_valid_and_match_dashboard_run_language_and_supplier" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_evidence_integration_adds_no_network_dependency" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_cli_writes_only_one_candidate_dashboard" time="0.006"><failure message="assert 1 == 0">Enconet\tests\test_evidence_dashboard_payload.py:156: in test_cli_writes_only_one_candidate_dashboard
+    assert result == 0
+E   assert 1 == 0</failure></testcase><testcase classname="" name="test_cli_rejects_published_or_wrong_run_output_before_writing" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_cli_rejects_package_bytes_that_do_not_match_bundle_lineage" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'&quot;">Enconet\tests\test_evidence_dashboard_payload.py:39: in production_inputs
+    return tuple(
+Enconet\tests\test_evidence_dashboard_payload.py:40: in &lt;genexpr&gt;
+    json.loads(path.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</error></testcase><testcase classname="" name="test_click_opens_exact_statement_document_quotes_chunk_and_traceability" time="0.588"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_each_criterion_reference_is_an_individual_control" time="0.620"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_close_escape_focus_return_and_keyboard_activation" time="0.598"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_unknown_target_shows_localized_announced_error_without_blank_panel" time="0.608"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_document_and_package_targets_show_only_the_requested_entity[#evidence/document/DOC-0024-DOC-0024]" time="0.600"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_document_and_package_targets_show_only_the_requested_entity[#evidence/source/package-RUN-20260728-01]" time="0.617"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_direct_fragment_survives_refresh_and_browser_history" time="0.698"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_open_and_close_do_not_mutate_embedded_evaluation_data" time="0.610"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_existing_filter_search_sort_expand_collapse_and_print_still_work" time="0.642"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_distribution_is_high_to_low_with_canonical_score_bands" time="0.647"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_evidence_drawer.py:44: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_every_report_reference_type_has_a_defined_presentation[crumb:CRUMB-DOC-0021-APP_B_I-0003-crumb-evidence-detail]" time="0.003"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_every_report_reference_type_has_a_defined_presentation[document:DOC-0024-document-document-metadata]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_every_report_reference_type_has_a_defined_presentation[gap:GAP-APP_B_IV-01-gap-gap-detail]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_every_report_reference_type_has_a_defined_presentation[finding:FIND-0001-finding-finding-detail]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_every_report_reference_type_has_a_defined_presentation[action:ACT-0002-action-action-detail]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_every_report_reference_type_has_a_defined_presentation[source:package-source-package-metadata]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_every_reference_currently_emitted_by_production_report_resolves" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_missing_or_malformed_reference_returns_no_match[crumb:CRUMB-DOC-0021-APP_B_I-9999]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_missing_or_malformed_reference_returns_no_match[document:DOC-9999]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_missing_or_malformed_reference_returns_no_match[gap:GAP-APP_B_I-99]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_missing_or_malformed_reference_returns_no_match[finding:FIND-9999]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_missing_or_malformed_reference_returns_no_match[action:ACT-9999]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_missing_or_malformed_reference_returns_no_match[source:missing]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_missing_or_malformed_reference_returns_no_match[malformed]" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_forward_and_reverse_lineage_is_complete_and_reference_only" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_action_primary_target_and_related_finding_are_distinct" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_gap_self_reference_is_non_recursive_and_truthful" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_relationships_are_sorted_unique_and_registry_is_deterministic" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_package_reference_has_verified_selected_run_lineage" time="0.001"><error message="failed on setup with &quot;evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01&quot;">Enconet\tests\test_evidence_entity_graph.py:27: in registry
+    return evidence_resolver.build_entity_registry(
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</error></testcase><testcase classname="" name="test_package_reference_is_missing_when_no_package_is_explicitly_supplied" time="0.002"><failure message="evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01">Enconet\tests\test_evidence_entity_graph.py:157: in test_package_reference_is_missing_when_no_package_is_explicitly_supplied
+    without_package = evidence_resolver.build_entity_registry(PRODUCTION_DB, RUN_ID)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</failure></testcase><testcase classname="" name="test_package_with_wrong_run_fails_closed" time="0.003"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'">Enconet\tests\test_evidence_entity_graph.py:163: in test_package_with_wrong_run_fails_closed
+    payload = json.loads(PRODUCTION_PACKAGE.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</failure></testcase><testcase classname="" name="test_other_run_is_excluded_unless_explicitly_included" time="0.024"><failure message="evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01">Enconet\tests\test_evidence_entity_graph.py:213: in test_other_run_is_excluded_unless_explicitly_included
+    selected = evidence_resolver.build_entity_registry(database, RUN_ID)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\evidence_resolver.py:324: in build_entity_registry
+    raise EvidenceIntegrityError(f"unknown evaluation run: {missing_runs[0]}")
+E   evidence_resolver.EvidenceIntegrityError: unknown evaluation run: RUN-20260728-01</failure></testcase><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[crumb-CRUMB-DOC-0021-APP_B_I-0003]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[document-DOC-0021]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[chunk-CHUNK-DOC-0021-0105]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[quote-QUOTE-DOC-0021-0105-01]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[evaluation-EVAL-APP_B_I]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[gap-GAP-APP_B_I-01]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[finding-FIND-0001]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[action-ACT-0001]" time="0.001" /><testcase classname="" name="test_each_entity_has_one_canonical_round_trip_target[source-package]" time="0.001" /><testcase classname="" name="test_target_builder_rejects_unknown_types_and_noncanonical_ids" time="0.001" /><testcase classname="" name="test_navigation_id_grammar_matches_the_canonical_id_registry" time="0.023" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/crumb]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/crumb/CRUMB-DOC-0021-APP_B_I-0003/extra]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#Evidence/crumb/CRUMB-DOC-0021-APP_B_I-0003]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/crumb/CRUMB%2DDOC%2D0021%2DAPP_B_I%2D0003]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/crumb/CRUMB-DOC-0021-APP_B_I-0003?x=1]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[https://example.test/#evidence/document/DOC-0021]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[javascript:alert(1)]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/document/../raw/secret.md]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/document/%2e%2e%2fraw%2fsecret.md]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/document/C:%5Craw%5Csecret.md]" time="0.001" /><testcase classname="" name="test_malformed_encoded_external_and_traversal_targets_are_rejected[#evidence/unknown/DOC-0021]" time="0.001" /><testcase classname="" name="test_unknown_well_formed_target_is_visible_failure_not_blank_panel" time="0.001" /><testcase classname="" name="test_unavailable_state_is_localized_with_a_deterministic_fallback[en-Evidence unavailable]" time="0.001" /><testcase classname="" name="test_unavailable_state_is_localized_with_a_deterministic_fallback[sl-Dokaz ni na voljo]" time="0.001" /><testcase classname="" name="test_unavailable_state_is_localized_with_a_deterministic_fallback[hr-Dokaz nije dostupan]" time="0.001" /><testcase classname="" name="test_unavailable_state_is_localized_with_a_deterministic_fallback[unsupported-Evidence unavailable]" time="0.001" /><testcase classname="" name="test_known_target_resolves_and_places_focus_on_panel_heading" time="0.001" /><testcase classname="" name="test_browser_history_has_deterministic_back_forward_behavior[activate-push]" time="0.002" /><testcase classname="" name="test_browser_history_has_deterministic_back_forward_behavior[initial_load-replace]" time="0.001" /><testcase classname="" name="test_browser_history_has_deterministic_back_forward_behavior[popstate-none]" time="0.001" /><testcase classname="" name="test_browser_history_has_deterministic_back_forward_behavior[hashchange-none]" time="0.001" /><testcase classname="" name="test_unknown_history_cause_is_rejected" time="0.001" /><testcase classname="" name="test_keyboard_focus_no_script_and_print_contract_is_explicit" time="0.016" /><testcase classname="" name="test_untrusted_evidence_is_literal_text_never_html_or_an_executable_url" time="0.016" /><testcase classname="" name="test_locator_selects_exact_occurrence_and_repeat_preserves" time="0.270" /><testcase classname="" name="test_normalized_only_quote_refused_without_writes" time="0.269" /><testcase classname="" name="test_published_and_candidate_sibling_locations_get_the_same_portable_path[report0-viewer0]" time="0.002" /><testcase classname="" name="test_published_and_candidate_sibling_locations_get_the_same_portable_path[report1-viewer1]" time="0.002" /><testcase classname="" name="test_report_citations_point_to_the_sibling_viewer_without_absolute_paths" time="0.029" /><testcase classname="" name="test_non_ascii_sibling_viewer_name_is_url_encoded" time="0.029" /><testcase classname="" name="test_portable_path_refuses_cross_directory_and_absolute_targets" time="0.029" /><testcase classname="" name="test_language_variants_preserve_run_binding_and_viewer_target[en]" time="0.030" /><testcase classname="" name="test_language_variants_preserve_run_binding_and_viewer_target[hr]" time="0.027" /><testcase classname="" name="test_moved_report_href_opens_exact_evidence_for_all_report_entity_types" time="0.025"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'">Enconet\tests\test_portable_report_links.py:94: in test_moved_report_href_opens_exact_evidence_for_all_report_entity_types
+    .read_text(encoding="utf-8")
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'</failure></testcase><testcase classname="" name="test_production_quotes_are_highlighted_without_changing_chunk_text" time="0.591"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_matcher_discloses_repetition_overlap_normalization_failure_and_unicode[alpha / alpha-quotes0-ambiguous-2]" time="0.597"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_matcher_discloses_repetition_overlap_normalization_failure_and_unicode[abcde-quotes1-exact-3]" time="0.606"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_matcher_discloses_repetition_overlap_normalization_failure_and_unicode[A \n\t B-quotes2-normalized-1]" time="0.613"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_matcher_discloses_repetition_overlap_normalization_failure_and_unicode[source remains-quotes3-not_found-0]" time="0.613"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_matcher_discloses_repetition_overlap_normalization_failure_and_unicode[x \U0001f600 \u010clanak y-quotes4-exact-1]" time="0.596"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_failed_highlight_keeps_quote_locator_chunk_and_warning" time="0.618"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_previous_next_navigation_stays_inside_document_and_stops_at_boundaries" time="0.615"><error message="failed on setup with &quot;playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html&quot;, waiting until &quot;load&quot;&quot;">Enconet\tests\test_quote_highlighting.py:38: in page
+    browser_page.goto(CANDIDATE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/RUN-20260728-01/enconet_appendix_b_dashboard.html", waiting until "load"</error></testcase><testcase classname="" name="test_promotion_registers_identical_checksum_and_locks_source" time="0.223" /><testcase classname="" name="test_duplicate_filename_and_checksum_are_rejected" time="0.229" /><testcase classname="" name="test_manifest_reader_accepts_windows_utf8_bom" time="0.006" /><testcase classname="" name="test_text_extraction_records_method_and_rejects_empty" time="0.268" /><testcase classname="" name="test_validator_names_tamper_unregistered_and_missing" time="0.256" /><testcase classname="" name="test_every_production_candidate_citation_is_valid" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_missing_viewer_file_fails_with_exact_artifact_path" time="0.004"><failure message="AssertionError: assert ['C:\\xPY\\xP...e is missing'] == ['C:\\xPY\\xP...e is missing']&#10;  &#10;  At index 0 diff: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md: report file is missing' != 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\.test-tmp\\scoring-refresh-full-pinned-20261009\\test_missing_viewer_file_fails0\\missing-viewer.html: viewer file is missing'&#10;  Use -v to get more diff">Enconet\tests\test_report_link_validator.py:82: in test_missing_viewer_file_fails_with_exact_artifact_path
+    assert errors == [f"{missing}: viewer file is missing"]
+E   AssertionError: assert ['C:\\xPY\\xP...e is missing'] == ['C:\\xPY\\xP...e is missing']
+E     
+E     At index 0 diff: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md: report file is missing' != 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\.test-tmp\\scoring-refresh-full-pinned-20261009\\test_missing_viewer_file_fails0\\missing-viewer.html: viewer file is missing'
+E     Use -v to get more diff</failure></testcase><testcase classname="" name="test_unknown_target_reports_report_location_and_target" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_duplicate_bundle_target_is_rejected_deterministically" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_extra_and_missing_repeated_report_citations_are_rejected" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_wrong_run_and_wrong_package_hash_are_rejected" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_malformed_markdown_url_is_rejected_at_its_report_location" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_stale_bundle_database_lineage_is_rejected" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_cli_exit_code_is_zero_for_candidate_and_nonzero_for_broken_copy" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'&quot;">Enconet\tests\test_report_link_validator.py:33: in artifacts
+    REPORT.read_text(encoding="utf-8"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\RUN-20260728-01\\enconet_appendix_b_evaluation_report.md'</error></testcase><testcase classname="" name="test_zero_one_and_multiple_registered_runs_are_stable" time="0.005" /><testcase classname="" name="test_duplicate_run_ids_are_rejected_before_validation" time="0.004" /><testcase classname="" name="test_missing_artifact_and_hash_mismatch_fail_closed" time="0.006" /><testcase classname="" name="test_candidate_and_approved_status_are_preserved" time="0.004" /><testcase classname="" name="test_unregistered_files_are_ignored" time="0.004" /><testcase classname="" name="test_catalog_validator_rejects_duplicate_rows_wrong_order_and_bad_hash" time="0.003" /><testcase classname="" name="test_controlled_registry_builds_one_fully_validated_production_run" time="0.005"><failure message="ValueError: bundle artifact is missing: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\evidence_bundle.json">Enconet\tests\test_review_catalog.py:145: in test_controlled_registry_builds_one_fully_validated_production_run
+    catalog = generate_review_catalog.build_catalog(registry["packages"], ENCONET)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_review_catalog.py:127: in build_catalog
+    rows = [validator(row, root) for row in packages]
+            ^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_review_catalog.py:76: in validate_entry
+    kind: _verified_artifact(entry, kind, root) for kind in ARTIFACT_KINDS
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enconet\scripts\generate_review_catalog.py:54: in _verified_artifact
+    raise ValueError(f"{kind} artifact is missing: {target}")
+E   ValueError: bundle artifact is missing: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\evidence_bundle.json</failure></testcase><testcase classname="" name="test_cli_writes_canonical_catalog_and_is_repeatable" time="0.010"><failure message="AssertionError: assert 1 == 0&#10; +  where 1 = &lt;function main at 0x000001840E405940&gt;(['--registry', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\review_packages.yml', '--output', 'C:\\xPY\...09\\test_cli_writes_canonical_cata0\\first.json', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])&#10; +    where &lt;function main at 0x000001840E405940&gt; = generate_review_catalog.main">Enconet\tests\test_review_catalog.py:162: in test_cli_writes_canonical_catalog_and_is_repeatable
+    assert generate_review_catalog.main([
+E   AssertionError: assert 1 == 0
+E    +  where 1 = &lt;function main at 0x000001840E405940&gt;(['--registry', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\schemas\\review_packages.yml', '--output', 'C:\\xPY\...09\\test_cli_writes_canonical_cata0\\first.json', '--project-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet'])
+E    +    where &lt;function main at 0x000001840E405940&gt; = generate_review_catalog.main</failure></testcase><testcase classname="" name="test_manifest_is_deterministic_complete_and_valid" time="0.004"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'">Enconet\tests\test_review_package_portability.py:42: in test_manifest_is_deterministic_complete_and_valid
+    manifest_path = _build(first)
+                    ^^^^^^^^^^^^^
+Enconet\tests\test_review_package_portability.py:28: in _build
+    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</failure></testcase><testcase classname="" name="test_portable_links_contain_no_repository_drive_or_username" time="0.004"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'">Enconet\tests\test_review_package_portability.py:59: in test_portable_links_contain_no_repository_drive_or_username
+    _build(package_root)
+Enconet\tests\test_review_package_portability.py:28: in _build
+    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</failure></testcase><testcase classname="" name="test_complete_package_passes_after_non_ascii_relocation" time="0.004"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'">Enconet\tests\test_review_package_portability.py:72: in test_complete_package_passes_after_non_ascii_relocation
+    _build(source)
+Enconet\tests\test_review_package_portability.py:28: in _build
+    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</failure></testcase><testcase classname="" name="test_missing_renamed_and_changed_files_fail_with_precise_paths" time="0.003"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'">Enconet\tests\test_review_package_portability.py:80: in test_missing_renamed_and_changed_files_fail_with_precise_paths
+    _build(missing_root)
+Enconet\tests\test_review_package_portability.py:28: in _build
+    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</failure></testcase><testcase classname="" name="test_cli_returns_nonzero_for_invalid_package" time="0.004"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'">Enconet\tests\test_review_package_portability.py:104: in test_cli_returns_nonzero_for_invalid_package
+    _build(root)
+Enconet\tests\test_review_package_portability.py:28: in _build
+    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</failure></testcase><testcase classname="" name="test_relocated_workspace_opens_exact_source_evidence_in_browser" time="0.030"><failure message="FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'">Enconet\tests\test_review_package_portability.py:115: in test_relocated_workspace_opens_exact_source_evidence_in_browser
+    _build(source)
+Enconet\tests\test_review_package_portability.py:28: in _build
+    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</failure></testcase><testcase classname="" name="test_render_is_self_contained_and_catalog_bound" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'&quot;">Enconet\tests\test_review_workspace.py:30: in catalog
+    return json.loads(CATALOG.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</error></testcase><testcase classname="" name="test_candidate_and_approved_rows_have_distinct_status_contract" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'&quot;">Enconet\tests\test_review_workspace.py:30: in catalog
+    return json.loads(CATALOG.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</error></testcase><testcase classname="" name="test_missing_or_hash_changed_artifact_is_visible_but_not_linked" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'&quot;">Enconet\tests\test_review_workspace.py:30: in catalog
+    return json.loads(CATALOG.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</error></testcase><testcase classname="" name="test_security_contract_has_no_directory_or_network_access" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'&quot;">Enconet\tests\test_review_workspace.py:30: in catalog
+    return json.loads(CATALOG.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</error></testcase><testcase classname="" name="test_browser_filters_and_keyboard_selects_registered_run" time="0.568"><failure message="playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html&quot;, waiting until &quot;load&quot;">Enconet\tests\test_review_workspace.py:112: in test_browser_filters_and_keyboard_selects_registered_run
+    page.goto(WORKSPACE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html", waiting until "load"</failure></testcase><testcase classname="" name="test_owner_opens_matched_evidence_explorer_in_one_action" time="0.602"><failure message="playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html&#10;Call log:&#10;  - navigating to &quot;file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html&quot;, waiting until &quot;load&quot;">Enconet\tests\test_review_workspace.py:132: in test_owner_opens_matched_evidence_explorer_in_one_action
+    page.goto(WORKSPACE.resolve().as_uri(), wait_until="load")
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\sync_api\_generated.py:9875: in goto
+    self._sync(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_page.py:560: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_frame.py:156: in goto
+    await self._channel.send(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+C:\xPY\vEnv\WikiEnconet\Lib\site-packages\playwright\_impl\_connection.py:632: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: Page.goto: net::ERR_FILE_NOT_FOUND at file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html
+E   Call log:
+E     - navigating to "file:///C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/outputs/candidates/evidence_access/review_workspace.html", waiting until "load"</failure></testcase><testcase classname="" name="test_validator_rejects_missing_controls_and_unregistered_run" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'&quot;">Enconet\tests\test_review_workspace.py:30: in catalog
+    return json.loads(CATALOG.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:632: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\candidates\\evidence_access\\review_catalog.json'</error></testcase><testcase classname="" name="test_twenty_examples_roundtrip" time="0.553" /><testcase classname="" name="test_invalid_optional_metadata_rejected_without_writes" time="0.417" /><testcase classname="" name="test_invalid_optional_types_and_dates[source_revision-8]" time="0.425" /><testcase classname="" name="test_invalid_optional_types_and_dates[evidence_date-2023-99-12]" time="0.403" /><testcase classname="" name="test_invalid_optional_types_and_dates[evidence_type-invented-kind]" time="0.412" /><testcase classname="" name="test_context_rolls_back_with_core_failure" time="0.417" /><testcase classname="" name="test_missing_optional_anchors_stay_missing" time="0.292" /><testcase classname="" name="test_context_migration_preview_backup_idempotence" time="0.252" /><testcase classname="" name="test_validator_rejects_taxonomy_runtime_divergence" time="0.162" /><testcase classname="" name="test_validator_rejects_scoring_weight_gap" time="0.163" /><testcase classname="test_seed_requirements" name="test_preview_is_read_only_and_deduplicates_text" time="0.039" /><testcase classname="test_seed_requirements" name="test_apply_is_idempotent_and_uses_rule_sources" time="0.042" /><testcase classname="test_seed_requirements" name="test_missing_criterion_is_rejected" time="0.043" /><testcase classname="test_seed_requirements" name="test_foreign_database_is_refused_before_open" time="0.005" /><testcase classname="test_seed_requirements" name="test_explicit_run_selection_excludes_other_active_rules" time="0.044" /><testcase classname="test_seed_requirements" name="test_missing_run_selection_is_refused" time="0.032" /><testcase classname="tests.test_blocking_validation" name="test_record_side_is_hard_enum_before_side_checks" time="0.005" /><testcase classname="tests.test_blocking_validation" name="test_error_validation_blocks_export_by_default" time="0.005" /><testcase classname="tests.test_blocking_validation" name="test_warning_only_does_not_block_export" time="0.005" /><testcase classname="tests.test_blocking_validation" name="test_explicit_override_reason_is_recorded" time="0.006" /><testcase classname="tests.test_blocking_validation" name="test_cli_override_requires_reason_and_is_visible" time="0.037" /><testcase classname="tests.test_cli_contract" name="test_query_requires_files_or_all" time="0.006" /><testcase classname="tests.test_cli_contract" name="test_missing_file_is_reported_without_crashing" time="0.014" /><testcase classname="tests.test_cli_contract" name="test_list_files_missing_directory_is_nonzero" time="0.009" /><testcase classname="tests.test_contract_drift" name="test_taxonomy_has_one_machine_readable_owner" time="0.026" /><testcase classname="tests.test_contract_drift" name="test_owner_matches_runtime_query_and_export_tables" time="0.004" /><testcase classname="tests.test_contract_drift" name="test_owner_matches_prompt_controlled_vocabulary" time="0.001" /><testcase classname="tests.test_contract_drift" name="test_existing_data_revalidates_without_migration" time="0.002"><failure message="assert 0 == 68&#10; +  where 0 = len([])">Enconet\sieving\tests\test_contract_drift.py:69: in test_existing_data_revalidates_without_migration
+    assert len(paths) == 68
+E   assert 0 == 68
+E    +  where 0 = len([])</failure></testcase><testcase classname="tests.test_docs_commands" name="test_docs_quote_only_executable_command_kinds" time="0.001" /><testcase classname="tests.test_docs_commands" name="test_every_quoted_cli_command_reaches_help" time="2.221" /><testcase classname="tests.test_docs_commands" name="test_quoted_pip_command_is_executable" time="0.592" /><testcase classname="tests.test_docs_commands" name="test_gui_mentions_are_retirement_notices_only" time="0.002" /><testcase classname="tests.test_export_sync" name="test_csv_uses_requested_column_order_and_utf8_bom" time="0.007" /><testcase classname="tests.test_export_sync" name="test_xlsx_uses_requested_columns_and_sheet_name" time="0.036" /><testcase classname="tests.test_export_sync" name="test_suffix_precedes_format_hint_then_defaults_to_xlsx[result.csv-xlsx-csv]" time="0.001" /><testcase classname="tests.test_export_sync" name="test_suffix_precedes_format_hint_then_defaults_to_xlsx[result.markdown-xlsx-md]" time="0.001" /><testcase classname="tests.test_export_sync" name="test_suffix_precedes_format_hint_then_defaults_to_xlsx[result.xlsx-csv-xlsx]" time="0.001" /><testcase classname="tests.test_export_sync" name="test_suffix_precedes_format_hint_then_defaults_to_xlsx[result-markdown-md]" time="0.001" /><testcase classname="tests.test_export_sync" name="test_suffix_precedes_format_hint_then_defaults_to_xlsx[result-None-xlsx]" time="0.001" /><testcase classname="tests.test_export_sync" name="test_export_adds_suffix_selected_by_format_hint" time="0.007" /><testcase classname="tests.test_export_sync" name="test_missing_requested_column_fails_without_output" time="0.005" /><testcase classname="tests.test_fail_closed_filter" name="test_parse_error_fails_closed" time="0.001"><failure message="IndexError: list index out of range">Enconet\sieving\tests\test_fail_closed_filter.py:18: in test_parse_error_fails_closed
+    result = run_pipeline(file_paths=[sample_file()], filter_expr="criterion_id:")
+                                      ^^^^^^^^^^^^^
+Enconet\sieving\tests\test_fail_closed_filter.py:14: in sample_file
+    return sorted((Path(__file__).parents[1] / "DATA" / "DOCUMENT").rglob("*.json"))[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range</failure></testcase><testcase classname="tests.test_fail_closed_filter" name="test_execution_error_fails_closed" time="0.002"><failure message="IndexError: list index out of range">Enconet\sieving\tests\test_fail_closed_filter.py:26: in test_execution_error_fails_closed
+    result = run_pipeline(file_paths=[sample_file()], filter_expr="criterion_id:APP_B_I")
+                                      ^^^^^^^^^^^^^
+Enconet\sieving\tests\test_fail_closed_filter.py:14: in sample_file
+    return sorted((Path(__file__).parents[1] / "DATA" / "DOCUMENT").rglob("*.json"))[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range</failure></testcase><testcase classname="tests.test_fail_closed_filter" name="test_preview_override_is_visible_and_keeps_rows" time="0.001"><failure message="IndexError: list index out of range">Enconet\sieving\tests\test_fail_closed_filter.py:32: in test_preview_override_is_visible_and_keeps_rows
+    result = run_pipeline(file_paths=[sample_file()], filter_expr="criterion_id:",
+                                      ^^^^^^^^^^^^^
+Enconet\sieving\tests\test_fail_closed_filter.py:14: in sample_file
+    return sorted((Path(__file__).parents[1] / "DATA" / "DOCUMENT").rglob("*.json"))[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range</failure></testcase><testcase classname="tests.test_fail_closed_filter" name="test_export_blocked_even_with_preview_override" time="0.004"><failure message="IndexError: list index out of range">Enconet\sieving\tests\test_fail_closed_filter.py:44: in test_export_blocked_even_with_preview_override
+    result = run_pipeline(file_paths=[sample_file()], filter_expr="criterion_id:",
+                                      ^^^^^^^^^^^^^
+Enconet\sieving\tests\test_fail_closed_filter.py:14: in sample_file
+    return sorted((Path(__file__).parents[1] / "DATA" / "DOCUMENT").rglob("*.json"))[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range</failure></testcase><testcase classname="tests.test_fail_closed_filter" name="test_cli_invalid_filter_nonzero_and_no_output" time="0.004"><failure message="IndexError: list index out of range">Enconet\sieving\tests\test_fail_closed_filter.py:54: in test_cli_invalid_filter_nonzero_and_no_output
+    cli = CliRunner().invoke(app, ["query", "--files", str(sample_file()), "--filter",
+                                                           ^^^^^^^^^^^^^
+Enconet\sieving\tests\test_fail_closed_filter.py:14: in sample_file
+    return sorted((Path(__file__).parents[1] / "DATA" / "DOCUMENT").rglob("*.json"))[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range</failure></testcase><testcase classname="tests.test_fail_closed_filter" name="test_preview_override_requires_preview_flag" time="0.001"><failure message="IndexError: list index out of range">Enconet\sieving\tests\test_fail_closed_filter.py:61: in test_preview_override_requires_preview_flag
+    cli = CliRunner().invoke(app, ["query", "--files", str(sample_file()), "--filter",
+                                                           ^^^^^^^^^^^^^
+Enconet\sieving\tests\test_fail_closed_filter.py:14: in sample_file
+    return sorted((Path(__file__).parents[1] / "DATA" / "DOCUMENT").rglob("*.json"))[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   IndexError: list index out of range</failure></testcase><testcase classname="tests.test_files_and_paths" name="test_bad_json_and_non_object_roots_are_classified" time="0.004" /><testcase classname="tests.test_files_and_paths" name="test_discovery_is_recursive_unique_and_relative_path_sorted" time="0.006" /><testcase classname="tests.test_files_and_paths" name="test_default_data_path_is_package_anchored_across_working_directories" time="0.005" /><testcase classname="tests.test_pipeline_or" name="test_run_pipeline_or_returns_union_on_real_data" time="0.001"><failure message="AssertionError: No usable *.json files found under DATA/DOCUMENT or DATA/RULE">Enconet\sieving\tests\test_pipeline_or.py:94: in test_run_pipeline_or_returns_union_on_real_data
+    file_paths = _pick_data_files()
+                 ^^^^^^^^^^^^^^^^^^
+Enconet\sieving\tests\test_pipeline_or.py:73: in _pick_data_files
+    raise AssertionError("No usable *.json files found under DATA/DOCUMENT or DATA/RULE")
+E   AssertionError: No usable *.json files found under DATA/DOCUMENT or DATA/RULE</failure></testcase><testcase classname="tests.test_query_dsl_or" name="test_or_splits_into_clauses" time="0.001" /><testcase classname="tests.test_query_dsl_or" name="test_and_precedence_over_or" time="0.001" /><testcase classname="tests.test_query_dsl_or" name="test_invalid_or_syntax_raises[OR criterion_id:APP_B_I]" time="0.001" /><testcase classname="tests.test_query_dsl_or" name="test_invalid_or_syntax_raises[criterion_id:APP_B_I OR]" time="0.001" /><testcase classname="tests.test_query_dsl_or" name="test_invalid_or_syntax_raises[criterion_id:APP_B_I AND OR criterion_id:APP_B_II]" time="0.001" /><testcase classname="tests.test_query_dsl_or" name="test_invalid_or_syntax_raises[criterion_id:APP_B_I criterion_id:APP_B_II]" time="0.001" /><testcase classname="tests.test_query_engine_or" name="test_or_returns_union" time="0.005" /><testcase classname="tests.test_query_engine_or" name="test_and_precedence_inside_or" time="0.004" /><testcase classname="tests.test_query_engine_or" name="test_mixed_or_of_and" time="0.003" /><testcase classname="tests.test_query_engine_or" name="test_empty_query_returns_all_rows" time="0.001" /><testcase classname="tests.test_tool_quarantine" name="test_only_non_mutating_manifest_verifier_remains_active" time="0.001" /><testcase classname="tests.test_tool_quarantine" name="test_archived_tool_inventory_and_tombstone" time="0.001" /><testcase classname="tests.test_tool_quarantine" name="test_no_active_tool_uses_tools_directory_as_project_root" time="0.006" /><testcase classname="tests.test_tool_quarantine" name="test_verifier_distinguishes_structure_failure_without_mutation" time="0.005" /></testsuite></testsuites>

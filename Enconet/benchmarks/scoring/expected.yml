@@ -1,7 +1,7 @@
-fixture_version: "1.0"
+fixture_version: "1.1"
 benchmark_class: scoring
-scoring_model_version: "0.1-placeholder"
-scoring_model_sha256: ff576122091c8f70cf4ce1c544f4bcec112d7d556b4e6973f21ce32d2e44ac08
+scoring_model_version: "0.2-approved"
+scoring_model_sha256: d16df4986562e3700a1825ba0a2d554997e5403a5f619817bbc6fd1d56a332ce
 verification:
   method: "Manual arithmetic cross-check against the formula and weights in scoring_model.yml"
   calculation: "100 * (3*1.00 + 3*0.75 + 3*0.50 + 3*0.25 + 2*0.00 + 2*0.00) / 16 = 46.875 -> 46.9 half-up"
