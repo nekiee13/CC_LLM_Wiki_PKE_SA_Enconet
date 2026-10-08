@@ -1,0 +1,15 @@
+task: ENCONET-G2-APPLY
+agent: codex
+status: released
+claimed_at_utc: 2026-10-08T17:03:13Z
+last_renewed_at_utc: 2026-10-08T17:03:13Z
+expires_at_utc: 2026-10-09T17:03:13Z
+anticipated_files:
+  - Enconet/manifests/approvals.csv
+  - Enconet/project-state.yml
+  - Enconet/wiki/gates/G2-RUN-20261008-17-enconet.md
+  - Enconet/db/nqa_audit.sqlite
+  - Enconet/docs/G2_APPLICABILITY_APPLIED_20261008.md
+  - Enconet/docs/G2_APPLICABILITY_APPLIED_EVIDENCE_20261008.json
+note: Apply explicit owner G2 approval through phase/gate tools and existing18-row importer; no conformance ratings.
+released_at_utc: 2026-10-08T17:08:35Z

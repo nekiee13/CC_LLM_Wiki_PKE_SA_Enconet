@@ -3,7 +3,7 @@
 On 7 October 2026 the owner authorized archiving and resetting the previous
 audit while preserving incoming documents. Archive and reset are complete.
 
-- phase: **chunked**. G1 approved; G2-G7 pending.
+- phase: **evidence_reviewed**. G1 and G2 approved; G3-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
   no old evidence or scores inherited; 2,700 new live vendor crumbs, no ratings yet.
 - Incoming: 26 vendor Markdown documents and 7 regulatory Markdown documents.
@@ -54,23 +54,24 @@ See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md
 
 The owner approved the one-record reply_to metadata correction. Coordination
 now validates with zero errors and warnings; Part II and Part 21 review notes
-are ready for publication. The exception manifest records unchanged message
+are published. The exception manifest records unchanged message
 body and audit-database hashes. Claude substantive review remains pending.
 
-Owner review draft G2-RUN-20261008-17 is now ready: 18 proposed included criteria,
-with role/activity limits and an explicit XIII exclusion conflict. No G2 decision,
-evaluation run, applicability rows or ratings have been written. Part 21 QA-program
-readiness is separate; direct NRC jurisdiction and dedication role are not presumed.
-Review [the single applicability package](../docs/G2_APPLICABILITY_OWNER_REVIEW_20261008.md)
-and approve or correct the proposed scope before formal gate recording and import.
+Owner approved G2-RUN-20261008-17. The canonical packet and 18 approved
+applicability rows are recorded under evaluation RUN-20261008-17. All 18 criteria
+are included within the documented limits; XIII has the approved limited scope.
+Part 21 remains separate. No conformance ratings have been written.
+Prepare the documentation-based assessment next using the existing five-point
+rating scale and vendor evidence, not new categories or owner-entered ratings.
+See [G2 approval and verified application](../docs/G2_APPLICABILITY_APPLIED_20261008.md).
 The owner question about
 referenced Part II sections is resolved by ASME-ENCONET-PARTII-REFS-20261008.
 Only 2.7/2.14 are included conditionally. Verify the source fragment in 2.7 section
 201 before claiming complete interpretation of that clause; other Parts 2-4 text
 remains supporting, not automatically mandatory.
 Requirements extraction and applicability precede criterion evaluation.
-All 26 vendor documents are complete. The owner's proceed
-authorizes resuming chunked; no rollback or automatic phase advance.
+All 26 vendor documents are complete. The owner's explicit G2 approval
+authorizes the recorded gate transition, not approval of later gates.
 No further prompt approval is needed
 to continue the confirmed scope. Supporting
 ASME Parts 2-4 retain flagged long converted sections for review before use.

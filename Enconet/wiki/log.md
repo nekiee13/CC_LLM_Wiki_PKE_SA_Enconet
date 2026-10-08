@@ -328,3 +328,11 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-10-08T15:35:54Z | handoffs/2026-10-08T153554Z-15e3aa4.md | partial | 15e3aa43e7974045e4149922073c2fa71d00f71a
 
 - handoff-created | 2026-10-08T16:58:40Z | handoffs/2026-10-08T165840Z-506eabc.md | partial | 506eabcb93805b48bdd4e4fad0688b0c222c3cbb
+
+- 2026-10-08T17:04:03Z | `state-transition` | chunked -> sieved; reason: All26 vendor sources and selected approved normative sources processed; explicit owner G2 approval received for applicability proposal. Source2.7/201 fragment remains flagged, not reconstructed.
+
+- 2026-10-08T17:04:54Z | `gate-decision` | G2 approved as `G2-RUN-20261008-17` by project-owner
+
+- 2026-10-08T17:04:59Z | `state-transition` | sieved -> evidence_reviewed; reason: Explicit owner G2 approval recorded in canonical packet; approved18-row applicability imported for RUN-20261008-17. No conformance ratings.
+
+- handoff-created | 2026-10-08T17:11:45Z | handoffs/2026-10-08T171145Z-24e12b9.md | partial | 24e12b9b9019d1eaf40721b584e2a291f79b0a90
