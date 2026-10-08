@@ -52,6 +52,11 @@ See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md
 
 ## Next action
 
+The owner approved the one-record reply_to metadata correction. Coordination
+now validates with zero errors and warnings; Part II and Part 21 review notes
+are ready for publication. The exception manifest records unchanged message
+body and audit-database hashes. Claude substantive review remains pending.
+
 Prepare reasoned applicability of the 18 criteria and separate Part 21 scope
 for owner G2 review, keeping governing identities stable. The owner question about
 referenced Part II sections is resolved by ASME-ENCONET-PARTII-REFS-20261008.
