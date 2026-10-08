@@ -1,0 +1,30 @@
+{
+  "template_version": "1.0.0",
+  "scope": "requirement-seed-only",
+  "status": "candidate-pending-review",
+  "source_project": "Ekonerg",
+  "source_git_head": "ea2800c9c5b9b5956bb167ac5d9a6e5635750d09",
+  "source_files": [
+    {
+      "path": "scripts/seed_requirements.py",
+      "sha256": "5f13c1a72e4a0679c12a8615b0fbf2d3e5337b6d454165bcb32a44bbeafd1c07"
+    },
+    {
+      "path": "scripts/tests/test_seed_requirements.py",
+      "sha256": "1c8ed8ab86a7ebd190e86fa09f23749f90ed3db421880f971d44f742c3031ef2"
+    }
+  ],
+  "format_note": "LF payload. Adapted existing seeder to require explicit active RULE-run selection; test mocks are portable. Pre-release candidate journals retain earlier hashes.",
+  "files": [
+    {
+      "path": "scripts/seed_requirements.py",
+      "sha256": "66af923d17ea18022e9ab6973f02b0f4a970d1a375aba499b1373d0a466d5db7",
+      "bytes": 4854
+    },
+    {
+      "path": "scripts/tests/test_seed_requirements.py",
+      "sha256": "f2674632c74b3fb39a75e5af068a04cbd21eb8eda2df31de9107385a9f65b56b",
+      "bytes": 4136
+    }
+  ]
+}

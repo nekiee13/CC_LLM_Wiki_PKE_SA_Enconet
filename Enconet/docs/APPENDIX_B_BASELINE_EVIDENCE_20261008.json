@@ -1,0 +1,218 @@
+{
+  "vendor_before": {
+    "crumbs": "6e29fe52afd151ce98d870d5a9c221c291250df5de440b48857a24d548140455",
+    "quotes": "958fa040801a0583b7bb676a84239df92a4d5013edd48e30e2766114546a39ae",
+    "links": "00889587f9b19dc6fdfd5dc7689173eb74ab0ec4d4f9c2e202d5692057bca174",
+    "context": "0eab8ecad3f4559ab500731e34c8a0825ea66a3b1f385eeb0120ad9d93d268e3"
+  },
+  "vendor_after": {
+    "crumbs": "6e29fe52afd151ce98d870d5a9c221c291250df5de440b48857a24d548140455",
+    "quotes": "958fa040801a0583b7bb676a84239df92a4d5013edd48e30e2766114546a39ae",
+    "links": "00889587f9b19dc6fdfd5dc7689173eb74ab0ec4d4f9c2e202d5692057bca174",
+    "context": "0eab8ecad3f4559ab500731e34c8a0825ea66a3b1f385eeb0120ad9d93d268e3"
+  },
+  "vendor_unchanged": true,
+  "vendor_snapshot_command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); ids=['RUN-20261007-'+str(n).zfill(2) for n in range(1,15)]+['RUN-20261008-'+str(n).zfill(2) for n in range(1,13)]; ph=','.join('?' for _ in ids); queries={'crumbs':'SELECT * FROM crumbs WHERE sieve_run_id IN ('+ph+') ORDER BY item_id','quotes':'SELECT q.* FROM crumb_quotes q JOIN crumbs c ON c.item_id=q.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY q.quote_id','links':'SELECT l.* FROM crumb_chunk_links l JOIN crumbs c ON c.item_id=l.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY l.quote_id,l.chunk_id','context':'SELECT x.* FROM crumb_context x JOIN crumbs c ON c.item_id=x.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY x.item_id'}; print(json.dumps({k:hashlib.sha256(json.dumps(c.execute(v,ids).fetchall()).encode()).hexdigest() for k,v in queries.items()}))\"",
+  "requirement_check_command": "python -c \"import json,sqlite3; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); c.row_factory=sqlite3.Row; rows=[dict(r) for r in c.execute('SELECT r.*,q.quote_original,k.doc_id,k.chunk_text,a.authority_role,a.source_code FROM requirements r JOIN crumbs b ON b.item_id=r.source_item_id JOIN crumb_quotes q ON q.item_id=b.item_id JOIN crumb_chunk_links l ON l.quote_id=q.quote_id JOIN document_chunks k ON k.chunk_id=l.chunk_id JOIN crumb_authority_refs a ON a.item_id=b.item_id')]; assert len(rows)==18 and len({r['criterion_id'] for r in rows})==18; assert all(r['doc_id']=='DOC-0028' and r['quote_original'] in r['chunk_text'] and r['authority_role']=='GOVERNING' and r['source_code']=='10CFR50_APPB' for r in rows); print(json.dumps({'requirements':[{k:r[k] for k in ['requirement_id','criterion_id','source_item_id']} for r in rows],'criteria':18,'exact_governing_links':18,'vendor_crumbs':c.execute('SELECT count(*) FROM active_crumbs WHERE document_side=?',('DOCUMENT',)).fetchone()[0],'rule_crumbs':c.execute('SELECT count(*) FROM active_crumbs WHERE document_side=?',('RULE',)).fetchone()[0],'run':dict(c.execute('SELECT * FROM sieve_runs WHERE run_id=?',('RUN-20261008-13',)).fetchone()),'journals':[json.loads(line) for f in sorted(Path('Enconet/.bootstrap/requirement-seed-v1').glob('REQ-SEED-20261008-*.jsonl')) for line in f.read_text(encoding='utf-8').splitlines()]}))\"",
+  "requirements": [
+    {
+      "requirement_id": "REQ-APP_B_I-01",
+      "criterion_id": "APP_B_I",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_I-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_II-01",
+      "criterion_id": "APP_B_II",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_II-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_III-01",
+      "criterion_id": "APP_B_III",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_III-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_IV-01",
+      "criterion_id": "APP_B_IV",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_IV-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_IX-01",
+      "criterion_id": "APP_B_IX",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_IX-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_V-01",
+      "criterion_id": "APP_B_V",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_V-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_VI-01",
+      "criterion_id": "APP_B_VI",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_VI-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_VII-01",
+      "criterion_id": "APP_B_VII",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_VII-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_VIII-01",
+      "criterion_id": "APP_B_VIII",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_VIII-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_X-01",
+      "criterion_id": "APP_B_X",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_X-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XI-01",
+      "criterion_id": "APP_B_XI",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XI-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XII-01",
+      "criterion_id": "APP_B_XII",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XII-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XIII-01",
+      "criterion_id": "APP_B_XIII",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XIII-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XIV-01",
+      "criterion_id": "APP_B_XIV",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XIV-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XV-01",
+      "criterion_id": "APP_B_XV",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XV-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XVI-01",
+      "criterion_id": "APP_B_XVI",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XVI-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XVII-01",
+      "criterion_id": "APP_B_XVII",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XVII-0001"
+    },
+    {
+      "requirement_id": "REQ-APP_B_XVIII-01",
+      "criterion_id": "APP_B_XVIII",
+      "source_item_id": "CRUMB-DOC-0028-APP_B_XVIII-0001"
+    }
+  ],
+  "criteria": 18,
+  "exact_governing_links": 18,
+  "vendor_crumbs": 2700,
+  "rule_crumbs": 18,
+  "run": {
+    "run_id": "RUN-20261008-13",
+    "doc_id": "DOC-0028",
+    "prompt_version": "appb_rule_v1",
+    "document_side": "RULE",
+    "source_rule": "10CFR50_APPB",
+    "generation": 1,
+    "status": "active",
+    "is_active": 1,
+    "supersedes_run_id": null,
+    "completed_at": "2026-10-08 13:02:18",
+    "decision_ref": null,
+    "rejected_item_count": 0,
+    "failed_item_count": 0,
+    "started_at": "2026-10-08 13:02:17"
+  },
+  "journals": [
+    {
+      "event": "start",
+      "manifest_sha256": "ef916860e503fea8ac687ec926eb5d24a178bcab53f694ba05b8111f7f809acc",
+      "run_id": "REQ-SEED-20261008-01",
+      "target": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet",
+      "template_version": "1.0.0"
+    },
+    {
+      "event": "intent",
+      "path": "scripts/seed_requirements.py",
+      "sha256": "5f13c1a72e4a0679c12a8615b0fbf2d3e5337b6d454165bcb32a44bbeafd1c07"
+    },
+    {
+      "event": "created",
+      "path": "scripts/seed_requirements.py",
+      "sha256": "5f13c1a72e4a0679c12a8615b0fbf2d3e5337b6d454165bcb32a44bbeafd1c07"
+    },
+    {
+      "event": "intent",
+      "path": "scripts/tests/test_seed_requirements.py",
+      "sha256": "1c8ed8ab86a7ebd190e86fa09f23749f90ed3db421880f971d44f742c3031ef2"
+    },
+    {
+      "event": "preserved",
+      "path": "scripts/tests/test_seed_requirements.py",
+      "sha256": "1c8ed8ab86a7ebd190e86fa09f23749f90ed3db421880f971d44f742c3031ef2"
+    },
+    {
+      "created": 1,
+      "event": "complete",
+      "preserved": 1
+    },
+    {
+      "event": "start",
+      "manifest_sha256": "e6b4b85b09c05ca921627d781732da3e1c389a3f151573fdac3f7078c1c1877b",
+      "run_id": "REQ-SEED-20261008-02",
+      "target": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet",
+      "template_version": "1.0.0"
+    },
+    {
+      "event": "intent",
+      "path": "scripts/seed_requirements.py",
+      "sha256": "5f13c1a72e4a0679c12a8615b0fbf2d3e5337b6d454165bcb32a44bbeafd1c07"
+    },
+    {
+      "event": "preserved",
+      "path": "scripts/seed_requirements.py",
+      "sha256": "5f13c1a72e4a0679c12a8615b0fbf2d3e5337b6d454165bcb32a44bbeafd1c07"
+    },
+    {
+      "event": "intent",
+      "path": "scripts/tests/test_seed_requirements.py",
+      "sha256": "97c8966743dff27f92af680f4f7e9d6c25ae58126a403944c481e628ecc6782c"
+    },
+    {
+      "event": "preserved",
+      "path": "scripts/tests/test_seed_requirements.py",
+      "sha256": "97c8966743dff27f92af680f4f7e9d6c25ae58126a403944c481e628ecc6782c"
+    },
+    {
+      "created": 0,
+      "event": "complete",
+      "preserved": 2
+    }
+  ],
+  "scope_note": "Final seeder requires explicit active RULE-run selection. RUN-20261008-13 preview/apply is idempotent and retains the 18 governing baseline identities; future Part21 or interpretive runs are not silently swept into this baseline.",
+  "test_command": "python -m pytest -q -p no:cacheprovider Enconet/scripts/tests/test_seed_requirements.py audit_template/tests/test_requirement_seed_bundle.py --basetemp Enconet/.test-tmp/req-seed-20261008-e",
+  "test_exit_code": 0,
+  "test_count": 8,
+  "final_test_command": "python -m pytest -q -p no:cacheprovider Enconet/scripts/tests/test_seed_requirements.py audit_template/tests/test_requirement_seed_bundle.py --basetemp Enconet/.test-tmp/req-seed-20261008-h",
+  "final_test_count": 10,
+  "final_test_exit_code": 0,
+  "final_runtime_matrix": {
+    "companies": [
+      "Company With Spaces",
+      "Županija audit"
+    ],
+    "sibling_states": [
+      false,
+      true
+    ],
+    "normal_commands": [
+      "preview",
+      "apply",
+      "repeat apply"
+    ],
+    "other_company_changes": 0
+  }
+}
