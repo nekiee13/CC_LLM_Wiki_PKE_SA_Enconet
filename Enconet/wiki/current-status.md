@@ -5,7 +5,7 @@ audit while preserving incoming documents. Archive and reset are complete.
 
 - phase: **chunked**. G1 approved; G2-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
-  no old evidence or scores inherited; 1,668 new live vendor crumbs, no ratings yet.
+  no old evidence or scores inherited; 1,895 new live vendor crumbs, no ratings yet.
 - Incoming: 26 vendor Markdown documents and 7 regulatory Markdown documents.
 - Three other files are preserved but excluded from intake: `.gitkeep`,
   `desktop.ini`, and the owner's conversion-instruction note.
@@ -31,19 +31,19 @@ Owner approved the [G1 source basis](../docs/SOURCE_BASIS_APPROVED_20261007.md),
 including NQA-1:2015, the Enconet-only boundary and Croatian reports.
 Full keyword recall is complete: 4,183 vendor passage leads (not automatically accepted crumbs)
 and 2,992 regulatory/supporting leads across all 33 sources. Semantic review
-is complete for the QA plan, quality manual and fifteen procedures/instructions; 9 vendor
+is complete for the QA plan, quality manual and sixteen procedures/instructions; 8 vendor
 documents remain.
 The owner approved the 20 expected golden examples. The v3 context-storage
 gap is fixed: 23 regression tests passed and all 20 examples round-tripped on
 an isolated database copy with exact chapter links. That check was diagnostic;
-the seventeen real runs now contain 1,668 vendor crumbs with 2,939 exact quote links.
+the eighteen real runs now contain 1,895 vendor crumbs with 3,451 exact quote links.
 See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md).
 
 ## Next action
 
-Continue full vendor sieving with RELAP5 DOC-0019, then AOV diagnostic
-DOC-0020 and design-basis review DOC-0021, sized to actual source length.
-Seventeen of 26 vendor documents are complete; 9 remain. The owner's proceed
+Continue full vendor sieving with AOV diagnostic DOC-0020 and
+design-basis review DOC-0021, sized to actual source length.
+Eighteen of 26 vendor documents are complete; 8 remain. The owner's proceed
 authorizes resuming chunked; no rollback or automatic phase advance.
 No further prompt approval is needed
 to continue the confirmed scope. Supporting
@@ -56,5 +56,6 @@ See [contract, design and audit batch and current total](../docs/CONTRACT_DESIGN
 See [nonconformance, corrective-action and risk batch and current total](../docs/NC_CA_RISK_BATCH_20261007.md).
 See [IT, objectives and trainee batch and current total](../docs/IT_OBJECTIVES_TRAINING_BATCH_20261007.md).
 See [software batch and current total](../docs/SOFTWARE_BATCH_20261008.md).
+See [full RELAP5 run and current total](../docs/RELAP5_SIEVING_20261008.md).
 
 See [reset record](../docs/ENCONET_RESET_20261007.md).

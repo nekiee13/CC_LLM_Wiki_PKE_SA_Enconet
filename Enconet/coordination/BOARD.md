@@ -321,10 +321,11 @@ and ADRs are the records.
 - `CX_2026-10-07T202343Z_nc-corrective-risk-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 - `CX_2026-10-07T210038Z_it-objectives-training-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 - `CX_2026-10-08T011244Z_software-controls-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
+- `CX_2026-10-08T012200Z_relap5-full-source-run` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-08T011242Z-6171ef0.md`](../handoffs/2026-10-08T011242Z-6171ef0.md)
+- Authoritative record: [`handoffs/2026-10-08T012157Z-d172158.md`](../handoffs/2026-10-08T012157Z-d172158.md)
 - Archive: 758 records in `coordination/archive/`
 
-Generated: 2026-10-08T01:12:44Z
+Generated: 2026-10-08T01:22:00Z
