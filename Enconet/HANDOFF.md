@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-08T140247Z-ea2800c.md`](handoffs/2026-10-08T140247Z-ea2800c.md)
+**Authoritative record:** [`handoffs/2026-10-08T143515Z-741a004.md`](handoffs/2026-10-08T143515Z-741a004.md)
 
-**Status:** partial · **Git:** `ea2800c` · **Agent:** codex · **Created:** 2026-10-08T14:02:47Z
+**Status:** partial · **Git:** `741a004` · **Agent:** codex · **Created:** 2026-10-08T14:35:15Z
 
-**Exact next action:** Process ASME NQA-1:2015 Part1 DOC-0030 as INTERPRETIVE under active RULE v1 and G1; keep governing18 requirement identities and vendor data frozen. Do not seed another run over existing conflicting baseline. Part21 remains separate; Parts2-4 supporting.
+**Exact next action:** Process Part21 DOC-0027 separately under RULE v1/G1; do not mix into 18-criterion score. Resolve owner scope question about explicitly referenced PartII2.7/2.14 before processing those sections. Then prepare G2 applicability using 18 governing parents plus168 interpretive items and vendor evidence.

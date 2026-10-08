@@ -33,8 +33,11 @@ Full keyword recall is complete: 4,183 vendor passage leads (not automatically a
 and 2,992 regulatory/supporting leads across all 33 sources. Semantic review
 is complete for all 26 vendor sources, including work/organization rules.
 No vendor document remains unsieved. Governing Appendix B DOC-0028 now has
-18 RULE crumbs and 18 requirement rows, all exact-linked. NQA-1 interpretation
-and separate Part 21 processing remain pending.
+18 governing RULE crumbs and 18 requirement rows, all exact-linked. NQA-1:2015
+Part 1 DOC-0030 is now fully read and mapped: 168 interpretive RULE crumbs,
+376 exact chapter links, all 18 criteria. Governing identities and vendor evidence
+are unchanged. Explicit Part II references await an owner scope clarification;
+no Part II controls were imported. Separate Part 21 processing remains pending.
 The owner approved the 20 expected golden examples. The v3 context-storage
 gap is fixed: 23 regression tests passed and all 20 examples round-tripped on
 an isolated database copy with exact chapter links. That check was diagnostic;
@@ -43,9 +46,10 @@ See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md
 
 ## Next action
 
-Process interpretive NQA-1:2015 Part 1 DOC-0030 under RULE v1 and approved G1
-basis, keeping the 18 governing requirement identities stable. Keep Part 21 separate
-from the 18-criterion score and Parts 2-4 supporting, not automatically mandatory.
+Process Part 21 DOC-0027 separately under RULE v1 and approved G1 basis,
+keeping the 18 governing requirement identities stable. Resolve the owner question
+about Part II sections explicitly referenced from Part I before using those sections.
+Keep Parts 2-4 supporting, not automatically mandatory.
 Requirements extraction and applicability precede criterion evaluation.
 All 26 vendor documents are complete. The owner's proceed
 authorizes resuming chunked; no rollback or automatic phase advance.
@@ -66,5 +70,6 @@ See [feedback, process and project batch and current total](../docs/PERFORMANCE_
 See [MTE and operating-experience batch and current total](../docs/MTE_OE_BATCH_20261008.md).
 See [complete vendor inventory, final organization run and next stage](../docs/FULL_VENDOR_SIEVING_COMPLETE_20261008.md).
 See [governing Appendix B baseline and reusable seeding tool](../docs/APPENDIX_B_BASELINE_20261008.md).
+See [ASME Part 1 interpretation, exact evidence and scope question](../docs/NQA1_PART1_INTERPRETATION_20261008.md).
 
 See [reset record](../docs/ENCONET_RESET_20261007.md).

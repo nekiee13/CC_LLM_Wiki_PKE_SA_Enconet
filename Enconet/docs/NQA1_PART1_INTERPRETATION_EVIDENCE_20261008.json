@@ -1,0 +1,131 @@
+{
+  "run_id": "RUN-20261008-14",
+  "doc_id": "DOC-0030",
+  "source_sha256": "8e26ceadaf42cdedbee5505268b3610b2a33951c4b7d01626df7d0522a32d41b",
+  "results": {
+    "vendor_documents_complete": 26,
+    "vendor_crumbs": 2700,
+    "vendor_links": 5171,
+    "governing_crumbs": 18,
+    "governing_requirements": 18,
+    "interpretive_crumbs": 168,
+    "interpretive_quotes": 376,
+    "interpretive_exact_links": 376,
+    "total_crumbs": 2886,
+    "total_links": 5565,
+    "part2_scope_answer_pending": true
+  },
+  "frozen_before": {
+    "vendor": {
+      "crumbs": "6e29fe52afd151ce98d870d5a9c221c291250df5de440b48857a24d548140455",
+      "quotes": "958fa040801a0583b7bb676a84239df92a4d5013edd48e30e2766114546a39ae",
+      "links": "00889587f9b19dc6fdfd5dc7689173eb74ab0ec4d4f9c2e202d5692057bca174",
+      "context": "0eab8ecad3f4559ab500731e34c8a0825ea66a3b1f385eeb0120ad9d93d268e3"
+    },
+    "governing": {
+      "requirements": "1dc2bc5c94cc6ebbd16c3692ec3c18dff132023b8fe1590b6eea82ee4fcf0db4",
+      "gov_crumbs": "4a9fbaa6f15ea60c73443496ce6c67b5406fc423904653c21e486807a6107345",
+      "gov_quotes": "e587d873182ebc0f13b9fa4b63c3b7f2e3e3c5556ecbc60ba95bc65eff263023",
+      "gov_links": "0d44f9c08de508b487077ff78121dfc4cfc4cfa9820c8bc7b0f3c54763f8ffb9",
+      "gov_authorities": "8c68cdacaf3ec7b381243e7d622cffee376a267acf1d7b872bcd691c7724a0ac"
+    }
+  },
+  "frozen_after": {
+    "vendor": {
+      "crumbs": "6e29fe52afd151ce98d870d5a9c221c291250df5de440b48857a24d548140455",
+      "quotes": "958fa040801a0583b7bb676a84239df92a4d5013edd48e30e2766114546a39ae",
+      "links": "00889587f9b19dc6fdfd5dc7689173eb74ab0ec4d4f9c2e202d5692057bca174",
+      "context": "0eab8ecad3f4559ab500731e34c8a0825ea66a3b1f385eeb0120ad9d93d268e3"
+    },
+    "governing": {
+      "requirements": "1dc2bc5c94cc6ebbd16c3692ec3c18dff132023b8fe1590b6eea82ee4fcf0db4",
+      "gov_crumbs": "4a9fbaa6f15ea60c73443496ce6c67b5406fc423904653c21e486807a6107345",
+      "gov_quotes": "e587d873182ebc0f13b9fa4b63c3b7f2e3e3c5556ecbc60ba95bc65eff263023",
+      "gov_links": "0d44f9c08de508b487077ff78121dfc4cfc4cfa9820c8bc7b0f3c54763f8ffb9",
+      "gov_authorities": "8c68cdacaf3ec7b381243e7d622cffee376a267acf1d7b872bcd691c7724a0ac"
+    }
+  },
+  "checks": [
+    {
+      "command": "python Enconet/scripts/validate_app_b_json.py Enconet/sieving/runs/RUN-20261008-14/generated.json --strict",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python -c \"import sqlite3,json; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); p=json.loads(Path('Enconet/sieving/runs/RUN-20261008-14/generated.json').read_text(encoding='utf-8')); rows=c.execute('SELECT chunk_id,heading_path,chunk_text FROM document_chunks WHERE doc_id=?',('DOC-0030',)).fetchall(); errors=[(i['item_id'],n) for i in p['items'] for n,q in enumerate(i['evidence_quotes']) if len([r for r in rows if r[1]==q['source_locator'] and q['quote_original'] in r[2]])!=1]; print(json.dumps({'items':len(p['items']),'quotes':sum(len(i['evidence_quotes']) for i in p['items']),'exact_unique_chapter_errors':errors})); assert not errors; assert not c.execute('SELECT 1 FROM sieve_runs WHERE doc_id=?',('DOC-0030',)).fetchone()\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "376/376 quotations found in exactly one registered chapter before import; no prior DOC-0030 run."
+    },
+    {
+      "command": "python Enconet/scripts/link_exact_run.py --run-id RUN-20261008-14",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "Pre-apply:376 new exact links; retry:0 new links,376 existing preserved."
+    },
+    {
+      "command": "python Enconet/scripts/link_exact_run.py --run-id RUN-20261008-14 --apply",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "376 exact links added only to selected new run."
+    },
+    {
+      "command": "python -c \"import sqlite3,json; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); r=Path('Enconet/sieving/runs/RUN-20261008-14'); m=json.loads((r/'interpretation-map.json').read_text(encoding='utf-8')); parents=dict(c.execute('SELECT criterion_id,requirement_id FROM requirements')); bad=[a['crumb_id'] for a in m['items'] if parents.get(a['criterion_id'])!=a['governing_requirement_id'] or c.execute('SELECT criterion_id,statement FROM crumbs WHERE item_id=? AND sieve_run_id=?',(a['crumb_id'],m['run_id'])).fetchone()!=(a['criterion_id'],a['statement'])]; assert not bad; assert c.execute('SELECT count(*) FROM crumb_authority_refs a JOIN crumbs b ON a.item_id=b.item_id WHERE b.sieve_run_id=? AND a.authority_role!=?',(m['run_id'],'INTERPRETIVE')).fetchone()[0]==0; links=c.execute('SELECT count(*),sum(CASE WHEN instr(d.chunk_text,q.quote_original)>0 THEN 1 ELSE 0 END) FROM crumb_chunk_links l JOIN crumbs b ON b.item_id=l.item_id JOIN crumb_quotes q ON q.quote_id=l.quote_id JOIN document_chunks d ON d.chunk_id=l.chunk_id WHERE b.sieve_run_id=?',(m['run_id'],)).fetchone(); assert links==(376,376); counts=c.execute('SELECT document_side,count(*) FROM crumbs GROUP BY document_side').fetchall(); print(json.dumps({'mapped_items':len(m['items']),'governing_parents':len(parents),'crosswalk_errors':bad,'exact_links':links,'crumb_counts':counts}))\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "All168 expected crumb IDs/statements match live DB,18 governing parents match; all authorities INTERPRETIVE;376/376 linked quotes exact."
+    },
+    {
+      "command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); ids=['RUN-20261007-'+str(n).zfill(2) for n in range(1,15)]+['RUN-20261008-'+str(n).zfill(2) for n in range(1,13)]; ph=','.join('?' for _ in ids); queries={'crumbs':'SELECT * FROM crumbs WHERE sieve_run_id IN ('+ph+') ORDER BY item_id','quotes':'SELECT q.* FROM crumb_quotes q JOIN crumbs c ON c.item_id=q.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY q.quote_id','links':'SELECT l.* FROM crumb_chunk_links l JOIN crumbs c ON c.item_id=l.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY l.quote_id,l.chunk_id','context':'SELECT x.* FROM crumb_context x JOIN crumbs c ON c.item_id=x.item_id WHERE c.sieve_run_id IN ('+ph+') ORDER BY x.item_id'}; print(json.dumps({k:hashlib.sha256(json.dumps(c.execute(v,ids).fetchall()).encode()).hexdigest() for k,v in queries.items()}))\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "All four vendor table-group hashes match pre-run snapshot."
+    },
+    {
+      "command": "python -c \"import json,hashlib; from pathlib import Path; p=Path('Enconet'); plan=json.loads(Path('reset-plans/enconet-reset-20261007-reviewed.json').read_text(encoding='utf-8')); rows=plan['incoming_files']; bad=[r['relative_path'] for r in rows if not (p/r['relative_path']).is_file() or hashlib.sha256((p/r['relative_path']).read_bytes()).hexdigest()!=r['sha256']]; actual={x.relative_to(p).as_posix() for x in (p/'incoming').rglob('*') if x.is_file()}; expected={r['relative_path'] for r in rows}; print(json.dumps({'files':len(rows),'hash_mismatches':bad,'unexpected_files':sorted(actual-expected),'missing_files':sorted(expected-actual)})); assert not bad and actual==expected\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "36/36 files hash-exact; no missing or unexpected files."
+    },
+    {
+      "command": "python Enconet/scripts/validate_requirements.py --no-record",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/validate_traceability.py --no-record",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/run_all_validations.py --no-record",
+      "exit_code": 1,
+      "result": "failed",
+      "summary": "First post-import run: canonical root metrics.json/md absent because output went to nested metrics directory. No evidence integrity failure."
+    },
+    {
+      "command": "python Enconet/scripts/sieve_metrics.py --run-id RUN-20261008-14 --output-dir Enconet/sieving/runs/RUN-20261008-14",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "Final metrics written at required canonical run root."
+    },
+    {
+      "command": "python Enconet/scripts/run_all_validations.py --no-record",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "Final:4 phase-appropriate checks pass; downstream stages skipped at phase chunked. JSON/traceability/requirements checked separately."
+    }
+  ],
+  "diagnostic_failures": [
+    "First exact-quote SQL used a nonexistent chunks table (exit1); corrected to document_chunks before creating the run.",
+    "An inline crosswalk SQL command had a PowerShell quoting error (exit1); corrected read-only command passed.",
+    "Block coverage builder first flagged five '(15)' edition marks; all were explicitly recorded as format artifacts, not omitted normative controls.",
+    "Missing-path lookup and access-denied broad file discovery were diagnostic errors, not passed validations."
+  ],
+  "downstream": {
+    "criterion_applicability": "pending G2",
+    "evaluation": "not performed",
+    "score": "not calculated",
+    "review": "Claude deferred"
+  }
+}

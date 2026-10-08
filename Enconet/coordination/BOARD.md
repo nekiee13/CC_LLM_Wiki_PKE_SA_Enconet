@@ -327,10 +327,11 @@ and ADRs are the records.
 - `CX_2026-10-08T053036Z_mte-operating-experience-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 - `CX_2026-10-08T055547Z_all-vendor-sources-complete` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
 - `CX_2026-10-08T140250Z_governing-appendix-b-baseline` — review_request, codex -> claude-code: ENCONET-REGULATORY-BASELINE
+- `CX_2026-10-08T143356Z_enconet-nqa1-part1-interpretation` — review_request, codex -> claude-code: ENCONET-NQA1-INTERPRETATION
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-08T140247Z-ea2800c.md`](../handoffs/2026-10-08T140247Z-ea2800c.md)
 - Archive: 758 records in `coordination/archive/`
 
-Generated: 2026-10-08T14:02:52Z
+Generated: 2026-10-08T14:33:56Z
