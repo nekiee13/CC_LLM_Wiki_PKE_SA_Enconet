@@ -3,10 +3,10 @@
 On 7 October 2026 the owner authorized archiving and resetting the previous
 audit while preserving incoming documents. Archive and reset are complete.
 
-- phase: **evidence_reviewed**. G1 and G2 approved; G3-G7 pending.
+- phase: **evaluated**. G1-G3 approved; G4-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
   no old evidence or scores inherited; 2,700 new live vendor crumbs; 18 fresh
-  documentation-based ratings now give 80.6% (1450/1800), pending G3 review.
+  documentation-based ratings give owner-approved 80.6% (1450/1800).
 - Incoming: 26 vendor Markdown documents and 7 regulatory Markdown documents.
 - Three other files are preserved but excluded from intake: `.gitkeep`,
   `desktop.ini`, and the owner's conversion-instruction note.
@@ -63,10 +63,15 @@ applicability rows are recorded under evaluation RUN-20261008-17. All 18 criteri
 are included within the documented limits; XIII has the approved limited scope.
 Part 21 remains separate. All 18 conformance ratings are now written under
 the existing five-point model: 6 fully, 10 substantially, 2 partially; 80.6%.
-The model numeric calibration and result approval remain pending G3.
-Review [the documented assessment and priorities](../docs/CONFORMANCE_ASSESSMENT_20261008.md)
-and [G3 packet](gates/G3-RUN-20261008-17-enconet.md). Scope/source/earlier rows
-are unchanged; no new rating categories or owner-entered judgments were added.
+Owner approved G3-RUN-20261008-17. Model0.2-approved retains every numeric
+value; original calculation model/run stamp and ratings are unchanged.
+The evidence bundle resolves134/134 unique referenced crumbs. Evaluated
+aggregate passes10 phase checks. Scope/source/earlier rows are unchanged.
+See [G3 approval and current benchmark-policy permission](../docs/G3_APPROVAL_20261008.md).
+Scoring benchmark metadata remains on0.1 and fails version/hash comparison;
+separate owner permission requested to refresh only fixture metadata.
+Next content batch is draft gaps/findings and concrete auditor actions;
+no new categories or owner-entered judgments are needed.
 See [G2 approval and verified application](../docs/G2_APPLICABILITY_APPLIED_20261008.md).
 The owner question about
 referenced Part II sections is resolved by ASME-ENCONET-PARTII-REFS-20261008.

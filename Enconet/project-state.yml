@@ -1,12 +1,12 @@
 # Fresh audit cycle after owner-approved archived reset on 7 October 2026.
 # No source intake, scope, prompt or result approval is inherited.
-phase: evidence_reviewed
+phase: evaluated
 supplier: enconet
 deliverable_language: hr
 gates:
   G1: {status: approved, date: 2026-10-07, decision_ref: G1-ENCONET-20261007-SOURCES}
   G2: {status: approved, date: 2026-10-08, decision_ref: G2-RUN-20261008-17}
-  G3: {status: pending, date: null, decision_ref: null}
+  G3: {status: approved, date: 2026-10-08, decision_ref: G3-RUN-20261008-17}
   G4: {status: pending, date: null, decision_ref: null}
   G5: {status: pending, date: null, decision_ref: null}
   G6: {status: pending, date: null, decision_ref: null}

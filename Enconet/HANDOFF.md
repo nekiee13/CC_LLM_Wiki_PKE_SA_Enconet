@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-08T183336Z-078b30a.md`](handoffs/2026-10-08T183336Z-078b30a.md)
+**Authoritative record:** [`handoffs/2026-10-08T202840Z-8ad5fee.md`](handoffs/2026-10-08T202840Z-8ad5fee.md)
 
-**Status:** partial · **Git:** `078b30a` · **Agent:** codex · **Created:** 2026-10-08T18:33:36Z
+**Status:** partial · **Git:** `8ad5fee` · **Agent:** codex · **Created:** 2026-10-08T20:28:40Z
 
-**Exact next action:** Ask owner to approve or amend G3-RUN-20261008-17, including calculated80.6 percent,18 classifications and unchanged numeric scale/equal weights/thresholds. After approval record normal G3 and calibration version decision through existing contracts, then draft formal gaps/findings/actions for the weaknesses without endless slices. Do not alter source evidence or treat field checks as confirmed outcomes.
+**Exact next action:** Obtain explicit metadata-only scoring fixture refresh approval; bump only fixture version/model reference/hash, retaining all synthetic ratings and expected numbers, then run required benchmarks/full Enconet test suite/aggregate. Next content task is one coherent gaps/findings/auditor-action draft batch, not per-criterion slices.

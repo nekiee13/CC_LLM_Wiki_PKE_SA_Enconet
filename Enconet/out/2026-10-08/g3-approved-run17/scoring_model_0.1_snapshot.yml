@@ -4,15 +4,14 @@
 # weights, formula, rounding, and thresholds exclusively from this file, and
 # `scripts/validate_evaluation.py` (Task 8.6) recomputes scores from it independently.
 #
-# STATUS: numeric calibration approved by the owner under G3-RUN-20261008-17.
-# Version 0.2 approves the existing values without changing any arithmetic.
-# Original calculation provenance remains at 0.1-placeholder; its snapshot is preserved.
-# Scoring fixture metadata re-pinning requires its separate benchmark-policy approval.
+# STATUS: pending human calibration approval (ADR-0013) — all numeric values below are
+# placeholders deliberately deferred to Gate G3. They allow the engine and benchmarks to
+# be built and tested; the human calibrates and approves them at the first G3 gate
+# (approvals.csv row referencing this file + version bump).
 
 schema_version: "1.0"
-model_version: "0.2-approved"
-calibration_status: "approved (ADR-0013, G3-RUN-20261008-17)"
-calibration_approval_ref: "G3-RUN-20261008-17"
+model_version: "0.1-placeholder"
+calibration_status: "pending human calibration approval (ADR-0013, Gate G3)"
 
 # Weight per rating value (vocabularies.ratings). `na` carries no weight: not-applicable
 # criteria are excluded from the consolidated score entirely (ADR-0012 / Task 8.4).
@@ -41,10 +40,6 @@ classification_thresholds:
   - {min_score: 0.0, class: unmet}
 
 change_log:
-  - version: "0.2-approved"
-    date: 2026-10-08
-    approval_ref: "G3-RUN-20261008-17"
-    note: "Owner approved existing equal-weight scale and thresholds; numeric values unchanged. Original run provenance retained."
   - version: "0.1-placeholder"
     date: 2026-07-12
     note: "Initial placeholder values per Task 1.5; calibration deferred to Gate G3 (ADR-0013)."

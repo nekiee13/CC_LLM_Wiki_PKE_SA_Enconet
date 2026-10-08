@@ -1,0 +1,14 @@
+task: ENCONET-G3-APPROVAL
+agent: codex
+status: released
+claimed_at_utc: 2026-10-08T20:18:00Z
+last_renewed_at_utc: 2026-10-08T20:18:00Z
+expires_at_utc: 2026-10-09T20:18:00Z
+anticipated_files:
+  - Enconet/schemas/scoring_model.yml
+  - Enconet/manifests/approvals.csv
+  - Enconet/project-state.yml
+  - Enconet/wiki/gates/G3-RUN-20261008-17-enconet.md
+  - Enconet/docs/G3_APPROVAL_20261008.md
+note: Record explicit ownerG3 result/model approval; preserve ratings and original calculation provenance. Separate fixture metadata refresh permission requested per benchmark policy.
+released_at_utc: 2026-10-08T20:23:44Z

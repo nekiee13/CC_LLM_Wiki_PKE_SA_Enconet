@@ -338,3 +338,9 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-10-08T17:11:45Z | handoffs/2026-10-08T171145Z-24e12b9.md | partial | 24e12b9b9019d1eaf40721b584e2a291f79b0a90
 
 - handoff-created | 2026-10-08T18:33:36Z | handoffs/2026-10-08T183336Z-078b30a.md | partial | 078b30a3d82c37ec0b93c3f1beb891d5f6e88acb
+
+- 2026-10-08T20:20:50Z | `gate-decision` | G3 approved as `G3-RUN-20261008-17` by project-owner
+
+- 2026-10-08T20:21:41Z | `state-transition` | evidence_reviewed -> evaluated; reason: Explicit ownerG3 result and unchanged numeric-model calibration approved;18 ratings and candidate evidence bundle validated. Original calculation model/run provenance retained; scoring fixture metadata refresh awaits separate policy permission.
+
+- handoff-created | 2026-10-08T20:28:40Z | handoffs/2026-10-08T202840Z-8ad5fee.md | partial | 8ad5fee32e039c409fced20c58de8edd1bfa9946

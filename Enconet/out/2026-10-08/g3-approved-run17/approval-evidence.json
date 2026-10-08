@@ -1,0 +1,76 @@
+{
+  "decision_ref": "G3-RUN-20261008-17",
+  "owner_reply": "approved",
+  "score": 80.6,
+  "points": 1450,
+  "max_points": 1800,
+  "ratings": {
+    "fully": 6,
+    "substantially": 10,
+    "partially": 2
+  },
+  "current_model": "0.2-approved",
+  "original_calculation_model": "0.1-placeholder",
+  "original_model_sha256": "ff576122091c8f70cf4ce1c544f4bcec112d7d556b4e6973f21ce32d2e44ac08",
+  "approved_model_sha256": "d16df4986562e3700a1825ba0a2d554997e5403a5f619817bbc6fd1d56a332ce",
+  "database_unchanged_sha256": "952ead3f0f4fb147980500a4a79a9ac5ea604226e47db706a4486d5297da94f5",
+  "scoring_fixture_unchanged_sha256": "ba77a96e76bb8ce3549ce9e47a98f2bcbfc29f343af0f268175e7bf9b7fe233a",
+  "phase": "evaluated",
+  "bundle": {
+    "unique_crumbs": 134,
+    "quotes": 164,
+    "chapters": 169,
+    "documents": 17,
+    "evaluations": 18,
+    "sha256": "be8b6557cea73db80675c3e15a54116339da9dd81be86d98e5c20d98071b34e9"
+  },
+  "checks": [
+    {
+      "command": "python Enconet/scripts/gate_packet.py record Enconet/wiki/gates/G3-RUN-20261008-17-enconet.md",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/validate_evaluation.py --run-id RUN-20261008-17 --no-record",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/generate_evidence_bundle.py --package Enconet/out/2026-10-08/g3-approved-run17/enconet_appendix_b_evaluation_package.json --db Enconet/db/nqa_audit.sqlite --run-id RUN-20261008-17 --generated-at-utc 2026-10-08T20:21:35Z --output Enconet/outputs/candidates/evidence_access/RUN-20261008-17/evidence_bundle.json",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "134/134 unique evaluation crumbs resolved."
+    },
+    {
+      "command": "python Enconet/scripts/validate_evidence_bundle.py Enconet/outputs/candidates/evidence_access/RUN-20261008-17/evidence_bundle.json",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/run_all_validations.py --no-record",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "10 evaluated-phase checks pass; later findings/report/dashboard checks skipped; benchmark not mandatory at this phase."
+    },
+    {
+      "command": "python Enconet/benchmarks/validate_benchmarks.py --scoring",
+      "exit_code": 1,
+      "result": "failed",
+      "summary": "Expected scoring fixture model-version/hash mismatch after approved metadata-only model bump. No expected numeric output changed; separate fixture metadata update permission pending."
+    },
+    {
+      "command": "python -c \"import json,hashlib; from pathlib import Path; p=Path('Enconet'); plan=json.loads(Path('reset-plans/enconet-reset-20261007-reviewed.json').read_text(encoding='utf-8')); rows=plan['incoming_files']; bad=[r['relative_path'] for r in rows if not (p/r['relative_path']).is_file() or hashlib.sha256((p/r['relative_path']).read_bytes()).hexdigest()!=r['sha256']]; actual={x.relative_to(p).as_posix() for x in (p/'incoming').rglob('*') if x.is_file()}; expected={r['relative_path'] for r in rows}; print(json.dumps({'files':len(rows),'hash_mismatches':bad,'unexpected_files':sorted(actual-expected),'missing_files':sorted(expected-actual)})); assert not bad and actual==expected\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "36/36 incoming files unchanged."
+    },
+    {
+      "command": "python scripts/agent_coord.py validate",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "0 errors and0 warnings;42 active messages,759 archived records,0 active claims."
+    }
+  ],
+  "authority_limits": "Approval covers18 judgments/current numbers, not fixture re-pinning, field certification or later gates. Fixture update awaits explicitly requested permission; no re-approval inferred.",
+  "numeric_equivalence": "rating_weights, consolidated_score and classification_thresholds parsed equal between old/new model; old/new package run/evaluations/metrics equal; DB byte hash unchanged."
+}
