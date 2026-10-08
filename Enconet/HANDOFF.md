@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-08T053034Z-3065b72.md`](handoffs/2026-10-08T053034Z-3065b72.md)
+**Authoritative record:** [`handoffs/2026-10-08T055544Z-e2f9ea0.md`](handoffs/2026-10-08T055544Z-e2f9ea0.md)
 
-**Status:** partial · **Git:** `3065b72` · **Agent:** codex · **Created:** 2026-10-08T05:30:34Z
+**Status:** partial · **Git:** `e2f9ea0` · **Agent:** codex · **Created:** 2026-10-08T05:55:44Z
 
-**Exact next action:** Finish DOC-0002 work/organization rules under approved v3 as a single large complete-source review; 151780 source bytes and 2081 coverage blocks. SQL confirms it is the only unsieved vendor source. Preserve previous runs and incoming.
+**Exact next action:** Process governing Appendix B DOC-0028 using active RULE v1 and approved G1 authority; then interpretive NQA-1:2015 Part1 DOC-0030. Keep Part21 DOC-0027 separate from18-criterion score and Parts2-4 supporting. Prepare applicability/gates by existing process; preserve all vendor evidence.

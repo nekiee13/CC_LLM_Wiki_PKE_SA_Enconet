@@ -5,7 +5,7 @@ audit while preserving incoming documents. Archive and reset are complete.
 
 - phase: **chunked**. G1 approved; G2-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
-  no old evidence or scores inherited; 2,348 new live vendor crumbs, no ratings yet.
+  no old evidence or scores inherited; 2,700 new live vendor crumbs, no ratings yet.
 - Incoming: 26 vendor Markdown documents and 7 regulatory Markdown documents.
 - Three other files are preserved but excluded from intake: `.gitkeep`,
   `desktop.ini`, and the owner's conversion-instruction note.
@@ -31,18 +31,21 @@ Owner approved the [G1 source basis](../docs/SOURCE_BASIS_APPROVED_20261007.md),
 including NQA-1:2015, the Enconet-only boundary and Croatian reports.
 Full keyword recall is complete: 4,183 vendor passage leads (not automatically accepted crumbs)
 and 2,992 regulatory/supporting leads across all 33 sources. Semantic review
-is complete for the QA plan, quality manual and twenty-three procedures/instructions;
-only DOC-0002 work/organization rules remains.
+is complete for all 26 vendor sources, including work/organization rules.
+No vendor document remains unsieved; regulatory extraction is still pending.
 The owner approved the 20 expected golden examples. The v3 context-storage
 gap is fixed: 23 regression tests passed and all 20 examples round-tripped on
 an isolated database copy with exact chapter links. That check was diagnostic;
-the twenty-five real runs now contain 2,348 vendor crumbs with 4,395 exact quote links.
+the twenty-six real runs now contain 2,700 vendor crumbs with 5,171 exact quote links.
 See [sweep and calibration status](../docs/KEYWORD_SWEEP_CALIBRATION_20261007.md).
 
 ## Next action
 
-Finish the large work/organization rules DOC-0002 as one complete-source batch.
-Twenty-five of 26 vendor documents are complete; one remains. The owner's proceed
+Process governing Appendix B DOC-0028 under active RULE v1 and approved G1
+basis, then interpretive NQA-1:2015 Part 1 DOC-0030. Keep Part 21 separate
+from the 18-criterion score and Parts 2-4 supporting, not automatically mandatory.
+Requirements extraction and applicability precede criterion evaluation.
+All 26 vendor documents are complete. The owner's proceed
 authorizes resuming chunked; no rollback or automatic phase advance.
 No further prompt approval is needed
 to continue the confirmed scope. Supporting
@@ -59,5 +62,6 @@ See [full RELAP5 run and current total](../docs/RELAP5_SIEVING_20261008.md).
 See [AOV and DBR batch and current total](../docs/AOV_DBR_BATCH_20261008.md).
 See [feedback, process and project batch and current total](../docs/PERFORMANCE_BATCH_20261008.md).
 See [MTE and operating-experience batch and current total](../docs/MTE_OE_BATCH_20261008.md).
+See [complete vendor inventory, final organization run and next stage](../docs/FULL_VENDOR_SIEVING_COMPLETE_20261008.md).
 
 See [reset record](../docs/ENCONET_RESET_20261007.md).
