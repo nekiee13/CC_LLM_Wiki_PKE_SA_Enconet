@@ -1,0 +1,33 @@
+{
+  "criterion_id": "APP_B_VI",
+  "criterion_name": "Document Control",
+  "classification": "substantially",
+  "coverage": 1,
+  "completeness": 0.75,
+  "accuracy": 1,
+  "clarity": 0.75,
+  "alignment": 0.75,
+  "evidence_supported": true,
+  "affirmative_summary": "Priprema, QA pregled, odobrenje, kontrolirana distribucija, povrat starih revizija i formalne promjene imaju definiran slijed.",
+  "contrary_summary": "GPD sekcija označena je obsolete/canceled, dok isti tok i noviji zapisni postupak i dalje zahtijevaju GPD; važeći način evidencije nije dovoljno jasan.",
+  "judge_ruling": "Osnovne kontrole su snažne, ali unutarnja nedosljednost registra zahtijeva razrješenje. Stara izdanja normi sama nisu automatska nesukladnost.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Osnovne kontrole su snažne, ali unutarnja nedosljednost registra zahtijeva razrješenje. Stara izdanja normi sama nisu automatska nesukladnost. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_VI-0016",
+    "CRUMB-DOC-0001-APP_B_VI-0021",
+    "CRUMB-DOC-0004-APP_B_VI-0019",
+    "CRUMB-DOC-0004-APP_B_VI-0026",
+    "CRUMB-DOC-0004-APP_B_VI-0046",
+    "CRUMB-DOC-0004-APP_B_VI-0049",
+    "CRUMB-DOC-0004-APP_B_VI-0055",
+    "CRUMB-DOC-0004-APP_B_VI-0067",
+    "CRUMB-DOC-0005-APP_B_VI-0006"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Pokazati važeći master registar, jednu distribucijsku listu i povučenu prethodnu reviziju."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

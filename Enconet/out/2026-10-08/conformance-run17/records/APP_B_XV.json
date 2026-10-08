@@ -1,0 +1,34 @@
+{
+  "criterion_id": "APP_B_XV",
+  "criterion_name": "Nonconforming Materials, Parts, or Components",
+  "classification": "fully",
+  "coverage": 1,
+  "completeness": 1,
+  "accuracy": 1,
+  "clarity": 1,
+  "alignment": 1,
+  "evidence_supported": true,
+  "affirmative_summary": "NCR otvaranje, identifikacija/izolacija, stručna ocjena, dispozicija, potpis izvršenja, neovisna verifikacija i ponovno ispitivanje dorade tvore zatvoren tok.",
+  "contrary_summary": "Za uporabu kakav jest ili doradu treba provjeriti stvarno tehničko obrazloženje i primjenjiva kupčeva odobrenja; Part21 procjena nije automatska za svaki NCR.",
+  "judge_ruling": "Nesukladnost je kontrolirana od otkrića do odobrenog prihvata za Enconetove proizvode/usluge. Fizička plant-repair uloga nije pretpostavljena.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Nesukladnost je kontrolirana od otkrića do odobrenog prihvata za Enconetove proizvode/usluge. Fizička plant-repair uloga nije pretpostavljena. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_XV-0003",
+    "CRUMB-DOC-0010-APP_B_XV-0015",
+    "CRUMB-DOC-0010-APP_B_XV-0023",
+    "CRUMB-DOC-0010-APP_B_XV-0025",
+    "CRUMB-DOC-0010-APP_B_XV-0026",
+    "CRUMB-DOC-0010-APP_B_XV-0027",
+    "CRUMB-DOC-0010-APP_B_XV-0028",
+    "CRUMB-DOC-0010-APP_B_XV-0029",
+    "CRUMB-DOC-0010-APP_B_XV-0030",
+    "CRUMB-DOC-0010-APP_B_X-0001"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan NCR s dispozicijom, tehničkim razlogom, eventualnim customer consentom i provjerom dorade."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

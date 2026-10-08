@@ -1,0 +1,32 @@
+{
+  "criterion_id": "APP_B_II",
+  "criterion_name": "Quality Assurance Program",
+  "classification": "substantially",
+  "coverage": 1,
+  "completeness": 0.75,
+  "accuracy": 1,
+  "clarity": 0.75,
+  "alignment": 0.75,
+  "evidence_supported": true,
+  "affirmative_summary": "Program, kontrolirani uvjeti, godišnja ocjena uprave, obuka, promjene i uvođenje osoblja imaju konkretne postupke i odgovornosti.",
+  "contrary_summary": "Za sve inspekcijske/testne uloge treba razjasniti kvalifikacijske intervale i dostupnost preuzetih NEK programa; opći plan obuke nije cijela kvalifikacijska shema.",
+  "judge_ruling": "Sustav je dobro dokumentiran. Ograničeni kvalifikacijski detalji i veza na preuzete programe ostaju za dokaz, bez automatske kazne zbog praznih obrazaca.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Sustav je dobro dokumentiran. Ograničeni kvalifikacijski detalji i veza na preuzete programe ostaju za dokaz, bez automatske kazne zbog praznih obrazaca. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_II-0021",
+    "CRUMB-DOC-0001-APP_B_II-0025",
+    "CRUMB-DOC-0001-APP_B_II-0035",
+    "CRUMB-DOC-0006-APP_B_II-0013",
+    "CRUMB-DOC-0006-APP_B_II-0020",
+    "CRUMB-DOC-0006-APP_B_II-0021",
+    "CRUMB-DOC-0006-APP_B_II-0028",
+    "CRUMB-DOC-0006-APP_B_II-0031"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan kvalifikacijski dosje QC/test osobe i zadnju upravinu godišnju ocjenu."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

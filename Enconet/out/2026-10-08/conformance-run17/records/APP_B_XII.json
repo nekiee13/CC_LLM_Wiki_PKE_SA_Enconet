@@ -1,0 +1,31 @@
+{
+  "criterion_id": "APP_B_XII",
+  "criterion_name": "Control of Measuring and Test Equipment",
+  "classification": "substantially",
+  "coverage": 1,
+  "completeness": 0.75,
+  "accuracy": 1,
+  "clarity": 0.75,
+  "alignment": 0.75,
+  "evidence_supported": true,
+  "affirmative_summary": "Raspon/točnost, intervali, oznake kalibracije, provjera prije testa, sljedivost i retrospektivna ocjena od zadnje kalibracije imaju konkretne kontrole.",
+  "contrary_summary": "Tehnički odnos referentne točnosti ili njegovo dopušteno opravdanje te praktični certifikacijski trag trebaju jasniju podlogu; razredi opreme nisu potpuno razrađeni.",
+  "judge_ruling": "Kontrola MTE je dobra, ali dio kalibracijske tehničke osnove nije dovoljno razvidan za puni rang.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Kontrola MTE je dobra, ali dio kalibracijske tehničke osnove nije dovoljno razvidan za puni rang. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_XII-0002",
+    "CRUMB-DOC-0001-APP_B_XII-0004",
+    "CRUMB-DOC-0001-APP_B_XII-0005",
+    "CRUMB-DOC-0020-APP_B_XII-0002",
+    "CRUMB-DOC-0025-APP_B_XII-0014",
+    "CRUMB-DOC-0025-APP_B_XII-0015",
+    "CRUMB-DOC-0025-APP_B_XII-0025"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Na jednom certifikatu provjeriti etalon, točnost/opravdanje, as-found/as-left i pogođena ranija mjerenja."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

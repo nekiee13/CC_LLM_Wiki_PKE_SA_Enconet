@@ -1,0 +1,30 @@
+{
+  "criterion_id": "APP_B_IX",
+  "criterion_name": "Control of Special Processes",
+  "classification": "partially",
+  "coverage": 0.75,
+  "completeness": 0.5,
+  "accuracy": 0.75,
+  "clarity": 0.5,
+  "alignment": 0.5,
+  "evidence_supported": true,
+  "affirmative_summary": "NQAP priznaje vizualni QC kao poseban proces; kvalifikacija VT II/CP-189 i zdravstveni uvjeti su navedeni.",
+  "contrary_summary": "Generički priručnik izuzima IX, dok nuklearni plan opisuje aktivni VT. Kontrolirana VT radna uputa i kvalifikacija primijenjenog postupka nisu prikazane u ovom setu.",
+  "judge_ruling": "Postoje važne kontrole, ali dokumentarna granica i specifičan procesni dokaz ostaju materijalno nedovoljni. Ne traži se dokaz zavarivanja koje nije preuzeto.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Postoje važne kontrole, ali dokumentarna granica i specifičan procesni dokaz ostaju materijalno nedovoljni. Ne traži se dokaz zavarivanja koje nije preuzeto. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_IX-0001",
+    "CRUMB-DOC-0001-APP_B_IX-0003",
+    "CRUMB-DOC-0001-APP_B_IX-0004",
+    "CRUMB-DOC-0002-APP_B_IX-0001",
+    "CRUMB-DOC-0003-APP_B_IX-0004",
+    "CRUMB-DOC-0003-APP_B_IX-0006"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Uzorkovati ugovorenu VT uputu, odgovornost za njezinu kvalifikaciju i aktualan VT/vidni dosje izvršitelja."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

@@ -1,0 +1,28 @@
+{
+  "criterion_id": "APP_B_V",
+  "criterion_name": "Instructions, Procedures, and Drawings",
+  "classification": "fully",
+  "coverage": 1,
+  "completeness": 1,
+  "accuracy": 1,
+  "clarity": 1,
+  "alignment": 1,
+  "evidence_supported": true,
+  "affirmative_summary": "Pisane upute određuju izvođenje, resurse, nadzor i kvantitativne/kvalitativne kriterije; tehnički testni postupci daju dubinu izvan same izjave politike.",
+  "contrary_summary": "Primjena točne revizije na radu treba se potvrditi uzorkom; ne traži se da svaki prazan predložak bude popunjen da bi postupak bio adekvatan.",
+  "judge_ruling": "Dokumentirana kontrola izvođenja i prihvata funkcionalno pokriva kriterij u odobrenoj uslužnoj djelatnosti.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Dokumentirana kontrola izvođenja i prihvata funkcionalno pokriva kriterij u odobrenoj uslužnoj djelatnosti. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_V-0001",
+    "CRUMB-DOC-0001-APP_B_V-0002",
+    "CRUMB-DOC-0004-APP_B_V-0005",
+    "CRUMB-DOC-0008-APP_B_V-0001"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Na jednom zadatku usporediti odobrenu uputu, radni nalog i mjerila prihvata."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

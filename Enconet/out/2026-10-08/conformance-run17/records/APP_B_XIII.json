@@ -1,0 +1,31 @@
+{
+  "criterion_id": "APP_B_XIII",
+  "criterion_name": "Handling, Storage, and Shipping",
+  "classification": "substantially",
+  "coverage": 1,
+  "completeness": 0.75,
+  "accuracy": 1,
+  "clarity": 0.75,
+  "alignment": 0.75,
+  "evidence_supported": true,
+  "affirmative_summary": "Uvjeti čuvanja MTE, proizvođačevi zahtjevi, zaštita opreme od kontaminacije i fizičke kopije medija podupiru odobreni ograničeni opseg.",
+  "contrary_summary": "Vendor izuzeća treba uskladiti s konkretnim preuzetim kontrolama. Detaljan transportni put vrijedi samo ako ga Enconet preuzima.",
+  "judge_ruling": "Zaštita i skladištenje su stvarno opisani. Ograničena primjenjivost nije opća logistika; papirna granica odgovornosti ostaje nedovoljno dosljedna.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Zaštita i skladištenje su stvarno opisani. Ograničena primjenjivost nije opća logistika; papirna granica odgovornosti ostaje nedovoljno dosljedna. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_XIII-0001",
+    "CRUMB-DOC-0001-APP_B_XIII-0003",
+    "CRUMB-DOC-0020-APP_B_XIII-0001",
+    "CRUMB-DOC-0025-APP_B_XIII-0003",
+    "CRUMB-DOC-0025-APP_B_XIII-0005",
+    "CRUMB-DOC-0018-APP_B_XVII-0001",
+    "CRUMB-DOC-0018-APP_B_XVII-0007"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Provjeriti mjesto/uvjete čuvanja jednog instrumenta i medija te odgovornost ako se predmet prenosi."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

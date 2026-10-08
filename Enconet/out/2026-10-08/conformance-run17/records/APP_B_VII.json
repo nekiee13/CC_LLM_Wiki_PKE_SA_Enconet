@@ -1,0 +1,31 @@
+{
+  "criterion_id": "APP_B_VII",
+  "criterion_name": "Control of Purchased Material, Equipment, and Services",
+  "classification": "substantially",
+  "coverage": 1,
+  "completeness": 0.75,
+  "accuracy": 1,
+  "clarity": 0.75,
+  "alignment": 0.75,
+  "evidence_supported": true,
+  "affirmative_summary": "Izbor dobavljača, odobrene liste, godišnje ocjene, nadzor outsourcinga i dokaz prihvata prije uporabe su propisani.",
+  "contrary_summary": "Bez PP-74-01 ne može se završiti pregled detaljnog nabavnog/acceptance toka. Specifične certificate/dedication puteve provjeravati samo ako se stvarno koriste.",
+  "judge_ruling": "Dokumentirana dobavljačka kontrola prelazi visoku politiku, ali dio provedbenog toka ostaje izvan dostavljenog seta.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Dokumentirana dobavljačka kontrola prelazi visoku politiku, ali dio provedbenog toka ostaje izvan dostavljenog seta. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_VII-0005",
+    "CRUMB-DOC-0001-APP_B_VII-0007",
+    "CRUMB-DOC-0001-APP_B_VII-0012",
+    "CRUMB-DOC-0003-APP_B_VII-0014",
+    "CRUMB-DOC-0003-APP_B_VII-0019",
+    "CRUMB-DOC-0008-APP_B_VII-0003",
+    "CRUMB-DOC-0025-APP_B_VII-0003"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Zatražiti PP-74-01 i uzorkovati odobrenog podugovarača ili kalibracijski laboratorij i njegov prihvat."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

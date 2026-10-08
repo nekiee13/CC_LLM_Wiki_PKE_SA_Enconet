@@ -1,0 +1,34 @@
+{
+  "criterion_id": "APP_B_XI",
+  "criterion_name": "Test Control",
+  "classification": "fully",
+  "coverage": 1,
+  "completeness": 1,
+  "accuracy": 1,
+  "clarity": 0.75,
+  "alignment": 1,
+  "evidence_supported": true,
+  "affirmative_summary": "V&V plan, testovi namjeravanih primjena, usporedba s referencama, in-use test nakon promjene okružja i detaljni AOV preduvjeti/kriteriji pokrivaju svrhu testa.",
+  "contrary_summary": "Nazivi/primjeri testnih deckova i nedostajući FDS prilozi traže provjeru aktualnog seta, ali ne brišu izričite zahtjeve za puni opseg, prihvat i dokumentiranje.",
+  "judge_ruling": "Kriterij je dokumentacijski potpuno pokriven za odobreni testni opseg; nije tvrdnja da su testovi stvarno prošli.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Kriterij je dokumentacijski potpuno pokriven za odobreni testni opseg; nije tvrdnja da su testovi stvarno prošli. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_XI-0003",
+    "CRUMB-DOC-0017-APP_B_XI-0004",
+    "CRUMB-DOC-0018-APP_B_XI-0003",
+    "CRUMB-DOC-0019-APP_B_XI-0003",
+    "CRUMB-DOC-0019-APP_B_XI-0005",
+    "CRUMB-DOC-0019-APP_B_XI-0018",
+    "CRUMB-DOC-0019-APP_B_XI-0028",
+    "CRUMB-DOC-0020-APP_B_XI-0023",
+    "CRUMB-DOC-0020-APP_B_XI-0041",
+    "CRUMB-DOC-0020-APP_B_XI-0049"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Uzorkovati jedan RELAP5 acceptance/in-use test ili AOV As-Found/As-Left paket s kriterijima i odobrenjem."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

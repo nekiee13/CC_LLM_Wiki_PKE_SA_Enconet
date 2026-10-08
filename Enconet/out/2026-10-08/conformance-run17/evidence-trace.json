@@ -1,0 +1,1685 @@
+{
+  "run_id": "RUN-20261008-17",
+  "supplier": "enconet",
+  "assessment_type": "documentation pre-flight, not field implementation certification",
+  "model_version": "0.1-placeholder",
+  "calibration": "numeric G3 approval pending; scores will be displayed under unchanged current weights",
+  "evidence_review": {
+    "active_vendor_corpus_crumbs": 2700,
+    "criterion_statement_index_loaded": 2700,
+    "selected_scoring_crumbs": 136,
+    "selected_quotes": 166,
+    "method": "Review criterion-scoped controls and relevant source context, then verify every relied-on quote/chapter. Loading the full statement index is not a claim of individually rating every crumb. Counts are navigation only, never rating points."
+  },
+  "scope": "G2-RUN-20261008-17 including limited XIII; Part21 excluded; other PartII/III/IV supporting only",
+  "dimensions": "Coverage/completeness/accuracy/clarity/alignment are ordinal reviewer judgments on existing 0..1 fields, not measured clause percentages or an added score formula. Scores are only canonical rating weights.",
+  "quotes": [
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_I-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Odgovornost za kvalitetu ostaje kod izvršitelja i konačno kod Enconeta kao nositelja ugovora.",
+      "quote_id": "QUOTE-DOC-0001-0016-01",
+      "quote_original": "Primjena QA Programa opisanog u ovom NQAP obavezna je za cjelokupno osoblje Enconeta, kao i za osoblje podugovarača, koji rade na odgovarajućim poslovima u nuklearnim elektranama i ostalim nuklearnim postrojenjima. Odgovornost za ostvarivanje kvalitete leži na svakom pojedincu koji obavlja određene poslove. Konačnu odgovornost za primjenu zahtijevane QA regulative snosi Enconet, kao primarni nositelj ugovora.",
+      "chunk_id": "CHUNK-DOC-0001-0005",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_I-0011",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA ima put eskalacije neriješenog problema direktoru.",
+      "quote_id": "QUOTE-DOC-0001-0062-01",
+      "quote_original": "Odgovornost voditelja QA poslova je izvještavanje direktora o bilo kojem neriješenom problemu kvalitete ili bilo kojem nesukladnom entitetu, ukoliko na razini voditelja projekata nema rješenja ili rješenje nije zadovoljavajuće. Ukoliko je entitet ili usluga nuklearne sigurnosne klase, ovlašten je da inicira proces obustave radova sve dok se ne postigne zadovoljavajuće rješenje.",
+      "chunk_id": "CHUNK-DOC-0001-0014",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_I-0012",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA može inicirati obustavu sigurnosno značajnog rada do zadovoljavajućeg rješenja.",
+      "quote_id": "QUOTE-DOC-0001-0063-01",
+      "quote_original": "Odgovornost voditelja QA poslova je izvještavanje direktora o bilo kojem neriješenom problemu kvalitete ili bilo kojem nesukladnom entitetu, ukoliko na razini voditelja projekata nema rješenja ili rješenje nije zadovoljavajuće. Ukoliko je entitet ili usluga nuklearne sigurnosne klase, ovlašten je da inicira proces obustave radova sve dok se ne postigne zadovoljavajuće rješenje.",
+      "chunk_id": "CHUNK-DOC-0001-0014",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_I-0013",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: U suradnji s drugim organizacijama utvrđuju se međuveze, komunikacija i odgovornosti.",
+      "quote_id": "QUOTE-DOC-0001-0064-01",
+      "quote_original": "Kad je Enconet uključen u posao s drugim organizacijama (podizvođači Enconeta ili voditelji projekta u kojem je Enconet uključen kao podizvođač) trebaju se jasno utvrditi međuveze svih subjekata, te odrediti način komuniciranja i odgovornosti.",
+      "chunk_id": "CHUNK-DOC-0001-0014",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_I-0006",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor definira odgovornosti i metode komuniciranja.",
+      "quote_id": "QUOTE-DOC-0003-0081-01",
+      "quote_original": "U cilju ostvarenja navedenih opredjeljenja direktor je odgovoran da:",
+      "chunk_id": "CHUNK-DOC-0003-0017",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_I-0006",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Direktor definira odgovornosti i metode komuniciranja.",
+      "quote_id": "QUOTE-DOC-0003-0081-02",
+      "quote_original": "- Definira odgovornosti i metode komuniciranja u cilju djelotvorne provedbe SUK-a",
+      "chunk_id": "CHUNK-DOC-0003-0017",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_I-0044",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: Odluka imenuje Ilijanu Iveković predstavnicom direktora od siječnja 2013. do razrješenja.",
+      "quote_id": "QUOTE-DOC-0003-0385-01",
+      "quote_original": "mr.sc. Ilijana Iveković, Imenuje se prema zahtjevu iz Priručnika kvalitete, točka 5.3, \n**Predstavnikom direktora za nadzor SUK-a** u vremenskom razdoblju od 01. siječnja 2013. do razrješenja.",
+      "chunk_id": "CHUNK-DOC-0003-0059",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_I-0005",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_I",
+      "statement": "objective_control: QA izdaje nalog za zaustavljanje rada ili zabranu korištenja proizvoda i dokumentacije.",
+      "quote_id": "QUOTE-DOC-0008-0085-01",
+      "quote_original": "Voditelj QA poslova izdaje nalog o zaustavljanju procesa i daljnjih radova odnosno zabranu korištenja određenog proizvoda i/ili dokumentacije. Nalog se upisuje u obrascu OB-NCR-016 i rješava prema postupku PP-83-01 (Ref. 7), a na dokumentaciju se utiskuje žig \"QA zaustavljeni radovi\" određenog oblika i načina korištenja prema postupku PP-42-01 (Ref. 4) odnosno naljepnica istog sadržaja na nesukladni proizvod. Dokumentacija odnosno proizvod povlači se iz korištenja i čuva na izoliranom mjestu kako bi se onemogućilo nehotično korištenje.",
+      "chunk_id": "CHUNK-DOC-0008-0015",
+      "assessment_criterion": "APP_B_I"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_II-0021",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Rad značajan za kvalitetu obavlja osposobljeno osoblje odgovarajućom opremom i u kontroliranim uvjetima.",
+      "quote_id": "QUOTE-DOC-0001-0045-01",
+      "quote_original": "Aktivnosti koje utječu na kvalitetu obavljat će osposobljeno osoblje s odgovarajućom opremom u strogo kontroliranim okolišnim uvjetima.",
+      "chunk_id": "CHUNK-DOC-0001-0009",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_II-0025",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: QA program i njegova primjena u projektima ocjenjuju se najmanje jednom godišnje.",
+      "quote_id": "QUOTE-DOC-0001-0057-01",
+      "quote_original": "Voditelj QA poslova odgovoran je da se najmanje jednom godišnje ocjeni\nEnconet Nuklearni QA Program kao i njegova primjena u pojedinim projektima.\nOcjena mora uključiti vrednovanje prikladnosti i učinkovitosti QA Programa, kao\ni potrebne izmjene i /ili dopune.",
+      "chunk_id": "CHUNK-DOC-0001-0012",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_II-0035",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Postupci kvalifikacije određuju potrebe i razdoblja obnavljanja kvalifikacija.",
+      "quote_id": "QUOTE-DOC-0001-0077-01",
+      "quote_original": "U postupcima kvalifikacije trebaju se odrediti potrebe i vremenska razdoblja obnavljanja kvalifikacije",
+      "chunk_id": "CHUNK-DOC-0001-0016",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0006-APP_B_II-0013",
+      "doc_id": "DOC-0006",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Direktor odobrava sve planove izobrazbe.",
+      "quote_id": "QUOTE-DOC-0006-0026-01",
+      "quote_original": "Direktor Enconeta odobrava sve planove izobrazbe.",
+      "chunk_id": "CHUNK-DOC-0006-0010",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0006-APP_B_II-0020",
+      "doc_id": "DOC-0006",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Značajne izmjene dokumenata zahtijevaju ponovnu obuku relevantnog osoblja.",
+      "quote_id": "QUOTE-DOC-0006-0037-01",
+      "quote_original": "Kad dođe do značajnijih izmjena dokumenata SUK-a i izdavanja novih revizija, planirat će se i provesti ponovna izobrazba osoblja koje obavlja poslove bitne za ostvarivanje kvalitete.",
+      "chunk_id": "CHUNK-DOC-0006-0011",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0006-APP_B_II-0021",
+      "doc_id": "DOC-0006",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Novi zaposlenici i vanjski suradnici upoznaju QA sustav prije početka kvalitetno značajnog rada.",
+      "quote_id": "QUOTE-DOC-0006-0038-01",
+      "quote_original": "Novo osoblje i vanjski suradnici Enconeta upoznat će se sa zahtjevima sustava SUK-a prije nego što počnu izvoditi aktivnosti koje utječu na kvalitetu proizvoda.",
+      "chunk_id": "CHUNK-DOC-0006-0011",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0006-APP_B_II-0028",
+      "doc_id": "DOC-0006",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Vrednovanje obuke ocjenjuje uspjeh sudionika i njegov doprinos radu.",
+      "quote_id": "QUOTE-DOC-0006-0049-01",
+      "quote_original": "Sustavno će se vršiti vrednovanje postupaka obrazovanja/uvježbavanja kako bi se ocijenila uspješnost učesnika i doprinos stečenih znanja na daljnje obavljanje poslova, te ocijenila uspješnost pružatelja usluga (seminara, tečajeva i t.d.).",
+      "chunk_id": "CHUNK-DOC-0006-0014",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0006-APP_B_II-0031",
+      "doc_id": "DOC-0006",
+      "criterion_id": "APP_B_II",
+      "statement": "objective_control: Kontrolno ažuriranje kvalifikacijske tablice propisano je dvaput godišnje.",
+      "quote_id": "QUOTE-DOC-0006-0062-01",
+      "quote_original": "U tu svrhu izrađena je jedinstvena tablica \"EVIDENCIJA KVALIFIKACIJA I OSPOSOBLJENOSTI ZAPOSLENIKA\" koja će sadržavati sve potrebne podatke o edukaciji svih zaposlenika. Vođenje i ažuriranje tablice će voditi zaposlenik Enconeta Josip Skupnjak (Sistem administrator / IT administrator) uz suradnju s Darijom Antunović (Referent za administrativne i komunikacijske poslove) koja je locirana u NEK-u. Kontrolno ažuriranje izvodit će se dva puta godišnje, početkom i sredinom kalendarske godine.",
+      "chunk_id": "CHUNK-DOC-0006-0015",
+      "assessment_criterion": "APP_B_II"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_III-0022",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Ulazi se prije primjene pregledavaju i ocjenjuju za potpunost, jasnoću i dosljednost.",
+      "quote_id": "QUOTE-DOC-0008-0038-01",
+      "quote_original": "Prije same primjene u procesu projektiranja i razvoja, ulazne podatke treba pregledati, ocijeniti i potvrditi da su potpuni, nedvosmisleni i neproturječni.",
+      "chunk_id": "CHUNK-DOC-0008-0012",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_III-0033",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Kada je potrebno, interni stručni pregled provodi ovlaštena osoba koja nije izvodila pregledani dio.",
+      "quote_id": "QUOTE-DOC-0008-0062-01",
+      "quote_original": "Interne neovisne preglede stručnog dijela projektiranja i razvoja, ako je\npotrebno, provodi ovlaštena osoba koja nije sudjelovala u izvedbi onog dijela\nprojekta za kojeg se obavlja provjera. QA inženjer provodi interni pregled projekta\nsa stanovišta zadovoljenja zahtjeva kvalitete. Rezultati internih provjera upisuju\nse u Izvješće o internom pregledu na obrascu OB-INP-021.",
+      "chunk_id": "CHUNK-DOC-0008-0012",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_III-0034",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Završnu safety-related dokumentaciju mora pregledati imenovana, neovisna i kvalificirana osoba.",
+      "quote_id": "QUOTE-DOC-0008-0064-01",
+      "quote_original": "Pregled završne dokumentacije koja se odnosi na „safety related\" funkcije\nstruktura, sistema i komponenti mora izvoditi nominirana, nezavisna i kvalificirana\nosoba koja nije uključena u izvedbu projekta i dokumentacije. Nadležnost,\nobaveze i kvalificiranost nezavisne osobe zadužene za pregled moraju biti jasno\ndefinirani i specificirani.",
+      "chunk_id": "CHUNK-DOC-0008-0012",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_III-0040",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Izmjene se identificiraju, dokumentiraju i odobravaju po istom postupku kao osnovni projekt.",
+      "quote_id": "QUOTE-DOC-0008-0077-01",
+      "quote_original": "Izmjene ili modifikacije projektnih zadataka identificiraju se, dokumentiraju i odobravaju od ovlaštene osobe po istom postupku kao i osnovni projekt.",
+      "chunk_id": "CHUNK-DOC-0008-0014",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_III-0043",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Direktor odobrava promjene prije primjene.",
+      "quote_id": "QUOTE-DOC-0008-0080-01",
+      "quote_original": "Direktor Enconeta odobrava promjene projekta prije primjene.",
+      "chunk_id": "CHUNK-DOC-0008-0014",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0016-APP_B_III-0009",
+      "doc_id": "DOC-0016",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Potreba promjene ocjenjuje se prema učinku i potrebi ponovnog testiranja.",
+      "quote_id": "QUOTE-DOC-0016-0027-01",
+      "quote_original": "3. The need for any proposed changes to the issue should be",
+      "chunk_id": "CHUNK-DOC-0016-0019",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0016-APP_B_III-0009",
+      "doc_id": "DOC-0016",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Potreba promjene ocjenjuje se prema učinku i potrebi ponovnog testiranja.",
+      "quote_id": "QUOTE-DOC-0016-0027-02",
+      "quote_original": "   carefully reviewed for need versus impact (necessity of the\n   change versus cost of retesting).",
+      "chunk_id": "CHUNK-DOC-0016-0019",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0017-APP_B_III-0003",
+      "doc_id": "DOC-0017",
+      "criterion_id": "APP_B_III",
+      "statement": "objective_control: Svaki razvijeni softver mora imati vlastiti V&V plan.",
+      "quote_id": "QUOTE-DOC-0017-0013-01",
+      "quote_original": "### 4.1.1 Each software developed shall contain specifically developed V&V plan.",
+      "chunk_id": "CHUNK-DOC-0017-0019",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0019-APP_B_III-0001",
+      "doc_id": "DOC-0019",
+      "criterion_id": "APP_B_III",
+      "statement": "supporting_control: Uputa obuhvaća accident/transient analize elektrana i pokusnih postrojenja različitim RELAP5 verzijama.",
+      "quote_id": "QUOTE-DOC-0019-0004-01",
+      "quote_original": "This document presents the procedure developed to perform accident/transient analyses in nuclear power plants or experimental facilities using RELAP5 computer code family (RELAP5/mod3.2, RELAP5/mod3.3, RELAP5/SCDAPSIM).",
+      "chunk_id": "CHUNK-DOC-0019-0003",
+      "assessment_criterion": "APP_B_III"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0006",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Regulatorni, projektni i kvalitativni zahtjevi prenose se u nabavne dokumente.",
+      "quote_id": "QUOTE-DOC-0001-0111-01",
+      "quote_original": "Voditelji projekata odgovorni su da se odgovarajući zahtjevi prenesu iz regulatornih zahtjeva, temeljnih projektnih podataka, standarda, specifikacija i zahtjeva kvalitete u nabavne dokumente proizvoda ili usluga.",
+      "chunk_id": "CHUNK-DOC-0001-0028",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0010",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Reference u nabavi određuju primjenjive revizije tehničkih zahtjeva.",
+      "quote_id": "QUOTE-DOC-0001-0116-01",
+      "quote_original": "- Tehničke zahtjeve specificirane preko reference na propise, standarde, upute, postupke, smjernice i specifikacije, uključujući odgovarajuće revizije, tako da se u potpunosti opiše naručeni proizvod ili usluga;",
+      "chunk_id": "CHUNK-DOC-0001-0028",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0011",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti određuju testove, inspekcije i kriterije prihvaćanja.",
+      "quote_id": "QUOTE-DOC-0001-0117-01",
+      "quote_original": "- Testove, inspekcije i kriterije prihvaćanja, kao i posebne upute i zahtjeve u vezi s time;",
+      "chunk_id": "CHUNK-DOC-0001-0028",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0015",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti zahtijevaju izvješćivanje o nesukladnostima i odobrenje njihovog otklanjanja.",
+      "quote_id": "QUOTE-DOC-0001-0122-01",
+      "quote_original": "- Zahtjeve za izvješćivanjem o nesukladnostima i odobrenju otklanjanja",
+      "chunk_id": "CHUNK-DOC-0001-0029",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0015",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti zahtijevaju izvješćivanje o nesukladnostima i odobrenje njihovog otklanjanja.",
+      "quote_id": "QUOTE-DOC-0001-0122-02",
+      "quote_original": "  nesukladnosti;",
+      "chunk_id": "CHUNK-DOC-0001-0029",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0016",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Primjereni zahtjevi prenose se na podizvođače i podisporučitelje uz pravo pristupa njihovim pogonima i zapisima.",
+      "quote_id": "QUOTE-DOC-0001-0123-01",
+      "quote_original": "- Odredbe za proširenje primjerenih zahtjeva iz nabavnih dokumenata na",
+      "chunk_id": "CHUNK-DOC-0001-0029",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IV-0016",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Primjereni zahtjevi prenose se na podizvođače i podisporučitelje uz pravo pristupa njihovim pogonima i zapisima.",
+      "quote_id": "QUOTE-DOC-0001-0123-02",
+      "quote_original": "  podizvođača i podisporučitelja, uključujući i pravo pristupa Enconeta njihovim\n  pogonima i zapisima;",
+      "chunk_id": "CHUNK-DOC-0001-0029",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_IV-0005",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: Nabavni dokumenti nedvosmisleno opisuju proizvod i potrebna odobrenja, kvalifikacije i QA zahtjeve.",
+      "quote_id": "QUOTE-DOC-0003-0240-01",
+      "quote_original": "Dokumenti nabave moraju sadržavati podatke koji jasno i nedvosmisleno opisuju naručeni proizvod. Ako je potrebno, tim podacima treba dodati zahtjeve za odobravanje proizvoda, procesa, postupaka i opreme te zahtjeve za osposobljenost osoblja i zahtjeve za SUK.",
+      "chunk_id": "CHUNK-DOC-0003-0034",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0002-APP_B_IV-0004",
+      "doc_id": "DOC-0002",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: QA pregledava tehničke specifikacije, narudžbenice i ugovore.",
+      "quote_id": "QUOTE-DOC-0002-0178-01",
+      "quote_original": "9) Naziv radnog mjesta:    VODEĆI INŽENJER OSIGURANJA KVALITETE",
+      "chunk_id": "CHUNK-DOC-0002-0123",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0002-APP_B_IV-0004",
+      "doc_id": "DOC-0002",
+      "criterion_id": "APP_B_IV",
+      "statement": "objective_control: QA pregledava tehničke specifikacije, narudžbenice i ugovore.",
+      "quote_id": "QUOTE-DOC-0002-0178-02",
+      "quote_original": "• Pregled i procesiranje nabavne dokumentacije u skladu sa procesima u nuklearnoj\n  elektrani(tehničke specifikacije, narudžbenice, ugovori, ...)",
+      "chunk_id": "CHUNK-DOC-0002-0123",
+      "assessment_criterion": "APP_B_IV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_V-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Rad značajan za kvalitetu mora slijediti pisane postupke, upute ili nacrte.",
+      "quote_id": "QUOTE-DOC-0001-0050-01",
+      "quote_original": "Aktivnosti koje utječu na kvalitetu moraju se izvoditi prema pisanim postupcima,\nuputama ili nacrtima. U svakom postupku utvrditi će se kvantitativno i/ili\nkvalitativno kriterij prihvaćanja. Ovi postupci moraju biti odobreni, objavljeni i\nrazdijeljeni u kontroliranim uvjetima.",
+      "chunk_id": "CHUNK-DOC-0001-0011",
+      "assessment_criterion": "APP_B_V"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_V-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Postupci moraju utvrditi kvantitativne ili kvalitativne kriterije prihvaćanja.",
+      "quote_id": "QUOTE-DOC-0001-0051-01",
+      "quote_original": "Aktivnosti koje utječu na kvalitetu moraju se izvoditi prema pisanim postupcima,\nuputama ili nacrtima. U svakom postupku utvrditi će se kvantitativno i/ili\nkvalitativno kriterij prihvaćanja. Ovi postupci moraju biti odobreni, objavljeni i\nrazdijeljeni u kontroliranim uvjetima.",
+      "chunk_id": "CHUNK-DOC-0001-0011",
+      "assessment_criterion": "APP_B_V"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_V-0005",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Opis izvedbe određuje tko, što, kada, gdje i kako, uz potrebnu opremu i nadzor.",
+      "quote_id": "QUOTE-DOC-0004-0045-01",
+      "quote_original": "6. POSTUPAK",
+      "chunk_id": "CHUNK-DOC-0004-0009",
+      "assessment_criterion": "APP_B_V"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_V-0005",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Opis izvedbe određuje tko, što, kada, gdje i kako, uz potrebnu opremu i nadzor.",
+      "quote_id": "QUOTE-DOC-0004-0045-02",
+      "quote_original": "    Određuje se način izvođenja radnje s opisom pojedinačnih aktivnosti, Utvrđuje\n    se što se mora napraviti, tko će to napraviti, kada, gdje i kako. Navodi se\n---\nProgramski postupak                                                              Naziv dok: PP-42-01\nUPRAVLJANJE DOKUMENTIMA                                                           Rev. 6       Str: 8/26",
+      "chunk_id": "CHUNK-DOC-0004-0009",
+      "assessment_criterion": "APP_B_V"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_V-0005",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Opis izvedbe određuje tko, što, kada, gdje i kako, uz potrebnu opremu i nadzor.",
+      "quote_id": "QUOTE-DOC-0004-0045-03",
+      "quote_original": "materijal, oprema i dokumenti koji će se koristiti, te kako će se proces\nnadzirati, provjeriti i zapisati. Postupak se može prikazati i dijagramom toka.",
+      "chunk_id": "CHUNK-DOC-0004-0009",
+      "assessment_criterion": "APP_B_V"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_V-0001",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Izlazi definiraju kriterije prihvatljivosti ili na njih upućuju.",
+      "quote_id": "QUOTE-DOC-0008-0045-01",
+      "quote_original": "Rezultati (izlazni podaci) projektiranja i razvoja, koji su sadržani u projektno-tehničkoj dokumentaciji za određeni proizvod, moraju jasno i nedvosmisleno definirati proizvod sa svim potrebnim karakteristikama. Njihov obim i oblik ovisi o karakteru i složenosti projekta ali moraju:",
+      "chunk_id": "CHUNK-DOC-0008-0012",
+      "assessment_criterion": "APP_B_V"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_V-0001",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_V",
+      "statement": "objective_control: Izlazi definiraju kriterije prihvatljivosti ili na njih upućuju.",
+      "quote_id": "QUOTE-DOC-0008-0045-02",
+      "quote_original": "- definirati kriterije prihvatljivosti ili na njih upućivati",
+      "chunk_id": "CHUNK-DOC-0008-0012",
+      "assessment_criterion": "APP_B_V"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VI-0016",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Važeći dokumenti moraju biti dostupni na mjestu izvođenja aktivnosti.",
+      "quote_id": "QUOTE-DOC-0001-0082-01",
+      "quote_original": "- Da su važeća izdanja odgovarajućih dokumenata dostupna na svim mjestima gdje se propisane aktivnosti provode;",
+      "chunk_id": "CHUNK-DOC-0001-0018",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VI-0021",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Primatelj nove revizije vraća, uništava ili označuje staru nevažećom i bilježi odabranu radnju.",
+      "quote_id": "QUOTE-DOC-0001-0088-01",
+      "quote_original": "Kontrola mora uključivati zahtjev da primatelj nove revizije dokumenta vrati, uništi ili označi kao nevažeću staru reviziju tog dokumenta, te da kod preuzimanja dokumenta označi koju je radnju obavio.",
+      "chunk_id": "CHUNK-DOC-0001-0019",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_VI-0019",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: QA pregleda dokumente prije objave.",
+      "quote_id": "QUOTE-DOC-0004-0024-01",
+      "quote_original": "Voditelj QA poslova je odgovoran da:",
+      "chunk_id": "CHUNK-DOC-0004-0006",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_VI-0019",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: QA pregleda dokumente prije objave.",
+      "quote_id": "QUOTE-DOC-0004-0024-02",
+      "quote_original": "- obavlja pregled QA dokumenata prije objavljivanja",
+      "chunk_id": "CHUNK-DOC-0004-0006",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_VI-0026",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Sekcija GPD označena je obsolete/canceled; provjeriti odnos s GPD obvezama u drugim dokumentima.",
+      "quote_id": "QUOTE-DOC-0004-0037-01",
+      "quote_original": "N/A (obsolete, canceled)",
+      "chunk_id": "CHUNK-DOC-0004-0008",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_VI-0046",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Administrator prije dostave provjerava oznaku, reviziju, potpise i potpune priloge.",
+      "quote_id": "QUOTE-DOC-0004-0086-01",
+      "quote_original": "Administrator prije urudžbiranja i dostave treba provjeriti da li dokument ima naslov i naziv, IOD broj, broj važeće revizije, vlastoručne potpise osoba koje su dokument izradile, pregledale i odobrile, te da li su kompletirani svi prilozi.",
+      "chunk_id": "CHUNK-DOC-0004-0014",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_VI-0049",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Korisnik potvrđuje primitak i uklanja staru reviziju s mjesta korištenja.",
+      "quote_id": "QUOTE-DOC-0004-0089-01",
+      "quote_original": "Kad korisnici prime dokument s dostavnom listom, dostavnu listu potpisuju i vraćaju administratoru a staru nevažeću reviziju dokumenta uništavaju ili vidljivo označavaju da nije za upotrebu, te uklanjaju s mjesta korištenja.",
+      "chunk_id": "CHUNK-DOC-0004-0014",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_VI-0055",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Korisnik inicira izmjenu preko OB-ZIZ-012, a autor i odobravatelj ocjenjuju opravdanost.",
+      "quote_id": "QUOTE-DOC-0004-0096-01",
+      "quote_original": "Svaki korisnik dokumenta, sa svog stanovišta, može inicirati izmjenu dokumenta popunjavanjem zahtjeva za izmjenom dokumenta na obrascu OB-ZIZ-012 (Prilog 7.7). Opravdanost zahtjeva za promjenom razmatra autor dokumenta i odgovorna osoba koja je odobrila njegovu primjenu.",
+      "chunk_id": "CHUNK-DOC-0004-0015",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_VI-0067",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_VI",
+      "statement": "objective_control: Administrator evidentira dokument ili promijenjenu reviziju u GPD.",
+      "quote_id": "QUOTE-DOC-0004-0117-01",
+      "quote_original": "| UPIS DOKUMENTA U GLAVNU POPIS DOKUMENATA ILI PROMJENA REVIZIJE | Administrator upisuje dokument u glavni popis dokumenata ili ukoliko se radi o promijenjenom dokumentu, novo stanje revizije. | ADM | - | OB-GPD-009 Glavni popis dokumenata |",
+      "chunk_id": "CHUNK-DOC-0004-0017",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0005-APP_B_VI-0006",
+      "doc_id": "DOC-0005",
+      "criterion_id": "APP_B_VI",
+      "statement": "candidate_lead: Zapisni postupak traži GPD, dok document-control sekcija GPD kaže obsolete; provjeriti važeći način evidencije.",
+      "quote_id": "QUOTE-DOC-0005-0026-01",
+      "quote_original": "Zapisi se objavljuju kada dobiju IOD broj, te kada se ovjere žigom i urudžbiraju u\nGPD, prema točki 6.6 postupka PP-42-01 (Ref. 6)",
+      "chunk_id": "CHUNK-DOC-0005-0010",
+      "assessment_criterion": "APP_B_VI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VII-0005",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Dobavljači se biraju prema vrednovanju sposobnosti, a QA održava odobrenu listu.",
+      "quote_id": "QUOTE-DOC-0001-0126-01",
+      "quote_original": "Enconet mora vrednovati sposobnosti isporučitelja, te na temelju dobivenih\nrezultata izvršiti izbor isporučitelja. Voditelj QA poslova odgovoran je za\nuspostavljanjem i obnavljanjem odobrene liste isporučitelja.",
+      "chunk_id": "CHUNK-DOC-0001-0030",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VII-0007",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Vrednovanje dobavljača koristi postojeće zapise kvalitete i objektivno vrednovane informacije.",
+      "quote_id": "QUOTE-DOC-0001-0128-01",
+      "quote_original": "- Vrednovanje sadašnjih zapisa kvalitete i dodatnih informacija koje se",
+      "chunk_id": "CHUNK-DOC-0001-0030",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VII-0007",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Vrednovanje dobavljača koristi postojeće zapise kvalitete i objektivno vrednovane informacije.",
+      "quote_id": "QUOTE-DOC-0001-0128-02",
+      "quote_original": "  mogu objektivno vrednovati;",
+      "chunk_id": "CHUNK-DOC-0001-0030",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VII-0012",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Sukladnost s nabavnim dokumentima dokumentirano se dokazuje prije ugradnje ili uporabe.",
+      "quote_id": "QUOTE-DOC-0001-0133-01",
+      "quote_original": "Prije ugradnje ili korištenja proizvoda ili usluge pod nadzorom Enconeta, mora se\ndokumentirano dokazati sukladnost s nabavnim dokumentima.",
+      "chunk_id": "CHUNK-DOC-0001-0031",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_VII-0014",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Dobavljači se ocjenjuju najmanje godišnje prema kriterijima i prijemnim zapisima.",
+      "quote_id": "QUOTE-DOC-0003-0232-01",
+      "quote_original": "Najmanje jedanput godišnje Enconet ocjenjuje svoje dobavljače. Ocjenjivanje se provodi po utvrđenim kriterijima a podloge za to su zapisi o ulaznoj (prijemnoj) kontroli te drugi dokazi i saznanja o dobavljačima.",
+      "chunk_id": "CHUNK-DOC-0003-0033",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_VII-0019",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Verifikacija kod dobavljača zahtijeva dogovor o postupcima i metodama prihvaćanja.",
+      "quote_id": "QUOTE-DOC-0003-0238-01",
+      "quote_original": "Ako se pokaže potreba za verifikacijom proizvoda kod dobavljača, Enconet treba dogovoriti postupke verifikacije i metode prihvaćanja tog proizvoda.",
+      "chunk_id": "CHUNK-DOC-0003-0034",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_VII-0003",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: Dobavljači softvera moraju zadovoljiti zahtjeve i biti ocijenjeni prema PP-74-01.",
+      "quote_id": "QUOTE-DOC-0008-0092-01",
+      "quote_original": "Enconet će osigurati da se njegovi dobavljači softvera pridržavaju navedenih\nzahtjeva te da se, kao i ostali dobavljači, vrednuju i ocjenjuju prema postupku\nPP-74-01, «Proces nabave i ocjenjivanja dobavljača».",
+      "chunk_id": "CHUNK-DOC-0008-0016",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_VII-0003",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_VII",
+      "statement": "objective_control: QA provjerava dobavljačevu kvalifikaciju prema audit rezultatima i odobrava nabavu.",
+      "quote_id": "QUOTE-DOC-0025-0020-01",
+      "quote_original": "Voditelj QA odgovoran je da provjeri kvalificiranost dobavljača (isporučioca) mjerno testne opreme na osnovu rezultata audita i odobri nabavu tražene opreme.",
+      "chunk_id": "CHUNK-DOC-0025-0008",
+      "assessment_criterion": "APP_B_VII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VIII-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Materijali i komponente pod nadzorom Enconeta identificiraju se oznakama ili zapisima o sljedivosti.",
+      "quote_id": "QUOTE-DOC-0001-0134-01",
+      "quote_original": "Enconet mora obavljati identifikaciju i kontrolu materijala, dijelova i komponenti koji su pod nadzorom Enconeta prilikom isporuke, ugradnje i rada, pomoću oznaka šarže, broja dijela, serijskog broja ili nekim drugim odgovarajućim načinom, bilo oznakom na dijelu bilo pomoću zapisa o sljedivosti dijelova.",
+      "chunk_id": "CHUNK-DOC-0001-0033",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_VIII-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Primjena oznake ne smije narušiti radna svojstva dijela.",
+      "quote_id": "QUOTE-DOC-0001-0136-01",
+      "quote_original": "Identifikacijska oznaka primjenjivat će se na takav način da ne utječe na radna svojstva dijela.",
+      "chunk_id": "CHUNK-DOC-0001-0033",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0016-APP_B_VIII-0002",
+      "doc_id": "DOC-0016",
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Jedinstvena oznaka softvera najmanje uključuje ime i broj verzije.",
+      "quote_id": "QUOTE-DOC-0016-0014-01",
+      "quote_original": "9. Software Identification Code – assures that unique name shall be used to track the software within the documents. It contains as a minimum abbreviation of the software name and version number.",
+      "chunk_id": "CHUNK-DOC-0016-0016",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0016-APP_B_VIII-0005",
+      "doc_id": "DOC-0016",
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Izdanje inventarizira izvorne, izvršne i podatkovne jedinice.",
+      "quote_id": "QUOTE-DOC-0016-0039-01",
+      "quote_original": "### 4.2.4 Verification that all necessary documentation is included in Version Description Document:",
+      "chunk_id": "CHUNK-DOC-0016-0020",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0016-APP_B_VIII-0005",
+      "doc_id": "DOC-0016",
+      "criterion_id": "APP_B_VIII",
+      "statement": "supporting_control: Izdanje inventarizira izvorne, izvršne i podatkovne jedinice.",
+      "quote_id": "QUOTE-DOC-0016-0039-02",
+      "quote_original": "6. An inventory of the source, executable, and data units included in the release.",
+      "chunk_id": "CHUNK-DOC-0016-0020",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_VIII-0004",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Tag na ventilu mora odgovarati Work Packageu; razlika se prijavljuje coordinatoru.",
+      "quote_id": "QUOTE-DOC-0020-0092-01",
+      "quote_original": "7.2.5 Record the tag number of the AOV being worked in the appropriate Field Data\n      sheet. Verify the tag number of the AOV is identical to the tag number shown\n      on the Work Package. If the tag number is different, contact the Test\n      Coordinator.",
+      "chunk_id": "CHUNK-DOC-0020-0022",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_VIII-0001",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Jedinstvena oznaka povučenog instrumenta ne smije se ponovno dodijeliti novom instrumentu.",
+      "quote_id": "QUOTE-DOC-0025-0010-01",
+      "quote_original": "**Jedinstvena oznaka instrumenta**\nInstrument se označuje sa jedinstvenom oznakom, kombinacijom slove i brojeva. Stara\noznaka instrumenta koji više nije i upotrebi ne može se koristiti za novo nabavljeni\ninstrument.",
+      "chunk_id": "CHUNK-DOC-0025-0007",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_VIII-0005",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_VIII",
+      "statement": "objective_control: Instrument klase I, II ili III ima trajno pričvršćenu jedinstvenu oznaku ili serijski broj.",
+      "quote_id": "QUOTE-DOC-0025-0045-01",
+      "quote_original": "Svaki instrument koji je po definiciji klase I, II ili III, mora imati svoju jedinstvenu oznaku, koja mora biti trajno pričvršćena na instrument. Može se koristiti i serijski broj instrumenta.",
+      "chunk_id": "CHUNK-DOC-0025-0009",
+      "assessment_criterion": "APP_B_VIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IX-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Proces čiji se rezultat ne može kasnije potpuno verificirati izvodi se kvalificiranim postupkom, opremom i osobljem.",
+      "quote_id": "QUOTE-DOC-0001-0141-01",
+      "quote_original": "Procesi kod kojih ostvarena kvaliteta ovisi o radu tih procesa, a koja se ne može naknadno verificirati završnim pregledom proizvoda, moraju se provoditi u kontroliranim uvjetima prema kvalificiranim postupcima, s kvalificiranom opremom i osobljem.",
+      "chunk_id": "CHUNK-DOC-0001-0037",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IX-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Dokument navodi trening i kontrolu vida za izvršitelje vizualne QC kontrole.",
+      "quote_id": "QUOTE-DOC-0001-0146-01",
+      "quote_original": "Enconet je do sada uključen u kategoriju specijalnih procesa na području vizualne kontrole QC aktivnosti. Trening i zdravstveni uvjeti osiguravaju se u sklopu zahtjeva NE Krško. Direktni izvršioci imaju odgovarajući trening i zdravstvene kontrole vida. Specijalni procesi provode se u skladu sa zahtjevima ugovorenih poslova.",
+      "chunk_id": "CHUNK-DOC-0001-0038",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_IX-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Prije preuzimanja novih specijalnih procesa moraju se osigurati edukacija, postupci, oprema i prostor.",
+      "quote_id": "QUOTE-DOC-0001-0147-01",
+      "quote_original": "U slučaju da Enconet novim ugovorom preuzme obavezu izvedbe specijalnih procesa koji do sada nisu izvođeni, osigurat će se zahtijevana edukacija, postupci, oprema, kalibracije, potreban prostor i svi ostali potrebni parametri za uspješno izvođenje procesa.",
+      "chunk_id": "CHUNK-DOC-0001-0038",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0002-APP_B_IX-0001",
+      "doc_id": "DOC-0002",
+      "criterion_id": "APP_B_IX",
+      "statement": "supporting_control: QC uvjeti navode vizualnu kontrolu VT II prema ANSI/ASNT CP-189; propisana edukacija nije osobni certifikat.",
+      "quote_id": "QUOTE-DOC-0002-0175-01",
+      "quote_original": "8) Naziv radnog mjesta:    VODEĆI INŽENJER KONTROLE KVALITETE",
+      "chunk_id": "CHUNK-DOC-0002-0123",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0002-APP_B_IX-0001",
+      "doc_id": "DOC-0002",
+      "criterion_id": "APP_B_IX",
+      "statement": "supporting_control: QC uvjeti navode vizualnu kontrolu VT II prema ANSI/ASNT CP-189; propisana edukacija nije osobni certifikat.",
+      "quote_id": "QUOTE-DOC-0002-0175-02",
+      "quote_original": "Organizacija i sistematizacija radnih mjesta                                                                 11\n---\n• Znanje engleskog jezika\n• Sposobnost timskog rada\n• Specijalizirana edukacija iz područja kontrole kvalitete:\n    o Nuclear Quality Assurance Lead Auditor NQA-1\n    o 10 CFR 50.59 Changes, Tests and Experiments Screening Process\n    o Vizualna kontrola VT II – ANSI/ASNT CP-189",
+      "chunk_id": "CHUNK-DOC-0002-0123",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_IX-0004",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Oprema procesa odobrava se, a kvalifikacija osoblja verificira.",
+      "quote_id": "QUOTE-DOC-0003-0264-01",
+      "quote_original": "Procese, koji se ne mogu verificirati naknadnim praćenjem i mjerenjem, Enconet mora validirati kako bi dokazao sposobnost tih procesa za ostvarivanje planiranih rezultata. To su oni procesi kod kojih nedostaci postaju vidljivi tek nakon korištenja proizvoda ili nakon što je usluga isporučena. Ako se takvi procesi pojave, Enconet će za njih, kada je to primjenjivo:",
+      "chunk_id": "CHUNK-DOC-0003-0039",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_IX-0004",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_IX",
+      "statement": "objective_control: Oprema procesa odobrava se, a kvalifikacija osoblja verificira.",
+      "quote_id": "QUOTE-DOC-0003-0264-02",
+      "quote_original": "- Odobriti opremu i sredstva te verificirati osposobljenost osoblja",
+      "chunk_id": "CHUNK-DOC-0003-0039",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_IX-0006",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_IX",
+      "statement": "candidate_lead: Izuzetak navodi da dotadašnje aktivnosti ne zahtijevaju specijalne procese; usporediti s Nuclear QA Planom koji opisuje vizualnu QC kontrolu.",
+      "quote_id": "QUOTE-DOC-0003-0341-01",
+      "quote_original": "Izuzetak:\nPriručnik kvalitete uključuje kriterije X, i XIII Appendix-a B, 10CFR50, za slučajeve budućih aktivnosti Enconeta koji bi zahtjevali primjenu tih kriterija. Dosadašnje aktivnosti Enconeta po svojoj naravi i opsegu ne zahtjevaju primjenu navedenih kriterija: IX. Control of Special Processes, XIII. Handling, Storage and Shipping.\nPrilikom pružanja usluga u NEK-u, Enconetovi djelatnici u radu primjenjuju QA program NEK-a.",
+      "chunk_id": "CHUNK-DOC-0003-0052",
+      "assessment_criterion": "APP_B_IX"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_X-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Inspekciju obavlja osoblje koje nije izvodilo pregledavani rad.",
+      "quote_id": "QUOTE-DOC-0001-0151-01",
+      "quote_original": "Ispitivanje dijelova, proizvoda ili usluga u opsegu isporuke Enconeta ili pod njegovim nadzorom mora provoditi osoblje koje nije sudjelovalo u izvođenju aktivnosti koje se pregledavaju. Kriteriji prihvatljivosti i verifikacije sukladnosti moraju se utvrditi u dokumentiranim uputama, postupcima i nacrtima. Ukoliko nije moguće ispitivanje obrađenog dijela, proizvoda ili usluge, provodit će se praćenje procesa na način naveden u poglavlju 8. ovog NQAP.",
+      "chunk_id": "CHUNK-DOC-0001-0040",
+      "assessment_criterion": "APP_B_X"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_X-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Inspekcijski kriteriji i verifikacija sukladnosti moraju biti dokumentirani.",
+      "quote_id": "QUOTE-DOC-0001-0152-01",
+      "quote_original": "Ispitivanje dijelova, proizvoda ili usluga u opsegu isporuke Enconeta ili pod njegovim nadzorom mora provoditi osoblje koje nije sudjelovalo u izvođenju aktivnosti koje se pregledavaju. Kriteriji prihvatljivosti i verifikacije sukladnosti moraju se utvrditi u dokumentiranim uputama, postupcima i nacrtima. Ukoliko nije moguće ispitivanje obrađenog dijela, proizvoda ili usluge, provodit će se praćenje procesa na način naveden u poglavlju 8. ovog NQAP.",
+      "chunk_id": "CHUNK-DOC-0001-0040",
+      "assessment_criterion": "APP_B_X"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_X-0006",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Dokazi na točkama svjedočenja i zaustavljanja potvrđuju prihvatljivost prije nastavka rada.",
+      "quote_id": "QUOTE-DOC-0001-0154-01",
+      "quote_original": "Voditelj projekta odgovoran je za utvrđivanje inspekcijskih točaka u takvim procesima (svjedočenje i zaustavljanje procesa). Objektivni dokazi provedenih inspekcija u tim točkama koristit će za verifikaciju da su zadovoljeni kriteriji prihvatljivosti unutar propisanih tolerancija prije nastavka radova ili pružanja usluge.",
+      "chunk_id": "CHUNK-DOC-0001-0040",
+      "assessment_criterion": "APP_B_X"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_X-0007",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Inspekcija tijekom rada postrojenja mora slijediti pisane i odobrene postupke.",
+      "quote_id": "QUOTE-DOC-0001-0155-01",
+      "quote_original": "Ukoliko je Enconet odgovoran za obavljanje inspekcije u radu postrojenja, inspekcija se mora provoditi prema pisanim i odobrenim postupcima.",
+      "chunk_id": "CHUNK-DOC-0001-0040",
+      "assessment_criterion": "APP_B_X"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_X-0006",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_X",
+      "statement": "objective_control: Nadzorne i mjerne točke realizacije temelje se na planu, ugovoru i tehničkoj dokumentaciji.",
+      "quote_id": "QUOTE-DOC-0003-0274-01",
+      "quote_original": "- Realizacija: Nadzorom, a prema potrebi i mjerenjem, na onim mjestima koja su predviđena planom i koja utječu na kvalitetu proizvoda, a na temelju ugovornih zahtjeva i tehničko-tehnološke dokumentacije prema kojoj se proizvod radi.",
+      "chunk_id": "CHUNK-DOC-0003-0041",
+      "assessment_criterion": "APP_B_X"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_X-0001",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_X",
+      "statement": "supporting_control: Dorađeni proizvod ponovno se pregledava i verificira kao izvorni proizvod.",
+      "quote_id": "QUOTE-DOC-0010-0068-01",
+      "quote_original": "Nositelj rješavanja provodi mjere i postupak za rješavanje nesukladnosti. Svojim potpisom potvrđuje da je nesukladnost otklonjena te o tome izvještava voditelja projekta/posla i voditelja QA. Nesukladni proizvod koji je dorađen treba ponovo pregledati i verificirati na isti način kao i izvorni proizvod.",
+      "chunk_id": "CHUNK-DOC-0010-0013",
+      "assessment_criterion": "APP_B_X"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XI-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Postupci testiranja propisuju okolišne uvjete, kvalifikaciju osoblja i kalibraciju instrumenata.",
+      "quote_id": "QUOTE-DOC-0001-0157-01",
+      "quote_original": "Testiranje pod nadzorom Enconeta mora se izvoditi prema pisanim postupcima testiranja. Takvi postupci moraju utvrditi odgovarajuće okolišne uvjete, te zahtjeve za kvalifikacijom osoblja i kalibracijom instrumenata.",
+      "chunk_id": "CHUNK-DOC-0001-0041",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0017-APP_B_XI-0004",
+      "doc_id": "DOC-0017",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Validacija na završetku implementacije potvrđuje zadovoljenje zahtjeva.",
+      "quote_id": "QUOTE-DOC-0017-0019-01",
+      "quote_original": "### 4.1.4 Software validation is performed at the end of the implementation phase to ensure that the code satisfies the requirements.",
+      "chunk_id": "CHUNK-DOC-0017-0019",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0018-APP_B_XI-0003",
+      "doc_id": "DOC-0018",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Dostavljeni test slučajevi koriste se za provjeru uspješne instalacije.",
+      "quote_id": "QUOTE-DOC-0018-0021-01",
+      "quote_original": "### 4.1.4 The accompanying test cases shall be used for testing of successfulness of the installation.",
+      "chunk_id": "CHUNK-DOC-0018-0013",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0019-APP_B_XI-0003",
+      "doc_id": "DOC-0019",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Softverski inženjer testira RELAP5 za sve namijenjene primjene.",
+      "quote_id": "QUOTE-DOC-0019-0150-01",
+      "quote_original": "6.2.1.    RELAP5 computer program shall be tested for all intended applications by\n          RELAP5 software engineer.",
+      "chunk_id": "CHUNK-DOC-0019-0026",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0019-APP_B_XI-0005",
+      "doc_id": "DOC-0019",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: In-use testovi provjeravaju prihvatljivo ponašanje na drugom računalu ili nakon bitne promjene hardvera ili potpornog softvera.",
+      "quote_id": "QUOTE-DOC-0019-0152-01",
+      "quote_original": "6.2.2.    The extent of testing may include:",
+      "chunk_id": "CHUNK-DOC-0019-0026",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0019-APP_B_XI-0005",
+      "doc_id": "DOC-0019",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: In-use testovi provjeravaju prihvatljivo ponašanje na drugom računalu ili nakon bitne promjene hardvera ili potpornog softvera.",
+      "quote_id": "QUOTE-DOC-0019-0152-02",
+      "quote_original": "          2.   In-use tests, covered by this procedure, should be performed by RELAP5",
+      "chunk_id": "CHUNK-DOC-0019-0026",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0019-APP_B_XI-0005",
+      "doc_id": "DOC-0019",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: In-use testovi provjeravaju prihvatljivo ponašanje na drugom računalu ili nakon bitne promjene hardvera ili potpornog softvera.",
+      "quote_id": "QUOTE-DOC-0019-0152-03",
+      "quote_original": "               software engineer to confirm acceptable performance of RELAP5 program\n               in the operating system and should be used when RELAP5 program is\n               installed on different computers, or when significant hardware or\n               supporting software changes are made. Same input decks should be used as\n               for verification tests from 6.2.2-1.",
+      "chunk_id": "CHUNK-DOC-0019-0026",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0019-APP_B_XI-0018",
+      "doc_id": "DOC-0019",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Svaki osnovni i LSTF test izvodi se i uspoređuje s referentnim izlazom.",
+      "quote_id": "QUOTE-DOC-0019-0165-01",
+      "quote_original": "6.2.6.     Testing procedure for installation of RELAP5 program shall be based on 6.2.5-4.\n           For each of the basic test input decks, and for LSTF input deck, the calculation\n           shall be performed and the results shall be checked against reference output files\n           (output files are part of original distribution, and for LSTF input deck, output was\n           produced developers version and checked against experimental results). The\n           checking shall include all important variables:",
+      "chunk_id": "CHUNK-DOC-0019-0030",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0019-APP_B_XI-0028",
+      "doc_id": "DOC-0019",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Za uspjeh testa traži se najmanje 6–7 značajnih znamenki; dopušteni su fc ili diff za usporedbu.",
+      "quote_id": "QUOTE-DOC-0019-0175-01",
+      "quote_original": "6.2.8. Due to internally used 64-bit calculation at least 6-7 significant digits shall be used as a success criteria for output results. In special case of PC version the output results should be the same on all Pentium class of computers and file compare (DOS fc) utility may be used for global checking. In case of similar UNIX based computers (similar architecture and word size, IEEE floating point implementation) diff utility may be used for global checking of output files.",
+      "chunk_id": "CHUNK-DOC-0019-0030",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XI-0023",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Prije testiranja moraju se provesti plant postupci, lockouts i permits.",
+      "quote_id": "QUOTE-DOC-0020-0068-01",
+      "quote_original": "5.15  All normal plant procedures need to be followed, required lockouts done, and\n      pertinent permits obtained before starting to test a valve.",
+      "chunk_id": "CHUNK-DOC-0020-0020",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XI-0041",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Potpisi se analiziraju; neprihvatljiva akvizicija zahtijeva ponavljanje koraka.",
+      "quote_id": "QUOTE-DOC-0020-0112-01",
+      "quote_original": "7.4.5 Analyze the signatures. If the data is acceptable, proceed to step 7.4.7.",
+      "chunk_id": "CHUNK-DOC-0020-0024",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XI-0041",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Potpisi se analiziraju; neprihvatljiva akvizicija zahtijeva ponavljanje koraka.",
+      "quote_id": "QUOTE-DOC-0020-0112-02",
+      "quote_original": "7.4.6 If the data acquisition is not acceptable then repeat steps 7.3.1 through 7.4.5\n      as necessary.",
+      "chunk_id": "CHUNK-DOC-0020-0024",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XI-0049",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XI",
+      "statement": "objective_control: Svi kritični parametri moraju biti unutar granica za zaključak o namijenjenoj funkciji.",
+      "quote_id": "QUOTE-DOC-0020-0130-01",
+      "quote_original": "Acceptance criteria encompass the set of critical parameters for selected diagnostic testing type. Critical parameters of all tested valves must be within prescribed limits in order to declare the valve capable of fulfilling its intended safety function between outages. Otherwise, affected valves must be scheduled for repair or other corrective activities.",
+      "chunk_id": "CHUNK-DOC-0020-0027",
+      "assessment_criterion": "APP_B_XI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XII-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Mjerna oprema odabire se prema mjernom području, vrsti, točnosti i preciznosti.",
+      "quote_id": "QUOTE-DOC-0001-0158-01",
+      "quote_original": "Mora se izvršiti pravilan izbor opreme za pregled, mjerenje i ispitivanje kako bi se zadovoljilo mjerno područje, vrsta, točnost i preciznost mjerenja.",
+      "chunk_id": "CHUNK-DOC-0001-0042",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XII-0004",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Odstupanje opreme traži ponovnu procjenu prijašnjih mjerenja od posljednje kalibracije.",
+      "quote_id": "QUOTE-DOC-0001-0160-01",
+      "quote_original": "Oprema se mora kontrolirati s obzirom na rukovanje, skladištenje i kalibraciju. Ukoliko se utvrdi odstupanje izmjerenih vrijednosti preko dopuštenih ograničenja, mora se izvršiti vrednovanje vjerodostojnosti prije obavljenih mjerenja, a rezultati ispitivanja moraju se ponovno procijeniti za cjelokupno razdoblje od zadnje kalibracije.",
+      "chunk_id": "CHUNK-DOC-0001-0042",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XII-0005",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Voditelj projekta odgovara za sljedivost rezultata kalibracije prema priznatim standardima.",
+      "quote_id": "QUOTE-DOC-0001-0161-01",
+      "quote_original": "Voditelj projekta odgovorni su za obavljanje i sljedivost rezultata kalibracije opreme za pregled, mjerenje i ispitivanje prema priznatim standardima.",
+      "chunk_id": "CHUNK-DOC-0001-0042",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XII-0002",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Kalibracija sve opreme provjerava se prije uporabe.",
+      "quote_id": "QUOTE-DOC-0020-0075-01",
+      "quote_original": "6.5 Verify the calibration of all equipment before its use.",
+      "chunk_id": "CHUNK-DOC-0020-0021",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XII-0014",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Učestalost kalibracije određuje se prema proizvođaču, inženjerskoj praksi i uvjetima uporabe.",
+      "quote_id": "QUOTE-DOC-0025-0039-01",
+      "quote_original": "Frekvenca kalibracije se određuje na osnovi specifikacija proizvođača i dobre inženjerske prakse uz primjenu uvjeta upotrebe.",
+      "chunk_id": "CHUNK-DOC-0025-0009",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XII-0015",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XII",
+      "statement": "objective_control: Novi certificirani instrument treba kalibrirati prije uporabe.",
+      "quote_id": "QUOTE-DOC-0025-0040-01",
+      "quote_original": "Ako je novonabavljeni instrument odgovarajuće certificiran može se odmah koristiti, ali je prije toga potrebno izvesti kalibraciju.",
+      "chunk_id": "CHUNK-DOC-0025-0009",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XII-0025",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XII",
+      "statement": "candidate_lead: Treba provjeriti definirane klase i sljedivost referentnih etalona; candidate; verify criterion mapping, jer sami ovi odlomci ne određuju punu sljedivost.",
+      "quote_id": "QUOTE-DOC-0025-0065-01",
+      "quote_original": "**Kalibracija**\nUsporedba naprave s drugom referentnom napravom s namjerom da se ustanovi,\nocjeni i ukloni moguće odstupanje. Kalibracija se može izvoditi korištenjem referentne\nnaprave ili opreme koja je ugrađena na tehnološkom dijelu elektrane.",
+      "chunk_id": "CHUNK-DOC-0025-0007",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XII-0025",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XII",
+      "statement": "candidate_lead: Treba provjeriti definirane klase i sljedivost referentnih etalona; candidate; verify criterion mapping, jer sami ovi odlomci ne određuju punu sljedivost.",
+      "quote_id": "QUOTE-DOC-0025-0065-02",
+      "quote_original": "Instrumenti se kalibriraju od niže prema višoj klasi.",
+      "chunk_id": "CHUNK-DOC-0025-0009",
+      "assessment_criterion": "APP_B_XII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XIII-0001",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XIII",
+      "statement": "supporting_control: Kada je odgovoran za ove aktivnosti, Enconet kontrolira rukovanje, otpremu i skladištenje radi zaštite proizvoda.",
+      "quote_id": "QUOTE-DOC-0001-0138-01",
+      "quote_original": "Enconet mora kontrolirati aktivnosti rukovanja, otpreme i skladištenja u svrhu sprječavanja oštećenja, propadanja ili gubitka proizvoda. Ukoliko je potrebno, moraju se utvrditi, propisati, održavati i verificirati posebne mjere o rukovanju i zaštitnim okolišnim uvjetima prilikom transporta i skladištenja onda kad je Enconet odgovoran za navedene aktivnosti.",
+      "chunk_id": "CHUNK-DOC-0001-0034",
+      "assessment_criterion": "APP_B_XIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XIII-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XIII",
+      "statement": "candidate_lead: Dokument tvrdi da kriterij XIII nije u dotadašnjem opsegu; candidate; verify criterion mapping.",
+      "quote_id": "QUOTE-DOC-0001-0187-01",
+      "quote_original": "Izuzetak:\nPriručnik kvalitete ne uključuje kriterij XIII Appendix-a B, 10CFR50. Dosadašnje aktivnosti Enconeta po svojoj naravi i opsegu ne zahtijevaju primjenu navedenog kriterija XIII - Handling, Storage and Shipping.\nPrilikom pružanja usluga u NEK-u, Enconetovi djelatnici u radu primjenjuju QA program NEK-a.\nUkoliko Enconet u budućnosti bude pružao usluge NE Krško, koje bi zahtijevale primjenu kriterija XIII, Dodatka B, 10CFR50, poštivati će se zahtjevi odgovarajućih postupaka NE Krško, što nije u suprotnosti s kodom i biti će specificirano u ponudi Enconeta. U slučaju opsežnih i dugotrajnih radova na području koje bi zahtijevalo striktnu primjenu tog kriterija Enconet će razviti svoje postupke.",
+      "chunk_id": "CHUNK-DOC-0001-0054",
+      "assessment_criterion": "APP_B_XIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XIII-0001",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XIII",
+      "statement": "objective_control: Oprema se štiti prije contamination područja; za zatvorene vreće naveden je približno jednosatni limit.",
+      "quote_id": "QUOTE-DOC-0020-0053-01",
+      "quote_original": "All equipment should be protected with plastic bags prior to entering a contamination area. The limit for operating SAM and DAM in sealed plastic bags (no air circulation) is approximately one hour. There is no time limitation for equipment operating in a non-sealed bag with air circulation.",
+      "chunk_id": "CHUNK-DOC-0020-0019",
+      "assessment_criterion": "APP_B_XIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XIII-0003",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XIII",
+      "statement": "objective_control: Prostor čuvanja mora odgovarati propisanim uvjetima instrumenta.",
+      "quote_id": "QUOTE-DOC-0025-0041-01",
+      "quote_original": "MTE se čuva i skladišti u prostorijama koje moraju zadovoljavati kriterije koje su predpisane za pojedini instrument (temperature, vlaga, agresivnost atmosfere, pritisak, vibracije itd.)",
+      "chunk_id": "CHUNK-DOC-0025-0009",
+      "assessment_criterion": "APP_B_XIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XIII-0005",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XIII",
+      "statement": "objective_control: Korisničko skladištenje mora slijediti proizvođačeve zahtjeve.",
+      "quote_id": "QUOTE-DOC-0025-0044-01",
+      "quote_original": "MTE se može ustupiti na čuvanje korisniku ili skupini korisnika ako se ispunjuju slijedeći uvjeti:",
+      "chunk_id": "CHUNK-DOC-0025-0009",
+      "assessment_criterion": "APP_B_XIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0025-APP_B_XIII-0005",
+      "doc_id": "DOC-0025",
+      "criterion_id": "APP_B_XIII",
+      "statement": "objective_control: Korisničko skladištenje mora slijediti proizvođačeve zahtjeve.",
+      "quote_id": "QUOTE-DOC-0025-0044-02",
+      "quote_original": "- MTE oprema se skladišti sukladno zahtjevima za skladištenje navedenim u specifikacijama, koje je postavio proizvođač opreme.",
+      "chunk_id": "CHUNK-DOC-0025-0009",
+      "assessment_criterion": "APP_B_XIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XIV-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Fizičke kartice ispitivanih sustava i dijelova sprječavaju nepažljivu uporabu.",
+      "quote_id": "QUOTE-DOC-0001-0165-01",
+      "quote_original": "Oprema za mjerenje i ispitivanje mora biti jednoznačno obilježena, tako da se u slučaju korištenja te opreme njena oznaka prenosi na pojedinačne entitete koji su pregledani i ispitani. Trebaju se koristiti tipske kartice ili zapisnici pregleda radi utvrđivanja stanja pregleda i ispitivanja, kao i sljedivost testiranih entiteta kroz izvješća. Kod testiranih sustava, komponenti i dijelova koristit će se fizičko označivanje karticama kako bi se spriječila nepažljiva uporaba.",
+      "chunk_id": "CHUNK-DOC-0001-0043",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0003-APP_B_XIV-0004",
+      "doc_id": "DOC-0003",
+      "criterion_id": "APP_B_XIV",
+      "statement": "candidate_lead: Dopušta se hitna isporuka bez navedenih provjera uz pisano odobrenje; provjeriti granice ove iznimke za nuklearni rad.",
+      "quote_id": "QUOTE-DOC-0003-0279-01",
+      "quote_original": "- Isporuka: Enconet neće isporučiti proizvod kupcu ako nije prošao potrebne nadzore i mjerenja koji dokazuju ispravnost proizvoda odnosno zadovoljenje zahtjeva kupca. Na primjeren način mora biti dokazivo da je ispravan proizvod predan kupcu i da ga je on prihvatio. Iznimno, u slučaju hitnosti, na traženje kupca, isporuka može uslijediti i bez navedenih zahtjeva ali uz pisano odobrenje kupca odnosno odgovarajuće ovlaštene osobe.",
+      "chunk_id": "CHUNK-DOC-0003-0041",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_XIV-0002",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Neobavljen prijemni pregled označuje se žigom NIJE PREGLEDANO.",
+      "quote_id": "QUOTE-DOC-0004-0139-01",
+      "quote_original": "Žig je pravokutnog oblika dimenzije 46 X 18 mm. Služi za označavanje nabavljenih i korištenih proizvoda koji, iz opravdanih razloga, nisu prošli prijemnu kontrolu. Koriste ga voditelji projekata a čuva administrator.",
+      "chunk_id": "CHUNK-DOC-0004-0026",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0004-APP_B_XIV-0002",
+      "doc_id": "DOC-0004",
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Neobavljen prijemni pregled označuje se žigom NIJE PREGLEDANO.",
+      "quote_id": "QUOTE-DOC-0004-0139-02",
+      "quote_original": "| NIJE PREGLEDANO |",
+      "chunk_id": "CHUNK-DOC-0004-0026",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0008-APP_B_XIV-0002",
+      "doc_id": "DOC-0008",
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Žig ili naljepnica prikazuju status zabrane korištenja.",
+      "quote_id": "QUOTE-DOC-0008-0088-01",
+      "quote_original": "Voditelj QA poslova izdaje nalog o zaustavljanju procesa i daljnjih radova odnosno zabranu korištenja određenog proizvoda i/ili dokumentacije. Nalog se upisuje u obrascu OB-NCR-016 i rješava prema postupku PP-83-01 (Ref. 7), a na dokumentaciju se utiskuje žig \"QA zaustavljeni radovi\" određenog oblika i načina korištenja prema postupku PP-42-01 (Ref. 4) odnosno naljepnica istog sadržaja na nesukladni proizvod. Dokumentacija odnosno proizvod povlači se iz korištenja i čuva na izoliranom mjestu kako bi se onemogućilo nehotično korištenje.",
+      "chunk_id": "CHUNK-DOC-0008-0015",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XIV-0001",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Vidljiva oznaka NESUKLADNOST prikazuje zabranu daljnje uporabe.",
+      "quote_id": "QUOTE-DOC-0010-0062-01",
+      "quote_original": "Voditelji projekata/posla dužni su da se, utvrđena nesukladnost označi na proizvodu odnosno dokumentu, vidljivo i na svrsishodan način (natpis, naljepnica, žig, posebno odlaganje i sl.), kako bi se spriječilo daljnje korištenje do iznalaženja prihvatljivog rješenja. Nesukladni i označeni proizvod ili dokument povlači se iz uporabe i odlaže na izolirano mjesto. Ako je potrebna, vidljiva oznaka ispisuje se tekstom Normal Arial 20 B.",
+      "chunk_id": "CHUNK-DOC-0010-0012",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XIV-0001",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XIV",
+      "statement": "supporting_control: Vidljiva oznaka NESUKLADNOST prikazuje zabranu daljnje uporabe.",
+      "quote_id": "QUOTE-DOC-0010-0062-02",
+      "quote_original": "```\nNESUKLADNOST\n```",
+      "chunk_id": "CHUNK-DOC-0010-0012",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XIV-0001",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Za zadatak se traži equipment clearance ili test tag.",
+      "quote_id": "QUOTE-DOC-0020-0078-01",
+      "quote_original": "6.8 Request an equipment clearance (e.g. test tag) for the task specified on the work package.",
+      "chunk_id": "CHUNK-DOC-0020-0021",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XIV-0002",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Test tags oslobađaju se kada su primjenjivi podaci prihvatljivi i obavještava se odgovorna osoba.",
+      "quote_id": "QUOTE-DOC-0020-0118-01",
+      "quote_original": "7.4.8 If the As-Left test is to be conducted later, or if maintenance of the actuator or\n      valve is required, perform the following:",
+      "chunk_id": "CHUNK-DOC-0020-0024",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0020-APP_B_XIV-0002",
+      "doc_id": "DOC-0020",
+      "criterion_id": "APP_B_XIV",
+      "statement": "objective_control: Test tags oslobađaju se kada su primjenjivi podaci prihvatljivi i obavještava se odgovorna osoba.",
+      "quote_id": "QUOTE-DOC-0020-0118-02",
+      "quote_original": "7.4.8.7 If applicable, and data/results are acceptable release Equipment Clearance\n        (i.e. Test Tags). Notify responsible person that test is complete.",
+      "chunk_id": "CHUNK-DOC-0020-0024",
+      "assessment_criterion": "APP_B_XIV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XV-0003",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Nesukladnost prolazi inženjersku ocjenu i odobrenje dispozicije prije prihvaćanja.",
+      "quote_id": "QUOTE-DOC-0001-0168-01",
+      "quote_original": "Nesukladni proizvodi ili usluge moraju biti podvrgnuti inženjerskoj ocjeni i vrednovanju. Postupanje mora biti verificirano i odobreno od voditelja projekta prije prihvaćanja proizvoda s bilo kojim stanjem (koristi kao što je, popravak-dorada, prenamjena, odbijen ili odbačen).",
+      "chunk_id": "CHUNK-DOC-0001-0046",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0015",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: NCR mora identificirati proizvod, uslugu, proces, aktivnost ili dokumentaciju.",
+      "quote_id": "QUOTE-DOC-0010-0033-01",
+      "quote_original": "Formalno izvješće o nesukladnosti (Non-Conformance Report - NCR) provodi se na jedinstvenom obrascu OB-NCR-016 kako bi se osigurala djelotvorna sljedivost. Svako NCR izvješće treba sadržavati slijedeće podatke:",
+      "chunk_id": "CHUNK-DOC-0010-0010",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0015",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: NCR mora identificirati proizvod, uslugu, proces, aktivnost ili dokumentaciju.",
+      "quote_id": "QUOTE-DOC-0010-0033-02",
+      "quote_original": "- oznaku nesukladnog proizvoda/usluge, procesa, aktivnosti, dokumentacije,",
+      "chunk_id": "CHUNK-DOC-0010-0010",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0023",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Kritična nesukladnost traži zaustavljanje procesa i daljnjeg rada.",
+      "quote_id": "QUOTE-DOC-0010-0058-01",
+      "quote_original": "c) Kritična nesukladnost",
+      "chunk_id": "CHUNK-DOC-0010-0011",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0023",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Kritična nesukladnost traži zaustavljanje procesa i daljnjeg rada.",
+      "quote_id": "QUOTE-DOC-0010-0058-02",
+      "quote_original": "   - potrebna je mjera zaustavljanja procesa i daljnjih radova (PP-73-01, tč. 6.9).",
+      "chunk_id": "CHUNK-DOC-0010-0011",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0025",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Nesukladan proizvod ili dokument vidljivo se označava, povlači i izolira do prihvatljivog rješenja.",
+      "quote_id": "QUOTE-DOC-0010-0061-01",
+      "quote_original": "Voditelji projekata/posla dužni su da se, utvrđena nesukladnost označi na proizvodu odnosno dokumentu, vidljivo i na svrsishodan način (natpis, naljepnica, žig, posebno odlaganje i sl.), kako bi se spriječilo daljnje korištenje do iznalaženja prihvatljivog rješenja. Nesukladni i označeni proizvod ili dokument povlači se iz uporabe i odlaže na izolirano mjesto. Ako je potrebna, vidljiva oznaka ispisuje se tekstom Normal Arial 20 B.",
+      "chunk_id": "CHUNK-DOC-0010-0012",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0026",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Stručna ocjena određuje prihvat kakav jest, doradu, prenamjenu ili odbijanje.",
+      "quote_id": "QUOTE-DOC-0010-0065-01",
+      "quote_original": "Svaki nesukladni proizvod, pri pregledu, treba podvrgnuti stručnoj ocjeni te, osim uzroka nastajanja, utvrditi način, mjere i postupak za otklanjanje nesukladnosti. Rezultat takve ocjene može biti da se nesukladni proizvod:",
+      "chunk_id": "CHUNK-DOC-0010-0013",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0026",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Stručna ocjena određuje prihvat kakav jest, doradu, prenamjenu ili odbijanje.",
+      "quote_id": "QUOTE-DOC-0010-0065-02",
+      "quote_original": "a) Prihvaća kakav jest;\nb) Doradi tako da zadovolji propisane zahtjeve;\nc) Prenamjeni za drugu primjenu;\nd) Odbije ili odbaci.",
+      "chunk_id": "CHUNK-DOC-0010-0013",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0027",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: QA s voditeljem određuje i upisuje dispoziciju i nositelja rješenja.",
+      "quote_id": "QUOTE-DOC-0010-0066-01",
+      "quote_original": "Voditelj QA, u konzultaciji s voditeljem posla, utvrđuje rezultat ocjene i nositelja rješavanja nesukladnosti te ih upisuje u Sekciju IV.",
+      "chunk_id": "CHUNK-DOC-0010-0013",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0028",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Nositelj provodi rješenje i potpisom potvrđuje otklanjanje te izvješćuje QA i voditelja.",
+      "quote_id": "QUOTE-DOC-0010-0067-01",
+      "quote_original": "Nositelj rješavanja provodi mjere i postupak za rješavanje nesukladnosti. Svojim potpisom potvrđuje da je nesukladnost otklonjena te o tome izvještava voditelja projekta/posla i voditelja QA. Nesukladni proizvod koji je dorađen treba ponovo pregledati i verificirati na isti način kao i izvorni proizvod.",
+      "chunk_id": "CHUNK-DOC-0010-0013",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0029",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Ako je ugovorno traženo, kupac odobrava uporabu ili doradu nesukladnog proizvoda.",
+      "quote_id": "QUOTE-DOC-0010-0069-01",
+      "quote_original": "Ukoliko je to ugovorna obveza, prijedlog uporabe ili dorade proizvoda koji nije\nsukladan propisanim zahtjevima, mora se dostaviti na odobrenje korisniku ili\nnjegovom predstavniku.",
+      "chunk_id": "CHUNK-DOC-0010-0013",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XV-0030",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XV",
+      "statement": "objective_control: Stručna osoba potpisom verificira rezultat, a QA pregledava dokumentaciju i potvrđuje zaključenje.",
+      "quote_id": "QUOTE-DOC-0010-0076-01",
+      "quote_original": "Voditelj projekta/posla ili druga odgovorna stručna osoba pregledava, ocjenjuje te\nsvojim potpisom verificira rezultat postupka otklanjanja nesukladnosti i\nprovođenja korektivne/preventivne radnje. Voditelj QA pregledava cjelokupnu\ndokumentaciju o nesukladnosti i njezinom rješavanju te svojim potpisom\npotvrđuje da je nesukladnost rješavana po propisanim postupcima i da je\nzaključena.",
+      "chunk_id": "CHUNK-DOC-0010-0015",
+      "assessment_criterion": "APP_B_XV"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XVI-0002",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Za značajne probleme traži se analiza uzroka radi sprječavanja ponavljanja.",
+      "quote_id": "QUOTE-DOC-0001-0172-01",
+      "quote_original": "Enconet mora provesti analizu uzroka nastajanja nesukladnosti, sa svrhom sprječavanja ponavljanja u slučaju pojave uvjeta koji značajno ugrožavaju kvalitetu.",
+      "chunk_id": "CHUNK-DOC-0001-0048",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XVI-0024",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Veći problem traži korijenski uzrok i sprečavanje istog ili sličnog ponavljanja.",
+      "quote_id": "QUOTE-DOC-0010-0056-01",
+      "quote_original": "Prema opsegu i mogućem negativnom utjecaju na kvalitetu te načinu rješavanja, nesukladnost se klasificira kao:",
+      "chunk_id": "CHUNK-DOC-0010-0011",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XVI-0024",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Veći problem traži korijenski uzrok i sprečavanje istog ili sličnog ponavljanja.",
+      "quote_id": "QUOTE-DOC-0010-0056-02",
+      "quote_original": "b) Veća nesukladnost",
+      "chunk_id": "CHUNK-DOC-0010-0011",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_XVI-0024",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Veći problem traži korijenski uzrok i sprečavanje istog ili sličnog ponavljanja.",
+      "quote_id": "QUOTE-DOC-0010-0056-03",
+      "quote_original": "   - potrebno je pokretanje postupka korektivne radnje za pronalaženje korijenskog uzroka kako bi se, osim otklanjanja nesukladnosti, osiguralo da se ista ili slična nesukladnost ne bi ponovila.",
+      "chunk_id": "CHUNK-DOC-0010-0011",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0011-APP_B_XVI-0010",
+      "doc_id": "DOC-0011",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: QA vodi evidenciju i izvješćuje direktora o statusu svih radnji.",
+      "quote_id": "QUOTE-DOC-0011-0015-01",
+      "quote_original": "Voditelj QA poslova vodi evidenciju i izvješćuje direktora Enconeta o statusu\nsvih uvedenih popravnih i preventivnih radnji.",
+      "chunk_id": "CHUNK-DOC-0011-0007",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0011-APP_B_XVI-0020",
+      "doc_id": "DOC-0011",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Izvršenje i uspješnost korektivnih mjera prate se radi sprečavanja ponavljanja.",
+      "quote_id": "QUOTE-DOC-0011-0028-01",
+      "quote_original": "Popravne radnje u SUK-u predstavljaju mjere i aktivnosti čija je priprema,\nprovedba i nadzor planirana, s dugoročnim aktivnostima i definiranim očekivanim\nrezultatima. Uzroci popravnih radnji u sustavu kvalitete mogu biti rezultati analize\nuočenih i evidentiranih nesukladnosti tijekom provođenja nezavisnog ocjenjivanja\nkvalitete (unutrašnjeg i vanjskog), iz reklamacija kupaca, radi višekratnog\nponavljanja istih nesukladnosti, poduzimanje mjera unapređenja SUK-a i svi\nostali čimbenici kojima se ostvaruje poboljšanje i spriječava pojava\nnesukladnosti. Ukoliko se popravne radnje odnose na veća i kritična odstupanja\nu smislu sigurnosti, potrebno je učiniti screening i analizu odstupanja, inicirati\npotrebna izvještavanja i korektivne akcije te pratiti izvršenje i uspješnost\nprovođenja korektivnih mjera. Korektivne akcije moraju spriječiti ponavljanje\ntakovih grešaka i odstupanja.",
+      "chunk_id": "CHUNK-DOC-0011-0009",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0011-APP_B_XVI-0021",
+      "doc_id": "DOC-0011",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Odobrena radnja dobiva nositelja i rokove.",
+      "quote_id": "QUOTE-DOC-0011-0030-01",
+      "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+      "chunk_id": "CHUNK-DOC-0011-0009",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0011-APP_B_XVI-0023",
+      "doc_id": "DOC-0011",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Za radnju se određuju dokumentacija, kontrolne aktivnosti i mjerila učinkovitosti.",
+      "quote_id": "QUOTE-DOC-0011-0033-01",
+      "quote_original": "Nakon pokretanja postupka popravne radnje, diretkor Enconeta kod donošenja\nodluke prema potrebi saziva sastanak s predlagateljem, voditeljem QA poslova,\npredstavnikom uprave za praćenje QA poslova i ostalima koji mogu doprinijeti u\nrješavanju uočene nesukladnosti, nedostatka, greške ili odstupanja. Ukoliko se\nodobri popravna radnja, imenuje se nositelj aktivnosti i određuju se rokovi za\nprovođenje radnje. Nesukladnosti po 10CFR Part 21 i one vezane za odstupanja\nod zahtijevane kvalitete moraju se rješavati na najvišem nivou Enconeta,\nuključujući odbor za kvalitetu. Ovisno o složenosti problema okuplja se radna\ngrupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija\nkoja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti\nprovedene popravne radnje. Rezultat popravne radnje u SUK-u je izrada nove ili\nrevizija postojeće dokumentacije sustava kvalitete. Sve aktivnosti tijekom\npostupka se dokumentiraju i predstavljaju sastavni dio izvješća o nesukladnosti\nprema obrascu OB-NCR-016 (Ref. 5).",
+      "chunk_id": "CHUNK-DOC-0011-0009",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0011-APP_B_XVI-0031",
+      "doc_id": "DOC-0011",
+      "criterion_id": "APP_B_XVI",
+      "statement": "objective_control: Određuje se razdoblje praćenja rezultata i izvješćivanje direktora i QA.",
+      "quote_id": "QUOTE-DOC-0011-0051-01",
+      "quote_original": "Odluku o pokretanju preventivne radnje donosi direktor Enconeta u suradnji s predstavnikom direktora za praćenje QA poslova i voditeljem QA poslova, kao i voditeljem projekata u čijem se području rada provodi preventivna radnja odnosno koji se određuje za nositelja aktivnosti. Okuplja se radna grupa za provedbu i odobravaju se potrebni resursi. Definira se dokumentacija koja će se izraditi, kontrolne aktivnosti koje će se provesti i mjerila učinkovitosti provedene preventivne radnje. Utvrđuje se i vremensko razdoblje u kojem će se pratiti rezultati provedbe preventivne radnje o čemu će se izvještavati direktor Enconeta i voditelj QA poslova.",
+      "chunk_id": "CHUNK-DOC-0011-0010",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0011-APP_B_XVI-0036",
+      "doc_id": "DOC-0011",
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Predložak završetka traži provjeru učinkovitosti i QA potpis.",
+      "quote_id": "QUOTE-DOC-0011-0059-01",
+      "quote_original": "| Provjera učinkovitosti poduzetih korektivnih akcija |",
+      "chunk_id": "CHUNK-DOC-0011-0011",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0011-APP_B_XVI-0036",
+      "doc_id": "DOC-0011",
+      "criterion_id": "APP_B_XVI",
+      "statement": "supporting_control: Predložak završetka traži provjeru učinkovitosti i QA potpis.",
+      "quote_id": "QUOTE-DOC-0011-0059-02",
+      "quote_original": "| Voditelj QA poslova: | Potpis | Datum: |",
+      "chunk_id": "CHUNK-DOC-0011-0011",
+      "assessment_criterion": "APP_B_XVI"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XVII-0005",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: QA zapis mora biti potpisan, datiran, čitljiv, potpun i prepoznatljiv prema proizvodu ili usluzi.",
+      "quote_id": "QUOTE-DOC-0001-0175-01",
+      "quote_original": "Bilo koji pisani dokument koji se odnosi na kvalitetu rada Enconeta, potpisan, datiran, čitljiv, kompletan i prepoznatljiv s obzirom na uključeni proizvod ili uslugu, smatra se QA zapisom.",
+      "chunk_id": "CHUNK-DOC-0001-0050",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0005-APP_B_XVII-0007",
+      "doc_id": "DOC-0005",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: ZK1 određuje trajno čuvanje.",
+      "quote_id": "QUOTE-DOC-0005-0018-01",
+      "quote_original": "| Trajno čuvanje dokumenta | ZK1 |",
+      "chunk_id": "CHUNK-DOC-0005-0009",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0005-APP_B_XVII-0008",
+      "doc_id": "DOC-0005",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: ZK2 određuje pet godina čuvanja kao opću klasu.",
+      "quote_id": "QUOTE-DOC-0005-0019-01",
+      "quote_original": "| Čuvanje dokumenta 5 godina | ZK2 |",
+      "chunk_id": "CHUNK-DOC-0005-0009",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0005-APP_B_XVII-0010",
+      "doc_id": "DOC-0005",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Razdoblje čuvanja uzima u obzir ugovorne, regulatorne i tehnološke potrebe.",
+      "quote_id": "QUOTE-DOC-0005-0021-01",
+      "quote_original": "Klasificirani zapisi čuvaju se s obzirom na njihovo značenje za kvalitetu, ali i radi ugovornih i/ili regulatornih obveza, te očuvanja stečenih znanja i posebnih tehnologija.",
+      "chunk_id": "CHUNK-DOC-0005-0009",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0005-APP_B_XVII-0021",
+      "doc_id": "DOC-0005",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Suhi prostor, ormari i posebne mjere štite od gubitka i propadanja.",
+      "quote_id": "QUOTE-DOC-0005-0035-01",
+      "quote_original": "Zapisi se čuvaju u odgovarajućim datotekama, kutijama, policama, kabinetima i/ili protupožarnim ormarima u suhom prostoru i s posebnim mjerama zaštite, tako da se izbjegne propadanje i uništavanje i spriječi njihov gubitak, sukladno specificiranim uredbama i standardima, ugovornim zahtjevima i internim uputama Enconeta u skladu s postupkom PP-42-01.",
+      "chunk_id": "CHUNK-DOC-0005-0011",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0005-APP_B_XVII-0026",
+      "doc_id": "DOC-0005",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Projektni proizvodi, analize i software klasificirani su kao ZK1.",
+      "quote_id": "QUOTE-DOC-0005-0041-01",
+      "quote_original": " Projekt (projekt, studija, elaborat, analiza, računalni program, usluga i sl.)                       ZK1",
+      "chunk_id": "CHUNK-DOC-0005-0011",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0005-APP_B_XVII-0036",
+      "doc_id": "DOC-0005",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Ugovor, garancija i propisi mogu odrediti drukčiji rok čuvanja.",
+      "quote_id": "QUOTE-DOC-0005-0072-01",
+      "quote_original": "Napomena:\nVremensko razdoblje čuvanja dokumenata i podataka može biti i drugačije definirano\ns obzirom na ugovorne zahtjeve, garantne rokove, regulatorne zahtjeve i neke druge\nspecifičnosti.",
+      "chunk_id": "CHUNK-DOC-0005-0012",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0013-APP_B_XVII-0024",
+      "doc_id": "DOC-0013",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Novi podaci svakodnevno se kopiraju na srv01b; program se treba pokretati svakodnevno.",
+      "quote_id": "QUOTE-DOC-0013-0044-01",
+      "quote_original": "Program 'SncToy' ima zadaću da u pravilnom vremenskom režimu, svakodnevno, nove podatke prepiše u privatni prostor svakog korisnika na računalu srv01b. Zbog toga se treba i pokretati svakodnevno –npr. prilikom gašenja računala (podešavanje je opisano u sekciji 7.1).",
+      "chunk_id": "CHUNK-DOC-0013-0012",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0018-APP_B_XVII-0007",
+      "doc_id": "DOC-0018",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Kopije se čuvaju na lokalnom disku, odvojenom CD/DVD mediju i poslužitelju.",
+      "quote_id": "QUOTE-DOC-0018-0026-01",
+      "quote_original": "4.2.4 Backup shall be made with the disk copy utility on local HD drive,\n      separately on the CD/DVD media and on the ENCONET d.o.o. server in\n      the Software Backup directory.",
+      "chunk_id": "CHUNK-DOC-0018-0014",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0018-APP_B_XVII-0015",
+      "doc_id": "DOC-0018",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Sadržaj arhivskih medija provjerava se svake dvije godine.",
+      "quote_id": "QUOTE-DOC-0018-0036-01",
+      "quote_original": "4.2.11 Every two year content of above mentioned media has to be verified.",
+      "chunk_id": "CHUNK-DOC-0018-0014",
+      "assessment_criterion": "APP_B_XVII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0001-APP_B_XVIII-0005",
+      "doc_id": "DOC-0001",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Audit provodi kvalificiran tim bez izravne odgovornosti za ocjenjivani posao.",
+      "quote_id": "QUOTE-DOC-0001-0182-01",
+      "quote_original": "Unutarnje, kao i vanjsko nezavisno ocjenjivanje kvalitete, mora provoditi izabrani tim kvalificiranog osoblja koje nema izravnu odgovornost za izvedbu poslova čija se uspješnost ocjenjuje. Izvješća s primjedbama i nalazima moraju se dostaviti rukovodećem osoblju organizacije i direktoru Enconeta. Naknadno nezavisno ocjenjivanje mora verificirati i zabilježiti primjenu i uspješnost provedenih popravnih radnji.",
+      "chunk_id": "CHUNK-DOC-0001-0053",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0009",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Interni audit u pravilu se provodi jednom godišnje, a može se provesti i izvan plana.",
+      "quote_id": "QUOTE-DOC-0009-0016-01",
+      "quote_original": "Interni audit radi provjere uspješnosti SUK-a uobičajeno se provodi svake godine, ali prema prijedlogu voditelja QA poslova i predstavnika direktora za nadzor SUK-a, audit se može provesti u svakom trenutku radi ocjene uspješnosti bilo kojeg elementa, procesa, postupka ili aktivnosti.",
+      "chunk_id": "CHUNK-DOC-0009-0009",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0010",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Trogodišnji program mora pokriti cijeli SUK i sve kriterije ISO 9001 i Appendix B.",
+      "quote_id": "QUOTE-DOC-0009-0017-01",
+      "quote_original": "U ciklusu od tri godine, program internih audita mora pokriti zahtjeve cjelokupnog SUK-a, a samim time i zahtjeve postavljene u svim kriterijima ISO 9001 i 10CFR50 App. B.",
+      "chunk_id": "CHUNK-DOC-0009-0009",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0018",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Vodeći auditor treba auditorske kvalifikacije, najmanje dvije godine iskustva te organizacijske i komunikacijske sposobnosti.",
+      "quote_id": "QUOTE-DOC-0009-0027-01",
+      "quote_original": "Voditelj audit tima za ocjenjivanje (Lead Auditor) treba imati sve kvalifikacije potrebne za auditora i barem dvije godine iskustva u ocjenjivanju kvalitete, te prikladne sposobnosti za organizaciju, komunikaciju, procjenu, dokumentaciju i izvješćivanje o auditu.",
+      "chunk_id": "CHUNK-DOC-0009-0009",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0021",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Kvalifikacija vodećeg auditora traži pet QA audita u tri godine, od čega jedan nuklearni u zadnjoj godini.",
+      "quote_id": "QUOTE-DOC-0009-0031-01",
+      "quote_original": "Lead Auditor-i moraju zadovoljavati slijedeće zahtjeve:",
+      "chunk_id": "CHUNK-DOC-0009-0010",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0021",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Kvalifikacija vodećeg auditora traži pet QA audita u tri godine, od čega jedan nuklearni u zadnjoj godini.",
+      "quote_id": "QUOTE-DOC-0009-0031-02",
+      "quote_original": "-Sudjelovanje u najmanje pet QA audita unutar tri posljednje godine prije datuma kvalifikacije. Jedan audit mora biti na nuklearnom području unutar posljednje godine prije kvalifikacije.",
+      "chunk_id": "CHUNK-DOC-0009-0010",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0026",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Direktor potvrđuje kvalifikaciju za godinu dana, uz produženje ako se održavaju sposobnosti.",
+      "quote_id": "QUOTE-DOC-0009-0036-01",
+      "quote_original": "Direktor Enconeta je odgovoran za inicijalno i svako naknadno certificiranje Lead Auditor-a, prema zadovoljenim zahtjevima. Certifikacija vrijedi godinu dana i produžuje se ukoliko L. A. aktivno održava svoju vještinu i znanje.",
+      "chunk_id": "CHUNK-DOC-0009-0011",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0042",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "objective_control: Izvještaj se predaje QA na pregled i odobrenje unutar dva tjedna od audita.",
+      "quote_id": "QUOTE-DOC-0009-0055-01",
+      "quote_original": "Izvješće o auditu treba predati u roku od dva tjedna nakon provođenja audita\nvodtelju QA poslova na pregled i odobrenje.",
+      "chunk_id": "CHUNK-DOC-0009-0015",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0058",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "candidate_lead: Godišnje važenje i posljednja upisana recertifikacija 2016. traže noviji dokaz aktualnih kvalifikacija.",
+      "quote_id": "QUOTE-DOC-0009-0079-01",
+      "quote_original": "Direktor Enconeta je odgovoran za inicijalno i svako naknadno certificiranje Lead Auditor-a, prema zadovoljenim zahtjevima. Certifikacija vrijedi godinu dana i produžuje se ukoliko L. A. aktivno održava svoju vještinu i znanje.",
+      "chunk_id": "CHUNK-DOC-0009-0011",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0058",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "candidate_lead: Godišnje važenje i posljednja upisana recertifikacija 2016. traže noviji dokaz aktualnih kvalifikacija.",
+      "quote_id": "QUOTE-DOC-0009-0079-02",
+      "quote_original": "| Vuković Josip | 20.01.2015. | 17.11.2016. |",
+      "chunk_id": "CHUNK-DOC-0009-0017",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0009-APP_B_XVIII-0058",
+      "doc_id": "DOC-0009",
+      "criterion_id": "APP_B_XVIII",
+      "statement": "candidate_lead: Godišnje važenje i posljednja upisana recertifikacija 2016. traže noviji dokaz aktualnih kvalifikacija.",
+      "quote_id": "QUOTE-DOC-0009-0079-03",
+      "quote_original": "| Žunić Željko | 20.01.2015. | 17.11.2016. |",
+      "chunk_id": "CHUNK-DOC-0009-0017",
+      "assessment_criterion": "APP_B_XVIII"
+    },
+    {
+      "item_id": "CRUMB-DOC-0018-APP_B_XVII-0001",
+      "doc_id": "DOC-0018",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Kontrola medija treba osigurati dohvatljivost i zaštitu podataka od redovnih i katastrofalnih događaja.",
+      "quote_id": "QUOTE-DOC-0018-0007-01",
+      "quote_original": "2. Control of the physical media and associated services – all functions, which are carried out to ensure that the data or software stored, are physically retrievable and cannot be lost or compromised due to any day to day operations or possible catastrophic events.",
+      "chunk_id": "CHUNK-DOC-0018-0010",
+      "assessment_criterion": "APP_B_XIII",
+      "cross_criterion_context": true
+    },
+    {
+      "item_id": "CRUMB-DOC-0018-APP_B_XVII-0007",
+      "doc_id": "DOC-0018",
+      "criterion_id": "APP_B_XVII",
+      "statement": "objective_control: Kopije se čuvaju na lokalnom disku, odvojenom CD/DVD mediju i poslužitelju.",
+      "quote_id": "QUOTE-DOC-0018-0026-01",
+      "quote_original": "4.2.4 Backup shall be made with the disk copy utility on local HD drive,\n      separately on the CD/DVD media and on the ENCONET d.o.o. server in\n      the Software Backup directory.",
+      "chunk_id": "CHUNK-DOC-0018-0014",
+      "assessment_criterion": "APP_B_XIII",
+      "cross_criterion_context": true
+    },
+    {
+      "item_id": "CRUMB-DOC-0010-APP_B_X-0001",
+      "doc_id": "DOC-0010",
+      "criterion_id": "APP_B_X",
+      "statement": "supporting_control: Dorađeni proizvod ponovno se pregledava i verificira kao izvorni proizvod.",
+      "quote_id": "QUOTE-DOC-0010-0068-01",
+      "quote_original": "Nositelj rješavanja provodi mjere i postupak za rješavanje nesukladnosti. Svojim potpisom potvrđuje da je nesukladnost otklonjena te o tome izvještava voditelja projekta/posla i voditelja QA. Nesukladni proizvod koji je dorađen treba ponovo pregledati i verificirati na isti način kao i izvorni proizvod.",
+      "chunk_id": "CHUNK-DOC-0010-0013",
+      "assessment_criterion": "APP_B_XV",
+      "cross_criterion_context": true
+    }
+  ],
+  "diagnostics": [
+    "The first UTF-8 statement retrieval used native console encoding and failed; later bounded ASCII-escaped JSON batches loaded the full2700-row index successfully.",
+    "One draft evidence selector used a test-control ordinal under criterion V; it was rejected as nonexistent before evaluation writes, removed, and all final selections verified."
+  ]
+}

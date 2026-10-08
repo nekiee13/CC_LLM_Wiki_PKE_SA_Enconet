@@ -5,7 +5,8 @@ audit while preserving incoming documents. Archive and reset are complete.
 
 - phase: **evidence_reviewed**. G1 and G2 approved; G3-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
-  no old evidence or scores inherited; 2,700 new live vendor crumbs, no ratings yet.
+  no old evidence or scores inherited; 2,700 new live vendor crumbs; 18 fresh
+  documentation-based ratings now give 80.6% (1450/1800), pending G3 review.
 - Incoming: 26 vendor Markdown documents and 7 regulatory Markdown documents.
 - Three other files are preserved but excluded from intake: `.gitkeep`,
   `desktop.ini`, and the owner's conversion-instruction note.
@@ -60,9 +61,12 @@ body and audit-database hashes. Claude substantive review remains pending.
 Owner approved G2-RUN-20261008-17. The canonical packet and 18 approved
 applicability rows are recorded under evaluation RUN-20261008-17. All 18 criteria
 are included within the documented limits; XIII has the approved limited scope.
-Part 21 remains separate. No conformance ratings have been written.
-Prepare the documentation-based assessment next using the existing five-point
-rating scale and vendor evidence, not new categories or owner-entered ratings.
+Part 21 remains separate. All 18 conformance ratings are now written under
+the existing five-point model: 6 fully, 10 substantially, 2 partially; 80.6%.
+The model numeric calibration and result approval remain pending G3.
+Review [the documented assessment and priorities](../docs/CONFORMANCE_ASSESSMENT_20261008.md)
+and [G3 packet](gates/G3-RUN-20261008-17-enconet.md). Scope/source/earlier rows
+are unchanged; no new rating categories or owner-entered judgments were added.
 See [G2 approval and verified application](../docs/G2_APPLICABILITY_APPLIED_20261008.md).
 The owner question about
 referenced Part II sections is resolved by ASME-ENCONET-PARTII-REFS-20261008.

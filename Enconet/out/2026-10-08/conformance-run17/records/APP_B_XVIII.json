@@ -1,0 +1,32 @@
+{
+  "criterion_id": "APP_B_XVIII",
+  "criterion_name": "Audits",
+  "classification": "partially",
+  "coverage": 0.75,
+  "completeness": 0.5,
+  "accuracy": 1,
+  "clarity": 0.5,
+  "alignment": 0.5,
+  "evidence_supported": true,
+  "affirmative_summary": "Postupak ima neovisnost, autoritet, plan, pet audita/tri godine i nuklearno iskustvo za Lead Auditor-a te strukturirane izvještaje.",
+  "contrary_summary": "PP-82-01 traži punu kriterijsku pokrivenost u tri godine; supplied NQA-1:2015 Req18§201.3 za dobavljače traži godišnje ili izričito opravdano produženje najviše dvije godine. Ugovorna vanjska učestalost također traži dokaz.",
+  "judge_ruling": "Program audita postoji i detaljan je, ali pokrivenost/interval nije dovoljno usklađen s odabranom 2015 osnovom. Povijesni certifikati nisu proglašeni isteklima bez provjere.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Program audita postoji i detaljan je, ali pokrivenost/interval nije dovoljno usklađen s odabranom 2015 osnovom. Povijesni certifikati nisu proglašeni isteklima bez provjere. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_XVIII-0005",
+    "CRUMB-DOC-0009-APP_B_XVIII-0009",
+    "CRUMB-DOC-0009-APP_B_XVIII-0010",
+    "CRUMB-DOC-0009-APP_B_XVIII-0018",
+    "CRUMB-DOC-0009-APP_B_XVIII-0021",
+    "CRUMB-DOC-0009-APP_B_XVIII-0026",
+    "CRUMB-DOC-0009-APP_B_XVIII-0042",
+    "CRUMB-DOC-0009-APP_B_XVIII-0058"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Pribaviti zadnje annual coverage matrice i obrazloženje produženja te aktualnu Lead Auditor requalifikaciju."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

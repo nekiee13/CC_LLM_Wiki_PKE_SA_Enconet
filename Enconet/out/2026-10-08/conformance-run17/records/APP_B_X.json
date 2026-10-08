@@ -1,0 +1,30 @@
+{
+  "criterion_id": "APP_B_X",
+  "criterion_name": "Inspection",
+  "classification": "substantially",
+  "coverage": 1,
+  "completeness": 0.75,
+  "accuracy": 1,
+  "clarity": 0.75,
+  "alignment": 0.75,
+  "evidence_supported": true,
+  "affirmative_summary": "Neovisni pregled, pisani kriteriji, hold/witness točke i provjera prije nastavka rada jasno su propisani.",
+  "contrary_summary": "Za konkretne nuklearne preglede treba dovršiti kontroliranu projektnu/NEK podlogu, ovlasti izuzeća na hold pointu i granicu izravnog nadzora izvršitelja.",
+  "judge_ruling": "Inspekcijska kontrola je sadržajno dobro pokrivena; pojedine specifične ovlasti i detaljna podloga ostaju za potvrdu, ne kao dokaz da pregled ne postoji.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Inspekcijska kontrola je sadržajno dobro pokrivena; pojedine specifične ovlasti i detaljna podloga ostaju za potvrdu, ne kao dokaz da pregled ne postoji. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_X-0003",
+    "CRUMB-DOC-0001-APP_B_X-0004",
+    "CRUMB-DOC-0001-APP_B_X-0006",
+    "CRUMB-DOC-0001-APP_B_X-0007",
+    "CRUMB-DOC-0003-APP_B_X-0006",
+    "CRUMB-DOC-0010-APP_B_X-0001"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Uzorkovati inspection plan, odobrenje hold-point odstupanja ako ga ima i neovisnost potpisanog inspektora."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}

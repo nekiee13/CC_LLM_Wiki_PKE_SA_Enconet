@@ -1,0 +1,31 @@
+{
+  "criterion_id": "APP_B_VIII",
+  "criterion_name": "Identification and Control of Materials, Parts, and Components",
+  "classification": "fully",
+  "coverage": 1,
+  "completeness": 1,
+  "accuracy": 1,
+  "clarity": 1,
+  "alignment": 1,
+  "evidence_supported": true,
+  "affirmative_summary": "Identitet predmeta, oznake MTE, serijski brojevi, zabrana ponovne uporabe identifikatora, AOV tag provjera i softverske verzije daju konkretan trag.",
+  "contrary_summary": "Stvarna označenost i lanac zapisa provjeravaju se na radu; nije pretpostavljena proizvodnja niti potreba heat/lot praćenja kad je ugovor ne traži.",
+  "judge_ruling": "Identifikacija i sljedivost u ograničenom predmetnom opsegu su potpuno dokumentirane, kroz stvarne kontrolne korake.",
+  "rationale": "Codex dokumentacijska pre-flight procjena prema odobrenom G2, ne potvrda terenske provedbe. Identifikacija i sljedivost u ograničenom predmetnom opsegu su potpuno dokumentirane, kroz stvarne kontrolne korake. Nisu brojani crumbs kao bodovi. Dimenzije su ordinalne procjene, ne mjerene postotne pokrivenosti. Ocjena koristi postojeći scoring_model0.1-placeholder; brojčana G3 kalibracija i odobrenje rezultata još pending.",
+  "evidence_ids": [
+    "CRUMB-DOC-0001-APP_B_VIII-0002",
+    "CRUMB-DOC-0001-APP_B_VIII-0004",
+    "CRUMB-DOC-0016-APP_B_VIII-0002",
+    "CRUMB-DOC-0016-APP_B_VIII-0005",
+    "CRUMB-DOC-0020-APP_B_VIII-0004",
+    "CRUMB-DOC-0025-APP_B_VIII-0001",
+    "CRUMB-DOC-0025-APP_B_VIII-0005"
+  ],
+  "verification_actions": [
+    {
+      "action_type": "sample_test",
+      "description": "Povezati jedan instrument/AOV ili softverski paket s radnim nalogom, verzijom i zapisom rezultata."
+    }
+  ],
+  "assessment_basis": "vendor documentation; Part21 excluded; source2.7/201 fragment is not supplier failure"
+}
