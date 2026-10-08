@@ -1,0 +1,222 @@
+{
+  "run_id": "RUN-20261008-15",
+  "decision_ref": "ASME-ENCONET-PARTII-REFS-20261008",
+  "before": {
+    "documents": {
+      "count": 33,
+      "sha256": "e1494da973b27b593dd04ab5e1323b7d5d177f885c6aa06548d9138835efa429"
+    },
+    "document_chunks": {
+      "count": 922,
+      "sha256": "16aa78ec947f233b36a6ff381626e5d9d74009e39d5c840862bb3fcfdbb04478"
+    },
+    "sieve_runs": {
+      "count": 28,
+      "sha256": "14420a097d484b41aaf1561511de50ee866c789afc6ba981d80a89f292608e9d"
+    },
+    "sieve_run_authorities": {
+      "count": 2,
+      "sha256": "bcc66866d075eafafeeaabd30ba3f941260630367451ad33d4c486dd7d308d3b"
+    },
+    "crumbs": {
+      "count": 2886,
+      "sha256": "0bd771932b482d663de3477cfd89a4af1584ce8f384deba2d29253cdffaa06bd"
+    },
+    "crumb_quotes": {
+      "count": 5565,
+      "sha256": "79c727ff73cf297ef70a78617e29b70e05052fda50341945fabd1d56796818e1"
+    },
+    "crumb_sources": {
+      "count": 2961,
+      "sha256": "bbfa5f76f234eb572ca5a126f8f87662ba8eda67f8b3277e4fb67bc5c716eab9"
+    },
+    "crumb_chunk_links": {
+      "count": 5565,
+      "sha256": "37bbc6d2c1385e09a9d0f47d4c86f301f8f3b86f55deff21c6ca12cf9c168309"
+    },
+    "crumb_context": {
+      "count": 2700,
+      "sha256": "526bb8b0e158d393705c7fae4af5d73548d9402b1800d8fb71c1f3c7220ad63d"
+    },
+    "crumb_authority_refs": {
+      "count": 186,
+      "sha256": "d502e996b1a79da0494d6bfd4dcd9c7bdbe47380c8232374044bfcb516c84d66"
+    },
+    "requirements": {
+      "count": 18,
+      "sha256": "1dc2bc5c94cc6ebbd16c3692ec3c18dff132023b8fe1590b6eea82ee4fcf0db4"
+    },
+    "criterion_applicability": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "criterion_evaluations": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "evaluation_runs": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "evaluation_evidence": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "after": {
+    "frozen_records_errors": [],
+    "after": {
+      "documents": {
+        "count": 33,
+        "preserved_prefix_sha256": "e1494da973b27b593dd04ab5e1323b7d5d177f885c6aa06548d9138835efa429"
+      },
+      "document_chunks": {
+        "count": 922,
+        "preserved_prefix_sha256": "16aa78ec947f233b36a6ff381626e5d9d74009e39d5c840862bb3fcfdbb04478"
+      },
+      "sieve_runs": {
+        "count": 29,
+        "preserved_prefix_sha256": "14420a097d484b41aaf1561511de50ee866c789afc6ba981d80a89f292608e9d"
+      },
+      "sieve_run_authorities": {
+        "count": 3,
+        "preserved_prefix_sha256": "bcc66866d075eafafeeaabd30ba3f941260630367451ad33d4c486dd7d308d3b"
+      },
+      "crumbs": {
+        "count": 2957,
+        "preserved_prefix_sha256": "0bd771932b482d663de3477cfd89a4af1584ce8f384deba2d29253cdffaa06bd"
+      },
+      "crumb_quotes": {
+        "count": 5636,
+        "preserved_prefix_sha256": "79c727ff73cf297ef70a78617e29b70e05052fda50341945fabd1d56796818e1"
+      },
+      "crumb_sources": {
+        "count": 3032,
+        "preserved_prefix_sha256": "bbfa5f76f234eb572ca5a126f8f87662ba8eda67f8b3277e4fb67bc5c716eab9"
+      },
+      "crumb_chunk_links": {
+        "count": 5636,
+        "preserved_prefix_sha256": "37bbc6d2c1385e09a9d0f47d4c86f301f8f3b86f55deff21c6ca12cf9c168309"
+      },
+      "crumb_context": {
+        "count": 2700,
+        "preserved_prefix_sha256": "526bb8b0e158d393705c7fae4af5d73548d9402b1800d8fb71c1f3c7220ad63d"
+      },
+      "crumb_authority_refs": {
+        "count": 257,
+        "preserved_prefix_sha256": "d502e996b1a79da0494d6bfd4dcd9c7bdbe47380c8232374044bfcb516c84d66"
+      },
+      "requirements": {
+        "count": 18,
+        "preserved_prefix_sha256": "1dc2bc5c94cc6ebbd16c3692ec3c18dff132023b8fe1590b6eea82ee4fcf0db4"
+      },
+      "criterion_applicability": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "criterion_evaluations": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "evaluation_runs": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "evaluation_evidence": {
+        "count": 0,
+        "preserved_prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "mapped_items": 71,
+    "exact_links": [
+      71,
+      71
+    ],
+    "run": [
+      "RUN-20261008-15",
+      "2026-10-08 14:53:20",
+      "2026-10-08 14:53:23"
+    ],
+    "crumb_counts": [
+      [
+        "DOCUMENT",
+        2700
+      ],
+      [
+        "RULE",
+        257
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; r=Path('Enconet/sieving/runs/RUN-20261008-15'); p=json.loads((r/'generated.json').read_text(encoding='utf-8')); m=json.loads((r/'interpretation-map.json').read_text(encoding='utf-8')); f=Path('Enconet/out/2026-10-07/full-keyword-sweep/sources/DOC-0031.md'); s=f.read_text(encoding='utf-8'); assert hashlib.sha256(f.read_bytes()).hexdigest()==m['source_sha256']; c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); rows=c.execute('SELECT chunk_id,chunk_text FROM document_chunks WHERE doc_id=?',('DOC-0031',)).fetchall(); errors=[a['item_id'] for a,i in zip(m['items'],p['items']) if s[a['char_start']:a['char_end']]!=i['evidence_quotes'][0]['quote_original'] or len([b for b in rows if i['evidence_quotes'][0]['quote_original'] in b[1]])!=1 or a['part'] not in m['adopted_sections']]; assert not errors; assert not c.execute('SELECT 1 FROM sieve_runs WHERE doc_id=?',('DOC-0031',)).fetchone(); print(json.dumps({'items':len(p['items']),'source_hash_exact':True,'exact_unique_chapters':len(p['items']),'offset_errors':errors}))\"",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/validate_app_b_json.py Enconet/sieving/runs/RUN-20261008-15/generated.json --strict",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/link_exact_run.py --run-id RUN-20261008-15 --apply",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "71 new exact chapter links."
+    },
+    {
+      "command": "python Enconet/scripts/link_exact_run.py --run-id RUN-20261008-15",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "Retry adds0 and preserves71 exact links."
+    },
+    {
+      "command": "python -c \"import sqlite3,json,hashlib; from pathlib import Path; r=Path('Enconet/sieving/runs/RUN-20261008-15'); before=json.loads((r/'frozen-before.json').read_text()); c=sqlite3.connect(Path('Enconet/db/nqa_audit.sqlite').resolve().as_uri()+'?mode=ro',uri=True); after={t:{'count':c.execute('SELECT count(*) FROM '+t).fetchone()[0],'preserved_prefix_sha256':hashlib.sha256(json.dumps(c.execute('SELECT * FROM '+t+' ORDER BY rowid LIMIT ?', (b['count'],)).fetchall()).encode()).hexdigest()} for t,b in before.items()}; errors=[t for t,b in before.items() if after[t]['count']<b['count'] or after[t]['preserved_prefix_sha256']!=b['sha256']]; assert not errors; m=json.loads((r/'interpretation-map.json').read_text(encoding='utf-8')); parents=dict(c.execute('SELECT criterion_id,requirement_id FROM requirements')); assert all(parents[a['criterion_id']]==a['governing_requirement_id'] for a in m['items']); assert all(c.execute('SELECT criterion_id,statement FROM crumbs WHERE item_id=? AND sieve_run_id=?',(a['crumb_id'],m['run_id'])).fetchone()==(a['criterion_id'],a['statement']) for a in m['items']); exact=c.execute('SELECT count(*),sum(CASE WHEN instr(d.chunk_text,q.quote_original)>0 THEN 1 ELSE 0 END) FROM crumb_chunk_links l JOIN crumbs b ON b.item_id=l.item_id JOIN crumb_quotes q ON q.quote_id=l.quote_id JOIN document_chunks d ON d.chunk_id=l.chunk_id WHERE b.sieve_run_id=?',(m['run_id'],)).fetchone(); assert exact==(71,71); assert all(after[t]['count']==0 for t in ['criterion_applicability','criterion_evaluations','evaluation_runs','evaluation_evidence']); print(json.dumps({'frozen_records_errors':errors,'after':after,'mapped_items':len(m['items']),'exact_links':exact,'run':c.execute('SELECT run_id,started_at,completed_at FROM sieve_runs WHERE run_id=?',(m['run_id'],)).fetchone(),'crumb_counts':c.execute('SELECT document_side,count(*) FROM crumbs GROUP BY document_side').fetchall()}))\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "All prior rows in15 tables preserved hash-exact;71 new mapped items/links; no scores or applicability rows."
+    },
+    {
+      "command": "python -c \"import json,hashlib; from pathlib import Path; p=Path('Enconet'); plan=json.loads(Path('reset-plans/enconet-reset-20261007-reviewed.json').read_text(encoding='utf-8')); rows=plan['incoming_files']; bad=[r['relative_path'] for r in rows if not (p/r['relative_path']).is_file() or hashlib.sha256((p/r['relative_path']).read_bytes()).hexdigest()!=r['sha256']]; actual={x.relative_to(p).as_posix() for x in (p/'incoming').rglob('*') if x.is_file()}; expected={r['relative_path'] for r in rows}; print(json.dumps({'files':len(rows),'hash_mismatches':bad,'unexpected_files':sorted(actual-expected),'missing_files':sorted(expected-actual)})); assert not bad and actual==expected\"",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "36/36 incoming files unchanged."
+    },
+    {
+      "command": "python Enconet/scripts/validate_traceability.py --no-record",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/validate_requirements.py --no-record",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python Enconet/scripts/run_all_validations.py --no-record",
+      "exit_code": 0,
+      "result": "passed",
+      "summary": "4 phase checks pass; downstream skipped at chunked. Direct strict JSON, requirements and traceability separately passed."
+    }
+  ],
+  "source_limitations": [
+    "Both selected subparts occur in one oversized converted chapter with an overlong heading; chapter ID plus exact offsets are retained without rewriting the source or chapter.",
+    "Subpart 2.7 section 201 starts with a sentence fragment. No missing duty reconstructed; source verification remains required. Part I Requirement 17 records baseline remains available."
+  ],
+  "diagnostics": [
+    "Initial chapter metadata listing was excessively large and truncated; no source conclusions relied on that truncated output. Full selected section text was subsequently read, while compact metadata confirmed the unique stored chapter.",
+    "Initial SUBPART regex expected a word boundary after the section number; converted headings merge number and title. Explicit unique title anchors selected the exact source spans; offset and exact-quote validation passed."
+  ],
+  "coordination_check": {
+    "command": "python scripts/agent_coord.py validate",
+    "exit_code": 1,
+    "result": "failed",
+    "reason": "The new unpublished review note reply_to includes .md; explicit owner permission requested for a field-only correction under message immutability. Audit evidence validation passed; coordination was not reported clean."
+  },
+  "pending": {
+    "source_verification": "2.7/201 sentence fragment",
+    "claude_review": "deferred",
+    "G2": "pending"
+  }
+}
