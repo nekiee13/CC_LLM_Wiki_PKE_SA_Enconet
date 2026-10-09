@@ -69,6 +69,57 @@ def test_report_is_deterministic_localized_and_consistent():
     assert validate_report.validate(data, first) == []
 
 
+def documentary_package():
+    data = package("hr")
+    for row in data["evaluations"]:
+        row.update(score=evaluation_engine.score_rating(row["classification"]),
+                   affirmative_summary="Opisane kontrole postoje.",
+                   contrary_summary="Detalj traži provjeru.", judge_ruling="Dokumentarna procjena.",
+                   rationale="Historic note: G3 pending at original calculation.")
+    return data
+
+
+def test_documentary_report_uses_current_approved_judgment_and_stored_scores():
+    data = documentary_package()
+    report = generate_report.render(data, documentary=True)
+    assert "Opisane kontrole postoje." in report
+    assert "Detalj traži provjeru." in report
+    assert "Dokumentarna procjena." in report
+    assert "50.0 / 100" in report
+    assert "G3: approved" in report
+    assert "Historic note: G3 pending" not in report
+    assert validate_report.validate(data, report) == []
+
+
+def test_documentary_report_refuses_missing_stored_score_without_inventing_zero():
+    data = documentary_package()
+    data["evaluations"][0].pop("score")
+    with pytest.raises(ValueError, match="stored score"):
+        generate_report.render(data, documentary=True)
+
+
+def test_documentary_mode_does_not_change_legacy_default_or_package():
+    data = documentary_package()
+    before = copy.deepcopy(data)
+    legacy = generate_report.render(data)
+    generate_report.render(data, documentary=True)
+    assert data == before and generate_report.render(data) == legacy
+
+
+def test_documentary_multiline_findings_keep_evidence_citation_on_primary_line():
+    data = documentary_package()
+    data["findings"][0]["body"] = "First paragraph.\n\nSecond paragraph."
+    report = generate_report.render(data, documentary=True)
+    assert validate_report.validate(data, report) == []
+
+
+def test_documentary_criteria_follow_canonical_order_not_database_lexical_order():
+    data = documentary_package()
+    data["evaluations"].sort(key=lambda row: row["criterion_id"])
+    report = generate_report.render(data, documentary=True)
+    assert report.index("### [APP_B_V]") < report.index("### [APP_B_IX]")
+
+
 def test_report_reference_tokens_are_navigable_markdown_links():
     report = generate_report.render(package())
     expected_labels = (

@@ -358,3 +358,5 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - 2026-10-08T23:47:59Z | `state-transition` | findings_drafted -> findings_approved; reason: Owner G4 and metadata refresh approvals recorded;447 isolated regression tests pass with zero skips,live files hash-exact;both benchmarks and11phase checks pass. No report/dashboard release or field verification inferred.
 
 - handoff-created | 2026-10-09T02:58:01Z | handoffs/2026-10-09T025801Z-7699bde.md | partial | 7699bde8fc2f66bcc3536620d5950cac5e596c33
+
+- handoff-created | 2026-10-09T04:07:38Z | handoffs/2026-10-09T040738Z-73bef6a.md | blocked | 73bef6adbc0b65a32f9a9b10dc9f9cc12033c328

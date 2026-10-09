@@ -84,7 +84,13 @@ zero failures/errors/skips;11phase checks and both benchmarks pass.
 Historical tests use currentcode in a verified separate test workspace;
 all original assertions,live auditfiles and Claude-ownedfiles remain unchanged.
 Read [complete repair,commands and final test reports](../docs/TEST_FIXTURE_ISOLATION_20261009.md).
-Next:generate/validate Croatian report and present one G5 packet.
+Croatian report draft generated/validated with all18 criterion scores and
+affirmative/contrary/judgment sections;fullsuite452passed,zero failures/errors/skips.
+Read [report draft and G5 review/blocker](../docs/REPORT_G5_REVIEW_20261009.md).
+Evidence companion generation held at approved size cap531965>524288bytes;
+owner cap decision requested. No source chapters removed and no cap bypass.
+Next:explicit cap approval,build/validate companion/source links/browser checks,
+then finalize G5 review. G5 remains pending;report links not operational yet.
 G4 and fixture approval do not need re-approval. No report/dashboard release
 or field verification inferred. Claude review/guidance synchronization pending.
 No new categories or owner-entered judgments are needed.

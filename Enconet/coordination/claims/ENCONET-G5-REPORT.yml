@@ -1,0 +1,17 @@
+task: ENCONET-G5-REPORT
+agent: codex
+status: released
+claimed_at_utc: 2026-10-09T03:12:14Z
+last_renewed_at_utc: 2026-10-09T03:12:14Z
+expires_at_utc: 2026-10-10T03:12:14Z
+anticipated_files:
+  - Enconet/out/2026-10-09/report-run17
+  - Enconet/outputs/candidates/evidence_access/RUN-20261008-17
+  - Enconet/wiki/gates/G5-RUN-20261008-17-enconet.md
+  - Enconet/docs/REPORT_G5_REVIEW_20261009.md
+  - Enconet/wiki/current-status.md
+  - Enconet/wiki/index.md
+  - Enconet/scripts/generate_report.py
+  - Enconet/tests/test_epic11_report.py
+note: Owner proceed:generate/validate Croatian report andoneG5packet;G5pending. Scores/sources immutable;noGUIredesign orfieldclosure.
+released_at_utc: 2026-10-09T04:03:56Z

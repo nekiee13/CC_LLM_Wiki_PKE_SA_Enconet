@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-09T025801Z-7699bde.md`](handoffs/2026-10-09T025801Z-7699bde.md)
+**Authoritative record:** [`handoffs/2026-10-09T040738Z-73bef6a.md`](handoffs/2026-10-09T040738Z-73bef6a.md)
 
-**Status:** partial · **Git:** `7699bde` · **Agent:** codex · **Created:** 2026-10-09T02:58:01Z
+**Status:** blocked · **Git:** `73bef6a` · **Agent:** codex · **Created:** 2026-10-09T04:07:38Z
 
-**Exact next action:** Generate/validate Croatian report from RUN-20261008-17 approved package and prepare one G5 owner-review packet. G4/fixture approvals resolved;do not request them again. Do not advance G5-G7 without explicit owner decisions.
+**Exact next action:** Obtain owner capdecision. If approved,use reviewed capacityprofile preservinglegacyfixtures,build canonicalcandidate enconet_appendix_b_dashboard.html companion,validateeveryreporttarget/chapter and browserchecks,refresh existingG5packet toready,thenrequestG5release. Do notrequest G3/G4/fixture approvalagain.

@@ -1,0 +1,472 @@
+{
+  "applicable_count": 18,
+  "classification": "substantially",
+  "classification_counts": {
+    "fully": 6,
+    "minimally": 0,
+    "na": 0,
+    "partially": 2,
+    "substantially": 10,
+    "undetermined": 0,
+    "unmet": 0
+  },
+  "criteria": [
+    {
+      "aff": "Uloge, delegiranje, izravan put QA prema direktoru i pravo obustave rada čine povezanu kontrolu kvalitete; imenovanja i organizacijske veze postoje u dokumentima.",
+      "con": "Današnja raspodjela uloga i neovisnost pod stvarnim pritiskom nisu terenski provjereni; to nije utvrđena dokumentacijska praznina u ovom ograničenom kriteriju.",
+      "judge": "Funkcionalna svrha organizacijskih kontrola pokrivena je kroz NQAP, imenovanja i stop-work postupak, ne samo citat propisa.",
+      "n": "APP_B_I",
+      "order": 1,
+      "rating": "fully",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_I-0002",
+        "CRUMB-DOC-0001-APP_B_I-0011",
+        "CRUMB-DOC-0001-APP_B_I-0012",
+        "CRUMB-DOC-0001-APP_B_I-0013",
+        "CRUMB-DOC-0003-APP_B_I-0006",
+        "CRUMB-DOC-0003-APP_B_I-0044",
+        "CRUMB-DOC-0008-APP_B_I-0005"
+      ],
+      "score": 100.0,
+      "title": "Organization",
+      "verify": []
+    },
+    {
+      "aff": "Program, kontrolirani uvjeti, godišnja ocjena uprave, obuka, promjene i uvođenje osoblja imaju konkretne postupke i odgovornosti.",
+      "con": "Za sve inspekcijske/testne uloge treba razjasniti kvalifikacijske intervale i dostupnost preuzetih NEK programa; opći plan obuke nije cijela kvalifikacijska shema.",
+      "judge": "Sustav je dobro dokumentiran. Ograničeni kvalifikacijski detalji i veza na preuzete programe ostaju za dokaz, bez automatske kazne zbog praznih obrazaca.",
+      "n": "APP_B_II",
+      "order": 2,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_II-0021",
+        "CRUMB-DOC-0001-APP_B_II-0025",
+        "CRUMB-DOC-0001-APP_B_II-0035",
+        "CRUMB-DOC-0006-APP_B_II-0013",
+        "CRUMB-DOC-0006-APP_B_II-0020",
+        "CRUMB-DOC-0006-APP_B_II-0021",
+        "CRUMB-DOC-0006-APP_B_II-0028",
+        "CRUMB-DOC-0006-APP_B_II-0031"
+      ],
+      "score": 75.0,
+      "title": "Quality Assurance Program",
+      "verify": []
+    },
+    {
+      "aff": "Kontrolirani ulazi, neovisni stručni pregled, promjene prije primjene, konfiguracijski baseline i V&V podupiru stvarne inženjerske usluge.",
+      "con": "Za NQA-1:2015 softversku osnovu treba povezati zahtjeve zaštite od neovlaštene uporabe s projektnim/V&V zapisom; opći IT opis nije taj trag.",
+      "judge": "Projektni životni ciklus i provjera su jaki. Specifični suvremeni softverski zahtjevi trebaju jasniji dokaz; nije pretpostavljena safety-control ili dedication uloga.",
+      "n": "APP_B_III",
+      "order": 3,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0008-APP_B_III-0022",
+        "CRUMB-DOC-0008-APP_B_III-0033",
+        "CRUMB-DOC-0008-APP_B_III-0034",
+        "CRUMB-DOC-0008-APP_B_III-0040",
+        "CRUMB-DOC-0008-APP_B_III-0043",
+        "CRUMB-DOC-0016-APP_B_III-0009",
+        "CRUMB-DOC-0017-APP_B_III-0003",
+        "CRUMB-DOC-0019-APP_B_III-0001"
+      ],
+      "score": 75.0,
+      "title": "Design Control",
+      "verify": []
+    },
+    {
+      "aff": "NQAP određuje tehničke/QA zahtjeve, revizije, kriterije prihvata, prijavu nesukladnosti, dokumentaciju i prijenos zahtjeva poddobavljačima.",
+      "con": "Detaljni PP-74-01 nije zasebno dostavljen; potrebno je potvrditi kontrolu pregleda/odobrenja narudžbe prije ugovaranja prema stvarnom nabavnom toku.",
+      "judge": "Većina potrebnih sadržaja nabave je konkretna, a manjkava detaljna procesna podloga ograničuje dokaz potpune usklađenosti.",
+      "n": "APP_B_IV",
+      "order": 4,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_IV-0006",
+        "CRUMB-DOC-0001-APP_B_IV-0010",
+        "CRUMB-DOC-0001-APP_B_IV-0011",
+        "CRUMB-DOC-0001-APP_B_IV-0015",
+        "CRUMB-DOC-0001-APP_B_IV-0016",
+        "CRUMB-DOC-0002-APP_B_IV-0004",
+        "CRUMB-DOC-0003-APP_B_IV-0005"
+      ],
+      "score": 75.0,
+      "title": "Procurement Document Control",
+      "verify": [
+        "ACT-0004"
+      ]
+    },
+    {
+      "aff": "Pisane upute određuju izvođenje, resurse, nadzor i kvantitativne/kvalitativne kriterije; tehnički testni postupci daju dubinu izvan same izjave politike.",
+      "con": "Primjena točne revizije na radu treba se potvrditi uzorkom; ne traži se da svaki prazan predložak bude popunjen da bi postupak bio adekvatan.",
+      "judge": "Dokumentirana kontrola izvođenja i prihvata funkcionalno pokriva kriterij u odobrenoj uslužnoj djelatnosti.",
+      "n": "APP_B_V",
+      "order": 5,
+      "rating": "fully",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_V-0001",
+        "CRUMB-DOC-0001-APP_B_V-0002",
+        "CRUMB-DOC-0004-APP_B_V-0005",
+        "CRUMB-DOC-0008-APP_B_V-0001"
+      ],
+      "score": 100.0,
+      "title": "Instructions, Procedures, and Drawings",
+      "verify": []
+    },
+    {
+      "aff": "Priprema, QA pregled, odobrenje, kontrolirana distribucija, povrat starih revizija i formalne promjene imaju definiran slijed.",
+      "con": "GPD sekcija označena je obsolete/canceled, dok isti tok i noviji zapisni postupak i dalje zahtijevaju GPD; važeći način evidencije nije dovoljno jasan.",
+      "judge": "Osnovne kontrole su snažne, ali unutarnja nedosljednost registra zahtijeva razrješenje. Stara izdanja normi sama nisu automatska nesukladnost.",
+      "n": "APP_B_VI",
+      "order": 6,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_VI-0016",
+        "CRUMB-DOC-0001-APP_B_VI-0021",
+        "CRUMB-DOC-0004-APP_B_VI-0019",
+        "CRUMB-DOC-0004-APP_B_VI-0026",
+        "CRUMB-DOC-0004-APP_B_VI-0046",
+        "CRUMB-DOC-0004-APP_B_VI-0049",
+        "CRUMB-DOC-0004-APP_B_VI-0055",
+        "CRUMB-DOC-0004-APP_B_VI-0067",
+        "CRUMB-DOC-0005-APP_B_VI-0006"
+      ],
+      "score": 75.0,
+      "title": "Document Control",
+      "verify": [
+        "ACT-0006"
+      ]
+    },
+    {
+      "aff": "Izbor dobavljača, odobrene liste, godišnje ocjene, nadzor outsourcinga i dokaz prihvata prije uporabe su propisani.",
+      "con": "Bez PP-74-01 ne može se završiti pregled detaljnog nabavnog/acceptance toka. Specifične certificate/dedication puteve provjeravati samo ako se stvarno koriste.",
+      "judge": "Dokumentirana dobavljačka kontrola prelazi visoku politiku, ali dio provedbenog toka ostaje izvan dostavljenog seta.",
+      "n": "APP_B_VII",
+      "order": 7,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_VII-0005",
+        "CRUMB-DOC-0001-APP_B_VII-0007",
+        "CRUMB-DOC-0001-APP_B_VII-0012",
+        "CRUMB-DOC-0003-APP_B_VII-0014",
+        "CRUMB-DOC-0003-APP_B_VII-0019",
+        "CRUMB-DOC-0008-APP_B_VII-0003",
+        "CRUMB-DOC-0025-APP_B_VII-0003"
+      ],
+      "score": 75.0,
+      "title": "Control of Purchased Material, Equipment, and Services",
+      "verify": [
+        "ACT-0007"
+      ]
+    },
+    {
+      "aff": "Identitet predmeta, oznake MTE, serijski brojevi, zabrana ponovne uporabe identifikatora, AOV tag provjera i softverske verzije daju konkretan trag.",
+      "con": "Stvarna označenost i lanac zapisa provjeravaju se na radu; nije pretpostavljena proizvodnja niti potreba heat/lot praćenja kad je ugovor ne traži.",
+      "judge": "Identifikacija i sljedivost u ograničenom predmetnom opsegu su potpuno dokumentirane, kroz stvarne kontrolne korake.",
+      "n": "APP_B_VIII",
+      "order": 8,
+      "rating": "fully",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_VIII-0002",
+        "CRUMB-DOC-0001-APP_B_VIII-0004",
+        "CRUMB-DOC-0016-APP_B_VIII-0002",
+        "CRUMB-DOC-0016-APP_B_VIII-0005",
+        "CRUMB-DOC-0020-APP_B_VIII-0004",
+        "CRUMB-DOC-0025-APP_B_VIII-0001",
+        "CRUMB-DOC-0025-APP_B_VIII-0005"
+      ],
+      "score": 100.0,
+      "title": "Identification and Control of Materials, Parts, and Components",
+      "verify": []
+    },
+    {
+      "aff": "NQAP priznaje vizualni QC kao poseban proces; kvalifikacija VT II/CP-189 i zdravstveni uvjeti su navedeni.",
+      "con": "Generički priručnik izuzima IX, dok nuklearni plan opisuje aktivni VT. Kontrolirana VT radna uputa i kvalifikacija primijenjenog postupka nisu prikazane u ovom setu.",
+      "judge": "Postoje važne kontrole, ali dokumentarna granica i specifičan procesni dokaz ostaju materijalno nedovoljni. Ne traži se dokaz zavarivanja koje nije preuzeto.",
+      "n": "APP_B_IX",
+      "order": 9,
+      "rating": "partially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_IX-0001",
+        "CRUMB-DOC-0001-APP_B_IX-0003",
+        "CRUMB-DOC-0001-APP_B_IX-0004",
+        "CRUMB-DOC-0002-APP_B_IX-0001",
+        "CRUMB-DOC-0003-APP_B_IX-0004",
+        "CRUMB-DOC-0003-APP_B_IX-0006"
+      ],
+      "score": 50.0,
+      "title": "Control of Special Processes",
+      "verify": [
+        "ACT-0009"
+      ]
+    },
+    {
+      "aff": "Neovisni pregled, pisani kriteriji, hold/witness točke i provjera prije nastavka rada jasno su propisani.",
+      "con": "Za konkretne nuklearne preglede treba dovršiti kontroliranu projektnu/NEK podlogu, ovlasti izuzeća na hold pointu i granicu izravnog nadzora izvršitelja.",
+      "judge": "Inspekcijska kontrola je sadržajno dobro pokrivena; pojedine specifične ovlasti i detaljna podloga ostaju za potvrdu, ne kao dokaz da pregled ne postoji.",
+      "n": "APP_B_X",
+      "order": 10,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_X-0003",
+        "CRUMB-DOC-0001-APP_B_X-0004",
+        "CRUMB-DOC-0001-APP_B_X-0006",
+        "CRUMB-DOC-0001-APP_B_X-0007",
+        "CRUMB-DOC-0003-APP_B_X-0006",
+        "CRUMB-DOC-0010-APP_B_X-0001"
+      ],
+      "score": 75.0,
+      "title": "Inspection",
+      "verify": []
+    },
+    {
+      "aff": "V&V plan, testovi namjeravanih primjena, usporedba s referencama, in-use test nakon promjene okružja i detaljni AOV preduvjeti/kriteriji pokrivaju svrhu testa.",
+      "con": "Nazivi/primjeri testnih deckova i nedostajući FDS prilozi traže provjeru aktualnog seta, ali ne brišu izričite zahtjeve za puni opseg, prihvat i dokumentiranje.",
+      "judge": "Kriterij je dokumentacijski potpuno pokriven za odobreni testni opseg; nije tvrdnja da su testovi stvarno prošli.",
+      "n": "APP_B_XI",
+      "order": 11,
+      "rating": "fully",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XI-0003",
+        "CRUMB-DOC-0017-APP_B_XI-0004",
+        "CRUMB-DOC-0018-APP_B_XI-0003",
+        "CRUMB-DOC-0019-APP_B_XI-0003",
+        "CRUMB-DOC-0019-APP_B_XI-0005",
+        "CRUMB-DOC-0019-APP_B_XI-0018",
+        "CRUMB-DOC-0019-APP_B_XI-0028",
+        "CRUMB-DOC-0020-APP_B_XI-0023",
+        "CRUMB-DOC-0020-APP_B_XI-0041",
+        "CRUMB-DOC-0020-APP_B_XI-0049"
+      ],
+      "score": 100.0,
+      "title": "Test Control",
+      "verify": []
+    },
+    {
+      "aff": "Raspon/točnost, intervali, oznake kalibracije, provjera prije testa, sljedivost i retrospektivna ocjena od zadnje kalibracije imaju konkretne kontrole.",
+      "con": "Tehnički odnos referentne točnosti ili njegovo dopušteno opravdanje te praktični certifikacijski trag trebaju jasniju podlogu; razredi opreme nisu potpuno razrađeni.",
+      "judge": "Kontrola MTE je dobra, ali dio kalibracijske tehničke osnove nije dovoljno razvidan za puni rang.",
+      "n": "APP_B_XII",
+      "order": 12,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XII-0002",
+        "CRUMB-DOC-0001-APP_B_XII-0004",
+        "CRUMB-DOC-0001-APP_B_XII-0005",
+        "CRUMB-DOC-0020-APP_B_XII-0002",
+        "CRUMB-DOC-0025-APP_B_XII-0014",
+        "CRUMB-DOC-0025-APP_B_XII-0015",
+        "CRUMB-DOC-0025-APP_B_XII-0025"
+      ],
+      "score": 75.0,
+      "title": "Control of Measuring and Test Equipment",
+      "verify": []
+    },
+    {
+      "aff": "Uvjeti čuvanja MTE, proizvođačevi zahtjevi, zaštita opreme od kontaminacije i fizičke kopije medija podupiru odobreni ograničeni opseg.",
+      "con": "Vendor izuzeća treba uskladiti s konkretnim preuzetim kontrolama. Detaljan transportni put vrijedi samo ako ga Enconet preuzima.",
+      "judge": "Zaštita i skladištenje su stvarno opisani. Ograničena primjenjivost nije opća logistika; papirna granica odgovornosti ostaje nedovoljno dosljedna.",
+      "n": "APP_B_XIII",
+      "order": 13,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XIII-0001",
+        "CRUMB-DOC-0001-APP_B_XIII-0003",
+        "CRUMB-DOC-0018-APP_B_XVII-0001",
+        "CRUMB-DOC-0018-APP_B_XVII-0007",
+        "CRUMB-DOC-0020-APP_B_XIII-0001",
+        "CRUMB-DOC-0025-APP_B_XIII-0003",
+        "CRUMB-DOC-0025-APP_B_XIII-0005"
+      ],
+      "score": 75.0,
+      "title": "Handling, Storage, and Shipping",
+      "verify": []
+    },
+    {
+      "aff": "Statusne oznake, NIJE PREGLEDANO/NESUKLADNOST, test tag/clearance i završno oslobađanje sprečavaju preranu uporabu.",
+      "con": "Opća mogućnost hitne isporuke bez provjera treba imati jasnu nuklearnu granicu; samo pisano poslovno odobrenje ne dokazuje dopuštenje za svaki safety-related slučaj.",
+      "judge": "Statusne kontrole su konkretne, ali iznimku isporuke treba uskladiti s potrebnim provjerama i ovlastima prije punog ranga.",
+      "n": "APP_B_XIV",
+      "order": 14,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XIV-0002",
+        "CRUMB-DOC-0003-APP_B_XIV-0004",
+        "CRUMB-DOC-0004-APP_B_XIV-0002",
+        "CRUMB-DOC-0008-APP_B_XIV-0002",
+        "CRUMB-DOC-0010-APP_B_XIV-0001",
+        "CRUMB-DOC-0020-APP_B_XIV-0001",
+        "CRUMB-DOC-0020-APP_B_XIV-0002"
+      ],
+      "score": 75.0,
+      "title": "Inspection, Test, and Operating Status",
+      "verify": [
+        "ACT-0014"
+      ]
+    },
+    {
+      "aff": "NCR otvaranje, identifikacija/izolacija, stručna ocjena, dispozicija, potpis izvršenja, neovisna verifikacija i ponovno ispitivanje dorade tvore zatvoren tok.",
+      "con": "Za uporabu kakav jest ili doradu treba provjeriti stvarno tehničko obrazloženje i primjenjiva kupčeva odobrenja; Part21 procjena nije automatska za svaki NCR.",
+      "judge": "Nesukladnost je kontrolirana od otkrića do odobrenog prihvata za Enconetove proizvode/usluge. Fizička plant-repair uloga nije pretpostavljena.",
+      "n": "APP_B_XV",
+      "order": 15,
+      "rating": "fully",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XV-0003",
+        "CRUMB-DOC-0010-APP_B_X-0001",
+        "CRUMB-DOC-0010-APP_B_XV-0015",
+        "CRUMB-DOC-0010-APP_B_XV-0023",
+        "CRUMB-DOC-0010-APP_B_XV-0025",
+        "CRUMB-DOC-0010-APP_B_XV-0026",
+        "CRUMB-DOC-0010-APP_B_XV-0027",
+        "CRUMB-DOC-0010-APP_B_XV-0028",
+        "CRUMB-DOC-0010-APP_B_XV-0029",
+        "CRUMB-DOC-0010-APP_B_XV-0030"
+      ],
+      "score": 100.0,
+      "title": "Nonconforming Materials, Parts, or Components",
+      "verify": []
+    },
+    {
+      "aff": "Uzrok, značaj, nositelj, rok, resursi, verifikacija završetka i razdoblje praćenja učinkovitosti imaju operativno definirane korake.",
+      "con": "Stvarni rezultat sprječavanja ponavljanja treba potvrditi uzorkom. Part21 razlike u rokovima razmatraju se odvojeno od ovog rezultata.",
+      "judge": "Korektivni sustav dokumentacijski pokriva uzrok, provođenje i provjeru učinka, a ne samo brzo zatvaranje prijave.",
+      "n": "APP_B_XVI",
+      "order": 16,
+      "rating": "fully",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XVI-0002",
+        "CRUMB-DOC-0010-APP_B_XVI-0024",
+        "CRUMB-DOC-0011-APP_B_XVI-0010",
+        "CRUMB-DOC-0011-APP_B_XVI-0020",
+        "CRUMB-DOC-0011-APP_B_XVI-0021",
+        "CRUMB-DOC-0011-APP_B_XVI-0023",
+        "CRUMB-DOC-0011-APP_B_XVI-0031",
+        "CRUMB-DOC-0011-APP_B_XVI-0036"
+      ],
+      "score": 100.0,
+      "title": "Corrective Action",
+      "verify": []
+    },
+    {
+      "aff": "Autentifikacija, IOD, ZK klase, trajni projektni zapisi, ugovorni rokovi, zaštita pristupa i kopije imaju jasne kontrole.",
+      "con": "GPD nedosljednost te za relevantnu odgovornost dokaz metode zaštite pohrane i obnove nakon katastrofe/promjene tehnologije ostaju otvoreni.",
+      "judge": "Zapisi su dobro uređeni. Lokalni backup nije sam po sebi dokaz svake potrebne storage metode; ne nameće se operatorova arhiva bez pripadne uloge.",
+      "n": "APP_B_XVII",
+      "order": 17,
+      "rating": "substantially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XVII-0005",
+        "CRUMB-DOC-0005-APP_B_XVII-0007",
+        "CRUMB-DOC-0005-APP_B_XVII-0008",
+        "CRUMB-DOC-0005-APP_B_XVII-0010",
+        "CRUMB-DOC-0005-APP_B_XVII-0021",
+        "CRUMB-DOC-0005-APP_B_XVII-0026",
+        "CRUMB-DOC-0005-APP_B_XVII-0036",
+        "CRUMB-DOC-0013-APP_B_XVII-0024",
+        "CRUMB-DOC-0018-APP_B_XVII-0007",
+        "CRUMB-DOC-0018-APP_B_XVII-0015"
+      ],
+      "score": 75.0,
+      "title": "Quality Assurance Records",
+      "verify": [
+        "ACT-0017"
+      ]
+    },
+    {
+      "aff": "Postupak ima neovisnost, autoritet, plan, pet audita/tri godine i nuklearno iskustvo za Lead Auditor-a te strukturirane izvještaje.",
+      "con": "PP-82-01 traži punu kriterijsku pokrivenost u tri godine; supplied NQA-1:2015 Req18§201.3 za dobavljače traži godišnje ili izričito opravdano produženje najviše dvije godine. Ugovorna vanjska učestalost također traži dokaz.",
+      "judge": "Program audita postoji i detaljan je, ali pokrivenost/interval nije dovoljno usklađen s odabranom 2015 osnovom. Povijesni certifikati nisu proglašeni isteklima bez provjere.",
+      "n": "APP_B_XVIII",
+      "order": 18,
+      "rating": "partially",
+      "refs": [
+        "CRUMB-DOC-0001-APP_B_XVIII-0005",
+        "CRUMB-DOC-0009-APP_B_XVIII-0009",
+        "CRUMB-DOC-0009-APP_B_XVIII-0010",
+        "CRUMB-DOC-0009-APP_B_XVIII-0018",
+        "CRUMB-DOC-0009-APP_B_XVIII-0021",
+        "CRUMB-DOC-0009-APP_B_XVIII-0026",
+        "CRUMB-DOC-0009-APP_B_XVIII-0042",
+        "CRUMB-DOC-0009-APP_B_XVIII-0058"
+      ],
+      "score": 50.0,
+      "title": "Audits",
+      "verify": [
+        "ACT-0018"
+      ]
+    }
+  ],
+  "dash_id": "DASH-20261009-0001",
+  "deliverable_language": "hr",
+  "generated_date": "2026-10-09",
+  "package_sha256": "c01052e15d620599c5ff3de164541184571dbb5b1cfdde078adf9b33bdc7337b",
+  "priority_actions": [
+    {
+      "action_id": "ACT-0004",
+      "criterion_id": "APP_B_IV",
+      "description": "Pribaviti važeći PP-74-01 i jednu nuklearnu narudžbu. Provjeriti tehničke/QA zahtjeve, QA pregled prije ugovaranja, revizije i prijenos zahtjeva poddobavljaču. Nedostaje dokument u dostavljenom setu; nije dokaz da postupak ne postoji. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": 1,
+      "refs": [
+        "GAP-APP_B_IV-01"
+      ]
+    },
+    {
+      "action_id": "ACT-0006",
+      "criterion_id": "APP_B_VI",
+      "description": "Pokazati važeći master registar, jednu distribucijsku listu i povučenu prethodnu reviziju. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": 1,
+      "refs": [
+        "GAP-APP_B_VI-01"
+      ]
+    },
+    {
+      "action_id": "ACT-0007",
+      "criterion_id": "APP_B_VII",
+      "description": "Uz zajednički zahtjev ACT-0004 za PP-74-01, pokazati odobrenje jednog podugovarača ili kalibracijskog laboratorija, nadzor i dokaz prihvata prije uporabe. Certificate/dedication put provjeriti samo ako ga Enconet stvarno preuzima. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": 1,
+      "refs": [
+        "GAP-APP_B_VII-01"
+      ]
+    },
+    {
+      "action_id": "ACT-0009",
+      "criterion_id": "APP_B_IX",
+      "description": "Pribaviti kontroliranu VT uputu i ugovorni opseg te uskladiti izuzeće IX u priručniku s VT radom iz nuklearnog plana. Provjeriti odgovornost za kvalifikaciju postupka, VT II/CP-189 i aktualan vidni dosje izvršitelja. Ne proširivati zahtjev na zavarivanje koje Enconet nije preuzeo. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": 1,
+      "refs": [
+        "GAP-APP_B_IX-01"
+      ]
+    },
+    {
+      "action_id": "ACT-0014",
+      "criterion_id": "APP_B_XIV",
+      "description": "Uzorkovati release/test-tag i provjeriti da hitna isporuka ne omogućuje preranu safety-related uporabu. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": 1,
+      "refs": [
+        "GAP-APP_B_XIV-01"
+      ]
+    },
+    {
+      "action_id": "ACT-0017",
+      "criterion_id": "APP_B_XVII",
+      "description": "Uzorkovati jedan trajni projektni zapis i restore te potvrditi važeći registar, rok i storage odgovornost. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": 1,
+      "refs": [
+        "GAP-APP_B_XVII-01"
+      ]
+    },
+    {
+      "action_id": "ACT-0018",
+      "criterion_id": "APP_B_XVIII",
+      "description": "Pribaviti godišnje matrice pokrivenosti nuklearnog QA programa i obrazloženje eventualnog produženja. Usporediti trogodišnji opis PP-82-01 s odabranim NQA-1:2015 Req18 §201.3: godišnji audit ili opravdano produženje najviše dvije godine. Potvrditi ugovorno izdanje i primjenjivu vanjsku učestalost; uzorkovati Lead Auditor requalifikaciju. Ne proglasiti prošlu povredu ili istekao certifikat bez zapisa. Provjeriti objektivne zapise prije zaključka o provedbi.",
+      "priority": 1,
+      "refs": [
+        "GAP-APP_B_XVIII-01"
+      ]
+    }
+  ],
+  "run_id": "RUN-20261008-17",
+  "schema_version": "1.0",
+  "supplier": "enconet",
+  "weighted_score": 80.6
+}

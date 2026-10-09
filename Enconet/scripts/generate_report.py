@@ -9,6 +9,7 @@ import os
 import re
 import sys
 import tempfile
+import yaml
 from pathlib import Path
 
 import db_util
@@ -94,7 +95,8 @@ def _citation(row: dict, *, viewer_path: str | None = None) -> str:
 
 
 def render(
-    package: dict, template: Path = TEMPLATE, *, viewer_path: str | None = None
+    package: dict, template: Path = TEMPLATE, *, viewer_path: str | None = None,
+    documentary: bool = False,
 ) -> str:
     errors = validate_package(package)
     if errors:
@@ -124,9 +126,16 @@ def render(
         "approved_action_ids": [row["action_id"] for row in actions],
         "language": language,
     }
+    if documentary:
+        metadata["report_variant"] = "documentary"
     applicability = {row["criterion_id"]: row for row in package["applicability"]}
     criterion_blocks = []
-    for row in package["evaluations"]:
+    evaluations = package["evaluations"]
+    if documentary:
+        taxonomy = yaml.safe_load((ENCONET / "schemas/app_b_taxonomy.yml").read_text(encoding="utf-8"))["criteria"]
+        order = {item["criterion_id"]: index for index, item in enumerate(taxonomy)}
+        evaluations = sorted(evaluations, key=lambda row: order[row["criterion_id"]])
+    for row in evaluations:
         ruling = applicability.get(row["criterion_id"], {})
         evidence = " ".join(
             citation_renderer.render("crumb", item, viewer_path=viewer_path)
@@ -139,6 +148,28 @@ def render(
         document = citation_renderer.render(
             "document", ruling.get("scope_source_doc_id", ""), viewer_path=viewer_path,
         )
+        if documentary:
+            if ruling.get("applicable") and not isinstance(row.get("score"), (int, float)):
+                raise ValueError(f"documentary report requires a stored score: {row['criterion_id']}")
+            labels = {
+                "hr": ("Bodovi", "Rang", "Odobrena primjenjivost", "Izvorno obrazloženje opsega", "U prilog", "Ograničenje", "Zaključak", "Dokazi"),
+                "sl": ("Točke", "Rang", "Odobrena uporabnost", "Izvirna utemeljitev obsega", "V prid", "Omejitev", "Sklep", "Dokazi"),
+                "en": ("Points", "Rank", "Approved applicability", "Original scope justification", "Affirmative", "Limitation", "Judgment", "Evidence"),
+            }[language]
+            rank = {"fully": "5/5", "substantially": "4/5", "partially": "3/5",
+                    "minimally": "2/5", "unmet": "1/5"}.get(row["classification"], "n-a")
+            criterion_blocks.append(
+                f"### {evaluation} — {row.get('criterion_name', '')}\n\n"
+                f"- classification: `{row['classification']}`\n"
+                f"- {labels[0]}: {row.get('score') if row.get('score') is not None else 'n-a'} / 100; {labels[1]}: {rank}\n"
+                f"- {labels[2]}: `{'applicable' if ruling.get('applicable') else 'not-applicable'}`\n"
+                f"- {labels[3]}: {ruling.get('justification', 'n-a')} {document}\n\n"
+                f"**{labels[4]}:** {row.get('affirmative_summary', '')}\n\n"
+                f"**{labels[5]}:** {row.get('contrary_summary', '')}\n\n"
+                f"**{labels[6]}:** {row.get('judge_ruling', '')}\n\n"
+                f"**{labels[7]}:** {evidence}"
+            )
+            continue
         criterion_blocks.append(
             f"### {evaluation} — {row.get('criterion_name', '')}\n\n"
             f"- classification: `{row['classification']}`\n"
@@ -160,13 +191,21 @@ def render(
         f"{row['title']} — {row['body']} {_citation(row, viewer_path=viewer_path)}"
         for row in findings
     ]
+    if documentary:
+        # A multiline finding must cite its gap/evidence on the primary line,
+        # not only after the last paragraph; the validator enforces that defense.
+        finding_lines = [
+            f"- {citation_renderer.render('finding', row['finding_id'], viewer_path=viewer_path)}: "
+            f"{row['title']} {_citation(row, viewer_path=viewer_path)}\n\n{row['body']}"
+            for row in findings
+        ]
     counts = ["| classification | count |", "|---|---:|"] + [
         f"| {name} | {count} |" for name, count in sorted(metrics["classification_counts"].items())
     ]
     appendix = ["| criterion | classification | evidence |", "|---|---|---|"] + [
         f"| {row['criterion_id']} | {row['classification']} | "
         f"{' '.join(citation_renderer.render('crumb', item, viewer_path=viewer_path) for item in row.get('evidence_ids', [])) or citation_renderer.render('source', 'package', viewer_path=viewer_path)} |"
-        for row in package["evaluations"]
+        for row in evaluations
     ]
     values = {
         "report_metadata": json.dumps(metadata, ensure_ascii=False, sort_keys=True, separators=(",", ":")),
@@ -182,6 +221,20 @@ def render(
         "score": f"**{metrics['consolidated_score']} / 100** — **{metrics['applicable_count']}** applicable criteria (`{metrics['classification']}`).",
         "limitations": text["limitations"], "appendix": "\n".join(appendix),
     }
+    if documentary:
+        notice = {
+            "hr": "Dokumentacijska pretprocjena dobavljačeva QA sustava prema 10 CFR 50 Appendix B, uz odabranu ASME NQA-1 interpretaciju. Part 21 je zaseban skup, izvan ovog zbroja. Ovo nije potvrda terenske provedbe. Izvorni kalkulacijski model/run stamp ostaje povijesna provenance; ne označava sadašnji status odobrenja. Izvorna radna rationale ostaje u paketu i zapisu ocjene, dok ovaj izvještaj prikazuje odobrene argumente i zaključak. Bodovi su pohranjeni rezultat; rang5/5 nije postotna formula.",
+            "sl": "Dokumentacijska predpresoja dobaviteljevega QA sistema po 10 CFR 50 Appendix B z izbrano ASME NQA-1 razlago. Part 21 je ločen, zunaj te ocene. To ni potrditev izvajanja na terenu. Izvirni zapis modela ostane zgodovinska sled, ne trenutni status odobritve. Izvirna rationale ostane v paketu; prikazani so odobreni argumenti in sklep. Točke so shranjen rezultat; rang5/5 ni odstotna formula.",
+            "en": "Documentary pre-flight evaluation of the supplier QA system against 10 CFR 50 Appendix B using the selected ASME NQA-1 interpretation. Part 21 is separate and excluded from this score. This does not certify field implementation. The original calculation model/run stamp is historical provenance, not current approval status. Original rationale remains in the package/evaluation record; this report displays approved arguments and judgment. Points are stored results; rank5/5 is not a percentage formula.",
+        }[language]
+        gate_rows = {r['object_id']: r for r in package['approvals'] if r.get('object_id') in {f'G{n}-{run["run_id"]}' for n in (2,3,4)}}
+        lines = []
+        for number in (2, 3, 4):
+            gate = gate_rows[f"G{number}-{run['run_id']}"]
+            lines.append(f"- G{number}: approved — `{gate['object_id']}`; {gate['date']}")
+        values["executive_summary"] += f"\n\n**{metrics['consolidated_score']} / 100**, {metrics['applicable_count']} applicable criteria.\n\n" + "\n".join(lines)
+        values["method"] += "\n\n" + notice
+        values["limitations"] += "\n\n" + notice
     for index, key in enumerate(("executive_summary", "scope", "method", "coverage", "criteria", "gaps", "actions", "recommendations", "score", "limitations", "appendix")):
         values[f"heading_{key}"] = headings[index]
     return render_template(template, values).rstrip() + "\n"
@@ -221,6 +274,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--approvals", type=Path, default=APPROVALS)
+    parser.add_argument("--documentary", action="store_true",
+                        help="show approved documentary arguments and stored criterion scores; keep original provenance unchanged")
     args = parser.parse_args(argv)
     try:
         package = json.loads(args.package.read_text(encoding="utf-8"))
@@ -242,10 +297,10 @@ def main(argv: list[str] | None = None) -> int:
                     f"candidate output must be directly under the selected run directory: {expected}"
                 )
             viewer_path = portable_viewer_path(output, viewer_output)
-            content = render(package, viewer_path=viewer_path)
+            content = render(package, viewer_path=viewer_path, documentary=args.documentary)
             _atomic_write_text(output, content)
         else:
-            content = render(package)
+            content = render(package, documentary=args.documentary)
             output.parent.mkdir(parents=True, exist_ok=True)
             output.write_text(content, encoding="utf-8", newline="\n")
         print(f"generate_report: PASS - {output}")

@@ -7,6 +7,7 @@
 - [G4 approval and remaining benchmark hold](../docs/G4_APPROVAL_20261008.md)
 - [Scoring fixture refresh and current full-suite hold](../docs/SCORING_FIXTURE_REFRESH_20261009.md)
 - [Completed regression isolation and final test evidence](../docs/TEST_FIXTURE_ISOLATION_20261009.md)
+- [Croatian report draft, G5 review and size-cap decision](../docs/REPORT_G5_REVIEW_20261009.md)
 - [Archived reset record](../docs/ENCONET_RESET_20261007.md)
 - [Reusable method](../docs/FRAMEWORK_METHOD_V2.md)
 - [Sieving playbook](../sieving/SIEVING_PLAYBOOK.md)
