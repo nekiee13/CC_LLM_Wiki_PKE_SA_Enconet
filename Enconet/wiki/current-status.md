@@ -87,10 +87,13 @@ Read [complete repair,commands and final test reports](../docs/TEST_FIXTURE_ISOL
 Croatian report draft generated/validated with all18 criterion scores and
 affirmative/contrary/judgment sections;fullsuite452passed,zero failures/errors/skips.
 Read [report draft and G5 review/blocker](../docs/REPORT_G5_REVIEW_20261009.md).
-Evidence companion generation held at approved size cap531965>524288bytes;
-owner cap decision requested. No source chapters removed and no cap bypass.
-Next:explicit cap approval,build/validate companion/source links/browser checks,
-then finalize G5 review. G5 remains pending;report links not operational yet.
+Owner approved new limits;activev2profile selected in projectconfig andmanifest
+fingerprint-bound. Complete evidence companion and portable report package built:
+382links,191unique browsertargets,134crumbs/164quotes/169chapters verified.
+Finalfullsuite458passed;all sizes/timing/security limits pass;source/scoreunchanged.
+Read [G5 ready review package](../docs/G5_READY_20261009.md).
+Next:owner G5 report release decision. Capacity/G3/G4 approvals resolved.
+G5 remains pending;G6/G7 not inferred;fieldverification/actions remain open.
 G4 and fixture approval do not need re-approval. No report/dashboard release
 or field verification inferred. Claude review/guidance synchronization pending.
 No new categories or owner-entered judgments are needed.

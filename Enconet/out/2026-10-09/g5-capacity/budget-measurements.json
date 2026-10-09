@@ -1,0 +1,26 @@
+{
+  "profile": "schemas\\evidence_access_budgets_v2.yml",
+  "static": {
+    "package_payload_total_bytes": 1289049,
+    "bundle_bytes": 531965,
+    "viewer_bytes": 583628,
+    "workspace_bytes": 5997,
+    "documents": 17,
+    "chunks": 169,
+    "evaluations": 18,
+    "crumbs": 134,
+    "quotes": 164,
+    "gaps": 18,
+    "findings": 12,
+    "actions": 18
+  },
+  "browser": {
+    "viewer_initial_render_ms": 48.4,
+    "evidence_open_ms": 26.2,
+    "search_response_ms": 3.5,
+    "workspace_initial_render_ms": 18.3,
+    "external_requests": 0
+  },
+  "errors": [],
+  "passed": true
+}

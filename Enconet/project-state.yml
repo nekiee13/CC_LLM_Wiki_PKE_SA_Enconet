@@ -3,6 +3,7 @@
 phase: findings_approved
 supplier: enconet
 deliverable_language: hr
+evidence_budget_profile: schemas/evidence_access_budgets_v2.yml
 gates:
   G1: {status: approved, date: 2026-10-07, decision_ref: G1-ENCONET-20261007-SOURCES}
   G2: {status: approved, date: 2026-10-08, decision_ref: G2-RUN-20261008-17}

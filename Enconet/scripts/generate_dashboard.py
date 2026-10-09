@@ -18,12 +18,13 @@ import evidence_access_policy
 import validate_evidence_bundle
 from build_dashboard_data import validate_data
 from build_evaluation_package import validate_source
-from finding_workflow import APPROVALS
+from finding_workflow import APPROVALS, approved
 from generate_report import require_report_gates
 
 ENCONET = Path(__file__).resolve().parents[1]
 TEMPLATE = ENCONET / "templates" / "dashboard-template.html"
 EVIDENCE_BUDGETS = ENCONET / "schemas" / "evidence_access_budgets.yml"
+BUDGET_STATE = ENCONET / "project-state.yml"
 SCORING_MODEL = ENCONET / "schemas" / "scoring_model.yml"
 OUTPUTS = ENCONET / "outputs"
 WIKI = ENCONET / "wiki" / "dashboards"
@@ -141,7 +142,40 @@ def classification_scale(model_path: Path = SCORING_MODEL) -> list[dict]:
     return scale
 
 
-def _validate_bundle_for_dashboard(bundle: dict, data: dict) -> None:
+def configured_budget_profile() -> Path | None:
+    """Resolve only an explicitly configured profile inside this project."""
+    state = yaml.safe_load(BUDGET_STATE.read_text(encoding="utf-8"))
+    relative = state.get("evidence_budget_profile")
+    if relative is None:
+        return None
+    if not isinstance(relative, str) or Path(relative).is_absolute():
+        raise ValueError("configured budget profile must be a project-relative path")
+    path = (ENCONET / relative).resolve()
+    if not path.is_relative_to(ENCONET.resolve()):
+        raise ValueError("configured budget profile escapes project root")
+    return path
+
+
+def load_budget_profile(path: Path | None = None, *, approvals: Path = APPROVALS) -> dict:
+    """Select a manifest-backed capacity profile; legacy defaults stay unchanged."""
+    from validate_evidence_access_budgets import load_budgets
+    path = path if path is not None else configured_budget_profile()
+    budgets = load_budgets(path or EVIDENCE_BUDGETS)
+    if path is not None:
+        reference = budgets["approval"].get("approval_ref", "")
+        decision = approved(reference, approvals)
+        if not reference.startswith("EVIDENCE-SIZE-") or decision is None:
+            raise ValueError("capacity profile requires explicit manifest-backed owner approval")
+        digest = hashlib.sha256(json.dumps(budgets, sort_keys=True, separators=(",", ":"),
+                                          default=str).encode("utf-8")).hexdigest()
+        if f"profile_fingerprint={digest}" not in decision.get("notes", ""):
+            raise ValueError("capacity profile fingerprint differs from owner-approved settings")
+    return budgets
+
+
+def _validate_bundle_for_dashboard(bundle: dict, data: dict, *,
+                                   budget_profile: Path | None = None,
+                                   approvals: Path = APPROVALS) -> None:
     metadata = bundle.get("metadata", {})
     for field in ("run_id", "supplier", "deliverable_language"):
         if metadata.get(field) != data.get(field):
@@ -149,7 +183,7 @@ def _validate_bundle_for_dashboard(bundle: dict, data: dict) -> None:
     errors = validate_evidence_bundle.validate(bundle)
     if errors:
         raise ValueError("invalid evidence bundle: " + "; ".join(errors))
-    budgets = yaml.safe_load(EVIDENCE_BUDGETS.read_text(encoding="utf-8"))
+    budgets = load_budget_profile(budget_profile, approvals=approvals)
     bundle_bytes = len(validate_evidence_bundle.canonical_bytes(bundle))
     size_limit = budgets["size_bytes"]["bundle"]
     if bundle_bytes > size_limit:
@@ -161,7 +195,8 @@ def _validate_bundle_for_dashboard(bundle: dict, data: dict) -> None:
 
 
 def render(
-    data: dict, template: Path = TEMPLATE, *, evidence_bundle: dict | None = None
+    data: dict, template: Path = TEMPLATE, *, evidence_bundle: dict | None = None,
+    budget_profile: Path | None = None, approvals: Path = APPROVALS,
 ) -> str:
     errors = validate_data(data)
     if errors:
@@ -177,7 +212,8 @@ def render(
     if any(source.count(marker) != 1 for marker in markers):
         raise ValueError("dashboard template injection markers are invalid")
     if evidence_bundle is not None:
-        _validate_bundle_for_dashboard(evidence_bundle, data)
+        _validate_bundle_for_dashboard(evidence_bundle, data, budget_profile=budget_profile,
+                                       approvals=approvals)
         evidence_hash = _bundle_hash(evidence_bundle)
     else:
         evidence_hash = ""
@@ -221,6 +257,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--output", type=Path)
     parser.add_argument("--wiki-output", type=Path)
     parser.add_argument("--evidence-bundle", type=Path)
+    parser.add_argument("--budgets", type=Path, help="explicit owner-approved capacity profile")
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--approvals", type=Path, default=APPROVALS)
     args = parser.parse_args(argv)
@@ -239,7 +276,8 @@ def main(argv: list[str] | None = None) -> int:
         if source_errors:
             raise ValueError(source_errors[0])
         require_report_gates(package)
-        content = render(data, evidence_bundle=bundle)
+        content = render(data, evidence_bundle=bundle, budget_profile=args.budgets,
+                         approvals=args.approvals)
         from validate_dashboard import validate  # local import avoids CLI import cycle
         errors = validate(package, data, content, evidence_bundle=bundle)
         if errors:

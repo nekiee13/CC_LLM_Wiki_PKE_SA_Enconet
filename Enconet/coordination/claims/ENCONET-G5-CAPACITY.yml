@@ -1,0 +1,21 @@
+task: ENCONET-G5-CAPACITY
+agent: codex
+status: released
+claimed_at_utc: 2026-10-09T16:07:42Z
+last_renewed_at_utc: 2026-10-09T17:03:03Z
+expires_at_utc: 2026-10-10T17:03:03Z
+anticipated_files:
+  - Enconet/schemas/evidence_access_budgets_v2.yml
+  - Enconet/manifests/approvals.csv
+  - Enconet/project-state.yml
+  - Enconet/scripts/generate_dashboard.py
+  - Enconet/scripts/build_review_package.py
+  - Enconet/scripts/run_all_validations.py
+  - Enconet/tests/test_budget_profiles.py
+  - Enconet/outputs/candidates/evidence_access
+  - Enconet/out/2026-10-09/g5-capacity
+  - Enconet/docs/REPORT_G5_REVIEW_20261009.md
+  - Enconet/wiki/gates/G5-RUN-20261008-17-enconet.md
+  - Enconet/wiki/current-status.md
+note: Capacityapproval implemented asactive approvedprofile;fullsource/browser/performanceproof complete;G5pending. Portablebuilder preservesdocumentaryvariant;legacydefault unchanged.
+released_at_utc: 2026-10-09T17:05:10Z

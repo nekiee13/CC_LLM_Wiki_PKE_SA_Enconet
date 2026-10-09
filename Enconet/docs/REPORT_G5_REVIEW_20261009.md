@@ -2,6 +2,10 @@
 
 ## Current result
 
+Update: the owner approved the size limits and all linked viewer/browser checks
+now pass. See [G5 ready package and final measurements](G5_READY_20261009.md).
+The blocker section below records the earlier condition; it is now resolved.
+
 The Croatian report is generated and passes report/source validation.
 Score stays **80.6%,1450/1800**, with **18 criteria**:6 fully,10 substantially,
 two partially. G1–G4 are approved. **G5 remains pending.**

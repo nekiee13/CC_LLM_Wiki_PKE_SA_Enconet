@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -24,6 +25,18 @@ NAMES = {
     "report": "evaluation_report.md",
     "viewer": "evidence_explorer.html",
 }
+
+
+def render_portable_report(package: dict, source_report: str, viewer_path: str) -> str:
+    """Keep the validated source report's presentation when rebasing local links."""
+    match = re.search(r"<!-- report-metadata: (\{.*?\}) -->", source_report)
+    metadata = json.loads(match.group(1)) if match else {}
+    variant = metadata.get("report_variant")
+    if variant not in {None, "documentary"}:
+        raise ValueError(f"unsupported source report variant: {variant}")
+    if variant == "documentary":
+        return generate_report.render(package, viewer_path=viewer_path, documentary=True)
+    return generate_report.render(package, viewer_path=viewer_path)
 
 
 def _hash(path: Path) -> str:
@@ -71,7 +84,8 @@ def build(catalog: dict, source_root: Path, destination: Path) -> Path:
         for kind in ("bundle", "package", "viewer"):
             shutil.copyfile(source_paths[kind], targets[kind])
         package = json.loads(targets["package"].read_text(encoding="utf-8"))
-        report = generate_report.render(package, viewer_path=NAMES["viewer"])
+        report = render_portable_report(package, source_paths["report"].read_text(encoding="utf-8"),
+                                        NAMES["viewer"])
         targets["report"].write_text(report, encoding="utf-8", newline="\n")
         artifacts = {}
         for kind in sorted(NAMES):

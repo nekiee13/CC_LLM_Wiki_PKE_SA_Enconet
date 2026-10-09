@@ -258,6 +258,12 @@ def main() -> int:
                                   no_record=args.no_record)
         if args.skill_origin is not None:
             check_commands["sieving_harness"].extend(["--skill-origin", str(args.skill_origin)])
+        if state.get("evidence_budget_profile"):
+            import generate_dashboard
+            profile = generate_dashboard.configured_budget_profile()
+            generate_dashboard.load_budget_profile(profile)
+            command = check_commands["evidence_budgets"]
+            command[command.index("--budgets") + 1] = str(profile)
         checks = run(phase, check_commands)
         if benchmarks_required(phase, args.benchmarks):
             for name, command in benchmark_commands().items():
