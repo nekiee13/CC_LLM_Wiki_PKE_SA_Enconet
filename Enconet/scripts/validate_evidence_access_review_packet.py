@@ -29,7 +29,8 @@ def _digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tuple[list[str], dict]:
+def validate(contract_path: Path, packet_path: Path, project_root: Path, *,
+             decision_record_root: Path | None = None) -> tuple[list[str], dict]:
     errors: list[str] = []
     summary = {"commands": 0, "risks": 0, "decision": "unknown"}
     try:
@@ -105,9 +106,13 @@ def validate(contract_path: Path, packet_path: Path, project_root: Path) -> tupl
             errors.append("findings review requires at least one finding")
         if complete:
             message_name = f"{decision['message_id']}.md"
+            # An isolated historical regression workspace may read the real,
+            # unchanged reviewer record from its explicitly supplied origin.
+            # Runtime defaults remain project-local; no decision is synthesized.
+            record_root = decision_record_root or project_root
             message_paths = [
-                project_root / "coordination" / "messages" / message_name,
-                project_root / "coordination" / "archive" / message_name,
+                record_root / "coordination" / "messages" / message_name,
+                record_root / "coordination" / "archive" / message_name,
             ]
             if not any(path.is_file() for path in message_paths):
                 errors.append("independent reviewer decision record is missing")
@@ -188,8 +193,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--contract", type=Path, required=True)
     parser.add_argument("--packet", type=Path, required=True)
     parser.add_argument("--project-root", type=Path, required=True)
+    parser.add_argument("--decision-record-root", type=Path,
+                        help="explicit read-only origin of reviewer records for historical regression")
     args = parser.parse_args(argv)
-    errors, summary = validate(args.contract, args.packet, args.project_root)
+    errors, summary = validate(args.contract, args.packet, args.project_root,
+                               decision_record_root=args.decision_record_root)
     if errors:
         for error in errors:
             print(f"validate_evidence_access_review_packet: FAIL - {error}", file=sys.stderr)

@@ -3,7 +3,7 @@
 On 7 October 2026 the owner authorized archiving and resetting the previous
 audit while preserving incoming documents. Archive and reset are complete.
 
-- phase: **findings_drafted**, held for full-suite regression-fixture failures.
+- phase: **findings_approved**. Full-suite regression dependencies repaired.
   G1-G4 approved; G5-G7 pending.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
   no old evidence or scores inherited; 2,700 new live vendor crumbs; 18 fresh
@@ -79,13 +79,14 @@ All original evidence/applicability/ratings/run metadata tables are unchanged.
 Read [the complete G4 draft and all action links](../docs/FINDINGS_DRAFT_20261008.md)
 and [one G4 review packet](gates/G4-RUN-20261008-17-enconet.md).
 Read [G4 approval and the remaining benchmark hold](../docs/G4_APPROVAL_20261008.md).
-Fullsuite attempted in both interpreters: pinned result314passed55failed71errors.
-All71setup errors depend on old audit inputs/outputs; broader fixture repair
-needs a bounded owner scope decision, not changes to audit evidence or scores.
-Read [refresh proof and detailed full-suite failure report](../docs/SCORING_FIXTURE_REFRESH_20261009.md).
-Next:owner authorization for one coherent isolated regression-fixture repair,
-then fullsuite/phase checks before findings_approved. G4 and fixture approval
-do not need re-approval. No report/dashboard release or field verification inferred.
+Owner authorized the one-batch isolation repair. Full suite now447passed,
+zero failures/errors/skips;11phase checks and both benchmarks pass.
+Historical tests use currentcode in a verified separate test workspace;
+all original assertions,live auditfiles and Claude-ownedfiles remain unchanged.
+Read [complete repair,commands and final test reports](../docs/TEST_FIXTURE_ISOLATION_20261009.md).
+Next:generate/validate Croatian report and present one G5 packet.
+G4 and fixture approval do not need re-approval. No report/dashboard release
+or field verification inferred. Claude review/guidance synchronization pending.
 No new categories or owner-entered judgments are needed.
 See [G2 approval and verified application](../docs/G2_APPLICABILITY_APPLIED_20261008.md).
 The owner question about

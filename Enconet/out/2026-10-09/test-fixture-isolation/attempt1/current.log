@@ -1,0 +1,18 @@
+.................................................................F...... [ 47%]
+........................................................................ [ 94%]
+.........                                                                [100%]
+================================== FAILURES ===================================
+__ test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged ___
+tests\test_epic13_validation.py:98: in test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged
+    output_bytes = {path: path.read_bytes() for path in controlled_outputs}
+                          ^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_abc.py:625: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+C:\xPY\vEnv\WikiEnconet\Lib\pathlib\_local.py:537: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\outputs\\enconet_appendix_b_evaluation_package.json'
+=========================== short test summary info ===========================
+FAILED tests/test_epic13_validation.py::test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged
+1 failed, 152 passed in 25.76s

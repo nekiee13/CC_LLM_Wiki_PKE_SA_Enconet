@@ -238,6 +238,8 @@ def main() -> int:
     parser.add_argument("--data-root", type=Path, default=DATA)
     parser.add_argument("--run-id")
     parser.add_argument("--app-b-json", type=Path)
+    parser.add_argument("--skill-origin", type=Path,
+                        help="explicit read-only skill origin for an isolated regression workspace")
     parser.add_argument("--benchmarks", action="store_true",
                         help="run both supplier-independent EPIC16 benchmark classes")
     parser.add_argument("--no-record", action="store_true")
@@ -254,6 +256,8 @@ def main() -> int:
         check_commands = commands(phase=phase, supplier=supplier, db=args.db, outputs=args.outputs,
                                   run_id=run_id, app_b_json=app_b_json,
                                   no_record=args.no_record)
+        if args.skill_origin is not None:
+            check_commands["sieving_harness"].extend(["--skill-origin", str(args.skill_origin)])
         checks = run(phase, check_commands)
         if benchmarks_required(phase, args.benchmarks):
             for name, command in benchmark_commands().items():

@@ -1,0 +1,61 @@
+........................................F..........F.F.................. [ 24%]
+........................................................................ [ 49%]
+........................................................................ [ 73%]
+........................................................................ [ 98%]
+.FF..                                                                    [100%]
+================================== FAILURES ===================================
+_____ test_owner_adr_selects_offline_delivery_and_defers_any_live_service _____
+tests\test_evidence_access_governance.py:105: in test_owner_adr_selects_offline_delivery_and_defers_any_live_service
+    decision = _adr_policy()
+               ^^^^^^^^^^^^^
+tests\test_evidence_access_governance.py:24: in _adr_policy
+    assert ADR.is_file(), "owner-approved EA0.2 ADR is missing"
+E   AssertionError: owner-approved EA0.2 ADR is missing
+E   assert False
+E    +  where False = is_file()
+E    +    where is_file = WindowsPath('C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet/.test-tmp/regression-isolated-z3fu7x1h/Enconet-history/decisions/CX_ADR-0024-offline-evidence-explorer-and-candidate-output-policy.md').is_file
+__________ test_packet_is_complete_and_records_independent_approval ___________
+tests\test_evidence_access_review_packet.py:38: in test_packet_is_complete_and_records_independent_approval
+    assert errors == []
+E   AssertionError: assert ['independent...d is missing'] == []
+E     
+E     Left contains one more item: 'independent reviewer decision record is missing'
+E     Use -v to get more diff
+_________________ test_cli_reports_approved_independent_gate __________________
+tests\test_evidence_access_review_packet.py:66: in test_cli_reports_approved_independent_gate
+    assert review.main([
+E   AssertionError: assert 1 == 0
+E    +  where 1 = <function main at 0x000002C6893FCD60>(['--contract', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\.test-tmp\\regression-isolated-z3fu7x1h\\Enconet-his...ct-root', 'C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet\\.test-tmp\\regression-isolated-z3fu7x1h\\Enconet-history'])
+E    +    where <function main at 0x000002C6893FCD60> = review.main
+---------------------------- Captured stderr call -----------------------------
+validate_evidence_access_review_packet: FAIL - independent reviewer decision record is missing
+___________ test_only_non_mutating_manifest_verifier_remains_active ___________
+sieving\tests\test_tool_quarantine.py:13: in test_only_non_mutating_manifest_verifier_remains_active
+    assert active == ["verify_data_manifest.py"]
+E   AssertionError: assert [] == ['verify_data_manifest.py']
+E     
+E     Right contains one more item: 'verify_data_manifest.py'
+E     Use -v to get more diff
+_________________ test_archived_tool_inventory_and_tombstone __________________
+sieving\tests\test_tool_quarantine.py:21: in test_archived_tool_inventory_and_tombstone
+    assert expected.issubset({p.name for p in archive.glob("*.py")})
+E   AssertionError: assert False
+E    +  where False = <built-in method issubset of set object at 0x000002C6A38B8040>(set())
+E    +    where <built-in method issubset of set object at 0x000002C6A38B8040> = {'check_files.py', 'fix_files.py', 'fix_init_files.py', 'fix_mor_rule_refs.py', 'fix_mor_taxonomy_id.py', 'fix_nqa1_to_midlayer.py', ...}.issubset
+============================== warnings summary ===============================
+..\..\..\..\..\..\..\vEnv\WikiEnconet\Lib\site-packages\typer\__init__.py:24
+  C:\xPY\vEnv\WikiEnconet\Lib\site-packages\typer\__init__.py:24: DeprecationWarning: 'click.utils.get_binary_stream' is deprecated and will be removed in Click 9.0.
+    from click.utils import get_binary_stream as get_binary_stream
+
+..\..\..\..\..\..\..\vEnv\WikiEnconet\Lib\site-packages\typer\__init__.py:25
+  C:\xPY\vEnv\WikiEnconet\Lib\site-packages\typer\__init__.py:25: DeprecationWarning: 'click.utils.get_text_stream' is deprecated and will be removed in Click 9.0.
+    from click.utils import get_text_stream as get_text_stream
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_evidence_access_governance.py::test_owner_adr_selects_offline_delivery_and_defers_any_live_service
+FAILED tests/test_evidence_access_review_packet.py::test_packet_is_complete_and_records_independent_approval
+FAILED tests/test_evidence_access_review_packet.py::test_cli_reports_approved_independent_gate
+FAILED sieving/tests/test_tool_quarantine.py::test_only_non_mutating_manifest_verifier_remains_active
+FAILED sieving/tests/test_tool_quarantine.py::test_archived_tool_inventory_and_tombstone
+5 failed, 288 passed, 2 warnings in 47.23s

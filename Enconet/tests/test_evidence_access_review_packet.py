@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -14,6 +15,7 @@ import validate_evidence_access_review_packet as review  # noqa: E402
 
 CONTRACT = ENCONET / "schemas" / "evidence_access_review_protocol.yml"
 PACKET = ENCONET / "docs" / "reviews" / "EA6.3_CLAUDE_REVIEW_PACKET.md"
+DECISION_ROOT = Path(os.environ.get("NQA_TEST_DECISION_ROOT", str(ENCONET)))
 
 
 def test_protocol_pins_independent_reviewer_scope_and_approval():
@@ -34,7 +36,7 @@ def test_protocol_pins_independent_reviewer_scope_and_approval():
 
 
 def test_packet_is_complete_and_records_independent_approval():
-    errors, summary = review.validate(CONTRACT, PACKET, ENCONET)
+    errors, summary = review.validate(CONTRACT, PACKET, ENCONET, decision_record_root=DECISION_ROOT)
     assert errors == []
     assert summary == {"commands": 8, "risks": 10, "decision": "approve"}
     text = PACKET.read_text(encoding="utf-8")
@@ -65,7 +67,13 @@ def test_packet_drift_and_incomplete_approval_fail_closed(tmp_path: Path):
 def test_cli_reports_approved_independent_gate(capsys):
     assert review.main([
         "--contract", str(CONTRACT), "--packet", str(PACKET), "--project-root", str(ENCONET),
+        "--decision-record-root", str(DECISION_ROOT),
     ]) == 0
     output = capsys.readouterr().out
     assert "validate_evidence_access_review_packet: PASS" in output
     assert "commands=8 risks=10 decision=approve" in output
+
+
+def test_explicit_reviewer_origin_still_requires_the_real_record(tmp_path: Path):
+    errors, _ = review.validate(CONTRACT, PACKET, ENCONET, decision_record_root=tmp_path)
+    assert "independent reviewer decision record is missing" in errors

@@ -48,6 +48,24 @@ contract.
 
 ## Verification
 
+The complete release regression suite uses a verified isolated historical fixture:
+
+```powershell
+python scripts/run_regression_tests.py --output out/YYYY-MM-DD/regression-tests
+```
+
+Use the declared pinned project interpreter when available. The runner executes every
+test file, with no skips: current-code unit tests use isolated temporary inputs, while
+historical characterization/DATA tests use current code in a new checksum-verified test
+workspace. It hashes live audit files before and after execution. Never restore old
+audit data into live `raw/`, `derived/`, `db/`, `sieving/DATA`, or `outputs` to make tests pass.
+Reviewer records and agent skills stay read-only in their original locations; they are
+not copied or modified. Claude-side full-suite guidance synchronization is pending.
+
+Direct pytest commands remain useful for focused checks. Historical tests executed
+directly without the isolation runner still require their historical input set and
+must not be mistaken for a fresh-audit full-suite result.
+
 From `Enconet/sieving`, after installing the declared dependencies:
 
 ```powershell

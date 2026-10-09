@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import os
 import subprocess
 import sys
 import tempfile
@@ -96,8 +97,10 @@ def test_no_record_is_transitive_and_live_aggregate_keeps_manifest_unchanged():
         / "package_manifest.json",
     ]
     output_bytes = {path: path.read_bytes() for path in controlled_outputs}
-    result = subprocess.run([sys.executable, str(ENCONET / "scripts" / "run_all_validations.py"),
-                             "--no-record"], cwd=ENCONET, capture_output=True, text=True,
+    command = [sys.executable, str(ENCONET / "scripts" / "run_all_validations.py"), "--no-record"]
+    if os.environ.get("NQA_TEST_SKILL_ORIGIN"):
+        command.extend(["--skill-origin", os.environ["NQA_TEST_SKILL_ORIGIN"]])
+    result = subprocess.run(command, cwd=ENCONET, capture_output=True, text=True,
                             encoding="utf-8", errors="replace", timeout=60)
     assert result.returncode == 0, result.stdout + result.stderr
     assert manifest.read_bytes() == before

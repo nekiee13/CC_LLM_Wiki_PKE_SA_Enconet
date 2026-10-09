@@ -35,6 +35,7 @@ def validate(
     db: Path, *, active: Path = ACTIVE, changelog: Path = CHANGELOG,
     playbook: Path = PLAYBOOK, golden: Path = GOLDEN, approvals: Path = APPROVALS,
     skills: Path = SKILLS, runs: Path = RUNS, allow_pending_claude: bool = False,
+    skill_origin: Path | None = None,
 ) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     notes: list[str] = []
@@ -83,6 +84,8 @@ def validate(
                    "sieve_metrics.py", "sieve_diff.py", "score_sieving.py", "sieve_generation.py"):
         if script not in playbook_text:
             errors.append(f"playbook does not document {script}")
+    if skill_origin is not None:
+        skills = skill_origin / ".agents" / "skills"
     required_skills = {
         "sieving-run": ["SIEVING_PLAYBOOK.md", "failure"],
         "crumb-quality": ["V / VI / XVII", "IV / VII", "X / XI"],
@@ -97,7 +100,9 @@ def validate(
         for marker in markers:
             if marker not in text:
                 errors.append(f"{name} skill lacks required marker: {marker}")
-    errors.extend(validate_skill_drift(codex=skills, allow_pending_claude=allow_pending_claude))
+    drift_options = {"claude": skill_origin / ".claude" / "skills"} if skill_origin is not None else {}
+    errors.extend(validate_skill_drift(codex=skills, allow_pending_claude=allow_pending_claude,
+                                       **drift_options))
     golden_data = yaml.safe_load(golden.read_text(encoding="utf-8"))
     if golden_data.get("status") == "approved":
         reference = golden_data.get("approval_ref")
@@ -112,10 +117,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--runs", type=Path, default=RUNS)
+    parser.add_argument("--skill-origin", type=Path,
+                        help="explicit read-only skill origin for isolated historical regression")
     parser.add_argument("--allow-pending-claude", action="store_true")
     args = parser.parse_args()
     try:
-        errors, notes = validate(args.db, runs=args.runs,
+        errors, notes = validate(args.db, runs=args.runs, skill_origin=args.skill_origin,
                                  allow_pending_claude=args.allow_pending_claude)
     except (OSError, sqlite3.Error, KeyError, TypeError, yaml.YAMLError) as exc:
         print(f"validate_sieving_harness: FAIL - {exc}", file=sys.stderr)

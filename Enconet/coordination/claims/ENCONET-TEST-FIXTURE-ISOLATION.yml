@@ -1,0 +1,17 @@
+task: ENCONET-TEST-FIXTURE-ISOLATION
+agent: codex
+status: released
+claimed_at_utc: 2026-10-08T23:22:54Z
+last_renewed_at_utc: 2026-10-08T23:40:06Z
+expires_at_utc: 2026-10-09T23:40:06Z
+anticipated_files:
+  - Enconet/tests
+  - Enconet/sieving/tests
+  - Enconet/scripts/regression_fixture.py
+  - Enconet/scripts/run_regression_tests.py
+  - Enconet/scripts/validate_evidence_access_review_packet.py
+  - Enconet/docs/TEST_FIXTURE_ISOLATION_20261009.md
+  - Enconet/out/2026-10-09/test-fixture-isolation
+  - Enconet/manifests/approvals.csv
+note: Owner yes: bounded isolation repair;existingassertions retained;reviewrecord read-only from explicit origin;no Claude copies/edits;fullsuite attempts evidence retained.
+released_at_utc: 2026-10-09T02:55:05Z

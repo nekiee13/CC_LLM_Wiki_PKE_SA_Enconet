@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-08T225008Z-bfb208b.md`](handoffs/2026-10-08T225008Z-bfb208b.md)
+**Authoritative record:** [`handoffs/2026-10-09T025801Z-7699bde.md`](handoffs/2026-10-09T025801Z-7699bde.md)
 
-**Status:** partial · **Git:** `bfb208b` · **Agent:** codex · **Created:** 2026-10-08T22:50:08Z
+**Status:** partial · **Git:** `7699bde` · **Agent:** codex · **Created:** 2026-10-09T02:58:01Z
 
-**Exact next action:** Ask owner to authorize one bounded regression-fixture isolation repair (no audit-source or score changes),then restore fullsuite pass before findings_approved/reportgeneration. Do not request G4 or fixture metadata approval again.
+**Exact next action:** Generate/validate Croatian report from RUN-20261008-17 approved package and prepare one G5 owner-review packet. G4/fixture approvals resolved;do not request them again. Do not advance G5-G7 without explicit owner decisions.
