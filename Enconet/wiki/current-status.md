@@ -4,7 +4,8 @@ On 7 October 2026 the owner authorized archiving and resetting the previous
 audit while preserving incoming documents. Archive and reset are complete.
 
 - phase: **findings_approved**. Full-suite regression dependencies repaired.
-  G1-G4 approved; G5-G7 pending.
+  G1-G6 owner approvals recorded;G7 pending. Controlled publication awaits
+  independent technical review or explicit owner publication-policy exception.
 - Database: 18 common criterion names, 33 new source records and 922 sections;
   no old evidence or scores inherited; 2,700 new live vendor crumbs; 18 fresh
   documentation-based ratings give owner-approved 80.6% (1450/1800).
@@ -92,8 +93,12 @@ fingerprint-bound. Complete evidence companion and portable report package built
 382links,191unique browsertargets,134crumbs/164quotes/169chapters verified.
 Finalfullsuite458passed;all sizes/timing/security limits pass;source/scoreunchanged.
 Read [G5 ready review package](../docs/G5_READY_20261009.md).
-Next:owner G5 report release decision. Capacity/G3/G4 approvals resolved.
-G5 remains pending;G6/G7 not inferred;fieldverification/actions remain open.
+Owner confirmed G5 and explicitly approved G6. Both manifest/state approvals
+recorded. Do not request them again. Current verified package remains usable.
+Read [G5/G6 approvals and remaining publication rule](../docs/G5_G6_APPROVED_20261009.md).
+Next:Claude independent technical review,or explicit owner narrow publication
+exception under ADR0024. No protected output created/phaseadvance bypassed.
+G7 not inferred;fieldverification/actions remain open.
 G4 and fixture approval do not need re-approval. No report/dashboard release
 or field verification inferred. Claude review/guidance synchronization pending.
 No new categories or owner-entered judgments are needed.

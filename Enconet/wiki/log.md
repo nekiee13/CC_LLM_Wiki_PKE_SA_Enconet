@@ -362,3 +362,9 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - handoff-created | 2026-10-09T04:07:38Z | handoffs/2026-10-09T040738Z-73bef6a.md | blocked | 73bef6adbc0b65a32f9a9b10dc9f9cc12033c328
 
 - handoff-created | 2026-10-09T17:07:47Z | handoffs/2026-10-09T170747Z-14a45c1.md | partial | 14a45c1271b16aba94726e22409bbbdc0500ec63
+
+- 2026-10-09T18:07:15Z | `gate-decision` | G5 approved as `G5-RUN-20261008-17` by project-owner
+
+- 2026-10-09T18:10:01Z | `gate-decision` | G6 approved as `G6-RUN-20261008-17` by project-owner
+
+- handoff-created | 2026-10-09T18:12:48Z | handoffs/2026-10-09T181248Z-ee3abb1.md | blocked | ee3abb1b49ac0b379a2ee832cc9581d94b5149df

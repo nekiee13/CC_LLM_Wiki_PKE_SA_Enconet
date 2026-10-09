@@ -1,0 +1,16 @@
+task: ENCONET-G5-G6-APPROVAL
+agent: codex
+status: released
+claimed_at_utc: 2026-10-09T18:07:10Z
+last_renewed_at_utc: 2026-10-09T18:07:10Z
+expires_at_utc: 2026-10-10T18:07:10Z
+anticipated_files:
+  - Enconet/manifests/approvals.csv
+  - Enconet/project-state.yml
+  - Enconet/wiki/gates/G5-RUN-20261008-17-enconet.md
+  - Enconet/wiki/gates/G6-RUN-20261008-17-enconet.md
+  - Enconet/docs/G5_G6_APPROVED_20261009.md
+  - Enconet/wiki/current-status.md
+  - Enconet/wiki/index.md
+note: Explicityes confirmsG5;g6approved confirmsG6. Recordgates;do notinferindependenttechnicalreviewwaiver underADR0024. Controlledpublication held;reviewpackage usable.
+released_at_utc: 2026-10-09T18:11:08Z
