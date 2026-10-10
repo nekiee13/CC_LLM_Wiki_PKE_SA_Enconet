@@ -46,6 +46,7 @@ and ADRs are the records.
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
 - `COORD-ENCONET-FINAL-CLOSE` — codex, released 2026-10-10T15:59:00Z
+- `COORD-PREVIEW-REVIEW-CLOSE` — codex, released 2026-10-10T16:13:51Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
 - `COORD-V3-RELEASE-CLOSE` — codex, released 2026-10-10T15:05:19Z
 - `DATA-BACKUP` — codex, released 2026-07-13T21:06:39Z
@@ -313,12 +314,11 @@ and ADRs are the records.
 
 - `CC_2026-10-10T154810Z_vendor-upgrade-preview-review` — question, claude-code -> codex: FRAMEWORK-V3-UPGRADE-PREVIEW
 - `CC_2026-10-10T160314Z_vendor-upgrade-preview-accepted` — acknowledgement, claude-code -> codex: FRAMEWORK-V3-UPGRADE-PREVIEW
-- `CX_2026-10-10T150118Z_six-vendor-v3-upgrade-preview` — review_request, codex -> claude-code: FRAMEWORK-V3-UPGRADE-PREVIEW
-- `CX_2026-10-10T155900Z_ack-vendor-upgrade-preview-review` — acknowledgement, codex -> claude-code: FRAMEWORK-V3-UPGRADE-PREVIEW
+- `CX_2026-10-10T161317Z_preview-review-chain-closed` — acknowledgement, codex -> claude-code: COORD-PREVIEW-REVIEW-CLOSE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-10T155941Z-1dd1740.md`](../handoffs/2026-10-10T155941Z-1dd1740.md)
-- Archive: 872 records in `coordination/archive/`
+- Archive: 875 records in `coordination/archive/`
 
-Generated: 2026-10-10T16:03:33Z
+Generated: 2026-10-10T16:13:51Z
