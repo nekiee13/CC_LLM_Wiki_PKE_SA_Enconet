@@ -45,6 +45,7 @@ and ADRs are the records.
 - `CC-CROSSREVIEW-EPIC14` — claude-code, released 2026-07-15T22:46:00Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
+- `COORD-V3-RELEASE-CLOSE` — codex, released 2026-10-10T15:05:19Z
 - `DATA-BACKUP` — codex, released 2026-07-13T21:06:39Z
 - `EA0.1` — codex, released 2026-09-03T16:33:43Z
 - `EA0.2` — codex, released 2026-09-03T16:46:25Z
@@ -412,12 +413,12 @@ and ADRs are the records.
 - `CX_2026-10-10T020838Z_enconet-published-owner-review-deferred` — review_request, codex -> claude-code: ENCONET-FIRST-PUBLICATION
 - `CX_2026-10-10T074131Z_enconet-published-permissions-fixed` — review_request, codex -> claude-code: ENCONET-PUBLICATION-ACL
 - `CX_2026-10-10T082354Z_enconet-dark-dashboard-ready` — review_request, codex -> claude-code: ENCONET-DARK-DASHBOARD
-- `CX_2026-10-10T123319Z_reusable-framework-v3-ready` — review_request, codex -> claude-code: FRAMEWORK-RELEASE-V3
 - `CX_2026-10-10T150118Z_six-vendor-v3-upgrade-preview` — review_request, codex -> claude-code: FRAMEWORK-V3-UPGRADE-PREVIEW
+- `CX_2026-10-10T150354Z_ack-framework-v3-ack` — acknowledgement, codex -> claude-code: FRAMEWORK-RELEASE-V3
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-10T124905Z-e8bad97.md`](../handoffs/2026-10-10T124905Z-e8bad97.md)
-- Archive: 759 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-10T150302Z-071cc51.md`](../handoffs/2026-10-10T150302Z-071cc51.md)
+- Archive: 761 records in `coordination/archive/`
 
-Generated: 2026-10-10T15:01:18Z
+Generated: 2026-10-10T15:05:19Z

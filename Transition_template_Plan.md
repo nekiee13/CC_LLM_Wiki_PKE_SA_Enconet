@@ -14,6 +14,8 @@ Owner: approves deployment, sources, scope and required audit gates
 - [x] Enconet's owner-approved re-audit, report, light dashboard and separate dark copy are now complete.
 - [ ] Claude completes deferred technical review and its own infrastructure synchronization.
 - [ ] Existing six v2 vendor folders receive a separately controlled upgrade; no overwrite is inferred from preparing this release.
+- [x] Read-only v3 upgrade preview prepared for all six: 36 adds, 66 replacements and 63 keeps per folder; zero blockers. See [one batch upgrade plan](doc/framework-reuse/V3_VENDOR_UPGRADE_PLAN_20261010.md). Apply remains unapproved and unimplemented.
+- [x] Claude closed the v3 release technical review in CC_2026-10-10T150048Z_framework-v3-ack. This does not approve the new six-folder replacement plan or certify guidance synchronization.
 - [ ] Future vendors provide documents and local source/scope decisions before audit processing.
 
 Use `--release v3` for a fresh project. See

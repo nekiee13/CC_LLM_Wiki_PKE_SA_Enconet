@@ -1,0 +1,13 @@
+task: FRAMEWORK-V3-UPGRADE-PREVIEW
+agent: codex
+status: released
+claimed_at_utc: 2026-10-10T14:51:19Z
+last_renewed_at_utc: 2026-10-10T14:51:19Z
+expires_at_utc: 2026-10-11T14:51:19Z
+anticipated_files:
+  - audit_template/preview_vendor_upgrade.py
+  - audit_template/tests/test_vendor_upgrade_preview.py
+  - doc/framework-reuse
+  - Transition_template_Plan.md
+note: Read-only hash-based plan for six existing v2 scaffolds; no live apply
+released_at_utc: 2026-10-10T15:01:18Z
