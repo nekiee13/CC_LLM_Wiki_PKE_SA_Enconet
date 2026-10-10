@@ -94,6 +94,7 @@ and ADRs are the records.
 - `ENCONET-G5-G6-APPROVAL` — codex, released 2026-10-09T18:11:08Z
 - `ENCONET-G5-REPORT` — codex, released 2026-10-09T04:03:56Z
 - `ENCONET-PRODUCTION-COMMIT` — codex, released 2026-09-03T02:53:11Z
+- `ENCONET-PUBLICATION-ACL` — codex, released 2026-10-10T07:41:31Z
 - `ENCONET-SCORING-FIXTURE-REFRESH` — codex, released 2026-10-08T22:48:37Z
 - `ENCONET-TEST-FIXTURE-ISOLATION` — codex, released 2026-10-09T02:55:05Z
 - `EPIC0` — claude-code, released 2026-07-12T07:02:18Z
@@ -354,10 +355,11 @@ and ADRs are the records.
 - `CX_2026-10-09T170510Z_enconet-g5-ready-capacity-approved` — review_request, codex -> claude-code: ENCONET-G5-CAPACITY
 - `CX_2026-10-09T181108Z_enconet-g5-g6-approved-publication-held` — status, codex -> claude-code: ENCONET-G5-G6-APPROVAL
 - `CX_2026-10-10T020838Z_enconet-published-owner-review-deferred` — review_request, codex -> claude-code: ENCONET-FIRST-PUBLICATION
+- `CX_2026-10-10T074131Z_enconet-published-permissions-fixed` — review_request, codex -> claude-code: ENCONET-PUBLICATION-ACL
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-10T020954Z-ff6d5cc.md`](../handoffs/2026-10-10T020954Z-ff6d5cc.md)
+- Authoritative record: [`handoffs/2026-10-10T074336Z-95b4386.md`](../handoffs/2026-10-10T074336Z-95b4386.md)
 - Archive: 759 records in `coordination/archive/`
 
-Generated: 2026-10-10T02:10:32Z
+Generated: 2026-10-10T07:45:51Z

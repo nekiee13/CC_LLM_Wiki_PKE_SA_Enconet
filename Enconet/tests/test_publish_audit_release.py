@@ -2,6 +2,7 @@
 import hashlib
 import json
 import sys
+from types import SimpleNamespace
 from pathlib import Path
 
 import pytest
@@ -106,3 +107,65 @@ def test_racing_destination_is_preserved(tmp_path):
         release.publish(path, root=tmp_path, execute=True, validator=lambda: None, link=racing_link)
     assert not (tmp_path / "outputs/report.md").exists()
     assert (tmp_path / "outputs/dashboard.html").read_bytes() == b"other writer"
+
+
+def test_destination_permissions_restored_before_validation_and_marker(tmp_path):
+    path, contract = fixture(tmp_path)
+    restored = []
+    def permissions(target):
+        assert target.is_file()
+        restored.append(target.relative_to(tmp_path).as_posix())
+    def validate():
+        assert restored == [row["destination"] for row in contract["artifacts"]]
+    release.publish(path, root=tmp_path, execute=True, validator=validate, permissions=permissions)
+    assert restored[-1] == "manifests/release.json"
+
+
+def test_marker_permission_failure_rolls_back_marker_and_payload(tmp_path):
+    path, contract = fixture(tmp_path)
+    def fail_marker(target):
+        if target.name == "release.json":
+            raise OSError("ACL restore failed")
+    with pytest.raises(release.ReleaseError, match="rolled back"):
+        release.publish(path, root=tmp_path, execute=True, validator=lambda: None, permissions=fail_marker)
+    assert not (tmp_path / "manifests/release.json").exists()
+    assert all(not (tmp_path / row["destination"]).exists() for row in contract["artifacts"])
+
+
+def test_windows_acl_helper_resets_only_exact_file(monkeypatch, tmp_path):
+    target = tmp_path / "dashboard.html"
+    calls = []
+    def run(command, **kwargs):
+        calls.append(command)
+        return SimpleNamespace(returncode=0, stderr="")
+    monkeypatch.setattr(release, "os", SimpleNamespace(name="nt"))
+    monkeypatch.setattr(release.subprocess, "run", run)
+    release.inherit_destination_permissions(target)
+    assert calls == [["icacls", str(target), "/reset"]]
+
+
+def test_windows_acl_helper_failure_is_not_ignored(monkeypatch, tmp_path):
+    target = tmp_path / "dashboard.html"
+    monkeypatch.setattr(release, "os", SimpleNamespace(name="nt"))
+    monkeypatch.setattr(release.subprocess, "run", lambda *a, **k: SimpleNamespace(returncode=1, stderr="denied"))
+    with pytest.raises(release.ReleaseError, match="ACL inheritance failed"):
+        release.inherit_destination_permissions(target)
+
+
+@pytest.mark.parametrize("company", ["QA Example", "Tvrtka Č"])
+def test_native_publication_inherits_acl_and_preserves_sibling(tmp_path, company):
+    root = tmp_path / company
+    root.mkdir()
+    sibling = tmp_path / "Another company.txt"
+    sibling.write_bytes(b"unchanged")
+    path, contract = fixture(root)
+    release.publish(path, root=root, execute=True, validator=lambda: None)
+    assert sibling.read_bytes() == b"unchanged"
+    for row in contract["artifacts"]:
+        target = root / row["destination"]
+        assert target.read_bytes() == (root / row["source"]).read_bytes()
+        if release.os.name == "nt":
+            literal = str(target).replace("'", "''")
+            command = ["powershell", "-NoProfile", "-Command",
+                       f"if ((Get-Acl -LiteralPath '{literal}').AreAccessRulesProtected) {{ exit 1 }}"]
+            assert release.subprocess.run(command, check=False).returncode == 0

@@ -16,6 +16,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import tempfile
 from datetime import datetime, timezone
@@ -94,7 +95,22 @@ def checked_plan(contract, root):
     return rows, result
 
 
-def publish(contract_path, *, root=ROOT, execute=False, validator=None, link=os.link):
+def inherit_destination_permissions(path):
+    """Hard links keep staging ACLs; restore the final parent's Windows ACL.
+
+Windows private tempfile directories can grant only OWNER RIGHTS/SYSTEM/admin.
+Do not grant Everyone or change raw inputs: /reset on this exact new file adopts
+its destination parent's ordinary inherited permissions. No recursion is used.
+"""
+    if os.name == "nt":
+        result = subprocess.run(["icacls", str(path), "/reset"], capture_output=True,
+                                text=True, errors="replace", check=False)
+        if result.returncode:
+            raise ReleaseError(f"destination ACL inheritance failed: {path}; {result.stderr.strip()}")
+
+
+def publish(contract_path, *, root=ROOT, execute=False, validator=None, link=os.link,
+            permissions=inherit_destination_permissions):
     root = Path(root).resolve()
     contract = json.loads(Path(contract_path).read_text(encoding="utf-8"))
     rows, result_path = checked_plan(contract, root)
@@ -121,6 +137,7 @@ def publish(contract_path, *, root=ROOT, execute=False, validator=None, link=os.
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 link(path, destination)
                 installed.append((destination, digest))
+                permissions(destination)
             validator()
             for destination, digest in installed:
                 if hashlib.sha256(destination.read_bytes()).hexdigest() != digest:
@@ -133,6 +150,8 @@ def publish(contract_path, *, root=ROOT, execute=False, validator=None, link=os.
             marker.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
             result_path.parent.mkdir(parents=True, exist_ok=True)
             os.link(marker, result_path)  # marker last, also refuses overwrites
+            installed.append((result_path, hashlib.sha256(marker.read_bytes()).hexdigest()))
+            permissions(result_path)
             return result
         except Exception as exc:
             recovery = []

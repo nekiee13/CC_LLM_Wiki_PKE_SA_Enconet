@@ -1,0 +1,11 @@
+task: ENCONET-PUBLICATION-ACL
+agent: codex
+status: released
+claimed_at_utc: 2026-10-10T07:05:03Z
+last_renewed_at_utc: 2026-10-10T07:05:03Z
+expires_at_utc: 2026-10-11T07:05:03Z
+anticipated_files:
+  - Enconet/scripts/publish_audit_release.py
+  - Enconet/tests/test_publish_audit_release.py
+note: Repair inaccessible published files by restoring destination-parent ACL inheritance; no byte changes
+released_at_utc: 2026-10-10T07:41:31Z

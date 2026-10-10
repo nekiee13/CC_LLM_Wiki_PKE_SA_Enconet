@@ -2,6 +2,10 @@
 
 Phase: **dashboard_ready**. G1–G6 are approved; G7 remains pending.
 
+Published-file permissions were repaired after the owner reported access denied.
+All release bytes remain unchanged. See the
+[access repair](../docs/PUBLISHED_FILE_ACCESS_FIX_20261010.md).
+
 The owner approved publication of RUN-20261008-17 with Claude's technical
 review deferred. The exact verified files are now published. Review is still
 pending, not passed or waived. No extra score decision is needed.

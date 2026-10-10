@@ -1,6 +1,7 @@
 # Enconet audit index
 
 - [Current status](current-status.md)
+- [Published-file access repair](../docs/PUBLISHED_FILE_ACCESS_FIX_20261010.md)
 - [Published dashboard with exact source chapters](dashboards/enconet_appendix_b_dashboard.html)
 - [Published Croatian report](../outputs/enconet_appendix_b_evaluation_report.md)
 - [Portable review workspace](../outputs/candidates/evidence_access/portable_package/review_workspace.html)

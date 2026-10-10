@@ -376,3 +376,5 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - 2026-10-09T18:50:42Z | `state-transition` | report_ready -> dashboard_ready; reason: Owner G6 approved and published files passed complete projected validation
 
 - handoff-created | 2026-10-10T02:09:54Z | handoffs/2026-10-10T020954Z-ff6d5cc.md | complete | ff6d5cc6cb738ba42cb4a7c50d7595243638bc89
+
+- handoff-created | 2026-10-10T07:43:36Z | handoffs/2026-10-10T074336Z-95b4386.md | complete | 95b4386b6c06181b3cb9bedc901113abe5d450f3

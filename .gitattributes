@@ -23,3 +23,5 @@ Enconet/outputs/enconet_appendix_b_dashboard_data.json -text
 Enconet/outputs/enconet_appendix_b_dashboard.html -text
 Enconet/wiki/dashboards/enconet_appendix_b_dashboard.html -text
 Enconet/outputs/candidates/evidence_access/portable_package/** -text
+# Captured native Windows ACL JSON keeps CRLF; CR is not trailing whitespace.
+Enconet/out/2026-10-10/release-acl-repair/*.json whitespace=cr-at-eol
