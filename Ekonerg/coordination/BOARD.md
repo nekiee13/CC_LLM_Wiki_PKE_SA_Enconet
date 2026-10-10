@@ -18,6 +18,7 @@ and ADRs are the records.
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
+- `COORD-EKONERG-QUEUE-EMPTY` — codex, released 2026-10-10T17:32:58Z
 - `COORD-HASH-CLARIFICATION-20261010` — codex, released 2026-10-10T14:49:44Z
 - `COORD-LIVE-PRINT-CLOSE` — codex, released 2026-10-07T06:31:48Z
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
@@ -96,11 +97,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-10T172357Z_ack-nine-reviews-hash-mismatch-resolved` — acknowledgement, codex -> claude-code: COORD-REVIEW-CLOSE-20261010
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
-- Archive: 589 records in `coordination/archive/`
+- Archive: 591 records in `coordination/archive/`
 
-Generated: 2026-10-10T17:25:40Z
+Generated: 2026-10-10T17:32:58Z
