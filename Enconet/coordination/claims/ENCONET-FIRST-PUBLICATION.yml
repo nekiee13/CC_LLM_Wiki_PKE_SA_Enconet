@@ -1,0 +1,13 @@
+task: ENCONET-FIRST-PUBLICATION
+agent: codex
+status: released
+claimed_at_utc: 2026-10-09T18:37:21Z
+last_renewed_at_utc: 2026-10-09T18:37:21Z
+expires_at_utc: 2026-10-10T18:37:21Z
+anticipated_files:
+  - Enconet/scripts/publish_audit_release.py
+  - Enconet/tests/test_publish_audit_release.py
+  - Enconet/manifests/approvals.csv
+  - Enconet/project-state.yml
+note: Owner explicitly permits verified G5/G6 publication with Claude review deferred
+released_at_utc: 2026-10-10T02:08:38Z

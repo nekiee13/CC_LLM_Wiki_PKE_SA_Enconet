@@ -83,6 +83,7 @@ and ADRs are the records.
 - `EA6.4-PROMOTION-ARCHIVE` — codex, released 2026-09-05T06:54:20Z
 - `EA6.5-CLASSIFICATION-BANDS` — codex, released 2026-09-05T07:43:46Z
 - `EK-PLAN-REVIEW-ACK` — codex, released 2026-09-29T10:47:35Z
+- `ENCONET-FIRST-PUBLICATION` — codex, released 2026-10-10T02:08:38Z
 - `ENCONET-G2-APPLY` — codex, released 2026-10-08T17:08:35Z
 - `ENCONET-G2-DRAFT` — codex, released 2026-10-08T16:55:25Z
 - `ENCONET-G3-APPROVAL` — codex, released 2026-10-08T20:23:44Z
@@ -352,10 +353,11 @@ and ADRs are the records.
 - `CX_2026-10-09T040356Z_enconet-report-draft-viewer-cap-held` — review_request, codex -> claude-code: ENCONET-G5-REPORT
 - `CX_2026-10-09T170510Z_enconet-g5-ready-capacity-approved` — review_request, codex -> claude-code: ENCONET-G5-CAPACITY
 - `CX_2026-10-09T181108Z_enconet-g5-g6-approved-publication-held` — status, codex -> claude-code: ENCONET-G5-G6-APPROVAL
+- `CX_2026-10-10T020838Z_enconet-published-owner-review-deferred` — review_request, codex -> claude-code: ENCONET-FIRST-PUBLICATION
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-09T181248Z-ee3abb1.md`](../handoffs/2026-10-09T181248Z-ee3abb1.md)
+- Authoritative record: [`handoffs/2026-10-10T020954Z-ff6d5cc.md`](../handoffs/2026-10-10T020954Z-ff6d5cc.md)
 - Archive: 759 records in `coordination/archive/`
 
-Generated: 2026-10-09T18:13:31Z
+Generated: 2026-10-10T02:10:32Z

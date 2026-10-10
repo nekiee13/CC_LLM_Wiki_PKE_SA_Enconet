@@ -16,3 +16,10 @@
 # source trailing spaces; do not classify those bytes as authored-code whitespace errors.
 Enconet/raw/** whitespace=-blank-at-eol,-blank-at-eof
 Enconet/derived/** whitespace=-blank-at-eol,-blank-at-eof
+# Published hash-manifested release bytes must survive checkout unchanged.
+Enconet/outputs/enconet_appendix_b_evaluation_package.json -text
+Enconet/outputs/enconet_appendix_b_evaluation_report.md -text
+Enconet/outputs/enconet_appendix_b_dashboard_data.json -text
+Enconet/outputs/enconet_appendix_b_dashboard.html -text
+Enconet/wiki/dashboards/enconet_appendix_b_dashboard.html -text
+Enconet/outputs/candidates/evidence_access/portable_package/** -text

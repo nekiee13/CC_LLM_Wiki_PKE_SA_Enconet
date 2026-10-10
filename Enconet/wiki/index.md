@@ -1,6 +1,10 @@
 # Enconet audit index
 
 - [Current status](current-status.md)
+- [Published dashboard with exact source chapters](dashboards/enconet_appendix_b_dashboard.html)
+- [Published Croatian report](../outputs/enconet_appendix_b_evaluation_report.md)
+- [Portable review workspace](../outputs/candidates/evidence_access/portable_package/review_workspace.html)
+- [Publication, owner exception and complete validation](../docs/PUBLISHED_RELEASE_RUN17_20261009.md)
 - [G4 findings and complete audit-action plan](../docs/FINDINGS_DRAFT_20261008.md)
 - [Evidence matrix](evidence/matrix.md)
 - [G4 owner decision packet](gates/G4-RUN-20261008-17-enconet.md)

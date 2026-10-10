@@ -368,3 +368,11 @@ Entries up to 2026-07-12 are a backfill of the recorded preparation events (sour
 - 2026-10-09T18:10:01Z | `gate-decision` | G6 approved as `G6-RUN-20261008-17` by project-owner
 
 - handoff-created | 2026-10-09T18:12:48Z | handoffs/2026-10-09T181248Z-ee3abb1.md | blocked | ee3abb1b49ac0b379a2ee832cc9581d94b5149df
+
+- 2026-10-09T18:50:41Z | `state-transition` | findings_approved -> report_ready; reason: Owner G5 approved; exact release published under explicit deferred-review exception
+
+- 2026-10-09T18:50:42Z | `gate-decision` | G6 approved as `G6-RUN-20261008-17` by project-owner
+
+- 2026-10-09T18:50:42Z | `state-transition` | report_ready -> dashboard_ready; reason: Owner G6 approved and published files passed complete projected validation
+
+- handoff-created | 2026-10-10T02:09:54Z | handoffs/2026-10-10T020954Z-ff6d5cc.md | complete | ff6d5cc6cb738ba42cb4a7c50d7595243638bc89
