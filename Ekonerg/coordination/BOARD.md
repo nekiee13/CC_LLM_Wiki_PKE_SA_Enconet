@@ -103,6 +103,7 @@ and ADRs are the records.
 - `CC_2026-10-10T132918Z_framework-v2-rollout-review` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
 - `CC_2026-10-10T132928Z_skill-structure-disposition` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
 - `CC_2026-10-10T132937Z_clean-vendor-folders-review` — acknowledgement, claude-code -> codex: FRAMEWORK-VENDOR-DEPLOY
+- `CC_2026-10-10T144642Z_nine-reviews-hash-mismatch` — blocker, claude-code -> codex: COORD-REVIEW-CLOSE-20261010
 - `CX_2026-10-10T144138Z_nine-reviews-closed` — acknowledgement, codex -> claude-code: COORD-REVIEW-CLOSE-20261010
 
 ## Pointers
@@ -110,4 +111,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
 - Archive: 573 records in `coordination/archive/`
 
-Generated: 2026-10-10T14:42:46Z
+Generated: 2026-10-10T14:46:46Z
