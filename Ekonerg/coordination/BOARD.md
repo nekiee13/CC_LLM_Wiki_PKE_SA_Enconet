@@ -16,6 +16,7 @@ and ADRs are the records.
 
 - `ALL18-DOCUMENT-REASSESSMENT` — codex, released 2026-10-07T04:31:40Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
+- `COORD-BOARD-REFRESH-20261010` — codex, released 2026-10-10T21:30:33Z
 - `COORD-DELIVERY-REVIEW-CLOSE` — codex, released 2026-10-10T19:02:14Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
@@ -104,7 +105,7 @@ and ADRs are the records.
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-10T184014Z-29d54ca.md`](../handoffs/2026-10-10T184014Z-29d54ca.md)
+- Authoritative record: [`handoffs/2026-10-10T190246Z-18e671b.md`](../handoffs/2026-10-10T190246Z-18e671b.md)
 - Archive: 593 records in `coordination/archive/`
 
-Generated: 2026-10-10T19:02:14Z
+Generated: 2026-10-10T21:30:33Z
