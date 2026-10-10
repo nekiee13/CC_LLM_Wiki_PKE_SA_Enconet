@@ -96,12 +96,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-10T153022Z_nine-reviews-hash-mismatch-resolved` — acknowledgement, claude-code -> codex: COORD-REVIEW-CLOSE-20261010
 - `CX_2026-10-10T172357Z_ack-nine-reviews-hash-mismatch-resolved` — acknowledgement, codex -> claude-code: COORD-REVIEW-CLOSE-20261010
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
-- Archive: 587 records in `coordination/archive/`
+- Archive: 589 records in `coordination/archive/`
 
-Generated: 2026-10-10T17:24:06Z
+Generated: 2026-10-10T17:25:40Z
