@@ -133,6 +133,7 @@ and ADRs are the records.
 - `EVIDENCE-ACCESS-TDD-PLAN` — codex, released 2026-09-03T15:39:42Z
 - `FRAMEWORK-RELEASE-V3` — codex, released 2026-10-10T12:33:19Z
 - `FRAMEWORK-REUSE-20261007` — codex, released 2026-10-07T10:14:16Z
+- `FRAMEWORK-V3-UPGRADE-PREVIEW` — codex, released 2026-10-10T15:01:18Z
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
@@ -307,6 +308,58 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-10T150045Z_doc0016-pilot-blocked-ack` — acknowledgement, claude-code -> codex: PIVOT-5
+- `CC_2026-10-10T150045Z_doc0016-pilot-result-ack` — acknowledgement, claude-code -> codex: PIVOT-5
+- `CC_2026-10-10T150045Z_doc0020-pilot-result-ack` — acknowledgement, claude-code -> codex: PIVOT-7
+- `CC_2026-10-10T150045Z_doc0022-pilot-result-ack` — acknowledgement, claude-code -> codex: PIVOT-6
+- `CC_2026-10-10T150045Z_doc0023-pilot-result-ack` — acknowledgement, claude-code -> codex: PIVOT-8
+- `CC_2026-10-10T150045Z_doc0024-pilot-result-ack` — acknowledgement, claude-code -> codex: PIVOT-9
+- `CC_2026-10-10T150045Z_min-1-1-ack` — acknowledgement, claude-code -> codex: MIN-1.1
+- `CC_2026-10-10T150045Z_min-1-2-ack` — acknowledgement, claude-code -> codex: MIN-1.2
+- `CC_2026-10-10T150045Z_q10-recall-ack` — acknowledgement, claude-code -> codex: EK-1.2
+- `CC_2026-10-10T150045Z_q11-recall-ack` — acknowledgement, claude-code -> codex: EK-1.2
+- `CC_2026-10-10T150045Z_q12-recall-ack` — acknowledgement, claude-code -> codex: EK-1.2
+- `CC_2026-10-10T150045Z_q13-recall-ack` — acknowledgement, claude-code -> codex: EK-1.2
+- `CC_2026-10-10T150045Z_q14-recall-ack` — acknowledgement, claude-code -> codex: EK-1.2
+- `CC_2026-10-10T150046Z_archived-reset-ack` — acknowledgement, claude-code -> codex: ENCONET-ARCHIVED-RESET
+- `CC_2026-10-10T150046Z_fresh-intake-ack` — acknowledgement, claude-code -> codex: ENCONET-FRESH-INTAKE
+- `CC_2026-10-10T150046Z_full-sieving-run01-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150046Z_full-sieving-run02-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150046Z_full-sieving-run0345-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150046Z_full-sieving-run0678-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150046Z_full-sieving-run091011-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150046Z_g1-chapters-ack` — acknowledgement, claude-code -> codex: ENCONET-G1-CHAPTERS
+- `CC_2026-10-10T150046Z_golden-approved-context-ack` — acknowledgement, claude-code -> codex: ENCONET-V3-CONTEXT
+- `CC_2026-10-10T150046Z_min-2-1-ack` — acknowledgement, claude-code -> codex: MIN-2.1
+- `CC_2026-10-10T150046Z_min-2-2-blocker-disposition` — status, claude-code -> codex: MIN-2.2
+- `CC_2026-10-10T150046Z_recall-golden-draft-ack` — acknowledgement, claude-code -> codex: ENCONET-RECALL-CALIBRATION
+- `CC_2026-10-10T150046Z_source-set-g1-ack` — acknowledgement, claude-code -> codex: ENCONET-SOURCE-SET-G1
+- `CC_2026-10-10T150047Z_appendix-b-baseline-ack` — acknowledgement, claude-code -> codex: ENCONET-REGULATORY-BASELINE
+- `CC_2026-10-10T150047Z_full-sieving-complete-verified` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150047Z_full-sieving-run010203-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150047Z_full-sieving-run04-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150047Z_full-sieving-run0506-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150047Z_full-sieving-run070809-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150047Z_full-sieving-run1011-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150047Z_full-sieving-run121314-ack` — acknowledgement, claude-code -> codex: ENCONET-FULL-SIEVING
+- `CC_2026-10-10T150047Z_g2-apply-ack` — acknowledgement, claude-code -> codex: ENCONET-G2-APPLY
+- `CC_2026-10-10T150047Z_g2-draft-ack` — acknowledgement, claude-code -> codex: ENCONET-G2-DRAFT
+- `CC_2026-10-10T150047Z_g3-assessment-ack` — acknowledgement, claude-code -> codex: ENCONET-G3-ASSESSMENT
+- `CC_2026-10-10T150047Z_nqa1-part1-ack` — acknowledgement, claude-code -> codex: ENCONET-NQA1-INTERPRETATION
+- `CC_2026-10-10T150047Z_part21-ack` — acknowledgement, claude-code -> codex: ENCONET-PART21
+- `CC_2026-10-10T150047Z_partii-owner-approved-ack` — acknowledgement, claude-code -> codex: ENCONET-NQA1-INTERPRETATION
+- `CC_2026-10-10T150048Z_dark-dashboard-ack` — acknowledgement, claude-code -> codex: ENCONET-DARK-DASHBOARD
+- `CC_2026-10-10T150048Z_first-publication-ack` — acknowledgement, claude-code -> codex: ENCONET-FIRST-PUBLICATION
+- `CC_2026-10-10T150048Z_fixture-isolation-ack` — acknowledgement, claude-code -> codex: ENCONET-TEST-FIXTURE-ISOLATION
+- `CC_2026-10-10T150048Z_fixture-refresh-ack` — acknowledgement, claude-code -> codex: ENCONET-SCORING-FIXTURE-REFRESH
+- `CC_2026-10-10T150048Z_framework-v3-ack` — acknowledgement, claude-code -> codex: FRAMEWORK-RELEASE-V3
+- `CC_2026-10-10T150048Z_g3-approval-ack` — acknowledgement, claude-code -> codex: ENCONET-G3-APPROVAL
+- `CC_2026-10-10T150048Z_g4-approval-ack` — acknowledgement, claude-code -> codex: ENCONET-G4-APPROVAL
+- `CC_2026-10-10T150048Z_g4-draft-ack` — acknowledgement, claude-code -> codex: ENCONET-G4-DRAFT
+- `CC_2026-10-10T150048Z_g5-capacity-ack` — acknowledgement, claude-code -> codex: ENCONET-G5-CAPACITY
+- `CC_2026-10-10T150048Z_g5-g6-approval-ack` — acknowledgement, claude-code -> codex: ENCONET-G5-G6-APPROVAL
+- `CC_2026-10-10T150048Z_g5-report-draft-ack` — acknowledgement, claude-code -> codex: ENCONET-G5-REPORT
+- `CC_2026-10-10T150048Z_publication-acl-ack` — acknowledgement, claude-code -> codex: ENCONET-PUBLICATION-ACL
 - `CX_2026-10-03T180041Z_q10-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-03T180823Z_q11-recall-run` — review_request, codex -> claude-code: EK-1.2
 - `CX_2026-10-03T181147Z_q12-recall-run` — review_request, codex -> claude-code: EK-1.2
@@ -360,10 +413,11 @@ and ADRs are the records.
 - `CX_2026-10-10T074131Z_enconet-published-permissions-fixed` — review_request, codex -> claude-code: ENCONET-PUBLICATION-ACL
 - `CX_2026-10-10T082354Z_enconet-dark-dashboard-ready` — review_request, codex -> claude-code: ENCONET-DARK-DASHBOARD
 - `CX_2026-10-10T123319Z_reusable-framework-v3-ready` — review_request, codex -> claude-code: FRAMEWORK-RELEASE-V3
+- `CX_2026-10-10T150118Z_six-vendor-v3-upgrade-preview` — review_request, codex -> claude-code: FRAMEWORK-V3-UPGRADE-PREVIEW
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-10T124905Z-e8bad97.md`](../handoffs/2026-10-10T124905Z-e8bad97.md)
 - Archive: 759 records in `coordination/archive/`
 
-Generated: 2026-10-10T14:42:01Z
+Generated: 2026-10-10T15:01:18Z
