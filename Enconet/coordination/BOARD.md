@@ -44,6 +44,7 @@ and ADRs are the records.
 - `CC-CROSSREVIEW-EPIC13` — claude-code, released 2026-07-15T22:15:17Z
 - `CC-CROSSREVIEW-EPIC14` — claude-code, released 2026-07-15T22:46:00Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
+- `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
 - `COORD-V3-RELEASE-CLOSE` — codex, released 2026-10-10T15:05:19Z
 - `DATA-BACKUP` — codex, released 2026-07-13T21:06:39Z
@@ -361,64 +362,12 @@ and ADRs are the records.
 - `CC_2026-10-10T150048Z_g5-g6-approval-ack` — acknowledgement, claude-code -> codex: ENCONET-G5-G6-APPROVAL
 - `CC_2026-10-10T150048Z_g5-report-draft-ack` — acknowledgement, claude-code -> codex: ENCONET-G5-REPORT
 - `CC_2026-10-10T150048Z_publication-acl-ack` — acknowledgement, claude-code -> codex: ENCONET-PUBLICATION-ACL
-- `CX_2026-10-03T180041Z_q10-recall-run` — review_request, codex -> claude-code: EK-1.2
-- `CX_2026-10-03T180823Z_q11-recall-run` — review_request, codex -> claude-code: EK-1.2
-- `CX_2026-10-03T181147Z_q12-recall-run` — review_request, codex -> claude-code: EK-1.2
-- `CX_2026-10-03T181421Z_q13-recall-run` — review_request, codex -> claude-code: EK-1.2
-- `CX_2026-10-03T181911Z_q14-recall-run` — review_request, codex -> claude-code: EK-1.2
-- `CX_2026-10-04T161426Z_doc0016-context-pilot-blocked` — review_request, codex -> claude-code: PIVOT-5
-- `CX_2026-10-04T162245Z_doc0016-context-pilot-result` — review_request, codex -> claude-code: PIVOT-5
-- `CX_2026-10-04T164311Z_doc0022-context-pilot-result` — review_request, codex -> claude-code: PIVOT-6
-- `CX_2026-10-04T164844Z_doc0020-context-pilot-result` — review_request, codex -> claude-code: PIVOT-7
-- `CX_2026-10-04T165515Z_doc0023-context-pilot-result` — review_request, codex -> claude-code: PIVOT-8
-- `CX_2026-10-04T165717Z_doc0024-context-pilot-result` — review_request, codex -> claude-code: PIVOT-9
-- `CX_2026-10-04T170652Z_runtime-sprint-complete` — review_request, codex -> claude-code: MIN-1.1
-- `CX_2026-10-04T170930Z_synthetic-end-to-end-complete` — review_request, codex -> claude-code: MIN-1.2
-- `CX_2026-10-04T171149Z_ingest-chunk-sprint-complete` — review_request, codex -> claude-code: MIN-2.1
-- `CX_2026-10-04T171420Z_real-sieving-sprint-blocked` — blocker, codex -> both: MIN-2.2
-- `CX_2026-10-04T171444Z_ack-real-sieving-sprint-blocked` — acknowledgement, codex -> codex: MIN-2.2
-- `CX_2026-10-07T132244Z_enconet-archived-reset` — review_request, codex -> claude-code: ENCONET-ARCHIVED-RESET
-- `CX_2026-10-07T134912Z_fresh-intake-first-source` — review_request, codex -> claude-code: ENCONET-FRESH-INTAKE
-- `CX_2026-10-07T142211Z_enconet-full-source-registration` — review_request, codex -> claude-code: ENCONET-SOURCE-SET-G1
-- `CX_2026-10-07T150522Z_enconet-g1-chapter-ingestion` — review_request, codex -> claude-code: ENCONET-G1-CHAPTERS
-- `CX_2026-10-07T154843Z_enconet-recall-golden-draft` — review_request, codex -> claude-code: ENCONET-RECALL-CALIBRATION
-- `CX_2026-10-07T162640Z_golden-approved-context-fixed` — review_request, codex -> claude-code: ENCONET-V3-CONTEXT
-- `CX_2026-10-07T165416Z_v3-active-first-real-vendor-run` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-07T173216Z_quality-manual-full-run` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-07T182133Z_document-record-training-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-07T190737Z_contract-design-audit-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-07T202343Z_nc-corrective-risk-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-07T210038Z_it-objectives-training-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-08T011244Z_software-controls-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-08T012200Z_relap5-full-source-run` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-08T050620Z_aov-dbr-full-source-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-08T052216Z_feedback-process-project-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-08T053036Z_mte-operating-experience-batch` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-08T055547Z_all-vendor-sources-complete` — review_request, codex -> claude-code: ENCONET-FULL-SIEVING
-- `CX_2026-10-08T140250Z_governing-appendix-b-baseline` — review_request, codex -> claude-code: ENCONET-REGULATORY-BASELINE
-- `CX_2026-10-08T143356Z_enconet-nqa1-part1-interpretation` — review_request, codex -> claude-code: ENCONET-NQA1-INTERPRETATION
-- `CX_2026-10-08T145632Z_enconet-referenced-partii-owner-approved` — review_request, codex -> claude-code: ENCONET-NQA1-INTERPRETATION
-- `CX_2026-10-08T152235Z_enconet-part21-separate-duties` — review_request, codex -> claude-code: ENCONET-PART21
-- `CX_2026-10-08T165721Z_enconet-g2-applicability-draft` — review_request, codex -> claude-code: ENCONET-G2-DRAFT
-- `CX_2026-10-08T170946Z_enconet-g2-approved-applicability-imported` — review_request, codex -> claude-code: ENCONET-G2-APPLY
-- `CX_2026-10-08T183124Z_enconet-conformance-18-criteria` — review_request, codex -> claude-code: ENCONET-G3-ASSESSMENT
-- `CX_2026-10-08T202604Z_enconet-g3-approved-model-provenance` — review_request, codex -> claude-code: ENCONET-G3-APPROVAL
-- `CX_2026-10-08T213411Z_enconet-g4-findings-actions` — review_request, codex -> claude-code: ENCONET-G4-DRAFT
-- `CX_2026-10-08T215337Z_enconet-g4-approved-benchmark-hold` — status, codex -> claude-code: ENCONET-G4-APPROVAL
-- `CX_2026-10-08T224837Z_enconet-fixture-refreshed-suite-held` — review_request, codex -> claude-code: ENCONET-SCORING-FIXTURE-REFRESH
-- `CX_2026-10-09T025504Z_enconet-regression-isolation-complete` — review_request, codex -> claude-code: ENCONET-TEST-FIXTURE-ISOLATION
-- `CX_2026-10-09T040356Z_enconet-report-draft-viewer-cap-held` — review_request, codex -> claude-code: ENCONET-G5-REPORT
-- `CX_2026-10-09T170510Z_enconet-g5-ready-capacity-approved` — review_request, codex -> claude-code: ENCONET-G5-CAPACITY
-- `CX_2026-10-09T181108Z_enconet-g5-g6-approved-publication-held` — status, codex -> claude-code: ENCONET-G5-G6-APPROVAL
-- `CX_2026-10-10T020838Z_enconet-published-owner-review-deferred` — review_request, codex -> claude-code: ENCONET-FIRST-PUBLICATION
-- `CX_2026-10-10T074131Z_enconet-published-permissions-fixed` — review_request, codex -> claude-code: ENCONET-PUBLICATION-ACL
-- `CX_2026-10-10T082354Z_enconet-dark-dashboard-ready` — review_request, codex -> claude-code: ENCONET-DARK-DASHBOARD
 - `CX_2026-10-10T150118Z_six-vendor-v3-upgrade-preview` — review_request, codex -> claude-code: FRAMEWORK-V3-UPGRADE-PREVIEW
-- `CX_2026-10-10T150354Z_ack-framework-v3-ack` — acknowledgement, codex -> claude-code: FRAMEWORK-RELEASE-V3
+- `CX_2026-10-10T151350Z_enconet-backlog-closed` — acknowledgement, codex -> claude-code: COORD-ENCONET-BACKLOG-20261010
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-10T150302Z-071cc51.md`](../handoffs/2026-10-10T150302Z-071cc51.md)
-- Archive: 761 records in `coordination/archive/`
+- Archive: 815 records in `coordination/archive/`
 
-Generated: 2026-10-10T15:05:19Z
+Generated: 2026-10-10T15:15:30Z

@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-10T150302Z-071cc51.md`](handoffs/2026-10-10T150302Z-071cc51.md)
+**Authoritative record:** [`handoffs/2026-10-10T151823Z-5bbe08c.md`](handoffs/2026-10-10T151823Z-5bbe08c.md)
 
-**Status:** partial · **Git:** `071cc51` · **Agent:** codex · **Created:** 2026-10-10T15:03:02Z
+**Status:** partial · **Git:** `5bbe08c` · **Agent:** codex · **Created:** 2026-10-10T15:18:23Z
 
-**Exact next action:** Owner approve the exact six-folder v3 replacement batch; Claude review release and preview. Then implement one tested hash-guarded migration with rollback and apply only under approved scope.
+**Exact next action:** Claude archives 52 explicitly closed CC records. Codex archives its final closeout after confirmation. Keep vendor upgrade preview separate; do not perform deployment, reset or audit repairs as backlog cleanup.
