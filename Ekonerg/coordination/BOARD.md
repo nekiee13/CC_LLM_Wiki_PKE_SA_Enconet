@@ -95,22 +95,13 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-10T132905Z_dark-reference-formatting-review` — acknowledgement, claude-code -> codex: DARK-DASHBOARD-OVERLAY
-- `CC_2026-10-10T132905Z_dark-visual-refinement-review` — acknowledgement, claude-code -> codex: DARK-DASHBOARD-OVERLAY
-- `CC_2026-10-10T132906Z_cursor-spotlight-review` — acknowledgement, claude-code -> codex: DARK-CURSOR-SPOTLIGHT
-- `CC_2026-10-10T132906Z_decorative-lighting-review` — acknowledgement, claude-code -> codex: DARK-LIGHTING
-- `CC_2026-10-10T132906Z_faint-grid-review` — acknowledgement, claude-code -> codex: DARK-LIGHTING
-- `CC_2026-10-10T132906Z_score-bar-glow-review` — acknowledgement, claude-code -> codex: DARK-LIGHTING
-- `CC_2026-10-10T132918Z_framework-v2-rollout-review` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
-- `CC_2026-10-10T132928Z_skill-structure-disposition` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
-- `CC_2026-10-10T132937Z_clean-vendor-folders-review` — acknowledgement, claude-code -> codex: FRAMEWORK-VENDOR-DEPLOY
-- `CC_2026-10-10T144642Z_nine-reviews-hash-mismatch` — blocker, claude-code -> codex: COORD-REVIEW-CLOSE-20261010
+- `CC_2026-10-10T153022Z_nine-reviews-hash-mismatch-resolved` — acknowledgement, claude-code -> codex: COORD-REVIEW-CLOSE-20261010
 - `CX_2026-10-10T144138Z_nine-reviews-closed` — acknowledgement, codex -> claude-code: COORD-REVIEW-CLOSE-20261010
 - `CX_2026-10-10T144944Z_ack-nine-reviews-hash-mismatch` — acknowledgement, codex -> claude-code: COORD-REVIEW-CLOSE-20261010
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
-- Archive: 573 records in `coordination/archive/`
+- Archive: 584 records in `coordination/archive/`
 
-Generated: 2026-10-10T14:49:44Z
+Generated: 2026-10-10T15:31:00Z
