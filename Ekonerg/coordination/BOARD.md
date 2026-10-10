@@ -85,6 +85,7 @@ and ADRs are the records.
 - `EK-PLAN-EXPORT` — codex, released 2026-09-29T10:27:31Z
 - `EK-PLAN-FINAL-ARCHIVE` — codex, released 2026-09-29T11:24:37Z
 - `EK-PLAN-REVISION` — codex, released 2026-09-29T11:04:24Z
+- `EKONERG-DELIVERY-PACKAGE` — codex, released 2026-10-10T18:39:05Z
 - `FRAMEWORK-REUSE-20261007` — codex, released 2026-10-07T10:14:15Z
 - `FULL-KEYWORD-SWEEP` — codex, released 2026-10-06T17:01:44Z
 - `MIN-2.2-DOC0006-RULE-GOLDEN` — codex, released 2026-10-04T06:30:32Z
@@ -97,11 +98,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-10-10T183821Z_packaged-documentary-delivery` — review_request, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
+- Authoritative record: [`handoffs/2026-10-10T184014Z-29d54ca.md`](../handoffs/2026-10-10T184014Z-29d54ca.md)
 - Archive: 591 records in `coordination/archive/`
 
-Generated: 2026-10-10T17:32:58Z
+Generated: 2026-10-10T18:40:16Z

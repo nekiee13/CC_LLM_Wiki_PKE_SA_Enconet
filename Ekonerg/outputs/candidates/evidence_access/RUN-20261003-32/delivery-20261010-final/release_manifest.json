@@ -1,0 +1,145 @@
+{
+  "active_crumb_counts": {
+    "DOCUMENT": 475,
+    "RULE": 55
+  },
+  "evidence_counts": {
+    "chapters": 118,
+    "crumbs": 379,
+    "documents": 24,
+    "quotes": 442
+  },
+  "files": [
+    {
+      "bytes": 368,
+      "path": "README.md",
+      "sha256": "181d4fa4e6b69326d49995eb267234352bfb7ace01ec7c5107d31ceaa0cecc96"
+    },
+    {
+      "bytes": 2315010,
+      "path": "ekonerg_appendix_b_dashboard.html",
+      "sha256": "16709363471d109a60d85d541044109d7eac66f89cc60736570f45cb54c77ce5"
+    },
+    {
+      "bytes": 2334601,
+      "path": "ekonerg_appendix_b_dashboard_dark.html",
+      "sha256": "e471c3b23222f33277d49d4ace8116952dad847453498776e25e39da30ac1a4f"
+    },
+    {
+      "bytes": 2355975,
+      "path": "ekonerg_appendix_b_dashboard_data.json",
+      "sha256": "986bc58919e3ee03b5ed070a4a33004743e3c8dc2f8e498b3c826f0ea7ecd850"
+    },
+    {
+      "bytes": 55904,
+      "path": "ekonerg_appendix_b_evaluation_package.json",
+      "sha256": "c53aed55d81ba24332417f573faf1fcdc64543dd6f44b97044de4f2857d6b2d4"
+    },
+    {
+      "bytes": 73531,
+      "path": "ekonerg_appendix_b_evaluation_report.md",
+      "sha256": "4e9ebbfed953d59aa3764ad539dfd2dbd8a3b5fb3424ae96bc8d3bb8b53683c5"
+    },
+    {
+      "bytes": 930765,
+      "path": "evidence_bundle.json",
+      "sha256": "c1b6f1098354938820f69f641f21fdff2b9a5b57183a0870a4d3ac44fcd9e5c2"
+    },
+    {
+      "bytes": 2355975,
+      "path": "portable_package/RUN-20261003-32/dashboard_data.json",
+      "sha256": "986bc58919e3ee03b5ed070a4a33004743e3c8dc2f8e498b3c826f0ea7ecd850"
+    },
+    {
+      "bytes": 55904,
+      "path": "portable_package/RUN-20261003-32/evaluation_package.json",
+      "sha256": "c53aed55d81ba24332417f573faf1fcdc64543dd6f44b97044de4f2857d6b2d4"
+    },
+    {
+      "bytes": 69164,
+      "path": "portable_package/RUN-20261003-32/evaluation_report.md",
+      "sha256": "371b16fb9278d73df4d42980b0ab149baf97f1c5adb3992557ab322970781a4e"
+    },
+    {
+      "bytes": 930765,
+      "path": "portable_package/RUN-20261003-32/evidence_bundle.json",
+      "sha256": "c1b6f1098354938820f69f641f21fdff2b9a5b57183a0870a4d3ac44fcd9e5c2"
+    },
+    {
+      "bytes": 2315010,
+      "path": "portable_package/RUN-20261003-32/evidence_explorer.html",
+      "sha256": "16709363471d109a60d85d541044109d7eac66f89cc60736570f45cb54c77ce5"
+    },
+    {
+      "bytes": 2334601,
+      "path": "portable_package/RUN-20261003-32/evidence_explorer_dark.html",
+      "sha256": "e471c3b23222f33277d49d4ace8116952dad847453498776e25e39da30ac1a4f"
+    },
+    {
+      "bytes": 1378,
+      "path": "portable_package/package_manifest.json",
+      "sha256": "ef883efd71725bd29d2913302a6d98bf4cd598502356638625872dda30080c56"
+    },
+    {
+      "bytes": 423,
+      "path": "portable_package/review_catalog.json",
+      "sha256": "c28305ee9b21471cff9d666f1dfed0146268f9d29431769d9095ad1251d79311"
+    },
+    {
+      "bytes": 732,
+      "path": "portable_package/review_workspace.html",
+      "sha256": "6226c4738669bb2fe6c4acb9bc099d2f226ab4f50a29fb4495ecf2b63feebb70"
+    }
+  ],
+  "formal_gate_status": {
+    "G1": "approved",
+    "G2": "approved",
+    "G3": "approved",
+    "G4": "pending",
+    "G5": "pending",
+    "G6": "pending",
+    "G7": "pending"
+  },
+  "generator_sha256": "0e934599d2244e6a9200591eb6a78b8df26a48811ded9d6edd404424286e30d3",
+  "input_hashes": {
+    "db/nqa_audit.sqlite": "161c56ff5d457348ec6809c5e6dcc41e2dd09854d4e71cde11d12a2064d387c0",
+    "manifests/approvals.csv": "a9ae808a75b6de1529aa0c431d16739cb4224e07d7741b9b046c134561ceef4a",
+    "out/2026-10-07/all18-review/EKONERG_DASHBOARD.html": "99197f65e2ed2fa9e4e68d5da3fd517d9f0c995fad6e9c51338c2ac6465b194d",
+    "out/2026-10-07/dark-dashboard/grid/EKONERG_DASHBOARD_DARK.html": "7881aef1d10359e16bdebea78a2a53e8cc51ca0402d564ae4faffb1b430ae5ea",
+    "project-state.yml": "bd4c0279bbfbe24247c20c2082b6a1a41d1218775e960765d19f34604792ddd0",
+    "raw/PQ06.1_Upravljanje_rizicima.md": "fbed57cf7b11737b240a0c2dc007843adec8f16142ce808bbcedee1caa5cee17",
+    "raw/PQ07.1-1_r8_Kontrola_školovanja_i_treninga_osoblja.md": "ca61c4d6099782f92a6cbb58296b25e893add080271c51b32f962db7b7aed7cc",
+    "raw/PQ07.1-2_r5_Kontrola_opreme_za_mjerenje,_inspekcij.md": "9fc2077bf90ad74fec3be053ba762954d7c0141088ce29c90525e53c14d17fb8",
+    "raw/PQ07.5-2_r8_Postupci_sustava_kvalitete,_sustava_za.md": "29d17b1fd74c3fb44d0627dbe432ec1ba88b912f24b5abd83b17b53f39c6a9dd",
+    "raw/PQ07.5-3_r3_Kontrolni_postupci.md": "0f264be9ea5b8d630567040174a359845cf44e9354f29232387b6b72f08fb1ea",
+    "raw/PQ07.5-4_r6_Radni_postupci.md": "e3ef52eac90fccee4168beab423b1157238aa9217f2df839157a280516d4abe8",
+    "raw/PQ07.5-5_r10_Kontrola_dokumenata_koji_nastaju_u_Ek.md": "a4d252d8e4821d2ee46b4d1c0db99133559a95fdf75fa43a23c993aec27e53ea",
+    "raw/PQ07.5-6_r5_Kontrola_dokumentacije_koju_prima_Ekon.md": "0b8addf66a9933be4d5a332e2a92fcd3cc3da693a34550c562fab266594c8564",
+    "raw/PQ07.5-7_r10_Kontrola_zapisa.md": "7af8c6a51bf34d7db3f71f7e8659a1948fa0fda5407accc1c2dce02a4f641c34",
+    "raw/PQ08.1-1_r5_Svrstavanja_aktivnosti_u_nivoe_složeno.md": "bc7e70915c9a9cdc45a377a4745170bf57677bdfa912c6198ac6fec3f75d0a06",
+    "raw/PQ08.1-2_r4_Plan_kvalitete.md": "1ae5bd3c5b37e085b778e292f70741186664524a9c02953a95cec8fb7ca1869f",
+    "raw/PQ08.1-3_r2_Plan_vođenja_projekta.md": "1399a9374c4bd77fbd2539838cafbd9248eca7827cf9d681d31db2ed639ffd0d",
+    "raw/PQ08.2-1_r6_Odnosi_s_Naručiteljima.md": "e1545b39c208ffdab933b6ac5d453437031da518825dc61e630d51879eb9d2cb",
+    "raw/PQ08.2-2_r5_Priprema_i_postupanje_s_ugovornom_doku.md": "fb6fda1f17c55e31d7e0db95271ab61982506acdd7284ee9cc3d0c26be034f73",
+    "raw/PQ08.3-1_r4_Kontrola_studijskih_projektnih_radova_.md": "ee1b6a020af2457977d50443a8197217246a227419a5c72373e3117dfd7b1fdd",
+    "raw/PQ08.4-1_r3_Kontrola_studijskih_projektnih_radova_.md": "3bb5bd31e187169c0f8fe1ee742bde3c5f9719eda230ddbecbb2d9de3ddbaa24",
+    "raw/PQ08.4-2_r9_Kontrola_nabave.md": "b3ad579958daaaf2271e3913fe72512f529a6b0ffbd08bff83afc0efaf763e83",
+    "raw/PQ08.4-3_r11_Evaluacija_i_izbor_dobavljača.md": "1166d5dd59ffec79bf1cc45ecbb08cd2387d1923806512408c469a8f90e588d0",
+    "raw/PQ08.6_r3_Kontrola_i_verifikacija_aktivnosti.md": "8ac8cbf7f5ff0df7c959f370f85c66e84c16120049cb461786f1844dfcd11d34",
+    "raw/PQ09.2_r9_Provjere.md": "602fced6251414fdb4c3ca6c6e78b7930181017f50de821e8da22462429135f3",
+    "raw/PQ09.3_r6_Pregled_i_ocjena_sustava_kvalitete,_zašt.md": "cf62287d78756915eaa14885e5c3cf87241795e3fdd1f173df3f71a7f22a2879",
+    "raw/PQ10.2-1_r10_Kontrola_neusklađenosti.md": "23e2d5d94b58fe2b0f41ee9260fd768e93a0dcc8917f3b2403ff325bbf0c7c60",
+    "raw/PQ10.2-2_r10_Kontrola_korektivnih_akcija.md": "c9106e670874f1ab8d7e4307cc264511938c9cd5ba19b848ba1c08736c92b4b7",
+    "raw/Priručnik_sustava_upravljanja_rev.5__9492b447c386.md": "9492b447c386d174ca6fd7a473999a4999899523ae21570a81626ffadfdeae87",
+    "schemas/scoring_model.yml": "c71a2fdfb360436e3a0b4ddfdd52b27b1721ea0978ea843eb2b668377941d1d1"
+  },
+  "review_status": "pending",
+  "run_id": "RUN-20261003-32",
+  "schema_version": 1,
+  "scope": "Read-only documentary candidate export; no source, DB, approval or gate writes",
+  "score": 77.8,
+  "score_crumbs": 379,
+  "score_points": 1400.0,
+  "state": "prepared",
+  "supplier": "Ekonerg"
+}

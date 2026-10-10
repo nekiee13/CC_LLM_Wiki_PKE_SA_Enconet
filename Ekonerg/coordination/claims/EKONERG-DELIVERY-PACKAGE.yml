@@ -1,0 +1,14 @@
+task: EKONERG-DELIVERY-PACKAGE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-10T17:37:22Z
+last_renewed_at_utc: 2026-10-10T17:37:22Z
+expires_at_utc: 2026-10-11T17:37:22Z
+anticipated_files:
+  - scripts/package_audit_delivery.py
+  - scripts/tests/test_package_audit_delivery.py
+  - docs/EKONERG_PACKAGED_RELEASE.md
+  - outputs
+  - manifests
+note: Single task: preserve audit while packaging current report and light/dark evidence-linked dashboards
+released_at_utc: 2026-10-10T18:39:05Z

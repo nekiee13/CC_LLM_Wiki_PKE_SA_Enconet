@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](handoffs/2026-10-07T113149Z-6d9eb9c.md)
+**Authoritative record:** [`handoffs/2026-10-10T184014Z-29d54ca.md`](handoffs/2026-10-10T184014Z-29d54ca.md)
 
-**Status:** partial · **Git:** `6d9eb9c` · **Agent:** codex · **Created:** 2026-10-07T11:31:49Z
+**Status:** partial · **Git:** `29d54ca` · **Agent:** codex · **Created:** 2026-10-10T18:40:14Z
 
-**Exact next action:** Owner places current documents in selected vendor incoming folder and confirms scope and editions; then initialize its database and begin controlled intake per Transition_template_Plan.md.
+**Exact next action:** Owner opens outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/review_workspace.html;Claude reviews single task. Only then resolve applicable formal release authority if canonical publication is wanted.

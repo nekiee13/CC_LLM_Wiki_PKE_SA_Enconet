@@ -1,0 +1,395 @@
+# Appendix B documentary report — Ekonerg
+
+Run: `RUN-20261003-32`. **77.8%** — substantially.
+
+Prepared documentary delivery of the stored owner-operated tool result; not an issued G5/G6 release or proof of field implementation.
+
+## Scope and method
+
+10 CFR 50 Appendix B, interpreted under this project's approved ASME NQA-1 scope. Existing five-level scores, applicability decisions and explanations are preserved. Part 21 is separate from the 18-criterion score. No source edition or approval is inherited.
+
+Report labels retain the current English dashboard presentation; quotations retain their source language.
+
+## Executive summary
+
+| Rating | Criteria |
+|---|---:|
+| fully | 3 |
+| substantially | 14 |
+| partially | 1 |
+
+## Criterion-by-criterion evaluation
+
+### I — Organization
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Ekonerg procedures assign QA, management, team, and verification roles across its organization and supplier oversight.
+
+**Summary:** Manual 5.3 and Prilog 2 give QA staff authority, freedom and direct reporting to management. The written rules do not clearly state how nuclear safety wins a cost or schedule conflict. This is a substantial match; test that safeguard in the real audit.
+
+**Affirmative:** Manual 5.3 and Prilog 2 §§1.2-1.3 assign duties, preserve responsibility after delegation, give QA personnel organizational freedom, and provide direct management access. PQ10.2-1 §2.9 gives management a stop-work duty on significant nonconformances.
+
+**Contrary / limitation:** The written organization rules do not clearly protect QA decisions when cost or schedule conflicts with nuclear safety. Management access and a stop-work route support independence, but do not fully settle that conflict.
+
+**Judgment:** Substantially matched, 4/5. The organization has defined authority and reporting routes; the safety-over-cost/schedule safeguard needs clarification under Appendix B I and NQA-1 Requirement 1 §201(d).
+
+**Real-audit verification:** Resolve or verify these specific points: The written organization rules do not clearly protect QA decisions when cost or schedule conflicts with nuclear safety. Management access and a stop-work route support independence, but do not fully settle that conflict.
+
+**Score-support evidence:** [CRUMB-DOC-0008-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0008-APP_B_I-0001) [CRUMB-DOC-0008-APP_B_I-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0008-APP_B_I-0002) [CRUMB-DOC-0009-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0009-APP_B_I-0001) [CRUMB-DOC-0010-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0010-APP_B_I-0001) [CRUMB-DOC-0011-APP_B_I-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_I-0009) [CRUMB-DOC-0011-APP_B_I-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_I-0010) [CRUMB-DOC-0011-APP_B_I-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_I-0011) [CRUMB-DOC-0011-APP_B_I-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_I-0012) [CRUMB-DOC-0015-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0015-APP_B_I-0001) [CRUMB-DOC-0016-APP_B_I-0013](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_I-0013) [CRUMB-DOC-0016-APP_B_I-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_I-0014) [CRUMB-DOC-0017-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0017-APP_B_I-0001) [CRUMB-DOC-0017-APP_B_I-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0017-APP_B_I-0002) [CRUMB-DOC-0018-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0018-APP_B_I-0001) [CRUMB-DOC-0019-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0019-APP_B_I-0001) [CRUMB-DOC-0020-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_I-0001) [CRUMB-DOC-0020-APP_B_I-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_I-0002) [CRUMB-DOC-0020-APP_B_I-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_I-0003) [CRUMB-DOC-0021-APP_B_I-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_I-0007) [CRUMB-DOC-0021-APP_B_I-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_I-0008) [CRUMB-DOC-0022-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_I-0001) [CRUMB-DOC-0022-APP_B_I-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_I-0002) [CRUMB-DOC-0023-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0023-APP_B_I-0001) [CRUMB-DOC-0024-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0024-APP_B_I-0001) [CRUMB-DOC-0025-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0025-APP_B_I-0001) [CRUMB-DOC-0026-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0026-APP_B_I-0001) [CRUMB-DOC-0028-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0028-APP_B_I-0001) [CRUMB-DOC-0030-APP_B_I-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0030-APP_B_I-0002) [CRUMB-DOC-0032-APP_B_I-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0001) [CRUMB-DOC-0032-APP_B_I-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0003) [CRUMB-DOC-0032-APP_B_I-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0004) [CRUMB-DOC-0032-APP_B_I-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0005) [CRUMB-DOC-0032-APP_B_I-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0007) [CRUMB-DOC-0032-APP_B_I-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0008) [CRUMB-DOC-0032-APP_B_I-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0009) [CRUMB-DOC-0032-APP_B_I-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0010) [CRUMB-DOC-0032-APP_B_I-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0011) [CRUMB-DOC-0032-APP_B_I-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0012) [CRUMB-DOC-0032-APP_B_I-0013](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0013) [CRUMB-DOC-0032-APP_B_I-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0014) [CRUMB-DOC-0032-APP_B_I-0015](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0015) [CRUMB-DOC-0032-APP_B_I-0016](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0016) [CRUMB-DOC-0032-APP_B_I-0017](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0017) [CRUMB-DOC-0032-APP_B_I-0018](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0018) [CRUMB-DOC-0032-APP_B_I-0019](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0019) [CRUMB-DOC-0032-APP_B_I-0020](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0020) [CRUMB-DOC-0032-APP_B_I-0021](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0021) [CRUMB-DOC-0032-APP_B_I-0022](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0022) [CRUMB-DOC-0032-APP_B_I-0023](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0023) [CRUMB-DOC-0032-APP_B_I-0024](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0024) [CRUMB-DOC-0032-APP_B_I-0025](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0025) [CRUMB-DOC-0032-APP_B_I-0029](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_I-0029)
+
+### II — Quality Assurance Program
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. The QMS document-control and quality-plan procedures cover Ekonerg activities and contracts.
+
+**Summary:** Manual 8.1 requires quality plans with staff, methods, equipment, checks, acceptance criteria and records; Dodatak 1 §2 sets nuclear grading. Training and annual review are defined. Nuclear inspection/test qualification maintenance is less clear than NQA-1 Requirement 2 §203, so the program is a substantial match.
+
+**Affirmative:** Manual 7.1-7.3, 8.1 and 9.3 define resources, competence, work conditions, project quality plans and annual management review. Dodatak 1 §2 places NS/AQ work at level I. PQ7.1-1 §§2-3 requires planned training and competence records; PQ9.2 §3.8 defines nuclear auditor qualifications.
+
+**Contrary / limitation:** The program has a meaningful graded planning process. Its written nuclear inspection/test personnel qualification rules do not clearly set the periodic re-evaluation and inactivity checks in NQA-1 Requirement 2 §203. General training and certificate renewal do not fully define those checks.
+
+**Judgment:** Substantially matched, 4/5. The written program meets the main planning, resource, training and review duties. Nuclear inspection/test qualification maintenance needs clearer rules. An absent completed project plan is not treated as a missing generic planning process.
+
+**Real-audit verification:** Resolve or verify these specific points: The program has a meaningful graded planning process. Its written nuclear inspection/test personnel qualification rules do not clearly set the periodic re-evaluation and inactivity checks in NQA-1 Requirement 2 §203. General training and certificate renewal do not fully define those checks.
+
+**Score-support evidence:** [CRUMB-DOC-0008-APP_B_II-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0008-APP_B_II-0001) [CRUMB-DOC-0009-APP_B_II-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0009-APP_B_II-0001) [CRUMB-DOC-0009-APP_B_II-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0009-APP_B_II-0002) [CRUMB-DOC-0011-APP_B_II-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_II-0003) [CRUMB-DOC-0017-APP_B_II-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0017-APP_B_II-0001) [CRUMB-DOC-0018-APP_B_II-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0018-APP_B_II-0001) [CRUMB-DOC-0018-APP_B_II-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0018-APP_B_II-0002) [CRUMB-DOC-0020-APP_B_II-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_II-0001) [CRUMB-DOC-0021-APP_B_II-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_II-0004) [CRUMB-DOC-0022-APP_B_II-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_II-0001) [CRUMB-DOC-0028-APP_B_II-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0028-APP_B_II-0001) [CRUMB-DOC-0032-APP_B_II-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0002) [CRUMB-DOC-0032-APP_B_II-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0004) [CRUMB-DOC-0032-APP_B_II-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0005) [CRUMB-DOC-0032-APP_B_II-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0006) [CRUMB-DOC-0032-APP_B_II-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0007) [CRUMB-DOC-0032-APP_B_II-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0008) [CRUMB-DOC-0032-APP_B_II-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0009) [CRUMB-DOC-0032-APP_B_II-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0010) [CRUMB-DOC-0032-APP_B_II-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0011) [CRUMB-DOC-0032-APP_B_II-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0012) [CRUMB-DOC-0032-APP_B_II-0013](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0013) [CRUMB-DOC-0032-APP_B_II-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0014) [CRUMB-DOC-0032-APP_B_II-0015](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0015) [CRUMB-DOC-0032-APP_B_II-0016](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0016) [CRUMB-DOC-0032-APP_B_II-0017](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0017) [CRUMB-DOC-0032-APP_B_II-0018](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0018) [CRUMB-DOC-0032-APP_B_II-0020](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0020) [CRUMB-DOC-0032-APP_B_II-0021](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0021) [CRUMB-DOC-0032-APP_B_II-0022](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0022) [CRUMB-DOC-0032-APP_B_II-0023](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0023) [CRUMB-DOC-0032-APP_B_II-0024](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0024) [CRUMB-DOC-0032-APP_B_II-0025](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0025) [CRUMB-DOC-0032-APP_B_II-0026](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0026) [CRUMB-DOC-0032-APP_B_II-0027](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0027) [CRUMB-DOC-0032-APP_B_II-0028](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0028) [CRUMB-DOC-0032-APP_B_II-0030](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0030) [CRUMB-DOC-0032-APP_B_II-0031](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0031) [CRUMB-DOC-0032-APP_B_II-0032](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0032) [CRUMB-DOC-0032-APP_B_II-0033](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0033) [CRUMB-DOC-0032-APP_B_II-0034](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0034) [CRUMB-DOC-0032-APP_B_II-0035](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0035) [CRUMB-DOC-0032-APP_B_II-0037](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0037) [CRUMB-DOC-0032-APP_B_II-0038](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0038) [CRUMB-DOC-0032-APP_B_II-0040](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0040) [CRUMB-DOC-0032-APP_B_II-0041](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0041) [CRUMB-DOC-0032-APP_B_II-0042](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_II-0042)
+
+### III — Design Control
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Ekonerg documents identify study, design, engineering, and project-control activities, including review and verification stages.
+
+**Summary:** Manual 8.3 and PQ8.3-1 define checked inputs, independent verification, controlled interfaces and changes. Conflicting RSP/ROS references leave the design-software verification route unclear. The written design process is a substantial match; verify the correct procedure and a calculation in the real audit.
+
+**Affirmative:** Manual 8.3 and PQ8.3-1 §§3.1-3.5 control design inputs, interfaces, independent checks, release, records and changes. Software verification is triggered by configuration and use changes in Dodatak 1's flow notes.
+
+**Contrary / limitation:** The nuclear addendum and Prilog 5 use inconsistent RSP and ROS identifiers. The actual design-software verification method is not supplied, so the written chain to a proven calculation tool or independently verified result is incomplete.
+
+**Judgment:** Substantially matched, 4/5. The main design-control process is substantive. The software verification/reference chain needs clarification for NQA-1 Requirement 3 §§401 and 500. No blanket Part II compliance is assumed.
+
+**Real-audit verification:** Resolve or verify these specific points: The nuclear addendum and Prilog 5 use inconsistent RSP and ROS identifiers. The actual design-software verification method is not supplied, so the written chain to a proven calculation tool or independently verified result is incomplete.
+
+**Score-support evidence:** [CRUMB-DOC-0017-APP_B_III-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0017-APP_B_III-0001) [CRUMB-DOC-0017-APP_B_III-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0017-APP_B_III-0002) [CRUMB-DOC-0019-APP_B_III-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0019-APP_B_III-0001) [CRUMB-DOC-0019-APP_B_III-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0019-APP_B_III-0002) [CRUMB-DOC-0019-APP_B_III-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0019-APP_B_III-0003) [CRUMB-DOC-0022-APP_B_III-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_III-0001) [CRUMB-DOC-0022-APP_B_III-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_III-0002) [CRUMB-DOC-0022-APP_B_III-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_III-0003) [CRUMB-DOC-0022-APP_B_III-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_III-0004) [CRUMB-DOC-0022-APP_B_III-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_III-0005) [CRUMB-DOC-0023-APP_B_III-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0023-APP_B_III-0001) [CRUMB-DOC-0023-APP_B_III-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0023-APP_B_III-0002) [CRUMB-DOC-0032-APP_B_III-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0001) [CRUMB-DOC-0032-APP_B_III-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0003) [CRUMB-DOC-0032-APP_B_III-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0004) [CRUMB-DOC-0032-APP_B_III-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0005) [CRUMB-DOC-0032-APP_B_III-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0006) [CRUMB-DOC-0032-APP_B_III-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0007) [CRUMB-DOC-0032-APP_B_III-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0009) [CRUMB-DOC-0032-APP_B_III-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0010) [CRUMB-DOC-0032-APP_B_III-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0011) [CRUMB-DOC-0032-APP_B_III-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0012) [CRUMB-DOC-0032-APP_B_III-0013](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0013) [CRUMB-DOC-0032-APP_B_III-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0014) [CRUMB-DOC-0032-APP_B_III-0015](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0015) [CRUMB-DOC-0032-APP_B_III-0016](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0016) [CRUMB-DOC-0032-APP_B_III-0017](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0017) [CRUMB-DOC-0032-APP_B_III-0018](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0018) [CRUMB-DOC-0032-APP_B_III-0019](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0019) [CRUMB-DOC-0032-APP_B_III-0020](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0020) [CRUMB-DOC-0032-APP_B_III-0025](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0025) [CRUMB-DOC-0032-APP_B_III-0026](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0026) [CRUMB-DOC-0032-APP_B_III-0027](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0027) [CRUMB-DOC-0032-APP_B_III-0029](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_III-0029)
+
+### IV — Procurement Document Control
+
+**fully — 100/100; 5/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Procurement and supplier-evaluation procedures control purchased services and requirements.
+
+**Summary:** PQ8.4-2 §3.2 expressly requires lower-tier flow-down, record controls, access rights and document delivery times, alongside technical, QA and acceptance requirements. Manual 8.4 governs review and changes. The written procurement-document process is fully matched; inspect issued orders in the real audit.
+
+**Affirmative:** Manual 8.4 and PQ8.4-2 §3.2 require technical and QA requirements, acceptance methods, access rights, record controls, nonconformance reporting, lower-tier flow-down and document delivery times. Named staff prepare, review and approve the purchase documents; Manual 8.4.4 applies contract-document change controls.
+
+**Contrary / limitation:** No specific missing written procurement-document duty is identified in the reviewed scope. Real-audit sampling must confirm that nuclear purchase documents use the required clauses, including lower-tier flow-down and record/submittal terms.
+
+**Judgment:** Fully matched for documentation, 5/5. PQ8.4-2 §3.2 and Manual 8.4 cover the procurement-document intent of Appendix B IV and NQA-1 Requirement 4 §§200-400. This is not a finding that every issued order has been checked.
+
+**Real-audit verification:** Resolve or verify these specific points: No specific missing written procurement-document duty is identified in the reviewed scope. Real-audit sampling must confirm that nuclear purchase documents use the required clauses, including lower-tier flow-down and record/submittal terms.
+
+**Score-support evidence:** [CRUMB-DOC-0021-APP_B_IV-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_IV-0010) [CRUMB-DOC-0021-APP_B_IV-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_IV-0011) [CRUMB-DOC-0021-APP_B_IV-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_IV-0012) [CRUMB-DOC-0024-APP_B_IV-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0024-APP_B_IV-0001) [CRUMB-DOC-0032-APP_B_IV-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IV-0001) [CRUMB-DOC-0032-APP_B_IV-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IV-0003) [CRUMB-DOC-0032-APP_B_IV-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IV-0004) [CRUMB-DOC-0032-APP_B_IV-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IV-0005) [CRUMB-DOC-0032-APP_B_IV-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IV-0006) [CRUMB-DOC-0032-APP_B_IV-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IV-0008) [CRUMB-DOC-0032-APP_B_IV-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IV-0010)
+
+### V — Instructions, Procedures, and Drawings
+
+**fully — 100/100; 5/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Ekonerg uses controlled procedures and work procedures for quality-affecting activities.
+
+**Summary:** Manual 7.5.1 and PQ7.5-4 §3.1 require clear work steps, qualified staff and equipment, acceptance criteria and required records. Review, approval and distribution are assigned. The written instruction framework is fully matched; technical method qualification remains a separate check under the relevant criterion.
+
+**Affirmative:** Manual 7.5.1 and 8.5.1 require detailed work instructions with prerequisites, people, equipment, responsibilities, acceptance criteria and reporting. PQ7.5-4 §3.1 specifies those contents and §3.3 requires competent preparation, independent review and approval.
+
+**Contrary / limitation:** No specific missing general instruction-content duty is identified. Task-specific RVT/RPT/RMT/RUT and RSP/ROS methods still need real-audit checks in their own technical areas; a title alone is not proof that a special method is qualified.
+
+**Judgment:** Fully matched for documentation, 5/5. The written instruction framework covers Appendix B V and NQA-1 Requirement 5 §100, including acceptance criteria and detail suited to the task. This does not approve every listed technical method.
+
+**Real-audit verification:** Resolve or verify these specific points: No specific missing general instruction-content duty is identified. Task-specific RVT/RPT/RMT/RUT and RSP/ROS methods still need real-audit checks in their own technical areas; a title alone is not proof that a special method is qualified.
+
+**Score-support evidence:** [CRUMB-DOC-0008-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0008-APP_B_V-0001) [CRUMB-DOC-0011-APP_B_V-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_V-0007) [CRUMB-DOC-0011-APP_B_V-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_V-0008) [CRUMB-DOC-0011-APP_B_V-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_V-0009) [CRUMB-DOC-0012-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0012-APP_B_V-0001) [CRUMB-DOC-0012-APP_B_V-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0012-APP_B_V-0002) [CRUMB-DOC-0013-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0013-APP_B_V-0001) [CRUMB-DOC-0013-APP_B_V-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0013-APP_B_V-0002) [CRUMB-DOC-0017-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0017-APP_B_V-0001) [CRUMB-DOC-0018-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0018-APP_B_V-0001) [CRUMB-DOC-0020-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_V-0001) [CRUMB-DOC-0020-APP_B_V-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_V-0002) [CRUMB-DOC-0026-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0026-APP_B_V-0001) [CRUMB-DOC-0032-APP_B_V-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0001) [CRUMB-DOC-0032-APP_B_V-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0002) [CRUMB-DOC-0032-APP_B_V-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0003) [CRUMB-DOC-0032-APP_B_V-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0004) [CRUMB-DOC-0032-APP_B_V-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0005) [CRUMB-DOC-0032-APP_B_V-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0006) [CRUMB-DOC-0032-APP_B_V-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0007) [CRUMB-DOC-0032-APP_B_V-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0008) [CRUMB-DOC-0032-APP_B_V-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_V-0010)
+
+### VI — Document Control
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Issued and received documents, revisions, distribution, and retention are controlled.
+
+**Summary:** Manual 7.5.3 and PQ7.5-5 define approval, revision, distribution and current copies at use. The manual's ROS-02/ROS-03 and RSP-03/ROS-04 references conflict with its procedure register. The process is a substantial match; resolve which controlled methods staff must use.
+
+**Affirmative:** Manual 7.5.3 and PQ7.5-5 §§3-4 assign preparation, review, approval, changes and controlled distribution. They require current copies at use, revision status, controlled external documents and withdrawal or marking of obsolete copies.
+
+**Contrary / limitation:** The supplied manual has conflicting references: Dodatak 1 §11 cites ROS-02 for software control while Prilog 5 lists ROS-03; §17 cites RSP-03 for backup while the register lists ROS-04. These are live navigation ambiguities, not merely absent work samples.
+
+**Judgment:** Substantially matched, 4/5. Document-control duties are written and assigned. Conflicting controlled references prevent an unqualified full match under NQA-1 Requirement 6 §§100-300.
+
+**Real-audit verification:** Resolve or verify these specific points: The supplied manual has conflicting references: Dodatak 1 §11 cites ROS-02 for software control while Prilog 5 lists ROS-03; §17 cites RSP-03 for backup while the register lists ROS-04. These are live navigation ambiguities, not merely absent work samples.
+
+**Score-support evidence:** [CRUMB-DOC-0011-APP_B_VI-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_VI-0007) [CRUMB-DOC-0011-APP_B_VI-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_VI-0008) [CRUMB-DOC-0011-APP_B_VI-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_VI-0009) [CRUMB-DOC-0012-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0012-APP_B_VI-0001) [CRUMB-DOC-0012-APP_B_VI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0012-APP_B_VI-0002) [CRUMB-DOC-0012-APP_B_VI-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0012-APP_B_VI-0003) [CRUMB-DOC-0013-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0013-APP_B_VI-0001) [CRUMB-DOC-0013-APP_B_VI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0013-APP_B_VI-0002) [CRUMB-DOC-0014-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0014-APP_B_VI-0001) [CRUMB-DOC-0014-APP_B_VI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0014-APP_B_VI-0002) [CRUMB-DOC-0014-APP_B_VI-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0014-APP_B_VI-0003) [CRUMB-DOC-0014-APP_B_VI-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0014-APP_B_VI-0004) [CRUMB-DOC-0015-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0015-APP_B_VI-0001) [CRUMB-DOC-0015-APP_B_VI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0015-APP_B_VI-0002) [CRUMB-DOC-0015-APP_B_VI-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0015-APP_B_VI-0003) [CRUMB-DOC-0016-APP_B_VI-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_VI-0007) [CRUMB-DOC-0018-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0018-APP_B_VI-0001) [CRUMB-DOC-0021-APP_B_VI-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_VI-0004) [CRUMB-DOC-0022-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_VI-0001) [CRUMB-DOC-0022-APP_B_VI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_VI-0002) [CRUMB-DOC-0023-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0023-APP_B_VI-0001) [CRUMB-DOC-0032-APP_B_VI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0001) [CRUMB-DOC-0032-APP_B_VI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0002) [CRUMB-DOC-0032-APP_B_VI-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0003) [CRUMB-DOC-0032-APP_B_VI-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0004) [CRUMB-DOC-0032-APP_B_VI-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0005) [CRUMB-DOC-0032-APP_B_VI-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0006) [CRUMB-DOC-0032-APP_B_VI-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0008) [CRUMB-DOC-0032-APP_B_VI-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0010) [CRUMB-DOC-0032-APP_B_VI-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0011) [CRUMB-DOC-0032-APP_B_VI-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0012) [CRUMB-DOC-0032-APP_B_VI-0013](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0013) [CRUMB-DOC-0032-APP_B_VI-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0014) [CRUMB-DOC-0032-APP_B_VI-0018](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0018) [CRUMB-DOC-0032-APP_B_VI-0019](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0019) [CRUMB-DOC-0032-APP_B_VI-0023](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0023) [CRUMB-DOC-0032-APP_B_VI-0024](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0024) [CRUMB-DOC-0032-APP_B_VI-0025](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0025) [CRUMB-DOC-0032-APP_B_VI-0026](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0026) [CRUMB-DOC-0032-APP_B_VI-0027](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VI-0027)
+
+### VII — Control of Purchased Material, Equipment, and Services
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Ekonerg controls purchasing, supplier evaluation, and supplier design-work verification.
+
+**Summary:** Manual 8.4 and PQ8.4-2/PQ8.4-3 require supplier evaluation, nuclear qualification, checks and acceptance records. Safety-related hardware evidence timing and the detailed commercial-product acceptance route are less clear. The supplier-control process is a substantial match, not a review of other companies as separate audit targets.
+
+**Affirmative:** Manual 8.4, PQ8.4-2 §§3.1-3.4 and PQ8.4-3 §§3.2-3.9 define supplier selection, nuclear qualification, graded surveillance, acceptance and performance review. Supplier evidence is checked against requirements and retained; Dodatak 1 §7 defines safety significance, critical characteristics and verification selection for commercial products.
+
+**Contrary / limitation:** Commercial-product dedication is described at a high level, without the detailed acceptance route. Manual 8.4.3 describes conformity evidence before/after installation, which does not clearly secure required evidence before installation or use for safety-related hardware.
+
+**Judgment:** Substantially matched, 4/5. The service procurement and supplier-control process is substantive. The safety-related hardware acceptance timing and detailed commercial-product route need confirmation under Appendix B VII and NQA-1 Requirement 7 §501. No blanket Part II obligation is added.
+
+**Real-audit verification:** Resolve or verify these specific points: Commercial-product dedication is described at a high level, without the detailed acceptance route. Manual 8.4.3 describes conformity evidence before/after installation, which does not clearly secure required evidence before installation or use for safety-related hardware.
+
+**Score-support evidence:** [CRUMB-DOC-0021-APP_B_VII-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_VII-0010) [CRUMB-DOC-0021-APP_B_VII-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_VII-0011) [CRUMB-DOC-0021-APP_B_VII-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_VII-0012) [CRUMB-DOC-0024-APP_B_VII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0024-APP_B_VII-0001) [CRUMB-DOC-0024-APP_B_VII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0024-APP_B_VII-0002) [CRUMB-DOC-0024-APP_B_VII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0024-APP_B_VII-0003) [CRUMB-DOC-0025-APP_B_VII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0025-APP_B_VII-0001) [CRUMB-DOC-0025-APP_B_VII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0025-APP_B_VII-0002) [CRUMB-DOC-0025-APP_B_VII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0025-APP_B_VII-0003) [CRUMB-DOC-0025-APP_B_VII-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0025-APP_B_VII-0004) [CRUMB-DOC-0030-APP_B_VII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0030-APP_B_VII-0002) [CRUMB-DOC-0032-APP_B_VII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0001) [CRUMB-DOC-0032-APP_B_VII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0002) [CRUMB-DOC-0032-APP_B_VII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0003) [CRUMB-DOC-0032-APP_B_VII-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0004) [CRUMB-DOC-0032-APP_B_VII-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0005) [CRUMB-DOC-0032-APP_B_VII-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0006) [CRUMB-DOC-0032-APP_B_VII-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0007) [CRUMB-DOC-0032-APP_B_VII-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0008) [CRUMB-DOC-0032-APP_B_VII-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0009) [CRUMB-DOC-0032-APP_B_VII-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0011) [CRUMB-DOC-0032-APP_B_VII-0013](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0013) [CRUMB-DOC-0032-APP_B_VII-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0014) [CRUMB-DOC-0032-APP_B_VII-0015](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VII-0015)
+
+### VIII — Identification and Control of Materials, Parts, and Components
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: conditional and kept in scope. The evidence does not yet prove that Ekonerg fabricates or installs traceable physical items; confirm per contract or project before any future N/A decision.
+
+**Summary:** Manual 8.5.3 links engineering work to work-order and document identifiers; Dodatak 1 §8 requires nuclear marking and traceability planning. The service process is a substantial match. Written hardware safeguards for split items, damaged marks and shelf-life expiry need clarification where that work is undertaken.
+
+**Affirmative:** Manual 8.5.3 maintains project and study identity through work-order and document identifiers. Sections 8.5.4-8.5.5 control customer property and preservation. Dodatak 1 §8 requires a nuclear document defining traceability methods, special requirements and marking authority.
+
+**Contrary / limitation:** The process is clear for engineering deliverables. The generic nuclear hardware rules do not clearly cover identity transfer on subdivision, replacement of damaged storage marks, or limited-life item expiry under NQA-1 Requirement 8 §§202 and 302-303.
+
+**Judgment:** Substantially matched, 4/5. The stated engineering-service scope has a meaningful identity and traceability process. The remaining gap concerns the generic hardware safeguards, not the absence of a completed job-specific marking record.
+
+**Real-audit verification:** Resolve or verify these specific points: The process is clear for engineering deliverables. The generic nuclear hardware rules do not clearly cover identity transfer on subdivision, replacement of damaged storage marks, or limited-life item expiry under NQA-1 Requirement 8 §§202 and 302-303.
+
+**Score-support evidence:** [CRUMB-DOC-0032-APP_B_VIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VIII-0001) [CRUMB-DOC-0032-APP_B_VIII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VIII-0002) [CRUMB-DOC-0032-APP_B_VIII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VIII-0003) [CRUMB-DOC-0032-APP_B_VIII-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VIII-0004) [CRUMB-DOC-0032-APP_B_VIII-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_VIII-0006)
+
+### IX — Control of Special Processes
+
+**partially — 50/100; 3/5**
+
+Applicability: applicable.
+Owner-approved G2: conditional and kept in scope. The evidence does not yet show Ekonerg special processes; confirm whether any project invokes one before any future N/A decision.
+
+**Summary:** Manual 8.5.2 requires special-process validation and supervision, and Prilog 5 identifies NDT methods. The reviewed documents do not show a complete method-specific qualification and current-qualification control route. This is a partial match; request the relevant RVT/RPT/RMT/RUT methods and qualification rules in the real audit.
+
+**Affirmative:** Manual 3 defines qualified procedures and special processes; 8.5.2 commits to validation and supervision of such work. PQ7.5-4 §3.1 requires personnel/equipment qualifications and technical criteria in work procedures. Prilog 5 lists RVT, RPT, RMT and RUT methods.
+
+**Contrary / limitation:** The generic template and procedure titles do not establish the actual special-process qualification method. The supplied set does not show how a specific NDT method is demonstrated fit for purpose, how its parameters/acceptance limits are approved, and how current process, equipment and personnel qualifications are maintained.
+
+**Judgment:** Partially matched, 3/5. The policy and procedural framework are present, but method-specific qualification controls remain weakly evidenced against NQA-1 Requirement 9 §§201-203 and 400. Coatings, concrete, epoxy and non-metal testing are scope questions, not assumed Ekonerg activities.
+
+**Real-audit verification:** Resolve or verify these specific points: The generic template and procedure titles do not establish the actual special-process qualification method. The supplied set does not show how a specific NDT method is demonstrated fit for purpose, how its parameters/acceptance limits are approved, and how current process, equipment and personnel qualifications are maintained.
+
+**Score-support evidence:** [CRUMB-DOC-0032-APP_B_IX-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IX-0001) [CRUMB-DOC-0032-APP_B_IX-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IX-0002) [CRUMB-DOC-0032-APP_B_IX-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_IX-0003)
+
+### X — Inspection
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Control procedures, internal checks, supplier checks, and design-work verification require inspection or review activities.
+
+**Summary:** Manual 9.1.4 and PQ8.6 define planned independent checks, records, release and reinspection; witness and hold points are required. Prior recorded approval for waiving a hold point is not clearly prescribed. The inspection process is a substantial match.
+
+**Affirmative:** Manual 8.6 and 9.1.4 require documented checks, acceptance, witness/hold points and indirect monitoring when inspection is unsuitable. PQ8.6 §§3.2-3.7 assigns competent independent checking and record duties; repaired work is verified again.
+
+**Contrary / limitation:** The hold-point planning rule does not clearly require recorded consent before a hold point is waived, as NQA-1 Requirement 10 §300 requires. The real audit should also confirm exclusion of both the performer and direct supervisor from acceptance inspections.
+
+**Judgment:** Substantially matched, 4/5. Inspection planning, independence, records and reinspection are defined. The written hold-point waiver safeguard needs clarification; lack of a completed inspection report alone is not the reason for the rating.
+
+**Real-audit verification:** Resolve or verify these specific points: The hold-point planning rule does not clearly require recorded consent before a hold point is waived, as NQA-1 Requirement 10 §300 requires. The real audit should also confirm exclusion of both the performer and direct supervisor from acceptance inspections.
+
+**Score-support evidence:** [CRUMB-DOC-0015-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0015-APP_B_X-0001) [CRUMB-DOC-0016-APP_B_X-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_X-0007) [CRUMB-DOC-0022-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_X-0001) [CRUMB-DOC-0022-APP_B_X-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_X-0002) [CRUMB-DOC-0023-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0023-APP_B_X-0001) [CRUMB-DOC-0024-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0024-APP_B_X-0001) [CRUMB-DOC-0026-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0026-APP_B_X-0001) [CRUMB-DOC-0026-APP_B_X-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0026-APP_B_X-0002) [CRUMB-DOC-0027-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_X-0001) [CRUMB-DOC-0028-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0028-APP_B_X-0001) [CRUMB-DOC-0032-APP_B_X-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0001) [CRUMB-DOC-0032-APP_B_X-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0002) [CRUMB-DOC-0032-APP_B_X-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0003) [CRUMB-DOC-0032-APP_B_X-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0004) [CRUMB-DOC-0032-APP_B_X-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0005) [CRUMB-DOC-0032-APP_B_X-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0006) [CRUMB-DOC-0032-APP_B_X-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0007) [CRUMB-DOC-0032-APP_B_X-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0008) [CRUMB-DOC-0032-APP_B_X-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0009) [CRUMB-DOC-0032-APP_B_X-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0010) [CRUMB-DOC-0032-APP_B_X-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0011) [CRUMB-DOC-0032-APP_B_X-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0012) [CRUMB-DOC-0032-APP_B_X-0015](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_X-0015)
+
+### XI — Test Control
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: conditional and kept in scope. Testing is listed among Ekonerg activity types; confirm the applicable test program and acceptance limits for each project.
+
+**Summary:** Manual 9.1.4 defines customer test programs, acceptance criteria, conditions, records and result evaluation; shared instruction and equipment rules supply prerequisites. Software-method references and detailed nuclear test-record fields remain unclear. The written testing process is a substantial match.
+
+**Affirmative:** Manual 9.1.4 requires customer testing to have a program, written requirements, acceptance criteria, suitable conditions, records and result evaluation. Manual 7.5.1, PQ7.5-4 §3.1 and 7.1.5 provide prerequisites, qualified staff/equipment and calibration controls. Software verification is tied to defined change/use triggers.
+
+**Contrary / limitation:** The software-control procedure reference conflicts with Prilog 5, and the full verification method is not supplied. The nuclear test-record content is not clearly specified to the detail of NQA-1 Requirement 11 §601, including deviations and the person evaluating results.
+
+**Judgment:** Substantially matched, 4/5. The written customer-testing process has the core test-control duties. Software-method identification and test-record detail need clarification. The manual's no-own-product-testing statement is preserved and does not cancel customer-testing duties.
+
+**Real-audit verification:** Resolve or verify these specific points: The software-control procedure reference conflicts with Prilog 5, and the full verification method is not supplied. The nuclear test-record content is not clearly specified to the detail of NQA-1 Requirement 11 §601, including deviations and the person evaluating results.
+
+**Score-support evidence:** [CRUMB-DOC-0032-APP_B_XI-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XI-0003) [CRUMB-DOC-0032-APP_B_XI-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XI-0004) [CRUMB-DOC-0032-APP_B_XI-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XI-0005) [CRUMB-DOC-0032-APP_B_XI-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XI-0012)
+
+### XII — Control of Measuring and Test Equipment
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: conditional and kept in scope. Ekonerg controls measuring equipment; confirm its use in a covered safety-related activity.
+
+**Summary:** Manual 7.1.5 and PQ7.1-2 define calibration intervals, responsible owners, records and removal of overdue equipment. The written rule for tracing use and checking earlier results after equipment failure is incomplete. Equipment control is a substantial match; confirm that look-back process in the real audit.
+
+**Affirmative:** Manual 7.1.5 and PQ7.1-2 §§2-3 require equipment identification, periodic checks/calibration, assigned owners, status evidence and records. Overdue equipment is marked and removed from use; repeatedly faulty equipment is repaired or replaced. Commercial devices may be exempt only when they give the required precision.
+
+**Contrary / limitation:** The supplied procedure does not clearly require tracing equipment to its use and evaluating prior results back to the last acceptable calibration when equipment is lost, damaged or out of calibration. These are written-control gaps under NQA-1 Requirement 12 §§303.1-303.2.
+
+**Judgment:** Substantially matched, 4/5. Calibration, ownership, status and exclusion duties are substantive. Use traceability and the look-back check need clearer instructions. The qualified commercial-device exception is consistent in intent with Requirement 12 §304 and is not treated as a failure.
+
+**Real-audit verification:** Resolve or verify these specific points: The supplied procedure does not clearly require tracing equipment to its use and evaluating prior results back to the last acceptable calibration when equipment is lost, damaged or out of calibration. These are written-control gaps under NQA-1 Requirement 12 §§303.1-303.2.
+
+**Score-support evidence:** [CRUMB-DOC-0010-APP_B_XII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0010-APP_B_XII-0001) [CRUMB-DOC-0010-APP_B_XII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0010-APP_B_XII-0002) [CRUMB-DOC-0010-APP_B_XII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0010-APP_B_XII-0003) [CRUMB-DOC-0032-APP_B_XII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XII-0002) [CRUMB-DOC-0032-APP_B_XII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XII-0003) [CRUMB-DOC-0032-APP_B_XII-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XII-0004)
+
+### XIII — Handling, Storage, and Shipping
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: conditional and kept in scope. Document and record storage is evidenced; confirm whether handling, storage, or shipping of physical items is required.
+
+**Summary:** Manual 8.5.5 controls handling, storage, cleaning, packaging and shipment, with special marking, condition checks and trained handlers. It does not clearly prescribe pre-use or periodic checks of special handling tools. The preservation process is a substantial match for the stated scope.
+
+**Affirmative:** Manual 8.5.5 requires controlled handling, storage, cleaning, packaging, preservation and shipment to prevent damage, loss and deterioration. Sensitive items are marked and their conditions checked; project plans define special protection and handler competence.
+
+**Contrary / limitation:** The general preservation process is substantive. For special handling tools, the supplied rule does not clearly prescribe inspection/testing before use or at defined intervals, as NQA-1 Requirement 13 §400 requires when such tools are needed.
+
+**Judgment:** Substantially matched, 4/5. Written preservation and special-condition controls cover the main duty. The special handling-tool check needs clarification only where that equipment is used; no unsupported claim about Ekonerg operating a warehouse or crane is made.
+
+**Real-audit verification:** Resolve or verify these specific points: The general preservation process is substantive. For special handling tools, the supplied rule does not clearly prescribe inspection/testing before use or at defined intervals, as NQA-1 Requirement 13 §400 requires when such tools are needed.
+
+**Score-support evidence:** [CRUMB-DOC-0032-APP_B_XIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIII-0001) [CRUMB-DOC-0032-APP_B_XIII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIII-0002) [CRUMB-DOC-0032-APP_B_XIII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIII-0003) [CRUMB-DOC-0032-APP_B_XIII-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIII-0004) [CRUMB-DOC-0032-APP_B_XIII-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIII-0005)
+
+### XIV — Inspection, Test, and Operating Status
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: conditional and kept in scope. Confirm whether a contract requires item or system operating-status marking.
+
+**Summary:** Manual 8.6 and 9.1.4 require accepted work and authorized release, and Dodatak 1 §14 requires nuclear status planning. Authority to remove status marks and safeguards against operating-status bypass are not clear. The documented status-control process is a substantial match.
+
+**Affirmative:** Manual 8.6 and 9.1.4 require acceptance evidence and an authorized release before delivery; nonconforming release requires special approval. Calibration status is marked and overdue equipment excluded. Dodatak 1 §14 requires a nuclear status document with a method, traceability and marking authority.
+
+**Contrary / limitation:** The service-release process is clear. The generic nuclear status rule does not clearly prescribe who may remove status marks and how an unsafe operating status or bypass is prevented under NQA-1 Requirement 14 §100.
+
+**Judgment:** Substantially matched, 4/5. Written service acceptance and release controls are present, along with nuclear status planning. The remaining concern is the generic status-removal/operating safeguard, not a demand for completed plant tag records from an engineering-service supplier.
+
+**Real-audit verification:** Resolve or verify these specific points: The service-release process is clear. The generic nuclear status rule does not clearly prescribe who may remove status marks and how an unsafe operating status or bypass is prevented under NQA-1 Requirement 14 §100.
+
+**Score-support evidence:** [CRUMB-DOC-0032-APP_B_XIV-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIV-0001) [CRUMB-DOC-0032-APP_B_XIV-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIV-0002) [CRUMB-DOC-0032-APP_B_XIV-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIV-0003) [CRUMB-DOC-0032-APP_B_XIV-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XIV-0004)
+
+### XV — Nonconforming Materials, Parts, or Components
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Ekonerg has a procedure for deviations and nonconformances in Ekonerg and supplier activities.
+
+**Summary:** Manual 8.7 and PQ10.2-1 control reporting, segregation, disposition, approval and re-verification; design changes follow original design controls. A mandatory technical justification and matching as-built record for repair/use-as-is are not clear. Nonconformance control is a substantial match; Part 21 reporting is a separate follow-up.
+
+**Affirmative:** Manual 8.7 and PQ10.2-1 §§2-3 define immediate reporting, marking/segregation or other safeguards, evaluation, approved disposition, prevention of use and verified completion. PQ8.3-1 §3.5 applies original design controls to changes caused by a nonconformance.
+
+**Contrary / limitation:** Use-as-is or repair decisions do not clearly require a documented technical justification and matching as-built records as specified by NQA-1 Requirement 15 §404. Customer consent and QA approval are meaningful, but do not by themselves supply that technical basis. Part 21 reporting remains a separate unresolved follow-up.
+
+**Judgment:** Substantially matched, 4/5. The written prevention, disposition and re-verification process is substantial. Technical justification and as-built treatment for repair/use-as-is need clarification. This rating covers Appendix B XV, not a finding of full Part 21 compliance.
+
+**Real-audit verification:** Resolve or verify these specific points: Use-as-is or repair decisions do not clearly require a documented technical justification and matching as-built records as specified by NQA-1 Requirement 15 §404. Customer consent and QA approval are meaningful, but do not by themselves supply that technical basis. Part 21 reporting remains a separate unresolved follow-up.
+
+**Score-support evidence:** [CRUMB-DOC-0020-APP_B_XV-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_XV-0001) [CRUMB-DOC-0029-APP_B_XV-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0029-APP_B_XV-0001) [CRUMB-DOC-0029-APP_B_XV-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0029-APP_B_XV-0002) [CRUMB-DOC-0032-APP_B_XV-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0001) [CRUMB-DOC-0032-APP_B_XV-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0002) [CRUMB-DOC-0032-APP_B_XV-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0003) [CRUMB-DOC-0032-APP_B_XV-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0004) [CRUMB-DOC-0032-APP_B_XV-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0005) [CRUMB-DOC-0032-APP_B_XV-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0006) [CRUMB-DOC-0032-APP_B_XV-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0007) [CRUMB-DOC-0032-APP_B_XV-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0008) [CRUMB-DOC-0032-APP_B_XV-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XV-0010)
+
+### XVI — Corrective Action
+
+**fully — 100/100; 5/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Corrective-action, nonconformance, and Part 21 reporting controls are explicitly documented.
+
+**Summary:** Manual 8.7, 9.2 and 10.2 plus PQ10.2-2 require prompt correction, significant-condition cause analysis, recurrence prevention, records, management reporting and verified completion. The written corrective-action process is fully matched. Part 21 reporting remains applicable and unresolved, outside XVI's Appendix B score.
+
+**Affirmative:** Manual 8.7, 9.2, 10.2 and Prilog 2 require prompt action, significant/repeated cause review, recurrence prevention, records, management reports and verified completion/effectiveness. PQ10.2-2 §§2.2, 2.5, 2.7 and 3.1-3.8 assign approval, follow-up, reopening and reporting duties.
+
+**Contrary / limitation:** No missing Appendix B XVI written corrective-action duty is identified. The real audit must sample timely and effective completion. Part 21 remains applicable: the reporting route beyond the customer notification described in PQ10.2-1 §3.11 remains unresolved, and is not included in XVI's Appendix B score.
+
+**Judgment:** Fully matched for documentation, 5/5. The written controls cover Appendix B XVI and NQA-1 Requirement 16 §100. Part 21 reporting is outside this criterion's score and remains unresolved; full here does not mean full Part 21 compliance or verified execution.
+
+**Real-audit verification:** Resolve or verify these specific points: No missing Appendix B XVI written corrective-action duty is identified. The real audit must sample timely and effective completion. Part 21 remains applicable: the reporting route beyond the customer notification described in PQ10.2-1 §3.11 remains unresolved, and is not included in XVI's Appendix B score.
+
+**Score-support evidence:** [CRUMB-DOC-0020-APP_B_XVI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_XVI-0001) [CRUMB-DOC-0020-APP_B_XVI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_XVI-0002) [CRUMB-DOC-0027-APP_B_XVI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_XVI-0001) [CRUMB-DOC-0027-APP_B_XVI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_XVI-0002) [CRUMB-DOC-0028-APP_B_XVI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0028-APP_B_XVI-0001) [CRUMB-DOC-0029-APP_B_XVI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0029-APP_B_XVI-0001) [CRUMB-DOC-0029-APP_B_XVI-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0029-APP_B_XVI-0002) [CRUMB-DOC-0029-APP_B_XVI-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0029-APP_B_XVI-0003) [CRUMB-DOC-0029-APP_B_XVI-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0029-APP_B_XVI-0004) [CRUMB-DOC-0030-APP_B_XVI-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0030-APP_B_XVI-0004) [CRUMB-DOC-0030-APP_B_XVI-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0030-APP_B_XVI-0005) [CRUMB-DOC-0030-APP_B_XVI-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0030-APP_B_XVI-0006) [CRUMB-DOC-0032-APP_B_XVI-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0001) [CRUMB-DOC-0032-APP_B_XVI-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0003) [CRUMB-DOC-0032-APP_B_XVI-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0004) [CRUMB-DOC-0032-APP_B_XVI-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0005) [CRUMB-DOC-0032-APP_B_XVI-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0006) [CRUMB-DOC-0032-APP_B_XVI-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0007) [CRUMB-DOC-0032-APP_B_XVI-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0008) [CRUMB-DOC-0032-APP_B_XVI-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0009) [CRUMB-DOC-0032-APP_B_XVI-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0010) [CRUMB-DOC-0032-APP_B_XVI-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0011) [CRUMB-DOC-0032-APP_B_XVI-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0012) [CRUMB-DOC-0032-APP_B_XVI-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0014) [CRUMB-DOC-0032-APP_B_XVI-0016](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVI-0016)
+
+### XVII — Quality Assurance Records
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Quality records, project records, and corrective-action records have defined control or retention evidence.
+
+**Summary:** PQ7.5-7 defines record identity, approval, retention, lifetime nuclear records and five-year media copying; the manual requires remote server copies. Conflicting backup references and incomplete access/technology-change retrieval rules leave a written gap. Record control is a substantial match.
+
+**Affirmative:** Manual 7.5.4, PQ7.5-7 §§3.1-3.8 and Prilog B define record identity, review, responsibility, retention and lifetime nuclear records. Electronic media are checked/copied within five years; Dodatak 1 §17 describes a central archive, a server and a remote parallel server.
+
+**Contrary / limitation:** The backup method is cited as RSP-03 while Prilog 5 lists ROS-04. The supplied storage rules do not fully define protection/access and continued retrieval through hardware/software changes under NQA-1 Requirement 17 §§601 and 800. Five-year copying and remote storage are credited, not ignored.
+
+**Judgment:** Substantially matched, 4/5. Identification, retention, responsibility and physical/electronic preservation are substantive. The backup reference and long-term access/retrieval safeguards need clearer controlled instructions.
+
+**Real-audit verification:** Resolve or verify these specific points: The backup method is cited as RSP-03 while Prilog 5 lists ROS-04. The supplied storage rules do not fully define protection/access and continued retrieval through hardware/software changes under NQA-1 Requirement 17 §§601 and 800. Five-year copying and remote storage are credited, not ignored.
+
+**Score-support evidence:** [CRUMB-DOC-0008-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0008-APP_B_XVII-0001) [CRUMB-DOC-0009-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0009-APP_B_XVII-0001) [CRUMB-DOC-0009-APP_B_XVII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0009-APP_B_XVII-0002) [CRUMB-DOC-0010-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0010-APP_B_XVII-0001) [CRUMB-DOC-0011-APP_B_XVII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0011-APP_B_XVII-0003) [CRUMB-DOC-0012-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0012-APP_B_XVII-0001) [CRUMB-DOC-0013-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0013-APP_B_XVII-0001) [CRUMB-DOC-0014-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0014-APP_B_XVII-0001) [CRUMB-DOC-0015-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0015-APP_B_XVII-0001) [CRUMB-DOC-0016-APP_B_XVII-0037](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_XVII-0037) [CRUMB-DOC-0016-APP_B_XVII-0038](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_XVII-0038) [CRUMB-DOC-0016-APP_B_XVII-0039](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_XVII-0039) [CRUMB-DOC-0016-APP_B_XVII-0040](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_XVII-0040) [CRUMB-DOC-0016-APP_B_XVII-0041](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_XVII-0041) [CRUMB-DOC-0016-APP_B_XVII-0042](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0016-APP_B_XVII-0042) [CRUMB-DOC-0018-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0018-APP_B_XVII-0001) [CRUMB-DOC-0019-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0019-APP_B_XVII-0001) [CRUMB-DOC-0020-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_XVII-0001) [CRUMB-DOC-0020-APP_B_XVII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_XVII-0002) [CRUMB-DOC-0020-APP_B_XVII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0020-APP_B_XVII-0003) [CRUMB-DOC-0021-APP_B_XVII-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_XVII-0007) [CRUMB-DOC-0021-APP_B_XVII-0008](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0021-APP_B_XVII-0008) [CRUMB-DOC-0022-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0022-APP_B_XVII-0001) [CRUMB-DOC-0023-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0023-APP_B_XVII-0001) [CRUMB-DOC-0024-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0024-APP_B_XVII-0001) [CRUMB-DOC-0025-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0025-APP_B_XVII-0001) [CRUMB-DOC-0026-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0026-APP_B_XVII-0001) [CRUMB-DOC-0027-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_XVII-0001) [CRUMB-DOC-0027-APP_B_XVII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_XVII-0002) [CRUMB-DOC-0028-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0028-APP_B_XVII-0001) [CRUMB-DOC-0029-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0029-APP_B_XVII-0001) [CRUMB-DOC-0030-APP_B_XVII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0030-APP_B_XVII-0002) [CRUMB-DOC-0032-APP_B_XVII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0001) [CRUMB-DOC-0032-APP_B_XVII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0002) [CRUMB-DOC-0032-APP_B_XVII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0003) [CRUMB-DOC-0032-APP_B_XVII-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0004) [CRUMB-DOC-0032-APP_B_XVII-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0005) [CRUMB-DOC-0032-APP_B_XVII-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0007) [CRUMB-DOC-0032-APP_B_XVII-0009](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0009) [CRUMB-DOC-0032-APP_B_XVII-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0010) [CRUMB-DOC-0032-APP_B_XVII-0011](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0011) [CRUMB-DOC-0032-APP_B_XVII-0012](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0012) [CRUMB-DOC-0032-APP_B_XVII-0013](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0013) [CRUMB-DOC-0032-APP_B_XVII-0014](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0014) [CRUMB-DOC-0032-APP_B_XVII-0015](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0015) [CRUMB-DOC-0032-APP_B_XVII-0018](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVII-0018)
+
+### XVIII — Audits
+
+**substantially — 75/100; 4/5**
+
+Applicability: applicable.
+Owner-approved G2: applicable. Ekonerg documents internal checks, management review, reporting, and follow-up activities.
+
+**Summary:** Manual 9.2 and PQ9.2 define planned independent audits, qualified nuclear auditors, reports and verified follow-up. Supplier reviews occur after work and audits at least every three years. The annual or formally reviewed ongoing evaluation between nuclear supplier audits is not clear, so this is a substantial match.
+
+**Affirmative:** Manual 9.2 and PQ9.2 §§3.2-3.8 require planned and extra audits, independent trained auditors, checklists, reports to management, responses and verified follow-up. Nuclear lead-auditor qualification includes five audits in three years with a recent nuclear audit, continuing participation and an annual-evaluation form.
+
+**Contrary / limitation:** PQ8.4-3 §3.8 reviews supplier performance after engagements and PQ9.2 §3.2 prescribes triennial nuclear supplier audits. A required annual evaluation, or a formally reviewed ongoing alternative, between supplier audits is not clearly set out for all approved nuclear suppliers under NQA-1 Requirement 18 §202.
+
+**Judgment:** Substantially matched, 4/5. The audit process and nuclear auditor qualification duties are substantive. The supplier performance-review interval needs clarification. Completed audit records are real-audit samples, not a prerequisite for crediting this written process.
+
+**Real-audit verification:** Resolve or verify these specific points: PQ8.4-3 §3.8 reviews supplier performance after engagements and PQ9.2 §3.2 prescribes triennial nuclear supplier audits. A required annual evaluation, or a formally reviewed ongoing alternative, between supplier audits is not clearly set out for all approved nuclear suppliers under NQA-1 Requirement 18 §202.
+
+**Score-support evidence:** [CRUMB-DOC-0008-APP_B_XVIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0008-APP_B_XVIII-0001) [CRUMB-DOC-0009-APP_B_XVIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0009-APP_B_XVIII-0001) [CRUMB-DOC-0014-APP_B_XVIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0014-APP_B_XVIII-0001) [CRUMB-DOC-0025-APP_B_XVIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0025-APP_B_XVIII-0001) [CRUMB-DOC-0027-APP_B_XVIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_XVIII-0001) [CRUMB-DOC-0027-APP_B_XVIII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_XVIII-0002) [CRUMB-DOC-0027-APP_B_XVIII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0027-APP_B_XVIII-0003) [CRUMB-DOC-0028-APP_B_XVIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0028-APP_B_XVIII-0001) [CRUMB-DOC-0032-APP_B_XVIII-0001](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0001) [CRUMB-DOC-0032-APP_B_XVIII-0002](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0002) [CRUMB-DOC-0032-APP_B_XVIII-0003](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0003) [CRUMB-DOC-0032-APP_B_XVIII-0004](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0004) [CRUMB-DOC-0032-APP_B_XVIII-0005](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0005) [CRUMB-DOC-0032-APP_B_XVIII-0006](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0006) [CRUMB-DOC-0032-APP_B_XVIII-0007](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0007) [CRUMB-DOC-0032-APP_B_XVIII-0010](ekonerg_appendix_b_dashboard.html#crumb:CRUMB-DOC-0032-APP_B_XVIII-0010)
+
+## Evidence matrix
+
+| Criterion | Score | Linked controls |
+|---|---:|---:|
+| [I](ekonerg_appendix_b_dashboard.html#criterion:I) | 75 | 52 |
+| [II](ekonerg_appendix_b_dashboard.html#criterion:II) | 75 | 47 |
+| [III](ekonerg_appendix_b_dashboard.html#criterion:III) | 75 | 34 |
+| [IV](ekonerg_appendix_b_dashboard.html#criterion:IV) | 100 | 11 |
+| [V](ekonerg_appendix_b_dashboard.html#criterion:V) | 100 | 22 |
+| [VI](ekonerg_appendix_b_dashboard.html#criterion:VI) | 75 | 40 |
+| [VII](ekonerg_appendix_b_dashboard.html#criterion:VII) | 75 | 24 |
+| [VIII](ekonerg_appendix_b_dashboard.html#criterion:VIII) | 75 | 5 |
+| [IX](ekonerg_appendix_b_dashboard.html#criterion:IX) | 50 | 3 |
+| [X](ekonerg_appendix_b_dashboard.html#criterion:X) | 75 | 23 |
+| [XI](ekonerg_appendix_b_dashboard.html#criterion:XI) | 75 | 4 |
+| [XII](ekonerg_appendix_b_dashboard.html#criterion:XII) | 75 | 6 |
+| [XIII](ekonerg_appendix_b_dashboard.html#criterion:XIII) | 75 | 5 |
+| [XIV](ekonerg_appendix_b_dashboard.html#criterion:XIV) | 75 | 4 |
+| [XV](ekonerg_appendix_b_dashboard.html#criterion:XV) | 75 | 12 |
+| [XVI](ekonerg_appendix_b_dashboard.html#criterion:XVI) | 100 | 25 |
+| [XVII](ekonerg_appendix_b_dashboard.html#criterion:XVII) | 75 | 46 |
+| [XVIII](ekonerg_appendix_b_dashboard.html#criterion:XVIII) | 75 | 16 |
+
+## Findings and follow-up
+
+No formal finding rows are recorded.
+The criterion limitations and verification text above are existing documentary follow-up guidance, not newly approved finding/action database rows.
+
+## Limitations and release status
+
+Formal G4–G6 records remain as recorded in project-state.yml. This candidate does not advance a phase, certify implementation, or close real-audit actions. Every linked crumb opens its verbatim quotations and full linked source chapters.
