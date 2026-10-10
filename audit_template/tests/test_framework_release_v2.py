@@ -116,13 +116,41 @@ def test_template_neutral_and_preserves_interactions():
 @pytest.mark.parametrize('company,run_id,count,score', [
     ('Enconet','RUN-20260728-01',234,87.5),
     ('Ekonerg','RUN-20261003-32',475,77.8)])
-def test_existing_audits_read_only(company, run_id, count, score):
+def test_existing_audits_read_only(company, run_id, count, score, tmp_path):
     # Regression against existing evidence, opened with SQLite mode=ro.
     script = TEMPLATE / 'runtime_v2/build_vendor_dashboard.py'
     spec = importlib.util.spec_from_file_location('portable_dashboard', script)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    data = module.dataset(TEMPLATE.parent / company, run_id)
+    project = TEMPLATE.parent / company
+    if company == 'Enconet':
+        # This is a fixed historical characterization, not a query against the
+        # new audit created after the owner-approved reset. Preserve every
+        # expected assertion and use the genuine checksum-verified old DB.
+        history_path = TEMPLATE.parent/'Enconet/scripts/regression_fixture.py'
+        history_spec = importlib.util.spec_from_file_location('v2_history_fixture',history_path)
+        history = importlib.util.module_from_spec(history_spec)
+        history_spec.loader.exec_module(history)
+        history.validate_archive()
+        from zipfile import ZipFile
+        project = tmp_path/'Enconet-history'
+        (project/'db').mkdir(parents=True)
+        with ZipFile(history.ARCHIVE) as archive:
+            (project/'db/nqa_audit.sqlite').write_bytes(archive.read('db/nqa_audit.sqlite'))
+            for relative in archive.namelist():
+                if relative.startswith('raw/'):
+                    target = (project/relative).resolve()
+                    assert target.is_relative_to(project.resolve())
+                    target.parent.mkdir(parents=True,exist_ok=True)
+                    target.write_bytes(archive.read(relative))
+            (project/'schemas').mkdir()
+            # Reset archives data, not preserved framework files. Retrieve the
+            # genuine matching model from the v2 build's pinned pre-reset Git tip.
+            model = subprocess.check_output(['git','show',
+                'c3baa9e2d7c82e2c39ebfad822776266c8ebf183:Enconet/schemas/scoring_model.yml'],
+                cwd=TEMPLATE.parent)
+            (project/'schemas/scoring_model.yml').write_bytes(model)
+    data = module.dataset(project, run_id)
     assert data['vendor_total'] == count
     assert data['score'] == score
     assert len(data['data']) == 18

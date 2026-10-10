@@ -5,6 +5,22 @@ Implementer: Codex
 Reviewer: Claude  
 Owner: approves deployment, sources, scope and required audit gates
 
+## Update — 10 October 2026
+
+- [x] One updated clean release **v3 / 3.0.0** prepared in `audit_template/framework/v3/`.
+- [x] Current report/evidence delivery, light/dark styling and Windows publication fixes included.
+- [x] Fresh setup and full synthetic audit pipeline tested with spaces/non-ASCII names, with and without sibling projects.
+- [x] v2 kept immutable; no real vendor documents, databases, approvals or outputs changed.
+- [x] Enconet's owner-approved re-audit, report, light dashboard and separate dark copy are now complete.
+- [ ] Claude completes deferred technical review and its own infrastructure synchronization.
+- [ ] Existing six v2 vendor folders receive a separately controlled upgrade; no overwrite is inferred from preparing this release.
+- [ ] Future vendors provide documents and local source/scope decisions before audit processing.
+
+Use `--release v3` for a fresh project. See
+[release record](doc/framework-reuse/RELEASE_V3_20261010.md).
+The earlier v2 rollout below remains its historical baseline; unchecked Enconet
+re-audit preparation entries there no longer mean that processing is unfinished.
+
 ## Goal
 
 Start the next company audit from one tested framework. Copy tools and methods,

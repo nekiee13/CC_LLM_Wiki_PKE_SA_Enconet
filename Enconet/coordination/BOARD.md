@@ -131,6 +131,7 @@ and ADRs are the records.
 - `EPIC9-ARCHIVE` — codex, released 2026-07-13T00:45:50Z
 - `EPIC9-LIVE` — codex, released 2026-07-13T00:42:34Z
 - `EVIDENCE-ACCESS-TDD-PLAN` — codex, released 2026-09-03T15:39:42Z
+- `FRAMEWORK-RELEASE-V3` — codex, released 2026-10-10T12:33:19Z
 - `FRAMEWORK-REUSE-20261007` — codex, released 2026-10-07T10:14:16Z
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
@@ -358,10 +359,11 @@ and ADRs are the records.
 - `CX_2026-10-10T020838Z_enconet-published-owner-review-deferred` — review_request, codex -> claude-code: ENCONET-FIRST-PUBLICATION
 - `CX_2026-10-10T074131Z_enconet-published-permissions-fixed` — review_request, codex -> claude-code: ENCONET-PUBLICATION-ACL
 - `CX_2026-10-10T082354Z_enconet-dark-dashboard-ready` — review_request, codex -> claude-code: ENCONET-DARK-DASHBOARD
+- `CX_2026-10-10T123319Z_reusable-framework-v3-ready` — review_request, codex -> claude-code: FRAMEWORK-RELEASE-V3
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-10T082842Z-1a33754.md`](../handoffs/2026-10-10T082842Z-1a33754.md)
+- Authoritative record: [`handoffs/2026-10-10T124905Z-e8bad97.md`](../handoffs/2026-10-10T124905Z-e8bad97.md)
 - Archive: 759 records in `coordination/archive/`
 
-Generated: 2026-10-10T08:31:11Z
+Generated: 2026-10-10T12:51:58Z

@@ -1,0 +1,14 @@
+task: FRAMEWORK-RELEASE-V3
+agent: codex
+status: released
+claimed_at_utc: 2026-10-10T10:14:17Z
+last_renewed_at_utc: 2026-10-10T10:14:17Z
+expires_at_utc: 2026-10-11T10:14:17Z
+anticipated_files:
+  - audit_template/prepare_vendor.py
+  - audit_template/framework_release.py
+  - audit_template/prepare_framework_release_v3.py
+  - audit_template/tests/test_framework_release_v3.py
+  - Transition_template_Plan.md
+note: One new immutable company-neutral release; no live audit or v2 payload changes
+released_at_utc: 2026-10-10T12:33:19Z

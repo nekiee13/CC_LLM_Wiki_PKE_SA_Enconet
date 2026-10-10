@@ -1,5 +1,36 @@
 # Reusable audit release - usage
 
+## Current release: v3 (10 October 2026)
+
+The updated clean release is `framework/v3/`, version **3.0.0**. It includes
+the current documentary report, chapter-linked evidence viewer, portable review
+package, separate light/dark presentations, capacity guards and Windows
+publication-permission fix. It contains tools and methods only: no source
+documents, database, audit result, approval, active prompt or vendor golden set.
+
+The installer CLI now defaults to v3. Use an explicit version for reproducibility:
+
+```powershell
+python audit_template/prepare_vendor.py --release v3 --target "New Vendor" --supplier "New Vendor"
+python audit_template/prepare_vendor.py --release v3 --target "New Vendor" --supplier "New Vendor" --apply --run-id new-vendor-v3-001
+python "New Vendor/scripts/init_db.py"
+```
+
+Preview is read-only. Apply requires owner authorization and a new run ID.
+Existing files that differ are never replaced. The six installed vendor folders
+remain at v2; this release does not overwrite them or any active audit. Do not
+delete files to force an install. A controlled existing-folder upgrade is separate.
+
+Read the installed `docs/FRAMEWORK_METHOD_V3.md`. Configure this company's own
+sources, scope, editions, language, source-authority entries, calibration and
+approval records. No Enconet or Ekonerg decision transfers. Browser tests may
+use an explicitly configured shared runtime through `PLAYWRIGHT_BROWSERS_PATH`.
+There is no sibling-company runtime dependency.
+
+See [v3 release and validation record](../doc/framework-reuse/RELEASE_V3_20261010.md).
+v2 remains immutable and available with `--release v2`. The remaining sections
+below describe its installation and historical component usage.
+
 The clean v2 release supports both known and future vendors. There is no vendor
 allowlist. Each deployed project gets local script copies from the same hashed
 package; runtime does not depend on Ekonerg or Enconet folders.

@@ -1,0 +1,20 @@
+schema_version: '1.0'
+dependency: playwright==1.62.0
+browser:
+  name: chromium
+  distribution: chromium-headless-shell
+  installation_mode: only-shell
+  revision: '1234'
+  version: 151.0.7922.34
+  root: browser-runtime
+  executable_relative: chromium_headless_shell-1234/chrome-headless-shell-win64/chrome-headless-shell.exe
+  install_command: python -m playwright install --only-shell chromium
+navigation:
+  required_scheme: file
+  forbid_network_requests: true
+artifacts:
+  retention: on-failure
+  required:
+  - screenshot.png
+  - dom.html
+  - console.log
