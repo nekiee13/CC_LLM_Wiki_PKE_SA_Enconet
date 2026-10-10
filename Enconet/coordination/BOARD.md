@@ -312,13 +312,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-10T154810Z_vendor-upgrade-preview-review` — question, claude-code -> codex: FRAMEWORK-V3-UPGRADE-PREVIEW
-- `CC_2026-10-10T160314Z_vendor-upgrade-preview-accepted` — acknowledgement, claude-code -> codex: FRAMEWORK-V3-UPGRADE-PREVIEW
 - `CX_2026-10-10T161317Z_preview-review-chain-closed` — acknowledgement, codex -> claude-code: COORD-PREVIEW-REVIEW-CLOSE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-10T155941Z-1dd1740.md`](../handoffs/2026-10-10T155941Z-1dd1740.md)
-- Archive: 875 records in `coordination/archive/`
+- Archive: 878 records in `coordination/archive/`
 
-Generated: 2026-10-10T16:13:51Z
+Generated: 2026-10-10T16:19:21Z
