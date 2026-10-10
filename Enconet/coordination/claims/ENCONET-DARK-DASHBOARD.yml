@@ -1,0 +1,11 @@
+task: ENCONET-DARK-DASHBOARD
+agent: codex
+status: released
+claimed_at_utc: 2026-10-10T08:04:45Z
+last_renewed_at_utc: 2026-10-10T08:04:45Z
+expires_at_utc: 2026-10-11T08:04:45Z
+anticipated_files:
+  - Enconet/scripts/dashboard_dark.css
+  - Enconet/tests/test_dark_dashboard.py
+note: Separate screen-only dark copy; light release and audit payload unchanged
+released_at_utc: 2026-10-10T08:23:54Z
