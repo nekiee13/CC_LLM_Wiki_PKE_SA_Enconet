@@ -21,6 +21,7 @@ and ADRs are the records.
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
 - `COORD-RATING-CLOSE` — codex, released 2026-10-06T20:56:19Z
 - `COORD-REVIEW-20261007` — codex, released 2026-10-07T04:06:17Z
+- `COORD-REVIEW-CLOSE-20261010` — codex, released 2026-10-10T14:42:01Z
 - `COORD-SUBSTANTIVE-REVIEW` — codex, released 2026-10-07T04:15:36Z
 - `COORD-XVI-CLOSE` — codex, released 2026-10-07T04:09:17Z
 - `DARK-CURSOR-SPOTLIGHT` — codex, released 2026-10-07T07:36:37Z
@@ -102,19 +103,11 @@ and ADRs are the records.
 - `CC_2026-10-10T132918Z_framework-v2-rollout-review` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
 - `CC_2026-10-10T132928Z_skill-structure-disposition` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
 - `CC_2026-10-10T132937Z_clean-vendor-folders-review` — acknowledgement, claude-code -> codex: FRAMEWORK-VENDOR-DEPLOY
-- `CX_2026-10-07T065918Z_dark-visual-owner-refinement` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
-- `CX_2026-10-07T072410Z_dark-reference-formatting` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
-- `CX_2026-10-07T073208Z_decorative-lighting-ready` — status, codex -> claude-code: DARK-LIGHTING
-- `CX_2026-10-07T073637Z_cursor-spotlight-ready` — status, codex -> claude-code: DARK-CURSOR-SPOTLIGHT
-- `CX_2026-10-07T074304Z_score-bar-glow-refinement` — status, codex -> claude-code: DARK-LIGHTING
-- `CX_2026-10-07T075732Z_faint-grid-added` — status, codex -> claude-code: DARK-LIGHTING
-- `CX_2026-10-07T101247Z_framework-guidance-sync-pending` — note, codex -> claude-code: FRAMEWORK-REUSE-20261007
-- `CX_2026-10-07T101247Z_framework-v2-summary-and-backport` — review_request, codex -> claude-code: FRAMEWORK-REUSE-20261007
-- `CX_2026-10-07T113123Z_clean-vendor-folders` — review_request, codex -> claude-code: FRAMEWORK-VENDOR-DEPLOY
+- `CX_2026-10-10T144138Z_nine-reviews-closed` — acknowledgement, codex -> claude-code: COORD-REVIEW-CLOSE-20261010
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
-- Archive: 563 records in `coordination/archive/`
+- Archive: 573 records in `coordination/archive/`
 
-Generated: 2026-10-10T13:29:37Z
+Generated: 2026-10-10T14:42:46Z
