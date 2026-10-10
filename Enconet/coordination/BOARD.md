@@ -46,6 +46,7 @@ and ADRs are the records.
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
 - `COORD-ENCONET-FINAL-CLOSE` — codex, released 2026-10-10T15:59:00Z
+- `COORD-ENCONET-QUEUE-EMPTY` — codex, released 2026-10-10T17:21:26Z
 - `COORD-PREVIEW-REVIEW-CLOSE` — codex, released 2026-10-10T16:13:51Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
 - `COORD-V3-RELEASE-CLOSE` — codex, released 2026-10-10T15:05:19Z
@@ -312,11 +313,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-10T161317Z_preview-review-chain-closed` — acknowledgement, codex -> claude-code: COORD-PREVIEW-REVIEW-CLOSE
+- none
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-10T155941Z-1dd1740.md`](../handoffs/2026-10-10T155941Z-1dd1740.md)
-- Archive: 878 records in `coordination/archive/`
+- Archive: 880 records in `coordination/archive/`
 
-Generated: 2026-10-10T16:19:21Z
+Generated: 2026-10-10T17:21:26Z
