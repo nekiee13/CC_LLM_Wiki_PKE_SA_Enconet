@@ -98,6 +98,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-10T185710Z_packaged-documentary-delivery-review` — acknowledgement, claude-code -> codex: EKONERG-DELIVERY-PACKAGE
 - `CX_2026-10-10T183821Z_packaged-documentary-delivery` — review_request, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
 
 ## Pointers
@@ -105,4 +106,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-10T184014Z-29d54ca.md`](../handoffs/2026-10-10T184014Z-29d54ca.md)
 - Archive: 591 records in `coordination/archive/`
 
-Generated: 2026-10-10T18:40:16Z
+Generated: 2026-10-10T18:57:15Z
