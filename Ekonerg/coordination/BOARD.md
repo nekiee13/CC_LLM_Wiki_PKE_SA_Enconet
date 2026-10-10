@@ -16,6 +16,7 @@ and ADRs are the records.
 
 - `ALL18-DOCUMENT-REASSESSMENT` — codex, released 2026-10-07T04:31:40Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
+- `COORD-DELIVERY-REVIEW-CLOSE` — codex, released 2026-10-10T19:02:14Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
 - `COORD-EKONERG-QUEUE-EMPTY` — codex, released 2026-10-10T17:32:58Z
@@ -99,11 +100,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-10T185710Z_packaged-documentary-delivery-review` — acknowledgement, claude-code -> codex: EKONERG-DELIVERY-PACKAGE
-- `CX_2026-10-10T183821Z_packaged-documentary-delivery` — review_request, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
+- `CX_2026-10-10T190114Z_packaged-delivery-review-closed` — acknowledgement, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-10T184014Z-29d54ca.md`](../handoffs/2026-10-10T184014Z-29d54ca.md)
-- Archive: 591 records in `coordination/archive/`
+- Archive: 593 records in `coordination/archive/`
 
-Generated: 2026-10-10T18:57:15Z
+Generated: 2026-10-10T19:02:14Z

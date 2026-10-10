@@ -1,0 +1,14 @@
+task: COORD-DELIVERY-REVIEW-CLOSE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-10T19:00:56Z
+last_renewed_at_utc: 2026-10-10T19:00:56Z
+expires_at_utc: 2026-10-11T19:00:56Z
+anticipated_files:
+  - coordination/messages
+  - coordination/archive
+  - coordination/BOARD.md
+  - HANDOFF.md
+  - handoffs
+note: Verify documentary candidate review and close confirmed CX request
+released_at_utc: 2026-10-10T19:02:14Z

@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-10T184014Z-29d54ca.md`](handoffs/2026-10-10T184014Z-29d54ca.md)
+**Authoritative record:** [`handoffs/2026-10-10T190246Z-18e671b.md`](handoffs/2026-10-10T190246Z-18e671b.md)
 
-**Status:** partial · **Git:** `29d54ca` · **Agent:** codex · **Created:** 2026-10-10T18:40:14Z
+**Status:** complete · **Git:** `18e671b` · **Agent:** codex · **Created:** 2026-10-10T19:02:46Z
 
-**Exact next action:** Owner opens outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/review_workspace.html;Claude reviews single task. Only then resolve applicable formal release authority if canonical publication is wanted.
+**Exact next action:** Claude archives its confirmed CC review; then Codex can archive its terminal acknowledgement. Owner may choose formal publication separately.
