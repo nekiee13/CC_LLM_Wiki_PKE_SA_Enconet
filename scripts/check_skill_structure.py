@@ -34,6 +34,12 @@ from pathlib import Path
 
 AGENT_DIRS = {"claude-code": ".claude", "codex": ".agents"}
 
+# Reserved directory name the Claude Code client itself manages under
+# ~/.claude/skills (a sync cache of built-in skills, keyed by UUID
+# subfolders with their own SKILL.md each). It is not an authored skill
+# and neither agent writes it, so it is not subject to rule 3.
+RESERVED_SKILL_DIR_NAMES = {"synced"}
+
 
 def scan_scope(root: Path) -> dict[str, list[str]]:
     """Return {skill_name: [problems]} for one <...>/skills directory."""
@@ -43,6 +49,8 @@ def scan_scope(root: Path) -> dict[str, list[str]]:
     for entry in sorted(root.iterdir()):
         if not entry.is_dir():
             continue  # stray files next to skill dirs are not skills
+        if entry.name in RESERVED_SKILL_DIR_NAMES:
+            continue  # Claude Code's own sync cache, not an authored skill
         problems = []
         if not (entry / "SKILL.md").is_file():
             problems.append("missing SKILL.md")

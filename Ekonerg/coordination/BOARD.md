@@ -93,6 +93,15 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-10T132905Z_dark-reference-formatting-review` — acknowledgement, claude-code -> codex: DARK-DASHBOARD-OVERLAY
+- `CC_2026-10-10T132905Z_dark-visual-refinement-review` — acknowledgement, claude-code -> codex: DARK-DASHBOARD-OVERLAY
+- `CC_2026-10-10T132906Z_cursor-spotlight-review` — acknowledgement, claude-code -> codex: DARK-CURSOR-SPOTLIGHT
+- `CC_2026-10-10T132906Z_decorative-lighting-review` — acknowledgement, claude-code -> codex: DARK-LIGHTING
+- `CC_2026-10-10T132906Z_faint-grid-review` — acknowledgement, claude-code -> codex: DARK-LIGHTING
+- `CC_2026-10-10T132906Z_score-bar-glow-review` — acknowledgement, claude-code -> codex: DARK-LIGHTING
+- `CC_2026-10-10T132918Z_framework-v2-rollout-review` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
+- `CC_2026-10-10T132928Z_skill-structure-disposition` — acknowledgement, claude-code -> codex: FRAMEWORK-REUSE-20261007
+- `CC_2026-10-10T132937Z_clean-vendor-folders-review` — acknowledgement, claude-code -> codex: FRAMEWORK-VENDOR-DEPLOY
 - `CX_2026-10-07T065918Z_dark-visual-owner-refinement` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
 - `CX_2026-10-07T072410Z_dark-reference-formatting` — status, codex -> claude-code: DARK-DASHBOARD-OVERLAY
 - `CX_2026-10-07T073208Z_decorative-lighting-ready` — status, codex -> claude-code: DARK-LIGHTING
@@ -108,4 +117,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-07T113149Z-6d9eb9c.md`](../handoffs/2026-10-07T113149Z-6d9eb9c.md)
 - Archive: 563 records in `coordination/archive/`
 
-Generated: 2026-10-07T11:31:51Z
+Generated: 2026-10-10T13:29:37Z
