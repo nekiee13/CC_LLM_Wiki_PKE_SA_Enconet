@@ -15,6 +15,7 @@ and ADRs are the records.
 ## Released claims
 
 - `ALL18-DOCUMENT-REASSESSMENT` — codex, released 2026-10-07T04:31:40Z
+- `CLEANUP-PLAN` — codex, released 2026-10-11T22:01:11Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-BOARD-REFRESH-20261010` — codex, released 2026-10-10T21:30:33Z
 - `COORD-DELIVERY-REVIEW-CLOSE` — codex, released 2026-10-10T19:02:14Z
@@ -102,10 +103,11 @@ and ADRs are the records.
 
 - `CC_2026-10-10T185710Z_packaged-documentary-delivery-review` — acknowledgement, claude-code -> codex: EKONERG-DELIVERY-PACKAGE
 - `CX_2026-10-10T190114Z_packaged-delivery-review-closed` — acknowledgement, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
+- `CX_2026-10-11T220111Z_workspace-cleanup-plan` — review_request, codex -> claude-code: CLEANUP-PLAN
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-10T190246Z-18e671b.md`](../handoffs/2026-10-10T190246Z-18e671b.md)
+- Authoritative record: [`handoffs/2026-10-11T220205Z-7c85bbd.md`](../handoffs/2026-10-11T220205Z-7c85bbd.md)
 - Archive: 593 records in `coordination/archive/`
 
-Generated: 2026-10-10T21:30:33Z
+Generated: 2026-10-11T22:02:20Z

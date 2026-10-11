@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-10T190246Z-18e671b.md`](handoffs/2026-10-10T190246Z-18e671b.md)
+**Authoritative record:** [`handoffs/2026-10-11T220205Z-7c85bbd.md`](handoffs/2026-10-11T220205Z-7c85bbd.md)
 
-**Status:** complete · **Git:** `18e671b` · **Agent:** codex · **Created:** 2026-10-10T19:02:46Z
+**Status:** complete · **Git:** `7c85bbd` · **Agent:** codex · **Created:** 2026-10-11T22:02:05Z
 
-**Exact next action:** Claude archives its confirmed CC review; then Codex can archive its terminal acknowledgement. Owner may choose formal publication separately.
+**Exact next action:** Review and confirm proposed layout;execute CU-1.1 inventory and CU-1.2 baseline before any live move.

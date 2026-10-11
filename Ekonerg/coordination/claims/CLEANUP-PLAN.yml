@@ -1,0 +1,13 @@
+task: CLEANUP-PLAN
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T21:55:04Z
+last_renewed_at_utc: 2026-10-11T21:55:04Z
+expires_at_utc: 2026-10-12T21:55:04Z
+anticipated_files:
+  - ../PKE_SA_NQA1_doc/plans/Clean-up_Plan.md
+  - coordination/messages
+  - HANDOFF.md
+  - handoffs
+note: Plan only: unified workspace/vendor layout, safe migration and tests
+released_at_utc: 2026-10-11T22:01:11Z
