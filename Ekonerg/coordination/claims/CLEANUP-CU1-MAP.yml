@@ -1,0 +1,15 @@
+task: CLEANUP-CU1-MAP
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T22:37:31Z
+last_renewed_at_utc: 2026-10-11T22:37:31Z
+expires_at_utc: 2026-10-12T22:37:31Z
+anticipated_files:
+  - ../scripts/compile_cleanup_map.py
+  - ../scripts/tests/test_compile_cleanup_map.py
+  - ../PKE_SA_NQA1_doc/plans/cleanup-cu1/compiled-map
+  - coordination/messages
+  - HANDOFF.md
+  - handoffs
+note: Finish semantic classification and file-level map;Claude review deferred by owner;no apply
+released_at_utc: 2026-10-11T22:48:00Z

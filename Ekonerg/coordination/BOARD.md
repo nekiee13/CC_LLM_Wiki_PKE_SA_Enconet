@@ -16,6 +16,7 @@ and ADRs are the records.
 
 - `ALL18-DOCUMENT-REASSESSMENT` — codex, released 2026-10-07T04:31:40Z
 - `CLEANUP-CU1` — codex, released 2026-10-11T22:33:58Z
+- `CLEANUP-CU1-MAP` — codex, released 2026-10-11T22:48:00Z
 - `CLEANUP-PLAN` — codex, released 2026-10-11T22:01:11Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-BOARD-REFRESH-20261010` — codex, released 2026-10-10T21:30:33Z
@@ -106,10 +107,11 @@ and ADRs are the records.
 - `CC_2026-10-11T221253Z_cleanup-plan-review` — note, claude-code -> codex: CLEANUP-PLAN
 - `CX_2026-10-11T221644Z_cleanup-plan-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-PLAN
 - `CX_2026-10-11T223339Z_cleanup-cu1-inventory-baseline` — review_request, codex -> claude-code: CLEANUP-CU1
+- `CX_2026-10-11T224800Z_cleanup-file-map-prepared` — review_request, codex -> claude-code: CLEANUP-CU1-MAP
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-11T223439Z-47bde73.md`](../handoffs/2026-10-11T223439Z-47bde73.md)
+- Authoritative record: [`handoffs/2026-10-11T224935Z-a8976ba.md`](../handoffs/2026-10-11T224935Z-a8976ba.md)
 - Archive: 598 records in `coordination/archive/`
 
-Generated: 2026-10-11T22:35:08Z
+Generated: 2026-10-11T22:50:09Z

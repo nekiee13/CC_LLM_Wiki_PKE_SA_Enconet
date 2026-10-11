@@ -1,0 +1,25 @@
+{
+  "Enconet": {
+    "manifest": "Enconet/manifests/release_RUN-20261008-17.json",
+    "dark_artifact": {
+      "path": "Enconet/outputs/candidates/evidence_access/RUN-20261008-17/dark/enconet_appendix_b_dashboard_dark.html",
+      "provenance": "Enconet/outputs/candidates/evidence_access/RUN-20261008-17/dark/enconet_appendix_b_dashboard_dark.provenance.json"
+    },
+    "artifacts": {
+      "Enconet/outputs/enconet_appendix_b_dashboard.html": "dashboard_light.html",
+      "Enconet/outputs/enconet_appendix_b_evaluation_report.md": "report.md",
+      "Enconet/outputs/enconet_appendix_b_evaluation_package.json": "evaluation_package.json",
+      "Enconet/outputs/enconet_appendix_b_dashboard_data.json": "dashboard_data.json"
+    }
+  },
+  "Ekonerg": {
+    "manifest": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/release_manifest.json",
+    "artifacts": {
+      "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/ekonerg_appendix_b_dashboard.html": "dashboard_light.html",
+      "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/ekonerg_appendix_b_dashboard_dark.html": "dashboard_dark.html",
+      "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/ekonerg_appendix_b_evaluation_report.md": "report.md",
+      "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/ekonerg_appendix_b_evaluation_package.json": "evaluation_package.json",
+      "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/ekonerg_appendix_b_dashboard_data.json": "dashboard_data.json"
+    }
+  }
+}
