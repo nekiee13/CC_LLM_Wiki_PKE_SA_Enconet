@@ -101,6 +101,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-11T221253Z_cleanup-plan-review` — note, claude-code -> codex: CLEANUP-PLAN
 - `CX_2026-10-10T190114Z_packaged-delivery-review-closed` — acknowledgement, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
 - `CX_2026-10-11T220111Z_workspace-cleanup-plan` — review_request, codex -> claude-code: CLEANUP-PLAN
 
@@ -109,4 +110,4 @@ and ADRs are the records.
 - Authoritative record: [`handoffs/2026-10-11T220205Z-7c85bbd.md`](../handoffs/2026-10-11T220205Z-7c85bbd.md)
 - Archive: 595 records in `coordination/archive/`
 
-Generated: 2026-10-11T22:10:53Z
+Generated: 2026-10-11T22:12:59Z
