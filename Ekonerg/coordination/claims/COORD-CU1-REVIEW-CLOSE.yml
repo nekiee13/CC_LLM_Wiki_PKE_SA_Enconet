@@ -1,0 +1,14 @@
+task: COORD-CU1-REVIEW-CLOSE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T23:01:17Z
+last_renewed_at_utc: 2026-10-11T23:01:17Z
+expires_at_utc: 2026-10-12T23:01:17Z
+anticipated_files:
+  - coordination/messages
+  - coordination/archive
+  - coordination/BOARD.md
+  - HANDOFF.md
+  - handoffs
+note: Verify CU-1 review,confirm scope/archive resolved Codex records;no migration
+released_at_utc: 2026-10-11T23:02:55Z
