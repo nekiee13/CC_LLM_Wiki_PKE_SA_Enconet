@@ -1,0 +1,14 @@
+task: CLEANUP-LAYOUT-APPROVAL
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T23:08:58Z
+last_renewed_at_utc: 2026-10-11T23:08:58Z
+expires_at_utc: 2026-10-12T23:08:58Z
+anticipated_files:
+  - ../PKE_SA_NQA1_doc/plans/Clean-up_Plan.md
+  - ../PKE_SA_NQA1_doc/plans/cleanup-cu1/OWNER_LAYOUT_APPROVAL.md
+  - coordination/messages
+  - HANDOFF.md
+  - handoffs
+note: Record explicit owner layout approval;no migration authority inferred
+released_at_utc: 2026-10-11T23:09:22Z

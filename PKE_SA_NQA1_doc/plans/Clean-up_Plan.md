@@ -1,7 +1,7 @@
 # Clean-up Plan
 
 Date: 11 October 2026  
-Status: proposed; planning complete, migration not started  
+Status: layout confirmed by owner; migration not started
 Review: Claude has no objection to CU-1 inventory/baseline; live moves remain unapproved.
 Implementer: Codex. Reviewer: Claude. Owner: scope and approval decisions.  
 Scope: workspace, Enconet, Ekonerg, IBE, TEKOL, IGH, IMK, KCPG, MOR, and future suppliers.
@@ -361,18 +361,20 @@ No new audit scoring, UI redesign, data model redesign or sieving is included.
 Stop if a hash differs, a destination collides, a record has an unknown owner,
 or permissions block safe handling. Do not loosen the checks to keep moving.
 
-## Decisions needed before live moves
+## Layout decision and remaining live-move conditions
 
-The owner's requested direction is recorded above. The detailed map still
-needs confirmation of these proposed choices, not a new decision for each file:
+The owner has confirmed the proposed layout under
+`OWNER-LAYOUT-20261012-CLEANUP`. The confirmed choices are:
 
 1. Use `outputs` as the one result folder and the `work` homes shown here.
 2. Keep unknown/history artifacts; remove only named, proved scratch if approved.
 3. Claude handles its own records affected by folder moves. Immutable history
    gets an external path map rather than rewritten content.
 
-Until that review, only this plan and normal planning/coordination records are
-created. No existing project folder is renamed, reset or deleted.
+See [owner decision](cleanup-cu1/OWNER_LAYOUT_APPROVAL.md). CU-2 code/tool
+preparation is next. Reviewed targets, tool safety and held-file dispositions
+remain required before live application. No existing project folder has been
+renamed, reset or deleted.
 
 ## Review record
 
@@ -381,4 +383,5 @@ safety conflict and no objection to CU-1 as scoped. Claude will update its
 own workspace/supplier guidance, skill references and global handoff contract
 when the new paths are ready. Codex confirms those agent folders stay put.
 This is not approval of a file move map, migration code or live application.
-CU-1 receipts and the detailed layout still need review before those steps.
+The combined CU-1 packet review found no safety objection. Owner layout
+confirmation is now recorded. This does not approve CU-2 tooling or live moves.
