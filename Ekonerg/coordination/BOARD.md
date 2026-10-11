@@ -18,6 +18,7 @@ and ADRs are the records.
 - `CLEANUP-PLAN` — codex, released 2026-10-11T22:01:11Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-BOARD-REFRESH-20261010` — codex, released 2026-10-10T21:30:33Z
+- `COORD-CLEANUP-PLAN-REVIEW` — codex, released 2026-10-11T22:17:23Z
 - `COORD-DELIVERY-REVIEW-CLOSE` — codex, released 2026-10-10T19:02:14Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
@@ -102,12 +103,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-11T221253Z_cleanup-plan-review` — note, claude-code -> codex: CLEANUP-PLAN
-- `CX_2026-10-10T190114Z_packaged-delivery-review-closed` — acknowledgement, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
-- `CX_2026-10-11T220111Z_workspace-cleanup-plan` — review_request, codex -> claude-code: CLEANUP-PLAN
+- `CX_2026-10-11T221644Z_cleanup-plan-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-PLAN
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-11T220205Z-7c85bbd.md`](../handoffs/2026-10-11T220205Z-7c85bbd.md)
-- Archive: 595 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-11T221738Z-a4dbc6f.md`](../handoffs/2026-10-11T221738Z-a4dbc6f.md)
+- Archive: 598 records in `coordination/archive/`
 
-Generated: 2026-10-11T22:12:59Z
+Generated: 2026-10-11T22:17:49Z

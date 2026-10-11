@@ -1,0 +1,15 @@
+task: COORD-CLEANUP-PLAN-REVIEW
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T22:16:21Z
+last_renewed_at_utc: 2026-10-11T22:16:21Z
+expires_at_utc: 2026-10-12T22:16:21Z
+anticipated_files:
+  - coordination/messages
+  - coordination/archive
+  - coordination/BOARD.md
+  - ../PKE_SA_NQA1_doc/plans/Clean-up_Plan.md
+  - HANDOFF.md
+  - handoffs
+note: Verify review,clarify agent scope,archive confirmed Codex records;no live moves
+released_at_utc: 2026-10-11T22:17:23Z

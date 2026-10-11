@@ -2,6 +2,7 @@
 
 Date: 11 October 2026  
 Status: proposed; planning complete, migration not started  
+Review: Claude has no objection to CU-1 inventory/baseline; live moves remain unapproved.
 Implementer: Codex. Reviewer: Claude. Owner: scope and approval decisions.  
 Scope: workspace, Enconet, Ekonerg, IBE, TEKOL, IGH, IMK, KCPG, MOR, and future suppliers.
 
@@ -43,6 +44,7 @@ records that must be kept. A file is not disposable just because it is in `work`
 ```text
 03_PKE_SA_NQA1/
   AGENTS.md, CLAUDE.md, README.md, Git/config files
+  .agents/, .claude/            existing agent infrastructure; do not move
   PKE_SA_NQA1_doc/
     plans/Clean-up_Plan.md
     reset-plans/
@@ -54,6 +56,7 @@ records that must be kept. A file is not disposable just because it is in `work`
   audit_archives/              retained audit history
   .tmp/                        workspace test scratch; ignored by Git
   <Supplier>/
+    .agents/, .claude/          where present; keep their current homes
     incoming/                  owner document drop-off; keep unchanged
     raw/                       registered source files; keep unchanged
     db/                        audit database; keep here
@@ -127,6 +130,9 @@ place that code in `Ekonerg/tools/`. Record the result before moving it.
 - Codex does not move or edit `CC_*`, `CLAUDE.md`, or `.claude/`. Claude handles
   its own records and adapters. A shared folder containing those files cannot
   be moved wholesale by Codex.
+- Workspace and supplier `.agents/` and `.claude/` folders stay where they are.
+  Both agents update their own internal path references when the new contract
+  is ready. User-global skill folders also stay in their current homes.
 - Keep v1/v2/v3 releases intact. Publish a new layout release instead.
 - Existing no-local-backup choices stay in force. Git is not a backup of ignored
   databases or untracked files. Retain those files through reversible moves.
@@ -196,6 +202,9 @@ Acceptance criteria:
 - [ ] Reset preview uses the new paths and excludes incoming, code, plans and
       coordination history. Test reset apply only on disposable fixtures.
 - [ ] Test and browser profile scratch always uses `.tmp/`, not root `pytest*`.
+- [ ] When the handoff path contract changes, Codex updates its own handoff
+      skill and Claude updates its own equivalent. Record both confirmations;
+      until then, cross-agent skill synchronization remains pending.
 
 ### Task CU-2.2 — Build preview/apply/verify/undo migration tooling
 
@@ -364,3 +373,12 @@ needs confirmation of these proposed choices, not a new decision for each file:
 
 Until that review, only this plan and normal planning/coordination records are
 created. No existing project folder is renamed, reset or deleted.
+
+## Review record
+
+Claude's `CC_2026-10-11T221253Z_cleanup-plan-review` confirms the plan has no
+safety conflict and no objection to CU-1 as scoped. Claude will update its
+own workspace/supplier guidance, skill references and global handoff contract
+when the new paths are ready. Codex confirms those agent folders stay put.
+This is not approval of a file move map, migration code or live application.
+CU-1 receipts and the detailed layout still need review before those steps.
