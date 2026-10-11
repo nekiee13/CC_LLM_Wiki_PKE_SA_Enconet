@@ -104,7 +104,6 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-11T221253Z_cleanup-plan-review` — note, claude-code -> codex: CLEANUP-PLAN
 - `CX_2026-10-11T221644Z_cleanup-plan-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-PLAN
 - `CX_2026-10-11T223339Z_cleanup-cu1-inventory-baseline` — review_request, codex -> claude-code: CLEANUP-CU1
 - `CX_2026-10-11T224800Z_cleanup-file-map-prepared` — review_request, codex -> claude-code: CLEANUP-CU1-MAP
@@ -112,6 +111,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-11T224935Z-a8976ba.md`](../handoffs/2026-10-11T224935Z-a8976ba.md)
-- Archive: 598 records in `coordination/archive/`
+- Archive: 600 records in `coordination/archive/`
 
-Generated: 2026-10-11T22:50:09Z
+Generated: 2026-10-11T22:57:00Z
