@@ -1,0 +1,17 @@
+task: CLEANUP-CU2
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T23:14:14Z
+last_renewed_at_utc: 2026-10-11T23:14:14Z
+expires_at_utc: 2026-10-12T23:14:14Z
+anticipated_files:
+  - ../audit_template/runtime_v4
+  - ../scripts/cleanup_migration.py
+  - ../scripts/tests/test_cleanup_migration.py
+  - ../audit_template/tests/test_project_layout_v4.py
+  - ../PKE_SA_NQA1_doc/plans/cleanup-cu2
+  - coordination/messages
+  - HANDOFF.md
+  - handoffs
+note: Test-first reusable layout and migration-engine foundations in synthetic fixtures;no live routing/apply
+released_at_utc: 2026-10-11T23:35:11Z
