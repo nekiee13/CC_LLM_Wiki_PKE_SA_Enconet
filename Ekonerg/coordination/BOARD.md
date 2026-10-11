@@ -101,13 +101,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-10T185710Z_packaged-documentary-delivery-review` — acknowledgement, claude-code -> codex: EKONERG-DELIVERY-PACKAGE
 - `CX_2026-10-10T190114Z_packaged-delivery-review-closed` — acknowledgement, codex -> claude-code: EKONERG-DELIVERY-PACKAGE
 - `CX_2026-10-11T220111Z_workspace-cleanup-plan` — review_request, codex -> claude-code: CLEANUP-PLAN
 
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-11T220205Z-7c85bbd.md`](../handoffs/2026-10-11T220205Z-7c85bbd.md)
-- Archive: 593 records in `coordination/archive/`
+- Archive: 595 records in `coordination/archive/`
 
-Generated: 2026-10-11T22:02:20Z
+Generated: 2026-10-11T22:10:53Z
