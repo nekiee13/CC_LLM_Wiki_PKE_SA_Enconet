@@ -1,0 +1,29 @@
+{
+  "schema": "cleanup-cu1-receipt-1",
+  "status": "draft-map-and-baselines-pending-review",
+  "captured_git_head": "47bde736b36c64f6f8ba1f4cac43adda1226ef3d",
+  "live_migration": "not performed",
+  "inventory": {
+    "archive": "scan-20261012-verified/inventory.zip",
+    "archive_bytes": 3706457,
+    "archive_sha256": "b04324adb72bb3c8daabf7ecddc1fd064af3acd949164e0cc2f03d47b5c79283",
+    "member": "inventory.json",
+    "member_bytes": 63403284,
+    "member_sha256": "f90440edf70c5743a53852e283d7d609ca6ac1df44b55e7bfe504cb0b7add758",
+    "entries": 77457,
+    "access_failures": 0,
+    "changed_protected_inputs": 0
+  },
+  "baselines": {
+    "file": "scan-20261012-verified/audit-baselines.json",
+    "bytes": 490054,
+    "sha256": "4259d36a38ccb182ad470137a8cdb9ee5a3308ca17ce31b06ae441cf4509d05e"
+  },
+  "limits": [
+    "Inventory includes directories and children; not executable move instructions.",
+    "Lexical path users, unassigned outputs, plan purpose and owner holds need semantic review.",
+    "Nested Git internals and redirected targets are not traversed.",
+    "No source/raw/DB/approval or scoring changes authorized.",
+    "CU-1 acceptance and owner layout confirmation remain open."
+  ]
+}

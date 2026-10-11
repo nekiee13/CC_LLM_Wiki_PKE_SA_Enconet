@@ -1,0 +1,19 @@
+{
+  "mode": "read-only supplementary check",
+  "connection": "SQLite file URI with mode=ro",
+  "scope": "All table column names matching path|uri|file|artifact|manifest|receipt|location; not a claim to parse every JSON/text field",
+  "old_location_pattern": "derived/, manifests/, out/, outputs/candidates/evidence_access/, handoffs/ (slash or backslash)",
+  "Enconet": [
+    {"table": "documents", "field": "filename", "rows": 33, "old_location_rows": 0},
+    {"table": "document_chunks", "field": "heading_path", "rows": 922, "old_location_rows": 0},
+    {"table": "crumb_sources", "field": "source_heading_path", "rows": 3073, "old_location_rows": 0},
+    {"table": "dashboard_runs", "field": "output_path", "rows": 0, "old_location_rows": 0}
+  ],
+  "Ekonerg": [
+    {"table": "documents", "field": "filename", "rows": 32, "old_location_rows": 0},
+    {"table": "document_chunks", "field": "heading_path", "rows": 466, "old_location_rows": 0},
+    {"table": "crumb_sources", "field": "source_heading_path", "rows": 0, "old_location_rows": 0},
+    {"table": "dashboard_runs", "field": "output_path", "rows": 0, "old_location_rows": 0}
+  ],
+  "decision": "No stored-path updates authorized or performed. Review JSON, ledgers and code references separately before migration."
+}

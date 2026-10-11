@@ -1,0 +1,15 @@
+task: CLEANUP-CU1
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T22:20:38Z
+last_renewed_at_utc: 2026-10-11T22:20:38Z
+expires_at_utc: 2026-10-12T22:20:38Z
+anticipated_files:
+  - ../scripts/cleanup_inventory.py
+  - ../scripts/tests/test_cleanup_inventory.py
+  - ../PKE_SA_NQA1_doc/plans/cleanup-cu1
+  - coordination/messages
+  - HANDOFF.md
+  - handoffs
+note: Read-only inventory/proposed map and audit baselines;no moves
+released_at_utc: 2026-10-11T22:33:58Z
