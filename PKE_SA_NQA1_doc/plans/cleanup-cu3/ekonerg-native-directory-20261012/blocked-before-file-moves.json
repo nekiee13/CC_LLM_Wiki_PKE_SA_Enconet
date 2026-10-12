@@ -1,0 +1,44 @@
+{
+  "mode": "read-only-preview",
+  "ready": false,
+  "blocked": [
+    {
+      "source": "Ekonerg/benchmarks",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/derived",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/manifests",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/handoffs",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/out",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/.bootstrap",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/docs/reviews",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/.pytest_cache",
+      "reason": "files remain in legacy tree"
+    },
+    {
+      "source": "Ekonerg/outputs/candidates",
+      "reason": "files remain in legacy tree"
+    }
+  ],
+  "directories": 10,
+  "plan_sha256": "4f4d833e2c015ad99ce6191782849bbd3900ccc26314980148793891cd4dd6fc"
+}

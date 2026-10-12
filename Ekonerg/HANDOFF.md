@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-12T210613Z-12012bc.md`](handoffs/2026-10-12T210613Z-12012bc.md)
+**Authoritative record:** [`handoffs/2026-10-12T211800Z-2fd7abf.md`](handoffs/2026-10-12T211800Z-2fd7abf.md)
 
-**Status:** partial · **Git:** `12012bc` · **Agent:** codex · **Created:** 2026-10-12T21:06:13Z
+**Status:** partial · **Git:** `2fd7abf` · **Agent:** codex · **Created:** 2026-10-12T21:18:00Z
 
-**Exact next action:** Finalize permission-preserving native empty-home operations or directory recovery within CU-3.2; get pending task-level safety reviews, refresh exact maps for latest handoffs, bind actual references and apply under existing owner authority.
+**Exact next action:** Obtain pending CU-3.2 safety review. Refresh exact maps for latest handoff and HEAD, bind actual references, apply file moves without pruning, native empty-tree renames, then 39-file runtime/layout activation and canonical report edition; validate live before commit.

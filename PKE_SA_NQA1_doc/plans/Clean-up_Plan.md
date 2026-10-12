@@ -421,3 +421,11 @@ guards passed 12 focused tests. Two empty-folder moves are explicitly proposed,
 not applied. Directory permission recovery and pending safety reviews still
 precede live Ekonerg activation. See
 [final preflight](cleanup-cu3/EKONERG_FINAL_PREFLIGHT.md).
+
+CU-3.2 now has tested native directory recovery: retain original empty trees
+instead of pruning/recreating them. The exact proposal covers ten trees and
+128 native identity/permission witnesses, bound to the refreshed 923-file map.
+The common suite passed 124 tests; final directory tests passed nine. Live
+directory preview correctly refuses to proceed while files remain. Safety review
+still precedes live application. See
+[native directory review](cleanup-cu3/EKONERG_NATIVE_DIRECTORY_REVIEW.md).
