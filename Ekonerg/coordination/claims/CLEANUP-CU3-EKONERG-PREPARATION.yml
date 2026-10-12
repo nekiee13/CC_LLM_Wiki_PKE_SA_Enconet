@@ -1,0 +1,18 @@
+task: CLEANUP-CU3-EKONERG-PREPARATION
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T18:10:47Z
+last_renewed_at_utc: 2026-10-12T18:10:47Z
+expires_at_utc: 2026-10-13T18:10:47Z
+anticipated_files:
+  - audit_template/prepare_supplier_layout_overlay.py
+  - audit_template/prepare_framework_candidate_v4.py
+  - audit_template/tests
+  - scripts/cleanup_workflow.py
+  - scripts/tests/test_cleanup_workflow.py
+  - PKE_SA_NQA1_doc/plans/cleanup-cu3
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+note: Prepare reusable current-runtime overlay and preserve-edits Git move support; no live Ekonerg changes
+released_at_utc: 2026-10-12T18:20:33Z

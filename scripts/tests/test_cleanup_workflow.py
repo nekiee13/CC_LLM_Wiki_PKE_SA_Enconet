@@ -123,3 +123,39 @@ def test_invalid_prune_scope_fails_before_any_move(tmp_path):
     with pytest.raises(ValueError, match='prune scope'):
         workflow.apply(tmp_path, plan, tmp_path / 'journal.jsonl', approval)
     assert source.exists()
+
+
+@pytest.mark.parametrize('interrupted', [False, True])
+def test_explicit_dirty_move_keeps_edits_unstaged_and_undo_restores(tmp_path, monkeypatch, interrupted):
+    git, source, original, approval = fixture(tmp_path)
+    name = source.relative_to(tmp_path).as_posix()
+    original_blob = git('show', 'HEAD:' + name)
+    edited = b'owner unfinished edit\r\n'
+    source.write_bytes(edited)
+    rows = [dict(row) for row in original['files']]
+    rows[0]['sha256'] = hashlib.sha256(edited).hexdigest()
+    bare = {'schema': 'cleanup-file-map-1', 'files': rows, 'collisions': []}
+    with pytest.raises(ValueError, match='dirty tracked'):
+        workflow.prepare(tmp_path, bare)
+    plan = workflow.prepare(tmp_path, bare, dirty_sources=[name])
+    approval['plan_sha256'] = workflow.migration.plan_hash(plan)
+    actual = workflow.git
+    if interrupted:
+        def failure(root, *args):
+            if args[:2] == ('update-index', '--force-remove'):
+                raise ValueError('synthetic index interruption')
+            return actual(root, *args)
+        monkeypatch.setattr(workflow, 'git', failure)
+        with pytest.raises(ValueError, match='interruption'):
+            workflow.apply(tmp_path, plan, tmp_path / 'journal.jsonl', approval)
+        monkeypatch.setattr(workflow, 'git', actual)
+    workflow.apply(tmp_path, plan, tmp_path / 'journal.jsonl', approval)
+    destination = rows[0]['destination']
+    assert (tmp_path / destination).read_bytes() == edited
+    assert git('show', ':' + destination) == original_blob
+    assert destination.encode() in git('diff', '--name-only')
+    assert b'owner unfinished edit' not in git('diff', '--cached')
+    workflow.undo(tmp_path, plan, tmp_path / 'journal.jsonl')
+    assert source.read_bytes() == edited
+    assert git('show', ':' + name) == original_blob
+    assert not git('diff', '--cached', '--name-only')

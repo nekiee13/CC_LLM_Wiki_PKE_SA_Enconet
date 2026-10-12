@@ -1,6 +1,8 @@
 *.zip -text
 *.patch -text
 reference-preparation-tests.xml -text
+ekonerg-preparation-tests.xml -text
+ekonerg-preparation-full-tests.xml -text
 OWNER_LIVE_AUTHORIZATION.md -text
 live-workspace-20261012/*.json -text
 live-workspace-20261012/*.jsonl -text

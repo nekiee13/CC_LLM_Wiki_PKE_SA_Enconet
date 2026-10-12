@@ -79,6 +79,8 @@ def route_python(source, explicit_roots=()):
     tree = ast.parse(source)
     roots = set()
     for node in tree.body:
+        if isinstance(node, ast.ImportFrom) and node.module == 'project_paths':
+            roots.update(item.asname or item.name for item in node.names if item.name == 'ROOT')
         if isinstance(node, ast.Assign):
             expression = ast.unparse(node.value).replace(' ', '')
             if expression in {"Path(__file__).resolve().parents[1]", "Path(__file__).resolve().parent.parent"}:

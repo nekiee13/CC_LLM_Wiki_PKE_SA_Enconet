@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-12T180401Z-597cbd7.md`](handoffs/2026-10-12T180401Z-597cbd7.md)
+**Authoritative record:** [`handoffs/2026-10-12T182115Z-c4df10e.md`](handoffs/2026-10-12T182115Z-c4df10e.md)
 
-**Status:** partial · **Git:** `597cbd7` · **Agent:** codex · **Created:** 2026-10-12T18:04:01Z
+**Status:** partial · **Git:** `c4df10e` · **Agent:** codex · **Created:** 2026-10-12T18:21:15Z
 
-**Exact next action:** Review live workspace receipt; Claude updates own guidance and held records. Complete retained workspace exceptions, then prepare Ekonerg live layout batch under existing owner cleanup authorization.
+**Exact next action:** Complete 26 current-overlay path findings and current-runtime integrations; refresh Ekonerg exact map and validate isolated current-runtime copy. Claude reviews preserve-edits tool before live use and completes workspace owned-record/guidance follow-up.

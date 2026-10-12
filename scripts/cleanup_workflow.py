@@ -54,7 +54,7 @@ def directories(root, plan, selected):
     return result
 
 
-def prepare(root, plan, prune=()):
+def prepare(root, plan, prune=(), dirty_sources=()):
     root = migration.root_path(root)
     head = repository(root)
     if git(root, 'diff', '--cached', '--name-only', '-z'):
@@ -62,17 +62,22 @@ def prepare(root, plan, prune=()):
     if migration.preview(root, plan)['blocked']:
         raise ValueError('file preview blocked')
     entries = index(root)
+    dirty_sources = set(dirty_sources)
+    if not dirty_sources <= {row['source'] for row in plan['files'] if row['source'] in entries}:
+        raise ValueError('preserve-edits list must name tracked sources in the exact map')
     tracked = []
     for row in plan['files']:
         if row['destination'] in entries:
             raise ValueError('destination already tracked')
         if row['source'] in entries:
-            if git(root, 'diff', '--name-only', '-z', '--', ':(literal)' + row['source']):
+            if (row['source'] not in dirty_sources
+                    and git(root, 'diff', '--name-only', '-z', '--', ':(literal)' + row['source'])):
                 raise ValueError('dirty tracked source refused')
             tracked.append(row['source'])
     result = dict(plan)
     result['workflow'] = {'schema': 'cleanup-workflow-1', 'root': str(root), 'head': head,
                           'index': entries, 'tracked_sources': tracked,
+                          'preserve_unstaged_edits': sorted(dirty_sources),
                           'prune_directories': directories(root, plan, prune)}
     return result
 
@@ -94,6 +99,9 @@ def check(root, plan):
         if path.exists() and not path.is_dir():
             raise ValueError('prune target is not a directory')
     tracked = set(record['tracked_sources'])
+    dirty_sources = set(record.get('preserve_unstaged_edits', []))
+    if not dirty_sources <= tracked:
+        raise ValueError('preserve-edits witness differs from tracked-source list')
     if tracked != {row['source'] for row in plan['files'] if row['source'] in baseline}:
         raise ValueError('tracked-source witness differs from map')
     expected = dict(baseline)
@@ -110,6 +118,10 @@ def check(root, plan):
         if old is None and new == baseline[source]:
             expected[dest] = expected.pop(source)
             continue
+        if source in dirty_sources and old == new == baseline[source]:
+            # An interrupted cache-only rename may have both index entries.
+            expected[dest] = baseline[source]
+            continue
         raise ValueError('planned index entry changed')
     if current != expected:
         raise ValueError('unrelated index edit refused')
@@ -121,9 +133,21 @@ def stage(root, plan, restored=False):
     current = index(root)
     pairs = [row for row in plan['files'] if row['source'] in record['tracked_sources']
              and (row['destination'] if restored else row['source']) in current]
+    dirty_sources = set(record.get('preserve_unstaged_edits', []))
+    for row in pairs:
+        if row['source'] not in dirty_sources:
+            continue
+        mode, blob = record['index'][row['source']]
+        target, previous = ((row['source'], row['destination']) if restored
+                            else (row['destination'], row['source']))
+        # Preserve the old index blob; the moved edited bytes stay unstaged.
+        git(root, 'update-index', '--add', '--cacheinfo', mode + ',' + blob + ',' + target)
+        git(root, 'update-index', '--force-remove', '--', previous)
     # Bound native Windows arguments while avoiding one Git process per file.
     batch, size = [], 0
     for row in pairs:
+        if row['source'] in dirty_sources:
+            continue
         arguments = [':(literal)' + row['source'], ':(literal)' + row['destination']]
         length = sum(len(value) + 3 for value in arguments)
         if length > 8000:
@@ -186,12 +210,14 @@ def main():
     parser.add_argument('--plan', required=True, type=Path)
     parser.add_argument('--mode', choices=['prepare', 'apply', 'undo'], default='prepare')
     parser.add_argument('--prune', nargs='*', default=[])
+    parser.add_argument('--preserve-edits', nargs='*', default=[],
+                        help='explicit tracked sources whose edited bytes must remain unstaged')
     parser.add_argument('--journal', type=Path)
     parser.add_argument('--authorization', type=Path)
     args = parser.parse_args()
     plan = migration.load(args.plan)
     if args.mode == 'prepare':
-        result = prepare(args.root, plan, args.prune)
+        result = prepare(args.root, plan, args.prune, args.preserve_edits)
     elif args.mode == 'apply':
         if not args.journal or not args.authorization:
             parser.error('apply requires journal and authorization')
