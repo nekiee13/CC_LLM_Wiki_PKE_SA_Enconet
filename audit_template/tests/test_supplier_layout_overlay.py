@@ -8,7 +8,7 @@ import pytest
 
 TEMPLATE = Path(__file__).parents[1]
 sys.path.insert(0, str(TEMPLATE))
-from prepare_supplier_layout_overlay import build
+from prepare_supplier_layout_overlay import build, local_literals
 
 
 @pytest.mark.parametrize('name', ['Atlas Engineering', 'Žuti dobavljač'])
@@ -28,3 +28,22 @@ def test_overlay_preserves_current_audit_logic_and_siblings(tmp_path, name):
     assert (sibling / 'owner.md').read_bytes() == b'unchanged'
     assert not (tmp_path / '.tmp/overlay/db').exists()
     assert result['status'] == 'development-overlay-not-installable'
+
+
+def test_path_arguments_route_without_changing_evidence_strings():
+    source = '''quote="manifests/approvals.csv"
+bind("manifests/approvals.csv")
+local(root,"derived/DOC-0001.txt")
+parser.add_argument("--output",default=Path("benchmarks/golden.yml"))
+'''
+    text, count = local_literals(source)
+    assert count == 3
+    assert 'quote="manifests/approvals.csv"' in text
+    assert "'work/manifests/approvals.csv'" in text
+    assert "'work/derived/DOC-0001.txt'" in text
+    assert "'work/benchmarks/golden.yml'" in text
+
+
+def test_supplier_parent_alias_is_refused(tmp_path):
+    with pytest.raises(ValueError):
+        build('..', tmp_path / '.tmp/candidate', workspace=tmp_path)

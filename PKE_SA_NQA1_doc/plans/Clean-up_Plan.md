@@ -400,3 +400,10 @@ guidance/skill synchronization and owned-record moves remain pending. CU-3.1 is
 not fully closed; Ekonerg/Enconet live moves, six scaffolds, v4 release and final
 index refresh remain under CU-3/CU-4. Owner authority is recorded at
 [live authorization](cleanup-cu3/OWNER_LIVE_AUTHORIZATION.md).
+
+CU-3.2's current-runtime integration now has zero direct old-path findings.
+The cleanup regression suite passed 92 tests, and nine isolated Ekonerg checks
+passed without changing checked live files or the database. The fresh proposal
+has 920 moves. Ekonerg has not moved or activated v4. Runtime/tool safety review
+and the checked installation/recovery procedure remain within CU-3.2; no new
+task is added. See [integration review](cleanup-cu3/EKONERG_INTEGRATION_REVIEW.md).

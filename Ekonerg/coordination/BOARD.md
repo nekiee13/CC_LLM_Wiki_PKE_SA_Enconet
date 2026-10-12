@@ -23,6 +23,7 @@ and ADRs are the records.
 - `CLEANUP-CU2-PIPELINE` — codex, released 2026-10-12T03:28:19Z
 - `CLEANUP-CU2-PUBLICATION` — codex, released 2026-10-12T03:48:45Z
 - `CLEANUP-CU2-WORKFLOW` — codex, released 2026-10-12T14:00:18Z
+- `CLEANUP-CU3-EKONERG-INTEGRATION` — codex, released 2026-10-12T19:19:05Z
 - `CLEANUP-CU3-EKONERG-PREPARATION` — codex, released 2026-10-12T18:20:33Z
 - `CLEANUP-CU3-REFERENCES` — codex, released 2026-10-12T16:34:06Z
 - `CLEANUP-CU3-WORKSPACE-LIVE` — codex, released 2026-10-12T18:03:58Z
@@ -120,10 +121,11 @@ and ADRs are the records.
 
 - `CX_2026-10-12T180129Z_live-workspace-applied` — review_request, codex -> claude-code: CLEANUP-CU3.1
 - `CX_2026-10-12T182030Z_ekonerg-preserve-edits-and-overlay` — review_request, codex -> claude-code: CLEANUP-CU3.2
+- `CX_2026-10-12T191903Z_ekonerg-integration-ready` — review_request, codex -> claude-code: CLEANUP-CU3.2
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-12T182115Z-c4df10e.md`](../handoffs/2026-10-12T182115Z-c4df10e.md)
+- Authoritative record: [`handoffs/2026-10-12T191926Z-0e591ca.md`](../handoffs/2026-10-12T191926Z-0e591ca.md)
 - Archive: 625 records in `coordination/archive/`
 
-Generated: 2026-10-12T18:21:50Z
+Generated: 2026-10-12T19:19:40Z

@@ -11,10 +11,47 @@ import json
 from pathlib import Path
 import stat
 
-from prepare_framework_candidate_v4 import route_python, replace_assignment, replace_once
+from prepare_framework_candidate_v4 import route_python, replace_assignment, replace_once, MOVED
 from check_candidate_paths_v4 import scan
 
 WORKSPACE = Path(__file__).resolve().parents[1]
+
+
+def local_literals(source):
+    """Route path arguments/defaults, never arbitrary quoted evidence or IDs."""
+    tree = ast.parse(source)
+    raw = source.encode('utf-8')
+    lines = raw.splitlines(keepends=True)
+    offsets = [0]
+    for line in lines:
+        offsets.append(offsets[-1] + len(line))
+    edits = {}
+    def route(node):
+        if not isinstance(node, ast.Constant) or not isinstance(node.value, str):
+            return
+        parts = node.value.split('/')
+        if parts[0] not in MOVED:
+            return
+        value = '/'.join((MOVED[parts[0]], *parts[1:]))
+        start = offsets[node.lineno - 1] + node.col_offset
+        end = offsets[node.end_lineno - 1] + node.end_col_offset
+        edits[(start, end)] = repr(value).encode('utf-8')
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
+            if node.func.id == 'local' and len(node.args) >= 2:
+                route(node.args[1])
+            elif node.func.id == 'bind' and node.args:
+                route(node.args[0])
+        if (isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute)
+                and node.func.attr == 'add_argument'):
+            for keyword in node.keywords:
+                if (keyword.arg == 'default' and isinstance(keyword.value, ast.Call)
+                        and isinstance(keyword.value.func, ast.Name) and keyword.value.func.id == 'Path'
+                        and len(keyword.value.args) == 1):
+                    route(keyword.value.args[0])
+    for (start, end), value in sorted(edits.items(), reverse=True):
+        raw = raw[:start] + value + raw[end:]
+    return raw.decode('utf-8'), len(edits)
 
 
 def regular(path):
@@ -30,7 +67,8 @@ def regular(path):
 def build(supplier, destination, *, workspace=WORKSPACE):
     workspace = Path(workspace).resolve(strict=True)
     source_root = workspace / supplier
-    if Path(supplier).name != supplier or not source_root.is_dir():
+    if (supplier in {'', '.', '..'} or Path(supplier).name != supplier
+            or not source_root.is_dir() or source_root.resolve().parent != workspace):
         raise ValueError('one existing supplier folder name required')
     destination = Path(destination).absolute()
     if destination.exists() or not destination.resolve().is_relative_to(workspace / '.tmp'):
@@ -59,28 +97,94 @@ def build(supplier, destination, *, workspace=WORKSPACE):
             fragment = 'pointer.replace("(handoffs/", "(../handoffs/")'
             if fragment in text:
                 text = replace_once(text, fragment, 'pointer.replace("(coordination/handoffs/", "(handoffs/")')
-        explicit = ('project',) if path.name == 'make_handoff.py' else ()
+        if path.name == 'project_paths.py':
+            text = replace_once(text, 'import stat', 'from project_records import recorded_path\nimport stat')
+            text = replace_once(text, '    path = Path(value)\n    if not path.is_absolute():\n        path = ROOT / path',
+                                '    path = recorded_path(value)')
+        if path.name == 'source_revision_intake.py':
+            text = replace_once(text, 'import argparse',
+                                'from project_records import recorded_path_at\nimport argparse')
+            text = replace_once(text, '    value = path if path.is_absolute() else root / path',
+                                '    value = recorded_path_at(root, path)')
+            text = replace_once(text, "derived=f'derived/{new_id}.txt'; artifact=f'derived/chunks/{new_id}.json'",
+                                "derived=f'work/derived/{new_id}.txt'; artifact=f'work/derived/chunks/{new_id}.json'")
+        if path.name == 'build_evidence_dashboard.py':
+            text = replace_once(text, 'import argparse', 'from project_records import recorded_path\nimport argparse')
+            text = replace_once(text, '"matrix": "out/2026-10-05/MIN-3.1-evidence-matrix-v4.json"',
+                                '"matrix": recorded_path(matrix_path).relative_to(ROOT).as_posix()')
+            text = replace_once(text, 'counts, criteria = _query_snapshot(db, matrix_path, run_id)',
+                                'counts, criteria = _query_snapshot(db, recorded_path(matrix_path), run_id)')
+        if path.name == 'reset_audit.py':
+            text = replace_once(text, 'from project_paths import configure_standard_streams',
+                                'from reset_operations import remove_generated\nfrom project_paths import configure_standard_streams')
+            text = replace_once(text, '            path.unlink()', '            remove_generated(path)')
+        if path.name == 'run_all_validations.py':
+            if '"--allow-pending-claude"' not in text:
+                text = replace_once(text, '    parser.add_argument("--no-record", action="store_true")',
+                    '    parser.add_argument("--no-record", action="store_true")\n    parser.add_argument("--allow-pending-claude", action="store_true", help="explicit deferred agent infrastructure; never source or evidence approval")')
+                text = replace_once(text, '        checks = run(phase, check_commands)',
+                    '        if args.allow_pending_claude:\n            check_commands["sieving_harness"].append("--allow-pending-claude")\n        checks = run(phase, check_commands)')
+            text = replace_once(text, 'package = outputs / f"{supplier}_appendix_b_evaluation_package.json"',
+                                'run_root = outputs / run_id if run_id else outputs\n    package = run_root / "evaluation_package.json"')
+            for old, new in [('evaluation_report.md', 'report.md'), ('dashboard_data.json', 'dashboard_data.json'),
+                             ('dashboard.html', 'dashboard_light.html')]:
+                text = replace_once(text, 'outputs / f"{supplier}_appendix_b_' + old + '"',
+                                    'run_root / "' + new + '"')
+            text = replace_once(text, 'evidence_root = outputs / "candidates" / "evidence_access"',
+                                'evidence_root = layout_path("reviews")')
+            text = replace_once(text, 'evidence_run = evidence_root / run_id if run_id else None',
+                                'evidence_run = run_root if run_id else None')
+            text = replace_once(text, 'evidence_run / f"{supplier}_appendix_b_evaluation_report.md"',
+                                'evidence_run / "report.md"')
+            text = replace_once(text, 'evidence_run / f"{supplier}_appendix_b_dashboard.html"',
+                                'evidence_run / "dashboard_light.html"')
+            text = replace_once(text, 'evidence_root / "validation_artifacts" / "browser_evidence"',
+                                'layout_path("validation", run_id or "setup", "browser_evidence")')
+        if path.name == 'run_validation.py':
+            text = replace_once(text, 'import argparse', 'from project_scratch import temporary_directory\nimport argparse')
+            text = replace_once(text, '    try:\n        proc = subprocess.run(',
+                '    try:\n        with temporary_directory(prefix="validation-") as scratch:\n            env.update({key: scratch for key in ("TMP", "TEMP", "TMPDIR")})\n            command = list(step.command)\n            if command[1:3] == ["-m", "pytest"]:\n                command.extend(["--basetemp", str(Path(scratch) / "pytest")])\n            proc = subprocess.run(')
+            text = replace_once(text, '            step.command, cwd=step.cwd, capture_output=True, text=True,\n            encoding="utf-8", errors="replace", timeout=STEP_TIMEOUT_S, env=env,\n        )',
+                '                command, cwd=step.cwd, capture_output=True, text=True,\n                encoding="utf-8", errors="replace", timeout=STEP_TIMEOUT_S, env=env,\n            )')
+        if path.name == 'package_audit_delivery.py':
+            text = replace_once(text, "base = Path(root).absolute()/'outputs/candidates/evidence_access'/run_id",
+                                "base = layout_path_at(root, 'outputs') / run_id")
+            text = replace_once(text, 'if output == base or not output.is_relative_to(base):',
+                                'if output != base:')
+            text = replace_once(text, "raise ValueError('Output must be a fresh subdirectory of the run candidate root')",
+                                "raise ValueError('Output must be the exact run output folder')")
+            text = replace_once(text, "    stem = supplier.casefold().replace(' ','_')+'_appendix_b'\n    name = {k:stem+'_'+suffix for k,suffix in dict(package='evaluation_package.json',\n            report='evaluation_report.md', data='dashboard_data.json', light='dashboard.html',\n            dark='dashboard_dark.html').items()}",
+                                "    name = dict(package='evaluation_package.json', report='report.md',\n                data='dashboard_data.json', light='dashboard_light.html', dark='dashboard_dark.html')")
+            start = text.index("    portable = 'portable_package/'+run_id+'/'")
+            stop = text.index('    if any(sha(p.read_bytes()) != h for p,h in before.items()):', start)
+            text = text[:start] + "    files['README.md'] = (f'# {supplier} documentary delivery\\n\\n'\n        'Open dashboard_light.html or dashboard_dark.html. Each HTML is self-contained.\\n'\n        'Stored scores, quotes and release-gate status are preserved.\\n').encode('utf-8')\n" + text[stop:]
+            text = replace_once(text, 'import argparse',
+                                'from project_layout import path_at as layout_path_at\nimport argparse')
+        text, literals = local_literals(text)
+        explicit = ('root', 'project')
         converted, count = route_python(text, explicit)
         name = 'scripts/' + path.name
         payload[name] = converted.encode('utf-8')
         if converted.encode('utf-8') != before:
             data = converted.encode('utf-8')
             changes.append({'path': name, 'before_sha256': hashlib.sha256(before).hexdigest(),
-                            'after_sha256': hashlib.sha256(data).hexdigest(), 'routed_paths': count})
-    for name in ('project_layout.py', 'project_scratch.py', 'reset_operations.py'):
+                            'after_sha256': hashlib.sha256(data).hexdigest(), 'routed_paths': count + literals})
+    for name in ('project_layout.py', 'project_scratch.py', 'reset_operations.py', 'project_records.py'):
         target = source_root / 'scripts' / name
         if target.exists():
             holds.append({'file': str(target.relative_to(source_root)), 'reason': 'new helper destination already exists'})
             continue
         payload['scripts/' + name] = (WORKSPACE / 'audit_template/runtime_v4' / name).read_bytes()
     payload['project-layout.json'] = b'{"schema_version":1,"layout":"v4"}\n'
+    payload['project-file-relocations.json'] = b'{"schema_version":1,"paths":{}}\n'
     if (source_root / 'project-layout.json').exists():
         holds.append({'file': 'project-layout.json', 'reason': 'existing layout configuration requires review'})
     manifest = {'schema_version': 1, 'status': 'development-overlay-not-installable',
         'source_supplier': supplier, 'changes': changes, 'holds': holds,
         'install_paths': [row['path'] for row in changes] + [
             'scripts/project_layout.py', 'scripts/project_scratch.py',
-            'scripts/reset_operations.py', 'project-layout.json'],
+            'scripts/reset_operations.py', 'scripts/project_records.py',
+            'project-layout.json', 'project-file-relocations.json'],
         'remaining': ['direct-path findings', 'output defaults and stored-path users',
                       'scratch integration', 'isolated current-runtime validation and review',
                       'dirty and owned-file move dispositions'],
