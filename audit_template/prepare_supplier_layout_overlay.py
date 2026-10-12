@@ -11,7 +11,8 @@ import json
 from pathlib import Path
 import stat
 
-from prepare_framework_candidate_v4 import route_python, replace_assignment, replace_once, MOVED
+from prepare_framework_candidate_v4 import (route_python, replace_assignment, replace_once,
+                                          MOVED, BASELINE, PIN, sha, verify_payload)
 from check_candidate_paths_v4 import scan
 
 WORKSPACE = Path(__file__).resolve().parents[1]
@@ -108,6 +109,12 @@ def build(supplier, destination, *, workspace=WORKSPACE):
                                 '    value = recorded_path_at(root, path)')
             text = replace_once(text, "derived=f'derived/{new_id}.txt'; artifact=f'derived/chunks/{new_id}.json'",
                                 "derived=f'work/derived/{new_id}.txt'; artifact=f'work/derived/chunks/{new_id}.json'")
+        if path.name == 'validate_report_links.py':
+            text = replace_once(text, 'import argparse',
+                                'from project_records import recorded_path_at\nimport argparse')
+            text = replace_once(text, 'artifact = (root / Path(relative)).resolve()',
+                'artifact = (recorded_path_at(root, relative) if root == ENCONET.resolve() '
+                'else root / Path(relative)).resolve()')
         if path.name == 'build_evidence_dashboard.py':
             text = replace_once(text, 'import argparse', 'from project_records import recorded_path\nimport argparse')
             text = replace_once(text, '"matrix": "out/2026-10-05/MIN-3.1-evidence-matrix-v4.json"',
@@ -119,6 +126,10 @@ def build(supplier, destination, *, workspace=WORKSPACE):
                                 'from reset_operations import remove_generated\nfrom project_paths import configure_standard_streams')
             text = replace_once(text, '            path.unlink()', '            remove_generated(path)')
         if path.name == 'run_all_validations.py':
+            text = replace_once(text, 'import argparse', 'from project_records import recorded_path\nimport argparse')
+            if 'BENCHMARKS = ENCONET / "benchmarks" / "validate_benchmarks.py"' in text:
+                text = replace_once(text, 'BENCHMARKS = ENCONET / "benchmarks" / "validate_benchmarks.py"',
+                                    'BENCHMARKS = SCRIPTS / "validate_benchmarks.py"')
             if '"--allow-pending-claude"' not in text:
                 text = replace_once(text, '    parser.add_argument("--no-record", action="store_true")',
                     '    parser.add_argument("--no-record", action="store_true")\n    parser.add_argument("--allow-pending-claude", action="store_true", help="explicit deferred agent infrastructure; never source or evidence approval")')
@@ -138,6 +149,13 @@ def build(supplier, destination, *, workspace=WORKSPACE):
                                 'evidence_run / "report.md"')
             text = replace_once(text, 'evidence_run / f"{supplier}_appendix_b_dashboard.html"',
                                 'evidence_run / "dashboard_light.html"')
+            text = replace_once(text, 'evidence_run / "evidence_bundle.json"',
+                'recorded_path("outputs/candidates/evidence_access/" + run_id + "/evidence_bundle.json")')
+            package_reference = 'evidence_root / "portable_package"'
+            if text.count(package_reference) != 2:
+                raise ValueError('portable package validator bindings differ')
+            text = text.replace(package_reference,
+                'recorded_path("outputs/archive/legacy-outputs/candidates/evidence_access/portable_package")')
             text = replace_once(text, 'evidence_root / "validation_artifacts" / "browser_evidence"',
                                 'layout_path("validation", run_id or "setup", "browser_evidence")')
         if path.name == 'run_validation.py':
@@ -169,6 +187,24 @@ def build(supplier, destination, *, workspace=WORKSPACE):
             data = converted.encode('utf-8')
             changes.append({'path': name, 'before_sha256': hashlib.sha256(before).hexdigest(),
                             'after_sha256': hashlib.sha256(data).hexdigest(), 'routed_paths': count + literals})
+    added = []
+    if not (source_root / 'scripts/agent_coord.py').exists():
+        baseline_bytes = (BASELINE / 'manifest.json').read_bytes()
+        if sha(baseline_bytes) != PIN:
+            raise ValueError('neutral coordinator baseline checksum mismatch')
+        neutral = verify_payload(json.loads(baseline_bytes), BASELINE)['scripts/agent_coord.py']
+        text = neutral.decode('utf-8')
+        text = replace_once(text, 'pointer.replace("(handoffs/", "(../handoffs/")',
+                            'pointer.replace("(coordination/handoffs/", "(handoffs/")')
+        payload['scripts/agent_coord.py'] = text.encode('utf-8')
+        added.append('scripts/agent_coord.py')
+    benchmark = source_root / 'benchmarks/validate_benchmarks.py'
+    if benchmark.is_file() and not (source_root / 'scripts/validate_benchmarks.py').exists():
+        text = regular(benchmark).decode('utf-8-sig')
+        text = replace_once(text, 'ROOT = Path(__file__).resolve().parent',
+                            'from project_layout import path as layout_path\nROOT = layout_path("benchmarks")')
+        payload['scripts/validate_benchmarks.py'] = text.encode('utf-8')
+        added.append('scripts/validate_benchmarks.py')
     for name in ('project_layout.py', 'project_scratch.py', 'reset_operations.py', 'project_records.py'):
         target = source_root / 'scripts' / name
         if target.exists():
@@ -181,7 +217,7 @@ def build(supplier, destination, *, workspace=WORKSPACE):
         holds.append({'file': 'project-layout.json', 'reason': 'existing layout configuration requires review'})
     manifest = {'schema_version': 1, 'status': 'development-overlay-not-installable',
         'source_supplier': supplier, 'changes': changes, 'holds': holds,
-        'install_paths': [row['path'] for row in changes] + [
+        'install_paths': [row['path'] for row in changes] + added + [
             'scripts/project_layout.py', 'scripts/project_scratch.py',
             'scripts/reset_operations.py', 'scripts/project_records.py',
             'project-layout.json', 'project-file-relocations.json'],

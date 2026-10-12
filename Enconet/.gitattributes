@@ -27,3 +27,12 @@ out/2026-10-07/full-keyword-sweep/sources/** -whitespace
 out/2026-10-07/full-keyword-sweep/review/** -whitespace
 # Per-generation evidence includes exact quotes and hash-sensitive artifacts.
 sieving/runs/** -text -whitespace
+
+# Relocated homes keep the original byte/line-ending policy.
+work/derived/** -text
+work/validation/** -text
+work/validation/2026-10-07/framework-v2/** text eol=lf
+work/bootstrap/framework-v2/** text eol=lf
+work/validation/2026-10-07/full-keyword-sweep/sources/** -whitespace
+work/validation/2026-10-07/full-keyword-sweep/review/** -whitespace
+work/migrations/** -text

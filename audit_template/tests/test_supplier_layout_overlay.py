@@ -47,3 +47,21 @@ parser.add_argument("--output",default=Path("benchmarks/golden.yml"))
 def test_supplier_parent_alias_is_refused(tmp_path):
     with pytest.raises(ValueError):
         build('..', tmp_path / '.tmp/candidate', workspace=tmp_path)
+
+
+def test_relocated_benchmark_runner_keeps_local_sources(tmp_path):
+    supplier = tmp_path / 'Atlas Engineering'
+    (supplier / 'scripts').mkdir(parents=True)
+    (supplier / 'benchmarks').mkdir()
+    original = ('from pathlib import Path\n'
+                'ENCONET = Path(__file__).resolve().parents[1]\n'
+                'ROOT = Path(__file__).resolve().parent\n')
+    source = supplier / 'benchmarks/validate_benchmarks.py'
+    source.write_text(original, encoding='utf-8')
+    target = tmp_path / '.tmp/overlay'
+    build('Atlas Engineering', target, workspace=tmp_path)
+    converted = (target / 'scripts/validate_benchmarks.py').read_text(encoding='utf-8')
+    assert 'ROOT = layout_path("benchmarks")' in converted
+    assert source.read_text(encoding='utf-8') == original
+    manifest = json.loads((target / 'candidate-manifest.json').read_text(encoding='utf-8'))
+    assert 'scripts/validate_benchmarks.py' in manifest['install_paths']

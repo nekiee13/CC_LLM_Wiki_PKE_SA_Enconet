@@ -23,7 +23,7 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def verify(supplier, overlay, destination):
+def verify(supplier, overlay, destination, file_map=None):
     source = WORKSPACE / supplier
     if (supplier in {'', '.', '..'} or Path(supplier).name != supplier
             or not source.is_dir() or source.resolve().parent != WORKSPACE):
@@ -46,14 +46,14 @@ def verify(supplier, overlay, destination):
     for row in manifest['changes']:
         if sha(source / row['path']) != row['before_sha256']:
             raise ValueError('live runtime changed since overlay preparation')
-    with zipfile.ZipFile(WORKSPACE / 'PKE_SA_NQA1_doc/plans/cleanup-cu1/compiled-map/file-moves-final.zip') as archive:
+    with zipfile.ZipFile(file_map or WORKSPACE / 'PKE_SA_NQA1_doc/plans/cleanup-cu1/compiled-map/file-moves-final.zip') as archive:
         old_map = json.loads(archive.read(archive.namelist()[0]))
     mapping = {row['source'].removeprefix(supplier + '/'): row['destination'].removeprefix(supplier + '/')
                for row in old_map['files'] if row['source'].startswith(supplier + '/')}
     observed, skipped = {}, []
     destination.mkdir(parents=True, exist_ok=False)
     areas = {'scripts', 'schemas', 'raw', 'db', 'sieving', 'wiki', 'docs',
-             'derived', 'manifests', 'benchmarks', 'outputs', 'out', 'handoffs', '.agents'}
+             'derived', 'manifests', 'benchmarks', 'outputs', 'out', 'handoffs', '.agents', 'templates'}
     for top in sorted(source.iterdir()):
         if top.is_dir() and top.name not in areas:
             continue
@@ -100,6 +100,24 @@ def verify(supplier, overlay, destination):
                 aliases[generic] = new
     (destination / 'project-file-relocations.json').write_text(json.dumps(
         {'schema_version': 1, 'paths': aliases}, ensure_ascii=False, indent=2), encoding='utf-8')
+    if file_map is not None:
+        packet = Path(file_map).parent
+        with zipfile.ZipFile(packet / 'preview.json.zip') as archive:
+            preview = json.loads(archive.read(archive.namelist()[0]))
+        if preview['supplier'] != supplier:
+            raise ValueError('foreign report adaptation packet')
+        for adaptation in preview['reference_adaptations']:
+            body = regular(packet / 'canonical-report.md')
+            if hashlib.sha256(body).hexdigest() != adaptation['adapted_sha256']:
+                raise ValueError('canonical report adaptation hash differs')
+            relative = adaptation['canonical_destination'].removeprefix(supplier + '/')
+            target = destination / relative
+            if (not adaptation['canonical_destination'].startswith(supplier + '/')
+                    or not target.resolve().is_relative_to(destination) or target.exists()):
+                raise ValueError('unsafe or existing canonical report destination')
+            target.parent.mkdir(parents=True, exist_ok=True)
+            with target.open('xb') as stream:
+                stream.write(body)
     pointer = destination / 'HANDOFF.md'
     if pointer.exists():
         pointer.write_text(pointer.read_text(encoding='utf-8').replace('(handoffs/', '(coordination/handoffs/'), encoding='utf-8')
@@ -107,7 +125,8 @@ def verify(supplier, overlay, destination):
     (destination / 'incoming').mkdir(exist_ok=True)
     commands = [
         ['validate_raw_sources.py'], ['validate_chunks.py', '--no-record'],
-        ['validate_traceability.py', '--active-only', '--no-record'],
+        ['validate_traceability.py', '--no-record'] + (['--active-only']
+            if '--active-only' in (source / 'scripts/validate_traceability.py').read_text(encoding='utf-8') else []),
         ['validate_requirements.py', '--no-record'], ['audit_command.py', 'audit-status'],
         ['reset_audit.py'], ['run_all_validations.py', '--no-record', '--allow-pending-claude'],
     ]
@@ -116,12 +135,12 @@ def verify(supplier, overlay, destination):
         package = json.loads(packages[0].read_text(encoding='utf-8'))
         run = package['run']['run_id']
         run_root = packages[0].parent
-        commands.extend([
-            ['validate_evaluation.py', '--run-id', run],
+        commands.append(['validate_evaluation.py', '--run-id', run])
+        if (destination / 'scripts/package_audit_delivery.py').is_file():
+            commands.append(
             ['package_audit_delivery.py', '--run-id', run,
              '--light', str(run_root / 'dashboard_light.html'),
-             '--dark', str(run_root / 'dashboard_dark.html'), '--output', str(run_root)],
-        ])
+             '--dark', str(run_root / 'dashboard_dark.html'), '--output', str(run_root)])
     records = []
     db_before = sha(destination / 'db/nqa_audit.sqlite')
     for command in commands:
@@ -147,8 +166,9 @@ def main():
     parser.add_argument('--supplier', required=True)
     parser.add_argument('--overlay', required=True, type=Path)
     parser.add_argument('--destination', required=True, type=Path)
+    parser.add_argument('--file-map', type=Path, help='exact fresh cleanup map to rehearse')
     args = parser.parse_args()
-    receipt = verify(args.supplier, args.overlay, args.destination)
+    receipt = verify(args.supplier, args.overlay, args.destination, args.file_map)
     print(json.dumps({'passed': receipt['passed'], 'copied_files': receipt['copied_files'],
                       'commands': [{key: row[key] for key in ('command', 'exit_code')} for row in receipt['commands']]}))
     return int(not receipt['passed'])

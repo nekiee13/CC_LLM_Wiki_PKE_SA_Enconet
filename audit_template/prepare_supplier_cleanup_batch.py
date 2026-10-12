@@ -182,6 +182,13 @@ def prepare(supplier, destination):
                     'canonical_destination': canonical, 'operation': 'markdown-artifact-link-update',
                     'original_sha256': row['sha256'],
                     'adapted_sha256': hashlib.sha256(result).hexdigest(), 'updated_links': count})
+    # Frozen portable packages must retain their relative member paths as a unit.
+    # Active dashboards remain standalone in outputs/RUN-*; this is history only.
+    package_prefix = supplier + '/outputs/candidates/evidence_access/portable_package/'
+    for row in rows:
+        if row['source'].startswith(package_prefix):
+            row['destination'] = (supplier + '/outputs/archive/legacy-outputs/candidates/evidence_access/'
+                                  'portable_package/' + row['source'][len(package_prefix):])
     preview = migration.preview(WORKSPACE, plan)
     relocations = relocation_aliases(rows, supplier)
     directory_check = directory_preflight(WORKSPACE, supplier, plan)

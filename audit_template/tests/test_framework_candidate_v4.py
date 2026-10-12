@@ -38,6 +38,23 @@ def test_unicode_offsets_comments_and_shadowed_root():
     assert 'return ROOT / "derived"' in converted
 
 
+def test_verified_local_import_aliases_preserve_foreign_and_shadowed_roots():
+    source = ('from source_registry import ENCONET as supplier_root\n'
+              'from regression_fixture import ROOT\n'
+              'from unrelated import ROOT as other\n'
+              'a = supplier_root / "derived"\n'
+              'b = ROOT / "out"\n'
+              'c = other / "derived"\n'
+              'def foreign(supplier_root):\n'
+              '    return supplier_root / "derived"\n')
+    converted, count = builder().route_python(source)
+    assert count == 2
+    assert "a = layout_path('derived')" in converted
+    assert "b = layout_path('validation')" in converted
+    assert 'c = other / "derived"' in converted
+    assert 'return supplier_root / "derived"' in converted
+
+
 def test_candidate_requires_fresh_destination_and_verified_payload(tmp_path):
     m = builder()
     target = tmp_path / 'candidate'
