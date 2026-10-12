@@ -1,7 +1,7 @@
 # Enconet project-local Codex skills
 
 This directory is reserved for Codex-owned skills whose scope is limited to the
-Enconet project, per ADR-0016 and `doc/SKILLS.md`.
+Enconet project, per ADR-0016 and workspace `PKE_SA_NQA1_doc/SKILLS.md`.
 
 Each installed skill must use the layout:
 

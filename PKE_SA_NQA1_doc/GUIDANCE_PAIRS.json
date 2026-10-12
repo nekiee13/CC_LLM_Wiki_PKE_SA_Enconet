@@ -83,8 +83,9 @@
         },
         {
           "id": "workspace-doc-dir",
-          "description": "Workspace-wide engineering documentation lives in doc/",
-          "pattern": "workspace-wide engineering documentation in .?doc/"
+          "description": "Workspace documentation home; Claude migration synchronization pending",
+          "codex_pattern": "workspace-wide engineering documentation in .?PKE_SA_NQA1_doc/",
+          "claude_pattern": "workspace-wide engineering documentation in .?doc/"
         },
         {
           "id": "verify-tree-before-trust",
@@ -147,6 +148,10 @@
         }
       ],
       "documented_differences": [
+        {
+          "id": "workspace-doc-home-migration",
+          "description": "Codex uses owner-approved PKE_SA_NQA1_doc; Claude's own workspace guidance update is pending. Both sides remain checked against their explicit current path."
+        },
         {
           "id": "skill-tree-layout",
           "description": "Skill install locations are tool-specific (.claude/skills vs .agents/skills; Codex additionally distinguishes user-global $HOME/.agents/skills)."

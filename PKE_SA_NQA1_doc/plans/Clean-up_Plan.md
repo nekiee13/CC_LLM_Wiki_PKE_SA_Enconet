@@ -1,7 +1,7 @@
 # Clean-up Plan
 
 Date: 11 October 2026  
-Status: layout confirmed by owner; migration not started
+Status: live cleanup authorized; first workspace batch applied; remaining holds and supplier batches open
 Review: Claude has no objection to CU-1 inventory/baseline; live moves remain unapproved.
 Implementer: Codex. Reviewer: Claude. Owner: scope and approval decisions.  
 Scope: workspace, Enconet, Ekonerg, IBE, TEKOL, IGH, IMK, KCPG, MOR, and future suppliers.
@@ -384,4 +384,19 @@ own workspace/supplier guidance, skill references and global handoff contract
 when the new paths are ready. Codex confirms those agent folders stay put.
 This is not approval of a file move map, migration code or live application.
 The combined CU-1 packet review found no safety objection. Owner layout
-confirmation is now recorded. This does not approve CU-2 tooling or live moves.
+confirmation is recorded. Later CU-2 tooling and reference preparation reviews
+were accepted by Claude. The owner then authorized live cleanup execution.
+
+## Live execution update — 12 October 2026
+
+CU-3.1's first reviewed workspace batch moved 405 files and activated the seven
+reference changes. Apply, repeat apply and pre-activation verification passed.
+Post-activation checks prove 402 unchanged moved files and three exact authorized
+guide edits, with all 1,976 protected baseline files unchanged. Eleven related
+tests passed. See [live workspace result](cleanup-cu3/LIVE_WORKSPACE_RESULT.md).
+
+The 21 held records and old directories remain explicit exceptions. Claude
+guidance/skill synchronization and owned-record moves remain pending. CU-3.1 is
+not fully closed; Ekonerg/Enconet live moves, six scaffolds, v4 release and final
+index refresh remain under CU-3/CU-4. Owner authority is recorded at
+[live authorization](cleanup-cu3/OWNER_LIVE_AUTHORIZATION.md).

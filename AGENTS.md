@@ -15,11 +15,8 @@ requirements defined here.
 - Keep Codex configuration (`AGENTS.md`, `.agents/`) separate from Claude Code configuration
   (`CLAUDE.md`, `.claude/`). Update only the Codex side and record Claude synchronization as
   pending; Claude Code owns changes to its infrastructure.
-- Put workspace-wide engineering documentation in `doc/` and project details inside the project.
-  The owner-approved cleanup target is `PKE_SA_NQA1_doc/`. During migration,
-  `workspace-layout.json` explicitly selects the current workspace documentation
-  home for engineering tools. Change that selection with the reviewed docs batch;
-  the presence of the new plans folder alone does not mean the docs have moved.
+- Put workspace-wide engineering documentation in `PKE_SA_NQA1_doc/` and project details inside the project.
+  `workspace-layout.json` explicitly selects this documentation home for tools.
   Claude synchronization for the new home remains pending until Claude confirms
   its own guidance update.
 
@@ -65,7 +62,7 @@ ASME NQA-1 edition or approve any source intake or audit result.
 - ADR-0019 makes `PKE_SA_NQA1_Enconet_docs`, `PKE_SA_NQA1_Enconet_controlled`,
   `PKE_SA_NQA1_global_docs`, and `Enconet-0a063bd7` shared-neutral repository indexes.
   Either agent may query them; refresh only from committed state under one active
-  `INDEX-REFRESH` claim using the exact profiles in `doc/INDEXING.md`.
+  `INDEX-REFRESH` claim using the exact profiles in `PKE_SA_NQA1_doc/INDEXING.md`.
 - Send cross-agent notes, questions, review requests, blockers, and acknowledgements through
   the active project's `coordination/messages/` using immutable `CX_` messages. For Ekonerg,
   use `Ekonerg/coordination/`; for Enconet, use `Enconet/coordination/`. Never rewrite a

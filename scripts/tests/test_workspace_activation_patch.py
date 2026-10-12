@@ -1,14 +1,22 @@
 """Rehearse the reviewed reference patch in a disposable copy only."""
 import json
+import base64
+import hashlib
 from pathlib import Path
 import re
 import subprocess
 import sys
+import zipfile
 
 ROOT = Path(__file__).parents[2]
 
 
 def test_activation_patch_matches_current_files_and_retains_guidance_check(tmp_path):
+    snapshot = ROOT / 'PKE_SA_NQA1_doc/plans/cleanup-cu3/live-workspace-20261012/patch-before.json.zip'
+    before = None
+    if snapshot.exists():
+        with zipfile.ZipFile(snapshot) as archive:
+            before = json.loads(archive.read('patch-before.json'))
     pairs = {'workspace-layout.json': 'workspace-layout.json', 'README.md': 'README.md',
              'AGENTS.md': 'AGENTS.md', '.gitignore': '.gitignore',
              'PKE_SA_NQA1_doc/GUIDANCE_PAIRS.json': 'doc/GUIDANCE_PAIRS.json',
@@ -17,7 +25,10 @@ def test_activation_patch_matches_current_files_and_retains_guidance_check(tmp_p
     for destination, source in pairs.items():
         path = tmp_path / destination
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_bytes((ROOT / source).read_bytes())
+        data = base64.b64decode(before[destination]['bytes_base64']) if before else (ROOT / source).read_bytes()
+        if before:
+            assert hashlib.sha256(data).hexdigest() == before[destination]['sha256']
+        path.write_bytes(data)
     executable = Path.home() / 'AppData/Local/Programs/OpenAI/Codex/bin/codex.exe'
     patch = (ROOT / 'PKE_SA_NQA1_doc/plans/cleanup-cu3/workspace-activation.patch').read_text(encoding='utf-8')
     applied = subprocess.run([str(executable), '--codex-run-as-apply-patch', patch],

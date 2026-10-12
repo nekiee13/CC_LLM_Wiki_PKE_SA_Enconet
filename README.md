@@ -14,7 +14,7 @@ Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
 | [`Enconet/HANDOFF.md`](Enconet/HANDOFF.md) | Pointer to the latest immutable session handoff — read first |
 | [`Enconet/wiki/index.md`](Enconet/wiki/index.md) | Enconet navigation: status, log, authoritative documents |
 | [`Enconet/wiki/current-status.md`](Enconet/wiki/current-status.md) | Current phase and open items |
-| [`doc/README.md`](doc/README.md) | Workspace-level engineering documentation index |
+| [`PKE_SA_NQA1_doc/README.md`](PKE_SA_NQA1_doc/README.md) | Workspace-level engineering documentation index |
 | [`PKE_SA_NQA1_doc/plans/Clean-up_Plan.md`](PKE_SA_NQA1_doc/plans/Clean-up_Plan.md) | Approved cleanup layout and implementation plan |
 | [`Ekonerg/HANDOFF.md`](Ekonerg/HANDOFF.md) | Ekonerg session handoff and current cleanup work |
 | [`Enconet/coordination/TEAM_PROTOCOL.md`](Enconet/coordination/TEAM_PROTOCOL.md) | Dual-agent coordination protocol (ADR-0017/0018) |
@@ -30,10 +30,9 @@ Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
 
 ## Agent guidance
 
-`workspace-layout.json` selects the current workspace docs home. It remains
-`doc` while the reviewed migration is being prepared; `PKE_SA_NQA1_doc` is the
-approved target and already holds the cleanup plans. The docs entry above is
-updated as part of that live batch.
+`workspace-layout.json` selects `PKE_SA_NQA1_doc` as the workspace docs home.
+Retained files in the old `doc` tree are migration holds, not a second active
+documentation home. Their dispositions are recorded in the cleanup packet.
 
 Tool-specific, semantically aligned pairs (drift-checked by
 `scripts/check_guidance_drift.py`): `CLAUDE.md`/`AGENTS.md` at the workspace root and

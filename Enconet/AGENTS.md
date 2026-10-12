@@ -182,7 +182,8 @@ human gate on its own.
 
 - Follow ADR-0016 through ADR-0019. Claude Code owns Claude infrastructure and guidance-only
   indexes; ADR-0019 repository code/docs indexes are shared-neutral and refreshable by either
-  agent only from committed state under an active `INDEX-REFRESH` claim and `doc/INDEXING.md`.
+  agent only from committed state under an active `INDEX-REFRESH` claim and
+  workspace `PKE_SA_NQA1_doc/INDEXING.md`.
 - Session order: active Codex guidance, `HANDOFF.md`, `wiki/current-status.md`,
   `wiki/index.md`, `project-state.yml`, then `coordination/BOARD.md`, unread messages
   addressed to Codex, and active claims. Run `scripts/session_continuity.py`; an in-progress

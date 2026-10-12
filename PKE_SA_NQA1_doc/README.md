@@ -1,11 +1,11 @@
-# Workspace documentation — `03_PKE_SA_NQA1/doc/`
+# Workspace documentation — `03_PKE_SA_NQA1/PKE_SA_NQA1_doc/`
 
 - **Scope:** index of the workspace-level (cross-project) engineering documentation.
   Project-specific docs live inside each project (e.g. `Enconet/docs/`).
 - **Owner:** shared — either agent (Codex, Claude Code) updates it under the
   coordination protocol (`Enconet/coordination/TEAM_PROTOCOL.md`); the human owner
   approves substantive policy content.
-- **Update trigger:** whenever a file is added to or removed from `doc/`.
+- **Update trigger:** whenever a file is added to or removed from `PKE_SA_NQA1_doc/`.
 
 Created by Task C2.2 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G1, ADR-0005).
 Navigation: workspace overview at [`../README.md`](../README.md); project docs at
@@ -29,7 +29,7 @@ Navigation: workspace overview at [`../README.md`](../README.md); project docs a
 | [GIT_CONVENTIONS.md](GIT_CONVENTIONS.md) | Commit tags, ignore policy, line endings, identity (Task C0.2) |
 | [GUIDANCE_PAIRS.json](GUIDANCE_PAIRS.json) | Guidance-pair drift manifest consumed by `scripts/check_guidance_drift.py` (Task C2.1) |
 | [Support_system.md](Support_system.md) | Owner-accepted portable software-development support framework: core, modules, principles, and conformance profile |
-| [SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md](SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md) | Owner-activated GitHub-Issues-style Master Plan for transferring the support system to CC_FIN and CC_Loto; T1/T2 active, T3 publication gated by M1 |
+| [SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md](plans/SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md) | Owner-activated GitHub-Issues-style Master Plan for transferring the support system to CC_FIN and CC_Loto; T1/T2 active, T3 publication gated by M1 |
 | [support-transfer/M0_ACTIVATION.md](support-transfer/M0_ACTIVATION.md) | Immutable owner M0 activation for transfer-plan v1.0; authorizes T1/T2 while preserving the M1 publication gate |
 | [Support_system_transfer_draft.md](Support_system_transfer_draft.md) | Historical reviewed planning draft; superseded only when the final Master Plan is accepted and activated |
 

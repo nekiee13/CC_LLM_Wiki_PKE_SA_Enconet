@@ -24,6 +24,7 @@ and ADRs are the records.
 - `CLEANUP-CU2-PUBLICATION` — codex, released 2026-10-12T03:48:45Z
 - `CLEANUP-CU2-WORKFLOW` — codex, released 2026-10-12T14:00:18Z
 - `CLEANUP-CU3-REFERENCES` — codex, released 2026-10-12T16:34:06Z
+- `CLEANUP-CU3-WORKSPACE-LIVE` — codex, released 2026-10-12T18:03:58Z
 - `CLEANUP-LAYOUT-APPROVAL` — codex, released 2026-10-11T23:09:22Z
 - `CLEANUP-PLAN` — codex, released 2026-10-11T22:01:11Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
@@ -116,11 +117,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-10-12T180129Z_live-workspace-applied` — review_request, codex -> claude-code: CLEANUP-CU3.1
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-12T174644Z-99a1d19.md`](../handoffs/2026-10-12T174644Z-99a1d19.md)
+- Authoritative record: [`handoffs/2026-10-12T180401Z-597cbd7.md`](../handoffs/2026-10-12T180401Z-597cbd7.md)
 - Archive: 625 records in `coordination/archive/`
 
-Generated: 2026-10-12T17:47:01Z
+Generated: 2026-10-12T18:04:43Z

@@ -1,0 +1,30 @@
+{
+  "schema": "cleanup-live-post-activation-1",
+  "passed": true,
+  "moved": 405,
+  "unchanged_move_bytes_and_identities": 402,
+  "activated_moved_guides": [
+    "PKE_SA_NQA1_doc/GUIDANCE_PAIRS.json",
+    "PKE_SA_NQA1_doc/INDEXING.md",
+    "PKE_SA_NQA1_doc/README.md"
+  ],
+  "activation_file_hashes": {
+    "workspace-layout.json": "6f78e6b2aa05bca14ebc6dcfa71f16673df54c1a7e6f01ca1715acd1ab5a0edc",
+    "README.md": "b1c2df6eeeee18009b6d43e690684dad0dffb22b8939ac65eeb53aa40215ced1",
+    "AGENTS.md": "77a6210d39a45d8f648422b44194a8be8339113a259c268869553a8ffa41f3e7",
+    ".gitignore": "cdc37113286ec139acee3cf12b3636f181fc51c2e245b92395d3b754c9f3c14c",
+    "PKE_SA_NQA1_doc/GUIDANCE_PAIRS.json": "aeb0c0042d3fea9271747dcc73528d4c6d1f86008964eac5150e4c8e665ced84",
+    "PKE_SA_NQA1_doc/README.md": "b5b4145654e1f8abf7bf1544b60b333b564ba9fd7214b83ddd5056cf620d8cd6",
+    "PKE_SA_NQA1_doc/INDEXING.md": "f7bb30748ee30b5d5ab0aa854b789707b64afd57d9442925f3e9f26b285c4646"
+  },
+  "original_dirty_files_unchanged": 7,
+  "held_regular_files_checked": 8,
+  "held_total": 21,
+  "protected_files_unchanged": 1976,
+  "move_only_verification": "move-verify-before-activation.json",
+  "limits": [
+    "Move-only verifier is a pre-activation receipt: three moved guides were then intentionally edited.",
+    "Undo after activation requires restoring the captured reference bytes and identity metadata first.",
+    "No source-directory pruning performed; retained holds and empty old directories remain."
+  ]
+}

@@ -1,0 +1,15 @@
+task: CLEANUP-CU3-WORKSPACE-LIVE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T18:02:45Z
+last_renewed_at_utc: 2026-10-12T18:02:45Z
+expires_at_utc: 2026-10-13T18:02:45Z
+anticipated_files:
+  - Enconet/AGENTS.md
+  - Enconet/.agents/skills/README.md
+  - PKE_SA_NQA1_doc/plans/cleanup-cu3
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+note: Finish Codex-owned workspace guide pointers after live docs relocation
+released_at_utc: 2026-10-12T18:03:58Z
