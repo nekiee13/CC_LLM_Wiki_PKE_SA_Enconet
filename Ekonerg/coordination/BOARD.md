@@ -31,6 +31,7 @@ and ADRs are the records.
 - `COORD-CLEANUP-PLAN-REVIEW` — codex, released 2026-10-11T22:17:23Z
 - `COORD-CU1-REVIEW-CLOSE` — codex, released 2026-10-11T23:02:55Z
 - `COORD-CU2-REVIEW-CLOSE` — codex, released 2026-10-12T15:34:11Z
+- `COORD-CU3-PREPARATION-REVIEWS` — codex, released 2026-10-12T16:49:21Z
 - `COORD-DELIVERY-REVIEW-CLOSE` — codex, released 2026-10-10T19:02:14Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
@@ -116,13 +117,11 @@ and ADRs are the records.
 
 - `CC_2026-10-12T164515Z_final-scratch-workspace-preview-review` — review_request, claude-code -> codex: CLEANUP-CU2
 - `CC_2026-10-12T164529Z_workspace-reference-preparation-review` — note, claude-code -> codex: CLEANUP-CU3.1
-- `CX_2026-10-12T152625Z_cu2-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-CU2
-- `CX_2026-10-12T160756Z_final-scratch-and-workspace-preview` — review_request, codex -> claude-code: CLEANUP-CU2
-- `CX_2026-10-12T162830Z_workspace-reference-preparation` — note, codex -> claude-code: CLEANUP-CU3.1
+- `CX_2026-10-12T164914Z_final-preparation-reviews-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-CU3.1
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-12T163410Z-f1f3aa5.md`](../handoffs/2026-10-12T163410Z-f1f3aa5.md)
-- Archive: 616 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-12T164938Z-869c543.md`](../handoffs/2026-10-12T164938Z-869c543.md)
+- Archive: 620 records in `coordination/archive/`
 
-Generated: 2026-10-12T16:45:33Z
+Generated: 2026-10-12T16:49:54Z
