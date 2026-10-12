@@ -1,0 +1,17 @@
+task: CLEANUP-CU2-WORKFLOW
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T13:23:19Z
+last_renewed_at_utc: 2026-10-12T13:59:01Z
+expires_at_utc: 2026-10-13T13:59:01Z
+anticipated_files:
+  - scripts/cleanup_workflow.py
+  - scripts/tests/test_cleanup_workflow.py
+  - audit_template/check_candidate_paths_v4.py
+  - audit_template/tests
+  - PKE_SA_NQA1_doc/plans/cleanup-cu2
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+note: Git moves, source-directory pruning, dispatcher checks and consolidated CU-2 review; no live moves
+released_at_utc: 2026-10-12T14:00:18Z

@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-12T035000Z-dcbef68.md`](handoffs/2026-10-12T035000Z-dcbef68.md)
+**Authoritative record:** [`handoffs/2026-10-12T140053Z-3ecf76e.md`](handoffs/2026-10-12T140053Z-3ecf76e.md)
 
-**Status:** partial · **Git:** `dcbef68` · **Agent:** codex · **Created:** 2026-10-12T03:50:00Z
+**Status:** partial · **Git:** `3ecf76e` · **Agent:** codex · **Created:** 2026-10-12T14:00:53Z
 
-**Exact next action:** Complete remaining dispatcher/configuration/path-user sweep and Git/history/empty-folder move handling. Package one coherent CU-2 review before any authorized live installation or folder move.
+**Exact next action:** Address CU-2 consolidated review; finish scratch defaults, handoff guidance and descriptive labels; prepare current workspace move preview with all dirty/Claude/link holds preserved. No repeat layout decision.

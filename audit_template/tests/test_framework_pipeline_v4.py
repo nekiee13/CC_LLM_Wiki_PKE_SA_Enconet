@@ -100,6 +100,10 @@ cli('agent_coord.py','status','--write')
 board=(root/'coordination/BOARD.md').read_text(encoding='utf-8')
 assert '(handoffs/' in board and '(coordination/handoffs/' not in board
 cli('agent_coord.py','validate')
+status = cli('audit_command.py','audit-status')
+assert 'phase:' in status and 'last_validation:' in status
+dry = cli('audit_command.py','--dry-run','audit-validate','--','--run-id',run,'--no-record','--allow-pending-claude')
+assert 'run_all_validations.py' in dry
 if supplier=='Atlas Engineering' and not (root.parent/'Other Supplier').exists():
     cli('browser_harness.py','check',viewer,'--artifacts',root/'work/validation/light-browser','--require-interactive')
     cli('browser_harness.py','check',candidate/'dashboard_dark.html','--artifacts',root/'work/validation/dark-browser','--require-interactive')
