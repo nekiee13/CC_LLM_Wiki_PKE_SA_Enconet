@@ -1,7 +1,8 @@
 # PKE SA NQA1 — supplier-audit workspace
 
-Workspace root for the NQA-1 supplier-audit projects (ADR-0001). Three project
-entries: **Enconet** (active), **Ekonerg** and **TEKOL** (not yet started). Two agents
+Workspace root for the NQA-1 supplier-audit projects (ADR-0001). Project
+entries include **Enconet** and **Ekonerg** with audit results, plus clean future
+supplier folders for **IBE, TEKOL, IGH, IMK, KCPG and MOR**. Two agents
 (Codex, Claude Code) work this repository under a shared coordination protocol.
 
 Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
@@ -14,6 +15,8 @@ Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
 | [`Enconet/wiki/index.md`](Enconet/wiki/index.md) | Enconet navigation: status, log, authoritative documents |
 | [`Enconet/wiki/current-status.md`](Enconet/wiki/current-status.md) | Current phase and open items |
 | [`doc/README.md`](doc/README.md) | Workspace-level engineering documentation index |
+| [`PKE_SA_NQA1_doc/plans/Clean-up_Plan.md`](PKE_SA_NQA1_doc/plans/Clean-up_Plan.md) | Approved cleanup layout and implementation plan |
+| [`Ekonerg/HANDOFF.md`](Ekonerg/HANDOFF.md) | Ekonerg session handoff and current cleanup work |
 | [`Enconet/coordination/TEAM_PROTOCOL.md`](Enconet/coordination/TEAM_PROTOCOL.md) | Dual-agent coordination protocol (ADR-0017/0018) |
 
 ## Authoritative project documents (Enconet)
@@ -26,6 +29,11 @@ Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
 - [`Enconet/schemas/`](Enconet/schemas/) — single-owner sieving contract (ADR-0003)
 
 ## Agent guidance
+
+`workspace-layout.json` selects the current workspace docs home. It remains
+`doc` while the reviewed migration is being prepared; `PKE_SA_NQA1_doc` is the
+approved target and already holds the cleanup plans. The docs entry above is
+updated as part of that live batch.
 
 Tool-specific, semantically aligned pairs (drift-checked by
 `scripts/check_guidance_drift.py`): `CLAUDE.md`/`AGENTS.md` at the workspace root and

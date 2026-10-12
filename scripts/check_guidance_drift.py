@@ -18,9 +18,10 @@ import json
 import re
 import sys
 from pathlib import Path
+from workspace_paths import documentation
 
 ROOT = Path(__file__).resolve().parent.parent
-MANIFEST = ROOT / "doc" / "GUIDANCE_PAIRS.json"
+MANIFEST = documentation("GUIDANCE_PAIRS.json")
 SIDES = ("claude", "codex")
 
 

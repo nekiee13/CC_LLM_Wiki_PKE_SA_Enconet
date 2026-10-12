@@ -67,7 +67,7 @@ def collect(workspace_root: Path, claude_home: Path, codex_home: Path):
         scopes.append((agent, "workspace", "<workspace>",
                        workspace_root / dot / "skills"))
         for child in sorted(p for p in workspace_root.iterdir() if p.is_dir()):
-            if child.name.startswith(".") or child.name in ("scripts", "doc"):
+            if child.name.startswith(".") or child.name in ("scripts", "doc", "PKE_SA_NQA1_doc"):
                 continue
             candidate = child / dot / "skills"
             if candidate.is_dir():

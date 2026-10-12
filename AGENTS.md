@@ -16,6 +16,12 @@ requirements defined here.
   (`CLAUDE.md`, `.claude/`). Update only the Codex side and record Claude synchronization as
   pending; Claude Code owns changes to its infrastructure.
 - Put workspace-wide engineering documentation in `doc/` and project details inside the project.
+  The owner-approved cleanup target is `PKE_SA_NQA1_doc/`. During migration,
+  `workspace-layout.json` explicitly selects the current workspace documentation
+  home for engineering tools. Change that selection with the reviewed docs batch;
+  the presence of the new plans folder alone does not mean the docs have moved.
+  Claude synchronization for the new home remains pending until Claude confirms
+  its own guidance update.
 
 ## Reuse axiom
 

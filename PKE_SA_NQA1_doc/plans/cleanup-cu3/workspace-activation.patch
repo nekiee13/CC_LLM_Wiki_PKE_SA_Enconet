@@ -1,0 +1,63 @@
+*** Begin Patch
+*** Update File: workspace-layout.json
+@@
+-  "documentation_root": "doc"
++  "documentation_root": "PKE_SA_NQA1_doc"
+*** Update File: README.md
+@@
+-| [`doc/README.md`](doc/README.md) | Workspace-level engineering documentation index |
++| [`PKE_SA_NQA1_doc/README.md`](PKE_SA_NQA1_doc/README.md) | Workspace-level engineering documentation index |
+@@
+-`workspace-layout.json` selects the current workspace docs home. It remains
+-`doc` while the reviewed migration is being prepared; `PKE_SA_NQA1_doc` is the
+-approved target and already holds the cleanup plans. The docs entry above is
+-updated as part of that live batch.
++`workspace-layout.json` selects `PKE_SA_NQA1_doc` as the workspace docs home.
++Retained files in the old `doc` tree are migration holds, not a second active
++documentation home. Their dispositions are recorded in the cleanup packet.
+*** Update File: AGENTS.md
+@@
+-- Put workspace-wide engineering documentation in `doc/` and project details inside the project.
+-  The owner-approved cleanup target is `PKE_SA_NQA1_doc/`. During migration,
+-  `workspace-layout.json` explicitly selects the current workspace documentation
+-  home for engineering tools. Change that selection with the reviewed docs batch;
+-  the presence of the new plans folder alone does not mean the docs have moved.
++- Put workspace-wide engineering documentation in `PKE_SA_NQA1_doc/` and project details inside the project.
++  `workspace-layout.json` explicitly selects this documentation home for tools.
+@@
+-  `INDEX-REFRESH` claim using the exact profiles in `doc/INDEXING.md`.
++  `INDEX-REFRESH` claim using the exact profiles in `PKE_SA_NQA1_doc/INDEXING.md`.
+*** Update File: PKE_SA_NQA1_doc/GUIDANCE_PAIRS.json
+@@
+-          "description": "Workspace-wide engineering documentation lives in doc/",
+-          "pattern": "workspace-wide engineering documentation in .?doc/"
++          "description": "Workspace documentation home; Claude migration synchronization pending",
++          "codex_pattern": "workspace-wide engineering documentation in .?PKE_SA_NQA1_doc/",
++          "claude_pattern": "workspace-wide engineering documentation in .?doc/"
+@@
+       "documented_differences": [
++        {
++          "id": "workspace-doc-home-migration",
++          "description": "Codex uses owner-approved PKE_SA_NQA1_doc; Claude's own workspace guidance update is pending. Both sides remain checked against their explicit current path."
++        },
+*** Update File: PKE_SA_NQA1_doc/README.md
+@@
+-# Workspace documentation — `03_PKE_SA_NQA1/doc/`
++# Workspace documentation — `03_PKE_SA_NQA1/PKE_SA_NQA1_doc/`
+@@
+-  approves substantive policy content.
+-- **Update trigger:** whenever a file is added to or removed from `doc/`.
++  approves substantive policy content.
++- **Update trigger:** whenever a file is added to or removed from `PKE_SA_NQA1_doc/`.
+@@
+-| [SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md](SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md) | Owner-activated GitHub-Issues-style Master Plan for transferring the support system to CC_FIN and CC_Loto; T1/T2 active, T3 publication gated by M1 |
++| [SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md](plans/SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md) | Owner-activated GitHub-Issues-style Master Plan for transferring the support system to CC_FIN and CC_Loto; T1/T2 active, T3 publication gated by M1 |
+*** Update File: PKE_SA_NQA1_doc/INDEXING.md
+@@
+-| `nqa1-global-docs` | jdocmunch | `local/PKE_SA_NQA1_global_docs` | `03_PKE_SA_NQA1/doc/` | none (directory holds only workspace docs) — created 2026-07-12 (C6.2) |
++| `nqa1-global-docs` | jdocmunch | `local/PKE_SA_NQA1_global_docs` | `03_PKE_SA_NQA1/PKE_SA_NQA1_doc/` | explicit filtered tracked-file list excluding `**/AGENTS.md`, `**/CLAUDE.md`, `**/CC_*`, `.agents/**`, `.claude/**` and generated scratch; full rebuild required after relocation |
+*** Update File: .gitignore
+@@
+-# Root ignore policy (Task C0.2, ADR-0002). See doc/GIT_CONVENTIONS.md.
++# Root ignore policy (Task C0.2, ADR-0002). See PKE_SA_NQA1_doc/GIT_CONVENTIONS.md.
+*** End Patch
