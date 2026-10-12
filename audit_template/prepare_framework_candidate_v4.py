@@ -26,6 +26,22 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def replace_assignment(source, name, transform):
+    """Edit one named literal contract, not arbitrary matching text."""
+    tree = ast.parse(source)
+    matches = [node for node in tree.body if isinstance(node, ast.Assign)
+               and any(isinstance(target, ast.Name) and target.id == name for target in node.targets)]
+    if len(matches) != 1:
+        raise ValueError('expected one literal assignment: ' + name)
+    node = matches[0].value
+    replacement = repr(transform(ast.literal_eval(node)))
+    raw = source.encode('utf-8')
+    lines = raw.splitlines(keepends=True)
+    start = sum(map(len, lines[:node.lineno - 1])) + node.col_offset
+    end = sum(map(len, lines[:node.end_lineno - 1])) + node.end_col_offset
+    return (raw[:start] + replacement.encode('utf-8') + raw[end:]).decode('utf-8')
+
+
 def verify_payload(manifest, source):
     """Verify every byte before creating a destination; refuse unsafe paths."""
     files = {}
@@ -46,7 +62,7 @@ def verify_payload(manifest, source):
     return files
 
 
-def route_python(source):
+def route_python(source, explicit_roots=()):
     """Change only recognized local-root path expressions, preserving comments.
 
     AST positions are byte offsets, so editing uses UTF-8 bytes. Do not rewrite
@@ -67,6 +83,7 @@ def route_python(source):
     for line in lines:
         offsets.append(offsets[-1] + len(line))
     edits = []
+    used_explicit = False
     # A local binding can shadow a module root. Keep that whole scope untouched.
     shadowed = set()
     for scope in ast.walk(tree):
@@ -82,13 +99,17 @@ def route_python(source):
         if id(node) in shadowed:
             continue
         if not (isinstance(node, ast.BinOp) and isinstance(node.op, ast.Div)
-                and isinstance(node.left, ast.Name) and node.left.id in roots
+                and isinstance(node.left, ast.Name) and node.left.id in roots | set(explicit_roots)
                 and isinstance(node.right, ast.Constant) and isinstance(node.right.value, str)):
             continue
         parts = PurePosixPath(node.right.value).parts
         if not parts or parts[0] not in KEYS:
             continue
-        expression = 'layout_path(' + repr(KEYS[parts[0]]) + ')'
+        if node.left.id in explicit_roots:
+            expression = 'layout_path_at(' + node.left.id + ', ' + repr(KEYS[parts[0]]) + ')'
+            used_explicit = True
+        else:
+            expression = 'layout_path(' + repr(KEYS[parts[0]]) + ')'
         for part in parts[1:]:
             expression += ' / ' + repr(part)
         edits.append((offsets[node.lineno - 1] + node.col_offset,
@@ -105,7 +126,10 @@ def route_python(source):
                 insertion = offsets[node.end_lineno]
             else:
                 break
-        raw = raw[:insertion] + b'from project_layout import path as layout_path\n' + raw[insertion:]
+        imports = b'from project_layout import path as layout_path\n'
+        if used_explicit:
+            imports += b'from project_layout import path_at as layout_path_at\n'
+        raw = raw[:insertion] + imports + raw[insertion:]
     result = raw.decode('utf-8')
     ast.parse(result)
     return result, len(edits)
@@ -129,19 +153,61 @@ def build(destination):
         parts = PurePosixPath(name).parts
         target = '/'.join((MOVED.get(parts[0], parts[0]), *parts[1:]))
         if name.startswith('scripts/') and name.endswith('.py'):
-            converted, count = route_python(data.decode('utf-8'))
-            if count:
+            source = data.decode('utf-8')
+            if name == 'scripts/reset_audit.py':
+                # work now contains framework code and immutable review/decision
+                # receipts. Never recursively reset the entire work directory.
+                source = replace_assignment(source, 'RESET_DIRS', lambda values:
+                    tuple(value for value in values if value not in {'out', 'derived', 'work'})
+                    + ('work/derived', 'work/validation'))
+                source = replace_assignment(source, 'RESET_TEXT_FILES', lambda values:
+                    {'work/' + key: value for key, value in values.items()})
+                original = 'incoming = root / "incoming"'
+                # The first is the root guard, the second reads its snapshot.
+                if source.count(original) != 2:
+                    raise ValueError('reset local-root baseline differs')
+                source = source.replace(original, 'incoming = layout_path_at(root, "incoming")', 1)
+                source = source.replace('from project_paths import configure_standard_streams',
+                    'from project_layout import path_at as layout_path_at\nfrom project_paths import configure_standard_streams', 1)
+            if name == 'scripts/make_handoff.py':
+                old = r'(handoffs/[^)]+\.md)'
+                if source.count(old) != 1:
+                    raise ValueError('handoff pointer parser baseline differs')
+                source = source.replace(old, r'(coordination/handoffs/[^)]+\.md)')
+            if name == 'scripts/agent_coord.py':
+                old = 'pointer.replace("(handoffs/", "(../handoffs/")'
+                if source.count(old) != 1:
+                    raise ValueError('coordination pointer baseline differs')
+                source = source.replace(old, 'pointer.replace("(coordination/handoffs/", "(handoffs/")')
+            explicit = {'scripts/full_keyword_sweep.py': ('root',),
+                        'scripts/make_handoff.py': ('project',)}.get(name, ())
+            converted, count = route_python(source, explicit)
+            if converted != data.decode('utf-8'):
                 data = converted.encode('utf-8')
+            if count:
                 routes[name] = count
+        if name == 'benchmarks/validate_benchmarks.py':
+            source = data.decode('utf-8')
+            old = 'ROOT = Path(__file__).resolve().parents[1]'
+            if source.count(old) != 1:
+                raise ValueError('benchmark root baseline differs')
+            data = source.replace(old, 'ROOT = Path(__file__).resolve().parents[2]').encode('utf-8')
         if target.casefold() in {key.casefold() for key in payload}:
             raise ValueError('candidate destination collision')
         payload[target] = data
     payload['scripts/project_layout.py'] = (RUNTIME / 'project_layout.py').read_bytes()
+    payload['scripts/evidence_access_policy.py'] = (RUNTIME / 'evidence_access_policy.py').read_bytes()
     payload['project-layout.json'] = (RUNTIME / 'project-layout.example.json').read_bytes()
     record = {'schema_version': 1, 'status': 'development-only-not-installable',
               'baseline_manifest_sha256': PIN, 'routed_expressions': routes,
-              'remaining': ['config/string paths', 'full sieving/audit/report pipeline',
-                            'reset/handoff', 'run-root output policy', 'Git/history orchestration'],
+              'contract_adaptations': ['reset: working data only, local root guard, manifest headers',
+                                      'handoff: coordination/handoffs and pointer parser',
+                                      'coordination: board-relative handoff pointer',
+                                      'benchmark: parent depth after relocation',
+                                      'evidence policy: direct run-root candidate outputs'],
+              'remaining': ['aggregate validation and catalog/publication routing',
+                            'configuration/path-user sweep', 'Git/history orchestration',
+                            'coherent review before any live installation'],
               'files': [{'path': name, 'sha256': sha(data), 'bytes': len(data)}
                         for name, data in sorted(payload.items())]}
     destination.mkdir(parents=True, exist_ok=False)

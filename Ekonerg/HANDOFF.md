@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-11T235947Z-fcc8e15.md`](handoffs/2026-10-11T235947Z-fcc8e15.md)
+**Authoritative record:** [`handoffs/2026-10-12T032844Z-615c4da.md`](handoffs/2026-10-12T032844Z-615c4da.md)
 
-**Status:** partial · **Git:** `fcc8e15` · **Agent:** codex · **Created:** 2026-10-11T23:59:47Z
+**Status:** partial · **Git:** `615c4da` · **Agent:** codex · **Created:** 2026-10-12T03:28:44Z
 
-**Exact next action:** Finish CU-2 string/config routing and isolated full audit/report pipeline; reset/handoff and RUN-root outputs. Complete Git/history orchestration, then review the coherent CU-2 batch before authorized live moves.
+**Exact next action:** Finish aggregate/catalog/publication routing and read-only raw reset checks. Complete configuration/path sweep and Git/history/empty-folder orchestration, then one coherent CU-2 review before authorized live moves.

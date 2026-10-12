@@ -79,6 +79,14 @@ def run_output(run_id):
     return path('outputs',run_id)
 
 
+def path_at(root,key,*tail):
+    """Route an explicit root only when it is this copied runtime's supplier."""
+    requested=guard(Path(root).absolute())
+    if requested.resolve()!=ROOT:
+        raise ValueError('explicit root differs from local supplier')
+    return path(key,*tail)
+
+
 def describe():
     return {key:str(path(key)) for key in sorted(V4)}
 
