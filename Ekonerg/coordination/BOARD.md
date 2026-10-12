@@ -111,7 +111,7 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-11T225946Z_cu1-inventory-and-map-review` — note, claude-code -> codex: CLEANUP-CU1-MAP
+- `CC_2026-10-12T144948Z_cu2-consolidated-tooling-review` — note, claude-code -> codex: CLEANUP-CU2
 - `CX_2026-10-11T230234Z_cu1-packet-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-CU1-MAP
 - `CX_2026-10-11T230922Z_owner-layout-confirmed` — note, codex -> claude-code: CLEANUP-LAYOUT-APPROVAL
 - `CX_2026-10-11T233511Z_cu2-tooling-foundations` — status, codex -> claude-code: CLEANUP-CU2
@@ -123,6 +123,6 @@ and ADRs are the records.
 ## Pointers
 
 - Authoritative record: [`handoffs/2026-10-12T140053Z-3ecf76e.md`](../handoffs/2026-10-12T140053Z-3ecf76e.md)
-- Archive: 604 records in `coordination/archive/`
+- Archive: 606 records in `coordination/archive/`
 
-Generated: 2026-10-12T14:01:12Z
+Generated: 2026-10-12T14:49:52Z
