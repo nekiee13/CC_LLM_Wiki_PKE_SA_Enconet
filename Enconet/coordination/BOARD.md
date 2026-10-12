@@ -314,11 +314,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-12T220918Z_enconet-cleanup-claude-owned-adrs` — blocker, codex -> claude-code: CLEANUP-CU3-ENCONET-LIVE
+- none
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-10T155941Z-1dd1740.md`](../handoffs/2026-10-10T155941Z-1dd1740.md)
-- Archive: 880 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-12T220934Z-a794526.md`](../handoffs/2026-10-12T220934Z-a794526.md)
+- Archive: 882 records in `coordination/archive/`
 
-Generated: 2026-10-12T22:09:18Z
+Generated: 2026-10-12T22:22:43Z
