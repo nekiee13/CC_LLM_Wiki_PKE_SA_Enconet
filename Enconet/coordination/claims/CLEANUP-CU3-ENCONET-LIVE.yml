@@ -1,0 +1,26 @@
+task: CLEANUP-CU3-ENCONET-LIVE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T22:03:34Z
+last_renewed_at_utc: 2026-10-12T22:03:34Z
+expires_at_utc: 2026-10-13T22:03:34Z
+anticipated_files:
+  - Enconet/scripts
+  - Enconet/docs
+  - Enconet/decisions
+  - Enconet/benchmarks
+  - Enconet/derived
+  - Enconet/manifests
+  - Enconet/out
+  - Enconet/outputs
+  - Enconet/work
+  - Enconet/coordination
+  - Enconet/AGENTS.md
+  - Enconet/.gitattributes
+  - Enconet/project-layout.json
+  - Enconet/project-file-relocations.json
+  - Enconet/HANDOFF.md
+  - Enconet/handoffs
+  - PKE_SA_NQA1_doc/plans/cleanup-cu3
+note: Existing CU-3.3 cleanup, owner review deferral; no audit phase advance or rollback
+released_at_utc: 2026-10-12T22:09:18Z

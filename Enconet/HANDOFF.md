@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-10T155941Z-1dd1740.md`](handoffs/2026-10-10T155941Z-1dd1740.md)
+**Authoritative record:** [`handoffs/2026-10-12T220934Z-a794526.md`](handoffs/2026-10-12T220934Z-a794526.md)
 
-**Status:** partial · **Git:** `1dd1740` · **Agent:** codex · **Created:** 2026-10-10T15:59:41Z
+**Status:** blocked · **Git:** `a794526` · **Agent:** codex · **Created:** 2026-10-12T22:09:34Z
 
-**Exact next action:** Claude accepts pinned-runtime evidence or reruns original fullsuite with C:/xPY/vEnv/WikiEnconet/python.exe, then confirms review disposition; Codex archives confirmed remaining requests. Do not modify default Python or audit data to clear messages.
+**Exact next action:** Owner explicitly authorizes Codex to move the two named CC ADR files without changing bytes, or Claude moves them. Then refresh existing CU-3.3 previews and proceed with the original cleanup bundle.
