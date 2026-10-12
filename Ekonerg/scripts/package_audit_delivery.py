@@ -5,7 +5,10 @@ root, writes a hash manifest last, and refuses every existing destination.
 Runtime uses this project's copies only. No audit database or approval is written.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
+from project_layout import path_at as layout_path_at
 
+from project_layout import path_at as layout_path_at
 import argparse
 import hashlib
 import html
@@ -51,9 +54,9 @@ def candidate_path(root, output, run_id):
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,79}', run_id):
         raise ValueError('Unsafe run ID')
     output = safe(root, output)
-    base = Path(root).absolute()/'outputs/candidates/evidence_access'/run_id
-    if output == base or not output.is_relative_to(base):
-        raise ValueError('Output must be a fresh subdirectory of the run candidate root')
+    base = layout_path_at(root, 'outputs') / run_id
+    if output != base:
+        raise ValueError('Output must be the exact run output folder')
     return output
 
 
@@ -141,7 +144,7 @@ window.addEventListener('hashchange',openDeliveryReference);openDeliveryReferenc
 
 def prepare(root, run_id, light, dark):
     root = Path(root).absolute()
-    paths = [safe(root,p) for p in [root/'db/nqa_audit.sqlite', root/'manifests/approvals.csv',
+    paths = [safe(root,p) for p in [root/'db/nqa_audit.sqlite', layout_path_at(root, 'manifests') / 'approvals.csv',
                                    root/'schemas/scoring_model.yml', root/'project-state.yml', light,dark]]
     before = {p:sha(p.read_bytes()) for p in paths}
     import yaml
@@ -209,10 +212,8 @@ def prepare(root, run_id, light, dark):
                   crumbs=list(crumbs.values()), quotes=list(quotes.values()),
                   links={json.dumps(l,sort_keys=True):l for l in links})
     bundle['links'] = list(bundle['links'].values())
-    stem = supplier.casefold().replace(' ','_')+'_appendix_b'
-    name = {k:stem+'_'+suffix for k,suffix in dict(package='evaluation_package.json',
-            report='evaluation_report.md', data='dashboard_data.json', light='dashboard.html',
-            dark='dashboard_dark.html').items()}
+    name = dict(package='evaluation_package.json', report='report.md',
+                data='dashboard_data.json', light='dashboard_light.html', dark='dashboard_dark.html')
     def linked(text):
         if text.count('</body>') != 1:
             raise ValueError('Expected one dashboard body')
@@ -220,30 +221,9 @@ def prepare(root, run_id, light, dark):
     files = {name['package']:encoded(package),name['data']:encoded(data),name['light']:linked(light_text),
              name['dark']:linked(dark_text),'evidence_bundle.json':encoded(bundle),
              name['report']:render_documentary_export(package,data,name['light']).encode('utf-8')}
-    portable = 'portable_package/'+run_id+'/'
-    for key,target in [('package','evaluation_package.json'),('data','dashboard_data.json'),
-                       ('light','evidence_explorer.html'),('dark','evidence_explorer_dark.html')]:
-        files[portable+target] = files[name[key]]
-    files[portable+'evidence_bundle.json'] = files['evidence_bundle.json']
-    files[portable+'evaluation_report.md'] = render_documentary_export(package,data,'evidence_explorer.html').encode('utf-8')
-    catalog = dict(schema_version='documentary-delivery-1',run_id=run_id,supplier=supplier,
-                   score=package['metrics']['consolidated_score'],artifacts={
-                       'light':run_id+'/evidence_explorer.html','dark':run_id+'/evidence_explorer_dark.html',
-                       'report':run_id+'/evaluation_report.md','package':run_id+'/evaluation_package.json',
-                       'bundle':run_id+'/evidence_bundle.json'})
-    files['portable_package/review_catalog.json'] = encoded(catalog)
-    files['portable_package/review_workspace.html'] = (
-        '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-        '<title>'+html.escape(supplier)+' review workspace</title><style>body{font:18px/1.5 system-ui;max-width:800px;margin:3rem auto;padding:1rem}li{margin:1rem 0}</style>'
-        '<h1>'+html.escape(supplier)+' — documentary review</h1><p>Score: '+str(catalog['score'])+'%. Prepared delivery; formal release gates unchanged.</p><ul>'+
-        ''.join('<li><a href="'+html.escape(path)+'">'+html.escape(label)+'</a></li>' for label,path in catalog['artifacts'].items())+'</ul></html>').encode('utf-8')
-    files['portable_package/package_manifest.json'] = encoded(dict(files=[
-        dict(path=p.removeprefix('portable_package/'),sha256=sha(b),bytes=len(b))
-        for p,b in sorted(files.items()) if p.startswith('portable_package/')]))
-    files['README.md'] = (f'# {supplier} documentary delivery\n\nOpen portable_package/review_workspace.html.\n\n'
-        'All evidence is embedded; no database or web service is needed. Copy the entire folder.\n'
-        'Stored scores and quotations are preserved. This is a prepared candidate, not formal G5/G6 publication.\n'
-        'The existing English presentation is retained. Raw source and database files are not distributed.\n').encode('utf-8')
+    files['README.md'] = (f'# {supplier} documentary delivery\n\n'
+        'Open dashboard_light.html or dashboard_dark.html. Each HTML is self-contained.\n'
+        'Stored scores, quotes and release-gate status are preserved.\n').encode('utf-8')
     if any(sha(p.read_bytes()) != h for p,h in before.items()):
         raise ValueError('Input changed during preparation; no delivery allowed')
     proof = dict(schema_version=1,state='prepared',run_id=run_id,supplier=supplier,

@@ -4,6 +4,8 @@ No source, crumb, evidence link, applicability or scoring-model value changes.
 The previous results are retained in immutable history and a hash-bound journal.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
+from project_layout import path_at as layout_path_at
 
 import argparse
 from contextlib import closing
@@ -49,14 +51,14 @@ def prepare(root, assessment):
     run, revision, decision = cfg['run_id'], cfg['revision_id'], cfg['decision_ref']
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,127}', revision):
         raise ValueError('invalid revision ID')
-    bind('manifests/approvals.csv')
+    bind('work/manifests/approvals.csv')
     for ref in (decision, 'G2-' + run, 'G3-' + run):
         approval(root, ref)
     rubric_path = bind(cfg['methodology'])
     if not rubric_path.read_text(encoding='utf-8').strip():
         raise ValueError('documentation methodology missing')
     model = yaml.safe_load(bind('schemas/scoring_model.yml').read_text(encoding='utf-8'))
-    with local(root, 'manifests/approvals.csv').open(encoding='utf-8-sig', newline='') as f:
+    with local(root, 'work/manifests/approvals.csv').open(encoding='utf-8-sig', newline='') as f:
         g3 = next(r for r in csv.DictReader(f) if r['object_id'] == 'G3-' + run)
     if (model.get('calibration_status') != 'approved' or model.get('approval_ref') != 'G3-' + run
             or not model.get('model_version') or 'placeholder' in model['model_version'].lower()
@@ -151,7 +153,7 @@ def apply(root, plan, output, *, before_commit=None):
     root = Path(root).resolve()
     output = local(root, output)
     db = local(root, 'db/nqa_audit.sqlite')
-    if output == root / 'out' or not output.is_relative_to(root / 'out'):
+    if output == layout_path_at(root, 'validation') or not output.is_relative_to(layout_path_at(root, 'validation')):
         raise ValueError('journal must be beneath project out')
     digest = sha(encoded(plan))
     if (output / 'completed.json').exists():

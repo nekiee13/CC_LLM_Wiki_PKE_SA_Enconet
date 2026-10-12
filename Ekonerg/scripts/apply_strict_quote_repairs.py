@@ -5,6 +5,7 @@ only two stored quote strings to the exact text in the registered raw source.
 It defaults to a dry run; ``--apply`` is required for the database update.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import hashlib
@@ -16,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "db" / "nqa_audit.sqlite"
-DEFAULT_MANIFEST = ROOT / "out" / "2026-10-05" / "traceability-repair" / "strict-quote-migration-20261006.json"
+DEFAULT_MANIFEST = layout_path('validation') / "2026-10-05" / "traceability-repair" / "strict-quote-migration-20261006.json"
 OWNER_REF = "REPAIR-DOC0019-GEN2-20261006-OWNER"
 OWNER_REF_0011 = "REPAIR-DOC0011-GEN3-20261006-OWNER"
 

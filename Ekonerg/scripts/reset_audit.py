@@ -23,6 +23,7 @@ import stat
 import sys
 from zipfile import ZIP_DEFLATED, ZipFile
 
+from reset_operations import remove_generated
 from project_paths import configure_standard_streams
 
 
@@ -33,33 +34,9 @@ PLAN_VERSION = 1
 
 # These are generated audit state locations. Framework code, schemas, prompts,
 # tests, incoming sources, docs, coordination, and handoffs are not targets.
-RESET_DIRS = (
-    "raw",
-    "derived",
-    "work",
-    "outputs",
-    "results",
-    "reports",
-    "artifacts",
-    "audit_runs",
-    "db/backups",
-    "sieving/DATA",
-    "sieving/outputs",
-    "sieving/runs",
-    "sieving/results",
-    "wiki/actions",
-    "wiki/criteria",
-    "wiki/dashboards",
-    "wiki/evidence",
-    "wiki/findings",
-    "wiki/gates",
-)
+RESET_DIRS = ('raw', 'outputs', 'results', 'reports', 'artifacts', 'audit_runs', 'db/backups', 'sieving/DATA', 'sieving/outputs', 'sieving/runs', 'sieving/results', 'wiki/actions', 'wiki/criteria', 'wiki/dashboards', 'wiki/evidence', 'wiki/findings', 'wiki/gates', 'work/derived', 'work/validation')
 
-RESET_TEXT_FILES = {
-    "manifests/approvals.csv": "object_id,decision,date,reviewer,notes",
-    "manifests/link_exceptions.csv": "crumb_id,quote_id,reason,approved_by,date",
-    "manifests/validation_runs.csv": "run_utc,validator,phase,result,exit_code,details",
-}
+RESET_TEXT_FILES = {'work/manifests/approvals.csv': 'object_id,decision,date,reviewer,notes', 'work/manifests/link_exceptions.csv': 'crumb_id,quote_id,reason,approved_by,date', 'work/manifests/validation_runs.csv': 'run_utc,validator,phase,result,exit_code,details'}
 RESET_FILES = (
     "db/nqa_audit.sqlite",
     "project-state.yml",
@@ -323,7 +300,7 @@ def apply_plan(plan_path: Path | str, project_root: Path | str,
         if actual != expected:
             raise ResetError(f"reset target changed before removal: {path}")
         if entry["action"] == "delete":
-            path.unlink()
+            remove_generated(path)
             deleted += 1
         else:
             header = base64.b64decode(str(entry["header_b64"])).decode("utf-8")

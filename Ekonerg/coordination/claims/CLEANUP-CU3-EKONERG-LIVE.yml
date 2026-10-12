@@ -1,0 +1,25 @@
+task: CLEANUP-CU3-EKONERG-LIVE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T21:26:24Z
+last_renewed_at_utc: 2026-10-12T21:26:24Z
+expires_at_utc: 2026-10-13T21:26:24Z
+anticipated_files:
+  - Ekonerg/scripts
+  - Ekonerg/project-layout.json
+  - Ekonerg/project-file-relocations.json
+  - Ekonerg/benchmarks
+  - Ekonerg/derived
+  - Ekonerg/manifests
+  - Ekonerg/backup
+  - Ekonerg/handoffs
+  - Ekonerg/out
+  - Ekonerg/.bootstrap
+  - Ekonerg/docs
+  - Ekonerg/outputs
+  - Ekonerg/work
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - PKE_SA_NQA1_doc/plans/cleanup-cu3
+note: Owner explicitly defers pre-execution safety review; execute existing bundle with journals and integrity checks, no new tools/tasks
+released_at_utc: 2026-10-12T21:49:32Z

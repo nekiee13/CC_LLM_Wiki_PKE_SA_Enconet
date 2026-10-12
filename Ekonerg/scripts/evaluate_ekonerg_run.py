@@ -7,6 +7,7 @@ and 1 unmet (0).  The ordinal point is shown in the review artifact; the
 canonical database score remains the Enconet 0/25/50/75/100 percentage.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import json
@@ -18,7 +19,7 @@ from evaluation_engine import write_evaluation
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB = ROOT / "db" / "nqa_audit.sqlite"
-DEFAULT_OUTPUT = ROOT / "out" / "2026-10-05" / "EKONERG_EVALUATION_20261005.json"
+DEFAULT_OUTPUT = layout_path('validation') / "2026-10-05" / "EKONERG_EVALUATION_20261005.json"
 RUN_ID = "RUN-20261003-32"
 
 # This is the documented first-pass judgment from the active Ekonerg vendor

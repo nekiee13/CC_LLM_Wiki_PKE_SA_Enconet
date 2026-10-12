@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-12T211800Z-2fd7abf.md`](handoffs/2026-10-12T211800Z-2fd7abf.md)
+**Authoritative record:** [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](coordination/handoffs/2026-10-12T215038Z-35ae627.md)
 
-**Status:** partial · **Git:** `2fd7abf` · **Agent:** codex · **Created:** 2026-10-12T21:18:00Z
+**Status:** partial · **Git:** `35ae627` · **Agent:** codex · **Created:** 2026-10-12T21:50:38Z
 
-**Exact next action:** Obtain pending CU-3.2 safety review. Refresh exact maps for latest handoff and HEAD, bind actual references, apply file moves without pruning, native empty-tree renames, then 39-file runtime/layout activation and canonical report edition; validate live before commit.
+**Exact next action:** CU-3.3 Enconet: use existing tooling with Enconet's own current runtime and exact map under the same owner sprint deferral; preserve incoming evidence DB and separate 80.6 percent score. Do not introduce new tools or slices.

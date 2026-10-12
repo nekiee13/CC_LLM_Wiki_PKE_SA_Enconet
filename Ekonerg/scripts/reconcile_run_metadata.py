@@ -6,6 +6,7 @@ approved decision reference and an exact old value, so a stale or wrong run
 cannot be changed by accident.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -22,7 +23,7 @@ import db_util
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB = ROOT / "db" / "nqa_audit.sqlite"
-DEFAULT_APPROVALS = ROOT / "manifests" / "approvals.csv"
+DEFAULT_APPROVALS = layout_path('manifests') / "approvals.csv"
 DEFAULT_RUN_ID = "RUN-20261003-32"
 DEFAULT_OLD = "0.1-placeholder"
 DEFAULT_NEW = "1.0-ekonerg-20261004"
@@ -118,7 +119,7 @@ def main() -> int:
     parser.add_argument("--old-version", default=DEFAULT_OLD)
     parser.add_argument("--new-version", default=DEFAULT_NEW)
     parser.add_argument("--decision-ref")
-    parser.add_argument("--approvals", type=Path, default=Path("manifests/approvals.csv"))
+    parser.add_argument("--approvals", type=Path, default=Path('work/manifests/approvals.csv'))
     parser.add_argument("--evidence", type=Path)
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()

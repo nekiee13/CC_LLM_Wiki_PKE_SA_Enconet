@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Preview or first-write UTF-8 text from one registered local raw file."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 from contextlib import closing
@@ -52,7 +53,7 @@ def _plan(db: Path, doc_id: str) -> tuple[dict, Path, str]:
     text = source.read_text(encoding="utf-8-sig")
     if not text.strip():
         raise ValueError("empty extraction output")
-    output = local_path(ROOT / "derived" / f"{doc_id}.txt")
+    output = local_path(layout_path('derived') / f"{doc_id}.txt")
     if output.exists():
         raise ValueError("derived output already exists; prior evidence is immutable")
     plan = {"mode": "preview", "doc_id": doc_id, "source": str(source),

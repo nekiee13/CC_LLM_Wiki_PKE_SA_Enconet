@@ -1,6 +1,8 @@
 """Build the offline UMBRA evidence dashboard from the current evaluation run."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
+from project_records import recorded_path
 import argparse
 from datetime import date
 import html
@@ -138,7 +140,7 @@ def build_data(db: Path, matrix_path: Path, state_path: Path, run_id: str, gener
         raise ValueError("dashboard ID must look like DASH-YYYYMMDD-NNNN")
     date.fromisoformat(generated_date)
     state = _read_state(state_path)
-    counts, criteria = _query_snapshot(db, matrix_path, run_id)
+    counts, criteria = _query_snapshot(db, recorded_path(matrix_path), run_id)
     gates = {
         gate: {
             "status": record.get("status", "pending"),
@@ -170,7 +172,7 @@ def build_data(db: Path, matrix_path: Path, state_path: Path, run_id: str, gener
         ],
         "provenance": {
             "database": "db/nqa_audit.sqlite",
-            "matrix": "out/2026-10-05/MIN-3.1-evidence-matrix-v4.json",
+            "matrix": recorded_path(matrix_path).relative_to(ROOT).as_posix(),
             "state": "project-state.yml",
             "batches": "docs/reviews/EF_2_2_EVIDENCE_REVIEW.md",
         },
@@ -231,7 +233,7 @@ document.getElementById('batches').innerHTML=DATA.batches.map(b=>'<tr><td class=
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=ROOT / "db" / "nqa_audit.sqlite")
-    parser.add_argument("--matrix", type=Path, default=ROOT / "out" / "2026-10-05" / "MIN-3.1-evidence-matrix-v4.json")
+    parser.add_argument("--matrix", type=Path, default=layout_path('validation') / "2026-10-05" / "MIN-3.1-evidence-matrix-v4.json")
     parser.add_argument("--state", type=Path, default=ROOT / "project-state.yml")
     parser.add_argument("--run-id", default="RUN-20261003-32")
     parser.add_argument("--generated-date", default=date.today().isoformat())

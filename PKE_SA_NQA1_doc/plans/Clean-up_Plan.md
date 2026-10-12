@@ -429,3 +429,11 @@ The common suite passed 124 tests; final directory tests passed nine. Live
 directory preview correctly refuses to proceed while files remain. Safety review
 still precedes live application. See
 [native directory review](cleanup-cu3/EKONERG_NATIVE_DIRECTORY_REVIEW.md).
+
+Owner explicitly deferred Claude's pre-execution safety review, and CU-3.2's
+existing bundle was applied: 924 file moves, 592 original tracked blobs retained,
+nine native directory trees and 39 runtime/configuration installations. The
+live aggregate, integrity, frozen-manifest and both dashboard/PDF checks pass;
+125 regression tests pass. One empty `outputs/candidates` tree remains unchanged
+after Windows denied its rename. Post-execution Claude review remains pending.
+See [actual live sprint result](cleanup-cu3/EKONERG_LIVE_SPRINT_RESULT.md).

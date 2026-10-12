@@ -7,7 +7,9 @@ one layer SKIPPED (SKIPPED is never PASS). Paths resolve from this script's
 location, never the CWD. Stdlib only; Unicode paths print as UTF-8.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
+from project_scratch import temporary_directory
 import argparse
 import os
 import re
@@ -58,10 +60,15 @@ def _run_step(step: Step) -> tuple[str, str]:
         return "SKIPPED", f"{step.name}: {step.skip_reason or 'not configured'}"
     env = dict(os.environ, PYTHONDONTWRITEBYTECODE="1", PYTHONUTF8="1", COLUMNS="200")
     try:
-        proc = subprocess.run(
-            step.command, cwd=step.cwd, capture_output=True, text=True,
-            encoding="utf-8", errors="replace", timeout=STEP_TIMEOUT_S, env=env,
-        )
+        with temporary_directory(prefix="validation-") as scratch:
+            env.update({key: scratch for key in ("TMP", "TEMP", "TMPDIR")})
+            command = list(step.command)
+            if command[1:3] == ["-m", "pytest"]:
+                command.extend(["--basetemp", str(Path(scratch) / "pytest")])
+            proc = subprocess.run(
+                command, cwd=step.cwd, capture_output=True, text=True,
+                encoding="utf-8", errors="replace", timeout=STEP_TIMEOUT_S, env=env,
+            )
     except (OSError, subprocess.SubprocessError) as exc:
         return "FAIL", f"{step.name}: could not execute ({exc})"
     if proc.returncode:
@@ -119,11 +126,11 @@ def _pointer_record() -> Path | None:
     pointer = PROJECT / "HANDOFF.md"
     if not pointer.is_file():
         return None
-    match = re.search(r"\((handoffs/[^)]+\.md)\)", pointer.read_text(encoding="utf-8"))
+    match = re.search(r"\((coordination/handoffs/[^)]+\.md)\)", pointer.read_text(encoding="utf-8"))
     if not match:
         return None
     record = (PROJECT / match.group(1)).resolve()
-    if not record.is_relative_to(PROJECT / "handoffs"):
+    if not record.is_relative_to(layout_path('handoffs')):
         return None
     return record if record.is_file() else None
 

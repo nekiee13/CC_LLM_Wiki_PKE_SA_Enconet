@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Preview or first-write chunks for one registered local derived document."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 from contextlib import closing
@@ -78,12 +79,12 @@ def _plan(db: Path, doc_id: str, min_chars: int, max_chars: int) -> tuple[dict, 
     database = local_path(db)
     if not database.is_file():
         raise ValueError(f"local database is missing: {database}")
-    source = local_path(ROOT / "derived" / f"{doc_id}.txt")
+    source = local_path(layout_path('derived') / f"{doc_id}.txt")
     if not source.is_file():
         raise ValueError(f"local derived text is missing: {source}")
     text = source.read_text(encoding="utf-8")
     chunks = parse_chunks(text, min_chars=min_chars, max_chars=max_chars)
-    artifact = local_path(ROOT / "derived" / "chunks" / f"{doc_id}.json")
+    artifact = local_path(layout_path('derived') / "chunks" / f"{doc_id}.json")
     if artifact.exists():
         raise ValueError("chunk artifact already exists; prior evidence is immutable")
     with closing(sqlite3.connect(database.as_uri() + "?mode=ro", uri=True)) as conn:

@@ -4,6 +4,8 @@ No source or crumb is edited. Old evaluation rows/links are retained in an
 append-only database revision and an exclusive-create external journal.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
+from project_layout import path_at as layout_path_at
 
 import argparse
 from contextlib import closing
@@ -66,14 +68,14 @@ def prepare(root, assessment):
     inputs={}
     def bind(path):
         p=local(root,path);inputs[p.relative_to(root).as_posix()]=sha(p.read_bytes());return p
-    bind(config_path);bind('manifests/approvals.csv')
+    bind(config_path);bind('work/manifests/approvals.csv')
     decision=cfg['decision_ref'];approval(root,decision)
     run=cfg['run_id'];approval(root,'G2-'+run);approval(root,'G3-'+run)
     model=yaml.safe_load(bind('schemas/scoring_model.yml').read_text(encoding='utf-8'))
     if model.get('calibration_status')!='approved' or model.get('approval_ref')!='G3-'+run:
         raise ValueError('approved scoring model required')
     import csv
-    with local(root,'manifests/approvals.csv').open(encoding='utf-8-sig',newline='') as f:
+    with local(root,'work/manifests/approvals.csv').open(encoding='utf-8-sig',newline='') as f:
         g3=next(r for r in csv.DictReader(f) if r['object_id']=='G3-'+run)
     if model['model_version'] not in g3['notes'] or 'placeholder' in model['model_version'].lower(): raise ValueError('model version not approved')
     expected=yaml.safe_load(bind(cfg['golden']).read_text(encoding='utf-8'))
@@ -150,7 +152,7 @@ def prepare(root, assessment):
 
 def apply(root,plan,output,*,before_commit=None):
     root=Path(root).resolve();output=local(root,output);db=local(root,'db/nqa_audit.sqlite')
-    if output==root/'out' or not output.is_relative_to(root/'out'): raise ValueError('journal must be under project out')
+    if output==layout_path_at(root, 'validation') or not output.is_relative_to(layout_path_at(root, 'validation')): raise ValueError('journal must be under project out')
     digest=sha(encoded(plan));newrun=plan['relation']['new_run_id']
     if (output/'completed.json').exists():
         receipt=read_json(output/'completed.json')

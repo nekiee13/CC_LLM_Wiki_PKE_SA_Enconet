@@ -5,6 +5,7 @@ All visible audit data is read from Ekonerg's active matrix and approved local
 evaluation run. The score follows the Enconet five-level model.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import html
@@ -18,7 +19,7 @@ from evaluation_engine import metrics as evaluation_metrics, model as scoring_mo
 
 ROOT = Path(__file__).resolve().parents[1]
 TEMPLATE = ROOT / "docs" / "dashboard_example" / "Example_TEKOL_Appendix_B_Conformance_Dashboard.html"
-DEFAULT_MATRIX = ROOT / "out" / "2026-10-05" / "MIN-3.1-evidence-matrix-v4.json"
+DEFAULT_MATRIX = layout_path('validation') / "2026-10-05" / "MIN-3.1-evidence-matrix-v4.json"
 DEFAULT_DB = ROOT / "db" / "nqa_audit.sqlite"
 DEFAULT_RUN_ID = "RUN-20261003-32"
 RATING_POINTS = {"fully": 5, "substantially": 4, "partially": 3, "minimally": 2, "unmet": 1}
@@ -333,7 +334,7 @@ def main() -> int:
     ap.add_argument("--db", type=Path, default=DEFAULT_DB)
     ap.add_argument("--run-id", default=DEFAULT_RUN_ID)
     ap.add_argument("--date", default="2026-10-05")
-    ap.add_argument("--output", type=Path, default=ROOT / "out" / "2026-10-05" / "EKONERG_UMBRA_DASHBOARD_2026-10-05.html")
+    ap.add_argument("--output", type=Path, default=layout_path('validation') / "2026-10-05" / "EKONERG_UMBRA_DASHBOARD_2026-10-05.html")
     args = ap.parse_args()
     page = render(args.matrix, args.db, args.date, args.run_id)
     if "TEKOL" in page or "1499 / 1800" in page or "83.3%" in page:

@@ -5,6 +5,7 @@ This is a setup structure check, not approval of criteria, source editions,
 page content, evidence, or human gates.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -22,7 +23,7 @@ from project_paths import configure_standard_streams, local_path
 PROJECT = Path(__file__).resolve().parents[1]
 WIKI = PROJECT / "wiki"
 SCHEMA = PROJECT / "schemas" / "wiki_structure.yml"
-RUNS = PROJECT / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 RUN_HEADER = ["run_utc", "validator", "phase", "result", "exit_code", "details"]
 LOCATIONS = {
     "criterion-evaluation": "criteria",

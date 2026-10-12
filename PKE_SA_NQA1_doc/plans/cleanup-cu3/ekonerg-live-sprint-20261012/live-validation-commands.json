@@ -1,0 +1,38 @@
+[
+  {
+    "name": "core",
+    "command": "C:/xPY/vEnv/WikiEnconet/python.exe Ekonerg/scripts/run_all_validations.py --no-record",
+    "chunk_id": "933007",
+    "wall_time_seconds": 6.7428948,
+    "exit_code": 0,
+    "original_token_count": 746,
+    "output": "[PASS] raw_sources exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_raw_sources.py\", \"--db\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\db\\\\nqa_audit.sqlite\"] - validate_raw_sources: PASS\r\n[PASS] chunks exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_chunks.py\", \"--db\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\db\\\\nqa_audit.sqlite\", \"--no-record\"] - validate_chunks: PASS - all chunks verified\r\n[PASS] sieving_harness exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_sieving_harness.py\", \"--db\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\db\\\\nqa_audit.sqlite\"] - validate_sieving_harness: PASS - readiness checks only; no source approval\r\n[PASS] traceability exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_traceability.py\", \"--db\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\db\\\\nqa_audit.sqlite\", \"--active-only\", \"--no-record\"] - validate_traceability: PASS\r\n[PASS] app_b_json exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_app_b_json.py\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\sieving\\\\DATA\\\\controlled_tests\\\\2026-10-03\\\\test_document_objective.json\"] - validate_app_b_json: PASS\r\n[PASS] requirements exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_requirements.py\", \"--db\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\db\\\\nqa_audit.sqlite\", \"--no-record\"] - validate_requirements: PASS - 18 criteria covered\r\n[SKIPPED] evaluation command=null - SKIPPED(phase=evidence_reviewed)\r\n[SKIPPED] evidence_bundle command=null - SKIPPED(phase=evidence_reviewed)\r\n[SKIPPED] findings command=null - SKIPPED(phase=evidence_reviewed)\r\n[PASS] structure exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_structure.py\", \"--phase\", \"evidence_reviewed\", \"--no-record\"] - validate_structure: PASS\r\n[PASS] frontmatter exit=0 command=[\"C:\\\\xPY\\\\vEnv\\\\WikiEnconet\\\\python.exe\", \"C:\\\\xPY\\\\xPrj\\\\LLM_Wiki\\\\03_PKE_SA_NQA1\\\\Ekonerg\\\\scripts\\\\validate_frontmatter.py\", \"--phase\", \"evidence_reviewed\", \"--no-record\"] - validate_frontmatter: PASS\r\n[SKIPPED] report command=null - SKIPPED(phase=evidence_reviewed)\r\n[SKIPPED] report_links command=null - SKIPPED(phase=evidence_reviewed)\r\n[SKIPPED] browser_evidence command=null - SKIPPED(phase=evidence_reviewed)\r\n[SKIPPED] dashboard command=null - SKIPPED(phase=evidence_reviewed)\r\n[SKIPPED] review_package command=null - SKIPPED(phase=evidence_reviewed)\r\n[SKIPPED] evidence_budgets command=null - SKIPPED(phase=evidence_reviewed)\r\naggregate: PASS\r\n"
+  },
+  {
+    "name": "raw",
+    "command": "C:/xPY/vEnv/WikiEnconet/python.exe Ekonerg/scripts/validate_raw_sources.py",
+    "chunk_id": "5d5bfc",
+    "wall_time_seconds": 5.1494631,
+    "exit_code": 0,
+    "original_token_count": 7,
+    "output": "validate_raw_sources: PASS\r\n"
+  },
+  {
+    "name": "trace",
+    "command": "C:/xPY/vEnv/WikiEnconet/python.exe Ekonerg/scripts/validate_traceability.py --active-only --no-record",
+    "chunk_id": "d47d91",
+    "wall_time_seconds": 5.1194141,
+    "exit_code": 0,
+    "original_token_count": 8,
+    "output": "validate_traceability: PASS\r\n"
+  },
+  {
+    "name": "evaluation",
+    "command": "C:/xPY/vEnv/WikiEnconet/python.exe Ekonerg/scripts/validate_evaluation.py --run-id RUN-20261003-32",
+    "chunk_id": "d9980b",
+    "wall_time_seconds": 5.0877252,
+    "exit_code": 0,
+    "original_token_count": 19,
+    "output": "validate_evaluation: PASS - 18/18 structurally valid; not audit approval\r\n"
+  }
+]

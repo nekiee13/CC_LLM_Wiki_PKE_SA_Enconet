@@ -28,3 +28,23 @@ out/2026-10-07/all18-review/** -text whitespace=-blank-at-eol,-blank-at-eof
 
 # Prepared, hash-manifested delivery bytes must remain exact on checkout.
 outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/** -text whitespace=-blank-at-eol,-blank-at-eof
+
+# Preserve the original byte/line-ending policies at approved v4 homes.
+# In particular, frozen CRLF evidence must not be normalized during Git rename.
+work/manifests/*.csv text eol=lf
+work/bootstrap/**/*.jsonl text eol=lf
+outputs/archive/legacy-out/2026-10-06/full-keyword-sweep-verified/** -text whitespace=-blank-at-eol,-blank-at-eof
+outputs/archive/legacy-out/2026-10-06/manual-source-intake-preview.json -text
+outputs/archive/legacy-out/2026-10-06/manual-source-intake/** -text
+outputs/archive/legacy-out/2026-10-06/manual-refresh-preview.json -text
+outputs/archive/legacy-out/2026-10-06/manual-refresh/** -text whitespace=-blank-at-eol,-blank-at-eof
+outputs/archive/legacy-out/2026-10-07/document-scoring/** -text whitespace=-blank-at-eol,-blank-at-eof
+outputs/archive/legacy-out/2026-10-07/all18-review/** -text whitespace=-blank-at-eol,-blank-at-eof
+work/reviews/MANUAL_REFRESH_ASSESSMENT_20261006.json -text
+work/reviews/DOCUMENT_SCORING_ASSESSMENT_20261007.json -text
+work/reviews/DOCUMENT_SCORING_RUBRIC_20261007.md -text
+work/reviews/ALL18_*_20261007.* -text
+outputs/RUN-20261003-32/** -text whitespace=-blank-at-eol,-blank-at-eof
+project-layout.json -text
+project-file-relocations.json -text
+work/migrations/** -text whitespace=-blank-at-eol,-blank-at-eof

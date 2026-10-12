@@ -219,7 +219,7 @@ def build_board_body() -> str:
             if "Authoritative record" in line:
                 # BOARD.md lives in coordination/; re-root the project-relative link.
                 pointer = line.replace("**", "").strip()
-                pointer = pointer.replace("(handoffs/", "(../handoffs/")
+                pointer = pointer.replace("(coordination/handoffs/", "(handoffs/")
                 break
     lines.append(f"- {pointer}")
     lines.append(f"- Archive: {archived_count} records in `coordination/archive/`")

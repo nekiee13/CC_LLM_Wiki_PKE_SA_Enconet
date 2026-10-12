@@ -1,5 +1,6 @@
 """Project-local, approval-gated evaluation operations; no audit decision is inferred."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import csv
 from contextlib import closing
@@ -14,7 +15,7 @@ import db_util
 from project_paths import local_path
 
 ROOT = Path(__file__).resolve().parents[1]
-APPROVALS = ROOT / "manifests/approvals.csv"
+APPROVALS = layout_path('manifests') / 'approvals.csv'
 MODEL = ROOT / "schemas/scoring_model.yml"
 RAW = ROOT / "raw"
 RATINGS = {"fully", "substantially", "partially", "minimally", "unmet", "undetermined", "na"}

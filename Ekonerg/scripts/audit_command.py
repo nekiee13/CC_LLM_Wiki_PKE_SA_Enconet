@@ -2,6 +2,7 @@
 """Canonical phase-checked EPIC17 command dispatcher for both agents."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -21,7 +22,7 @@ from project_paths import LocalPathError, configure_standard_streams, local_path
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "schemas" / "audit_commands.yml"
-RUNS = ROOT / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 GATE_BY_PHASE = {
     "setup": "G1", "sieved": "G2", "evidence_reviewed": "G3",
     "findings_drafted": "G4", "findings_approved": "G5",

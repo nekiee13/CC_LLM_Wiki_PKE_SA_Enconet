@@ -1,5 +1,6 @@
 """Create an immutable, hash-only snapshot of the approved incoming set."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import hashlib
@@ -21,7 +22,7 @@ def _hash(path: Path) -> str:
     return digest.hexdigest()
 
 
-def create(snapshot_date: str, *, g1_ref: str, output_root: Path = ROOT / "out") -> Path:
+def create(snapshot_date: str, *, g1_ref: str, output_root: Path = layout_path('validation')) -> Path:
     try:
         date.fromisoformat(snapshot_date)
     except ValueError as exc:

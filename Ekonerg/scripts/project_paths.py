@@ -1,6 +1,7 @@
 """Keep runtime files in the copied project, not the enclosing Git workspace."""
 from __future__ import annotations
 
+from project_records import recorded_path
 import stat
 import sys
 from pathlib import Path
@@ -29,9 +30,7 @@ def local_path(value: Path | str) -> Path:
     This is a cooperative local-workflow guard, not protection against an
     attacker changing filesystem paths between this check and later access.
     """
-    path = Path(value)
-    if not path.is_absolute():
-        path = ROOT / path
+    path = recorded_path(value)
     for candidate in (path, *path.parents):
         try:
             info = candidate.lstat()

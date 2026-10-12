@@ -5,7 +5,10 @@ Keep all predecessor rows/files and current audit results unchanged. This is not
 promotion: switching sources requires an atomic evaluation refresh as well.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
+from project_layout import path_at as layout_path_at
 
+from project_records import recorded_path_at
 import argparse
 from collections import Counter
 from contextlib import closing
@@ -44,7 +47,7 @@ def sha(raw):
 def local(root, path):
     root = Path(root).resolve()
     path = Path(path)
-    value = path if path.is_absolute() else root / path
+    value = recorded_path_at(root, path)
     for part in (value, *value.parents):
         if part.exists():
             info = part.lstat()
@@ -63,7 +66,7 @@ def read_json(path):
 
 
 def approval(root, reference):
-    rows = list(csv.DictReader(io.StringIO(local(root,'manifests/approvals.csv').read_text(encoding='utf-8-sig'))))
+    rows = list(csv.DictReader(io.StringIO(local(root,'work/manifests/approvals.csv').read_text(encoding='utf-8-sig'))))
     found = [r for r in rows if r['object_id']==reference]
     if len(found)!=1 or found[0]['decision']!='approved' or not found[0]['reviewer'] or not found[0]['date']:
         raise ValueError('source intake approval missing or ambiguous')
@@ -170,17 +173,17 @@ def prepare(root, review, *, run_id, decision_ref):
         records.append({'original_item_id':item['item_id'],'item_id':crumb_id,'item':item,'quotes':quotes})
     if not records: raise ValueError('empty candidate')
     new_raw=f"raw/{Path(old['filename']).stem}__{sha(raw)[:12]}.md"
-    derived=f'derived/{new_id}.txt'; artifact=f'derived/chunks/{new_id}.json'
+    derived=f'work/derived/{new_id}.txt'; artifact=f'work/derived/chunks/{new_id}.json'
     for path in (new_raw,derived,artifact,f'sieving/runs/{run_id}'):
         if local(root,path).exists(): raise ValueError('new destination already exists')
-    registry=local(root,'manifests/raw_sources.csv').read_bytes()
+    registry=local(root,'work/manifests/raw_sources.csv').read_bytes()
     reader=csv.DictReader(io.StringIO(registry.decode('utf-8-sig')))
     if reader.fieldnames!=HEADER: raise ValueError('source registry header mismatch')
     old_rows=[r for r in reader if r['doc_id']==old['doc_id']]
     if len(old_rows)!=1 or old_rows[0]['sha256']!=old['sha256']: raise ValueError('source registry predecessor mismatch')
     inputs={str(p.relative_to(root)).replace('\\','/'):sha(p.read_bytes()) for p in
             [source,review/'review.json',bundle/'manifest.json',prompt_path,
-             local(root,'sieving/prompts/active.yml'),local(root,'manifests/approvals.csv'),old_raw,
+             local(root,'sieving/prompts/active.yml'),local(root,'work/manifests/approvals.csv'),old_raw,
              *[bundle/name for name in manifest['artifacts']]]}
     return {'schema':'source_revision_intake/1','mode':'preview','root':str(root),
             'review':str(review.relative_to(root)),'run_id':run_id,'decision_ref':decision_ref,
@@ -211,7 +214,7 @@ def insert(conn,table,values):
 
 def apply(root, plan, output, *, before_commit=None):
     root=Path(root).resolve();output=local(root,output)
-    if not output.is_relative_to(root/'out') or output==root/'out':
+    if not output.is_relative_to(layout_path_at(root, 'validation')) or output==layout_path_at(root, 'validation'):
         raise ValueError('journal must be under selected project out')
     receipt_path=output/'completed.json'
     if receipt_path.exists():
@@ -226,7 +229,7 @@ def apply(root, plan, output, *, before_commit=None):
     if output.exists(): raise ValueError('journal exists without completion; inspect for recovery, never retry blindly')
     expected=prepare(root,local(root,plan['review']),run_id=plan['run_id'],decision_ref=plan['decision_ref'])
     if plan!=expected: raise ValueError('preview is stale or altered; no write performed')
-    database=local(root,'db/nqa_audit.sqlite');manifest=local(root,'manifests/raw_sources.csv')
+    database=local(root,'db/nqa_audit.sqlite');manifest=local(root,'work/manifests/raw_sources.csv')
     manifest_before=manifest.read_bytes();raw=local(root,plan['source']).read_bytes()
     stamp=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     old=plan['predecessor'];new=plan['new_doc_id'];run=plan['run_id']

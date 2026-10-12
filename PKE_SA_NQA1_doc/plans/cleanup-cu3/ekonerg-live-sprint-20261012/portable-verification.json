@@ -1,0 +1,62 @@
+{
+  "schema": "release-relocation-verification-1",
+  "mode": "relocated",
+  "supplier": "Ekonerg",
+  "manifest": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/package_manifest.json",
+  "resolved_manifest": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/package_manifest.json",
+  "manifest_sha256": "ef883efd71725bd29d2913302a6d98bf4cd598502356638625872dda30080c56",
+  "plan_sha256": "9bf917b224418b8405d2ce3927f8e068bf1d682c3e565abc1ec9445435221e4c",
+  "passed": true,
+  "verified": 8,
+  "failures": [],
+  "files": [
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/RUN-20261003-32/dashboard_data.json",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/RUN-20261003-32/dashboard_data.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/RUN-20261003-32/evaluation_package.json",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/RUN-20261003-32/evaluation_package.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/RUN-20261003-32/evaluation_report.md",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/RUN-20261003-32/evaluation_report.md",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/RUN-20261003-32/evidence_bundle.json",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/RUN-20261003-32/evidence_bundle.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/RUN-20261003-32/evidence_explorer.html",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/RUN-20261003-32/evidence_explorer.html",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/RUN-20261003-32/evidence_explorer_dark.html",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/RUN-20261003-32/evidence_explorer_dark.html",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/review_catalog.json",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/review_catalog.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Ekonerg/outputs/candidates/evidence_access/RUN-20261003-32/delivery-20261010-final/portable_package/review_workspace.html",
+      "resolved": "Ekonerg/outputs/RUN-20261003-32/revisions/legacy-outputs/delivery-20261010-final/portable_package/review_workspace.html",
+      "passed": true,
+      "reason": null
+    }
+  ]
+}

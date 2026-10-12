@@ -48,7 +48,7 @@ def main() -> int:
     parser.add_argument("--input", type=Path,
                         default=Path("sieving/runs/q12_doc0021_corrected.json"))
     parser.add_argument("--output", type=Path,
-                        default=Path("benchmarks/sieving_golden/manifest_document_doc0021_q12_v2.yml"))
+                        default=Path('work/benchmarks/sieving_golden/manifest_document_doc0021_q12_v2.yml'))
     args = parser.parse_args()
     create(args.input, args.output)
     print(f"created pending golden draft: {local_path(args.output)}")

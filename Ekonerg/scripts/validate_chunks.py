@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Recheck local chunk IDs, source hashes, text slices, and owners."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -16,8 +17,8 @@ import db_util
 from project_paths import local_path
 
 ROOT = Path(__file__).resolve().parents[1]
-DERIVED = ROOT / "derived"
-VALIDATION_MANIFEST = ROOT / "manifests" / "validation_runs.csv"
+DERIVED = layout_path('derived')
+VALIDATION_MANIFEST = layout_path('manifests') / "validation_runs.csv"
 RUN_HEADER = ["run_utc", "validator", "phase", "result", "exit_code", "details"]
 
 

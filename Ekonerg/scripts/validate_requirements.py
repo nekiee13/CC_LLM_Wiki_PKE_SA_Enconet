@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check local Appendix B requirement coverage and RULE-crumb traceability."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -18,7 +19,7 @@ from project_paths import local_path
 
 ROOT = Path(__file__).resolve().parents[1]
 TAXONOMY = ROOT / "schemas" / "app_b_taxonomy.yml"
-RUNS = ROOT / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 RUN_HEADER = ["run_utc", "validator", "phase", "result", "exit_code", "details"]
 
 
