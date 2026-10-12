@@ -20,6 +20,7 @@ and ADRs are the records.
 - `CLEANUP-CU2` — codex, released 2026-10-11T23:35:11Z
 - `CLEANUP-CU2-INTEGRATION` — codex, released 2026-10-11T23:59:26Z
 - `CLEANUP-CU2-PIPELINE` — codex, released 2026-10-12T03:28:19Z
+- `CLEANUP-CU2-PUBLICATION` — codex, released 2026-10-12T03:48:45Z
 - `CLEANUP-LAYOUT-APPROVAL` — codex, released 2026-10-11T23:09:22Z
 - `CLEANUP-PLAN` — codex, released 2026-10-11T22:01:11Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
@@ -115,10 +116,11 @@ and ADRs are the records.
 - `CX_2026-10-11T233511Z_cu2-tooling-foundations` — status, codex -> claude-code: CLEANUP-CU2
 - `CX_2026-10-11T235926Z_cu2-candidate-routing` — status, codex -> claude-code: CLEANUP-CU2-INTEGRATION
 - `CX_2026-10-12T032819Z_cu2-pipeline-and-reset` — status, codex -> claude-code: CLEANUP-CU2-PIPELINE
+- `CX_2026-10-12T034845Z_cu2-publication-and-readonly-reset` — status, codex -> claude-code: CLEANUP-CU2-PUBLICATION
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-12T032844Z-615c4da.md`](../handoffs/2026-10-12T032844Z-615c4da.md)
+- Authoritative record: [`handoffs/2026-10-12T035000Z-dcbef68.md`](../handoffs/2026-10-12T035000Z-dcbef68.md)
 - Archive: 604 records in `coordination/archive/`
 
-Generated: 2026-10-12T03:28:44Z
+Generated: 2026-10-12T03:50:03Z

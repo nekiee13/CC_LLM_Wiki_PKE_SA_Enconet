@@ -26,6 +26,12 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def replace_once(source, old, new):
+    if source.count(old) != 1:
+        raise ValueError('pinned contract fragment differs: ' + old[:70])
+    return source.replace(old, new, 1)
+
+
 def replace_assignment(source, name, transform):
     """Edit one named literal contract, not arbitrary matching text."""
     tree = ast.parse(source)
@@ -168,7 +174,10 @@ def build(destination):
                     raise ValueError('reset local-root baseline differs')
                 source = source.replace(original, 'incoming = layout_path_at(root, "incoming")', 1)
                 source = source.replace('from project_paths import configure_standard_streams',
-                    'from project_layout import path_at as layout_path_at\nfrom project_paths import configure_standard_streams', 1)
+                    'from project_layout import path_at as layout_path_at\nfrom reset_operations import remove_generated\nfrom project_paths import configure_standard_streams', 1)
+                if source.count('path.unlink()') != 1:
+                    raise ValueError('reset removal baseline differs')
+                source = source.replace('path.unlink()', 'remove_generated(path)', 1)
             if name == 'scripts/make_handoff.py':
                 old = r'(handoffs/[^)]+\.md)'
                 if source.count(old) != 1:
@@ -179,8 +188,64 @@ def build(destination):
                 if source.count(old) != 1:
                     raise ValueError('coordination pointer baseline differs')
                 source = source.replace(old, 'pointer.replace("(coordination/handoffs/", "(handoffs/")')
+            if name == 'scripts/publish_audit_release.py':
+                source = replace_once(source, 'def checked_plan(contract, root):',
+                    'def checked_plan(contract, root, *, allow_existing_snapshot=False):')
+                source = replace_once(source, 'if destination in destinations or destination.exists():',
+                    'if destination in destinations or (destination.exists() and not (allow_existing_snapshot and source == destination)):')
+                source = replace_once(source, 'rows, result_path = checked_plan(contract, root)',
+                    'if isinstance(contract.get("artifacts"), list) and contract["artifacts"] and all(isinstance(row, dict) and row.get("source") == row.get("destination") for row in contract["artifacts"]):\n        from publication_snapshot import seal\n        return seal(contract_path, root=root, execute=execute, validator=validator, permissions=permissions)\n    rows, result_path = checked_plan(contract, root)')
+                source = replace_once(source, 'path = (root / value).resolve()',
+                    'path = layout_guard(Path(root) / value).resolve()')
+                source = replace_once(source, 'import audit_state',
+                    'from project_layout import guard as layout_guard\nimport audit_state')
+                source = replace_once(source,
+                    'if not (destination.is_relative_to(root / "outputs") or\n                destination.is_relative_to(root / "wiki/dashboards")):',
+                    'if destination.parent != layout_path_at(root, "outputs") / run:')
+                source = replace_once(source, 'def validate_live(root, *, allow_pending_claude=False):',
+                    'def validate_live(root, *, run_id, allow_pending_claude=False):')
+                for suffix, filename in [('evaluation_package.json', 'evaluation_package.json'),
+                                         ('evaluation_report.md', 'report.md'),
+                                         ('dashboard.html', 'dashboard_light.html')]:
+                    source = replace_once(source, 'root / f"outputs/{supplier}_appendix_b_' + suffix + '"',
+                        'layout_path_at(root, "outputs") / run_id / "' + filename + '"')
+                source = replace_once(source, '"--state", str(projected), "--benchmarks", "--no-record"',
+                    '"--state", str(projected), "--run-id", run_id, "--benchmarks", "--no-record"')
+                source = replace_once(source, 'validate_live(ROOT, allow_pending_claude=args.allow_pending_claude)',
+                    'validate_live(ROOT, run_id=json.loads(args.contract.read_text(encoding="utf-8"))["run_id"], allow_pending_claude=args.allow_pending_claude)')
+            if name in {'scripts/generate_review_catalog.py', 'scripts/generate_review_workspace.py',
+                        'scripts/build_review_package.py'}:
+                source = replace_once(source, 'import argparse',
+                    'from project_layout import path as layout_path\nimport argparse')
+                source = replace_once(source,
+                    'PROJECT / "outputs" / "candidates" / "evidence_access" / "review_catalog.json"',
+                    'layout_path("reviews", "review_catalog.json")')
+                if name == 'scripts/build_review_package.py':
+                    source = replace_once(source,
+                        'PROJECT / "outputs" / "candidates" / "evidence_access" / "portable_package"',
+                        'layout_path("reviews", "portable_package")')
+            if name == 'scripts/run_all_validations.py':
+                source = replace_once(source,
+                    'package = outputs / f"{supplier}_appendix_b_evaluation_package.json"',
+                    'run_root = outputs / run_id if run_id else outputs\n    package = run_root / "evaluation_package.json"')
+                for stem, filename in [('evaluation_report.md', 'report.md'),
+                                       ('dashboard_data.json', 'dashboard_data.json'),
+                                       ('dashboard.html', 'dashboard_light.html')]:
+                    source = replace_once(source, 'outputs / f"{supplier}_appendix_b_' + stem + '"',
+                        'run_root / "' + filename + '"')
+                source = replace_once(source, 'evidence_root = outputs / "candidates" / "evidence_access"',
+                    'evidence_root = layout_path("reviews")')
+                source = replace_once(source, 'evidence_run = evidence_root / run_id if run_id else None',
+                    'evidence_run = run_root if run_id else None')
+                source = replace_once(source, 'evidence_run / f"{supplier}_appendix_b_evaluation_report.md"',
+                    'evidence_run / "report.md"')
+                source = replace_once(source, 'evidence_run / f"{supplier}_appendix_b_dashboard.html"',
+                    'evidence_run / "dashboard_light.html"')
+                source = replace_once(source, 'evidence_root / "validation_artifacts" / "browser_evidence"',
+                    'layout_path("validation", run_id or "setup", "browser_evidence")')
             explicit = {'scripts/full_keyword_sweep.py': ('root',),
-                        'scripts/make_handoff.py': ('project',)}.get(name, ())
+                        'scripts/make_handoff.py': ('project',),
+                        'scripts/publish_audit_release.py': ('root',)}.get(name, ())
             converted, count = route_python(source, explicit)
             if converted != data.decode('utf-8'):
                 data = converted.encode('utf-8')
@@ -197,16 +262,20 @@ def build(destination):
         payload[target] = data
     payload['scripts/project_layout.py'] = (RUNTIME / 'project_layout.py').read_bytes()
     payload['scripts/evidence_access_policy.py'] = (RUNTIME / 'evidence_access_policy.py').read_bytes()
+    payload['scripts/reset_operations.py'] = (RUNTIME / 'reset_operations.py').read_bytes()
+    payload['scripts/publication_snapshot.py'] = (RUNTIME / 'publication_snapshot.py').read_bytes()
     payload['project-layout.json'] = (RUNTIME / 'project-layout.example.json').read_bytes()
     record = {'schema_version': 1, 'status': 'development-only-not-installable',
               'baseline_manifest_sha256': PIN, 'routed_expressions': routes,
-              'contract_adaptations': ['reset: working data only, local root guard, manifest headers',
+              'contract_adaptations': ['reset: working data only, local root guard, manifest headers and read-only targets',
                                       'handoff: coordination/handoffs and pointer parser',
                                       'coordination: board-relative handoff pointer',
                                       'benchmark: parent depth after relocation',
-                                      'evidence policy: direct run-root candidate outputs'],
-              'remaining': ['aggregate validation and catalog/publication routing',
-                            'configuration/path-user sweep', 'Git/history orchestration',
+                                      'evidence policy: direct run-root candidate outputs',
+                                      'publication: run-root copy or seal, unchanged artifacts, marker last',
+                                      'aggregate: direct run artifacts and internal review packages',
+                                      'catalog/package: internal work/reviews defaults'],
+              'remaining': ['configuration/path-user sweep', 'Git/history/empty-folder orchestration',
                             'coherent review before any live installation'],
               'files': [{'path': name, 'sha256': sha(data), 'bytes': len(data)}
                         for name, data in sorted(payload.items())]}

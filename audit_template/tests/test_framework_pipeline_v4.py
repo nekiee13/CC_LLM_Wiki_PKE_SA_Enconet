@@ -36,6 +36,14 @@ def fixture_runner():
     for old, new in replacements.items():
         assert old in text, old
         text = text.replace(old, new)
+    # Keep legacy portable review tooling as an internal validation artifact;
+    # the supplier-facing dashboards remain standalone under outputs/RUN-ID.
+    review = original.split("entry = {'run_id':run,'status':'candidate'}", 1)[1].split("cli_path = root/'out/publication.json'", 1)[0]
+    review = "entry = {'run_id':run,'status':'candidate'}" + review
+    review = review.replace("root/'outputs/candidates/evidence_access/", "root/'work/reviews/")
+    review = review.replace("root/'out/", "root/'work/validation/")
+    review = review.replace("candidate/'dark/dashboard_dark.html'", "candidate/'dashboard_dark.html'")
+    text += '\n' + review
     return text + '''
 import generate_report
 unapproved = dict(actual, approvals=[])
@@ -95,6 +103,30 @@ cli('agent_coord.py','validate')
 if supplier=='Atlas Engineering' and not (root.parent/'Other Supplier').exists():
     cli('browser_harness.py','check',viewer,'--artifacts',root/'work/validation/light-browser','--require-interactive')
     cli('browser_harness.py','check',candidate/'dashboard_dark.html','--artifacts',root/'work/validation/dark-browser','--require-interactive')
+for phase in ('registered','chunked','sieved','evidence_reviewed','evaluated','findings_drafted','findings_approved'):
+    audit_state.transition(phase)
+import publish_audit_release as publisher
+contract={'schema_version':1,'run_id':run,'review_status':'deferred',
+          'owner_exception':'PUBLICATION-'+run,'gate_approvals':['G5-'+run,'G6-'+run],
+          'result_manifest':'work/manifests/synthetic-release.json','artifacts':[]}
+for source in (package,report,viewer,data,bundle,candidate/'dashboard_dark.html'):
+    relative=source.relative_to(root).as_posix()
+    contract['artifacts'].append({'source':relative,'destination':relative,
+                                 'sha256':hashlib.sha256(source.read_bytes()).hexdigest()})
+approval='SYNTHETIC ONLY review deferred contract_sha256='+publisher.fingerprint(contract)
+approve(contract['owner_exception'],approval)
+plan=root/'work/validation/publication.json'
+write_json(plan,contract)
+preview=cli('publish_audit_release.py',plan)
+assert 'seal-existing-snapshot' in preview
+execution=cli('publish_audit_release.py',plan,'--execute','--allow-pending-claude')
+assert 'aggregate: PASS' in execution
+assert json.loads((root/contract['result_manifest']).read_text())['mode']=='seal-existing-snapshot'
+for row in contract['artifacts']:
+    assert hashlib.sha256((root/row['destination']).read_bytes()).hexdigest()==row['sha256']
+cli('publish_audit_release.py',plan,'--execute','--allow-pending-claude',expected=1)
+audit_state.transition('report_ready')
+audit_state.transition('dashboard_ready')
 write_json(root/'work/validation/pipeline-verification.json', {'synthetic_only':True,'score':97.2,'passed':True,'commands':commands})
 '''
 
@@ -144,7 +176,8 @@ def test_v4_reset_apply_retains_framework_and_history(tmp_path, backup):
     project = tmp_path / 'Test-only supplier'
     load_builder().build(project)
     (project / 'incoming').mkdir(exist_ok=True)
-    files = {'incoming/owner.md': b'owner input', 'work/derived/test.txt': b'derived',
+    files = {'incoming/owner.md': b'owner input', 'raw/registered.md': b'registered source',
+             'work/derived/test.txt': b'derived',
              'work/reviews/record.md': b'review', 'work/decisions/owner.md': b'decision',
              'work/migrations/receipt.json': b'{}', 'work/archive/history.txt': b'history',
              'coordination/handoffs/record.md': b'handoff', 'outputs/RUN-20261010-03/report.md': b'report'}
@@ -152,6 +185,9 @@ def test_v4_reset_apply_retains_framework_and_history(tmp_path, backup):
         target = project / path
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(data)
+    import stat
+    raw = project / 'raw/registered.md'
+    raw.chmod(raw.stat().st_mode & ~stat.S_IWUSR & ~stat.S_IWGRP & ~stat.S_IWOTH)
     probe = tmp_path / 'reset-probe.py'
     probe.write_text('''
 import hashlib,json,sys
@@ -182,6 +218,7 @@ for name,digest in before.items():
     if name not in targets:
         assert path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest()==digest,name
 assert not (root/'work/derived/test.txt').exists()
+assert not (root/'raw/registered.md').exists()
 assert len((root/'work/manifests/approvals.csv').read_text().splitlines())==1
 if backup:
     from zipfile import ZipFile
