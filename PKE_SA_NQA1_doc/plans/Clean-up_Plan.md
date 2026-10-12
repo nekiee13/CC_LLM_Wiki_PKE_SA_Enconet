@@ -413,3 +413,11 @@ interruption retry and guarded undo. The exact 39-file preparation and read-only
 preview pass. The common suite passed 106 tests; the final activation guard
 passed its 16-test focused suite. No live Ekonerg installation has occurred.
 See [installation review](cleanup-cu3/EKONERG_INSTALLATION_REVIEW.md).
+
+CU-3.2's refreshed proposal covers 922 files with no unmapped working files.
+Two frozen release manifests pass an isolated relocation rehearsal (16 and
+eight references). The common suite passed 115 tests; final manifest/directory
+guards passed 12 focused tests. Two empty-folder moves are explicitly proposed,
+not applied. Directory permission recovery and pending safety reviews still
+precede live Ekonerg activation. See
+[final preflight](cleanup-cu3/EKONERG_FINAL_PREFLIGHT.md).

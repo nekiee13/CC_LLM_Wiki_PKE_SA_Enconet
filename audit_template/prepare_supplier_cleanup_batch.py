@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import os
 import re
 from pathlib import Path
 import subprocess
@@ -33,6 +34,75 @@ def relocation_aliases(rows, supplier):
                 raise ValueError('ambiguous relocated logical path')
             aliases[name] = new
     return {'schema_version': 1, 'paths': aliases}
+
+
+def directory_preflight(root, supplier, plan):
+    """Read-only coverage check; never prune or move a directory."""
+    root = migration.root_path(root)
+    if supplier in {'', '.', '..'} or Path(supplier).name != supplier:
+        raise ValueError('one supplier directory required')
+    prefix = supplier + '/'
+    if any(not row['source'].startswith(prefix) or not row['destination'].startswith(prefix)
+           for row in plan['files']):
+        raise ValueError('foreign supplier directory plan')
+    sources = {row['source'] for row in plan['files']}
+    parents = {parent.relative_to(root).as_posix() for name in sources
+               for parent in (root / name).parents if parent != root and parent.is_relative_to(root)}
+    uncovered, blocked, directories, empty_moves = [], [], set(), []
+    homes = {**MOVED, 'docs/reviews': 'work/reviews', '.pytest_cache': '.tmp/pytest-cache'}
+    def walk_error(error):
+        raise error
+    for home, new_home in homes.items():
+        name = prefix + home
+        try:
+            folder = migration.safe(root, name)
+            if not folder.exists():
+                continue
+            if not folder.is_dir():
+                raise ValueError('working home is not a directory')
+            for current, child_dirs, files in os.walk(folder, followlinks=False, onerror=walk_error):
+                current = Path(current)
+                migration.safe(root, current.relative_to(root).as_posix())
+                directories.add(current.relative_to(root).as_posix())
+                for child in child_dirs:
+                    migration.safe(root, (current / child).relative_to(root).as_posix())
+                for child in files:
+                    path = current / child
+                    relative = path.relative_to(root).as_posix()
+                    migration.safe(root, relative)
+                    if relative not in sources:
+                        uncovered.append(relative)
+            if not any(folder.iterdir()):
+                target_name = prefix + new_home
+                if migration.safe(root, target_name).exists():
+                    raise ValueError('empty-home destination already exists')
+                empty_moves.append({'source': name, 'destination': target_name,
+                                    'identity': migration.identity(folder),
+                                    'operation': 'proposed exact native empty-directory rename; pending review'})
+        except (ValueError, OSError) as error:
+            blocked.append({'source': name, 'reason': str(error)})
+    prune = sorted(directories & parents, key=lambda name: (name.count('/'), name), reverse=True)
+    unhandled = []
+    for name in sorted(directories - parents - {row['source'] for row in empty_moves}):
+        folder = migration.safe(root, name)
+        matching = [home for home in homes if name == prefix + home or name.startswith(prefix + home + '/')]
+        if any(folder.iterdir()) or len(matching) != 1:
+            unhandled.append(name)
+            continue
+        home = matching[0]
+        target_name = prefix + homes[home] + name[len(prefix + home):]
+        if migration.safe(root, target_name).exists():
+            unhandled.append(name)
+            continue
+        empty_moves.append({'source': name, 'destination': target_name,
+                            'identity': migration.identity(folder),
+                            'operation': 'proposed exact native empty-directory rename; pending review'})
+    return {'schema': 'supplier-directory-preflight-1', 'supplier': supplier,
+            'uncovered_files': sorted(uncovered), 'blocked_homes': blocked,
+            'prune_source_parents': prune, 'empty_home_moves': empty_moves,
+            'other_empty_directories': unhandled,
+            'passed': not uncovered and not blocked and not unhandled,
+            'scope': 'Coverage/proposal only; directory identity and native ACLs must be rechecked before any move or pruning.'}
 
 
 def markdown_references(data, filenames):
@@ -114,9 +184,11 @@ def prepare(supplier, destination):
                     'adapted_sha256': hashlib.sha256(result).hexdigest(), 'updated_links': count})
     preview = migration.preview(WORKSPACE, plan)
     relocations = relocation_aliases(rows, supplier)
+    directory_check = directory_preflight(WORKSPACE, supplier, plan)
     receipt = {'schema': 'supplier-cleanup-proposal-1', 'supplier': supplier, 'preview': preview,
                'held': held, 'changed_since_inventory': changes, 'preserve_edits_requested': preserve,
                'reference_adaptations': adaptations,
+               'directory_preflight': directory_check,
                'plan_sha256': migration.plan_hash(plan),
                'limits': ['Not authorization; fresh rows/content and preserve-edits need exact review.',
                           'No pruning, code installation or current-artifact reference edits applied.']}
@@ -137,6 +209,7 @@ def prepare(supplier, destination):
             stream.write(body)
     return {'selected': len(rows), 'held': len(held), 'changed': len(changes),
             'preserve_edits': preserve, 'blocked': preview['blocked'], 'plan_sha256': migration.plan_hash(plan),
+            'directories_ready': directory_check['passed'],
             'reference_adaptations': adaptations}
 
 

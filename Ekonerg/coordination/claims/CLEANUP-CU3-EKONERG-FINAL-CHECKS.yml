@@ -1,0 +1,17 @@
+task: CLEANUP-CU3-EKONERG-FINAL-CHECKS
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T20:53:59Z
+last_renewed_at_utc: 2026-10-12T20:53:59Z
+expires_at_utc: 2026-10-13T20:53:59Z
+anticipated_files:
+  - scripts/validate_release_relocations.py
+  - scripts/tests/test_release_relocations.py
+  - audit_template/prepare_supplier_cleanup_batch.py
+  - audit_template/tests/test_supplier_cleanup_references.py
+  - PKE_SA_NQA1_doc/plans/cleanup-cu3
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+note: CU-3.2 directory preflight and external historic manifest verification; no live moves
+released_at_utc: 2026-10-12T21:05:37Z
