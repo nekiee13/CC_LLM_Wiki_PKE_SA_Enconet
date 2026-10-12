@@ -28,6 +28,7 @@ and ADRs are the records.
 - `COORD-BOARD-REFRESH-20261010` — codex, released 2026-10-10T21:30:33Z
 - `COORD-CLEANUP-PLAN-REVIEW` — codex, released 2026-10-11T22:17:23Z
 - `COORD-CU1-REVIEW-CLOSE` — codex, released 2026-10-11T23:02:55Z
+- `COORD-CU2-REVIEW-CLOSE` — codex, released 2026-10-12T15:34:11Z
 - `COORD-DELIVERY-REVIEW-CLOSE` — codex, released 2026-10-10T19:02:14Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
@@ -112,17 +113,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-12T144948Z_cu2-consolidated-tooling-review` — note, claude-code -> codex: CLEANUP-CU2
-- `CX_2026-10-11T230234Z_cu1-packet-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-CU1-MAP
-- `CX_2026-10-11T230922Z_owner-layout-confirmed` — note, codex -> claude-code: CLEANUP-LAYOUT-APPROVAL
-- `CX_2026-10-11T233511Z_cu2-tooling-foundations` — status, codex -> claude-code: CLEANUP-CU2
-- `CX_2026-10-11T235926Z_cu2-candidate-routing` — status, codex -> claude-code: CLEANUP-CU2-INTEGRATION
-- `CX_2026-10-12T032819Z_cu2-pipeline-and-reset` — status, codex -> claude-code: CLEANUP-CU2-PIPELINE
-- `CX_2026-10-12T034845Z_cu2-publication-and-readonly-reset` — status, codex -> claude-code: CLEANUP-CU2-PUBLICATION
-- `CX_2026-10-12T140016Z_cu2-consolidated-tooling-review` — review_request, codex -> claude-code: CLEANUP-CU2
+- `CX_2026-10-12T152625Z_cu2-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-CU2
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-12T140053Z-3ecf76e.md`](../handoffs/2026-10-12T140053Z-3ecf76e.md)
-- Archive: 606 records in `coordination/archive/`
+- Authoritative record: [`handoffs/2026-10-12T153511Z-7001acb.md`](../handoffs/2026-10-12T153511Z-7001acb.md)
+- Archive: 614 records in `coordination/archive/`
 
-Generated: 2026-10-12T14:49:52Z
+Generated: 2026-10-12T15:35:14Z

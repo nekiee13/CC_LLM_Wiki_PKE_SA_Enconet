@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-12T140053Z-3ecf76e.md`](handoffs/2026-10-12T140053Z-3ecf76e.md)
+**Authoritative record:** [`handoffs/2026-10-12T153511Z-7001acb.md`](handoffs/2026-10-12T153511Z-7001acb.md)
 
-**Status:** partial · **Git:** `3ecf76e` · **Agent:** codex · **Created:** 2026-10-12T14:00:53Z
+**Status:** partial · **Git:** `7001acb` · **Agent:** codex · **Created:** 2026-10-12T15:35:11Z
 
-**Exact next action:** Address CU-2 consolidated review; finish scratch defaults, handoff guidance and descriptive labels; prepare current workspace move preview with all dirty/Claude/link holds preserved. No repeat layout decision.
+**Exact next action:** Finish outstanding CU-2 acceptance work and prepare exact CU-3.1 workspace preview retaining all holds.
