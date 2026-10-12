@@ -8,9 +8,31 @@ import subprocess
 import sys
 import zipfile
 
+from prepare_framework_candidate_v4 import MOVED
+
 WORKSPACE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(WORKSPACE / 'scripts'))
 import cleanup_migration as migration
+
+
+def relocation_aliases(rows, supplier):
+    """Resolve both original references and paths already routed by the runtime."""
+    prefix = supplier + '/'
+    aliases = {}
+    for row in rows:
+        if not row['source'].startswith(prefix) or not row['destination'].startswith(prefix):
+            raise ValueError('foreign supplier relocation')
+        old = row['source'][len(prefix):]
+        new = row['destination'][len(prefix):]
+        parts = old.split('/')
+        candidates = [old]
+        if parts[0] in MOVED:
+            candidates.append('/'.join((MOVED[parts[0]], *parts[1:])))
+        for name in candidates:
+            if name in aliases and aliases[name] != new:
+                raise ValueError('ambiguous relocated logical path')
+            aliases[name] = new
+    return {'schema_version': 1, 'paths': aliases}
 
 
 def markdown_references(data, filenames):
@@ -91,10 +113,7 @@ def prepare(supplier, destination):
                     'original_sha256': row['sha256'],
                     'adapted_sha256': hashlib.sha256(result).hexdigest(), 'updated_links': count})
     preview = migration.preview(WORKSPACE, plan)
-    aliases = {}
-    for row in rows:
-        old, new = row['source'].removeprefix(supplier + '/'), row['destination'].removeprefix(supplier + '/')
-        aliases[old] = new
+    relocations = relocation_aliases(rows, supplier)
     receipt = {'schema': 'supplier-cleanup-proposal-1', 'supplier': supplier, 'preview': preview,
                'held': held, 'changed_since_inventory': changes, 'preserve_edits_requested': preserve,
                'reference_adaptations': adaptations,
@@ -103,7 +122,7 @@ def prepare(supplier, destination):
                           'No pruning, code installation or current-artifact reference edits applied.']}
     destination.mkdir(parents=True, exist_ok=False)
     for name, data in [('file-map.json', plan), ('preview.json', receipt),
-                       ('file-relocations.json', {'schema_version': 1, 'paths': aliases})]:
+                       ('file-relocations.json', relocations)]:
         with zipfile.ZipFile(destination / (name + '.zip'), 'x', zipfile.ZIP_DEFLATED) as archive:
             archive.writestr(name, json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     for adaptation in adaptations:

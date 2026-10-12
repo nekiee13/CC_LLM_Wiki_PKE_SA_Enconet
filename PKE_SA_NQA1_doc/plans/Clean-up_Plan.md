@@ -407,3 +407,9 @@ passed without changing checked live files or the database. The fresh proposal
 has 920 moves. Ekonerg has not moved or activated v4. Runtime/tool safety review
 and the checked installation/recovery procedure remain within CU-3.2; no new
 task is added. See [integration review](cleanup-cu3/EKONERG_INTEGRATION_REVIEW.md).
+
+CU-3.2 now also has a bound runtime installer with byte-preserving originals,
+interruption retry and guarded undo. The exact 39-file preparation and read-only
+preview pass. The common suite passed 106 tests; the final activation guard
+passed its 16-test focused suite. No live Ekonerg installation has occurred.
+See [installation review](cleanup-cu3/EKONERG_INSTALLATION_REVIEW.md).

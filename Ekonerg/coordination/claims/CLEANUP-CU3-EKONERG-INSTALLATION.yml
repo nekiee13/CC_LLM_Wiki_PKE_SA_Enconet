@@ -1,0 +1,19 @@
+task: CLEANUP-CU3-EKONERG-INSTALLATION
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T20:40:42Z
+last_renewed_at_utc: 2026-10-12T20:48:19Z
+expires_at_utc: 2026-10-13T20:48:19Z
+anticipated_files:
+  - scripts/cleanup_runtime_install.py
+  - scripts/tests/test_cleanup_runtime_install.py
+  - audit_template/prepare_supplier_runtime_install.py
+  - audit_template/tests/test_supplier_runtime_install.py
+  - audit_template/prepare_supplier_cleanup_batch.py
+  - audit_template/tests/test_supplier_cleanup_references.py
+  - PKE_SA_NQA1_doc/plans/cleanup-cu3
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+note: CU-3.2 exact runtime installation/recovery and alias preparation; no live mutation before safety review
+released_at_utc: 2026-10-12T20:50:35Z
