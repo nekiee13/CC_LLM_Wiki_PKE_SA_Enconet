@@ -96,6 +96,8 @@ assert len(records)==1
 cli('make_handoff.py','--validate',records[0])
 staleness = cli('make_handoff.py','--check-staleness')
 assert 'does not resolve' not in staleness
+import run_validation
+assert run_validation._pointer_record() == records[0]
 cli('agent_coord.py','status','--write')
 board=(root/'coordination/BOARD.md').read_text(encoding='utf-8')
 assert '(handoffs/' in board and '(coordination/handoffs/' not in board
@@ -126,6 +128,8 @@ assert 'seal-existing-snapshot' in preview
 execution=cli('publish_audit_release.py',plan,'--execute','--allow-pending-claude')
 assert 'aggregate: PASS' in execution
 assert json.loads((root/contract['result_manifest']).read_text())['mode']=='seal-existing-snapshot'
+assert not list(root.glob('release-*'))
+assert not list((root/'.tmp').glob('release-*'))
 for row in contract['artifacts']:
     assert hashlib.sha256((root/row['destination']).read_bytes()).hexdigest()==row['sha256']
 cli('publish_audit_release.py',plan,'--execute','--allow-pending-claude',expected=1)

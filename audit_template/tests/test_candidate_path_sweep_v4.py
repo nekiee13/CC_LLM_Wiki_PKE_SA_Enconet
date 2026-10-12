@@ -17,7 +17,8 @@ def test_verified_candidate_has_no_direct_operational_legacy_paths(tmp_path):
     target = tmp_path / 'candidate'
     module('prepare_framework_candidate_v4').build(target)
     result = module('check_candidate_paths_v4').scan(target)
-    assert result['passed'] and result['verified_files'] == 163
+    assert result['passed'] and result['verified_files'] == 164
+    assert not result['legacy_descriptive_labels']
     assert not result['code_findings'] and not result['configuration_findings']
 
 

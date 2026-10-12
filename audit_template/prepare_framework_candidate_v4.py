@@ -188,7 +188,27 @@ def build(destination):
                 if source.count(old) != 1:
                     raise ValueError('coordination pointer baseline differs')
                 source = source.replace(old, 'pointer.replace("(coordination/handoffs/", "(handoffs/")')
+            if name == 'scripts/run_validation.py':
+                source = replace_once(source, r'(handoffs/[^)]+\.md)',
+                    r'(coordination/handoffs/[^)]+\.md)')
+                source = replace_once(source, 'import argparse',
+                    'from project_scratch import temporary_directory\nimport argparse')
+                source = replace_once(source, '    try:\n        proc = subprocess.run(',
+                    '    try:\n        with temporary_directory(prefix="validation-") as scratch:\n            env.update({key: scratch for key in ("TMP", "TEMP", "TMPDIR")})\n            command = list(step.command)\n            if command[1:3] == ["-m", "pytest"]:\n                command.extend(["--basetemp", str(Path(scratch) / "pytest")])\n            proc = subprocess.run(')
+                source = replace_once(source, '            step.command, cwd=step.cwd, capture_output=True, text=True,\n            encoding="utf-8", errors="replace", timeout=STEP_TIMEOUT_S, env=env,\n        )',
+                    '                command, cwd=step.cwd, capture_output=True, text=True,\n                encoding="utf-8", errors="replace", timeout=STEP_TIMEOUT_S, env=env,\n            )')
+            if name == 'scripts/browser_harness.py':
+                source = replace_once(source, 'import argparse',
+                    'from project_scratch import browser_environment\nimport argparse')
+                source = replace_once(source, 'with sync_playwright() as playwright:',
+                    'with browser_environment(), sync_playwright() as playwright:')
             if name == 'scripts/publish_audit_release.py':
+                source = replace_once(source, 'import tempfile',
+                    'from project_scratch import temporary_directory')
+                source = replace_once(source, 'tempfile.TemporaryDirectory(prefix="release-stage-", dir=root)',
+                    'temporary_directory(prefix="release-stage-", root=root)')
+                source = replace_once(source, 'tempfile.TemporaryDirectory(prefix="release-check-", dir=root)',
+                    'temporary_directory(prefix="release-check-", root=root)')
                 source = replace_once(source, 'def checked_plan(contract, root):',
                     'def checked_plan(contract, root, *, allow_existing_snapshot=False):')
                 source = replace_once(source, 'if destination in destinations or destination.exists():',
@@ -260,10 +280,18 @@ def build(destination):
         if target.casefold() in {key.casefold() for key in payload}:
             raise ValueError('candidate destination collision')
         payload[target] = data
+    commands = payload['schemas/audit_commands.yml'].decode('utf-8')
+    for old, new in [('manifests/raw_sources.csv row', 'work/manifests/raw_sources.csv row'),
+                     ('derived/chunks artifact', 'work/derived/chunks artifact'),
+                     ('manifests/validation_runs.csv unless --no-record',
+                      'work/manifests/validation_runs.csv unless --no-record')]:
+        commands = replace_once(commands, old, new)
+    payload['schemas/audit_commands.yml'] = commands.encode('utf-8')
     payload['scripts/project_layout.py'] = (RUNTIME / 'project_layout.py').read_bytes()
     payload['scripts/evidence_access_policy.py'] = (RUNTIME / 'evidence_access_policy.py').read_bytes()
     payload['scripts/reset_operations.py'] = (RUNTIME / 'reset_operations.py').read_bytes()
     payload['scripts/publication_snapshot.py'] = (RUNTIME / 'publication_snapshot.py').read_bytes()
+    payload['scripts/project_scratch.py'] = (RUNTIME / 'project_scratch.py').read_bytes()
     payload['project-layout.json'] = (RUNTIME / 'project-layout.example.json').read_bytes()
     record = {'schema_version': 1, 'status': 'development-only-not-installable',
               'baseline_manifest_sha256': PIN, 'routed_expressions': routes,
@@ -274,9 +302,12 @@ def build(destination):
                                       'evidence policy: direct run-root candidate outputs',
                                       'publication: run-root copy or seal, unchanged artifacts, marker last',
                                       'aggregate: direct run artifacts and internal review packages',
-                                      'catalog/package: internal work/reviews defaults'],
-              'remaining': ['configuration/path-user sweep', 'Git/history/empty-folder orchestration',
-                            'coherent review before any live installation'],
+                                      'catalog/package: internal work/reviews defaults',
+                                      'scratch: local publication, browser and layered pytest folders',
+                                      'layered validation: current handoff pointer',
+                                      'dispatcher: current output labels'],
+              'remaining': ['final acceptance review including latest scratch adaptations',
+                            'current guidance and exact live-batch review before installation'],
               'files': [{'path': name, 'sha256': sha(data), 'bytes': len(data)}
                         for name, data in sorted(payload.items())]}
     destination.mkdir(parents=True, exist_ok=False)

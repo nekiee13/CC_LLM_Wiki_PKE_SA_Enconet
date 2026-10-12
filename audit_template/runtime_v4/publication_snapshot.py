@@ -8,7 +8,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
-import tempfile
+from project_scratch import temporary_directory
 from datetime import datetime, timezone
 
 
@@ -33,7 +33,7 @@ def seal(contract_path, *, root, execute, validator, permissions):
     payload = (json.dumps(result, indent=2) + '\n').encode('utf-8')
     digest = hashlib.sha256(payload).hexdigest()
     installed = False
-    with tempfile.TemporaryDirectory(prefix='release-seal-', dir=root) as temporary:
+    with temporary_directory(prefix='release-seal-', root=root) as temporary:
         marker = Path(temporary) / 'result.json'
         marker.write_bytes(payload)
         publisher.checked_plan(contract, root, allow_existing_snapshot=True)

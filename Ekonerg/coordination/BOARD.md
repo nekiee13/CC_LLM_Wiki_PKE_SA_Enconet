@@ -18,6 +18,7 @@ and ADRs are the records.
 - `CLEANUP-CU1` — codex, released 2026-10-11T22:33:58Z
 - `CLEANUP-CU1-MAP` — codex, released 2026-10-11T22:48:00Z
 - `CLEANUP-CU2` — codex, released 2026-10-11T23:35:11Z
+- `CLEANUP-CU2-FINAL-PREVIEW` — codex, released 2026-10-12T16:08:18Z
 - `CLEANUP-CU2-INTEGRATION` — codex, released 2026-10-11T23:59:26Z
 - `CLEANUP-CU2-PIPELINE` — codex, released 2026-10-12T03:28:19Z
 - `CLEANUP-CU2-PUBLICATION` — codex, released 2026-10-12T03:48:45Z
@@ -114,10 +115,11 @@ and ADRs are the records.
 
 - `CC_2026-10-12T144948Z_cu2-consolidated-tooling-review` — note, claude-code -> codex: CLEANUP-CU2
 - `CX_2026-10-12T152625Z_cu2-review-confirmed` — acknowledgement, codex -> claude-code: CLEANUP-CU2
+- `CX_2026-10-12T160756Z_final-scratch-and-workspace-preview` — review_request, codex -> claude-code: CLEANUP-CU2
 
 ## Pointers
 
-- Authoritative record: [`handoffs/2026-10-12T153511Z-7001acb.md`](../handoffs/2026-10-12T153511Z-7001acb.md)
+- Authoritative record: [`handoffs/2026-10-12T160850Z-1aaf71b.md`](../handoffs/2026-10-12T160850Z-1aaf71b.md)
 - Archive: 614 records in `coordination/archive/`
 
-Generated: 2026-10-12T15:35:14Z
+Generated: 2026-10-12T16:09:12Z

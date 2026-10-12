@@ -1,0 +1,18 @@
+task: CLEANUP-CU2-FINAL-PREVIEW
+agent: codex
+status: released
+claimed_at_utc: 2026-10-12T15:58:46Z
+last_renewed_at_utc: 2026-10-12T15:58:46Z
+expires_at_utc: 2026-10-13T15:58:46Z
+anticipated_files:
+  - audit_template/prepare_framework_candidate_v4.py
+  - audit_template/runtime_v4
+  - audit_template/tests
+  - scripts/prepare_cleanup_workspace_batch.py
+  - scripts/tests/test_cleanup_workspace_batch.py
+  - PKE_SA_NQA1_doc/plans/cleanup-cu3
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+note: Complete scratch/path labels and prepare exact read-only workspace batch; no live moves
+released_at_utc: 2026-10-12T16:08:18Z
