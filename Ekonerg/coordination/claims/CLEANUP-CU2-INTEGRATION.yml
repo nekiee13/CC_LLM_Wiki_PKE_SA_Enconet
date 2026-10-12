@@ -1,0 +1,16 @@
+task: CLEANUP-CU2-INTEGRATION
+agent: codex
+status: released
+claimed_at_utc: 2026-10-11T23:50:33Z
+last_renewed_at_utc: 2026-10-11T23:50:33Z
+expires_at_utc: 2026-10-12T23:50:33Z
+anticipated_files:
+  - audit_template/runtime_v4
+  - audit_template/prepare_framework_candidate_v4.py
+  - audit_template/tests/test_framework_candidate_v4.py
+  - PKE_SA_NQA1_doc/plans/cleanup-cu2
+  - Ekonerg/coordination
+  - Ekonerg/HANDOFF.md
+  - Ekonerg/handoffs
+note: Route pinned v3 payload into isolated v4 candidate; no live migration
+released_at_utc: 2026-10-11T23:59:26Z
