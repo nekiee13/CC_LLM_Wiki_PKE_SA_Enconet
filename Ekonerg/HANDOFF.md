@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`handoffs/2026-10-12T164938Z-869c543.md`](handoffs/2026-10-12T164938Z-869c543.md)
+**Authoritative record:** [`handoffs/2026-10-12T174644Z-99a1d19.md`](handoffs/2026-10-12T174644Z-99a1d19.md)
 
-**Status:** partial · **Git:** `869c543` · **Agent:** codex · **Created:** 2026-10-12T16:49:38Z
+**Status:** partial · **Git:** `99a1d19` · **Agent:** codex · **Created:** 2026-10-12T17:46:44Z
 
-**Exact next action:** Prepare current-HEAD exact Git workflow authorization proposal with actual owner/review references, retaining holds; record live-batch authorization before apply.
+**Exact next action:** Prepare exact current-HEAD Git workflow authorization proposal with real owner/review references for the 405-file workspace batch, preserving all holds.
