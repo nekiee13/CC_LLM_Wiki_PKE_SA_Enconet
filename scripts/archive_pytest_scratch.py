@@ -27,15 +27,16 @@ def scratch_path(root, name):
     return migration.safe(root, name)
 
 
-def witness(root, current, source=SOURCE, expected_links=6, allow_files=False):
+def witness(root, current, source=SOURCE, expected_links=6, allow_files=False, path_guard=None):
     nodes, links = {}, {}
     regular = {}
     original = root / source
+    guard = path_guard or scratch_path
     def denied(error):
         raise error
     for folder, directories, files in os.walk(current, followlinks=False, onerror=denied):
         folder = Path(folder)
-        scratch_path(root, folder.relative_to(root).as_posix())
+        guard(root, folder.relative_to(root).as_posix())
         node = migration.identity(folder)
         node.pop('mtime_ns')
         node['acl_sha256'] = homes.acl_hash(folder)
@@ -53,7 +54,7 @@ def witness(root, current, source=SOURCE, expected_links=6, allow_files=False):
                 links[child.relative_to(current).as_posix()] = dict(
                     ino=info.st_ino, device=info.st_dev, attributes=info.st_file_attributes, target=raw)
             else:
-                scratch_path(root, child.relative_to(root).as_posix())
+                guard(root, child.relative_to(root).as_posix())
                 if allow_files and stat.S_ISREG(info.st_mode):
                     if info.st_nlink != 1:
                         raise ValueError('Hard-linked fixture refused')

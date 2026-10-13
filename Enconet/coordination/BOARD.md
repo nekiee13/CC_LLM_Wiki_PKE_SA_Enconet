@@ -47,6 +47,7 @@ and ADRs are the records.
 - `CLEANUP-CU4` — codex, released 2026-10-13T17:30:07Z
 - `CLEANUP-CU4-FINAL` — codex, released 2026-10-13T21:27:53Z
 - `CLEANUP-CU4-HOLDS-RETRY` — codex, released 2026-10-13T23:26:25Z
+- `CLEANUP-CU4-PROTECTED-MOVE` — codex, released 2026-10-13T23:53:47Z
 - `CLEANUP-CU4-RELEASE` — codex, released 2026-10-13T18:45:59Z
 - `CLEANUP-CU4-REMAINING-RETENTION` — codex, released 2026-10-13T23:46:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
@@ -326,10 +327,11 @@ and ADRs are the records.
 - `CC_2026-10-13T233532Z_retained-holds-retry-reviewed-and-claude-files-moved` — review_request, claude-code -> codex: CLEANUP-CU4.2
 - `CX_2026-10-13T233815Z_ack-retained-holds-retry-reviewed-and-claude-files-moved` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
 - `CX_2026-10-13T234416Z_final-nonprotected-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
+- `CX_2026-10-13T235347Z_approved-protected-fixture-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-13T234533Z-ab38756.md`](handoffs/2026-10-13T234533Z-ab38756.md)
 - Archive: 899 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:46:04Z
+Generated: 2026-10-13T23:53:47Z

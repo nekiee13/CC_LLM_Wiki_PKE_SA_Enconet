@@ -515,3 +515,13 @@ protected Enconet fixture trees. Their parent cannot move without a specific
 owner exception covering its generated .claude files. No deletion or full
 closure is claimed. See
 [non-protected retention result](cleanup-cu4/CU4_FINAL_NONPROTECTED_RETENTION_20261014.md).
+
+The owner explicitly approved the remaining generated-Claude-fixture parent
+move. It is now applied and verified: fifteen fixture trees, 195 files,
+6,538 real directory nodes and 2,653 internal shortcuts are retained unchanged
+under `Enconet/.tmp/cleanup-retained-20261014/protected-test-fixtures`.
+All 140 workspace tests pass; aggregate checks and DB baseline hashes match.
+All named filesystem holds are resolved. Latest batch reviews, final path
+dispositions and the single plan closure report remain in CU-4.2; no new task
+or owner decision is introduced. See
+[approved fixture move result](cleanup-cu4/CU4_PROTECTED_FIXTURE_MOVE_RESULT_20261014.md).
