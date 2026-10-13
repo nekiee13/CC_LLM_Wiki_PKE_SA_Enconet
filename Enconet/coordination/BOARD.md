@@ -321,6 +321,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-13T233532Z_retained-holds-retry-reviewed-and-claude-files-moved` — review_request, claude-code -> codex: CLEANUP-CU4.2
 - `CX_2026-10-13T232339Z_retained-holds-retry-review` — review_request, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
@@ -328,4 +329,4 @@ and ADRs are the records.
 - Authoritative record: [`coordination/handoffs/2026-10-13T232553Z-367fef6.md`](handoffs/2026-10-13T232553Z-367fef6.md)
 - Archive: 897 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:26:26Z
+Generated: 2026-10-13T23:35:37Z
