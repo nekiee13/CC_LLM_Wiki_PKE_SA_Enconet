@@ -128,6 +128,7 @@ def test_existing_audits_read_only(company, run_id, count, score, tmp_path):
         # new audit created after the owner-approved reset. Preserve every
         # expected assertion and use the genuine checksum-verified old DB.
         history_path = TEMPLATE.parent/'Enconet/scripts/regression_fixture.py'
+        sys.path.insert(0, str(history_path.parent))
         history_spec = importlib.util.spec_from_file_location('v2_history_fixture',history_path)
         history = importlib.util.module_from_spec(history_spec)
         history_spec.loader.exec_module(history)

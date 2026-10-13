@@ -42,6 +42,7 @@ class BundleSpec:
     journal_name: str
     lock_name: str
     exact_paths: frozenset[str] | None = None
+    journal_home: str = ".bootstrap"
 
 
 SIEVING = BundleSpec(BUNDLE, _VERSION, "sieving-runtime-only",
@@ -188,7 +189,11 @@ def apply(target: str | Path, run_id: str, spec: BundleSpec = SIEVING) -> dict[s
     manifest = load_manifest(spec)
     root = _target(target, spec)
     rows = _plan(root, manifest, spec)  # All source bytes and target conflicts are checked first.
-    journal_dir = root / ".bootstrap" / spec.journal_name
+    home = Path(spec.journal_home)
+    if (not home.parts or home.is_absolute() or '..' in home.parts
+            or ':' in spec.journal_home or '\\' in spec.journal_home):
+        raise BootstrapError('Unsafe journal home')
+    journal_dir = root / home / spec.journal_name
     journal = journal_dir / f"{run_id}.jsonl"
     lock = root / spec.lock_name
     _check_existing_chain(journal)

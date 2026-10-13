@@ -1,6 +1,31 @@
 # Reusable audit release - usage
 
-## Current release: v3 (10 October 2026)
+## Current release: v4 (cleanup layout)
+
+Use `framework/v4/`, version **4.0.0**, for a new supplier. Each project gets
+local scripts, the agreed `work/` homes and direct `outputs/RUN-*` results.
+Light and dark dashboards remain separate, self-contained HTML files.
+No database, documents, evidence, active prompt selection or approval transfers.
+Claude's release review is deferred, not approved or waived.
+
+```powershell
+python audit_template/prepare_vendor.py --release v4 --target "New Vendor" --supplier "New Vendor"
+python audit_template/prepare_vendor.py --release v4 --target "New Vendor" --supplier "New Vendor" --apply --run-id new-vendor-v4-001
+```
+
+Preview is read-only. Apply needs owner authority. Keep `incoming/` for this
+supplier's future documents. Read the local `docs/FRAMEWORK_METHOD_V4.md`.
+Initialize its database only when starting that company's own intake.
+Bootstrap journals now live under `work/bootstrap/`, not the project root.
+
+For an existing, unstarted v2/v3 scaffold, use `upgrade_vendor_v4.py` to create
+a saved preview first. Its apply takes that exact plan, a run ID and the owner
+authorization reference. It refuses edited tools, audit data or other unplanned
+content. Originals stay under the supplier's `work/migrations/framework-v4/`.
+Use its `verify` mode after apply; retry and undo are supported. Do not use it
+to replace an active audit. Old releases and addons remain immutable.
+
+## Historical release: v3 (10 October 2026)
 
 The updated clean release is `framework/v3/`, version **3.0.0**. It includes
 the current documentary report, chapter-linked evidence viewer, portable review

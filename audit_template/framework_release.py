@@ -13,23 +13,24 @@ VERSION = '2.0.0'
 
 
 def spec(upgrade=False, *, release='v2'):
-    if release not in {'v2','v3'}:
-        raise ValueError('Choose v2 or v3')
-    if upgrade and release == 'v3':
-        raise ValueError('v3 is a clean release; do not overlay an existing audit')
+    if release not in {'v2','v3','v4'}:
+        raise ValueError('Choose v2, v3 or v4')
+    if upgrade and release in {'v3','v4'}:
+        raise ValueError(release + ' is a clean release; do not overlay an existing audit')
     bundle = ROOT / 'framework' / ('upgrade-v2' if upgrade else release)
     manifest = json.loads((bundle / 'manifest.json').read_text(encoding='utf-8'))
     paths = frozenset(e['path'] for e in manifest['files'])
-    return BundleSpec(bundle, '3.0.0' if release == 'v3' else VERSION,
+    return BundleSpec(bundle, {'v2': VERSION, 'v3': '3.0.0', 'v4': '4.0.0'}[release],
         'framework-upgrade' if upgrade else 'clean-audit-framework',
-        frozenset(p.split('/')[0] for p in paths), 'framework-'+release, '.framework-bootstrap.lock', paths)
+        frozenset(p.split('/')[0] for p in paths), 'framework-'+release, '.framework-bootstrap.lock', paths,
+        journal_home='work/bootstrap' if release == 'v4' else '.bootstrap')
 
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--target',type=Path,required=True)
     p.add_argument('--upgrade',action='store_true',help='Only additive current-method tools; keep existing framework')
-    p.add_argument('--release',choices=['v2','v3'],default='v3')
+    p.add_argument('--release',choices=['v2','v3','v4'],default='v4')
     p.add_argument('--apply',action='store_true')
     p.add_argument('--run-id')
     args = p.parse_args()

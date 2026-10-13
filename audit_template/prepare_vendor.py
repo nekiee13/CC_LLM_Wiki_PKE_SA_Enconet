@@ -16,11 +16,13 @@ WORKSPACE = Path(__file__).resolve().parent.parent
 
 
 def scaffold(supplier, *, release='v2'):
+    if release not in {'v2', 'v3', 'v4'}:
+        raise ValueError('Unsupported framework release')
     if not supplier.strip() or any(ord(c) < 32 for c in supplier):
         raise ValueError('Provide an explicit non-empty supplier identity')
     state = dict(phase='setup',supplier=supplier,deliverable_language=None,benchmarks_locked=False,
         gates={f'G{i}':dict(status='pending',date=None,decision_ref=None) for i in range(1,8)})
-    config = dict(supplier=supplier,framework_version='3.0.0' if release == 'v3' else '2.0.0',regulatory_editions={},
+    config = dict(supplier=supplier,framework_version={'v2':'2.0.0','v3':'3.0.0','v4':'4.0.0'}[release],regulatory_editions={},
         source_selection_status='pending-owner',supplier_scope=None,part21_applicability=None,
         deliverable_language=None,reset_backup_waiver=None)
     seeds = {
@@ -31,7 +33,7 @@ def scaffold(supplier, *, release='v2'):
         'wiki/current-status.md':b'# Current status\n\nFramework installed. Fresh intake and owner decisions pending. No audit results.\n',
         'wiki/log.md':b'# Audit log\n\nAppend-only. Framework setup; no source or audit approval implied.\n',
     }
-    if release == 'v3':
+    if release in {'v3','v4'}:
         # The state API deliberately preserves inline gate records. Emit that
         # supported shape rather than a block map that it cannot update.
         text = ('phase: setup\nsupplier: '+json.dumps(supplier,ensure_ascii=False)+'\n'
@@ -40,6 +42,9 @@ def scaffold(supplier, *, release='v2'):
         seeds['project-state.yml'] = text.encode('utf-8')
         seeds['AGENTS.md'] = seeds['AGENTS.md'].replace(b'FRAMEWORK_METHOD_V2.md',b'FRAMEWORK_METHOD_V3.md')
         seeds['wiki/index.md'] = seeds['wiki/index.md'].replace(b'FRAMEWORK_METHOD_V2.md',b'FRAMEWORK_METHOD_V3.md')
+    if release == 'v4':
+        for name in ('AGENTS.md', 'wiki/index.md'):
+            seeds[name] = seeds[name].replace(b'FRAMEWORK_METHOD_V3.md', b'FRAMEWORK_METHOD_V4.md')
     return seeds
 
 
@@ -66,6 +71,8 @@ def setup(target, supplier, run_id=None, *, release='v2'):
     if run_id is None:
         return plan
     target.mkdir(exist_ok=True)
+    if release == 'v4':
+        (target / 'incoming').mkdir(exist_ok=True)
     result = apply(target,run_id,selected)
     for name,data in seeds.items():
         path = target / name
@@ -82,7 +89,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--target',type=Path,required=True)
     p.add_argument('--supplier',required=True)
-    p.add_argument('--release',choices=['v2','v3'],default='v3')
+    p.add_argument('--release',choices=['v2','v3','v4'],default='v4')
     p.add_argument('--apply',action='store_true')
     p.add_argument('--run-id')
     p.add_argument('--plan-output',type=Path,help='Save a fresh preview JSON outside the company target')
