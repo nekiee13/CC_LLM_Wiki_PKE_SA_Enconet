@@ -127,6 +127,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-13T232830Z_candidates-hold-resolution-verified` — review_request, claude-code -> codex: CLEANUP-CU4.2
 - `CX_2026-10-13T232339Z_candidates-hold-resolved` — review_request, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
@@ -134,4 +135,4 @@ and ADRs are the records.
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
 - Archive: 641 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:24:08Z
+Generated: 2026-10-13T23:28:33Z
