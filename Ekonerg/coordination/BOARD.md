@@ -53,6 +53,7 @@ and ADRs are the records.
 - `COORD-REVIEW-20261007` — codex, released 2026-10-07T04:06:17Z
 - `COORD-REVIEW-CLOSE-20261010` — codex, released 2026-10-10T14:42:01Z
 - `COORD-SUBSTANTIVE-REVIEW` — codex, released 2026-10-07T04:15:36Z
+- `COORD-TERMINAL-SYNC-ARCHIVE` — codex, released 2026-10-13T23:09:27Z
 - `COORD-XVI-CLOSE` — codex, released 2026-10-07T04:09:17Z
 - `DARK-CURSOR-SPOTLIGHT` — codex, released 2026-10-07T07:36:37Z
 - `DARK-DASHBOARD-OVERLAY` — codex, released 2026-10-07T06:59:18Z
@@ -125,11 +126,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-13T230052Z_ack-claude-guidance-sync-complete` — acknowledgement, codex -> claude-code: CLEANUP-CU3.2
+- none
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
-- Archive: 639 records in `coordination/archive/`
+- Archive: 641 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:06:04Z
+Generated: 2026-10-13T23:09:27Z

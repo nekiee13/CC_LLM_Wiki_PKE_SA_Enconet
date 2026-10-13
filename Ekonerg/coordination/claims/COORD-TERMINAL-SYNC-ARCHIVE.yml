@@ -1,0 +1,11 @@
+task: COORD-TERMINAL-SYNC-ARCHIVE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-13T23:09:07Z
+last_renewed_at_utc: 2026-10-13T23:09:07Z
+expires_at_utc: 2026-10-14T23:09:07Z
+anticipated_files:
+  - coordination/messages
+  - coordination/archive
+note: Archive terminal ack after explicit Claude confirmation; no new reply chain
+released_at_utc: 2026-10-13T23:09:27Z
