@@ -1,0 +1,72 @@
+{
+  "schema": "cleanup-residual-empty-1",
+  "root": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1",
+  "rows": [
+    {
+      "source": "pytest-min11-one",
+      "destination": ".tmp/cleanup-retained-20261013/pytest-min11-one",
+      "tree": {
+        ".": {
+          "device": 13858915109679781494,
+          "inode": 7881299348662676,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "6b62c7a0634e5af55031ea5e694faeec630db7db7b89884f6614de6f5a0e5f01"
+        }
+      }
+    },
+    {
+      "source": "pytest-min11-temp",
+      "destination": ".tmp/cleanup-retained-20261013/pytest-min11-temp",
+      "tree": {
+        ".": {
+          "device": 13858915109679781494,
+          "inode": 9851624185636909,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "6b62c7a0634e5af55031ea5e694faeec630db7db7b89884f6614de6f5a0e5f01"
+        }
+      }
+    },
+    {
+      "source": "pytest-min11-temp2",
+      "destination": ".tmp/cleanup-retained-20261013/pytest-min11-temp2",
+      "tree": {
+        ".": {
+          "device": 13858915109679781494,
+          "inode": 7599824371951874,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "6b62c7a0634e5af55031ea5e694faeec630db7db7b89884f6614de6f5a0e5f01"
+        }
+      }
+    },
+    {
+      "source": "ekonerg-reset-rk6wsybf",
+      "destination": "Ekonerg/.tmp/cleanup-retained-20261013/ekonerg-reset-rk6wsybf",
+      "tree": {
+        ".": {
+          "device": 13858915109679781494,
+          "inode": 3940649674446336,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "6b62c7a0634e5af55031ea5e694faeec630db7db7b89884f6614de6f5a0e5f01"
+        }
+      }
+    },
+    {
+      "source": "reset-plans",
+      "destination": "PKE_SA_NQA1_doc/reset-plans/retained-original-directory-20261013",
+      "tree": {
+        ".": {
+          "device": 13858915109679781494,
+          "inode": 14636698789430868,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "aebe54d2829866d95f57654d1b142dc6f64f5f52b0236107ee6ca10a9474446f"
+        }
+      }
+    }
+  ],
+  "authority_sha256": "ee95c65cb6ffcd97febab163dd2e7b71ecb3250e4a0523f69bdb898c396fcc02"
+}

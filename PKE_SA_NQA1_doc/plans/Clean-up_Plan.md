@@ -472,3 +472,13 @@ verification, safe retry, local startup and layout checks. The full suite passed
 Enconet and Ekonerg's 2,304 and 1,861 captured files remain unchanged.
 Claude post-review is pending. CU-4.2 remains open; no new task was added. See
 [release and scaffold result](cleanup-cu4/CU4_RELEASE_AND_SCAFFOLDS_RESULT.md).
+
+CU-4.2 residual work progressed: five proved empty root directories were
+relocated intact, with unchanged identities and ACLs. Preview, apply, verify
+and repeat apply passed; the native safety suite passed 12 tests. Ekonerg's
+separate light/dark dashboards each passed 29 live browser and real PDF checks.
+All eight suppliers resolve the checked homes to the same approved layout.
+Ekonerg's phase-aware aggregate passed eight checks and skipped nine; skips
+are not passes. Held populated/redirected directories, owner/Claude-owned
+records, committed index rebuild and final closure checks remain in CU-4.2.
+See [residual and browser result](cleanup-cu4/CU4_RESIDUAL_AND_BROWSER_RESULT.md).
