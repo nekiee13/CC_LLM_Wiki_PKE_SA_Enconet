@@ -29,7 +29,7 @@ recordkeeping requirements.
   (`PKE_SA_NQA1_Enconet_controlled`), and workspace docs (`PKE_SA_NQA1_global_docs`)
   MCP indexes are shared-neutral: either agent may query and verify them. Refreshes
   require an active `INDEX-REFRESH` coordination claim (single writer), a clean
-  committed HEAD, the exact roots/exclusions documented in `doc/INDEXING.md`,
+  committed HEAD, the exact roots/exclusions documented in `PKE_SA_NQA1_doc/INDEXING.md`,
   post-refresh verification, and the certified `repo@sha` recorded in handoff/status.
   Distinct agent-guidance corpora remain separately owned.
 - **Coordination protocol (ADR-0017, implemented after C0.1):** cross-agent requests
@@ -46,7 +46,8 @@ recordkeeping requirements.
   `CC_` records. Blockers need a disposition (`resolved` / `owner-accepted` /
   `deferred-until`), never archival-by-acknowledgement. Pre-C0.1 moves only on explicit
   owner instruction (bootstrap).
-- Put workspace-wide engineering documentation in `doc/` and project details inside the project.
+- Put workspace-wide engineering documentation in `PKE_SA_NQA1_doc/` and project details inside
+  the project. `workspace-layout.json` explicitly selects this documentation home for tools.
 
 ## Authority and safety
 
@@ -129,4 +130,4 @@ Current constraints: runtime/test dependencies (`pytest`, `pandas`, `openpyxl`) 
 installed in the default interpreter on this machine (C5.3, 2026-07-11) — verify with
 `python -m pytest --version` on other machines; planned files are not evidence of
 implemented capability. Repository facts (root,
-remote, identity) live in `doc/AS-IS.md`.
+remote, identity) live in `PKE_SA_NQA1_doc/AS-IS.md`.

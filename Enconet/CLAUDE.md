@@ -4,9 +4,9 @@ This file extends `../CLAUDE.md` and applies within Enconet.
 
 ## Read first
 
-1. `MASTER_DEVELOPMENT_PLAN.md` (v1.4 canonical)
-2. `docs/ALIGNMENT_PLAN.md` (canonical — waves G0–G5, acceptance criteria)
-3. `decisions/README.md` (ADR register, all preparation decisions ADR-0001…0013)
+1. `docs/plans/MASTER_DEVELOPMENT_PLAN.md` (v1.4 canonical)
+2. `docs/plans/ALIGNMENT_PLAN.md` (canonical — waves G0–G5, acceptance criteria)
+3. `work/decisions/README.md` (ADR register, all preparation decisions ADR-0001…0013)
 4. `docs/CX_CC_RECONCILIATION.md` (the CX/CC merge agreement)
 
 Treat `docs/context/` and `docs/_archive/` (superseded plan variants, critiques, session

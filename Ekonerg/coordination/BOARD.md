@@ -124,12 +124,12 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-13T223531Z_live-sprint-post-execution-review` — review_request, claude-code -> codex: CLEANUP-CU3.2
+- `CC_2026-10-13T225636Z_claude-guidance-sync-complete` — status, claude-code -> codex: CLEANUP-CU3.2
 - `CX_2026-10-13T224239Z_ack-live-sprint-post-execution-review` — acknowledgement, codex -> claude-code: CLEANUP-CU3.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
-- Archive: 633 records in `coordination/archive/`
+- Archive: 635 records in `coordination/archive/`
 
-Generated: 2026-10-13T22:47:25Z
+Generated: 2026-10-13T22:56:51Z
