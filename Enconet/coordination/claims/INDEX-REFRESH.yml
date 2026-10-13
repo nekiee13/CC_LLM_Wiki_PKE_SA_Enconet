@@ -1,11 +1,9 @@
 task: INDEX-REFRESH
 agent: codex
-status: released
-claimed_at_utc: 2026-07-27T22:27:33Z
-last_renewed_at_utc: 2026-07-27T22:27:33Z
-expires_at_utc: 2026-07-28T00:27:33Z
+status: active
+claimed_at_utc: 2026-10-13T21:41:47Z
+last_renewed_at_utc: 2026-10-13T21:41:47Z
+expires_at_utc: 2026-10-14T21:41:47Z
 anticipated_files:
-  - doc
-  - Enconet
-note: Incremental shared docs/code refresh at committed HEAD 62a0251; preserve dirty working tree via clean snapshot; exact INDEXING.md profiles.
-released_at_utc: 2026-07-27T22:38:39Z
+  - PKE_SA_NQA1_doc/INDEXING.md
+note: CU-4.2 full shared-neutral rebuild from committed corpus; preserve owner edits and Claude-owned indexes

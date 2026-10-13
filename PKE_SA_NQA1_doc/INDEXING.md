@@ -30,6 +30,34 @@ clean (0 drift / 0 missing / 0 errors) at `81adeea`, 2026-07-14.
 
 ## Agent-owned guidance indexes
 
+### CU-4.2 committed-snapshot refresh
+
+The owner-approved v4 cleanup adds exclusions for relocated working data:
+`work/derived/**`, `work/manifests/**`, `work/backup/**`,
+`work/bootstrap/**`, `work/migrations/**`, `work/validation/**`,
+`outputs/**`, `sieving/runs/**`, `tests/fixtures/**`, `.tmp/**`,
+`.test-tmp/**` and `.pytest*/**`. Documentation may include neutral
+`work/reviews` and `work/decisions`; never include any `CC_*` file.
+Code additionally excludes `docs/**`; global docs exclude generated
+`support-transfer/rendered/**` and `plans/**/rendered/**`.
+These extend, not replace, the table's evidence and agent exclusions.
+
+When owner edits prevent a clean live corpus, use the committed sparse
+worktree prepared by `scripts/prepare_shared_index_snapshot.py`. It retains
+the logical `Enconet/` and `PKE_SA_NQA1_doc/` roots beneath
+`.tmp/index-source-<commit>/`; the receipt records the exact physical roots,
+commit, file lists and raw hashes. Only neutral tracked files are checked out:
+no Claude files or agent trees are copied. Do not stash or edit owner changes.
+
+The three documentation indexes keep their canonical names and explicitly
+use these retained snapshot roots. This is a documented root change, not an
+index of uncommitted live edits. Keep the snapshot while its byte-offset
+indexes refer to it. The code index keeps its existing live-root identity,
+using an explicit tracked list independently checked against the same commit.
+Any dirty code file blocks that live code refresh. Both agents must distinguish
+the indexed committed version from owner edits still present in the live tree.
+Full rebuild, one `INDEX-REFRESH` claim and integrity verification still apply.
+
 `Codex_global_guidance` and `PKE_SA_NQA1_codex_guidance` remain Codex-owned because
 their corpus is Codex guidance. Equivalent Claude-specific guidance scope remains
 Claude-owned. Do not create a second repository code/docs index merely for agent naming.

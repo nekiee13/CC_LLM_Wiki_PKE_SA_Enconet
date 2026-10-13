@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="0.779" timestamp="2026-10-13T23:43:16.413113+02:00" hostname="DESKTOP-KBIR7T5"><testcase classname="scripts.tests.test_shared_index_snapshot" name="test_profiles_exclude_agents_evidence_history_and_generated_work" time="0.003" /><testcase classname="scripts.tests.test_shared_index_snapshot" name="test_snapshot_uses_committed_bytes_and_never_materializes_claude_files" time="0.687"><failure message="ValueError: Snapshot is not clean">tmp_path = WindowsPath('C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/.tmp/cu4-index-snapshot-tests/test_snapshot_uses_committed_b0')
+
+    def test_snapshot_uses_committed_bytes_and_never_materializes_claude_files(tmp_path):
+        def git(*args):
+            return subprocess.run(['git', '-C', str(tmp_path), *args], check=True, capture_output=True)
+        git('init')
+        git('config', 'user.name', 'Synthetic Test')
+        git('config', 'user.email', 'test@example.invalid')
+        files = {'.gitignore': '.tmp/\n', '.gitattributes': '* text eol=lf\n',
+                 'Enconet/docs/guide.md': '# committed\n', 'Enconet/scripts/run.py': 'def run(): pass\n',
+                 'Enconet/CLAUDE.md': '# owned\n', 'Enconet/.claude/settings.json': '{}\n',
+                 'Enconet/coordination/messages/CC_note.md': '# reviewer\n',
+                 'PKE_SA_NQA1_doc/INDEXING.md': '# indexing\n'}
+        for name, content in files.items():
+            path = tmp_path / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(content, encoding='utf-8')
+        git('add', '.')
+        git('commit', '-m', 'synthetic inputs')
+        live = tmp_path / 'Enconet/docs/guide.md'
+        live.write_text('# owner edit\n', encoding='utf-8')
+        output = tmp_path / 'PKE_SA_NQA1_doc/plans/cleanup-cu4/snapshot.json'
+        output.parent.mkdir(parents=True)
+&gt;       result = tool.prepare(tmp_path, output)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scripts\tests\test_shared_index_snapshot.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+root = WindowsPath('C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/.tmp/cu4-index-snapshot-tests/test_snapshot_uses_committed_b0')
+output = WindowsPath('C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/.tmp/cu4-index-snapshot-tests/test_snapshot_uses_committed_b0/PKE_SA_NQA1_doc/plans/cleanup-cu4/snapshot.json')
+
+    def prepare(root, output):
+        root = root.resolve(strict=True)
+        if Path(git(root, 'rev-parse', '--show-toplevel').decode().strip()).resolve() != root:
+            raise ValueError('Explicit workspace Git root required')
+        head = git(root, 'rev-parse', 'HEAD').decode().strip()
+        tracked = git(root, 'ls-tree', '-rz', '--name-only', head).decode('utf-8').split('\0')
+        corpora = profiles(p for p in tracked if p)
+        if not all(corpora.values()):
+            raise ValueError('Empty corpus refused')
+        snapshot = root / '.tmp' / ('index-source-' + head[:12])
+        if snapshot.exists():
+            raise ValueError('Fresh snapshot required; existing source is never overwritten')
+        output = output.absolute()
+        if not output.is_relative_to(root / 'PKE_SA_NQA1_doc/plans/cleanup-cu4') or output.exists():
+            raise ValueError('Fresh CU-4 receipt required')
+        paths = {'.gitignore', '.gitattributes'}
+        for name, entries in corpora.items():
+            prefix = 'PKE_SA_NQA1_doc/' if name == 'PKE_SA_NQA1_global_docs' else 'Enconet/'
+            paths.update(prefix + p for p in entries)
+        # Explicit file-only sparse patterns. Never materialize excluded agent trees.
+        patterns = []
+        for path in sorted(paths):
+            if not neutral(path) or '\n' in path or '\r' in path:
+                raise ValueError('Unsafe or owned snapshot path')
+            patterns.append('/' + ''.join('\\' + c if c in '*?[]!#\\' else c for c in path))
+        git(root, 'worktree', 'add', '--detach', '--no-checkout', str(snapshot), head)
+        git(snapshot, 'sparse-checkout', 'init', '--no-cone')
+        git(snapshot, '-c', 'core.autocrlf=false', '-c', 'core.eol=lf',
+            'sparse-checkout', 'set', '--no-cone', '--stdin', input=('\n'.join(patterns) + '\n').encode('utf-8'))
+        if git(snapshot, 'status', '--porcelain', '--untracked-files=no').strip():
+&gt;           raise ValueError('Snapshot is not clean')
+E           ValueError: Snapshot is not clean
+
+scripts\prepare_shared_index_snapshot.py:96: ValueError</failure></testcase></testsuite></testsuites>
