@@ -1,16 +1,12 @@
 task: CLEANUP-CU4-REMAINING-RETENTION
 agent: codex
 status: released
-claimed_at_utc: 2026-10-13T23:39:55Z
-last_renewed_at_utc: 2026-10-13T23:39:55Z
-expires_at_utc: 2026-10-14T23:39:55Z
+claimed_at_utc: 2026-10-13T23:45:23Z
+last_renewed_at_utc: 2026-10-13T23:45:23Z
+expires_at_utc: 2026-10-14T23:45:23Z
 anticipated_files:
-  - ../scripts
-  - ../PKE_SA_NQA1_doc
-  - ../doc
-  - ../audit_template/tests
-  - coordination
   - HANDOFF.md
+  - coordination
   - wiki/log.md
-note: Continue CU-4.2: retain empty doc shells and classified synthetic test history; protected agent trees stay held
-released_at_utc: 2026-10-13T23:44:16Z
+note: Publish reduced-hold handoff and explicit remaining ownership boundary
+released_at_utc: 2026-10-13T23:46:03Z
