@@ -335,7 +335,7 @@ Acceptance criteria:
       Only reviewed stored-path changes may differ.
 - [ ] Current docs/code contain no unapproved old-path dependencies.
       Historical old links resolve through the retained relocation map.
-- [ ] Coordination and handoff validation pass. Guidance drift checks pass
+- [x] Coordination and handoff validation pass. Guidance drift checks pass
       after Codex guidance updates; Claude sync is stated honestly.
 - [x] Refresh shared indexes from committed state under one `INDEX-REFRESH`
       claim. Structural rename needs full refresh and verification, not a

@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`coordination/handoffs/2026-10-13T213616Z-f1b3c9f.md`](coordination/handoffs/2026-10-13T213616Z-f1b3c9f.md)
+**Authoritative record:** [`coordination/handoffs/2026-10-13T221952Z-1ee3fcb.md`](coordination/handoffs/2026-10-13T221952Z-1ee3fcb.md)
 
-**Status:** partial · **Git:** `f1b3c9f` · **Agent:** codex · **Created:** 2026-10-13T21:36:16Z
+**Status:** partial · **Git:** `1ee3fcb` · **Agent:** codex · **Created:** 2026-10-13T22:19:52Z
 
-**Exact next action:** Finish remaining original CU-4.2 held-directory dispositions, full committed-source index rebuild and final closure verification. No new tasks or slices; preserve audit evidence and owner edits.
+**Exact next action:** Resolve the named retained CU-4.2 exceptions under existing plan: obtain specific disposition for owner/Claude-held records and safe Windows filesystem resolution for the empty Ekonerg tree, then finish historical/current path closure. Do not repeat completed release, index rebuild or audit processing.
