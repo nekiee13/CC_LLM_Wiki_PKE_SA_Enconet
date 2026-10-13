@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`coordination/handoffs/2026-10-13T174850Z-4523cf7.md`](coordination/handoffs/2026-10-13T174850Z-4523cf7.md)
+**Authoritative record:** [`coordination/handoffs/2026-10-13T205201Z-0a0212f.md`](coordination/handoffs/2026-10-13T205201Z-0a0212f.md)
 
-**Status:** partial · **Git:** `4523cf7` · **Agent:** codex · **Created:** 2026-10-13T17:48:50Z
+**Status:** partial · **Git:** `0a0212f` · **Agent:** codex · **Created:** 2026-10-13T20:52:01Z
 
-**Exact next action:** Continue original CU-4.1: build one tested immutable v4 release, preview and safely apply six supplier scaffold upgrades without audit data or inherited decisions.
+**Exact next action:** Continue existing CU-4.2 final verification and residual cleanup bundle; no new tasks or per-file review slices. Preserve incoming, evidence, approvals, owner edits and Claude-owned infrastructure.
