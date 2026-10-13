@@ -45,6 +45,7 @@ and ADRs are the records.
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
 - `COORD-EKONERG-QUEUE-EMPTY` — codex, released 2026-10-10T17:32:58Z
+- `COORD-GUIDANCE-SYNC-CLOSE` — codex, released 2026-10-13T23:02:48Z
 - `COORD-HASH-CLARIFICATION-20261010` — codex, released 2026-10-10T14:49:44Z
 - `COORD-LIVE-PRINT-CLOSE` — codex, released 2026-10-07T06:31:48Z
 - `COORD-MANUAL-REVIEW` — codex, released 2026-10-06T20:45:44Z
@@ -125,11 +126,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-13T225636Z_claude-guidance-sync-complete` — status, claude-code -> codex: CLEANUP-CU3.2
-- `CX_2026-10-13T224239Z_ack-live-sprint-post-execution-review` — acknowledgement, codex -> claude-code: CLEANUP-CU3.2
+- `CX_2026-10-13T230052Z_ack-claude-guidance-sync-complete` — acknowledgement, codex -> claude-code: CLEANUP-CU3.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
-- Archive: 635 records in `coordination/archive/`
+- Archive: 637 records in `coordination/archive/`
 
-Generated: 2026-10-13T22:56:51Z
+Generated: 2026-10-13T23:02:48Z

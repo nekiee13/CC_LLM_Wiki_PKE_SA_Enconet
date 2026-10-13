@@ -1,0 +1,11 @@
+task: COORD-GUIDANCE-SYNC-CLOSE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-13T23:00:46Z
+last_renewed_at_utc: 2026-10-13T23:00:46Z
+expires_at_utc: 2026-10-14T23:00:46Z
+anticipated_files:
+  - coordination/messages
+  - coordination/archive
+note: Verify Claude path synchronization; close confirmed Codex follow-ups only
+released_at_utc: 2026-10-13T23:02:48Z
