@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`coordination/handoffs/2026-10-13T205201Z-0a0212f.md`](coordination/handoffs/2026-10-13T205201Z-0a0212f.md)
+**Authoritative record:** [`coordination/handoffs/2026-10-13T213616Z-f1b3c9f.md`](coordination/handoffs/2026-10-13T213616Z-f1b3c9f.md)
 
-**Status:** partial · **Git:** `0a0212f` · **Agent:** codex · **Created:** 2026-10-13T20:52:01Z
+**Status:** partial · **Git:** `f1b3c9f` · **Agent:** codex · **Created:** 2026-10-13T21:36:16Z
 
-**Exact next action:** Continue existing CU-4.2 final verification and residual cleanup bundle; no new tasks or per-file review slices. Preserve incoming, evidence, approvals, owner edits and Claude-owned infrastructure.
+**Exact next action:** Finish remaining original CU-4.2 held-directory dispositions, full committed-source index rebuild and final closure verification. No new tasks or slices; preserve audit evidence and owner edits.
