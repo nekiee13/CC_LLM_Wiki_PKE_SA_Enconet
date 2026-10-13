@@ -31,6 +31,7 @@ and ADRs are the records.
 - `CLEANUP-CU3-EKONERG-PREPARATION` — codex, released 2026-10-12T18:20:33Z
 - `CLEANUP-CU3-REFERENCES` — codex, released 2026-10-12T16:34:06Z
 - `CLEANUP-CU3-WORKSPACE-LIVE` — codex, released 2026-10-12T18:03:58Z
+- `CLEANUP-CU4-HOLDS-RETRY` — codex, released 2026-10-13T23:24:08Z
 - `CLEANUP-LAYOUT-APPROVAL` — codex, released 2026-10-11T23:09:22Z
 - `CLEANUP-PLAN` — codex, released 2026-10-11T22:01:11Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
@@ -126,11 +127,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-10-13T232339Z_candidates-hold-resolved` — review_request, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
 - Archive: 641 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:09:27Z
+Generated: 2026-10-13T23:24:08Z

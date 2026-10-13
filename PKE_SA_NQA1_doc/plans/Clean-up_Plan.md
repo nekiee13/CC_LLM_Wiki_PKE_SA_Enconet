@@ -492,3 +492,17 @@ empty root caches are archived intact under `.tmp`. No root pytest/reset
 scratch folder remains. The Ekonerg empty candidate-tree rename still fails
 with WinError 5; held owner/Claude files and other legacy scratch remain.
 CU-4.2 is partial, with those exceptions explicit; no new task was added.
+
+## Retained-hold retry — 14 October 2026
+
+The owner requested another attempt within CU-4.2. Ekonerg's last blocked
+empty directory rename now succeeds; all ten original directory homes verify.
+Eight retained workspace documents moved with exact hashes, preserving four
+unfinished owner edits unstaged at the new paths. A further 63 empty scratch
+trees (283 directory nodes and 74 internal shortcuts) are retained under .tmp.
+The complete tooling suite passes 126 tests; Enconet's aggregate passes 19
+checks and Ekonerg's passes eight with nine explicit phase skips. Prior Claude
+review and guidance sync are confirmed, not pending. Seven Claude-owned old
+doc files and 20 populated/protected scratch trees remain held; this retry
+does not close the final path checklist. See
+[retry results and exact commands](cleanup-cu4/CU4_HOLDS_RETRY_RESULT_20261014.md).

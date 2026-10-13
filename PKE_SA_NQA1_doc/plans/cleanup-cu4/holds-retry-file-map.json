@@ -1,0 +1,62 @@
+{
+  "schema": "cleanup-file-map-1",
+  "files": [
+    {
+      "source": "doc/support-transfer/BASELINE_FINGERPRINT_PREJOB_BRIEFING.md",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/BASELINE_FINGERPRINT_PREJOB_BRIEFING.md",
+      "sha256": "03389f1d7fb29e61c0e324e2d7ea1edd295237bc84cf514a50bb66ed5f68383d",
+      "owner": "shared-or-owner",
+      "hold": null
+    },
+    {
+      "source": "doc/support-transfer/BASELINE_FINGERPRINT_RENDER_EVIDENCE.md",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/BASELINE_FINGERPRINT_RENDER_EVIDENCE.md",
+      "sha256": "c63bb28f2ca5a00f26899316e5c2eb8debf02376a6930a4735b155d87ec3ebda",
+      "owner": "shared-or-owner",
+      "hold": null
+    },
+    {
+      "source": "doc/support-transfer/rendered/baseline-fingerprint/support/BASELINE-FINGERPRINT.md",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/rendered/baseline-fingerprint/support/BASELINE-FINGERPRINT.md",
+      "sha256": "7fbd56fc64c5cb7a2c3915e7c6192d7bbc9ddb4731d6bbdec2afbfbc450d2c73",
+      "owner": "shared-or-owner",
+      "hold": null
+    },
+    {
+      "source": "doc/support-transfer/rendered/fin-codex-alignment/AGENTS.md",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/rendered/fin-codex-alignment/AGENTS.md",
+      "sha256": "a05d037b0e4f1977018ab52a4697510323961c2134e3f403efe9195890812474",
+      "owner": "codex",
+      "hold": null
+    },
+    {
+      "source": "doc/support-transfer/rendered/loto-codex-guidance-correction/AGENTS.md",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/rendered/loto-codex-guidance-correction/AGENTS.md",
+      "sha256": "44e3ac42ac2a6f0bdb01777972c0f14eb473200a6693163213a2eb0c0f9aa2ac",
+      "owner": "codex",
+      "hold": null
+    },
+    {
+      "source": "doc/support-transfer/rendered/loto-slice5/AGENTS.md",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/rendered/loto-slice5/AGENTS.md",
+      "sha256": "6de5b8400bd8794db32b32c38e4f61bc35c45a4fab15dd9fe6cf7da2c6da29e8",
+      "owner": "codex",
+      "hold": null
+    },
+    {
+      "source": "doc/support-transfer/rendered/render_baseline_fingerprint.py",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/rendered/render_baseline_fingerprint.py",
+      "sha256": "8e3a11ef52562aa52f5d714e5a44dbc90182b5baaf4294682ba037cb59c13145",
+      "owner": "shared-or-owner",
+      "hold": null
+    },
+    {
+      "source": "doc/support-transfer/rendered/slice5/AGENTS.md",
+      "destination": "PKE_SA_NQA1_doc/support-transfer/rendered/slice5/AGENTS.md",
+      "sha256": "6680ca0fee9e686d131ff9c92338a80e505d9776c4d9801cbf6fb17a014d890e",
+      "owner": "codex",
+      "hold": null
+    }
+  ],
+  "collisions": []
+}

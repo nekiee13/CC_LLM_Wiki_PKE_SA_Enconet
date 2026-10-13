@@ -1,0 +1,11 @@
+task: CLEANUP-CU4-HOLDS-RETRY
+agent: codex
+status: released
+claimed_at_utc: 2026-10-13T23:12:10Z
+last_renewed_at_utc: 2026-10-13T23:12:10Z
+expires_at_utc: 2026-10-14T23:12:10Z
+anticipated_files:
+  - work/migrations
+  - coordination
+note: Native retry of existing empty directory batch succeeded; verify and record
+released_at_utc: 2026-10-13T23:24:08Z

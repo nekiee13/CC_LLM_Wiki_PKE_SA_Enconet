@@ -17,14 +17,22 @@ SOURCE = 'pytest-pilot-temp'
 DESTINATION = '.tmp/cleanup-retained-20261013/pytest-pilot-temp'
 
 
-def witness(root, current):
+def scratch_path(root, name):
+    # The shared migration guard excludes the release tree. This narrower
+    # doorway permits only test scratch beneath audit_template/tests/.
+    if name.startswith('audit_template/tests/'):
+        return migration.safe(root / 'audit_template', name[len('audit_template/'):])
+    return migration.safe(root, name)
+
+
+def witness(root, current, source=SOURCE, expected_links=6):
     nodes, links = {}, {}
-    original = root / SOURCE
+    original = root / source
     def denied(error):
         raise error
     for folder, directories, files in os.walk(current, followlinks=False, onerror=denied):
         folder = Path(folder)
-        migration.safe(root, folder.relative_to(root).as_posix())
+        scratch_path(root, folder.relative_to(root).as_posix())
         node = migration.identity(folder)
         node.pop('mtime_ns')
         node['acl_sha256'] = homes.acl_hash(folder)
@@ -42,10 +50,10 @@ def witness(root, current):
                 links[child.relative_to(current).as_posix()] = dict(
                     ino=info.st_ino, device=info.st_dev, attributes=info.st_file_attributes, target=raw)
             else:
-                migration.safe(root, child.relative_to(root).as_posix())
+                scratch_path(root, child.relative_to(root).as_posix())
                 if not stat.S_ISDIR(info.st_mode):
                     raise ValueError('Regular files or unknown nodes remain')
-    if len(links) != 6:
+    if expected_links is not None and len(links) != expected_links:
         raise ValueError('Expected six classified pytest shortcuts')
     # Every link names an empty real directory captured in the same original
     # tree. Never resolve a link or accept an uncaptured destination.
@@ -54,6 +62,96 @@ def witness(root, current):
         if relative not in nodes:
             raise ValueError('Shortcut target is not a captured empty directory')
     return dict(directories=nodes, shortcuts=links)
+
+
+LEGACY_TOP = (
+    'Enconet/.pytest-ea22-red', 'Enconet/.pytest-tmp-epic-review',
+    'Enconet/.pytest-tmp-g4-20260728', 'Enconet/.pytest_tmp',
+    'Enconet/pytest-cache-files-fgtlfzwi', 'Enconet/pytest-cache-files-sglcfhjt',
+    'doc/support-transfer/staged',
+)
+LEGACY_PARENTS = ('Enconet/.test-tmp', 'audit_template/tests')
+
+
+def legacy_destination(source):
+    if source not in LEGACY_TOP and Path(source).parent.as_posix() not in LEGACY_PARENTS:
+        raise ValueError('Unknown legacy scratch source')
+    if source.startswith('Enconet/'):
+        return 'Enconet/.tmp/cleanup-retained-20261014/' + source[len('Enconet/'):]
+    return '.tmp/cleanup-retained-20261014/' + source
+
+
+def prepare_legacy(root, authority):
+    sources = list(LEGACY_TOP)
+    for parent in LEGACY_PARENTS:
+        base = root / parent
+        if base.exists():
+            sources.extend(p.relative_to(root).as_posix() for p in base.iterdir()
+                           if stat.S_ISDIR(p.lstat().st_mode)
+                           and not getattr(p.lstat(), 'st_file_attributes', 0) & 0x400)
+    rows, held = [], []
+    for source in sorted(sources):
+        try:
+            current = scratch_path(root, source)
+            if not current.exists():
+                continue
+            destination = legacy_destination(source)
+            if migration.safe(root, destination).exists():
+                raise ValueError('Destination already exists')
+            actual = witness(root, current, source, None)
+            rows.append(dict(source=source, destination=destination, witness=actual))
+        except (ValueError, OSError) as error:
+            held.append(dict(source=source, reason=str(error)))
+    if not rows:
+        raise ValueError('No eligible legacy empty scratch')
+    return dict(schema='legacy-empty-scratch-1', root=str(root), rows=rows, held=held,
+                authority_sha256=migration.digest(authority))
+
+
+def run_legacy(root, plan, authority, mode):
+    root = migration.root_path(root)
+    if (plan.get('schema') != 'legacy-empty-scratch-1' or plan.get('root') != str(root)
+            or plan.get('authority_sha256') != migration.digest(authority)):
+        raise ValueError('Legacy plan root or authority differs')
+    rows = plan['rows']
+    if not rows or len({r['source'].casefold() for r in rows}) != len(rows):
+        raise ValueError('Empty or duplicate legacy batch')
+
+    def state(row):
+        if row['destination'] != legacy_destination(row['source']):
+            raise ValueError('Foreign legacy destination')
+        old = scratch_path(root, row['source'])
+        new = migration.safe(root, row['destination'])
+        if old.exists() == new.exists():
+            raise ValueError('Collision or both homes missing')
+        current = old if old.exists() else new
+        if witness(root, current, row['source'], None) != row['witness']:
+            raise ValueError('Legacy identity, ACL or contents changed')
+        return 'original' if old.exists() else 'moved'
+
+    # Complete no-follow preflight before the first rename, also on retry/undo.
+    states = [state(row) for row in rows]
+    expected = 'original' if mode == 'undo' else 'moved'
+    if mode == 'verify':
+        if any(s != expected for s in states):
+            raise ValueError('Legacy batch incomplete')
+    elif mode in {'apply', 'undo'}:
+        for row in reversed(rows) if mode == 'undo' else rows:
+            if state(row) == expected:
+                continue
+            old, new = ((row['destination'], row['source']) if mode == 'undo'
+                        else (row['source'], row['destination']))
+            target = scratch_path(root, new)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            homes.native_move(scratch_path(root, old), target)
+            if state(row) != expected:
+                raise ValueError('Legacy post-rename mismatch')
+    else:
+        raise ValueError('Unknown legacy action')
+    return dict(mode=mode, directories=len(rows),
+                directory_nodes=sum(len(r['witness']['directories']) for r in rows),
+                shortcuts=sum(len(r['witness']['shortcuts']) for r in rows),
+                held=len(plan['held']), preserved=True, plan_sha256=migration.plan_hash(plan))
 
 
 def run(root, plan, authority, mode):
@@ -89,10 +187,22 @@ def main():
     parser.add_argument('--plan', type=Path, required=True)
     parser.add_argument('--authority', type=Path, required=True)
     parser.add_argument('--mode', choices=['preview', 'apply', 'verify', 'undo'], required=True)
+    parser.add_argument('--bundle', choices=['root-pilot', 'legacy-empty'], default='root-pilot')
     args = parser.parse_args()
     root = migration.root_path(args.root)
     for path in (args.plan, args.authority):
         migration.safe(root, path.absolute().relative_to(root).as_posix())
+    if args.bundle == 'legacy-empty':
+        if args.mode == 'preview':
+            plan = prepare_legacy(root, args.authority)
+            with args.plan.open('x', encoding='utf-8', newline='\n') as stream:
+                json.dump(plan, stream, indent=2)
+            result = dict(mode='preview', directories=len(plan['rows']), held=len(plan['held']),
+                          plan_sha256=migration.plan_hash(plan))
+        else:
+            result = run_legacy(root, migration.load(args.plan), args.authority, args.mode)
+        print(json.dumps(result))
+        return
     if args.mode == 'preview':
         if (root / DESTINATION).exists():
             raise ValueError('Destination already exists')

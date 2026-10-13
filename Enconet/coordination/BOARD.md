@@ -46,6 +46,7 @@ and ADRs are the records.
 - `CLEANUP-CU3-ENCONET-LIVE` — codex, released 2026-10-12T23:47:25Z
 - `CLEANUP-CU4` — codex, released 2026-10-13T17:30:07Z
 - `CLEANUP-CU4-FINAL` — codex, released 2026-10-13T21:27:53Z
+- `CLEANUP-CU4-HOLDS-RETRY` — codex, released 2026-10-13T23:24:08Z
 - `CLEANUP-CU4-RELEASE` — codex, released 2026-10-13T18:45:59Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-CLEANUP-POST-REVIEW` — codex, released 2026-10-13T22:47:25Z
@@ -320,11 +321,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- none
+- `CX_2026-10-13T232339Z_retained-holds-retry-review` — review_request, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-13T221952Z-1ee3fcb.md`](handoffs/2026-10-13T221952Z-1ee3fcb.md)
 - Archive: 897 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:09:27Z
+Generated: 2026-10-13T23:24:08Z

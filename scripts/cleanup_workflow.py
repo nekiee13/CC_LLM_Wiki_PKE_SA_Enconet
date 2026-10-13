@@ -9,6 +9,7 @@ import argparse
 import json
 from pathlib import Path
 import subprocess
+import zipfile
 
 import cleanup_migration as migration
 
@@ -214,7 +215,18 @@ def main():
                         help='explicit tracked sources whose edited bytes must remain unstaged')
     parser.add_argument('--journal', type=Path)
     parser.add_argument('--authorization', type=Path)
+    parser.add_argument('--output', type=Path,
+                        help='fresh cleanup-cu4 ZIP for the prepared workflow (no live moves)')
     args = parser.parse_args()
+    target = None
+    if args.output:
+        root = migration.root_path(args.root)
+        name = args.output.absolute().relative_to(root).as_posix()
+        target = migration.safe(root, name)
+        if args.mode != 'prepare' or not name.startswith('PKE_SA_NQA1_doc/plans/cleanup-cu4/') or target.suffix != '.zip':
+            parser.error('output requires prepare and a fresh cleanup-cu4 ZIP')
+        if target.exists():
+            parser.error('output already exists')
     plan = migration.load(args.plan)
     if args.mode == 'prepare':
         result = prepare(args.root, plan, args.prune, args.preserve_edits)
@@ -226,7 +238,12 @@ def main():
         if not args.journal:
             parser.error('undo requires journal')
         result = undo(args.root, plan, args.journal)
-    print(json.dumps(result, ensure_ascii=True))
+    if args.output:
+        with zipfile.ZipFile(target, 'x', zipfile.ZIP_DEFLATED) as archive:
+            archive.writestr('workflow.json', json.dumps(result, ensure_ascii=False, indent=2) + '\n')
+        print(json.dumps({'files': len(result['files']), 'plan_sha256': migration.plan_hash(result), 'output': name}))
+    else:
+        print(json.dumps(result, ensure_ascii=True))
 
 
 if __name__ == '__main__':

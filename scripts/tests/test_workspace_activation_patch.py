@@ -38,8 +38,22 @@ def test_activation_patch_matches_current_files_and_retains_guidance_check(tmp_p
     manifest = json.loads((tmp_path / 'PKE_SA_NQA1_doc/GUIDANCE_PAIRS.json').read_text())
     pair = next(item for item in manifest['pairs'] if item['id'] == 'workspace-guidance')
     rule = next(item for item in pair['rules'] if item['id'] == 'workspace-doc-dir')
-    for side, path in [('codex', tmp_path / 'AGENTS.md'), ('claude', ROOT / 'CLAUDE.md')]:
-        text = re.sub(r'\s+', ' ', path.read_text(encoding='utf-8'))
+    # This is a historical patch rehearsal, not the live paired-guidance check.
+    # Claude has since synchronized its own path. Read its original Git blob
+    # at the exact recorded preparation HEAD without writing a Claude file.
+    if before:
+        workflow_zip = snapshot.parent / 'workflow-plan.json.zip'
+        with zipfile.ZipFile(workflow_zip) as archive:
+            assert len(archive.namelist()) == 1
+            source_head = json.loads(archive.read(archive.namelist()[0]))['workflow']['head']
+        historical = subprocess.run(['git', '-C', str(ROOT), 'show', source_head + ':CLAUDE.md'],
+                                    capture_output=True, check=True)
+        claude_text = historical.stdout.decode('utf-8')
+    else:
+        claude_text = (ROOT / 'CLAUDE.md').read_text(encoding='utf-8')
+    for side, content in [('codex', (tmp_path / 'AGENTS.md').read_text(encoding='utf-8')),
+                          ('claude', claude_text)]:
+        text = re.sub(r'\s+', ' ', content)
         assert re.search(rule[side + '_pattern'], text, re.IGNORECASE | re.DOTALL)
     assert 'PKE_SA_NQA1_doc/README.md' in (tmp_path / 'README.md').read_text()
     assert 'plans/SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md' in (tmp_path / 'PKE_SA_NQA1_doc/README.md').read_text()

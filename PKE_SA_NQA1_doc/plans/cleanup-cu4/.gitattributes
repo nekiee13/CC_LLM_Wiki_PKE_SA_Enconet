@@ -3,3 +3,5 @@
 *.jsonl -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.xml -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.zip -text
+# This authority's raw hash is pinned by the native scratch plan.
+OWNER_HOLDS_RETRY_20261014.md -text

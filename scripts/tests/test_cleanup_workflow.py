@@ -10,6 +10,27 @@ sys.path.insert(0, str(Path(__file__).parents[1]))
 import cleanup_workflow as workflow
 
 
+def test_cli_prepare_fresh_zip_roundtrip_and_refuse_overwrite(tmp_path, monkeypatch):
+    _, source, plan, _ = fixture(tmp_path)
+    input_path = tmp_path / 'input.json'
+    input_path.write_text(json.dumps({k: v for k, v in plan.items() if k != 'workflow'}), encoding='utf-8')
+    output = tmp_path / 'PKE_SA_NQA1_doc/plans/cleanup-cu4/prepared.zip'
+    output.parent.mkdir(parents=True)
+    arguments = ['tool', '--root', str(tmp_path), '--plan', str(input_path),
+                 '--mode', 'prepare', '--output', str(output)]
+    monkeypatch.setattr(sys, 'argv', arguments)
+    workflow.main()
+    assert workflow.migration.load(output)['workflow']['tracked_sources']
+    with pytest.raises(SystemExit):
+        workflow.main()
+    assert source.exists()
+    # Reject output on an apply request before trying any live operation.
+    monkeypatch.setattr(sys, 'argv', arguments[:-4] + ['--mode', 'apply', '--output', str(output.parent / 'new.zip')])
+    with pytest.raises(SystemExit):
+        workflow.main()
+    assert source.exists()
+
+
 def fixture(tmp_path):
     def git(*args):
         result = subprocess.run(['git', '-C', str(tmp_path), *args], capture_output=True)
