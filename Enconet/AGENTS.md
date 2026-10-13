@@ -43,7 +43,9 @@ contract.
   controlled doorway: place a reviewed file directly in `incoming/`,
   then run `scripts/promote_source.py` with its registry metadata. Promotion moves it to
   `raw/`, applies a platform read-only mode (Windows read-only attribute / POSIX write bits),
-  and registers identical provenance in SQLite and `manifests/raw_sources.csv`. Never edit
+  and registers identical provenance in SQLite and `work/manifests/raw_sources.csv`.
+  This is Enconet's active v4 home; Claude must update its own guidance counterpart.
+  Never edit
   `raw/` files in place; replace them only through a separately reviewed, newly named source.
 
 ## Verification

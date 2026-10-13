@@ -141,6 +141,12 @@ exit **0**. Ekonerg's unscoped check exited **0**. No audit-data difference
 was allowed. See `final-audit-preservation.json`; the original receipts were
 not rewritten. The capture scope is tracked project files plus all raw/DB
 files, not a claim to inventory every untracked incoming/scratch file.
+The final Codex-owned `Enconet/AGENTS.md` registry pointer was then corrected
+to the active `work/manifests/raw_sources.csv` home, with Claude synchronization
+explicitly pending. A second scoped receipt, `post-guidance-audit-preservation.json`,
+allows exactly that additional guidance edit: **2,299 Enconet files unchanged**,
+five named session/guidance differences, **zero audit-data differences**. It
+does not replace or rewrite the earlier four-difference receipt.
 
 ## Retained exceptions — no forced full-closure claim
 
