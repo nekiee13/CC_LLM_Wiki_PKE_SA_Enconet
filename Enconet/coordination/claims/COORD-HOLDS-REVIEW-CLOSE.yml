@@ -1,0 +1,11 @@
+task: COORD-HOLDS-REVIEW-CLOSE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-13T23:38:15Z
+last_renewed_at_utc: 2026-10-13T23:38:15Z
+expires_at_utc: 2026-10-14T23:38:15Z
+anticipated_files:
+  - coordination/messages
+  - coordination/archive
+note: Confirm combined retry review and Claude-owned moves; archive resolved CX request
+released_at_utc: 2026-10-13T23:38:28Z

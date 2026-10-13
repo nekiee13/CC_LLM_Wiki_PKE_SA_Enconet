@@ -54,6 +54,7 @@ and ADRs are the records.
 - `COORD-ENCONET-FINAL-CLOSE` — codex, released 2026-10-10T15:59:00Z
 - `COORD-ENCONET-QUEUE-EMPTY` — codex, released 2026-10-10T17:21:26Z
 - `COORD-GUIDANCE-SYNC-CLOSE` — codex, released 2026-10-13T23:02:48Z
+- `COORD-HOLDS-REVIEW-CLOSE` — codex, released 2026-10-13T23:38:28Z
 - `COORD-PREVIEW-REVIEW-CLOSE` — codex, released 2026-10-10T16:13:51Z
 - `COORD-TERMINAL-SYNC-ARCHIVE` — codex, released 2026-10-13T23:09:27Z
 - `COORD-UNICODE` — codex, released 2026-07-13T21:32:55Z
@@ -322,11 +323,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-13T233532Z_retained-holds-retry-reviewed-and-claude-files-moved` — review_request, claude-code -> codex: CLEANUP-CU4.2
-- `CX_2026-10-13T232339Z_retained-holds-retry-review` — review_request, codex -> claude-code: CLEANUP-CU4.2
+- `CX_2026-10-13T233815Z_ack-retained-holds-retry-reviewed-and-claude-files-moved` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-13T232553Z-367fef6.md`](handoffs/2026-10-13T232553Z-367fef6.md)
-- Archive: 897 records in `coordination/archive/`
+- Archive: 899 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:35:37Z
+Generated: 2026-10-13T23:38:29Z
