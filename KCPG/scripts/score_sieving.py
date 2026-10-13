@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Score local crumbs against a local golden set; never grant approval."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -14,7 +15,7 @@ import yaml
 from project_paths import configure_standard_streams, local_path
 
 ROOT = Path(__file__).resolve().parents[1]
-APPROVALS = ROOT / "manifests" / "approvals.csv"
+APPROVALS = layout_path('manifests') / "approvals.csv"
 HEADER = ["object_id", "decision", "date", "reviewer", "notes"]
 
 
@@ -145,4 +146,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

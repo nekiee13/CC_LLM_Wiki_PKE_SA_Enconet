@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render validated, typed Markdown citations for offline evidence targets."""
+"""Render validated, typed Markdown citations for Evidence Explorer targets."""
 from __future__ import annotations
 
 import re

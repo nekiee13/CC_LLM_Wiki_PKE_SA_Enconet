@@ -33,5 +33,6 @@
   groupReferences();
   // Filtering/search/sorting rebuild cards. Observe only direct child changes,
   // not our own edits inside each reference paragraph.
-  new MutationObserver(groupReferences).observe(document.getElementById('cards'), {childList:true});
+  const cards = document.getElementById('cards') || document.getElementById('criterion-card-container');
+  if (cards) new MutationObserver(groupReferences).observe(cards, {childList:true});
 })();

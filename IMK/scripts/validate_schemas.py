@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check this project's schema contracts without granting source approval."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -16,8 +17,8 @@ from project_paths import local_path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMAS = ROOT / "schemas"
-RUNS = ROOT / "manifests" / "validation_runs.csv"
-APPROVALS = ROOT / "manifests" / "approvals.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
+APPROVALS = layout_path('manifests') / "approvals.csv"
 RUN_HEADER = ["run_utc", "validator", "phase", "result", "exit_code", "details"]
 ROMANS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
           "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII"]
@@ -249,4 +250,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

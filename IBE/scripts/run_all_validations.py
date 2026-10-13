@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run the local audit's phase-aware validation spine with one verdict."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -23,11 +24,11 @@ from project_paths import configure_standard_streams, local_path
 PROJECT = Path(__file__).resolve().parents[1]
 SCRIPTS = PROJECT / "scripts"
 STATE = PROJECT / "project-state.yml"
-RUNS = PROJECT / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 OUTPUTS = PROJECT / "outputs"
 DATA = PROJECT / "sieving" / "DATA"
 SIEVE_RUNS = PROJECT / "sieving" / "runs"
-BENCHMARKS = PROJECT / "benchmarks" / "validate_benchmarks.py"
+BENCHMARKS = layout_path('benchmarks') / "validate_benchmarks.py"
 VOCABULARIES = PROJECT / "schemas" / "vocabularies.yml"
 AUDIT_STATES = yaml.safe_load(VOCABULARIES.read_text(encoding="utf-8"))["vocabularies"]["audit_states"]["values"]
 PHASES = [state for state in AUDIT_STATES if state != "failed"]
@@ -146,18 +147,19 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
     if app_b_json is not None:
         app_b_json = local_path(app_b_json)
     py = sys.executable
-    package = outputs / f"{supplier}_appendix_b_evaluation_package.json"
-    report = outputs / f"{supplier}_appendix_b_evaluation_report.md"
-    dashboard_data = outputs / f"{supplier}_appendix_b_dashboard_data.json"
-    dashboard = outputs / f"{supplier}_appendix_b_dashboard.html"
-    evidence_root = outputs / "candidates" / "evidence_access"
-    evidence_run = evidence_root / run_id if run_id else None
+    run_root = outputs / run_id if run_id else outputs
+    package = run_root / "evaluation_package.json"
+    report = run_root / "report.md"
+    dashboard_data = run_root / "dashboard_data.json"
+    dashboard = run_root / "dashboard_light.html"
+    evidence_root = layout_path("reviews")
+    evidence_run = run_root if run_id else None
     bundle = evidence_run / "evidence_bundle.json" if evidence_run else None
     evidence_report = (
-        evidence_run / f"{supplier}_appendix_b_evaluation_report.md" if evidence_run else None
+        evidence_run / "report.md" if evidence_run else None
     )
     evidence_viewer = (
-        evidence_run / f"{supplier}_appendix_b_dashboard.html" if evidence_run else None
+        evidence_run / "dashboard_light.html" if evidence_run else None
     )
     app_b = [py, str(SCRIPTS / "validate_app_b_json.py"), str(app_b_json)] if app_b_json else None
     if app_b is not None and phase_rank(phase) >= phase_rank("evaluated"):
@@ -186,7 +188,7 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
         ),
         "browser_evidence": (
             [py, str(SCRIPTS / "browser_harness.py"), "check", str(evidence_viewer),
-             "--artifacts", str(evidence_root / "validation_artifacts" / "browser_evidence"),
+             "--artifacts", str(layout_path("validation", run_id or "setup", "browser_evidence")),
              "--require-interactive"] if evidence_viewer else None
         ),
         "dashboard": [py, str(SCRIPTS / "validate_dashboard.py"), str(package),
@@ -284,6 +286,7 @@ def main() -> int:
     parser.add_argument("--app-b-json", type=Path)
     parser.add_argument("--benchmarks", action="store_true",
                         help="run both supplier-independent EPIC16 benchmark classes")
+    parser.add_argument("--allow-pending-claude", action="store_true", help="explicit pending agent infrastructure only; no audit approval")
     parser.add_argument("--no-record", action="store_true")
     args = parser.parse_args()
     try:
@@ -296,7 +299,7 @@ def main() -> int:
         state = yaml.safe_load(args.state.read_text(encoding="utf-8"))
         phase = state["phase"]
         phase_rank(phase)
-        supplier = _safe_supplier(state["supplier"])
+        supplier = re.sub(r"[^a-z0-9_-]+", "-", _safe_supplier(state["supplier"]).casefold()).strip("-")
         run_id = args.run_id or (discover_run_id(args.db) if applicable("evaluation", phase) else None)
         app_b_json = args.app_b_json
         if app_b_json is None and applicable("app_b_json", phase):
@@ -304,6 +307,14 @@ def main() -> int:
         check_commands = commands(phase=phase, supplier=supplier, db=args.db, outputs=args.outputs,
                                   run_id=run_id, app_b_json=app_b_json,
                                   no_record=args.no_record)
+        if state.get("evidence_budget_profile"):
+            import generate_dashboard
+            profile = local_path(args.state.parent / state["evidence_budget_profile"])
+            generate_dashboard.load_budget_profile(profile)
+            command = check_commands["evidence_budgets"]
+            command[command.index("--budgets") + 1] = str(profile)
+        if args.allow_pending_claude:
+            check_commands["sieving_harness"].append("--allow-pending-claude")
         checks = run(phase, check_commands)
         if benchmarks_required(phase, args.benchmarks):
             for name, command in benchmark_commands().items():
@@ -329,4 +340,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

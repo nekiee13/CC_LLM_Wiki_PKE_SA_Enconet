@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate local crumb quotes against local chunks or recorded exceptions."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -15,8 +16,8 @@ from project_paths import local_path
 import db_util
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCEPTIONS = ROOT / "manifests" / "link_exceptions.csv"
-RUNS = ROOT / "manifests" / "validation_runs.csv"
+EXCEPTIONS = layout_path('manifests') / "link_exceptions.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 EXCEPTION_HEADER = ["crumb_id", "quote_id", "reason", "approved_by", "date"]
 RUN_HEADER = ["run_utc", "validator", "phase", "result", "exit_code", "details"]
 
@@ -131,4 +132,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

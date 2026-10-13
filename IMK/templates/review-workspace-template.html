@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Evidence Review Workspace</title>
+  <style>
+    :root{font-family:Segoe UI,Arial,sans-serif;color:#172033;background:#eef2f7}body{margin:0}main{max-width:1080px;margin:auto;padding:2rem}header{background:#17324d;color:#fff;padding:1.5rem 2rem}header h1{margin:.2rem 0}.toolbar,.run-card{background:#fff;border:1px solid #cbd5e1;border-radius:.6rem;padding:1rem;margin:1rem 0;box-shadow:0 2px 8px #17203314}label{font-weight:700}input{box-sizing:border-box;width:100%;margin-top:.4rem;padding:.7rem;border:1px solid #738197;border-radius:.3rem}.run-select{width:100%;display:flex;justify-content:space-between;gap:1rem;align-items:center;text-align:left;background:transparent;border:0;padding:0;font:inherit;cursor:pointer}.run-select:focus{outline:3px solid #2d72d9;outline-offset:5px}.run-title{font-size:1.15rem;font-weight:700}.status{border-radius:1rem;padding:.25rem .65rem;font-size:.85rem;font-weight:700}.status-candidate{background:#fff0c2;color:#684b00}.status-approved{background:#d8f5e5;color:#14532d}.run-details{border-top:1px solid #d7dee8;margin-top:1rem;padding-top:1rem}.artifact-list{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;list-style:none}.artifact-list a{display:inline-block;background:#1e5e91;color:#fff;padding:.55rem .8rem;border-radius:.3rem}.unavailable{color:#8b1e1e;font-weight:700}.run-card[data-availability="unavailable"]{border-color:#bc5b5b}.empty{padding:2rem;text-align:center}.hashes{font-size:.78rem;overflow-wrap:anywhere}footer{padding:1rem 2rem;color:#48566a;text-align:center}@media print{.toolbar{display:none}.run-details{display:block!important}}
+  </style>
+</head>
+<body>
+  <header><h1>Evidence Review Workspace</h1><p>Select a registered, validated audit run and open its matched artifacts.</p></header>
+  <main>
+    <section class="toolbar" aria-label="Run filtering"><label for="run-filter">Filter registered runs</label><input id="run-filter" type="search" autocomplete="off" placeholder="Supplier, framework, run ID, language, or status"><p id="filter-status" role="status" aria-live="polite"></p></section>
+    <section id="run-list" aria-label="Registered audit runs">__RUN_CARDS__</section>
+  </main>
+  <footer>Offline artifact. Embedded validated catalog only; no network request or directory scan.</footer>
+  <script id="review-catalog" type="application/json">__REVIEW_CATALOG__</script>
+  <script>
+    'use strict';
+    const reviewCatalog=JSON.parse(document.getElementById('review-catalog').textContent);
+    const cards=[...document.querySelectorAll('.run-card')];
+    function toggleRun(button){const details=document.getElementById(button.getAttribute('aria-controls'));const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));details.hidden=open;}
+    function filterRuns(){const query=document.getElementById('run-filter').value.trim().toLocaleLowerCase();let shown=0;cards.forEach(card=>{const visible=!query||card.dataset.search.includes(query);card.hidden=!visible;if(visible)shown+=1;});document.getElementById('filter-status').textContent=`${shown} registered run(s)`;}
+    document.querySelectorAll('.run-select').forEach(button=>button.addEventListener('click',()=>toggleRun(button)));
+    document.getElementById('run-filter').addEventListener('input',filterRuns);
+    filterRuns();
+  </script>
+</body>
+</html>

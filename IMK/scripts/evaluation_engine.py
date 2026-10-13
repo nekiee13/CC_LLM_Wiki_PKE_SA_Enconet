@@ -1,5 +1,6 @@
 """Project-local, approval-gated evaluation operations; no audit decision is inferred."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import csv
 from contextlib import closing
@@ -14,7 +15,7 @@ import db_util
 from project_paths import local_path
 
 ROOT = Path(__file__).resolve().parents[1]
-APPROVALS = ROOT / "manifests/approvals.csv"
+APPROVALS = layout_path('manifests') / 'approvals.csv'
 MODEL = ROOT / "schemas/scoring_model.yml"
 RAW = ROOT / "raw"
 RATINGS = {"fully", "substantially", "partially", "minimally", "unmet", "undetermined", "na"}
@@ -178,7 +179,7 @@ def write_evaluation(db: Path, *, run_id: str, record: object,
             raise ValueError(f"{name} must be text")
         values[name] = value.strip()
     if not values["judge_ruling"] or not values["rationale"]:
-        raise ValueError("human judge_ruling and rationale are required")
+        raise ValueError("documentary judge_ruling and rationale are required")
     if not isinstance(evidence_ids, list) or len(set(evidence_ids)) != len(evidence_ids):
         raise ValueError("evidence IDs must be unique")
     for item in evidence_ids:
@@ -223,7 +224,8 @@ def write_evaluation(db: Path, *, run_id: str, record: object,
         return {"mode": "apply" if apply else "preview", "evaluation_id": eid, "rating": rating}
 
 
-def metrics(rows: list[dict], *, scoring_model: dict) -> dict:
+def metrics(rows: list[dict], *, scoring_model: dict | None = None) -> dict:
+    scoring_model = scoring_model or model()
     if len(rows) != 18 or any(row.get("rating") not in RATINGS for row in rows):
         raise ValueError("exactly 18 valid evaluation ratings required")
     applicable = [row for row in rows if row["rating"] != "na"]

@@ -6,9 +6,9 @@ sieving/cli.py text eol=lf
 sieving/src/**/*.py text eol=lf
 sieving/prompts/active.yml text eol=lf
 schemas/*.yml text eol=lf
-manifests/*.csv text eol=lf
+work/manifests/*.csv text eol=lf
 wiki/**/.gitkeep text eol=lf
-.bootstrap/**/*.jsonl text eol=lf
+work/bootstrap/**/*.jsonl text eol=lf
 
 # Version-2 portable presentation and method assets
 scripts/*.css text eol=lf
@@ -18,12 +18,26 @@ docs/FRAMEWORK_METHOD_V2.md text eol=lf
 Sieving_method_specification_Guide.md text eol=lf
 db/schema.sql text eol=lf
 sieving/SIEVING_PLAYBOOK.md text eol=lf
-benchmarks/sieving_golden/manifest.yml text eol=lf
+work/benchmarks/sieving_golden/manifest.yml text eol=lf
 handoff_schema.yml text eol=lf
 
 # Preserve evidence exactly across Git checkouts
 incoming/** -text
 raw/** -text
-derived/** -text
+work/derived/** -text
 sieving/DATA/** -text
 db/*.sqlite binary
+
+# v3 immutable portable payload and generated evidence
+outputs/** -text
+wiki/dashboards/*.html -text
+scripts/*.ps1 text eol=lf
+
+# Current v4 framework and exact retained migration bytes
+docs/** text eol=lf
+wiki/*.md text eol=lf
+AGENTS.md text eol=lf
+framework-company.json text eol=lf
+project-state.yml text eol=lf
+project-layout.json text eol=lf
+work/migrations/** -text

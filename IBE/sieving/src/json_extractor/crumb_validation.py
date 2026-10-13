@@ -10,6 +10,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from .contract import canonical_codes, load_contract
+from .evidence_context import validate_context
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -145,6 +146,7 @@ def validate_payload(payload: object, *, strict: bool = False) -> ValidationResu
                 result.errors.append(f"{where}.authority_references: DOCUMENT items require an empty list")
         if side == "DOCUMENT" and any(key in item for key in ("rule", "rule_locator", "rule_key", "rule_strength")):
             result.errors.append(f"{where}: RULE-only fields forbidden on DOCUMENT side")
+        result.errors.extend(f"{where}: {error}" for error in validate_context(item))
         for optional in ("item_type", "entities"):
             if optional not in item:
                 result.warnings.append(f"{where}.{optional}: optional field missing")

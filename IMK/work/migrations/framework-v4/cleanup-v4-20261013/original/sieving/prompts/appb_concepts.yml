@@ -1,0 +1,59 @@
+# Company-neutral intent cards for recall-first DOCUMENT sieving.
+# These cards describe search ideas, not applicability decisions or conclusions.
+schema_version: "1.0"
+taxonomy_id: APP_B
+criteria:
+  APP_B_I:
+    intent: "People and teams have clear authority, responsibility, and independence."
+    evidence_signals: [roles, responsibilities, organization, independence, escalation, approval authority]
+  APP_B_II:
+    intent: "A planned quality program covers quality-affecting work and qualified people."
+    evidence_signals: [quality plan, objectives, resources, training, risk grading, management commitment]
+  APP_B_III:
+    intent: "Design work is planned, checked, verified, changed, and kept consistent with its inputs."
+    evidence_signals: [design input, design output, review, verification, validation, change control, configuration]
+  APP_B_IV:
+    intent: "Quality requirements reach the documents used to buy goods or services."
+    evidence_signals: [purchase order, contract, specification, flow-down, acceptance terms, supplier requirement]
+  APP_B_V:
+    intent: "Quality-affecting work follows approved instructions with clear acceptance rules."
+    evidence_signals: [procedure, work instruction, checklist, drawing, method, acceptance criteria, training]
+  APP_B_VI:
+    intent: "Controlled documents are prepared, reviewed, approved, issued, revised, and withdrawn safely."
+    evidence_signals: [revision, approval, distribution, issue, obsolete, document register, change review]
+  APP_B_VII:
+    intent: "Purchased items and services are checked against requirements and supplier controls."
+    evidence_signals: [supplier evaluation, qualification, surveillance, receipt check, verification, supplier record]
+  APP_B_VIII:
+    intent: "Items remain identifiable and traceable so the wrong item is not used."
+    evidence_signals: [item ID, tag, serial number, traceability, status label, material identity, configuration]
+  APP_B_IX:
+    intent: "Special processes use approved methods, qualified people, and retained process records."
+    evidence_signals: [special process, welding, heat treatment, NDE, qualification, procedure approval, parameters]
+  APP_B_X:
+    intent: "Inspection or independent checking confirms that quality work was done correctly."
+    evidence_signals: [inspection, independent review, hold point, witness point, checklist, inspection record]
+  APP_B_XI:
+    intent: "Tests use approved methods and limits, and results are recorded and handled."
+    evidence_signals: [test plan, test method, acceptance limit, test result, failed test, retest, test report]
+  APP_B_XII:
+    intent: "Measuring and test equipment is suitable, calibrated, identified, and controlled."
+    evidence_signals: [calibration, measuring equipment, gauge, instrument, standard, out-of-tolerance, calibration record]
+  APP_B_XIII:
+    intent: "Items and deliverables are protected during handling, storage, preservation, and shipment."
+    evidence_signals: [handling, storage, preservation, packaging, cleanliness, shipping, environmental condition]
+  APP_B_XIV:
+    intent: "Inspection, test, and operating status is visible so work is not used or released too early."
+    evidence_signals: [status, hold, release, accepted, rejected, under review, operating status, tag]
+  APP_B_XV:
+    intent: "Nonconforming work or items are identified, controlled, reviewed, and properly disposed."
+    evidence_signals: [nonconformance, NCR, defect, segregation, disposition, concession, rework, reject]
+  APP_B_XVI:
+    intent: "Problems are corrected, root causes are addressed, and recurrence is prevented."
+    evidence_signals: [corrective action, root cause, cause analysis, action owner, due date, effectiveness, Part 21]
+  APP_B_XVII:
+    intent: "Records prove what was done and remain identifiable, retrievable, protected, and retained."
+    evidence_signals: [quality record, register, retention, retrieval, archive, record index, protection, project file]
+  APP_B_XVIII:
+    intent: "Independent audits check system effectiveness and track follow-up to completion."
+    evidence_signals: [audit plan, audit checklist, auditor qualification, finding, follow-up, management review, audit report]

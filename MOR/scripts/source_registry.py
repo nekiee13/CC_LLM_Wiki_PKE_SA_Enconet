@@ -1,5 +1,6 @@
 """Project-local source registry helpers; importing this does not ingest data."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import csv
 import hashlib
@@ -12,7 +13,7 @@ from project_paths import local_path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw"
-MANIFEST = ROOT / "manifests" / "raw_sources.csv"
+MANIFEST = layout_path('manifests') / "raw_sources.csv"
 HEADER = [
     "doc_id", "filename", "title", "supplier", "doc_date", "language",
     "side_hint", "sha256", "promoted_utc", "source_url", "notes",

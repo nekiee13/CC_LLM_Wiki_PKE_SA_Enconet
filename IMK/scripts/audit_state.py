@@ -2,6 +2,7 @@
 """Fail-closed audit state transitions and human-gate recording."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -17,8 +18,8 @@ from project_paths import LocalPathError, configure_standard_streams, local_path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_STATE = ROOT / "project-state.yml"
-DEFAULT_APPROVALS = ROOT / "manifests" / "approvals.csv"
-DEFAULT_EXCEPTIONS = ROOT / "manifests" / "link_exceptions.csv"
+DEFAULT_APPROVALS = layout_path('manifests') / "approvals.csv"
+DEFAULT_EXCEPTIONS = layout_path('manifests') / "link_exceptions.csv"
 DEFAULT_LOG = ROOT / "wiki" / "log.md"
 VOCABULARIES = ROOT / "schemas" / "vocabularies.yml"
 
@@ -250,4 +251,6 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

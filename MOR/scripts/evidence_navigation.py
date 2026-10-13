@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Canonical offline evidence targets and safe navigation states."""
+"""Executable EA0.4 navigation and safe-presentation contract."""
 from __future__ import annotations
 
 import re
@@ -10,8 +10,8 @@ from typing import Collection
 import yaml
 
 
-ROOT = Path(__file__).resolve().parents[1]
-CONTRACT = ROOT / "schemas" / "evidence_navigation.yml"
+PROJECT = Path(__file__).resolve().parents[1]
+CONTRACT = PROJECT / "schemas" / "evidence_navigation.yml"
 
 
 @lru_cache(maxsize=1)
@@ -54,21 +54,24 @@ def parse(fragment: str) -> tuple[str, str] | None:
 def resolve(
     fragment: str, known_targets: Collection[str], *, language: str = "en"
 ) -> dict:
-    """Return a visible state for known, malformed, or unavailable targets."""
+    """Return a complete visible state for known, malformed, or unavailable targets."""
     parsed = parse(fragment)
     if parsed is None or fragment not in known_targets:
         failure = _contract()["failure_state"]
         messages = failure["messages"]
         message = messages.get(language, messages[failure["default_language"]])
         return {
-            "status": "unavailable", "message": message,
+            "status": "unavailable",
+            "message": message,
             "requested_target": fragment,
             "focus_id": _contract()["interaction"]["focus_after_navigation"],
             "announce": True,
         }
     entity_type, entity_id = parsed
     return {
-        "status": "resolved", "entity_type": entity_type, "entity_id": entity_id,
+        "status": "resolved",
+        "entity_type": entity_type,
+        "entity_id": entity_id,
         "requested_target": fragment,
         "focus_id": _contract()["interaction"]["focus_after_navigation"],
         "announce": False,
@@ -84,6 +87,10 @@ def history_action(cause: str) -> str:
 
 
 def safe_text(value: object) -> dict:
-    """Package untrusted evidence for literal DOM text insertion, never HTML."""
-    return {"text": str(value), "insertion_api": "textContent",
-            "trusted_html": False, "linkify": False}
+    """Package untrusted evidence for literal DOM text insertion, never HTML execution."""
+    return {
+        "text": str(value),
+        "insertion_api": "textContent",
+        "trusted_html": False,
+        "linkify": False,
+    }

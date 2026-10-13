@@ -90,6 +90,11 @@ def import_file(db: Path, json_path: Path, *, run_id: str) -> int:
                     "applicability": ref.get("applicability", "APPLICABLE"),
                     "applicability_basis": ref.get("applicability_basis"),
                 })
+            if 'context' in item or 'evidence_type' in item:
+                context = item.get('context', {})
+                db_util.insert(conn, 'crumb_context', {'item_id': crumb_id,
+                    'evidence_type': item.get('evidence_type'),
+                    **{field: context.get(field) for field in ('project_ref','contract_ref','supplier_ref','source_revision','evidence_date')}})
         conn.execute("UPDATE sieve_runs SET completed_at=CURRENT_TIMESTAMP WHERE run_id=?", (run_id,))
     return len(items)
 
@@ -111,4 +116,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

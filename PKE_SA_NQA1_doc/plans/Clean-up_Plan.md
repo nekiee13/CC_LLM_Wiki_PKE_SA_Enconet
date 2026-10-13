@@ -308,14 +308,14 @@ IMK, KCPG and MOR without starting their audits.
 
 Acceptance criteria:
 
-- [ ] v1/v2/v3 and existing addon hashes stay intact. New release has its own
+- [x] v1/v2/v3 and existing addon hashes stay intact. New release has its own
       version, manifest, tests, install instructions and upgrade receipts.
-- [ ] Six per-supplier previews show all changes and preserve owner content.
-- [ ] All six get local code copies and the shared layout; no audit database,
+- [x] Six per-supplier previews show all changes and preserve owner content.
+- [x] All six get local code copies and the shared layout; no audit database,
       source, crumb, score, active prompt or approval is copied from an audit.
-- [ ] Unknown supplier names work without an allowlist or per-name patch.
-- [ ] The complete synthetic intake-to-report test runs in the new layout.
-- [ ] A second install or migration is safe and does not create duplicate trees.
+- [x] Unknown supplier names work without an allowlist or per-name patch.
+- [x] The complete synthetic intake-to-report test runs in the new layout.
+- [x] A second install or migration is safe and does not create duplicate trees.
 
 ### Task CU-4.2 — Run final checks and hand over a clean tree
 
@@ -463,3 +463,12 @@ the entire task. CU-4.1's immutable release and six scaffold upgrades, other
 required suites, held-folder cleanup, Claude review/synchronization and committed
 index refresh remain open. No task was added. See
 [CU-4 regression result](cleanup-cu4/CU4_REGRESSION_RESULT_20261013.md).
+
+CU-4.1 is now implemented and live: one immutable v4.0.0 release and all six
+supplier upgrades. Each has 170 installed files, 129 byte-exact retained
+originals, preserved incoming content and seven pending gates. All six pass
+verification, safe retry, local startup and layout checks. The full suite passed
+46 tests plus two subtests; the final v4/byte-policy group passed 17 tests.
+Enconet and Ekonerg's 2,304 and 1,861 captured files remain unchanged.
+Claude post-review is pending. CU-4.2 remains open; no new task was added. See
+[release and scaffold result](cleanup-cu4/CU4_RELEASE_AND_SCAFFOLDS_RESULT.md).

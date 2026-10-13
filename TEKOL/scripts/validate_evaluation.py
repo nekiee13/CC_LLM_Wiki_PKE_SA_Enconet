@@ -79,6 +79,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=db_util.DEFAULT_DB)
     parser.add_argument("--run-id", required=True)
+    parser.add_argument("--no-record", action="store_true", help="compatibility: this validator is always read-only")
     args = parser.parse_args()
     try:
         errors = validate(args.db, args.run_id)
@@ -93,4 +94,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

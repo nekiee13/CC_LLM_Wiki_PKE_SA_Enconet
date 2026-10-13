@@ -1,0 +1,37 @@
+# Offline dashboard shape; no company data or approval is present here.
+schema_version: "1.0"
+criterion_object:
+  required_fields:
+    n: {type: string, meaning: "Appendix B criterion ID"}
+    order: {type: integer, meaning: "display order 1 through 18"}
+    title: {type: string, meaning: "local taxonomy criterion name"}
+    rating: {type: enum, enum: ratings, meaning: "classification"}
+    score: {type: number_or_null, meaning: "criterion score; null when not applicable"}
+    refs: {type: list, meaning: "local supporting crumb IDs"}
+    aff: {type: string, meaning: "affirmative evidence summary"}
+    con: {type: string, meaning: "contrary evidence summary"}
+    judge: {type: string, meaning: "auditor ruling"}
+    verify: {type: list, meaning: "verification actions"}
+  count: 18
+top_level_metrics:
+  required_fields:
+    supplier: {type: string, meaning: "configured local supplier"}
+    generated_date: {type: string, meaning: "ISO generation date"}
+    dash_id: {type: string, pattern: dashboard_id, meaning: "dashboard run ID"}
+    run_id: {type: string, pattern: run_id, meaning: "evaluation run ID"}
+    deliverable_language: {type: enum, enum: languages, meaning: "local deliverable language"}
+    weighted_score: {type: number, meaning: "consolidated score from approved evaluation"}
+    applicable_count: {type: integer, meaning: "score denominator"}
+    classification_counts: {type: object, meaning: "count per rating including na"}
+forbidden_patterns:
+  - "login.microsoftonline.com"
+  - "oauth"
+  - "signin"
+  - "https://cdn."
+  - "cdnjs.cloudflare.com"
+  - "unpkg.com"
+  - "jsdelivr.net"
+  - "googleapis.com"
+  - "<script src=\"http"
+  - "<link href=\"http"
+  - "@import url(http"

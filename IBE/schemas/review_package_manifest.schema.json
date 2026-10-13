@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project.local/schemas/review_package_manifest.schema.json",
+  "title": "Portable evidence review package manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "package_id", "run_ids", "entrypoint", "ordering_policy", "files"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "package_id": {"type": "string", "pattern": "^REVIEW-PACKAGE-(?:RUN-[0-9]{8}-[0-9]{2}|MULTI-[0-9a-f]{12})$"},
+    "run_ids": {"type": "array", "items": {"type": "string", "pattern": "^RUN-[0-9]{8}-[0-9]{2}$"}, "uniqueItems": true, "minItems": 1},
+    "entrypoint": {"const": "review_workspace.html"},
+    "ordering_policy": {"const": "path-v1"},
+    "files": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "role", "run_id", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1, "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"},
+          "role": {"enum": ["catalog", "workspace", "bundle", "package", "report", "viewer"]},
+          "run_id": {"type": ["string", "null"]},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    }
+  }
+}

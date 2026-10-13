@@ -4,6 +4,8 @@ The schema file is JSON-compatible YAML so the helper remains stdlib-only.
 Paths resolve from this script, never the caller's CWD.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
+from project_layout import path_at as layout_path_at
 
 import argparse
 import json
@@ -203,7 +205,7 @@ def render(args, project: Path, facts: dict, created: datetime, checks: list[dic
 
 def check_output_paths(project: Path) -> None:
     """Publication may not follow a symlink or Windows directory junction."""
-    for path in (project / "handoffs", project / "HANDOFF.md", project / "wiki" / "log.md"):
+    for path in (layout_path_at(project, 'handoffs'), project / "HANDOFF.md", project / "wiki" / "log.md"):
         for part in (path, *path.parents):
             try:
                 info = part.lstat()
@@ -218,7 +220,7 @@ def publish(args) -> Path:
     check_output_paths(project)
     facts = git_facts(project)
     checks = [parse_check(value) for value in args.check]
-    handoffs = project / "handoffs"
+    handoffs = layout_path_at(project, 'handoffs')
     created = unique_timestamp(handoffs, now_utc(), facts["short"])
     record = handoffs / f"{created.strftime('%Y-%m-%dT%H%M%SZ')}-{facts['short']}.md"
     text = render(args, project, facts, created, checks)
@@ -256,7 +258,7 @@ def check_staleness(project: Path) -> int:
     if not pointer.is_file():
         print("WARN: HANDOFF.md is missing")
         return 0
-    match = re.search(r"\((handoffs/[^)]+\.md)\)", pointer.read_text(encoding="utf-8"))
+    match = re.search(r"\((coordination/handoffs/[^)]+\.md)\)", pointer.read_text(encoding="utf-8"))
     if not match or not (project / match.group(1)).is_file():
         print("WARN: HANDOFF.md does not resolve to an immutable record")
         return 0
@@ -319,4 +321,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

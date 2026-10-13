@@ -23,6 +23,8 @@ import stat
 import sys
 from zipfile import ZIP_DEFLATED, ZipFile
 
+from project_layout import path_at as layout_path_at
+from reset_operations import remove_generated
 from project_paths import configure_standard_streams
 
 
@@ -33,36 +35,9 @@ PLAN_VERSION = 2
 
 # These are generated audit state locations. Framework code, schemas, prompts,
 # tests, incoming sources, docs, coordination, and handoffs are not targets.
-RESET_DIRS = (
-    "raw",
-    "out",
-    "sieving/candidates",
-    "derived",
-    "work",
-    "outputs",
-    "results",
-    "reports",
-    "artifacts",
-    "audit_runs",
-    "db/backups",
-    "sieving/DATA",
-    "sieving/outputs",
-    "sieving/runs",
-    "sieving/results",
-    "wiki/actions",
-    "wiki/criteria",
-    "wiki/dashboards",
-    "wiki/evidence",
-    "wiki/findings",
-    "wiki/gates",
-)
+RESET_DIRS = ('raw', 'sieving/candidates', 'outputs', 'results', 'reports', 'artifacts', 'audit_runs', 'db/backups', 'sieving/DATA', 'sieving/outputs', 'sieving/runs', 'sieving/results', 'wiki/actions', 'wiki/criteria', 'wiki/dashboards', 'wiki/evidence', 'wiki/findings', 'wiki/gates', 'work/derived', 'work/validation')
 
-RESET_TEXT_FILES = {
-    "manifests/raw_sources.csv": "doc_id,filename,title,supplier,doc_date,language,side_hint,sha256,promoted_utc,source_url,notes",
-    "manifests/approvals.csv": "object_id,decision,date,reviewer,notes",
-    "manifests/link_exceptions.csv": "crumb_id,quote_id,reason,approved_by,date",
-    "manifests/validation_runs.csv": "run_utc,validator,phase,result,exit_code,details",
-}
+RESET_TEXT_FILES = {'work/manifests/raw_sources.csv': 'doc_id,filename,title,supplier,doc_date,language,side_hint,sha256,promoted_utc,source_url,notes', 'work/manifests/approvals.csv': 'object_id,decision,date,reviewer,notes', 'work/manifests/link_exceptions.csv': 'crumb_id,quote_id,reason,approved_by,date', 'work/manifests/validation_runs.csv': 'run_utc,validator,phase,result,exit_code,details'}
 RESET_FILES = (
     "db/nqa_audit.sqlite",
     "project-state.yml",
@@ -98,7 +73,7 @@ def _assert_root(root: Path) -> Path:
         raise ResetError(f"project root is not a directory: {root}")
     if root.is_symlink() or getattr(root.stat(), "st_file_attributes", 0) & getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0):
         raise ResetError(f"redirected project root refused: {root}")
-    incoming = root / "incoming"
+    incoming = layout_path_at(root, "incoming")
     if not incoming.is_dir() or incoming.is_symlink():
         raise ResetError("incoming directory is missing or redirected")
     return root
@@ -326,7 +301,7 @@ def apply_plan(plan_path: Path | str, project_root: Path | str,
         if actual != expected:
             raise ResetError(f"reset target changed before removal: {path}")
         if entry["action"] == "delete":
-            path.unlink()
+            remove_generated(path)
             deleted += 1
         else:
             header = base64.b64decode(str(entry["header_b64"])).decode("utf-8")
@@ -383,4 +358,6 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())

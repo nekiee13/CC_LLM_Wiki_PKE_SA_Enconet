@@ -1,0 +1,35 @@
+# page_types.yml — wiki page type contract (EPIC 1, Task 1.7)
+#
+# The five controlled wiki page types and where they live. Frontmatter requirements are
+# in `schemas/required_fields.yml`; `scripts/validate_frontmatter.py` (Task 13.3) checks
+# pages against both files. Wiki pages are human-readable projections of DB records —
+# the DB row is authoritative, the page cites it.
+
+schema_version: "1.0"
+
+page_types:
+  criterion-evaluation:
+    location: "wiki/criteria/"
+    filename_pattern: "EVAL-APP_B_*.md"
+    id_pattern: evaluation_id
+    meaning: "One page per criterion (18 pages, ADR-0011): evaluation narrative, evidence citations, applicability ruling."
+  evidence:
+    location: "wiki/evidence/"
+    filename_pattern: "*.md"
+    id_pattern: null   # evidence pages reference crumb/chunk IDs; the matrix page is generated
+    meaning: "Evidence matrix and per-criterion evidence summaries (EPIC 9); generated, never hand-edited."
+  finding:
+    location: "wiki/findings/"
+    filename_pattern: "FIND-*.md"
+    id_pattern: finding_id
+    meaning: "One page per finding (EPIC 10); draft until an approvals.csv row moves it."
+  action:
+    location: "wiki/actions/"
+    filename_pattern: "ACT-*.md"
+    id_pattern: action_id
+    meaning: "One page per auditor action (EPIC 10); typed per vocabularies.action_types."
+  gate-decision:
+    location: "wiki/gates/"
+    filename_pattern: "G*.md"
+    id_pattern: null   # gate packet IDs are G1..G7 per supplier run
+    meaning: "One gate packet per gate per supplier (Task 14.2); records the human decision."

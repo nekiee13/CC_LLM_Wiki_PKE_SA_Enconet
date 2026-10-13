@@ -1,0 +1,677 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project.local/schemas/evidence_bundle.schema.json",
+  "title": "project offline evidence bundle",
+  "$comment": "Canonical viewer-target semantics are owned by evidence_navigation.yml and enforced by validate_evidence_bundle.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "metadata",
+    "lineage",
+    "documents",
+    "chunks",
+    "evaluations",
+    "crumbs",
+    "quotes",
+    "gaps",
+    "findings",
+    "actions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    },
+    "lineage": {
+      "$ref": "#/$defs/lineage"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/document"
+      }
+    },
+    "chunks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/chunk"
+      }
+    },
+    "evaluations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evaluation"
+      }
+    },
+    "crumbs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/crumb"
+      }
+    },
+    "quotes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/quote"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/gap"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/action"
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stringArray": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "docId": {
+      "type": "string",
+      "pattern": "^DOC-\\d{4}$"
+    },
+    "chunkId": {
+      "type": "string",
+      "pattern": "^CHUNK-DOC-\\d{4}-\\d{4}$"
+    },
+    "quoteId": {
+      "type": "string",
+      "pattern": "^QUOTE-DOC-\\d{4}-\\d{4}-\\d{2}$"
+    },
+    "crumbId": {
+      "type": "string",
+      "pattern": "^CRUMB-DOC-\\d{4}-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\\d{4}$"
+    },
+    "criterionId": {
+      "type": "string",
+      "pattern": "^APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)$"
+    },
+    "evaluationId": {
+      "type": "string",
+      "pattern": "^EVAL-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)$"
+    },
+    "gapId": {
+      "type": "string",
+      "pattern": "^GAP-APP_B_(XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)-\\d{2}$"
+    },
+    "findingId": {
+      "type": "string",
+      "pattern": "^FIND-\\d{4}$"
+    },
+    "actionId": {
+      "type": "string",
+      "pattern": "^ACT-\\d{4}$"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bundle_id",
+        "run_id",
+        "supplier",
+        "framework",
+        "deliverable_language",
+        "generated_at_utc",
+        "generation_time_policy",
+        "ordering_policy"
+      ],
+      "properties": {
+        "bundle_id": {
+          "type": "string",
+          "pattern": "^EVIDENCE-BUNDLE-RUN-\\d{8}-\\d{2}$"
+        },
+        "run_id": {
+          "type": "string",
+          "pattern": "^RUN-\\d{8}-\\d{2}$"
+        },
+        "supplier": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "description": "Explicit local supplier display name; Unicode and spaces allowed, never a path."
+        },
+        "framework": {
+          "type": "string",
+          "pattern": "^[a-z0-9_-]+$"
+        },
+        "deliverable_language": {
+          "enum": [
+            "hr",
+            "sl",
+            "en"
+          ]
+        },
+        "generated_at_utc": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+        },
+        "generation_time_policy": {
+          "enum": [
+            "explicit_utc",
+            "source_date_epoch_utc"
+          ]
+        },
+        "ordering_policy": {
+          "const": "stable-id-v1"
+        }
+      }
+    },
+    "lineageEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "package",
+        "database",
+        "source_manifest"
+      ],
+      "properties": {
+        "package": {
+          "$ref": "#/$defs/lineageEntry"
+        },
+        "database": {
+          "$ref": "#/$defs/lineageEntry"
+        },
+        "source_manifest": {
+          "$ref": "#/$defs/lineageEntry"
+        }
+      }
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "document_id",
+        "filename",
+        "title",
+        "language",
+        "document_side",
+        "source_sha256",
+        "viewer_target"
+      ],
+      "properties": {
+        "document_id": {
+          "$ref": "#/$defs/docId"
+        },
+        "filename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 2
+        },
+        "document_side": {
+          "enum": [
+            "RULE",
+            "DOCUMENT"
+          ]
+        },
+        "source_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/document/DOC-\\d{4}$"
+        }
+      }
+    },
+    "chunk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "chunk_id",
+        "document_id",
+        "sequence",
+        "heading_path",
+        "text",
+        "char_start",
+        "char_end",
+        "source_sha256",
+        "previous_chunk_id",
+        "next_chunk_id",
+        "context_truncated_before",
+        "context_truncated_after",
+        "viewer_target"
+      ],
+      "properties": {
+        "chunk_id": {
+          "$ref": "#/$defs/chunkId"
+        },
+        "document_id": {
+          "$ref": "#/$defs/docId"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "heading_path": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "char_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "char_end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "previous_chunk_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/chunkId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "next_chunk_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/chunkId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "context_truncated_before": {
+          "type": "boolean"
+        },
+        "context_truncated_after": {
+          "type": "boolean"
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/chunk/CHUNK-DOC-\\d{4}-\\d{4}$"
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evaluation_id",
+        "criterion_id",
+        "evidence_crumb_ids",
+        "gap_ids",
+        "viewer_target"
+      ],
+      "properties": {
+        "evaluation_id": {
+          "$ref": "#/$defs/evaluationId"
+        },
+        "criterion_id": {
+          "$ref": "#/$defs/criterionId"
+        },
+        "evidence_crumb_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "gap_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/evaluation/EVAL-APP_B_"
+        }
+      }
+    },
+    "crumb": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "crumb_id",
+        "document_id",
+        "criterion_id",
+        "document_side",
+        "statement",
+        "item_type",
+        "quote_ids",
+        "chunk_ids",
+        "evaluation_ids",
+        "viewer_target"
+      ],
+      "properties": {
+        "crumb_id": {
+          "$ref": "#/$defs/crumbId"
+        },
+        "document_id": {
+          "$ref": "#/$defs/docId"
+        },
+        "criterion_id": {
+          "$ref": "#/$defs/criterionId"
+        },
+        "document_side": {
+          "enum": [
+            "RULE",
+            "DOCUMENT"
+          ]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quote_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "chunk_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "evaluation_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/crumb/CRUMB-DOC-"
+        }
+      }
+    },
+    "quote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "quote_id",
+        "crumb_id",
+        "source_order",
+        "text_original",
+        "language",
+        "source_locator",
+        "chunk_id",
+        "link_method",
+        "confidence",
+        "viewer_target"
+      ],
+      "properties": {
+        "quote_id": {
+          "$ref": "#/$defs/quoteId"
+        },
+        "crumb_id": {
+          "$ref": "#/$defs/crumbId"
+        },
+        "source_order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "text_original": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 2
+        },
+        "source_locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "chunk_id": {
+          "$ref": "#/$defs/chunkId"
+        },
+        "link_method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/quote/QUOTE-DOC-"
+        }
+      }
+    },
+    "gap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gap_id",
+        "evaluation_id",
+        "description",
+        "missing_evidence_ref",
+        "evidence_crumb_id",
+        "finding_ids",
+        "action_ids",
+        "viewer_target"
+      ],
+      "properties": {
+        "gap_id": {
+          "$ref": "#/$defs/gapId"
+        },
+        "evaluation_id": {
+          "$ref": "#/$defs/evaluationId"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "missing_evidence_ref": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "evidence_crumb_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/crumbId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "finding_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "action_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/gap/GAP-APP_B_"
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "finding_id",
+        "evaluation_id",
+        "title",
+        "body",
+        "gap_id",
+        "evidence_crumb_id",
+        "action_ids",
+        "viewer_target"
+      ],
+      "properties": {
+        "finding_id": {
+          "$ref": "#/$defs/findingId"
+        },
+        "evaluation_id": {
+          "$ref": "#/$defs/evaluationId"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gap_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/gapId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_crumb_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/crumbId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "action_ids": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/finding/FIND-\\d{4}$"
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action_id",
+        "description",
+        "priority",
+        "finding_id",
+        "gap_id",
+        "viewer_target"
+      ],
+      "properties": {
+        "action_id": {
+          "$ref": "#/$defs/actionId"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "finding_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/findingId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "gap_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/gapId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "viewer_target": {
+          "type": "string",
+          "pattern": "^#evidence/action/ACT-\\d{4}$"
+        }
+      }
+    }
+  },
+  "x-ordering": {
+    "policy": "stable-id-v1",
+    "documents": [
+      "document_id"
+    ],
+    "chunks": [
+      "document_id",
+      "sequence",
+      "chunk_id"
+    ],
+    "evaluations": [
+      "evaluation_id"
+    ],
+    "crumbs": [
+      "crumb_id"
+    ],
+    "quotes": [
+      "crumb_id",
+      "source_order",
+      "quote_id"
+    ],
+    "gaps": [
+      "gap_id"
+    ],
+    "findings": [
+      "finding_id"
+    ],
+    "actions": [
+      "action_id"
+    ]
+  }
+}

@@ -1,5 +1,4 @@
--- Company-neutral audit data backbone. SQLite 3, foreign keys required.
--- Initialization adds no source, company, criterion, or approval rows.
+-- EPIC2 controlled data backbone. SQLite 3, foreign keys required.
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE IF NOT EXISTS criteria (
@@ -14,7 +13,7 @@ CREATE TABLE IF NOT EXISTS documents (
     title TEXT NOT NULL,
     supplier TEXT NOT NULL,
     doc_date TEXT,
-    language TEXT NOT NULL CHECK (length(trim(language)) > 0),
+    language TEXT NOT NULL CHECK (language IN ('sl','en','hr')),
     document_side TEXT NOT NULL CHECK (document_side IN ('RULE','DOCUMENT')),
     sha256 TEXT NOT NULL UNIQUE CHECK (length(sha256) = 64),
     promoted_utc TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -25,23 +24,12 @@ CREATE TABLE IF NOT EXISTS documents (
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) STRICT;
 
-CREATE TABLE IF NOT EXISTS approved_sources (
-    source_code TEXT PRIMARY KEY CHECK (length(trim(source_code)) > 0),
-    authority_role TEXT NOT NULL CHECK (authority_role IN ('GOVERNING','INTERPRETIVE')),
-    edition TEXT NOT NULL CHECK (length(trim(edition)) > 0),
-    source_sha256 TEXT NOT NULL CHECK (length(source_sha256) = 64),
-    approval_ref TEXT NOT NULL CHECK (length(trim(approval_ref)) > 0),
-    approved_by TEXT NOT NULL CHECK (length(trim(approved_by)) > 0),
-    approved_date TEXT NOT NULL CHECK (length(trim(approved_date)) > 0),
-    UNIQUE (source_code, authority_role)
-) STRICT;
-
 CREATE TABLE IF NOT EXISTS sieve_runs (
     run_id TEXT PRIMARY KEY,
     doc_id TEXT NOT NULL REFERENCES documents(doc_id) ON DELETE RESTRICT,
     prompt_version TEXT NOT NULL,
     document_side TEXT NOT NULL CHECK (document_side IN ('RULE','DOCUMENT')),
-    source_rule TEXT REFERENCES approved_sources(source_code) ON DELETE RESTRICT,
+    source_rule TEXT CHECK (source_rule IN ('10CFR50_APPB','10CFR21') OR source_rule IS NULL),
     generation INTEGER NOT NULL DEFAULT 1 CHECK (generation > 0),
     status TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('candidate','active','superseded','rejected')),
     is_active INTEGER NOT NULL DEFAULT 1 CHECK (is_active IN (0,1)),
@@ -54,29 +42,6 @@ CREATE TABLE IF NOT EXISTS sieve_runs (
     UNIQUE (doc_id, generation),
     CHECK ((is_active = 1 AND status = 'active') OR (is_active = 0 AND status <> 'active'))
 ) STRICT;
-
-CREATE TRIGGER IF NOT EXISTS require_governing_source_on_sieve_run_insert
-BEFORE INSERT ON sieve_runs
-WHEN NEW.source_rule IS NOT NULL AND NOT EXISTS (
-    SELECT 1 FROM approved_sources
-    WHERE source_code = NEW.source_rule AND authority_role = 'GOVERNING'
-)
-BEGIN SELECT RAISE(ABORT, 'sieve source_rule must be a governing approved source'); END;
-
-CREATE TRIGGER IF NOT EXISTS require_governing_source_on_sieve_run_update
-BEFORE UPDATE OF source_rule ON sieve_runs
-WHEN NEW.source_rule IS NOT NULL AND NOT EXISTS (
-    SELECT 1 FROM approved_sources
-    WHERE source_code = NEW.source_rule AND authority_role = 'GOVERNING'
-)
-BEGIN SELECT RAISE(ABORT, 'sieve source_rule must be a governing approved source'); END;
-
-CREATE TRIGGER IF NOT EXISTS keep_governing_source_role
-BEFORE UPDATE OF authority_role ON approved_sources
-WHEN NEW.authority_role <> OLD.authority_role AND EXISTS (
-    SELECT 1 FROM sieve_runs WHERE source_rule = OLD.source_code
-)
-BEGIN SELECT RAISE(ABORT, 'cannot change a used governing source role'); END;
 
 CREATE TABLE IF NOT EXISTS sieve_generation_events (
     event_id INTEGER PRIMARY KEY,
@@ -92,13 +57,13 @@ CREATE TABLE IF NOT EXISTS sieve_generation_events (
 CREATE TABLE IF NOT EXISTS sieve_run_authorities (
     run_id TEXT NOT NULL REFERENCES sieve_runs(run_id) ON DELETE CASCADE,
     authority_role TEXT NOT NULL CHECK (authority_role IN ('GOVERNING','INTERPRETIVE')),
-    source_code TEXT NOT NULL,
+    source_code TEXT NOT NULL CHECK (source_code IN ('10CFR50_APPB','10CFR21','ASME_NQA1')),
     source_locator TEXT NOT NULL,
     applicability TEXT NOT NULL DEFAULT 'APPLICABLE' CHECK (applicability IN ('APPLICABLE','CONDITIONAL','NOT_APPLICABLE')),
     applicability_basis TEXT,
     PRIMARY KEY (run_id, authority_role, source_code, source_locator),
-    FOREIGN KEY (source_code, authority_role)
-        REFERENCES approved_sources(source_code, authority_role) ON DELETE RESTRICT
+    CHECK ((authority_role = 'GOVERNING' AND source_code IN ('10CFR50_APPB','10CFR21')) OR (authority_role = 'INTERPRETIVE' AND source_code = 'ASME_NQA1')),
+    CHECK (source_code <> '10CFR21' OR applicability_basis IS NOT NULL)
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS document_chunks (
@@ -120,7 +85,7 @@ CREATE TABLE IF NOT EXISTS crumbs (
     document_side TEXT NOT NULL CHECK (document_side IN ('RULE','DOCUMENT')),
     statement TEXT NOT NULL CHECK (length(trim(statement)) > 0),
     item_type TEXT,
-    quote_language TEXT CHECK (quote_language IS NULL OR length(trim(quote_language)) > 0),
+    quote_language TEXT CHECK (quote_language IN ('sl','en','hr') OR quote_language IS NULL),
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) STRICT;
 
@@ -133,24 +98,41 @@ CREATE TABLE IF NOT EXISTS crumb_sources (
     UNIQUE (item_id, source_locator)
 ) STRICT;
 
+-- Optional v3 source anchors. No inferred anchors and no added audit ratings.
+CREATE TABLE IF NOT EXISTS crumb_context (
+    item_id TEXT PRIMARY KEY REFERENCES crumbs(item_id) ON DELETE CASCADE,
+    evidence_type TEXT,
+    project_ref TEXT,
+    contract_ref TEXT,
+    supplier_ref TEXT,
+    source_revision TEXT,
+    evidence_date TEXT,
+    CHECK (evidence_type IS NULL OR length(trim(evidence_type)) > 0),
+    CHECK (project_ref IS NULL OR length(trim(project_ref)) > 0),
+    CHECK (contract_ref IS NULL OR length(trim(contract_ref)) > 0),
+    CHECK (supplier_ref IS NULL OR length(trim(supplier_ref)) > 0),
+    CHECK (source_revision IS NULL OR length(trim(source_revision)) > 0),
+    CHECK (evidence_date IS NULL OR length(trim(evidence_date)) > 0)
+) STRICT;
+
 CREATE TABLE IF NOT EXISTS crumb_quotes (
     quote_id TEXT PRIMARY KEY,
     item_id TEXT NOT NULL REFERENCES crumbs(item_id) ON DELETE CASCADE,
     quote_original TEXT NOT NULL CHECK (length(trim(quote_original)) > 0),
-    quote_language TEXT NOT NULL CHECK (length(trim(quote_language)) > 0),
+    quote_language TEXT NOT NULL CHECK (quote_language IN ('sl','en','hr')),
     source_locator TEXT NOT NULL
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS crumb_authority_refs (
     item_id TEXT NOT NULL REFERENCES crumbs(item_id) ON DELETE CASCADE,
     authority_role TEXT NOT NULL CHECK (authority_role IN ('GOVERNING','INTERPRETIVE')),
-    source_code TEXT NOT NULL,
+    source_code TEXT NOT NULL CHECK (source_code IN ('10CFR50_APPB','10CFR21','ASME_NQA1')),
     source_locator TEXT NOT NULL,
     applicability TEXT NOT NULL DEFAULT 'APPLICABLE' CHECK (applicability IN ('APPLICABLE','CONDITIONAL','NOT_APPLICABLE')),
     applicability_basis TEXT,
     PRIMARY KEY (item_id, authority_role, source_code, source_locator),
-    FOREIGN KEY (source_code, authority_role)
-        REFERENCES approved_sources(source_code, authority_role) ON DELETE RESTRICT
+    CHECK ((authority_role = 'GOVERNING' AND source_code IN ('10CFR50_APPB','10CFR21')) OR (authority_role = 'INTERPRETIVE' AND source_code = 'ASME_NQA1')),
+    CHECK (source_code <> '10CFR21' OR applicability_basis IS NOT NULL)
 ) STRICT;
 
 CREATE TABLE IF NOT EXISTS crumb_chunk_links (
@@ -177,7 +159,7 @@ CREATE TABLE IF NOT EXISTS requirements (
 CREATE TABLE IF NOT EXISTS evaluation_runs (
     run_id TEXT PRIMARY KEY,
     supplier TEXT NOT NULL,
-    deliverable_language TEXT NOT NULL CHECK (length(trim(deliverable_language)) > 0),
+    deliverable_language TEXT NOT NULL CHECK (deliverable_language IN ('sl','en','hr')),
     scoring_model_version TEXT NOT NULL,
     started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     completed_at TEXT
@@ -304,4 +286,14 @@ SELECT c.* FROM crumbs c
 JOIN sieve_runs r ON r.run_id = c.sieve_run_id
 WHERE r.is_active = 1;
 
+CREATE TABLE IF NOT EXISTS approved_sources (
+    source_code TEXT PRIMARY KEY CHECK (length(trim(source_code)) > 0),
+    authority_role TEXT NOT NULL CHECK (authority_role IN ('GOVERNING','INTERPRETIVE')),
+    edition TEXT NOT NULL CHECK (length(trim(edition)) > 0),
+    source_sha256 TEXT NOT NULL CHECK (length(source_sha256) = 64),
+    approval_ref TEXT NOT NULL CHECK (length(trim(approval_ref)) > 0),
+    approved_by TEXT NOT NULL CHECK (length(trim(approved_by)) > 0),
+    approved_date TEXT NOT NULL CHECK (length(trim(approved_date)) > 0),
+    UNIQUE (source_code, authority_role)
+) STRICT;
 PRAGMA user_version = 1;

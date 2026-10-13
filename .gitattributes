@@ -5,6 +5,17 @@
 # Always-LF for cross-platform tooling
 *.sh text eol=lf
 
+# Workspace-distributed supplier framework: keep hash-listed contract/code
+# bytes stable on checkout. These paths exclude raw, incoming, DATA, results
+# and all agent-owned infrastructure; local evidence -text rules still apply.
+*/schemas/*.json text eol=lf
+*/sieving/prompts/*.json text eol=lf
+*/sieving/prompts/*.yml text eol=lf
+*/sieving/*.md text eol=lf
+*/sieving/*.txt text eol=lf
+*/sieving/*.json text eol=lf
+*/work/benchmarks/*.py text eol=lf
+
 # Never normalize binary evidence formats
 *.pdf binary
 *.png binary

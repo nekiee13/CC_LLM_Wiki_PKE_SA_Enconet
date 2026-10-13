@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check controlled local wiki page headers against local page contracts."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -21,7 +22,7 @@ PAGE_TYPES = ROOT / "schemas" / "page_types.yml"
 REQUIRED = ROOT / "schemas" / "required_fields.yml"
 VOCABULARIES = ROOT / "schemas" / "vocabularies.yml"
 TAXONOMY = ROOT / "schemas" / "app_b_taxonomy.yml"
-RUNS = ROOT / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 RUN_HEADER = ["run_utc", "validator", "phase", "result", "exit_code", "details"]
 STATUSES = {"draft", "approved", "closed", "generated", "superseded"}
 ORIGINS = {"generated", "human", "mixed"}
@@ -156,4 +157,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    from project_paths import configure_standard_streams
+    configure_standard_streams()
     raise SystemExit(main())
