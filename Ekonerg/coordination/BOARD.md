@@ -36,6 +36,7 @@ and ADRs are the records.
 - `CLEANUP-PLAN` — codex, released 2026-10-11T22:01:11Z
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-BOARD-REFRESH-20261010` — codex, released 2026-10-10T21:30:33Z
+- `COORD-CANDIDATES-REVIEW-CLOSE` — codex, released 2026-10-13T23:30:41Z
 - `COORD-CLEANUP-PLAN-REVIEW` — codex, released 2026-10-11T22:17:23Z
 - `COORD-CLEANUP-POST-REVIEW` — codex, released 2026-10-13T22:47:25Z
 - `COORD-CLEANUP-PREPARATION-QUEUE-CLEAR` — codex, released 2026-10-12T17:46:29Z
@@ -128,11 +129,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-13T232830Z_candidates-hold-resolution-verified` — review_request, claude-code -> codex: CLEANUP-CU4.2
-- `CX_2026-10-13T232339Z_candidates-hold-resolved` — review_request, codex -> claude-code: CLEANUP-CU4.2
+- `CX_2026-10-13T233018Z_ack-candidates-hold-resolution-verified` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
-- Archive: 641 records in `coordination/archive/`
+- Archive: 643 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:28:33Z
+Generated: 2026-10-13T23:30:41Z
