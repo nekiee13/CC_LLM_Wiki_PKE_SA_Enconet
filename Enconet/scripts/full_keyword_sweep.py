@@ -5,6 +5,8 @@ Sources, the registry, and all existing database generations remain unchanged.
 Character offsets refer to the UTF-8 decoded snapshot, including original CR/LF.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
+from project_layout import path_at as layout_path_at
 
 import argparse
 from collections import Counter
@@ -179,7 +181,7 @@ def load_exclusions(path, root):
 
 def prepare(root, rules, exclusions=None):
     exclusions = exclusions or {}
-    registry = root / "manifests/raw_sources.csv"
+    registry = layout_path_at(root, 'manifests') / 'raw_sources.csv'
     safe_file(registry, root)
     with registry.open(encoding="utf-8-sig", newline="") as stream:
         rows = list(csv.DictReader(stream))
@@ -283,11 +285,11 @@ def summarize(doc):
 
 def build(root, output, rules_path, exclusions_path=None):
     root, output = Path(root).resolve(), Path(output).resolve()
-    if not output.is_relative_to(root / "out") or output == root / "out" or output.exists():
+    if not output.is_relative_to(layout_path_at(root, 'validation')) or output == layout_path_at(root, 'validation') or output.exists():
         raise ValueError("Output must be a NEW directory below this project's out directory")
     rules = load_rules(rules_path)
     protected = file_inventory(root, ("incoming", "raw", "sieving/DATA", "db"))
-    registry_hash = digest((root / "manifests/raw_sources.csv").read_bytes())
+    registry_hash = digest((layout_path_at(root, 'manifests') / 'raw_sources.csv').read_bytes())
     exclusions = load_exclusions(exclusions_path, root)
     prepared = prepare(root, rules, exclusions)
     output.mkdir(parents=True, exist_ok=False)
@@ -321,7 +323,7 @@ def build(root, output, rules_path, exclusions_path=None):
         did = row["doc_id"]
         report.append(f"| [{did}: {row['filename']}](review/{did}.md) | {row['document_side']} | {row['passages']} | {row['criterion_links']} | {row['source_changed']} |")
     (output / "README.md").write_text("\n".join(report) + "\n", encoding="utf-8")
-    if protected != file_inventory(root, ("incoming", "raw", "sieving/DATA", "db")) or registry_hash != digest((root / "manifests/raw_sources.csv").read_bytes()):
+    if protected != file_inventory(root, ("incoming", "raw", "sieving/DATA", "db")) or registry_hash != digest((layout_path_at(root, 'manifests') / 'raw_sources.csv').read_bytes()):
         raise ValueError("Inputs changed during sweep; bundle NOT complete")
     manifest = {"schema": "full_keyword_sweep_manifest/1", "method": rules["version"],
                 "complete_keyword_pass": True, "semantic_review_complete": False,

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate quote-level crumb-to-chunk traceability or approved exceptions."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -12,8 +13,8 @@ import db_util
 from link_crumbs import normalize
 
 ENCONET = Path(__file__).resolve().parents[1]
-EXCEPTIONS = ENCONET / "manifests" / "link_exceptions.csv"
-RUNS = ENCONET / "manifests" / "validation_runs.csv"
+EXCEPTIONS = layout_path('manifests') / "link_exceptions.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 
 
 def _exceptions(path: Path) -> tuple[set[tuple[str, str]], list[str]]:

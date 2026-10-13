@@ -2,6 +2,7 @@
 """Create a new immutable sieve generation, then import, link, measure, and diff it."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import json
@@ -60,7 +61,7 @@ def main() -> int:
     parser.add_argument("--authority-json", action="append", default=[])
     parser.add_argument("--output-root", type=Path, default=ROOT / "sieving" / "runs")
     parser.add_argument("--candidates", type=Path,
-                        default=ROOT / "manifests" / "link_exception_candidates.csv")
+                        default=layout_path('manifests') / "link_exception_candidates.csv")
     parser.add_argument("--rejected-item-count", type=int, default=0)
     parser.add_argument("--failed-item-count", type=int, default=0)
     args = parser.parse_args()

@@ -6,9 +6,9 @@ These instructions apply within `03_PKE_SA_NQA1/Enconet` and extend `../AGENTS.m
 
 ## Read first
 
-1. `MASTER_DEVELOPMENT_PLAN.md` (v1.4 canonical) for the target plan.
-2. `docs/ALIGNMENT_PLAN.md` (canonical) for waves G0–G5, migration order, and acceptance criteria.
-3. `decisions/README.md` for the ADR register (current through ADR-0017).
+1. `docs/plans/MASTER_DEVELOPMENT_PLAN.md` (v1.4 canonical) for the target plan.
+2. `docs/plans/ALIGNMENT_PLAN.md` (canonical) for waves G0–G5, migration order, and acceptance criteria.
+3. `work/decisions/README.md` for the ADR register.
 4. `docs/CX_CC_RECONCILIATION.md` for the agreement that merged the CX/CC preparation.
 5. `Sieving_method_specification_Guide.md` v1.3 for the current subsystem, checking claims
    against actual code and tests; C4.4 implemented the single-owner contract.
@@ -30,7 +30,7 @@ contract.
 
 ## Guardrails
 
-- `MASTER_DEVELOPMENT_PLAN.md` and `docs/ALIGNMENT_PLAN.md` are frozen. Do not edit either
+- `docs/plans/MASTER_DEVELOPMENT_PLAN.md` and `docs/plans/ALIGNMENT_PLAN.md` are frozen. Do not edit either
   unless the project owner explicitly reopens planning.
 - Do not run `sieving/tools/fix_files.py` or `sieving/tools/fix_structure.py`; their current root
   assumptions are unsafe after relocation.
@@ -51,7 +51,7 @@ contract.
 The complete release regression suite uses a verified isolated historical fixture:
 
 ```powershell
-python scripts/run_regression_tests.py --output out/YYYY-MM-DD/regression-tests
+python scripts/run_regression_tests.py --output work/validation/YYYY-MM-DD/regression-tests
 ```
 
 Use the declared pinned project interpreter when available. The runner executes every

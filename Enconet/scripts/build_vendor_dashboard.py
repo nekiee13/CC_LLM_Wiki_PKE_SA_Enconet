@@ -4,6 +4,7 @@ Read-only: never writes scores, sources, approvals, or published dashboards.
 The run ID is required. No other company's project is read at runtime.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 from decimal import Decimal, ROUND_HALF_UP
@@ -152,7 +153,7 @@ def main():
     parser.add_argument('--scope-note', default='', help='Explicit company-specific regulatory or audit limitation')
     args = parser.parse_args()
     output = args.output.resolve()
-    if not output.is_relative_to(ROOT / 'out') or output.exists():
+    if not output.is_relative_to(layout_path('validation')) or output.exists():
         parser.error('Use a NEW HTML file below this project out folder')
     before = hashlib.sha256((ROOT / 'db/nqa_audit.sqlite').read_bytes()).hexdigest()
     payload = dataset(ROOT, args.run_id)

@@ -1,6 +1,6 @@
 task: CLEANUP-CU3-ENCONET-LIVE
 agent: codex
-status: active
+status: released
 claimed_at_utc: 2026-10-12T22:38:21Z
 last_renewed_at_utc: 2026-10-12T22:38:21Z
 expires_at_utc: 2026-10-13T10:38:21Z
@@ -19,3 +19,4 @@ anticipated_files:
   - Enconet/project-file-relocations.json
   - Enconet/.gitattributes
 note: Existing CU-3.3 cleanup sprint; owner live authorization and review deferral remain valid; two ADR moves separately authorized and completed.
+released_at_utc: 2026-10-12T23:47:25Z

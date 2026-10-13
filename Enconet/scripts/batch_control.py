@@ -2,6 +2,7 @@
 """Create and validate one controlled continuation-batch state."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -21,9 +22,9 @@ from audit_state import StateError, load_state
 
 ROOT = Path(__file__).resolve().parents[1]
 GLOBAL_STATE = ROOT / "project-state.yml"
-BATCH_DIR = ROOT / "manifests" / "batches"
-RAW_MANIFEST = ROOT / "manifests" / "raw_sources.csv"
-INGEST_MANIFEST = ROOT / "manifests" / "ingest_runs.csv"
+BATCH_DIR = layout_path('manifests') / "batches"
+RAW_MANIFEST = layout_path('manifests') / "raw_sources.csv"
+INGEST_MANIFEST = layout_path('manifests') / "ingest_runs.csv"
 INCOMING = ROOT / "incoming"
 
 SOURCE_ID = re.compile(r"SRC-\d{8}-\d{3}")

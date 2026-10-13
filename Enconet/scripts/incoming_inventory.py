@@ -1,4 +1,5 @@
 """Inventory local incoming text without registering or approving sources."""
+from project_layout import path as layout_path
 import argparse
 from datetime import datetime, timezone
 import hashlib
@@ -52,7 +53,7 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     output = args.output.resolve()
-    if not output.is_relative_to(ROOT / 'out') or output.exists():
+    if not output.is_relative_to(layout_path('validation')) or output.exists():
         parser.error('Use a fresh output under local out/')
     result = inventory(ROOT)
     output.parent.mkdir(parents=True, exist_ok=True)

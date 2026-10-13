@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Re-prove document chunk identity, offsets, provenance, and ownership."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -13,8 +14,8 @@ import yaml
 import db_util
 from source_registry import ENCONET
 
-DERIVED = ENCONET / "derived"
-VALIDATION_MANIFEST = ENCONET / "manifests" / "validation_runs.csv"
+DERIVED = layout_path('derived')
+VALIDATION_MANIFEST = layout_path('manifests') / "validation_runs.csv"
 
 
 def validate(*, db_path: Path, derived_root: Path = DERIVED) -> list[str]:

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate EPIC13 wiki directories, page placement, and filename contracts."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -14,7 +15,7 @@ import yaml
 ENCONET = Path(__file__).resolve().parents[1]
 WIKI = ENCONET / "wiki"
 SCHEMA = ENCONET / "schemas" / "page_types.yml"
-RUNS = ENCONET / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 ROOT_FILES = {"index.md", "log.md", "current-status.md"}
 EXTRA_DIRS = {"dashboards"}
 

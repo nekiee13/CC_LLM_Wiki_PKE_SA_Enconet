@@ -2,6 +2,7 @@
 """Validate EPIC18 generation, prompt, golden-set, playbook, and skill invariants."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -19,8 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 ACTIVE = ROOT / "sieving" / "prompts" / "active.yml"
 CHANGELOG = ROOT / "sieving" / "prompts" / "CHANGELOG.md"
 PLAYBOOK = ROOT / "sieving" / "SIEVING_PLAYBOOK.md"
-GOLDEN = ROOT / "benchmarks" / "sieving_golden" / "manifest.yml"
-APPROVALS = ROOT / "manifests" / "approvals.csv"
+GOLDEN = layout_path('benchmarks') / "sieving_golden" / "manifest.yml"
+APPROVALS = layout_path('manifests') / "approvals.csv"
 SKILLS = ROOT / ".agents" / "skills"
 RUNS = ROOT / "sieving" / "runs"
 

@@ -1,4 +1,5 @@
 """Exercise approved examples on a new DB copy; never import into live audit."""
+from project_layout import path as layout_path
 import argparse
 from contextlib import closing
 import hashlib
@@ -16,11 +17,11 @@ import sieve_run
 
 def verify(output):
     output=local_path(output)
-    if not output.is_relative_to(ROOT/'out') or output.exists():
+    if not output.is_relative_to(layout_path('validation')) or output.exists():
         raise ValueError('Use a fresh directory under local out/')
     database=local_path(db_util.DEFAULT_DB)
     before=hashlib.sha256(database.read_bytes()).hexdigest()
-    candidate=ROOT/'benchmarks/sieving_golden/20261007-v3-nuclear-plan/candidate.json'
+    candidate=layout_path('benchmarks') / 'sieving_golden' / '20261007-v3-nuclear-plan' / 'candidate.json'
     payload=json.loads(candidate.read_text(encoding='utf-8'))
     output.mkdir(parents=True)
     copy_db=output/'calibration-copy.sqlite'

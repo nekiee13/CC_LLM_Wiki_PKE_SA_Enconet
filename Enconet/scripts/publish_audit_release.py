@@ -9,6 +9,8 @@ failure can leave files without a marker: fail closed and investigate, never
 silently overwrite or automatically delete them on retry.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
+from project_layout import path_at as layout_path_at
 
 import argparse
 import hashlib
@@ -55,7 +57,7 @@ def checked_plan(contract, root):
         raise ReleaseError("invalid run identity")
     if contract["gate_approvals"] != [f"G5-{run}", f"G6-{run}"]:
         raise ReleaseError("gate identities must match the release run")
-    approvals = root / "manifests/approvals.csv"
+    approvals = layout_path_at(root, 'manifests') / 'approvals.csv'
     for ref in contract["gate_approvals"] + [contract["owner_exception"]]:
         try:
             row = audit_state.approval_for(ref, approvals)
@@ -68,7 +70,7 @@ def checked_plan(contract, root):
             "review deferred" not in row.get("notes", "")):
         raise ReleaseError("owner exception must pin this exact plan and permit review deferred")
     result = safe(root, contract["result_manifest"])
-    if not result.is_relative_to(root / "manifests"):
+    if not result.is_relative_to(layout_path_at(root, 'manifests')):
         raise ReleaseError("result must be in project manifests")
     if result.exists():
         raise ReleaseError("release result already exists")

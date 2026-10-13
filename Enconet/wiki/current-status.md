@@ -13,9 +13,9 @@ pending, not passed or waived. No extra score decision is needed.
 ## Open the results
 
 - [Interactive dashboard and chapter-linked evidence](dashboards/enconet_appendix_b_dashboard.html)
-- [Separate dark dashboard](../outputs/candidates/evidence_access/RUN-20261008-17/dark/enconet_appendix_b_dashboard_dark.html) — same data; light release unchanged.
-- [Croatian evaluation report](../outputs/enconet_appendix_b_evaluation_report.md)
-- [Portable report and evidence workspace](../outputs/candidates/evidence_access/portable_package/review_workspace.html)
+- [Separate dark dashboard](../outputs/RUN-20261008-17/dashboard_dark.html) — same data; light release unchanged.
+- [Croatian evaluation report](../outputs/RUN-20261008-17/report.md)
+- [Retained portable report and evidence workspace](../outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/review_workspace.html)
 - [Evidence matrix](evidence/matrix.md)
 - [Publication record and validation results](../docs/PUBLISHED_RELEASE_RUN17_20261009.md)
 

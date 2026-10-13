@@ -2,6 +2,7 @@
 """Canonical phase-checked EPIC17 command dispatcher for both agents."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -20,7 +21,7 @@ import db_util
 ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parent
 REGISTRY = ROOT / "schemas" / "audit_commands.yml"
-RUNS = ROOT / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 GATE_BY_PHASE = {
     "setup": "G1", "sieved": "G2", "evidence_reviewed": "G3",
     "findings_drafted": "G4", "findings_approved": "G5",
@@ -156,7 +157,7 @@ def dispatch(
         if result:
             print("STOP: validation failed; handoff was not published", file=sys.stderr)
             return result
-        handoff = [sys.executable, str(WORKSPACE / "scripts" / "make_handoff.py"), *arguments]
+        handoff = [sys.executable, str(ROOT / "scripts" / "make_handoff.py"), *arguments]
         return _run(handoff, cwd=WORKSPACE, dry_run=dry_run)
     script = _stage_script(spec)
     if not script.exists():

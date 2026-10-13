@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Link every crumb quote to a containing chunk in the same document."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -11,7 +12,7 @@ from pathlib import Path
 import db_util
 
 ENCONET = Path(__file__).resolve().parents[1]
-CANDIDATES = ENCONET / "manifests" / "link_exception_candidates.csv"
+CANDIDATES = layout_path('manifests') / "link_exception_candidates.csv"
 
 
 def normalize(text: str) -> str:

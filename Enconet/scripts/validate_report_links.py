@@ -2,6 +2,7 @@
 """Validate every portable report citation against its matched offline viewer."""
 from __future__ import annotations
 
+from project_records import recorded_path_at
 import argparse
 import hashlib
 import json
@@ -215,7 +216,7 @@ def _lineage_errors(bundle: dict, project_root: Path) -> list[str]:
         if not isinstance(relative, str):
             continue
         root = project_root.resolve()
-        artifact = (root / Path(relative)).resolve()
+        artifact = (recorded_path_at(root, relative) if root == ENCONET.resolve() else root / Path(relative)).resolve()
         try:
             artifact.relative_to(root)
         except ValueError:

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate one deterministic, validated, run-scoped offline evidence bundle."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import hashlib
@@ -19,7 +20,7 @@ import validate_evidence_bundle
 
 
 ENCONET = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE_MANIFEST = ENCONET / "manifests" / "raw_sources.csv"
+DEFAULT_SOURCE_MANIFEST = layout_path('manifests') / "raw_sources.csv"
 GENERATION_TIME_PATTERN = re.compile(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z")
 COLLECTION_BY_TYPE = {
     "document": "documents",

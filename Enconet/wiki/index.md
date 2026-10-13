@@ -1,12 +1,12 @@
 # Enconet audit index
 
 - [Current status](current-status.md)
-- [Separate dark dashboard](../outputs/candidates/evidence_access/RUN-20261008-17/dark/enconet_appendix_b_dashboard_dark.html)
+- [Separate dark dashboard](../outputs/RUN-20261008-17/dashboard_dark.html)
 - [Dark-theme verification and screenshots](../docs/DARK_DASHBOARD_20261010.md)
 - [Published-file access repair](../docs/PUBLISHED_FILE_ACCESS_FIX_20261010.md)
 - [Published dashboard with exact source chapters](dashboards/enconet_appendix_b_dashboard.html)
-- [Published Croatian report](../outputs/enconet_appendix_b_evaluation_report.md)
-- [Portable review workspace](../outputs/candidates/evidence_access/portable_package/review_workspace.html)
+- [Published Croatian report](../outputs/RUN-20261008-17/report.md)
+- [Retained portable review workspace](../outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/review_workspace.html)
 - [Publication, owner exception and complete validation](../docs/PUBLISHED_RELEASE_RUN17_20261009.md)
 - [G4 findings and complete audit-action plan](../docs/FINDINGS_DRAFT_20261008.md)
 - [Evidence matrix](evidence/matrix.md)

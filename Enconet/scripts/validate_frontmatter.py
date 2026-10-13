@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate controlled wiki-page frontmatter against EPIC13 contracts."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -20,7 +21,7 @@ PAGE_TYPES = ENCONET / "schemas" / "page_types.yml"
 REQUIRED = ENCONET / "schemas" / "required_fields.yml"
 VOCABULARIES = ENCONET / "schemas" / "vocabularies.yml"
 TAXONOMY = ENCONET / "schemas" / "app_b_taxonomy.yml"
-RUNS = ENCONET / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 STATUSES = {"draft", "approved", "closed", "generated", "superseded"}
 ORIGINS = {"generated", "human", "mixed"}
 

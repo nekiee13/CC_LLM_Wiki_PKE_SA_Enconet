@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Run the EPIC13 phase-aware Enconet validation spine with one verdict."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
+from project_records import recorded_path
 import argparse
 import csv
 import json
@@ -19,11 +21,11 @@ import db_util
 ENCONET = Path(__file__).resolve().parents[1]
 SCRIPTS = ENCONET / "scripts"
 STATE = ENCONET / "project-state.yml"
-RUNS = ENCONET / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 OUTPUTS = ENCONET / "outputs"
 DATA = ENCONET / "sieving" / "DATA"
 SIEVE_RUNS = ENCONET / "sieving" / "runs"
-BENCHMARKS = ENCONET / "benchmarks" / "validate_benchmarks.py"
+BENCHMARKS = SCRIPTS / "validate_benchmarks.py"
 VOCABULARIES = ENCONET / "schemas" / "vocabularies.yml"
 AUDIT_STATES = yaml.safe_load(VOCABULARIES.read_text(encoding="utf-8"))["vocabularies"]["audit_states"]["values"]
 PHASES = [state for state in AUDIT_STATES if state != "failed"]
@@ -118,18 +120,19 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
              run_id: str | None, app_b_json: Path | None,
              no_record: bool = False) -> dict[str, list[str] | None]:
     py = sys.executable
-    package = outputs / f"{supplier}_appendix_b_evaluation_package.json"
-    report = outputs / f"{supplier}_appendix_b_evaluation_report.md"
-    dashboard_data = outputs / f"{supplier}_appendix_b_dashboard_data.json"
-    dashboard = outputs / f"{supplier}_appendix_b_dashboard.html"
-    evidence_root = outputs / "candidates" / "evidence_access"
-    evidence_run = evidence_root / run_id if run_id else None
-    bundle = evidence_run / "evidence_bundle.json" if evidence_run else None
+    run_root = outputs / run_id if run_id else outputs
+    package = run_root / "evaluation_package.json"
+    report = run_root / "report.md"
+    dashboard_data = run_root / "dashboard_data.json"
+    dashboard = run_root / "dashboard_light.html"
+    evidence_root = layout_path("reviews")
+    evidence_run = run_root if run_id else None
+    bundle = recorded_path("outputs/candidates/evidence_access/" + run_id + "/evidence_bundle.json") if evidence_run else None
     evidence_report = (
-        evidence_run / f"{supplier}_appendix_b_evaluation_report.md" if evidence_run else None
+        evidence_run / "report.md" if evidence_run else None
     )
     evidence_viewer = (
-        evidence_run / f"{supplier}_appendix_b_dashboard.html" if evidence_run else None
+        evidence_run / "dashboard_light.html" if evidence_run else None
     )
     app_b = [py, str(SCRIPTS / "validate_app_b_json.py"), str(app_b_json)] if app_b_json else None
     if app_b is not None and phase_rank(phase) >= phase_rank("evaluated"):
@@ -158,18 +161,18 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
         ),
         "browser_evidence": (
             [py, str(SCRIPTS / "browser_harness.py"), "check", str(evidence_viewer),
-             "--artifacts", str(evidence_root / "validation_artifacts" / "browser_evidence"),
+             "--artifacts", str(layout_path("validation", run_id or "setup", "browser_evidence")),
              "--require-interactive"] if evidence_viewer else None
         ),
         "dashboard": [py, str(SCRIPTS / "validate_dashboard.py"), str(package),
                       str(dashboard_data), str(dashboard), "--db", str(db), "--phase", phase],
         "review_package": [
             py, str(SCRIPTS / "validate_review_package.py"),
-            str(evidence_root / "portable_package"),
+            str(recorded_path("outputs/archive/legacy-outputs/candidates/evidence_access/portable_package")),
         ],
         "evidence_budgets": [
             py, str(SCRIPTS / "validate_evidence_access_budgets.py"),
-            str(evidence_root / "portable_package"),
+            str(recorded_path("outputs/archive/legacy-outputs/candidates/evidence_access/portable_package")),
             "--budgets", str(ENCONET / "schemas" / "evidence_access_budgets.yml"),
             "--browser-config", str(ENCONET / "schemas" / "browser_harness.yml"),
         ],
@@ -243,6 +246,7 @@ def main() -> int:
     parser.add_argument("--benchmarks", action="store_true",
                         help="run both supplier-independent EPIC16 benchmark classes")
     parser.add_argument("--no-record", action="store_true")
+    parser.add_argument("--allow-pending-claude", action="store_true", help="explicit deferred agent infrastructure; never source or evidence approval")
     args = parser.parse_args()
     try:
         state = yaml.safe_load(args.state.read_text(encoding="utf-8"))
@@ -264,6 +268,8 @@ def main() -> int:
             generate_dashboard.load_budget_profile(profile)
             command = check_commands["evidence_budgets"]
             command[command.index("--budgets") + 1] = str(profile)
+        if args.allow_pending_claude:
+            check_commands["sieving_harness"].append("--allow-pending-claude")
         checks = run(phase, check_commands)
         if benchmarks_required(phase, args.benchmarks):
             for name, command in benchmark_commands().items():

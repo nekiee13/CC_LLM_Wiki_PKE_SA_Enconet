@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate EPIC10 finding/action links, enums, approvals, and wiki projections."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -16,7 +17,7 @@ from finding_workflow import (
 )
 
 ENCONET = Path(__file__).resolve().parents[1]
-RUNS = ENCONET / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 
 
 def _compare_page(path: Path, expected: dict[str, object], expected_text: str,

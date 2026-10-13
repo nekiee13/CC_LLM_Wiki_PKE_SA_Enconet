@@ -5,6 +5,7 @@ historical characterization and DATA tests run against current code in a fresh
 hash-verified historical workspace. The workspace is retained for diagnostics.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 import argparse
 import hashlib
 import json
@@ -34,7 +35,7 @@ def main():
     p.add_argument("--output", type=Path, required=True)
     args = p.parse_args()
     output = args.output.resolve()
-    if not output.is_relative_to(ROOT / "out"):
+    if not output.is_relative_to(layout_path('validation')):
         p.error("test reports must be under this project's out directory")
     output.mkdir(parents=True, exist_ok=True)
     if any((output / name).exists() for name in ("current.xml", "historical.xml", "summary.json")):

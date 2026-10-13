@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Human-gated, rollback-safe promotion of the offline Evidence Explorer."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -28,7 +29,7 @@ import validate_review_package
 
 ENCONET = Path(__file__).resolve().parents[1]
 DEFAULT_CONTRACT = ENCONET / "schemas" / "evidence_access_promotion.yml"
-DEFAULT_APPROVALS = ENCONET / "manifests" / "approvals.csv"
+DEFAULT_APPROVALS = layout_path('manifests') / "approvals.csv"
 SHA256 = re.compile(r"[0-9a-f]{64}")
 
 

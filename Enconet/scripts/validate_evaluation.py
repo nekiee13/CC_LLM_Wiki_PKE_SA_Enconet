@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Re-prove EPIC8 completeness, applicability, evidence gates, and scores."""
 from __future__ import annotations
+from project_layout import path as layout_path
 import argparse,csv,sys
 from datetime import datetime,timezone
 from pathlib import Path
 import db_util
 from evaluation_engine import POSITIVE,score_rating
-ENCONET=Path(__file__).resolve().parents[1];RUNS=ENCONET/"manifests"/"validation_runs.csv";RAW=ENCONET/"raw"
+ENCONET=Path(__file__).resolve().parents[1];RUNS=layout_path('manifests')/"validation_runs.csv";RAW=ENCONET/"raw"
 def validate(db:Path,run_id:str)->list[str]:
  errors=[]
  with db_util.connect(db) as c:

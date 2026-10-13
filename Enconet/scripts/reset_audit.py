@@ -23,6 +23,7 @@ import stat
 import sys
 from zipfile import ZIP_DEFLATED, ZipFile
 
+from reset_operations import remove_generated
 from project_paths import configure_standard_streams
 
 
@@ -33,38 +34,9 @@ PLAN_VERSION = 2
 
 # These are generated audit state locations. Framework code, schemas, prompts,
 # tests, incoming sources, docs, coordination, and handoffs are not targets.
-RESET_DIRS = (
-    "raw",
-    "out",
-    "sieving/candidates",
-    "derived",
-    "work",
-    "outputs",
-    "results",
-    "reports",
-    "artifacts",
-    "audit_runs",
-    "db/backups",
-    "sieving/DATA",
-    "sieving/outputs",
-    "sieving/runs",
-    "sieving/results",
-    "wiki/actions",
-    "wiki/criteria",
-    "wiki/dashboards",
-    "wiki/evidence",
-    "wiki/findings",
-    "wiki/gates",
-)
+RESET_DIRS = ('raw', 'sieving/candidates', 'outputs', 'results', 'reports', 'artifacts', 'audit_runs', 'db/backups', 'sieving/DATA', 'sieving/outputs', 'sieving/runs', 'sieving/results', 'wiki/actions', 'wiki/criteria', 'wiki/dashboards', 'wiki/evidence', 'wiki/findings', 'wiki/gates', 'work/derived', 'work/validation')
 
-RESET_TEXT_FILES = {
-    "manifests/ingest_runs.csv": "run_id,run_type,doc_id,prompt_version,document_side,started_utc,finished_utc,result,notes",
-    "manifests/link_exception_candidates.csv": "crumb_id,quote_id,doc_id,reason",
-    "manifests/raw_sources.csv": "doc_id,filename,title,supplier,doc_date,language,side_hint,sha256,promoted_utc,source_url,notes",
-    "manifests/approvals.csv": "object_id,decision,date,reviewer,notes",
-    "manifests/link_exceptions.csv": "crumb_id,quote_id,reason,approved_by,date",
-    "manifests/validation_runs.csv": "run_utc,validator,phase,result,exit_code,details",
-}
+RESET_TEXT_FILES = {'work/manifests/ingest_runs.csv': 'run_id,run_type,doc_id,prompt_version,document_side,started_utc,finished_utc,result,notes', 'work/manifests/link_exception_candidates.csv': 'crumb_id,quote_id,doc_id,reason', 'work/manifests/raw_sources.csv': 'doc_id,filename,title,supplier,doc_date,language,side_hint,sha256,promoted_utc,source_url,notes', 'work/manifests/approvals.csv': 'object_id,decision,date,reviewer,notes', 'work/manifests/link_exceptions.csv': 'crumb_id,quote_id,reason,approved_by,date', 'work/manifests/validation_runs.csv': 'run_utc,validator,phase,result,exit_code,details'}
 RESET_FILES = (
     "db/nqa_audit.sqlite",
     "project-state.yml",
@@ -338,7 +310,7 @@ def apply_plan(plan_path: Path | str, project_root: Path | str,
             # verified archive and exact-target fingerprint checks above.
             if os.name == "nt" and path.stat().st_file_attributes & stat.FILE_ATTRIBUTE_READONLY:
                 path.chmod(stat.S_IWRITE)
-            path.unlink()
+            remove_generated(path)
             deleted += 1
         else:
             header = base64.b64decode(str(entry["header_b64"])).decode("utf-8")

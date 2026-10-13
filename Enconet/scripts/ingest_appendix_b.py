@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Deterministically ingest the 18 Appendix B criteria as RULE crumbs and requirements."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse, re, sys
 from dataclasses import dataclass
@@ -10,7 +11,7 @@ import yaml
 import db_util
 
 ENCONET=Path(__file__).resolve().parents[1]
-DERIVED=ENCONET/"derived"; TAXONOMY=ENCONET/"schemas"/"app_b_taxonomy.yml"
+DERIVED=layout_path('derived'); TAXONOMY=ENCONET/"schemas"/"app_b_taxonomy.yml"
 NRC_URL="https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-appb.html"
 ROMAN="I|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV|XVI|XVII|XVIII"
 HEADING=re.compile(rf"(?m)^#\s+(?P<roman>{ROMAN})\.\s+(?P<title>[^\r\n]+)\s*$")

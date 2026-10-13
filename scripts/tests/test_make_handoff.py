@@ -23,7 +23,9 @@ def init_repo(root):
     git(root, "config", "user.name", "Test"); (root / "tracked.txt").write_text("one", encoding="utf-8")
     git(root, "add", "tracked.txt"); git(root, "commit", "-m", "initial")
 
-def test_no_git_publishes_nogit_with_warning(tmp_path):
+def test_no_git_publishes_nogit_with_warning(tmp_path, monkeypatch):
+    # A workspace-local test folder must not inherit the real workspace Git repo.
+    monkeypatch.setenv("GIT_CEILING_DIRECTORIES", str(tmp_path.parent))
     record = mh.publish(args(tmp_path))
     assert record.name.endswith("-nogit.md") and "WARNING: Git metadata unavailable" in record.read_text(encoding="utf-8")
     assert mh.validate_text(record.read_text(encoding="utf-8"), record) == []
@@ -74,3 +76,22 @@ def test_staleness_warns_after_head_moves(tmp_path, capsys):
     git(tmp_path, "add", "tracked.txt"); git(tmp_path, "commit", "-m", "move head")
     assert mh.check_staleness(tmp_path) == 0
     assert "WARN: handoff is stale" in capsys.readouterr().out
+
+def test_v4_publication_uses_only_coordination_handoff_home(tmp_path):
+    (tmp_path / "project-layout.json").write_text(
+        json.dumps({"schema_version": 1, "layout": "v4"}), encoding="utf-8")
+    record = mh.publish(args(tmp_path))
+    assert record.parent == tmp_path / "coordination/handoffs"
+    assert not (tmp_path / "handoffs").exists()
+    assert "coordination/handoffs/" in (tmp_path / "HANDOFF.md").read_text(encoding="utf-8")
+
+def test_invalid_or_mixed_layout_refuses_handoff_write(tmp_path):
+    config = tmp_path / "project-layout.json"
+    config.write_text(json.dumps({"schema_version": 1, "layout": "invalid"}), encoding="utf-8")
+    with pytest.raises(ValueError, match="layout"):
+        mh.publish(args(tmp_path))
+    config.write_text(json.dumps({"schema_version": 1, "layout": "v4"}), encoding="utf-8")
+    (tmp_path / "handoffs").mkdir()
+    with pytest.raises(ValueError, match="legacy"):
+        mh.publish(args(tmp_path))
+    assert not (tmp_path / "HANDOFF.md").exists()

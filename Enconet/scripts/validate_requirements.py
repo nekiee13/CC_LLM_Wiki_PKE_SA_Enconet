@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Validate 18/18 requirement coverage and RULE-crumb traceability."""
 from __future__ import annotations
+from project_layout import path as layout_path
 import argparse,csv,sys
 from datetime import datetime,timezone
 from pathlib import Path
 import db_util
-ENCONET=Path(__file__).resolve().parents[1]; RUNS=ENCONET/"manifests"/"validation_runs.csv"
+ENCONET=Path(__file__).resolve().parents[1]; RUNS=layout_path('manifests')/"validation_runs.csv"
 def validate(db:Path)->list[str]:
     errors=[]; pattern=db_util.id_patterns()["requirement_id"]
     with db_util.connect(db) as c:

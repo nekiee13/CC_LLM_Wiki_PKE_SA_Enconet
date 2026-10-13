@@ -1,5 +1,6 @@
 """Shared EPIC3 source-registry operations."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import csv
 import hashlib
@@ -11,7 +12,7 @@ import db_util
 
 ENCONET = Path(__file__).resolve().parents[1]
 RAW = ENCONET / "raw"
-MANIFEST = ENCONET / "manifests" / "raw_sources.csv"
+MANIFEST = layout_path('manifests') / "raw_sources.csv"
 HEADER = [
     "doc_id", "filename", "title", "supplier", "doc_date", "language",
     "side_hint", "sha256", "promoted_utc", "source_url", "notes",

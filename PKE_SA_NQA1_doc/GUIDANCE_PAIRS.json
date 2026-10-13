@@ -174,8 +174,9 @@
         },
         {
           "id": "read-first-alignment-plan",
-          "description": "Read-first names docs/ALIGNMENT_PLAN.md as canonical",
-          "pattern": "docs/ALIGNMENT_PLAN\\.md"
+          "description": "Each agent declares its current alignment-plan path; Claude migration is pending",
+          "claude_pattern": "docs/ALIGNMENT_PLAN\\.md",
+          "codex_pattern": "docs/plans/ALIGNMENT_PLAN\\.md"
         },
         {
           "id": "read-first-adr-register",
@@ -289,6 +290,10 @@
         {
           "id": "frozen-plans-guardrail",
           "description": "Explicit frozen-plan wording (master plan / alignment plan not editable without owner reopening) is Codex-side only; Claude side relies on the authority section."
+        },
+        {
+          "id": "enconet-plan-home-migration",
+          "description": "Owner-approved cleanup moved canonical plans to docs/plans and ADRs to work/decisions. Codex guidance is updated; Claude must update its own guidance. Exact side-specific path checks remain enabled; this is documented pending synchronization, not a claim of agreement."
         }
       ]
     },

@@ -15,6 +15,7 @@ Appends one row to manifests/validation_runs.csv. Exit 0 on PASS, 1 on FAIL.
 Stdlib + PyYAML only.
 """
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import csv
 import json
@@ -203,7 +204,7 @@ def check_pages(pages: dict, fields: dict) -> None:
 
 
 def append_validation_run(result: str, exit_code: int, details: str) -> None:
-    manifest = ENCONET / "manifests" / "validation_runs.csv"
+    manifest = layout_path('manifests') / "validation_runs.csv"
     phase = "unknown"
     try:
         state = yaml.safe_load((ENCONET / "project-state.yml").read_text(encoding="utf-8"))

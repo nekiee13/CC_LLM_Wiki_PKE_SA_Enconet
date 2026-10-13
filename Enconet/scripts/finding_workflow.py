@@ -1,5 +1,6 @@
 """Fail-closed EPIC10 finding/action writers and wiki projections."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import csv
 import json
@@ -12,7 +13,7 @@ import yaml
 import db_util
 
 ENCONET = Path(__file__).resolve().parents[1]
-APPROVALS = ENCONET / "manifests" / "approvals.csv"
+APPROVALS = layout_path('manifests') / "approvals.csv"
 VOCABULARIES = ENCONET / "schemas" / "vocabularies.yml"
 FINDING_TEMPLATE = ENCONET / "templates" / "finding-template.md"
 ACTION_TEMPLATE = ENCONET / "templates" / "action-template.md"

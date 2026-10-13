@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate EPIC12 data/package consistency, offline HTML, and JS hooks."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -23,7 +24,7 @@ ENCONET = Path(__file__).resolve().parents[1]
 SCHEMA = ENCONET / "schemas" / "dashboard_schema.yml"
 STATE = ENCONET / "project-state.yml"
 OUTPUTS = ENCONET / "outputs"
-RUNS = ENCONET / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 DATA_BLOCK = re.compile(r'<script id="dashboard-data" type="application/json">(.*?)</script>', re.DOTALL)
 EVIDENCE_BLOCK = re.compile(
     r'<script id="evidence-bundle" type="application/json" '

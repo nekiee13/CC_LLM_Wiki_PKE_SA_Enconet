@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Extract inspectable UTF-8 text from a registered plain-text source."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import sys
@@ -9,7 +10,7 @@ from pathlib import Path
 import db_util
 from source_registry import ENCONET, RAW, sha256_file, utc_now
 
-DERIVED = ENCONET / "derived"
+DERIVED = layout_path('derived')
 TEXT_SUFFIXES = {".txt", ".md", ".csv", ".json", ".xml", ".html", ".htm"}
 
 

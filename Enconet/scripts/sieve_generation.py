@@ -2,6 +2,7 @@
 """Promote, reject, or roll back immutable sieve generations with recorded decisions."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -15,7 +16,7 @@ import db_util
 
 
 ROOT = Path(__file__).resolve().parents[1]
-APPROVALS = ROOT / "manifests" / "approvals.csv"
+APPROVALS = layout_path('manifests') / "approvals.csv"
 ACTIVE_PROMPTS = ROOT / "sieving" / "prompts" / "active.yml"
 CHANGELOG = ROOT / "sieving" / "prompts" / "CHANGELOG.md"
 

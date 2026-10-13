@@ -1,0 +1,20 @@
+{
+  "schema": "cleanup-runtime-install-1",
+  "supplier": "Enconet",
+  "files": [
+    {
+      "target": "Enconet/scripts/audit_command.py",
+      "payload": ".tmp/enconet-handoff-install-20261013/payload/scripts/audit_command.py",
+      "backup": "Enconet/work/migrations/cleanup-cu3-live-20261013/handoff-runtime-originals/scripts/audit_command.py",
+      "before_sha256": "82882606ad6e4d8b3dc00e1d4b712a6c4f088d767cbb18f8c8b3743bd081e89c",
+      "after_sha256": "e6538d05c35acb5aedbe88df6008e7150bbe6f68a3a1d7c524bd45b3726297e6"
+    },
+    {
+      "target": "Enconet/scripts/make_handoff.py",
+      "payload": ".tmp/enconet-handoff-install-20261013/payload/scripts/make_handoff.py",
+      "backup": "Enconet/work/migrations/cleanup-cu3-live-20261013/handoff-runtime-originals/scripts/make_handoff.py",
+      "before_sha256": null,
+      "after_sha256": "1591f839fa4a599809b215c883f142f19a4c18f65d17c90dbe3d4966c33db48f"
+    }
+  ]
+}

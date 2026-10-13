@@ -194,11 +194,34 @@ def render(args, project: Path, facts: dict, created: datetime, checks: list[dic
     return "\n".join(fm + body)
 
 
+def handoff_home(project: Path) -> Path:
+    config = project / "project-layout.json"
+    mode = "legacy"
+    if config.exists():
+        value = json.loads(config.read_text(encoding="utf-8"))
+        if (not isinstance(value, dict) or set(value) != {"schema_version", "layout"}
+                or type(value["schema_version"]) is not int or value["schema_version"] != 1
+                or value["layout"] not in {"legacy", "v4"}):
+            raise ValueError("invalid project layout for handoff publication")
+        mode = value["layout"]
+    selected = project / ("coordination/handoffs" if mode == "v4" else "handoffs")
+    other = project / ("handoffs" if mode == "v4" else "coordination/handoffs")
+    if other.exists():
+        raise ValueError("legacy/v4 handoff locations conflict")
+    for candidate in (config, selected, *selected.parents):
+        if not candidate.is_relative_to(project):
+            break
+        if candidate.is_symlink() or (candidate.exists()
+                and getattr(candidate.lstat(), "st_file_attributes", 0) & 0x400):
+            raise ValueError("redirected handoff layout path")
+    return selected
+
+
 def publish(args) -> Path:
     project = Path(args.project_root).resolve()
     facts = git_facts(project)
     checks = [parse_check(value) for value in args.check]
-    handoffs = project / "handoffs"
+    handoffs = handoff_home(project)
     created = unique_timestamp(handoffs, now_utc(), facts["short"])
     record = handoffs / f"{created.strftime('%Y-%m-%dT%H%M%SZ')}-{facts['short']}.md"
     text = render(args, project, facts, created, checks)
@@ -236,7 +259,7 @@ def check_staleness(project: Path) -> int:
     if not pointer.is_file():
         print("WARN: HANDOFF.md is missing")
         return 0
-    match = re.search(r"\((handoffs/[^)]+\.md)\)", pointer.read_text(encoding="utf-8"))
+    match = re.search(r"\(((?:coordination/)?handoffs/[^)]+\.md)\)", pointer.read_text(encoding="utf-8"))
     if not match or not (project / match.group(1)).is_file():
         print("WARN: HANDOFF.md does not resolve to an immutable record")
         return 0

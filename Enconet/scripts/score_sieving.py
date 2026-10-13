@@ -2,6 +2,7 @@
 """Score generated crumbs against a versioned, human-approved golden calibration set."""
 
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -14,7 +15,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
-APPROVALS = ROOT / "manifests" / "approvals.csv"
+APPROVALS = layout_path('manifests') / "approvals.csv"
 
 
 def normalize(value: str) -> str:

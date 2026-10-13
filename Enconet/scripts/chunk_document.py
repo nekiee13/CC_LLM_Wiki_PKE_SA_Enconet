@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Split one registered derived document into reviewable level-1/2 chunks."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import re
@@ -11,7 +12,7 @@ from pathlib import Path
 import db_util
 from source_registry import ENCONET
 
-DERIVED = ENCONET / "derived"
+DERIVED = layout_path('derived')
 HEADING = re.compile(r"(?m)^(?P<number>\d+(?:\.\d+)*)(?:\.(?=\s|$)|(?=\s))[^\r\n]*$")
 MARKDOWN_HEADING = re.compile(
     r"(?m)^(?P<marks>#{1,2})[ \t]+(?P<title>.*?\S)[ \t]*#*[ \t]*$"

@@ -1,11 +1,12 @@
 """Shared fail-closed EPIC8 evaluation operations."""
 from __future__ import annotations
+from project_layout import path as layout_path
 import csv,json
 from decimal import Decimal,ROUND_HALF_UP
 from pathlib import Path
 import yaml
 import db_util
-ENCONET=Path(__file__).resolve().parents[1]; APPROVALS=ENCONET/"manifests"/"approvals.csv"; MODEL=ENCONET/"schemas"/"scoring_model.yml"; RAW=ENCONET/"raw"
+ENCONET=Path(__file__).resolve().parents[1]; APPROVALS=layout_path('manifests')/"approvals.csv"; MODEL=ENCONET/"schemas"/"scoring_model.yml"; RAW=ENCONET/"raw"
 POSITIVE={"fully","substantially"}; RATINGS={"fully","substantially","partially","minimally","unmet","undetermined","na"}
 def approval(run_id:str,path:Path=APPROVALS)->dict|None:
     if not path.is_file(): return None

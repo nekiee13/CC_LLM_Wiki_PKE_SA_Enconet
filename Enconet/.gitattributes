@@ -31,8 +31,9 @@ sieving/runs/** -text -whitespace
 # Relocated homes keep the original byte/line-ending policy.
 work/derived/** -text
 work/validation/** -text
-work/validation/2026-10-07/framework-v2/** text eol=lf
 work/bootstrap/framework-v2/** text eol=lf
 work/validation/2026-10-07/full-keyword-sweep/sources/** -whitespace
 work/validation/2026-10-07/full-keyword-sweep/review/** -whitespace
 work/migrations/** -text
+outputs/archive/legacy-out/** -text
+outputs/RUN-*/revisions/legacy-outputs/dark/*.provenance.json -text

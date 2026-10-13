@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Cross-check an EPIC11 report against its sole evaluation package source."""
 from __future__ import annotations
+from project_layout import path as layout_path
 
 import argparse
 import csv
@@ -17,7 +18,7 @@ from finding_workflow import APPROVALS
 from generate_report import HEADINGS, approved_ids, canonical_bytes
 
 ENCONET = Path(__file__).resolve().parents[1]
-RUNS = ENCONET / "manifests" / "validation_runs.csv"
+RUNS = layout_path('manifests') / "validation_runs.csv"
 META = re.compile(r"<!-- report-metadata: (\{.*?\}) -->")
 SCORE = re.compile(r"\*\*([0-9]+(?:\.[0-9]+)?) / 100\*\*.*?\*\*([0-9]+)\*\*")
 
