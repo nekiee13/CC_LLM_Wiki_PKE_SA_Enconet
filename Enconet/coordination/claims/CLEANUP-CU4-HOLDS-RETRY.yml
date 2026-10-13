@@ -1,21 +1,12 @@
 task: CLEANUP-CU4-HOLDS-RETRY
 agent: codex
 status: released
-claimed_at_utc: 2026-10-13T23:12:10Z
-last_renewed_at_utc: 2026-10-13T23:12:10Z
-expires_at_utc: 2026-10-14T23:12:10Z
+claimed_at_utc: 2026-10-13T23:25:42Z
+last_renewed_at_utc: 2026-10-13T23:25:42Z
+expires_at_utc: 2026-10-14T23:25:42Z
 anticipated_files:
-  - ../scripts
-  - ../doc
-  - ../PKE_SA_NQA1_doc
-  - coordination
   - HANDOFF.md
-  - .pytest-ea22-red
-  - .pytest-tmp-epic-review
-  - .pytest-tmp-g4-20260728
-  - .pytest_tmp
-  - .test-tmp
-  - pytest-cache-files-fgtlfzwi
-  - pytest-cache-files-sglcfhjt
-note: Owner requested retry of remaining holds within CU-4.2; preserve bytes and Claude ownership
-released_at_utc: 2026-10-13T23:24:08Z
+  - coordination
+  - wiki/log.md
+note: Publish truthful partial handoff for completed hold retry
+released_at_utc: 2026-10-13T23:26:25Z
