@@ -1,0 +1,5 @@
+# Keep verification receipts byte-stable across Windows/Linux checkouts.
+*.json -text
+*.jsonl -text
+*.xml -text
+*.zip -text

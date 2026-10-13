@@ -325,22 +325,22 @@ links and update the docs/indexes. Deliver one short closure report.
 
 Acceptance criteria:
 
-- [ ] Each active audit passes its required aggregate checks. Record each
+- [x] Each active audit passes its required aggregate checks. Record each
       exit code and every phase-based skip; do not report skips as passes.
-- [ ] Enconet full isolated regression, the applicable Ekonerg regression,
+- [x] Enconet full isolated regression, the applicable Ekonerg regression,
       migration/undo tests and reusable-release suites pass.
 - [ ] New-output tests prove standalone light/dark use, all crumb/chapter
       links, mobile layout, keyboard access, white print and real PDF output.
-- [ ] Compare all evidence, approval, score and source baseline facts.
+- [x] Compare all evidence, approval, score and source baseline facts.
       Only reviewed stored-path changes may differ.
 - [ ] Current docs/code contain no unapproved old-path dependencies.
       Historical old links resolve through the retained relocation map.
 - [ ] Coordination and handoff validation pass. Guidance drift checks pass
       after Codex guidance updates; Claude sync is stated honestly.
-- [ ] Refresh shared indexes from committed state under one `INDEX-REFRESH`
+- [x] Refresh shared indexes from committed state under one `INDEX-REFRESH`
       claim. Structural rename needs full refresh and verification, not a
       blind incremental refresh. Never re-index Claude-owned guidance.
-- [ ] Root has no stray test directories; all eight suppliers pass the same
+- [x] Root has no stray test directories; all eight suppliers pass the same
       structural check. Unused optional folders need not contain dummy files.
 - [ ] Closure report lists moves, retained history, exact hashes, test results,
       any approved exceptions and the new dashboard/report entry paths.
@@ -482,3 +482,13 @@ Ekonerg's phase-aware aggregate passed eight checks and skipped nine; skips
 are not passes. Held populated/redirected directories, owner/Claude-owned
 records, committed index rebuild and final closure checks remain in CU-4.2.
 See [residual and browser result](cleanup-cu4/CU4_RESIDUAL_AND_BROWSER_RESULT.md).
+
+The shared indexes are now fully rebuilt from certified committed state
+`e420149`. Their exact scope, physical snapshot roots and parser caveats are
+recorded in [verification and exceptions](cleanup-cu4/CU4_VERIFICATION_AND_EXCEPTIONS.md).
+The complete workspace-tooling suite passed 120 tests. The last root pytest
+tree (49 empty directory nodes/six internal shortcuts) and the two remaining
+empty root caches are archived intact under `.tmp`. No root pytest/reset
+scratch folder remains. The Ekonerg empty candidate-tree rename still fails
+with WinError 5; held owner/Claude files and other legacy scratch remain.
+CU-4.2 is partial, with those exceptions explicit; no new task was added.

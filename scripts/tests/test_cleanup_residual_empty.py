@@ -52,3 +52,18 @@ def test_foreign_destination_refused(tmp_path, monkeypatch):
     with pytest.raises(ValueError, match='Plan or authority differs'):
         run('apply')
     assert all((tmp_path / name).exists() for name in tool.MOVES)
+
+
+def test_root_cache_bundle_is_separate_and_reversible(tmp_path, monkeypatch):
+    for name in tool.ROOT_CACHES:
+        (tmp_path / name).mkdir()
+    authority = tmp_path / 'authority.md'
+    authority.write_bytes(b'synthetic authority')
+    base = ['tool', '--root', str(tmp_path), '--plan', str(tmp_path / 'cache-plan.json'),
+            '--authority', str(authority), '--journal', str(tmp_path / 'cache-journal.jsonl'),
+            '--bundle', 'root-caches']
+    for mode in ('preview', 'apply', 'apply', 'verify', 'undo'):
+        monkeypatch.setattr(sys, 'argv', base + ['--mode', mode])
+        assert tool.main() == 0
+    assert all((tmp_path / name).is_dir() for name in tool.ROOT_CACHES)
+    assert not any((tmp_path / name).exists() for name in tool.MOVES)

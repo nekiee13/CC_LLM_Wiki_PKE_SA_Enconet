@@ -17,6 +17,10 @@ MOVES = {
     'ekonerg-reset-rk6wsybf': 'Ekonerg/.tmp/cleanup-retained-20261013/ekonerg-reset-rk6wsybf',
     'reset-plans': 'PKE_SA_NQA1_doc/reset-plans/retained-original-directory-20261013',
 }
+ROOT_CACHES = {
+    '.pytest_cache': '.tmp/cleanup-retained-20261013/.pytest_cache',
+    '.reset-test-work': '.tmp/cleanup-retained-20261013/.reset-test-work',
+}
 
 
 def witness(root, source, destination):
@@ -35,13 +39,15 @@ def main():
     parser.add_argument('--mode', choices=['preview', 'apply', 'verify', 'undo'], required=True)
     parser.add_argument('--authority', type=Path, required=True)
     parser.add_argument('--journal', type=Path, required=True)
+    parser.add_argument('--bundle', choices=['original-five', 'root-caches'], default='original-five')
     args = parser.parse_args()
     root = migration.root_path(args.root)
+    moves = MOVES if args.bundle == 'original-five' else ROOT_CACHES
     for path in (args.plan, args.authority, args.journal):
         migration.safe(root, path.absolute().relative_to(root).as_posix())
     if args.mode == 'preview':
         rows = []
-        for source, destination in MOVES.items():
+        for source, destination in moves.items():
             tree, state = witness(root, source, destination)
             if state != 'original':
                 raise ValueError('Preview requires original directory')
@@ -55,7 +61,7 @@ def main():
         if (plan.get('schema') != 'cleanup-residual-empty-1'
                 or plan.get('root') != str(root)
                 or plan.get('authority_sha256') != migration.digest(args.authority)
-                or [(r['source'], r['destination']) for r in plan['rows']] != list(MOVES.items())):
+                or [(r['source'], r['destination']) for r in plan['rows']] != list(moves.items())):
             raise ValueError('Plan or authority differs')
         for row in plan['rows']:
             tree, state = witness(root, row['source'], row['destination'])

@@ -1,0 +1,47 @@
+{
+  "schema": "cleanup-residual-empty-1",
+  "root": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1",
+  "rows": [
+    {
+      "source": ".pytest_cache",
+      "destination": ".tmp/cleanup-retained-20261013/.pytest_cache",
+      "tree": {
+        ".": {
+          "device": 13858915109679781494,
+          "inode": 4503599627693837,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "6b62c7a0634e5af55031ea5e694faeec630db7db7b89884f6614de6f5a0e5f01"
+        },
+        "v": {
+          "device": 13858915109679781494,
+          "inode": 3096224744140601,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "20cc4d749f4e8ca8aa5d301143bcc1a930342568a36e93fb144682fc1c37a26a"
+        },
+        "v/cache": {
+          "device": 13858915109679781494,
+          "inode": 3940649674272571,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "20cc4d749f4e8ca8aa5d301143bcc1a930342568a36e93fb144682fc1c37a26a"
+        }
+      }
+    },
+    {
+      "source": ".reset-test-work",
+      "destination": ".tmp/cleanup-retained-20261013/.reset-test-work",
+      "tree": {
+        ".": {
+          "device": 13858915109679781494,
+          "inode": 2251799814182420,
+          "mode": 16895,
+          "attributes": 16,
+          "sddl_sha256": "9044ca6145e3139e67767b019c1036ddd1070ec53f7875ae8a8ec266277349f5"
+        }
+      }
+    }
+  ],
+  "authority_sha256": "ee95c65cb6ffcd97febab163dd2e7b71ecb3250e4a0523f69bdb898c396fcc02"
+}

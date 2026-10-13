@@ -1,0 +1,391 @@
+{
+  "root": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1",
+  "source": "pytest-pilot-temp",
+  "destination": ".tmp/cleanup-retained-20261013/pytest-pilot-temp",
+  "authority_sha256": "ee95c65cb6ffcd97febab163dd2e7b71ecb3250e4a0523f69bdb898c396fcc02",
+  "witness": {
+    "directories": {
+      ".": {
+        "device": 13858915109679781494,
+        "inode": 8162774325373039,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_empty_active_registry_blo0": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819768,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_empty_active_registry_blo0/Audit Beta with spaces": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241082,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_empty_active_registry_blo0/Audit Beta with spaces/db": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241084,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_empty_active_registry_blo0/Audit Beta with spaces/schemas": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530429,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_empty_active_registry_blo0/Audit Beta with spaces/scripts": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819771,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_empty_active_registry_blo0/Audit Beta with spaces/sieving": {
+        "device": 13858915109679781494,
+        "inode": 7599824371951742,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_empty_active_registry_blo0/Audit Beta with spaces/sieving/prompts": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819775,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_foreign_database_path_is_0": {
+        "device": 13858915109679781494,
+        "inode": 10977524092479681,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_foreign_database_path_is_0/Audit Beta with spaces": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819844,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_foreign_database_path_is_0/Audit Beta with spaces/db": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530502,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_foreign_database_path_is_0/Audit Beta with spaces/schemas": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819847,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_foreign_database_path_is_0/Audit Beta with spaces/scripts": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530501,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_foreign_database_path_is_0/Audit Beta with spaces/sieving": {
+        "device": 13858915109679781494,
+        "inode": 7599824371951816,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_foreign_database_path_is_0/Audit Beta with spaces/sieving/prompts": {
+        "device": 13858915109679781494,
+        "inode": 7599824371951817,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_foreign_database_path_is_0/Enconet": {
+        "device": 13858915109679781494,
+        "inode": 8162774325373123,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_generation_stage_requires0": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530416,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_generation_stage_requires0/db": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241074,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_generation_stage_requires0/schemas": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819763,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca0": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241096,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_local_document_run_and_ca0/Audit Beta with spaces": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241099,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca0/Audit Beta with spaces/db": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241101,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca0/Audit Beta with spaces/schemas": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530446,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca0/Audit Beta with spaces/scripts": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530444,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca0/Audit Beta with spaces/sieving": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530447,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca0/Audit Beta with spaces/sieving/prompts": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530448,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca0/Enconet": {
+        "device": 13858915109679781494,
+        "inode": 8444249302083722,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca1": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241115,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_local_document_run_and_ca1/Ekonerg ogled \u010cakovec": {
+        "device": 13858915109679781494,
+        "inode": 8444249302083742,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca1/Ekonerg ogled \u010cakovec/db": {
+        "device": 13858915109679781494,
+        "inode": 7599824371951776,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca1/Ekonerg ogled \u010cakovec/schemas": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530465,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca1/Ekonerg ogled \u010cakovec/scripts": {
+        "device": 13858915109679781494,
+        "inode": 7881299348662431,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca1/Ekonerg ogled \u010cakovec/sieving": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530466,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca1/Ekonerg ogled \u010cakovec/sieving/prompts": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819811,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_local_document_run_and_ca1/Enconet": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819804,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_new_candidate_prompt_need0": {
+        "device": 13858915109679781494,
+        "inode": 8162774325373138,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_new_candidate_prompt_need0/Audit Beta with spaces": {
+        "device": 13858915109679781494,
+        "inode": 8162774325373140,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_new_candidate_prompt_need0/Audit Beta with spaces/db": {
+        "device": 13858915109679781494,
+        "inode": 7881299348662486,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_new_candidate_prompt_need0/Audit Beta with spaces/schemas": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241175,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_new_candidate_prompt_need0/Audit Beta with spaces/scripts": {
+        "device": 13858915109679781494,
+        "inode": 7881299348662485,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_new_candidate_prompt_need0/Audit Beta with spaces/sieving": {
+        "device": 13858915109679781494,
+        "inode": 8162774325373144,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_new_candidate_prompt_need0/Audit Beta with spaces/sieving/prompts": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241177,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_rule_run_requires_matchin0": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241133,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+      },
+      "test_rule_run_requires_matchin0/Ekonerg ogled \u010cakovec": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530481,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_rule_run_requires_matchin0/Ekonerg ogled \u010cakovec/db": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530484,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_rule_run_requires_matchin0/Ekonerg ogled \u010cakovec/schemas": {
+        "device": 13858915109679781494,
+        "inode": 7036874418530485,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_rule_run_requires_matchin0/Ekonerg ogled \u010cakovec/scripts": {
+        "device": 13858915109679781494,
+        "inode": 7318349395241138,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_rule_run_requires_matchin0/Ekonerg ogled \u010cakovec/sieving": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819830,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      },
+      "test_rule_run_requires_matchin0/Ekonerg ogled \u010cakovec/sieving/prompts": {
+        "device": 13858915109679781494,
+        "inode": 6755399441819831,
+        "mode": 16895,
+        "attributes": 16,
+        "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+      }
+    },
+    "shortcuts": {
+      "test_empty_active_registry_blocurrent": {
+        "ino": 7318349395241081,
+        "device": 13858915109679781494,
+        "attributes": 1040,
+        "target": "\\\\?\\C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\pytest-pilot-temp\\test_empty_active_registry_blo0"
+      },
+      "test_foreign_database_path_is_current": {
+        "ino": 7036874418530498,
+        "device": 13858915109679781494,
+        "attributes": 1040,
+        "target": "\\\\?\\C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\pytest-pilot-temp\\test_foreign_database_path_is_0"
+      },
+      "test_generation_stage_requirescurrent": {
+        "ino": 7599824371951729,
+        "device": 13858915109679781494,
+        "attributes": 1040,
+        "target": "\\\\?\\C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\pytest-pilot-temp\\test_generation_stage_requires0"
+      },
+      "test_local_document_run_and_cacurrent": {
+        "ino": 9007199255505033,
+        "device": 13858915109679781494,
+        "attributes": 1040,
+        "target": "\\\\?\\C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\pytest-pilot-temp\\test_local_document_run_and_ca1"
+      },
+      "test_new_candidate_prompt_needcurrent": {
+        "ino": 7599824371951827,
+        "device": 13858915109679781494,
+        "attributes": 1040,
+        "target": "\\\\?\\C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\pytest-pilot-temp\\test_new_candidate_prompt_need0"
+      },
+      "test_rule_run_requires_matchincurrent": {
+        "ino": 8444249302083758,
+        "device": 13858915109679781494,
+        "attributes": 1040,
+        "target": "\\\\?\\C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\pytest-pilot-temp\\test_rule_run_requires_matchin0"
+      }
+    }
+  }
+}

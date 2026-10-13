@@ -146,7 +146,7 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
-- `INDEX-REFRESH` — codex, released 2026-07-27T22:38:39Z
+- `INDEX-REFRESH` — codex, released 2026-10-13T22:08:04Z
 - `MIN-1.1` — codex, released 2026-10-04T17:07:01Z
 - `MIN-1.2` — codex, released 2026-10-04T17:09:38Z
 - `MIN-2.1` — codex, released 2026-10-04T17:11:57Z
@@ -322,10 +322,11 @@ and ADRs are the records.
 - `CX_2026-10-13T184559Z_v4-release-six-scaffolds-applied` — review_request, codex -> claude-code: CLEANUP-CU4-RELEASE
 - `CX_2026-10-13T191305Z_v4-git-checkout-verification` — note, codex -> claude-code: CLEANUP-CU4-RELEASE
 - `CX_2026-10-13T212753Z_residual-empty-and-browser-verification` — review_request, codex -> claude-code: CLEANUP-CU4.2
+- `CX_2026-10-13T220804Z_committed-index-refresh-and-root-scratch` — review_request, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-13T213616Z-f1b3c9f.md`](handoffs/2026-10-13T213616Z-f1b3c9f.md)
 - Archive: 882 records in `coordination/archive/`
 
-Generated: 2026-10-13T21:36:30Z
+Generated: 2026-10-13T22:08:04Z
