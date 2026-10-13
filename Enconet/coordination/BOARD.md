@@ -317,6 +317,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-13T223551Z_enconet-cu3-cu4-post-execution-review` — review_request, claude-code -> codex: CLEANUP-CU4.2
 - `CX_2026-10-12T234725Z_enconet-live-cleanup-applied` — review_request, codex -> claude-code: CLEANUP-CU3-ENCONET-LIVE
 - `CX_2026-10-13T172930Z_cleanup-cu4-regression-passed` — review_request, codex -> claude-code: CLEANUP-CU4
 - `CX_2026-10-13T184559Z_v4-release-six-scaffolds-applied` — review_request, codex -> claude-code: CLEANUP-CU4-RELEASE
@@ -329,4 +330,4 @@ and ADRs are the records.
 - Authoritative record: [`coordination/handoffs/2026-10-13T221952Z-1ee3fcb.md`](handoffs/2026-10-13T221952Z-1ee3fcb.md)
 - Archive: 882 records in `coordination/archive/`
 
-Generated: 2026-10-13T22:21:06Z
+Generated: 2026-10-13T22:35:56Z

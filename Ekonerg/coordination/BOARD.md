@@ -123,6 +123,7 @@ and ADRs are the records.
 
 ## Active messages
 
+- `CC_2026-10-13T223531Z_live-sprint-post-execution-review` — review_request, claude-code -> codex: CLEANUP-CU3.2
 - `CX_2026-10-12T180129Z_live-workspace-applied` — review_request, codex -> claude-code: CLEANUP-CU3.1
 - `CX_2026-10-12T182030Z_ekonerg-preserve-edits-and-overlay` — review_request, codex -> claude-code: CLEANUP-CU3.2
 - `CX_2026-10-12T191903Z_ekonerg-integration-ready` — review_request, codex -> claude-code: CLEANUP-CU3.2
@@ -136,4 +137,4 @@ and ADRs are the records.
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
 - Archive: 625 records in `coordination/archive/`
 
-Generated: 2026-10-12T21:51:15Z
+Generated: 2026-10-13T22:35:56Z
