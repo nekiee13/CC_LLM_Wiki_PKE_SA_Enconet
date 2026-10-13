@@ -36,6 +36,7 @@ and ADRs are the records.
 - `COORD-ALL18-REVIEW-CLOSE` — codex, released 2026-10-07T06:11:12Z
 - `COORD-BOARD-REFRESH-20261010` — codex, released 2026-10-10T21:30:33Z
 - `COORD-CLEANUP-PLAN-REVIEW` — codex, released 2026-10-11T22:17:23Z
+- `COORD-CLEANUP-POST-REVIEW` — codex, released 2026-10-13T22:47:25Z
 - `COORD-CLEANUP-PREPARATION-QUEUE-CLEAR` — codex, released 2026-10-12T17:46:29Z
 - `COORD-CU1-REVIEW-CLOSE` — codex, released 2026-10-11T23:02:55Z
 - `COORD-CU2-REVIEW-CLOSE` — codex, released 2026-10-12T15:34:11Z
@@ -124,17 +125,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-13T223531Z_live-sprint-post-execution-review` — review_request, claude-code -> codex: CLEANUP-CU3.2
-- `CX_2026-10-12T180129Z_live-workspace-applied` — review_request, codex -> claude-code: CLEANUP-CU3.1
-- `CX_2026-10-12T182030Z_ekonerg-preserve-edits-and-overlay` — review_request, codex -> claude-code: CLEANUP-CU3.2
-- `CX_2026-10-12T191903Z_ekonerg-integration-ready` — review_request, codex -> claude-code: CLEANUP-CU3.2
-- `CX_2026-10-12T205035Z_ekonerg-runtime-installation-safety` — review_request, codex -> claude-code: CLEANUP-CU3.2
-- `CX_2026-10-12T210537Z_ekonerg-directory-history-preflight` — status, codex -> claude-code: CLEANUP-CU3.2
-- `CX_2026-10-12T211719Z_ekonerg-native-directory-recovery` — review_request, codex -> claude-code: CLEANUP-CU3.2
-- `CX_2026-10-12T214932Z_ekonerg-live-sprint-applied` — status, codex -> claude-code: CLEANUP-CU3.2
+- `CX_2026-10-13T224239Z_ack-live-sprint-post-execution-review` — acknowledgement, codex -> claude-code: CLEANUP-CU3.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
-- Archive: 625 records in `coordination/archive/`
+- Archive: 633 records in `coordination/archive/`
 
-Generated: 2026-10-13T22:35:56Z
+Generated: 2026-10-13T22:47:25Z

@@ -48,6 +48,7 @@ and ADRs are the records.
 - `CLEANUP-CU4-FINAL` — codex, released 2026-10-13T21:27:53Z
 - `CLEANUP-CU4-RELEASE` — codex, released 2026-10-13T18:45:59Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
+- `COORD-CLEANUP-POST-REVIEW` — codex, released 2026-10-13T22:47:25Z
 - `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
 - `COORD-ENCONET-FINAL-CLOSE` — codex, released 2026-10-10T15:59:00Z
 - `COORD-ENCONET-QUEUE-EMPTY` — codex, released 2026-10-10T17:21:26Z
@@ -318,16 +319,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-13T223551Z_enconet-cu3-cu4-post-execution-review` — review_request, claude-code -> codex: CLEANUP-CU4.2
-- `CX_2026-10-12T234725Z_enconet-live-cleanup-applied` — review_request, codex -> claude-code: CLEANUP-CU3-ENCONET-LIVE
-- `CX_2026-10-13T172930Z_cleanup-cu4-regression-passed` — review_request, codex -> claude-code: CLEANUP-CU4
-- `CX_2026-10-13T184559Z_v4-release-six-scaffolds-applied` — review_request, codex -> claude-code: CLEANUP-CU4-RELEASE
-- `CX_2026-10-13T191305Z_v4-git-checkout-verification` — note, codex -> claude-code: CLEANUP-CU4-RELEASE
-- `CX_2026-10-13T212753Z_residual-empty-and-browser-verification` — review_request, codex -> claude-code: CLEANUP-CU4.2
-- `CX_2026-10-13T220804Z_committed-index-refresh-and-root-scratch` — review_request, codex -> claude-code: CLEANUP-CU4.2
+- `CX_2026-10-13T224239Z_ack-enconet-cu3-cu4-post-execution-review` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-13T221952Z-1ee3fcb.md`](handoffs/2026-10-13T221952Z-1ee3fcb.md)
-- Archive: 882 records in `coordination/archive/`
+- Archive: 889 records in `coordination/archive/`
 
-Generated: 2026-10-13T22:35:56Z
+Generated: 2026-10-13T22:47:25Z
