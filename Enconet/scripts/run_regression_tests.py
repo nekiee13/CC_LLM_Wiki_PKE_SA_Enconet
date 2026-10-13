@@ -15,13 +15,14 @@ import subprocess
 import sys
 import tempfile
 import xml.etree.ElementTree as ET
-from regression_fixture import ROOT, build, historical_test
+from regression_fixture import ROOT, build, historical_test, scratch_home
 
 def protected_hashes() -> dict:
     roots = ("incoming", "raw", "derived", "db", "outputs", "manifests", ".claude")
     values = {}
     for root in roots:
-        for path in (ROOT / root).rglob("*"):
+        directory = ROOT / root if root == ".claude" else layout_path(root)
+        for path in directory.rglob("*"):
             if path.is_file() and path.suffix not in {"-wal", "-shm"}:
                 values[path.relative_to(ROOT).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
     for path in [ROOT / "CLAUDE.md", *(ROOT / "coordination/messages").glob("CC_*.md"),
@@ -36,12 +37,12 @@ def main():
     args = p.parse_args()
     output = args.output.resolve()
     if not output.is_relative_to(layout_path('validation')):
-        p.error("test reports must be under this project's out directory")
+        p.error("test reports must be under this project's configured validation directory")
     output.mkdir(parents=True, exist_ok=True)
     if any((output / name).exists() for name in ("current.xml", "historical.xml", "summary.json")):
         p.error("test report target already exists; use a new output directory")
     before = protected_hashes()
-    parent = ROOT / ".test-tmp"
+    parent = scratch_home()
     parent.mkdir(exist_ok=True)
     work = Path(tempfile.mkdtemp(prefix="regression-isolated-", dir=parent))
     fixture = work / "Enconet-history"

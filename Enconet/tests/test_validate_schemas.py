@@ -15,6 +15,9 @@ def _sandbox(tmp_path: Path) -> Path:
     shutil.copytree(ENCONET / "schemas", root / "schemas")
     (root / "scripts").mkdir(parents=True)
     shutil.copy2(ENCONET / "scripts" / "validate_schemas.py", root / "scripts")
+    shutil.copy2(ENCONET / "scripts" / "project_layout.py", root / "scripts")
+    (root / "project-layout.json").write_text(
+        '{"schema_version":1,"layout":"legacy"}', encoding="utf-8")
     shutil.copy2(ENCONET / "project-state.yml", root)
     (root / "manifests").mkdir()
     (root / "manifests" / "validation_runs.csv").write_text(

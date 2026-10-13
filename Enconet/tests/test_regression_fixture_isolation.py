@@ -33,8 +33,49 @@ def test_zip_traversal_refused_even_with_matching_archive_checksum(tmp_path):
 def test_live_root_and_existing_target_refused(tmp_path):
     with pytest.raises(ValueError, match="isolated"):
         regression_fixture.require_target(ROOT, ROOT)
+    with pytest.raises(ValueError, match="isolated"):
+        regression_fixture.require_target(ROOT / "work" / "not-scratch", ROOT)
+
+
+def test_v4_fixture_uses_local_temp_and_rejects_old_scratch(tmp_path):
+    source = tmp_path / "supplier"
+    source.mkdir()
+    (source / "project-layout.json").write_text(
+        '{"schema_version":1,"layout":"v4"}', encoding="utf-8")
+    target = source / ".tmp" / "history"
+    assert regression_fixture.require_target(target, source) == target
+    with pytest.raises(ValueError, match="isolated"):
+        regression_fixture.require_target(source / ".test-tmp" / "history", source)
+    target.mkdir(parents=True)
     with pytest.raises(ValueError, match="exists"):
-        regression_fixture.require_target(tmp_path, ROOT)
+        regression_fixture.require_target(target, source)
+
+
+def test_fixture_maps_current_v4_contracts_to_isolated_legacy_homes(tmp_path):
+    source = tmp_path / "supplier"
+    source.mkdir()
+    (source / "project-layout.json").write_text(
+        '{"schema_version":1,"layout":"v4"}', encoding="utf-8")
+    for name, text in {"scripts/current.py": "current code", "schemas/spec.json": "{}",
+                       "docs/plans/PLAN.md": "current plan", "work/decisions/CX_ADR.md": "own ADR",
+                       "work/decisions/CC_ADR.md": "Claude ADR", "work/benchmarks/input.yml": "locked"}.items():
+        file = source / name
+        file.parent.mkdir(parents=True, exist_ok=True)
+        file.write_text(text, encoding="utf-8")
+    for name in ("db/schema.sql", "wiki/index.md", "wiki/log.md", "wiki/current-status.md"):
+        file = source / name
+        file.parent.mkdir(parents=True, exist_ok=True)
+        file.write_text("fixture", encoding="utf-8")
+    target = source / ".tmp" / "history"
+    regression_fixture.build(target, source=source)
+    assert json.loads((target / "project-layout.json").read_text())["layout"] == "legacy"
+    assert (target / "scripts/current.py").read_text() == "current code"
+    assert (target / "benchmarks/input.yml").read_text() == "locked"
+    assert (target / "decisions/CX_ADR.md").read_text() == "own ADR"
+    assert not (target / "decisions/CC_ADR.md").exists()
+    assert (target / "docs/PLAN.md").read_text() == "current plan"
+    assert not (source / "benchmarks").exists()
+    assert not (source / "decisions").exists()
 
 def test_no_claude_infrastructure_or_agent_messages_are_copied():
     for path in ("CLAUDE.md", ".claude/commands/audit-close.md", "coordination/messages/CC_test.md", "docs/CC_note.md"):

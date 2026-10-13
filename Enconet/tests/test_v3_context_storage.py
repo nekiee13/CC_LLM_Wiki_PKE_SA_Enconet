@@ -14,8 +14,9 @@ import import_crumbs
 import init_db
 import migrate_db
 import sieve_run
+from project_layout import path as layout_path
 
-GOLDEN=ROOT/'benchmarks/sieving_golden/20261007-v3-nuclear-plan/candidate.json'
+GOLDEN=layout_path('benchmarks', 'sieving_golden/20261007-v3-nuclear-plan/candidate.json')
 
 
 def setup(tmp_path):

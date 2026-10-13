@@ -448,3 +448,18 @@ under `coordination/handoffs`, with no old handoff home recreated. The full
 historical regression and release/scaffold rollout remain
 under the existing CU-4 final checks. No task was added. See
 [Enconet live result](cleanup-cu3/ENCONET_LIVE_SPRINT_RESULT.md).
+
+## CU-4 execution update — 13 October 2026
+
+Enconet's complete post-cleanup regression now passes: **480 tests**, zero
+failures, errors or skips (179 current-code tests and 301 isolated historical
+tests). All test files were selected. The runner confirms 749 protected hashes
+are unchanged. All 19 live aggregate checks pass. The reusable v4 pipeline,
+layout and publication group also passes 27 tests, including synthetic resets
+and separate light/dark dashboard runs.
+
+These results finish the Enconet regression portion of CU-4.2; they do not close
+the entire task. CU-4.1's immutable release and six scaffold upgrades, other
+required suites, held-folder cleanup, Claude review/synchronization and committed
+index refresh remain open. No task was added. See
+[CU-4 regression result](cleanup-cu4/CU4_REGRESSION_RESULT_20261013.md).

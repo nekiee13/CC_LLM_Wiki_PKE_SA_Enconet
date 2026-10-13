@@ -13,6 +13,7 @@ sys.path.insert(0, str(ENCONET / "scripts"))
 
 import run_all_validations  # noqa: E402
 import validate_benchmarks  # noqa: E402
+from project_layout import path as layout_path
 
 
 def test_scoring_fixture_is_complete_locked_and_hand_verified() -> None:
@@ -39,7 +40,7 @@ def test_benchmark_classes_are_deliberately_separate() -> None:
     assert scoring["benchmark_class"] == "scoring"
     assert rendering["benchmark_class"] == "dashboard_rendering"
     assert scoring["metrics"]["classification_counts"] != rendering["expected"]["classification_counts"]
-    policy = (ENCONET / "benchmarks" / "BENCHMARK_POLICY.md").read_text(encoding="utf-8")
+    policy = layout_path("benchmarks", "BENCHMARK_POLICY.md").read_text(encoding="utf-8")
     assert "must never be reconciled" in policy and "human re-approval" in policy
 
 

@@ -9,9 +9,12 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import publish_audit_release as release
+import project_layout
 
 
 def fixture(root):
+    (root / "project-layout.json").write_text(
+        '{"schema_version":1,"layout":"legacy"}', encoding="utf-8")
     (root / "manifests").mkdir()
     (root / "manifests/approvals.csv").write_text(
         "object_id,decision,date,reviewer,notes\n"
@@ -38,6 +41,16 @@ def fixture(root):
         "project-owner,deferred review", f"project-owner,review deferred contract_sha256={release.fingerprint(contract)}")
     approvals.write_text(text, encoding="utf-8")
     return path, contract
+
+
+@pytest.fixture(autouse=True)
+def bind_disposable_local_supplier(monkeypatch):
+    """Exercise the real boundary against this test's own supplier, not live."""
+    make_fixture = fixture
+    def local_fixture(root):
+        monkeypatch.setattr(project_layout, "ROOT", root.resolve())
+        return make_fixture(root)
+    monkeypatch.setattr(sys.modules[__name__], "fixture", local_fixture)
 
 
 def test_preview_writes_nothing_and_apply_keeps_exact_bytes(tmp_path):

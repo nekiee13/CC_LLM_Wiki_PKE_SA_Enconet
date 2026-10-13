@@ -80,7 +80,7 @@ def test_missing_criterion_is_rejected(tmp_path, monkeypatch):
 
 
 def test_foreign_database_is_refused_before_open(tmp_path):
-    with pytest.raises(ValueError, match="local to project"):
+    with pytest.raises(ValueError, match="local to project|foreign project path"):
         tool.seed(db=tool.ROOT.parent / "foreign-supplier-seed-boundary.sqlite")
 
 

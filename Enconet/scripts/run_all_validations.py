@@ -2,6 +2,7 @@
 """Run the EPIC13 phase-aware Enconet validation spine with one verdict."""
 from __future__ import annotations
 from project_layout import path as layout_path
+from project_layout import configuration
 
 from project_records import recorded_path
 import argparse
@@ -134,6 +135,22 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
     evidence_viewer = (
         evidence_run / "dashboard_light.html" if evidence_run else None
     )
+    portable = recorded_path("outputs/archive/legacy-outputs/candidates/evidence_access/portable_package")
+    browser_artifacts = layout_path("validation", run_id or "setup", "browser_evidence")
+    if configuration() == "legacy":
+        # Current code also supports the explicit, disposable historical layout.
+        # This is not file-existence fallback and cannot alter the live v4 audit.
+        package = outputs / f"{supplier}_appendix_b_evaluation_package.json"
+        report = outputs / f"{supplier}_appendix_b_evaluation_report.md"
+        dashboard_data = outputs / f"{supplier}_appendix_b_dashboard_data.json"
+        dashboard = outputs / f"{supplier}_appendix_b_dashboard.html"
+        evidence_root = outputs / "candidates" / "evidence_access"
+        evidence_run = evidence_root / run_id if run_id else None
+        bundle = evidence_run / "evidence_bundle.json" if evidence_run else None
+        evidence_report = evidence_run / f"{supplier}_appendix_b_evaluation_report.md" if evidence_run else None
+        evidence_viewer = evidence_run / f"{supplier}_appendix_b_dashboard.html" if evidence_run else None
+        portable = evidence_root / "portable_package"
+        browser_artifacts = evidence_root / "validation_artifacts" / "browser_evidence"
     app_b = [py, str(SCRIPTS / "validate_app_b_json.py"), str(app_b_json)] if app_b_json else None
     if app_b is not None and phase_rank(phase) >= phase_rank("evaluated"):
         app_b.append("--strict")
@@ -161,18 +178,18 @@ def commands(*, phase: str, supplier: str, db: Path, outputs: Path,
         ),
         "browser_evidence": (
             [py, str(SCRIPTS / "browser_harness.py"), "check", str(evidence_viewer),
-             "--artifacts", str(layout_path("validation", run_id or "setup", "browser_evidence")),
+             "--artifacts", str(browser_artifacts),
              "--require-interactive"] if evidence_viewer else None
         ),
         "dashboard": [py, str(SCRIPTS / "validate_dashboard.py"), str(package),
                       str(dashboard_data), str(dashboard), "--db", str(db), "--phase", phase],
         "review_package": [
             py, str(SCRIPTS / "validate_review_package.py"),
-            str(recorded_path("outputs/archive/legacy-outputs/candidates/evidence_access/portable_package")),
+            str(portable),
         ],
         "evidence_budgets": [
             py, str(SCRIPTS / "validate_evidence_access_budgets.py"),
-            str(recorded_path("outputs/archive/legacy-outputs/candidates/evidence_access/portable_package")),
+            str(portable),
             "--budgets", str(ENCONET / "schemas" / "evidence_access_budgets.yml"),
             "--browser-config", str(ENCONET / "schemas" / "browser_harness.yml"),
         ],

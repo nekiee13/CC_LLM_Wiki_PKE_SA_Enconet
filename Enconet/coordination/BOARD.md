@@ -44,6 +44,7 @@ and ADRs are the records.
 - `CC-CROSSREVIEW-EPIC13` — claude-code, released 2026-07-15T22:15:17Z
 - `CC-CROSSREVIEW-EPIC14` — claude-code, released 2026-07-15T22:46:00Z
 - `CLEANUP-CU3-ENCONET-LIVE` — codex, released 2026-10-12T23:47:25Z
+- `CLEANUP-CU4` — codex, released 2026-10-13T17:30:07Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
 - `COORD-ENCONET-FINAL-CLOSE` — codex, released 2026-10-10T15:59:00Z
@@ -315,10 +316,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CX_2026-10-12T234725Z_enconet-live-cleanup-applied` — review_request, codex -> claude-code: CLEANUP-CU3-ENCONET-LIVE
+- `CX_2026-10-13T172930Z_cleanup-cu4-regression-passed` — review_request, codex -> claude-code: CLEANUP-CU4
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-13T034804Z-f10617d.md`](handoffs/2026-10-13T034804Z-f10617d.md)
 - Archive: 882 records in `coordination/archive/`
 
-Generated: 2026-10-13T03:49:51Z
+Generated: 2026-10-13T17:30:07Z
