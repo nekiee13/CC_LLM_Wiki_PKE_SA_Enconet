@@ -1,5 +1,6 @@
 from pathlib import Path
 import sys
+import os
 
 import pytest
 
@@ -115,3 +116,54 @@ def test_legacy_external_shortcut_is_held_and_never_followed(tmp_path):
     assert len(plan['held']) == 1
     tool.run_legacy(tmp_path, plan, authority, 'apply')
     assert source.exists() and (external / 'keep.md').read_bytes() == b'keep'
+
+
+def populated_fixture(tmp_path):
+    for number, source in enumerate(tool.POPULATED_TEST_HISTORY):
+        path = tmp_path / source / 'Synthetic Company/db/fixture.sqlite'
+        path.parent.mkdir(parents=True)
+        path.write_bytes(('synthetic ' + str(number)).encode())
+    authority = tmp_path / 'authority.md'
+    authority.write_bytes(b'synthetic retention authority')
+    return authority, tool.prepare_populated(tmp_path, authority)
+
+
+def test_populated_history_native_apply_retry_verify_undo_preserves_every_file(tmp_path):
+    authority, plan = populated_fixture(tmp_path)
+    for mode in ('apply', 'apply', 'verify', 'undo', 'undo'):
+        result = tool.run_legacy(tmp_path, plan, authority, mode, populated=True)
+        assert result['preserved'] and result['files'] == 5
+    assert tool.prepare_populated(tmp_path, authority) == plan
+
+
+def test_populated_changed_file_blocks_all_trees_before_rename(tmp_path):
+    authority, plan = populated_fixture(tmp_path)
+    target = tmp_path / tool.POPULATED_TEST_HISTORY[-1] / 'Synthetic Company/db/fixture.sqlite'
+    target.write_bytes(b'changed')
+    with pytest.raises(ValueError, match='contents changed'):
+        tool.run_legacy(tmp_path, plan, authority, 'apply', populated=True)
+    assert all((tmp_path / p).exists() for p in tool.POPULATED_TEST_HISTORY)
+
+
+def test_populated_agent_file_and_hardlink_are_rejected(tmp_path):
+    authority, _ = populated_fixture(tmp_path)
+    protected = tmp_path / tool.POPULATED_TEST_HISTORY[0] / 'CLAUDE.md'
+    with pytest.raises(ValueError, match='ownership'):
+        tool.scratch_path(tmp_path, protected.relative_to(tmp_path).as_posix())
+    source = tmp_path / tool.POPULATED_TEST_HISTORY[0] / 'Synthetic Company/db/fixture.sqlite'
+    os.link(source, source.parent / 'alias.sqlite')
+    with pytest.raises(ValueError, match='[Hh]ard-linked'):
+        tool.prepare_populated(tmp_path, authority)
+
+
+def test_populated_scope_foreign_destination_and_bundle_mix_are_refused(tmp_path):
+    authority, plan = populated_fixture(tmp_path)
+    with pytest.raises(ValueError, match='root or authority'):
+        tool.run_legacy(tmp_path, plan, authority, 'apply')
+    plan['rows'][0]['destination'] = 'Enconet/outputs/foreign'
+    with pytest.raises(ValueError, match='Foreign legacy'):
+        tool.run_legacy(tmp_path, plan, authority, 'apply', populated=True)
+    plan['rows'][0]['source'] = 'audit_template/framework/v4'
+    with pytest.raises(ValueError, match='scope differs'):
+        tool.run_legacy(tmp_path, plan, authority, 'apply', populated=True)
+    assert all((tmp_path / p).exists() for p in tool.POPULATED_TEST_HISTORY)

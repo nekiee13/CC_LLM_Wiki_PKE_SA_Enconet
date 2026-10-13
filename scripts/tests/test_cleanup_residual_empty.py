@@ -67,3 +67,25 @@ def test_root_cache_bundle_is_separate_and_reversible(tmp_path, monkeypatch):
         assert tool.main() == 0
     assert all((tmp_path / name).is_dir() for name in tool.ROOT_CACHES)
     assert not any((tmp_path / name).exists() for name in tool.MOVES)
+
+
+def test_old_doc_bundle_preserves_empty_shells_and_refuses_files(tmp_path, monkeypatch):
+    (tmp_path / 'doc/retained/subdirectory').mkdir(parents=True)
+    authority = tmp_path / 'authority.md'
+    authority.write_bytes(b'synthetic empty-doc retention')
+    base = ['tool', '--root', str(tmp_path), '--plan', str(tmp_path / 'doc-plan.json'),
+            '--authority', str(authority), '--journal', str(tmp_path / 'doc-journal.jsonl'),
+            '--bundle', 'old-doc']
+    def run(mode):
+        monkeypatch.setattr(sys, 'argv', base + ['--mode', mode])
+        return tool.main()
+    run('preview')
+    owner = tmp_path / 'doc/owner.txt'
+    owner.write_bytes(b'keep')
+    with pytest.raises(ValueError, match='files remain'):
+        run('apply')
+    assert owner.read_bytes() == b'keep'
+    owner.unlink()  # Disposable fixture only.
+    for mode in ('apply', 'apply', 'verify', 'undo', 'undo'):
+        assert run(mode) == 0
+    assert (tmp_path / 'doc/retained/subdirectory').is_dir()

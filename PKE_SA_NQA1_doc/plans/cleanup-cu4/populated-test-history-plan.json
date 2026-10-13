@@ -1,0 +1,1269 @@
+{
+  "schema": "legacy-populated-test-history-1",
+  "root": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1",
+  "rows": [
+    {
+      "source": "audit_template/tests/analysis-bundle-yupz4b7d",
+      "destination": ".tmp/cleanup-retained-20261014/audit_template/tests/analysis-bundle-yupz4b7d",
+      "witness": {
+        "directories": {
+          ".": {
+            "device": 13858915109679781494,
+            "inode": 18577348463371422,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+          },
+          "Mali Audit": {
+            "device": 13858915109679781494,
+            "inode": 21392098230477986,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/.bootstrap": {
+            "device": 13858915109679781494,
+            "inode": 23925373020873899,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/db": {
+            "device": 13858915109679781494,
+            "inode": 18295873486660790,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/schemas": {
+            "device": 13858915109679781494,
+            "inode": 24769797951005886,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/scripts": {
+            "device": 13858915109679781494,
+            "inode": 18014398509950162,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/sieving": {
+            "device": 13858915109679781494,
+            "inode": 21110623253767417,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/sieving/runs": {
+            "device": 13858915109679781494,
+            "inode": 16044073672975611,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/sieving/runs/RUN-20261001-02": {
+            "device": 13858915109679781494,
+            "inode": 14918173766132990,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Other Audit": {
+            "device": 13858915109679781494,
+            "inode": 19703248370214053,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          }
+        },
+        "shortcuts": {},
+        "files": {
+          "Mali Audit/db/nqa_audit.sqlite": {
+            "device": 13858915109679781494,
+            "inode": 29273397578376360,
+            "mtime_ns": 1790866294305876500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "f9342d24c6beda603fb9875513478fe0d50800117d84a39b3cb4f347ece8e169"
+          },
+          "Mali Audit/db/schema.sql": {
+            "device": 13858915109679781494,
+            "inode": 27303072741401785,
+            "mtime_ns": 1790866293954855200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "07bc63c718c5458470aa90c147182d386b6a09e3a5bff79c01c0d8f5eb15c6a5"
+          },
+          "Mali Audit/schemas/id_patterns.yml": {
+            "device": 13858915109679781494,
+            "inode": 19703248370214080,
+            "mtime_ns": 1790866293962418200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4746fd8d347373bd7800327055770a98b43a9d803958e97c46b9cc0a02f22174"
+          },
+          "Mali Audit/schemas/vocabularies.yml": {
+            "device": 13858915109679781494,
+            "inode": 18295873486660810,
+            "mtime_ns": 1790866293967687300,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "14131522868b19e4e8cdbccb68146d472d7dfeffbe98d58a6ab1a4aa9d95c90f"
+          },
+          "Mali Audit/scripts/audit_state.py": {
+            "device": 13858915109679781494,
+            "inode": 17451448556528851,
+            "mtime_ns": 1790866293972623600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4aa2881306752ab10b5405f28f384d9bb9b24740b9183f7b98be74c79a443130"
+          },
+          "Mali Audit/scripts/db_util.py": {
+            "device": 13858915109679781494,
+            "inode": 17732923533239508,
+            "mtime_ns": 1790866293977474200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "9c7e64bc4ee2f0d10b2ace280d0b979478265004b4adf7310ea3adbbc0d75411"
+          },
+          "Mali Audit/scripts/init_db.py": {
+            "device": 13858915109679781494,
+            "inode": 17169973579818199,
+            "mtime_ns": 1790866293982048900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d002fd43af1699ded84e0d4be8748fcabf8586d0d5c4affa087005f1e5a7b0a7"
+          },
+          "Mali Audit/scripts/project_paths.py": {
+            "device": 13858915109679781494,
+            "inode": 17451448556528862,
+            "mtime_ns": 1790866293986879700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8d77de08e2840052f759499d19bca1dc1f526d7245c19bc5fc038402333d6af4"
+          },
+          "Mali Audit/scripts/sieve_diff.py": {
+            "device": 13858915109679781494,
+            "inode": 25614222881137895,
+            "mtime_ns": 1790866294042091600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "c274a70761c3f0404eb838867b8ded0b5e8a92867a2de2e1ed5e52d628e7213f"
+          },
+          "Mali Audit/scripts/sieve_metrics.py": {
+            "device": 13858915109679781494,
+            "inode": 19421773393503470,
+            "mtime_ns": 1790866294049574000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d912fae5d44548939f0fe45ccae0bf1b0666cfc84535af5039244b0829245d1a"
+          },
+          "Mali Audit/sieving/runs/RUN-20261001-02/diff-RUN-20261001-01-to-RUN-20261001-02.json": {
+            "device": 13858915109679781494,
+            "inode": 18577348463371528,
+            "mtime_ns": 1790866294622325900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "928ba0acff0e9ec3fb2c532c2d22eba71d109ef5587b230b4d237c121a5e8b00"
+          },
+          "Mali Audit/sieving/runs/RUN-20261001-02/diff-RUN-20261001-01-to-RUN-20261001-02.md": {
+            "device": 13858915109679781494,
+            "inode": 17169973579818250,
+            "mtime_ns": 1790866294622325900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8a087f456f0c58b25353fffdfa35806dacea71889b45b76e8961a022080d46de"
+          },
+          "Mali Audit/sieving/runs/RUN-20261001-02/metrics.json": {
+            "device": 13858915109679781494,
+            "inode": 15199648742843647,
+            "mtime_ns": 1790866294405684500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "2b46556054134c2d67929409ebe20bf915c3b96126a38431f223114fe743c21f"
+          },
+          "Mali Audit/sieving/runs/RUN-20261001-02/metrics.md": {
+            "device": 13858915109679781494,
+            "inode": 17169973579818245,
+            "mtime_ns": 1790866294405684500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "14c90ab46e24a586e5f1ace3526726a4553ba723c4856a26238c72f7f483b6d1"
+          },
+          "Other Audit/marker.txt": {
+            "device": 13858915109679781494,
+            "inode": 22236523160609959,
+            "mtime_ns": 1790866293935033800,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "6ca7ea2feefc88ecb5ed6356ed963f47dc9137f82526fdd25d618ea626d0803f"
+          }
+        }
+      }
+    },
+    {
+      "source": "audit_template/tests/phase-criteria-382h_mz1",
+      "destination": ".tmp/cleanup-retained-20261014/audit_template/tests/phase-criteria-382h_mz1",
+      "witness": {
+        "directories": {
+          ".": {
+            "device": 13858915109679781494,
+            "inode": 15481123719551598,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+          },
+          "Enconet": {
+            "device": 13858915109679781494,
+            "inode": 13792273859287666,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka": {
+            "device": 13858915109679781494,
+            "inode": 14636698789419633,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/.bootstrap": {
+            "device": 13858915109679781494,
+            "inode": 14355223812708984,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/db": {
+            "device": 13858915109679781494,
+            "inode": 13510798882577020,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/schemas": {
+            "device": 13858915109679781494,
+            "inode": 13510798882577023,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/scripts": {
+            "device": 13858915109679781494,
+            "inode": 13792273859287685,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving": {
+            "device": 13858915109679781494,
+            "inode": 14355223812709015,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving/prompts": {
+            "device": 13858915109679781494,
+            "inode": 12947848929155739,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving/src": {
+            "device": 13858915109679781494,
+            "inode": 13510798882577059,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor": {
+            "device": 13858915109679781494,
+            "inode": 49821070878251684,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/extract": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313135,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/io": {
+            "device": 13858915109679781494,
+            "inode": 12947848929155763,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/query": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313149,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/templates": {
+            "device": 13858915109679781494,
+            "inode": 12947848929155780,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          }
+        },
+        "shortcuts": {},
+        "files": {
+          "\u010cista Tvrtka/db/nqa_audit.sqlite": {
+            "device": 13858915109679781494,
+            "inode": 11540474045602515,
+            "mtime_ns": 1790824579801166200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "cb7d78e7a9e82689d8ff9796045b028fcc1d27a6376d8e4e4bdfcb1458f3d045"
+          },
+          "\u010cista Tvrtka/db/schema.sql": {
+            "device": 13858915109679781494,
+            "inode": 13229323905866366,
+            "mtime_ns": 1790824577343368900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "07bc63c718c5458470aa90c147182d386b6a09e3a5bff79c01c0d8f5eb15c6a5"
+          },
+          "\u010cista Tvrtka/schemas/app_b_taxonomy.yml": {
+            "device": 13858915109679781494,
+            "inode": 12947848929155732,
+            "mtime_ns": 1790824577419739500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "2d3ba9ab1231c1f454f4f395b1e68e3ba3e908a3548c4a3eedba0f439965414f"
+          },
+          "\u010cista Tvrtka/schemas/id_patterns.yml": {
+            "device": 13858915109679781494,
+            "inode": 13229323905866369,
+            "mtime_ns": 1790824577350953600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4746fd8d347373bd7800327055770a98b43a9d803958e97c46b9cc0a02f22174"
+          },
+          "\u010cista Tvrtka/schemas/sieving_contract.yml": {
+            "device": 13858915109679781494,
+            "inode": 13510798882577046,
+            "mtime_ns": 1790824577425850700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "54ee14f82d87017e3941de58b4c4554fdf6a8bce7befddecad2c688d6af11aa0"
+          },
+          "\u010cista Tvrtka/schemas/vocabularies.yml": {
+            "device": 13858915109679781494,
+            "inode": 13510798882577026,
+            "mtime_ns": 1790824577355996500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "14131522868b19e4e8cdbccb68146d472d7dfeffbe98d58a6ab1a4aa9d95c90f"
+          },
+          "\u010cista Tvrtka/scripts/audit_state.py": {
+            "device": 13858915109679781494,
+            "inode": 12947848929155718,
+            "mtime_ns": 1790824577360687300,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4aa2881306752ab10b5405f28f384d9bb9b24740b9183f7b98be74c79a443130"
+          },
+          "\u010cista Tvrtka/scripts/db_util.py": {
+            "device": 13858915109679781494,
+            "inode": 12947848929155720,
+            "mtime_ns": 1790824577365494700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "9c7e64bc4ee2f0d10b2ace280d0b979478265004b4adf7310ea3adbbc0d75411"
+          },
+          "\u010cista Tvrtka/scripts/init_db.py": {
+            "device": 13858915109679781494,
+            "inode": 12947848929155721,
+            "mtime_ns": 1790824577370548000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d002fd43af1699ded84e0d4be8748fcabf8586d0d5c4affa087005f1e5a7b0a7"
+          },
+          "\u010cista Tvrtka/scripts/project_paths.py": {
+            "device": 13858915109679781494,
+            "inode": 13229323905866381,
+            "mtime_ns": 1790824577376943900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8d77de08e2840052f759499d19bca1dc1f526d7245c19bc5fc038402333d6af4"
+          },
+          "\u010cista Tvrtka/scripts/run_all_validations.py": {
+            "device": 13858915109679781494,
+            "inode": 11258999068891852,
+            "mtime_ns": 1790824577560702800,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d5979627128b2e1edda819c1509a60fc57f5b22e6bf337a77c4c9e5f195ad748"
+          },
+          "\u010cista Tvrtka/scripts/sieving_lib.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313167,
+            "mtime_ns": 1790824577566250300,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "a9f81277b35ec2f5eac808abac9d5c7eb91f2c4485c5904b628a239ad01de745"
+          },
+          "\u010cista Tvrtka/scripts/validate_app_b_json.py": {
+            "device": 13858915109679781494,
+            "inode": 40250921670089424,
+            "mtime_ns": 1790824577573122400,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8d35339c6bf214281afd9b52fe1c70dea53ac0a219fadf1293e432c3401698e7"
+          },
+          "\u010cista Tvrtka/scripts/validate_requirements.py": {
+            "device": 13858915109679781494,
+            "inode": 15199648742841037,
+            "mtime_ns": 1790824577578020800,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "ee829d7bc72199260af32e637681cc1e4b5ca5656abb4e01b4270d724e8c2551"
+          },
+          "\u010cista Tvrtka/sieving/cli.py": {
+            "device": 13858915109679781494,
+            "inode": 13510798882577048,
+            "mtime_ns": 1790824577431714700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d396e04573429eb04ada13da4576b47c0994a7e04dd7bc121196d26963985688"
+          },
+          "\u010cista Tvrtka/sieving/prompts/active.yml": {
+            "device": 13858915109679781494,
+            "inode": 18295873486658209,
+            "mtime_ns": 1790824577437699700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "491e925bd55a68b0d2741c3d5de7530819ff0d05b876b20ea1bf214c43adc075"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/config.py": {
+            "device": 13858915109679781494,
+            "inode": 12103423999023784,
+            "mtime_ns": 1790824577450058000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d33c2307302ef45c84b7d907ca75a5b50c4a658a66e2f22087d935f9d7028436"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/contract.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313130,
+            "mtime_ns": 1790824577455464500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "995cf8b97b34e3aeaada6c9b2f9da49ec0684682c2dadd312fd482f635cbccd2"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/crumb_validation.py": {
+            "device": 13858915109679781494,
+            "inode": 12103423999023790,
+            "mtime_ns": 1790824577461443900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "9a3002486289e5c6103d391952ad58b4f760871c57ab8296867cc59d36006c87"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/pipeline.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313147,
+            "mtime_ns": 1790824577504183000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "948c628a435fc263977f0ea903e4f930c5e39ca95efbe5270c2f8d7d69f8c558"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/__init__.py": {
+            "device": 13858915109679781494,
+            "inode": 12384898975734437,
+            "mtime_ns": 1790824577444137400,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "f731a0d87f15d39f6cd0514a24aa99dc835f4cacc2263482734323d655f4e938"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/extract/load_and_flatten.py": {
+            "device": 13858915109679781494,
+            "inode": 12103423999023794,
+            "mtime_ns": 1790824577474371900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "002c99c4298bf48c4ce1830c6c88ee1db761cc3f3fff6977f2e0d4532e6b3f4e"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/extract/__init__.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313137,
+            "mtime_ns": 1790824577467770000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "28845ba0dddb24ae1ab5ae18bdb3379368c1ca8a698c9db67876b678e6ccb2c4"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/io/export.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313144,
+            "mtime_ns": 1790824577492629100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "cd8117b1ccf89cc7d1714c366018cbdbb04fb6e30bd2ed21663543d0997390e2"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/io/files.py": {
+            "device": 13858915109679781494,
+            "inode": 12384898975734458,
+            "mtime_ns": 1790824577498338800,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "0daf9dabc9b9128636eac233110dc2ae75051a30b94b56268e7fa69282aff76c"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/io/_paths.py": {
+            "device": 13858915109679781494,
+            "inode": 12384898975734455,
+            "mtime_ns": 1790824577487292000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d423002b981c48a1646dd0bd1149b5cda984f6c69a6c05893e4d20aa9e7d7102"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/io/__init__.py": {
+            "device": 13858915109679781494,
+            "inode": 12103423999023796,
+            "mtime_ns": 1790824577480217000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "a063cfb42df860fd7c8afabb9ae83693ffbab706e9306df25bba6d4c9bf2f3d1"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/query/compiler.py": {
+            "device": 13858915109679781494,
+            "inode": 15762598696262336,
+            "mtime_ns": 1790824577517878800,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "3d5949004b0b5ae52dc8c7bf61c7ee9bfa403b488e459b83674aad919fd89c3d"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/query/engine.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313153,
+            "mtime_ns": 1790824577522580300,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "865eef17c2a1b529b178b00e931b06e651d1413c5c53555c3f40b9378da179a8"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/query/schema.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313155,
+            "mtime_ns": 1790824577527772200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "51d02325d5020f4d982e8e8b1e8c3cd6d201b2e7c5f63b9fe51800bd10c604f3"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/query/__init__.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313150,
+            "mtime_ns": 1790824577511515400,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "11f895661f7880fd0d7fb44a0590d75474a26f8bd66e5d678192999dde8dad2e"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/templates/app_b.py": {
+            "device": 13858915109679781494,
+            "inode": 11821949022313159,
+            "mtime_ns": 1790824577539935500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "7fb467ee48e225f1b3dcf7a510daf54265ffd3290d76699d98392c67b0a3bd80"
+          },
+          "\u010cista Tvrtka/sieving/src/json_extractor/templates/__init__.py": {
+            "device": 13858915109679781494,
+            "inode": 11540474045602502,
+            "mtime_ns": 1790824577532955700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "091aaa5b3db6e9a6a9c7644daa364ef974b26141492a78d11746d53018c6eb5e"
+          }
+        }
+      }
+    },
+    {
+      "source": "audit_template/tests/source-validators-0ex7vaq2",
+      "destination": ".tmp/cleanup-retained-20261014/audit_template/tests/source-validators-0ex7vaq2",
+      "witness": {
+        "directories": {
+          ".": {
+            "device": 13858915109679781494,
+            "inode": 7599824371423348,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+          },
+          "\u010cista Tvrtka": {
+            "device": 13858915109679781494,
+            "inode": 6755399441291382,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/.bootstrap": {
+            "device": 13858915109679781494,
+            "inode": 6192449487870138,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/db": {
+            "device": 13858915109679781494,
+            "inode": 4785074604316964,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/derived": {
+            "device": 13858915109679781494,
+            "inode": 12947848928927742,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/manifests": {
+            "device": 13858915109679781494,
+            "inode": 19140298416562210,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/raw": {
+            "device": 13858915109679781494,
+            "inode": 26458647811039229,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/schemas": {
+            "device": 13858915109679781494,
+            "inode": 17169973579586982,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "\u010cista Tvrtka/scripts": {
+            "device": 13858915109679781494,
+            "inode": 5066549581028917,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          }
+        },
+        "shortcuts": {},
+        "files": {
+          "\u010cista Tvrtka/db/nqa_audit.sqlite": {
+            "device": 13858915109679781494,
+            "inode": 6755399441291440,
+            "mtime_ns": 1790825473556035700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "e0418973d5203b39942fd94621b1d6882ce43cbed6a8767a4eea6395bd76e480"
+          },
+          "\u010cista Tvrtka/db/schema.sql": {
+            "device": 13858915109679781494,
+            "inode": 20829148276825399,
+            "mtime_ns": 1790825472824935300,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "07bc63c718c5458470aa90c147182d386b6a09e3a5bff79c01c0d8f5eb15c6a5"
+          },
+          "\u010cista Tvrtka/derived/DOC-0001.txt": {
+            "device": 13858915109679781494,
+            "inode": 3659174697479575,
+            "mtime_ns": 1790825473772857000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8810ad581e59f2bc3928b261707a71308f7e139eb04820366dc4d5c18d980225"
+          },
+          "\u010cista Tvrtka/manifests/raw_sources.csv": {
+            "device": 13858915109679781494,
+            "inode": 4503599627611537,
+            "mtime_ns": 1790825473550320100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "569f032cf271980000eeacd2c0e84cb1ca977829408e20a797c8390ecf53d8d7"
+          },
+          "\u010cista Tvrtka/raw/sample.txt": {
+            "device": 13858915109679781494,
+            "inode": 3377699720768917,
+            "mtime_ns": 1790825473549089000,
+            "mode": 33060,
+            "attributes": 33,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"
+          },
+          "\u010cista Tvrtka/schemas/id_patterns.yml": {
+            "device": 13858915109679781494,
+            "inode": 11258999068663240,
+            "mtime_ns": 1790825472831220900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4746fd8d347373bd7800327055770a98b43a9d803958e97c46b9cc0a02f22174"
+          },
+          "\u010cista Tvrtka/schemas/vocabularies.yml": {
+            "device": 13858915109679781494,
+            "inode": 3940649674186250,
+            "mtime_ns": 1790825472836050700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "14131522868b19e4e8cdbccb68146d472d7dfeffbe98d58a6ab1a4aa9d95c90f"
+          },
+          "\u010cista Tvrtka/scripts/audit_state.py": {
+            "device": 13858915109679781494,
+            "inode": 16325548649455335,
+            "mtime_ns": 1790825472840701500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4aa2881306752ab10b5405f28f384d9bb9b24740b9183f7b98be74c79a443130"
+          },
+          "\u010cista Tvrtka/scripts/db_util.py": {
+            "device": 13858915109679781494,
+            "inode": 14918173765902058,
+            "mtime_ns": 1790825472845014000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "9c7e64bc4ee2f0d10b2ace280d0b979478265004b4adf7310ea3adbbc0d75411"
+          },
+          "\u010cista Tvrtka/scripts/init_db.py": {
+            "device": 13858915109679781494,
+            "inode": 15481123719323571,
+            "mtime_ns": 1790825472849776600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d002fd43af1699ded84e0d4be8748fcabf8586d0d5c4affa087005f1e5a7b0a7"
+          },
+          "\u010cista Tvrtka/scripts/project_paths.py": {
+            "device": 13858915109679781494,
+            "inode": 26740122787749831,
+            "mtime_ns": 1790825472854592600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8d77de08e2840052f759499d19bca1dc1f526d7245c19bc5fc038402333d6af4"
+          },
+          "\u010cista Tvrtka/scripts/source_registry.py": {
+            "device": 13858915109679781494,
+            "inode": 17451448556298213,
+            "mtime_ns": 1790825472903383400,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "3e6da5f5d8bbbbf3654734d1ce5545e25653e9ad482a99d41502d98d223bbaa6"
+          },
+          "\u010cista Tvrtka/scripts/validate_chunks.py": {
+            "device": 13858915109679781494,
+            "inode": 16044073672744950,
+            "mtime_ns": 1790825472909857000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "1d3c69fc2590f012d2ed78076902de844f9b41c0f466733a92f72b6ed5328d58"
+          },
+          "\u010cista Tvrtka/scripts/validate_raw_sources.py": {
+            "device": 13858915109679781494,
+            "inode": 9570149208399866,
+            "mtime_ns": 1790825472916078900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "ab07e9912f1f5f55719d17b4813406fba4a3e3a54f6a7aac6a5497b8ad1ea05d"
+          }
+        }
+      }
+    },
+    {
+      "source": "audit_template/tests/source-validators-94s0r7sf",
+      "destination": ".tmp/cleanup-retained-20261014/audit_template/tests/source-validators-94s0r7sf",
+      "witness": {
+        "directories": {
+          ".": {
+            "device": 13858915109679781494,
+            "inode": 8162774324844621,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "9ec220d870c480e2486a24c976f804a86255a494a413ce5d8cebf52e9c7de614"
+          },
+          "Mali Audit": {
+            "device": 13858915109679781494,
+            "inode": 6755399441291343,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/.bootstrap": {
+            "device": 13858915109679781494,
+            "inode": 7318349394712691,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/db": {
+            "device": 13858915109679781494,
+            "inode": 7599824371423354,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/derived": {
+            "device": 13858915109679781494,
+            "inode": 5629499534448863,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/manifests": {
+            "device": 13858915109679781494,
+            "inode": 4785074604316900,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/raw": {
+            "device": 13858915109679781494,
+            "inode": 7599824371423451,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/schemas": {
+            "device": 13858915109679781494,
+            "inode": 6473924464580735,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Mali Audit/scripts": {
+            "device": 13858915109679781494,
+            "inode": 6473924464580761,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          },
+          "Other Audit": {
+            "device": 13858915109679781494,
+            "inode": 6473924464580689,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "a32586c43bcf8165dbb39e06c8ffe76c4a8aceea5f20e4e5a896e5370dfa6390"
+          }
+        },
+        "shortcuts": {},
+        "files": {
+          "Mali Audit/db/nqa_audit.sqlite": {
+            "device": 13858915109679781494,
+            "inode": 11258999068661870,
+            "mtime_ns": 1790825472445112700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "e0418973d5203b39942fd94621b1d6882ce43cbed6a8767a4eea6395bd76e480"
+          },
+          "Mali Audit/db/schema.sql": {
+            "device": 13858915109679781494,
+            "inode": 6192449487870077,
+            "mtime_ns": 1790825471693475400,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "07bc63c718c5458470aa90c147182d386b6a09e3a5bff79c01c0d8f5eb15c6a5"
+          },
+          "Mali Audit/derived/DOC-0001.txt": {
+            "device": 13858915109679781494,
+            "inode": 5629499534448897,
+            "mtime_ns": 1790825472664272700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8810ad581e59f2bc3928b261707a71308f7e139eb04820366dc4d5c18d980225"
+          },
+          "Mali Audit/manifests/raw_sources.csv": {
+            "device": 13858915109679781494,
+            "inode": 4785074604316908,
+            "mtime_ns": 1790825472439455500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "569f032cf271980000eeacd2c0e84cb1ca977829408e20a797c8390ecf53d8d7"
+          },
+          "Mali Audit/raw/sample.txt": {
+            "device": 13858915109679781494,
+            "inode": 5348024557738229,
+            "mtime_ns": 1790825472434176500,
+            "mode": 33060,
+            "attributes": 33,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"
+          },
+          "Mali Audit/schemas/id_patterns.yml": {
+            "device": 13858915109679781494,
+            "inode": 6755399441291413,
+            "mtime_ns": 1790825471701305700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4746fd8d347373bd7800327055770a98b43a9d803958e97c46b9cc0a02f22174"
+          },
+          "Mali Audit/schemas/vocabularies.yml": {
+            "device": 13858915109679781494,
+            "inode": 6192449487870104,
+            "mtime_ns": 1790825471706994600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "14131522868b19e4e8cdbccb68146d472d7dfeffbe98d58a6ab1a4aa9d95c90f"
+          },
+          "Mali Audit/scripts/audit_state.py": {
+            "device": 13858915109679781494,
+            "inode": 8725724278266010,
+            "mtime_ns": 1790825471713072100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "4aa2881306752ab10b5405f28f384d9bb9b24740b9183f7b98be74c79a443130"
+          },
+          "Mali Audit/scripts/db_util.py": {
+            "device": 13858915109679781494,
+            "inode": 7036874418002082,
+            "mtime_ns": 1790825471719320100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "9c7e64bc4ee2f0d10b2ace280d0b979478265004b4adf7310ea3adbbc0d75411"
+          },
+          "Mali Audit/scripts/init_db.py": {
+            "device": 13858915109679781494,
+            "inode": 6192449487870118,
+            "mtime_ns": 1790825471725626700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "d002fd43af1699ded84e0d4be8748fcabf8586d0d5c4affa087005f1e5a7b0a7"
+          },
+          "Mali Audit/scripts/project_paths.py": {
+            "device": 13858915109679781494,
+            "inode": 5910974511159470,
+            "mtime_ns": 1790825471731868900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "8d77de08e2840052f759499d19bca1dc1f526d7245c19bc5fc038402333d6af4"
+          },
+          "Mali Audit/scripts/source_registry.py": {
+            "device": 13858915109679781494,
+            "inode": 5348024557738171,
+            "mtime_ns": 1790825471784300200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "3e6da5f5d8bbbbf3654734d1ce5545e25653e9ad482a99d41502d98d223bbaa6"
+          },
+          "Mali Audit/scripts/validate_chunks.py": {
+            "device": 13858915109679781494,
+            "inode": 6192449487870143,
+            "mtime_ns": 1790825471791179800,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "1d3c69fc2590f012d2ed78076902de844f9b41c0f466733a92f72b6ed5328d58"
+          },
+          "Mali Audit/scripts/validate_raw_sources.py": {
+            "device": 13858915109679781494,
+            "inode": 6192449487870151,
+            "mtime_ns": 1790825471796428700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "ab07e9912f1f5f55719d17b4813406fba4a3e3a54f6a7aac6a5497b8ad1ea05d"
+          },
+          "Other Audit/marker.txt": {
+            "device": 13858915109679781494,
+            "inode": 26458647811037292,
+            "mtime_ns": 1790825471670141300,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "1e454ce0d9da441149c181e733cd337cdcf35dba21f42be7b7adc3185adf3f41",
+            "sha256": "6ca7ea2feefc88ecb5ed6356ed963f47dc9137f82526fdd25d618ea626d0803f"
+          }
+        }
+      }
+    },
+    {
+      "source": "audit_template/tests/__pycache__",
+      "destination": ".tmp/cleanup-retained-20261014/audit_template/tests/__pycache__",
+      "witness": {
+        "directories": {
+          ".": {
+            "device": 13858915109679781494,
+            "inode": 2251799813943949,
+            "mode": 16895,
+            "attributes": 16,
+            "acl_sha256": "9044ca6145e3139e67767b019c1036ddd1070ec53f7875ae8a8ec266277349f5"
+          }
+        },
+        "shortcuts": {},
+        "files": {
+          "test_bootstrap_chunking.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 15762598696253114,
+            "mtime_ns": 1791635266852725100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "73f3aeed94ab8c163429fa27485ede1608b62d5b10477224c90df636f20710f8"
+          },
+          "test_bootstrap_sieving.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 3659174698108146,
+            "mtime_ns": 1791367897300357500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "85811f3063ae0e0754bcd4c350d2d47cd511225c5a687b2a3310991bea17b0d9"
+          },
+          "test_candidate_path_sweep_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 8725724278988617,
+            "mtime_ns": 1791844548508137200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "2e79fa4ebcbc44ea2c3121fedf85e1b59b750b31668ce1a13a801fe09e8e7849"
+          },
+          "test_framework_candidate_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 4222124651624293,
+            "mtime_ns": 1791843474531782000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "789f8a21c1697ffe54176da2c013000cee5fc4cdc3e1d39189c673635c86d955"
+          },
+          "test_framework_pipeline_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 7599824372129054,
+            "mtime_ns": 1791821035340049500,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "99d36cc23fe801ea927c8e9465fdcbc8b48c4703a21b0a676484b6b58da82634"
+          },
+          "test_framework_release_v2.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 20266198323267142,
+            "mtime_ns": 1791635170713831100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "30c1436627422cae68f84324f130af1279d2c20e73ca5916d9a82b831cf76000"
+          },
+          "test_framework_release_v3.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 24206847998050833,
+            "mtime_ns": 1791634781332617700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "9a4f2304b265004d783ebe63f67caaebdabc30b9df3506ebb5bb47c60e0074c6"
+          },
+          "test_preserving_intake.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 3940649674124901,
+            "mtime_ns": 1791380782450501100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "f56a636888681c15ae53fe201a5c295d0751694a42f245a9819a2d45a0c732c7",
+            "sha256": "b3271d1a6a3fdffecf0c374fe5e0ec9b2342ef79e4ecd0db9b4e11c4a73462ae"
+          },
+          "test_project_layout_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 3940649674050697,
+            "mtime_ns": 1791760846113261000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "c4ec09e801fd6ffa97578efd5b82d008d545d25ff838a46f14fe2b38c23938e9"
+          },
+          "test_project_records_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 2251799814643528,
+            "mtime_ns": 1791830461494751700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "aeaa7ad2b66f1d66fac1cd59f430da76fd414471339d53fef3af2781f3dee1ac"
+          },
+          "test_project_scratch_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 11540474046081966,
+            "mtime_ns": 1791820979408720600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "659d4135d295d6f31b194a1633de6825fbd9226d01d04136cd6eb1e864d2b9d5"
+          },
+          "test_publication_paths_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 7036874418710664,
+            "mtime_ns": 1791776543047732200,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "0e945a4c39c9a3e9e4db4731e54719a8d3fc22c30782ae970391d3a8d5d54bdc"
+          },
+          "test_report_stack.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 1970324837233295,
+            "mtime_ns": 1791007908979459000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "e084ad8516852dc7c60b090459e5f850999637aeb05230c8eb1029e987655042"
+          },
+          "test_requirement_seed_bundle.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 12384898975736323,
+            "mtime_ns": 1791467923949663900,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "468bebaad01035223b84cf25480f0ec5a75eb517b131ddf02781323065a14cca"
+          },
+          "test_reset_archive_safety.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 3377699721402704,
+            "mtime_ns": 1791379163823605600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "988b071f6248f54f39045d8967d2e259d23b6f1e9eb6489d087fee47d925ccfd"
+          },
+          "test_reset_operations_v4.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 5348024557727617,
+            "mtime_ns": 1791776013017611800,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "d8bb6d4d39f76dd31b8e807b12659e71148ddc48582877ba548a95519ab23b65"
+          },
+          "test_source_batch_runner.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 3096224744692951,
+            "mtime_ns": 1791382747336030100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "6855c97c0e8f20b3f760e09088a56f45fa47406d4d9213d3321291b04aa09358"
+          },
+          "test_supplier_cleanup_references.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 10133099162532310,
+            "mtime_ns": 1791838976729732400,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "34893d9225382ad7495294086d30d39dfc8f6390183691ba8c93d48908998bf7"
+          },
+          "test_supplier_layout_overlay.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 3096224744788788,
+            "mtime_ns": 1791844548473615000,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "3aee1d8c40a7aba9348589ccb7b4566383cff9be524d8d8b183f6d0087178172"
+          },
+          "test_supplier_runtime_install.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 12103423999247231,
+            "mtime_ns": 1791837977649260600,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "77e726c20ffb66cdd19229bcbaf8b871505a035fda129491528f13ab2383fdd1"
+          },
+          "test_sweep_exclusions.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 5348024557530047,
+            "mtime_ns": 1791387407971570700,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "05aac112ee3dc2c35d6d42f1b0071f9467ef226b33e26f0ee562f13cd0bab8e5",
+            "sha256": "9237e059abc4c75ff0a49d62e98bb070892e949705f7d630e2a2443b983511fa"
+          },
+          "test_vendor_upgrade_preview.cpython-313-pytest-9.1.1.pyc": {
+            "device": 13858915109679781494,
+            "inode": 9007199255681792,
+            "mtime_ns": 1791643903293880100,
+            "mode": 33206,
+            "attributes": 32,
+            "acl_sha256": "f56a636888681c15ae53fe201a5c295d0751694a42f245a9819a2d45a0c732c7",
+            "sha256": "1e2f6dc0eea0c0e678bd1e9690451625155f1a3f6514b78a3fa0893c51d53957"
+          }
+        }
+      }
+    }
+  ],
+  "held": [],
+  "authority_sha256": "d0333992bd71c705f21d2e8a4ac968036e2fb4ddcc8b548322ea101b99580c7d"
+}

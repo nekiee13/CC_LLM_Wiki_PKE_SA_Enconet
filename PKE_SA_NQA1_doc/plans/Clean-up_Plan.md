@@ -506,3 +506,12 @@ review and guidance sync are confirmed, not pending. Seven Claude-owned old
 doc files and 20 populated/protected scratch trees remain held; this retry
 does not close the final path checklist. See
 [retry results and exact commands](cleanup-cu4/CU4_HOLDS_RETRY_RESULT_20261014.md).
+
+Claude has since accepted that retry and moved its seven remaining doc files
+unchanged. The next existing-task pass retained the 102 empty old-doc shells
+and five classified synthetic-history/cache trees (99 files) under .tmp.
+All 131 workspace tests pass; the named scratch holds are reduced to 15
+protected Enconet fixture trees. Their parent cannot move without a specific
+owner exception covering its generated .claude files. No deletion or full
+closure is claimed. See
+[non-protected retention result](cleanup-cu4/CU4_FINAL_NONPROTECTED_RETENTION_20261014.md).

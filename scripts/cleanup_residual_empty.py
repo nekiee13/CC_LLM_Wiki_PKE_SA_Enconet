@@ -1,4 +1,4 @@
-"""Preserve five verified empty cleanup leftovers by native directory rename.
+"""Preserve bounded bundles of empty cleanup leftovers by native rename.
 
 This bounded CU-4.2 operation never deletes content or changes permissions.
 Preview captures directory identity and ACL; apply checks the whole batch first.
@@ -21,6 +21,7 @@ ROOT_CACHES = {
     '.pytest_cache': '.tmp/cleanup-retained-20261013/.pytest_cache',
     '.reset-test-work': '.tmp/cleanup-retained-20261013/.reset-test-work',
 }
+OLD_DOC = {'doc': '.tmp/cleanup-retained-20261014/old-doc-empty-shells'}
 
 
 def witness(root, source, destination):
@@ -39,10 +40,10 @@ def main():
     parser.add_argument('--mode', choices=['preview', 'apply', 'verify', 'undo'], required=True)
     parser.add_argument('--authority', type=Path, required=True)
     parser.add_argument('--journal', type=Path, required=True)
-    parser.add_argument('--bundle', choices=['original-five', 'root-caches'], default='original-five')
+    parser.add_argument('--bundle', choices=['original-five', 'root-caches', 'old-doc'], default='original-five')
     args = parser.parse_args()
     root = migration.root_path(args.root)
-    moves = MOVES if args.bundle == 'original-five' else ROOT_CACHES
+    moves = {'original-five': MOVES, 'root-caches': ROOT_CACHES, 'old-doc': OLD_DOC}[args.bundle]
     for path in (args.plan, args.authority, args.journal):
         migration.safe(root, path.absolute().relative_to(root).as_posix())
     if args.mode == 'preview':
