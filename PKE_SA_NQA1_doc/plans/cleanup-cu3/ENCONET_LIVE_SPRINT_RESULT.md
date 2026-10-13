@@ -39,6 +39,11 @@ updates 382 artifact links. Its original remains under `revisions/relocated-orig
 | Live `Enconet/scripts/run_all_validations.py --no-record` | Exit 0; all 19 checks passed |
 | Focused cleanup regression | Exit 0; 25 passed, no skips |
 | Handoff publisher regression | Exit 0; 12 passed, no skips |
+| Publication-manifest reader regression | Exit 0; 7 passed, no skips |
+| Frozen publication relocation verification | Exit 0; all 12 artifacts match the unchanged manifest |
+| Live reset preview | Exit 0; preview only, no reset applied |
+| Local `audit-close` publication and handoff validation | Exit 0; record in coordination/handoffs; old handoff home absent |
+| Local coordination validation | Exit 0; 0 errors, 0 warnings; one deferred review request, no active claims |
 | `scripts/check_guidance_drift.py` | Exit 0; 0 errors; pending Claude synchronization documented |
 | Protected-file comparison | Exit 0; all 486 hashes unchanged |
 | File-move workflow retry | Exit 0; 17,752 moved; 463 tracked moves; complete journal |

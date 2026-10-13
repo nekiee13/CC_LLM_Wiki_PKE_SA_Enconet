@@ -1,8 +1,8 @@
 # Clean-up Plan
 
 Date: 11 October 2026  
-Status: live cleanup authorized; first workspace batch applied; remaining holds and supplier batches open
-Review: Claude has no objection to CU-1 inventory/baseline; live moves remain unapproved.
+Status: workspace, Ekonerg and Enconet live batches applied; remaining holds and CU-4 open
+Review: owner authorized live execution and deferred Claude's pre-execution safety review; post-execution review remains pending.
 Implementer: Codex. Reviewer: Claude. Owner: scope and approval decisions.  
 Scope: workspace, Enconet, Ekonerg, IBE, TEKOL, IGH, IMK, KCPG, MOR, and future suppliers.
 
@@ -283,13 +283,13 @@ Acceptance criteria:
 
 Acceptance criteria:
 
-- [ ] Enconet follows the same paths and output rules as Ekonerg.
-- [ ] Frozen plans and ADRs keep their content, identifiers and hash history.
-- [ ] Existing released packages remain verifiable at their original bytes;
+- [x] Enconet follows the same paths and output rules as Ekonerg.
+- [x] Frozen plans and ADRs keep their content, identifiers and hash history.
+- [x] Existing released packages remain verifiable at their original bytes;
       relocation is documented outside their frozen manifests.
-- [ ] Wiki result links, release verification, reset preview, handoffs and
+- [x] Wiki result links, release verification, reset preview, handoffs and
       audit command routing work at the new paths.
-- [ ] Incoming/raw, active evidence, scores, gates and approved editions match
+- [x] Incoming/raw, active evidence, scores, gates and approved editions match
       the baseline. No Ekonerg evidence enters Enconet.
 
 Epic acceptance: both audits work and their protected baseline facts match.
@@ -437,3 +437,14 @@ live aggregate, integrity, frozen-manifest and both dashboard/PDF checks pass;
 125 regression tests pass. One empty `outputs/candidates` tree remains unchanged
 after Windows denied its rename. Post-execution Claude review remains pending.
 See [actual live sprint result](cleanup-cu3/EKONERG_LIVE_SPRINT_RESULT.md).
+
+CU-3.3's live Enconet batch is applied: 17,752 file moves, 463 original tracked
+blobs retained, ten original empty directory trees archived with native permissions,
+and the verified local runtime activated. All 19 live phase checks pass; all 486
+protected hashes match. The score remains 80.6%. The frozen publication's twelve
+artifacts pass relocation verification, and reset preview passes without applying a
+reset. Local handoff routing and publication pass; the new immutable record is
+under `coordination/handoffs`, with no old handoff home recreated. The full
+historical regression and release/scaffold rollout remain
+under the existing CU-4 final checks. No task was added. See
+[Enconet live result](cleanup-cu3/ENCONET_LIVE_SPRINT_RESULT.md).

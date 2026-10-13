@@ -45,17 +45,32 @@ def verify(root, supplier, manifest_name, plan, mode='planned'):
     if mode != 'original' and manifest_row and raw_hash != manifest_row['sha256']:
         return {'passed': False, 'verified': 0, 'failures': [{'source': old_manifest, 'reason': 'manifest hash changed'}]}
     data = json.loads(manifest_file.read_text(encoding='utf-8'))
-    if not isinstance(data, dict) or not isinstance(data.get('files'), list) or not data['files']:
-        raise ValueError('nonempty files manifest required')
+    if not isinstance(data, dict) or ('files' in data and 'artifacts' in data):
+        raise ValueError('ambiguous or invalid release manifest')
+    publication = 'artifacts' in data
+    members = data.get('artifacts' if publication else 'files')
+    if not isinstance(members, list) or not members:
+        raise ValueError('nonempty release manifest required')
+    if publication and (type(data.get('schema_version')) is not int
+            or data['schema_version'] != 1 or not isinstance(data.get('run_id'), str)
+            or not re.fullmatch(r'RUN-\d{8}-\d+', data['run_id'])):
+        raise ValueError('unsupported publication manifest version or run ID')
     records, seen = [], set()
-    for item in data['files']:
-        member = logical(item['path'])
-        old = str(PurePosixPath(old_manifest).parent / member)
+    for item in members:
+        if not isinstance(item, dict):
+            raise ValueError('invalid manifest member')
+        if publication:
+            if set(item) != {'source', 'destination', 'sha256'}:
+                raise ValueError('invalid publication manifest artifact fields')
+            logical(item['source'])
+        member = logical(item['destination' if publication else 'path'])
+        base = PurePosixPath(supplier) if publication else PurePosixPath(old_manifest).parent
+        old = str(base / member)
         if old.casefold() in seen:
             raise ValueError('duplicate manifest member')
         seen.add(old.casefold())
         if (not isinstance(item.get('sha256'), str) or not re.fullmatch('[0-9a-f]{64}', item['sha256'])
-                or type(item.get('bytes')) is not int or item['bytes'] < 0):
+                or not publication and (type(item.get('bytes')) is not int or item['bytes'] < 0)):
             raise ValueError('invalid member hash or byte count')
         row = mapped.get(old)
         target = row['destination'] if mode == 'relocated' and row else old
@@ -65,7 +80,8 @@ def verify(root, supplier, manifest_name, plan, mode='planned'):
             reason = 'manifest/member relocation hash differs'
         elif not path.is_file():
             reason = 'member missing'
-        elif path.stat().st_size != item['bytes'] or migration.digest(path) != item['sha256']:
+        elif (not publication and path.stat().st_size != item['bytes']
+              or migration.digest(path) != item['sha256']):
             reason = 'member bytes or hash changed'
         records.append({'source': old, 'resolved': target, 'passed': reason is None, 'reason': reason})
     if migration.digest(manifest_file) != raw_hash:

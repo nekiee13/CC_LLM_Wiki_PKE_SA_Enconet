@@ -1,0 +1,86 @@
+{
+  "schema": "release-relocation-verification-1",
+  "mode": "relocated",
+  "supplier": "Enconet",
+  "manifest": "Enconet/manifests/release_RUN-20261008-17.json",
+  "resolved_manifest": "Enconet/work/manifests/release_RUN-20261008-17.json",
+  "manifest_sha256": "5f16bd1e1990e45b297b073042432bc3ba0c70e56526412ed383a21f913b6644",
+  "plan_sha256": "96c61375a0b6e15cbf3bdb2bcfc90d8749829d304ae1d94b712094754b5fc88a",
+  "passed": true,
+  "verified": 12,
+  "failures": [],
+  "files": [
+    {
+      "source": "Enconet/outputs/enconet_appendix_b_evaluation_package.json",
+      "resolved": "Enconet/outputs/RUN-20261008-17/evaluation_package.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/enconet_appendix_b_dashboard_data.json",
+      "resolved": "Enconet/outputs/RUN-20261008-17/dashboard_data.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/enconet_appendix_b_evaluation_report.md",
+      "resolved": "Enconet/outputs/RUN-20261008-17/revisions/relocated-originals/enconet_appendix_b_evaluation_report.md",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/enconet_appendix_b_dashboard.html",
+      "resolved": "Enconet/outputs/RUN-20261008-17/dashboard_light.html",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/wiki/dashboards/enconet_appendix_b_dashboard.html",
+      "resolved": "Enconet/wiki/dashboards/enconet_appendix_b_dashboard.html",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/candidates/evidence_access/portable_package/package_manifest.json",
+      "resolved": "Enconet/outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/package_manifest.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/candidates/evidence_access/portable_package/review_catalog.json",
+      "resolved": "Enconet/outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/review_catalog.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/candidates/evidence_access/portable_package/review_workspace.html",
+      "resolved": "Enconet/outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/review_workspace.html",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evaluation_package.json",
+      "resolved": "Enconet/outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evaluation_package.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evaluation_report.md",
+      "resolved": "Enconet/outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evaluation_report.md",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evidence_bundle.json",
+      "resolved": "Enconet/outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evidence_bundle.json",
+      "passed": true,
+      "reason": null
+    },
+    {
+      "source": "Enconet/outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evidence_explorer.html",
+      "resolved": "Enconet/outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/RUN-20261008-17/evidence_explorer.html",
+      "passed": true,
+      "reason": null
+    }
+  ]
+}

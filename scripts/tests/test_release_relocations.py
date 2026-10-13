@@ -74,3 +74,40 @@ def test_rehearsal_copies_to_new_homes_without_changing_live_files(tmp_path):
     assert (folder / 'release_manifest.json').read_bytes() == original
     with pytest.raises(ValueError, match='fresh'):
         rehearse(tmp_path, 'Vendor Ž', 'outputs/old/release_manifest.json', plan, destination)
+
+
+def test_publication_artifact_manifest_uses_supplier_relative_destinations(tmp_path):
+    plan, folder = fixture(tmp_path)
+    data = {'schema_version': 1, 'run_id': 'RUN-20261013-01', 'artifacts': [{
+        'source': 'out/staging/report.md', 'destination': 'outputs/old/report.md',
+        'sha256': plan['files'][0]['sha256']}]}
+    manifest = folder / 'release_manifest.json'
+    manifest.write_text(json.dumps(data), encoding='utf-8')
+    plan['files'][1]['sha256'] = hashlib.sha256(manifest.read_bytes()).hexdigest()
+    original = manifest.read_bytes()
+    assert verify(tmp_path, 'Vendor Ž', 'outputs/old/release_manifest.json', plan)['passed']
+    for row in plan['files']:
+        target = tmp_path / row['destination']
+        target.parent.mkdir(parents=True, exist_ok=True)
+        (tmp_path / row['source']).rename(target)
+    result = verify(tmp_path, 'Vendor Ž', 'outputs/old/release_manifest.json', plan, 'relocated')
+    assert result['passed'] and result['verified'] == 1
+    assert (tmp_path / plan['files'][1]['destination']).read_bytes() == original
+    (tmp_path / plan['files'][0]['destination']).write_bytes(b'changed')
+    assert not verify(tmp_path, 'Vendor Ž', 'outputs/old/release_manifest.json', plan, 'relocated')['passed']
+
+
+def test_publication_manifest_rejects_unsafe_source_and_ambiguous_schema(tmp_path):
+    plan, folder = fixture(tmp_path)
+    data = {'schema_version': 1, 'run_id': 'RUN-20261013-01', 'artifacts': [{
+        'source': '../outside', 'destination': 'outputs/old/report.md',
+        'sha256': plan['files'][0]['sha256']}]}
+    manifest = folder / 'release_manifest.json'
+    manifest.write_text(json.dumps(data), encoding='utf-8')
+    with pytest.raises(ValueError, match='unsafe'):
+        verify(tmp_path, 'Vendor Ž', 'outputs/old/release_manifest.json', plan, 'original')
+    data['artifacts'][0]['source'] = 'out/staging/report.md'
+    data['files'] = []
+    manifest.write_text(json.dumps(data), encoding='utf-8')
+    with pytest.raises(ValueError, match='manifest'):
+        verify(tmp_path, 'Vendor Ž', 'outputs/old/release_manifest.json', plan, 'original')
