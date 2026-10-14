@@ -1,11 +1,11 @@
 task: INDEX-REFRESH
 agent: codex
 status: released
-claimed_at_utc: 2026-10-14T16:21:22Z
-last_renewed_at_utc: 2026-10-14T16:21:22Z
-expires_at_utc: 2026-10-15T16:21:22Z
+claimed_at_utc: 2026-10-14T16:41:39Z
+last_renewed_at_utc: 2026-10-14T16:41:39Z
+expires_at_utc: 2026-10-15T16:41:39Z
 anticipated_files:
   - ../PKE_SA_NQA1_doc/plans/cleanup-cu4
   - coordination
-note: Full committed neutral refresh for CU-4.2 at 92f30d2; retain snapshot, exclude both agents infrastructure and controlled evidence.
-released_at_utc: 2026-10-14T16:23:19Z
+note: Refresh neutral indexes from committed mobile-revision implementation; keep both agents infrastructure and owner edits excluded.
+released_at_utc: 2026-10-14T16:45:31Z

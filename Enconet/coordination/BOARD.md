@@ -155,7 +155,7 @@ and ADRs are the records.
 - `HANDOFF` — codex, released 2026-07-13T00:59:17Z
 - `HANDOFF-CORRECTION` — codex, released 2026-07-13T01:06:10Z
 - `HANDOFF-DATA-BACKUP` — codex, released 2026-07-13T21:10:49Z
-- `INDEX-REFRESH` — codex, released 2026-10-14T16:23:19Z
+- `INDEX-REFRESH` — codex, released 2026-10-14T16:45:31Z
 - `MIN-1.1` — codex, released 2026-10-04T17:07:01Z
 - `MIN-1.2` — codex, released 2026-10-04T17:09:38Z
 - `MIN-2.1` — codex, released 2026-10-04T17:11:57Z
@@ -335,7 +335,7 @@ and ADRs are the records.
 
 ## Pointers
 
-- Authoritative record: [`coordination/handoffs/2026-10-14T162419Z-92f30d2.md`](handoffs/2026-10-14T162419Z-92f30d2.md)
+- Authoritative record: [`coordination/handoffs/2026-10-14T164912Z-e6ede47.md`](handoffs/2026-10-14T164912Z-e6ede47.md)
 - Archive: 899 records in `coordination/archive/`
 
-Generated: 2026-10-14T16:40:09Z
+Generated: 2026-10-14T16:49:26Z

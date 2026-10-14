@@ -1,0 +1,1833 @@
+{
+  "head": "e6ede47e7178fa3b6210a9bd6ec8bfde29b3c585",
+  "docs": {
+    "PKE_SA_NQA1_Enconet_docs": {
+      "index": {
+        "success": true,
+        "repo": "local/PKE_SA_NQA1_Enconet_docs",
+        "folder_path": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\.tmp\\index-source-e6ede47e7178\\Enconet",
+        "indexed_at": "2026-10-14T18:44:44.591191",
+        "file_count": 254,
+        "section_count": 3014,
+        "doc_types": {
+          ".md": 252,
+          ".txt": 2
+        },
+        "files": [
+          "HANDOFF.md",
+          "Sieving_method_specification_Guide.md",
+          "coordination/TEAM_PROTOCOL.md",
+          "coordination/handoffs/2026-07-11T053612Z-nogit.md",
+          "coordination/handoffs/2026-07-11T060441Z-nogit.md",
+          "coordination/handoffs/2026-07-11T063609Z-nogit.md",
+          "coordination/handoffs/2026-07-11T065736Z-nogit.md",
+          "coordination/handoffs/2026-07-11T205936Z-f1f3302.md",
+          "coordination/handoffs/2026-07-11T214352Z-9755171.md",
+          "coordination/handoffs/2026-07-11T221132Z-00ec394.md",
+          "coordination/handoffs/2026-07-11T225513Z-ff50200.md",
+          "coordination/handoffs/2026-07-12T062523Z-4baffea.md",
+          "coordination/handoffs/2026-07-12T064428Z-54e5cd1.md",
+          "coordination/handoffs/2026-07-12T070654Z-1644203.md",
+          "coordination/handoffs/2026-07-12T081037Z-dda1455.md",
+          "coordination/handoffs/2026-07-12T223208Z-nogit.md",
+          "coordination/handoffs/2026-07-12T223246Z-73f7b2a.md",
+          "coordination/handoffs/2026-07-13T005833Z-nogit.md",
+          "coordination/handoffs/2026-07-13T005903Z-2158d3b.md",
+          "coordination/handoffs/2026-07-13T010512Z-b3ed945.md"
+        ],
+        "semantic_search": false,
+        "_meta": {
+          "latency_ms": 4076
+        },
+        "head_sha": "e6ede47e7178fa3b6210a9bd6ec8bfde29b3c585",
+        "source_dirty": false,
+        "sha_certified": true,
+        "repo_at_sha": "local/PKE_SA_NQA1_Enconet_docs@e6ede47e7178fa3b6210a9bd6ec8bfde29b3c585",
+        "truncated": false
+      },
+      "verification": {
+        "repo": "local/PKE_SA_NQA1_Enconet_docs",
+        "section_count": 3014,
+        "clean_count": 2903,
+        "drift_count": 0,
+        "missing_count": 0,
+        "error_count": 0,
+        "skipped_count": 111,
+        "drift_sections": [],
+        "missing_sections": [],
+        "skipped_sections": [
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::HANDOFF.md::handoff#0",
+            "doc_path": "HANDOFF.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::Sieving_method_specification_Guide.md::sieving-method-specification-guide#0",
+            "doc_path": "Sieving_method_specification_Guide.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::coordination/TEAM_PROTOCOL.md::team-protocol#0",
+            "doc_path": "coordination/TEAM_PROTOCOL.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/AOV_DBR_BATCH_20261008.md::aov-dbr-batch-20261008#0",
+            "doc_path": "docs/AOV_DBR_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/APPENDIX_B_BASELINE_20261008.md::appendix-b-baseline-20261008#0",
+            "doc_path": "docs/APPENDIX_B_BASELINE_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/ASME_REFERENCED_PARTII_INTERPRETATION_20261008.md::asme-referenced-partii-interpretation-20261008#0",
+            "doc_path": "docs/ASME_REFERENCED_PARTII_INTERPRETATION_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/ASME_REFERENCED_PARTII_SCOPE_APPROVED_20261008.md::asme-referenced-partii-scope-approved-20261008#0",
+            "doc_path": "docs/ASME_REFERENCED_PARTII_SCOPE_APPROVED_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/AUDIT_LIFECYCLE.md::audit-lifecycle#0",
+            "doc_path": "docs/AUDIT_LIFECYCLE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/BROWSER_TESTING.md::browser-testing#0",
+            "doc_path": "docs/BROWSER_TESTING.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/CHAPTER_INGESTION_20261007.md::chapter-ingestion-20261007#0",
+            "doc_path": "docs/CHAPTER_INGESTION_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/CHUNKING.md::chunking#0",
+            "doc_path": "docs/CHUNKING.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/CONFORMANCE_ASSESSMENT_20261008.md::conformance-assessment-20261008#0",
+            "doc_path": "docs/CONFORMANCE_ASSESSMENT_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/CONTRACT_DESIGN_AUDIT_BATCH_20261007.md::contract-design-audit-batch-20261007#0",
+            "doc_path": "docs/CONTRACT_DESIGN_AUDIT_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/CX_CC_RECONCILIATION.md::cx-cc-reconciliation#0",
+            "doc_path": "docs/CX_CC_RECONCILIATION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/CX_PUBLICATION_EXCEPTION_RUN17_20261009.md::cx-publication-exception-run17-20261009#0",
+            "doc_path": "docs/CX_PUBLICATION_EXCEPTION_RUN17_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/DARK_DASHBOARD_20261010.md::dark-dashboard-20261010#0",
+            "doc_path": "docs/DARK_DASHBOARD_20261010.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/ENCONET_RESET_20261007.md::enconet-reset-20261007#0",
+            "doc_path": "docs/ENCONET_RESET_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/EVIDENCE_ACCESS_ARCHITECTURE.md::evidence-access-architecture#0",
+            "doc_path": "docs/EVIDENCE_ACCESS_ARCHITECTURE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/EVIDENCE_ACCESS_OPERATIONS.md::evidence-access-operations#0",
+            "doc_path": "docs/EVIDENCE_ACCESS_OPERATIONS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/EVIDENCE_ACCESS_UPGRADE_GUIDE.md::evidence-access-upgrade-guide#0",
+            "doc_path": "docs/EVIDENCE_ACCESS_UPGRADE_GUIDE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/FINDINGS_DRAFT_20261008.md::findings-draft-20261008#0",
+            "doc_path": "docs/FINDINGS_DRAFT_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/FRAMEWORK_METHOD_V2.md::framework-method-v2#0",
+            "doc_path": "docs/FRAMEWORK_METHOD_V2.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/FRAMEWORK_UPGRADE_20261007.md::framework-upgrade-20261007#0",
+            "doc_path": "docs/FRAMEWORK_UPGRADE_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/FRESH_INTAKE_20261007.md::fresh-intake-20261007#0",
+            "doc_path": "docs/FRESH_INTAKE_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/FULL_VENDOR_SIEVING_COMPLETE_20261008.md::full-vendor-sieving-complete-20261008#0",
+            "doc_path": "docs/FULL_VENDOR_SIEVING_COMPLETE_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/FULL_VENDOR_SIEVING_STATUS_20261007.md::full-vendor-sieving-status-20261007#0",
+            "doc_path": "docs/FULL_VENDOR_SIEVING_STATUS_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/G2_APPLICABILITY_APPLIED_20261008.md::g2-applicability-applied-20261008#0",
+            "doc_path": "docs/G2_APPLICABILITY_APPLIED_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/G2_APPLICABILITY_OWNER_REVIEW_20261008.md::g2-applicability-owner-review-20261008#0",
+            "doc_path": "docs/G2_APPLICABILITY_OWNER_REVIEW_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/G3_APPROVAL_20261008.md::g3-approval-20261008#0",
+            "doc_path": "docs/G3_APPROVAL_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/G4_APPROVAL_20261008.md::g4-approval-20261008#0",
+            "doc_path": "docs/G4_APPROVAL_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/G5_G6_APPROVED_20261009.md::g5-g6-approved-20261009#0",
+            "doc_path": "docs/G5_G6_APPROVED_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/G5_READY_20261009.md::g5-ready-20261009#0",
+            "doc_path": "docs/G5_READY_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/GAP_ACTION_POLICY.md::gap-action-policy#0",
+            "doc_path": "docs/GAP_ACTION_POLICY.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/IT_OBJECTIVES_TRAINING_BATCH_20261007.md::it-objectives-training-batch-20261007#0",
+            "doc_path": "docs/IT_OBJECTIVES_TRAINING_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/KEYWORD_SWEEP_CALIBRATION_20261007.md::keyword-sweep-calibration-20261007#0",
+            "doc_path": "docs/KEYWORD_SWEEP_CALIBRATION_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/MTE_OE_BATCH_20261008.md::mte-oe-batch-20261008#0",
+            "doc_path": "docs/MTE_OE_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/NC_CA_RISK_BATCH_20261007.md::nc-ca-risk-batch-20261007#0",
+            "doc_path": "docs/NC_CA_RISK_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/NQA1_PART1_INTERPRETATION_20261008.md::nqa1-part1-interpretation-20261008#0",
+            "doc_path": "docs/NQA1_PART1_INTERPRETATION_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/PART21_SOURCE_PROCESSING_20261008.md::part21-source-processing-20261008#0",
+            "doc_path": "docs/PART21_SOURCE_PROCESSING_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/PERFORMANCE_BATCH_20261008.md::performance-batch-20261008#0",
+            "doc_path": "docs/PERFORMANCE_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/PROCEDURES_BATCH_20261007.md::procedures-batch-20261007#0",
+            "doc_path": "docs/PROCEDURES_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/PUBLISHED_FILE_ACCESS_FIX_20261010.md::published-file-access-fix-20261010#0",
+            "doc_path": "docs/PUBLISHED_FILE_ACCESS_FIX_20261010.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/PUBLISHED_RELEASE_RUN17_20261009.md::published-release-run17-20261009#0",
+            "doc_path": "docs/PUBLISHED_RELEASE_RUN17_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/QUALITY_MANUAL_SIEVING_20261007.md::quality-manual-sieving-20261007#0",
+            "doc_path": "docs/QUALITY_MANUAL_SIEVING_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/RAW_INTAKE.md::raw-intake#0",
+            "doc_path": "docs/RAW_INTAKE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/README.md::readme#0",
+            "doc_path": "docs/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/RELAP5_SIEVING_20261008.md::relap5-sieving-20261008#0",
+            "doc_path": "docs/RELAP5_SIEVING_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/REPORT_G5_REVIEW_20261009.md::report-g5-review-20261009#0",
+            "doc_path": "docs/REPORT_G5_REVIEW_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/SCORING_FIXTURE_REFRESH_20261009.md::scoring-fixture-refresh-20261009#0",
+            "doc_path": "docs/SCORING_FIXTURE_REFRESH_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/SOFTWARE_BATCH_20261008.md::software-batch-20261008#0",
+            "doc_path": "docs/SOFTWARE_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/SOURCE_BASIS_APPROVED_20261007.md::source-basis-approved-20261007#0",
+            "doc_path": "docs/SOURCE_BASIS_APPROVED_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/SOURCE_SET_G1_REVIEW_20261007.md::source-set-g1-review-20261007#0",
+            "doc_path": "docs/SOURCE_SET_G1_REVIEW_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/TEST_FIXTURE_ISOLATION_20261009.md::test-fixture-isolation-20261009#0",
+            "doc_path": "docs/TEST_FIXTURE_ISOLATION_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/V3_PROMPT_ACTIVATION_REVIEW_20261007.md::v3-prompt-activation-review-20261007#0",
+            "doc_path": "docs/V3_PROMPT_ACTIVATION_REVIEW_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/_archive/CX_PREPARATION_CRITIQUE.md::cx-preparation-critique#0",
+            "doc_path": "docs/_archive/CX_PREPARATION_CRITIQUE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/_archive/README.md::readme#0",
+            "doc_path": "docs/_archive/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/acceptance/EA5.4_OWNER_UAT.md::ea54-owner-uat#0",
+            "doc_path": "docs/acceptance/EA5.4_OWNER_UAT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/acceptance/EA6.4_PROMOTION_GATE.md::ea64-promotion-gate#0",
+            "doc_path": "docs/acceptance/EA6.4_PROMOTION_GATE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/context/23 FINAL PROJECT FILL-IN.md::23-final-project-fill-in#0",
+            "doc_path": "docs/context/23 FINAL PROJECT FILL-IN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/context/31 Sieving - Crumb generation.md::31-sieving-crumb-generation#0",
+            "doc_path": "docs/context/31 Sieving - Crumb generation.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/context/32 Crumbs proccessing - json_extractor_session_exp.md::32-crumbs-proccessing-json-extractor-session-exp#0",
+            "doc_path": "docs/context/32 Crumbs proccessing - json_extractor_session_exp.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/context/36 Evaluation Method and Report.md::36-evaluation-method-and-report#0",
+            "doc_path": "docs/context/36 Evaluation Method and Report.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/context/37 Audit_Session_Export Example.md::37-audit-session-export-example#0",
+            "doc_path": "docs/context/37 Audit_Session_Export Example.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/context/40 MASTER PLAN - NQA Supplier Audit Wiki - v2.md::40-master-plan-nqa-supplier-audit-wiki-v2#0",
+            "doc_path": "docs/context/40 MASTER PLAN - NQA Supplier Audit Wiki - v2.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/plans/ALIGNMENT_PLAN.md::alignment-plan#0",
+            "doc_path": "docs/plans/ALIGNMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/plans/EVIDENCE_ACCESS_TDD_PLAN.md::evidence-access-tdd-plan#0",
+            "doc_path": "docs/plans/EVIDENCE_ACCESS_TDD_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/plans/MASTER_DEVELOPMENT_PLAN.md::master-development-plan#0",
+            "doc_path": "docs/plans/MASTER_DEVELOPMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/plans/_archive/CX_ALIGNMENT_PLAN.md::cx-alignment-plan#0",
+            "doc_path": "docs/plans/_archive/CX_ALIGNMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/plans/_archive/CX_MASTER_DEVELOPMENT_PLAN.md::cx-master-development-plan#0",
+            "doc_path": "docs/plans/_archive/CX_MASTER_DEVELOPMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/plans/_archive/OG_MASTER_DEVELOPMENT_PLAN.md::og-master-development-plan#0",
+            "doc_path": "docs/plans/_archive/OG_MASTER_DEVELOPMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::docs/releases/EA6.1_CANDIDATE_RECORD.md::ea61-candidate-record#0",
+            "doc_path": "docs/releases/EA6.1_CANDIDATE_RECORD.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/PROJECT_INFO.md::project-info#0",
+            "doc_path": "sieving/PROJECT_INFO.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/PROVENANCE.md::provenance#0",
+            "doc_path": "sieving/PROVENANCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/QUICKSTART.md::quickstart#0",
+            "doc_path": "sieving/QUICKSTART.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/README.md::readme#0",
+            "doc_path": "sieving/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/SIEVING_PLAYBOOK.md::sieving-playbook#0",
+            "doc_path": "sieving/SIEVING_PLAYBOOK.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/prompts/CHANGELOG.md::changelog#0",
+            "doc_path": "sieving/prompts/CHANGELOG.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/prompts/appb_document_v1.md::appb-document-v1#0",
+            "doc_path": "sieving/prompts/appb_document_v1.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/prompts/appb_document_v3_context_anchors.md::appb-document-v3-context-anchors#0",
+            "doc_path": "sieving/prompts/appb_document_v3_context_anchors.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/prompts/appb_rule_v1.md::appb-rule-v1#0",
+            "doc_path": "sieving/prompts/appb_rule_v1.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::sieving/tools/_archive/README.md::readme#0",
+            "doc_path": "sieving/tools/_archive/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::wiki/current-status.md::current-status#0",
+            "doc_path": "wiki/current-status.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::wiki/index.md::index#0",
+            "doc_path": "wiki/index.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::wiki/log.md::log#0",
+            "doc_path": "wiki/log.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/benchmarks/BENCHMARK_POLICY.md::benchmark-policy#0",
+            "doc_path": "work/benchmarks/BENCHMARK_POLICY.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/benchmarks/sieving_golden/20261007-v3-nuclear-plan/OWNER_REVIEW.md::owner-review#0",
+            "doc_path": "work/benchmarks/sieving_golden/20261007-v3-nuclear-plan/OWNER_REVIEW.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0001-repository-boundary.md::adr-0001-repository-boundary#0",
+            "doc_path": "work/decisions/ADR-0001-repository-boundary.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0002-data-policy.md::adr-0002-data-policy#0",
+            "doc_path": "work/decisions/ADR-0002-data-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0003-schema-owner.md::adr-0003-schema-owner#0",
+            "doc_path": "work/decisions/ADR-0003-schema-owner.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0004-context-archive.md::adr-0004-context-archive#0",
+            "doc_path": "work/decisions/ADR-0004-context-archive.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0005-dual-agent-policy.md::adr-0005-dual-agent-policy#0",
+            "doc_path": "work/decisions/ADR-0005-dual-agent-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0006-canonical-master-plan.md::adr-0006-canonical-master-plan#0",
+            "doc_path": "work/decisions/ADR-0006-canonical-master-plan.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0007-gui-retirement.md::adr-0007-gui-retirement#0",
+            "doc_path": "work/decisions/ADR-0007-gui-retirement.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0008-output-naming.md::adr-0008-output-naming#0",
+            "doc_path": "work/decisions/ADR-0008-output-naming.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0009-language-policy.md::adr-0009-language-policy#0",
+            "doc_path": "work/decisions/ADR-0009-language-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0010-db-engine.md::adr-0010-db-engine#0",
+            "doc_path": "work/decisions/ADR-0010-db-engine.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0011-evidence-page-granularity.md::adr-0011-evidence-page-granularity#0",
+            "doc_path": "work/decisions/ADR-0011-evidence-page-granularity.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0012-scope-determinability.md::adr-0012-scope-determinability#0",
+            "doc_path": "work/decisions/ADR-0012-scope-determinability.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0013-scoring-deferral.md::adr-0013-scoring-deferral#0",
+            "doc_path": "work/decisions/ADR-0013-scoring-deferral.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/ADR-0014-global-claude-handoff.md::adr-0014-global-claude-handoff#0",
+            "doc_path": "work/decisions/ADR-0014-global-claude-handoff.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0015-global-codex-handoff.md::cx-adr-0015-global-codex-handoff#0",
+            "doc_path": "work/decisions/CX_ADR-0015-global-codex-handoff.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0018-coordination-message-lifecycle.md::cx-adr-0018-coordination-message-lifecycle#0",
+            "doc_path": "work/decisions/CX_ADR-0018-coordination-message-lifecycle.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0019-shared-mcp-indexes.md::cx-adr-0019-shared-mcp-indexes#0",
+            "doc_path": "work/decisions/CX_ADR-0019-shared-mcp-indexes.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0020-regulatory-authority-and-interpretive-standard.md::cx-adr-0020-regulatory-authority-and-interpretive-standard#0",
+            "doc_path": "work/decisions/CX_ADR-0020-regulatory-authority-and-interpretive-standard.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0021-improvement-knowledge-lifecycle.md::cx-adr-0021-improvement-knowledge-lifecycle#0",
+            "doc_path": "work/decisions/CX_ADR-0021-improvement-knowledge-lifecycle.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0022-batched-source-intake-and-ingestion.md::cx-adr-0022-batched-source-intake-and-ingestion#0",
+            "doc_path": "work/decisions/CX_ADR-0022-batched-source-intake-and-ingestion.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0023-temporary-codex-continuation-with-deferred-claude-review.md::cx-adr-0023-temporary-codex-continuation-with-deferred-claude-review#0",
+            "doc_path": "work/decisions/CX_ADR-0023-temporary-codex-continuation-with-deferred-claude-review.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0024-offline-evidence-explorer-and-candidate-output-policy.md::cx-adr-0024-offline-evidence-explorer-and-candidate-output-policy#0",
+            "doc_path": "work/decisions/CX_ADR-0024-offline-evidence-explorer-and-candidate-output-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/CX_ADR-0025-browser-harness-dependency-and-runtime.md::cx-adr-0025-browser-harness-dependency-and-runtime#0",
+            "doc_path": "work/decisions/CX_ADR-0025-browser-harness-dependency-and-runtime.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/decisions/README.md::readme#0",
+            "doc_path": "work/decisions/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_docs::work/reviews/EA6.3_CLAUDE_REVIEW_PACKET.md::ea63-claude-review-packet#0",
+            "doc_path": "work/reviews/EA6.3_CLAUDE_REVIEW_PACKET.md",
+            "reason": "empty_byte_range"
+          }
+        ],
+        "_meta": {
+          "latency_ms": 677,
+          "files_read": 254,
+          "sample": null
+        }
+      }
+    },
+    "PKE_SA_NQA1_Enconet_controlled": {
+      "index": {
+        "success": true,
+        "repo": "local/PKE_SA_NQA1_Enconet_controlled",
+        "folder_path": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\.tmp\\index-source-e6ede47e7178\\Enconet",
+        "indexed_at": "2026-10-14T18:44:49.118392",
+        "file_count": 243,
+        "section_count": 2411,
+        "doc_types": {
+          ".md": 241,
+          ".txt": 2
+        },
+        "files": [
+          "HANDOFF.md",
+          "Sieving_method_specification_Guide.md",
+          "coordination/TEAM_PROTOCOL.md",
+          "coordination/handoffs/2026-07-11T053612Z-nogit.md",
+          "coordination/handoffs/2026-07-11T060441Z-nogit.md",
+          "coordination/handoffs/2026-07-11T063609Z-nogit.md",
+          "coordination/handoffs/2026-07-11T065736Z-nogit.md",
+          "coordination/handoffs/2026-07-11T205936Z-f1f3302.md",
+          "coordination/handoffs/2026-07-11T214352Z-9755171.md",
+          "coordination/handoffs/2026-07-11T221132Z-00ec394.md",
+          "coordination/handoffs/2026-07-11T225513Z-ff50200.md",
+          "coordination/handoffs/2026-07-12T062523Z-4baffea.md",
+          "coordination/handoffs/2026-07-12T064428Z-54e5cd1.md",
+          "coordination/handoffs/2026-07-12T070654Z-1644203.md",
+          "coordination/handoffs/2026-07-12T081037Z-dda1455.md",
+          "coordination/handoffs/2026-07-12T223208Z-nogit.md",
+          "coordination/handoffs/2026-07-12T223246Z-73f7b2a.md",
+          "coordination/handoffs/2026-07-13T005833Z-nogit.md",
+          "coordination/handoffs/2026-07-13T005903Z-2158d3b.md",
+          "coordination/handoffs/2026-07-13T010512Z-b3ed945.md"
+        ],
+        "semantic_search": false,
+        "_meta": {
+          "latency_ms": 3421
+        },
+        "head_sha": "e6ede47e7178fa3b6210a9bd6ec8bfde29b3c585",
+        "source_dirty": false,
+        "sha_certified": true,
+        "repo_at_sha": "local/PKE_SA_NQA1_Enconet_controlled@e6ede47e7178fa3b6210a9bd6ec8bfde29b3c585",
+        "truncated": false
+      },
+      "verification": {
+        "repo": "local/PKE_SA_NQA1_Enconet_controlled",
+        "section_count": 2411,
+        "clean_count": 2308,
+        "drift_count": 0,
+        "missing_count": 0,
+        "error_count": 0,
+        "skipped_count": 103,
+        "drift_sections": [],
+        "missing_sections": [],
+        "skipped_sections": [
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::HANDOFF.md::handoff#0",
+            "doc_path": "HANDOFF.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::Sieving_method_specification_Guide.md::sieving-method-specification-guide#0",
+            "doc_path": "Sieving_method_specification_Guide.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::coordination/TEAM_PROTOCOL.md::team-protocol#0",
+            "doc_path": "coordination/TEAM_PROTOCOL.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/AOV_DBR_BATCH_20261008.md::aov-dbr-batch-20261008#0",
+            "doc_path": "docs/AOV_DBR_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/APPENDIX_B_BASELINE_20261008.md::appendix-b-baseline-20261008#0",
+            "doc_path": "docs/APPENDIX_B_BASELINE_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/ASME_REFERENCED_PARTII_INTERPRETATION_20261008.md::asme-referenced-partii-interpretation-20261008#0",
+            "doc_path": "docs/ASME_REFERENCED_PARTII_INTERPRETATION_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/ASME_REFERENCED_PARTII_SCOPE_APPROVED_20261008.md::asme-referenced-partii-scope-approved-20261008#0",
+            "doc_path": "docs/ASME_REFERENCED_PARTII_SCOPE_APPROVED_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/AUDIT_LIFECYCLE.md::audit-lifecycle#0",
+            "doc_path": "docs/AUDIT_LIFECYCLE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/BROWSER_TESTING.md::browser-testing#0",
+            "doc_path": "docs/BROWSER_TESTING.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/CHAPTER_INGESTION_20261007.md::chapter-ingestion-20261007#0",
+            "doc_path": "docs/CHAPTER_INGESTION_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/CHUNKING.md::chunking#0",
+            "doc_path": "docs/CHUNKING.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/CONFORMANCE_ASSESSMENT_20261008.md::conformance-assessment-20261008#0",
+            "doc_path": "docs/CONFORMANCE_ASSESSMENT_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/CONTRACT_DESIGN_AUDIT_BATCH_20261007.md::contract-design-audit-batch-20261007#0",
+            "doc_path": "docs/CONTRACT_DESIGN_AUDIT_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/CX_CC_RECONCILIATION.md::cx-cc-reconciliation#0",
+            "doc_path": "docs/CX_CC_RECONCILIATION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/CX_PUBLICATION_EXCEPTION_RUN17_20261009.md::cx-publication-exception-run17-20261009#0",
+            "doc_path": "docs/CX_PUBLICATION_EXCEPTION_RUN17_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/DARK_DASHBOARD_20261010.md::dark-dashboard-20261010#0",
+            "doc_path": "docs/DARK_DASHBOARD_20261010.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/ENCONET_RESET_20261007.md::enconet-reset-20261007#0",
+            "doc_path": "docs/ENCONET_RESET_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/EVIDENCE_ACCESS_ARCHITECTURE.md::evidence-access-architecture#0",
+            "doc_path": "docs/EVIDENCE_ACCESS_ARCHITECTURE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/EVIDENCE_ACCESS_OPERATIONS.md::evidence-access-operations#0",
+            "doc_path": "docs/EVIDENCE_ACCESS_OPERATIONS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/EVIDENCE_ACCESS_UPGRADE_GUIDE.md::evidence-access-upgrade-guide#0",
+            "doc_path": "docs/EVIDENCE_ACCESS_UPGRADE_GUIDE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/FINDINGS_DRAFT_20261008.md::findings-draft-20261008#0",
+            "doc_path": "docs/FINDINGS_DRAFT_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/FRAMEWORK_METHOD_V2.md::framework-method-v2#0",
+            "doc_path": "docs/FRAMEWORK_METHOD_V2.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/FRAMEWORK_UPGRADE_20261007.md::framework-upgrade-20261007#0",
+            "doc_path": "docs/FRAMEWORK_UPGRADE_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/FRESH_INTAKE_20261007.md::fresh-intake-20261007#0",
+            "doc_path": "docs/FRESH_INTAKE_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/FULL_VENDOR_SIEVING_COMPLETE_20261008.md::full-vendor-sieving-complete-20261008#0",
+            "doc_path": "docs/FULL_VENDOR_SIEVING_COMPLETE_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/FULL_VENDOR_SIEVING_STATUS_20261007.md::full-vendor-sieving-status-20261007#0",
+            "doc_path": "docs/FULL_VENDOR_SIEVING_STATUS_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/G2_APPLICABILITY_APPLIED_20261008.md::g2-applicability-applied-20261008#0",
+            "doc_path": "docs/G2_APPLICABILITY_APPLIED_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/G2_APPLICABILITY_OWNER_REVIEW_20261008.md::g2-applicability-owner-review-20261008#0",
+            "doc_path": "docs/G2_APPLICABILITY_OWNER_REVIEW_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/G3_APPROVAL_20261008.md::g3-approval-20261008#0",
+            "doc_path": "docs/G3_APPROVAL_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/G4_APPROVAL_20261008.md::g4-approval-20261008#0",
+            "doc_path": "docs/G4_APPROVAL_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/G5_G6_APPROVED_20261009.md::g5-g6-approved-20261009#0",
+            "doc_path": "docs/G5_G6_APPROVED_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/G5_READY_20261009.md::g5-ready-20261009#0",
+            "doc_path": "docs/G5_READY_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/GAP_ACTION_POLICY.md::gap-action-policy#0",
+            "doc_path": "docs/GAP_ACTION_POLICY.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/IT_OBJECTIVES_TRAINING_BATCH_20261007.md::it-objectives-training-batch-20261007#0",
+            "doc_path": "docs/IT_OBJECTIVES_TRAINING_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/KEYWORD_SWEEP_CALIBRATION_20261007.md::keyword-sweep-calibration-20261007#0",
+            "doc_path": "docs/KEYWORD_SWEEP_CALIBRATION_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/MTE_OE_BATCH_20261008.md::mte-oe-batch-20261008#0",
+            "doc_path": "docs/MTE_OE_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/NC_CA_RISK_BATCH_20261007.md::nc-ca-risk-batch-20261007#0",
+            "doc_path": "docs/NC_CA_RISK_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/NQA1_PART1_INTERPRETATION_20261008.md::nqa1-part1-interpretation-20261008#0",
+            "doc_path": "docs/NQA1_PART1_INTERPRETATION_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/PART21_SOURCE_PROCESSING_20261008.md::part21-source-processing-20261008#0",
+            "doc_path": "docs/PART21_SOURCE_PROCESSING_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/PERFORMANCE_BATCH_20261008.md::performance-batch-20261008#0",
+            "doc_path": "docs/PERFORMANCE_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/PROCEDURES_BATCH_20261007.md::procedures-batch-20261007#0",
+            "doc_path": "docs/PROCEDURES_BATCH_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/PUBLISHED_FILE_ACCESS_FIX_20261010.md::published-file-access-fix-20261010#0",
+            "doc_path": "docs/PUBLISHED_FILE_ACCESS_FIX_20261010.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/PUBLISHED_RELEASE_RUN17_20261009.md::published-release-run17-20261009#0",
+            "doc_path": "docs/PUBLISHED_RELEASE_RUN17_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/QUALITY_MANUAL_SIEVING_20261007.md::quality-manual-sieving-20261007#0",
+            "doc_path": "docs/QUALITY_MANUAL_SIEVING_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/RAW_INTAKE.md::raw-intake#0",
+            "doc_path": "docs/RAW_INTAKE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/README.md::readme#0",
+            "doc_path": "docs/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/RELAP5_SIEVING_20261008.md::relap5-sieving-20261008#0",
+            "doc_path": "docs/RELAP5_SIEVING_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/REPORT_G5_REVIEW_20261009.md::report-g5-review-20261009#0",
+            "doc_path": "docs/REPORT_G5_REVIEW_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/SCORING_FIXTURE_REFRESH_20261009.md::scoring-fixture-refresh-20261009#0",
+            "doc_path": "docs/SCORING_FIXTURE_REFRESH_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/SOFTWARE_BATCH_20261008.md::software-batch-20261008#0",
+            "doc_path": "docs/SOFTWARE_BATCH_20261008.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/SOURCE_BASIS_APPROVED_20261007.md::source-basis-approved-20261007#0",
+            "doc_path": "docs/SOURCE_BASIS_APPROVED_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/SOURCE_SET_G1_REVIEW_20261007.md::source-set-g1-review-20261007#0",
+            "doc_path": "docs/SOURCE_SET_G1_REVIEW_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/TEST_FIXTURE_ISOLATION_20261009.md::test-fixture-isolation-20261009#0",
+            "doc_path": "docs/TEST_FIXTURE_ISOLATION_20261009.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/V3_PROMPT_ACTIVATION_REVIEW_20261007.md::v3-prompt-activation-review-20261007#0",
+            "doc_path": "docs/V3_PROMPT_ACTIVATION_REVIEW_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/acceptance/EA5.4_OWNER_UAT.md::ea54-owner-uat#0",
+            "doc_path": "docs/acceptance/EA5.4_OWNER_UAT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/acceptance/EA6.4_PROMOTION_GATE.md::ea64-promotion-gate#0",
+            "doc_path": "docs/acceptance/EA6.4_PROMOTION_GATE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/plans/ALIGNMENT_PLAN.md::alignment-plan#0",
+            "doc_path": "docs/plans/ALIGNMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/plans/EVIDENCE_ACCESS_TDD_PLAN.md::evidence-access-tdd-plan#0",
+            "doc_path": "docs/plans/EVIDENCE_ACCESS_TDD_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/plans/MASTER_DEVELOPMENT_PLAN.md::master-development-plan#0",
+            "doc_path": "docs/plans/MASTER_DEVELOPMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/plans/_archive/CX_ALIGNMENT_PLAN.md::cx-alignment-plan#0",
+            "doc_path": "docs/plans/_archive/CX_ALIGNMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/plans/_archive/CX_MASTER_DEVELOPMENT_PLAN.md::cx-master-development-plan#0",
+            "doc_path": "docs/plans/_archive/CX_MASTER_DEVELOPMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/plans/_archive/OG_MASTER_DEVELOPMENT_PLAN.md::og-master-development-plan#0",
+            "doc_path": "docs/plans/_archive/OG_MASTER_DEVELOPMENT_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::docs/releases/EA6.1_CANDIDATE_RECORD.md::ea61-candidate-record#0",
+            "doc_path": "docs/releases/EA6.1_CANDIDATE_RECORD.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/PROJECT_INFO.md::project-info#0",
+            "doc_path": "sieving/PROJECT_INFO.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/PROVENANCE.md::provenance#0",
+            "doc_path": "sieving/PROVENANCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/QUICKSTART.md::quickstart#0",
+            "doc_path": "sieving/QUICKSTART.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/README.md::readme#0",
+            "doc_path": "sieving/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/SIEVING_PLAYBOOK.md::sieving-playbook#0",
+            "doc_path": "sieving/SIEVING_PLAYBOOK.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/prompts/CHANGELOG.md::changelog#0",
+            "doc_path": "sieving/prompts/CHANGELOG.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/prompts/appb_document_v1.md::appb-document-v1#0",
+            "doc_path": "sieving/prompts/appb_document_v1.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/prompts/appb_document_v3_context_anchors.md::appb-document-v3-context-anchors#0",
+            "doc_path": "sieving/prompts/appb_document_v3_context_anchors.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/prompts/appb_rule_v1.md::appb-rule-v1#0",
+            "doc_path": "sieving/prompts/appb_rule_v1.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::sieving/tools/_archive/README.md::readme#0",
+            "doc_path": "sieving/tools/_archive/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::wiki/current-status.md::current-status#0",
+            "doc_path": "wiki/current-status.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::wiki/index.md::index#0",
+            "doc_path": "wiki/index.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::wiki/log.md::log#0",
+            "doc_path": "wiki/log.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/benchmarks/BENCHMARK_POLICY.md::benchmark-policy#0",
+            "doc_path": "work/benchmarks/BENCHMARK_POLICY.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/benchmarks/sieving_golden/20261007-v3-nuclear-plan/OWNER_REVIEW.md::owner-review#0",
+            "doc_path": "work/benchmarks/sieving_golden/20261007-v3-nuclear-plan/OWNER_REVIEW.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0001-repository-boundary.md::adr-0001-repository-boundary#0",
+            "doc_path": "work/decisions/ADR-0001-repository-boundary.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0002-data-policy.md::adr-0002-data-policy#0",
+            "doc_path": "work/decisions/ADR-0002-data-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0003-schema-owner.md::adr-0003-schema-owner#0",
+            "doc_path": "work/decisions/ADR-0003-schema-owner.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0004-context-archive.md::adr-0004-context-archive#0",
+            "doc_path": "work/decisions/ADR-0004-context-archive.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0005-dual-agent-policy.md::adr-0005-dual-agent-policy#0",
+            "doc_path": "work/decisions/ADR-0005-dual-agent-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0006-canonical-master-plan.md::adr-0006-canonical-master-plan#0",
+            "doc_path": "work/decisions/ADR-0006-canonical-master-plan.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0007-gui-retirement.md::adr-0007-gui-retirement#0",
+            "doc_path": "work/decisions/ADR-0007-gui-retirement.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0008-output-naming.md::adr-0008-output-naming#0",
+            "doc_path": "work/decisions/ADR-0008-output-naming.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0009-language-policy.md::adr-0009-language-policy#0",
+            "doc_path": "work/decisions/ADR-0009-language-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0010-db-engine.md::adr-0010-db-engine#0",
+            "doc_path": "work/decisions/ADR-0010-db-engine.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0011-evidence-page-granularity.md::adr-0011-evidence-page-granularity#0",
+            "doc_path": "work/decisions/ADR-0011-evidence-page-granularity.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0012-scope-determinability.md::adr-0012-scope-determinability#0",
+            "doc_path": "work/decisions/ADR-0012-scope-determinability.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0013-scoring-deferral.md::adr-0013-scoring-deferral#0",
+            "doc_path": "work/decisions/ADR-0013-scoring-deferral.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/ADR-0014-global-claude-handoff.md::adr-0014-global-claude-handoff#0",
+            "doc_path": "work/decisions/ADR-0014-global-claude-handoff.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0015-global-codex-handoff.md::cx-adr-0015-global-codex-handoff#0",
+            "doc_path": "work/decisions/CX_ADR-0015-global-codex-handoff.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0018-coordination-message-lifecycle.md::cx-adr-0018-coordination-message-lifecycle#0",
+            "doc_path": "work/decisions/CX_ADR-0018-coordination-message-lifecycle.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0019-shared-mcp-indexes.md::cx-adr-0019-shared-mcp-indexes#0",
+            "doc_path": "work/decisions/CX_ADR-0019-shared-mcp-indexes.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0020-regulatory-authority-and-interpretive-standard.md::cx-adr-0020-regulatory-authority-and-interpretive-standard#0",
+            "doc_path": "work/decisions/CX_ADR-0020-regulatory-authority-and-interpretive-standard.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0021-improvement-knowledge-lifecycle.md::cx-adr-0021-improvement-knowledge-lifecycle#0",
+            "doc_path": "work/decisions/CX_ADR-0021-improvement-knowledge-lifecycle.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0022-batched-source-intake-and-ingestion.md::cx-adr-0022-batched-source-intake-and-ingestion#0",
+            "doc_path": "work/decisions/CX_ADR-0022-batched-source-intake-and-ingestion.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0023-temporary-codex-continuation-with-deferred-claude-review.md::cx-adr-0023-temporary-codex-continuation-with-deferred-claude-review#0",
+            "doc_path": "work/decisions/CX_ADR-0023-temporary-codex-continuation-with-deferred-claude-review.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0024-offline-evidence-explorer-and-candidate-output-policy.md::cx-adr-0024-offline-evidence-explorer-and-candidate-output-policy#0",
+            "doc_path": "work/decisions/CX_ADR-0024-offline-evidence-explorer-and-candidate-output-policy.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/CX_ADR-0025-browser-harness-dependency-and-runtime.md::cx-adr-0025-browser-harness-dependency-and-runtime#0",
+            "doc_path": "work/decisions/CX_ADR-0025-browser-harness-dependency-and-runtime.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/decisions/README.md::readme#0",
+            "doc_path": "work/decisions/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_Enconet_controlled::work/reviews/EA6.3_CLAUDE_REVIEW_PACKET.md::ea63-claude-review-packet#0",
+            "doc_path": "work/reviews/EA6.3_CLAUDE_REVIEW_PACKET.md",
+            "reason": "empty_byte_range"
+          }
+        ],
+        "_meta": {
+          "latency_ms": 645,
+          "files_read": 243,
+          "sample": null
+        }
+      }
+    },
+    "PKE_SA_NQA1_global_docs": {
+      "index": {
+        "success": true,
+        "repo": "local/PKE_SA_NQA1_global_docs",
+        "folder_path": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\.tmp\\index-source-e6ede47e7178\\PKE_SA_NQA1_doc",
+        "indexed_at": "2026-10-14T18:44:52.917102",
+        "file_count": 174,
+        "section_count": 1441,
+        "doc_types": {
+          ".md": 174
+        },
+        "files": [
+          "AFI.md",
+          "ARCHITECTURE.md",
+          "AS-IS.md",
+          "FUNCTIONAL-ANALYSIS.md",
+          "GIT_CONVENTIONS.md",
+          "GOOD-PRACTICES.md",
+          "INDEXING.md",
+          "LESSONS-LEARNED.md",
+          "README.md",
+          "RECORD-KEEPING.md",
+          "SKILLS.md",
+          "Support_system.md",
+          "Support_system_transfer_draft.md",
+          "TOKEN_EFFICIENCY_PROPOSAL.md",
+          "framework-reuse/RELEASE_V3_20261010.md",
+          "framework-reuse/ROLLOUT_20261007.md",
+          "plans/Clean-up_Closure_Report.md",
+          "plans/Clean-up_Plan.md",
+          "plans/SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md",
+          "plans/Transition_template_Plan.md"
+        ],
+        "semantic_search": false,
+        "_meta": {
+          "latency_ms": 2253
+        },
+        "head_sha": "e6ede47e7178fa3b6210a9bd6ec8bfde29b3c585",
+        "source_dirty": false,
+        "sha_certified": true,
+        "repo_at_sha": "local/PKE_SA_NQA1_global_docs@e6ede47e7178fa3b6210a9bd6ec8bfde29b3c585",
+        "truncated": false
+      },
+      "verification": {
+        "repo": "local/PKE_SA_NQA1_global_docs",
+        "section_count": 1441,
+        "clean_count": 1341,
+        "drift_count": 0,
+        "missing_count": 0,
+        "error_count": 0,
+        "skipped_count": 100,
+        "drift_sections": [],
+        "missing_sections": [],
+        "skipped_sections": [
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::AFI.md::afi#0",
+            "doc_path": "AFI.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::ARCHITECTURE.md::architecture#0",
+            "doc_path": "ARCHITECTURE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::AS-IS.md::as-is#0",
+            "doc_path": "AS-IS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::FUNCTIONAL-ANALYSIS.md::functional-analysis#0",
+            "doc_path": "FUNCTIONAL-ANALYSIS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::GIT_CONVENTIONS.md::git-conventions#0",
+            "doc_path": "GIT_CONVENTIONS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::GOOD-PRACTICES.md::good-practices#0",
+            "doc_path": "GOOD-PRACTICES.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::INDEXING.md::indexing#0",
+            "doc_path": "INDEXING.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::LESSONS-LEARNED.md::lessons-learned#0",
+            "doc_path": "LESSONS-LEARNED.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::README.md::readme#0",
+            "doc_path": "README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::RECORD-KEEPING.md::record-keeping#0",
+            "doc_path": "RECORD-KEEPING.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::SKILLS.md::skills#0",
+            "doc_path": "SKILLS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::Support_system.md::support-system#0",
+            "doc_path": "Support_system.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::Support_system_transfer_draft.md::support-system-transfer-draft#0",
+            "doc_path": "Support_system_transfer_draft.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::TOKEN_EFFICIENCY_PROPOSAL.md::token-efficiency-proposal#0",
+            "doc_path": "TOKEN_EFFICIENCY_PROPOSAL.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::framework-reuse/RELEASE_V3_20261010.md::release-v3-20261010#0",
+            "doc_path": "framework-reuse/RELEASE_V3_20261010.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::framework-reuse/ROLLOUT_20261007.md::rollout-20261007#0",
+            "doc_path": "framework-reuse/ROLLOUT_20261007.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/Clean-up_Closure_Report.md::clean-up-closure-report#0",
+            "doc_path": "plans/Clean-up_Closure_Report.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/Clean-up_Plan.md::clean-up-plan#0",
+            "doc_path": "plans/Clean-up_Plan.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md::support-system-transfer-master-plan#0",
+            "doc_path": "plans/SUPPORT_SYSTEM_TRANSFER_MASTER_PLAN.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/Transition_template_Plan.md::transition-template-plan#0",
+            "doc_path": "plans/Transition_template_Plan.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu1/CU1_STATUS.md::cu1-status#0",
+            "doc_path": "plans/cleanup-cu1/CU1_STATUS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu1/OWNER_LAYOUT_APPROVAL.md::owner-layout-approval#0",
+            "doc_path": "plans/cleanup-cu1/OWNER_LAYOUT_APPROVAL.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu1/compiled-map/MAP_STATUS.md::map-status#0",
+            "doc_path": "plans/cleanup-cu1/compiled-map/MAP_STATUS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu2/CU2_REVIEW_PACKET.md::cu2-review-packet#0",
+            "doc_path": "plans/cleanup-cu2/CU2_REVIEW_PACKET.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu2/CU2_STATUS.md::cu2-status#0",
+            "doc_path": "plans/cleanup-cu2/CU2_STATUS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu2/INTEGRATION_STATUS.md::integration-status#0",
+            "doc_path": "plans/cleanup-cu2/INTEGRATION_STATUS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu2/PIPELINE_STATUS.md::pipeline-status#0",
+            "doc_path": "plans/cleanup-cu2/PIPELINE_STATUS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu2/PUBLICATION_STATUS.md::publication-status#0",
+            "doc_path": "plans/cleanup-cu2/PUBLICATION_STATUS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/EKONERG_FINAL_PREFLIGHT.md::ekonerg-final-preflight#0",
+            "doc_path": "plans/cleanup-cu3/EKONERG_FINAL_PREFLIGHT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/EKONERG_INSTALLATION_REVIEW.md::ekonerg-installation-review#0",
+            "doc_path": "plans/cleanup-cu3/EKONERG_INSTALLATION_REVIEW.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/EKONERG_INTEGRATION_REVIEW.md::ekonerg-integration-review#0",
+            "doc_path": "plans/cleanup-cu3/EKONERG_INTEGRATION_REVIEW.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/EKONERG_LIVE_SPRINT_RESULT.md::ekonerg-live-sprint-result#0",
+            "doc_path": "plans/cleanup-cu3/EKONERG_LIVE_SPRINT_RESULT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/EKONERG_NATIVE_DIRECTORY_REVIEW.md::ekonerg-native-directory-review#0",
+            "doc_path": "plans/cleanup-cu3/EKONERG_NATIVE_DIRECTORY_REVIEW.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/EKONERG_PREPARATION.md::ekonerg-preparation#0",
+            "doc_path": "plans/cleanup-cu3/EKONERG_PREPARATION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/ENCONET_LIVE_SPRINT_RESULT.md::enconet-live-sprint-result#0",
+            "doc_path": "plans/cleanup-cu3/ENCONET_LIVE_SPRINT_RESULT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/LIVE_WORKSPACE_RESULT.md::live-workspace-result#0",
+            "doc_path": "plans/cleanup-cu3/LIVE_WORKSPACE_RESULT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/OWNER_ENCONET_ADR_RELOCATION.md::owner-enconet-adr-relocation#0",
+            "doc_path": "plans/cleanup-cu3/OWNER_ENCONET_ADR_RELOCATION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/OWNER_LIVE_AUTHORIZATION.md::owner-live-authorization#0",
+            "doc_path": "plans/cleanup-cu3/OWNER_LIVE_AUTHORIZATION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/OWNER_SPRINT_REVIEW_DEFERRAL.md::owner-sprint-review-deferral#0",
+            "doc_path": "plans/cleanup-cu3/OWNER_SPRINT_REVIEW_DEFERRAL.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/REFERENCE_PREPARATION.md::reference-preparation#0",
+            "doc_path": "plans/cleanup-cu3/REFERENCE_PREPARATION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/WORKSPACE_PREVIEW.md::workspace-preview#0",
+            "doc_path": "plans/cleanup-cu3/WORKSPACE_PREVIEW.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/ekonerg-final-proposal-20261012/canonical-report.md::canonical-report#0",
+            "doc_path": "plans/cleanup-cu3/ekonerg-final-proposal-20261012/canonical-report.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/ekonerg-live-sprint-20261012/canonical-report.md::canonical-report#0",
+            "doc_path": "plans/cleanup-cu3/ekonerg-live-sprint-20261012/canonical-report.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/ekonerg-native-directory-20261012/canonical-report.md::canonical-report#0",
+            "doc_path": "plans/cleanup-cu3/ekonerg-native-directory-20261012/canonical-report.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu3/ekonerg-ready-preflight-20261012/canonical-report.md::canonical-report#0",
+            "doc_path": "plans/cleanup-cu3/ekonerg-ready-preflight-20261012/canonical-report.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_FINAL_NONPROTECTED_RETENTION_20261014.md::cu4-final-nonprotected-retention-20261014#0",
+            "doc_path": "plans/cleanup-cu4/CU4_FINAL_NONPROTECTED_RETENTION_20261014.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_HOLDS_RETRY_RESULT_20261014.md::cu4-holds-retry-result-20261014#0",
+            "doc_path": "plans/cleanup-cu4/CU4_HOLDS_RETRY_RESULT_20261014.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_PROTECTED_FIXTURE_MOVE_RESULT_20261014.md::cu4-protected-fixture-move-result-20261014#0",
+            "doc_path": "plans/cleanup-cu4/CU4_PROTECTED_FIXTURE_MOVE_RESULT_20261014.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_REGRESSION_RESULT_20261013.md::cu4-regression-result-20261013#0",
+            "doc_path": "plans/cleanup-cu4/CU4_REGRESSION_RESULT_20261013.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_RELEASE_AND_SCAFFOLDS_RESULT.md::cu4-release-and-scaffolds-result#0",
+            "doc_path": "plans/cleanup-cu4/CU4_RELEASE_AND_SCAFFOLDS_RESULT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_RESIDUAL_AND_BROWSER_RESULT.md::cu4-residual-and-browser-result#0",
+            "doc_path": "plans/cleanup-cu4/CU4_RESIDUAL_AND_BROWSER_RESULT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_SCAFFOLD_SAFETY_CHECK.md::cu4-scaffold-safety-check#0",
+            "doc_path": "plans/cleanup-cu4/CU4_SCAFFOLD_SAFETY_CHECK.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/CU4_VERIFICATION_AND_EXCEPTIONS.md::cu4-verification-and-exceptions#0",
+            "doc_path": "plans/cleanup-cu4/CU4_VERIFICATION_AND_EXCEPTIONS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/OWNER_HOLDS_RETRY_20261014.md::owner-holds-retry-20261014#0",
+            "doc_path": "plans/cleanup-cu4/OWNER_HOLDS_RETRY_20261014.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/OWNER_PROTECTED_FIXTURE_MOVE_20261014.md::owner-protected-fixture-move-20261014#0",
+            "doc_path": "plans/cleanup-cu4/OWNER_PROTECTED_FIXTURE_MOVE_20261014.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/cleanup-cu4/OWNER_REMAINING_RETENTION_20261014.md::owner-remaining-retention-20261014#0",
+            "doc_path": "plans/cleanup-cu4/OWNER_REMAINING_RETENTION_20261014.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::plans/framework-reuse/V3_VENDOR_UPGRADE_PLAN_20261010.md::v3-vendor-upgrade-plan-20261010#0",
+            "doc_path": "plans/framework-reuse/V3_VENDOR_UPGRADE_PLAN_20261010.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/BASELINE_FINGERPRINT_RENDER_EVIDENCE.md::baseline-fingerprint-render-evidence#0",
+            "doc_path": "support-transfer/BASELINE_FINGERPRINT_RENDER_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/DIFFERENCE_REGISTER.md::difference-register#0",
+            "doc_path": "support-transfer/DIFFERENCE_REGISTER.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/GAP_COLLISION_SENSITIVITY_MATRIX.md::gap-collision-sensitivity-matrix#0",
+            "doc_path": "support-transfer/GAP_COLLISION_SENSITIVITY_MATRIX.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/LOTO_DRY_RUN_EVIDENCE.md::loto-dry-run-evidence#0",
+            "doc_path": "support-transfer/LOTO_DRY_RUN_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/LOTO_EXACT_RENDER_MANIFEST.md::loto-exact-render-manifest#0",
+            "doc_path": "support-transfer/LOTO_EXACT_RENDER_MANIFEST.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/LOTO_PREJOB_BRIEFING.md::loto-prejob-briefing#0",
+            "doc_path": "support-transfer/LOTO_PREJOB_BRIEFING.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M1_DECISION_PACKET.md::m1-decision-packet#0",
+            "doc_path": "support-transfer/M1_DECISION_PACKET.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M1_REVIEW_DISPOSITION.md::m1-review-disposition#0",
+            "doc_path": "support-transfer/M1_REVIEW_DISPOSITION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M2_BASELINE_FAILURE_SET.md::m2-baseline-failure-set#0",
+            "doc_path": "support-transfer/M2_BASELINE_FAILURE_SET.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M2_DECISION_PACKET.md::m2-decision-packet#0",
+            "doc_path": "support-transfer/M2_DECISION_PACKET.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M2_DRY_RUN_MANIFEST.md::m2-dry-run-manifest#0",
+            "doc_path": "support-transfer/M2_DRY_RUN_MANIFEST.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M2_PREFLIGHT_EVIDENCE.md::m2-preflight-evidence#0",
+            "doc_path": "support-transfer/M2_PREFLIGHT_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M3_FIN_ACCEPT_LOTO_AUTH_PACKET.md::m3-fin-accept-loto-auth-packet#0",
+            "doc_path": "support-transfer/M3_FIN_ACCEPT_LOTO_AUTH_PACKET.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/M3_FIN_EVIDENCE_INDEX.md::m3-fin-evidence-index#0",
+            "doc_path": "support-transfer/M3_FIN_EVIDENCE_INDEX.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/PUBLICATION_ROLLBACK_MANIFESTS.md::publication-rollback-manifests#0",
+            "doc_path": "support-transfer/PUBLICATION_ROLLBACK_MANIFESTS.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/README.md::readme#0",
+            "doc_path": "support-transfer/README.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/SLICE1_RENDER_EVIDENCE.md::slice1-render-evidence#0",
+            "doc_path": "support-transfer/SLICE1_RENDER_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/SLICE2_RENDER_EVIDENCE.md::slice2-render-evidence#0",
+            "doc_path": "support-transfer/SLICE2_RENDER_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/SLICE3C_RENDER_EVIDENCE.md::slice3c-render-evidence#0",
+            "doc_path": "support-transfer/SLICE3C_RENDER_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/SLICE3_RENDER_EVIDENCE.md::slice3-render-evidence#0",
+            "doc_path": "support-transfer/SLICE3_RENDER_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/SLICE4_PUBLICATION_EVIDENCE.md::slice4-publication-evidence#0",
+            "doc_path": "support-transfer/SLICE4_PUBLICATION_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/SLICE5_RENDER_EVIDENCE.md::slice5-render-evidence#0",
+            "doc_path": "support-transfer/SLICE5_RENDER_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/SLICE6_RENDER_EVIDENCE.md::slice6-render-evidence#0",
+            "doc_path": "support-transfer/SLICE6_RENDER_EVIDENCE.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/T3_GOVERNANCE_RECORD_CONTRACT.md::t3-governance-record-contract#0",
+            "doc_path": "support-transfer/T3_GOVERNANCE_RECORD_CONTRACT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/T3_REVIEW_DISPOSITION.md::t3-review-disposition#0",
+            "doc_path": "support-transfer/T3_REVIEW_DISPOSITION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/T3_TARGET_TEMPLATE_CONTRACT.md::t3-target-template-contract#0",
+            "doc_path": "support-transfer/T3_TARGET_TEMPLATE_CONTRACT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/T4_COORDINATION_BOOTSTRAP_CONTRACT.md::t4-coordination-bootstrap-contract#0",
+            "doc_path": "support-transfer/T4_COORDINATION_BOOTSTRAP_CONTRACT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/T4_T5_REVIEW_DISPOSITION.md::t4-t5-review-disposition#0",
+            "doc_path": "support-transfer/T4_T5_REVIEW_DISPOSITION.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/T5_HANDOFF_CONTINUITY_CONTRACT.md::t5-handoff-continuity-contract#0",
+            "doc_path": "support-transfer/T5_HANDOFF_CONTINUITY_CONTRACT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/T6_VALIDATION_RECOVERY_GATE_CONTRACT.md::t6-validation-recovery-gate-contract#0",
+            "doc_path": "support-transfer/T6_VALIDATION_RECOVERY_GATE_CONTRACT.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/adr-register.template.md::adr-registertemplate#0",
+            "doc_path": "support-transfer/templates/adr-register.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/afi-ledger.template.md::afi-ledgertemplate#0",
+            "doc_path": "support-transfer/templates/afi-ledger.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/coordination/TEAM_PROTOCOL.template.md::team-protocoltemplate#0",
+            "doc_path": "support-transfer/templates/coordination/TEAM_PROTOCOL.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/coordination/guidance-semantics.template.md::guidance-semanticstemplate#0",
+            "doc_path": "support-transfer/templates/coordination/guidance-semantics.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/current-status.template.md::current-statustemplate#0",
+            "doc_path": "support-transfer/templates/current-status.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/event-log.template.md::event-logtemplate#0",
+            "doc_path": "support-transfer/templates/event-log.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/good-practices-ledger.template.md::good-practices-ledgertemplate#0",
+            "doc_path": "support-transfer/templates/good-practices-ledger.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/handoff/continuity-checklist.template.md::continuity-checklisttemplate#0",
+            "doc_path": "support-transfer/templates/handoff/continuity-checklist.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/handoff/handoff-pointer.template.md::handoff-pointertemplate#0",
+            "doc_path": "support-transfer/templates/handoff/handoff-pointer.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/lessons-ledger.template.md::lessons-ledgertemplate#0",
+            "doc_path": "support-transfer/templates/lessons-ledger.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/milestone-packet.template.md::milestone-packettemplate#0",
+            "doc_path": "support-transfer/templates/milestone-packet.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/record-keeping.template.md::record-keepingtemplate#0",
+            "doc_path": "support-transfer/templates/record-keeping.template.md",
+            "reason": "empty_byte_range"
+          },
+          {
+            "section_id": "local/PKE_SA_NQA1_global_docs::support-transfer/templates/support-index.template.md::support-indextemplate#0",
+            "doc_path": "support-transfer/templates/support-index.template.md",
+            "reason": "empty_byte_range"
+          }
+        ],
+        "_meta": {
+          "latency_ms": 464,
+          "files_read": 174,
+          "sample": null
+        }
+      }
+    }
+  },
+  "code": {
+    "success": true,
+    "repo": "local/Enconet-0a063bd7",
+    "folder_path": "C:\\xPY\\xPrj\\LLM_Wiki\\03_PKE_SA_NQA1\\Enconet",
+    "indexed_at": "2026-10-14T18:44:56.420782",
+    "file_count": 246,
+    "symbol_count": 3543,
+    "file_summary_count": 238,
+    "languages": {
+      "yaml": 35,
+      "json": 14,
+      "python": 193,
+      "css": 1,
+      "javascript": 2,
+      "powershell": 1
+    },
+    "files": [
+      "environment.yml",
+      "handoff_schema.yml",
+      "project-layout.json",
+      "project-state.yml",
+      "schemas/app_b_json_schema.yml",
+      "schemas/app_b_taxonomy.yml",
+      "schemas/audit_commands.yml",
+      "schemas/browser_harness.yml",
+      "schemas/dashboard_schema.yml",
+      "schemas/evaluation_package_schema.yml",
+      "schemas/evidence_access_budgets.yml",
+      "schemas/evidence_access_budgets_v2.yml",
+      "schemas/evidence_access_operations.yml",
+      "schemas/evidence_access_promotion.yml",
+      "schemas/evidence_access_release_candidate.yml",
+      "schemas/evidence_access_review_protocol.yml",
+      "schemas/evidence_access_uat.yml",
+      "schemas/evidence_bundle.schema.json",
+      "schemas/evidence_context.yml",
+      "schemas/evidence_navigation.yml"
+    ],
+    "duration_seconds": 2.04,
+    "discovery_skip_counts": {
+      "too_large": 1,
+      "unknown_extension": 3
+    },
+    "no_symbols_count": 8,
+    "no_symbols_files": [
+      "scripts/score_evaluation.py",
+      "sieving/src/__init__.py",
+      "sieving/src/json_extractor/__init__.py",
+      "sieving/src/json_extractor/extract/__init__.py",
+      "sieving/src/json_extractor/io/__init__.py",
+      "sieving/src/json_extractor/query/__init__.py",
+      "sieving/src/json_extractor/templates/__init__.py",
+      "sieving/tools/_archive/print_run_pipeline_sig.py"
+    ],
+    "missing_extractors": [
+      "css",
+      "json",
+      "powershell",
+      "yaml"
+    ],
+    "parse_warnings": [
+      "Import graph incomplete for: css, json, powershell, yaml. Dead code and dependency analysis may be less accurate for these languages."
+    ],
+    "warnings": [
+      "Skipped oversize file (>512000 bytes): 'project-file-relocations.json'",
+      "Skipped unsupported extension: 'templates/dashboard-template.html'",
+      "Skipped unsupported extension: 'templates/review-workspace-template.html'",
+      "Skipped unsupported extension: 'templates/vendor-dashboard.html'"
+    ]
+  }
+}
