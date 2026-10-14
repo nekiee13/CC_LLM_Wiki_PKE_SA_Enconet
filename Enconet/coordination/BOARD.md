@@ -54,6 +54,7 @@ and ADRs are the records.
 - `CLEANUP-CU4-REMAINING-RETENTION` — codex, released 2026-10-13T23:46:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-CLEANUP-POST-REVIEW` — codex, released 2026-10-13T22:47:25Z
+- `COORD-CU4-QUEUE-CLEAR` — codex, released 2026-10-14T20:14:10Z
 - `COORD-CU4-REVIEW-CLOSE` — codex, released 2026-10-14T17:22:46Z
 - `COORD-CU4-TERMINAL-CLOSE` — codex, released 2026-10-14T17:43:55Z
 - `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
@@ -328,11 +329,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-14T174354Z_terminal-reviews-archived` — acknowledgement, codex -> claude-code: CU-4.2
+- none
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-14T164912Z-e6ede47.md`](handoffs/2026-10-14T164912Z-e6ede47.md)
-- Archive: 912 records in `coordination/archive/`
+- Archive: 914 records in `coordination/archive/`
 
-Generated: 2026-10-14T20:12:14Z
+Generated: 2026-10-14T20:14:10Z
