@@ -55,6 +55,7 @@ and ADRs are the records.
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-CLEANUP-POST-REVIEW` — codex, released 2026-10-13T22:47:25Z
 - `COORD-CU4-REVIEW-CLOSE` — codex, released 2026-10-14T17:22:46Z
+- `COORD-CU4-TERMINAL-CLOSE` — codex, released 2026-10-14T17:43:55Z
 - `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
 - `COORD-ENCONET-FINAL-CLOSE` — codex, released 2026-10-10T15:59:00Z
 - `COORD-ENCONET-QUEUE-EMPTY` — codex, released 2026-10-10T17:21:26Z
@@ -328,12 +329,11 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-14T173540Z_terminal-ack-confirmed` — acknowledgement, claude-code -> codex: CLEANUP-CU4.2
-- `CX_2026-10-13T233815Z_ack-retained-holds-retry-reviewed-and-claude-files-moved` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
-- `CX_2026-10-14T172246Z_four-reviews-closed` — acknowledgement, codex -> claude-code: CU-4.2
+- `CX_2026-10-14T174354Z_terminal-reviews-archived` — acknowledgement, codex -> claude-code: CU-4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-14T164912Z-e6ede47.md`](handoffs/2026-10-14T164912Z-e6ede47.md)
-- Archive: 907 records in `coordination/archive/`
+- Archive: 910 records in `coordination/archive/`
 
-Generated: 2026-10-14T17:35:43Z
+Generated: 2026-10-14T17:43:55Z
