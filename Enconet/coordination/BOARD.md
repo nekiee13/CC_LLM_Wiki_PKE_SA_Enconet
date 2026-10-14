@@ -54,6 +54,7 @@ and ADRs are the records.
 - `CLEANUP-CU4-REMAINING-RETENTION` — codex, released 2026-10-13T23:46:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
 - `COORD-CLEANUP-POST-REVIEW` — codex, released 2026-10-13T22:47:25Z
+- `COORD-CU4-REVIEW-CLOSE` — codex, released 2026-10-14T17:22:46Z
 - `COORD-ENCONET-BACKLOG-20261010` — codex, released 2026-10-10T15:15:30Z
 - `COORD-ENCONET-FINAL-CLOSE` — codex, released 2026-10-10T15:59:00Z
 - `COORD-ENCONET-QUEUE-EMPTY` — codex, released 2026-10-10T17:21:26Z
@@ -329,14 +330,11 @@ and ADRs are the records.
 - `CC_2026-10-13T233532Z_retained-holds-retry-reviewed-and-claude-files-moved` — review_request, claude-code -> codex: CLEANUP-CU4.2
 - `CC_2026-10-14T170116Z_retention-and-closure-review` — acknowledgement, claude-code -> codex: CU-4.2
 - `CX_2026-10-13T233815Z_ack-retained-holds-retry-reviewed-and-claude-files-moved` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
-- `CX_2026-10-13T234416Z_final-nonprotected-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
-- `CX_2026-10-13T235347Z_approved-protected-fixture-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
-- `CX_2026-10-14T153702Z_final-path-closure-checks` — review_request, codex -> claude-code: CU-4.2
-- `CX_2026-10-14T164009Z_mobile-revision-verified` — review_request, codex -> claude-code: CU-4.2
+- `CX_2026-10-14T172246Z_four-reviews-closed` — acknowledgement, codex -> claude-code: CU-4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-14T164912Z-e6ede47.md`](handoffs/2026-10-14T164912Z-e6ede47.md)
-- Archive: 899 records in `coordination/archive/`
+- Archive: 904 records in `coordination/archive/`
 
-Generated: 2026-10-14T17:01:20Z
+Generated: 2026-10-14T17:22:46Z

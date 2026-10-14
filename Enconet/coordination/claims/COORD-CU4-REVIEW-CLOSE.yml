@@ -1,0 +1,10 @@
+task: COORD-CU4-REVIEW-CLOSE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-14T17:14:30Z
+last_renewed_at_utc: 2026-10-14T17:14:30Z
+expires_at_utc: 2026-10-15T17:14:30Z
+anticipated_files:
+  - coordination
+note: Verify new Claude review, acknowledge its exact scope, archive four explicitly closed Codex requests with raw SHA256 manifest; no audit or plan changes.
+released_at_utc: 2026-10-14T17:22:46Z
