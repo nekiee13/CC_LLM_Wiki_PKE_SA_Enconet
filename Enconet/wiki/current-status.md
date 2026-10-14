@@ -14,6 +14,7 @@ pending, not passed or waived. No extra score decision is needed.
 
 - [Interactive dashboard and chapter-linked evidence](dashboards/enconet_appendix_b_dashboard.html)
 - [Separate dark dashboard](../outputs/RUN-20261008-17/dashboard_dark.html) — same data; light release unchanged.
+- [Mobile-corrected light copy](../outputs/RUN-20261008-17/revisions/mobile-20261014/dashboard_light.html) — owner-authorized separate revision; original release unchanged, not promoted over it.
 - [Croatian evaluation report](../outputs/RUN-20261008-17/report.md)
 - [Retained portable report and evidence workspace](../outputs/archive/legacy-outputs/candidates/evidence_access/portable_package/review_workspace.html)
 - [Evidence matrix](evidence/matrix.md)

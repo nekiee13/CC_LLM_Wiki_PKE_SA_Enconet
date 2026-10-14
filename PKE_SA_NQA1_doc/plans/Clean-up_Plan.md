@@ -542,8 +542,9 @@ Enconet's complete regression passes 489 tests. The cleanup/overlay tooling
 group passes 153 tests. Both audit aggregates retain their prior verdicts.
 Read-only browser checks found a pre-existing mobile overflow in Enconet's
 unchanged light dashboard at 390 pixels. That acceptance item is not passed.
-The owner has been asked whether to allow separate corrected revisions or
-record the limitation. Latest retention/path reviews also remain pending.
+The owner approved a separate corrected mobile copy. It now passes all 25
+browser/PDF checks; the original release stays unchanged. See the mobile
+revision addendum in the closure report. Latest retention/path reviews remain pending.
 The shared indexes were rebuilt and verified from committed implementation
 `92f30d2`; later closeout metadata is outside that certification. See the single
 [closure report](Clean-up_Closure_Report.md) for evidence and the exact next step.

@@ -24,7 +24,7 @@ The audit evidence and scores have not been changed to make checks pass.
 | CU-3.2 Ekonerg | Delivered | `cleanup-cu3/EKONERG_LIVE_SPRINT_RESULT.md` |
 | CU-3.3 Enconet | Delivered | `cleanup-cu3/ENCONET_LIVE_SPRINT_RESULT.md` |
 | CU-4.1 Release and six suppliers | Delivered | `cleanup-cu4/CU4_RELEASE_AND_SCAFFOLDS_RESULT.md` |
-| CU-4.2 Final acceptance | Open | Mobile limitation and latest reviews |
+| CU-4.2 Final acceptance | Open | Latest reviews; separate mobile correction verified |
 
 Delivered does not mean that every later review has been accepted. Earlier
 unchecked plan boxes are not new work orders; the dated receipts describe
@@ -170,9 +170,9 @@ remains 1,400/1,800 (77.8%). Enconet's G7 remains pending.
 
 ## What remains — within CU-4.2
 
-1. Record the owner's mobile-limit decision. If corrected revisions are
-   authorized, retain originals, preserve data and use the existing revision
-   and publication controls; do not silently replace released files.
+1. Owner's mobile decision is resolved: the separate correction below is
+   authorized and verified. Any later replacement of the released entry point
+   remains a separate publication action; no replacement is claimed here.
 2. Obtain Claude's latest retention and final path reviews. The two substantive
    retention requests are still open; no review acceptance is inferred.
 3. Update this report and the original acceptance checklist from actual
@@ -211,3 +211,62 @@ the active claim was corrected by regeneration; it is not hidden as a pass.
 The raw failed-test XML also retains its original trailing whitespace; default
 staged whitespace checks flagged that log and Markdown/CRLF formatting. The
 earlier unstaged code whitespace check passed before those new files were staged.
+
+## Owner-approved mobile revision — 14 October 2026
+
+The owner's “yes” authorizes a separate corrected copy, preserving the released
+original. It is available at
+[mobile-corrected Enconet light dashboard](../../Enconet/outputs/RUN-20261008-17/revisions/mobile-20261014/dashboard_light.html).
+No dark revision is needed: the unchanged dark file already passes its mobile check.
+
+The final computed-style check corrected the earlier diagnosis. The matrix is
+wide but already scrolls inside its own panel. The page-width escape actually
+comes from an unbroken hash in `#artifact-metadata`. The correction adds only:
+
+```css
+@media(max-width:700px){#artifact-metadata{overflow-wrap:anywhere}}
+```
+
+It is in a separate `media="screen"` style block. Removing that exact block
+reproduces every original byte, including scripts, embedded audit/evidence data
+and print rules. Desktop styling and print output are not changed. The old
+light file's documented failure remains true; the new copy passes.
+
+SHA-256:
+
+- Original light: `bf62a3fe044e488a9659c0d74b03df04f40c519c608bfc5b7da81d792ec633f1`
+- Corrected copy: `e1ab5a0953f6a6ecc988a7a2d6a2a472114048156544e777368d6216a31b03e0`
+
+The local reusable builder `Enconet/scripts/build_mobile_dashboard.py` refuses
+overwriting a source, an existing destination, a redirected destination parent,
+or an already-corrected page. No frozen release/template was edited.
+The adjacent `dashboard_light.provenance.json` records the source and output hashes.
+
+Commands and results:
+
+```text
+PY -B -m pytest Enconet/tests/test_mobile_dashboard.py -q -p no:cacheprovider --basetemp .tmp/mobile-green-native-20261014
+# exit 0: 4 passed, no skips
+PY -B Enconet/scripts/build_mobile_dashboard.py --source Enconet/outputs/RUN-20261008-17/dashboard_light.html --output Enconet/outputs/RUN-20261008-17/revisions/mobile-20261014/dashboard_light.html
+# exit 0: new copy and provenance; source bytes unchanged
+BROWSER_PY -B scripts/verify_cleanup_dashboards.py --html Enconet/outputs/RUN-20261008-17/revisions/mobile-20261014/dashboard_light.html --output Enconet/work/validation/2026-10-14/cu4-mobile-revision/browser --expected-points 1450 --expected-fully 6 --expected-percent 80.6% --supplier ENCONET
+# exit 0: 25 passed, no failures; real PDF, one print call, 390/768px checks
+```
+
+The initial test-first run failed because the builder did not exist. The next
+run found a case-sensitive exception-message assertion; that assertion was
+corrected. A later sandbox run encountered WinError 5 on its temporary directory;
+the native rerun above passed. None of those failures is reported as a pass.
+The original outputs, scores, original light/dark files and publication ledgers
+are untouched. This correction does not close pending Claude reviews or G7.
+
+Full post-correction regression:
+
+```text
+PY -B Enconet/scripts/run_regression_tests.py --output Enconet/work/validation/2026-10-14/cu4-mobile-revision/regression
+# exit 0: 493 passed (192 current, 301 historical), no failures/errors/skips
+PY -B Enconet/scripts/run_all_validations.py --no-record
+# exit 0: all 19 checks passed
+```
+
+The regression's `summary.json` confirms `live_audit_unchanged: true`.

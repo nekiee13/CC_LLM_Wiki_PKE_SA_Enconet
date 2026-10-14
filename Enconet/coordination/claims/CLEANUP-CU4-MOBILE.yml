@@ -1,0 +1,18 @@
+task: CLEANUP-CU4-MOBILE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-14T16:33:40Z
+last_renewed_at_utc: 2026-10-14T16:33:40Z
+expires_at_utc: 2026-10-15T16:33:40Z
+anticipated_files:
+  - scripts
+  - tests
+  - templates
+  - outputs/RUN-20261008-17/revisions/mobile-20261014
+  - work/validation/2026-10-14
+  - ../PKE_SA_NQA1_doc/plans
+  - coordination
+  - HANDOFF.md
+  - wiki/log.md
+note: Owner yes authorizes separate mobile-corrected copy only; preserve released originals and all audit data; no promotion.
+released_at_utc: 2026-10-14T16:40:09Z
