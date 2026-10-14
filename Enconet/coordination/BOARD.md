@@ -328,12 +328,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CC_2026-10-14T173540Z_terminal-ack-confirmed` — acknowledgement, claude-code -> codex: CLEANUP-CU4.2
 - `CX_2026-10-14T174354Z_terminal-reviews-archived` — acknowledgement, codex -> claude-code: CU-4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-14T164912Z-e6ede47.md`](handoffs/2026-10-14T164912Z-e6ede47.md)
-- Archive: 910 records in `coordination/archive/`
+- Archive: 912 records in `coordination/archive/`
 
-Generated: 2026-10-14T17:43:55Z
+Generated: 2026-10-14T20:12:14Z
