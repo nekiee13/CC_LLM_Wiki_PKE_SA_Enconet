@@ -46,6 +46,7 @@ and ADRs are the records.
 - `COORD-DELIVERY-REVIEW-CLOSE` — codex, released 2026-10-10T19:02:14Z
 - `COORD-DISTRIBUTION-CLOSE` — codex, released 2026-10-06T20:59:49Z
 - `COORD-EKONERG-HASH-CLOSE` — codex, released 2026-10-10T17:24:06Z
+- `COORD-EKONERG-QUEUE-CLEAR` — codex, released 2026-10-14T20:16:54Z
 - `COORD-EKONERG-QUEUE-EMPTY` — codex, released 2026-10-10T17:32:58Z
 - `COORD-GUIDANCE-SYNC-CLOSE` — codex, released 2026-10-13T23:02:48Z
 - `COORD-HASH-CLARIFICATION-20261010` — codex, released 2026-10-10T14:49:44Z
@@ -128,11 +129,11 @@ and ADRs are the records.
 
 ## Active messages
 
-- `CX_2026-10-13T233018Z_ack-candidates-hold-resolution-verified` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
+- none
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-12T215038Z-35ae627.md`](handoffs/2026-10-12T215038Z-35ae627.md)
-- Archive: 645 records in `coordination/archive/`
+- Archive: 647 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:35:36Z
+Generated: 2026-10-14T20:16:55Z
