@@ -1,16 +1,12 @@
 task: CLEANUP-CU4-PROTECTED-MOVE
 agent: codex
 status: released
-claimed_at_utc: 2026-10-13T23:47:08Z
-last_renewed_at_utc: 2026-10-13T23:47:08Z
-expires_at_utc: 2026-10-14T23:47:08Z
+claimed_at_utc: 2026-10-14T00:35:32Z
+last_renewed_at_utc: 2026-10-14T00:35:32Z
+expires_at_utc: 2026-10-15T00:35:32Z
 anticipated_files:
-  - .test-tmp
-  - .tmp/cleanup-retained-20261014/protected-test-fixtures
-  - ../scripts
-  - ../PKE_SA_NQA1_doc
-  - coordination
   - HANDOFF.md
+  - coordination
   - wiki/log.md
-note: Owner explicitly approved moving remaining generated Claude fixture trees unchanged; no config edits
-released_at_utc: 2026-10-13T23:53:47Z
+note: Publish handoff with all named filesystem holds resolved
+released_at_utc: 2026-10-14T00:36:14Z

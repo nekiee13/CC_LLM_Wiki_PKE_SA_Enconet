@@ -47,7 +47,7 @@ and ADRs are the records.
 - `CLEANUP-CU4` — codex, released 2026-10-13T17:30:07Z
 - `CLEANUP-CU4-FINAL` — codex, released 2026-10-13T21:27:53Z
 - `CLEANUP-CU4-HOLDS-RETRY` — codex, released 2026-10-13T23:26:25Z
-- `CLEANUP-CU4-PROTECTED-MOVE` — codex, released 2026-10-13T23:53:47Z
+- `CLEANUP-CU4-PROTECTED-MOVE` — codex, released 2026-10-14T00:36:14Z
 - `CLEANUP-CU4-RELEASE` — codex, released 2026-10-13T18:45:59Z
 - `CLEANUP-CU4-REMAINING-RETENTION` — codex, released 2026-10-13T23:46:03Z
 - `CODEX-GUIDANCE-SYNC` — codex, released 2026-07-11T21:56:26Z
@@ -331,7 +331,7 @@ and ADRs are the records.
 
 ## Pointers
 
-- Authoritative record: [`coordination/handoffs/2026-10-13T234533Z-ab38756.md`](handoffs/2026-10-13T234533Z-ab38756.md)
+- Authoritative record: [`coordination/handoffs/2026-10-14T003542Z-a354252.md`](handoffs/2026-10-14T003542Z-a354252.md)
 - Archive: 899 records in `coordination/archive/`
 
-Generated: 2026-10-13T23:53:47Z
+Generated: 2026-10-14T00:36:14Z
