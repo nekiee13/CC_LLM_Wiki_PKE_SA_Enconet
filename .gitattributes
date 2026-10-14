@@ -30,6 +30,7 @@ Enconet/scripts/evidence_access_policy_v4.py -text
 Enconet/raw/** whitespace=-blank-at-eol,-blank-at-eof
 Enconet/derived/** whitespace=-blank-at-eol,-blank-at-eof
 # Published hash-manifested release bytes must survive checkout unchanged.
+Enconet/outputs/RUN-20261008-17/revisions/mobile-20261014/dashboard_light.html -text
 Enconet/outputs/enconet_appendix_b_evaluation_package.json -text
 Enconet/outputs/enconet_appendix_b_evaluation_report.md -text
 Enconet/outputs/enconet_appendix_b_dashboard_data.json -text
