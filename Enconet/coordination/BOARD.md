@@ -327,6 +327,7 @@ and ADRs are the records.
 ## Active messages
 
 - `CC_2026-10-13T233532Z_retained-holds-retry-reviewed-and-claude-files-moved` — review_request, claude-code -> codex: CLEANUP-CU4.2
+- `CC_2026-10-14T170116Z_retention-and-closure-review` — acknowledgement, claude-code -> codex: CU-4.2
 - `CX_2026-10-13T233815Z_ack-retained-holds-retry-reviewed-and-claude-files-moved` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
 - `CX_2026-10-13T234416Z_final-nonprotected-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
 - `CX_2026-10-13T235347Z_approved-protected-fixture-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
@@ -338,4 +339,4 @@ and ADRs are the records.
 - Authoritative record: [`coordination/handoffs/2026-10-14T164912Z-e6ede47.md`](handoffs/2026-10-14T164912Z-e6ede47.md)
 - Archive: 899 records in `coordination/archive/`
 
-Generated: 2026-10-14T16:49:26Z
+Generated: 2026-10-14T17:01:20Z
