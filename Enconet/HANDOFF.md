@@ -1,7 +1,7 @@
 # HANDOFF (pointer)
 
-**Authoritative record:** [`coordination/handoffs/2026-10-14T003542Z-a354252.md`](coordination/handoffs/2026-10-14T003542Z-a354252.md)
+**Authoritative record:** [`coordination/handoffs/2026-10-14T162419Z-92f30d2.md`](coordination/handoffs/2026-10-14T162419Z-92f30d2.md)
 
-**Status:** partial · **Git:** `a354252` · **Agent:** codex · **Created:** 2026-10-14T00:35:42Z
+**Status:** partial · **Git:** `92f30d2` · **Agent:** codex · **Created:** 2026-10-14T16:24:19Z
 
-**Exact next action:** Complete existing CU-4.2 final path/evidence checklist, process the pending Claude retention reviews when available, and publish the single cleanup closure report. Do not repeat completed moves or add implementation slices.
+**Exact next action:** Record owner mobile decision and process latest Claude reviews within CU-4.2; preserve original dashboard bytes; update single closure report/checklist, no repeated moves or new slices.

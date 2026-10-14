@@ -24,7 +24,7 @@ The audit evidence and scores have not been changed to make checks pass.
 | CU-3.2 Ekonerg | Delivered | `cleanup-cu3/EKONERG_LIVE_SPRINT_RESULT.md` |
 | CU-3.3 Enconet | Delivered | `cleanup-cu3/ENCONET_LIVE_SPRINT_RESULT.md` |
 | CU-4.1 Release and six suppliers | Delivered | `cleanup-cu4/CU4_RELEASE_AND_SCAFFOLDS_RESULT.md` |
-| CU-4.2 Final acceptance | Open | Mobile limitation, latest reviews and final index reconciliation |
+| CU-4.2 Final acceptance | Open | Mobile limitation and latest reviews |
 
 Delivered does not mean that every later review has been accepted. Earlier
 unchecked plan boxes are not new work orders; the dated receipts describe
@@ -175,11 +175,39 @@ remains 1,400/1,800 (77.8%). Enconet's G7 remains pending.
    and publication controls; do not silently replace released files.
 2. Obtain Claude's latest retention and final path reviews. The two substantive
    retention requests are still open; no review acceptance is inferred.
-3. Reconcile the final committed code/docs index snapshot. The last certified
-   snapshot is `e4201491241e5d139c9b5d1ebafa4ca3ca210f72`, older than this
-   correction. A current-tip refresh is not claimed in this report.
-4. Update this report and the original acceptance checklist from actual
+3. Update this report and the original acceptance checklist from actual
    outcomes. No further folder-move batch is planned.
 
 The seven pre-existing owner-edited files remain outside this implementation
 commit. No Claude-owned guidance, skill or message has been modified.
+
+## Committed index reconciliation
+
+After implementation commit `92f30d2cf0398b9235349e46ff0f4acf17dace63`,
+the four existing neutral indexes were fully rebuilt under one `INDEX-REFRESH`
+claim. No owner edits were stashed or indexed. The retained physical docs roots
+are beneath `.tmp/index-source-92f30d2cf039/`; code keeps its existing live-root
+identity and was checked against that commit before refresh.
+
+Commands, both exit 0:
+
+```text
+PY scripts/prepare_shared_index_snapshot.py --root . --output PKE_SA_NQA1_doc/plans/cleanup-cu4/final-path-index-snapshot-20261014.json
+BROWSER_PY -B scripts/refresh_shared_indexes.py --snapshot PKE_SA_NQA1_doc/plans/cleanup-cu4/final-path-index-snapshot-20261014.json --output PKE_SA_NQA1_doc/plans/cleanup-cu4/final-path-index-results-20261014.json
+```
+
+Docs: 252/241/174 files, respectively; 2,891/2,296/1,339 verified sections.
+Structural root-section skips: 111/103/100, not verification failures.
+All three have zero drift, missing sections and errors. Code: 244 parsed files,
+3,534 symbols, same `local/Enconet-0a063bd7` identity. One oversized relocation
+JSON and three unsupported HTML templates were skipped. Import-graph extraction
+is incomplete for CSS/JSON/PowerShell/YAML; the receipt records these warnings.
+No Claude-owned or agent-specific index was refreshed.
+
+This certifies the implementation commit, not subsequent report, board or
+handoff metadata. The INDEX-REFRESH claim is released. Both coordination boards
+validate clean after regeneration. A transient stale-board validation during
+the active claim was corrected by regeneration; it is not hidden as a pass.
+The raw failed-test XML also retains its original trailing whitespace; default
+staged whitespace checks flagged that log and Markdown/CRLF formatting. The
+earlier unstaged code whitespace check passed before those new files were staged.

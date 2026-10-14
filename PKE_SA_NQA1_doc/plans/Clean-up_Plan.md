@@ -544,6 +544,6 @@ Read-only browser checks found a pre-existing mobile overflow in Enconet's
 unchanged light dashboard at 390 pixels. That acceptance item is not passed.
 The owner has been asked whether to allow separate corrected revisions or
 record the limitation. Latest retention/path reviews also remain pending.
-The current code/docs changes are newer than the certified index snapshot;
-final current-tip refresh is not claimed. See the single
+The shared indexes were rebuilt and verified from committed implementation
+`92f30d2`; later closeout metadata is outside that certification. See the single
 [closure report](Clean-up_Closure_Report.md) for evidence and the exact next step.

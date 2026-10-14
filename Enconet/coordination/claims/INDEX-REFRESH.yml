@@ -1,10 +1,11 @@
 task: INDEX-REFRESH
 agent: codex
 status: released
-claimed_at_utc: 2026-10-13T21:41:47Z
-last_renewed_at_utc: 2026-10-13T21:41:47Z
-expires_at_utc: 2026-10-14T21:41:47Z
+claimed_at_utc: 2026-10-14T16:21:22Z
+last_renewed_at_utc: 2026-10-14T16:21:22Z
+expires_at_utc: 2026-10-15T16:21:22Z
 anticipated_files:
-  - PKE_SA_NQA1_doc/INDEXING.md
-note: CU-4.2 full shared-neutral rebuild from committed corpus; preserve owner edits and Claude-owned indexes
-released_at_utc: 2026-10-13T22:08:04Z
+  - ../PKE_SA_NQA1_doc/plans/cleanup-cu4
+  - coordination
+note: Full committed neutral refresh for CU-4.2 at 92f30d2; retain snapshot, exclude both agents infrastructure and controlled evidence.
+released_at_utc: 2026-10-14T16:23:19Z
