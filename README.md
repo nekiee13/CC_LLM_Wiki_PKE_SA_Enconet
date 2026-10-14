@@ -5,7 +5,7 @@ entries include **Enconet** and **Ekonerg** with audit results, plus clean futur
 supplier folders for **IBE, TEKOL, IGH, IMK, KCPG and MOR**. Two agents
 (Codex, Claude Code) work this repository under a shared coordination protocol.
 
-Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
+Created by Task C6.1 (`Enconet/docs/plans/ALIGNMENT_PLAN.md`, wave G5).
 
 ## Start here
 
@@ -21,9 +21,9 @@ Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
 
 ## Authoritative project documents (Enconet)
 
-- [`Enconet/MASTER_DEVELOPMENT_PLAN.md`](Enconet/MASTER_DEVELOPMENT_PLAN.md) — canonical master plan (v1.4)
-- [`Enconet/docs/ALIGNMENT_PLAN.md`](Enconet/docs/ALIGNMENT_PLAN.md) — alignment plan, waves G0–G5
-- [`Enconet/decisions/README.md`](Enconet/decisions/README.md) — ADR register
+- [`Enconet/docs/plans/MASTER_DEVELOPMENT_PLAN.md`](Enconet/docs/plans/MASTER_DEVELOPMENT_PLAN.md) — canonical master plan (v1.4)
+- [`Enconet/docs/plans/ALIGNMENT_PLAN.md`](Enconet/docs/plans/ALIGNMENT_PLAN.md) — alignment plan, waves G0–G5
+- [`Enconet/work/decisions/README.md`](Enconet/work/decisions/README.md) — ADR register
 - [`Enconet/docs/README.md`](Enconet/docs/README.md) — project documentation catalog
 - [`Enconet/Sieving_method_specification_Guide.md`](Enconet/Sieving_method_specification_Guide.md) — sieving specification
 - [`Enconet/schemas/`](Enconet/schemas/) — single-owner sieving contract (ADR-0003)
@@ -31,8 +31,8 @@ Created by Task C6.1 (`Enconet/docs/ALIGNMENT_PLAN.md`, wave G5).
 ## Agent guidance
 
 `workspace-layout.json` selects `PKE_SA_NQA1_doc` as the workspace docs home.
-Retained files in the old `doc` tree are migration holds, not a second active
-documentation home. Their dispositions are recorded in the cleanup packet.
+The old `doc` tree is retained as empty historical shells under `.tmp`, not a
+second active documentation home. Its disposition is recorded in the cleanup packet.
 
 Tool-specific, semantically aligned pairs (drift-checked by
 `scripts/check_guidance_drift.py`): `CLAUDE.md`/`AGENTS.md` at the workspace root and

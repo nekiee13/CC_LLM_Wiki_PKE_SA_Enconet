@@ -4,6 +4,8 @@
 
 # Always-LF for cross-platform tooling
 *.sh text eol=lf
+# Exact local copy of the versioned v4 policy used by Enconet's legacy adapter.
+Enconet/scripts/evidence_access_policy_v4.py -text
 
 # Workspace-distributed supplier framework: keep hash-listed contract/code
 # bytes stable on checkout. These paths exclude raw, incoming, DATA, results

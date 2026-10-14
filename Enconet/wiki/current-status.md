@@ -40,7 +40,7 @@ No US jurisdiction, supplier role, or missing source text has been invented.
 ## Validation and authority
 
 The first release installed 12 pinned files without replacing existing files.
-Its manifest is `manifests/release_RUN-20261008-17.json`.
+Its manifest is `work/manifests/release_RUN-20261008-17.json`.
 The owner exception is `PUBLICATION-RUN-20261008-17-20261009`.
 G5/G6 approvals and gate packets are recorded. Legal state transitions used the
 existing state API after publication checks passed.

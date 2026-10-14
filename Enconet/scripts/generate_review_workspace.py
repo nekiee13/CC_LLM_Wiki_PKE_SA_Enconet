@@ -13,11 +13,15 @@ from pathlib import Path
 from urllib.parse import quote
 
 import validate_review_catalog
+from project_layout import configuration, path as layout_path
+from project_records import recorded_path
 
 
 ENCONET = Path(__file__).resolve().parents[1]
 TEMPLATE = ENCONET / "templates" / "review-workspace-template.html"
 CATALOG = ENCONET / "outputs" / "candidates" / "evidence_access" / "review_catalog.json"
+if configuration() == 'v4':
+    CATALOG = layout_path('reviews', 'review_catalog.json')
 OUTPUT = CATALOG.with_name("review_workspace.html")
 KINDS = ("viewer", "report", "bundle", "package")
 LABELS = {"viewer": "Open Evidence Explorer", "report": "Open report", "bundle": "Evidence bundle", "package": "Evaluation package"}
@@ -31,7 +35,8 @@ def _script_json(value: object) -> str:
 
 def _artifact_state(artifact: dict, output_path: Path, project_root: Path) -> dict:
     root = project_root.resolve()
-    target = (root / Path(artifact["path"])).resolve()
+    target = (recorded_path(artifact['path']) if root == ENCONET.resolve()
+              else root / Path(artifact['path'])).resolve()
     try:
         target.relative_to(root)
     except ValueError:

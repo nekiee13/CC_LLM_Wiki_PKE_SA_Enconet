@@ -1,7 +1,7 @@
 # Clean-up Plan
 
 Date: 11 October 2026  
-Status: workspace, Ekonerg and Enconet live batches applied; remaining holds and CU-4 open
+Status: all named filesystem holds resolved; CU-4.2 final acceptance remains open
 Review: owner authorized live execution and deferred Claude's pre-execution safety review; post-execution review remains pending.
 Implementer: Codex. Reviewer: Claude. Owner: scope and approval decisions.  
 Scope: workspace, Enconet, Ekonerg, IBE, TEKOL, IGH, IMK, KCPG, MOR, and future suppliers.
@@ -16,7 +16,11 @@ from one tested release, not a fresh set of small fixes.
 This plan does not reset an audit, run new sieving, change a score, or issue a
 report. Moving a prepared report does not make it an approved release.
 
-## Current facts and limits
+## Planning baseline and limits — 11 October 2026
+
+These are the facts at plan creation, not today's remaining work. See the
+dated execution updates and [closure report](Clean-up_Closure_Report.md) for
+the current state. The plan still has four epics and nine tasks.
 
 - Live Git baseline for this plan: `7c85bbd`, branch `main`.
 - Root has `doc/`, `reset-plans/`, several `pytest-*` folders, and
@@ -525,3 +529,21 @@ All named filesystem holds are resolved. Latest batch reviews, final path
 dispositions and the single plan closure report remain in CU-4.2; no new task
 or owner decision is introduced. See
 [approved fixture move result](cleanup-cu4/CU4_PROTECTED_FIXTURE_MOVE_RESULT_20261014.md).
+
+## Final acceptance update — 14 October 2026
+
+Eight task implementations are delivered. CU-4.2 remains open; no task or slice
+has been added. All named file-move holds are resolved. The final path pass
+fixed three current README links and Enconet's new-output/review routing.
+It reuses the frozen v4 policy as a local, byte-verified copy. Historical
+approval records and absent pre-reset evidence remain unchanged.
+
+Enconet's complete regression passes 489 tests. The cleanup/overlay tooling
+group passes 153 tests. Both audit aggregates retain their prior verdicts.
+Read-only browser checks found a pre-existing mobile overflow in Enconet's
+unchanged light dashboard at 390 pixels. That acceptance item is not passed.
+The owner has been asked whether to allow separate corrected revisions or
+record the limitation. Latest retention/path reviews also remain pending.
+The current code/docs changes are newer than the certified index snapshot;
+final current-tip refresh is not claimed. See the single
+[closure report](Clean-up_Closure_Report.md) for evidence and the exact next step.

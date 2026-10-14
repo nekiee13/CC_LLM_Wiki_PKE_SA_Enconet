@@ -45,6 +45,7 @@ and ADRs are the records.
 - `CC-CROSSREVIEW-EPIC14` — claude-code, released 2026-07-15T22:46:00Z
 - `CLEANUP-CU3-ENCONET-LIVE` — codex, released 2026-10-12T23:47:25Z
 - `CLEANUP-CU4` — codex, released 2026-10-13T17:30:07Z
+- `CLEANUP-CU4-CLOSURE` — codex, released 2026-10-14T15:37:18Z
 - `CLEANUP-CU4-FINAL` — codex, released 2026-10-13T21:27:53Z
 - `CLEANUP-CU4-HOLDS-RETRY` — codex, released 2026-10-13T23:26:25Z
 - `CLEANUP-CU4-PROTECTED-MOVE` — codex, released 2026-10-14T00:36:14Z
@@ -328,10 +329,11 @@ and ADRs are the records.
 - `CX_2026-10-13T233815Z_ack-retained-holds-retry-reviewed-and-claude-files-moved` — acknowledgement, codex -> claude-code: CLEANUP-CU4.2
 - `CX_2026-10-13T234416Z_final-nonprotected-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
 - `CX_2026-10-13T235347Z_approved-protected-fixture-retention` — review_request, codex -> claude-code: CLEANUP-CU4.2
+- `CX_2026-10-14T153702Z_final-path-closure-checks` — review_request, codex -> claude-code: CU-4.2
 
 ## Pointers
 
 - Authoritative record: [`coordination/handoffs/2026-10-14T003542Z-a354252.md`](handoffs/2026-10-14T003542Z-a354252.md)
 - Archive: 899 records in `coordination/archive/`
 
-Generated: 2026-10-14T00:36:14Z
+Generated: 2026-10-14T15:37:18Z

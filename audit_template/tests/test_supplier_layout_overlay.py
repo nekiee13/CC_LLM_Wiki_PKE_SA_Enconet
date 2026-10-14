@@ -8,7 +8,7 @@ import pytest
 
 TEMPLATE = Path(__file__).parents[1]
 sys.path.insert(0, str(TEMPLATE))
-from prepare_supplier_layout_overlay import build, local_literals
+from prepare_supplier_layout_overlay import build, local_literals, review_compatibility
 
 
 @pytest.mark.parametrize('name', ['Atlas Engineering', 'Žuti dobavljač'])
@@ -42,6 +42,18 @@ parser.add_argument("--output",default=Path("benchmarks/golden.yml"))
     assert "'work/manifests/approvals.csv'" in text
     assert "'work/derived/DOC-0001.txt'" in text
     assert "'work/benchmarks/golden.yml'" in text
+
+
+@pytest.mark.parametrize('root_name', ['PROJECT', 'ANOTHER_LOCAL_ROOT'])
+def test_review_default_bridge_is_root_identifier_neutral(root_name):
+    source = ('from pathlib import Path\nimport argparse\n'
+              f'{root_name} = Path(__file__).resolve().parents[1]\n'
+              f'OUTPUT = {root_name} / "outputs" / "candidates" / "evidence_access" / "review_catalog.json"\n')
+    converted, policy = review_compatibility(source, 'generate_review_catalog.py')
+    assert not policy and "layout_path('reviews', 'review_catalog.json')" in converted
+    assert "configuration() == 'v4'" in converted
+    assert source in converted or f'{root_name} = Path(__file__).resolve().parents[1]' in converted
+    assert review_compatibility(converted, 'generate_review_catalog.py') == (converted, False)
 
 
 def test_supplier_parent_alias_is_refused(tmp_path):

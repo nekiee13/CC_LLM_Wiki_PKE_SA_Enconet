@@ -16,6 +16,59 @@ from prepare_framework_candidate_v4 import (route_python, replace_assignment, re
 from check_candidate_paths_v4 import scan
 
 WORKSPACE = Path(__file__).resolve().parents[1]
+V4_POLICY_SHA256 = 'de767378cb7a6adff187d7ee35cf0ce2643796d82b4314090b639d0e8f3e15a7'
+
+
+def review_compatibility(source, filename):
+    """Bridge retained legacy review tools to v4 without changing their history.
+
+    Derive the local root identifier from code, never a supplier-name allowlist.
+    This covers chained outputs/candidates expressions missed by prefix scans.
+    """
+    names = {'generate_review_catalog.py', 'generate_review_workspace.py',
+             'build_review_package.py', 'evidence_access_policy.py'}
+    if filename not in names or "configuration() == 'v4'" in source:
+        return source, False
+    if filename == 'evidence_access_policy.py' and 'APPROVED_ARTIFACT_SHA256' not in source:
+        return source, False  # Already-neutral v4 policy has no legacy root binding.
+    roots = []
+    for node in ast.parse(source).body:
+        if isinstance(node, ast.Assign) and ast.unparse(node.value).replace(' ', '') in {
+                'Path(__file__).resolve().parents[1]', 'Path(__file__).resolve().parent.parent'}:
+            roots.extend(t.id for t in node.targets if isinstance(t, ast.Name))
+    if len(roots) != 1:
+        raise ValueError('review compatibility requires one explicit local root')
+    root = roots[0]
+    if filename == 'evidence_access_policy.py':
+        if 'APPROVED_ARTIFACT_SHA256' not in source:
+            return source, False
+        source = replace_once(source, 'from pathlib import Path',
+                              'from pathlib import Path\nfrom project_layout import configuration, path as layout_path')
+        source += ("\nif configuration() == 'v4':\n"
+                   "    import evidence_access_policy_v4 as _v4\n"
+                   "    PolicyError = _v4.PolicyError\n"
+                   "    candidate_path = _v4.candidate_path\n"
+                   "    require_output_target = _v4.require_output_target\n"
+                   "    CANDIDATE_ROOT = layout_path('outputs')\n")
+        return source, True
+    source = replace_once(source, 'import argparse',
+                          'from project_layout import configuration, path as layout_path\n'
+                          'from project_records import recorded_path\nimport argparse')
+    for variable, leaf in [('CATALOG', 'review_catalog.json'),
+                           ('OUTPUT', 'portable_package' if filename == 'build_review_package.py' else 'review_catalog.json')]:
+        assignment = f'{variable} = {root} / "outputs" / "candidates" / "evidence_access" / "{leaf}"'
+        if assignment in source:
+            source = replace_once(source, assignment, assignment +
+                                  f"\nif configuration() == 'v4':\n    {variable} = layout_path('reviews', '{leaf}')")
+    if filename == 'generate_review_workspace.py':
+        old, new = 'target = (root / Path(artifact["path"])).resolve()', "target = (recorded_path(artifact['path']) if root == " + root + ".resolve() else root / Path(artifact['path'])).resolve()"
+    elif filename == 'build_review_package.py':
+        old, new = 'path = (root / Path(relative)).resolve()', 'path = (recorded_path(relative) if root == ' + root + '.resolve() else root / Path(relative)).resolve()'
+    else:
+        old, new = 'target = (root / Path(relative)).resolve()', 'target = (recorded_path(relative) if root == ' + root + '.resolve() else root / Path(relative)).resolve()'
+    if old in source:
+        source = replace_once(source, old, new)
+    return source, False
 
 
 def local_literals(source):
@@ -78,12 +131,19 @@ def build(supplier, destination, *, workspace=WORKSPACE):
         if item.exists() and (item.is_symlink() or getattr(item.stat(), 'st_file_attributes', 0) & 0x400):
             raise ValueError('redirected overlay parent')
     payload, changes, holds = {}, [], []
+    extra_files = {}
     for path in sorted((source_root / 'scripts').glob('*.py')):
         if path.name.startswith('CC_'):
             holds.append({'file': path.name, 'reason': 'Claude-owned filename'})
             continue
         before = regular(path)
         text = before.decode('utf-8-sig')
+        text, needs_policy = review_compatibility(text, path.name)
+        if needs_policy:
+            policy = regular(WORKSPACE / 'audit_template/framework/v4/scripts/evidence_access_policy.py')
+            if sha(policy) != V4_POLICY_SHA256:
+                raise ValueError('versioned v4 evidence policy checksum mismatch')
+            extra_files['scripts/evidence_access_policy_v4.py'] = policy
         if path.name == 'reset_audit.py':
             text = replace_assignment(text, 'RESET_DIRS', lambda values:
                 tuple(value for value in values if value not in {'out', 'derived', 'work'})
@@ -187,7 +247,8 @@ def build(supplier, destination, *, workspace=WORKSPACE):
             data = converted.encode('utf-8')
             changes.append({'path': name, 'before_sha256': hashlib.sha256(before).hexdigest(),
                             'after_sha256': hashlib.sha256(data).hexdigest(), 'routed_paths': count + literals})
-    added = []
+    payload.update(extra_files)
+    added = list(extra_files)
     if not (source_root / 'scripts/agent_coord.py').exists():
         baseline_bytes = (BASELINE / 'manifest.json').read_bytes()
         if sha(baseline_bytes) != PIN:

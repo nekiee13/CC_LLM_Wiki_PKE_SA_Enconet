@@ -13,6 +13,8 @@ from pathlib import Path
 from typing import Callable
 
 import yaml
+from project_layout import configuration, path as layout_path
+from project_records import recorded_path
 
 import validate_evidence_bundle
 import validate_report_links
@@ -22,6 +24,8 @@ import validate_review_catalog
 ENCONET = Path(__file__).resolve().parents[1]
 REGISTRY = ENCONET / "schemas" / "review_packages.yml"
 OUTPUT = ENCONET / "outputs" / "candidates" / "evidence_access" / "review_catalog.json"
+if configuration() == 'v4':
+    OUTPUT = layout_path('reviews', 'review_catalog.json')
 ARTIFACT_KINDS = ("bundle", "package", "report", "viewer")
 ENTRY_FIELDS = {
     "run_id", "status",
@@ -39,7 +43,8 @@ def _safe_path(root: Path, relative: object, kind: str) -> Path:
     if not isinstance(relative, str) or not relative or "\\" in relative:
         raise ValueError(f"{kind} artifact path must be a relative POSIX path")
     root = root.resolve()
-    target = (root / Path(relative)).resolve()
+    target = (recorded_path(relative) if root == ENCONET.resolve()
+              else root / Path(relative)).resolve()
     try:
         target.relative_to(root)
     except ValueError as exc:

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
+from project_layout import configuration, path as layout_path
 
 
 ENCONET = Path(__file__).resolve().parents[1]
@@ -103,3 +104,14 @@ def require_output_target(
         raise PolicyError("validation must pass before published overwrite")
     if not atomic_promotion:
         raise PolicyError("atomic promotion is required for published overwrite")
+
+
+# Keep the historical EA contract for the explicitly isolated legacy fixture.
+# A live v4 audit uses the unchanged, locally copied versioned v4 boundary.
+# Keep the original stricter offline-entrypoint check above in both modes.
+if configuration() == 'v4':
+    import evidence_access_policy_v4 as _v4
+    PolicyError = _v4.PolicyError
+    candidate_path = _v4.candidate_path
+    require_output_target = _v4.require_output_target
+    CANDIDATE_ROOT = layout_path('outputs')

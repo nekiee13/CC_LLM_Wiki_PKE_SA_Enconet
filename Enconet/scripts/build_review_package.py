@@ -14,11 +14,16 @@ import generate_report
 import generate_review_catalog
 import generate_review_workspace
 import validate_review_catalog
+from project_layout import configuration, path as layout_path
+from project_records import recorded_path
 
 
 ENCONET = Path(__file__).resolve().parents[1]
 CATALOG = ENCONET / "outputs" / "candidates" / "evidence_access" / "review_catalog.json"
 OUTPUT = ENCONET / "outputs" / "candidates" / "evidence_access" / "portable_package"
+if configuration() == 'v4':
+    CATALOG = layout_path('reviews', 'review_catalog.json')
+    OUTPUT = layout_path('reviews', 'portable_package')
 NAMES = {
     "bundle": "evidence_bundle.json",
     "package": "evaluation_package.json",
@@ -45,7 +50,8 @@ def _hash(path: Path) -> str:
 
 def _source(root: Path, relative: str) -> Path:
     root = root.resolve()
-    path = (root / Path(relative)).resolve()
+    path = (recorded_path(relative) if root == ENCONET.resolve()
+            else root / Path(relative)).resolve()
     try:
         path.relative_to(root)
     except ValueError as exc:

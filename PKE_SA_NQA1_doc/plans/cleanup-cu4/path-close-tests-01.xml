@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="16" time="2.010" timestamp="2026-10-14T16:12:26.931000+02:00" hostname="DESKTOP-KBIR7T5"><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_v4_evidence_boundary_is_exact_versioned_local_copy" time="0.007" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_v4_boundary_refuses_unsafe_artifact_names[../foreign]" time="0.001" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_v4_boundary_refuses_unsafe_artifact_names[..]" time="0.001" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_v4_boundary_refuses_unsafe_artifact_names[x:stream]" time="0.001" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_v4_boundary_refuses_unsafe_artifact_names[x\\y]" time="0.001" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_v4_boundary_refuses_unsafe_artifact_names[trailing.]" time="0.001" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_old_nested_and_flat_targets_cannot_be_new_v4_outputs" time="0.006" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_review_defaults_do_not_recreate_candidate_tree" time="0.001" /><testcase classname="Enconet.tests.test_cleanup_final_paths" name="test_frozen_catalog_references_resolve_without_rewriting_registry" time="0.036"><failure message="ValueError: bundle artifact is missing: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\evidence_bundle.json">def test_frozen_catalog_references_resolve_without_rewriting_registry():
+        registry = ROOT / 'schemas/review_packages.yml'
+        before = registry.read_bytes()
+        rows = yaml.safe_load(before)['packages']
+        for row in rows:
+            for kind in ('bundle', 'package', 'report', 'viewer'):
+&gt;               data = catalog._verified_artifact(row, kind, ROOT)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Enconet\tests\test_cleanup_final_paths.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+entry = {'run_id': 'RUN-20260728-01', 'status': 'candidate', 'package': 'outputs/enconet_appendix_b_evaluation_package.json', 'package_sha256': '77cf9e84c46fe5d4301424fa402b4cd19aceea7c57a2d0b8386af433a01c5d92', ...}
+kind = 'bundle'
+root = WindowsPath('C:/xPY/xPrj/LLM_Wiki/03_PKE_SA_NQA1/Enconet')
+
+    def _verified_artifact(entry: dict, kind: str, root: Path) -&gt; dict:
+        relative = entry.get(kind)
+        target = _safe_path(root, relative, kind)
+        if not target.is_file():
+&gt;           raise ValueError(f"{kind} artifact is missing: {target}")
+E           ValueError: bundle artifact is missing: C:\xPY\xPrj\LLM_Wiki\03_PKE_SA_NQA1\Enconet\outputs\candidates\evidence_access\RUN-20260728-01\evidence_bundle.json
+
+Enconet\scripts\generate_review_catalog.py:59: ValueError</failure></testcase><testcase classname="audit_template.tests.test_supplier_layout_overlay" name="test_overlay_preserves_current_audit_logic_and_siblings[Atlas Engineering]" time="1.363" /><testcase classname="audit_template.tests.test_supplier_layout_overlay" name="test_overlay_preserves_current_audit_logic_and_siblings[\u017duti dobavlja\u010d]" time="0.145" /><testcase classname="audit_template.tests.test_supplier_layout_overlay" name="test_path_arguments_route_without_changing_evidence_strings" time="0.001" /><testcase classname="audit_template.tests.test_supplier_layout_overlay" name="test_review_default_bridge_is_root_identifier_neutral[PROJECT]" time="0.001"><failure message="NameError: name 'text' is not defined">root_name = 'PROJECT'
+
+    @pytest.mark.parametrize('root_name', ['PROJECT', 'ANOTHER_LOCAL_ROOT'])
+    def test_review_default_bridge_is_root_identifier_neutral(root_name):
+        source = ('from pathlib import Path\nimport argparse\n'
+                  f'{root_name} = Path(__file__).resolve().parents[1]\n'
+                  f'OUTPUT = {root_name} / "outputs" / "candidates" / "evidence_access" / "review_catalog.json"\n')
+        converted, policy = review_compatibility(source, 'generate_review_catalog.py')
+        assert not policy and "layout_path('reviews', 'review_catalog.json')" in converted
+        assert "configuration() == 'v4'" in converted
+        assert source in converted or f'{root_name} = Path(__file__).resolve().parents[1]' in converted
+        assert review_compatibility(converted, 'generate_review_catalog.py') == (converted, False)
+&gt;       assert "'work/benchmarks/golden.yml'" in text
+                                                 ^^^^
+E       NameError: name 'text' is not defined
+
+audit_template\tests\test_supplier_layout_overlay.py:56: NameError</failure></testcase><testcase classname="audit_template.tests.test_supplier_layout_overlay" name="test_review_default_bridge_is_root_identifier_neutral[ANOTHER_LOCAL_ROOT]" time="0.001"><failure message="NameError: name 'text' is not defined">root_name = 'ANOTHER_LOCAL_ROOT'
+
+    @pytest.mark.parametrize('root_name', ['PROJECT', 'ANOTHER_LOCAL_ROOT'])
+    def test_review_default_bridge_is_root_identifier_neutral(root_name):
+        source = ('from pathlib import Path\nimport argparse\n'
+                  f'{root_name} = Path(__file__).resolve().parents[1]\n'
+                  f'OUTPUT = {root_name} / "outputs" / "candidates" / "evidence_access" / "review_catalog.json"\n')
+        converted, policy = review_compatibility(source, 'generate_review_catalog.py')
+        assert not policy and "layout_path('reviews', 'review_catalog.json')" in converted
+        assert "configuration() == 'v4'" in converted
+        assert source in converted or f'{root_name} = Path(__file__).resolve().parents[1]' in converted
+        assert review_compatibility(converted, 'generate_review_catalog.py') == (converted, False)
+&gt;       assert "'work/benchmarks/golden.yml'" in text
+                                                 ^^^^
+E       NameError: name 'text' is not defined
+
+audit_template\tests\test_supplier_layout_overlay.py:56: NameError</failure></testcase><testcase classname="audit_template.tests.test_supplier_layout_overlay" name="test_supplier_parent_alias_is_refused" time="0.003" /><testcase classname="audit_template.tests.test_supplier_layout_overlay" name="test_relocated_benchmark_runner_keeps_local_sources" time="0.147" /></testsuite></testsuites>

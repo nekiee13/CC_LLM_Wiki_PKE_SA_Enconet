@@ -1,0 +1,20 @@
+task: CLEANUP-CU4-CLOSURE
+agent: codex
+status: released
+claimed_at_utc: 2026-10-14T13:42:26Z
+last_renewed_at_utc: 2026-10-14T15:35:05Z
+expires_at_utc: 2026-10-15T15:35:05Z
+anticipated_files:
+  - ../README.md
+  - ../.gitattributes
+  - ../PKE_SA_NQA1_doc
+  - ../scripts
+  - ../audit_template
+  - scripts
+  - tests
+  - coordination
+  - HANDOFF.md
+  - wiki/log.md
+  - wiki/current-status.md
+note: Finish original CU-4.2; final path regression and partial closure packet; no source, database, frozen release or dashboard changes.
+released_at_utc: 2026-10-14T15:37:18Z
